@@ -1,0 +1,306 @@
+Alphabet
+А Ә Б В Г Г Д Е Ё Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ь Ы Ъ Э Ю Я
+а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
+%0 1 2 3 4 5 6 7 8 9
+%{K%}:к %{l%}:л %{L%}:л %{M%}:м %{N%}:н %{G%}:г %{D%}:д  ! Cns
+%{S%}:с %{n%}:н %{y%}:ы %{o%}:0 ! disappearing stuff
+%{A%}:а %{I%}:ы %{E%}:а ! Vow
+%- %>:0 %  ; 
+
+Sets
+
+Vow =      А Ә Е Ё І И О Ө У Ү Ұ Ы Э Ю Я
+           а ә е ё і и о ө у ү ұ ы э ю я 
+           %{A%} %{I%} %{E%} %{y%} ;
+
+LowVow =   А Ә Е О Ө
+           а ә е о ө ;
+
+HighVow =  І Ү Ы Ұ
+           і ү ы ұ ;
+
+YotVow = Я я Е е Ё ё Ю ю ;
+
+VowRight = А Ә Е Ё І О Ө Ү Ұ Ы Э Я
+           а ә е ё і о ө ү ұ ы э я 
+           %{A%} %{I%} %{E%} ;
+
+FrontVow = Ә Е І Ө Ү Э
+           ә е і ө ү э ;
+
+BackVow = А О Ұ Ы Я Ё
+          а о ұ ы я ё ;
+
+! FIXME: These can be front or back vowels :(
+VCdigraphs = У И Ю
+             у и ю ;
+
+CVdigraphs = Е Ё Ю Я
+             е ё ю я ;
+				 ! е is only CV after vowels; others only occur after vowels
+
+Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ь Ъ 
+           б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ь ъ 
+           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} %- ;
+
+CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ Ц Ч Ш Щ Ь Ъ Ю
+           б в г ғ д ж з И й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
+           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} %- ;
+
+
+HighSonCns = Й У Р
+             й у р ;
+
+Liquid = Л
+         л ;
+
+Nasals = М Н Ң
+         м н ң ;
+
+! FIXME: There are a few "native" Kazakh words with ж as voiced also
+VoicedObstruents = Ғ З
+                   ғ з ;
+
+! These are all voiceless when word-final, many only in borrowings
+VoicelessCns = Б В П Ф Д Т Ц Ж Ш Щ Ч С Г Х К Қ Һ 
+               б в п ф д т ц ж ш щ ч с г х к қ һ ;
+
+FrontCns = К Г Ь
+           к г ь ;
+
+BackCns  = Қ Ғ
+           қ ғ ;
+
+Rules 
+
+!!!! Desonorisation !!!!
+
+"N Desonorisation"
+%{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] %>: _ ;
+            except
+                    :Nasals %>: _ Vow :Nasals ;
+                     %{n%}: %>: _ ;
+
+"L Desonorisation"
+%{L%}:д <=> [ :Liquid | :Nasals | :VoicedObstruents ] %>: _ ;
+
+"M Desonorisation"
+%{M%}:б <=> [ :Nasals | :VoicedObstruents ]/[ %>: | %  ] _ ;
+            except
+                                    :Nasals %>: _ Vow :Nasals ;
+
+!!!! Nasal harmony !!!!
+"D nasal harmony"
+%{D%}:н <=> :Nasals %>: _ Vow :Nasals ;
+            %{n%}:0 %>: _ Vow :Nasals ;
+
+!!!! Assimilation !!!!
+
+"Forward voicing assimilation"
+Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
+          where Cx in ( %{M%}  %{D%}  %{L%}  %{N%} )
+                Cy in (   п      т      т      т   )
+                matched;
+
+"Voicing assimilation of front G"
+%{G%}:к <=> :FrontVow [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: ] _ ;
+                               [ :VoicelessCns & :FrontCns ]/[ %>: ] _ ;
+
+"Voicing assimilation of back G"
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: ] _ ;
+
+"Voicing assimilation of G across space"
+%{G%}:қ <=> :VoicelessCns %  _ ;
+
+"Normal G across space"
+%{G%}:ғ <=> %  _ ;
+            except
+                   :VoicelessCns %  _ ;
+
+"Intervocalic voicing of п"
+п:б <=> :Vow (:0) _ %>: (:0) :Vow ;
+        except
+               [ :LowVow ]/[ :0 ] _ %>: [ :HighVow :п ]/[ :0 ] ;
+
+"Lenition of п to у in Ip forms"
+п:у <=> [ :LowVow ]/[ :0 ] _ %>: [ :HighVow :п ]/[ :0 ] ;
+
+"Intervocalic voicing of к/қ"
+Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
+          where Cx in ( к қ )
+                Cy in ( г ғ )
+                matched;
+
+!!!! Dissimilation !!!!
+
+"Passive {l} becomes n after verb stem ending in /l/"
+%{l%}:н <=> [ л :Vow ]/[ :0 | %>: ] _ ;
+
+!!!! Vowel Harmony !!!!
+
+"I Vowel Harmony"
+%{I%}:і <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 ] _ ;
+                                    [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+                                 [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
+            except
+                                                %{n%}:н/[ :0 | %>: ] _ ;
+                                           [ :BackCns ]/[ %>: | :0 ] _ ;
+                                 [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+!                                                 [ й: ]/[ %>: | :0 ] _ ;
+                                                             %{o%}:0 _ ;
+
+"A Vowel Harmony"
+%{A%}:е <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 | %  ] _ ;
+                                         [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+                                      [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
+            except
+                                                [ :BackCns ]/[ %>: | :0 ] _ ;
+                                      [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+                                                           [ й: ]/[ %>: ] _ ;
+
+"E Vowel Harmony"
+%{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0 ] _ ;
+                      [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+                 ! FIXME: this is supposed to make front vowels after и
+                 !        but doesn't seem to work :(
+                 !        e.g., и<v><TD><aor><p1><sg>
+                 [ .#. [ :Cns - :қ ]* и ]/[ %>: | :0 ] _ ;
+            except
+                                     :Vow/[ :0 | %>: ] _ ;
+                                 [ і:0 | ы:0 ]/[ %>: ] _ ;
+                                        [ й: ]/[ %>: ] _ ;
+
+"Harmony of unepenthesised vowel in some stems"
+%{y%}:і <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0] _ [ :Cns [ .#. | :Cns ] ]/[ :0 | %>:] ;
+
+
+"Turn {E} into й after a vowel"
+%{E%}:й <=> [ :VowRight ]/[ %>: | :0 ] _ ;
+            except
+                 [ і:0 | ы:0 ]/[ %>: ] _ ;
+                   [ й: ]/[ %>: | :0 ] _ ;
+
+"Turn {E} into и to combine with a і and ы"
+%{E%}:и <=> [ і:0 | ы:0 ]/[ %>: ] _ ;
+            except
+              [ й: ]/[ %>: | :0 ] _ ;
+
+!!! More concise than following two rules, but does it work?
+!"Delete і and ы before {E} so that the result can be и"
+!і:0 <=> _ [ %{E%} ]/[ %>: ] ;
+!        where I in ( і ы ) ;
+
+"Delete і before {E} so that the result can be и"
+і:0 <=> _ [ %{E%}: ]/[ %>: ] ;
+
+"Delete ы before {E} so that the result can be и"
+ы:0 <=> _ [ %{E%}: ]/[ %>: ] ;
+
+
+!!!!!!!!!!!!   й vowel harmony  !!!!!!!!!!
+
+"Vowel harmony for archiphoneme {A} after й"
+%{A%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
+        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я )
+        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ю  у )
+               matched ;
+
+"Vowel harmony for archiphoneme {E} after й" ! should be just like {A}
+%{E%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
+        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я )
+        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ю  у )
+              matched ;
+
+"Deletion of й before yoticised vowels when not earlier in a stem"
+й:0 <=> _ %>: [ :YotVow ]/[ :0 ] ;
+
+!"Delete й before yoticised vowels"
+!й:0 <=> _ ( %>: ) YotVow ;
+
+!"A Vowel harmony after й"
+!%{A%}:я <=> [ :BackVow :Cns* й:0 ]/[ %>: ] _ ;
+
+!!!! Consonant-vowel interactions !!!!
+
+!! FIXME:  суға still surfacing as суге
+"Back assimilation of G"
+! %{G%}:ғ <=> :BackVow [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
+! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
+%{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
+                  [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+            except
+    :VoicelessCns/[ %>: | :0 ] _ ;
+        :FrontCns/[ %>: | :0 ] _ ;
+                   :Nasals %>: _ %{A%}: .#. ;
+
+!!!"Assimilation of G to 
+!!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
+!!!
+!!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
+
+"Back assimilation of K"
+%{K%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
+
+
+!!!! Disappearing stuff !!!!
+
+"Deletion of ы before у"
+ы:0 <=> _ у/[ %>: | :0 ] ;
+
+"Deletion of і before у"
+і:0 <=> _ у/[ %>: | :0 ] ;
+
+"Deletion of {S} after a consonant"
+!%{S%}:0 <=> [ :Cns | й: ]/[ %>: | :0 ] _ ;
+%{S%}:0 <=> [ :CnsRight ]/[ %>: | :0 ] _ ;
+
+"Deletion of {I} after vowels"
+%{I%}:0 <=> [ :VowRight ]/[ :0 | %>: ] _ ;
+            except
+                               %{o%}:0 _ ;
+
+! "Dialectal deletion of л between low vowel and Iп"   ! Dir/LR
+! л:0 <=> :LowVow _ %>: %{I%}: :п ;                    ! Dir/LR
+! 
+! "Dialectal deletion of I when л deletes before Iп"   ! Dir/LR
+! %{I%}:0 <=> л:0 %>: _ :п ;                           ! Dir/LR
+
+"Dialectal deletion of л between low vowel and Iп"
+л:0 <=> :LowVow _ %>: %{o%}:0 ;
+
+"Dialectal deletion of I when л deletes before Iп"
+%{I%}:0 <=> %{o%}:0 _ ;
+
+"Epenthesis in some stems"
+%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
+
+!!!!  Possessive + case stuff !!!!
+
+"Deletion of accusative {N} after {n}"
+%{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
+
+"Deletion of {n} before genitive {N}s"
+%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+
+!"Deletion of ablative-initial {D} after {n}"
+!%{D%}:0 <=> %{n%}: %>: _ %{A%}: :н ;
+
+"Deletion of {n} before ablative {D}"
+%{n%}:0 <=> _ %>: %{D%}: %{A%}: :н ;
+
+"Deletion of {n} before instrumental {M}"
+%{n%}:0 <=> _ %>: %{M%}: :е :н ;
+
+"Deletion of dative {G} after px1sg, px2sg"
+%{G%}:0 <=>  %{I%}: :Nasals %>: _ %{A%}: .#. ;
+
+"/n/ deletion in px3 nominative"
+%{n%}:0 <=> _ .#. ;
+
+"Deletion of {I} after {n}"
+%{I%}:0 <=> %{n%}:н/[ :0 | %>: ] _ ;
+            except
+                         %{o%}:0 _ ;
+
+"Deletion of numeral final - in nominative"
+%-:0 <=> [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] _  .#. ;
