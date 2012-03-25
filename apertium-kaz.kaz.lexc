@@ -48,6 +48,7 @@ Multichar_Symbols
 %<px1pl%>   ! First person plural
 %<px2pl%>   ! Second person plural
 %<px%>      ! General possessive -нікі
+%<frm%>     ! formal address   ! FIXME: need better comment
 
 ! Cases ! Килешләр ! Падежи
 %<nom%>     ! Nominative
@@ -59,8 +60,9 @@ Multichar_Symbols
 %<ins%>     ! Instrumental 
 
 !! Some additional ~cases
-%<locattr%>        ! Relativised locative  !! -DAGI
-%<sim%>            ! Similative            !! -дай/-дәй, -тай, -тәй
+%<locattr%>        ! Relativised locative (<rloc> initially) !! -DAGI
+%<sim%>            ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
+%<reas%>           ! Reason
 
 ! Levels of comparison of adjectives
 %<pst%>     ! Positive
@@ -79,6 +81,38 @@ Multichar_Symbols
 !%<recip%>   ! Reciprocal pronoun
 
 ! Tense, aspect, mood !! OMG, this is hard
+%<prt_perf%> ! perfect participle
+%<prt_plan%> ! plan participle
+%<prt_cond%> ! conditional participle
+%<prt_impf%> ! imperfect participle
+%<prt_irre%> ! irrealis participle
+
+%<ger_ppot%> ! gerund p??? potential
+%<ger_past%> ! past/perfect gerund
+%<ger_perf%> ! perfective gerund
+%<ger_impf%> ! imperfective gerund
+%<ger%>      ! just a gerund
+%<ger_abs%>  ! absolute(?) gerund
+
+%<vadj_fut%>  ! future verbal adjective
+%<vadj_fut2%> ! another future verbal adjective
+%<vadj_past%> ! past verbal adjective
+%<vadj_impf%> ! imperfect verbal adjective
+%<vadj_pot%>  ! potential verbal adjective
+
+%<exi%>     ! Perfect participle
+%<pfp%>     ! Perfect participle
+
+%<ifi%>     ! eyewitness past
+%<past%>    ! past
+%<evid%>    ! evidential
+%<aor%>     ! non-future
+
+%<mod_qst%> ! Modal question partical
+%<mod_foc%> ! focus thingy
+%<mod_ass%> ! assertive
+
+%<pass%>    ! passive
 
 ! Transitivity
 %<tv%>      ! Transitive
