@@ -1,106 +1,96 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 Multichar_Symbols
- 
+! Followed http://wiki.apertium.org/wiki/Turkic_languages
+
+! Part of speech categories 
 %<n%>       ! Noun
-%<np%>      ! Proper noun
-%<v%>       ! Verb
-%<prn%>     ! Pronoun 
-%<num%>     ! Numeral
 %<adj%>     ! Adjective
-%<det%>     ! Determiner
+%<num%>     ! Numeral
+%<prn%>     ! Pronoun 
+%<v%>       ! Verb
+%<vaux%>    ! Auxilary verb
 %<adv%>     ! Adverb
 %<post%>    ! Postposition
 %<postadv%> ! Postadverb
-%<abbr%>    ! Abbreviation
-%<ij%>      ! Interjection 
 %<cnjcoo%>  ! Co-ordinating conjunction
+%<cnjsub%>  ! Sub-ordinating conjunction
+%<part%>    ! Particle
+%<ij%>      ! Interjection 
+%<abbr%>    ! Abbreviation
 %<cop%>     ! Copula
+%<det%>     ! Determiner
+%<cnjadv%>  ! ~Союз
 
-%<pers%>    ! Personal
-%<ord%>     ! Ordinal
-%<itg%>     ! Interrogative
-%<ref%>     ! Reflexive
-%<ind%>     ! Indefinite
-
-%<pst%>     ! positive
-%<comp%>    ! comparative
-%<coll%>    ! collective-numeral pronoun
-%<recip%>   ! reciprocal pronoun
-%<attr%>    ! used for KI
-
+! Arbitrary subcategories
+!! for nouns
+%<np%>      ! Proper noun
 %<top%>     ! Toponym
 %<ant%>     ! Anthroponym
 %<cog%>     ! Cognomen
 
-%<m%>       ! Masculine
-%<f%>       ! Feminine
+!! Some "syntactic" categories
+%<attr%>           ! Attributive
+%<subst%>          ! Substantive
+%<pred%>           ! Predicative
+%<advl%>           ! Adverbial
 
+! Numbers ! Сан ! Число
 %<sg%>      ! Singular
 %<pl%>      ! Plural
 
-%<tv%>      ! Transitive
-%<iv%>      ! Intransitive
-%<TD%>      ! Temporary tag (unknown transitivity)
-
-%<p1%>      ! First person 
-%<p2%>      ! Second person 
-%<p3%>      ! Third person 
-
+! Possessives
 %<px1sg%>   ! First person singular
 %<px2sg%>   ! Second person singular
 %<px3sp%>   ! Third person singular/plural
 %<px1pl%>   ! First person plural
 %<px2pl%>   ! Second person plural
 %<px%>      ! General possessive -нікі
-%<frm%>     ! formal address   ! FIXME: need better comment
 
-%<prt_perf%> ! perfect participle
-%<prt_plan%> ! plan participle
-%<prt_cond%> ! conditional participle
-%<prt_impf%> ! imperfect participle
-%<prt_irre%> ! irrealis participle
-
-%<ger_ppot%> ! gerund p??? potential
-%<ger_past%> ! past/perfect gerund
-%<ger_perf%> ! perfective gerund
-%<ger_impf%> ! imperfective gerund
-%<ger%>      ! just a gerund
-%<ger_abs%>  ! absolute(?) gerund
-
-%<vadj_fut%>  ! future verbal adjective
-%<vadj_fut2%> ! another future verbal adjective
-%<vadj_past%> ! past verbal adjective
-%<vadj_impf%> ! imperfect verbal adjective
-%<vadj_pot%>  ! potential verbal adjective
-
+! Cases ! Килешләр ! Падежи
 %<nom%>     ! Nominative
 %<gen%>     ! Genitive
 %<dat%>     ! Dative 
 %<acc%>     ! Accusative 
-%<loc%>     ! Locative 
 %<abl%>     ! Ablative 
+%<loc%>     ! Locative 
 %<ins%>     ! Instrumental 
 
-%<rloc%>    ! Relativised locative -DAGI
-%<sim%>     ! Similative (<apprx> in kymorph)
-%<reas%>    ! Reason
+!! Some additional ~cases
+%<locattr%>        ! Relativised locative  !! -DAGI
+%<sim%>            ! Similative            !! -дай/-дәй, -тай, -тәй
 
-%<exi%>     ! Perfect participle
-%<pfp%>     ! Perfect participle
+! Levels of comparison of adjectives
+%<pst%>     ! Positive
+%<comp%>    ! Comparative
+%<sup%>     ! Superlative
 
-%<ifi%>     ! eyewitness past
-%<past%>    ! past
-%<evid%>    ! evidential
-%<aor%>     ! non-future
+! Pronoun types
+%<pers%>    ! Personal
+%<itg%>     ! Interrogative
+%<dem%>     ! Demonstrative
+%<ind%>     ! Indefinite
+%<qnt%>     ! Quantifier
+%<ord%>     ! Ordinal
+%<ref%>     ! Reflexive
+!%<coll%>    ! Collective-numeral pronoun
+!%<recip%>   ! Reciprocal pronoun
 
-%<mod_qst%> ! Modal question partical
-%<mod_foc%> ! focus thingy
-%<mod_ass%> ! assertive
+! Tense, aspect, mood !! OMG, this is hard
 
-%<pass%>    ! passive
+! Transitivity
+%<tv%>      ! Transitive
+%<iv%>      ! Intransitive
+%<TD%>      ! Temporary tag (unknown transitivity)
 
+! Person
+%<p1%>      ! First person 
+%<p2%>      ! Second person 
+%<p3%>      ! Third person
+
+! Punctuation
 %<sent%>    ! Sentence marker
 %<guio%>    ! Hyphen
 %<cm%>      ! Comma
@@ -109,6 +99,10 @@ Multichar_Symbols
 %<lquot%>   ! Quote marker (left hand side) 
 %<rpar%>    ! Parenthetical marker (right hand side) 
 %<lpar%>    ! Parenthetical marker (left hand side) 
+
+! Some additional tags
+%<m%>       ! Masculine !! For anthroponyms
+%<f%>       ! Feminine  !! For anthroponyms
 
 %{L%}       ! Archiphoneme 'l': realised as л, д, т
 %{N%}       ! Archiphoneme 'n': realised as н, д, т
@@ -124,6 +118,8 @@ Multichar_Symbols
 %{y%}       ! Realised as '' or '{I}'; only used in epenthesis for nouns
 %{o%}       ! Realised as ''; triggers dialectal interpretation of Iп
 %{E%}       ! Realised as 'а', 'е', 'й' (={A}/й)
+
+%>          ! Morpheme boundary
 
 LEXICON Root
 NounStems ;
