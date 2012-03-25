@@ -1,0 +1,145 @@
+Alphabet 
+
+А а Ә ә Б б В в Г г Ғ ғ Д д Е е Ё ё Ж ж З з И и Й й К к Қ қ
+Л л М м Н н Ң ң О о Ө ө П п Р р С с Т т У у Ұ ұ Ү ү Ф ф Һ һ Х х Ц ц Ч ч Ш ш
+Щ щ ъ Ы ы І і ь Э э Ю ю Я я 
+
+%>:0
+
+%{а%}:а %{ы%}:ы %{ғ%}:ғ %{м%}:м %{д%}:д %{н%}:н
+
+;
+
+Sets
+
+Cns = б в г ғ д ж з к қ л м н ң п р с т ф һ х ц ч ш щ 
+      Б В Г Ғ Д Ж З К Қ Л М Н Ң П Р С Т Ф Һ Х Ц Ч Ш Щ ;
+
+Vow = ө ү е і о ұ а ы я ә 
+      Ө Ү Е І О Ұ А Ы Я Ә ;
+
+FrontVow = ө ү е і Ө Ү Е І;
+FrontRoundedVow = ө ү Ө Ү;
+FrontUnroundedVow = е і Е І;
+BackVow = о ұ а ы я ю О Ұ А Ы Я Ә Ю;
+ArchiVow = %{а%} %{ы%} ;
+ArchiCns = %{ғ%} %{м%} %{д%} %{н%};
+BackRoundedVow = о ұ ;
+BackUnroundedVow = а ы я А Ы Я ;
+MidVow = ә Ә;
+VoicedCns = б д г ғ в ж з Б Д Г Ғ В Ж З ;
+VoicelessCns = п т к қ ф ш с щ х һ П Т К Қ Ф Ш С Щ Х Һ;
+SonorantCns = м н ң л р М Н Ң Л Р;
+DevoiceOnly = д ж з Д Ж З;
+VoiceDevoice = б г ғ п к қ ф х һ Б Г Ғ П К Қ Ф Х Һ;
+NotVoicelessCns = VoicedCns SonorantCns ;
+NonFront = Cns  BackVow ArchiVow ArchiCns %> ;
+NonBack =  Cns FrontVow ArchiVow ArchiCns %> ;
+NonBackRounded = Cns FrontVow BackUnroundedVow ArchiVow ;
+NonFrontUnrounded = Cns BackVow ;
+NotVow = Cns ArchiCns %> ;
+
+Rules
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"Short Back {a} Harmony"
+%{а%}:е <=> FrontVow: NonBack:* %>: NonBack:* _ ;
+
+! мектеп>д{а}
+! мектеп>де
+
+"Short Back {ы} Harmony"
+%{ы%}:і <=> FrontVow: NonBack:* %>: NonBack:* _ ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Devoicing involves the change of a voiced consonant to its voiceless 
+! counterpart when it comes in contact with an affix beginning with a 
+! voiceless consonant, e.g. жагу 'to burn' > жақтыру 'to cause to 
+! burn', қасқалдақ Fulcia atra (Eurasian coot) < қаз 'goose' + қалдақ. 
+
+"Consonant devoicing in C-final stems before vowel suffix"
+Cx:Cy <=> _ %>: Vow  ;
+          where Cx in (п к)
+                Cy in (б ғ) matched ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! When suffixes with the initial consonants л-, б-, м-, н-, д- are added to 
+! stems with a final consonant, the initial consonant of the suffix is 
+! assimilated to the stem final consonant. For example, after voiceless 
+! consonants (-п, -т, -с, -к, -қ) the plural suffix +лар / +лер changes 
+! to +тар / +тер
+
+"Sonorant л assimilation to д after voiced consonants"
+л:д <=> [ ж | з | л | м | н | ң ] %>: _ %{а%}: р ;
+
+! құрал>лар
+! құрал>дар
+
+"Sonorant л assimilation to т after voiceless consonants"
+л:т <=> [ п | т | с | к | қ ] %>: _ %{а%}: р ;
+
+! жұрт>лар
+! жұрт>тар
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! /n/ surfaces as [n] after vowels; after voiced consonants it surfaces 
+! as [d], after unvoiced, [t] EXCEPT:
+! after nasals (m, n, ŋ), when there's a following nasal coda in the same 
+! syllable but across a SINGLE morphemic boundary, the /n/ surfaces as [n]
+
+"Realisation of {н} after voiced consonant"
+%{н%}:д <=> VoicedCns %>: _ ;
+
+"Realisation of {н} after voiceless consonant"
+%{н%}:т <=> VoicelessCns %>: _ ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! /m/ surfaces as [m] after vowels and consonants of higher sonority than 
+! nasals (й, у, р, л); after nasals and obstruents it surfaces as [d], after 
+! unvoiced, [t] after nasals (m, n, ŋ), when there's a following nasal coda 
+! in the same syllable but across a SINGLE morphemic boundary, 
+! the /m/ surfaces as [m]
+
+! /d/ surfaces as [n] in the same nasal harmony environment
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"Consonant ғ to қ assimilation in dative"
+%{ғ%}:қ <=> BackVow: NonFront:* [ б | в | г | ғ | д | к | қ | һ | п | с | т | ф | х | ц | ч | ш | щ ] %>: _ %{а%}: ;
+
+! даңқ>{ғ}{а}
+! даңқ>қ{а}
+
+"Consonant ғ to к assimilation in dative"
+%{ғ%}:к <=> FrontVow: NonBack:* [ б | в | г | ғ | д | к | қ | һ | п | с | т | ф | х | ц | ч | ш | щ ] %>: _ %{а%}: ;
+
+! мектеп>{ғ}{а}
+! мектеп>к{а}
+
+"Consonant ғ to г assimilation in dative"
+%{ғ%}:г <=> FrontVow: NonBack:* [ ж | з | й | л | м | н | ң | р | у ] %>: _ %{а%}: ;
+
+! мектеп>л{а}р>{ғ}{а}
+! мектеп>л{а}р>г{а}
+
+"Consonant ғ to қ assimilation in comparative"
+%{ғ%}:қ <=> BackVow: NonFront:* [ б | в | г | ғ | д | к | қ | һ | п | с | т | ф | х | ц | ч | ш | щ | ю ] %>: %{ы%}: р %{а%}: _ ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"Consonant д to т assimilation in locative"
+%{д%}:т <=> [ б | в | г | ғ | д | к | қ | һ | п | с | т | ф | х | ц | ч | ш | щ ] %>: _ %{а%}: ;
+
+! мектеп>{д}{а}
+! мектеп>т{а}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"Possessive с deletion after consonant"
+с:0 <=> NotVow: %>: _ ;
