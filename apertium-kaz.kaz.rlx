@@ -1,0 +1,74 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" ;
+
+SETS
+
+LIST BOS = (>>>) ;
+LIST EOS = (<<<) ;
+
+LIST A = adj ;
+LIST Adv = adv ;
+LIST Pron = prn ; 
+LIST N = n ; 
+LIST V = v ;
+LIST Det = det ; 
+LIST CC = cnjcoo ;
+LIST CS = cnjsub ;
+LIST Interj = ij ;
+LIST Num = num ; 
+LIST Post = post ; 
+LIST Postadv = postadv ; 
+LIST Cm = cm ; 
+
+LIST Pred = pred ;
+LIST Attr = attr ;
+
+LIST Interr = itg ;
+
+# Semantic lists 
+
+LIST MOVEMENT-V = "йөгер" ; 
+
+LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
+
+# All possible word categories
+
+SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
+
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ; 
+
+SET MARK =  Cm | ("\\") | ("\;") ;
+
+SET WORDMARK = WORD | MARK ;
+
+SET N-MOD = A | Det | Num | (n gen) | (prn gen) ;
+
+SET ADJ-MOD = Postadv | Adv ;
+
+SET NPMARK = N-MOD | ADJ-MOD ;
+
+# Categories which cannot be part of a noun phrase 
+
+SET NPNH = WORDMARK - PRE-N ;
+SET NPNHA = WORDMARK - PRE-N - Adv ;
+SET NOT-ADV = WORDMARK - Adv ;
+
+
+# Barriers 
+
+SET S-BOUNDARY = CS | Interr | EOS; 
+
+SECTION
+
+SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
+SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
+SELECT Det IF (-1C A) (1 N); 
+    ## Әхмәт тиз генә иске зур бер агачка йөгерә.
+    ## Әхмәт акрын гына иске зур бер агачка йөгерә.
+
+SELECT Det IF (0 V OR Det OR Pred OR N) (1* NPMARK BARRIER N) ;
+    ## пример : Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+    ## Акча бармы? Бар<pred>.
+    ## Акча бармы? Бар<pred>, ләкин бик аз!
+
+REMOVE Attr IF (NOT 1 N); 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="kaz-twol">
+    <pipeline>
+      <program name="hfst-strings2fst -S"/>
+      <program name="hfst-compose-intersect">
+        <file name=".deps/kaz.twol.hfst"/>
+      </program>
+      <program name="hfst-fst2strings"/>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-morph">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-lexc">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name=".deps/kaz.lexc.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="kaz-gener">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name="kaz.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-disam">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="kaz.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+</modes>
