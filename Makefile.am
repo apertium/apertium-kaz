@@ -2,8 +2,8 @@
 ## Makefile for apertium-kaz
 ###############################################################################
 
-RELEASE=0.5
-VERSION=0.5.0
+RELEASE=0.1
+VERSION=0.1.0
 LANG1=kaz
 BASENAME=apertium-$(LANG1)
 
