@@ -147,6 +147,7 @@ Multichar_Symbols
 %{A%}       ! Archiphoneme 'a': realsied as е, а
 %{I%}       ! Archiphoneme 'i': realised as і, ы
 %{S%}       ! Realised as 'с' or ''; only used in 3rd person morphology
+%{K%}       ! Realised as 'к' or 'қ'
 %{n%}       ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
 %{l%}       ! Realised as 'л' or 'н'; only used in passive -{I}{l}
 %{y%}       ! Realised as '' or '{I}'; only used in epenthesis for nouns
@@ -522,7 +523,7 @@ lEXICON ADJ-ORD
 LEXICON ADJ-LEVELS
 
 %<pst%>: CLIT ;
-%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;        ! Dir/LR
+%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 
 LEXICON ADJ-COMMON
 
@@ -2165,6 +2166,7 @@ Mәтхалық Npinfl-Antm; ! "Mätxalıq" (Arabic)
 Айғали Npinfl-Antm; ! "Ayğalıy" (Kazakh)
 Айғанша Npinfl-Antf; ! "Ayğansha" (Kazakh)
 Айғыз Npinfl-Antf; ! "Ayğız" (Kazakh)
+Айгүл Npinfl-Antf; ! "Aygül" (Kazakh)
 Айдай Npinfl-Antf; ! "Ayday" (Kazakh)
 Айдан Npinfl-Antm; ! "Aydan" (Kazakh)
 Айдана Npinfl-Antf; ! "Aydana" (Kazakh)
