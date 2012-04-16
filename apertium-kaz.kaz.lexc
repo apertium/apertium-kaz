@@ -173,6 +173,33 @@ Copula ;
 Punctuation ;
 Interjections ;
 
+LEXICON CLIT-MA
+
+!! Modal/discourse particles
+!%+ма%<mod_qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
+%+ма%<mod_qst%>:%>% %{M%}%{A%} # ;
+
+LEXICON CLIT-OTHER
+
+%+меді%<mod_qst%>:% %{M%}еді # ;   ! fix
+%+мекен%<mod_qst%>:% %{M%}екен # ; ! fix?
+%+шы%<mod_foc%>:%>ш%{I%} # ;
+%+ғой%<mod_ass%>:% %{G%}ой # ;
+%+ғана%<postadv%>:% %{G%}ана # ; ! "only"
+%+да%<postadv%>:% %{D%}%{A%} # ; ! "also"
+# ;
+
+LEXICON CLIT 
+
+CLIT-OTHER ;
+CLIT-MA ;
+# ;
+
+LEXICON CLIT-GENERAL
+CLIT ;
+V-PERS-COP ;
+
+
 LEXICON CASE
 %<nom%>: CLIT-GENERAL ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
@@ -340,33 +367,6 @@ LEXICON V-PERS-COND ! P_4
 %<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ;
 %<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}зд%{A%}р # ;
 %<p3%>%<pl%>: # ;
-
-
-LEXICON CLIT-MA
-
-!! Modal/discourse particles
-!%+ма%<mod_qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
-%+ма%<mod_qst%>:%>% %{M%}%{A%} # ;
-
-LEXICON CLIT-OTHER
-
-%+меді%<mod_qst%>:% %{M%}еді # ;   ! fix
-%+мекен%<mod_qst%>:% %{M%}екен # ; ! fix?
-%+шы%<mod_foc%>:%>ш%{I%} # ;
-%+ғой%<mod_ass%>:% %{G%}ой # ;
-%+ғана%<postadv%>:% %{G%}ана # ; ! "only"
-%+да%<postadv%>:% %{D%}%{A%} # ; ! "also"
-# ;
-
-LEXICON CLIT 
-
-CLIT-OTHER ;
-CLIT-MA ;
-# ;
-
-LEXICON CLIT-GENERAL
-CLIT ;
-V-PERS-COP ;
 
 LEXICON V-PERS-COP-SUF 
 
@@ -765,9 +765,9 @@ LEXICON PostpositionStems
 бойынша Postposinfl ; ! "about, according to"
 мен:%{M%}ен Postposinfl ; ! "with"
 мен:%{M%}енен Postposinfl ; ! "with"  ! Dir/LR
-мен:мен POSTADV ; ! "with" Dir/LR TOREMOVE
-мен:бен POSTADV ; ! "with" Dir/LR TOREMOVE
-мен:пен POSTADV ; ! "with" Dir/LR TOREMOVE
+мен:мен Postposinfl ; ! "with" Dir/LR TOREMOVE
+мен:бен Postposinfl ; ! "with" Dir/LR TOREMOVE
+мен:пен Postposinfl ; ! "with" Dir/LR TOREMOVE
 туралы Postposinfl ; ! "about"
 соң Postposinfl ; ! "after" + ABL
 сәйкес Postposinfl ; ! "in accordance with" + DAT
