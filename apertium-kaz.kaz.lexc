@@ -231,7 +231,7 @@ LEXICON VOL-ENDINGS
 LEXICON CASE-ETC
 CASE ;
 GEN-POS ;
-CLIT ;
+!CLIT ;
 %<adv%>:ш%{A%} # ; ! FIXME: might not be quite the right place
 
 LEXICON POSSESSION
@@ -344,7 +344,7 @@ LEXICON V-PERS-PRES ! P_6
 
 LEXICON V-PERS-COP ! P_3
 
-%+е%<cop%>: V-PERS-COP-SUF ; 
+%+е%<cop%>: V-PERS-COP-SUF-NO3 ; 
 
 LEXICON V-PERS-PAST ! P_4
 
@@ -368,15 +368,19 @@ LEXICON V-PERS-COND ! P_4
 %<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}зд%{A%}р # ;
 %<p3%>%<pl%>: # ;
 
-LEXICON V-PERS-COP-SUF 
+LEXICON V-PERS-COP-SUF-NO3
 
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ; 
 %<p2%>%<sg%>:%>с%{I%}ң CLIT ; 
 %<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
-%<p3%>%<sg%>:%> CLIT ; 
 %<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ; 
 %<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;  
 %<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
+
+LEXICON V-PERS-COP-SUF 
+
+V-PERS-COP-SUF-NO3;
+%<p3%>%<sg%>:%> CLIT ; 
 %<p3%>%<pl%>:%> CLIT ; 
 
 LEXICON V-PERS-EVID-SUF 
