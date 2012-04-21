@@ -6,171 +6,176 @@ Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories 
-%<n%>       ! Noun
-%<adj%>     ! Adjective
-%<num%>     ! Numeral
-%<prn%>     ! Pronoun 
-%<v%>       ! Verb
-%<vaux%>    ! Auxilary verb
-%<adv%>     ! Adverb
-%<post%>    ! Postposition
-%<postadv%> ! Postadverb
-%<cnjcoo%>  ! Co-ordinating conjunction
-%<cnjsub%>  ! Sub-ordinating conjunction
-%<part%>    ! Particle
-%<ij%>      ! Interjection 
-%<abbr%>    ! Abbreviation
-%<cop%>     ! Copula
-%<det%>     ! Determiner
-%<cnjadv%>  ! ~Союз
+%<n%>                 ! Noun
+%<np%>                ! Proper noun
+%<adj%>               ! Adjective
+%<num%>               ! Numeral
+%<prn%>               ! Pronoun 
+%<v%>                 ! Verb
+%<vaux%>              ! Auxilary verb
+%<adv%>               ! Adverb
+%<post%>              ! Postposition
+%<postadv%>           ! Postadverb
+%<cnjcoo%>            ! Co-ordinating conjunction
+%<cnjsub%>            ! Sub-ordinating conjunction
+%<part%>              ! Particle
+%<ij%>                ! Interjection 
+%<abbr%>              ! Abbreviation
+%<cop%>               ! Copula
+%<det%>               ! Determiner
+%<cnjadv%>            ! ~Союз
 
 ! Arbitrary subcategories
 !! for nouns
-%<np%>      ! Proper noun
-%<top%>     ! Toponym
-%<ant%>     ! Anthroponym
-%<cog%>     ! Cognomen
+%<top%>               ! Toponym
+%<ant%>               ! Anthroponym
+%<cog%>               ! Cognomen
+%<al%>                ! Other
 
 !! Some "syntactic" categories
-%<attr%>           ! Attributive
-%<subst%>          ! Substantive
-%<pred%>           ! Predicative
-%<advl%>           ! Adverbial
+%<attr%>              ! Attributive
+%<subst%>             ! Substantive
+%<pred%>              ! Predicative
+%<advl%>              ! Adverbial
 
 ! Numbers
-%<sg%>      ! Singular
-%<pl%>      ! Plural
+%<sg%>                ! Singular
+%<pl%>                ! Plural
 
 ! Possessives
-%<px1sg%>   ! First person singular
-%<px2sg%>   ! Second person singular
-%<px3sp%>   ! Third person singular/plural
-%<px1pl%>   ! First person plural
-%<px2pl%>   ! Second person plural
-%<px%>      ! General possessive -нікі
-%<frm%>     ! formal address   ! FIXME: need better comment
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive -нікі
+%<frm%>               ! formal address   ! FIXME: need better comment
 
 ! Cases
-%<nom%>     ! Nominative
-%<gen%>     ! Genitive
-%<dat%>     ! Dative 
-%<acc%>     ! Accusative 
-%<abl%>     ! Ablative 
-%<loc%>     ! Locative 
-%<ins%>     ! Instrumental 
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
 
 !! Some additional ~cases
-%<locattr%>        ! Relativised locative (<rloc> initially) !! -DAGI
-%<sim%>            ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
-%<reas%>           ! Reason
+%<sim%>               ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
+%<reas%>              ! Reason
+%<abe%>               ! Abessive       
 
 ! Levels of comparison of adjectives
-%<comp%>    ! Comparative
-%<sup%>     ! Superlative
+%<comp%>              ! Comparative
+%<sup%>               ! Superlative
 
 ! Pronoun types
-%<pers%>    ! Personal
-%<itg%>     ! Interrogative
-%<dem%>     ! Demonstrative
-%<ind%>     ! Indefinite
-%<qnt%>     ! Quantifier
-%<ord%>     ! Ordinal
-%<ref%>     ! Reflexive
-!%<coll%>    ! Collective-numeral pronoun
-!%<recip%>   ! Reciprocal pronoun
+%<pers%>              ! Personal
+%<itg%>               ! Interrogative
+%<dem%>               ! Demonstrative
+%<ind%>               ! Indefinite
+%<qnt%>               ! Quantifier
+%<ord%>               ! Ordinal
+%<ref%>               ! Reflexive
+!%<coll%>              ! Collective-numeral pronoun
+!%<recip%>             ! Reciprocal pronoun
 
 ! Tense, aspect, mood !! OMG, this is hard
-%<prt_perf%> ! perfect participle
-%<prt_plan%> ! plan participle
-%<prt_cond%> ! conditional participle
-%<prt_impf%> ! imperfect participle
-%<prt_irre%> ! irrealis participle
+%<prc_perf%>          ! perfect participle
+%<prc_plan%>          ! plan participle
+%<prc_cond%>          ! conditional participle
+%<prc_impf%>          ! imperfect participle
+%<prc_irre%>          ! irrealis participle
 
-%<ger_ppot%> ! gerund p??? potential
-%<ger_past%> ! past/perfect gerund
-%<ger_perf%> ! perfective gerund
-%<ger_impf%> ! imperfective gerund
-%<ger%>      ! just a gerund
-%<ger_abs%>  ! absolute(?) gerund
+%<ger_ppot%>          ! gerund p??? potential
+%<ger_past%>          ! past/perfect gerund
+%<ger_perf%>          ! perfective gerund
+%<ger_impf%>          ! imperfective gerund
+%<ger%>               ! just a gerund
+%<ger_abs%>           ! absolute(?) gerund
 
-%<vadj_fut%>  ! future verbal adjective
-%<vadj_fut2%> ! another future verbal adjective
-%<vadj_past%> ! past verbal adjective
-%<vadj_impf%> ! imperfect verbal adjective
-%<vadj_pot%>  ! potential verbal adjective
+%<glp_fut%>           ! future verbal adjective
+%<glp_fut2%>          ! another future verbal adjective
+%<glp_past%>          ! past verbal adjective
+%<glp_impf%>          ! imperfect verbal adjective
+%<glp_pot%>           ! potential verbal adjective
 
-%<exi%>     ! Perfect participle
-%<pfp%>     ! Perfect participle
+%<exi%>               ! 
+%<pfp%>               ! Perfect participle
 
-%<imp%>     ! imperative
-%<ifi%>     ! eyewitness past
-%<past%>    ! past
-%<evid%>    ! evidential
-%<aor%>     ! non-future
-%<mod_qst%> ! Modal question partical
-%<mod_foc%> ! focus thingy
-%<mod_ass%> ! assertive
+%<imp%>               ! imperative
+%<ifi%>               ! eyewitness past
+%<past%>              ! past
+%<evid%>              ! evidential
+%<aor%>               ! non-future
 
-%<pass%>    ! passive
+%<mod_qst%>           ! Modal question particle
+%<mod_foc%>           ! focus thingy
+%<mod_ass%>           ! assertive
+
+%<pass%>              ! passive
+%<caus%>              ! causative
 
 ! Transitivity
-%<tv%>      ! Transitive
-%<iv%>      ! Intransitive
-%<TD%>      ! Temporary tag (unknown transitivity)
+%<tv%>                ! Transitive
+%<iv%>                ! Intransitive
+%<TD%>                ! Temporary tag (unknown transitivity)
 
 ! Person
-%<p1%>      ! First person 
-%<p2%>      ! Second person 
-%<p3%>      ! Third person
+%<p1%>                ! First person 
+%<p2%>                ! Second person 
+%<p3%>                ! Third person
 
 ! Punctuation
-%<sent%>    ! Sentence marker
-%<guio%>    ! Hyphen
-%<cm%>      ! Comma
-%<apos%>    ! Apostrophe
-%<rquot%>   ! Quote marker (right hand side) 
-%<lquot%>   ! Quote marker (left hand side) 
-%<rpar%>    ! Parenthetical marker (right hand side) 
-%<lpar%>    ! Parenthetical marker (left hand side) 
+%<sent%>              ! Sentence marker
+%<guio%>              ! Hyphen
+%<cm%>                ! Comma
+%<apos%>              ! Apostrophe
+%<rquot%>             ! Quote marker (right hand side) 
+%<lquot%>             ! Quote marker (left hand side) 
+%<rpar%>              ! Parenthetical marker (right hand side) 
+%<lpar%>              ! Parenthetical marker (left hand side) 
 
 ! Some additional tags
-%<m%>       ! Masculine !! For anthroponyms
-%<f%>       ! Feminine  !! For anthroponyms
+%<m%>                 ! Masculine !! For anthroponyms
+%<f%>                 ! Feminine  !! For anthroponyms
+%<mf%>                ! Masculine or feminine !! For cognomen
 
-%{L%}       ! Archiphoneme 'l': realised as л, д, т
-%{N%}       ! Archiphoneme 'n': realised as н, д, т
-%{M%}       ! Archiphoneme 'm': realised as м, б, п
-%{G%}       ! Archiphoneme 'g': realised as к, қ, г, ғ
-%{G%}       ! Archiphoneme 'k': realised as к, қ
-%{D%}       ! Archiphoneme 'd': realised as д, т
-%{A%}       ! Archiphoneme 'a': realsied as е, а
-%{I%}       ! Archiphoneme 'i': realised as і, ы
-%{S%}       ! Realised as 'с' or ''; only used in 3rd person morphology
-%{K%}       ! Realised as 'к' or 'қ'
-%{n%}       ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
-%{l%}       ! Realised as 'л' or 'н'; only used in passive -{I}{l}
-%{y%}       ! Realised as '' or '{I}'; only used in epenthesis for nouns
-%{o%}       ! Realised as ''; triggers dialectal interpretation of Iп
-%{E%}       ! Realised as 'а', 'е', 'й' (={A}/й)
+%{L%}                 ! Archiphoneme 'l': realised as л, д, т
+%{N%}                 ! Archiphoneme 'n': realised as н, д, т
+%{M%}                 ! Archiphoneme 'm': realised as м, б, п
+%{G%}                 ! Archiphoneme 'g': realised as к, қ, г, ғ
+%{G%}                 ! Archiphoneme 'k': realised as к, қ
+%{D%}                 ! Archiphoneme 'd': realised as д, т
+%{A%}                 ! Archiphoneme 'a': realsied as е, а
+%{I%}                 ! Archiphoneme 'i': realised as і, ы
+%{S%}                 ! Realised as 'с' or ''; only used in 3rd person morphology
+%{K%}                 ! Realised as 'к' or 'қ'
+%{n%}                 ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
+%{l%}                 ! Realised as 'л' or 'н'; only used in passive -{I}{l}
+%{y%}                 ! Realised as '' or '{I}'; only used in epenthesis for nouns
+%{o%}                 ! Realised as ''; triggers dialectal interpretation of Iп
+%{E%}                 ! Realised as 'а', 'е', 'й' (={A}/й)
 
-%>          ! Morpheme boundary
+%>                    ! Morpheme boundary
+% 
 
 LEXICON Root
-Nouns ;
-ProperNouns ;
-Verbs ;
-Adjectives ;
-Adverbs;
+Copula ;
 Conjunctions ;
-Pronouns ;
 Postpositions ;
 Postadverbs ;
-Numerals ;
-Abbreviations ;
+Pronouns ;
 Determiners ;
-Copula ;
-Punctuation ;
+Numerals ;
+Nouns ;
+ProperNouns ;
+Adjectives ;
+Adverbs;
+Verbs ;
 Interjections ;
+Abbreviations ;
+Punctuation ;
 
 LEXICON CLIT-MA
 
@@ -236,7 +241,7 @@ GEN-POS ;
 LEXICON POSSESSION
 POSSESSION-ENDINGS ;
 
-LEXICON NP-Common
+LEXICON NP-COMMON
 N-INFL-COMMON ;
 
 LEXICON N-INFL-COMMON 
@@ -245,17 +250,16 @@ CASE-ETC ;
 
 LEXICON ADJ-DAGI
 !! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of CASES
-%<n%>: CASE ;
+%<subst%>: CASE ;
 ! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of N-INFL
 !%<n%>: N-INFL ;
-%<adj%>: CLIT ;
+%<attr%>: CLIT ;
 # ;
 
 LEXICON GEN-POS
 %<px%>:%>%{N%}ікі%{n%} CASE ;
-%<rloc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
 %<sim%>:%>%{D%}%{A%}й ADJ-DAGI ;
-
 
 LEXICON SUBST
 
@@ -313,23 +317,23 @@ LEXICON NUM-ROMAN
 
 LEXICON NP-TOP
 
-%<np%>%<top%>: NP-Common ;
-%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
+%<np%>%<top%>: NP-COMMON ;
+!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>: NP-Common ;
-%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-Common ;
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>: NP-Common ;
-%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-Common ;
+%<np%>%<ant%>%<f%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-M
 
-%<np%>%<cog%>%<m%>: NP-Common ;
-%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-Common ;
+%<np%>%<cog%>%<m%>: NP-COMMON ;
+%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 !FIXME
 LEXICON V-PERS-PRES ! P_6
@@ -397,7 +401,6 @@ LEXICON V-PERS-EVID-SUF
 %<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
 %<p3%>%<pl%>: CLIT ; 
 
-
 LEXICON GER-INFL
 
 POSSESSION ;
@@ -424,10 +427,10 @@ V-INFL-NON-FINITE-REG ;
 LEXICON V-INFL-NON-FINITE-IRREG
 
 ! Adverbial Participles
-%<prt_perf%>:%>%{I%}п # ;
-%<prt_perf%>:%>%{o%}%{I%}п # ;    ! Dir/LR
-%<neg%>%<prt_perf%>:%>%{M%}%{A%}%>%{E%} # ;
-%<prt_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;     ! no negative form
+%<prc_perf%>:%>%{I%}п # ;
+%<prc_perf%>:%>%{o%}%{I%}п # ;    ! Dir/LR
+%<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} # ;
+%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;     ! no negative form
 
 ! Gerunds
 %<ger_fut%>:%>%{A%}р GER-INFL ;
@@ -436,18 +439,18 @@ LEXICON V-INFL-NON-FINITE-IRREG
 %<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-INFL ;
 
 ! Verbal Adjectives
-%<vadj_fut%>:%>%{A%}р V-ADJ ;
-%<neg%>%<vadj_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
-%<neg%>%<vadj_pot2%>:%>%{G%}%{I%}с V-ADJ ;
+%<glp_fut%>:%>%{A%}р V-ADJ ;
+%<neg%>%<glp_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
+%<neg%>%<glp_pot2%>:%>%{G%}%{I%}с V-ADJ ;
 
 
 LEXICON V-INFL-NON-FINITE-REG
 
 ! Adverbial participles
-%<prt_plan%>:%>%{G%}%{A%}л%{I%} # ;
-%<prt_cond%>:%>с%{A%} V-PERS-COND ;
-%<prt_impf%>:%>%{E%} # ;
-%<prt_irre%>:%>%{E%}т%{I%}н # ;
+%<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
+%<prc_cond%>:%>с%{A%} V-PERS-COND ;
+%<prc_impf%>:%>%{E%} # ;
+%<prc_irre%>:%>%{E%}т%{I%}н # ;
 
 ! Gerunds
 %<ger_past%>:%>%{G%}%{A%}н GER-INFL ;
@@ -457,10 +460,10 @@ LEXICON V-INFL-NON-FINITE-REG
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 
 ! Verbal adjectives 
-%<vadj_past%>:%>%{G%}%{A%}н V-ADJ ;
+%<glp_past%>:%>%{G%}%{A%}н V-ADJ ;
 %<vadj%>:%>%{G%}%{A%}н V-ADJ ;  ! both past (or perf?) and general
-%<vadj_impf%>:%>%{E%}т%{I%}н V-ADJ ;
-%<vadj_pot%>:%>у%>ш%{I%} V-ADJ ;
+%<glp_impf%>:%>%{E%}т%{I%}н V-ADJ ;
+%<glp_pot%>:%>у%>ш%{I%} V-ADJ ;
 
 !  Imperatives
 ! FIXME: check
@@ -521,10 +524,10 @@ LEXICON V-ADJ
 ADJ-COMMON ;  
 CLIT ; 
 
-lEXICON ADJ-ORD
+LEXICON ADJ-ORD
 
 %<adj%>%<ord%>: # ;
-%<adj%>%<ord%>%<n%>: POSSESSION ;
+%<adj%>%<ord%>%<subst%>: SUBST ;
 
 LEXICON ADJ-LEVELS
 
@@ -533,21 +536,21 @@ LEXICON ADJ-LEVELS
 LEXICON ADJ-COMMON
 
 %<adj%>: CLIT ;
-%<n%>: POSSESSION ;  ! all adjectives can be used as nouns
+%<adj%>%<subst%>: SUBST ;  ! all adjectives can be used as nouns
 
 LEXICON ADV-WITH-KI
 
 ADV ;
-AdjKiInfl ;
+ADJ-KI-INFL ;
 
 LEXICON ADV-WITH-KI-I
 
-%{I%} ADV ;
-AdjKiInfl ; 
+:%{I%} ADV ;
+ADJ-KI-INFL ; 
 
-LEXICON AdjKiInfl
+LEXICON ADJ-KI-INFL
 
-%<attr%>:%>%{G%}%{I%} ADJ-COMMON ;
+%<attr%>:%>%{G%}%{I%} ADJ-COMMON ; ! FIXME: Another name
 
 LEXICON ADV
 
@@ -584,11 +587,11 @@ LEXICON Pron-12SG-CASES
 %<px%>:енікі CLIT ;
 %<rloc%>:ендегі CLIT ;
 
-LEXICON Pronpersinfl
+LEXICON PRON-PERS-INFL
 
 CASE-ETC ;
 
-LEXICON Pronpers
+LEXICON PRON-PERS
 
 мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
 мен%<prn%>%<pers%>%<p1%>%<sg%>:м Pron-12SG-CASES ;
@@ -596,37 +599,37 @@ LEXICON Pronpers
 сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLIT ;
 сен%<prn%>%<pers%>%<p2%>%<sg%>:с Pron-12SG-CASES ;
 
-сен%<prn%>%<pers%>%<p2%>%<pl%>:сендер Pronpersinfl ;
+сен%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
 
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>:о PronDem-INFL ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>:о PRON-DEM-INFL ;
 
-біз%<prn%>%<pers%>%<p1%>%<pl%>:біз Pronpersinfl ;
+біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
 
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз Pronpersinfl ;
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
 
-сіз%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер Pronpersinfl ;
+сіз%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
 
-ол%<prn%>%<pers%>%<p3%>%<pl%>:олар Pronpersinfl ;
+ол%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
 
-LEXICON Proninterrinfl
+LEXICON PRON-ITG
 
 %<prn%>%<itg%>: N-INFL-COMMON ; ! FIXME: Check contlex
 
-LEXICON Pronindefinfl
+LEXICON PRON-IND
 
 %<prn%>%<ind%>: N-INFL-COMMON ; ! FIXME: Check contlex
 
-LEXICON Pronreflinfl
+LEXICON PRON-REFL
 
 %<prn%>%<ref%>: N-INFL-COMMON ; ! FIXME: Check contlex
 %<prn%>%<ref%>%<pl%>:%{L%}%{A%}р N-INFL-COMMON ;
 
-LEXICON Pronindefinfl-POSS
+LEXICON PRON-IND-POSS
 
 %<prn%>%<ind%>: POSSESSION ;
 
-LEXICON PronDem-INFL
+LEXICON PRON-DEM-INFL
 
 %<gen%>:ның CLIT ;
 %<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
@@ -643,11 +646,11 @@ LEXICON PronDem-INFL
 %<qnt%>:нша CLIT ;         !
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
-LEXICON PronDem
+LEXICON PRON-DEM
 
-ол%<prn%>%<dem%>:о PronDem-INFL ;
-сол%<prn%>%<dem%>:со PronDem-INFL ;
-осы%<prn%>%<dem%>:осы PronDem-INFL ;
+ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
+сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
+осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
 
 ол%<prn%>%<dem%>%<nom%>:ол CLIT ;
 сол%<prn%>%<dem%>%<nom%>:cол CLIT ;
@@ -660,7 +663,7 @@ LEXICON PronDem
 сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 
-#бұл%<prn%>%<dem%>:бұ PronDem-INFL ;
+#бұл%<prn%>%<dem%>:бұ PRON-DEM-INFL ;
 бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
 бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
@@ -797,23 +800,24 @@ LEXICON Postpositions
 
 LEXICON Pronouns
 
-не Proninterrinfl ; ! "what"              ! interrog. pronoun
-кім Proninterrinfl ; ! "who"              ! interrog. pronoun
-өз Pronreflinfl ; ! "self"              ! reflexive pronoun
-бірдеме Pronindefinfl ; ! "something"          ! pronoun
-басқа Pronindefinfl ; ! "other"
-! бәрі Pronindefinfl ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
-бәрі:бәр Pronindefinfl-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
-бири-бир PRON-RECIP ; ! "each other, one another"
+не:не PRON-ITG ; ! "what"              ! interrog. pronoun
+кім:кім PRON-ITG ; ! "who"              ! interrog. pronoun
+өз:өз PRON-REFL ; ! "self"              ! reflexive pronoun
+бірдеме:бірдеме PRON-IND ; ! "something"          ! pronoun
+басқа:басқа PRON-IND ; ! "other"
+! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
+бәрі:бәр PRON-IND-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+бири%-бир:бири%-бир PRON-RECIP ; ! "each other, one another"
 
-Pronpers ;  ! Personal pronouns
-PronDem ;   ! Demonstrative pronouns
+PRON-PERS ;  ! Personal pronouns
+PRON-DEM ;   ! Demonstrative pronouns
 
 бір:біреу PRON-COLL ;
 екі:екеу PRON-COLL ;
 үш:үшеу PRON-COLL ;
 төрт:төртеу PRON-COLL ;
 бес:бесеу PRON-COLL ;
+
 ! Technically this goes on to higher numbers
 ! but its use beyond 5(?) is rare
 ! and is of questionable grammaticality
@@ -848,45 +852,44 @@ XII NUM-ROMAN ;
 
 LEXICON Interjections 
 
-әлбетте INTERJ ; ! "of course"
-мына INTERJ ; ! "here is, вот"
-әйе INTERJ ; ! "yes"
-жоқ INTERJ ; ! "no"
-ой INTERJ ; ! "hey"
-мақұл INTERJ ; ! "fine/okay"
-мейлі INTERJ ; ! "okay/fine"
-түсінікті INTERJ ; ! "understood"
-мә INTERJ ; ! "here you go / take"
-жарайды INTERJ ; ! "okay / it'll do"
-болыпты INTERJ ; ! "okay / that's it"
-онда INTERJ ; ! "then"
-ондай% болса INTERJ ; ! "in that case"
-дұрыс INTERJ ; ! "right"
-қане INTERJ ; ! "where"           ! interrog. interjection (question form of "вот")
-
+әлбетте:әлбетте INTERJ ; ! "of course"
+мына:мына INTERJ ; ! "here is, вот"
+әйе:әйе INTERJ ; ! "yes"
+жоқ:жоқ INTERJ ; ! "no"
+ой:ой INTERJ ; ! "hey"
+мақұл:мақұл INTERJ ; ! "fine/okay"
+мейлі:мейлі INTERJ ; ! "okay/fine"
+түсінікті:түсінікті INTERJ ; ! "understood"
+мә:мә INTERJ ; ! "here you go / take"
+жарайды:жарайды INTERJ ; ! "okay / it'll do"
+болыпты:болыпты INTERJ ; ! "okay / that's it"
+онда:онда INTERJ ; ! "then"
+ондай% болса:ондай% болса INTERJ ; ! "in that case"
+дұрыс:дұрыс INTERJ ; ! "right"
+қане:қане INTERJ ; ! "where"           ! interrog. interjection (question form of "вот")
 
 LEXICON Determiners
 
-бұл DET-DEM ;
-осы DET-DEM ;
-сол DET-DEM ;
-мынау DET-DEM ;
-сонау DET-DEM ;
-анау DET-DEM ;
-әлгі DET-DEM ; ! "which" (?)  FIXME: check POS
+бұл:бұл DET-DEM ;
+осы:осы DET-DEM ;
+сол:сол DET-DEM ;
+мынау:мынау DET-DEM ;
+сонау:сонау DET-DEM ;
+анау:анау DET-DEM ;
+әлгі:әлгі DET-DEM ; ! "which" (?)  FIXME: check POS
 
-көп DET-QNT ; ! "many, much"
-көптеген DET-QNT ; ! "many"
-бірнеше DET-QNT ; ! "some"
-барлық DET-QNT ; ! "all"
-бірқатар DET-QNT ; ! "several"
-ешқандай DET-QNT ; ! "no [kind of], none"
+көп:көп DET-QNT ; ! "many, much"
+көптеген:көптеген DET-QNT ; ! "many"
+бірнеше:бірнеше DET-QNT ; ! "some"
+барлық:барлық DET-QNT ; ! "all"
+бірқатар:бірқатар DET-QNT ; ! "several"
+ешқандай:ешқандай DET-QNT ; ! "no [kind of], none"
 
-әр DET-IND ; ! "every"
-әрбір DET-IND ; ! "each"
-еш DET-IND ; ! "no"
-кей% бір DET-IND ; ! "some"
-бір DET-IND ; ! "a"
+әр:әр DET-IND ; ! "every"
+әрбір:әрбір DET-IND ; ! "each"
+еш:еш DET-IND ; ! "no"
+кей% бір:кей% бір DET-IND ; ! "some"
+бір:бір DET-IND ; ! "a"
 
 !!! FIXME: Check these
 
@@ -912,7 +915,7 @@ LEXICON Nouns
 әже N1 ; ! "grandmother"
 әкономика N1 ; ! "economy"
 ән N1 ; ! "song"
-әнші әйел N1 ; ! "singer"
+әнші% әйел N1 ; ! "singer"
 әнші N1 ; ! "singer"
 
 абақты N1 ; ! "jail"
@@ -929,7 +932,7 @@ LEXICON Nouns
 азап N1 ; ! "suffering"
 азбан N1 ; ! "gelding"
 азық N1 ; ! "nutrition"
-азық-түлік N1 ; ! "groceries"
+азық%-түлік N1 ; ! "groceries"
 ай N1 ; ! "moon"
 айғақ N1 ; ! "evidence"
 айғыр N1 ; ! "stallion"
@@ -978,7 +981,7 @@ LEXICON Nouns
 асық N1 ; ! "ankle bone"
 ат N1 ; ! "riding horse,castrated male horse,name"
 ата N1 ; ! "father"
-ата-баба N1 ; ! "forefather"
+ата%-баба N1 ; ! "forefather"
 атан N1 ; ! "castrated camel"
 атамекен N1 ; ! "homeland"
 ауа N1 ; ! "air"
@@ -1021,7 +1024,7 @@ LEXICON Nouns
 батыл N1 ; ! "brave"
 батыр N1 ; ! "hero"
 батыс N1 ; ! "west,occident"
-бау-бақша N1 ; ! "garden"
+бау%-бақша N1 ; ! "garden"
 бауыр N1 ; ! "younger brother,liver"
 бауырлас N1 ; ! "brother"
 без N1 ; ! "gland"
@@ -1176,7 +1179,7 @@ LEXICON Nouns
 жан N1 ; ! "soul"
 жаңалык N1 ; ! "news"
 жаңбыр N1 ; ! "rain"
-жан-жақ N1 ; ! "all sides"
+жан%-жақ N1 ; ! "all sides"
 жанжал N1 ; ! "quarrel"
 жапырақ N1 ; ! "leaf"
 жар N1 ; ! "companion,lover"
@@ -1354,7 +1357,7 @@ LEXICON Nouns
 керемет N1 ; ! "wonder"
 кереует N1 ; ! "bed"
 кәріп N1 ; ! "Poor blind man"
-кәріп-қасер N1 ; ! "poor blind man"
+кәріп%-қасер N1 ; ! "poor blind man"
 керіс N1 ; ! "quarrel"
 кәсер N1 ; ! "miserable"
 кесір N1 ; ! "damage"
@@ -1364,7 +1367,7 @@ LEXICON Nouns
 кеш N1 ; ! "late,evening"
 қи N1 ; ! "peat"
 киік N1 ; ! "antelope"
-киім-кешек N1 ; ! "dress"
+киім%-кешек N1 ; ! "dress"
 қиямет N1 ; ! "resurrection"
 кілем N1 ; ! "carpet"
 кілт N1 ; ! "key"
