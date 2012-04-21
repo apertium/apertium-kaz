@@ -180,6 +180,14 @@ Interjections ;
 Abbreviations ;
 Punctuation ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON SUBST
+
+N-INFL-COMMON ;
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ; ! FIXME: right?
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON CLIT-MA
 
 !! Modal/discourse particles
@@ -205,7 +213,6 @@ CLIT-MA ;
 LEXICON CLIT-GENERAL
 CLIT ;
 V-PERS-COP ;
-
 
 LEXICON CASE
 %<nom%>: CLIT-GENERAL ;
@@ -264,11 +271,6 @@ LEXICON GEN-POS
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
 %<sim%>:%>%{D%}%{A%}й ADJ-DAGI ;
 
-LEXICON SUBST
-
-N-INFL-COMMON ;
-%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ; ! FIXME: right?
-
 LEXICON N1
 
 %<n%>: SUBST ;
@@ -288,9 +290,9 @@ N1 ;               !
 
 LEXICON NUM
 
-%<num%>: N-INFL-COMMON ; 
+%<num%>: # ; 
+%<num%>%<subst%>: SUBST ; 
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
-
 LEXICON NumeralList
 
 %0 NumeralLoop ;
