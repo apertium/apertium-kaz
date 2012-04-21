@@ -2,6 +2,8 @@
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! See http://wiki.apertium.org/wiki/Turkic_lexicon
+
 Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
@@ -11,6 +13,7 @@ Multichar_Symbols
 %<adj%>               ! Adjective
 %<num%>               ! Numeral
 %<prn%>               ! Pronoun 
+%<det%>               ! Determiner
 %<v%>                 ! Verb
 %<vaux%>              ! Auxilary verb
 %<adv%>               ! Adverb
@@ -18,27 +21,30 @@ Multichar_Symbols
 %<postadv%>           ! Postadverb
 %<cnjcoo%>            ! Co-ordinating conjunction
 %<cnjsub%>            ! Sub-ordinating conjunction
+%<cnjadv%>            ! Adverbial conjunction
 %<part%>              ! Particle
 %<ij%>                ! Interjection 
 %<abbr%>              ! Abbreviation
 %<cop%>               ! Copula
-%<det%>               ! Determiner
-%<cnjadv%>            ! ~Союз
 
-! Arbitrary subcategories
-!! for nouns
-%<top%>               ! Toponym
-%<ant%>               ! Anthroponym
-%<cog%>               ! Cognomen
-%<al%>                ! Other
+! Proper noun types
+%<top%>            ! Toponym
+%<ant%>            ! Anthroponym
+%<cog%>            ! Cognomen
+%<al%>             ! Other
 
-!! Some "syntactic" categories
+!! gender of anthroponyms and cognomes
+%<m%>              ! Masculine
+%<f%>              ! Feminine
+%<mf%>             ! Masculine/feminine !# basically cognomes without -ов/-ова ending
+
+! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>              ! Attributive
 %<subst%>             ! Substantive
 %<pred%>              ! Predicative
 %<advl%>              ! Adverbial
 
-! Numbers
+! Number
 %<sg%>                ! Singular
 %<pl%>                ! Plural
 
@@ -48,8 +54,8 @@ Multichar_Symbols
 %<px3sp%>             ! Third person singular/plural
 %<px1pl%>             ! First person plural
 %<px2pl%>             ! Second person plural
-%<px%>                ! General possessive -нікі
-%<frm%>               ! formal address   ! FIXME: need better comment
+%<px%>                ! General possessive     !# -нікі
+%<frm%>               ! formal address         ! FIXME: need better comment
 
 ! Cases
 %<nom%>               ! Nominative
@@ -60,7 +66,7 @@ Multichar_Symbols
 %<loc%>               ! Locative 
 %<ins%>               ! Instrumental 
 
-!! Some additional ~cases
+!! some additional ~cases
 %<sim%>               ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
 %<reas%>              ! Reason
 %<abe%>               ! Abessive       
@@ -72,15 +78,22 @@ Multichar_Symbols
 ! Pronoun types
 %<pers%>              ! Personal
 %<itg%>               ! Interrogative
+%<ref%>               ! Reflexive
+!%<coll%>             ! Collective-numeral pronoun
+!%<recip%>            ! Reciprocal pronoun
+! Pronoun and determiner types
 %<dem%>               ! Demonstrative
 %<ind%>               ! Indefinite
 %<qnt%>               ! Quantifier
-%<ord%>               ! Ordinal
-%<ref%>               ! Reflexive
-!%<coll%>              ! Collective-numeral pronoun
-!%<recip%>             ! Reciprocal pronoun
 
-! Tense, aspect, mood !! OMG, this is hard
+! Numeral types
+%<ord%>            ! Ordinal
+
+! Tense, aspect, mood
+%<imp%>               ! Imperative
+%<caus%>              ! causative
+%<pass%>              ! passive
+
 %<prc_perf%>          ! perfect participle
 %<prc_plan%>          ! plan participle
 %<prc_cond%>          ! conditional participle
@@ -100,10 +113,9 @@ Multichar_Symbols
 %<glp_impf%>          ! imperfect verbal adjective
 %<glp_pot%>           ! potential verbal adjective
 
-%<exi%>               ! 
-%<pfp%>               ! Perfect participle
+%<exi%>               ! Existentials ! FIXME
+%<pfp%>               ! Perfect participle !! This was replaced with prc_perf
 
-%<imp%>               ! imperative
 %<ifi%>               ! eyewitness past
 %<past%>              ! past
 %<evid%>              ! evidential
@@ -112,9 +124,6 @@ Multichar_Symbols
 %<mod_qst%>           ! Modal question particle
 %<mod_foc%>           ! focus thingy
 %<mod_ass%>           ! assertive
-
-%<pass%>              ! passive
-%<caus%>              ! causative
 
 ! Transitivity
 %<tv%>                ! Transitive
@@ -136,11 +145,6 @@ Multichar_Symbols
 %<rpar%>              ! Parenthetical marker (right hand side) 
 %<lpar%>              ! Parenthetical marker (left hand side) 
 
-! Some additional tags
-%<m%>                 ! Masculine !! For anthroponyms
-%<f%>                 ! Feminine  !! For anthroponyms
-%<mf%>                ! Masculine or feminine !! For cognomen
-
 %{L%}                 ! Archiphoneme 'l': realised as л, д, т
 %{N%}                 ! Archiphoneme 'n': realised as н, д, т
 %{M%}                 ! Archiphoneme 'm': realised as м, б, п
@@ -158,7 +162,7 @@ Multichar_Symbols
 %{E%}                 ! Realised as 'а', 'е', 'й' (={A}/й)
 
 %>                    ! Morpheme boundary
-% 
+%                     !! FIXME: is this needed? 
 
 LEXICON Root
 Copula ;
