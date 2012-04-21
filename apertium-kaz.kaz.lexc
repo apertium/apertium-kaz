@@ -257,7 +257,7 @@ LEXICON ADJ-DAGI
 ! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of N-INFL
 !%<n%>: N-INFL ;
 %<attr%>: CLIT ;
-# ;
+!# ;
 
 LEXICON GEN-POS
 %<px%>:%>%{N%}ікі%{n%} CASE ;
@@ -2151,7 +2151,7 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Ажаргүл NP-ANT-F; ! "Ajargül" (Kazakh)
 Ажархан NP-ANT-F; ! "Ajarxan" (Kazakh)
 Аза NP-ANT-F; ! "Aza" (Persian)
-Азамат NP-ANT-M; ! "Azamat" (Arabic)
+Азамат:Азамат NP-ANT-M; ! "Azamat" (Arabic)
 Азат NP-ANT-M; ! "Azat" (Persian)
 Азатбан NP-ANT-M; ! "Azatban" (Persian)
 Азатбек NP-ANT-M; ! "Azatbek" (Persian)
@@ -2171,7 +2171,7 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Айғали NP-ANT-M; ! "Ayğalıy" (Kazakh)
 Айғанша NP-ANT-F; ! "Ayğansha" (Kazakh)
 Айғыз NP-ANT-F; ! "Ayğız" (Kazakh)
-Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
+Айгүл:Айгүл NP-ANT-F; ! "Aygül" (Kazakh)
 Айдай NP-ANT-F; ! "Ayday" (Kazakh)
 Айдан NP-ANT-M; ! "Aydan" (Kazakh)
 Айдана NP-ANT-F; ! "Aydana" (Kazakh)
@@ -5424,12 +5424,12 @@ LEXICON Verbs
 кездес:кездес V-IV ; ! "to meet"
 кейіт:кейіт V-TD ; ! "to irritate"
 кекір:кекір V-TD ; ! "burp"
-кел:кел V-TD ; ! "come"
+кел:кел V-IV ; ! "come"
 келіс:келіс V-TD ; ! "agree"
 кенел:кенел V-TD ; ! "recieve full satsifaction"
 керш:керш V-TD ; ! "to stretch"
 кес:кес V-TD ; ! "cut"
-кет:кет V-TD ; ! "leave"
+кет:кет V-IV ; ! "leave"
 кешір:кешір V-TD ; ! "forgive"
 кеңес:кеңес V-TD ; ! "to consult"
 кимеле:кимеле V-TD ; ! "to push"
