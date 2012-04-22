@@ -120,7 +120,7 @@ Multichar_Symbols
 %<evid%>              ! evidential
 %<aor%>               ! non-future
 
-%<mod_qst%>           ! Modal question particle
+%<qst%>               ! Modal question particle
 %<mod_foc%>           ! focus thingy
 %<mod_ass%>           ! assertive
 
@@ -191,13 +191,13 @@ N-INFL-COMMON ;
 LEXICON CLIT-MA
 
 !! Modal/discourse particles
-!%+ма%<mod_qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
-%+ма%<mod_qst%>:%>% %{M%}%{A%} # ;
+!%+ма%<qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
+%+ма%<qst%>:%>% %{M%}%{A%} # ;
 
 LEXICON CLIT-OTHER
 
-%+меді%<mod_qst%>:% %{M%}еді # ;   ! fix
-%+мекен%<mod_qst%>:% %{M%}екен # ; ! fix?
+%+меді%<qst%>:% %{M%}еді # ;   ! fix
+%+мекен%<qst%>:% %{M%}екен # ; ! fix?
 %+шы%<mod_foc%>:%>ш%{I%} # ;
 %+ғой%<mod_ass%>:% %{G%}ой # ;
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
@@ -293,28 +293,10 @@ LEXICON NUM
 %<num%>: # ; 
 %<num%>%<subst%>: SUBST ; 
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
-LEXICON NumeralList
 
-%0 NumeralLoop ;
-1 NumeralLoop ;
-2 NumeralLoop ;
-3 NumeralLoop ;
-4 NumeralLoop ;
-5 NumeralLoop ;
-6 NumeralLoop ;
-7 NumeralLoop ;
-8 NumeralLoop ;
-9 NumeralLoop ;
-%% NumeralLoop ;
+LEXICON DIGITLEX
 
-LEXICON NumeralLoop
-NumeralList ;
-%. NumeralList  ;
-%, NumeralList  ;
-%. NUM ; ! Dir/RL
-%, NUM ; ! Dir/RL
-%%:%%%- NUM ;
-:%- NUM ;
+%<num%>: # ;
 
 LEXICON NUM-ROMAN
 
@@ -519,7 +501,7 @@ LEXICON Vinfl-AUX-IMPF
 
 LEXICON A2 
 
-%<adj%>: # ;
+%<adj%>: CLIT-MA ;
 
 LEXICON A1 
 
@@ -838,8 +820,6 @@ PRON-DEM ;   ! Demonstrative pronouns
 ! and is of questionable grammaticality
 
 LEXICON Numerals
-
-NumeralList ; 
 
 XII NUM-ROMAN ; 
 
@@ -6243,3 +6223,4 @@ LEXICON Punctuation
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
 
+<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
