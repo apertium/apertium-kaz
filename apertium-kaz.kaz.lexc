@@ -33,15 +33,15 @@ Multichar_Symbols
 %<cog%>            ! Cognomen
 %<al%>             ! Other
 
-!! gender of anthroponyms and cognomes
+!! gender of anthroponyms and cognoms
 %<m%>              ! Masculine
 %<f%>              ! Feminine
-%<mf%>             ! Masculine/feminine !# basically cognomes without -ов/-ова ending
+%<mf%>             ! Masculine/feminine !# basically cognoms without -ов/-ова ending
 
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>              ! Attributive
 %<subst%>             ! Substantive
-%<pred%>              ! Predicative
+%<pred%>              ! Predicative !! deprecated
 %<advl%>              ! Adverbial
 
 ! Number
@@ -77,13 +77,13 @@ Multichar_Symbols
 
 ! Pronoun types
 %<pers%>              ! Personal
-%<itg%>               ! Interrogative
 %<ref%>               ! Reflexive
 !%<coll%>             ! Collective-numeral pronoun
 !%<recip%>            ! Reciprocal pronoun
 ! Pronoun and determiner types
 %<dem%>               ! Demonstrative
 %<ind%>               ! Indefinite
+%<itg%>               ! Interrogative
 %<qnt%>               ! Quantifier
 
 ! Numeral types
@@ -163,7 +163,12 @@ Multichar_Symbols
 %>                    ! Morpheme boundary
 %                     !! FIXME: is this needed? 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON Root
+
 Copula ;
 Conjunctions ;
 Postpositions ;
@@ -180,13 +185,13 @@ Interjections ;
 Abbreviations ;
 Punctuation ;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON SUBST
 
 N-INFL-COMMON ;
 %<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ; ! FIXME: right?
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CLIT-MA
 
@@ -730,8 +735,7 @@ LEXICON DET-QNT
 %<det%>%<qnt%>: N-INFL-COMMON ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!! 
-!! 
+!!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Conjunctions
@@ -884,7 +888,6 @@ LEXICON Determiners
 мынау:мынау DET-QNT ; ! "this"           ! "this-here X", "ce X-ci", "вот это X"
 
 LEXICON Nouns
-
 
 әдебиет:әдебиет N1 ; ! "literature"
 әуе:әуе N1 ; ! "air"
