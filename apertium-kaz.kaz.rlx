@@ -72,3 +72,8 @@ SELECT Det IF (0 V OR Det OR Pred OR N) (1* NPMARK BARRIER N) ;
     ## Акча бармы? Бар<pred>, ләкин бик аз!
 
 REMOVE Attr IF (NOT 1 N); 
+
+SELECT Adv IF (0 ("өте")) (1 A)
+    ## Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
+
+    ## Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>$.

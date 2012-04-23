@@ -12,7 +12,7 @@ Multichar_Symbols
 %<np%>                ! Proper noun
 %<adj%>               ! Adjective
 %<num%>               ! Numeral
-%<prn%>               ! Pronoun 
+%<prn%>               ! Pronoun
 %<det%>               ! Determiner
 %<v%>                 ! Verb
 %<vaux%>              ! Auxilary verb
@@ -159,6 +159,7 @@ Multichar_Symbols
 %{y%}                 ! Realised as '' or '{I}'; only used in epenthesis for nouns
 %{o%}                 ! Realised as ''; triggers dialectal interpretation of Iп
 %{E%}                 ! Realised as 'а', 'е', 'й' (={A}/й)
+%{д%}                 ! Realised as д before vowels, 0 otherwise
 
 %>                    ! Morpheme boundary
 %                     !! FIXME: is this needed? 
@@ -264,8 +265,12 @@ POSSESSION ;
 CASE-ETC ;
 
 LEXICON ADJ-DAGI
-!! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of CASES
-%<subst%>: CASE ;
+!! ADJ-COMMON ;   !!!! ! FIXME: when we go recursive, use this instead of CASES
+! %<subst%>: CASE ; ! FIXME: DISCUSS: this works great (i.e. "^алдындағыны/алд<n><px3sp><loc><subst><acc>$"), but substantivation
+                    ! of the locative case doesn't look good.  Neither does <loc><attr><subst>. I think we should switch back
+                    ! to the <locattr> or <rloc> tag.
+                    ! Commented out only temporarily, to get a nice translation of the story /I.S./
+
 ! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of N-INFL
 !%<n%>: N-INFL ;
 %<attr%>: CLIT ;
@@ -547,6 +552,10 @@ ADJ-KI-INFL ;
 LEXICON ADJ-KI-INFL
 
 %<attr%>:%>%{G%}%{I%} ADJ-COMMON ; ! FIXME: Another name
+
+LEXICON ADVITG
+
+%<adv%>%<itg%>: # ; 
 
 LEXICON ADV
 
@@ -929,7 +938,7 @@ LEXICON Nouns
 ақын:ақын N1 ; ! "poet"
 ақыр:ақыр N1 ; ! "end,last,final state"
 алаң:алаң N1 ; ! "area"
-алд:алд N1 ; ! "front"
+алд:ал%{д%} N1 ; ! "front"
 алжапқыш:алжапқыш N1 ; ! "apron"
 алмұрт:алмұрт N1 ; ! "pear"
 амал:амал N1 ; ! "way out"
@@ -4661,6 +4670,8 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 
 LEXICON Adverbs
 
+қайда:қайда ADVITG ; ! ""
+
 алға:алға ADV ; ! "forward"
 аса:аса ADV ; ! "very"
 әрдайым:әрдайым ADV ; ! "always"
@@ -4853,7 +4864,7 @@ LEXICON Adjectives
 кейбір:кейбір A1 ; ! "some"
 кең:кең A1 ; ! "wide"
 қадірлі:қадірлі A1 ; ! "precious"
-қай:қай A1 ; ! "what"
+!қай:қай A1 ; ! "what"
 қалың:қалың A1 ; ! "dark, deep"
 қашық:қашық A1 ; ! "far"
 қу:қу A1 ; ! "crafty"
