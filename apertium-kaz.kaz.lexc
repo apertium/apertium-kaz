@@ -160,6 +160,7 @@ Multichar_Symbols
 %{o%}                 ! Realised as ''; triggers dialectal interpretation of Iп
 %{E%}                 ! Realised as 'а', 'е', 'й' (={A}/й)
 %{д%}                 ! Realised as д before vowels, 0 otherwise
+%{т%}                 ! Realised as т before vowels, 0 otherwise
 
 %>                    ! Morpheme boundary
 %                     !! FIXME: is this needed? 
@@ -965,7 +966,7 @@ LEXICON Nouns
 аспан:аспан N1 ; ! "sky"
 аспап:аспап N1 ; ! "instrument,utensil,tool"
 аспоп:аспоп N1 ; ! "instrument"
-аст:аст N1 ; ! "down side"
+аст:ас%{т%} N1 ; ! "down side"
 астар:астар N1 ; ! "lining,implication"
 астау:астау N1 ; ! "bowl,large,wooden,feeding trough"
 астық:астық N1 ; ! "grain"
