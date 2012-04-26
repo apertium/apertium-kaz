@@ -481,7 +481,6 @@ LEXICON V-INFL-NON-FINITE-REG
 %<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
 %<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
 
-
 LEXICON V-INFL-COMMON
 
 ! %<pfp%>:%{I%}п # ;   ! This has been replaced in V-INFL-NON-FINITE
@@ -510,16 +509,28 @@ LEXICON Vinfl-AUX-IMPF
 
 %<vaux%>: V-PERS-COP-SUF ;
 
-LEXICON A2 
+!!!!!!!!!!!!!!!!!!!!!! ADJECTIVES
+
+LEXICON ADJ-LEVELS
+
+%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
+
+LEXICON A1                 ! adjectives that can be substantivized and andverbialized #! тез
+
+%<adj%>: # ; 
+%<adj%>: ADJ-LEVELS ;
+%<adj%>%<subst%>: SUBST ;  ! all adjectives can be used as nouns
+%<adj%>%<advl%>: CLIT ;    ! FIXME: this can take comp. level too !# тезрек бар="go faster"
+
+LEXICON A2                 !# бар, жоқ ! adjectives with the predicative use 
 
 %<adj%>: CLIT-MA ;
 
-LEXICON A1 
+LEXICON A3                 ! (относительные-?derived?) adjectives without adverbial reading #! язгы
 
-ADJ-COMMON ; 
-%<adj%>: ADJ-LEVELS ; 
-! %<n%>: POSSESSION ;  ! all adjectives can be used as nouns
-%<adj%>%<subst%> SUBST ;                ! all adjectives can be used as nouns
+%<adj%>: # ; 
+%<adj%>: ADJ-LEVELS ;
+%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
 
 LEXICON V-ADJ
 
@@ -531,14 +542,10 @@ LEXICON ADJ-ORD
 %<adj%>%<ord%>: # ;
 %<adj%>%<ord%>%<subst%>: SUBST ;
 
-LEXICON ADJ-LEVELS
+LEXICON ADJ-COMMON !! This will be removed after reformatting verbal adjectives
 
-%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
-
-LEXICON ADJ-COMMON
-
-%<adj%>: CLIT ;
-%<adj%>%<subst%>: SUBST ;  ! all adjectives can be used as nouns
+%<adj%>: ADJ-LEVELS ; 
+%<adj%>%<subst%>: SUBST ;     ! all adjectives can be used as nouns
 
 LEXICON ADV-WITH-KI
 
