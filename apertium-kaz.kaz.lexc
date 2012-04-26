@@ -195,6 +195,8 @@ N-INFL-COMMON ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+!!!!!!!!!!!!!!!!!!!!!!     CLITICS
+
 LEXICON CLIT-MA
 
 !! Modal/discourse particles
@@ -221,7 +223,10 @@ LEXICON CLIT-GENERAL
 CLIT ;
 V-PERS-COP ;
 
+!!!!!!!!!!!!!!!!!!!!!!     NOMINAL INFLECTION (N-INFL-COMMON)
+
 LEXICON CASE
+
 %<nom%>: CLIT-GENERAL ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
 %<gen%>:%>%{N%}%{I%}ң CLIT ;
@@ -231,6 +236,7 @@ LEXICON CASE
 %<ins%>:%>%{M%}ен CLIT ;
 
 LEXICON POSSESSION-ENDINGS  ! P_2
+
 %<px1sg%>:%>%{I%}м CASE-ETC ;
 %<px2sg%>:%>%{I%}ң CASE-ETC ; 
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ; 
@@ -239,32 +245,6 @@ LEXICON POSSESSION-ENDINGS  ! P_2
 %<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ; 
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
 
-LEXICON VOL-ENDINGS
-%<p1%>%<sg%>:%>%{I%}м # ;
-%<p2%>%<sg%>:%>%{I%}ң # ; 
-%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з # ; 
-%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} # ;
-%<p1%>%<pl%>:%>%{I%}м%{I%}з # ; 
-%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ; 
-%<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
-%<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
-
-LEXICON CASE-ETC
-CASE ;
-GEN-POS ;
-!CLIT ;
-%<adv%>:ш%{A%} # ; ! FIXME: might not be quite the right place
-
-LEXICON POSSESSION
-POSSESSION-ENDINGS ;
-
-LEXICON NP-COMMON
-N-INFL-COMMON ;
-
-LEXICON N-INFL-COMMON 
-POSSESSION ;
-CASE-ETC ;
-
 LEXICON ADJ-DAGI
 !! ADJ-COMMON ;   !!!! ! FIXME: when we go recursive, use this instead of CASES
 ! %<subst%>: CASE ; ! FIXME: DISCUSS: this works great (i.e. "^алдындағыны/алд<n><px3sp><loc><subst><acc>$"), but substantivation
@@ -272,7 +252,7 @@ LEXICON ADJ-DAGI
                     ! to the <locattr> or <rloc> tag.
                     ! Commented out only temporarily, to get a nice translation of the story /I.S./
 
-! ADJ-COMMON ;  !!!! ! FIXME: when we go recursive, use this instead of N-INFL
+! ADJ-COMMON ;    !!!! ! FIXME: when we go recursive, use this instead of N-INFL
 !%<n%>: N-INFL ;
 %<attr%>: CLIT ;
 !# ;
@@ -282,9 +262,59 @@ LEXICON GEN-POS
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
 %<sim%>:%>%{D%}%{A%}й ADJ-DAGI ;
 
-LEXICON N1
+LEXICON CASE-ETC
+CASE ;
+GEN-POS ;
+!CLIT ;
+%<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
 
-%<n%>: SUBST ;
+LEXICON POSSESSION
+POSSESSION-ENDINGS ;
+
+LEXICON N-INFL-COMMON 
+POSSESSION ;
+CASE-ETC ;
+
+!!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
+
+LEXICON ADJ-LEVELS
+
+%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
+
+LEXICON A1                 ! adjectives that can be substantivized and andverbialized #! тез
+
+%<adj%>: # ; 
+%<adj%>: ADJ-LEVELS ;
+%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
+%<adj%>%<advl%>: CLIT ;     ! FIXME: this can take comp. level too !# тезрек бар="go faster"
+
+LEXICON A2                  !# бар, жоқ ! adjectives with the predicative use 
+
+%<adj%>: CLIT-MA ;
+
+LEXICON A3                  ! (относительные-?derived?) adjectives without adverbial reading #! язгы
+
+%<adj%>: # ; 
+%<adj%>: ADJ-LEVELS ;
+%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
+
+LEXICON ADJ-ORD             ! the stems linked to this will most likely be moved to numerals
+
+%<adj%>%<ord%>: # ;
+%<adj%>%<ord%>%<subst%>: SUBST ;
+
+LEXICON ADJ-COMMON
+
+%<adj%>: ADJ-LEVELS ;       ! FIXME: verbal adjectives shouldn't get comparative level ending.
+                            ! In contrast to <advl>, <subst> reading is what all words acting
+                            ! like adjective get. So fix this, and make ADJ-COMMON default cont.
+                            ! class for verbal adjectives
+%<adj%>%<subst%>: SUBST     ! All adjectives can be used as nouns
+
+LEXICON V-ADJ
+
+ADJ-COMMON ;  
+CLIT ; 
 
 LEXICON Natinfl
 
@@ -294,44 +324,11 @@ N1 ;               ! a member of the nationality, e.g. "A Turk"
 %>ш%{A%} ADV ;    ! in the language of the nationality, e.g. "in Turkish"
 %>ш%{A%} N1 ;      ! the language of the nationality, e.g. "Turkish"
 
-LEXICON Matinfl
-!! Materials that are always both nouns and adjectives
-A1 ;             !
-N1 ;               !
+LEXICON ADJ-KI-INFL
 
-LEXICON NUM
+%<attr%>:%>%{G%}%{I%} ADJ-COMMON ; ! FIXME: Another name
 
-%<num%>: # ; 
-%<num%>%<subst%>: SUBST ; 
-%<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
-
-LEXICON DIGITLEX
-
-%<num%>: # ;
-
-LEXICON NUM-ROMAN
-
-%<num%>: NUM ;
-
-LEXICON NP-TOP
-
-%<np%>%<top%>: NP-COMMON ;
-!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
-
-LEXICON NP-ANT-M
-
-%<np%>%<ant%>%<m%>: NP-COMMON ;
-%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
-
-LEXICON NP-ANT-F
-
-%<np%>%<ant%>%<f%>: NP-COMMON ;
-%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
-
-LEXICON NP-COG-M
-
-%<np%>%<cog%>%<m%>: NP-COMMON ;
-%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+!!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION (V-INFL-COMMON)
 
 !FIXME
 LEXICON V-PERS-PRES ! P_6
@@ -406,6 +403,17 @@ CASE-ETC ;
 %<pl%>:%>%{L%}%{A%}р POSSESSION ;
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
 
+LEXICON VOL-ENDINGS
+
+%<p1%>%<sg%>:%>%{I%}м # ;
+%<p2%>%<sg%>:%>%{I%}ң # ; 
+%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з # ; 
+%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} # ;
+%<p1%>%<pl%>:%>%{I%}м%{I%}з # ; 
+%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ; 
+%<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
+%<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
+
 LEXICON V-INFL-FINITE
 
 ! Finite forms
@@ -440,7 +448,6 @@ LEXICON V-INFL-NON-FINITE-IRREG
 %<glp_fut%>:%>%{A%}р V-ADJ ;
 %<neg%>%<glp_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
 %<neg%>%<glp_pot2%>:%>%{G%}%{I%}с V-ADJ ;
-
 
 LEXICON V-INFL-NON-FINITE-REG
 
@@ -488,6 +495,49 @@ V-INFL-FINITE ;
 %<neg%>:%>%{M%}%{A%} V-INFL-FINITE ;
 V-INFL-NON-FINITE ;
 
+!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
+
+LEXICON N1
+
+%<n%>: SUBST ;
+
+LEXICON NP-COMMON
+N-INFL-COMMON ;
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: NP-COMMON ;
+!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-COG-M
+
+%<np%>%<cog%>%<m%>: NP-COMMON ;
+%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NUM
+
+%<num%>: # ; 
+%<num%>%<subst%>: SUBST ; 
+%<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+
+LEXICON DIGITLEX
+
+%<num%>: # ;
+
+LEXICON NUM-ROMAN
+
+%<num%>: NUM ;
+
 LEXICON V-TV
 
 %<v%>%<tv%>: V-INFL-COMMON ;
@@ -509,44 +559,6 @@ LEXICON Vinfl-AUX-IMPF
 
 %<vaux%>: V-PERS-COP-SUF ;
 
-!!!!!!!!!!!!!!!!!!!!!! ADJECTIVES
-
-LEXICON ADJ-LEVELS
-
-%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
-
-LEXICON A1                 ! adjectives that can be substantivized and andverbialized #! тез
-
-%<adj%>: # ; 
-%<adj%>: ADJ-LEVELS ;
-%<adj%>%<subst%>: SUBST ;  ! all adjectives can be used as nouns
-%<adj%>%<advl%>: CLIT ;    ! FIXME: this can take comp. level too !# тезрек бар="go faster"
-
-LEXICON A2                 !# бар, жоқ ! adjectives with the predicative use 
-
-%<adj%>: CLIT-MA ;
-
-LEXICON A3                 ! (относительные-?derived?) adjectives without adverbial reading #! язгы
-
-%<adj%>: # ; 
-%<adj%>: ADJ-LEVELS ;
-%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
-
-LEXICON V-ADJ
-
-ADJ-COMMON ;  
-CLIT ; 
-
-LEXICON ADJ-ORD
-
-%<adj%>%<ord%>: # ;
-%<adj%>%<ord%>%<subst%>: SUBST ;
-
-LEXICON ADJ-COMMON !! This will be removed after reformatting verbal adjectives
-
-%<adj%>: ADJ-LEVELS ; 
-%<adj%>%<subst%>: SUBST ;     ! all adjectives can be used as nouns
-
 LEXICON ADV-WITH-KI
 
 ADV ;
@@ -556,10 +568,6 @@ LEXICON ADV-WITH-KI-I
 
 :%{I%} ADV ;
 ADJ-KI-INFL ; 
-
-LEXICON ADJ-KI-INFL
-
-%<attr%>:%>%{G%}%{I%} ADJ-COMMON ; ! FIXME: Another name
 
 LEXICON ADVITG
 
