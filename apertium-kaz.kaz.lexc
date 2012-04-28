@@ -699,7 +699,7 @@ LEXICON PRON-DEM
 сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 
-#бұл%<prn%>%<dem%>:бұ PRON-DEM-INFL ;
+!бұл%<prn%>%<dem%>:бұ PRON-DEM-INFL ;
 бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
 бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
@@ -718,26 +718,6 @@ LEXICON PRON-DEM
 бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
 бұл%<prn%>%<dem%>:бұны POSSESSION ;
 бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;
-
-LEXICON Postadverbs 
-
-тағы POSTADV ; ! "... дагы" = "and ... too"
-тегіс POSTADV ; ! "entirely/all/all together"
-ғана:ғана POSTADV ; ! "only" Dir/LR TOREMOVE
-ғана:гана POSTADV ; ! "only" Dir/LR TOREMOVE
-ғана:қана POSTADV ; ! "only" Dir/LR TOREMOVE
-ғана:кана POSTADV ; ! "only" Dir/LR TOREMOVE
-ғой POSTADV ;                 ! Dir/LR TOREMOVE
-да:да POSTADV ; ! "also"! Dir/LR TOREMOVE
-да:та POSTADV ; ! "also"! Dir/LR TOREMOVE
-да:де POSTADV ; ! "also"! Dir/LR TOREMOVE
-да:те POSTADV ; ! "also"! Dir/LR TOREMOVE
-ма:ма POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-ма:ба POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-ма:ме POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-ма:бе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 
 LEXICON PRON-COLL   ! "Collective"(?) pronouns
 
@@ -761,14 +741,18 @@ LEXICON DET-DEM
 
 %<det%>%<dem%>: # ;
 
+LEXICON DET-QNT
+
+%<det%>%<qnt%>: # ;
+!%<det%>%<qnt%>: N-INFL-COMMON ;
+
 LEXICON DET-IND
 
 %<det%>%<ind%>: # ;
 
-LEXICON DET-QNT
+LEXICON DET-ITG
 
-! %<det%>%<qnt%>: # ;
-%<det%>%<qnt%>: N-INFL-COMMON ;
+%<det%>%<ind%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -776,13 +760,17 @@ LEXICON DET-QNT
 
 LEXICON Conjunctions
 
-және:және CC ; ! "and"
+ал:ал CC ; ! "contrastive and"
 бірақ:бірақ CC ; ! "but"
 егер:егер CC ; ! "if"
+және:және CC ; ! "and"
 немесе:немесе CC ; ! "or"
-да:д%{A%} CC ; ! "also"
-ал:ал CC ; ! "contrastive and"
-да:де CC ;
+
+да:%~да CC ; ! "also" Dir/RL
+да:да CC ; ! ""       Dir/LR
+да:де CC ; ! ""       Dir/LR
+да:та CC ; ! ""       Dir/LR
+да:те CC ; ! ""       Dir/LR
 
 осы% себептен:осы% себептен CA ; ! "that is why"
 
@@ -835,6 +823,30 @@ LEXICON Postpositions
 соң:соң POST ; ! "after" + ABL
 сәйкес:сәйкес POST ; ! "in accordance with" + DAT
 
+LEXICON Postadverbs 
+
+да:%~да POSTADV ; ! ""     Dir/RL
+да:да POSTADV ; ! ""       Dir/LR
+да:де POSTADV ; ! ""       Dir/LR
+да:та POSTADV ; ! ""       Dir/LR
+да:те POSTADV ; ! ""       Dir/LR
+!ма:ба POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:бе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:ма POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:ме POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+
+тағы POSTADV ; ! "... дагы" = "and ... too"
+
+тегіс POSTADV ; ! "entirely/all/all together"
+
+ғана:%~гана POSTADV ; ! Dir/RL
+ғана:ғана POSTADV ;   ! "only" Dir/LR
+ғана:қана POSTADV ;   ! "only" Dir/LR
+
+ғой POSTADV ;         ! Dir/LR TOREMOVE
+
 LEXICON Pronouns
 
 не:не PRON-ITG ; ! "what"              ! interrog. pronoun
@@ -873,7 +885,10 @@ XII NUM-ROMAN ;
 сегіз:сегіз NUM ; ! "eight" 
 төғыз:төғыз  NUM ; ! "nine"
 он:он NUM ; ! "ten"
+
 он% бір:он% бір NUM ; ! "eleven"
+он% екі:он% екі NUM ; ! "twelve"
+
 жиырма:жиырма NUM ; ! "twenty"
 отыз:отыз NUM ; ! "thirty"
 қырық:қырық NUM ; ! "forty"
@@ -883,30 +898,33 @@ XII NUM-ROMAN ;
 сексен:сексен NUM ; ! "eighty"
 тоқсан:тоқсан NUM ; ! "ninety"
 жүз:жүз NUM ; ! "hundred"
+
 мың:мың NUM ; ! "thousand"
 
 LEXICON Determiners
 
+анау:анау DET-DEM ;
 бұл:бұл DET-DEM ;
+мынау:мынау DET-DEM ;
 осы:осы DET-DEM ;
 сол:сол DET-DEM ;
-мынау:мынау DET-DEM ;
 сонау:сонау DET-DEM ;
-анау:анау DET-DEM ;
 әлгі:әлгі DET-DEM ; ! "which" (?)  FIXME: check POS
 
-көп:көп DET-QNT ; ! "many, much"
-көптеген:көптеген DET-QNT ; ! "many"
-бірнеше:бірнеше DET-QNT ; ! "some"
 барлық:барлық DET-QNT ; ! "all"
+бірнеше:бірнеше DET-QNT ; ! "some"
 бірқатар:бірқатар DET-QNT ; ! "several"
 ешқандай:ешқандай DET-QNT ; ! "no [kind of], none"
+көп:көп DET-QNT ; ! "many, much"
+көптеген:көптеген DET-QNT ; ! "many"
 
-әр:әр DET-IND ; ! "every"
-әрбір:әрбір DET-IND ; ! "each"
+бір:бір DET-IND ; ! "a"
 еш:еш DET-IND ; ! "no"
 кей% бір:кей% бір DET-IND ; ! "some"
-бір:бір DET-IND ; ! "a"
+әр:әр DET-IND ; ! "every"
+әрбір:әрбір DET-IND ; ! "each"
+
+қай:қай DETITGLEX ; ! "which"
 
 !!! FIXME: Check these
 
