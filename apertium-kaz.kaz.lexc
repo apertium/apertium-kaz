@@ -278,6 +278,8 @@ CASE-ETC ;
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
 ! FIXME: this section needs refactoring
+!! i.e. change <adj><comp><subst> to <adj><subst><comp>
+!! and make use of ADJ-LEVELS class
 
 LEXICON ADJ-LEVELS
 
@@ -289,23 +291,23 @@ LEXICON A1                 ! adjectives that can be both substantivized and andv
 %<adj%>: CLIT ;
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 
-%<adj%>%<subst%>: SUBST ;                             !# жақсырақты 
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны 
 !%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;  !# жақсырақты таптым (?: Firespeaker)
 
 %<adj%>%<advl%>: CLIT ;
 !%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;    !# тезрек атта="go faster"
 
-LEXICON A2                 ! adjectives with predicative use  !# бар, жоқ 
+LEXICON A2                 ! (?derived=not fully lexicalized) adjectives without adverbial reading #! көктемгі
 
 %<adj%>: CLIT ;
+!%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ; ! they also seem not to take comp. level !# *көктемгірәк
 
-LEXICON A3                 ! (относительные-?derived?) adjectives without adverbial reading #! көктемгі
+%<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
+!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;
+
+LEXICON A3                 ! adjectives with (only) predicative use !# бар, жоқ 
 
 %<adj%>: CLIT ;
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
-
-%<adj%>%<subst%>: SUBST ;           !# Жақсырақты 
-!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;  !# Жақсырақты таптым (?: Firespeaker)
 
 LEXICON ADJ-ORD            ! the stems linked to this will most likely be moved to numerals
 
@@ -314,10 +316,10 @@ LEXICON ADJ-ORD            ! the stems linked to this will most likely be moved 
 
 LEXICON ADJ-COMMON
 
-%<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: not all verbal adjectives can get comparative level ending.
-                            ! In contrast to <advl>, <subst> reading is what all words acting
-                            ! like adjective get. ADJ-COMMON is meant to be used as default 
-                            ! cont. class for verbal adjectives
+%<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: ADJ-COMMON is meant to be used as default cont. class
+                            ! for verbal adjectives (but not all verbal adjectives can get comparative
+                            ! level ending). In contrast to <advl>, <subst> reading is what all
+                            ! words acting like adjective can get.
 %<adj%>%<subst%>: SUBST
 
 LEXICON V-ADJ
