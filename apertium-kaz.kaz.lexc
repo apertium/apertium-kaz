@@ -228,11 +228,11 @@ V-PERS-COP ;
 LEXICON CASE
 
 %<nom%>: CLIT-GENERAL ;
-%<acc%>:%>%{N%}%{I%} CLIT ;
 %<gen%>:%>%{N%}%{I%}ң CLIT ;
 %<dat%>:%>%{G%}%{A%} CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
 %<abl%>:%>%{D%}%{A%}н CLIT-GENERAL ;
+%<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
 %<ins%>:%>%{M%}ен CLIT ;
 
 LEXICON POSSESSION-ENDINGS  ! P_2
@@ -277,39 +277,48 @@ CASE-ETC ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
+! FIXME: this section needs refactoring
+
 LEXICON ADJ-LEVELS
 
 %<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
+CLIT ;
 
-LEXICON A1                 ! adjectives that can be substantivized and andverbialized #! тез
+LEXICON A1                 ! adjectives that can be both substantivized and andverbialized #! жақсы
 
-%<adj%>: # ; 
-%<adj%>: ADJ-LEVELS ;
-%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
-%<adj%>%<advl%>: CLIT ;     ! FIXME: this can take comp. level too !# тезрек бар="go faster"
+%<adj%>: CLIT ;
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 
-LEXICON A2                  !# бар, жоқ ! adjectives with the predicative use 
+%<adj%>%<subst%>: SUBST ;                             !# жақсырақты 
+!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;  !# жақсырақты таптым (?: Firespeaker)
 
-%<adj%>: CLIT-MA ;
+%<adj%>%<advl%>: CLIT ;
+!%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;    !# тезрек атта="go faster"
 
-LEXICON A3                  ! (относительные-?derived?) adjectives without adverbial reading #! язгы
+LEXICON A2                 ! adjectives with predicative use  !# бар, жоқ 
 
-%<adj%>: # ; 
-%<adj%>: ADJ-LEVELS ;
-%<adj%>%<subst%>: SUBST ;   ! all adjectives can be used as nouns
+%<adj%>: CLIT ;
 
-LEXICON ADJ-ORD             ! the stems linked to this will most likely be moved to numerals
+LEXICON A3                 ! (относительные-?derived?) adjectives without adverbial reading #! көктемгі
+
+%<adj%>: CLIT ;
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
+
+%<adj%>%<subst%>: SUBST ;           !# Жақсырақты 
+!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;  !# Жақсырақты таптым (?: Firespeaker)
+
+LEXICON ADJ-ORD            ! the stems linked to this will most likely be moved to numerals
 
 %<adj%>%<ord%>: # ;
 %<adj%>%<ord%>%<subst%>: SUBST ;
 
 LEXICON ADJ-COMMON
 
-%<adj%>: ADJ-LEVELS ;       ! FIXME: verbal adjectives shouldn't get comparative level ending.
+%<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: not all verbal adjectives can get comparative level ending.
                             ! In contrast to <advl>, <subst> reading is what all words acting
-                            ! like adjective get. So fix this, and make ADJ-COMMON default cont.
-                            ! class for verbal adjectives
-%<adj%>%<subst%>: SUBST     ! All adjectives can be used as nouns
+                            ! like adjective get. ADJ-COMMON is meant to be used as default 
+                            ! cont. class for verbal adjectives
+%<adj%>%<subst%>: SUBST
 
 LEXICON V-ADJ
 
@@ -318,11 +327,11 @@ CLIT ;
 
 LEXICON Natinfl
 
-A1 ;             ! nationality's adjectival form, e.g. "Turkish [food]"
-N1 ;               ! a member of the nationality, e.g. "A Turk"
+A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]"
+N1 ;              ! a member of the nationality, e.g. "A Turk"
 %>ш%{A%} ADV ;    ! as / in the style of the nat., e.g. "à la Turk"
 %>ш%{A%} ADV ;    ! in the language of the nationality, e.g. "in Turkish"
-%>ш%{A%} N1 ;      ! the language of the nationality, e.g. "Turkish"
+%>ш%{A%} N1 ;     ! the language of the nationality, e.g. "Turkish"
 
 LEXICON ADJ-KI-INFL
 
