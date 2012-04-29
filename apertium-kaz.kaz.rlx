@@ -87,7 +87,7 @@ SELECT Adv IF (0 ("өте")) (1 A);
     ## Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
-###################   SHOULD BE CHANGED LATER                       ####################
+###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
 REMOVE N IF (0 ("ақырын"));
     # a temporary ugly rule for translating the story 
@@ -100,5 +100,8 @@ SELECT A-ADVL IF (0 ("ақырын"));
 SELECT PRN-PERS IF (0 ("ол")) ;
     # a temporary ugly rule for translating the story 
 
-###################   TO BE DONE   ####################
+REMOVE N IF (0 ("жылы")) (NOT -1 N) ;
+    # a temporary ugly rule for translating the story 
     ## Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
+
+###################   TO BE DONE   ####################
