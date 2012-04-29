@@ -25,6 +25,7 @@ LIST Pred = pred ;
 LIST Attr = attr ;
 LIST Subst = subst ;
 
+LIST Pers = pers ;
 LIST Interr = itg ;
 
 # Semantic lists 
@@ -55,6 +56,8 @@ SET A-ADVL = (adj advl) ;
 
 # SET A1 = A | A-ADVL | A-SUBST ;
 
+SET PRN-PERS = (prn pers) ;
+
 # Categories which cannot be part of a noun phrase 
 
 SET NPNH = WORDMARK - PRE-N ;
@@ -83,13 +86,19 @@ REMOVE Attr IF (NOT 1 N);
 SELECT Adv IF (0 ("өте")) (1 A);
     ## Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
 
+###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
+###################   SHOULD BE CHANGED LATER                       ####################
+
 REMOVE N IF (0 ("ақырын"));
     # a temporary ugly rule for translating the story 
 
 SELECT A-ADVL IF (0 ("ақырын"));
     # a temporary ugly rule for translating the story 
-    # (1* V BARRIER S-BOUNDARY) can be added after the following verb gets analyzed
+    # (1* V BARRIER S-BOUNDARY) can be added after the following verb is fixed
     ## Айгүл оны ақырын<adj><advl> тыңдайды.
+
+SELECT PRN-PERS IF (0 ("ол")) ;
+    # a temporary ugly rule for translating the story 
 
 ###################   TO BE DONE   ####################
     ## Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
