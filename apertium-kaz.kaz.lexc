@@ -114,7 +114,8 @@ Multichar_Symbols
 %<glp_pot%>           ! potential verbal adjective
 
 !! Verbal adverbs - Глаголные наречия 
-%<gna_cond%>       ! -с{A}   !# "... кайда икәнен белсә дә, әйтми..."
+%<gna_cond%>          ! -с{A}   !# "... кайда икәнен белсә дә, әйтми..."
+%<gna9%>              ! -{I}п
 
 %<pfp%>               ! Perfect participle !! This was replaced with prc_perf
 
@@ -493,6 +494,7 @@ LEXICON V-INFL-NON-FINITE-REG
 
 ! Verbal adverbs
 %<gna_cond%>:%>с%{A%} V-PERS-COND ;    !# "...қайда екенен білсе де айтқысы келген жоқ ...
+%<gna9%>:%>%{I%}п CLIT ;
 
 !  Imperatives
 ! FIXME: check
@@ -4857,6 +4859,7 @@ LEXICON Adjectives
 жарым:жарым A1 ; ! "half"
 жарық:жарық A1 ; ! "light, enlighted"
 жас:жас A1 ; ! "young"
+жасар:жасар A1 ; ! "after numerals: of ageX" ! Use/MT
 жасыл:жасыл A1 ; ! "green"
 жақсы:жақсы A1 ; ! "good"
 жақын:жақын A1 ; ! "close"
