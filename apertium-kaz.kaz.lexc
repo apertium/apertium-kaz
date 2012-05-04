@@ -123,6 +123,7 @@ Multichar_Symbols
 %<past%>              ! past
 %<evid%>              ! evidential
 %<aor%>               ! non-future
+%<pres%>              ! for "жатыр", "тұр" and other 2
 
 ! Clitics
 %<qst%>               ! Modal question particle
@@ -588,7 +589,7 @@ LEXICON Vinfl-AUX
 
 LEXICON Vinfl-AUX-IMPF
 
-%<vaux%>: V-PERS-COP-SUF ;
+%<vaux%>%<pres%>: V-PERS-COP-SUF ;
 
 LEXICON ADV-WITH-KI
 
@@ -5004,7 +5005,8 @@ LEXICON Adjectives
 LEXICON Verbs 
 
 ! Auxiliary verbs
-
+      
+! FIXME :)
 жат:жатыр Vinfl-AUX-IMPF ; ! 
 жүр:жүр Vinfl-AUX-IMPF ; ! 
 отыр:отыр Vinfl-AUX-IMPF ; ! 
