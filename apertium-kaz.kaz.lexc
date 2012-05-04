@@ -113,6 +113,9 @@ Multichar_Symbols
 %<glp_impf%>          ! imperfect verbal adjective
 %<glp_pot%>           ! potential verbal adjective
 
+!! Verbal adverbs - Глаголные наречия 
+%<gna_cond%>       ! -с{A}   !# "... кайда икәнен белсә дә, әйтми..."
+
 %<pfp%>               ! Perfect participle !! This was replaced with prc_perf
 
 %<ifi%>               ! eyewitness past
@@ -120,6 +123,7 @@ Multichar_Symbols
 %<evid%>              ! evidential
 %<aor%>               ! non-future
 
+! Clitics
 %<qst%>               ! Modal question particle
 %<mod_foc%>           ! focus thingy
 %<mod_ass%>           ! assertive
@@ -209,7 +213,7 @@ LEXICON CLIT-MA
 !ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 !ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 
-LEXICON CLIT-OTHER
+LEXICON CLIT-OTHER                                 !FIXME:DISCUSS: make from this a separate clitics class for verbs
 
 %+меді%<qst%>:% %{M%}еді # ;   ! fix
 %+мекен%<qst%>:% %{M%}екен # ; ! fix?
@@ -468,9 +472,9 @@ LEXICON V-INFL-NON-FINITE-IRREG
 
 LEXICON V-INFL-NON-FINITE-REG
 
-! Adverbial participles
+! Participles
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
-%<prc_cond%>:%>с%{A%} V-PERS-COND ;
+!%<prc_cond%>:%>с%{A%} V-PERS-COND ;
 %<prc_impf%>:%>%{E%} # ;
 %<prc_irre%>:%>%{E%}т%{I%}н # ;
 
@@ -487,12 +491,15 @@ LEXICON V-INFL-NON-FINITE-REG
 %<glp_impf%>:%>%{E%}т%{I%}н V-ADJ ;
 %<glp_pot%>:%>у%>ш%{I%} V-ADJ ;
 
+! Verbal adverbs
+%<gna_cond%>:%>с%{A%} V-PERS-COND ;    !# "...қайда екенен білсе де айтқысы келген жоқ ...
+
 !  Imperatives
 ! FIXME: check
-%<imp%>%<p2%>%<sg%>: # ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з # ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң # ;                      ! Dir/LR
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р # ;
+%<imp%>%<p2%>%<sg%>: CLIT-OTHER ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-OTHER ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-OTHER ;                      ! Dir/LR
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р CLIT-OTHER ;
 
 !  Optative/jussive forms
 
@@ -4727,67 +4734,69 @@ LEXICON Adverbs
 
 қайда:қайда ADVITG ; ! ""
 
-еш% қашан:еш% қашан ADV ; ! "never"
+еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
 
-алға:алға ADV ; ! "forward"
-аса:аса ADV ; ! "very"
-әрдайым:әрдайым ADV ; ! "always"
 ! бүгін ADV ; ! "today" 
-көп:көп ADV ; ! "a lot"
-өте:өте ADV ; ! "very"
-ең:ең ADV ; ! "most"
-жиі:жиі ADV ; ! "often"
-дәл:дәл ADV ; ! "exactly"
-тез:тез ADV ; ! "quickly"
-жалғыз:жалғыз ADV ; ! "alone"
-тіпті:тіпті ADV ; ! "too"
-кейде:кейде ADV ; ! "sometimes"
-яғни:яғни ADV ; ! "that is"
-тек:тек ADV ; ! "only
-мүмкін:мүмкін ADV ; ! "probably"
-біраз:біраз ADV ; ! "some, a little"   ! FIXME: also a quantifier
-ерте:ерте ADV ; ! "early"
-әсіресе:әсіресе ADV ; ! "especially"
-ылғи:ылғи ADV ; ! "always"
-әбден:әбден ADV ; ! "extremely"
-анық:анық ADV ; ! "clearly"
-қайтадан:қайтадан ADV ; ! "once again"
-күндіз:күндіз ADV ; ! "during the day"
+! енді ADV ; ! "contrastive now"
 ! қазір ADV ; ! "now"
 ! әзір ADV ; ! "now"
-! енді ADV ; ! "contrastive now"
-әрі:әрі ADV ; ! "otherside"
-бері:бері ADV ; ! "nearside"
-құр:құр ADV ; ! "just/only"
-кішкене:кішкене ADV ; ! "a little"
-дұрыс:дұрыс ADV ; ! "correctly"
-әйтеуір:әйтеуір ADV ; ! "somehow"
-көбінесе:көбінесе ADV ; ! "mostly"
-қашан:қашан ADV ; ! "when"
+алға:алға ADV ; ! "forward"
+анық:анық ADV ; ! "clearly"
 арнайы:арнайы ADV ; ! "on purpose, specifically"
+аса:аса ADV ; ! "very"
+бері:бері ADV ; ! "nearside"
+біраз:біраз ADV ; ! "some, a little"   ! FIXME: also a quantifier
+дұрыс:дұрыс ADV ; ! "correctly"
+дәл:дәл ADV ; ! "exactly"
+ерте:ерте ADV ; ! "early"
+ең:ең ADV ; ! "most"
+жалғыз:жалғыз ADV ; ! "alone"
+жиі:жиі ADV ; ! "often"
+кейде:кейде ADV ; ! "sometimes"
+кішкене:кішкене ADV ; ! "a little"
+күндіз:күндіз ADV ; ! "during the day"
+көбінесе:көбінесе ADV ; ! "mostly"
+көп:көп ADV ; ! "a lot"
+мүмкін:мүмкін ADV ; ! "probably"
+тез:тез ADV ; ! "quickly"
+тек:тек ADV ; ! "only
 тура:тура ADV ; ! "straight"
+тіпті:тіпті ADV ; ! "too"
+ылғи:ылғи ADV ; ! "always"
+яғни:яғни ADV ; ! "that is"
+қайта:қайта ADV ; ! "again"
+қайтадан:қайтадан ADV ; ! "once again"
+қашан:қашан ADV ; ! "when"
+құр:құр ADV ; ! "just/only"
+әбден:әбден ADV ; ! "extremely"
+әйтеуір:әйтеуір ADV ; ! "somehow"
+әлі:әлі ADV ; ! "now" !FIXME:CHECK
+әрдайым:әрдайым ADV ; ! "always"
+әрі:әрі ADV ; ! "otherside"
+әсіресе:әсіресе ADV ; ! "especially"
+өте:өте ADV ; ! "very"
 
 !!!! Adverbs with KI !!!!
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
-бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
-бұрын:бұрын ADV-WITH-KI ; ! "earlier"
-жаңа:жаңа ADV-WITH-KI ; ! "a while ago > a while ago's"
+ақыр:ақыр ADV-WITH-KI ; ! "last"  ! FIXME: check adv
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now"
-енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
-қазір:қазір ADV-WITH-KI ; ! "now > the one now"
-әзір:әзір ADV-WITH-KI ; ! "now > the one now"
+бері:бер ADV-WITH-KI-I ; ! "on the near side"
 биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
 былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
+бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
+бұрын:бұрын ADV-WITH-KI ; ! "earlier"
+дейін:дейін ADV-WITH-KI ; ! "before"
+ежел:ежел ADV-WITH-KI ; ! "ancient"   ! FIXME: check adv
+енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
+жаңа:жаңа ADV-WITH-KI ; ! "a while ago > a while ago's"
+жоғары:жоғар ADV-WITH-KI-I ; ! "high"
+кейін:кейін ADV-WITH-KI ; ! "after"
+кеш:кеш ADV-WITH-KI ; ! "evening/late"
 кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
 таңертең:таңертең ADV-WITH-KI ; ! "morning"
-бері:бер ADV-WITH-KI-I ; ! "on the near side"
-ақыр:ақыр ADV-WITH-KI ; ! "last"  ! FIXME: check adv
-кеш:кеш ADV-WITH-KI ; ! "evening/late"
-жоғары:жоғар ADV-WITH-KI-I ; ! "high"
-ежел:ежел ADV-WITH-KI ; ! "ancient"   ! FIXME: check adv
 төмен:төмен ADV-WITH-KI ; ! "low > lower"
-дейін:дейін ADV-WITH-KI ; ! "before"
-кейін:кейін ADV-WITH-KI ; ! "after"
+қазір:қазір ADV-WITH-KI ; ! "now > the one now"
+әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 
 !алғашқы A1 ; ! "first"
 !бүгінгі A1 ; ! "today's"
@@ -4806,7 +4815,6 @@ LEXICON Adverbs
 !жоғары:жоғарғы A1 ; ! "high"
 !ежелгі A1 ; ! "ancient"
 !төменгі A1 ; ! "lower"
-
 
 LEXICON Adjectives
 
@@ -4989,6 +4997,8 @@ LEXICON Adjectives
 
 LEXICON Verbs 
 
+! Auxiliary verbs
+
 жат:жатыр Vinfl-AUX-IMPF ; ! 
 жүр:жүр Vinfl-AUX-IMPF ; ! 
 отыр:отыр Vinfl-AUX-IMPF ; ! 
@@ -4998,7 +5008,6 @@ LEXICON Verbs
 жүр:жүр Vinfl-AUX ; ! 
 отыр:отыр Vinfl-AUX ; ! 
 тұр:тұр Vinfl-AUX ; ! 
-
 қал:қал Vinfl-AUX ; ! 
 ал:ал Vinfl-AUX ; ! 
 сал:сал Vinfl-AUX ; ! 
@@ -6233,25 +6242,25 @@ LEXICON Verbs
 өңгер:өңгер V-TD ; ! "put someone of something in daring"
 жарияла:жарияла V-TV ; ! "announce"
 
-
 LEXICON Interjections 
 
-әлбетте:әлбетте INTERJ ; ! "of course"
-мына:мына INTERJ ; ! "here is, вот"
-әйе:әйе INTERJ ; ! "yes"
-иә:иә INTERJ ; ! "yes"
+болыпты:болыпты INTERJ ; ! "okay / that's it"
+демек:демек INTERJ ; ! "that is"
+дұрыс:дұрыс INTERJ ; ! "right"
+жарайды:жарайды INTERJ ; ! "okay / it'll do"
 жоқ:жоқ INTERJ ; ! "no"
-ой:ой INTERJ ; ! "hey"
+иә:иә INTERJ ; ! "yes"
 мақұл:мақұл INTERJ ; ! "fine/okay"
 мейлі:мейлі INTERJ ; ! "okay/fine"
-түсінікті:түсінікті INTERJ ; ! "understood"
+мына:мына INTERJ ; ! "here is, вот"
 мә:мә INTERJ ; ! "here you go / take"
-жарайды:жарайды INTERJ ; ! "okay / it'll do"
-болыпты:болыпты INTERJ ; ! "okay / that's it"
+ой:ой INTERJ ; ! "hey"
 онда:онда INTERJ ; ! "then"
 ондай% болса:ондай% болса INTERJ ; ! "in that case"
-дұрыс:дұрыс INTERJ ; ! "right"
+түсінікті:түсінікті INTERJ ; ! "understood"
 қане:қане INTERJ ; ! "where"           ! interrog. interjection (question form of "вот")
+әйе:әйе INTERJ ; ! "yes"
+әлбетте:әлбетте INTERJ ; ! "of course"
 
 LEXICON Abbreviations
 
