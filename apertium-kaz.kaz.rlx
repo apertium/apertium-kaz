@@ -6,6 +6,9 @@ SETS
 LIST BOS = (>>>) ;
 LIST EOS = (<<<) ;
 
+# Parts of speech
+# ---------------
+
 LIST A = adj ;
 LIST Adv = adv ;
 LIST Pron = prn ; 
@@ -20,13 +23,22 @@ LIST Post = post ;
 LIST Postadv = postadv ; 
 LIST Cm = cm ; 
 
+# POS sub-categories
+# ------------------
+
+LIST Pers = pers ;
+LIST Interr = itg ;
+
+# Morphosyntactic properties
+# --------------------------
+
 LIST Advl = advl ;
 LIST Pred = pred ;
 LIST Attr = attr ;
 LIST Subst = subst ;
 
-LIST Pers = pers ;
-LIST Interr = itg ;
+LIST Sg = sg ;
+LIST Pl = pl ;
 
 # Semantic lists 
 
@@ -35,6 +47,7 @@ LIST MOVEMENT-V = "йөгер" ;
 LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
 
 # All possible word categories
+# ----------------------------
 
 SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
 
@@ -59,14 +72,30 @@ SET A-ADVL = (adj advl) ;
 SET PRN-PERS = (prn pers) ;
 
 # Categories which cannot be part of a noun phrase 
+# ------------------------------------------------
 
 SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
 
-# Barriers 
+# Nouns
+# ------
 
-SET S-BOUNDARY = CS | Interr | EOS; 
+LIST N-SG-NOM = (n sg nom) ;
+LIST N-PL-NOM = (n pl nom) ;
+
+# Verb sets
+# ---------
+
+LIST V-P3 = (cop ifi p3 sg) (vaux neg ifi p3 sg) (v TD neg aor p3 sg) (v tv ifi p3 sg)
+            (cop ifi p3 pl) (vaux neg ifi p3 pl) (v TD neg aor p3 pl) (v tv ifi p3 pl)
+            (v tv aor p3 sg) (v TD aor p3 sg) (v TD ifi p3 sg) (v iv ifi p3 sg)
+            (v tv aor p3 sg) (v TD aor p3 sg) (v TD ifi p3 pl) (v iv ifi p3 pl) ;
+
+# Barriers 
+# --------
+
+SET S-BOUNDARY = CS | Interr | EOS ; 
 
 SECTION
 
@@ -102,3 +131,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N) ;
     ## Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
 
 ###################   TO BE DONE   ####################
+
+REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
+    # get rid of plural verb reading if subject is not plural
+    ## Бірақ кеше өте суық ^еді/е<cop><ifi><p3><pl>/е<cop><ifi><p3><sg>$^!
