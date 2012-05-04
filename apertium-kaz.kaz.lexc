@@ -78,7 +78,6 @@ Multichar_Symbols
 ! Pronoun types
 %<pers%>              ! Personal
 %<ref%>               ! Reflexive
-!%<coll%>             ! Collective-numeral pronoun
 !%<recip%>            ! Reciprocal pronoun
 ! Pronoun and determiner types
 %<dem%>               ! Demonstrative
@@ -88,6 +87,7 @@ Multichar_Symbols
 
 ! Numeral types
 %<ord%>            ! Ordinal
+%<coll%>           ! Collective
 
 ! Tense, aspect, mood
 %<imp%>               ! Imperative
@@ -556,6 +556,11 @@ LEXICON NUM
 %<num%>%<subst%>: SUBST ; 
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
 
+LEXICON NUM-COLL
+
+%<num%>%<coll%>%<subst%>: N-INFL-COMMON ;
+%<num%>%<coll%>%<advl%>: # ;
+
 LEXICON DIGITLEX
 
 %<num%>: # ;
@@ -626,6 +631,8 @@ LEXICON ABBR
 LEXICON INTERJ
 
 %<ij%>: # ;
+
+!!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
 LEXICON Pron-12SG-CASES
 
@@ -737,10 +744,6 @@ LEXICON PRON-DEM
 LEXICON PRNNEG
 
 %<prn%>%<neg%>: CASE ; 
-
-LEXICON PRON-COLL   ! "Collective"(?) pronouns
-
-%<prn%>%<coll%>: N-INFL-COMMON ;
 
 LEXICON PRON-RECIP
 
@@ -877,16 +880,6 @@ PRON-DEM ;   ! Demonstrative pronouns
 
 еш% нәрсе:еш% нәрсе PRNNEG ; ! "" ! Use/MT
 
-бір:біреу PRON-COLL ;
-екі:екеу PRON-COLL ;
-үш:үшеу PRON-COLL ;
-төрт:төртеу PRON-COLL ;
-бес:бесеу PRON-COLL ;
-
-! Technically this goes on to higher numbers
-! but its use beyond 5(?) is rare
-! and is of questionable grammaticality
-
 LEXICON Numerals
 
 XII NUM-ROMAN ; 
@@ -916,6 +909,16 @@ XII NUM-ROMAN ;
 жүз:жүз NUM ; ! "hundred"
 
 мың:мың NUM ; ! "thousand"
+
+бір:біреу NUM-COLL ;           
+екі:екеу NUM-COLL ;
+үш:үшеу NUM-COLL ;
+төрт:төртеу NUM-COLL ;
+бес:бесеу NUM-COLL ;
+
+! Technically this goes on to higher numbers  !! FIXME:DISCUSS: maybe we'll start derive them from the basic numerals
+! but its use beyond 5(?) is rare
+! and is of questionable grammaticality
 
 LEXICON Determiners
 
