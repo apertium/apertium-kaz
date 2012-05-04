@@ -97,9 +97,6 @@ SELECT A-ADVL IF (0 ("ақырын"));
     # (1* V BARRIER S-BOUNDARY) can be added after the following verb is fixed
     ## Айгүл оны ақырын<adj><advl> тыңдайды.
 
-SELECT PRN-PERS IF (0 ("ол")) ;
-    # a temporary ugly rule for translating the story 
-
 REMOVE N IF (0 ("жылы")) (NOT -1 N) ;
     # a temporary ugly rule for translating the story 
     ## Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
