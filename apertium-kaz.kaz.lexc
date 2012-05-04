@@ -202,6 +202,12 @@ LEXICON CLIT-MA
 !! Modal/discourse particles
 !%+ма%<qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
 %+ма%<qst%>:%>% %{M%}%{A%} # ;
+!ма:ба POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:бе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:ма POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:ме POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
+!ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 
 LEXICON CLIT-OTHER
 
@@ -719,6 +725,10 @@ LEXICON PRON-DEM
 бұл%<prn%>%<dem%>:бұны POSSESSION ;
 бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;
 
+LEXICON PRNNEG
+
+%<prn%>%<neg%>: CASE ; 
+
 LEXICON PRON-COLL   ! "Collective"(?) pronouns
 
 %<prn%>%<coll%>: N-INFL-COMMON ;
@@ -729,7 +739,7 @@ LEXICON PRON-RECIP
 
 LEXICON Copula
 
-е%<cop%>%<ger%>:екен POSSESSION ;
+е%<cop%>%<ger_past%>:екен POSSESSION ;
 е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к POSSESSION ;
 
 е%<cop%>%<neg%>:емес V-PERS-COP-SUF ; 
@@ -830,12 +840,6 @@ LEXICON Postadverbs
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
-!ма:ба POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-!ма:бе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-!ма:ма POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-!ма:ме POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-!ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
-!ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 
 тағы POSTADV ; ! "... дагы" = "and ... too"
 
@@ -861,6 +865,8 @@ LEXICON Pronouns
 
 PRON-PERS ;  ! Personal pronouns
 PRON-DEM ;   ! Demonstrative pronouns
+
+еш% нәрсе:еш% нәрсе PRNNEG ; ! "" ! Use/MT
 
 бір:біреу PRON-COLL ;
 екі:екеу PRON-COLL ;
@@ -5249,6 +5255,7 @@ LEXICON Verbs
 бұзақылан:бұзақылан V-TD ; ! "to make a row"
 бұзыл:бұзыл V-TD ; ! "to deteriorate"  ! FIXME: passive
 бұйрала:бұйрала V-TV ; ! "to curl"
+бүйт:бүйт V-TD ; ! "do that way"
 бүйірле:бүйірле V-TD ; ! "to lash the sides (of a horse)"
 бүк:бүк V-TV ; ! "fold"
 бүкпеле:бүкпеле V-TD ; ! "to hobble a skittish mare while milking her"
@@ -5711,6 +5718,7 @@ LEXICON Verbs
 сүр:сүр V-TD ; ! "furrow"
 сұра:сұра V-TV ; ! "request/ask for"
 сөйле:сөйле V-TD ; ! "say,speak"
+сөйлес:сөйлес V-IV ; ! "say,speak"
 тіл:тіл V-TD ; ! "to cut"
 табаіща:табаіща V-TD ; ! "to persist"
 табала:табала V-TD ; ! "to feel malicious joy"
