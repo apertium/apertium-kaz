@@ -536,15 +536,27 @@ LEXICON V-TD ! Temporary lexicon
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
-LEXICON Vinfl-AUX
-
-%<vaux%>: V-INFL-COMMON ;
-
 LEXICON Vinfl-AUX-IMPF
 
-%<vaux%>%<pres%>: V-PERS-COP-SUF ;  ! жүр, жатыр, тұр, отыр
+%<vaux%>%<pres%>: V-PERS-COP-SUF ; ! /жүр, жатыр, тұр, отыр/ as part of multiword present form
 
-!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
+LEXICON Vinfl-AUX
+
+%<vaux%>: V-INFL-COMMON ;          ! these four verbs in other tenses and all other aux. verbs
+
+!!!!!!!!!!!!!!!!!!!!!!     copula
+
+LEXICON Copula
+
+е%<cop%>%<ger_past%>:екен POSSESSION ;
+е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к POSSESSION ;
+
+е%<cop%>%<neg%>:емес V-PERS-COP-SUF ; 
+е%<cop%>%<evid%>:екен V-PERS-COP-SUF ; 
+е%<cop%>%<neg%>%<evid%>:емес% екен V-PERS-COP-SUF ; 
+е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-PAST ; 
+
+!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS (beginning)
 
 LEXICON N1
 
@@ -751,15 +763,7 @@ LEXICON PRON-RECIP
 
 %<prn%>%<recip%>: POSSESSION ;
 
-LEXICON Copula
-
-е%<cop%>%<ger_past%>:екен POSSESSION ;
-е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к POSSESSION ;
-
-е%<cop%>%<neg%>:емес V-PERS-COP-SUF ; 
-е%<cop%>%<evid%>:екен V-PERS-COP-SUF ; 
-е%<cop%>%<neg%>%<evid%>:емес% екен V-PERS-COP-SUF ; 
-е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-PAST ; 
+!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS (end)
 
 LEXICON DET-DEM
 
