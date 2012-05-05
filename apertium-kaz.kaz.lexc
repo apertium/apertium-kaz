@@ -31,6 +31,7 @@ Multichar_Symbols
 %<top%>            ! Toponym
 %<ant%>            ! Anthroponym
 %<cog%>            ! Cognomen
+%<org%>            ! Organization
 %<al%>             ! Other
 
 !! gender of anthroponyms and cognoms
@@ -55,7 +56,6 @@ Multichar_Symbols
 %<px1pl%>             ! First person plural
 %<px2pl%>             ! Second person plural
 %<px%>                ! General possessive     !# -нікі
-%<frm%>               ! formal address         ! FIXME: need better comment
 
 ! Cases
 %<nom%>               ! Nominative
@@ -78,46 +78,22 @@ Multichar_Symbols
 ! Pronoun types
 %<pers%>              ! Personal
 %<ref%>               ! Reflexive
-!%<recip%>            ! Reciprocal pronoun
+%<recip%>             ! Reciprocal pronoun
 ! Pronoun and determiner types
 %<dem%>               ! Demonstrative
 %<ind%>               ! Indefinite
 %<itg%>               ! Interrogative
 %<qnt%>               ! Quantifier
+%<neg%>               ! Negative       !# еш нерсе
 
 ! Numeral types
-%<ord%>            ! Ordinal
-%<coll%>           ! Collective
+%<ord%>               ! Ordinal
+%<coll%>              ! Collective
 
 ! Tense, aspect, mood
 %<imp%>               ! Imperative
 %<caus%>              ! causative
 %<pass%>              ! passive
-
-%<prc_perf%>          ! perfect participle
-%<prc_plan%>          ! plan participle
-%<prc_cond%>          ! conditional participle
-%<prc_impf%>          ! imperfect participle
-%<prc_irre%>          ! irrealis participle
-
-%<ger_ppot%>          ! gerund p??? potential
-%<ger_past%>          ! past/perfect gerund
-%<ger_perf%>          ! perfective gerund
-%<ger_impf%>          ! imperfective gerund
-%<ger%>               ! just a gerund
-%<ger_abs%>           ! absolute(?) gerund
-
-%<glp_fut%>           ! future verbal adjective
-%<glp_fut2%>          ! another future verbal adjective
-%<glp_past%>          ! past verbal adjective
-%<glp_impf%>          ! imperfect verbal adjective
-%<glp_pot%>           ! potential verbal adjective
-
-!! Verbal adverbs - Глаголные наречия 
-%<gna_cond%>          ! -с{A}   !# "... кайда икәнен белсә дә, әйтми..."
-%<gna9%>              ! -{I}п
-
-%<pfp%>               ! Perfect participle !! This was replaced with prc_perf
 
 %<ifi%>               ! eyewitness past
 %<past%>              ! past
@@ -125,10 +101,31 @@ Multichar_Symbols
 %<aor%>               ! non-future
 %<pres%>              ! for "жатыр", "тұр" and other 2
 
-! Clitics
-%<qst%>               ! Modal question particle
-%<mod_foc%>           ! focus thingy
-%<mod_ass%>           ! assertive
+!! Participles
+%<prc_perf%>          ! perfect participle (-{I}п) !# "Бірақ мысығы үйде, _ұйықтап_ жатыр." 
+%<prc_plan%>          ! plan participle
+%<prc_cond%>          ! conditional participle
+%<prc_impf%>          ! imperfect participle       !# "...олар далада _ойнай_ алмады..."
+%<prc_irre%>          ! irrealis participle
+
+!! Verbal adverbs - Глаголные наречия 
+%<gna_cond%>          ! -с{A}   !# "...қайда екенін _білсе_ де айтқысы келген жоқ...."
+%<gna9%>              ! -{I}п
+
+!! Verbal adjectives - Глаголные причастия
+%<glp_fut%>           ! future verbal adjective
+%<glp_fut2%>          ! another future verbal adjective
+%<glp_past%>          ! past verbal adjective
+%<glp_impf%>          ! imperfect verbal adjective
+%<glp_pot%>           ! potential verbal adjective
+
+!! Gerunds - Исем фигыльләр
+%<ger%>               ! just a gerund         ! -{U}
+%<ger_ppot%>          ! gerund p??? potential
+%<ger_past%>          ! past/perfect gerund
+%<ger_perf%>          ! perfective gerund
+%<ger_impf%>          ! imperfective gerund
+%<ger_abs%>           ! absolute(?) gerund
 
 ! Transitivity
 %<tv%>                ! Transitive
@@ -139,6 +136,12 @@ Multichar_Symbols
 %<p1%>                ! First person 
 %<p2%>                ! Second person 
 %<p3%>                ! Third person
+%<frm%>               ! formal address         ! FIXME: need better comment
+
+! Clitics
+%<qst%>               ! Modal question particle
+%<mod_foc%>           ! focus thingy
+%<mod_ass%>           ! assertive
 
 ! Punctuation
 %<sent%>              ! Sentence marker
@@ -215,7 +218,7 @@ LEXICON CLIT-MA
 !ма:па POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 !ма:пе POSTADV ; ! "y/n q" Dir/LR TOREMOVE
 
-LEXICON CLIT-OTHER                                 !FIXME:DISCUSS: make from this a separate clitics class for verbs
+LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics class for verbs
 
 %+меді%<qst%>:% %{M%}еді # ;   ! fix
 %+мекен%<qst%>:% %{M%}екен # ; ! fix?
@@ -259,13 +262,9 @@ LEXICON POSSESSION-ENDINGS  ! P_2
 
 LEXICON ADJ-DAGI
 !! ADJ-COMMON ;   !!!! ! FIXME: when we go recursive, use this instead of CASES
-! %<subst%>: CASE ; ! FIXME: DISCUSS: this works great (i.e. "^алдындағыны/алд<n><px3sp><loc><subst><acc>$"), but substantivation
-                    ! of the locative case doesn't look good.  Neither does <loc><attr><subst>. I think we should switch back
-                    ! to the <locattr> or <rloc> tag.
-                    ! Commented out only temporarily, to get a nice translation of the story /I.S./
-
 ! ADJ-COMMON ;    !!!! ! FIXME: when we go recursive, use this instead of N-INFL
 !%<n%>: N-INFL ;
+%<subst%>: CASE ; 
 %<attr%>: CLIT ;
 !# ;
 
