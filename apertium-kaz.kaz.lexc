@@ -196,13 +196,22 @@ Interjections ;
 Abbreviations ;
 Punctuation ;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON SUBST
 
 N-INFL-COMMON ;
 %<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ; ! FIXME: right?
+                                     
+! NOTE: Some substantivized things might not have pl. form, numerals e.g. 
+! (not too sure, because in Tatar they have it: 
+! #1 <11 ones meaning pupils from a given class: # өчләр = "pupils from the 3. class" 
+! #2 "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
+!
+! If they don't have pl. form; link them to N-INFL-COMMON; if they do - to SUBST.
+!                                                                     /I.S./
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !!!!!!!!!!!!!!!!!!!!!!     CLITICS
 
@@ -250,7 +259,7 @@ LEXICON CASE
 %<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
 %<ins%>:%>%{M%}ен CLIT ;
 
-LEXICON POSSESSION-ENDINGS  ! P_2
+LEXICON POSS-REAL  ! P_2
 
 %<px1sg%>:%>%{I%}м CASE-ETC ;
 %<px2sg%>:%>%{I%}ң CASE-ETC ; 
@@ -276,11 +285,10 @@ LEXICON GEN-POS
 LEXICON CASE-ETC
 CASE ;
 GEN-POS ;
-!CLIT ;
 %<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
 
 LEXICON POSSESSION
-POSSESSION-ENDINGS ;
+POSS-REAL ;
 
 LEXICON N-INFL-COMMON 
 POSSESSION ;
