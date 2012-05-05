@@ -521,6 +521,29 @@ V-INFL-FINITE ;
 %<neg%>:%>%{M%}%{A%} V-INFL-FINITE ;
 V-INFL-NON-FINITE ;
 
+LEXICON V-TV
+
+%<v%>%<tv%>: V-INFL-COMMON ;
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;                              
+
+LEXICON V-IV
+
+%<v%>%<iv%>: V-INFL-COMMON ;
+
+LEXICON V-TD ! Temporary lexicon
+
+%<v%>%<TD%>: V-INFL-COMMON ;
+
+!!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
+
+LEXICON Vinfl-AUX
+
+%<vaux%>: V-INFL-COMMON ;
+
+LEXICON Vinfl-AUX-IMPF
+
+%<vaux%>%<pres%>: V-PERS-COP-SUF ;  ! жүр, жатыр, тұр, отыр
+
 !!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
 
 LEXICON N1
@@ -568,27 +591,6 @@ LEXICON DIGITLEX
 LEXICON NUM-ROMAN
 
 %<num%>: NUM ;
-
-LEXICON V-TV
-
-%<v%>%<tv%>: V-INFL-COMMON ;
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;                              
-
-LEXICON V-IV
-
-%<v%>%<iv%>: V-INFL-COMMON ;
-
-LEXICON V-TD ! Temporary lexicon
-
-%<v%>%<TD%>: V-INFL-COMMON ;
-
-LEXICON Vinfl-AUX
-
-%<vaux%>: V-INFL-COMMON ;
-
-LEXICON Vinfl-AUX-IMPF
-
-%<vaux%>%<pres%>: V-PERS-COP-SUF ;
 
 LEXICON ADV-WITH-KI
 
