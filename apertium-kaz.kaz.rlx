@@ -87,11 +87,21 @@ LIST N-PL-NOM = (n pl nom) ;
 # Verb sets
 # ---------
 
-LIST V-P3 = (cop ifi p3 sg) (vaux neg ifi p3 sg) (v TD neg aor p3 sg) (v tv ifi p3 sg)
-            (cop ifi p3 pl) (vaux neg ifi p3 pl) (v TD neg aor p3 pl) (v tv ifi p3 pl)
-            (v tv aor p3 sg) (v TD aor p3 sg) (v TD ifi p3 sg) (v iv ifi p3 sg)
-            (v tv aor p3 sg) (v TD aor p3 sg) (v TD ifi p3 pl) (v iv ifi p3 pl) ;
+LIST V-P3 = (v TD aor p3 sg) (v TD neg aor p3 sg) (v TD ifi p3 sg)
+            (v TD aor p3 pl) (v TD neg aor p3 pl) (v TD ifi p3 pl)
+            (v tv ifi p3 sg) (v tv aor p3 sg) (v tv prc_vol  p3 sg)
+            (v tv ifi p3 pl) (v tv aor p3 pl) (v tv prc_vol  p3 pl)
+            (v iv aor p3 sg) (v iv ifi p3 sg) (v TD  gna_cond p3  sg)
+            (v iv aor p3 pl) (v iv ifi p3 pl) (v TD  gna_cond p3  pl)             
+            (vaux pres p3 sg) (vaux neg ifi p3 sg)
+            (vaux pres p3 pl) (vaux neg ifi p3 pl)
+            (cop neg p3 sg)  (cop ifi p3 sg) 
+            (cop neg p3 pl)  (cop ifi p3 pl) ;
 
+               # FIXME: I suppose that this ^ is ugly, but right now I dont know
+               # how else it can be done. It'll be improved as I go along with CG
+               # a bit more. Any feedback appreciated ;) /I.S./
+ 
 # Barriers 
 # --------
 
@@ -132,6 +142,10 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N) ;
 
 ###################   TO BE DONE   ####################
 
+# get rid of plural verb reading if subject is not plural
+
 REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
-    # get rid of plural verb reading if subject is not plural
-    ## Бірақ кеше өте суық ^еді/е<cop><ifi><p3><pl>/е<cop><ifi><p3><sg>$^!
+
+    ## FIXME:EXTEND: subject can be a pronoun too. Or a substantivized adjective.
+    ## But start with (personal) pronouns.
+    #! Бірақ кеше өте суық ^еді/е<cop><ifi><p3><pl>/е<cop><ifi><p3><sg>$^!
