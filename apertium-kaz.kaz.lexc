@@ -873,7 +873,7 @@ LEXICON Postadverbs
 
 тегіс POSTADV ; ! "entirely/all/all together"
 
-ғана:%~гана POSTADV ; ! Dir/RL
+ғана:%~ғана POSTADV ; ! Dir/RL
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
 
@@ -908,33 +908,48 @@ XII NUM-ROMAN ;
 алты:алты NUM ; ! "six"
 жеті:жеті NUM ; ! "seven"
 сегіз:сегіз NUM ; ! "eight" 
-төғыз:төғыз  NUM ; ! "nine"
+тоғыз:тоғыз  NUM ; ! "nine"
 он:он NUM ; ! "ten"
 
-он% бір:он% бір NUM ; ! "eleven"
-он% екі:он% екі NUM ; ! "twelve"
+он% бір:он% бір NUM ; ! "eleven"       ! This are needed only because the corresponding
+он% екі:он% екі NUM ; ! "twelve"       ! tatar numerals are written as one word
+он% үш:он% үш NUM ; ! "thirteen"
+он% төрт:он% төрт NUM ; ! "fourteen"
+он% бес:он% бес NUM ; ! "fifteen"
+он% алты:он% алты NUM ; ! "sixteen"
+он% жеті:он% жеті NUM ; ! "seventeen"
+он сегіз%:он% сегіз NUM ; ! "eighteen"
+он тоғыз%:он% тоғыз NUM ; ! "nineteen"
 
-жиырма:жиырма NUM ; ! "twenty"
+жиырма:жиырма NUM ; ! "twenty"         ! This has an exceptional ordinal form: жиырмасыншы
 отыз:отыз NUM ; ! "thirty"
 қырық:қырық NUM ; ! "forty"
 елу:елу NUM ; ! "fifty"
-алныс:алныс NUM ; ! "sixty"
-жетніс:жетніс NUM ; ! "seventy"
+алпыс:алпыс NUM ; ! "sixty"
+жетпіс:жетпіс NUM ; ! "seventy"
 сексен:сексен NUM ; ! "eighty"
 тоқсан:тоқсан NUM ; ! "ninety"
 жүз:жүз NUM ; ! "hundred"
 
 мың:мың NUM ; ! "thousand"
+миллион:миллион NUM ; ! "million"
+
+!ширек:ширек NUM ; ! "quarter"         ! FIXME:DISCUSS: POS
+!жарым:жарым NUM ; ! "half"            ! (consider that they don't have ordinal form obviously)
+!жарты:жарты NUM ; ! "half"
 
 бір:біреу NUM-COLL ;           
 екі:екеу NUM-COLL ;
 үш:үшеу NUM-COLL ;
 төрт:төртеу NUM-COLL ;
 бес:бесеу NUM-COLL ;
+алтау:алтау NUM-COLL ;
+жетеу:жетеу NUM-COLL ;
 
-! Technically this goes on to higher numbers  !! FIXME:DISCUSS: maybe we'll start derive them from the basic numerals
+! Technically this goes on to higher numbers
 ! but its use beyond 5(?) is rare
-! and is of questionable grammaticality
+! and is of questionable grammaticality /not-I.S./
+! Grammar says first 7 numerals have this form, so let's extend it to 7 /I.S./
 
 LEXICON Determiners
 
