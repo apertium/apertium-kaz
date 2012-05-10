@@ -28,16 +28,16 @@ Multichar_Symbols
 %<cop%>               ! Copula
 
 ! Proper noun types
-%<top%>            ! Toponym
-%<ant%>            ! Anthroponym
-%<cog%>            ! Cognomen
-%<org%>            ! Organization
-%<al%>             ! Other
+%<top%>               ! Toponym
+%<ant%>               ! Anthroponym
+%<cog%>               ! Cognomen
+%<org%>               ! Organization
+%<al%>                ! Other
 
 !! gender of anthroponyms and cognoms
-%<m%>              ! Masculine
-%<f%>              ! Feminine
-%<mf%>             ! Masculine/feminine !# basically cognoms without -ов/-ова ending
+%<m%>                 ! Masculine
+%<f%>                 ! Feminine
+%<mf%>                ! Masculine/feminine !# basically cognoms without -ов/-ова ending
 
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>              ! Attributive
@@ -569,6 +569,7 @@ LEXICON Copula
 
 LEXICON N1
 
+%<n%>%<attr%>: # ;
 %<n%>: SUBST ;
 
 LEXICON NP-COMMON
