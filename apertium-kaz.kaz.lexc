@@ -863,21 +863,20 @@ LEXICON Postpositions
 
 LEXICON Postadverbs 
 
+ғана:%~ғана POSTADV ; ! Dir/RL
+ғана:ғана POSTADV ;   ! "only" Dir/LR
+ғана:қана POSTADV ;   ! "only" Dir/LR
+
 да:%~да POSTADV ; ! ""     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-тағы POSTADV ; ! "... дагы" = "and ... too"
-
+ғой POSTADV ;  ! Dir/LR TOREMOVE !FIXME
+қарамастан:қарамастан POSTADV ; ! "in spite of"
+тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
 тегіс POSTADV ; ! "entirely/all/all together"
-
-ғана:%~ғана POSTADV ; ! Dir/RL
-ғана:ғана POSTADV ;   ! "only" Dir/LR
-ғана:қана POSTADV ;   ! "only" Dir/LR
-
-ғой POSTADV ;         ! Dir/LR TOREMOVE
 
 LEXICON Pronouns
 
@@ -1356,6 +1355,7 @@ LEXICON Nouns
 ілгері:ілгері N1 ; ! "foward"
 ілім:ілім N1 ; ! "school of thought,teaching"
 ілмек:ілмек N1 ; ! "loop"
+ілтипат:ілтипат N1 ; ! "attention"
 інжір:інжір N1 ; ! "fig"
 іні:іні N1 ; ! "brother of younger sister's"
 ірге:ірге N1 ; ! "foundation"
@@ -4796,6 +4796,7 @@ LEXICON Adverbs
 көбінесе:көбінесе ADV ; ! "mostly"
 көп:көп ADV ; ! "a lot"
 мүмкін:мүмкін ADV ; ! "probably"
+тағы:тағы ADV ; ! "more"
 тез:тез ADV ; ! "quickly"
 тек:тек ADV ; ! "only
 тура:тура ADV ; ! "straight"
@@ -4809,6 +4810,7 @@ LEXICON Adverbs
 әбден:әбден ADV ; ! "extremely"
 әйтеуір:әйтеуір ADV ; ! "somehow"
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
+әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT ! FIXME: gloss; find a better equivalent for "һаман"
 әрдайым:әрдайым ADV ; ! "always"
 әрі:әрі ADV ; ! "otherside"
 әсіресе:әсіресе ADV ; ! "especially"
@@ -4949,6 +4951,7 @@ LEXICON Adjectives
 саяси:саяси A1 ; ! "political"
 семіз:семіз A1 ; ! "fat"
 сол:сол A1 ; ! "left"
+соң:соң A1 ; ! "last" ! FIXME:CHECK
 соңғы:соңғы A1 ; ! "last"
 суық:суық A1 ; ! "cold"
 сыртқы:сыртқы A1 ; ! "оutside"
@@ -5084,7 +5087,7 @@ LEXICON Verbs
 айда:айда V-TD ; ! "drive,cultivate,till,plough,twist someone round a finger"
 айлала:айлала V-TD ; ! "contirve to,manage to"
 аймала:аймала V-TD ; ! "embrace"
-айнал:айнал V-TD ; ! "turn around,whirl,rotate"  ! FIXME: passive?
+айнал:айнал V-IV ; ! "turn around,whirl,rotate"  ! FIXME: passive?
 айналдыр:айналдыр V-TD ; ! "to turn"
 айналыс:айналыс V-TD ; ! "undertake something,choose an occupation"
 айны:айны V-IV ; ! "spoil,lose flavor"
@@ -5857,6 +5860,7 @@ LEXICON Verbs
 тыныштық:тыныштық V-TD ; ! "tranquility"
 тырна:тырна V-TD ; ! "claw"
 тыртыс:тыртыс V-TD ; ! "to writhe"
+тырыс:тырыс V-IV ; ! "to try"
 тыянақтал:тыянақтал V-TD ; ! "to be completely finished"
 тығызда:тығызда V-TD ; ! "to condense"
 тығын:тығын V-TD ; ! "to hide"
@@ -5892,7 +5896,7 @@ LEXICON Verbs
 түрпіле:түрпіле V-TD ; ! "to rub or file wood with a rasp"
 түрткіле:түрткіле V-TD ; ! "to nudge"
 түс:түс V-IV ; ! "fall"
-түсін:түсін V-TD ; ! "understand"
+түсін:түсін V-TV ; ! "understand"
 түсір:түсір V-TD ; ! "sink"
 түшкір:түшкір V-TD ; ! "sneeze (for people)"
 тұжыр:тұжыр V-TD ; ! "to trim the sharp end of some­thing"
@@ -6024,7 +6028,7 @@ LEXICON Verbs
 қазбала:қазбала V-TD ; ! "to bore"
 қазықта:қазықта V-TD ; ! "to tie something to a stake driven into the ground"
 қайна:қайна V-IV ; ! "boil"
-қайт:қайт V-TV ; ! "return"
+қайт:қайт V-IV ; ! "return"
 қайшыла:қайшыла V-TD ; ! "to cut with scissors"
 қайырла:қайырла V-TD ; ! "to run aground (of a vessel)"
 қайырмала:қайырмала V-TD ; ! "to drive"
