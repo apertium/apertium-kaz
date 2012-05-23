@@ -636,6 +636,10 @@ LEXICON CC
 
 %<cnjcoo%>: # ;
 
+LEXICON CS
+
+%<cnjsub%>: # ; 
+
 LEXICON CA
 
 %<cnjadv%>: # ; 
@@ -799,7 +803,6 @@ LEXICON Conjunctions
 
 ал:ал CC ; ! "contrastive and"
 бірақ:бірақ CC ; ! "but"
-егер:егер CC ; ! "if"
 және:және CC ; ! "and"
 немесе:немесе CC ; ! "or"
 тек:тек CC ; ! "but,just"        ! FIXME:CHECK: POS and gloss
@@ -809,6 +812,8 @@ LEXICON Conjunctions
 да:де CC ; ! ""       Dir/LR
 да:та CC ; ! ""       Dir/LR
 да:те CC ; ! ""       Dir/LR
+
+егер:егер CS ; ! "if"
 
 осы% себептен:осы% себептен CA ; ! "therefore"
 
@@ -873,7 +878,7 @@ LEXICON Postadverbs
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-ғой POSTADV ;  ! Dir/LR TOREMOVE !FIXME
+ғой POSTADV ;  ! TOREMOVE !FIXME
 қарамастан:қарамастан POSTADV ; ! "in spite of"
 тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
 тегіс POSTADV ; ! "entirely/all/all together"
