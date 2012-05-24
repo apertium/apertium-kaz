@@ -93,6 +93,7 @@ Multichar_Symbols
 ! Tense, aspect, mood
 %<imp%>               ! Imperative
 %<caus%>              ! causative
+%<coop%>              ! Cooperative
 %<pass%>              ! passive
 
 %<ifi%>               ! eyewitness past
@@ -534,14 +535,17 @@ LEXICON V-TV
 
 %<v%>%<tv%>: V-INFL-COMMON ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;                              
+%<v%>%<tv%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
 
 LEXICON V-IV
 
 %<v%>%<iv%>: V-INFL-COMMON ;
+%<v%>%<iv%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
 
 LEXICON V-TD ! Temporary lexicon
 
 %<v%>%<TD%>: V-INFL-COMMON ;
+%<v%>%<TD%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
