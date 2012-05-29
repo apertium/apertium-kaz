@@ -217,6 +217,8 @@ N-INFL-COMMON ;
 
 !!!!!!!!!!!!!!!!!!!!!!     CLITICS
 
+! FIXME: Might need some refactoring
+
 LEXICON CLIT-MA
 
 ! Modal/discourse particles
@@ -242,7 +244,8 @@ LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics
 %+ғой%<mod_ass%>:% %{G%}ой # ;
 # ;
 
-!! TOREMOVE = WTF?
+!! FIXME:DISCUSS: maybe we should handle their harmonizing in postgenerator module,
+!!                and not attach them to the previous word
 
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
 %+да%<postadv%>:% %{D%}%{A%} # ; ! "also"
