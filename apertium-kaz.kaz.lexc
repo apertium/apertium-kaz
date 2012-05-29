@@ -142,8 +142,8 @@ Multichar_Symbols
 
 ! Clitics
 %<qst%>               ! Modal question particle
-%<mod_foc%>           ! focus thingy
-%<mod_ass%>           ! assertive
+%<mod_foc%>           ! "Particles of politeness and ardent desire" (as in [N. Poppe. Tatar Manual])
+%<mod_ass%>           ! Assertive modal particle
 
 ! Punctuation
 %<sent%>              ! Sentence marker
@@ -228,9 +228,17 @@ LEXICON CLIT-MA
 
 LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics class for verbs
 
+!! Other question modal particles
+
 %+меді%<qst%>:% %{M%}еді # ;   ! FIXME:CHECK
 %+мекен%<qst%>:% %{M%}екен # ;
+
+!! Politeness
+
 %+шы%<mod_foc%>:%>ш%{I%} # ;
+
+!! Assertive (emphasizing) modal particles
+
 %+ғой%<mod_ass%>:% %{G%}ой # ;
 # ;
 
