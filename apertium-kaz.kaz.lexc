@@ -182,6 +182,7 @@ Multichar_Symbols
 
 LEXICON Root
 
+ModalParticles ;
 Copula ;
 Conjunctions ;
 Postpositions ;
@@ -667,13 +668,18 @@ LEXICON POST
 
 %<post%>: # ;
 
-LEXICON ABBR 
+LEXICON QST
 
-%<abbr%>: # ;
+%<qst%>: # ; 
 
 LEXICON INTERJ
 
 %<ij%>: # ;
+
+LEXICON ABBR 
+
+%<abbr%>: # ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -813,6 +819,15 @@ LEXICON DET-ITG
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON ModalParticles
+
+ма:ма QST ; ! "" Dir/LR
+ма:ба QST ; ! "" Dir/LR
+ма:па QST ; ! "" Dir/LR
+ма:ме QST ; ! "" Dir/LR
+ма:бе QST ; ! "" Dir/LR
+ма:пе QST ; ! "" Dir/LR
 
 LEXICON Conjunctions
 
