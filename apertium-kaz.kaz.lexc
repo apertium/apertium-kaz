@@ -849,13 +849,28 @@ LEXICON Conjunctions
 
 LEXICON Postpositions
 
+! Some of them are postpositions derived from nouns (or "auxilliary nouns") which take location
+! cases (and most likely instrumental case too). Think about them later /I.S./
+
+! which Govern the Nominative case
+
+арқылы:арқылы POST ; ! "through, via, by means of" + NOM
+бойында:бойында POST ; ! "along, through" + NOM
+бұрын:бұрын POST ; ! "before, ago" + NOM
+жөнінде:жөнінде POST ; ! "about, concerning" + NOM
+туралы:туралы POST ; ! "about, concerning" + NOM
+мақсатында:мақсатында ; ! "for the purpose of" + NOM
+сайын:сайын POST ; ! "every" + NOM
+үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
+хақында:хақында POST ; ! "about, concerning" + NOM
+
+! which Govern the Dative case (GA)
+
+
+бойымен:бойымен POST ;
 жайында:жайында POST ;
-жөнінде:жөнінде POST ;
 секілді:секілді POST ;
 бойда:бойда POST ;
-бойымен:бойымен POST ;
-сайын:сайын POST ;
-үшін:үшін POST ;
 қарал:қарал POST ;
 ! ішінен POST ;   ! Compositional
 ! астынан POST ;  ! Compositional
@@ -875,7 +890,6 @@ LEXICON Postpositions
 бері:бері POST ;
 кейін:кейін POST ;
 сон:сон POST ;
-бұрын:бұрын POST ;
 бетер:бетер POST ;
 өрі:өрі POST ;
 
@@ -886,14 +900,12 @@ LEXICON Postpositions
 бірге:бірге POST ;
 қабат:қабат POST ;
 қоса:қоса POST ; ! "in addition to" + DAT
-арқылы:арқылы POST ; ! "through, via"
 бойынша:бойынша POST ; ! "about, according to"
 мен:%{M%}ен POST ; ! "with"
 мен:%{M%}енен POST ; ! "with"  ! Dir/LR
 мен:мен POST ; ! "with" Dir/LR TOREMOVE
 мен:бен POST ; ! "with" Dir/LR TOREMOVE
 мен:пен POST ; ! "with" Dir/LR TOREMOVE
-туралы:туралы POST ; ! "about"
 соң:соң POST ; ! "after" + ABL
 сәйкес:сәйкес POST ; ! "in accordance with" + DAT
 
