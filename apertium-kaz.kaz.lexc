@@ -16,11 +16,11 @@ Multichar_Symbols
 %<det%>               ! Determiner
 %<v%>                 ! Verb
 %<vaux%>              ! Auxilary verb
-%<adv%>               ! Adverb
-%<post%>              ! Postposition
-%<postadv%>           ! Postadverb
-%<cnjcoo%>            ! Co-ordinating conjunction
-%<cnjsub%>            ! Sub-ordinating conjunction
+%<adv%>               ! Adverb                     ! Үстеу
+%<post%>              ! Postposition               ! Септеулік
+%<postadv%>           ! Postadverb                 ! "Артүстеу"
+%<cnjcoo%>            ! Co-ordinating conjunction  
+%<cnjsub%>            ! Sub-ordinating conjunction !
 %<cnjadv%>            ! Adverbial conjunction
 %<part%>              ! Particle
 %<ij%>                ! Interjection 
@@ -849,27 +849,36 @@ LEXICON Conjunctions
 
 LEXICON Postpositions
 
-! Some of them are postpositions derived from nouns (or "auxilliary nouns") which take location
-! cases (and most likely instrumental case too). Think about them later /I.S./
+! Some of them are postpositions derived from nouns (or "auxilliary nouns" aka "служебные имена")
+! which take location cases (and most likely instrumental case too). Think about them later /I.S./
 
-! which Govern the Nominative case
+! which Govern the Nominative Case
 
 арқылы:арқылы POST ; ! "through, via, by means of" + NOM
+бойы:бойы POST ; ! "весь, в течении" + NOM
 бойында:бойында POST ; ! "along, through" + NOM
+бойынша:бойынша POST ; ! "by, per, according to" + NOM
 бұрын:бұрын POST ; ! "before, ago" + NOM
 жөнінде:жөнінде POST ; ! "about, concerning" + NOM
-туралы:туралы POST ; ! "about, concerning" + NOM
 мақсатында:мақсатында ; ! "for the purpose of" + NOM
 сайын:сайын POST ; ! "every" + NOM
+секілді:секілді POST ; ! "like, как будто" + NOM 
+туралы:туралы POST ; ! "about, concerning" + NOM
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 хақында:хақында POST ; ! "about, concerning" + NOM
 
-! which Govern the Dative case (GA)
+мен:%{M%}ен POST ; ! "with" + NOM
+мен:%{M%}енен POST ; ! "with" + NOM ! Dir/LR
+мен:мен POST ; ! "with" + NOM       ! Dir/LR
+мен:бен POST ; ! "with" + NOM       ! Dir/LR
+мен:пен POST ; ! "with" + NOM       ! Dir/LR
+
+! which Govern the Dative Case (GA)
 
 арналған:арналған POST ; ! "intended for" + DAT
-бойынша:бойынша POST ; ! "by, per, according to" + DAT
 ғұрлы:ғұрлы POST ; ! "like, similar to" + DAT
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
+жуық:жуық POST ; ! "about, приблизительно" + DAT ! this is basically an adjective (tat. "якын")
 қарағанда:қарағанда POST ; ! "according to; than(?)" + DAT
 қарай:қарай POST ; ! "toward" + DAT
 қарамай:қарамай POST ; ! "regardless, despite" + DAT
@@ -881,40 +890,48 @@ LEXICON Postpositions
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
 ілгері:ілгері POST ; ! "forward, ahead" + DAT
 
-бойымен:бойымен POST ;
-жайында:жайында POST ;
-секілді:секілді POST ;
-бойда:бойда POST ;
-қарал:қарал POST ;
+! which Govern the Avlative Case (DAN)
+
+әрі:әрі POST ; ! "further, дальше" + ABL
+!басқа:!басқа POST ; ! "besides, except" + ABL     ! FIXME: disambiguate бас<n><dat>
+бері:бері POST ; ! "since" + ABL
+бұрын:бұрын POST ; ! "earlier than, раньше" + ABL
+кейін:кейін POST ; ! "after, afterwards, later" + ABL
+соң:соң POST ; ! "after, afterwards, then" + ABL
+
+! which Govern the Genitice Case (НЫҢ)
+
+!! so called "служебные имена" belong here.
+!! In Tatar they govern both nominative and genitive (with noun in genitive referring
+!! to an object in particular (or something like that)): !#  Шкаф эчендә. -- Шкафның эчендә.
+!! Check whether in Kazakh they function the same way /I.S./
+
 ! ішінен POST ;   ! Compositional
 ! астынан POST ;  ! Compositional
 ! жанынан POST ;  ! Compositional
 ! үстінен POST ;  ! Compositional
-төмен:төмен POST ;
+
+жайында:жайында POST ; ! "about, concerning" + GEN
+
+! which Govern the Instrumental Case (MEN)
+
+бірге:бірге POST ; ! "with" + INS
+
+! FIXME: To be checked
+
+бойымен:бойымен POST ;
+бойда:бойда POST ;
+қарал:қарал POST ;
 қаран:қаран POST ;
 салым:салым POST ;
 тарта:тарта POST ;
-жуық:жуық POST ;
 таяу:таяу POST ;
-бері:бері POST ;
-кейін:кейін POST ;
-сон:сон POST ;
 бетер:бетер POST ;
-өрі:өрі POST ;
-
-!басқа:!басқа POST ; ! FIXME: бас<n><dat>
 !бөлек:!бөлек POST ; ! FIXME: өлек<n><nom>
 !өзге:!өзге POST ; ! FIXME: өз<n><dat>
 !қатар:!қатар POST ; ! FIXME: қатар<n><nom>
-бірге:бірге POST ;
 қабат:қабат POST ;
 қоса:қоса POST ; ! "in addition to" + DAT
-мен:%{M%}ен POST ; ! "with"
-мен:%{M%}енен POST ; ! "with"  ! Dir/LR
-мен:мен POST ; ! "with" Dir/LR TOREMOVE
-мен:бен POST ; ! "with" Dir/LR TOREMOVE
-мен:пен POST ; ! "with" Dir/LR TOREMOVE
-соң:соң POST ; ! "after" + ABL
 
 LEXICON Postadverbs 
 
@@ -930,6 +947,7 @@ LEXICON Postadverbs
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
+пікірінше:пікірінше POSTADV ; ! "" FIXME: JNW, check POS
 тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
 тегіс POSTADV ; ! "entirely/all/all together"
 
@@ -5027,6 +5045,7 @@ LEXICON Adjectives
 темір:темір A1 ; ! "iron"
 терең:терең A1 ; ! "deep, profound"
 толық:толық A1 ; ! "full"
+төмен:төмен A1 ; ! "low"
 тірі:тірі A1 ; ! "live"
 түгел:түгел A1 ; ! "all"      ! FIXME: check POS
 түзу:түзу A1 ; ! "direct"
