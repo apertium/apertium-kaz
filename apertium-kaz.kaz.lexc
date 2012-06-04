@@ -831,9 +831,13 @@ LEXICON ModalParticles
 
 LEXICON Conjunctions
 
-!! Соединительные
+! FIXME: Section is to be checked later for miscategorizations
+!        [although these miscategorizations shouldn't affect much the coverage of
+!        translator, since they are part of tat.lexc too :) ] /I.S./
 
-және:және CC ; ! "and"
+! Co-ordinating conjunctions
+
+!! Соединительные
 
 да:%~да CC ; ! "also" Dir/RL
 да:да CC ; ! ""       Dir/LR
@@ -841,32 +845,39 @@ LEXICON Conjunctions
 да:та CC ; ! ""       Dir/LR
 да:те CC ; ! ""       Dir/LR
 
+және:және CC ; ! "and"
+не:не CC ; ! "neither... , nor ... (x2)" ! FIXME:NOTE: disambig
+түгіл:түгіл CC ; ! "не только, но даже" #! Ол сен түгіл, мені де танымады. FIXME:CHECK
+
 !! Противительные
 
 ал:ал CC ; ! "contrastive and"
-алайда:алайда CC ; ! "yet"
 бірақ:бірақ CC ; ! "but"
-дегенмен:дегенмен CC ; ! ""
-сөйтсе де:сөйтсе де CC ; ! ""
-сөйтсе:сөйтсе CC ; ! ""
 тек:тек CC ; ! "but,just"
-әйтседе:әйтседе CC ; ! ""
 
 !! Разделительные
 
+біресе:біресе CC ; ! "то ... , то ... (x2)"
 немесе:немесе CC ; ! "or"
-біресе:біресе CC ; ! "то ... , то ... "
 я:я CC ; ! "or"
 
-! Sub-ordinative conjunctions
+! Sub-ordinating conjunctions
 
 егер:егер CS ; ! "if"
+егерде:егерде CS ; ! "if"
 себебі:себебі CS ; ! "because"    ! FIXME:NOTE: disambig from "себеп.n.px3sg"
+яғни:яғни CS ; ! "that is, то есть"
 өйткені:өйткені CS ; ! "because"
 
-! Adverbial conjunctions
+! Adverbial conjunctions = "Относительные слова"
 
+алайда:алайда CA ; ! "nevertheless"
+дегенмен:дегенмен CC ; ! "nevertheless"
 осы% себептен:осы% себептен CA ; ! "therefore"
+сондықтан:сондықтан CA ; ! "that is why"
+сөйтсе% де:сөйтсе% де CC ; ! "nevertheless"
+сөйтсе:сөйтсе CC ; ! "nevertheless"
+әйтсе% де:әйтсе% де CC ; ! ""
 
 LEXICON Postpositions
 
