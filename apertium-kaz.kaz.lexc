@@ -8,22 +8,22 @@ Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories 
-%<n%>                 ! Noun
+%<n%>                 ! Noun                       ! Зат есім
 %<np%>                ! Proper noun
-%<adj%>               ! Adjective
-%<num%>               ! Numeral
+%<adj%>               ! Adjective                  ! Сын есім
+%<num%>               ! Numeral                    ! Сан есім
 %<prn%>               ! Pronoun
 %<det%>               ! Determiner
 %<v%>                 ! Verb
 %<vaux%>              ! Auxilary verb
 %<adv%>               ! Adverb                     ! Үстеу
-%<post%>              ! Postposition               ! Септеулік
+%<post%>              ! Postposition               ! Септеулік шылау
 %<postadv%>           ! Postadverb                 ! "Артүстеу"
-%<cnjcoo%>            ! Co-ordinating conjunction  
-%<cnjsub%>            ! Sub-ordinating conjunction !
-%<cnjadv%>            ! Adverbial conjunction
+%<cnjcoo%>            ! Co-ordinating conjunction  ! жалғаулық шылау
+%<cnjsub%>            ! Sub-ordinating conjunction ! жалғаулық шылау
+%<cnjadv%>            ! Adverbial conjunction      ! жалғаулық шылау
 %<part%>              ! Particle
-%<ij%>                ! Interjection 
+%<ij%>                ! Interjection               ! Одағай
 %<abbr%>              ! Abbreviation
 %<cop%>               ! Copula
 
@@ -831,11 +831,9 @@ LEXICON ModalParticles
 
 LEXICON Conjunctions
 
-ал:ал CC ; ! "contrastive and"
-бірақ:бірақ CC ; ! "but"
+!! Соединительные
+
 және:және CC ; ! "and"
-немесе:немесе CC ; ! "or"
-тек:тек CC ; ! "but,just"        ! FIXME:CHECK: POS and gloss
 
 да:%~да CC ; ! "also" Dir/RL
 да:да CC ; ! ""       Dir/LR
@@ -843,7 +841,30 @@ LEXICON Conjunctions
 да:та CC ; ! ""       Dir/LR
 да:те CC ; ! ""       Dir/LR
 
+!! Противительные
+
+ал:ал CC ; ! "contrastive and"
+алайда:алайда CC ; ! "yet"
+бірақ:бірақ CC ; ! "but"
+дегенмен:дегенмен CC ; ! ""
+сөйтсе де:сөйтсе де CC ; ! ""
+сөйтсе:сөйтсе CC ; ! ""
+тек:тек CC ; ! "but,just"
+әйтседе:әйтседе CC ; ! ""
+
+!! Разделительные
+
+немесе:немесе CC ; ! "or"
+біресе:біресе CC ; ! "то ... , то ... "
+я:я CC ; ! "or"
+
+! Sub-ordinative conjunctions
+
 егер:егер CS ; ! "if"
+себебі:себебі CS ; ! "because"    ! FIXME:NOTE: disambig from "себеп.n.px3sg"
+өйткені:өйткені CS ; ! "because"
+
+! Adverbial conjunctions
 
 осы% себептен:осы% себептен CA ; ! "therefore"
 
