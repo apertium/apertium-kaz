@@ -903,7 +903,7 @@ LEXICON Postpositions
 мақсатында:мақсатында POST ; ! "for the purpose of" + NOM
 сайын:сайын POST ; ! "every" + NOM
 секілді:секілді POST ; ! "like, как будто" + NOM 
-сияқты:сияқты POST ; ! "like, как будто" + NOM 
+сияқты:сияқты POST ; ! "like, как будто" + NOM     FIXME:CHECK: POS - "modal word"="бугай" ?
 туралы:туралы POST ; ! "about, concerning" + NOM
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 хақында:хақында POST ; ! "about, concerning" + NOM
@@ -4929,41 +4929,30 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 
 LEXICON Adverbs
 
-қайда:қайда ADVITG ; ! ""
+қайда:қайда ADVITG ; ! "where (где;куда)"
+қашан:қашан ADVITG ; ! "when"
 
 еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
 
 алға:алға ADV ; ! "forward"
-анық:анық ADV ; ! "clearly"
 арнайы:арнайы ADV ; ! "on purpose, specifically"
 аса:аса ADV ; ! "very"
 бері:бері ADV ; ! "nearside"
 біраз:біраз ADV ; ! "some, a little"   ! FIXME: also a quantifier
-дұрыс:дұрыс ADV ; ! "correctly"
 дәл:дәл ADV ; ! "exactly"
 ерте:ерте ADV ; ! "early"
 ең:ең ADV ; ! "most"
-жалғыз:жалғыз ADV ; ! "alone"
-жиі:жиі ADV ; ! "often"
 кейде:кейде ADV ; ! "sometimes"
-кішкене:кішкене ADV ; ! "a little"
 күндіз:күндіз ADV ; ! "during the day"
 кәзір:кәзір ADV ; ! "now"
 көбінесе:көбінесе ADV ; ! "mostly"
-көп:көп ADV ; ! "a lot"
-мүмкін:мүмкін ADV ; ! "probably"
 тағы:тағы ADV ; ! "more"
-тез:тез ADV ; ! "quickly"
 тек:тек ADV ; ! "only
-тура:тура ADV ; ! "straight"
 тіпті:тіпті ADV ; ! "too"
 шығар:шығар ADV ; ! "probably"
 ылғи:ылғи ADV ; ! "always"
-яғни:яғни ADV ; ! "that is"
 қайта:қайта ADV ; ! "again"
 қайтадан:қайтадан ADV ; ! "once again"
-қашан:қашан ADV ; ! "when"
-құр:құр ADV ; ! "just/only"
 әбден:әбден ADV ; ! "extremely"
 әйтеуір:әйтеуір ADV ; ! "somehow"
 әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT ! FIXME: gloss; find a better equivalent for "һаман"
@@ -4974,6 +4963,7 @@ LEXICON Adverbs
 өте:өте ADV ; ! "very"
 
 !!!! Adverbs with KI !!!!
+
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
 ақыр:ақыр ADV-WITH-KI ; ! "last"  ! FIXME: check adv
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now"
@@ -5017,6 +5007,7 @@ LEXICON Adjectives
 
 бар:бар A2 ;
 жоқ:жоқ A2 ;
+мүмкін:мүмкін A2 ; ! "possible"
 
 !қай:қай A1 ; ! "what"
 азаматтық:азаматтық A1 ; ! "citizen"
@@ -5025,7 +5016,7 @@ LEXICON Adjectives
 ала:ала A1 ; ! "~speckled/mottled"
 аласа:аласа A1 ; ! "low"
 алыс:алыс A1 ; ! "far, distant"
-анық:анық A1 ; ! "clear"
+анық:анық A1 ; ! "clear;clearly"
 арық:арық A1 ; ! "thin"
 аудандық:аудандық A1 ; ! "district-level"
 ашық:ашық A1 ; ! "open"
@@ -5124,6 +5115,7 @@ LEXICON Adjectives
 темір:темір A1 ; ! "iron"
 терең:терең A1 ; ! "deep, profound"
 толық:толық A1 ; ! "full"
+тура:тура A1 ; ! "straight"
 төмен:төмен A1 ; ! "low"
 тірі:тірі A1 ; ! "live"
 түгел:түгел A1 ; ! "all"      ! FIXME: check POS
@@ -5167,7 +5159,7 @@ LEXICON Adjectives
 қыс:қыс A1 ; ! "winter"
 қысқа:қысқа A1 ; ! "short"
 қышқыл:қышқыл A1 ; ! "sour, acid"
-құр:құр A1 ; ! "dry, empty; fattened"
+құр:құр A1 ; ! "dry, empty; fattened; just/only"
 құрғақ:құрғақ A1 ; ! "dry"
 үлкен:үлкен A1 ; ! "big"
 ұзақ:ұзақ A1 ; ! "long (as in time)"
@@ -5193,8 +5185,6 @@ LEXICON Adjectives
 астыңғы:астыңғы A1 ; ! "lower"
 алдыңғы:алдыңғы A1 ; ! "forward"
 үстінгі:үстінгі A1 ; ! "upper"
-
-мүмкін:мүмкін A3 ; ! "possible"
 
 LEXICON Verbs 
 
