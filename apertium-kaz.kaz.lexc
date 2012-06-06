@@ -174,7 +174,7 @@ Multichar_Symbols
 %{т%}                 ! Realised as т before vowels, 0 otherwise
 
 %>                    ! Morpheme boundary
-%                     !! FIXME: is this needed? 
+%                     ! Space
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -204,7 +204,7 @@ Punctuation ;
 LEXICON SUBST
 
 N-INFL-COMMON ;
-%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ; ! FIXME: right?
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
                                      
 ! NOTE: Some substantivized things might not have pl. form, numerals e.g. 
 ! (not too sure, because in Tatar they have it: 
