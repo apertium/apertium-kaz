@@ -221,9 +221,16 @@ N-INFL-COMMON ;
 
 ! FIXME: Might need some refactoring
 
+! Modal/discourse particles
+
+LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives,
+                                 ! and vice versa - 2nd person imperatives take only this clitics
+!! Politeness
+
+%+шы%<mod_foc%>:%>ш%{I%} # ;
+
 LEXICON CLIT-MA
 
-! Modal/discourse particles
 !%+ма%<qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
 
 !! Question modal particles
@@ -236,10 +243,6 @@ LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics
 
 %+меді%<qst%>:% %{M%}еді # ;   ! FIXME:CHECK
 %+мекен%<qst%>:% %{M%}екен # ;
-
-!! Politeness
-
-%+шы%<mod_foc%>:%>ш%{I%} # ;
 
 !! Assertive (emphasizing) modal particles
 
@@ -528,10 +531,10 @@ LEXICON V-INFL-NON-FINITE-REG
 
 !  Imperatives
 ! FIXME: check
-%<imp%>%<p2%>%<sg%>: CLIT-OTHER ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-OTHER ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-OTHER ;                      ! Dir/LR
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р CLIT-OTHER ;
+%<imp%>%<p2%>%<sg%>: CLIT-IMP2P ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-IMP2P ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-IMP2P ;                      ! Dir/LR
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р CLIT-IMP2P ;
 
 !  Optative/jussive forms
 
