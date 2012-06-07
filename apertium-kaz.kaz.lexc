@@ -16,7 +16,7 @@ Multichar_Symbols
 %<det%>               ! Determiner
 %<v%>                 ! Verb
 %<vaux%>              ! Auxilary verb
-%<adv%>               ! Adverb                     ! Үстеу
+%<adv%>               ! Adverb                     ! Үстеу           ! Наречие
 %<post%>              ! Postposition               ! Септеулік шылау
 %<postadv%>           ! Postadverb                 ! "Артүстеу"
 %<cnjcoo%>            ! Co-ordinating conjunction  ! жалғаулық шылау
@@ -1815,6 +1815,7 @@ LEXICON Nouns
 тақта:тақта N1 ; ! "board"
 тақырып:тақырып N1 ; ! "theme"
 таң:таң N1 ; ! "dawn"
+таңертең:таңертең ; ! "early morning"
 текежаумыт:текежаумыт N1 ; ! "thoroughbred"
 телефон:телефон N1 ; ! "telephone"
 темеке:темеке N1 ; ! "tobacco"
@@ -4945,7 +4946,6 @@ LEXICON Adverbs
 ең:ең ADV ; ! "most"
 кейде:кейде ADV ; ! "sometimes"
 күндіз:күндіз ADV ; ! "during the day"
-кәзір:кәзір ADV ; ! "now"
 көбінесе:көбінесе ADV ; ! "mostly"
 тағы:тағы ADV ; ! "more"
 тек:тек ADV ; ! "only
@@ -4963,7 +4963,7 @@ LEXICON Adverbs
 әсіресе:әсіресе ADV ; ! "especially"
 өте:өте ADV ; ! "very"
 
-!!!! Adverbs wich take -KI and get an attr/adj !!!!
+!!!! Adverbs wich take -KI and become an attr/adj !!!!
 
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
@@ -4972,16 +4972,12 @@ LEXICON Adverbs
 былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
 бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
 бұрын:бұрын ADV-WITH-KI ; ! "earlier"
-дейін:дейін ADV-WITH-KI ; ! "before"
-ежел:ежел ADV-WITH-KI ; ! "ancient"   ! FIXME: check adv
 енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
-жаңа:жаңа ADV-WITH-KI ; ! "a while ago > a while ago's"
-жоғары:жоғар ADV-WITH-KI-I ; ! "high"
 кейін:кейін ADV-WITH-KI ; ! "after"
 кеш:кеш ADV-WITH-KI ; ! "evening/late"
 кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
+кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
 таңертең:таңертең ADV-WITH-KI ; ! "morning"
-төмен:төмен ADV-WITH-KI ; ! "low > lower"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 
@@ -5168,6 +5164,7 @@ LEXICON Adjectives
 ұлық:ұлық A1 ; ! "great"
 ұқсас:ұқсас A1 ; ! "similar"
 әдеби:әдеби A1 ; ! "literary"
+әзір:әзір A1 ; ! "ready"
 әлеуметтік:әлеуметтік A1 ; ! "public, social"
 әскери:әскери A1 ; ! "military"
 өзара:өзара A1 ; ! "mutual"
