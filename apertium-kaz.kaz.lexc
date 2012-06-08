@@ -228,6 +228,7 @@ LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only afte
 !! Politeness
 
 %+шы%<mod_foc%>:%>ш%{I%} # ;
+# ;
 
 LEXICON CLIT-MA
 
@@ -470,22 +471,6 @@ LEXICON VOL-ENDINGS
 %<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
 %<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
 
-LEXICON V-INFL-FINITE
-
-! Finite forms
-%<aor%>:%>%{E%} V-PERS-PRES ;                         !
-%<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     !
-%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    ! 
-%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               ! 
-%<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-COP-SUF ; ! evidential general past
-%<ifi%>%<evid%>:%>%{I%}пт%{I%} V-PERS-EVID-SUF ;      ! evidential recent past
-
-LEXICON V-INFL-NON-FINITE
-
-V-INFL-NON-FINITE-IRREG ;
-V-INFL-NON-FINITE-REG ;
-%<neg%>:%>%{M%}%{A%} V-INFL-NON-FINITE-REG ;
-
 LEXICON V-INFL-NON-FINITE-IRREG
 
 ! Adverbial Participles
@@ -531,10 +516,10 @@ LEXICON V-INFL-NON-FINITE-REG
 %<gna9%>:%>%{I%}п CLIT ;
 
 !  Imperatives
-! FIXME: check
 %<imp%>%<p2%>%<sg%>: CLIT-IMP2P ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-IMP2P ;
 %<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-IMP2P ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-IMP2P ;                      ! Dir/LR
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-IMP2P ;                      ! Dir/LR FIXME:CHECK
 %<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р CLIT-IMP2P ;
 
 !  Optative/jussive forms
@@ -548,9 +533,24 @@ LEXICON V-INFL-NON-FINITE-REG
 %<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
 %<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
 
+LEXICON V-INFL-FINITE
+
+! Finite forms
+%<aor%>:%>%{E%} V-PERS-PRES ;                         !
+%<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     !
+%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    ! 
+%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               ! 
+%<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-COP-SUF ; ! evidential general past
+%<ifi%>%<evid%>:%>%{I%}пт%{I%} V-PERS-EVID-SUF ;      ! evidential recent past
+
+LEXICON V-INFL-NON-FINITE
+
+V-INFL-NON-FINITE-IRREG ;
+V-INFL-NON-FINITE-REG ;
+%<neg%>:%>%{M%}%{A%} V-INFL-NON-FINITE-REG ;
+
 LEXICON V-INFL-COMMON
 
-! %<pfp%>:%{I%}п # ;   ! This has been replaced in V-INFL-NON-FINITE
 V-INFL-FINITE ;
 %<neg%>:%>%{M%}%{A%} V-INFL-FINITE ;
 V-INFL-NON-FINITE ;
@@ -5187,7 +5187,8 @@ LEXICON Adjectives
 қу:қу A1 ; ! "crafty"
 қуанышты:қуанышты A1 ; ! "glad"
 қызыл:қызыл A1 ; ! "red"
-қызық:қызық A1 ; ! "interesting"
+қызық:қызық A1 ; ! "fun,interesting"
+қызықты:қызықты A1 ; ! "interesting"
 қылмыстық:қылмыстық A1 ; ! "criminal"
 қыс:қыс A1 ; ! "winter"
 қысқа:қысқа A1 ; ! "short"
