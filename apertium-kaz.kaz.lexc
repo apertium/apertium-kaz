@@ -629,6 +629,10 @@ LEXICON NP-COG-M
 %<np%>%<cog%>%<m%>: NP-COMMON ;
 %<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
+LEXICON NP-AL
+
+%<np%>%<al%>: CASE ; 
+
 LEXICON NUM
 
 %<num%>: # ; 
@@ -1761,6 +1765,7 @@ LEXICON Nouns
 соғыс:соғыс N1 ; ! "war"
 соқыр:соқыр N1 ; ! "blind"
 соққы:соққы N1 ; ! "beating"
+статистика:статистика N1 ; ! "statistics"
 студент% әйел:студент% әйел N1 ; ! "female student"
 студент:студент N1 ; ! "student"
 су:су N1 ; ! "water"
@@ -4954,6 +4959,12 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Обама NP-COG-M ; ! "Obama"  ! FIXME: Cogmf
 Путин NP-COG-M ; ! "Putin"
 Медведев NP-COG-M ; ! "Medvedev"
+
+!=========================================================================!
+
+!! Other proper names (events etc)
+
+Еуро:Еуро NP-AL ; ! "European Championship"
 
 LEXICON Adverbs
 
