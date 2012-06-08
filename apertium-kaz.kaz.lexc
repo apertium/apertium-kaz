@@ -288,6 +288,7 @@ LEXICON POSS-REAL  ! P_2
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
 
 LEXICON ADJ-DAGI
+! This should probably be called something else
 
 !! ADJ-COMMON ;   !!!! ! FIXME: when we go recursive, use this instead of CASES
 ! ADJ-COMMON ;    !!!! ! FIXME: when we go recursive, use this instead of N-INFL
@@ -598,6 +599,12 @@ LEXICON N1
 
 %<n%>%<attr%>: # ;
 %<n%>: SUBST ;
+
+LEXICON N-COMPOUND-PX
+! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
+
+%<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
 
 LEXICON NP-COMMON
 N-INFL-COMMON ;
@@ -1193,7 +1200,8 @@ LEXICON Nouns
 ата:ата N1 ; ! "father"
 атамекен:атамекен N1 ; ! "homeland"
 атан:атан N1 ; ! "castrated camel"
-ауа% райы:ауа% райы N1 ; ! "whether,climate"   ! FIXME:CHECK: and link this to something like N-NOpx3sp   
+!ауа% райы:ауа% райы N1 ; ! "whether,climate"   ! FIXME:CHECK: and link this to something like N-NOpx3sp   
+ауа% райы:ауа% райы N-COMPOUND-PX ; ! "whether,climate"
 ауа:ауа N1 ; ! "air"
 аудан:аудан N1 ; ! "area,district"
 аудитория:аудитория N1 ; ! "classroom"
