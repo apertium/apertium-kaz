@@ -1,5 +1,14 @@
+
+# ========== #
+# Delimiters #
+# ========== #
+
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
+
+# ============= #
+# Tags and sets #
+# ============= #
 
 SETS
 
@@ -42,6 +51,8 @@ LIST Subst = subst ;
 
 LIST Sg = sg ;
 LIST Pl = pl ;
+
+List Acc = acc ;
 
 # Semantic lists 
 # --------------
@@ -114,6 +125,10 @@ SECTION
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
+
+# Determiners 
+# -----------
+
 SELECT Det IF (-1C A) (1 N); 
     #! Әхмәт тиз генә иске зур бер агачка йөгерә.
     #! Әхмәт акрын гына иске зур бер агачка йөгерә.
@@ -123,14 +138,21 @@ SELECT Det IF (0 V OR Det OR Pred OR N) (1* NPMARK BARRIER N) ;
     #! Акча бармы? Бар<pred>.
     #! Акча бармы? Бар<pred>, ләкин бик аз!
 
-SELECT Adv IF (0 ("өте")) (1 A);
-    #! Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
-
-
 # Nouns 
 # -----
 
 REMOVE Attr IF (NOT 1 N); 
+
+# Wordform specific    # Adding new stuff here is discouraged.  
+# -----------------    # Try to generalize, if possible, existing rules.
+
+SELECT Adv IF (0 ("өте")) (1 A);
+    #! Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
+
+# RISKY
+REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
+    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
+    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
