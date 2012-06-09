@@ -1024,7 +1024,8 @@ LEXICON Pronouns
 PRON-PERS ;  ! Personal pronouns
 PRON-DEM ;   ! Demonstrative pronouns
 
-еш% нәрсе:еш% нәрсе PRNNEG ; ! "" ! Use/MT
+еш% нәрсе:еш% нәрсе PRNNEG ; ! "" Use/MT
+ешкім:ешкім PRNNEG ; ! ""
 
 LEXICON Numerals
 
@@ -1573,6 +1574,7 @@ LEXICON Nouns
 лас:лас N1 ; ! "dirt"
 лақ:лақ N1 ; ! "kid,lacquer"
 лифт:лифт N1 ; ! "lift"
+лига:лига N1 ; ! "league"
 мадақ:мадақ N1 ; ! "praise"
 мазар:мазар N1 ; ! "tomb"
 мазақ:мазақ N1 ; ! "ridicule"
@@ -1586,7 +1588,8 @@ LEXICON Nouns
 марал:марал N1 ; ! "doe"
 маса:маса N1 ; ! "mosquito"
 маскүнем:маскүнем N1 ; ! "drunkard"
-масқара:масқара N1 ; ! "shamlessness"
+масқара:масқара N1 ; ! "shame"
+матч:матч N1 ; ! ""
 маусым:маусым N1 ; ! "June"
 мақсат:мақсат N1 ; ! "purpose"
 мақта:мақта N1 ; ! "cotton"
@@ -1664,6 +1667,7 @@ LEXICON Nouns
 облыс:облыс N1 ; ! "oblast"
 ой:ой N1 ; ! "depression,geol,thought"
 ойын:ойын N1 ; ! "play, game"
+ойыншы:ойыншы N1 ; ! "player"
 ойыншық:ойыншық N1 ; ! "toy"
 олжа:олжа N1 ; ! "plunder"
 опат:опат N1 ; ! "death"
@@ -1715,6 +1719,7 @@ LEXICON Nouns
 рас:рас N1 ; ! "truth"
 рақым:рақым N1 ; ! "kindness"
 рақымдылық:рақымдылық N1 ; ! "grace"
+рекорд:рекорд N1 ; ! ""
 ресми:ресми N1 ; ! "official"
 республика:республика N1 ; ! "republic"
 рет:рет N1 ; ! "turn,order,time"
@@ -1724,6 +1729,7 @@ LEXICON Nouns
 ручка:ручка N1 ; ! "pen"
 рұқсат:рұқсат N1 ; ! "permission"
 рәсім:рәсім N1 ; ! "tradition"
+рөл:рөл N1 ; ! "role"
 сабан:сабан N1 ; ! "straw"
 сабақ:сабақ N1 ; ! "lesson"
 сабын:сабын N1 ; ! "soap"
@@ -1747,6 +1753,7 @@ LEXICON Nouns
 сағат:сағат N1 ; ! "hour"
 сақал:сақал N1 ; ! "beard"
 себеп:себеп N1 ; ! "reason"
+сегізаяқ:сегізаяқ N1 ; ! "octopus"
 сезім:сезім N1 ; ! "feeling"
 сейсенбі:сейсенбі N1 ; ! "Tuesday"
 секіл:секіл N1 ; ! "shape"
@@ -1862,7 +1869,7 @@ LEXICON Nouns
 тозаң:тозаң N1 ; ! "dust"
 той:той N1 ; ! "feast"
 тон:тон N1 ; ! "robe"
-топ:топ N1 ; ! "group,team"
+топ:топ N1 ; ! "group,team;ball"
 торғай:торғай N1 ; ! "sparrow"
 ту:ту N1 ; ! "banner"
 турнир:турнир N1 ; ! "tournament"
@@ -1924,6 +1931,7 @@ LEXICON Nouns
 физика:физика N1 ; ! "physics"
 филология:филология N1 ; ! "philology"
 философия:философия N1 ; ! "philosophy"
+финал:финал N1 ; ! "final"
 хабар:хабар N1 ; ! "news"
 хал:хал N1 ; ! "state,condition"
 халық:хал%{y%}қ N1 ; ! "people"
@@ -1992,6 +2000,7 @@ LEXICON Nouns
 ықылас:ықылас N1 ; ! "attentiveness"
 ықылық:ықылық N1 ; ! "hiccups"
 ыңғай:ыңғай N1 ; ! "good occasion"
+эмблема:эмблема N1 ; ! ""
 юбка:юбка N1 ; ! "skirt"
 янші% яйел:янші% яйел N1 ; ! "singer"  ! FIXME: should be "әнші әйел"; and this is just a perfectly productive compound
 із:із N1 ; ! "trace,track"
@@ -2387,7 +2396,7 @@ LEXICON ProperNouns
 Киев:Киев NP-TOP ; ! ""
 Копенгаген:Копенгаген NP-TOP ; ! "Copenhagen"
 Краков:Краков NP-TOP ; ! ""
-Ловдон:Ловдон NP-TOP ; ! "London"
+Лондон:Лондон NP-TOP ; ! "London"
 Львов:Львов NP-TOP ; ! ""
 Мадрид:Мадрид NP-TOP ; ! "Madrid"
 Мехико:Мехико NP-TOP ; ! "Mexico"
@@ -4116,6 +4125,7 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Мирболат NP-ANT-M; ! "Mıyrbolat" (Kazakh)
 Мирғали NP-ANT-M; ! "Mıyrğalıy" (Arabic)
 Мирон NP-ANT-M; ! "Mıyron" (Greek)
+Мишель:Мишель NP-ANT-M; ! ""
 Мият NP-ANT-M; ! "Mıyat" (Kazakh)
 Молбай NP-ANT-M; ! "Molbay" (Arabic)
 Молдан NP-ANT-M; ! "Moldan" (Kazakh)
@@ -4908,8 +4918,6 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Эраст NP-ANT-M; ! "Erast" (Greek)
 Эрик NP-ANT-M; ! "Erik" (Old High German)
 Эрнст NP-ANT-M; ! "Ernst" (Old High German)
-
-
 Иса NP-ANT-M ; ! "Jesus"
 Мұрат NP-ANT-M ; ! "Murat"
 Абай NP-ANT-M ; ! "Abay"
@@ -4943,7 +4951,6 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Бақтығұл NP-ANT-M ; ! "Baqtığul"
 Серікбай NP-ANT-M ; ! "Serikbay"
 
-
 Асем NP-ANT-F ; ! "Assem"  see also "Әсем"
 Ғайша NP-ANT-F ; ! "Aisha"
 Ұлжан NP-ANT-F ; ! "Uljan"  (sometimes M?)
@@ -4958,6 +4965,7 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Саул NP-ANT-M ; ! "Saul"
 Сүлеймен NP-ANT-M ; ! "Solomon"
 Пауыл NP-ANT-M ; ! "Paul"
+Пауыл:Пауль NP-ANT-M ; ! "Paul" Dir/LR
 Петір NP-ANT-M ; ! "Peter"
 Бунямин NP-ANT-M ; ! "Benjamin"
 Шимон NP-ANT-M ; ! "Simon"
@@ -4977,12 +4985,18 @@ Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Обама NP-COG-M ; ! "Obama"  ! FIXME: Cogmf
 Путин NP-COG-M ; ! "Putin"
 Медведев NP-COG-M ; ! "Medvedev"
+Платини NP-COG-M ; ! "Platini"
 
 !=========================================================================!
 
 !! Other proper names (events etc)
 
 Еуро:Еуро NP-AL ; ! "European Championship"
+Фунтик:Фунтик NP-AL ; ! ""
+Челси:Челси NP-AL ; ! ""
+Читта:Читта NP-AL ; ! ""
+
+<!-- SECTION: Adjectives -->
 
 LEXICON Adverbs
 
@@ -5090,6 +5104,7 @@ LEXICON Adjectives
 ескі:ескі A1 ; ! "old"
 жабық:жабық A1 ; ! "closed"
 жалғыз:жалғыз A1 ; ! "lonely"
+жалпы:жалпы A1 ; ! "united,collected"
 жаман:жаман A1 ; ! "bad"
 жарлы:жарлы A1 ; ! "poor"
 жарты:жарты A1 ; ! "half"
@@ -5174,6 +5189,7 @@ LEXICON Adjectives
 түркі:түркі A1 ; ! "Turkic"
 түрлі:түрлі A1 ; ! used with әр to mean "various"
 тұнық:тұнық A1 ; ! "clear (transparent/clean)"
+тәжірибелі:тәжірибелі A1 ; ! "experienced"
 тәуелсіз:тәуелсіз A1 ; ! "independent"
 тәуелсіздік:тәуелсіздік A1 ; ! "independent"
 уақ:уақ A1 ; ! "small"
@@ -5182,6 +5198,7 @@ LEXICON Adjectives
 шапшан:шапшан A1 ; ! "fast, quick"
 шейін:шейін A1 ; ! "front"
 шетелдік:шетелдік A1 ; ! "foreign"
+шешуші:шешуші A1 ; ! "decisive,deciding"
 шын:шын A1 ; ! "true"
 шірік:шірік A1 ; ! "rotten"
 ыссы:ыссы A1 ; ! "hot"
@@ -5212,6 +5229,7 @@ LEXICON Adjectives
 қысқа:қысқа A1 ; ! "short"
 қышқыл:қышқыл A1 ; ! "sour, acid"
 құр:құр A1 ; ! "dry, empty; fattened; just/only"
+құрама:құрама A1 ; ! "united,collected"
 құрғақ:құрғақ A1 ; ! "dry"
 үлкен:үлкен A1 ; ! "big"
 ұзақ:ұзақ A1 ; ! "long (as in time)"
@@ -5351,7 +5369,7 @@ LEXICON Verbs
 андат:андат V-TD ; ! "to show"
 аннексияла:аннексияла V-TD ; ! "to annex"
 антала:антала V-TD ; ! "press,surround,encircle"
-анықта:анықта V-TD ; ! "elucidate,clarify,define,specify"
+анықта:анықта V-TV ; ! "elucidate,clarify,define,specify"
 апалақта:апалақта V-TD ; ! "be at a loss,be confused"
 апар:апар V-TD ; ! "carry,take to,deliver to"
 апшы:апшы V-IV ; ! "shrink"
@@ -5401,7 +5419,7 @@ LEXICON Verbs
 ауырт:ауырт V-TD ; ! "to cause pain"
 ауыс:ауыс V-IV ; ! "move,pass"
 ауытқы:ауытқы V-TD ; ! "to reel"
-аш:аш V-TD ; ! "open,reveal,unlock,discover"
+аш:аш V-TV ; ! "open,reveal,unlock,discover"
 ашулан:ашулан V-TD ; ! "to be angry"
 ашық:ашық V-TD ; ! "to famish"
 ашыт:ашыт V-TD ; ! "itch,gawn,acidify"
@@ -5462,7 +5480,7 @@ LEXICON Verbs
 бекіт:бекіт V-TD ; ! "lock,fasten"
 бекітіл:бекітіл V-TD ; ! "to be confirmed"   ! FIXME: passive
 белбеуле:белбеуле V-TD ; ! "to gird"
-белгіле:белгіле V-TD ; ! "to mark"
+белгіле:белгіле V-TV ; ! "to mark"
 белде:белде V-TD ; ! "to aim"
 белдес:белдес V-TD ; ! "to wrestle"
 белдеуле:белдеуле V-TD ; ! "to encircle yurt with rope to fasten felts to framework"
@@ -5986,6 +6004,7 @@ LEXICON Verbs
 талқанда:талқанда V-TD ; ! "to pulverize"
 талқыла:талқыла V-TD ; ! "tan skins"
 талқылас:талқылас V-TD ; ! "to take part in the elaboration and discussion of some question"
+тамашала:тамашала V-TV ; ! "watch,observe"
 тамақта:тамақта V-TD ; ! "to catch by the throat"
 тамақтан:тамақтан V-TD ; ! "to feed (oneself)"    ! FIXME: passive
 тан:тан V-TD ; ! "deny"
@@ -6285,7 +6304,7 @@ LEXICON Verbs
 қарғы:қарғы V-TD ; ! "to jump"
 қарқылда:қарқылда V-TD ; ! "to guffaw"
 қат:қат V-TD ; ! "harden"  ! FIXME: check: not қаты ?
-қатыс:қатыс V-TD ; ! "participate"
+қатыс:қатыс V-IV ; ! "participate"
 қаудырла:қаудырла V-TD ; ! "to rustle"
 қаула:қаула V-TD ; ! "to shoot up"
 қауса:қауса V-TD ; ! "to dry out"
@@ -6479,7 +6498,7 @@ LEXICON Verbs
 өсекте:өсекте V-TD ; ! "gossip,slander"
 өсиетте:өсиетте V-TD ; ! "admonish"
 өсір:өсір V-TD ; ! "raise,cultivate,develop"
-өт:өт V-TD ; ! "pass,pass by,go by"
+өт:өт V-TV ; ! "pass,pass by,go by"
 өте:өте V-TD ; ! "carry out,fulfill,discharge"
 өтел:өтел V-TD ; ! "be repaid,be reimbursed"   ! FIXME: passive
 өткірлен:өткірлен V-TD ; ! "to get sharp"
@@ -6510,6 +6529,8 @@ LEXICON Interjections
 әлбетте:әлбетте INTERJ ; ! "of course"
 
 LEXICON Abbreviations
+
+УЕФА:УЕФА ABBR ; ! ""
 
 б%.з%.б:б%.з%.б ABBR ; ! "CE"
 б%.з%.д:б%.з%.д ABBR ; ! "BCE"
