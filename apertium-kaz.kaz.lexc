@@ -603,8 +603,8 @@ LEXICON N1
 %<n%>%<attr%>: # ;
 %<n%>: SUBST ;
 
-LEXICON N-COMPOUND-PX
-! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
+LEXICON N-COMPOUND-PX ! consider "N2" for the name
+                      ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
 %<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
@@ -1579,6 +1579,8 @@ LEXICON Nouns
 көрпе:көрпе N1 ; ! "blanket"
 көрші:көрші N1 ; ! "neighbour"
 көрініс:көрініс N1 ; ! "kind"
+көріпкелдік:көріпкелдік N1 ; ! "prophecy" 
+көріпкелдің:көріпкелдің N1 ; ! "предсказатель" FIXME:CHECK
 көт:көт N1 ; ! "ass"
 көше:көше N1 ; ! "street"
 көңіл:көңіл N1 ; ! "heart,will,desire"
@@ -1881,6 +1883,7 @@ LEXICON Nouns
 той:той N1 ; ! "feast"
 тон:тон N1 ; ! "robe"
 топ:топ N1 ; ! "group,team;ball"
+торай:торай N1 ; ! "поросенок"
 торғай:торғай N1 ; ! "sparrow"
 ту:ту N1 ; ! "banner"
 турнир:турнир N1 ; ! "tournament"
@@ -5511,7 +5514,8 @@ LEXICON Verbs
 бол:бол V-IV ; ! "be/become"
 болбыра:болбыра V-TD ; ! "to become languid"
 болдыр:болдыр V-TD ; ! "to get tired"
-болжа:болжа V-TD ; ! "suppose,surmise,assume"
+болжа:болжа V-TV ; ! "suppose,surmise,assume"
+болжам% жаса:болжам% жаса V-IV ; ! "suppose,surmise,assume" Use/MT
 бордақыла:бордақыла V-TD ; ! "to fatten cattle"
 борла:борла V-TD ; ! "to whiten"
 борпылдат:борпылдат V-TD ; ! "to turn up"
