@@ -101,6 +101,8 @@ Multichar_Symbols
 %<evid%>              ! evidential
 %<aor%>               ! non-future
 %<pres%>              ! for "жатыр", "тұр" and other 2
+%<fut%>               ! future
+%<fut_plan%>          ! future plan
 
 !! Participles
 %<prc_perf%>          ! perfect participle (-{I}п) !# "Бірақ мысығы үйде, _ұйықтап_ жатыр." 
@@ -537,7 +539,8 @@ LEXICON V-INFL-FINITE
 
 ! Finite forms
 %<aor%>:%>%{E%} V-PERS-PRES ;                         !
-%<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     !
+%<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     ! future
+%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-COP-SUF ;       ! future plan
 %<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    ! 
 %<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               ! 
 %<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-COP-SUF ; ! evidential general past
