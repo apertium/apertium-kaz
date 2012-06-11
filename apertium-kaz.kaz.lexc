@@ -293,18 +293,15 @@ LEXICON POSS-REAL  ! P_2
 LEXICON ADJ-DAGI
 ! This should probably be called something else
 
-!! ADJ-COMMON ;   !!!! ! FIXME: when we go recursive, use this instead of CASES
-! ADJ-COMMON ;    !!!! ! FIXME: when we go recursive, use this instead of N-INFL
-!%<n%>: N-INFL ;
 %<subst%>: CASE ; 
 %<attr%>: CLIT ;
-!# ;
 
 LEXICON GEN-POS
 
 %<px%>:%>%{N%}ікі%{n%} CASE ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
-%<sim%>:%>%{D%}%{A%}й ADJ-DAGI ;
+%<sim%>:%>%{D%}%{A%}й CLIT ;   ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
+                               ! no case endings after it. In Kazakh it should be the same /I.S./ 
 
 LEXICON CASE-ETC
 CASE ;
