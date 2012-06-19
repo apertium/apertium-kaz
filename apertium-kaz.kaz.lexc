@@ -592,116 +592,6 @@ LEXICON Copula
 е%<cop%>%<neg%>%<evid%>:емес% екен V-PERS-COP-SUF ; 
 е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-PAST ; 
 
-!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS (beginning)
-
-LEXICON N1
-
-%<n%>%<attr%>: # ;
-%<n%>: SUBST ;
-
-LEXICON N-COMPOUND-PX ! consider "N2" for the name
-                      ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
-
-%<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
-%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
-
-LEXICON NP-COMMON
-N-INFL-COMMON ;
-
-LEXICON NP-TOP
-
-%<np%>%<top%>: NP-COMMON ;
-!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
-
-LEXICON NP-ANT-M
-
-%<np%>%<ant%>%<m%>: NP-COMMON ;
-%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
-
-LEXICON NP-ANT-F
-
-%<np%>%<ant%>%<f%>: NP-COMMON ;
-%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
-
-LEXICON NP-COG-M
-
-%<np%>%<cog%>%<m%>: NP-COMMON ;
-%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
-
-LEXICON NP-AL
-
-%<np%>%<al%>: CASE ; 
-
-LEXICON NUM
-
-%<num%>: # ; 
-%<num%>%<subst%>: SUBST ; 
-%<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
-
-LEXICON NUM-COLL
-
-%<num%>%<coll%>%<subst%>: N-INFL-COMMON ;
-%<num%>%<coll%>%<advl%>: # ;
-
-LEXICON DIGITLEX
-
-%<num%>: # ;
-
-LEXICON NUM-ROMAN
-
-NUM ;
-
-LEXICON ADV-WITH-KI
-
-ADV ;
-:%>%{G%}%{I%} A2
-
-LEXICON ADV-WITH-KI-I
-
-:%{I%} ADV ;
-ADJ-KI-INFL ; 
-
-LEXICON ADVITG
-
-%<adv%>%<itg%>: # ; 
-
-LEXICON ADV
-
-%<adv%>: CLIT ;
-
-LEXICON CC
-
-%<cnjcoo%>: # ;
-
-LEXICON CS
-
-%<cnjsub%>: # ; 
-
-LEXICON CA
-
-%<cnjadv%>: # ; 
-
-LEXICON POSTADV
-
-%<postadv%>: # ;
-
-LEXICON POST 
-
-%<post%>: # ;
-
-LEXICON QST
-
-%<qst%>: # ; 
-
-LEXICON INTERJ
-
-%<ij%>: # ;
-
-LEXICON ABBR 
-
-%<abbr%>: # ;
-
-
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
 LEXICON Pron-12SG-CASES
@@ -822,7 +712,7 @@ LEXICON PRON-RECIP
 
 %<prn%>%<recip%>: POSSESSION ;
 
-!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS (end)
+!!!!!!!!!!!!!!!!!!!!!!     DETERMINERS
 
 LEXICON DET-DEM
 
@@ -840,6 +730,115 @@ LEXICON DET-IND
 LEXICON DET-ITG
 
 %<det%>%<itg%>: # ;
+
+!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
+
+LEXICON N1
+
+%<n%>%<attr%>: # ;
+%<n%>: SUBST ;
+
+LEXICON N-COMPOUND-PX ! consider "N2" for the name
+                      ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
+
+%<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
+
+LEXICON NP-COMMON
+N-INFL-COMMON ;
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: NP-COMMON ;
+!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-COG-M
+
+%<np%>%<cog%>%<m%>: NP-COMMON ;
+%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-AL
+
+%<np%>%<al%>: CASE ; 
+
+LEXICON NUM
+
+%<num%>: # ; 
+%<num%>%<subst%>: SUBST ; 
+%<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+
+LEXICON NUM-COLL
+
+%<num%>%<coll%>%<subst%>: N-INFL-COMMON ;
+%<num%>%<coll%>%<advl%>: # ;
+
+LEXICON DIGITLEX
+
+%<num%>: # ;
+
+LEXICON NUM-ROMAN
+
+NUM ;
+
+LEXICON POST 
+
+%<post%>: # ;
+
+LEXICON POSTADV
+
+%<postadv%>: # ;
+
+LEXICON ADV-WITH-KI
+
+ADV ;
+:%>%{G%}%{I%} A2
+
+LEXICON ADV-WITH-KI-I
+
+:%{I%} ADV ;
+ADJ-KI-INFL ; 
+
+LEXICON ADVITG
+
+%<adv%>%<itg%>: # ; 
+
+LEXICON ADV
+
+%<adv%>: CLIT ;
+
+LEXICON CC
+
+%<cnjcoo%>: # ;
+
+LEXICON CS
+
+%<cnjsub%>: # ; 
+
+LEXICON CA
+
+%<cnjadv%>: # ; 
+
+LEXICON QST
+
+%<qst%>: # ; 
+
+LEXICON INTERJ
+
+%<ij%>: # ;
+
+LEXICON ABBR 
+
+%<abbr%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
