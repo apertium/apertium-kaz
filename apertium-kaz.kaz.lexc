@@ -298,7 +298,9 @@ LEXICON ADJ-DAGI
 LEXICON GEN-POS
 
 %<px%>:%>%{N%}ікі%{n%} CASE ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ; ! FIXME:NOTE: I am in favour for changing the tag to loc2
+                                          ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
+                                          ! I'll give some arguments in a mail to apertium-turkic
 %<sim%>:%>%{D%}%{A%}й CLIT ;   ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
                                ! no case endings after it. In Kazakh it should be the same /I.S./ 
 
@@ -602,8 +604,9 @@ LEXICON Pron-12SG-CASES
 %<abl%>:енен CLIT ;
 %<loc%>:енде CLIT ;
 %<ins%>:енімен CLIT ;
-%<px%>:енікі CLIT ;
-%<loc%>%<attr%>:ендегі CLIT ;
+%<px%>:енікі%{n%} CASE ;
+%<loc%>:ендегі ADJ-DAGI ;
+%<sim%>:ендей CLIT ;
 
 LEXICON PRON-PERS-INFL
 CASE-ETC ;
