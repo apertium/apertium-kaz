@@ -226,7 +226,7 @@ N-INFL-COMMON ;
 ! Modal/discourse particles
 
 LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives,
-                                 ! and vice versa - 2nd person imperatives take only this clitics
+                            
 !! Politeness
 
 %+шы%<mod_foc%>:%>ш%{I%} # ;
@@ -234,17 +234,15 @@ LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only afte
 
 LEXICON CLIT-MA
 
-!%+ма%<qst%>:%>% %{M%}%{A%} V-PERS-COP ; ! CHECK  ! FIXME: what's this?
-
 !! Question modal particles
 
 %+ма%<qst%>:%>% %{M%}%{A%} # ;
 
-LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics class for verbs
+LEXICON CLIT-OTHER
 
 !! Other question modal particles
 
-%+меді%<qst%>:% %{M%}еді # ;   ! FIXME:CHECK
+!%+меді%<qst%>:% %{M%}еді # ;   ! FIXME:CHECK
 %+мекен%<qst%>:% %{M%}екен # ;
 
 !! Assertive (emphasizing) modal particles
@@ -256,7 +254,8 @@ LEXICON CLIT-OTHER             !FIXME:DISCUSS: make from this a separate clitics
 !!                and not attach them to the previous word
 
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
-%+да%<postadv%>:% %{D%}%{A%} # ; ! "also"
+%+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
+%+да%<cnjcoo%>:% %{D%}%{A%} # ; ! "also"
 
 LEXICON CLIT 
 
@@ -1003,7 +1002,7 @@ LEXICON Postadverbs
 ғана:ғана POSTADV ;   ! "only" Dir/LR
 ғана:қана POSTADV ;   ! "only" Dir/LR
 
-да:%~да POSTADV ; ! ""     Dir/RL
+да:%~да POSTADV ; ! "1. even if"     Dir/RL
 да:да POSTADV ; ! ""       Dir/LR
 да:де POSTADV ; ! ""       Dir/LR
 да:та POSTADV ; ! ""       Dir/LR
