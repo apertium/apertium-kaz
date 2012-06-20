@@ -611,6 +611,23 @@ LEXICON Pron-12SG-CASES
 LEXICON PRON-PERS-INFL
 CASE-ETC ;
 
+LEXICON PRON-DEM-INFL
+
+%<gen%>:ның CLIT ;
+%<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
+                   ! осыған/осыға?, соған, оған, бұған
+%<acc%>:ны CLIT ;  ! 
+%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME: check for correct default
+%<abl%>:дан CLIT ; ! 
+%<loc%>:нда CLIT ; ! 
+%<px%>:нікі%{n%} CASE ;    ! FIXME: check
+%<rloc%>:ндагы ADJ-DAGI ;  ! 
+%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
+%<adv%>:лай CLIT-GENERAL ; ! 
+%<sim%>:ндай ADJ-DAGI ;    ! 
+%<qnt%>:нша CLIT ;         !
+!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
+
 LEXICON PRON-PERS  !!!! Inconsistent: біз has a separate entry, but олар does not. The bilingual dictionary is also inconsistent. To be repaired.
 
 мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
@@ -652,23 +669,6 @@ LEXICON PRON-REFL
 LEXICON PRON-IND-POSS
 
 %<prn%>%<ind%>: POSSESSION ;
-
-LEXICON PRON-DEM-INFL
-
-%<gen%>:ның CLIT ;
-%<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
-                   ! осыған/осыға?, соған, оған, бұған
-%<acc%>:ны CLIT ;  ! 
-%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME: check for correct default
-%<abl%>:дан CLIT ; ! 
-%<loc%>:нда CLIT ; ! 
-%<px%>:нікі%{n%} CASE ;    ! FIXME: check
-%<rloc%>:ндагы ADJ-DAGI ;  ! 
-%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
-%<adv%>:лай CLIT-GENERAL ; ! 
-%<sim%>:ндай ADJ-DAGI ;    ! 
-%<qnt%>:нша CLIT ;         !
-!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 LEXICON PRON-DEM
 
