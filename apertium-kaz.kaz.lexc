@@ -611,7 +611,7 @@ LEXICON Pron-12SG-CASES
 LEXICON PRON-PERS-INFL
 CASE-ETC ;
 
-LEXICON PRON-PERS
+LEXICON PRON-PERS  !!!! Inconsistent: біз has a separate entry, but олар does not. The bilingual dictionary is also inconsistent. To be repaired.
 
 мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
 мен%<prn%>%<pers%>%<p1%>%<sg%>:м Pron-12SG-CASES ;
@@ -1249,8 +1249,8 @@ LEXICON Nouns
 ата:ата N1 ; ! "father"
 атамекен:атамекен N1 ; ! "homeland"
 атан:атан N1 ; ! "castrated camel"
-ауа% райы:ауа% райы N-COMPOUND-PX ; ! "whether,climate"
-!ауа% райы:ауа% райы N1 ; ! "whether,climate"   ! FIXME:CHECK: and link this to something like N-NOpx3sp
+ауа% райы:ауа% райы N-COMPOUND-PX ; ! "weather,climate"
+!ауа% райы:ауа% райы N1 ; ! "weather,climate"   ! FIXME:CHECK: and link this to something like N-NOpx3sp
 ауа:ауа N1 ; ! "air"
 аудан:аудан N1 ; ! "area,district"
 аудитория:аудитория N1 ; ! "classroom"
@@ -5307,6 +5307,9 @@ LEXICON Adjectives
 астыңғы:астыңғы A1 ; ! "lower"
 алдыңғы:алдыңғы A1 ; ! "forward"
 үстінгі:үстінгі A1 ; ! "upper"
+
+әдемі:әдемі A1 ; ! "beautiful"
+
 
 LEXICON Verbs 
 
