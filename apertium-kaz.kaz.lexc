@@ -596,7 +596,7 @@ LEXICON Copula
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
-LEXICON Pron-12SG-CASES
+LEXICON PRON-12SG-CASES
 
 %<gen%>:енің CLIT ;
 %<dat%>:аған CLIT ;
@@ -609,45 +609,36 @@ LEXICON Pron-12SG-CASES
 %<sim%>:ендей CLIT ;
 
 LEXICON PRON-PERS-INFL
+
 CASE-ETC ;
-
-LEXICON PRON-DEM-INFL
-
-%<gen%>:ның CLIT ;
-%<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
-                   ! осыған/осыға?, соған, оған, бұған
-%<acc%>:ны CLIT ;  ! 
-%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME: check for correct default
-%<abl%>:дан CLIT ; ! 
-%<loc%>:нда CLIT ; ! 
-%<px%>:нікі%{n%} CASE ;    ! FIXME: check
-%<rloc%>:ндагы ADJ-DAGI ;  ! 
-%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
-%<adv%>:лай CLIT-GENERAL ; ! 
-%<sim%>:ндай ADJ-DAGI ;    ! 
-%<qnt%>:нша CLIT ;         !
-!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 LEXICON PRON-PERS  !!!! Inconsistent: біз has a separate entry, but олар does not. The bilingual dictionary is also inconsistent. To be repaired.
 
 мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
-мен%<prn%>%<pers%>%<p1%>%<sg%>:м Pron-12SG-CASES ;
+мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
 
 сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLIT ;
-сен%<prn%>%<pers%>%<p2%>%<sg%>:с Pron-12SG-CASES ;
-
-сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
+сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
 
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>:о PRON-DEM-INFL ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ADJ-DAGI ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLIT ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
 
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-
-сіз%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
+сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
 
 олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
+
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
+сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
 
 LEXICON PRON-ITG
 
@@ -669,6 +660,23 @@ LEXICON PRON-REFL
 LEXICON PRON-IND-POSS
 
 %<prn%>%<ind%>: POSSESSION ;
+
+LEXICON PRON-DEM-INFL
+
+%<gen%>:ның CLIT ;
+%<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
+                   ! осыған/осыға?, соған, оған, бұған
+%<acc%>:ны CLIT ;  ! 
+%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME: check for correct default
+%<abl%>:дан CLIT ; ! 
+%<loc%>:нда CLIT ; ! 
+%<px%>:нікі%{n%} CASE ;    ! FIXME: check
+%<rloc%>:ндагы ADJ-DAGI ;  ! 
+%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
+%<adv%>:лай CLIT-GENERAL ; ! 
+%<sim%>:ндай ADJ-DAGI ;    ! 
+%<qnt%>:нша CLIT ;         !
+!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 LEXICON PRON-DEM
 
