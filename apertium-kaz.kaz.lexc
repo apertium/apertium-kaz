@@ -355,11 +355,6 @@ LEXICON A3                 ! adjectives with (only) predicative use !# бар, �
 
 %<adj%>: CLIT ;
 
-LEXICON ADJ-ORD            ! the stems linked to this will most likely be moved to numerals
-
-%<adj%>%<ord%>: # ;
-%<adj%>%<ord%>%<subst%>: SUBST ;
-
 LEXICON ADJ-COMMON
 
 %<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: ADJ-COMMON is meant to be used as default cont. class
@@ -612,7 +607,7 @@ LEXICON PRON-PERS-INFL
 
 CASE-ETC ;
 
-LEXICON PRON-PERS  !!!! Inconsistent: біз has a separate entry, but олар does not. The bilingual dictionary is also inconsistent. To be repaired.
+LEXICON PRON-PERS
 
 мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
 мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
