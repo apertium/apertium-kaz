@@ -84,7 +84,7 @@ Multichar_Symbols
 %<ind%>               ! Indefinite
 %<itg%>               ! Interrogative
 %<qnt%>               ! Quantifier
-%<neg%>               ! Negative       !# еш нерсе
+%<neg%>               ! Negative       !# еш нерсе ! NOTE: also used to denote negation in verbs
 
 ! Numeral types
 %<ord%>               ! Ordinal
@@ -727,7 +727,6 @@ LEXICON DET-DEM
 LEXICON DET-QNT
 
 %<det%>%<qnt%>: # ;
-!%<det%>%<qnt%>: N-INFL-COMMON ;
 
 LEXICON DET-IND
 
@@ -736,6 +735,10 @@ LEXICON DET-IND
 LEXICON DET-ITG
 
 %<det%>%<itg%>: # ;
+
+LEXICON DET-NEG
+
+%<det%>%<neg%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
 
@@ -1037,61 +1040,6 @@ PRON-DEM ;   ! Demonstrative pronouns
 
 барлық:барлық PRON-QNT ; ! ""
 
-нөл:нөл NUM ; ! "zero"
-бір:бір NUM ; ! "one"
-екі:екі NUM ; ! "two"
-үш:үш NUM ; ! "three"
-төрт:төрт NUM ; ! "four"
-бес:бес NUM ; ! "five"
-алты:алты NUM ; ! "six"
-жеті:жеті NUM ; ! "seven"
-сегіз:сегіз NUM ; ! "eight" 
-тоғыз:тоғыз  NUM ; ! "nine"
-он:он NUM ; ! "ten"
-
-он% бір:он% бір NUM ; ! "eleven"       ! This are needed only because the corresponding
-он% екі:он% екі NUM ; ! "twelve"       ! tatar numerals are written as one word
-он% үш:он% үш NUM ; ! "thirteen"
-он% төрт:он% төрт NUM ; ! "fourteen"
-он% бес:он% бес NUM ; ! "fifteen"
-он% алты:он% алты NUM ; ! "sixteen"
-он% жеті:он% жеті NUM ; ! "seventeen"
-он% сегіз:он% сегіз NUM ; ! "eighteen"
-он% тоғыз:он% тоғыз NUM ; ! "nineteen"
-
-жиырма:жиырма NUM ; ! "twenty"         ! FIXME: This has an exceptional ordinal form: жиырмасыншы
-отыз:отыз NUM ; ! "thirty"
-қырық:қырық NUM ; ! "forty"
-елу:елу NUM ; ! "fifty"
-алпыс:алпыс NUM ; ! "sixty"
-жетпіс:жетпіс NUM ; ! "seventy"
-сексен:сексен NUM ; ! "eighty"
-тоқсан:тоқсан NUM ; ! "ninety"
-жүз:жүз NUM ; ! "hundred"
-
-мың:мың NUM ; ! "thousand"
-түмен:түмен NUM ; ! "archaic for 10 000"
-миллион:миллион NUM ; ! "million"
-миллиард:миллиард NUM ; ! "billion"
-триллион:триллион NUM ; ! "trillion"
-
-!ширек:ширек NUM ; ! "quarter"         ! FIXME:DISCUSS: POS
-!жарым:жарым NUM ; ! "half"            ! (consider that they don't have ordinal form obviously)
-!жарты:жарты NUM ; ! "half"
-
-бір:біреу NUM-COLL ;           
-екі:екеу NUM-COLL ;
-үш:үшеу NUM-COLL ;
-төрт:төртеу NUM-COLL ;
-бес:бесеу NUM-COLL ;
-алтау:алтау NUM-COLL ;
-жетеу:жетеу NUM-COLL ;
-
-! Technically this goes on to higher numbers
-! but its use beyond 5(?) is rare
-! and is of questionable grammaticality /not-I.S./
-! Grammar says first 7 numerals have this form, so let's extend it to 7 /I.S./
-
 LEXICON Determiners
 
 анау:анау DET-DEM ;
@@ -1106,32 +1054,24 @@ LEXICON Determiners
 барлық:барлық DET-QNT ; ! "all"
 бірнеше:бірнеше DET-QNT ; ! "some"
 бірқатар:бірқатар DET-QNT ; ! "several"
-ешқандай:ешқандай DET-QNT ; ! "no [kind of], none"
-көп:көп DET-QNT ; ! "many, much"
+бүкіл:бүкіл DET-QNT ; ! "whole"
 көптеген:көптеген DET-QNT ; ! "many"
 әр:әр DET-QNT ; ! "every"
 әрбір:әрбір DET-QNT ; ! "each"
 
 бір:бір DET-IND ; ! "a"
-еш:еш DET-IND ; ! "no"
 кей% бір:кей% бір DET-IND ; ! "some"
+қайсыбір:қайсыбір DET-IND ; ! "some"
 
 қай:қай DET-ITG ; ! "which"
+
+ешқандай:ешқандай DET-NEG ; ! "no [kind of], none"
 
 !!! FIXME: Check these
 
 !!!! Determiners, pronouns, etc. of various sorts
-кейбір:кейбір DET-QNT ; ! "some"
-қайсыбір:қайсыбір DET-QNT ; ! "which one"
 неше:неше DET-QNT ; ! "how many"        ! interrog. quantifier
 қанша:қанша DET-QNT ; ! "how many"       ! interrog. quantifier
-бұл:бұл DET-QNT ; ! "this"             ! demonstrative determiner
-әр:әр DET-QNT ; ! "each"              ! ~determiner?
-бүтін:бүтін DET-QNT ; ! "[the] whole"    ! ~determiner?
-басқа:басқа DET-QNT ; ! "other"
-бүкіл:бүкіл DET-QNT ; ! "whole"
-
-мынау:мынау DET-QNT ; ! "this"           ! "this-here X", "ce X-ci", "вот это X"
 
 LEXICON Numerals
 
@@ -5064,6 +5004,7 @@ LEXICON Adverbs
 дәл:дәл ADV ; ! "exactly"
 ерте:ерте ADV ; ! "early"
 ең:ең ADV ; ! "most"
+еш:еш ADV ; ! ""
 кейде:кейде ADV ; ! "sometimes"
 күндіз:күндіз ADV ; ! "during the day"
 көбінесе:көбінесе ADV ; ! "mostly"
@@ -5126,6 +5067,7 @@ LEXICON Adjectives
 мүмкін:мүмкін A2 ; ! "possible"
 
 !қай:қай A1 ; ! "what"
+
 азаматтық:азаматтық A1 ; ! "citizen"
 аймақтық:аймақтық A1 ; ! "regional"
 айқын:айқын A1 ; ! "clear (understandable)"
@@ -5139,11 +5081,14 @@ LEXICON Adjectives
 ақ:ақ A1 ; ! "white"
 ақырын:ақырын A1 ; ! "slow"
 бай:бай A1 ; ! "rich"
+басқа:басқа A1 ; ! "other"
 белгілі:белгілі A1 ; ! "famous"
 биік:биік A1 ; ! "high, tall"
 боз:боз A1 ; ! "white-grey"
 бос:бос A1 ; ! "empty, free, hollow"
+бүтін:бүтін A1 ; ! "whole"
 бұрынғы:бұрынғы A1 ; ! "long-ago,бывший"
+бөтен:бөтен A1 ; ! "other"
 дайын:дайын A1 ; ! "ready, ripe"
 демократиялық:демократиялық A1 ; ! "democratic"
 діни:діни A1 ; ! "religious"
@@ -5155,8 +5100,8 @@ LEXICON Adjectives
 еркін:еркін A1 ; ! "free"
 ескі:ескі A1 ; ! "old"
 жабық:жабық A1 ; ! "closed"
-жалғыз:жалғыз A1 ; ! "lonely"
 жалпы:жалпы A1 ; ! "united,collected"
+жалғыз:жалғыз A1 ; ! "lonely"
 жаман:жаман A1 ; ! "bad"
 жарлы:жарлы A1 ; ! "poor"
 жарты:жарты A1 ; ! "half"
@@ -5195,6 +5140,8 @@ LEXICON Adjectives
 кәрі:кәрі A1 ; ! "old (person)"
 көк:көк A1 ; ! "blue"
 көне:көне A1 ; ! "old/ancient (thing)"
+көп:көп A1 ; ! "many, much"
+көркем:көркем A1 ; ! "beautiful"
 көңілді:көңілді A1 ; ! "happy"
 лайықты:лайықты A1 ; ! "suitable"
 литвалық NP-TOP ; ! "Lithuanian"
@@ -5234,7 +5181,6 @@ LEXICON Adjectives
 терең:терең A1 ; ! "deep, profound"
 толық:толық A1 ; ! "full"
 тура:тура A1 ; ! "straight"
-төмен:төмен A1 ; ! "low"
 тірі:тірі A1 ; ! "live"
 түгел:түгел A1 ; ! "all"      ! FIXME: check POS
 түзу:түзу A1 ; ! "direct"
@@ -5244,6 +5190,7 @@ LEXICON Adjectives
 тәжірибелі:тәжірибелі A1 ; ! "experienced"
 тәуелсіз:тәуелсіз A1 ; ! "independent"
 тәуелсіздік:тәуелсіздік A1 ; ! "independent"
+төмен:төмен A1 ; ! "low"
 уақ:уақ A1 ; ! "small"
 усақ:усақ A1 ; ! "small"
 халықаралық:халықаралық A1 ; ! "international"
@@ -5296,8 +5243,6 @@ LEXICON Adjectives
 өзара:өзара A1 ; ! "mutual"
 өзгеше:өзгеше A1 ; ! "special/particular"
 өткір:өткір A1 ; ! "sharp, pointed"
-
-көркем:көркем A1 ; ! "beautiful"
 
 !!!! Nouns with KI !!!!
 негізгі:негізгі A1 ; ! "basic, fundamental"
