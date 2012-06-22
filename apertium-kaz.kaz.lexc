@@ -362,6 +362,11 @@ LEXICON A3                 ! (derived/not fully lexicalized) adjectives without 
 ! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
 ! e.g. *язгыдагы
 
+LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
+                           !# ұлттық
+
+%<adj%>: CLIT ;                                       !# ұлттық тағам
+
 LEXICON ADJ-COMMON
 
 %<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: ADJ-COMMON is meant to be used as default cont. class
