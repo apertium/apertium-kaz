@@ -329,7 +329,7 @@ CLIT ;
 
 LEXICON A1                ! adjectives that can be both substantivized and andverbialized;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
-                          !# жақсы
+                          !# жақсы, тез
 
 %<adj%>: CLIT ;                                       !# жақсы адам
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# жақсырақ іс
@@ -347,22 +347,20 @@ LEXICON A2                 ! (derived/not fully lexicalized) adjectives without 
 %<adj%>: CLIT ;                                       !# ескі дос
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# ескірек заманда
 
-%<adj%>%<subst%>: SUBST ;
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;
+%<adj%>%<subst%>: SUBST ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
 
-LEXICON A3                 ! (derived/not fully lexicalized) adjectives without adverbial reading; #! көктемгі
+LEXICON A3                 ! (derived/not fully lexicalized) adjectives without adverbial reading,
+                           ! so-called "predicatives" (бар, жоқ);
                            ! no comparison levels at all.
-                           !# көктемгі
+                           !# көктемгі, басты, бар, жоқ
 
-! FIXME:NOTE: Maybe this class is not really needed, because it turned out :) that
-!             even "бар" and "юк" can take case endings: !# "Хатыны юкның якыны юк."
-!                                                        !# "Эше барның ашы бар."   
-!             (that means that they should be linked to A2 - and they already are).
-! In the future A3 might stand for some other class of adjectives instead,
-! if we need to distinguish any other.
-
-%<adj%>: CLIT ;
+%<adj%>: CLIT ;                                       !# көктемгі су тасқыны
 %<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
+                                                      !# "Аты бардың заты бар."
+
+! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
+! e.g. *язгыдагы
 
 LEXICON ADJ-COMMON
 
