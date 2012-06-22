@@ -318,7 +318,7 @@ CASE-ETC ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
-! FIXME: this section needs refactoring
+! FIXME: this section might need some refactoring
 !! i.e. change <adj><comp><subst> to <adj><subst><comp>
 !! and make use of ADJ-LEVELS class
 
@@ -327,24 +327,32 @@ LEXICON ADJ-LEVELS
 %<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 CLIT ;
 
-LEXICON A1                 ! adjectives that can be both substantivized and andverbialized #! жақсы
+LEXICON A1                ! adjectives that can be both substantivized and andverbialized;
+                          ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
+                          !# жақсы
 
-%<adj%>: CLIT ;
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
+%<adj%>: CLIT ;                                       !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# жақсырақ іс
 
-%<adj%>%<subst%>: SUBST ;                             !# жақсыны 
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым (?: Firespeaker)
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым 
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым
 
-%<adj%>%<advl%>: CLIT ;
-%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# тезрек атта="go faster"
+%<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
+%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
-LEXICON A2                 ! (derived/not fully lexicalized) adjectives without adverbial reading #! көктемгі
+LEXICON A2                 ! (derived/not fully lexicalized) adjectives without adverbial reading;
+                           ! <adj> and <adj.subst> readings have comparison levels.
+                           !# ескі
 
-%<adj%>: CLIT ;
+%<adj%>: CLIT ;                                       !# ескі дос
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# ескірек заманда
 
-%<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
+%<adj%>%<subst%>: SUBST ;
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;
 
-LEXICON A3                 ! adjectives with (only) predicative use !# бар, жоқ 
+LEXICON A3                 ! (derived/not fully lexicalized) adjectives without adverbial reading; #! көктемгі
+                           ! no comparison levels at all.
+                           !# көктемгі
 
 ! FIXME:NOTE: Maybe this class is not really needed, because it turned out :) that
 !             even "бар" and "юк" can take case endings: !# "Хатыны юкның якыны юк."
@@ -354,6 +362,7 @@ LEXICON A3                 ! adjectives with (only) predicative use !# бар, �
 ! if we need to distinguish any other.
 
 %<adj%>: CLIT ;
+%<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
 
 LEXICON ADJ-COMMON
 
