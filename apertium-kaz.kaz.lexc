@@ -1074,7 +1074,7 @@ LEXICON Determiners
 әрбір:һәрбір DET-QNT ; ! "each" Dir/LR
 
 бір:бір DET-IND ; ! "a"
-кей% бір:кей% бір DET-IND ; ! "some"
+кейбір:кейбір DET-IND ; ! "some"
 қайсыбір:қайсыбір DET-IND ; ! "some"
 
 қай:қай DET-ITG ; ! "which"
@@ -1885,6 +1885,7 @@ LEXICON Nouns
 тіл:тіл N1 ; ! "language,tongue"
 тілмаш:тілмаш N1 ; ! "translator"
 тілші:тілші N1 ; ! "reporter"
+тіршілік:тіршілік N1 ; ! ""
 тіс:тіс N1 ; ! "tooth"
 түйе:түйе N1 ; ! "camel"
 түйек:түйек N1 ; ! "sundry items"
@@ -1900,6 +1901,7 @@ LEXICON Nouns
 түс:түс N1 ; ! "noon"
 түше:түше N1 ; ! "member"
 тұз:тұз N1 ; ! "salt"
+тұқымдас:тұқымдас N1 ; ! ""
 тұлпар:тұлпар N1 ; ! "steed"
 тұман:тұман N1 ; ! "fog"
 тұрмыс:тұрмыс N1 ; ! "life"
@@ -2004,6 +2006,7 @@ LEXICON Nouns
 ықылас:ықылас N1 ; ! "attentiveness"
 ықылық:ықылық N1 ; ! "hiccups"
 ыңғай:ыңғай N1 ; ! "good occasion"
+электр:электр N1 ; ! ""
 эмблема:эмблема N1 ; ! ""
 юбка:юбка N1 ; ! "skirt"
 янші% яйел:янші% яйел N1 ; ! "singer"  ! FIXME: should be "әнші әйел"; and this is just a perfectly productive compound
@@ -2230,41 +2233,7 @@ LEXICON Nouns
 өтірік:өтірік N1 ; ! "lie"
 өң:өң N1 ; ! "appearance"
 
-!!! Nationalities !!!
-қазақ Natinfl ; ! "Kazakh"
-қырғыз Natinfl ; ! "Kyrgyz"
-моңғол Natinfl ; ! "Mongol"
-түрік Natinfl ; ! "Turkish"
-орыс Natinfl ; ! "Russian"
-исраилдік Natinfl ; ! "Israelite"
-Араб Natinfl ; ! "Arab"
-Калмак Natinfl ; ! "Kalmyk" 
-неміс:неміс N1 ; ! "German"
-чуваш Natinfl ; ! "Chuvash"
-Негр Natinfl ; ! "Negro"
-Чех Natinfl ; ! "Czech"
-қытай Natinfl ; ! "Chinese"
-өзбек Natinfl ; ! "Uzbek"
-Яһуди NP-TOP ; ! "Jewish/Jew"
-
-Ислам NP-TOP ; ! "Islam"     ! FIXME: argh
-
-
-!!! Materials/Colours !!!
-!киіз Matinfl ; ! "felt"
-!күміс Matinfl ; ! "silver"
-!алтын Matinfl ; ! "gold"
-!жез Matinfl ; ! "copper"
-
-
-!!!! Nfi what to do with these; will look into later
-бап:бап N1 ; ! "for purpose of"
-тасшөп:тасшөп N1 ; ! "throw away"
-
-!!!! Easy to fix:
-артқы:артқы N1 ; ! "back"            ! Adj, but FIXME later: derived from арт
-
-!!! Nouns used as postpositions when <posssessive><case> (i.e., good as N1)
+!!! Nouns used as postpositions when <posssessive><case> (i.e., good as N1) !!!
 
 алд:ал%{д%} N1 ; ! "front"
 ара:ара N1 ; ! "among"
@@ -2275,6 +2244,38 @@ LEXICON Nouns
 тұс:тұс N1 ; ! "~near"
 қас:қас N1 ; ! "across from"
 үст:үст N1 ; ! "top"
+
+!!! Nationalities !!!
+
+Араб:Араб Natinfl ; ! "Arab"
+Калмак:Калмак Natinfl ; ! "Kalmyk" 
+Негр:Негр Natinfl ; ! "Negro"
+Чех:Чех Natinfl ; ! "Czech"
+Яһуди:Яһуди NP-TOP ; ! "Jewish/Jew"
+исраилдік:исраилдік Natinfl ; ! "Israelite"
+моңғол:моңғол Natinfl ; ! "Mongol"
+неміс:неміс:неміс N1 ; ! "German"
+орыс:орыс Natinfl ; ! "Russian"
+татар:татар Natinfl ; ! "Tatar"
+түрік:түрік Natinfl ; ! "Turkish"
+чуваш:чуваш Natinfl ; ! "Chuvash"
+қазақ:қазақ Natinfl ; ! "Kazakh"
+қырғыз:қырғыз Natinfl ; ! "Kyrgyz"
+қытай:қытай Natinfl ; ! "Chinese"
+өзбек:өзбек Natinfl ; ! "Uzbek"
+
+!!! Materials/Colours !!!
+!киіз Matinfl ; ! "felt"
+!күміс Matinfl ; ! "silver"
+!алтын Matinfl ; ! "gold"
+!жез Matinfl ; ! "copper"
+
+!!!! Nfi what to do with these; will look into later
+бап:бап N1 ; ! "for purpose of"
+тасшөп:тасшөп N1 ; ! "throw away"
+
+!!!! Easy to fix:
+артқы:артқы N1 ; ! "back"            ! Adj, but FIXME later: derived from арт
 
 LEXICON ProperNouns 
 
@@ -4984,7 +4985,6 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Медведев:Медведев NP-COG-M ; ! "Medvedev"
 Платини:Платини NP-COG-M ; ! "Platini"
 
-
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
 ! Fixme -- contains ascii characters ! Бepeke NP-ANT-M; ! "Bepeke" (Kazakh)
@@ -4995,8 +4995,6 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 ! Fixme -- contains ascii characters ! Шamat NP-ANT-M; ! "Shamat" (Arabic)
 ! Fixme -- contains ascii characters ! Шыhtemіp NP-ANT-M; ! "Shıhtemip" (Kazakh)
 
-
-
 !=========================================================================!
 
 !! Other proper names (events etc)
@@ -5005,6 +5003,8 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Фунтик:Фунтик NP-AL ; ! ""
 Челси:Челси NP-AL ; ! ""
 Читта:Читта NP-AL ; ! ""
+
+Ислам:ислам NP-AL ; ! "Islam"
 
 LEXICON Adverbs
 
@@ -5080,17 +5080,35 @@ LEXICON Adverbs
 
 LEXICON Adjectives
 
+!!! A4 adj. !!!
+
 шетелдік:шетелдік A4 ; ! "foreign"
 
-бар:бар A3 ;
+!!! A3 adj., adj.subst. !!!
+
+алғашқы:алғашқы A3 ; ! "~initial"
+бар:бар A3 ; ! ""
 жазғы:жазғы A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
+жылдық:жылдық A3 ; ! "-летний,годовой,годичный"
+жылғы:жылғы A3 ; ! "year's"
 көктемгі:көктемгі A3 ; ! ""
 мүмкін:мүмкін A3 ; ! "possible"
+негізгі:негізгі A3 ; ! "basic, fundamental"
 тиіс:тиіс A3 ; ! ""
+туған:туған A3 ; ! "родной"
+ішкі:ішкі A3 ; ! "internal"
+
+!!! A2 adj.(comp), adj.(comp).subst !!!
 
 дөңгелек:дөңгелек A2 ; ! "round, circular"
+орташа:орташа A2 ; ! ""
+тәрізді:тәрізді A2 ; ! ""
+қазіргі:қазіргі A2 ; ! ""
+
+!!! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst !!!
+!!!            and when not sure :)                  !!!
 
 азаматтық:азаматтық A1 ; ! "citizen"
 аймақтық:аймақтық A1 ; ! "regional"
@@ -5259,10 +5277,7 @@ LEXICON Adjectives
 өткір:өткір A1 ; ! "sharp, pointed"
 
 !!!! Nouns with KI !!!!
-негізгі:негізгі A1 ; ! "basic, fundamental"
-жылғы:жылғы A1 ; ! "year's"
 ! кешкі A1 ; ! "evening/late"
-ішкі:ішкі A1 ; ! "internal"
 !аст:астын Noun-KI ; ! "lower"
 !алд:алдын Noun-KI ; ! "forward"
 !үст:үстін Noun-KI ; ! "upper"
@@ -5522,6 +5537,7 @@ LEXICON Verbs
 бөл:бөл V-TV ; ! "separate"
 болбыра:болбыра V-TD ; ! "to become languid"
 болдыр:болдыр V-TD ; ! "to get tired"
+бөл:бөл V-TV ; ! "делить"
 бөле:бөле V-TV ; ! "swaddle"
 болжа:болжа V-TV ; ! "suppose,surmise,assume"
 болжам% жаса:болжам% жаса V-IV ; ! "suppose,surmise,assume" Use/MT
@@ -5781,7 +5797,7 @@ LEXICON Verbs
 зақымда:зақымда V-TD ; ! "to damage"
 заулат:заулат V-TD ; ! "to gallop fast"
 зауықтан:зауықтан V-TD ; ! "to want"
-зертте:зертте V-TD ; ! "research"
+зертте:зертте V-TV ; ! "research"
 и:и V-TD ; ! "bend,curve"
 иір:иір V-TD ; ! "spin"
 иіске:иіске V-TD ; ! "smell" 
@@ -5924,7 +5940,7 @@ LEXICON Verbs
 қолайла:қолайла V-TD ; ! "to designate"
 қола:қола V-TD ; ! "to go down"
 қолда:қолда V-TD ; ! "uphold"
-қолданыл:қолданыл V-TD ; ! "to adapt oneself to"
+қолдан:қолдан V-TV ; ! "употреблять"
 қолдас:қолдас V-TD ; ! "to carry something together"
 қолжет:қолжет V-TD ; ! "to attain"
 қолпылда:қолпылда V-TD ; ! "to drag"
@@ -5988,7 +6004,7 @@ LEXICON Verbs
 күнелт:күнелт V-TD ; ! "to exist"
 құныс:құныс V-TD ; ! "to huddle up"
 күпілде:күпілде V-TD ; ! "to rumble"
-құра:құра V-TD ; ! "build"
+құр:құр V-TV ; ! "build"
 құралдан:құралдан V-TD ; ! "to go armed"
 құрғатыл:құрғатыл V-TD ; ! "to be dried up"   ! FIXME: passive
 күрес:күрес V-TD ; ! "deal,fight,wrestle"
@@ -6146,7 +6162,7 @@ LEXICON Verbs
 оюла:оюла V-TD ; ! "to make a design"
 оян:оян V-IV ; ! "wake"
 оят:оят V-TV ; ! "awake"
-пайдалан:пайдалан V-TD ; ! "to take advantage (of)"
+пайдалан:пайдалан V-IV ; ! "to take advantage (of)" FIXME:check transitivity (?ref > passive)
 пәлден:пәлден V-TD ; ! "to grimace"
 пісір:пісір V-TD ; ! "to boil (food)"
 піш:піш V-TD ; ! "to cut"
@@ -6554,6 +6570,9 @@ LEXICON Interjections
 
 LEXICON Abbreviations
 
+АҚШ:АҚШ ABBR ; ! "USA"
+КСРО:КСРО ABBR ; ! "USSR"
+СССР:СССР ABBR ; ! ""
 УЕФА:УЕФА ABBR ; ! ""
 
 б%.з%.б:б%.з%.б ABBR ; ! "CE"
@@ -6562,6 +6581,7 @@ LEXICON Abbreviations
 кг:кг ABBR ; ! "kg"
 км:км ABBR ; ! "km"
 км²:км² ABBR ; ! "km²"
+км2:км2 ABBR ; ! "km²"
 км³:км³ ABBR ; ! "km³"
 млн:млн ABBR ; ! "million"
 см:см ABBR ; ! "cm"
