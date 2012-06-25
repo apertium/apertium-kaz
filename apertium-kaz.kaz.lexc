@@ -1060,7 +1060,7 @@ LEXICON Determiners
 осы:осы DET-DEM ;
 сол:сол DET-DEM ;
 сонау:сонау DET-DEM ;
-әлгі:әлгі DET-DEM ; ! "which" (?)  FIXME: check POS
+әлгі:әлгі DET-DEM ; ! "~этот"
 
 бар:бар DET-QNT ; ! "all"
 барлық:барлық DET-QNT ; ! "all"
@@ -2232,6 +2232,17 @@ LEXICON Nouns
 өсімдік:өсімдік N1 ; ! "plant"
 өтірік:өтірік N1 ; ! "lie"
 өң:өң N1 ; ! "appearance"
+
+!!! newly added stuff, I'll sort it later /I.S./ !!!
+
+шығармашылық:шығармашылық N1 ; ! ""
+мұнай:мұнай N1 ; ! ""
+премьер-министр:премьер-министр N1 ; ! ""
+процент:процент N1 ; ! ""
+спорт:спорт N1 ; ! ""
+сум:сум N1 ; ! ""
+пәтер:пәтер N1 ; ! ""
+шаруашылық:шаруашылық N1 ; ! ""
 
 !!! Nouns used as postpositions when <posssessive><case> (i.e., good as N1) !!!
 
@@ -5061,7 +5072,6 @@ LEXICON Adverbs
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 
 !алғашқы A1 ; ! "first"
-!!бүгінгі A1 ; ! "today's"
 !бұрынғы A1 ; ! "long-ago"
 !жаңағы A1 ; ! "a while ago's"
 !бағанағы A1 ; ! "the one just now"
@@ -5088,6 +5098,7 @@ LEXICON Adjectives
 
 алғашқы:алғашқы A3 ; ! "~initial"
 бар:бар A3 ; ! ""
+бүгінгі A3 ; ! "today's"
 жазғы:жазғы A3 ; ! ""
 жасар:жасар A3 ; ! "after numerals: of ageX"
 жоқ:жоқ A3 ;
@@ -5098,6 +5109,7 @@ LEXICON Adjectives
 негізгі:негізгі A3 ; ! "basic, fundamental"
 тиіс:тиіс A3 ; ! ""
 туған:туған A3 ; ! "родной"
+федеральды:федеральды A3 ! "федеральный"
 ішкі:ішкі A3 ; ! "internal"
 
 !!! A2 adj.(comp), adj.(comp).subst !!!
