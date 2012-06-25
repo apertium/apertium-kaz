@@ -988,7 +988,7 @@ LEXICON Postpositions
 ! which Govern the Ablative Case (DAN)
 
 әрі:әрі POST ; ! "further, дальше" + ABL
-басқа:!басқа POST ; ! "besides, except" + ABL     ! FIXME: disambiguate бас<n><dat>
+басқа:басқа POST ; ! "besides, except" + ABL     ! FIXME: disambiguate бас<n><dat>
 бері:бері POST ; ! "since" + ABL
 бұрын:бұрын POST ; ! "earlier than, раньше" + ABL ! FIXME: check case (nominative is for sure, maybe some other meaming if it comes after n.abl.)
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
@@ -5289,43 +5289,14 @@ LEXICON Adjectives
 
 жарты:жарты A1 ; ! "half"
 жарым:жарым A1 ; ! "half"
-литвалық NP-TOP ; ! "Lithuanian" ! FIXME:NOTE: I'd like to derive that as n.attr2
-сұраным:сұраным A1 ; ! "beautıful" ! FIXME: check gloss
+литвалық NP-TOP ; ! "Lithuanian" FIXME:NOTE: I'd like to derive that as n.attr2 /I.S./
+сұраным:сұраным A1 ; ! "beautıful" FIXME: check gloss
 
 LEXICON Verbs 
 
-! Auxiliary verbs
-      
-! FIXME :)
-жат:жатыр Vinfl-AUX-IMPF ; ! 
-жүр:жүр Vinfl-AUX-IMPF ; ! 
-отыр:отыр Vinfl-AUX-IMPF ; ! 
-тұр:тұр Vinfl-AUX-IMPF ; ! 
-
-жат:жат Vinfl-AUX ; ! 
-жүр:жүр Vinfl-AUX ; ! 
-отыр:отыр Vinfl-AUX ; ! 
-тұр:тұр Vinfl-AUX ; ! 
-қал:қал Vinfl-AUX ; ! 
-ал:ал Vinfl-AUX ; ! 
-сал:сал Vinfl-AUX ; ! 
-кет:кет Vinfl-AUX ; ! 
-шық:шық Vinfl-AUX ; !
-бер:бер Vinfl-AUX ; !
-бол:бол Vinfl-AUX ; !
-біт:біт Vinfl-AUX ; !
-баста:баста Vinfl-AUX ; !
-жазда:жазда Vinfl-AUX ; !
-кел:кел Vinfl-AUX ; !
-
 !! тоқтал V-IV ; ! "stop" ! productive
 абай% бол:абай% бол V-IV ; ! "cautious,attentive,beware"
-абайла:абайла V-TV ; ! "cautious,attentive,beware"
 абалат:абалат V-TD ; ! "bother,trouble,harass,tease,set (a dog) on"
-абдыра:абдыра V-IV ; ! "become perplexed,confused,taken aback"
-абыржы:абыржы V-IV ; ! "anxious,uneasy,agitated,disturbed,confused,bustle"
-ағар:ағар V-IV ; ! "to grow white"
-ағыл:ағыл V-IV ; ! "to pour out,хлынуть"
 адақта:адақта V-TD ; ! "to complete"
 адалда:адалда V-TD ; ! "justify"
 адалсын:адалсын V-TD ; ! "pretend to be honest or just"
@@ -5333,8 +5304,6 @@ LEXICON Verbs
 адымда:адымда V-IV ; ! "to step"
 ажыра:ажыра V-TV ; ! "seperate,divorce"
 аз:аз V-IV ; ! "lose weight"
-азапта:азапта V-TV ; ! "мучить"
-азарла:азарла V-TV ; ! "упрекать"
 азала:азала V-TD ; ! "be in mourning, express sorrow, present condolences"
 азғындан:азғындан V-TD ; ! "to be corrupted"
 азғыр:азғыр V-TD ; ! "lead astray,corrupt,instigate"
@@ -6548,6 +6517,126 @@ LEXICON Verbs
 ышқын:ышқын V-TD ; ! "to be in an agonizing condition"
 эвакуациялан:эвакуациялан V-TD ; ! "to evacuate"
 
+! The verbs below were taken from apertium-kaz-tat.kaz-tat.dix. They might duplicate
+! some of the verbs listed above. If there are some questions about transitivity of
+! a given stem, the verbs listed here below are of the higher priority.
+! I'll merge two lists later, checking stuff /I.S./
+
+абайла:абайла V-TV ; ! "cautious,attentive,beware"
+абдыра:абдыра V-IV ; ! "become perplexed,confused,taken aback"
+абыржы:абыржы V-IV ; ! "anxious,uneasy,agitated,disturbed,confused,bustle"
+ағар:ағар V-IV ; ! "to grow white"
+ағыл:ағыл V-IV ; ! "хлынуть"
+адас:адас V-IV ; ! "err,be mistaken,loose one's way,get lost"
+адымда:адымда V-IV ; ! "to step"
+ажарла:ажарла V-TV ; ! "украшать"
+ажыра:ажыра V-IV ; ! "seperate,divorce,отделяться,отрываться"
+ажыра:ажыра V-TV ; ! "отделять,отрывать"
+аз:аз V-IV ; ! "(перен.) сбиваться с пути;lose weiht"
+азайт:азайт V-TV ; ! "уменьшать,убавлять"
+азапта:азапта V-TV ; ! "мучить"
+азарла:азарла V-TV ; ! "укорять,упрекать"
+айнал:айнал V-IV ; ! "вращаться;превращаться"
+айрыл:айрыл V-IV ; ! "лишаться,разлучаться" NOTE: recognize "айырылы" in kaz.lexc
+айрыл:айырылы V-IV ; ! "лишаться,разлучаться" Dir/LR
+айт:айт V-TV ; ! "сказать,говорить,рассказывать"
+айық:айық V-IV ; ! "отрезвляться,выздоравливать"
+айыпта:айыпта V-TV ; ! "обвинять,упрекать"
+айыр:айыр V-TV ; ! "отделять,различать,отнимать"
+ақса:ақса V-IV ; ! "хромать"
+ақта:ақта V-TV ; ! "оправдывать"
+ал:ал V-TV ; ! "брать,получать,покупать"
+алаңда:алаңда V-IV ; ! "беспокоиться,отвлекаться"
+анықта:анықта V-TV ; ! "выяснять,определять,уточнять"
+апар:апар V-TV ; ! "отвезти,отнести,доставить"
+аралас:аралас V-IV ; ! "принимать участие,вмешиваться,смешивать"
+арба:арба V-IV ; ! "завораживать,гипнотизировать,заколдовывать"
+арна:арна V-TV ; ! "предназначать,посвящать"
+арт:арт V-IV ; ! "увеличиваться,умножаться"
+аршы:аршы V-TV ; ! "чистить,очищать"
+ас:ас V-IV ; ! "перевалить;варить"
+асық:асық V-IV ; ! "торопиться,спешить"
+асыра:асыра V-TV ; ! "содержать,кормить,выращивать"
+ат:ат V-TV ; ! "стрелять;рассветать"
+ата:ата V-TV ; ! "называть,упоминать"
+атқар:атқар V-TV ; ! "исполнять,выполнять"
+аудар:аудар V-TV ; ! "переводить;опрокидывать"
+ауыр:ауыр V-IV ; ! "болеет,болит"
+аш:аш V-TV ; ! "открывать"
+ая:ая V-TV ; ! "жалеть,щадить,сжаливаться"
+аяқта:аяқта V-TV ; ! "заканчивать"
+аяла:аяла V-TV ; ! "беречь,ласкать,лелеять"
+аялда:аялда V-IV ; ! "задерживаться"
+бағала:бағала V-TV ; ! "оценивать"
+байқа:байқа V-TV ; ! "пробовать;следить,наблюдать"
+байла:байла V-TV ; ! "связывать,привязывать"
+бақ:бақ V-TV ; ! "воспитывать,пасти,присматриваться"
+бақыла:бақыла V-TV ; ! "наблюдвать,контролировать,проверять"
+бақыр:бақыр V-IV ; ! "кричать,ревет,бранить"
+бар:бар V-IV ; ! "идти,ехать"
+бас:бас V-TV ; ! "давить,вставать;печатать"
+басқар:басқар V-TV ; ! "руководить,возглавлять,управлять"
+баста:баста V-TV ; ! "начинать,приступать"
+бат:бат V-IV ; ! "погружаться,тонуть;осмелиться"
+баянда:баянда V-TV ; ! "докладывать,рассказывать,излагать"
+без:без V-IV ; ! "потерять,отвыкать"
+безе:безе V-TV ; ! "украшать"
+бекі:бекі V-IV ; ! "укрепляться;утверждать (приказ,план)"
+белгіле:белгіле V-TV ; ! "определять"
+бер:бер V-TV ; ! "давать,отдавать,сдавать"
+бет:бет V-IV ; ! "~end" FIXME:CHECK
+биле:биле V-TV ; ! "танцевать;владеть,править"
+біл:біл V-TV ; ! "знать,понимать,полагать"
+біт:біт V-IV ; ! "кончаться,заканчиваться"
+бітір:бітір V-TV ; ! "заканчивать" FIXME: this looks as a causative to me /I.S./
+бол:бол V-IV ; ! "1. быть"
+бөл:бөл V-TV ; ! "делить"
+болжа:болжа V-TV ; ! "предвидеть,предполагать"
+болжам% жаса:болжам% жаса V-IV ; ! "предсказать"
+болыс:болыс V-IV ; ! "помогать"
+боса:боса V-IV ; ! "пустеть,освобождаться;ослабевать"
+бу:бу V-TV ; ! "завязывать,связывать;упаковывать"
+бұз:бұз V-TV ; ! "портить,нарушать,разрешить"
+бүйт:бүйт V-TV ; ! ""
+былға:былға V-TV ; ! "пачкать,марать"
+дамы:дамы V-IV ; ! "развиваться,расти"
+де:де V-TV ; ! "сказать,называть" NOTE: 1) TV - well, it's used with nom, not acc 2) quotative or smth
+демал:демал V-IV ; ! "отдыхать"
+дірілде:дірілде V-IV ; ! "дрожать,трястись,трепетать"
+ез:ез V-TV ; ! "давить,размешивать,угнетать"
+әзірле:әзірле V-TV ; ! "готовить,подготавливать,приготавливать"
+әкел:әкел V-TV ; ! "приносить,привозить"
+еле:еле V-IV ; ! "замечать,обращать внимание" FIXME:CHECK
+әңгімелес:әңгімелес V-IV ; ! "беседовать" FIXME: (kazakh) it seems to be coop. form or smth;
+әпер:әпер V-TV ; ! "беседовать"
+ері:ері V-IV ; ! "таять,растворяться"
+ерін:ерін V-IV ; ! "лениться"
+
+! Auxiliary verbs
+!----------------      
+
+! FIXME:CHECK: cont. class
+жат:жатыр Vinfl-AUX-IMPF ; ! 
+жүр:жүр Vinfl-AUX-IMPF ; ! 
+отыр:отыр Vinfl-AUX-IMPF ; ! 
+тұр:тұр Vinfl-AUX-IMPF ; ! 
+
+жат:жат Vinfl-AUX ; ! 
+жүр:жүр Vinfl-AUX ; ! 
+отыр:отыр Vinfl-AUX ; ! 
+тұр:тұр Vinfl-AUX ; ! 
+қал:қал Vinfl-AUX ; ! 
+ал:ал Vinfl-AUX ; ! 
+сал:сал Vinfl-AUX ; ! 
+кет:кет Vinfl-AUX ; ! 
+шық:шық Vinfl-AUX ; !
+бер:бер Vinfl-AUX ; !
+бол:бол Vinfl-AUX ; !
+біт:біт Vinfl-AUX ; !
+баста:баста Vinfl-AUX ; !
+жазда:жазда Vinfl-AUX ; !
+кел:кел Vinfl-AUX ; !
+   
 LEXICON Interjections 
 
 болыпты:болыпты INTERJ ; ! "okay / that's it"
