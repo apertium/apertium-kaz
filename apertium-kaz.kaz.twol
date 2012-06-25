@@ -104,11 +104,11 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
                 matched;
 
 "Voicing assimilation of front G"
-%{G%}:к <=> :FrontVow [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: ] _ ;
-                               [ :VoicelessCns & :FrontCns ]/[ %>: ] _ ;
+%{G%}:к <=> :FrontVow [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: | [ :0 - ы:0 ] ] _ ;
+                               [ :VoicelessCns & :FrontCns ]/[ %>: | [ :0 - ы:0 ] ] _ ;
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: ] _ ;
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | :0 ] _ ;
 
 "Voicing assimilation of G across space"
 %{G%}:қ <=> :VoicelessCns %  _ ;
