@@ -929,6 +929,8 @@ LEXICON Conjunctions
 сөйтсе:сөйтсе CA ; ! "nevertheless"
 әйтсе% де:әйтсе% де CA ; ! "nevertheless"
 
+пікірінше:пікірінше CA ; ! "" FIXME: JNW, check POS
+
 LEXICON Postpositions
 
 ! Some of them are postpositions derived from nouns (or "auxilliary nouns" aka "служебные имена")
@@ -1032,7 +1034,6 @@ LEXICON Postadverbs
 да:та POSTADV ; ! ""       Dir/LR
 да:те POSTADV ; ! ""       Dir/LR
 
-пікірінше:пікірінше POSTADV ; ! "" FIXME: JNW, check POS
 тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
 тегіс POSTADV ; ! "entirely/all/all together"
 
@@ -1726,7 +1727,7 @@ LEXICON Nouns
 рақым:рақым N1 ; ! "kindness"
 рақымдылық:рақымдылық N1 ; ! "grace"
 рекорд:рекорд N1 ; ! ""
-ресми:ресми N1 ; ! "official"
+!ресми:ресми N1 ; ! "official"
 республика:республика N1 ; ! "republic"
 рет:рет N1 ; ! "turn,order,time"
 реченье:реченье N1 ; ! "biscuit,cookie"
@@ -2247,6 +2248,22 @@ LEXICON Nouns
 сум:сум N1 ; ! ""
 пәтер:пәтер N1 ; ! ""
 шаруашылық:шаруашылық N1 ; ! ""
+
+ағарту:ағарту N1 ; ! ""
+барыс:барыс
+басқарма:басқарма N1 ; ! ""
+жалғас:жалғас N1 ; ! ""
+жолдау:жолдау N1 ; ! ""
+медицина:медицина N1 ; ! ""
+программа:программа N1 ; ! ""
+тонна:тонна N1 ; ! ""
+транспорт:транспорт N1 ; ! ""
+өңір:өңір N1 ; ! ""
+хабарлама:хабарлама N1 ; ! ""
+шара:шара N1 ; ! ""
+ынтымақтастық:ынтымақтастық N1 ; ! ""
+үлес:үлес N1 ; ! ""
+ұсыныс:ұсыныс N1 ; ! ""
 
 !!! Nouns used as postpositions when <posssessive><case> (i.e., good as N1) !!!
 
@@ -4998,6 +5015,10 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Барак:Барак NP-ANT-M ; ! "Barack"
 Сергей:Сергей NP-ANT-M ; ! "Sergey"
 Евгений:Евгений NP-ANT-M ; ! "Yevgeniy"
+Мишель:Мишель NP-ANT-M ; ! ""
+Минтимер:Минтимер NP-ANT-M ; ! ""
+Рөстәм:Рөстәм NP-ANT-M ; ! ""
+Фәрит:Фәрит NP-ANT-M ; ! ""
 
 Тілешев:Тілешев NP-COG-M ; ! "Tilešev"
 Құнанбай:Құнанбай NP-COG-M ; ! "Qunanbay"
@@ -5007,6 +5028,9 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Путин:Путин NP-COG-M ; ! "Putin"
 Медведев:Медведев NP-COG-M ; ! "Medvedev"
 Платини:Платини NP-COG-M ; ! "Platini"
+Миңнеханов:Миңнеханов NP-COG-M ; ! ""
+Мөхәммәтшин:Мөхәммәтшин NP-COG-M ; ! ""
+Шәймиев:Шәймиев NP-COG-M ; ! ""
 
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
@@ -5069,6 +5093,9 @@ LEXICON Adverbs
 әсіресе:әсіресе ADV ; ! "especially"
 өте:өте ADV ; ! "very"
 
+бері:бері ADV ; ! ""
+міне:міне ADV ; ! ""
+
 !!!! Adverbs wich take -KI and become an attr/adj !!!!
 
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
@@ -5109,6 +5136,8 @@ LEXICON Adjectives
 !!! A4 adj. !!!
 
 шетелдік:шетелдік A4 ; ! "foreign"
+муниципалдық:муниципалдық A4 ; ! ""
+ресми:ресми A4 ; ! ""
 
 !!! A3 adj., adj.subst. !!!
 
@@ -5127,6 +5156,8 @@ LEXICON Adjectives
 туған:туған A3 ; ! "родной"
 федеральды:федеральды A3 ! "федеральный"
 ішкі:ішкі A3 ; ! "internal"
+арнаулы:арнаулы A3 ; ! ""
+жеке:жеке A3 ; ! "separate"
 
 !!! A2 adj.(comp), adj.(comp).subst !!!
 
@@ -5134,6 +5165,7 @@ LEXICON Adjectives
 орташа:орташа A2 ; ! ""
 тәрізді:тәрізді A2 ; ! ""
 қазіргі:қазіргі A2 ; ! ""
+маңызды:маңызды A2 ; ! ""
 
 !!! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst !!!
 !!!            and when not sure :)                  !!!
@@ -5180,7 +5212,6 @@ LEXICON Adjectives
 жақсы:жақсы A1 ; ! "good"
 жақын:жақын A1 ; ! "close"
 жаңа:жаңа A1 ; ! "new"
-жеке:жеке A1 ; ! "separate"
 жергілікті:жергілікті A1 ; ! "local"
 жеңіл:жеңіл A1 ; ! "light"
 жиі:жиі A1 ; ! "often"
@@ -5304,6 +5335,8 @@ LEXICON Adjectives
 өзгеше:өзгеше A1 ; ! "special/particular"
 өткір:өткір A1 ; ! "sharp, pointed"
 
+артық:артық A1 ; ! ""
+
 !!!! Nouns with KI !!!!
 ! кешкі A1 ; ! "evening/late"
 !аст:астын Noun-KI ; ! "lower"
@@ -5425,7 +5458,7 @@ LEXICON Verbs
 арқанда:арқанда V-TD ; ! "to tie"
 арқыра:арқыра V-TD ; ! "to neigh loudly (of a stallion)"
 арлан:арлан V-TD ; ! "be ashamed"
-арна:арна V-TV ; ! "dedicate"
+арна:арна V-TV ; ! "dedicate,посвящать"
 арсылда:арсылда V-TD ; ! "to bark"
 арт:арт V-IV ; ! "augment,rise"
 арттыр:арттыр V-TD ; ! "to enlarge"
@@ -5496,7 +5529,6 @@ LEXICON Verbs
 барылда:барылда V-TD ; ! "to shout loudly"
 барымтала:барымтала V-TD ; ! "to plunder"
 бас:бас V-TD ; ! "supress,restrain"
-басқар:басқар V-TD ; ! "possess, own"
 басқасын:басқасын V-TD ; ! "to avoid"
 баста:баста V-TV ; ! "start,begin"
 бастықтыр:бастықтыр V-TD ; ! "to train"
@@ -6010,7 +6042,7 @@ LEXICON Verbs
 құрықта:құрықта V-TD ; ! "to capture unbroken horses (with a kuruk)"
 қусыр:қусыр V-TD ; ! "to twist"
 құтқар:құтқар V-TD ; ! "save"
-күт:күт V-TD ; ! "wait"
+күт:күт V-TV ; ! "wait"
 құттықта:құттықта V-TD ; ! "to congratulate"
 құтылдыр:құтылдыр V-TD ; ! "to help out"
 құтыл:құтыл V-TD ; ! "to get rid of"
@@ -6105,7 +6137,8 @@ LEXICON Verbs
 өкірт:өкірт V-TD ; ! "do something easily"
 өксі:өксі V-TD ; ! "sob"
 өкшеле:өкшеле V-TD ; ! "follow someone closely"
-оқы:оқы V-TV ; ! "read,learn,study"
+оқы:оқы V-TV ; ! "read"
+оқы:оқы V-IV ! "learn,study"
 өлеңдет:өлеңдет V-TD ; ! "sing"
 өлімсіре:өлімсіре  V-TD ; ! "be feeble"
 өлімші% бол:өлімші% бол V-TD ; ! "be beaten half to death"
@@ -6118,7 +6151,7 @@ LEXICON Verbs
 оңайлан:оңайлан V-TD ; ! "to become easy"
 өңгер:өңгер V-TD ; ! "put someone of something in daring"
 оңда:оңда V-TD ; ! "to repair"
-өндір:өндір V-TD ; ! "recover,collect"   ! FIXME: causitive
+өндір:өндір V-TV ; ! "recover,collect,производить"   ! FIXME:NOTE: causitive
 өнімсізден:өнімсізден V-TD ; ! "to become unproductive or inefficient"
 өн:өн V-TD ; ! "increase,gain weight,rise"
 опала:опала V-TD ; ! "to powder"
@@ -6182,7 +6215,7 @@ LEXICON Verbs
 сайранда:сайранда V-TD ; ! "to take a walk"
 сайра:сайра V-TD ; ! "to sing (of birds)"
 сайыс:сайыс V-TD ; ! "to joust"
-сақта:сақта V-TD ; ! "protect"
+сақта:сақта V-TV ; ! "protect,беречь,охранять"
 салақта:салақта V-TD ; ! "to dangle"
 салаңда:салаңда V-TD ; ! "to hang"
 салдыра:салдыра V-TD ; ! "to rattle"
@@ -6206,7 +6239,7 @@ LEXICON Verbs
 састыр:састыр V-TD ; ! "to disturb"
 сасы:сасы V-TD ; ! "stink"
 сатпақта:сатпақта V-TD ; ! "to soil"
-сат:сат V-TD ; ! "sell"
+сат:сат V-TV ; ! "sell"
 саттыр:саттыр V-TD ; ! "to offer for sale"
 сатыл:сатыл V-TD ; ! "to be for sale"  ! FIXME: passive
 сатын:сатын V-TD ; ! "to sell one's belongings"
@@ -6301,7 +6334,7 @@ LEXICON Verbs
 тан:тан V-TD ; ! "deny"
 таң:таң V-TD ; ! "tie up"
 таңырқа:таңырқа V-TD ; ! "to be astonished at something"
-таны:таны V-TD ; ! "recognize"
+таны:таны V-TV ; ! "recognize,опознавать"
 тапсыр:тапсыр V-TD ; ! "hand over"
 тап:тап V-TV ; ! "find"
 тапта:тапта V-TD ; ! "trample"
@@ -6544,10 +6577,7 @@ LEXICON Verbs
 ышқын:ышқын V-TD ; ! "to be in an agonizing condition"
 эвакуациялан:эвакуациялан V-TD ; ! "to evacuate"
 
-! The verbs below were taken from apertium-kaz-tat.kaz-tat.dix. They might duplicate
-! some of the verbs listed above. If there are some questions about transitivity of
-! a given stem, the verbs listed here below are of the higher priority.
-! I'll merge two lists later, checking stuff /I.S./
+!!! Newly added stuff, will be merged with ones above and sorted later
 
 абайла:абайла V-TV ; ! "cautious,attentive,beware"
 абдыра:абдыра V-IV ; ! "become perplexed,confused,taken aback"
@@ -6640,6 +6670,11 @@ LEXICON Verbs
 ері:ері V-IV ; ! "таять,растворяться"
 ерін:ерін V-IV ; ! "лениться"
 
+атап% көрсет:атап% көрсет V-TV ; ! "подчеркнуть" Use/MT
+білдір:білдір V-TV ; ! "значить" FIXME:NOTE caus
+қамтамасыз% ет:қамтамасыз% ет V-TV ; ! "обеспечивать" Use/MT
+ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
+
 ! Auxiliary verbs
 !----------------      
 
@@ -6677,6 +6712,7 @@ LEXICON Interjections
 мақұл:мақұл INTERJ ; ! "fine/okay"
 мейлі:мейлі INTERJ ; ! "okay/fine"
 мына:мына INTERJ ; ! "here is, вот"
+міне:міне INTERJ ; ! "here is, вот"
 мә:мә INTERJ ; ! "here you go / take"
 ой:ой INTERJ ; ! "hey"
 онда:онда INTERJ ; ! "then"
@@ -6688,6 +6724,7 @@ LEXICON Interjections
 
 LEXICON Abbreviations
 
+ААҚ:ААҚ ABBR ; ! "Ашық акционердық коғам=Public company"
 АҚШ:АҚШ ABBR ; ! "USA"
 КСРО:КСРО ABBR ; ! "USSR"
 РФ:РФ ABBR ; ! "Russian Federation"
