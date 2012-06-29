@@ -1154,7 +1154,11 @@ XII NUM-ROMAN ;
 ! and is of questionable grammaticality /not-I.S./
 ! Grammar says first 7 numerals have this form, so let's extend it to 7 /I.S./
 
-LEXICON Nouns
+
+!=============!
+ LEXICON Nouns
+!=============!
+
 
 абақты:абақты N1 ; ! "jail"
 абырой:абырой N1 ; ! "reputation,honor,respect"
@@ -2315,7 +2319,8 @@ LEXICON Nouns
 мерейтой:мерейтой N1 ; ! ""
 
 ! Nouns used as postpositions when <posssessive><case>
-!-----------------------------------------------------
+!=====================================================
+
 алд:ал%{д%} N1 ; ! "front"
 ара:ара N1 ; ! "among"
 арт:арт N1 ; ! "back"
@@ -2327,7 +2332,7 @@ LEXICON Nouns
 үст:үст N1 ; ! "top"
 
 ! Nationalities
-! -------------
+!==============
 
 Араб:Араб Natinfl ; ! "Arab"
 Калмак:Калмак Natinfl ; ! "Kalmyk" 
@@ -2346,6 +2351,9 @@ LEXICON Nouns
 қытай:қытай Natinfl ; ! "Chinese"
 өзбек:өзбек Natinfl ; ! "Uzbek"
 
+! FIXME:
+!=======
+
 ! Materials/Colours
 
 !киіз Matinfl ; ! "felt"
@@ -2361,9 +2369,9 @@ LEXICON Nouns
 артқы:артқы N1 ; ! "back"            ! Adj, but FIXME later: derived from арт
 
 
-!==================!
-LEXICON ProperNouns 
-!==================!
+!===================!
+ LEXICON ProperNouns 
+!===================!
 
 
 ! Toponyms
@@ -2475,7 +2483,8 @@ LEXICON ProperNouns
 Әзірбайжан:Әзірбайжан NP-TOP ; ! "Azerbaijan"
 Өзбекстан:Өзбекстан NP-TOP ; ! "Uzbekistan" 
 
-!!! Cities of the world
+! Cities of the world
+!--------------------
 
 Анкара:Анкара NP-TOP ; ! "Ankara"
 Афина:Афина NP-TOP ; ! "Athens"
@@ -2516,7 +2525,8 @@ LEXICON ProperNouns
 Ыстанбұл:Ыстанбұл NP-TOP ; ! "Istanbul"
 Қазан:Қазан NP-TOP ; ! "Kazan" 
 
-!!! Other toponyms
+! Other toponyms
+!---------------
 
 Азия:Азия NP-TOP ; ! "Asia"
 Арктика:Арктика NP-TOP ; ! "Arctic Region"
@@ -2533,7 +2543,8 @@ LEXICON ProperNouns
 Орал:Орал NP-TOP ; ! "Oral"
 Сібір:Сібір NP-TOP ; ! "Siberia"
 
-!!! FIXME:
+! FIXME:
+!-------
 
 Еврей:Еврей NP-TOP ; ! "Jew"
 Поляк:Поляк NP-TOP ; ! "Pole"
@@ -2542,7 +2553,8 @@ LEXICON ProperNouns
 Сьван:Сьван NP-TOP ; ! "Gypsy"   ! FIXME: check
 Өліппе:Өліппе NP-TOP ; ! "ABC"
 
-!=========================================================================!
+! Anthroponyms
+!=============
 
 Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Сәбила:Сәбила NP-ANT-F; ! "Säbiyla" (Arabic)
@@ -5081,6 +5093,22 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Рөстәм:Рөстәм NP-ANT-M ; ! ""
 Фәрит:Фәрит NP-ANT-M ; ! ""
 
+! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
+! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
+! Fixme -- contains ascii characters ! Бepeke NP-ANT-M; ! "Bepeke" (Kazakh)
+! Fixme -- contains ascii characters ! Байғaли NP-ANT-M; ! "Bayğalıy" (Kazakh)
+! Fixme -- contains ascii characters ! Барлac NP-ANT-M; ! "Barlac" (Old Turkic)
+! Fixme -- contains ascii characters ! Әmет NP-ANT-M; ! "Ämet" (Arabic)
+! Fixme -- contains ascii characters ! Кeheш NP-ANT-M; ! "Kehesh" (Old Turkic)
+! Fixme -- contains ascii characters ! Шamat NP-ANT-M; ! "Shamat" (Arabic)
+! Fixme -- contains ascii characters ! Шыhtemіp NP-ANT-M; ! "Shıhtemip" (Kazakh)
+
+! Cognoms
+!========
+
+! Masculine
+!----------
+
 Тілешев:Тілешев NP-COG-M ; ! "Tilešev"
 Құнанбай:Құнанбай NP-COG-M ; ! "Qunanbay"
 Назарбаев:Назарбаев NP-COG-M ; ! "Nazarbayev"
@@ -5093,32 +5121,24 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Мөхәммәтшин:Мөхәммәтшин NP-COG-M ; ! ""
 Шәймиев:Шәймиев NP-COG-M ; ! ""
 
-! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
-! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
-! Fixme -- contains ascii characters ! Бepeke NP-ANT-M; ! "Bepeke" (Kazakh)
-! Fixme -- contains ascii characters ! Байғaли NP-ANT-M; ! "Bayğalıy" (Kazakh)
-! Fixme -- contains ascii characters ! Барлac NP-ANT-M; ! "Barlac" (Old Turkic)
-! Fixme -- contains ascii characters ! Әmет NP-ANT-M; ! "Ämet" (Arabic)
-! Fixme -- contains ascii characters ! Кeheш NP-ANT-M; ! "Kehesh" (Old Turkic)
-! Fixme -- contains ascii characters ! Шamat NP-ANT-M; ! "Shamat" (Arabic)
-! Fixme -- contains ascii characters ! Шыhtemіp NP-ANT-M; ! "Shıhtemip" (Kazakh)
-
-!=========================================================================!
-
-!! Organizations
+! Organizations
+!==============
 
 Татар%-информ:Татар%-информ NP-ORG ; ! ""
 
-!! Other proper names (events etc)
+! Other proper names (events etc)
+!================================
 
 Еуро:Еуро NP-AL ; ! "European Championship"
 Фунтик:Фунтик NP-AL ; ! ""
 Челси:Челси NP-AL ; ! ""
 Читта:Читта NP-AL ; ! ""
 
-Ислам:ислам NP-AL ; ! "Islam"
 
-LEXICON Adverbs
+!===============!
+ LEXICON Adverbs
+!===============!
+
 
 қайда:қайда ADVITG ; ! "where (где;куда)"
 қашан:қашан ADVITG ; ! "when"
@@ -5192,10 +5212,12 @@ LEXICON Adverbs
 !ежелгі A1 ; ! "ancient"
 !төменгі A1 ; ! "lower"
 
-LEXICON Adjectives
+!==================!
+ LEXICON Adjectives
+!==================!
 
 ! A4 adj.
-!--------
+!========
 
 шетелдік:шетелдік A4 ; ! "foreign"
 муниципалдық:муниципалдық A4 ; ! ""
@@ -5208,7 +5230,7 @@ LEXICON Adjectives
 техникалық:техникалық A4 ; ! ""
 
 ! A3 adj., adj.subst
-!-------------------
+!===================
 
 алғашқы:алғашқы A3 ; ! "~initial"
 бар:бар A3 ; ! ""
@@ -5237,7 +5259,7 @@ LEXICON Adjectives
 кәсіби:кәсіби A3 ; ! ""
 
 ! A2 adj.(comp), adj.(comp).subst
-!--------------------------------
+!================================
 
 дөңгелек:дөңгелек A2 ; ! "round, circular"
 орташа:орташа A2 ; ! ""
@@ -5254,7 +5276,7 @@ LEXICON Adjectives
 
 ! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst
 !            and when not sure :)
-!-------------------------------------------------
+!=================================================
 
 азаматтық:азаматтық A1 ; ! "citizen"
 аймақтық:аймақтық A1 ; ! "regional"
@@ -5441,7 +5463,8 @@ LEXICON Adjectives
 алдыңғы:алдыңғы A1 ; ! "forward"
 үстінгі:үстінгі A1 ; ! "upper"
 
-!!!! FIXME !!!!
+! FIXME
+!======
 
 жарты:жарты A1 ; ! "half"
 жарым:жарым A1 ; ! "half"
