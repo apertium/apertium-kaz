@@ -2402,6 +2402,13 @@ XII NUM-ROMAN ;
 Өскемен:Өскемен NP-TOP ; ! "Ust-Kamenogorsk"
 Өскемен:Усть-Каменогорск NP-TOP ; ! "Ust-Kamenogorsk" ! Dir/LR
 
+! Cities/towns/regions of Tatarstan
+!----------------------------------
+
+Азнақай:Азнақай NP-TOP ; ! ""
+Ақтаныш:Ақтаныш NP-TOP ; ! ""
+Алабуға:Алабуға NP-TOP ; ! ""
+
 ! Cities/towns/regions of Russia
 !-------------------------------
 
@@ -5135,86 +5142,10 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Читта:Читта NP-AL ; ! ""
 
 
-!===============!
- LEXICON Adverbs
-!===============!
-
-
-қайда:қайда ADVITG ; ! "where (где;куда)"
-қашан:қашан ADVITG ; ! "when"
-
-еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
-
-алға:алға ADV ; ! "forward"
-арнайы:арнайы ADV ; ! "on purpose, specifically"
-аса:аса ADV ; ! "very"
-біраз:біраз ADV ; ! "some, a little" FIXME:NOTE: also a <det>qnt>
-бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
-дәл:дәл ADV ; ! "exactly"
-ерте:ерте ADV ; ! "early"
-ең:ең ADV ; ! "most"
-еш:еш ADV ; ! ""
-еш:һеш ADV ; ! "non,any,not" Dir/LR
-кейде:кейде ADV ; ! "sometimes"
-күндіз:күндіз ADV ; ! "during the day"
-көбінесе:көбінесе ADV ; ! "mostly"
-тағы:тағы ADV ; ! "more"
-тек:тек ADV ; ! "only
-тіпті:тіпті ADV ; ! "too"
-шығар:шығар ADV ; ! "probably"
-ылғи:ылғи ADV ; ! "always"
-қайта:қайта ADV ; ! "again"
-қайтадан:қайтадан ADV ; ! "once again"
-әбден:әбден ADV ; ! "extremely"
-әйтеуір:әйтеуір ADV ; ! "somehow"
-әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT ! FIXME: gloss; find a better equivalent instead "һаман"
-әлі:әлі ADV ; ! "now" !FIXME:CHECK
-әрдайым:әрдайым ADV ; ! "always"
-әрі:әрі ADV ; ! "otherside"
-әсіресе:әсіресе ADV ; ! "especially"
-өте:өте ADV ; ! "very"
-
-бері:бері ADV ; ! ""
-міне:міне ADV ; ! ""
-
-!!!! Adverbs wich take -KI and become an attr/adj !!!!
-
-алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
-бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
-бері:бер ADV-WITH-KI-I ; ! "on the near side"
-биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
-былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
-бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
-бұрын:бұрын ADV-WITH-KI ; ! "earlier"
-енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
-кейін:кейін ADV-WITH-KI ; ! "after"
-кеш:кеш ADV-WITH-KI ; ! "evening/late"
-кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
-кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
-таңертең:таңертең ADV-WITH-KI ; ! "morning"
-қазір:қазір ADV-WITH-KI ; ! "now > the one now"
-әзір:әзір ADV-WITH-KI ; ! "now > the one now"
-
-!алғашқы A1 ; ! "first"
-!бұрынғы A1 ; ! "long-ago"
-!жаңағы A1 ; ! "a while ago's"
-!бағанағы A1 ; ! "the one just now"
-!ендігі A1 ; ! "the one now"
-!қазіргі A1 ; ! "the one now"
-!биылғы A1 ; ! "this year's"
-!былтырғы A1 ; ! "last year's"
-!кешегі A1 ; ! "yesterday's"
-!таңертеңгі A1 ; ! "morning"
-!бері:бергі A1 ; ! "on the near side"
-!ақырғы A1 ; ! "last"
-!кешкі A1 ; ! "evening/late"
-!жоғары:жоғарғы A1 ; ! "high"
-!ежелгі A1 ; ! "ancient"
-!төменгі A1 ; ! "lower"
-
 !==================!
  LEXICON Adjectives
 !==================!
+
 
 ! A4 adj.
 !========
@@ -5471,7 +5402,89 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 литвалық NP-TOP ; ! "Lithuanian" FIXME:NOTE: I'd like to derive that as n.attr2 /I.S./
 сұраным:сұраным A1 ; ! "beautıful" FIXME: check gloss
 
-LEXICON Verbs 
+
+!===============!
+ LEXICON Adverbs
+!===============!
+
+
+қайда:қайда ADVITG ; ! "where (где;куда)"
+қашан:қашан ADVITG ; ! "when"
+
+еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
+
+алға:алға ADV ; ! "forward"
+арнайы:арнайы ADV ; ! "on purpose, specifically"
+аса:аса ADV ; ! "very"
+біраз:біраз ADV ; ! "some, a little" FIXME:NOTE: also a <det>qnt>
+бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
+дәл:дәл ADV ; ! "exactly"
+ерте:ерте ADV ; ! "early"
+ең:ең ADV ; ! "most"
+еш:еш ADV ; ! ""
+еш:һеш ADV ; ! "non,any,not" Dir/LR
+кейде:кейде ADV ; ! "sometimes"
+күндіз:күндіз ADV ; ! "during the day"
+көбінесе:көбінесе ADV ; ! "mostly"
+тағы:тағы ADV ; ! "more"
+тек:тек ADV ; ! "only
+тіпті:тіпті ADV ; ! "too"
+шығар:шығар ADV ; ! "probably"
+ылғи:ылғи ADV ; ! "always"
+қайта:қайта ADV ; ! "again"
+қайтадан:қайтадан ADV ; ! "once again"
+әбден:әбден ADV ; ! "extremely"
+әйтеуір:әйтеуір ADV ; ! "somehow"
+әлі% де% болса:әлі% де% болса ADV ; ! "stil" ! Use/MT ! FIXME: gloss; find a better equivalent instead "һаман"
+әлі:әлі ADV ; ! "now" !FIXME:CHECK
+әрдайым:әрдайым ADV ; ! "always"
+әрі:әрі ADV ; ! "otherside"
+әсіресе:әсіресе ADV ; ! "especially"
+өте:өте ADV ; ! "very"
+
+бері:бері ADV ; ! ""
+міне:міне ADV ; ! ""
+
+!!!! Adverbs wich take -KI and become an attr/adj !!!!
+
+алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
+бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
+бері:бер ADV-WITH-KI-I ; ! "on the near side"
+биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
+былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
+бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
+бұрын:бұрын ADV-WITH-KI ; ! "earlier"
+енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
+кейін:кейін ADV-WITH-KI ; ! "after"
+кеш:кеш ADV-WITH-KI ; ! "evening/late"
+кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
+кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
+таңертең:таңертең ADV-WITH-KI ; ! "morning"
+қазір:қазір ADV-WITH-KI ; ! "now > the one now"
+әзір:әзір ADV-WITH-KI ; ! "now > the one now"
+
+!алғашқы A1 ; ! "first"
+!бұрынғы A1 ; ! "long-ago"
+!жаңағы A1 ; ! "a while ago's"
+!бағанағы A1 ; ! "the one just now"
+!ендігі A1 ; ! "the one now"
+!қазіргі A1 ; ! "the one now"
+!биылғы A1 ; ! "this year's"
+!былтырғы A1 ; ! "last year's"
+!кешегі A1 ; ! "yesterday's"
+!таңертеңгі A1 ; ! "morning"
+!бері:бергі A1 ; ! "on the near side"
+!ақырғы A1 ; ! "last"
+!кешкі A1 ; ! "evening/late"
+!жоғары:жоғарғы A1 ; ! "high"
+!ежелгі A1 ; ! "ancient"
+!төменгі A1 ; ! "lower"
+
+
+!=============!
+ LEXICON Verbs 
+!=============!
+
 
 !! тоқтал V-IV ; ! "stop" ! productive
 абай% бол:абай% бол V-IV ; ! "cautious,attentive,beware"
@@ -6794,7 +6807,7 @@ LEXICON Verbs
 ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
 
 ! Auxiliary verbs
-!----------------      
+!================      
 
 ! FIXME:CHECK: cont. class
 жат:жатыр Vinfl-AUX-IMPF ; ! 
@@ -6818,8 +6831,12 @@ LEXICON Verbs
 тұр:тұр Vinfl-AUX ; ! 
 шық:шық Vinfl-AUX ; !
 қал:қал Vinfl-AUX ; ! 
-   
-LEXICON Interjections 
+
+
+!=====================!   
+ LEXICON Interjections 
+!=====================!
+
 
 болыпты:болыпты INTERJ ; ! "okay / that's it"
 демек:демек INTERJ ; ! "that is"
@@ -6840,7 +6857,11 @@ LEXICON Interjections
 әйе:әйе INTERJ ; ! "yes"
 әлбетте:әлбетте INTERJ ; ! "of course"
 
-LEXICON Abbreviations
+
+!=====================!
+ LEXICON Abbreviations
+!=====================!
+
 
 ААҚ:ААҚ ABBR ; ! "Ашық акционердық коғам=Public company"
 АҚШ:АҚШ ABBR ; ! "USA"
@@ -6863,7 +6884,11 @@ LEXICON Abbreviations
 т%.:т%. ABBR ; ! "tonne"
 т%.б%.:т%.б%. ABBR ; ! "etc."
 
-LEXICON Punctuation
+
+!===================!
+ LEXICON Punctuation
+!===================!
+
 
 .%<sent%>:. # ;
 ..%<sent%>:.. # ;
