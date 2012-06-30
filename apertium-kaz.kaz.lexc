@@ -5385,6 +5385,20 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 әжептәуір:әжептәуір A1 ; ! ""
 едәуір:едәуір A1 ; ! ""
 
+арнайы:арнайы A1 ; ! ""
+астам:астам A1 ; ! ""
+астам:астам A1 ; ! ""
+жоғарғы:жоғарғы A1 ; ! ""
+сирек:сирек A1 ; ! ""
+тең:тең A1 ; ! ""
+тең:тең A1 ; ! ""
+тік:тік A1 ; ! ""
+тікелей:тікелей A1 ; ! ""
+тұңғыш:тұңғыш A1 ; ! ""
+тұрақты:тұрақты A1 ; ! ""
+тұрақты:тұрақты A1 ; ! ""
+тығыз:тығыз A1 ; ! ""
+
 !!!! Nouns with KI !!!!
 ! кешкі A1 ; ! "evening/late"
 !аст:астын Noun-KI ; ! "lower"
@@ -5414,7 +5428,6 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
 
 алға:алға ADV ; ! "forward"
-арнайы:арнайы ADV ; ! "on purpose, specifically"
 аса:аса ADV ; ! "very"
 біраз:біраз ADV ; ! "some, a little" FIXME:NOTE: also a <det>qnt>
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
@@ -5445,8 +5458,13 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 бері:бері ADV ; ! ""
 міне:міне ADV ; ! ""
 
-!!!! Adverbs wich take -KI and become an attr/adj !!!!
+! Adverbs wich take -KI and become an attr/adj
+!=============================================
 
+! I started lexicalizing them (=adding as adjectives) in fact, since not all of
+! them match exactly with tatar adverbs. Since this kind of adverbs are not so
+! plantiful, I think that it won't be a problem (and even make transfering easier) /I.S./
+ 
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
 бері:бер ADV-WITH-KI-I ; ! "on the near side"
