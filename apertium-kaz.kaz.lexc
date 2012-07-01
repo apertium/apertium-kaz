@@ -2356,7 +2356,7 @@ XII NUM-ROMAN ;
 ! Nationalities
 !==============
 
-Араб:Араб Natinfl ; ! "Arab"
+араб:араб Natinfl ; ! "Arab"
 Калмак:Калмак Natinfl ; ! "Kalmyk" 
 Негр:Негр Natinfl ; ! "Negro"
 Чех:Чех Natinfl ; ! "Czech"
@@ -2372,6 +2372,8 @@ XII NUM-ROMAN ;
 қырғыз:қырғыз Natinfl ; ! "Kyrgyz"
 қытай:қытай Natinfl ; ! "Chinese"
 өзбек:өзбек Natinfl ; ! "Uzbek"
+
+грек:грек Natinfl ; ! "Greek"
 
 ! FIXME:
 !=======
@@ -6190,7 +6192,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 қопсыт:қопсыт V-TD ; ! "to turn inside out"
 көпте:көпте V-TD ; ! "to do something jointly with others"
 қораздан:қораздан V-TD ; ! "to be on one's high horse"
-қорға:қорға V-TD ; ! "uphold"
+қорға:қорға V-TV ; ! "uphold"
 қорғала:қорғала V-TD ; ! "to escape"
 қорғалат:қорғалат V-TD ; ! "to frighten"
 қорғанда:қорғанда V-TD ; ! "to treat fortifications"
@@ -6204,7 +6206,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 қорқыра:қорқыра V-TD ; ! "to speak hoarsely"
 қорқыт:қорқыт V-TD ; ! "to frighten"
 қорла:қорла V-TD ; ! "to humiliate"
-көрсет:көрсет V-TV ; ! "show"
+көрсет:көрсет V-TV ; ! "show" FIXME:NOTE: ?caus
 қорсылда:қорсылда V-TD ; ! "to grunt"
 қору:қору V-TD ; ! "to defend"
 қорша:қорша V-TD ; ! "to surround"
@@ -6220,7 +6222,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 көтер:көтер V-TV ; ! "lift"
 қотырлан:қотырлан V-TD ; ! "to get mangy"
 қошаметте:қошаметте V-TD ; ! "to approve"
-көш:көш V-TD ; ! "lead a nomad's life,move to another place"
+көш:көш V-IV ; ! "lead a nomad's life,move to another place"
 кристалдан:кристалдан V-TD ; ! "to crystallize"
 қуан:қуан V-TD ; ! "rejoice"
 құбыл:құбыл V-TD ; ! "change"
@@ -6400,7 +6402,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 оюла:оюла V-TD ; ! "to make a design"
 оян:оян V-IV ; ! "wake"
 оят:оят V-TV ; ! "awake"
-пайдалан:пайдалан V-IV ; ! "to take advantage (of)" FIXME:check transitivity (?ref > passive)
+пайдалан:пайдалан V-TV ; ! "to take advantage (of)"
 пәлден:пәлден V-TD ; ! "to grimace"
 пісір:пісір V-TD ; ! "to boil (food)"
 піш:піш V-TD ; ! "to cut"
@@ -6439,7 +6441,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 самбырла:самбырла V-TD ; ! "to talk loudly"
 сампылда:сампылда V-TD ; ! "to talk loudly and distinctly"
 санал:санал V-TD ; ! "to be counted"    ! FIXME: passive
-сана:сана V-TD ; ! "think,suppose,imagine"
+сана:сана V-TV ; ! "think,suppose,imagine"
 сандала:сандала V-TD ; ! "to be alarmed"
 сандал:сандал V-TD ; ! "to loaf"
 сарқылда:сарқылда V-TD ; ! "to seethe"
@@ -6547,7 +6549,8 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 тапсыр:тапсыр V-TD ; ! "hand over"
 тап:тап V-TV ; ! "find"
 тапта:тапта V-TD ; ! "trample"
-тара:тара V-TD ; ! "be dispersed"
+тара:тара V-IV ; ! "be dispersed;расходиться;распространяться"
+тара:тара V-TV ; ! "расчесывать"
 тарқал:тарқал V-TD ; ! "to be disentangled"   ! FIXME: passive
 тарқа:тарқа V-TD ; ! "to part"
 тарқылда:тарқылда V-TD ; ! "to laugh loudly"
@@ -6883,6 +6886,15 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 білдір:білдір V-TV ; ! "значить" FIXME:NOTE caus
 қамтамасыз% ет:қамтамасыз% ет V-TV ; ! "обеспечивать" Use/MT
 ұйымдастыр:ұйымдастыр V-TV ; ! "организовать"
+
+жүзеге% ас:жүзеге% ас V-IV ; ! ""
+түс:түс V-IV ; ! ""
+қалыптас:қалыптас V-IV : ! ""
+енгіз:енгіз V-TV ; ! "" FIXME:NOTE: caus
+жина:жина V-TV ; ! ""
+жүзеге% асыр:жүзеге% асыр V-TV ; ! "" FIXME:NOTE: caus; Use/MT
+құра:құра V-TV ; ! ""
+түзі:түзі V-TV ; ! ""
 
 ! Auxiliary verbs
 !================      
