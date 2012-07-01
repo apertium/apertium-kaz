@@ -2359,11 +2359,11 @@ XII NUM-ROMAN ;
 араб:араб Natinfl ; ! "Arab"
 Калмак:Калмак Natinfl ; ! "Kalmyk" 
 Негр:Негр Natinfl ; ! "Negro"
-Чех:Чех Natinfl ; ! "Czech"
+чех:чех Natinfl ; ! "Czech"
 Яһуди:Яһуди NP-TOP ; ! "Jewish/Jew"
 исраилдік:исраилдік Natinfl ; ! "Israelite"
 моңғол:моңғол Natinfl ; ! "Mongol"
-неміс:неміс:неміс N1 ; ! "German"
+неміс:неміс:неміс Natinfl ; ! "German"
 орыс:орыс Natinfl ; ! "Russian"
 татар:татар Natinfl ; ! "Tatar"
 түрік:түрік Natinfl ; ! "Turkish"
@@ -2372,8 +2372,8 @@ XII NUM-ROMAN ;
 қырғыз:қырғыз Natinfl ; ! "Kyrgyz"
 қытай:қытай Natinfl ; ! "Chinese"
 өзбек:өзбек Natinfl ; ! "Uzbek"
-
 грек:грек Natinfl ; ! "Greek"
+ағылшын:ағылшын Natinfl ; ! "English"
 
 ! FIXME:
 !=======
@@ -5237,6 +5237,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 қос:қос A3 ; ! ""
 таулы:таулы A3 ; ! "" FIXME:NOTE: Maybe we could derive this stuff, I don't know /I.S./
 туыс:туыс A3 ; ! ""
+тұрғын:тұрғын A3 ; ! ""
 
 ! A2 adj.(comp), adj.(comp).subst
 !================================
@@ -6889,12 +6890,13 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 
 жүзеге% ас:жүзеге% ас V-IV ; ! ""
 түс:түс V-IV ; ! ""
-қалыптас:қалыптас V-IV : ! ""
+қалыптас:қалыптас V-IV ; ! ""
 енгіз:енгіз V-TV ; ! "" FIXME:NOTE: caus
 жина:жина V-TV ; ! ""
 жүзеге% асыр:жүзеге% асыр V-TV ; ! "" FIXME:NOTE: caus; Use/MT
 құра:құра V-TV ; ! ""
 түзі:түзі V-TV ; ! ""
+сөйт:сөйт V-IV ; ! ""
 
 ! Auxiliary verbs
 !================      
@@ -6985,6 +6987,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 мыс%.:мыс%. ABBR ; ! ""
 оңт%.:оңт%. ABBR ; ! "оңтүстік,көньяк,south" FIXME:CHECK -->"
 солт%.:солт%. ABBR ; ! "солтүстік,төньяк,north" FIXME:CHECK -->"
+солт%.:солт ABBR ; ! "солтүстік,төньяк,north" FIXME:CHECK -->" Dir/LR
 хим%.:хим%. ABBR ; ! "chemical"
 экон%.:экон%. ABBR ; ! "economic"
 
