@@ -814,7 +814,7 @@ LEXICON DIGITLEX
 
 LEXICON NUM-ROMAN
 
-NUM ;
+%<num%>%<ord%>: # ;
 
 LEXICON POST 
 
@@ -1097,8 +1097,6 @@ LEXICON Determiners
 
 LEXICON Numerals
 
-XII NUM-ROMAN ; 
-
 нөл:нөл NUM ; ! "zero"
 бір:бір NUM ; ! "one"
 екі:екі NUM ; ! "two"
@@ -1153,6 +1151,29 @@ XII NUM-ROMAN ;
 ! but its use beyond 5(?) is rare
 ! and is of questionable grammaticality /not-I.S./
 ! Grammar says first 7 numerals have this form, so let's extend it to 7 /I.S./
+
+I NUM-ROMAN ; ! ""
+II NUM-ROMAN ; ! ""
+III NUM-ROMAN ; ! ""
+IV NUM-ROMAN ; ! ""
+V NUM-ROMAN ; ! ""
+VI NUM-ROMAN ; ! ""
+VII NUM-ROMAN ; ! ""
+VIII NUM-ROMAN ; ! ""
+IX NUM-ROMAN ; ! ""
+X NUM-ROMAN ; ! ""
+XI NUM-ROMAN ; ! ""
+XI NUM-ROMAN ; ! ""
+XII NUM-ROMAN ; ! ""
+XIII NUM-ROMAN ; ! ""
+XIV NUM-ROMAN ; ! ""
+XV NUM-ROMAN ; ! ""
+XVI NUM-ROMAN ; ! ""
+XVII NUM-ROMAN ; ! ""
+XVIII NUM-ROMAN ; ! ""
+XIX NUM-ROMAN ; ! ""
+XX NUM-ROMAN ; ! ""
+XXI NUM-ROMAN ; ! ""
 
 
 !=============!
