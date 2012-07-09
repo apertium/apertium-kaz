@@ -67,9 +67,9 @@ Multichar_Symbols
 %<ins%>               ! Instrumental 
 
 !! some additional ~cases
-%<sim%>               ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
+%<sim%>               ! Similative (<apprx> in kymorph)  !# -дай/-дәй, -тай, -тәй
+%<abe%>               ! Abessive=Privative ! Лишительный !# -сыз/-сез (not used after posessives)
 %<reas%>              ! Reason
-%<abe%>               ! Abessive       
 
 ! Levels of comparison of adjectives
 %<comp%>              ! Comparative
@@ -270,6 +270,30 @@ V-PERS-COP ;
 
 !!!!!!!!!!!!!!!!!!!!!!     NOMINAL INFLECTION (N-INFL-COMMON)
 
+! The following combinations are possible (examples in Tatar):
+!
+! stem > case                                        : әти<nom> : әтине<acc>
+!
+! stem > poss-real > case                            : әтием<px1sg><nom> : әтиемне<px1sg><acc>
+! stem > poss-real > ныкы/дагы/дай(*1)               : әтиемнеке/китабындагы,өегездәге/әтиемдәй
+! stem > poss-real > ныкы/дагы > case                : Монда _эчеңдәгене_ тышка чыгарырга ярамый. (источник: musulman.su) 
+! stem > poss-real > [ныкы]/дагы > poss-real > case  : _Эчендәгесе_(*3) – тышында, диләр андый кешеләр турында. (источник: beznen.ru)
+!
+! stem > ныкы/дагы/дай                               : әтинеке/әтидәге/әтидәй
+! stem > ныкы/дагы(*2) > case                        : Бу соңгы _еллардагының_ өчтән икесе чамасы.
+!
+! stem > сыз(abe)                  WORKS
+! stem > сыз(abe) > case           DOESN'T WORK YET
+! stem > сыз(abe) > poss > case    (?)
+!
+! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
+!     Indeed, when not substantivized, it has predicative use:
+!     "Бу яулык әнинеке." (vs "Әнинең яулыгы.")
+! *2. "дай" is considered to be an adverbializer, so no case endings after it (=no <subst> reading).
+! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very frequent also;
+!     Most likely it is restricted to px3sp.
+!------------------------------------------- 
+
 LEXICON CASE
 
 %<nom%>: CLIT-GENERAL ;
@@ -279,6 +303,31 @@ LEXICON CASE
 %<abl%>:%>%{D%}%{A%}н CLIT-GENERAL ;
 %<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
 %<ins%>:%>%{M%}ен CLIT ;
+
+LEXICON ADJ-DAGI
+! This should probably be called something else
+
+%<subst%>: CASE ; 
+%<attr%>: CLIT ;
+
+LEXICON ABE
+
+%<abe%>:%>с%{I%}з CLIT ;
+
+LEXICON GENPOSS-ETC
+
+%<px%>:%>%{N%}ікі%{n%} CASE ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
+                                          ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
+                                          ! I'll give some arguments in a mail to apertium-turkic</s>
+%<sim%>:%>%{D%}%{A%}й CLIT ;              ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
+                                          ! no case endings after it. In Kazakh it should be the same /I.S./ 
+
+LEXICON CASE-ETC
+
+CASE ;
+GENPOSS-ETC ;
+!%<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
 
 LEXICON POSS-REAL  ! P_2
 
@@ -290,32 +339,13 @@ LEXICON POSS-REAL  ! P_2
 %<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ; 
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
 
-LEXICON ADJ-DAGI
-! This should probably be called something else
-
-%<subst%>: CASE ; 
-%<attr%>: CLIT ;
-
-LEXICON GEN-POS
-
-%<px%>:%>%{N%}ікі%{n%} CASE ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ; ! FIXME:NOTE: I am in favour for changing the tag to loc2
-                                          ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
-                                          ! I'll give some arguments in a mail to apertium-turkic
-%<sim%>:%>%{D%}%{A%}й CLIT ;   ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
-                               ! no case endings after it. In Kazakh it should be the same /I.S./ 
-
-LEXICON CASE-ETC
-CASE ;
-GEN-POS ;
-!%<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
-
 LEXICON POSSESSION
 POSS-REAL ;
 
 LEXICON N-INFL-COMMON 
 POSSESSION ;
 CASE-ETC ;
+ABE ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
@@ -1530,6 +1560,7 @@ XXI NUM-ROMAN ; ! ""
 иық:иық N1 ; ! "shoulder"
 иықағаш:иықағаш N1 ; ! "hanger"
 иіс:иіс N1 ; ! "smell"
+карта:карта N1 ; ! "map"
 кафе:кафе N1 ; ! "café"
 кебін:кебін N1 ; ! "clothes,grave"
 кебіс:кебіс N1 ; ! "sandal"
