@@ -283,13 +283,14 @@ V-PERS-COP ;
 ! stem > ныкы/дагы(*2) > case                        : Бу соңгы _еллардагының_ өчтән икесе чамасы.
 !
 ! stem > сыз(abe)                  WORKS
-! stem > сыз(abe) > case           DOESN'T WORK YET
+! stem > сыз(abe) > case           
 ! stem > сыз(abe) > poss > case    (?)
 !
 ! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
 !     Indeed, when not substantivized, it has predicative use:
 !     "Бу яулык әнинеке." (vs "Әнинең яулыгы.")
 ! *2. "дай" is considered to be an adverbializer, so no case endings after it (=no <subst> reading).
+!     (at least in Tatar, I think that in Kazakh it's the same)
 ! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very frequent also;
 !     Most likely it is restricted to px3sp.
 !------------------------------------------- 
@@ -304,24 +305,30 @@ LEXICON CASE
 %<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
 %<ins%>:%>%{M%}ен CLIT ;
 
-LEXICON ADJ-DAGI
-! This should probably be called something else
+LEXICON ATTR/SUBST
 
-%<subst%>: CASE ; 
 %<attr%>: CLIT ;
+!%<subst%>: SUBST ; ! FIXME:NOTE: I guess that this leads to recursion. Intention was to cover stuff like
+                    ! "өйдәгеләр (нишли e.g.)". If it does, add plural reading right here. /I.S./
+%<subst%>: CASE ;
 
-LEXICON ABE
+LEXICON ATTR/ADVL/SUBST
 
-%<abe%>:%>с%{I%}з CLIT ;
+%<advl%>: CLIT ;
+ATTR/SUBST ;
 
-LEXICON GENPOSS-ETC
+LEXICON ABE-ETC          ! Stuff which doesn't appear after possessives
+
+%<abe%>:%>с%{I%}з ATTR/ADVL/SUBST ;
+
+LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
 %<px%>:%>%{N%}ікі%{n%} CASE ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ADJ-DAGI ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
-                                          ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
-                                          ! I'll give some arguments in a mail to apertium-turkic</s>
-%<sim%>:%>%{D%}%{A%}й CLIT ;              ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
-                                          ! no case endings after it. In Kazakh it should be the same /I.S./ 
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
+                                            ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
+                                            ! I'll give some arguments in a mail to apertium-turkic</s>
+%<sim%>:%>%{D%}%{A%}й CLIT ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
+                                            ! no case endings after it. In Kazakh it should be the same /I.S./ 
 
 LEXICON CASE-ETC
 
@@ -345,7 +352,7 @@ POSS-REAL ;
 LEXICON N-INFL-COMMON 
 POSSESSION ;
 CASE-ETC ;
-ABE ;
+ABE-ETC ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
@@ -643,7 +650,7 @@ LEXICON PRON-12SG-CASES
 %<loc%>:енде CLIT ;
 %<ins%>:енімен CLIT ;
 %<px%>:енікі%{n%} CASE ;
-%<loc%>:ендегі ADJ-DAGI ;
+%<loc%>:ендегі ATTR/SUBST ;
 %<sim%>:ендей CLIT ;
 
 LEXICON PRON-PERS-INFL
@@ -666,7 +673,7 @@ LEXICON PRON-PERS
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLIT ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLIT ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ADJ-DAGI ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLIT ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
@@ -709,10 +716,10 @@ LEXICON PRON-DEM-INFL
 %<abl%>:дан CLIT ; ! 
 %<loc%>:нда CLIT ; ! 
 %<px%>:нікі%{n%} CASE ;    ! FIXME: check
-%<rloc%>:ндагы ADJ-DAGI ;  ! 
+%<rloc%>:ндагы ATTR/SUBST ;  ! 
 %<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
 %<adv%>:лай CLIT-GENERAL ; ! 
-%<sim%>:ндай ADJ-DAGI ;    ! 
+%<sim%>:ндай ATTR/SUBST ;    ! 
 %<qnt%>:нша CLIT ;         !
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
@@ -740,14 +747,14 @@ LEXICON PRON-DEM
 бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
 бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
 бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ; 
-бұл%<prn%>%<dem%>%<rloc%>:бұндағы ADJ-DAGI ; 
+бұл%<prn%>%<dem%>%<rloc%>:бұндағы ATTR/SUBST ; 
 бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-GENERAL ; ! Dir/LR   ! FIXME: check to make sure default is right
-бұл%<prn%>%<dem%>%<rloc%>:мұндағы ADJ-DAGI ; ! Dir/LR   ! FIXME: check to make sure default is right
+бұл%<prn%>%<dem%>%<rloc%>:мұндағы ATTR/SUBST ; ! Dir/LR   ! FIXME: check to make sure default is right
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check
 бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<dat%>:бұған CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ;
-бұл%<prn%>%<dem%>%<sim%>:мындай ADJ-DAGI ;
+бұл%<prn%>%<dem%>%<sim%>:мындай ATTR/SUBST ;
 бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
 бұл%<prn%>%<dem%>:бұны POSSESSION ;
