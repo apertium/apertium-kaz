@@ -26,7 +26,6 @@ Multichar_Symbols
 %<ij%>                ! Interjection               ! Одағай
 %<abbr%>              ! Abbreviation
 %<cop%>               ! Copula
-!%<ideo%>              ! Ideophone                  ! Аваз ияртеме      ! (Звуко)подражательное слово
 
 ! Proper noun types
 %<top%>               ! Toponym
@@ -43,6 +42,7 @@ Multichar_Symbols
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
 %<attr%>              ! Attributive
 %<subst%>             ! Substantive
+%<pred%>              ! Predicative !! deprecated
 %<advl%>              ! Adverbial
 
 ! Number
@@ -67,17 +67,13 @@ Multichar_Symbols
 %<ins%>               ! Instrumental 
 
 !! some additional ~cases
-%<sim%>               ! Similative (<apprx> in kymorph)  !# -дай/-дәй, -тай, -тәй
+%<sim%>               ! Similative (<apprx> in kymorph) !! -дай/-дәй, -тай, -тәй
 %<reas%>              ! Reason
-%<abe%>               ! Abessive=Privative ! Лишительный !# -сыз/-сез (not used after posessives)
+%<abe%>               ! Abessive       
 
 ! Levels of comparison of adjectives
 %<comp%>              ! Comparative
-!%<sup%>               ! Superlative
-!! "weakening" form is not regular. So "weakened" :) adj are added as base lemmas.
-!! Very few adj have this form. E.g. яшел-яшькелт, сары-саргылт [but] ак-аксыл, кара-карасу.
-!! <s>As a sublexicon maybe, so that they don't get <sup> ending, which is a nonsense.</s>
-!! Right now we dont't handle superlative level morphologically (because it's a compound form).
+%<sup%>               ! Superlative
 
 ! Pronoun types
 %<pers%>              ! Personal
@@ -96,9 +92,9 @@ Multichar_Symbols
 
 ! Tense, aspect, mood
 %<imp%>               ! Imperative
-%<caus%>              ! Causative
+%<caus%>              ! causative
 %<coop%>              ! Cooperative
-%<pass%>              ! Passive
+%<pass%>              ! passive
 
 %<ifi%>               ! eyewitness past
 %<past%>              ! past
@@ -108,12 +104,10 @@ Multichar_Symbols
 %<fut%>               ! future
 %<fut_plan%>          ! future plan
 
-! Non-Finite verb forms
-
 !! Participles
 %<prc_perf%>          ! perfect participle (-{I}п) !# "Бірақ мысығы үйде, _ұйықтап_ жатыр." 
 %<prc_plan%>          ! plan participle
-%<prc_cond%>          ! conditional participle FIXME:NOTE: I think this form is used only as an adverb, not as a prc. See gna_cond below /I.S./
+%<prc_cond%>          ! conditional participle
 %<prc_impf%>          ! imperfect participle       !# "...олар далада _ойнай_ алмады..."
 %<prc_irre%>          ! irrealis participle
 %<prc_vol%>           ! volition participle
@@ -148,7 +142,7 @@ Multichar_Symbols
 %<p3%>                ! Third person
 %<frm%>               ! formal address         ! FIXME: need better comment
 
-! <s>Clitics</s>, modal particles
+! Clitics
 %<qst%>               ! Modal question particle
 %<mod_foc%>           ! "Particles of politeness and ardent desire" (as in [N. Poppe. Tatar Manual])
 %<mod_ass%>           ! Assertive modal particle
@@ -232,7 +226,7 @@ N-INFL-COMMON ;
 
 ! Modal/discourse particles
 
-LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives
+LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives,
                             
 !! Politeness
 
@@ -878,14 +872,12 @@ LEXICON ABBR
 
 LEXICON ModalParticles
 
-ма:ма QST ; ! "y/n question" Dir/LR
-ма:ба QST ; ! "y/n question" Dir/LR
-ма:па QST ; ! "y/n question" Dir/LR
-ма:ме QST ; ! "y/n question" Dir/LR
-ма:бе QST ; ! "y/n question" Dir/LR
-ма:пе QST ; ! "y/n question" Dir/LR
-
-ма% не:% ма% не QST ; ! "" Use/MT FIXME:CHECK
+ма:ма QST ; ! "" Dir/LR
+ма:ба QST ; ! "" Dir/LR
+ма:па QST ; ! "" Dir/LR
+ма:ме QST ; ! "" Dir/LR
+ма:бе QST ; ! "" Dir/LR
+ма:пе QST ; ! "" Dir/LR
 
 LEXICON Conjunctions
 
@@ -938,7 +930,7 @@ LEXICON Conjunctions
 сөйтсе:сөйтсе CA ; ! "nevertheless"
 әйтсе% де:әйтсе% де CA ; ! "nevertheless"
 
-пікірінше:пікірінше CA ; ! ""
+пікірінше:пікірінше CA ; ! "" FIXME: JNW, check POS
 
 LEXICON Postpositions
 
