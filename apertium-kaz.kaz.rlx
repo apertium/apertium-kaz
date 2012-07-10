@@ -178,3 +178,13 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
     ## FIXME:EXTEND: subject can be a pronoun too. Or a substantivized adjective.
     ## But start with (personal) pronouns.
     #! Бірақ кеше өте суық ^еді/е<cop><ifi><p3><pl>/е<cop><ifi><p3><sg>$^!
+
+#########################################################################################
+
+#:
+  "<аса>" SELECT (adv) IF
+	(0 ("аса"))
+	(1 A)
+;
+#  " Әл-Истахри келтірген мәліметтер аса құнды саналады."
+
