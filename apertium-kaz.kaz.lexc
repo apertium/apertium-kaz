@@ -2449,6 +2449,16 @@ XXI NUM-ROMAN ; ! ""
 қыртыс:қыртыс N1 ; ! ""
 ұлу:ұлу N1 ; ! ""
 ұғым:ұғым N1 ; ! ""
+географ:географ N1 ; ! ""
+дәлдік:дәлдік N1 ; ! ""
+саяхатшы:саяхатшы N1 ; ! ""
+сипаттама:сипаттама N1 ; ! ""
+түсірілім:түсірілім N1 ; ! ""
+шолушы:шолушы N1 ; ! ""
+қолжазба:қолжазба N1 ; ! ""
+құз:құз N1 ; ! ""
+үстірт:үстірт N1 ; ! ""
+өлке:өлке N1 ; ! ""
 
 Алла:алла N1 ; ! "" FIXME:NOTE: no plural
 Раббы:раббы N1 ; ! "" FIXME:NOTE: no plural
@@ -2488,6 +2498,7 @@ XXI NUM-ROMAN ; ! ""
 өзбек:өзбек Natinfl ; ! "Uzbek"
 грек:грек Natinfl ; ! "Greek"
 ағылшын:ағылшын Natinfl ; ! "English"
+парсы:парсы Natinfl ; ! "Persian"
 
 ! FIXME:
 !=======
@@ -2681,6 +2692,7 @@ XXI NUM-ROMAN ; ! ""
 Ыстанбұл:Ыстанбұл NP-TOP ; ! "Istanbul"
 Қазан:Қазан NP-TOP ; ! "Kazan" 
 Ташкент:Ташкент NP-TOP ; ! "Tashkent"
+Хорезм:Хорезм NP-TOP ; ! ""
 
 ! Other toponyms
 !---------------
@@ -5268,6 +5280,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Мұхаммед:Мұхаммед NP-ANT-M ; ! "Mohammed"
 
 Том:Том NP-ANT-M ; ! "Tom"
+Иван:Иван NP-ANT-M ; ! ""
 
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
@@ -5300,6 +5313,8 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Ибн% Хордадбех:Ибн% Хордадбех NP-COG-M ; ! ""
 Әл%-Истахри:Әл%-Истахри NP-COG-M ; ! ""
 Әл%-Масуди:Әл%-Масуди NP-COG-M ; ! ""
+Мурауин:Мурауин NP-COG-M ; ! ""
+Әл%-Истахри:Әл%-Истахри NP-COG-M ; ! ""
 
 ! Organizations
 !==============
@@ -5315,6 +5330,8 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 Читта:Читта NP-AL ; ! ""
 Жоңғар:Жоңғар NP-AL ; ! ""
 Кайнозой:кайнозой NP-AL ; ! ""
+Китаби%-ал%-масалик% Вал%-мамлик:Китаби%-ал%-масалик% Вал%-мамлик NP-AL ; ! "" Use/MT
+Худуд%-ал% Алам:Худуд%-ал% Алам NP-AL ; ! "" Use/MT
 
 
 !==================!
@@ -5341,6 +5358,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 химиялық:химиялық A4 ; ! ""
 геологиялық:геологиялық A4 ; ! ""
 мәлім:мәлім A4 ; ! ""
+аталмыш:аталмыш A4 ; ! ""
 
 ! A3 adj., adj.subst
 !===================
@@ -5411,6 +5429,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 әйгілі:әйгілі A2 ; ! ""
 елеулі:елеулі A2 ; ! ""
 құнды:құнды A2 ; ! ""
+батпақты:батпақты A2 ; ! ""
 
 ! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst
 !            and when not sure :)
@@ -5634,8 +5653,12 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 !===============!
 
 
+! Interrogative adverbs
+!======================
+
 қайда:қайда ADVITG ; ! "where (где;куда)"
 қашан:қашан ADVITG ; ! "when"
+неғұрлым:неғұрлым ADVITG ; ! ""
 
 еш% қашан:еш% қашан ADV ; ! "never" ! Use/MT
 
@@ -5645,6 +5668,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 бірге:бірге ADV ; ! "together" FIXME:NOTE: also a <post>
 дәл:дәл ADV ; ! "exactly"
 ерте:ерте ADV ; ! "early"
+ендеше:ендеше ADV ; ! "~таким образом" FIXME:CHECK
 ең:ең ADV ; ! "most"
 еш:еш ADV ; ! ""
 еш:һеш ADV ; ! "non,any,not" Dir/LR
@@ -5673,6 +5697,8 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 іле:іле ADV ; ! "тут же,тотчас же,сразу же"
 тегі:тегі ADV ; ! ""
 жартылай:жартылай ADV ; ! ""
+неғұрлым:неғұрлым ADV ; ! ""
+жолшыбай:жолшыбай ADV ; ! ""
 
 ! Adverbs wich take -KI and become an attr/adj
 !=============================================
@@ -6145,7 +6171,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 жетіл:жетіл V-TD ; ! "to ripen"  ! FIXME: passive
 жетімсіре:жетімсіре V-TD ; ! "to feel lonely"
 жетіс:жетіс V-TD ; ! "to ripen (of fruit)"
-жеткіз:жеткіз V-TD ; ! "to bring to"
+жеткіз:жеткіз V-TV ; ! "to bring to" FIXME:NOTE: caus
 жәукемде:жәукемде V-TD ; ! "to tear into pieces"
 жиілен:жиілен V-TD ; ! "to become more frequent"
 жиілет:жиілет V-TD ; ! "to make more frequent"
@@ -6739,7 +6765,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 тәртіпсізден:тәртіпсізден V-TD ; ! "to become undisciplined"
 тес:тес V-TV ; ! "make a hole in"
 тәуелде:тәуелде V-TD ; ! "to devote to"
-ти:ти V-TD ; ! "touch"
+ти:ти V-IV ; ! "touch"
 тігіл:тігіл V-TD ; ! "to be stuck into"
 тіз:тіз V-TD ; ! "string,thread"
 тікілен:тікілен V-TD ; ! "to fasten one's eyes (on)"
@@ -6795,7 +6821,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 тұр:тұр V-IV ; ! "rise,stand"
 түр:түр V-TD ; ! "turn up"
 түсін:түсін V-TV ; ! "understand"
-түсір:түсір V-TD ; ! "sink"
+түсір:түсір V-TV ; ! "sink" FIXME:NOTE: caus
 түс:түс V-IV ; ! "fall"
 ту:ту V-IV ; ! "be born"
 түшкір:түшкір V-TD ; ! "sneeze (for people)"
@@ -7055,6 +7081,7 @@ Mәтхалық:Mәтхалық NP-ANT-M; ! "Mätxalıq" (Arabic)
 тұтас:тұтас V-IV ; ! ""
 өзгер:өзгер V-IV ; ! ""
 келтір:келтір V-TV ; ! ""
+құй:құй V-TV ; ! ""
 
 ! Auxiliary verbs
 !================      
