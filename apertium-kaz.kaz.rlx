@@ -21,7 +21,8 @@ LIST EOS = (<<<) ;
 LIST A = adj ;
 LIST Adv = adv ;
 LIST Pron = prn ; 
-LIST N = n ; 
+LIST N = n ;
+LIST PropN = np ;
 LIST V = v ;
 LIST Det = det ; 
 LIST CC = cnjcoo ;
@@ -197,6 +198,6 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 
 # get rid of postposition reading if noun/pronoun/any_subst._thing doesn't precede
  REMOVE Post IF
-         (NOT -1 N OR Pron or Subst)
+         (NOT -1 N OR PropN OR Pron OR Subst)
 ;
 #  
