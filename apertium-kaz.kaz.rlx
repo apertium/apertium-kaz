@@ -53,7 +53,7 @@ LIST Subst = subst ;
 LIST Sg = sg ;
 LIST Pl = pl ;
 
-List Acc = acc ;
+LIST Acc = acc ;
 
 # Semantic lists 
 # --------------
@@ -117,6 +117,10 @@ LIST V-P3 = (v TD aor p3 sg) (v TD neg aor p3 sg) (v TD ifi p3 sg) (v tv fut_pla
                # FIXME: I suppose that this ^ is ugly, but right now I dont know
                # how else it can be done. It'll be improved as I go along with CG
                # a bit more. Any feedback appreciated ;) /I.S./
+
+LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
+
+SET V-NotGerund = V - Gerund ;
  
 # Barriers 
 # --------
@@ -144,6 +148,7 @@ SELECT Det IF (0 V OR Det OR Pred OR N) (1* NPMARK BARRIER N) ;
 # -----
 
 REMOVE Attr IF (NOT 1 N); 
+# FIXME: this delets <loc.attr> which can appear before non-nouns
 
 # Wordform specific    # Adding new stuff here is discouraged.  
 # -----------------    # Try to generalize, if possible, existing rules.
@@ -192,12 +197,20 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 
 #:
  SELECT Interj IF
+         (-1 BOS)
          (1 Cm)
 ;
 #  "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
 
-# get rid of postposition reading if noun/pronoun/any_subst._thing doesn't precede
+# get rid of postposition reading if noun/pronoun/any_subst._thing/gerund doesn't precede
  REMOVE Post IF
-         (NOT -1 N OR PropN OR Pron OR Subst)
+         (NOT -1 N OR PropN OR Pron OR Subst OR Gerund)
 ;
 #  
+
+# select adverbial reading (of adjectives) if any verbal form except gerund follows
+ SELECT Advl IF
+         (1C V-NotGerund)
+;
+#
+
