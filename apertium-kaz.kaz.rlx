@@ -56,6 +56,7 @@ List Acc = acc ;
 
 # Semantic lists 
 # --------------
+
 LIST MOVEMENT-V = "йөгер" ; 
 
 LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
@@ -183,13 +184,19 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 
 #:
  "<аса>" SELECT Adv IF
-	(1 A)
+        (1 A)
 ;
 #  "Әл-Истахри келтірген мәліметтер аса құнды саналады."
 
 
 #:
  SELECT Interj IF
-	(1 Cm)
+         (1 Cm)
 ;
 #  "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
+
+# get rid of postposition reading if noun/pronoun/any_subst._thing doesn't precede
+ REMOVE Post IF
+         (NOT -1 N OR Pron or Subst)
+;
+#  
