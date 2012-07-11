@@ -58,7 +58,7 @@ LIST Acc = acc ;
 # Semantic lists 
 # --------------
 
-LIST MOVEMENT-V = "йөгер" ; 
+LIST MOVEMENT-V = "жүгір" ; 
 
 LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
 
@@ -214,3 +214,8 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 ;
 #
 
+#
+ "<қарай>" SELECT Post IF
+        (1* MOVEMENT-V)
+;
+#  
