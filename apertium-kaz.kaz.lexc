@@ -693,15 +693,19 @@ LEXICON PRON-DEM-INFL
 %<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
                    ! осыған/осыға?, соған, оған, бұған
 %<acc%>:ны CLIT ;  ! 
-%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME: check for correct default
+%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME check for correct default
 %<abl%>:дан CLIT ; ! 
 %<loc%>:нда CLIT ; ! 
-%<px%>:нікі%{n%} CASE ;    ! FIXME: check
-%<rloc%>:ндагы ATTR/SUBST ;  ! 
-%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
-%<adv%>:лай CLIT-GENERAL ; ! 
+%<px%>:нікі%{n%} CASE ;    ! FIXME check
+%<loc%>:ндагы ATTR/SUBST ;  ! 
 %<sim%>:ндай CLIT ;    ! 
-%<qnt%>:нша CLIT ;         !
+%<adv%>:лай CLIT-GENERAL ; ! FIXME check cont. class 
+
+%<pl%>:%>%{L%}%{A%}р CASE-ETC ;
+
+! Commented out till these forms get implemented in tat.lexc too
+!%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
+!%<qnt%>:нша CLIT ;         !
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 LEXICON PRON-DEM
