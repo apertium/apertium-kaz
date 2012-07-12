@@ -43,7 +43,6 @@ LIST Interr = itg ;
 # ----------------
 
 LIST Advl = advl ;
-LIST Pred = pred ;
 LIST Attr = attr ;
 LIST Subst = subst ;
 
@@ -79,14 +78,6 @@ SET ADJ-MOD = Postadv | Adv ;
 
 SET NPMARK = N-MOD | ADJ-MOD ;
 
-SET A-ADVL = (adj advl) ;
-
-# SET A-SUBST = (adj subst) ;
-
-# SET A1 = A | A-ADVL | A-SUBST ;
-
-SET PRN-PERS = (prn pers) ;
-
 # Categories which cannot be part of a noun phrase 
 # ------------------------------------------------
 
@@ -99,6 +90,20 @@ SET NOT-ADV = WORDMARK - Adv ;
 
 LIST N-SG-NOM = (n sg nom) ;
 LIST N-PL-NOM = (n pl nom) ;
+
+# Pronoun sets
+# ------------
+
+SET PRN-PERS = (prn pers) ;
+
+# Adjective sets
+# --------------
+
+LIST A/Advl = (adj advl) ;
+
+LIST A/Subst = (adj subst nom) ;
+
+SET A4 = A/Advl | A/Subst ;
 
 # Verb sets
 # ---------
@@ -137,11 +142,11 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # Determiners 
 # -----------
 
-SELECT Det IF (-1C A) (1 N); 
+"<бір>" SELECT Det IF (-1C A) (1 N); 
     #! Әхмәт тиз генә иске зур бер агачка йөгерә.
     #! Әхмәт акрын гына иске зур бер агачка йөгерә.
 
-SELECT Det IF (0 V OR Det OR Pred OR N) (1* NPMARK BARRIER N) ;
+"<бар>" SELECT Det IF (0 V OR Det OR A OR N) (1* NPMARK BARRIER N) ;
     #! пример : Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
     #! Акча бармы? Бар<pred>.
     #! Акча бармы? Бар<pred>, ләкин бик аз!
@@ -169,7 +174,7 @@ REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
 REMOVE N IF (0 ("ақырын"));
     # a temporary ugly rule for translating the story 
 
-SELECT A-ADVL IF (0 ("ақырын"));
+SELECT A/Advl IF (0 ("ақырын"));
     # a temporary ugly rule for translating the story 
     # (1* V BARRIER S-BOUNDARY) can be added after the following verb is fixed
     ## Айгүл оны ақырын<adj><advl> тыңдайды.
@@ -225,5 +230,22 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 #
  "<жылы>" SELECT N IF
         (-1 Num)
+;
+#  
+
+# select pure adjective reading ("predicative" in this case) of adjective if sentence ends
+ REMOVE Advl IF
+         (0 A4)
+         (1 EOS)
+;
+ REMOVE Subst IF
+         (0 A4)
+         (1 EOS)
+;
+#
+
+# ugly and RISKY
+ "<сол>" SELECT Det IF
+        (NOT 1 ("қол") OR ("жақ"))
 ;
 #  
