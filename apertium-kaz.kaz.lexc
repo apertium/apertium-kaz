@@ -421,14 +421,6 @@ LEXICON V-ADJ
 ADJ-COMMON ;  
 CLIT ; 
 
-LEXICON Natinfl
-
-!A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]" ! Consider <n.attr> reading for this 
-N1 ;              ! a member of the nationality, e.g. "A Turk"
-%>ш%{A%} ADV ;    ! as / in the style of the nat., e.g. "à la Turk"
-%>ш%{A%} ADV ;    ! in the language of the nationality, e.g. "in Turkish"
-%>ш%{A%} N1 ;     ! the language of the nationality, e.g. "Turkish"
-
 !!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION (V-INFL-COMMON)
 
 !FIXME
@@ -810,6 +802,15 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
 
 %<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
 %<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
+
+LEXICON NAT
+! Nationalites
+
+!A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]" ! Consider <n.attr> reading for this 
+N1 ;              ! a member of the nationality, e.g. "A Turk"
+:%>ш%{A%} ADV ;   ! as / in the style of the nat., e.g. "à la Turk"
+!:%>ш%{A%} ADV ;   ! in the language of the nationality, e.g. "in Turkish" ! I guess ADJ was meant /I.S./
+:%>ш%{A%} N1 ;    ! the language of the nationality, e.g. "Turkish"
 
 LEXICON NP-COMMON
 N-INFL-COMMON ;
@@ -2488,25 +2489,25 @@ XXI NUM-ROMAN ; ! ""
 ! Nationalities
 !==============
 
-араб:араб Natinfl ; ! "Arab"
-Калмак:Калмак Natinfl ; ! "Kalmyk" 
-Негр:Негр Natinfl ; ! "Negro"
-чех:чех Natinfl ; ! "Czech"
+араб:араб NAT ; ! "Arab"
+Калмак:Калмак NAT ; ! "Kalmyk" 
+Негр:Негр NAT ; ! "Negro"
+чех:чех NAT ; ! "Czech"
 Яһуди:Яһуди NP-TOP ; ! "Jewish/Jew"
-исраилдік:исраилдік Natinfl ; ! "Israelite"
-моңғол:моңғол Natinfl ; ! "Mongol"
-неміс:неміс Natinfl ; ! "German"
-орыс:орыс Natinfl ; ! "Russian"
-татар:татар Natinfl ; ! "Tatar"
-түрік:түрік Natinfl ; ! "Turkish"
-чуваш:чуваш Natinfl ; ! "Chuvash"
-қазақ:қазақ Natinfl ; ! "Kazakh"
-қырғыз:қырғыз Natinfl ; ! "Kyrgyz"
-қытай:қытай Natinfl ; ! "Chinese"
-өзбек:өзбек Natinfl ; ! "Uzbek"
-грек:грек Natinfl ; ! "Greek"
-ағылшын:ағылшын Natinfl ; ! "English"
-парсы:парсы Natinfl ; ! "Persian"
+исраилдік:исраилдік NAT ; ! "Israelite"
+моңғол:моңғол NAT ; ! "Mongol"
+неміс:неміс NAT ; ! "German"
+орыс:орыс NAT ; ! "Russian"
+татар:татар NAT ; ! "Tatar"
+түрік:түрік NAT ; ! "Turkish"
+чуваш:чуваш NAT ; ! "Chuvash"
+қазақ:қазақ NAT ; ! "Kazakh"
+қырғыз:қырғыз NAT ; ! "Kyrgyz"
+қытай:қытай NAT ; ! "Chinese"
+өзбек:өзбек NAT ; ! "Uzbek"
+грек:грек NAT ; ! "Greek"
+ағылшын:ағылшын NAT ; ! "English"
+парсы:парсы NAT ; ! "Persian"
 
 ! FIXME:
 !=======
