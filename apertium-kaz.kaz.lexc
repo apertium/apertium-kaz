@@ -1088,27 +1088,33 @@ LEXICON Postadverbs
 тағы POSTADV ; ! "... дагы" = "and ... too" ! FIXME:CHECK pos
 тегіс POSTADV ; ! "entirely/all/all together"
 
-LEXICON Pronouns
+
+!================!
+ LEXICON Pronouns
+!================!
+
 
 PRON-PERS ;  ! Personal pronouns
+
+PRON-DEM ;   ! Demonstrative pronouns
 
 нәрсе:нәрсе PRON-ITG ; ! "thing"       ! Use/MT
 не:не PRON-ITG ; ! "what"              ! interrog. pronoun
 кім:кім PRON-ITG ; ! "who"             ! interrog. pronoun
+
 бірдеме:бірдеме PRON-IND ; ! "something"          ! pronoun
 басқа:басқа PRON-IND ; ! "other"
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 бәрі:бәр PRON-IND-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
-бири%-бир:бири%-бир PRON-RECIP ; ! "each other, one another"
 
-PRON-DEM ;   ! Demonstrative pronouns
+барлық:барлық PRON-QNT ; ! ""
 
 еш% нәрсе:еш% нәрсе PRNNEG ; ! "" Use/MT
 ешкім:ешкім PRNNEG ; ! ""
 
-барлық:барлық PRON-QNT ; ! ""
-
 өз:өз PRON-REF ; ! "self"
+
+бири%-бир:бири%-бир PRON-RECIP ; ! "each other, one another"
 
 LEXICON Determiners
 
