@@ -864,7 +864,8 @@ LEXICON NUM-ROMAN
 
 LEXICON POST 
 
-%<post%>: # ;
+%<post%>: CLIT ; ! FIXME NOTE with personal copulas in CLIT cont.class
+                 ! this might lead to overgeneration 
 
 LEXICON POSTADV
 
