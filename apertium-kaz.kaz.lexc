@@ -264,7 +264,9 @@ CLIT-OTHER ;
 CLIT-MA ;
 # ;
 
-LEXICON CLIT-GENERAL
+LEXICON CLIT-GENERAL    ! Includes personal copula suffixes, therefore appears only
+                        ! after nominal parts of speech (and only after some cases).
+                        ! FIXME: to be checked whether leads to any overgeneration
 CLIT ;
 V-PERS-COP ;
 
@@ -437,10 +439,6 @@ LEXICON V-PERS-PRES ! P_6
 %<p3%>%<pl%>:%>д%{I%} CLIT-OTHER ; 
 %<p3%>%<pl%>:%> CLIT-MA ; 
 
-LEXICON V-PERS-COP ! P_3
-
-%+е%<cop%>: V-PERS-COP-SUF-NO3 ; 
-
 LEXICON V-PERS-PAST ! P_4
 
 %<p1%>%<sg%>:%>%{I%}м CLIT ;
@@ -467,9 +465,10 @@ LEXICON V-PERS-COP-SUF-NO3
 
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ; 
 %<p2%>%<sg%>:%>с%{I%}ң CLIT ; 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
 %<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ; 
 %<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;  
+
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
 %<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
 
 LEXICON V-PERS-COP-SUF 
@@ -619,6 +618,10 @@ LEXICON Vinfl-AUX
 %<vaux%>: V-INFL-COMMON ;          ! these four verbs in other tenses and all other aux. verbs
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
+
+LEXICON V-PERS-COP ! P_3
+
+%+е%<cop%>: V-PERS-COP-SUF-NO3 ; 
 
 LEXICON Copula
 
