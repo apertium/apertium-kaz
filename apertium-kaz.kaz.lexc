@@ -633,6 +633,8 @@ LEXICON Copula
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
+!!!!!!!   P E R S O N A L
+
 LEXICON PRON-12SG-CASES
 
 %<gen%>:енің CLIT ;
@@ -677,15 +679,19 @@ LEXICON PRON-PERS
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
 
+!!!!!!!   D E M O N S T R A T I V E
+
+! FIXME CHECK (CLIT-GENERAL vs CLIT) I can't imagine forms like "бумын, бусың" etc.
+! in Tatar, but not sure how it works in Kazakh /I.S./
+
 LEXICON PRON-DEM-INFL
 
 %<gen%>:ның CLIT ;
-%<dat%>:ған CLIT ; ! FIXME: this isn't right for some of them (i.e., just -ға)
-                   ! осыған/осыға?, соған, оған, бұған
-%<acc%>:ны CLIT ;  ! 
-%<abl%>:нан CLIT ; ! Dir/LR  ! FIXME check for correct default
-%<abl%>:дан CLIT ; ! 
-%<loc%>:нда CLIT ; ! 
+%<dat%>:ған CLIT ;
+%<acc%>:ны CLIT ;
+%<abl%>:дан CLIT ;
+%<abl%>:нан CLIT ; ! Dir/LR FIXME actually only "осы" seems to take this.
+%<loc%>:да CLIT ; ! 
 %<px%>:нікі%{n%} CASE ;    ! FIXME check
 %<loc%>:ндагы ATTR/SUBST ;  ! 
 %<sim%>:ндай CLIT ;    ! 
@@ -697,6 +703,40 @@ LEXICON PRON-DEM-INFL
 !%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
 !%<qnt%>:нша CLIT ;         !
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
+
+! FIXME: 1) link the below to PRON-DEM-INFL if possible
+!            (later, once we are certain about things)
+
+LEXICON PRON-DEM-BU
+
+! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
+! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
+
+! FIXME (бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;) N-INFL-COMMON might lead to
+! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
+! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASE ;
+! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
+
+бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
+бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
+бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
+бұл%<prn%>%<dem%>%<dat%>:бұған CLIT ;
+бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
+бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
+бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-GENERAL ;
+бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ; 
+бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-GENERAL ; ! Dir/LR
+бұл%<prn%>%<dem%>%<ins%>:бұнымен CLIT ;
+бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ; ! Dir/LR
+бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
+бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ; 
+бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
+бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ;
+бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
+бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
+бұл%<prn%>%<dem%>:бұны POSS-REAL ;
+
+бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;
 
 LEXICON PRON-DEM
 
@@ -715,25 +755,7 @@ LEXICON PRON-DEM
 сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 
-!бұл%<prn%>%<dem%>:бұ PRON-DEM-INFL ;
-бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
-бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
-бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ; 
-бұл%<prn%>%<dem%>%<rloc%>:бұндағы ATTR/SUBST ; 
-бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-GENERAL ; ! Dir/LR   ! FIXME: check to make sure default is right
-бұл%<prn%>%<dem%>%<rloc%>:мұндағы ATTR/SUBST ; ! Dir/LR   ! FIXME: check to make sure default is right
-бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check
-бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<dat%>:бұған CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ;
-бұл%<prn%>%<dem%>%<sim%>:мындай CLIT ;
-бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
-бұл%<prn%>%<dem%>:бұны POSSESSION ;
-бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;
+PRON-DEM-BU ;
 
 LEXICON PRON-ITG
 
