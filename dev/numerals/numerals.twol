@@ -1,0 +1,117 @@
+
+Alphabet
+ А Ә Б В Г Г Д Е Ё Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ь Ы Ъ Э Ю Я
+ а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
+
+ %0 1 2 3 4 5 6 7 8 9
+
+ %{K%}:к %{l%}:л %{L%}:л %{M%}:м %{N%}:н %{G%}:г %{D%}:д  ! Cns
+ %{S%}:с %{n%}:н %{y%}:ы %{o%}:0 %{д%}:0 ! disappearing stuff
+ %{A%}:а %{I%}:ы %{E%}:а ! Vow
+
+ %{а%}:0 %{э%}:0
+ %{й%}:0 %{л%}:0 %{н%}:0 %{з%}:0 %{т%}:0
+
+
+ %, %. %- %>:0 %  ; 
+
+Sets
+
+Vow =      А Ә Е Ё І И О Ө У Ү Ұ Ы Э Ю Я
+           а ә е ё і и о ө у ү ұ ы э ю я 
+           %{A%} %{I%} %{E%} %{y%} 
+           %{а%} %{э%};
+
+LowVow =   А Ә Е О Ө
+           а ә е о ө ;
+
+HighVow =  І Ү Ы Ұ
+           і ү ы ұ ;
+
+YotVow = Я я Е е Ё ё Ю ю ;
+
+VowRight = А Ә Е Ё І О Ө Ү Ұ Ы Э Я
+           а ә е ё і о ө ү ұ ы э я 
+           %{A%} %{I%} %{E%} ;
+
+FrontVow = Ә Е І Ө Ү Э
+           ә е і ө ү э 
+           %{э%} ;
+
+AbstrFrontVow = %{э%}  ;
+
+BackVow = А О Ұ Ы Я Ё
+          а о ұ ы я ё 
+          %{а%} ;
+
+! FIXME: These can be front or back vowels :(
+VCdigraphs = У И Ю
+             у и ю ;
+
+CVdigraphs = Е Ё Ю Я
+             е ё ю я ;
+				 ! е is only CV after vowels; others only occur after vowels
+
+Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ь Ъ 
+           б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ь ъ 
+           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} %- ;
+
+CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ Ц Ч Ш Щ Ь Ъ Ю
+           б в г ғ д ж з И й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
+           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} %- ;
+
+
+HighSonCns = Й У Р
+             й у р ;
+
+Liquid = Л
+         л ;
+
+Nasals = М Н Ң
+         м н ң ;
+
+! FIXME: There are a few "native" Kazakh words with ж as voiced also
+VoicedObstruents = Ғ З
+                   ғ з ;
+
+! These are all voiceless when word-final, many only in borrowings
+VoicelessCns = Б В П Ф Д Т Ц Ж Ш Щ Ч С Г Х К Қ Һ 
+               б в п ф д т ц ж ш щ ч с г х к қ һ 
+               %{т%};
+
+AbstrVoicelessCns = %{т%};
+
+
+FrontCns = К Г Ь
+           к г ь ;
+
+BackCns  = Қ Ғ
+           қ ғ ;
+
+Rules 
+
+
+"A Vowel Harmony"
+%{A%}:е <=> [ [ AbstrFrontVow: | :FrontVow ] [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 | %  ] _ ;
+                                         [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+                                      [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
+            except
+                                                [ :BackCns ]/[ %>: | :0 ] _ ;
+                                      [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+                                                           [ й: ]/[ %>: ] _ ;
+
+
+
+!!!! Nasal harmony !!!!
+"D nasal harmony"
+%{D%}:н <=> :Nasals %>: _ Vow :Nasals ;
+            %{n%}:0 %>: _ Vow :Nasals ;
+            %{н%}:0 %>: _ Vow :Nasals ;
+
+
+"Forward voicing assimilation"
+Cx:Cy <=> [ AbstrVoicelessCns: | :VoicelessCns] / [ %-: | %>: | %  ] _ ;
+          where Cx in ( %{M%}  %{D%}  %{L%}  %{N%} )
+                Cy in (   п      т      т      т   )
+                matched;
+

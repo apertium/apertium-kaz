@@ -1,0 +1,76 @@
+Multichar_Symbols
+
+%<num%>
+%<abl%>
+%<nom%>
+
+%{D%}
+%{A%}
+
+%{а%} 
+%{э%} 
+
+%{й%}
+%{л%}
+%{н%}
+%{з%}
+%{т%}
+
+%-
+%,
+%.
+
+LEXICON Root
+
+Numerals ; 
+
+LEXICON CASE-NONOM
+
+%<abl%>:%{D%}%{A%}н # ;
+
+LEXICON NUM
+
+%<num%>%<nom%>: # ;
+%<num%>:%- CASE-NONOM ; 
+
+LEXICON LASTDIGIT
+
+1:1%{э%}%{й%} NUM ; ! "бір"
+2:2%{э%} NUM ; ! "екі"
+3:3%{э%}%{т%} NUM ; ! "үш"
+4:4%{э%}%{т%} NUM ; ! "төрт"
+5:5%{э%}%{т%} NUM ; ! "бес"
+6:6%{а%} NUM ; ! "алты"
+7:7%{э%} NUM ; ! "жеті"
+8:8%{э%}%{з%} NUM ; ! "сегіз"
+9:9%{а%}%{з%} NUM ; ! "тоғыз"
+
+LEXICON LOOP
+
+0:0%{а%}%{н%} NUM ; 
+00:00%{э%}%{з%} NUM ; 
+000:000%{а%}%{н%} NUM ; 
+%,:%, DIGITLEX ; 
+%.:%. DIGITLEX ; 
+%,:%, LASTDIGIT ; 
+%.:%. LASTDIGIT ; 
+DIGITLEX ; 
+LASTDIGIT ; 
+
+LEXICON DIGITLEX
+
+1:1 LOOP ;
+2:2 LOOP ;
+3:3 LOOP ;
+4:4 LOOP ;
+5:5 LOOP ;
+6:6 LOOP ;
+7:7 LOOP ;
+8:8 LOOP ;
+9:9 LOOP ;
+
+LEXICON Numerals
+
+<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
+
+
