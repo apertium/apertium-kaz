@@ -24,7 +24,7 @@ LEXICON Root
 
 Numerals ; 
 LASTDIGIT ;
-LASTDIGIT-10 ;
+! LASTDIGIT-10 ; ! 18 = 8
 
 LEXICON CASE-NONOM
 
@@ -47,17 +47,17 @@ LEXICON LASTDIGIT
 8:8%{э%}%{з%} NUM ; ! "сегіз"
 9:9%{а%}%{з%} NUM ; ! "тоғыз"
 
-LEXICON LASTDIGIT-10
-
-11:11%{э%}%{й%} NUM ; ! "он бір"
-12:12%{э%} NUM ; ! "он екі"
-13:13%{э%}%{т%} NUM ; ! "он үш"
-14:14%{э%}%{т%} NUM ; ! "он төрт"
-15:15%{э%}%{т%} NUM ; ! "он бес"
-16:16%{а%} NUM ; ! "он алты"
-17:17%{э%} NUM ; ! "он жеті"
-18:18%{э%}%{з%} NUM ; ! "он сегіз"
-19:19%{а%}%{з%} NUM ; ! "он тоғыз"
+! LEXICON LASTDIGIT-10
+! 
+! 11:11%{э%}%{й%} NUM ; ! "он бір"
+! 12:12%{э%} NUM ; ! "он екі"
+! 13:13%{э%}%{т%} NUM ; ! "он үш"
+! 14:14%{э%}%{т%} NUM ; ! "он төрт"
+! 15:15%{э%}%{т%} NUM ; ! "он бес"
+! 16:16%{а%} NUM ; ! "он алты"
+! 17:17%{э%} NUM ; ! "он жеті"
+! 18:18%{э%}%{з%} NUM ; ! "он сегіз"
+! 19:19%{а%}%{з%} NUM ; ! "он тоғыз"
 
 LEXICON LASTDIGIT-REST
 
@@ -79,8 +79,9 @@ LEXICON LOOP
 %.:%. DIGITLEX ; 
 %,:%, LASTDIGIT ; 
 %.:%. LASTDIGIT ; 
+      LASTDIGIT ;
 DIGITLEX ; 
-<[%0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> LASTDIGIT ; ! to avoid 212, 318 here
+! <[%0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> LASTDIGIT ; ! to avoid 212, 318 here
 
 LEXICON DIGITLEX
 
@@ -100,6 +101,6 @@ LEXICON Numerals
 
 !<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 LASTDIGIT ;
-LASTDIGIT-10 ; 
+! LASTDIGIT-10 ; 
 DIGITLEX ; 
 
