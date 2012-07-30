@@ -119,7 +119,7 @@ Rules
 "D nasal harmony"
 %{D%}:н <=> :Nasals %>: _ Vow :Nasals ;
             %{n%}:0 %>: _ Vow :Nasals ;
-            %{н%}:0 %>: _ Vow :Nasals ;
+            %{н%}:0 [ %-: | %>: ]* _ Vow :Nasals ;
 
 
 "Forward voicing assimilation"
