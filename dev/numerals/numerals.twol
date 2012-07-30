@@ -13,7 +13,7 @@ Alphabet
  %{й%}:0 %{л%}:0 %{н%}:0 %{з%}:0 %{т%}:0
 
 
- %, %. %- %>:0 %  ; 
+ ° %% %, %. %- %>:0 %  ; 
 
 Sets
 
@@ -58,8 +58,9 @@ Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч
 
 CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ Ц Ч Ш Щ Ь Ъ Ю
            б в г ғ д ж з И й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
-           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} %- ;
+           %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} ; ! %-
 
+AbstrCnsRight = %{й%} %{л%} %{н%} %{з%} %{т%} ;  
 
 HighSonCns = Й У Р
              й у р ;
@@ -92,13 +93,25 @@ Rules
 
 
 "A Vowel Harmony"
-%{A%}:е <=> [ [ AbstrFrontVow: | :FrontVow ] [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 | %  ] _ ;
+%{A%}:е <=> [ [ AbstrFrontVow: | :FrontVow ] [ :Cns | :и | :у ]* :CnsRight ]/[ %%: | %-: | %>: | :0 | %  ] _ ;
                                          [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
             except
                                                 [ :BackCns ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
                                                            [ й: ]/[ %>: ] _ ;
+
+
+"I Vowel Harmony"
+%{I%}:і <=> [ [ AbstrFrontVow: | :FrontVow ] [ :Cns | :и | :у ]* :CnsRight ]/[ %%: | %-: | %>: | :0 | %  ] _ ;
+                                    [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+                                 [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
+            except
+                                                %{n%}:н/[ :0 | %>: ] _ ;
+                                           [ :BackCns ]/[ %>: | :0 ] _ ;
+                                 [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+!                                                 [ й: ]/[ %>: | :0 ] _ ;
+                                                             %{o%}:0 _ ;
 
 
 
@@ -110,8 +123,29 @@ Rules
 
 
 "Forward voicing assimilation"
-Cx:Cy <=> [ AbstrVoicelessCns: | :VoicelessCns] / [ %-: | %>: | %  ] _ ;
+Cx:Cy <=> [ AbstrVoicelessCns: | :VoicelessCns] / [ %%: | %-: | %>: | %  ] _ ;
           where Cx in ( %{M%}  %{D%}  %{L%}  %{N%} )
                 Cy in (   п      т      т      т   )
                 matched;
+
+
+"Deletion of {S} after a consonant"
+!%{S%}:0 <=> [ :Cns | й: ]/[ %>: | :0 ] _ ;
+%{S%}:0 <=> [ AbstrCnsRight: | :CnsRight ]/[ %%: | %-: | %>: | :0 ] _ ;
+
+
+"Deletion of accusative {N} after {n}"
+%{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
+
+"Deletion of {n} before genitive {N}s"
+%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+
+"Deletion of {n} before ablative {D}"
+%{n%}:0 <=> _ %>: %{D%}: %{A%}: :н ;
+
+"Deletion of {n} before instrumental {M}"
+%{n%}:0 <=> _ %>: %{M%}: :е :н ;
+
+"/n/ deletion in px3 nominative"
+%{n%}:0 <=> _ .#. ;
 

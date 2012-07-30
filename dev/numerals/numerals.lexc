@@ -1,11 +1,111 @@
 Multichar_Symbols
 
 %<num%>
-%<abl%>
-%<nom%>
+%<percent%>
+%<temp%>
+%<subst%>
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
+
+
+%<px1sg%>             ! First person singular
+%<px2sg%>             ! Second person singular
+%<px3sp%>             ! Third person singular/plural
+%<px1pl%>             ! First person plural
+%<px2pl%>             ! Second person plural
+%<px%>                ! General possessive     !# -нікі
+
+%<nom%>               ! Nominative
+%<gen%>               ! Genitive
+%<dat%>               ! Dative 
+%<acc%>               ! Accusative 
+%<abl%>               ! Ablative 
+%<loc%>               ! Locative 
+%<ins%>               ! Instrumental 
 
 %{D%}
 %{A%}
+%{I%}
+%{S%}
+%{n%}
 
 %{а%} 
 %{э%} 
@@ -19,6 +119,7 @@ Multichar_Symbols
 %-
 %,
 %.
+%%
 
 LEXICON Root
 
@@ -26,15 +127,144 @@ Numerals ;
 LASTDIGIT ;
 ! LASTDIGIT-10 ; ! 18 = 8
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!!  C O P I E D    F R O M    K A Z . L E X C 
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON CLIT-IMP2P               
+
+%+шы%<mod_foc%>:%>ш%{I%} # ;
+# ;
+
+LEXICON CLIT-MA
+
+%+ма%<qst%>:%>% %{M%}%{A%} # ;
+
+LEXICON CLIT-OTHER
+
+%+мекен%<qst%>:% %{M%}екен # ;
+%+ғой%<mod_ass%>:% %{G%}ой # ;
+# ;
+
+LEXICON CLIT
+
+CLIT-OTHER ;
+CLIT-MA ;
+# ;
+
+
+LEXICON SUBST
+
+N-INFL-COMMON ;
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
+
+LEXICON SUBST-NONOM
+
+N-INFL-COMMON-NONOM ;
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON-NONOM ;
+
+LEXICON CASE
+
+%<nom%>: # ; 
+%<gen%>:%>%{N%}%{I%}ң CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
+%<abl%>:%>%{D%}%{A%}н # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<ins%>:%>%{M%}ен CLIT ;
+
 LEXICON CASE-NONOM
 
-%<abl%>:%{D%}%{A%}н # ;
+!%<nom%>: # ; ! commented out for numerals
+%<gen%>:%>%{N%}%{I%}ң CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
+%<abl%>:%>%{D%}%{A%}н # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<ins%>:%>%{M%}ен CLIT ;
+
+LEXICON ATTR/SUBST
+
+%<attr%>: CLIT ;
+%<subst%>: CASE ;
+
+LEXICON GENPOSS-ETC      
+
+%<px%>:%>%{N%}ікі%{n%} CASE ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; 
+%<sim%>:%>%{D%}%{A%}й CLIT ;                
+
+LEXICON CASE-ETC
+
+CASE ;
+GENPOSS-ETC ;
+
+LEXICON CASE-ETC-NONOM
+
+CASE-NONOM ;
+GENPOSS-ETC ;
+
+LEXICON POSS-REAL  ! P_2
+
+%<px1sg%>:%>%{I%}м CASE-ETC ;
+%<px2sg%>:%>%{I%}ң CASE-ETC ;
+%<px3sp%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<px1pl%>:%>%{I%}м%{I%}з CASE-ETC ;
+%<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ;
+
+%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ;
+%<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
+
+LEXICON POSSESSION
+POSS-REAL ;
+
+LEXICON N-INFL-COMMON
+
+POSSESSION ;
+CASE-ETC ;
+
+LEXICON N-INFL-COMMON-NONOM
+
+POSSESSION ;
+CASE-ETC-NONOM ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!!
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON SQRD 
+
+²%<num%>:2 # ;  ! Dir/LR
+³%<num%>:3 # ;  ! Dir/LR
+²%<num%>:² # ; 
+³%<num%>:³ # ; 
+%<num%>: # ; 
 
 LEXICON NUM
 
-%<num%>%<nom%>: # ;
-%<num%>:%- CASE-NONOM ; 
-%<num%>: CASE-NONOM ; ! Dir/LR
+%<num%>: # ;
+%<num%>%<subst%>%<nom%>: # ;
+%<num%>%<subst%>:%- SUBST-NONOM ;
+%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>:%% # ;
+%<num%>%<subst%>%<percent%>%<nom%>:%% # ;
+%<num%>%<subst%>%<percent%>:%%%- SUBST-NONOM ;
+%<num%>%<subst%>%<percent%>:%% SUBST-NONOM ; ! Dir/LR
+%<num%>%<temp%>:°С # ;
+%<num%>%<subst%>%<temp%>%<nom%>:°С # ;
+%<num%>%<subst%>%<temp%>:°С%- SUBST-NONOM ;
+км:км SQRD ;
+мм:мм SQRD ;
+см:см SQRD ;
+м:м SQRD ;
 
 LEXICON LASTDIGIT
 
