@@ -313,9 +313,13 @@ LEXICON LOOP
 %.:%. DIGITLEX ; 
 %,:%, LASTDIGIT ; 
 %.:%. LASTDIGIT ; 
+%,:%, LASTDIGIT-REST ; 
+%.:%. LASTDIGIT-REST ; 
+%,:%, POWERS ; 
+%.:%. POWERS ; 
+      DIGITLEX ; 
       LASTDIGIT ;
       LASTDIGIT-REST ;
-      DIGITLEX ; 
       POWERS ; 
 ! <[%0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> LASTDIGIT ; ! to avoid 212, 318 here
 
@@ -334,6 +338,7 @@ LEXICON DIGITLEX
 
 LEXICON Numerals
 
+%0:%0 NUM ; 
 DIGITLEX ; 
 LASTDIGIT ;
 LASTDIGIT-REST ;
