@@ -44,12 +44,12 @@ LEXICON LASTDIGIT
 7:7%{э%} NUM ; ! "жеті"
 8:8%{э%}%{з%} NUM ; ! "сегіз"
 9:9%{а%}%{з%} NUM ; ! "тоғыз"
-
-LEXICON LOOP
-
 0:0%{а%}%{н%} NUM ; 
 00:00%{э%}%{з%} NUM ; 
 000:000%{а%}%{н%} NUM ; 
+
+LEXICON LOOP
+
 %,:%, DIGITLEX ; 
 %.:%. DIGITLEX ; 
 %,:%, LASTDIGIT ; 
@@ -59,6 +59,7 @@ LASTDIGIT ;
 
 LEXICON DIGITLEX
 
+%0:%0 LOOP ; 
 1:1 LOOP ;
 2:2 LOOP ;
 3:3 LOOP ;
@@ -71,6 +72,6 @@ LEXICON DIGITLEX
 
 LEXICON Numerals
 
-<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
-
+!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+DIGITLEX ; 
 
