@@ -23,6 +23,8 @@ Multichar_Symbols
 LEXICON Root
 
 Numerals ; 
+LASTDIGIT ;
+LASTDIGIT-10 ;
 
 LEXICON CASE-NONOM
 
@@ -78,7 +80,7 @@ LEXICON LOOP
 %,:%, LASTDIGIT ; 
 %.:%. LASTDIGIT ; 
 DIGITLEX ; 
-LASTDIGIT ; 
+<[%0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> LASTDIGIT ; ! to avoid 212, 318 here
 
 LEXICON DIGITLEX
 
