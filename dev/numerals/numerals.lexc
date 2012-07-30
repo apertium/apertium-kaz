@@ -34,6 +34,7 @@ LEXICON NUM
 
 %<num%>%<nom%>: # ;
 %<num%>:%- CASE-NONOM ; 
+%<num%>: CASE-NONOM ; ! Dir/LR
 
 LEXICON LASTDIGIT
 
@@ -71,7 +72,7 @@ LEXICON LASTDIGIT-REST
 8%0:8%0%{э%}%{н%} NUM ; ! "сексен"
 9%0:9%0%{а%}%{н%} NUM ; ! "тоқсан"
 
-!LEXICON HUNDREDS
+LEXICON POWERS 
 %0:%0%{а%}%{н%} NUM ; ! "он"
 %0%0:%0%0%{э%}%{з%} NUM ; ! "жүз"
 %0%0%0:%0%0%0%{а%}%{н%} NUM ; ! "мың"
@@ -83,13 +84,13 @@ LEXICON LOOP
 %,:%, LASTDIGIT ; 
 %.:%. LASTDIGIT ; 
       LASTDIGIT ;
-      LASTDIGIT-REST ;
+      LASTDIGIT-REST ;
       DIGITLEX ; 
+      POWERS ; 
 ! <[%0 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> LASTDIGIT ; ! to avoid 212, 318 here
 
 LEXICON DIGITLEX
 
-LOOP ;
 %0:%0 LOOP ; 
 1:1 LOOP ;
 2:2 LOOP ;
@@ -103,9 +104,6 @@ LOOP ;
 
 LEXICON Numerals
 
-!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
-LASTDIGIT ;
-! LASTDIGIT-10 ; 
 DIGITLEX ; 
+LASTDIGIT ;
 LASTDIGIT-REST ;
-!HUNDREDS ;
