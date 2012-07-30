@@ -149,3 +149,13 @@ Cx:Cy <=> [ AbstrVoicelessCns: | :VoicelessCns] / [ %%: | %-: | %>: | %  ] _ ;
 "/n/ deletion in px3 nominative"
 %{n%}:0 <=> _ .#. ;
 
+"N Desonorisation"
+%{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] %>: _ ;
+            [ %{й%}: | %{л%}: | %{н%}: | %{з%}:  ] / [ %-: | %%: | %>: ] _ ;
+            except
+                    :Nasals %>: _ Vow :Nasals ;
+                     %{n%}: %>: _ ;
+
+"L Desonorisation"
+%{L%}:д <=> [ :Liquid | :Nasals | :VoicedObstruents ] %>: _ ;
+

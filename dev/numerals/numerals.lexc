@@ -2,7 +2,6 @@ Multichar_Symbols
 
 %<num%>
 %<percent%>
-%<temp%>
 %<subst%>
 
 
@@ -105,6 +104,7 @@ Multichar_Symbols
 %{A%}
 %{I%}
 %{S%}
+%{N%}
 %{n%}
 
 %{а%} 
@@ -255,12 +255,12 @@ LEXICON NUM
 %<num%>%<subst%>:%- SUBST-NONOM ;
 %<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
 %<num%>%<percent%>:%% # ;
-%<num%>%<subst%>%<percent%>%<nom%>:%% # ;
-%<num%>%<subst%>%<percent%>:%%%- SUBST-NONOM ;
-%<num%>%<subst%>%<percent%>:%% SUBST-NONOM ; ! Dir/LR
-%<num%>%<temp%>:°С # ;
-%<num%>%<subst%>%<temp%>%<nom%>:°С # ;
-%<num%>%<subst%>%<temp%>:°С%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>%<nom%>:%% # ;
+%<num%>%<percent%>%<subst%>:%%%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>:%% SUBST-NONOM ; ! Dir/LR
+°С%<num%>:°С # ;
+°С%<num%>%<subst%>%<nom%>:°С # ;
+°С%<num%>%<subst%>:°С%- SUBST-NONOM ;
 км:км SQRD ;
 мм:мм SQRD ;
 см:см SQRD ;
