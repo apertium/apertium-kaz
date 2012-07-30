@@ -254,6 +254,10 @@ LEXICON NUM
 %<num%>%<subst%>%<nom%>: # ;
 %<num%>%<subst%>:%- SUBST-NONOM ;
 %<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
+%<num%>%<ord%>:%-ш%{I%} # ;
+%<num%>%<ord%>%<subst%>%<nom%>:%-ш%{I%} # ;
+%<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ;
+%<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
 %<num%>%<percent%>:%% # ;
 %<num%>%<percent%>%<subst%>%<nom%>:%% # ;
 %<num%>%<percent%>%<subst%>:%%%- SUBST-NONOM ;
