@@ -159,7 +159,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "I Vowel Harmony"
 %{I%}:і <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 ] _ ;
-      [ %{э%}:0 :Cns* :CnsRight ]/[ %>: | %-: | AbstrCns: | %{S%}: ] _ ;
+            [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
                                     [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
                                  [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
             except
@@ -279,6 +279,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{I%}:0 <=> [ :VowRight ]/[ :0 | %>: ] _ ;
             except
                                %{o%}:0 _ ;
+            [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
 
 ! "Dialectal deletion of л between low vowel and Iп"   ! Dir/LR
 ! л:0 <=> :LowVow _ %>: %{I%}: :п ;                    ! Dir/LR
