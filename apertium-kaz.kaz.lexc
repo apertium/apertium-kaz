@@ -851,18 +851,30 @@ LEXICON NP-ANT-M
 
 LEXICON NP-ANT-F
 
+! This isn't used at the moment,
+! but e.g. ?Polish cognoms ending with -ска would take this cont.class
+
 %<np%>%<ant%>%<f%>: NP-COMMON ;
 %<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-MF
 
+! Dual-gender cognoms.
+! Don't derive anything /I.S./
+ 
 %<np%>%<cog%>%<mf%>: NP-COMMON ; 
 %<np%>%<cog%>%<mf%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-M
 
+! For cognoms ending with -ов, -ев, -ин
+! They derive feminine equivalets taking -а /I.S./
+
 %<np%>%<cog%>%<m%>: NP-COMMON ;
 %<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
+%<np%>%<cog%>%<f%>:а NP-COMMON ;
+%<np%>%<cog%>%<f%>%<pl%>:а>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-ORG
 
