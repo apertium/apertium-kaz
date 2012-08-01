@@ -299,15 +299,28 @@ V-PERS-COP ;
 !     Most likely it is restricted to px3sp.
 !------------------------------------------- 
 
-LEXICON CASE
+LEXICON CASE-COMMON
 
-%<nom%>: CLIT-GENERAL ;
 %<gen%>:%>%{N%}%{I%}ң CLIT ;
 %<dat%>:%>%{G%}%{A%} CLIT ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
+%<ins%>:%>%{M%}ен CLIT ;
+
+LEXICON CASE
+
+CASE-COMMON ;
+%<nom%>: CLIT-GENERAL ;
 %<abl%>:%>%{D%}%{A%}н CLIT-GENERAL ;
 %<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
-%<ins%>:%>%{M%}ен CLIT ;
+
+LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
+                ! with personal copula suffixes. Atm used only for <abe>
+                ! thing /02082012, IS/
+
+CASE-COMMON ;
+%<nom%>: CLIT ;
+%<abl%>:%>%{D%}%{A%}н CLIT ;
+%<loc%>:%>%{D%}%{A%} CLIT ;
 
 LEXICON ATTR/SUBST
 
@@ -316,15 +329,25 @@ LEXICON ATTR/SUBST
                     ! "өйдәгеләр (нишли e.g.)". If it does, add plural reading right here. /I.S./
 %<subst%>: CASE ;
 
-LEXICON ATTR/ADVL/SUBST
+LEXICON ABE-ATTR/ADVL/SUBST
 
+! <abe> thing doesn't take personal copula suffixes (JNW, please correct me),
+! so SUBST reading of it is linked to CASE-2, not CASE.
+! A counterexample could be e.g. "бәхет-сез-мен", but that's only because "бәхетсез"
+! has lexicalized as an adjective.
+
+! Note that allowing of the (scarcely existing) [X +<abe> +<pers.cop> (+ modalpcle)] sequence
+! would require some additional rules in kaz-tat.t2x /02082012, IS/
+
+%<attr%>: CLIT ;
 %<advl%>: CLIT ;
-ATTR/SUBST ;
+%<subst%>: CASE-2 ;
+%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
 LEXICON ABE-ETC          ! Stuff which doesn't appear after possessives
 
-%<abe%>:%>с%{I%}з ATTR/ADVL/SUBST ;
-!%+сыз%<post%>:%>с%{I%}з ATTR/ADVL/SUBST ;	
+!%<abe%>:%>с%{I%}з ATTR/ADVL/SUBST ;
+%+сыз%<post%>:%>с%{I%}з ABE-ATTR/ADVL/SUBST ;	
 
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
