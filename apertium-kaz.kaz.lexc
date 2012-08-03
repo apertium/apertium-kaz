@@ -670,6 +670,7 @@ LEXICON PRON-12SG-CASES
 %<px%>:енікі%{n%} CASE ;
 %<loc%>:ендегі ATTR/SUBST ;
 %<sim%>:ендей CLIT ;
+%<adv%>:еніңше CLIT ;
 
 LEXICON PRON-PERS-INFL
 
@@ -693,15 +694,21 @@ LEXICON PRON-PERS
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша CLIT ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
+біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLIT ;
 
 сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
+сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLIT ;
 
 олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
+олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLIT ;
 
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLIT ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
+сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLIT ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
@@ -928,8 +935,7 @@ LEXICON NUM-ROMAN
 
 LEXICON POST 
 
-%<post%>: CLIT ; ! FIXME NOTE with personal copulas in CLIT cont.class
-                 ! this might lead to overgeneration 
+%<post%>: CLIT ;
 
 LEXICON POSTADV
 
