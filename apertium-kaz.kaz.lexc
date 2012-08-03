@@ -714,6 +714,10 @@ LEXICON PRON-PERS
 
 ! FIXME CHECK (CLIT-GENERAL vs CLIT) I can't imagine forms like "бумын, бусың" etc.
 ! in Tatar, but not sure how it works in Kazakh /I.S./
+!-----
+! Good idea is to link prn.dem.sim forms alternatively to CLIT and CASE,
+! so that it's "adverbial reading" (e.g. "шундый каты кычкырды") doesn't
+! receive <nom> tag /IS/
 
 LEXICON PRON-DEM-INFL
 
@@ -722,30 +726,29 @@ LEXICON PRON-DEM-INFL
 %<acc%>:ны CLIT ;
 %<abl%>:дан CLIT ;
 %<abl%>:нан CLIT ; ! Dir/LR FIXME actually only "осы" seems to take this.
-%<loc%>:да CLIT ; ! 
-%<px%>:нікі%{n%} CASE ;    ! FIXME check
-%<loc%>:ндагы ATTR/SUBST ;  ! 
-%<sim%>:ндай CLIT ;    ! 
-%<adv%>:лай CLIT-GENERAL ; ! FIXME check cont. class 
-%<px3sp%>:%{s%}%{I%}%{n%} CASE ;
+%<loc%>:да CLIT ;
+%<px%>:нікі%{n%} CASE ;
+%<loc%>:ндагы ATTR/SUBST ;
+%<sim%>:ндай CASE ; 
+%<adv%>:лай CLIT-GENERAL ; 
+%<qnt%>:нша CLIT ;         !
 
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
 %<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASE ;
 
 ! Commented out till these forms get implemented in tat.lexc too
 !%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
-!%<qnt%>:нша CLIT ;         !
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 ! FIXME: 1) link the below to PRON-DEM-INFL if possible
 !            (later, once we are certain about things)
 
-LEXICON PRON-DEM-BU
+LEXICON PRON-DEM-BUL
 
 ! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
 ! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
-
-! FIXME (бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;) N-INFL-COMMON might lead to
+!-----
+! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;) N-INFL-COMMON might lead to
 ! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
 ! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASE ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
@@ -764,7 +767,7 @@ LEXICON PRON-DEM-BU
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ; 
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ; ! A good idea is to alternatively link that to CLIT
+бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASE ;
@@ -777,22 +780,28 @@ LEXICON PRON-DEM-BU
 
 LEXICON PRON-DEM
 
-ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
+PRON-DEM-BUL ;
+
+сол%<prn%>%<dem%>%<nom%>:cол CLIT-GENERAL ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
-осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
+сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
+сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASE ;
 
 ол%<prn%>%<dem%>%<nom%>:ол CLIT ;
-сол%<prn%>%<dem%>%<nom%>:cол CLIT ;
+ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
+ол%<prn%>%<dem%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASE ;
+
 осы%<prn%>%<dem%>%<nom%>:осы CLIT ;
+осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
+осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
+осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
+
+! Since <reas><abl> is a feature only of "ol" and "sol",
+! below were lexicalised and added as subordinative conjunctions. /IS/
 
 ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
 сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
-
-ол%<prn%>%<dem%>%<ins%>:онымен CLIT ;
-сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
-осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
-
-PRON-DEM-BU ;
 
 LEXICON PRON-ITG
 
