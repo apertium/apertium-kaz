@@ -727,8 +727,10 @@ LEXICON PRON-DEM-INFL
 %<loc%>:ндагы ATTR/SUBST ;  ! 
 %<sim%>:ндай CLIT ;    ! 
 %<adv%>:лай CLIT-GENERAL ; ! FIXME check cont. class 
+%<px3sp%>:%{s%}%{I%}%{n%} CASE ;
 
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
+%<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASE ;
 
 ! Commented out till these forms get implemented in tat.lexc too
 !%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
@@ -762,12 +764,16 @@ LEXICON PRON-DEM-BU
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ; 
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ;
+бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ; ! A good idea is to alternatively link that to CLIT
+бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASE ;
+бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
+бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндайлары%{n%} CASE ;
 бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
-бұл%<prn%>%<dem%>:бұны POSS-REAL ;
+бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASE ;
 
-бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;
+бұл%<prn%>%<dem%>%<pl%>:бұлар CASE-ETC ;
+бұл%<prn%>%<dem%>%<pl%>%<px3sp%>:бұлары%{n%} CASE ;
 
 LEXICON PRON-DEM
 
