@@ -235,8 +235,8 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 
 # select pure adjective reading ("predicative" in this case) of adjective if sentence ends
  REMOVE Advl IF
-         (0 A4)
-         (1 EOS)
+	(0 A4)
+	(1 EOS)
 ;
  REMOVE Subst IF
          (0 A4)
@@ -249,3 +249,9 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
         (NOT 1 ("қол") OR ("жақ"))
 ;
 #  
+
+#
+ "<ал>" REMOVE CC IF
+	(NOT -1 BOS OR Cm )
+;
+# Бөлмеде шкаф бар, содан бiр кiтап ал.
