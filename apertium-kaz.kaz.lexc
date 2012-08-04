@@ -357,7 +357,6 @@ LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
                                             ! I'll give some arguments in a mail to apertium-turkic</s>
 %<sim%>:%>%{D%}%{A%}й CLIT ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
                                             ! no case endings after it. In Kazakh it should be the same /I.S./ 
-
 LEXICON CASE-ETC
 
 CASE ;
@@ -368,14 +367,17 @@ LEXICON POSS-REAL  ! P_2
 
 %<px1sg%>:%>%{I%}м CASE-ETC ;
 %<px2sg%>:%>%{I%}ң CASE-ETC ; 
-%<px3sp%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<px3sg%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
 %<px1pl%>:%>%{I%}м%{I%}з CASE-ETC ; 
 %<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ; 
 
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ; 
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
 
-LEXICON POSSESSION
+LEXICON POSSESSION ! I guess this was used once to implement some
+                   ! recursive things, e.g. the sequence
+                   ! [stem > poss-real > [ныкы]/дагы > poss-real > case]
+                   ! Some gerunds link to it /IS/
 POSS-REAL ;
 
 LEXICON N-INFL-COMMON 
@@ -384,6 +386,8 @@ POSSESSION ;
 CASE-ETC ;
 ABE-ETC ; ! FIXME check whether this is possible after adjectives and other subst. things.
           ! Maybe a better idea is to restrict it to nouns and pronouns.
+          ! Actually, not all pronouns take it. "Синсез" vs "*үземсез". 
+          ! Be careful :) /IS to himself/
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
@@ -455,22 +459,22 @@ CLIT ;
 LEXICON V-PERS-PRES ! P_6
 %<p1%>%<sg%>:%>м%{I%}н CLIT ;    ! Dir/LR
 %<p1%>%<sg%>:%>м CLIT ;
-%<p2%>%<sg%>:%>с%{I%}ң CLIT ; 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
-%<p3%>%<sg%>:%>д%{I%} CLIT-OTHER ; 
-%<p3%>%<sg%>:%> CLIT-MA ; 
-%<p1%>%<pl%>:%>м%{I%}з CLIT ; 
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;  
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
-%<p3%>%<pl%>:%>д%{I%} CLIT-OTHER ; 
-%<p3%>%<pl%>:%> CLIT-MA ; 
+%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
+%<p3%>%<sg%>:%>д%{I%} CLIT-OTHER ;
+%<p3%>%<sg%>:%> CLIT-MA ;
+%<p1%>%<pl%>:%>м%{I%}з CLIT ;
+%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
+%<p3%>%<pl%>:%>д%{I%} CLIT-OTHER ;
+%<p3%>%<pl%>:%> CLIT-MA ;
 
 LEXICON V-PERS-PAST ! P_4
 
 %<p1%>%<sg%>:%>%{I%}м CLIT ;
 %<p2%>%<sg%>:%>%{I%}ң CLIT ;
 %<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT ;
-%<p3%>%<sg%>: CLIT ;  
+%<p3%>%<sg%>: CLIT ;
 %<p1%>%<pl%>:%>%{I%}%{K%} CLIT ;
 %<p2%>%<pl%>:%>%{I%}ңд%{A%}р CLIT ;
 %<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}зд%{A%}р CLIT ;
@@ -489,30 +493,30 @@ LEXICON V-PERS-COND ! P_4
 
 LEXICON V-PERS-COP-SUF-NO3
 
-%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ; 
-%<p2%>%<sg%>:%>с%{I%}ң CLIT ; 
-%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ; 
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;  
+%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ;
+%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
+%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ;
+%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
 
-LEXICON V-PERS-COP-SUF 
+LEXICON V-PERS-COP-SUF
 
 V-PERS-COP-SUF-NO3;
-%<p3%>%<sg%>:%> CLIT ; 
-%<p3%>%<pl%>:%> CLIT ; 
+%<p3%>%<sg%>:%> CLIT ;
+%<p3%>%<pl%>:%> CLIT ;
 
-LEXICON V-PERS-EVID-SUF 
+LEXICON V-PERS-EVID-SUF
 
-%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ; 
-%<p2%>%<sg%>:%>с%{I%}ң CLIT ; 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ; 
-%<p3%>%<sg%>: CLIT ; 
-%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ; 
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;  
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;  
-%<p3%>%<pl%>: CLIT ; 
+%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ;
+%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
+%<p3%>%<sg%>: CLIT ;
+%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ;
+%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
+%<p3%>%<pl%>: CLIT ;
 
 LEXICON GER-INFL
 
@@ -524,11 +528,11 @@ CASE-ETC ;
 LEXICON VOL-ENDINGS
 
 %<p1%>%<sg%>:%>%{I%}м # ;
-%<p2%>%<sg%>:%>%{I%}ң # ; 
-%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з # ; 
+%<p2%>%<sg%>:%>%{I%}ң # ;
+%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з # ;
 %<p3%>%<sg%>:%>%{S%}%{I%}%{n%} # ;
-%<p1%>%<pl%>:%>%{I%}м%{I%}з # ; 
-%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ; 
+%<p1%>%<pl%>:%>%{I%}м%{I%}з # ;
+%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ;
 %<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
 %<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
 
@@ -566,7 +570,7 @@ LEXICON V-INFL-NON-FINITE-REG
 %<ger%>:%>у GER-INFL ;
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 
-! Verbal adjectives 
+! Verbal adjectives
 %<glp_past%>:%>%{G%}%{A%}н V-ADJ ;
 %<vadj%>:%>%{G%}%{A%}н V-ADJ ;  ! both past (or perf?) and general
 %<glp_impf%>:%>%{E%}т%{I%}н V-ADJ ;
@@ -600,8 +604,8 @@ LEXICON V-INFL-FINITE
 %<aor%>:%>%{E%} V-PERS-PRES ;                         !
 %<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     ! future
 %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-COP-SUF ;       ! future plan
-%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    ! 
-%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               ! 
+%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    !
+%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               !
 %<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-COP-SUF ; ! evidential general past
 %<ifi%>%<evid%>:%>%{I%}пт%{I%} V-PERS-EVID-SUF ;      ! evidential recent past
 
@@ -620,7 +624,7 @@ V-INFL-NON-FINITE ;
 LEXICON V-TV
 
 %<v%>%<tv%>: V-INFL-COMMON ;
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;                              
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;
 %<v%>%<tv%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
 
 LEXICON V-IV
@@ -650,10 +654,10 @@ LEXICON Copula
 е%<cop%>%<ger_past%>:екен POSSESSION ;
 е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к POSSESSION ;
 
-е%<cop%>%<neg%>:емес V-PERS-COP-SUF ; 
-е%<cop%>%<evid%>:екен V-PERS-COP-SUF ; 
-е%<cop%>%<neg%>%<evid%>:емес% екен V-PERS-COP-SUF ; 
-е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-PAST ; 
+е%<cop%>%<neg%>:емес V-PERS-COP-SUF ;
+е%<cop%>%<evid%>:екен V-PERS-COP-SUF ;
+е%<cop%>%<neg%>%<evid%>:емес% екен V-PERS-COP-SUF ;
+е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-PAST ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -730,7 +734,7 @@ LEXICON PRON-DEM-INFL
 %<px%>:нікі%{n%} CASE ;
 %<loc%>:ндагы ATTR/SUBST ;
 %<sim%>:ндай CASE ;
-%<adv%>:лай CLIT-GENERAL ; 
+%<adv%>:лай CLIT-GENERAL ;
 %<qnt%>:нша CLIT ;         !
 
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
@@ -760,12 +764,12 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
 бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
 бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-GENERAL ;
-бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ; 
+бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-GENERAL ;
 бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-GENERAL ; ! Dir/LR
 бұл%<prn%>%<dem%>%<ins%>:бұнымен CLIT ;
 бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ; ! Dir/LR
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
-бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ; 
+бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
 бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ;
 бұл%<prn%>%<dem%>%<sim%>:бұндай CASE ; ! Dir/LR
@@ -782,12 +786,12 @@ LEXICON PRON-DEM-BUL
 LEXICON PRON-DEM-MINA
 
 мына%<prn%>%<dem%>%<nom%>:мына CLIT-GENERAL ;
-мына%<prn%>%<dem%>%<gen%>:мынаның CLIT ; 
+мына%<prn%>%<dem%>%<gen%>:мынаның CLIT ;
 мына%<prn%>%<dem%>%<dat%>:мынаған CLIT ;
-мына%<prn%>%<dem%>%<acc%>:мынаны CLIT ; 
+мына%<prn%>%<dem%>%<acc%>:мынаны CLIT ;
 мына%<prn%>%<dem%>%<abl%>:мынадан CLIT-GENERAL ;
-мына%<prn%>%<dem%>%<loc%>:мынада CLIT-GENERAL ; 
-мына%<prn%>%<dem%>%<ins%>:мынамен CLIT ; 
+мына%<prn%>%<dem%>%<loc%>:мынада CLIT-GENERAL ;
+мына%<prn%>%<dem%>%<ins%>:мынамен CLIT ;
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASE ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASE ;
@@ -800,12 +804,12 @@ LEXICON PRON-DEM-MINA
 LEXICON PRON-DEM-ANA
 
 ана%<prn%>%<dem%>%<nom%>:ана CLIT-GENERAL ;
-ана%<prn%>%<dem%>%<gen%>:ананың CLIT ; 
+ана%<prn%>%<dem%>%<gen%>:ананың CLIT ;
 ана%<prn%>%<dem%>%<dat%>:анаған CLIT ;
-ана%<prn%>%<dem%>%<acc%>:ананы CLIT ; 
+ана%<prn%>%<dem%>%<acc%>:ананы CLIT ;
 ана%<prn%>%<dem%>%<abl%>:анадан CLIT-GENERAL ;
-ана%<prn%>%<dem%>%<loc%>:анада CLIT-GENERAL ; 
-ана%<prn%>%<dem%>%<ins%>:анамен CLIT ; 
+ана%<prn%>%<dem%>%<loc%>:анада CLIT-GENERAL ;
+ана%<prn%>%<dem%>%<ins%>:анамен CLIT ;
 !ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASE ;
 !ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
 ана%<prn%>%<dem%>%<sim%>:анадай CASE ;
@@ -860,7 +864,7 @@ LEXICON PRON-IND-POSS
 
 LEXICON PRNNEG
 
-%<prn%>%<neg%>: CASE ; 
+%<prn%>%<neg%>: CASE ;
 
 LEXICON PRON-RECIP
 
@@ -868,8 +872,30 @@ LEXICON PRON-RECIP
 
 LEXICON PRON-REF
 
-%<prn%>%<ref%>: POSS-REAL ;
-%<prn%>%<ref%>%<pl%>:%{L%}%{A%}р POSS-REAL ;
+! FIXME JNW please have a look at this
+! Listing all forms here because of overgeneration with *өздерім,
+! *өздеріміз, *өзіңдер etc while linking to POSS-REAL. This was the idea.
+! Now they are handled more like personal pronouns (the same tags in the same
+! order), so they should pass transfer without any trouble.
+!-----
+! A remaining problem with reflexive pronoun is that it takes personal copula
+! suffixes "selectively": e.g. prn.refl.px1sg would take only cop.px1sg
+! (prn.ref.px3sp seems to take all of them though).
+! A little bit of overgeneration won't hurt anyone :), but I think that odd
+! forms could be filtered out somehow later. Don't know how to do it./04Aug, IS/
+
+%<prn%>%<ref%>%<p1%>%<sg%>:%>%{I%}м CASE-ETC ;
+%<prn%>%<ref%>%<p2%>%<sg%>:%>%{I%}ң CASE-ETC ;
+%<prn%>%<ref%>%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<prn%>%<ref%>%<p1%>%<pl%>:%>%{I%}м%{I%}з CASE-ETC ;
+%<prn%>%<ref%>%<p2%>%<pl%>:%>д%{A%}р%>%{I%}ң CASE-ETC ;
+%<prn%>%<ref%>%<p3%>%<pl%>:%>д%{A%}р%>%{S%}%{I%}%{n%} CASE-ETC ;
+
+%<prn%>%<ref%>%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ;
+%<prn%>%<ref%>%<p2%>%<pl%>%<frm%>:%>д%{A%}р%>%{I%}ң%{I%}з CASE-ETC ;
+
+!%<prn%>%<ref%>: POSS-REAL ;
+!%<prn%>%<ref%>%<pl%>:%{L%}%{A%}р POSS-REAL ;
 
 !!!!!!!!!!!!!!!!!!!!!!     DETERMINERS
 
