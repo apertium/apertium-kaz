@@ -779,9 +779,28 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<pl%>:бұлар CASE-ETC ;
 бұл%<prn%>%<dem%>%<pl%>%<px3sp%>:бұлары%{n%} CASE ;
 
+LEXICON PRON-DEM-MINA
+
+мына%<prn%>%<dem%>%<nom%>:мына CLIT-GENERAL ;
+мына%<prn%>%<dem%>%<gen%>:мынаның CLIT ; 
+мына%<prn%>%<dem%>%<dat%>:мынаған CLIT ;
+мына%<prn%>%<dem%>%<acc%>:мынаны CLIT ; 
+мына%<prn%>%<dem%>%<abl%>:мынадан CLIT-GENERAL ;
+мына%<prn%>%<dem%>%<loc%>:мынада CLIT-GENERAL ; 
+мына%<prn%>%<dem%>%<ins%>:мынамен CLIT ; 
+!мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASE ;
+!мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
+мына%<prn%>%<dem%>%<sim%>:мынадай CASE ;
+мына%<prn%>%<dem%>%<adv%>:мыналай CLIT-GENERAL ;
+мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASE ;
+
+мына%<prn%>%<dem%>%<pl%>:мыналар CASE-ETC ;
+мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASE ;
+
 LEXICON PRON-DEM
 
 PRON-DEM-BUL ;
+PRON-DEM-MINA ;
 
 сол%<prn%>%<dem%>%<nom%>:cол CLIT-GENERAL ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
@@ -798,8 +817,8 @@ PRON-DEM-BUL ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
-! Since <reas><abl> is a feature only of "ol" and "sol",
-! below were lexicalised and added as subordinative conjunctions. /IS/
+! FIXME DISCUSS: Since <reas><abl> is a feature only of "ol" and "sol",
+! below were going to be lexicalised and added as subordinative conjunctions. /IS/
 
 ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
 сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
