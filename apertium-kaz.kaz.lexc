@@ -208,9 +208,9 @@ LEXICON SUBST
 
 N-INFL-COMMON ;
 %<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
-                                     
-! NOTE: Some substantivized things might not have pl. form, numerals e.g. 
-! (not too sure, because in Tatar they have it: 
+
+! NOTE: Some substantivized things might not have pl. form, numerals e.g.
+! (not too sure, because in Tatar they have it:
 ! #1 meaning an approximate number: #! "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
 ! #2 <11 ones meaning pupils from a given class: #! өчләр = "pupils from the 3. class" 
 !
@@ -225,7 +225,7 @@ N-INFL-COMMON ;
 ! Modal/discourse particles
 
 LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives,
-                            
+
 !! Politeness
 
 %+шы%<mod_foc%>:%>ш%{I%} # ;
@@ -287,7 +287,7 @@ V-PERS-COP ;
 ! stem > ныкы/дагы(*2) > case                        : Бу соңгы _еллардагының_ өчтән икесе чамасы.
 !
 ! stem > сыз(abe)                  WORKS
-! stem > сыз(abe) > case           
+! stem > сыз(abe) > case
 ! stem > сыз(abe) > poss > case    (?)
 !
 ! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
@@ -297,7 +297,7 @@ V-PERS-COP ;
 !     (at least in Tatar, I think that in Kazakh it's the same)
 ! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very frequent also;
 !     Most likely it is restricted to px3sp.
-!------------------------------------------- 
+!-------------------------------------------
 
 LEXICON CASE-COMMON
 
@@ -347,7 +347,7 @@ LEXICON ABE-ATTR/ADVL/SUBST
 LEXICON ABE-ETC          ! Stuff which doesn't appear after possessives
 
 !%<abe%>:%>с%{I%}з ATTR/ADVL/SUBST ;
-%+сыз%<post%>:%>с%{I%}з ABE-ATTR/ADVL/SUBST ;	
+%+сыз%<post%>:%>с%{I%}з ABE-ATTR/ADVL/SUBST ;
 
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
@@ -366,12 +366,12 @@ GENPOSS-ETC ;
 LEXICON POSS-REAL  ! P_2
 
 %<px1sg%>:%>%{I%}м CASE-ETC ;
-%<px2sg%>:%>%{I%}ң CASE-ETC ; 
-%<px3sg%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
-%<px1pl%>:%>%{I%}м%{I%}з CASE-ETC ; 
-%<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ; 
+%<px2sg%>:%>%{I%}ң CASE-ETC ;
+%<px3sp%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<px1pl%>:%>%{I%}м%{I%}з CASE-ETC ;
+%<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ;
 
-%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ; 
+%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ;
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
 
 LEXICON POSSESSION ! I guess this was used once to implement some
@@ -384,9 +384,10 @@ LEXICON N-INFL-COMMON
 
 POSSESSION ;
 CASE-ETC ;
-ABE-ETC ; ! FIXME check whether this is possible after adjectives and other subst. things.
+ABE-ETC ; ! FIXME check whether this is possible after adjectives and other
+          ! subst. things.
           ! Maybe a better idea is to restrict it to nouns and pronouns.
-          ! Actually, not all pronouns take it. "Синсез" vs "*үземсез". 
+          ! Actually, not all pronouns take it. "Синсез" vs "*үземсез".
           ! Be careful :) /IS to himself/
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
@@ -841,14 +842,17 @@ PRON-DEM-ANA ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
 ! FIXME DISCUSS: Since <reas><abl> is a feature only of "ol" and "sol",
-! below were going to be lexicalised and added as subordinative conjunctions. /IS/
+! below were going to be lexicalised and added as subordinative
+! conjunctions. /IS/
+! This is a bad idea though, because -ндықтан affix is a feature of verbs
+! as well, so we'll have to consider it a productive derivation anyway /IS/
 
 ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
 сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
 
 LEXICON PRON-ITG
 
-%<prn%>%<itg%>: N-INFL-COMMON ; ! FIXME: Check contlex
+%<prn%>%<itg%>: SUBST ;
 
 LEXICON PRON-QNT
 
@@ -1261,9 +1265,9 @@ PRON-PERS ;  ! Personal pronouns
 
 PRON-DEM ;   ! Demonstrative pronouns
 
-нәрсе:нәрсе PRON-ITG ; ! "thing"       ! Use/MT
-не:не PRON-ITG ; ! "what"              ! interrog. pronoun
-кім:кім PRON-ITG ; ! "who"             ! interrog. pronoun
+нәрсе:нәрсе PRON-ITG ; ! "thing" ! Use/MT
+не:не PRON-ITG ; ! "what"
+кім:кім PRON-ITG ; ! "who"
 
 бірдеме:бірдеме PRON-IND ; ! "something"          ! pronoun
 басқа:басқа PRON-IND ; ! "other"
