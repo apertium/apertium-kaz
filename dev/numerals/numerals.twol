@@ -248,7 +248,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! %{G%}:ғ <=> :BackVow [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
 ! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
 %{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
-                  [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+                            [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
+                                       [ %{а%}: :Cns* ]/[ %>: ] _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
@@ -260,7 +261,9 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
 
 "Back assimilation of K"
-%{K%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: | :0 ] _ ;
+%{K%}:қ <=> [ :BackVow | ы:0 | %{а%}: ] [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: | :0 ] _ ;
+            [ :BackVow | ы:0 | %{а%}: ] [ :Cns* %{с%}: ]/[ %>: ] _ ;
+
 
 !!!! Disappearing stuff !!!!
 
