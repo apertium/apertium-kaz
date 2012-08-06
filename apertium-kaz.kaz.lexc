@@ -852,6 +852,23 @@ PRON-DEM-ANA ;
 
 LEXICON PRON-ITG
 
+! Some of the words listed in the grammars I have as interrogative pronouns
+! were placed in other root lexicons depending on what POS they substitute or
+! act like syntactically. So:
+! 1) "неше" is a <num><itg>;
+! 2) "қайда, қайдан, қашан, қалай, қалайша" are <adv><itg> (the first three
+! should link to a class containing location cases btw, as many current adverbs
+! do);
+! 3) "қанша" is added both as an interrogative pronoun and as an interrogative
+! adverb /IS/
+!
+! What is added as interrogative pronoun already: кім, ни, нәрсе
+! And to be added as interrogative pronouns:
+! қайсы, қандай, қанша.
+! I'd like to mark қандай as <sim> form (with қандай for the upper side though),
+! but wouldn't go too deeply into the structure of other two and not derive them
+! from "қай" (that's what they have most likely originated from) IS
+
 %<prn%>%<itg%>: SUBST ;
 
 LEXICON PRON-QNT
@@ -1009,9 +1026,15 @@ LEXICON NP-AL
 
 LEXICON NUM
 
-%<num%>: # ; 
-%<num%>%<subst%>: SUBST ; 
+%<num%>: # ;
+%<num%>%<subst%>: SUBST ;
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+
+LEXICON NUM-ITG   ! This is a temporal solution
+
+%<num%>%<itg%>: # ;
+%<num%>%<itg%>%<subst%>: SUBST ;
+%<num%>%<itg%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
 
 LEXICON NUM-COLL
 
@@ -1375,6 +1398,8 @@ LEXICON Numerals
 бес:бесеу NUM-COLL ;
 алтау:алтау NUM-COLL ;
 жетеу:жетеу NUM-COLL ;
+
+неше:неше NUM-ITG ;
 
 ! Technically this goes on to higher numbers
 ! but its use beyond 5(?) is rare
@@ -8091,7 +8116,7 @@ Witness:Witness NP-AL ; ! ""
 
 жарты:жарты A1 ; ! "half"
 жарым:жарым A1 ; ! "half"
-литвалық:литвалық NP-TOP ; ! "Lithuanian" FIXME:NOTE: I'd like to derive that as n.attr2 /I.S./
+литвалық:литвалық NP-TOP ; ! "Lithuanian" FIXME good idea is to derive this
 сұраным:сұраным A1 ; ! "beautıful" FIXME: check gloss
 
 !!!! Nouns with KI !!!!
