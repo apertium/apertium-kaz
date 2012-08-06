@@ -1030,7 +1030,8 @@ LEXICON NUM
 %<num%>%<subst%>: SUBST ;
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
 
-LEXICON NUM-ITG   ! This is a temporal solution
+LEXICON NUM-ITG ! This is a temporal solution
+                ! (could be integrated with the above)
 
 %<num%>%<itg%>: # ;
 %<num%>%<itg%>%<subst%>: SUBST ;
@@ -1344,7 +1345,7 @@ LEXICON Determiners
 !!! FIXME: Check these
 
 !!!! Determiners, pronouns, etc. of various sorts
-неше:неше DET-QNT ; ! "how many"        ! interrog. quantifier
+!неше:неше DET-QNT ; ! "how many"        ! interrog. quantifier
 қанша:қанша DET-QNT ; ! "how many"       ! interrog. quantifier
 
 LEXICON Numerals
@@ -1391,15 +1392,13 @@ LEXICON Numerals
 !жарым:жарым NUM ; ! "half"            ! (consider that they don't have ordinal form obviously)
 !жарты:жарты NUM ; ! "half"
 
-бір:біреу NUM-COLL ;           
+бір:біреу NUM-COLL ;
 екі:екеу NUM-COLL ;
 үш:үшеу NUM-COLL ;
 төрт:төртеу NUM-COLL ;
 бес:бесеу NUM-COLL ;
 алтау:алтау NUM-COLL ;
 жетеу:жетеу NUM-COLL ;
-
-неше:неше NUM-ITG ;
 
 ! Technically this goes on to higher numbers
 ! but its use beyond 5(?) is rare
@@ -1427,6 +1426,8 @@ XVIII NUM-ROMAN ; ! ""
 XIX NUM-ROMAN ; ! ""
 XX NUM-ROMAN ; ! ""
 XXI NUM-ROMAN ; ! ""
+
+неше:неше NUM-ITG ;
 
 
 !=============!
