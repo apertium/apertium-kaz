@@ -850,11 +850,12 @@ PRON-DEM-ANA ;
 ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
 сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
 
-LEXICON PRON-ITG
+
+!!!!!!!   I N T E R R O G A T I V E
 
 ! Some of the words listed in the grammars I have as interrogative pronouns
 ! were placed in other root lexicons depending on what POS they substitute or
-! act like syntactically. So:
+! act like syntactically. So (as planned for today):
 ! 1) "неше" is a <num><itg>;
 ! 2) "қайда, қайдан, қашан, қалай, қалайша" are <adv><itg> (the first three
 ! should link to a class containing location cases btw, as many current adverbs
@@ -862,14 +863,46 @@ LEXICON PRON-ITG
 ! 3) "қанша" is added both as an interrogative pronoun and as an interrogative
 ! adverb /IS/
 !
-! What is added as interrogative pronoun already: кім, ни, нәрсе
-! And to be added as interrogative pronouns:
-! қайсы, қандай, қанша.
+! What already added as interrogative pronouns are: кім, ни, нәрсе
+! And to be added as interrogative pronouns are: қайсы, қандай, қанша.
 ! I'd like to mark қандай as <sim> form (with қандай for the upper side though),
 ! but wouldn't go too deeply into the structure of other two and not derive them
 ! from "қай" (that's what they have most likely originated from) IS
+!
+! Of course, "қай", "қайсы" and all other pronouns which can be used as an
+! attribute were added as determiners linking to CLIT as well.
+! Good idea is to have an rlx rule selecting determiner reading when a word is
+! ambiguous between (prn X nom) and (det X) and there is noun to the right;
+! and selecting pronoun if there is a verb to the right.
+
+LEXICON PRON-ITG-INFL
 
 %<prn%>%<itg%>: SUBST ;
+
+LEXICON PRON-ITG-QAYSI
+
+қайсы%<prn%>%<itg%>%<nom%>:қайсы CLIT-GENERAL ;
+қайсы%<prn%>%<itg%>%<gen%>:қайсының CLIT ;
+қайсы%<prn%>%<itg%>%<dat%>:қайсыған CLIT ;
+қайсы%<prn%>%<itg%>%<acc%>:қайсыны CLIT ;
+қайсы%<prn%>%<itg%>%<abl%>:қайсыдан CLIT-GENERAL ;
+қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLIT-GENERAL ;
+қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLIT ;
+
+қайсы%<prn%>%<itg%>%<px%>:қайсынікі%{n%} CASE ;
+қайсы%<prn%>%<itg%>: POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
+
+қайсы%<prn%>%<itg%>%<pl%>:қайсылар CASE-ETC ;
+қайсы%<prn%>%<itg%>%<pl%>%<px3sp%>:қайсылары%{n%} CASE ;
+! ^ кайсылары(б/г)ыз is rare but possible in Tatar, so maybe this should
+! include this froms too /IS/
+
+LEXICON PRON-ITG
+
+PRON-ITG-QAYSI ;
+нәрсе:нәрсе PRON-ITG-INFL ; ! "thing" ! Use/MT
+не:не PRON-ITG-INFL ; ! "what"
+кім:кім PRON-ITG-INFL ; ! "who"
 
 LEXICON PRON-QNT
 
@@ -1289,9 +1322,7 @@ PRON-PERS ;  ! Personal pronouns
 
 PRON-DEM ;   ! Demonstrative pronouns
 
-нәрсе:нәрсе PRON-ITG ; ! "thing" ! Use/MT
-не:не PRON-ITG ; ! "what"
-кім:кім PRON-ITG ; ! "who"
+PRON-ITG ;   ! Interrogative pronouns
 
 бірдеме:бірдеме PRON-IND ; ! "something"          ! pronoun
 басқа:басқа PRON-IND ; ! "other"
