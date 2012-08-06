@@ -905,10 +905,24 @@ LEXICON PRON-ITG-QANSHA
 
 қанша%<prn%>%<itg%>:қанша CASE ;
 
+LEXICON PRON-ITG-QANDAY
+
+! Might be not complete (қандайларығыз? and possessive stuff in general)
+
+қандай%<prn%>%<itg%>%<sim%>:қандай CLIT ;
+! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
+! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
+! it shouldn't receive <nom> tag I think /IS/
+қандай%<prn%>%<itg%>%<sim%>:қандай CASE ;
+қандай%<prn%>%<itg%>%<sim%>%<px3sp%>:қандайы%{n%} CASE ;
+қандай%<prn%>%<itg%>%<sim%>%<pl%>:қандайлар CASE ;
+қандай%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:қандайлары%{n%} CASE ;
+
 LEXICON PRON-ITG
 
 PRON-ITG-QAYSI ;
 PRON-ITG-QANSHA ;
+PRON-ITG-QANDAY ;
 нәрсе:нәрсе PRON-ITG-INFL ; ! "thing" ! Use/MT
 не:не PRON-ITG-INFL ; ! "what"
 кім:кім PRON-ITG-INFL ; ! "who"
