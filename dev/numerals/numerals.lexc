@@ -208,6 +208,15 @@ LEXICON NUM
 °С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
 °С%<num%>%<subst%>:ºС%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 °С%<num%>%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>:С%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>%<subst%>:С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+
+С%<num%>:° # ; ! Dir/LR
+С%<num%>%<subst%>%<nom%>:° # ; ! Dir/LR
+С%<num%>%<subst%>:°%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+С%<num%>%<subst%>:°%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 
 км:км SQRD ;
 мм:мм SQRD ;
