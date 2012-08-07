@@ -1,0 +1,52 @@
+Config:
+  hfst: 
+    App: hfst-optimised-lookup
+    Gen: numerals.RL.hfst
+    Morph: numerals.LR.hfst
+
+Tests:
+
+  "coll numbers in nom":
+    1<num><percent><coll><nom> : "1-еу"
+    2<num><percent><coll><nom> : "2-еу"
+    3<num><percent><coll><nom> : "3-еу"
+    4<num><percent><coll><nom> : "4-еу"
+    5<num><percent><coll><nom> : "5-еу"
+    6<num><percent><coll><nom> : "6-ау"
+    7<num><percent><coll><nom> : "7-еу"
+    1<num><percent><coll><advl> : "1-еу"
+    2<num><percent><coll><advl> : "2-еу"
+    3<num><percent><coll><advl> : "3-еу"
+    4<num><percent><coll><advl> : "4-еу"
+    5<num><percent><coll><advl> : "5-еу"
+    6<num><percent><coll><advl> : "6-ау"
+    7<num><percent><coll><advl> : "7-еу"
+
+
+  "possessive forms of coll numbers in nom":
+    1<num><percent><coll><px3sp><nom> : "1-еуі"
+    2<num><percent><coll><px3sp><nom> : "2-еуі"
+    3<num><percent><coll><px3sp><nom> : "3-еуі"
+    4<num><percent><coll><px3sp><nom> : "4-еуі"
+    5<num><percent><coll><px3sp><nom> : "5-еуі"
+    6<num><percent><coll><px3sp><nom> : "6-ауы"
+    7<num><percent><coll><px3sp><nom> : "7-еуі"
+
+  "coll numbers in acc":
+    1<num><percent><coll><acc> : "1-еуді"
+    2<num><percent><coll><acc> : "2-еуді"
+    3<num><percent><coll><acc> : "3-еуді"
+    4<num><percent><coll><acc> : "4-еуді"
+    5<num><percent><coll><acc> : "5-еуді"
+    6<num><percent><coll><acc> : "6-ауды"
+    7<num><percent><coll><acc> : "7-еуді"
+
+  "possessive forms of coll numbers in acc":
+    1<num><percent><coll><px3sp><acc> : "1-еуін"
+    2<num><percent><coll><px3sp><acc> : "2-еуін"
+    3<num><percent><coll><px3sp><acc> : "3-еуін"
+    4<num><percent><coll><px3sp><acc> : "4-еуін"
+    5<num><percent><coll><px3sp><acc> : "5-еуін"
+    6<num><percent><coll><px3sp><acc> : "6-ауын"
+    7<num><percent><coll><px3sp><acc> : "7-еуін"
+
