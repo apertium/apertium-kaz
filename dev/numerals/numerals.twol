@@ -178,6 +178,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "A Vowel Harmony"
 %{A%}:е <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | :0 | %  ] _ ;
            [ %{э%}:0 :Cns* :CnsRight ]/[ %>: | %-: | AbstrCns: | %{S%}: ] _ ;
+                                                    %{э%}:0/[ %>: | %-: ] _ ;
                                          [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :и :Cns* ]/[ %>: | :0 ] _ ;
             except
