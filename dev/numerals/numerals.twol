@@ -59,6 +59,8 @@ CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ
 
 AbstrCns = %{й%} %{л%} %{н%} %{з%} %{с%} ;  
 
+Abstract = %{а%} %{э%} %{й%} %{л%} %{н%} %{з%} %{с%} ;  
+
 HighSonCns = Й У Р
              й у р ;
 
@@ -78,6 +80,8 @@ VoicelessCns = Б В П Ф Д Т Ц Ж Ш Щ Ч С Г Х К Қ Һ
                %{с%} ;
 
 AbstrVoicelessCns = %{с%} ;
+
+AbstrVoicedCns = %{й%} %{л%} %{н%} %{з%} ;
 
 FrontCns = К Г Ь
            к г ь ;
@@ -122,19 +126,21 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
                 matched;
 
 "Voicing assimilation of front G"
-%{G%}:к <=> :FrontVow [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: | [ :0 - ы:0 ] ] _ ;
-                               [ :VoicelessCns & :FrontCns ]/[ %>: | [ :0 - ы:0 ] ] _ ;
+%{G%}:к <=> [ :FrontVow | %{э%}: ] [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
+                                            [ :VoicelessCns & :FrontCns ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
+                                                                       [ %{э%}: %{с%}: ]/[ %>: | :%- ] _ ;
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | :0 ] _ ;
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+                                                                     [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
 
 "Voicing assimilation of G across space"
-%{G%}:қ <=> :VoicelessCns %  _ ;
+%{G%}:қ <=> [ :VoicelessCns | %{с%}: ] %  _ ;
 
 "Normal G across space"
 %{G%}:ғ <=> %  _ ;
             except
-                   :VoicelessCns %  _ ;
+                   [ :VoicelessCns | %{с%}: ] %  _ ;
 
 "Intervocalic voicing of п"
 п:б <=> :Vow (:0) _ %>: (:0) :Vow ;
@@ -243,13 +249,13 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 !!!! Consonant-vowel interactions !!!!
 
-!! FIXME:  суға still surfacing as суге
+!!! FIXME:  суға still surfacing as суге
 "Back assimilation of G"
 ! %{G%}:ғ <=> :BackVow [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
 ! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
-%{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | :0 | :и | :у ] _ ;
-                            [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
-                                       [ %{а%}: :Cns* ]/[ %>: ] _ ;
+%{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | [ :0 - Abstract: ] | :и | :у ] _ ;
+                            [ .#. :Cns* :у :Cns* ]/[ %>: | [ :0 - Abstract: ] ] _ ;
+                                             [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
