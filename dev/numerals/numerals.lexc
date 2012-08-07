@@ -260,13 +260,24 @@ LEXICON NUM
 %<num%>%<ord%>%<subst%>%<nom%>:%-ш%{I%} # ;
 %<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ;
 %<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
+
 %<num%>%<percent%>:%% # ;
 %<num%>%<percent%>%<subst%>%<nom%>:%% # ;
+
 %<num%>%<percent%>%<subst%>:%%%- SUBST-NONOM ;
 %<num%>%<percent%>%<subst%>:%% SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{а%}%{с%}%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>:%%%{а%}%{с%} SUBST-NONOM ; 
+%<num%>%<percent%>%<subst%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
+
 °С%<num%>:°С # ;
 °С%<num%>%<subst%>%<nom%>:°С # ;
-°С%<num%>%<subst%>:°С%- SUBST-NONOM ;
+°С%<num%>%<subst%>:°С%{а%}%{с%}%- SUBST-NONOM ;
+°С%<num%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+
 км:км SQRD ;
 мм:мм SQRD ;
 см:см SQRD ;
@@ -345,6 +356,7 @@ LEXICON DIGITLEX
 LEXICON Numerals
 
 %0:%0 NUM ; 
+№:№ DIGITLEX ; 
 DIGITLEX ; 
 LASTDIGIT ;
 LASTDIGIT-REST ;
