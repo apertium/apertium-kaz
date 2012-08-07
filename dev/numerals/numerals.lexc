@@ -266,16 +266,18 @@ LEXICON NUM
 
 %<num%>%<percent%>%<subst%>:%%%- SUBST-NONOM ;
 %<num%>%<percent%>%<subst%>:%% SUBST-NONOM ; ! Dir/LR
-%<num%>%<percent%>%<subst%>:%%%{а%}%{с%}%- SUBST-NONOM ;
-%<num%>%<percent%>%<subst%>:%%%{а%}%{с%} SUBST-NONOM ; 
+%<num%>%<percent%>%<subst%>:%%%{а%}%{з%}%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
 %<num%>%<percent%>%<subst%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 %<num%>%<percent%>%<subst%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
 
 °С%<num%>:°С # ;
 °С%<num%>%<subst%>%<nom%>:°С # ;
 °С%<num%>%<subst%>:°С%{а%}%{с%}%- SUBST-NONOM ;
+°С%<num%>%<subst%>:°С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 °С%<num%>:ºС # ; ! Dir/LR
 °С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 °С%<num%>%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 
 км:км SQRD ;
