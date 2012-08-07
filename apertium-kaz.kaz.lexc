@@ -142,9 +142,12 @@ Multichar_Symbols
 %<p3%>                ! Third person
 %<frm%>               ! formal address         ! FIXME: need better comment
 
-! Clitics
+! Modal particles
 %<qst%>               ! Modal question particle
-%<mod_foc%>           ! "Particles of politeness and ardent desire" (as in [N. Poppe. Tatar Manual])
+%<mod_foc%>           ! "Particles of politeness and ardent desire"
+                      ! (as in [N. Poppe. Tatar Manual]) or
+                      ! "what about ..." question particles" :)
+                      ! (as in kir.lexc)
 %<mod_ass%>           ! Assertive modal particle
 
 ! Punctuation
@@ -224,9 +227,7 @@ N-INFL-COMMON ;
 
 ! Modal/discourse particles
 
-LEXICON CLIT-IMP2P               ! These modal particle/clitic appears only after 2nd person imperatives,
-
-!! Politeness
+LEXICON CLIT-MODFOC
 
 %+шы%<mod_foc%>:%>ш%{I%} # ;
 # ;
@@ -248,9 +249,6 @@ LEXICON CLIT-OTHER
 
 %+ғой%<mod_ass%>:% %{G%}ой # ;
 # ;
-
-!! <s> FIXME:DISCUSS: maybe we should handle their harmonizing in postgenerator module,
-!!                and not attach them to the previous word </s>
 
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
 %+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
@@ -582,11 +580,11 @@ LEXICON V-INFL-NON-FINITE-REG
 %<gna9%>:%>%{I%}п CLIT ;
 
 !  Imperatives
-%<imp%>%<p2%>%<sg%>: CLIT-IMP2P ;
-%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-IMP2P ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-IMP2P ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-IMP2P ;                      ! Dir/LR FIXME:CHECK
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>%{L%}%{A%}р CLIT-IMP2P ;
+%<imp%>%<p2%>%<sg%>: CLIT-MODFOC ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-MODFOC ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-MODFOC ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-MODFOC ; ! Dir/LR FIXME CHECK
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-MODFOC ;
 
 !  Optative/jussive forms
 
