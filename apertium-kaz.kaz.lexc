@@ -597,11 +597,15 @@ LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 %<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
 %<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
 
-LEXICON V-INFL-FINITE
+LEXICON V-INFL-FINITE-IRREGULAR_NEGATIVE
+
+%<fut%>:%>%{A%}р V-PERS-COP-SUF ;
+%<neg%>%<fut%>:%>м%{A%}с V-PERS-COP-SUF ;
+
+LEXICON V-INFL-FINITE-REGULAR_NEGATIVE
 
 ! Finite forms
 %<aor%>:%>%{E%} V-PERS-PRES ;                         !
-%<fut%>:%>%{A%}р V-PERS-COP-SUF ;                     ! future
 %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-COP-SUF ;       ! future plan
 %<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    !
 %<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               !
@@ -616,8 +620,9 @@ V-INFL-NON-FINITE-REGULAR_NEGATIVE ;
 
 LEXICON V-INFL-COMMON
 
-V-INFL-FINITE ;
-%<neg%>:%>%{M%}%{A%} V-INFL-FINITE ;
+V-INFL-FINITE-IRREGULAR_NEGATIVE ;
+V-INFL-FINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-INFL-FINITE-REGULAR_NEGATIVE ;
 V-INFL-NON-FINITE ;
 
 LEXICON V-TV
