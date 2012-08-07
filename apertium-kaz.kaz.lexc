@@ -535,9 +535,9 @@ LEXICON VOL-ENDINGS
 %<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
 %<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
 
-LEXICON V-INFL-NON-FINITE-IRREG
+LEXICON V-INFL-NON-FINITE-IRREGULAR_NEGATIVE
 
-! Adverbial Participles
+! Participles
 %<prc_perf%>:%>%{I%}п # ;
 %<prc_perf%>:%>%{o%}%{I%}п # ;    ! Dir/LR
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} # ;
@@ -554,7 +554,7 @@ LEXICON V-INFL-NON-FINITE-IRREG
 %<neg%>%<glp_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
 %<neg%>%<glp_pot2%>:%>%{G%}%{I%}с V-ADJ ;
 
-LEXICON V-INFL-NON-FINITE-REG
+LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 
 ! Participles
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
@@ -610,9 +610,9 @@ LEXICON V-INFL-FINITE
 
 LEXICON V-INFL-NON-FINITE
 
-V-INFL-NON-FINITE-IRREG ;
-V-INFL-NON-FINITE-REG ;
-%<neg%>:%>%{M%}%{A%} V-INFL-NON-FINITE-REG ;
+V-INFL-NON-FINITE-IRREGULAR_NEGATIVE ;
+V-INFL-NON-FINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-INFL-NON-FINITE-REGULAR_NEGATIVE ;
 
 LEXICON V-INFL-COMMON
 
