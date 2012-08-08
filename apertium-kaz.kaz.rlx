@@ -15,8 +15,8 @@ SETS
 LIST BOS = (>>>) ;
 LIST EOS = (<<<) ;
 
-# Parts of speech
-# ---------------
+# First level tags
+# ----------------
 
 LIST A = adj ;
 LIST Adv = adv ;
@@ -24,6 +24,7 @@ LIST Pron = prn ;
 LIST N = n ;
 LIST PropN = np ;
 LIST V = v ;
+LIST Vaux = vaux ;
 LIST Det = det ; 
 LIST CC = cnjcoo ;
 LIST CS = cnjsub ;
@@ -53,6 +54,11 @@ LIST Sg = sg ;
 LIST Pl = pl ;
 
 LIST Acc = acc ;
+
+# Verbal Properties 
+# -----------------
+
+LIST Prc = prc_perf prc_impf prc_cond prc_vol ;
 
 # Semantic lists 
 # --------------
@@ -255,3 +261,9 @@ REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
 	(NOT -1 BOS OR Cm )
 ;
 # Бөлмеде шкаф бар, содан бiр кiтап ал.
+
+#
+REMOVE Prc IF
+        (NOT 1C V OR Vaux)
+;
+#

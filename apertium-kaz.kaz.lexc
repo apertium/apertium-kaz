@@ -650,14 +650,14 @@ LEXICON V-PERS-PAST ! P_4
 
 LEXICON V-PERS-COND ! P_4
 
-%<p1%>%<sg%>:%>%{I%}м # ;
-%<p2%>%<sg%>:%>%{I%}ң # ;
-%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з # ;
-%<p3%>%<sg%>: # ;
-%<p1%>%<pl%>:%>%{I%}%{K%} # ;
-%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ;
-%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}зд%{A%}р # ;
-%<p3%>%<pl%>: # ;
+%<p1%>%<sg%>:%>%{I%}м CLIT ;
+%<p2%>%<sg%>:%>%{I%}ң CLIT ;
+%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT ;
+%<p3%>%<sg%>: CLIT ;
+%<p1%>%<pl%>:%>%{I%}%{K%} CLIT ;
+%<p2%>%<pl%>:%>%{I%}ңд%{A%}р CLIT ;
+%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}зд%{A%}р CLIT ;
+%<p3%>%<pl%>: CLIT ;
 
 LEXICON V-PERS-COP-SUF-NO3
 
@@ -729,7 +729,7 @@ LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 ! Participles
 
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
-!%<prc_cond%>:%>с%{A%} V-PERS-COND ;
+%<prc_cond%>:%>с%{A%} V-PERS-COND ;
 %<prc_impf%>:%>%{E%} # ;
 %<prc_irre%>:%>%{E%}т%{I%}н # ;
 
