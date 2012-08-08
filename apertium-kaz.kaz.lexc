@@ -164,7 +164,7 @@ Multichar_Symbols
 %{N%}                 ! Archiphoneme 'n': realised as н, д, т
 %{M%}                 ! Archiphoneme 'm': realised as м, б, п
 %{G%}                 ! Archiphoneme 'g': realised as к, қ, г, ғ
-%{G%}                 ! Archiphoneme 'k': realised as к, қ
+%{G%}                 ! Archiphoneme 'k': realised as к, қ  >>>FIXME ???<<<
 %{D%}                 ! Archiphoneme 'd': realised as д, т
 %{A%}                 ! Archiphoneme 'a': realsied as е, а
 %{I%}                 ! Archiphoneme 'i': realised as і, ы
@@ -178,9 +178,23 @@ Multichar_Symbols
 %{д%}                 ! Realised as д before vowels, 0 otherwise
 %{т%}                 ! Realised as т before vowels, 0 otherwise
 
+
+%{а%}                 ! Archiphoneme for back vowel numerals/abbreviation
+%{э%}                 ! 
+
+%{й%}                 !
+%{л%}                 ! 
+%{н%}                 ! 
+%{з%}                 ! 
+%{т%}                 ! 
+%{с%}                 ! 
+
 %>                    ! Morpheme boundary
 %                     ! Space
 %-                    ! 
+%,                    ! 
+%.                    ! 
+%%                    ! 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -204,15 +218,172 @@ Verbs ;
 Interjections ;
 Abbreviations ;
 Punctuation ;
+Digits ; ! Use/Circ
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!
+!!!!                            N U M E R A L S 
+!!!!
+!!!! WARNING: This section should not be modified without consultation. 
+!!!!          Test cases are in dev/numerals.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON CASE-NONOM
+
+! This continuation lexicon is a copy of the normal case lexicon,
+! only it does not include nominative 
+!   1<num><nom> = 1, 1<num><acc> = 1-{N}{I} 
+
+%<gen%>:%>%{N%}%{I%}ң CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
+%<abl%>:%>%{D%}%{A%}н # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<ins%>:%>%{M%}ен CLIT ;
+
+LEXICON CASE-ETC-NONOM
+
+CASE-NONOM ;
+GENPOSS-ETC ;
+
+LEXICON N-INFL-COMMON-NONOM
+
+POSSESSION ;
+CASE-ETC-NONOM ;
+
+LEXICON SUBST-NONOM
+
+N-INFL-COMMON-NONOM ;
+%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON-NONOM ;
+
+LEXICON SQRD 
+! This lexicon includes common ways of writing squared, cubed etc.
+
+²%<num%>:2 # ;  ! Dir/LR
+³%<num%>:3 # ;  ! Dir/LR
+²%<num%>:² # ; 
+³%<num%>:³ # ; 
+%<num%>: # ; 
+
+LEXICON NUM-DIGIT
+
+%<num%>: # ;
+%<num%>%<subst%>%<nom%>: # ;
+%<num%>%<subst%>:%- SUBST-NONOM ;
+%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
+
+%<num%>%<ord%>:%-%{I%}нш%{I%} # ;
+%<num%>%<ord%>%<subst%>%<nom%>:%-%{I%}нш%{I%} # ;
+%<num%>%<ord%>%<subst%>:%-%{I%}нш%{I%} SUBST-NONOM ;
+%<num%>%<ord%>:%-ш%{I%} # ; ! Dir/LR
+%<num%>%<ord%>%<subst%>%<nom%>:%-ш%{I%} # ; ! Dir/LR
+%<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
+
+%<num%>%<coll%>%<advl%>:%-%{A%}у # ;
+%<num%>%<coll%>%<nom%>:%-%{A%}у # ;
+%<num%>%<coll%>:%-%{A%}у SUBST-NONOM ;
+
+%<num%>%<percent%>:%% # ;
+%<num%>%<percent%>%<subst%>%<nom%>:%% # ;
+
+%<num%>%<percent%>%<subst%>:%%%{а%}%{з%}%- SUBST-NONOM ;
+%<num%>%<percent%>%<subst%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>%<subst%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
+
+°С%<num%>:°С # ;
+°С%<num%>%<subst%>%<nom%>:°С # ;
+°С%<num%>%<subst%>:°С%{а%}%{с%}%- SUBST-NONOM ;
+°С%<num%>%<subst%>:°С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>%<nom%>:С # ; ! Dir/LR
+°С%<num%>%<subst%>:С%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С%<num%>%<subst%>:С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+
+С%<num%>:° # ; ! Dir/LR
+С%<num%>%<subst%>%<nom%>:° # ; ! Dir/LR
+С%<num%>%<subst%>:°%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+С%<num%>%<subst%>:°%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+
+! Measurement units
+
+км:км SQRD ;
+мм:мм SQRD ;
+см:см SQRD ;
+м:м SQRD ;
+
+LEXICON LASTDIGIT
+
+1:1%{э%}%{й%}           NUM-DIGIT ; ! "бір"
+2:2%{э%}                NUM-DIGIT ; ! "екі"
+3:3%{э%}%{с%}           NUM-DIGIT ; ! "үш"
+4:4%{э%}%{с%}           NUM-DIGIT ; ! "төрт"
+5:5%{э%}%{с%}           NUM-DIGIT ; ! "бес"
+6:6%{а%}                NUM-DIGIT ; ! "алты"
+7:7%{э%}                NUM-DIGIT ; ! "жеті"
+8:8%{э%}%{з%}           NUM-DIGIT ; ! "сегіз"
+9:9%{а%}%{з%}           NUM-DIGIT ; ! "тоғыз"
+
+LEXICON LASTDIGIT-REST
+
+1%0:1%0%{а%}%{н%}       NUM-DIGIT ; ! "он"
+2%0:2%0%{а%}            NUM-DIGIT ; ! "қырық"
+3%0:3%0%{а%}%{з%}       NUM-DIGIT ; ! "отыз"
+4%0:4%0%{а%}%{с%}       NUM-DIGIT ; ! "қырық"
+5%0:5%0%{э%}%{й%}       NUM-DIGIT ; ! "елу"
+6%0:6%0%{а%}%{с%}       NUM-DIGIT ; ! "алпыс"
+7%0:7%0%{э%}%{с%}       NUM-DIGIT ; ! "жетпіс"
+8%0:8%0%{э%}%{н%}       NUM-DIGIT ; ! "сексен"
+9%0:9%0%{а%}%{н%}       NUM-DIGIT ; ! "тоқсан"
+
+LEXICON POWERS 
+%0%0:%0%0%{э%}%{з%}     NUM-DIGIT ; ! "жүз"
+%0%0%0:%0%0%0%{а%}%{н%} NUM-DIGIT ; ! "мың"
+
+LEXICON LOOP
+
+%,:%, DIGITLEX ; 
+%.:%. DIGITLEX ; 
+%,:%, LASTDIGIT ; 
+%.:%. LASTDIGIT ; 
+%,:%, LASTDIGIT-REST ; 
+%.:%. LASTDIGIT-REST ; 
+%,:%, POWERS ; 
+%.:%. POWERS ; 
+      DIGITLEX ; 
+      LASTDIGIT ;
+      LASTDIGIT-REST ;
+      POWERS ; 
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ; 
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!       N U M E R A L     L E X I C O N     E N D S     H E R E 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON SUBST
 
 N-INFL-COMMON ;
 %<pl%>:%>%{L%}%{A%}р N-INFL-COMMON ;
 
-! NOTE: Some substantivized things might not have pl. form, numerals e.g.
+! NOTE: Some substantivised things might not have pl. form, numerals e.g.
 ! (not too sure, because in Tatar they have it:
 ! #1 meaning an approximate number: #! "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
 ! #2 <11 ones meaning pupils from a given class: #! өчләр = "pupils from the 3. class" 
@@ -286,7 +457,7 @@ V-PERS-COP ;
 ! stem > сыз(abe) > poss > case    (?)
 !
 ! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
-!     Indeed, when not substantivized, it has predicative use:
+!     Indeed, when not substantivised, it has predicative use:
 !     "Бу яулык әнинеке." (vs "Әнинең яулыгы.")
 ! *2. "дай" is considered to be an adverbializer, so no case endings after it (=no <subst> reading).
 !     (at least in Tatar, I think that in Kazakh it's the same)
@@ -307,6 +478,7 @@ CASE-COMMON ;
 %<nom%>: CLIT-GENERAL ;
 %<abl%>:%>%{D%}%{A%}н CLIT-GENERAL ;
 %<loc%>:%>%{D%}%{A%} CLIT-GENERAL ;
+
 
 LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
                 ! with personal copula suffixes. Atm used only for <abe>
@@ -329,7 +501,7 @@ LEXICON ABE-ATTR/ADVL/SUBST
 ! <abe> thing doesn't take personal copula suffixes (JNW, please correct me),
 ! so SUBST reading of it is linked to CASE-2, not CASE.
 ! A counterexample could be e.g. "бәхет-сез-мен", but that's only because "бәхетсез"
-! has lexicalized as an adjective.
+! has lexicalised as an adjective.
 
 ! Note that allowing of the (scarcely existing) [X +<abe> +<pers.cop> (+ modalpcle)] sequence
 ! would require some additional rules in kaz-tat.t2x /02082012, IS/
@@ -396,7 +568,7 @@ LEXICON ADJ-LEVELS
 %<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 CLIT ;
 
-LEXICON A1                ! adjectives that can be both substantivized and andverbialized;
+LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
 
@@ -409,7 +581,7 @@ LEXICON A1                ! adjectives that can be both substantivized and andve
 %<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
 %<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
-LEXICON A2                 ! (derived/not fully lexicalized) adjectives without adverbial reading;
+LEXICON A2                 ! (derived/not fully lexicalised) adjectives without adverbial reading;
                            ! <adj> and <adj.subst> readings have comparison levels.
                            !# ескі
 
@@ -419,7 +591,7 @@ LEXICON A2                 ! (derived/not fully lexicalized) adjectives without 
 %<adj%>%<subst%>: SUBST ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
 
-LEXICON A3                 ! (derived/not fully lexicalized) adjectives without adverbial reading,
+LEXICON A3                 ! (derived/not fully lexicalised) adjectives without adverbial reading,
                            ! so-called "predicatives" (бар, жоқ);
                            ! no comparison levels at all.
                            !# көктемгі, басты, бар, жоқ
@@ -8679,11 +8851,11 @@ Witness:Witness NP-AL ; ! ""
 демал:демал V-IV ; ! "отдыхать"
 демде:демде V-TV ; ! "to help" көңілін демдеу
 демде:демде V-TV ; ! "заварить" чәй
-демократтан:демократтан V-IV ; ! "to become democratized"
+демократтан:демократтан V-IV ; ! "to become democratised"
 дестеле:дестеле V-TV ; ! "to count by tens"
 дірілде:дірілде V-IV ; ! "дрожать,трястись,трепетать"
 домала:домала V-IV ; ! "slide down"
-европалас:европалас V-IV ; ! "to become europeanized" (tat) recognize европалаш
+европалас:европалас V-IV ; ! "to become europeanised" (tat) recognise европалаш
 еге:еге V-TV ; ! "saw"
 еге:еге V-TV ; ! "saw" 
 егес:егес V-IV ; ! "to dispute"
@@ -10523,4 +10695,10 @@ KZ:KZ ABBR ; ! ""
 \%<sent%>:\ # ;
 /%<sent%>:/ # ;
 
-<(%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9)+>  DIGITLEX ; ! Use/Circ
+LEXICON Digits ! Use/Circ
+
+%0:%0 NUM ;  ! Use/Circ
+№:№ DIGITLEX ;  ! Use/Circ
+DIGITLEX ; ! Use/Circ
+LASTDIGIT ; ! Use/Circ
+LASTDIGIT-REST ; ! Use/Circ
