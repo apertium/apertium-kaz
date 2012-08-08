@@ -232,41 +232,38 @@ LEXICON CLIT-MODFOC
 %+шы%<mod_foc%>:%>ш%{I%} # ;
 # ;
 
-LEXICON CLIT-MA
-
-!! Question modal particles
+LEXICON CLIT-QST
 
 %+ма%<qst%>:%>% %{M%}%{A%} # ;
-
-LEXICON CLIT-OTHER
-
-!! Other question modal particles
-
-!%+меді%<qst%>:% %{M%}еді # ;   ! FIXME CHECK
 %+мекен%<qst%>:% %{M%}екен # ;
+!%+меді%<qst%>:% %{M%}еді # ;   ! FIXME CHECK
 
-!! Assertive (emphasizing) modal particles
+LEXICON CLIT-MODASS
 
 %+ғой%<mod_ass%>:% %{G%}ой # ;
 # ;
 
+LEXICON CLIT-GHANA-ETC
+
 %+ғана%<postadv%>:% %{G%}ана # ; ! "only"
 %+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
 %+да%<cnjcoo%>:% %{D%}%{A%} # ; ! "also"
+# ;
 
-LEXICON CLIT 
+LEXICON CLIT
 
-CLIT-OTHER ;
-CLIT-MA ;
+CLIT-QST ;
+CLIT-MODASS ;
+CLIT-GHANA-ETC ;
 # ;
 
 LEXICON V-PERS-COP ! P_3
 
-%+е%<cop%>: V-PERS-COP-SUF-NO3 ; 
+%+е%<cop%>: V-PERS-COP-SUF-NO3 ;
 
-LEXICON CLIT-GENERAL    ! Includes personal copula suffixes, therefore appears only
-                        ! after nominal parts of speech (and only after some cases).
-                        ! FIXME: to be checked whether leads to any overgeneration
+LEXICON CLIT-GENERAL ! Includes personal copula suffixes, therefore appears only
+                     ! after nominal parts of speech (and only after some cases)
+                     ! FIXME: to be checked whether leads to any overgeneration
 CLIT ;
 V-PERS-COP ;
 
@@ -460,13 +457,13 @@ LEXICON V-PERS-PRES ! P_6
 %<p1%>%<sg%>:%>м CLIT ;
 %<p2%>%<sg%>:%>с%{I%}ң CLIT ;
 %<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
-%<p3%>%<sg%>:%>д%{I%} CLIT-OTHER ;
-%<p3%>%<sg%>:%> CLIT-MA ;
+%<p3%>%<sg%>:%>д%{I%} CLIT ;
+%<p3%>%<sg%>:%> CLIT ;
 %<p1%>%<pl%>:%>м%{I%}з CLIT ;
 %<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
 %<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
-%<p3%>%<pl%>:%>д%{I%} CLIT-OTHER ;
-%<p3%>%<pl%>:%> CLIT-MA ;
+%<p3%>%<pl%>:%>д%{I%} CLIT ;
+%<p3%>%<pl%>:%> CLIT ;
 
 LEXICON V-PERS-PAST ! P_4
 
