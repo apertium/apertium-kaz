@@ -523,22 +523,23 @@ CASE-ETC ;
 
 LEXICON VOL-ENDINGS
 
-%<p1%>%<sg%>:%>%{I%}м # ;
-%<p2%>%<sg%>:%>%{I%}ң # ;
-%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з # ;
-%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} # ;
-%<p1%>%<pl%>:%>%{I%}м%{I%}з # ;
-%<p2%>%<pl%>:%>%{I%}ңд%{A%}р # ;
-%<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р # ;
-%<p3%>%<pl%>:%>%{S%}%{I%}%{n%} # ;
+%<p1%>%<sg%>:%>%{I%}м CLIT-GHANA-ETC ;
+%<p2%>%<sg%>:%>%{I%}ң CLIT-GHANA-ETC ;
+%<p2%>%<sg%>%<frm%>:%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
+%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} CLIT-GHANA-ETC ;
+%<p1%>%<pl%>:%>%{I%}м%{I%}з CLIT-GHANA-ETC ;
+%<p2%>%<pl%>:%>%{I%}ңд%{A%}р CLIT-GHANA-ETC ;
+%<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CLIT-GHANA-ETC ;
+%<p3%>%<pl%>:%>%{S%}%{I%}%{n%} CLIT-GHANA-ETC ;
 
 LEXICON V-INFL-NON-FINITE-IRREGULAR_NEGATIVE
 
 ! Participles
+
 %<prc_perf%>:%>%{I%}п # ;
-%<prc_perf%>:%>%{o%}%{I%}п # ;    ! Dir/LR
+%<prc_perf%>:%>%{o%}%{I%}п # ;            ! Dir/LR
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} # ;
-%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;     ! no negative form
+%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;    ! no negative form
 
 ! Gerunds
 %<ger_fut%>:%>%{A%}р GER-INFL ;
@@ -554,6 +555,7 @@ LEXICON V-INFL-NON-FINITE-IRREGULAR_NEGATIVE
 LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 
 ! Participles
+
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
 !%<prc_cond%>:%>с%{A%} V-PERS-COND ;
 %<prc_impf%>:%>%{E%} # ;
