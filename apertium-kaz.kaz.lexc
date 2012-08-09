@@ -492,9 +492,8 @@ CASE-COMMON ;
 LEXICON ATTR/SUBST
 
 %<attr%>: CLIT ;
-!%<subst%>: SUBST ; ! FIXME:NOTE: I guess that this leads to recursion. Intention was to cover stuff like
-                    ! "өйдәгеләр (нишли e.g.)". If it does, add plural reading right here. /I.S./
 %<subst%>: CASE ;
+%<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
 
 LEXICON ABE-ATTR/ADVL/SUBST
 
