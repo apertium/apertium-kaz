@@ -7,194 +7,226 @@
 Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
-! Part of speech categories 
-%<n%>                 ! Noun                       ! Зат есім
-%<np%>                ! Proper noun
-%<adj%>               ! Adjective                  ! Сын есім
-%<num%>               ! Numeral                    ! Сан есім
-%<prn%>               ! Pronoun
-%<det%>               ! Determiner
-%<v%>                 ! Verb
-%<vaux%>              ! Auxilary verb
-%<adv%>               ! Adverb                     ! Үстеу           ! Наречие
-%<post%>              ! Postposition               ! Септеулік шылау
-%<postadv%>           ! Postadverb                 ! "Артүстеу"
-%<cnjcoo%>            ! Co-ordinating conjunction  ! жалғаулық шылау
-%<cnjsub%>            ! Sub-ordinating conjunction ! жалғаулық шылау
-%<cnjadv%>            ! Adverbial conjunction      ! жалғаулық шылау
-%<part%>              ! Particle
-%<ij%>                ! Interjection               ! Одағай
-%<abbr%>              ! Abbreviation
-%<cop%>               ! Copula
+! Part of speech categories
+%<n%>         ! Noun                       ! Зат есім
+%<np%>        ! Proper noun
+%<adj%>       ! Adjective                  ! Сын есім
+%<num%>       ! Numeral                    ! Сан есім
+%<prn%>       ! Pronoun
+%<det%>       ! Determiner
+%<v%>         ! Verb
+%<vaux%>      ! Auxilary verb
+%<adv%>       ! Adverb                     ! Үстеу            ! Наречие
+%<post%>      ! Postposition               ! Септеулік шылау
+%<postadv%    ! Postadverb                 ! "Артүстеу"
+%<cnjcoo%>    ! Co-ordinating conjunction  ! жалғаулық шылау
+%<cnjsub%>    ! Sub-ordinating conjunction ! жалғаулық шылау
+%<cnjadv%>    ! Adverbial conjunction      ! жалғаулық шылау
+%<part%>      ! Particle
+%<ij%>        ! Interjection               ! Одағай
+%<abbr%>      ! Abbreviation
+%<cop%>       ! Copula
 
 ! Proper noun types
-%<top%>               ! Toponym
-%<ant%>               ! Anthroponym
-%<cog%>               ! Cognomen
-%<org%>               ! Organization
-%<al%>                ! Other
+%<top%>       ! Toponym
+%<ant%>       ! Anthroponym
+%<cog%>       ! Cognomen
+%<org%>       ! Organization
+%<al%>        ! Other
 
 !! gender of anthroponyms and cognoms
-%<m%>                 ! Masculine
-%<f%>                 ! Feminine
-%<mf%>                ! Masculine/feminine !# basically cognoms without -ов/-ова, -ин/-ина ending
+%<m%>         ! Masculine
+%<f%>         ! Feminine
+%<mf%>        ! Masculine/feminine !# basically cognoms without -ов/-ова,
+              ! -ин/-ина endings
 
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
-%<attr%>              ! Attributive
-%<subst%>             ! Substantive
-%<pred%>              ! Predicative !! deprecated
-%<advl%>              ! Adverbial
+%<attr%>      ! Attributive
+%<subst%>     ! Substantive
+%<advl%>      ! Adverbial
 
 ! Number
-%<sg%>                ! Singular
-%<pl%>                ! Plural
+%<sg%>        ! Singular
+%<pl%>        ! Plural
 
 ! Possessives
-%<px1sg%>             ! First person singular
-%<px2sg%>             ! Second person singular
-%<px3sp%>             ! Third person singular/plural
-%<px1pl%>             ! First person plural
-%<px2pl%>             ! Second person plural
-%<px%>                ! General possessive     !# -нікі
+%<px1sg%>     ! First person singular
+%<px2sg%>     ! Second person singular
+%<px3sp%>     ! Third person singular/plural
+%<px1pl%>     ! First person plural
+%<px2pl%>     ! Second person plural
+%<px%>        ! General possessive          !# -нікі
 
 ! Cases
-%<nom%>               ! Nominative
-%<gen%>               ! Genitive
-%<dat%>               ! Dative 
-%<acc%>               ! Accusative 
-%<abl%>               ! Ablative 
-%<loc%>               ! Locative 
-%<ins%>               ! Instrumental 
+%<nom%>       ! Nominative
+%<gen%>       ! Genitive
+%<dat%>       ! Dative
+%<acc%>       ! Accusative
+%<abl%>       ! Ablative
+%<loc%>       ! Locative
+%<ins%>       ! Instrumental
 
 !! some additional ~cases
-%<sim%>               ! Similative (<apprx> in kymorph)  !# -дай/-дәй, -тай, -тәй
-%<abe%>               ! Abessive=Privative ! Лишительный !# -сыз/-сез (not used after posessives)
-%<reas%>              ! Reason
+%<sim%>       ! Similative (<apprx> in kymorph)
+              !# DAй
+%<abe%>       ! Abessive=Privative ! Лишительный
+              !# -сыз/-сез (not used after posessives and cases)
+%<reas%>      ! Reason
 
 ! Levels of comparison of adjectives
-%<comp%>              ! Comparative
-%<sup%>               ! Superlative
+%<comp%>      ! Comparative
+%<sup%>       ! Superlative
 
 ! Pronoun types
-%<pers%>              ! Personal
-%<recip%>             ! Reciprocal pronoun
+%<pers%>      ! Personal
+%<recip%>     ! Reciprocal
 ! Pronoun and determiner types
-%<dem%>               ! Demonstrative
-%<ind%>               ! Indefinite
-%<itg%>               ! Interrogative
-%<qnt%>               ! Quantifier
-%<neg%>               ! Negative       !# еш нерсе ! NOTE: also used to denote negation in verbs
-%<ref%>               ! Reflexive
+%<dem%>       ! Demonstrative
+%<ind%>       ! Indefinite
+%<itg%>       ! Interrogative
+%<qnt%>       ! Quantifier
+%<neg%>       ! Negative       !# еш нерсе
+              ! (NOTE: also used to denote negation in verbs, i.e for м{A})
+%<ref%>       ! Reflexive
 
 ! Numeral types
-%<ord%>               ! Ordinal
-%<coll%>              ! Collective
+%<ord%>       ! Ordinal
+%<coll%>      ! Collective
+%<dist%>      ! Distributive
 
-! Tense, aspect, mood
-%<imp%>               ! Imperative
-%<caus%>              ! causative
-%<coop%>              ! Cooperative
-%<pass%>              ! passive
+! Verbal features
 
-%<ifi%>               ! eyewitness past
-%<past%>              ! past
-%<evid%>              ! evidential
-%<aor%>               ! non-future
-%<pres%>              ! for "жатыр", "тұр" and other 2
-%<fut%>               ! future
-%<fut_plan%>          ! future plan
+!! Mood
+%<imp%>       ! Imperative
 
-!! Participles
-%<prc_perf%>          ! perfect participle (-{I}п) !# "Бірақ мысығы үйде, _ұйықтап_ жатыр." 
-%<prc_plan%>          ! plan participle
-%<prc_cond%>          ! conditional participle
-%<prc_impf%>          ! imperfect participle       !# "...олар далада _ойнай_ алмады..."
-%<prc_irre%>          ! irrealis participle
-%<prc_vol%>           ! volition participle
+!! Derivation
+%<caus%>      ! Causative
+%<pass%>      ! Passive
+%<coop%>      ! Cooperative
 
-!! Verbal adverbs - Глаголные наречия 
-%<gna_cond%>          ! -с{A}   !# "...қайда екенін _білсе_ де айтқысы келген жоқ...."
-%<gna9%>              ! -{I}п
 
-!! Verbal adjectives - Глаголные причастия
-%<glp_fut%>           ! future verbal adjective
-%<glp_fut2%>          ! another future verbal adjective
-%<glp_past%>          ! past verbal adjective
-%<glp_impf%>          ! imperfect verbal adjective
-%<glp_pot%>           ! potential verbal adjective
+!! Tense / finite forms
+%<aor%>       ! -{E}                    ! non-future
+%<past%>      ! -{G}{A}н                ! past
+%<ifi%>       ! -{D}{I}                 ! eyewitness past
+%<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/
+%<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
+%<fut%>       ! -{I}р                   ! future
+%<fut_plan%>  ! -{M}{A}{K}              ! future plan
 
-!! Gerunds - Исем фигыльләр
-%<ger%>               ! just a gerund         ! -{U}
-%<ger_ppot%>          ! gerund p??? potential
-%<ger_past%>          ! past/perfect gerund
-%<ger_perf%>          ! perfective gerund
-%<ger_impf%>          ! imperfective gerund
-%<ger_abs%>           ! absolute(?) gerund
+%<evid%>      ! evidential
+              ! Used for -ган екен and -ыпты. The former most likely wont be
+              ! handled here in lexc, the latter was renamed from <ifi><evid>
+              ! to <ifi_evid>
 
-! Transitivity
-%<tv%>                ! Transitive
-%<iv%>                ! Intransitive
-%<TD%>                ! Temporary tag (unknown transitivity)
+!! Non-Finite verb forms
+
+!!! Participles
+%<prc_perf%>  ! -{I}п                   ! perfect participle
+              !# "Бірақ мысығы үйде, _ұйықтап_ жатыр.";
+%<prc_impf%>  ! -{E}                    ! imperfect participle
+              !# "...олар далада _ойнай_ алмады...";
+%<prc_plan%>  ! -{G}{A}л{I}             ! plan participle
+              !# мен сөйлескелі келдім;
+%<prc_cond%>  ! -с{A}                   ! conditional participle
+              !# ...жесең болады...;
+%<prc_irre%>  ! -{E}{T}{I}н             ! irrealis participle
+              ! (I would analyze this form only as <grp_impf> /IS)
+%<prc_vol%>   ! -{G}{I}                 ! volition participle
+              !# барғым келмейді;
+
+!!! Verbal adverbs - Глагольные наречия
+%<gna_cond%>  ! -с{A}
+              !# ...қайда екенін _білсе_, маған бұл туралы айтыр еді...;
+%<gna_perf%>  ! -{I}п
+              !# "...ул вакытта инде кояш _баеп_, йолдызлар күренә башлаган
+              !# иде..." (Ф.Хөсни);
+%<gna_until%> ! -{G}{A}нш{A}
+              !# "Мен кеткенше ол жауап бермейді.";
+%<gna_after%> ! -{G}{A}л{I}
+              !# "Сабақ _біткелі_ екі сағат өтті.";
+
+!!! Verbal adjectives - Глагольные причастия
+%<gpr_past%>  ! -{G}{A}н               ! past verbal adjective
+              !# келген адам; оқылмаған кітап;
+%<gpr_impf%>  ! -{E}{T}{I}н            ! imperfect verbal adjective
+              !# басқаратын = руководящий
+%<gpr_pot%>   ! -{U}ш{I}               ! potential verbal adjective
+%<gpr_fut%>   ! -{I}р                  ! future verbal adjective
+
+!!! Gerunds (verbal nouns)
+%<ger%>       ! -{U}
+%<ger_past%>  ! -{G}{A}н
+%<ger_perf%>  ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
+%<ger_impf%>  ! -{E}{T}{I}н
+              !# "Ол бүгін кешкілік болатынын айтты";
+%<ger_ppot%>  ! -{A}рл{I}{K}
+%<ger_abs%>   ! -уш{I}л{I}{K}          FIXME CHECK
+
+!! Transitivity
+%<tv%>        ! Transitive
+%<iv%>        ! Intransitive
+%<TD%>        ! Temporary tag
 
 ! Person
-%<p1%>                ! First person 
-%<p2%>                ! Second person 
-%<p3%>                ! Third person
-%<frm%>               ! formal address         ! FIXME: need better comment
+%<p1%>        ! First person
+%<p2%>        ! Second person
+%<p3%>        ! Third person
+%<frm%>       ! Formality
 
 ! Modal particles
-%<qst%>               ! Modal question particle
-%<mod_foc%>           ! "Particles of politeness and ardent desire"
-                      ! (as in [N. Poppe. Tatar Manual]) or
-                      ! "what about ..." question particles" :)
-                      ! (as in kir.lexc)
-%<mod_ass%>           ! Assertive modal particle
+%<qst%>       ! Modal question particle
+%<mod_foc%>   ! "Particles of politeness and ardent desire"
+              ! (as in [N. Poppe. Tatar Manual]) or
+              ! "what about ..." question particles" :)
+              ! (as in kir.lexc)
+%<mod_ass%>   ! Assertive modal particle
 
 ! Punctuation
-%<sent%>              ! Sentence marker
-%<guio%>              ! Hyphen
-%<cm%>                ! Comma
-%<apos%>              ! Apostrophe
-%<rquot%>             ! Quote marker (right hand side) 
-%<lquot%>             ! Quote marker (left hand side) 
-%<rpar%>              ! Parenthetical marker (right hand side) 
-%<lpar%>              ! Parenthetical marker (left hand side) 
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
 
-%{L%}                 ! Archiphoneme 'l': realised as л, д, т
-%{N%}                 ! Archiphoneme 'n': realised as н, д, т
-%{M%}                 ! Archiphoneme 'm': realised as м, б, п
-%{G%}                 ! Archiphoneme 'g': realised as к, қ, г, ғ
-%{G%}                 ! Archiphoneme 'k': realised as к, қ  >>>FIXME ???<<<
-%{D%}                 ! Archiphoneme 'd': realised as д, т
-%{A%}                 ! Archiphoneme 'a': realsied as е, а
-%{I%}                 ! Archiphoneme 'i': realised as і, ы
-%{S%}                 ! Realised as 'с' or ''; only used in 3rd person morphology
-%{K%}                 ! Realised as 'к' or 'қ'
-%{n%}                 ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
-%{l%}                 ! Realised as 'л' or 'н'; only used in passive -{I}{l}
-%{y%}                 ! Realised as '' or '{I}'; only used in epenthesis for nouns
-%{o%}                 ! Realised as ''; triggers dialectal interpretation of Iп
-%{E%}                 ! Realised as 'а', 'е', 'й' (={A}/й)
-%{д%}                 ! Realised as д before vowels, 0 otherwise
-%{т%}                 ! Realised as т before vowels, 0 otherwise
+%{L%}         ! Archiphoneme 'l': realised as л, д, т
+%{N%}         ! Archiphoneme 'n': realised as н, д, т
+%{M%}         ! Archiphoneme 'm': realised as м, б, п
+%{G%}         ! Archiphoneme 'g': realised as к, қ, г, ғ
+%{G%}         ! Archiphoneme 'k': realised as к, қ  >>>FIXME ???<<<
+%{D%}         ! Archiphoneme 'd': realised as д, т
+%{A%}         ! Archiphoneme 'a': realsied as е, а
+%{I%}         ! Archiphoneme 'i': realised as і, ы
+%{S%}         ! Realised as 'с' or ''; only used in 3rd person morphology
+%{K%}         ! Realised as 'к' or 'қ'
+%{n%}         ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
+%{l%}         ! Realised as 'л' or 'н'; only used in passive -{I}{l}
+%{y%}         ! Realised as '' or '{I}'; only used in epenthesis for nouns
+%{o%}         ! Realised as ''; triggers dialectal interpretation of Iп
+%{E%}         ! Realised as 'а', 'е', 'й' (={A}/й)
+%{д%}         ! Realised as д before vowels, 0 otherwise
+%{т%}         ! Realised as т before vowels, 0 otherwise
 
 
-%{а%}                 ! Archiphoneme for back vowel numerals/abbreviation
-%{э%}                 ! 
+%{а%}         ! Archiphoneme for back vowel numerals/abbreviation
+%{э%}         ! Archiphoneme for front vowel numerals/abbreviation
 
-%{й%}                 !
-%{л%}                 ! 
-%{н%}                 ! 
-%{з%}                 ! 
-%{т%}                 ! 
-%{с%}                 ! 
+%{й%}         !
+%{л%}         !
+%{н%}         !
+%{з%}         !
+%{т%}         !
+%{с%}         !
 
-%>                    ! Morpheme boundary
-%                     ! Space
-%-                    ! 
-%,                    ! 
-%.                    ! 
-%%                    ! 
+%>            ! Morpheme boundary
+%             ! Space
+%-            !
+%,            !
+%.            !
+%%            !
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                       M O R P H O T A C T I C S                         !!!
@@ -703,34 +735,63 @@ LEXICON VOL-ENDINGS
 %<p2%>%<pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CLIT-GHANA-ETC ;
 %<p3%>%<pl%>:%>%{S%}%{I%}%{n%} CLIT-GHANA-ETC ;
 
-LEXICON V-INFL-NON-FINITE-IRREGULAR_NEGATIVE
+LEXICON V-FINITE-IRREGULAR_NEGATIVE
+
+%<fut%>:%>%{A%}р V-PERS-COP-SUF ;
+%<neg%>%<fut%>:%>м%{A%}с V-PERS-COP-SUF ;
+
+LEXICON V-FINITE-REGULAR_NEGATIVE
+
+! Finite forms
+%<aor%>:%>%{E%} V-PERS-PRES ;                         !
+%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-COP-SUF ;       ! future plan
+%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    !
+%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               !
+%<ifi_evid%>:%>%{I%}пт%{I%} V-PERS-EVID-SUF ;         ! evidential recent past
+
+LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
+
+! Cont. classes to be checked
 
 ! Participles
-
 %<prc_perf%>:%>%{I%}п # ;
 %<prc_perf%>:%>%{o%}%{I%}п # ;            ! Dir/LR
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} # ;
-%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;    ! no negative form
+%<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
+%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;
+
+
+! Verbal adverbs
+%<gna_perf%>:%>%{I%}п CLIT ;
+%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLIT ;
+
+%<gna_until%>:%>%{G%}%{A%}нш%{A%} CLIT ;
+
+
+! Verbal Adjectives
+%<gpr_fut%>:%>%{A%}р # ;
+%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>%с # ;
+!%<neg%>%<gpr_pot2%>:%>%{G%}%{I%}с # ; FIXME looks wrong
+
 
 ! Gerunds
 %<ger_fut%>:%>%{A%}р GER-INFL ;
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-INFL ;
 
 %<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-INFL ;
+%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} GER-INFL ;
 
-! Verbal Adjectives
-%<glp_fut%>:%>%{A%}р V-ADJ ;
-%<neg%>%<glp_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
-%<neg%>%<glp_pot2%>:%>%{G%}%{I%}с V-ADJ ;
+LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
-LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
+! Cont. classes to be checked
 
 ! Participles
-
-%<prc_plan%>:%>%{G%}%{A%}л%{I%} # ;
 %<prc_cond%>:%>с%{A%} V-PERS-COND ;
 %<prc_impf%>:%>%{E%} # ;
 %<prc_irre%>:%>%{E%}т%{I%}н # ;
+
+! Verbal adverbs
+%<gna_cond%>:%>с%{A%} V-PERS-COND ;
 
 ! Gerunds
 %<ger_past%>:%>%{G%}%{A%}н GER-INFL ;
@@ -740,14 +801,9 @@ LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 
 ! Verbal adjectives
-%<glp_past%>:%>%{G%}%{A%}н V-ADJ ;
-%<vadj%>:%>%{G%}%{A%}н V-ADJ ;  ! both past (or perf?) and general
-%<glp_impf%>:%>%{E%}т%{I%}н V-ADJ ;
-%<glp_pot%>:%>у%>ш%{I%} V-ADJ ;
-
-! Verbal adverbs
-%<gna_cond%>:%>с%{A%} V-PERS-COND ;    !# "...қайда екенен білсе де айтқысы келген жоқ ...
-%<gna9%>:%>%{I%}п CLIT ;
+%<gpr_past%>:%>%{G%}%{A%}н # ;
+%<gpr_impf%>:%>%{E%}т%{I%}н # ;
+%<gpr_pot%>:%>у%>ш%{I%} # ;
 
 !  Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-MODFOC ;
@@ -757,59 +813,47 @@ LEXICON V-INFL-NON-FINITE-REGULAR_NEGATIVE
 %<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-MODFOC ;
 
 !  Optative/jussive forms
+%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT-MODFOC ;
+%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLIT-MODFOC ;  ! FIXME check
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLIT-MODFOC ;
+%<opt%>%<p1%>%<pl%>:%>%{E%}й%{I%}%{K%} CLIT-MODFOC ;
+%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT-MODFOC ;   ! FIXME check
+%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLIT-MODFOC ;
 
-%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н # ;
-%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н # ;  ! FIXME: check
-%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} # ;  ! FIXME: check
-%<opt%>%<p3%>%<sg%>:%>с%{I%}н # ;
-%<opt%>%<p1%>%<pl%>:%>%{E%}й%{I%}%{K%} # ;
-%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;   ! FIXME: check
-%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
+%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLIT-MODFOC ;  ! FIXME check
+%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT-MODFOC ;
 
-LEXICON V-INFL-FINITE-IRREGULAR_NEGATIVE
+LEXICON V-COMMON
 
-%<fut%>:%>%{A%}р V-PERS-COP-SUF ;
-%<neg%>%<fut%>:%>м%{A%}с V-PERS-COP-SUF ;
+V-FINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
 
-LEXICON V-INFL-FINITE-REGULAR_NEGATIVE
+V-FINITE-IRREGULAR_NEGATIVE ;
 
-! Finite forms
-%<aor%>:%>%{E%} V-PERS-PRES ;                         !
-%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-COP-SUF ;       ! future plan
-%<ifi%>:%>%{D%}%{I%} V-PERS-PAST ;                    !
-%<past%>:%>%{G%}%{A%}н V-PERS-COP-SUF ;               !
-%<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-COP-SUF ; ! evidential general past
-%<ifi%>%<evid%>:%>%{I%}пт%{I%} V-PERS-EVID-SUF ;      ! evidential recent past
+V-NONFINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
 
-LEXICON V-INFL-NON-FINITE
+V-NONFINITE-IRREGULAR_NEGATIVE ;
 
-V-INFL-NON-FINITE-IRREGULAR_NEGATIVE ;
-V-INFL-NON-FINITE-REGULAR_NEGATIVE ;
-%<neg%>:%>%{M%}%{A%} V-INFL-NON-FINITE-REGULAR_NEGATIVE ;
+LEXICON V-DER
 
-LEXICON V-INFL-COMMON
-
-V-INFL-FINITE-IRREGULAR_NEGATIVE ;
-V-INFL-FINITE-REGULAR_NEGATIVE ;
-%<neg%>:%>%{M%}%{A%} V-INFL-FINITE-REGULAR_NEGATIVE ;
-V-INFL-NON-FINITE ;
+%<coop%>:%>%{I%}с V-COMMON ;
 
 LEXICON V-TV
 
-%<v%>%<tv%>: V-INFL-COMMON ;
-%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-INFL-COMMON ;
-%<v%>%<tv%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-IV
 
-%<v%>%<iv%>: V-INFL-COMMON ;
-%<v%>%<iv%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
 
 LEXICON V-TD ! Temporary lexicon
 
-%<v%>%<TD%>: V-INFL-COMMON ;
-%<v%>%<TD%>%<coop%>:%>%{I%}с V-INFL-COMMON ;
+%<v%>%<TD%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
@@ -819,7 +863,7 @@ LEXICON Vinfl-AUX-IMPF
 
 LEXICON Vinfl-AUX
 
-%<vaux%>: V-INFL-COMMON ;          ! these four verbs in other tenses and all other aux. verbs
+%<vaux%>: V-COMMON ;          ! these four verbs in other tenses and all other aux. verbs
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
