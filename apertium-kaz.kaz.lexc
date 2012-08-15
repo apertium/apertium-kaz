@@ -660,18 +660,10 @@ LEXICON A4                 ! "pure" adjectives - no adverbial and substantive re
 
 %<adj%>: CLIT ;                                       !# ұлттық тағам
 
-LEXICON ADJ-COMMON
-
-%<adj%>: ADJ-LEVELS ;       ! FIXME:NOTE: <s>ADJ-COMMON is meant to be used as default cont. class
-                            ! for verbal adjectives</s> (but not all verbal adjectives can get comparative
-                            ! level ending --> consider A2 ). In contrast to <advl>, <subst> reading is what all
-                            ! words acting like adjective can get.
-%<adj%>%<subst%>: SUBST ;
-
 LEXICON V-ADJ
 
-ADJ-COMMON ;  
-CLIT ; 
+# ;
+%<subst%>: SUBST ;
 
 !!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION (V-INFL-COMMON)
 
@@ -799,7 +791,7 @@ GER-CASE-ETC ;
 %<pl%>:%>%{L%}%{A%}р GER-CASE-ETC ;
 GER-ABE-ETC ;
 
-!!!!!!!   end of gerunds inflection
+!!!!!!!   end of gerunds inflection lexicon
 
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
@@ -834,10 +826,9 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<gna_until%>:%>%{G%}%{A%}нш%{A%} CLIT ;
 %<gna_after%>:%>%{G%}%{A%}л%{I%} CLIT ;
 
-
 ! Verbal Adjectives
-%<gpr_fut%>:%>%{A%}р # ;
-%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>%с # ;
+%<gpr_fut%>:%>%{A%}р V-ADJ ;
+%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>%с V-ADJ ;
 
 %<gpr_ppot%>:%>%{A%}р%>л%{I%}к # ;
 %<neg%>%<gpr_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} # ;
@@ -863,9 +854,9 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<gna_cond%>:%>с%{A%} V-PERS-S2 ;
 
 ! Verbal adjectives
-%<gpr_past%>:%>%{G%}%{A%}н # ;
-%<gpr_impf%>:%>%{E%}т%{I%}н # ;
-%<gpr_pot%>:%>у%>ш%{I%} # ;
+%<gpr_past%>:%>%{G%}%{A%}н V-ADJ ;
+%<gpr_impf%>:%>%{E%}т%{I%}н V-ADJ ;
+%<gpr_pot%>:%>у%>ш%{I%} V-ADJ ;
 
 ! Gerunds
 %<ger%>:%>у GER-INFL ;
