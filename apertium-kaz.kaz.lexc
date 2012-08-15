@@ -791,7 +791,6 @@ LEXICON GER-POSS-REAL
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з GER-CASE-ETC ;
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р GER-CASE-ETC ;
 
-
 LEXICON GER-INFL
 
 GER-POSS-REAL ;
@@ -846,11 +845,11 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 !%<neg%>%<gpr_pot2%>:%>%{G%}%{I%}с # ; FIXME looks wrong
 
 ! Gerunds
-%<ger_fut%>:%>%{A%}р # ;
-%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с # ;
+%<ger_fut%>:%>%{A%}р GER-POSS-REAL ;
+%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSS-REAL ;
 
-%<ger_ppot%>:%>%{A%}р%>л%{I%}к # ;
-%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} # ;
+%<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-POSS-REAL ;
+%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} GER-POSS-REAL ;
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -870,10 +869,10 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Gerunds
 %<ger%>:%>у GER-INFL ;
-%<ger_past%>:%>%{G%}%{A%}н # ;
-%<ger_perf%>:%>%{G%}%{A%}н%>%{L%}%{I%}%{K%} # ;
-%<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} # ;
-%<ger_impf%>:%>%{E%}т%{I%}н # ;
+%<ger_past%>:%>%{G%}%{A%}н GER-INFL ;
+%<ger_perf%>:%>%{G%}%{A%}н%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_impf%>:%>%{E%}т%{I%}н GER-POSS-REAL ;
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-MODFOC ;
@@ -905,9 +904,9 @@ V-NONFINITE-REGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
-LEXICON V-DER
-
-%<coop%>:%>%{I%}с V-COMMON ;
+!LEXICON V-DER
+!
+!%<coop%>:%>%{I%}с V-COMMON ;
 
 LEXICON V-TV-NOPASS
 
