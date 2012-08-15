@@ -679,7 +679,7 @@ LEXICON V-PERS-S1-NO3PERSON
 
 LEXICON V-PERS-S1
 
-! Used for: -AR-<fut>, -GAn-<past>, -MAR-<fut_plan>,
+! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>,
 
 V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>:%> CLIT ;
@@ -808,8 +808,6 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
-! Cont. classes to be checked
-
 ! Participles
 %<prc_perf%>:%>%{I%}п CLIT-GHANA-ETC ;
 %<prc_perf%>:%>%{o%}%{I%}п CLIT-GHANA-ETC ;            ! Dir/LR
@@ -844,10 +842,8 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
-! Cont. classes to be checked
-
 ! Participles
-%<prc_impf%>:%>%{E%} # ;
+%<prc_impf%>:%>%{E%} CLIT-GHANA-ETC ;
 %<prc_cond%>:%>с%{A%} V-PERS-S2 ;
 
 ! Verbal adverbs
@@ -873,15 +869,15 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-MODFOC ;
 
 ! Optative/jussive forms
-%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н # ;
-!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н # ;              ! FIXME check
-%<opt%>%<p3%>%<sg%>:%>с%{I%}н # ;
-%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} # ;
-!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;         ! FIXME check
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н # ;
+%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT ;
+!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLIT ;              ! FIXME check
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLIT ;
+%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLIT ;
+!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;         ! FIXME check
+%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLIT ;
 
-!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} # ;  ! FIXME check
-!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} # ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
 
 LEXICON V-COMMON
 
@@ -919,11 +915,6 @@ LEXICON V-TV
 LEXICON V-IV
 
 %<v%>%<iv%>: V-COMMON ;
-!%<v%>%<iv%>: V-DER ;
-
-LEXICON V-TD ! Temporary lexicon
-
-%<v%>%<TD%>: V-COMMON ;
 !%<v%>%<iv%>: V-DER ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
