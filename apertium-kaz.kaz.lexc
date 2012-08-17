@@ -683,8 +683,8 @@ LEXICON V-PERS-S1
 ! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>,
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>:%> CLIT ;
-%<p3%>%<pl%>:%> CLIT ;
+%<p3%>%<sg%>: CLIT ;
+%<p3%>%<pl%>: CLIT ;
 
 LEXICON V-PERS-S2
 
@@ -708,9 +708,9 @@ LEXICON V-PERS-AOR
 V-PERS-S1-NO3PERSON ;
 %<p1%>%<sg%>:%>м CLIT ;                    ! Dir/LR
 %<p3%>%<sg%>:%>д%{I%} CLIT ;
-%<p3%>%<sg%>:%> CLIT-QST-MA ;              ! Dir/LR
+%<p3%>%<sg%>: CLIT-QST-MA ;              ! Dir/LR
 %<p3%>%<pl%>:%>д%{I%} CLIT ;
-%<p3%>%<pl%>:%> CLIT-QST-MA ;              ! Dir/LR ;
+%<p3%>%<pl%>: CLIT-QST-MA ;              ! Dir/LR ;
 
 LEXICON V-PERS-IFI_EVID
 
@@ -782,7 +782,7 @@ LEXICON GER-POSS-REAL
 %<px2pl%>:%>%{I%}ңд%{A%}р GER-CASE-ETC ;
 
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з GER-CASE-ETC ;
-%<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р GER-CASE-ETC ;
+%<px2pl%>%<frm%>:%>%{I%}ң%{I%}зд%{A%}р GER-CASE-ETC ;
 
 LEXICON GER-INFL
 
