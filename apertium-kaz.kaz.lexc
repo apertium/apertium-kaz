@@ -1157,7 +1157,8 @@ PRON-DEM-ANA ;
 
 LEXICON PRON-ITG-INFL
 
-%<prn%>%<itg%>: SUBST ;
+%<prn%>%<itg%>: GER-INFL ;
+%<prn%>%<itg%>%<pl%>: GER-INFL ;
 
 LEXICON PRON-ITG-QAYSI
 
@@ -1170,10 +1171,10 @@ LEXICON PRON-ITG-QAYSI
 қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLIT ;
 
 қайсы%<prn%>%<itg%>%<px%>:қайсынікі%{n%} CASE ;
-қайсы%<prn%>%<itg%>: POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
+қайсы%<prn%>%<itg%>: GER-POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
 
-қайсы%<prn%>%<itg%>%<pl%>:қайсылар CASE-ETC ;
-қайсы%<prn%>%<itg%>%<pl%>%<px3sp%>:қайсылары%{n%} CASE ;
+қайсы%<prn%>%<itg%>%<pl%>:қайсылар GER-CASE-ETC ;
+қайсы%<prn%>%<itg%>%<pl%>%<px3sp%>:қайсылары%{n%} GER-CASE-NO_COPULA ;
 ! ^ кайсылары(б/г)ыз are rare but possible in Tatar, so maybe these forms should
 ! be included too /IS/
 
@@ -1209,11 +1210,11 @@ PRON-ITG-QANDAY ;
 
 LEXICON PRON-QNT
 
-%<prn%>%<qnt%>: N-INFL-COMMON ; ! FIXME: Check contlex
+%<prn%>%<qnt%>: GER-INFL ;
 
 LEXICON PRON-IND
 
-%<prn%>%<ind%>: N-INFL-COMMON ; ! FIXME: Check contlex
+%<prn%>%<ind%>: GER-INFL ;
 
 LEXICON PRON-IND-POSS
 
@@ -1225,7 +1226,7 @@ LEXICON PRNNEG
 
 LEXICON PRON-RECIP
 
-%<prn%>%<recip%>: POSSESSION ;
+%<prn%>%<recip%>: POSS-REAL ;
 
 LEXICON PRON-REF-ADV
 
