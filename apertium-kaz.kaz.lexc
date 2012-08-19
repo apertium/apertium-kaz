@@ -31,6 +31,7 @@ Multichar_Symbols
 %<top%>       ! Toponym
 %<ant%>       ! Anthroponym
 %<cog%>       ! Cognomen
+%<pat%>       ! Patronym     ! Отчество
 %<org%>       ! Organization
 %<al%>        ! Other
 
@@ -1354,6 +1355,15 @@ LEXICON NP-COG-OB
 
 %<np%>%<cog%>%<f%>:а NP-COMMON ;
 %<np%>%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
+
+LEXICON NP-PAT-OVICH
+
+! For patronyms ending with -вич
+! Their feminine equivalets end with -вна /I.S./
+
+%<np%>%<pat%>%<m%>:вич NP-COMMON ;
+
+%<np%>%<pat%>%<f%>:вна NP-COMMON ;
 
 LEXICON NP-ORG
 
