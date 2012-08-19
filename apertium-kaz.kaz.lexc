@@ -1319,6 +1319,8 @@ N-INFL-COMMON ;
 LEXICON NP-TOP
 
 %<np%>%<top%>: NP-COMMON ;
+%<np%>%<top%>%<attr%>: # ;
+
 !%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
 
 LEXICON NP-ANT-M
