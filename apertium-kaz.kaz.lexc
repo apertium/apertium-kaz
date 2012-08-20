@@ -1372,7 +1372,7 @@ LEXICON NP-COG-OB
 %<np%>%<cog%>%<f%>:а NP-COMMON ;
 %<np%>%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
 
-LEXICON NP-PAT-OVICH
+LEXICON NP-PAT-VICH
 
 ! For patronyms ending with -вич
 ! Their feminine equivalets end with -вна /I.S./
@@ -3742,6 +3742,10 @@ XXI NUM-ROMAN ; ! ""
 Санкт%-Петербург:Санкт%-Петербург NP-TOP ; ! ""
 Тобольск:Тобольск NP-TOP ; ! ""
 Тобыл:Тобыл NP-TOP ; ! ""
+Ленинград:Ленинград NP-TOP ; ! ""
+Петербург:Петербург NP-TOP ; ! ""
+Сталинград:Сталинград NP-TOP ; ! ""
+Уфа:Уфа NP-TOP ; ! ""
 
 ! Countries
 !----------
@@ -4098,6 +4102,7 @@ XXI NUM-ROMAN ; ! ""
 Африка:Африка NP-TOP ; ! "Africa"
 Еуразия:Еуразия NP-TOP ; ! ""
 Еуропа:Еуропа NP-TOP ; ! "Europe"
+Антарктида:Антарктида NP-TOP ; ! ""
 
 Ағеділ:Ағеділ NP-TOP ; ! "reka Belaya in Tatarstan/Bashkortstan"
 Айдос:Айдос NP-TOP ; ! ""
@@ -4124,6 +4129,7 @@ XXI NUM-ROMAN ; ! ""
 Прорва:Прорва NP-TOP ; ! ""
 Сырдария:Сырдария NP-TOP ; ! ""
 Шолман:Шолман NP-TOP ; ! ""
+Байкал:Байкал NP-TOP ; ! ""
 
 Алай:Алай NP-TOP ; ! "Alay"
 Алаш:Алаш NP-TOP ; ! ""
@@ -4138,6 +4144,9 @@ XXI NUM-ROMAN ; ! ""
 Таяу% Шығыс:Таяу% Шығыс NP-TOP ; ! ""
 Тянь%-Шань:Тянь%-Шань NP-TOP ; ! "mountain"
 Ұлытау:Ұлытау NP-TOP ; ! ""
+Гималай:Гималай NP-TOP ; ! ""
+Тибет:Тибет NP-TOP ; ! ""
+Цейлон:Цейлон NP-TOP ; ! ""
 
 ! FIXME:
 !-------
@@ -6897,6 +6906,14 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 ! Fixme -- contains ascii characters ! Шamat NP-ANT-M; ! "Shamat" (Arabic)
 ! Fixme -- contains ascii characters ! Шыhtemіp NP-ANT-M; ! "Shıhtemip" (Kazakh)
 
+! Patronyms
+!==========
+
+Васильевич:Василье NP-PAT-VICH ; ! ""
+Павлович:Павло NP-PAT-VICH ; ! ""
+Сергеевич:Сергее NP-PAT-VICH ; ! ""
+Иванович:Ивано NP-PAT-VICH ; ! ""
+
 ! Cognoms
 !========
 
@@ -8930,6 +8947,11 @@ Witness:Witness NP-AL ; ! ""
 Юность:Юность NP-AL ; ! ""
 Остров:Остров NP-AL ; ! ""
 Мир:Мир NP-AL ; ! ""
+
+Аполло:Аполло NP-AL ; ! ""
+Атлант:Атлант NP-AL ; ! ""
+Волга:Волга NP-AL ; ! ""
+Қазақфильм:Қазақфильм NP-AL ; ! ""
 
 !==================!
  LEXICON Adjectives
