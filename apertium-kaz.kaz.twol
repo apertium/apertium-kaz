@@ -119,19 +119,22 @@ Rules
 !!!! Assimilation !!!!
 
 "Forward voicing assimilation"
-Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
-    AbstrVoicelessCns:/[ %-: | %>: ] _ ;
+Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | %  ] _ ;
+          AbstrVoicelessCns:/[ %-: | %>: ] _ ;
           where Cx in ( %{M%}  %{D%}  %{L%}  %{N%} )
                 Cy in (   п      т      т      т   )
                 matched;
 
 "Voicing assimilation of front G"
-%{G%}:к <=> [ :FrontVow | %{э%}: ] [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
-                                            [ :VoicelessCns & :FrontCns ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
-                                                                       [ %{э%}: %{с%}: ]/[ %>: | :%- ] _ ;
+%{G%}:к <=> [ :FrontVow | :и | :у | %{э%}: ] [ :Cns* [ :VoicelessCns - :BackCns ] ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
+                                                      [ :VoicelessCns & :FrontCns ]/[ %>: | [ :0 - [ ы:0 | Abstract:0 ] ] ] _ ;
+                                                                                            [ %{э%}: %{с%}: ]/[ %>: | :%- ] _ ;
+             except
+                                                                 [ ы:0 [ :и | :у ] :Cns* [ :VoicelessCns - :BackCns ] ]/%>: _ ;
+
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] | т:0 ] _ ;
                                                                      [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
 
 "Voicing assimilation of G across space"
@@ -164,8 +167,9 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!! Vowel Harmony !!!!
 
 "I Vowel Harmony"
-%{I%}:і <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-            [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
+%{I%}:і <=> [ [ :FrontVow | :и | :у ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+                             [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
                                     [ :FrontCns :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
                                  [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
             except
@@ -174,9 +178,11 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                  [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
 !                                                 [ й: ]/[ %>: | :0 ] _ ;
                                                              %{o%}:0 _ ;
+                                       [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
 
 "A Vowel Harmony"
-%{A%}:е <=> [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
+%{A%}:е <=> [ [ :FrontVow | :и | :у ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
+!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
            [ %{э%}:0 :Cns* :CnsRight ]/[ %>: | %-: | AbstrCns: | %{S%}: ] _ ;
                                     [ %{э%}:0 AbstrCns:0* ]/[ %>: | %-: ] _ ;
                                          [ :FrontCns :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
@@ -185,6 +191,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                                 [ :BackCns ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
                                                            [ й: ]/[ %>: ] _ ;
+                                            [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
 
 "E Vowel Harmony"
 %{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0 ] _ ;
@@ -333,6 +340,15 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{I%}:0 <=> %{n%}:н/[ :0 | %>: ] _ ;
             except
                          %{o%}:0 _ ;
+
+"Deletion of т when usually Russian word ending in ст precedes suffix starting in т"
+т:0 <=> :с/:0 _ [ %{L%}: | %{N%}: | %{D%}: ]/:0 ;
+!
+! журналист:журналист
+! журналист>LAр:журналистер
+! журналист>NI:журналисті
+!
+! should also apply optionally to all suffixed forms (e.g. журналист>GA:журналиске is attested, but not as common as :журналистке)
 
 "Deletion of numeral final - in nominative"
 %-:0 <=> [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] _  .#. ;
