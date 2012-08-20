@@ -1349,9 +1349,15 @@ LEXICON NP-COG-OB
 
 ! For cognoms ending with -ов, -ев, -ин
 ! They derive feminine equivalets taking -а /I.S./
+! Also, even the ев ones are normally pronounced
+!    (and take harmony) as if they end in йыф/йып
 
-%<np%>%<cog%>%<m%>: NP-COMMON ;
-%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+%<np%>%<cog%>%<m%>: NP-COMMON ;                       ! Dir/LR
+%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;    ! Dir/LR
+
+%<np%>%<cog%>%<m%>:%{а%}%{с%} NP-COMMON ;
+%<np%>%<cog%>%<m%>%<pl%>:%{а%}%{с%}%>%{L%}%{A%}р NP-COMMON ;
+
 
 %<np%>%<cog%>%<f%>:а NP-COMMON ;
 %<np%>%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
