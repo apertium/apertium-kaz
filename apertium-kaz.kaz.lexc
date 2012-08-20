@@ -1305,6 +1305,11 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
 %<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
 %<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
 
+LEXICON N3
+
+%<n%>%<attr%>: # ;
+%<n%>: N-INFL-COMMON ;
+
 LEXICON NAT
 ! Nationalites
 
@@ -3576,6 +3581,9 @@ XXI NUM-ROMAN ; ! ""
 этнограф:этнограф N1 ; ! ""
 этнос:этнос N1 ; ! ""
 ядро:ядро N1 ; ! ""
+компартия:компартия N1 ; ! ""
+Аллаһ:Аллаһ N3 ; ! ""
+Будда:Будда N3 ; ! ""
 
 ! Nouns used as postpositions when <posssessive><case>
 !=====================================================
@@ -3633,6 +3641,7 @@ XXI NUM-ROMAN ; ! ""
 итальян:итальян NAT ; ! ""
 швед:швед NAT ; ! ""
 якут:якут NAT ; ! ""
+американ:американ NAT ; ! ""
 
 ! FIXME:
 !=======
