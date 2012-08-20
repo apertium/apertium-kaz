@@ -1310,14 +1310,19 @@ LEXICON N3
 %<n%>%<attr%>: # ;
 %<n%>: N-INFL-COMMON ;
 
-LEXICON NAT
+!LEXICON NAT
 ! Nationalites
 
 !A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]" ! Consider <n.attr> reading for this 
-N1 ;              ! a member of the nationality, e.g. "A Turk"
-:%>ш%{A%} ADV ;   ! as / in the style of the nat., e.g. "à la Turk"
+!N1 ;              ! a member of the nationality, e.g. "A Turk"
+!:%>ш%{A%} ADV ;   ! as / in the style of the nat., e.g. "à la Turk"
 !:%>ш%{A%} ADV ;   ! in the language of the nationality, e.g. "in Turkish" ! I guess ADJ was meant /I.S./
-:%>ш%{A%} N1 ;    ! the language of the nationality, e.g. "Turkish"
+!:%>ш%{A%} N1 ;    ! the language of the nationality, e.g. "Turkish"
+
+LEXICON ADV-LANG
+
+N1 ;
+ADV ;
 
 LEXICON NP-COMMON
 N-INFL-COMMON ;
@@ -3610,46 +3615,46 @@ XXI NUM-ROMAN ; ! ""
 ! Nationalities
 !==============
 
-ағылшын:ағылшын NAT ; ! "English"
-араб:араб NAT ; ! "Arab"
-грек:грек NAT ; ! "Greek"
-исраилдік:исраилдік NAT ; ! "Israelite"
-Калмак:Калмак NAT ; ! "Kalmyk" 
-карел:карел NAT ; ! ""
-қазақ:қазақ NAT ; ! "Kazakh"
-қазақ:казақ NAT ; ! "Kazakh" Dir/LR
-қырғыз:қырғыз NAT ; ! "Kyrgyz"
-қытай:қытай NAT ; ! "Chinese"
-латын:латын NAT ; ! "Latin"
-моңғол:моңғол NAT ; ! "Mongol"
-моңғол:монғол NAT ; ! "Mongol" Dir/LR
-Негр:Негр NAT ; ! "Negro"
-неміс:неміс NAT ; ! "German"
-орыс:орыс NAT ; ! "Russian"
-өзбек:өзбек NAT ; ! "Uzbek"
-парсы:парсы NAT ; ! "Persian"
-татар:татар NAT ; ! "Tatar"
-тәжік:тәжік NAT ; ! ""
-түрік:түрік NAT ; ! "Turkish"
-украин:украин NAT ; ! ""
-француз:француз NAT ; ! "French"
-чех:чех NAT ; ! "Czech"
-чуваш:чуваш NAT ; ! "Chuvash"
-яһуди:яһуди NAT ; ! "Jewish/Jew"
-грузин:грузин NAT ; ! ""
-бурят:бурят NAT ; ! ""
-венгр:венгр NAT ; ! ""
-белорус:белорус NAT ; ! ""
-арамей:арамей NAT ; ! ""
-поляк:поляк NAT ; ! ""
-урду:урду NAT ; ! ""
-мордва:мордва NAT ; ! ""
-гуарани:гуарани NAT ; ! ""
-башқұрт:башқұрт NAT ; ! ""
-итальян:итальян NAT ; ! ""
-швед:швед NAT ; ! ""
-якут:якут NAT ; ! ""
-американ:американ NAT ; ! ""
+ағылшын:ағылшын N1 ; ! "English"
+араб:араб N1 ; ! "Arab"
+грек:грек N1 ; ! "Greek"
+исраилдік:исраилдік N1 ; ! "Israelite"
+Калмак:Калмак N1 ; ! "Kalmyk" 
+карел:карел N1 ; ! ""
+қазақ:қазақ N1 ; ! "Kazakh"
+қазақ:казақ N1 ; ! "Kazakh" Dir/LR
+қырғыз:қырғыз N1 ; ! "Kyrgyz"
+қытай:қытай N1 ; ! "Chinese"
+латын:латын N1 ; ! "Latin"
+моңғол:моңғол N1 ; ! "Mongol"
+моңғол:монғол N1 ; ! "Mongol" Dir/LR
+Негр:Негр N1 ; ! "Negro"
+неміс:неміс N1 ; ! "German"
+орыс:орыс N1 ; ! "Russian"
+өзбек:өзбек N1 ; ! "Uzbek"
+парсы:парсы N1 ; ! "Persian"
+татар:татар N1 ; ! "Tatar"
+тәжік:тәжік N1 ; ! ""
+түрік:түрік N1 ; ! "Turkish"
+украин:украин N1 ; ! ""
+француз:француз N1 ; ! "French"
+чех:чех N1 ; ! "Czech"
+чуваш:чуваш N1 ; ! "Chuvash"
+яһуди:яһуди N1 ; ! "Jewish/Jew"
+грузин:грузин N1 ; ! ""
+бурят:бурят N1 ; ! ""
+венгр:венгр N1 ; ! ""
+белорус:белорус N1 ; ! ""
+арамей:арамей N1 ; ! ""
+поляк:поляк N1 ; ! ""
+урду:урду N1 ; ! ""
+мордва:мордва N1 ; ! ""
+гуарани:гуарани N1 ; ! ""
+башқұрт:башқұрт N1 ; ! ""
+итальян:итальян N1 ; ! ""
+швед:швед N1 ; ! ""
+якут:якут N1 ; ! ""
+американ:американ N1 ; ! ""
 
 ! FIXME:
 !=======
@@ -9629,6 +9634,49 @@ Witness:Witness NP-AL ; ! ""
 !ежелгі A1 ; ! "ancient"
 !төменгі A1 ; ! "lower"
 
+! Languages :)
+!=============
+
+! FIXME CHECK
+
+ағылшынша:ағылшынша ADV-LANG ; ! "English"
+арабша:арабша ADV-LANG ; ! "Arab"
+грекше:грекше ADV-LANG ; ! "Greek"
+калмакша:калмакша ADV-LANG ; ! "Kalmyk" 
+карелша:карелша ADV-LANG ; ! ""
+қазақша:қазақша ADV-LANG ; ! "Kazakh"
+қазақ:казақша ADV-LANG ; ! "Kazakh" Dir/LR
+қырғызша:қырғызша ADV-LANG ; ! "Kyrgyz"
+қытайша:қытайша ADV-LANG ; ! "Chinese"
+латынша:латынша ADV-LANG ; ! "Latin"
+моңғолша:моңғолша ADV-LANG ; ! "Mongol"
+моңғолша:монғолша ADV-LANG ; ! "Mongol" Dir/LR
+немісше:немісше ADV-LANG ; ! "German"
+орысша:орысша ADV-LANG ; ! "Russian"
+өзбекше:өзбекше ADV-LANG ; ! "Uzbek"
+парсышп:парсыша ADV-LANG ; ! "Persian"
+татаршп:татарша ADV-LANG ; ! "Tatar"
+тәжікше:тәжікше ADV-LANG ; ! ""
+түрікше:түрікше ADV-LANG ; ! "Turkish"
+украинша:украинша ADV-LANG ; ! ""
+французша:французша ADV-LANG ; ! "French"
+чехше:чехше ADV-LANG ; ! "Czech"
+чувашша:чувашша ADV-LANG ; ! "Chuvash"
+яһудише:яһудише ADV-LANG ; ! "Jewish/Jew"
+грузинша:грузинша ADV-LANG ; ! ""
+бурятша:бурятша ADV-LANG ; ! ""
+венгрше:венгрше ADV-LANG ; ! ""
+белорусша:белорусша ADV-LANG ; ! ""
+арамейша:арамейша ADV-LANG ; ! ""
+полякша:полякша ADV-LANG ; ! ""
+урдуша:урдуша ADV-LANG ; ! ""
+мордваша:мордваша ADV-LANG ; ! ""
+гуараниша:гуараниша ADV-LANG ; ! ""
+башқұртша:башқұртша ADV-LANG ; ! ""
+итальянша:итальянша ADV-LANG ; ! ""
+шведше:шведше ADV-LANG ; ! ""
+якутша:якутша ADV-LANG ; ! ""
+американша:американша ADV-LANG ; ! ""
 
 !=============!
  LEXICON Verbs
