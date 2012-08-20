@@ -1337,6 +1337,11 @@ LEXICON NP-ANT-F
 %<np%>%<ant%>%<f%>: NP-COMMON ;
 %<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
+LEXICON NP-COG-M
+ 
+%<np%>%<cog%>%<m%>: NP-COMMON ; 
+%<np%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+
 LEXICON NP-COG-MF
 
 ! Dual-gender cognoms.
@@ -3743,6 +3748,7 @@ XXI NUM-ROMAN ; ! ""
 Армения:Армения NP-TOP ; ! "Armenia"
 Ауғанстан:Ауғанстан NP-TOP ; ! "Afghanistan"
 Әзірбайжан:Әзірбайжан NP-TOP ; ! "Azerbaijan"
+Әзербайжан:Әзербайжан NP-TOP ; ! "Azerbaijan" Dir/LR
 Беларусь:Беларусь NP-TOP ; ! "Belarus"
 Бельгия:Бельгия NP-TOP ; ! "Belgium"
 Болгария:Болгария NP-TOP ; ! "Bulgaria"
@@ -3926,6 +3932,10 @@ XXI NUM-ROMAN ; ! ""
 Экваторлық% Гвинея:Экваторлық% Гвинея NP-TOP ; ! ""
 Эритрея:Эритрея NP-TOP ; ! ""
 Эфиопия:Эфиопия NP-TOP ; ! ""
+Византия:Византия NP-TOP ; ! ""
+Зеландия:Зеландия NP-TOP ; ! ""
+Моғолстан:Моғолстан NP-TOP ; ! ""
+Осман:Осман NP-TOP ; ! ""
 
 ! Cities of the world
 !--------------------
@@ -4065,6 +4075,9 @@ XXI NUM-ROMAN ; ! ""
 Стокгольм:Стокгольм NP-TOP ; ! ""
 Таллин:Таллин NP-TOP ; ! ""
 Тирана:Тирана NP-TOP ; ! ""
+Нарын:Нарын NP-TOP ; ! ""
+Ферғана:Ферғана NP-TOP ; ! ""
+Венеция:Венеция NP-TOP ; ! ""
 
 ! Other toponyms
 !---------------
@@ -6857,6 +6870,13 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Юлия:Юлия NP-ANT-F ; ! ""
 Юрий:Юрий NP-ANT-M ; ! ""
 Яһуда:Яһуда NP-ANT-M ; ! "Yahuda"
+Аристотель:Аристотель NP-ANT-M ; ! ""
+Гомер:Гомер NP-ANT-M ; ! ""
+Ибраһим:Ибраһим NP-ANT-M ; ! ""
+Карл:Карл NP-ANT-M ; ! ""
+Леонардо:Леонардо NP-ANT-M ; ! ""
+Михаэлис:Михаэлис NP-ANT-M ; ! ""
+Платон:Платон NP-ANT-M ; ! ""
 
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
@@ -6870,6 +6890,11 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 
 ! Cognoms
 !========
+
+! Masculine
+!----------
+
+Толстой:Толстой NP-COG-M ; ! ""
 
 ! Masculine/feminine
 !-------------------
@@ -7074,6 +7099,11 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Антоненко:Антоненко NP-COG-MF ; ! ""
 Анищенко:Анищенко NP-COG-MF ; ! ""
 Авраменко:Авраменко NP-COG-MF ; ! ""
+Гоголь:Гоголь NP-COG-MF ; ! ""
+Маркс:Маркс NP-COG-MF ; ! ""
+Мендель:Мендель NP-COG-MF ; ! ""
+Шевченко:Шевченко NP-COG-MF ; ! ""
+Шекспир:Шекспир NP-COG-MF ; ! ""
 
 ! Masculine -ов and -ин cognoms
 !------------------------------
@@ -8794,6 +8824,7 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Ямышев:Ямышев NP-COG-OB ; ! ""
 Яранцев:Яранцев NP-COG-OB ; ! ""
 Ярославцев:Ярославцев NP-COG-OB ; ! ""
+Пушкин:Пушкин NP-COG-OB ; ! ""
 
 ! Organizations
 !==============
