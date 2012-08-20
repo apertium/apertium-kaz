@@ -218,7 +218,8 @@ Multichar_Symbols
 %{I%}         ! Archiphoneme 'i': realised as і, ы
 %{S%}         ! Realised as 'с' or ''; only used in 3rd person morphology
 %{K%}         ! Realised as 'к' or 'қ'
-%{n%}         ! Realised as 'н' or ''; only used in 3rd person morphology and -NIKI
+%{n%}         ! Realised as 'н' or '';
+              ! only used in 3rd person morphology and -NIKI
 %{l%}         ! Realised as 'л' or 'н'; only used in passive -{I}{l}
 %{y%}         ! Realised as '' or '{I}'; only used in epenthesis for nouns
 %{o%}         ! Realised as ''; triggers dialectal interpretation of Iп
@@ -433,14 +434,16 @@ N-INFL-COMMON ;
 
 ! NOTE: Some substantivised things might not have pl. form, numerals e.g.
 ! (not too sure, because in Tatar they have it:
-! #1 meaning an approximate number: #! "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
-! #2 <11 ones meaning pupils from a given class: #! өчләр = "pupils from the 3. class" 
+! #1 meaning an approximate number:
+     !# "Мин белгәндә аңа, мөгаен, _иллеләр_ тирәсе булгандыр."
+! #2 <11 ones meaning pupils from a given class:
+     !# өчләр = "pupils from the 3. class"
 !
-! If they don't have pl. form; link them to N-INFL-COMMON; if they do - to SUBST.
+! If they don't take plural; link them to N-INFL-COMMON; if they do - to SUBST.
 ! That's the only difference between N-INFL-COMMON and SUBST.
 !                                                                     /I.S./
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !!!!!!!!!!!!!!!!!!!!!!     CLITICS
 
@@ -893,31 +896,31 @@ V-NONFINITE-REGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
-!LEXICON V-DER
-!
-!%<coop%>:%>%{I%}с V-COMMON ;
+LEXICON V-DER
+
+%<coop%>:%>%{I%}с V-COMMON ;
 
 LEXICON V-TV-NOPASS
 
 %<v%>%<tv%>: V-COMMON ;
-!%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>: V-DER ;
 
 LEXICON V-TV-PASS
 
 ! e.g. көрін
 %<v%>%<tv%>%<pass%>: V-COMMON ;
-!%<v%>%<tv%>%<pass%>: V-DER;
+%<v%>%<tv%>%<pass%>: V-DER;
 
 LEXICON V-TV
 
 %<v%>%<tv%>: V-COMMON ;
-!%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>: V-DER ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-IV
 
 %<v%>%<iv%>: V-COMMON ;
-!%<v%>%<iv%>: V-DER ;
+%<v%>%<iv%>: V-DER ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
@@ -927,7 +930,7 @@ LEXICON Vinfl-AUX-IMPF
 
 LEXICON Vinfl-AUX
 
-%<vaux%>: V-COMMON ;          ! these four verbs in other tenses and all other aux. verbs
+%<vaux%>: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
