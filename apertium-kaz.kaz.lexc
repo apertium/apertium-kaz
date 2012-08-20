@@ -238,6 +238,8 @@ Multichar_Symbols
 %{т%}         !
 %{с%}         !
 
+%{☭%}         ! Used to tell the phonology about a Russian word
+
 %>            ! Morpheme boundary
 %             ! Space
 %-            !
@@ -1301,6 +1303,11 @@ LEXICON N1
 
 %<n%>%<attr%>: # ;
 %<n%>: SUBST ;
+
+LEXICON N-RUS
+! This is only really needed for Russian noun stems where the last vowel is и or у.
+
+%{☭%} N1 ;
 
 LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
@@ -2396,15 +2403,14 @@ XXI NUM-ROMAN ; ! ""
 инвестиция:инвестиция N1 ; ! ""
 индекс:индекс N1 ; ! ""
 индуизм:индуизм N1 ; ! ""
-индустрия:индустрия N1 ; ! ""
+индустрия:индустрия N-RUS ; ! ""
 ине:ине N1 ; ! "needle"
-инженер:инженер N1 ; ! ""
-институт:институт N1 ; ! ""
-инстиут:инстиут N1 ; ! "institute"
-интеллигенция:интеллигенция N1 ; ! ""
-интеллигенция:интеллигенция N1 ; ! ""
-интернет:интернет N1 ; ! "internet"
-инфляция:инфляция N1 ; ! ""
+инженер:инженер N-RUS ; ! ""
+институт:институт N-RUS ; ! ""
+инстиут:инстиут N1 ; ! "institute"  ! FIXME: what?
+интеллигенция:интеллигенция N-RUS ; ! ""
+интернет:интернет N-RUS ; ! "internet"
+инфляция:инфляция N-RUS ; ! ""
 инь:инь N1 ; ! ""
 ион:ион N1 ; ! ""
 ипотека:ипотека N1 ; ! ""
@@ -2417,7 +2423,7 @@ XXI NUM-ROMAN ; ! ""
 ілгек:ілгек N1 ; ! "hook"
 ілгері:ілгері N1 ; ! "forward"
 ілім:ілім N1 ; ! "school of thought,teaching"
-ілмек:ілмек N1 ; ! "loop"
+ілмек:ілмек N1 ; ! "loop" (not "hook"?)
 ілтипат:ілтипат N1 ; ! "attention"
 інжір:інжір N1 ; ! "fig"
 іні:іні N1 ; ! "brother of younger sister's"
