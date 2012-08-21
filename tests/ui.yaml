@@ -1,0 +1,35 @@
+Config:
+  hfst:
+    App: hfst-optimised-lookup
+    Gen: ../kaz.autogen.hfst
+    Morph: ../kaz.automorf.hfst
+
+
+Tests:
+  "Kazakh words with morphological и and у and front vowels":
+    ері<v><iv><ger><acc> : еруді
+    ері<v><iv><ger><gen> : ерудің
+    ері<v><iv><ger><pl><acc> : ерулерді
+    ері<v><iv><aor><p3><sg> : ериді
+
+  "Kazakh words with morphological и and у and back vowels":
+    оқы<v><iv><ger><acc> : оқуды
+    оқы<v><iv><ger><gen> : оқудың
+    оқы<v><iv><ger><pl><acc> : оқуларды
+    оқы<v><iv><aor><p3><sg> : оқиды
+
+  "Russian words with и":
+    журналист<n><gen> : журналисттер
+    журналист<n><abl> : журналисттен
+    организм<n><gen> : организмдер
+    организм<n><abl> : организмден
+
+  "Russian words with у":
+    минут<n><gen> : минуттың
+    минут<n><abl> : минуттан
+    клуб<n><gen> : клубтың
+    клуб<n><abl> : клубтан
+
+  "Russian words with у and и":
+    институт<n><gen> : институтты
+    институт<n><abl> : институттан
