@@ -25,6 +25,7 @@ LIST N = n ;
 LIST PropN = np ;
 LIST V = v ;
 LIST Vaux = vaux ;
+LIST Cop = cop ;
 LIST Det = det ; 
 LIST CC = cnjcoo ;
 LIST CS = cnjsub ;
@@ -54,6 +55,8 @@ LIST Sg = sg ;
 LIST Pl = pl ;
 
 LIST Acc = acc ;
+
+LIST P3 = p3 ;
 
 # Verbal Properties 
 # -----------------
@@ -192,9 +195,13 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ###################   TO BE DONE   ####################
 
 # get rid of plural verb reading if subject is not plural
+# ^ doesn't work when sentence has an object in plural, so just remove 3P PL reading
+# (btw, better idea to tag it as <p3><sp> I think)
 
-REMOVE Pl IF (0 V-P3) (NOT -1* N-PL-NOM BARRIER BOS) ;
-
+ REMOVE Pl IF
+        (0 V OR Vaux OR Cop)
+        (0 P3)
+;
     ## FIXME:EXTEND: subject can be a pronoun too. Or a substantivized adjective.
     ## But start with (personal) pronouns.
     #! Бірақ кеше өте суық ^еді/е<cop><ifi><p3><pl>/е<cop><ifi><p3><sg>$^!
