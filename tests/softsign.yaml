@@ -1,0 +1,12 @@
+Config:
+  hfst:
+    App: hfst-optimised-lookup
+    Gen: ../kaz.autogen.hfst
+    Morph: ../kaz.automorf.hfst
+
+
+Tests:
+  "Russian words ending in ь":
+    автомобиль<n><nom> : автомобиль
+    автомобиль<n><pl><nom> : автомобильдер
+    автомобиль<n><gen> : автомобильдің
