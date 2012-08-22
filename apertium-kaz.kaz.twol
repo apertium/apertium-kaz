@@ -100,7 +100,7 @@ Rules
 %{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | :ь ]* _ ;
                                         [ %{й%}: | %{л%}: | %{н%}: | %{з%}: ]/[ %-: | %%: | %>: ] _ ;
             except
-                    :Nasals %>: _ Vow :Nasals ;
+                    :Nasals/[ :0 - Abstract:0 ]  _ :Vow :Nasals ;
                      %{n%}: %>: _ ;
 
 "L Desonorisation"
@@ -115,7 +115,7 @@ Rules
 
 !!!! Nasal harmony !!!!
 "D nasal harmony"
-%{D%}:н <=> :Nasals %>: _ Vow :Nasals ;
+%{D%}:н <=> :Nasals/[ :0 - Abstract:0 ] _ :Vow :Nasals ;
             %{n%}:0 %>: _ Vow :Nasals ;
             %{н%}:0 [ %-: | %>: ]* _ Vow :Nasals ;
 
