@@ -135,6 +135,8 @@ LIST V-P3 = (v TD aor p3 sg) (v TD neg aor p3 sg) (v TD ifi p3 sg) (v tv fut_pla
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 
 SET V-NotGerund = V - Gerund ;
+
+LIST Pers-Copula = (cop p3 sg)   (cop p3 pl) ;
  
 # Barriers 
 # --------
@@ -269,8 +271,16 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 # Бөлмеде шкаф бар, содан бiр кiтап ал.
 
+
 #
-REMOVE Prc IF
+ REMOVE Prc IF
         (NOT 1C V OR Vaux)
+;
+#
+
+
+#
+ REMOVE Pers-Copula IF
+        (NOT 1 EOS)
 ;
 #
