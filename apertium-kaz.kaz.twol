@@ -97,14 +97,14 @@ Rules
 !!!! Desonorisation !!!!
 
 "N Desonorisation"
-%{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | :ь ]* _ ;
+%{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | с:0 | :ь ]* _ ;
                                         [ %{й%}: | %{л%}: | %{н%}: | %{з%}: ]/[ %-: | %%: | %>: ] _ ;
             except
                     :Nasals/[ :0 - Abstract:0 ]  _ :Vow :Nasals ;
                      %{n%}: %>: _ ;
 
 "L Desonorisation"
-%{L%}:д <=> [ :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | :ь ]* _ ;
+%{L%}:д <=> [ :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | с:0 | :ь ]* _ ;
                                                    [ %{л%}: | %{н%}: | %{з%}: ] %>: _ ;
 
 "M Desonorisation"
@@ -122,7 +122,7 @@ Rules
 !!!! Assimilation !!!!
 
 "Forward voicing assimilation"
-Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | %  | %{☭%}:0 ] _ ;
+Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | с:0 | %  | %{☭%}:0 ] _ ;
           AbstrVoicelessCns:/[ %-: | %>: ] _ ;
           where Cx in ( %{M%}  %{D%}  %{L%}  %{N%} )
                 Cy in (   п      т      т      т   )
@@ -137,7 +137,7 @@ Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | %  | %{☭%}:0 ] _ ;
 
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] | т:0 ] _ ;
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] | т:0 | с:0 ] _ ;
                                                                      [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
 
 "Voicing assimilation of G across space"
@@ -172,7 +172,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "I Vowel Harmony"
 %{I%}:і <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
 !            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-!                             [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 ] _ ;
+                       [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 | с:0 ] _ ;
                  [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
                         [ :FrontCns :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
                      [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
@@ -388,6 +388,10 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Deletion of ь when vowel-initial stem follows"
 ь:0 <=> _ [ :Vow ]/[ :0 ] ;
 
+"Deletion of с at end of сс stem with suffix"
+с:0 <=> :с _ ;
+        except
+        :с _ :0* .#. ;
 
 "{д} surfaces before vowels"
 ! ал%{д%}+{D}{A}н     ал%{д%}+{I}
