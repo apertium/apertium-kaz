@@ -174,11 +174,6 @@ REMOVE Attr IF (NOT 1 N);
 SELECT Adv IF (0 ("өте")) (1 A);
     #! Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
 
-# RISKY
-REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
-    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
-    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
-
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
@@ -306,3 +301,13 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (-1 N)
 ; 
 # 169. Музей қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
+
+
+# RISKY
+#REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
+    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst acc))
+        (0 A)
+        (NOT 1 V)
+;
