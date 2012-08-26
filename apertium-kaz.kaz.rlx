@@ -291,3 +291,10 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (-1 (np top))
 ;
 # 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+
+# FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
+# (because it has cop p3 subreding I guess)
+ "<жинағы>" SELECT N IF
+        (-1 ("<жәдігерлер>"))
+;
+# 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
