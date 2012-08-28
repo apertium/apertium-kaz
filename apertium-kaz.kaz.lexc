@@ -1440,23 +1440,31 @@ LEXICON POSTADV
 
 %<postadv%>: # ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON KI
+
+%<attr%>:%>%{G%}%{I%} CLIT ;
+
 LEXICON ADV
 
 %<adv%>: CLIT ;
 
-!LEXICON ADV-WITH-KI (Why commented out - see note in the Adverbs section
-!                    of the Root Lexicon /12072012 I.S./
-!ADV ;
-!:%>%{G%}%{I%} A2 ; 
+LEXICON ADV-WITH-KI
+
+ADV ;
+%<adv%>: KI ;
 
 !LEXICON ADV-WITH-KI-I     ! Used only for бері<adv>/бергі<adj> right now
 !
 !і:%{I%} ADV ;
-!гі:гі A3 ; 
+!гі:гі A3 ;
 
 LEXICON ADVITG
 
-%<adv%>%<itg%>: # ; 
+%<adv%>%<itg%>: # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CC
 
@@ -9564,12 +9572,12 @@ Witness:Witness NP-AL ; ! ""
 ! Interrogative adverbs
 !======================
 
-осылайша:осылайша ADV ; ! "" FIXME not good, temporal solution
-
 қайда:қайда ADVITG ; ! "where (где;куда)"
 қалай:қалай ADVITG ; ! "how"
 қашан:қашан ADVITG ; ! "when"
 неғұрлым:неғұрлым ADVITG ; ! ""
+
+осылайша:осылайша ADV ; ! "" FIXME not good, temporal solution
 
 еш% қашан:еш% қашан ADV ; ! "never" Use/MT
 ешқашан:ешқашан ADV ; ! "never"
@@ -9631,7 +9639,7 @@ Witness:Witness NP-AL ; ! ""
 биыл:биыл ADV ; ! "this year > this year's"
 бүгін:бүгін ADV ; ! "today > today's"
 бұрын:бұрын ADV ; ! "earlier"
-былтыр:былтыр ADV ; ! "last year > last year's"
+былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
 енді:енді ADV ; ! "contrastive now > the one now"
 кәзір:кәзір ADV ; ! "now > the one now (dial.)"
 кейін:кейін ADV ; ! "after"
