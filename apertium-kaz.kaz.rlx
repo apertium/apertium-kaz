@@ -318,3 +318,11 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
  "<сый>" SELECT N
 ; 
 # 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
+
+# if a word is ambigious between verbal adjective and gerund (in nominative - if there is a case affix it's a bit
+# complicated since the verbal adjective can be substantivized), select verbal adverb reading if a noun follows
+# SELECT V-ADJECTIVE IF
+#        (0 Gerund (nom))
+#        (0 V-ADJECTIVE)
+#        (1 N)
+#;
