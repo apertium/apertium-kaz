@@ -1455,10 +1455,10 @@ LEXICON ADV-WITH-KI
 ADV ;
 %<adv%>: KI ;
 
-!LEXICON ADV-WITH-KI-I     ! Used only for бері<adv>/бергі<adj> right now
-!
-!і:%{I%} ADV ;
-!гі:гі A3 ;
+LEXICON ADV-WITH-KI-I     ! Used only for бері<adv>/бергі<adv><attr> right now
+
+:і ADV ;
+%<adv%>: KI ;
 
 LEXICON ADVITG
 
@@ -9633,12 +9633,13 @@ Witness:Witness NP-AL ; ! ""
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
-бері:бері ADV-WITH-KI ; ! "to the near side"
 биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
 бүгін:бүгін ADV-WITH-KI ; ! "today > today's"
 бұрын:бұрын ADV-WITH-KI ; ! "earlier"
 былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
+ежел:ежел ADV-WITH-KI ; ! "ancient"
 енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
+жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
 кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
 кейін:кейін ADV-WITH-KI ; ! "after"
 кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
@@ -9646,25 +9647,12 @@ Witness:Witness NP-AL ; ! ""
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
 соң:соң ADV-WITH-KI ; ! ""
 таңертең:таңертең ADV-WITH-KI ; ! "morning"
+төмен:төмен ADV-WITH-KI ; ! "lower"
 
-!бер:бер ADV-WITH-KI-I ; ! "on the near side"
+бері:бер ADV-WITH-KI-I ; ! "on the near side"
 
-!алғашқы A1 ; ! "first"
-!бұрынғы A1 ; ! "long-ago"
-!жаңағы A1 ; ! "a while ago's"
-!бағанағы A1 ; ! "the one just now"
-!ендігі A1 ; ! "the one now"
-!қазіргі A1 ; ! "the one now"
-!биылғы A1 ; ! "this year's"
-!былтырғы A1 ; ! "last year's"
-!кешегі A1 ; ! "yesterday's"
-!таңертеңгі A1 ; ! "morning"
-!бері:бергі A1 ; ! "on the near side"
-!ақырғы A1 ; ! "last"
-!кешкі A1 ; ! "evening/late"
+!ақырғы A1 ; ! "last" FIXME NOTE this is rather noun + GI, not adv + GI /IS/
 !жоғары:жоғарғы A1 ; ! "high"
-!ежелгі A1 ; ! "ancient"
-!төменгі A1 ; ! "lower"
 
 ! Languages :)
 !=============
