@@ -346,3 +346,11 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (-1 A OR (n attr))
 ; 
 #
+
+
+# imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
+# but let's try to deal with it in a less ugly way /IS/
+ "<іс>" SELECT N IF
+        (-1 A)
+; 
+# 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
