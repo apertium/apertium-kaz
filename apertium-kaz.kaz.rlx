@@ -302,15 +302,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 # 169. Музей қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
-# RISKY
-#REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
-    #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
- REMOVE Acc IF
-        (0 (n acc) OR (adj subst acc))
-        (0 A)
-        (NOT 1 V)
-;
-
 # UGLY
 # "сый" is certainly not <v.iv.imp> in the following example,
 # I don't think that сый<imp> is ever used
@@ -328,11 +319,22 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 #;
 
 
+# RISKY
+#REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst acc))
+        (0 A)
+        (NOT 1 V)
+;
+#! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
+
+
 #
  "<қарасты>" SELECT A IF
         (-1 (dat))
-; 
-#  177. Орталыққа қарасты Түркістан қаласында Н.Оңдасынов атындағы тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
+;
+#  177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
+
 
 #
  "<атты>" REMOVE V IF
@@ -340,6 +342,17 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ; 
 #
 
+
+# FIXME CHECK
+# the three ambiguities above are quite common - an adjective (A4) with -LI is
+# ambiguous with: 1) a noun or adjective in accusative, and 2) with  a verb in
+# <ifi> form. So it is a good idea to have a more general rule:
+ REMOVE V IF
+        (0 A)
+        (0 (ifi))
+        (NOT 1 EOS OR Cm)
+;
+#
 
 # ambigious with v.pass
  "<құрал>" SELECT N IF
