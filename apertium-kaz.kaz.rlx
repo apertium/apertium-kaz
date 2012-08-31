@@ -339,3 +339,10 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (NOT 1 EOS OR Cm)
 ; 
 #
+
+
+# ambigious with v.pass
+ "<құрал>" SELECT N IF
+        (1 A OR (n attr))
+; 
+#
