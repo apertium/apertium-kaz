@@ -22,7 +22,7 @@ LIST A = adj ;
 LIST Adv = adv ;
 LIST Pron = prn ; 
 LIST N = n ;
-LIST PropN = np ;
+LIST Prop = np ;
 LIST V = v ;
 LIST Vaux = vaux ;
 LIST Cop = cop ;
@@ -233,7 +233,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 
 # get rid of postposition reading if noun/pronoun/any_subst._thing/gerund doesn't precede
  REMOVE Post IF
-         (NOT -1 N OR PropN OR Pron OR Subst OR Gerund)
+         (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
 ;
 #  
 
@@ -387,3 +387,12 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (1 N + Pl)
 ; 
 #
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:][:lower:]+"r))
+        (NOT -1 BOS)  ;
+# 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+
