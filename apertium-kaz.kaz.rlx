@@ -145,6 +145,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 SECTION
 
+# some of the rules having nouns as constraints didn't work when the noun had
+# personal copulas as subreadings, so I placed the rule dealing with personal
+# copulas into a separate section /IS, 01-09-2012/
+
+#
+ REMOVE Pers-Copula IF
+        (NOT 1 EOS)
+;
+#
+
+SECTION
+
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 #SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
@@ -273,12 +285,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 #
 
-
-#
- REMOVE Pers-Copula IF
-        (NOT 1 EOS)
-;
-#
 
 #
  SELECT A IF
