@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    App: hfst-optimised-lookup
+    Gen: ../kaz.autogen.hfst
+    Morph: ../kaz.automorf.hfst
+
+
+Tests:
+  "[twol] verb with epenthetic vowel realised":
+    қорық<v><iv><ifi><p1><sg> : қорықтым
+    қорық<v><iv><past><p1><sg> : қорыққанмын
+
+  "[twol] verb with epenthetic vowel unrealised":
+    қорық<v><iv><ger><nom> : қорқу
+    қорық<v><iv><aor><p1><sg> : қорқамын
+
+  "[twol] noun with epenthetic vowel realised":
+    мұрын<n><nom> : мұрын
+    мұрын<n><gen> : мұрынның
+
+  "[twol] noun with epenthetic vowel unrealised":
+    мұрын<n><px1sg><nom> : мұрным
+    мұрын<n><px3sp><gen> : мұрнының
