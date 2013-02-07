@@ -1108,7 +1108,7 @@ LEXICON PRON-DEM-ANA
 ана%<prn%>%<dem%>%<pl%>:аналар CASE-ETC ;
 ана%<prn%>%<dem%>%<pl%>%<px3sp%>:аналары%{n%} CASE ;
 
-LEXICON PRON-DEM
+LEXICON DemonstrativePronouns
 
 PRON-DEM-BUL ;
 PRON-DEM-MINA ;
@@ -1207,7 +1207,7 @@ LEXICON PRON-ITG-QANDAY
 қандай%<prn%>%<itg%>%<sim%>%<pl%>:қандайлар CASE ;
 қандай%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:қандайлары%{n%} CASE ;
 
-LEXICON PRON-ITG
+LEXICON InterrogativePronouns
 
 PRON-ITG-QAYSI ;
 PRON-ITG-QANSHA ;
@@ -1721,20 +1721,22 @@ LEXICON ModalParticles
 
 PersonalPronouns ;
 
-PRON-DEM ;   ! Demonstrative pronouns
+DemonstrativePronouns ;
 
-PRON-ITG ;   ! Interrogative pronouns
+InterrogativePronouns ;
 
-бірдеме:бірдеме PRON-IND ; ! "something"          ! pronoun
+бірдеме:бірдеме PRON-IND ; ! "something"
 басқа:басқа PRON-IND ; ! "other"
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 бәрі:бәр PRON-IND-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 
 барлық:барлық PRON-QNT ; ! ""
+біреу:біреу PRON-QNT ; ! ""
 әркім:әркім PRON-QNT ; ! ""
 
-еш% нәрсе:еш% нәрсе PRNNEG ; ! "" Use/MT
 ешкім:ешкім PRNNEG ; ! ""
+ешнәрсе:ешнәрсе PRNNEG ; ! ""
+еш% нәрсе:еш% нәрсе PRNNEG ; ! "" Use/MT
 ештеңе:ештеңе PRNNEG ; ! ""
 
 өз:өз PRON-REF ; ! "self"
@@ -2409,8 +2411,9 @@ XXI NUM-ROMAN ; ! ""
 жетекші:жетекші N1 ; ! "" FIXME: some sort of official
 жетім:жетім N1 ; ! "orphan"
 жетістік:жетістік N1 ; ! "success improvement"
-жиен:жиен  N1 ; ! "nephew"
+жиен:жиен N1 ; ! "nephew"
 жинақ:жинақ N1 ; ! ""
+жиын:жиын N1 ; ! ""
 жиынтық:жиынтық N1 ; ! ""
 жібек:жібек N1 ; ! "silk"
 жігіт:жігіт N1 ; ! "young man"
