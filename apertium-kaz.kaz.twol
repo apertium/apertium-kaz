@@ -141,6 +141,8 @@ Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | д:0 | с:0 | %  | %{☭%}:0 ] _ ;
 "Voicing assimilation of back G"
 %{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] | т:0 | д:0 | с:0 ] _ ;
                                                                      [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
+            except
+    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "Voicing assimilation of G across space"
 %{G%}:қ <=> [ :VoicelessCns | %{с%}: ] %  _ ;
@@ -297,13 +299,14 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Back assimilation of G"
 ! %{G%}:ғ <=> :BackVow [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
 ! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
-%{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | [ :0 - Abstract: ] | :и | :у ] _ ;
-                            [ .#. :Cns* :у :Cns* ]/[ %>: | [ :0 - Abstract: ] ] _ ;
+%{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у ] _ ;
+                            [ .#. :Cns* :у :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                                              [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
             %{I%}: :Nasals %>: _ %{A%}: .#. ;  ! avoid conflict with "Deletion of dative {G} after px1sg, px2sg"
+    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 !!!"Assimilation of G to 
 !!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
@@ -313,6 +316,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Back assimilation of K"
 %{K%}:қ <=> [ :BackVow | ы:0 | %{а%}: ] [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: | :0 ] _ ;
             [ :BackVow | ы:0 | %{а%}: ] [ :Cns* %{с%}: ]/[ %>: ] _ ;
+            except
+    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 
 !!!! Disappearing stuff !!!!
