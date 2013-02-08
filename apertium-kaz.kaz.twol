@@ -14,8 +14,10 @@ Alphabet
  %{й%}:0 %{л%}:0 %{н%}:0 %{з%}:0 %{с%}:0
 
  ! Russian words:
- %{☭%}:0 ;
+ %{☭%}:0
 
+ ! Obstacles on the road!!
+ %{❗%}:0 ;
 
 Sets
 
@@ -158,6 +160,8 @@ Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | д:0 | с:0 | %  | %{☭%}:0 ] _ ;
 
 "Intervocalic voicing of к/қ"
 Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
+          except
+            %{❗%}:0 _ ;
           where Cx in ( к қ )
                 Cy in ( г ғ )
                 matched;

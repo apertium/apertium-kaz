@@ -240,6 +240,8 @@ Multichar_Symbols
 
 %{☭%}         ! Used to tell the phonology about a Russian word
 
+%{❗%}         ! Obstacles on the road!!!
+
 %>            ! Morpheme boundary
 %             ! Space
 %-            !
@@ -2836,7 +2838,7 @@ XXI NUM-ROMAN ; ! ""
 құжат:құжат N1 ; ! ""
 құз:құз N1 ; ! ""
 құзырет:құзырет N1 ; ! ""
-құқ:құқ N1 ; ! ""
+құқ:құқ%{❗%} N1 ; ! ""
 құқық:құқық N1 ; ! "authority,right(s)"
 құқықтық:құқықтық N1 ; ! ""
 құлақ:құлақ N1 ; ! "ear"
@@ -4078,7 +4080,7 @@ XXI NUM-ROMAN ; ! ""
 Ереван:Ереван NP-TOP ; ! "" 
 Жалал%-Абад:Жалал%-Абад NP-TOP ; ! ""
 Загреб:Загреб NP-TOP ; ! "" 
-Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
+Иерусалим:Иерусалим%{☭%} NP-TOP ; ! "Jerusalem"
 Йорк:Йорк NP-TOP ; ! ""
 Кабул:Кабул NP-TOP ; ! "" 
 Каир:Каир NP-TOP ; ! "Cairo"
@@ -4219,7 +4221,7 @@ XXI NUM-ROMAN ; ! ""
 Гүржістан:Гүржістан NP-TOP ; ! "Georgia"
 Дания:Дания NP-TOP ; ! "Denmark"
 Джерси:Джерси NP-TOP ; ! ""
-Джибути:Джибути NP-TOP ; ! ""
+Джибути:Джибути%{☭%} NP-TOP ; ! ""
 Доминика:Доминика NP-TOP ; ! ""
 Екуадор:Екуадор NP-TOP ; ! ""
 Жапония:Жапония NP-TOP ; ! "Japan"
@@ -5870,7 +5872,7 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Игорь:Игорь NP-ANT-M ; ! ""
 Идаят:Идаят NP-ANT-M; ! "İydayat" 
 Изатбек:Изатбек NP-ANT-M; ! "İyzatbek" (Arabic)
-Израил:Израил NP-ANT-M ; ! ""
+Израил:Израил%{☭%} NP-ANT-M ; ! ""
 Икрама:Икрама NP-ANT-F; ! "İykrama" (Persian)
 Икрам:Икрам NP-ANT-M; ! "İykram" (Arabic)
 Илмар:Илмар NP-ANT-M; ! "İylmar" (Arabic)
@@ -5905,7 +5907,7 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Исалы:Исалы NP-ANT-M; ! "İysalı" (Arabic)
 Исатай:Исатай NP-ANT-M; ! "İysatay" (Arabic)
 Исахмет:Исахмет NP-ANT-M; ! "İysaxmet" (Arabic)
-Исраил:Исраил NP-ANT-M ; ! "Israel (as in Jacob)"
+Исраил:Исраил%{☭%} NP-ANT-M ; ! "Israel (as in Jacob)"
 Ишая:Ишая NP-ANT-M ; ! ""
 Ібни:Ібни NP-ANT-M; ! "İbniy" (Arabic)
 Ізбасар:Ізбасар NP-ANT-M; ! "İzbasar" (Kazakh)
