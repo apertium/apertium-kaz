@@ -183,6 +183,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
      [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
   [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
   [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
+            :BackVow %{э%}:0/[ :CnsRight | :Cns | [ :0 - %{э%}:0 ] ] _ ;
             except
                                                 %{n%}:н/[ :0 | %>: ] _ ;
                                            [ :BackCns ]/[ %>: | :0 ] _ ;
@@ -230,7 +231,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "Harmony of unepenthesised vowel in some stems"
-%{y%}:і <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0] _ [ :Cns [ .#. | :Cns ] ]/[ :0 | %>:] ;
+%{y%}:і <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0 ] _ [ :Cns [ .#. | :Cns ] ]/[ :0 | %>: ] ;
+     %{э%}:0/[ [ :0 - %{э%}: ] | :CnsRight ]* _ [ :Cns [ .#. | :Cns ] ]/[ :0 | %>: ] ;
 
 
 "Turn {E} into й after a vowel"
