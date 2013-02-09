@@ -4,7 +4,7 @@ Alphabet
  а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
  %0 1 2 3 4 5 6 7 8 9
  %{K%}:к %{l%}:л %{L%}:л %{M%}:м %{N%}:н %{G%}:г %{D%}:д  ! Cns
- %{S%}:с %{n%}:н %{y%}:ы %{o%}:0 %{д%}:0 %{т%}:0  ! disappearing stuff
+ %{S%}:с %{n%}:н %{y%}:ы %{o%}:0 %{д%}:0 %{т%}:0 %{ъ%}:0  ! disappearing stuff
  %{A%}:а %{I%}:ы %{E%}:а ! Vow
  ° %% %, %. %- %>:0 %    ! punctuation and boundaries
 
@@ -139,10 +139,10 @@ Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | д:0 | с:0 | %  | %{☭%}:0 ] _ ;
 
 
 "Voicing assimilation of back G"
-%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - Abstract:0 ] | т:0 | д:0 | с:0 ] _ ;
+%{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - [ Abstract:0 - %{☭%}:0 ] ] | т:0 | д:0 | с:0 ] _ ;
                                                                      [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
-            except
-    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+!            except
+!    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "Voicing assimilation of G across space"
 %{G%}:қ <=> [ :VoicelessCns | %{с%}: ] %  _ ;
@@ -176,13 +176,13 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!! Vowel Harmony !!!!
 
 "I Vowel Harmony"
-%{I%}:і <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+%{I%}:і <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
                  [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 | д:0 | с:0 ] _ ;
                  [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
-                        [ :FrontCns :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-                     [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-                 [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+     [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+  [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+  [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
             except
                                                 %{n%}:н/[ :0 | %>: ] _ ;
                                            [ :BackCns ]/[ %>: | :0 ] _ ;
@@ -195,15 +195,15 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
     [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "A Vowel Harmony"
-%{A%}:е <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
-!            [ [ :FrontVow | :и | :у ] :Cns* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
-!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - Abstract:0 ] | %  ] _ ;
+%{A%}:е <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] | %  ] _ ;
+!            [ [ :FrontVow | :и | :у ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] | %  ] _ ;
+!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] | %  ] _ ;
            [ %{э%}:0 :Cns* :CnsRight ]/[ %>: | %-: | AbstrCns: | %{S%}: ] _ ;
                                     [ %{э%}:0 AbstrCns:0* ]/[ %>: | %-: ] _ ;
-                        [ :FrontCns :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
-      [ .#. [ :Cns - :BackCns ]* :и :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+          [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+        [ .#. [ :Cns - :BackCns ]* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
 !                                      [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
-                 [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+       [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
             except
                                                 [ :BackCns ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
@@ -214,14 +214,14 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
          [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "E Vowel Harmony"
-%{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0 ] _ ;
-                      [ :FrontCns :Cns* ]/[ %>: | :0 ] _ ;
+%{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | [ :0 - %{ъ%}:0 ] ] _ ;
+                      [ :FrontCns :Cns* ]/[ %>: | [ :0 - %{ъ%}:0 ] ] _ ;
                  ! FIXME: this is supposed to make front vowels after и
                  !        but doesn't seem to work :(
                  !        e.g., и<v><TD><aor><p1><sg>
                  ![ .#. [ :Cns - :қ ]* и ]/[ %>: | :0 ] _ ;
 !                    [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
-                                      [ .#. [ :Cns - :BackCns ]* :и :Cns* ]/[ %>: | [ :0 - Abstract:0 ] ] _ ;
+                                      [ .#. [ :Cns - :BackCns ]* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
             except
 !                                     :Vow/[ :0 | %>: ] _ ;  ! WTF?
                                  :BackVow/[ :0 | %>: ] _ ;
@@ -259,14 +259,15 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !%{A%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
 
 "A back vowel harmony after и"
-%{A%}:я <=> [ :BackCns :и ]/[ %>: ] _ ;
+%{A%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
+                  [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
 
 !"E front vowel harmony after и"
 !%{E%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
 
 "E back vowel harmony after и"
-%{E%}:я <=> [ :BackCns :и ]/[ %>: ] _ ;
-
+%{E%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
+                  [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
 
 
 !!!!!!!!!!!!   й vowel harmony  !!!!!!!!!!
@@ -306,7 +307,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
             %{I%}: :Nasals %>: _ %{A%}: .#. ;  ! avoid conflict with "Deletion of dative {G} after px1sg, px2sg"
-    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+!    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 !!!"Assimilation of G to 
 !!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
@@ -316,17 +317,20 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Back assimilation of K"
 %{K%}:қ <=> [ :BackVow | ы:0 | %{а%}: ] [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: | :0 ] _ ;
             [ :BackVow | ы:0 | %{а%}: ] [ :Cns* %{с%}: ]/[ %>: ] _ ;
-            except
-    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+!            except
+!    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 
 !!!! Disappearing stuff !!!!
 
 "Deletion of ы before у"
-ы:0 <=> _ у/[ %>: | :0 ] ;
+ы:0 <=> _ :у/[ %>: | :0 ] ;
 
 "Deletion of і before у"
-і:0 <=> _ у/[ %>: | :0 ] ;
+і:0 <=> _ :у/[ %>: | :0 ] ;
+
+"у > ю after stems in /й/"
+у:ю <=> [ :и | й:0 ] ( [ %{ъ%}: | %{❗%}: ] ) %>: _ ;
 
 "Deletion of {S} after a consonant"
 !%{S%}:0 <=> [ :Cns | й: ]/[ %>: | :0 ] _ ;

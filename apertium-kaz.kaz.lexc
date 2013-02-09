@@ -241,6 +241,7 @@ Multichar_Symbols
 %{☭%}         ! Used to tell the phonology about a Russian word
 
 %{❗%}         ! Obstacles on the road!!!
+%{ъ%}         ! Force back harmony
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -3315,6 +3316,7 @@ XXI NUM-ROMAN ; ! ""
 салтанат:салтанат N1 ; ! "ceremony"
 салт:салт N1 ; ! "custom"
 салық:салық N1 ; ! "tax"
+саммит:саммит%{☭%} N1 ; ! "summit"
 сана:сана N1 ; ! "conscienceness"
 сандық:сандық N1 ; ! ""
 сан:сан N1 ; ! "bill,number"
@@ -10672,7 +10674,7 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 жетімсіре:жетімсіре V-IV ; ! "to feel lonely"
 жетіс:жетіс V-IV ; ! "to ripen (of fruit)"
 жеткіз:жеткіз V-TV ; ! "to bring to" (kaz tat) caus
-жи:жи V-TV ; ! ""
+жи:жи%{ъ%} V-TV ; ! ""
 жиілен:жиілен V-IV ; ! "to become more frequent"
 жиілет:жиілет V-TV ; ! "to make more frequent" (kaz tat) caus
 жиіркен:жиіркен V-IV ; ! "to be squeamish"
