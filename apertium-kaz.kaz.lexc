@@ -1302,7 +1302,7 @@ LEXICON DET-REF
 %<det%>%<ref%>: # ;
 
 
-!!!!!!!!!!!!!!!!!!!!!!     PART-OF-SPEECH LEXICONS
+!!!!!!!!!!!!!!!!!!!!!!     OTHER PART-OF-SPEECH LEXICONS
 
 LEXICON N1
 
@@ -1316,6 +1316,7 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
 %<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
 
 LEXICON N3
+! Singularia tantum
 
 %<n%>%<attr%>: # ;
 %<n%>: N-INFL-COMMON ;
