@@ -501,6 +501,10 @@ LEXICON CLIT-GENERAL ! Includes personal copula suffixes, therefore appears only
 CLIT ;
 V-PERS-COP ;
 
+
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!     NOMINAL INFLECTION (N-INFL-COMMON)
 
 ! The following combinations are possible (examples in Tatar):
@@ -592,7 +596,7 @@ CASE ;
 GENPOSS-ETC ;
 !%<adv%>:ш%{A%} # ;          ! FIXME: might not be quite the right place
 
-LEXICON POSS-REAL  ! P_2
+LEXICON POSS-REAL
 
 %<px1sg%>:%>%{I%}м CASE-ETC ;
 %<px2sg%>:%>%{I%}ң CASE-ETC ;
@@ -606,18 +610,20 @@ LEXICON POSS-REAL  ! P_2
 LEXICON POSSESSION ! I guess this was used once to implement some
                    ! recursive things, e.g. the sequence
                    ! [stem > poss-real > [ныкы]/дагы > poss-real > case]
-                   ! Some gerunds link to it /IS/
+                   ! Some gerunds link to it
 POSS-REAL ;
 
-LEXICON N-INFL-COMMON 
+LEXICON N-INFL-COMMON
 
 POSSESSION ;
 CASE-ETC ;
-ABE-ETC ; ! FIXME check whether this is possible after adjectives and other
-          ! subst. things.
-          ! Maybe a better idea is to restrict it to nouns and pronouns.
-          ! Actually, not all pronouns take it. "Синсез" vs "*үземсез".
-          ! Be careful :) /IS to himself/
+Abessive ; ! FIXME might lead to overgeneration:
+           !! check whether it occurs after substantivized stuff;
+           !! not all pronouns take it. "Синсез" vs "*үземсез".
+
+
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
