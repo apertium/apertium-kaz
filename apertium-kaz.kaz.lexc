@@ -1491,7 +1491,11 @@ LEXICON CA
 
 LEXICON QST
 
-%<qst%>: # ; 
+%<qst%>: # ;
+
+LEXICON MOD-ASS
+
+%<mod_ass%>: # ;
 
 LEXICON MOD
 
@@ -1513,13 +1517,17 @@ LEXICON ABBR
 
 LEXICON ModalParticles
 
-ма:ма QST ; ! "" Dir/RL
+ма:%~ма QST ; ! "" Dir/RL
 ма:ма QST ; ! "" Dir/LR
 ма:ба QST ; ! "" Dir/LR
 ма:па QST ; ! "" Dir/LR
 ма:ме QST ; ! "" Dir/LR
 ма:бе QST ; ! "" Dir/LR
 ма:пе QST ; ! "" Dir/LR
+
+ғой:%~ғой MOD-ASS ; ! "" Dir/RL
+ғой:ғой MOD-ASS ; ! "" Dir/LR
+ғой:қой MOD-ASS ; ! "" Dir/LR
 
 ! ~Modal verbs
 !=============
