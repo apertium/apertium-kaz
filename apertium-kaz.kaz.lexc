@@ -1634,6 +1634,7 @@ LEXICON ModalParticles
 бойынша:бойынша POST ; ! "by, per, according to" + NOM
 бұрын:бұрын POST ; ! "before, ago" + NOM
 жөнінде:жөнінде POST ; ! "about, concerning" + NOM
+іспетті:іспетті POST ; ! ""
 мақсатында:мақсатында POST ; ! "for the purpose of" + NOM
 сайын:сайын POST ; ! "every" + NOM
 секілді:секілді POST ; ! "like, как будто" + NOM
@@ -3867,7 +3868,7 @@ XXI NUM-ROMAN ; ! ""
 ядро:ядро N1 ; ! ""
 
 ! Nouns used as postpositions when <posssessive><case>
-!=====================================================
+! ====================================================
 
 алд:ал%{д%} N1 ; ! "front"
 ара:ара N1 ; ! "among"
@@ -3882,12 +3883,14 @@ XXI NUM-ROMAN ; ! ""
 тарап:тарап%{с%} N1 ; ! ""
 
 ! Nationalities
-!==============
+! =============
 
 ағылшын:ағылшын N1 ; ! "English"
+албан:албан N1 ; ! ""
 американ:американ N1 ; ! ""
 араб:араб N1 ; ! "Arab"
 арамей:арамей N1 ; ! ""
+ауған:ауған N1 ; ! ""
 башқұрт:башқұрт N1 ; ! ""
 белорус:белорус N1 ; ! ""
 бурят:бурят N1 ; ! ""
@@ -3897,17 +3900,20 @@ XXI NUM-ROMAN ; ! ""
 гуарани:гуарани N1 ; ! ""
 исраилдік:исраилдік N1 ; ! "Israelite"
 итальян:итальян N1 ; ! ""
-Калмак:Калмак N1 ; ! "Kalmyk" 
+калмак:калмак N1 ; ! "Kalmyk" 
 карел:карел N1 ; ! ""
+күрд:күрд N1 ; ! ""
 қазақ:казақ N1 ; ! "Kazakh" Dir/LR
 қазақ:қазақ N1 ; ! "Kazakh"
 қырғыз:қырғыз N1 ; ! "Kyrgyz"
 қытай:қытай N1 ; ! "Chinese"
 латын:латын N1 ; ! "Latin"
+леуі:леуі N1 ; ! ""
+леуілік:леуілік N1 ; ! "Levite"
 моңғол:монғол N1 ; ! "Mongol" Dir/LR
 моңғол:моңғол N1 ; ! "Mongol"
 мордва:мордва N1 ; ! ""
-Негр:Негр N1 ; ! "Negro"
+негр:негр N1 ; ! "Negro"
 неміс:неміс N1 ; ! "German"
 орыс:орыс N1 ; ! "Russian"
 өзбек:өзбек N1 ; ! "Uzbek"
@@ -3924,24 +3930,8 @@ XXI NUM-ROMAN ; ! ""
 швед:швед N1 ; ! ""
 якут:якут N1 ; ! ""
 яһуди:яһуди N1 ; ! "Jewish/Jew"
-күрд:күрд N1 ; ! ""
 
-албан:албан N1 ; ! ""
-ауған:ауған N1 ; ! ""
-британ:британ N1 ; ! ""
-леуі:леуі N1 ; ! ""
-
-! FIXME:
-!=======
-
-! Materials/Colours (They don't need a separate cont.class anymore, as
-!                    n.attr reading covers their "material of other noun=attributive reading
-!                   /19072012 I.S./ 
-!
-!киіз Matinfl ; ! "felt"
-!күміс Matinfl ; ! "silver"
-!алтын Matinfl ; ! "gold"
-!жез Matinfl ; ! "copper"
+! FIXME
 
 !!!! Nfi what to do with these; will look into later
 бап:бап N1 ; ! "for purpose of"
@@ -6246,8 +6236,8 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Манан:Манан NP-ANT-M; ! "Manan" (Arabic)
 Манап:Манап NP-ANT-M; ! "Manap" (Arabic)
 Манар:Манар NP-ANT-M; ! "Manar" (Arabic)
+Манаса:Манаса NP-ANT-M ; ! ""
 Манасбай:Манасбай NP-ANT-M; ! "Manasbay" (Kazakh)
-Манас:Манас NP-ANT-M ; ! ""
 Манас:Манас NP-ANT-M ; ! ""
 Манат:Манат NP-ANT-F; ! "Manat" (Kazakh)
 Манзура:Манзура NP-ANT-F; ! "Manzıwra" (Arabic)
@@ -10678,6 +10668,7 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 жаула:жаула V-TV ; ! ""
 жәукемде:жәукемде V-TV ; ! "to tear into pieces"
 же:же V-TV ; ! "eat"
+жек% көр:жек% көр V-TV ; ! ""
 жекеле:жекеле V-TV ; ! "to separate"
 жекір:жекір V-IV ; ! "to shout"
 жектір:жектір V-TV ; ! "to order (someone) to harness (a horse)" (kaz tat) caus
