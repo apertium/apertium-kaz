@@ -181,7 +181,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                  [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 | д:0 | с:0 ] _ ;
                  [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
      [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-  [ .#. :Cns* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+  [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
   [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
             :BackVow %{э%}:0/[ :CnsRight | :Cns | [ :0 - %{э%}:0 ] ] _ ;
             except
@@ -205,6 +205,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
         [ .#. [ :Cns - :BackCns ]* :и :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
 !                                      [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
        [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
+  [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
             except
                                                 [ :BackCns ]/[ %>: | :0 ] _ ;
                                       [ .#. :Cns* :у :Cns* ]/[ %>: | :0 ] _ ;
