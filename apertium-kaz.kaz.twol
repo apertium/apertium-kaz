@@ -304,8 +304,10 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! %{G%}:ғ <=> :BackVow [ :Cns* [ :Cns - [ :VoicelessCns | :FrontCns ] ]* ]/[ %>: ] _ ;
 ! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
 %{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у ] _ ;
-                            [ .#. :Cns* :у :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
+                            [ .#. :Cns* [ :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
+                            [ :BackCns [ :и | :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                                              [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
+              [ %{ъ%}: :Cns* ]/[ [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у | :ю ] _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
