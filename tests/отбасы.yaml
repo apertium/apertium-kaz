@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    App: hfst-optimised-lookup
+    Gen: ../kaz.autogen.hfst
+    Morph: ../kaz.automorf.hfst
+
+
+Tests:
+  "отбасы cases":
+    отбасы<n><nom> : отбасы
+    отбасы<n><acc> : отбасын
+    отбасы<n><gen> : отбасының
+    отбасы<n><loc> : отбасында
+    отбасы<n><abl> : отбасынан
+    отбасы<n><dat> : отбасына
+    отбасы<n><inst> : отбасымен
+
+  "отбасы possessed forms":
+    отбасы<n><px1sg> : отбасым
+    отбасы<n><px2sg> : отбасың
+    отбасы<n><px2pl> : отбасыңдар
+    отбасы<n><px3sp> : отбасы
+    отбасы<n><px1pl> : отбасымыз
+    отбасы<n><px2sg><frm> : отбасыңыз
+    отбасы<n><px2pl><frm> : отбасыңыздар
+
+  "отбасы px3 with cases":
+    отбасы<n><px3sp><nom> : отбасы
+    отбасы<n><px3sp><acc> : отбасын
+    отбасы<n><px3sp><gen> : отбасының
+    отбасы<n><px3sp><loc> : отбасында
+    отбасы<n><px3sp><abl> : отбасынан
+    отбасы<n><px3sp><dat> : отбасына
+    отбасы<n><px3sp><inst> : отбасымен
