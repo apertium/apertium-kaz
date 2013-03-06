@@ -193,7 +193,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                                              %{o%}:0 _ ;
                                        [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
                                             [ :у %{☭%}:0/:Cns* ]/%>: _ ;
- [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :BackCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+ [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "A Vowel Harmony"
 %{A%}:е <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] | %  ] _ ;
@@ -212,8 +212,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                             [ :BackVow :у :Cns* ]/[ %>: ] _ ;
                                                            [ й: ]/[ %>: ] _ ;
                                             [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
-                                                 [ :у %{☭%}:0/:Cns* ]/%>: _ ;
- [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :BackCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+                                  [ :у %{☭%}:0/[ :Cns - :FrontCns]* ]/%>: _ ;
+ [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 "E Vowel Harmony"
 %{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | [ :0 - %{ъ%}:0 ] ] _ ;
@@ -305,7 +305,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! %{G%}:ғ <=> _ [ :BackVow ]/[ %>: | :0 ] ;
 %{G%}:ғ <=> [ [ :BackVow | ы:0 ] :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у ] _ ;
                             [ .#. :Cns* [ :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
-                            [ :BackCns [ :и | :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
+                            [ :BackCns (:Vow) [ :и | :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                                              [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
               [ %{ъ%}: :Cns* ]/[ [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у | :ю ] _ ;
             except
