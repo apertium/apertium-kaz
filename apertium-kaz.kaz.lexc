@@ -7,25 +7,28 @@
 Multichar_Symbols
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
-! Part of speech categories
+! Part of speech categories = First-level tags
 %<n%>         ! Noun                       ! Зат есім
-%<np%>        ! Proper noun
+%<np%>        ! Proper noun                ! Жалқы есім
 %<adj%>       ! Adjective                  ! Сын есім
 %<num%>       ! Numeral                    ! Сан есім
-%<prn%>       ! Pronoun
-%<det%>       ! Determiner
-%<v%>         ! Verb
-%<vaux%>      ! Auxilary verb
+%<prn%>       ! Pronoun                    ! Есімдік
+%<det%>       ! Determiner                 ! Детерминатив
+%<v%>         ! Verb                       ! Етістік
+%<vaux%>      ! Auxilary verb              ! Көмекші етістік
 %<adv%>       ! Adverb                     ! Үстеу
 %<post%>      ! Postposition               ! Септеулік шылау
-%<postadv%>   ! Postadverb                 ! "Постүстеу"
-%<cnjcoo%>    ! Co-ordinating conjunction  ! жалғаулық шылау
-%<cnjsub%>    ! Sub-ordinating conjunction ! жалғаулық шылау
-%<cnjadv%>    ! Adverbial conjunction      ! жалғаулық шылау
-%<part%>      ! Particle
+%<postadv%>   ! Postadverb                 ! "Постүстеу" (*1)
+%<cnjcoo%>    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
+%<cnjsub%>    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулық
+%<cnjadv%>    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
 %<ij%>        ! Interjection               ! Одағай
-%<abbr%>      ! Abbreviation
-%<cop%>       ! Copula
+%<abbr%>      ! Abbreviation               ! Қысқарған сөз
+%<cop%>       ! Copula                     ! Копула
+%<part%>      ! Particle                   ! Демеулік
+!%<ideo%>      ! Ideophone                  ! Еліктеу сөз
+
+! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
 ! Proper noun types
 %<top%>       ! Toponym
@@ -11670,6 +11673,7 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 эвакуацияла:эвакуацияла V-TV ; ! "to evacuate"
 экстрадицияла:экстрадицияла V-TV ; ! ""
 
+қыз:қыз V-IV ; ! "" 
 көрін:көрін V-IV ; ! "" reflexive or passive?
 сүйен:сүйен V-IV ; ! "" refl?
 шалдық:шалдық V-IV ; ! ""
