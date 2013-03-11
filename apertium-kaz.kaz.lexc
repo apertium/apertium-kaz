@@ -32,11 +32,11 @@ Multichar_Symbols
 
 ! Proper noun types
 %<top%>       ! Toponym
-%<ant%>       ! Anthroponym
-%<cog%>       ! Cognomen
-%<pat%>       ! Patronym                   ! Әке текті есім
+%<ant%>       ! Anthroponym  ! Кісі есімі
+%<cog%>       ! Cognomen     ! Фамилия
+%<pat%>       ! Patronym     ! Әке текті есім
 %<org%>       ! Organization
-%<al%>        ! Other
+%<al%>        ! Other        ! Басқалар
 
 !! gender of anthroponyms and cognoms
 %<m%>         ! Masculine
@@ -76,6 +76,7 @@ Multichar_Symbols
 %<abe%>       ! Abessive=Privative ! Лишительный
               !# -сыз/-сез (not used after posessives and cases)
 %<reas%>      ! Reason
+!обладательный !# LI (-лы/-ле) (not used after posessives and cases)
 
 ! Levels of comparison of adjectives
 %<comp%>      ! Comparative
@@ -171,7 +172,7 @@ Multichar_Symbols
 %<ger%>       ! -{U}
 %<ger_past%>  ! -{G}{A}н
 %<ger_perf%>  ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
-%<ger_ppot%>  ! -{A}рл{I}{K}
+%<ger_ppot%>  ! -{A}рл{I}{K}      (~the ability to do the denoted action)
               !# "_Сүйсінерлігі_ сол, өз сеніміне берік те адал халқымыз дінін
               !# сатпады, өзгенің тәтті де сылдыр сөзіне ермеді...";
 %<ger_abs%>   ! -уш{I}л{I}{K}          FIXME CHECK
