@@ -1079,6 +1079,7 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASE ;
 бұл%<prn%>%<dem%>%<adv%>:былай CLIT-GENERAL ;
+бұл%<prn%>%<dem%>%<adv%>:бұлай CLIT-GENERAL ; ! Dir/LR
 бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
 бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASE ;
 
@@ -1574,8 +1575,10 @@ LEXICON ModalParticles
 және:жөне CC ; ! "and" Dir/LR FIXME CHECK
 не:не CC ; ! "neither... , nor ... (x2)" ! FIXME:NOTE: disambig
 түгіл:түгіл CC ; ! "не только, но даже" #! Ол сен түгіл, мені де танымады. FIXME:CHECK
+түгіл:түгілі CC ; ! "не только, но даже" Dir/LR
 әрі:әрі CC ; ! "and (x2)" FIXME:DISAMBIG: from "әрі<adv>" (as adverb it is not repeated)
 уа:уа CC ; ! "and"
+
 
 !! Противительные
 
@@ -1626,6 +1629,9 @@ LEXICON ModalParticles
 әйткенмен:әйткенмен CA ; ! ""
 айтуларынша:айтуларынша CA ; ! ""
 ойынша:ойынша CA ; ! ""
+мәліметінше:мәліметінше CA ; ! ""
+пайымдауынша:пайымдауынша CA ; ! ""
+
 
 !=====================!
  LEXICON Postpositions
@@ -4130,6 +4136,9 @@ XXI NUM-ROMAN ; ! ""
 швед:швед N1 ; ! ""
 якут:якут N1 ; ! ""
 яһуди:яһуди N1 ; ! "Jewish/Jew"
+әрмен:әрмен N1 ; ! ""
+еврей:еврей N1 ; ! ""
+ұйғыр:ұйғыр N1 ; ! ""
 
 ! FIXME
 
@@ -4397,6 +4406,7 @@ XXI NUM-ROMAN ; ! ""
 Бангладеш:Бангладеш NP-TOP ; ! ""
 Бахрейн:Бахрейн NP-TOP ; ! ""
 Беларусь:Беларусь NP-TOP ; ! "Belarus"
+Беларусь:Белорусь NP-TOP ; ! "Belarus" Dir/LR
 Бельгия:Бельгия NP-TOP ; ! "Belgium"
 Бенин:Бенин NP-TOP ; ! ""
 Болгария:Болгария NP-TOP ; ! "Bulgaria"
@@ -4576,6 +4586,8 @@ XXI NUM-ROMAN ; ! ""
 Эритрея:Эритрея NP-TOP ; ! ""
 Эстония:Эстония NP-TOP ; ! "Estonia"
 Эфиопия:Эфиопия NP-TOP ; ! ""
+Коқан:Коқан NP-TOP ; ! ""
+Малайзия:Малайзия NP-TOP ; ! ""
 
 ! Other toponyms
 !---------------
@@ -7451,6 +7463,9 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Яғқұп:Яғқұп NP-ANT-M ; ! ""
 Яһуда:Яһуда NP-ANT-M ; ! "Yahuda"
 
+Дәурен:Дәурен NP-ANT-M ; ! ""
+Ержан:Ержан NP-ANT-M ; ! ""
+
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
 ! Fixme -- contains ascii characters ! Бepeke NP-ANT-M; ! "Bepeke" (Kazakh)
@@ -7690,6 +7705,8 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Аталай:Аталай NP-COG-MF ; ! ""
 Кей:Кей NP-COG-MF ; ! ""
 Холбрук:Холбрук NP-COG-MF ; ! ""
+Жовтис:Жовтис NP-COG-MF ; ! ""
+Ни:Ни NP-COG-MF ; ! ""
 
 ! Masculine -ов and -ин cognoms
 !------------------------------
@@ -9416,6 +9433,8 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 Плугов:Плугов NP-COG-OB ; ! ""
 Турчинов:Турчинов NP-COG-OB ; ! ""
 Усубакунов:Усубакунов NP-COG-OB ; ! ""
+Курамшин:Курамшин NP-COG-OB ; ! ""
+Мәсімов:Мәсімов NP-COG-OB ; ! ""
 
 ! Organizations
 !==============
@@ -9524,7 +9543,9 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 Тәурат:Тәурат NP-AL ; ! ""
 Тәурат:Таурат NP-AL ; ! "" Dir/LR
 Тобықты:Тобықты NP-AL ; ! ""
-
+таймс:таймс NP-AL ; ! ""
+Золото:Золото NP-AL ; ! ""
+Kazakhstan:Kazakhstan NP-AL ; ! ""
 
 !==================!
  LEXICON Adjectives
@@ -9533,6 +9554,22 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 
 ! A4 adjectives
 ! =============
+
+! Toponyms + LIK
+! --------------
+
+! FIXME There is a better way of handling them, find it!
+! (note that they all are ambigious between adj/n)
+
+пәкістандық:пәкістандық A4 ; ! ""
+кубалық:кубалық A4 ; ! ""
+жапондық:жапондық A4 ; ! ""
+ирандық:ирандық A4 ; ! ""
+ақтөбелік:ақтөбелік A4 ; ! ""
+ауғандық:ауғандық A4 ; ! ""
+
+! Other
+! -----
 
 абсолютті:абсолютті A4 ; ! ""
 абсолюттік:абсолюттік A4 ; ! ""
@@ -10306,6 +10343,11 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 әлдеқайда:әлдеқайда ADV ; ! ""
 
 қаншама:қаншама ADVITG ; ! ""
+бұлайша:бұлайша ADV ; ! ""
+қалайша:қалайша ADV ; ! ""
+неліктен:неліктен ADV ; ! ""
+соншалықты:соншалықты ADV ; ! ""
+соншама:соншама ADV ; ! ""
 
 ! More or less regular stuff
 ! ==========================
@@ -12711,6 +12753,7 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 өй:өй INTERJ ; ! ""
 түсінікті:түсінікті INTERJ ; ! "understood"
 уа:уа INTERJ ; ! ""
+әу:әу INTERJ ; ! ""
 
 ! Вводные слова
 ! =============
@@ -12737,6 +12780,7 @@ IMD:IMD ABBR ; ! ""
 Kaz:Kaz ABBR ; ! ""
 KPO:KPO ABBR ; ! ""
 KZ:KZ ABBR ; ! ""
+kz:kz ABBR ; ! ""
 ААҚ:ААҚ ABBR ; ! "Ашық акционердық коғам=Public company"
 АК:АК ABBR ; ! ""
 АКСР:АКСР ABBR ; ! ""
@@ -12785,6 +12829,7 @@ KZ:KZ ABBR ; ! ""
 ҚазМУ:ҚазМУ ABBR ; ! "Al-Farabi Kazakh National Universty"
 Қазмұнайгаз:Қазмұнайгаз ABBR ; ! ""
 Қазпошта:Қазпошта ABBR ; ! ""
+ҚазТАГ:ҚазТАГ ABBR ; ! ""
 ҚазҰУ:ҚазҰУ ABBR ; ! "Al-Farabi Kazakh National Universty"
 ҚКП:ҚКП ABBR ; ! ""
 ҚМДБ:ҚМДБ ABBR ; ! "Казакъстан Мөселманнары Диния Нәзараты"
