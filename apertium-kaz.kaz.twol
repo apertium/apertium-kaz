@@ -313,6 +313,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                             [ :BackCns (:Vow) [ :и | :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                                              [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
               [ %{ъ%}: :Cns* ]/[ [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у | :ю ] _ ;
+           FrontCns: BackVow: [ %>: | %{☭%}:0 ]* _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
