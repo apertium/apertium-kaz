@@ -1438,11 +1438,20 @@ LEXICON NP-AL
 
 %<np%>%<al%>: CASE ; 
 
-LEXICON NUM
+LEXICON NUM-COMMON
 
 %<num%>: # ;
 %<num%>%<subst%>: SUBST ;
+
+LEXICON NUM
+
+NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+
+LEXICON NUM-TWENTY
+
+NUM-COMMON ;
+%<num%>%<ord%>:%>с%{I%}нш%{I%} N-INFL-COMMON ;
 
 LEXICON NUM-ITG ! This is a temporal solution
                 ! (could be integrated with the above)
@@ -1456,15 +1465,15 @@ LEXICON NUM-COLL
 %<num%>%<coll%>%<subst%>: N-INFL-COMMON ;
 %<num%>%<coll%>%<advl%>: # ;
 
-LEXICON DIGITLEX
-
-%<num%>: # ;
-
 LEXICON NUM-ROMAN
 
 %<num%>%<ord%>: # ;
 
-LEXICON POST 
+LEXICON DIGITLEX
+
+%<num%>: # ;
+
+LEXICON POST
 
 %<post%>: CLIT ;
 
@@ -1850,7 +1859,11 @@ InterrogativePronouns ;
 
 өз:өз DET-REF ; ! "oneself's"
 
-LEXICON Numerals
+
+!================!
+ LEXICON Numerals
+!================!
+
 
 нөл:нөл NUM ; ! "zero"
 бір:бір NUM ; ! "one"
@@ -1860,12 +1873,12 @@ LEXICON Numerals
 бес:бес NUM ; ! "five"
 алты:алты NUM ; ! "six"
 жеті:жеті NUM ; ! "seven"
-сегіз:сегіз NUM ; ! "eight" 
+сегіз:сегіз NUM ; ! "eight"
 тоғыз:тоғыз  NUM ; ! "nine"
 он:он NUM ; ! "ten"
 
-он% бір:он% бір NUM ; ! "eleven"       ! These are needed only because the corresponding
-он% екі:он% екі NUM ; ! "twelve"       ! tatar numerals are written as one word
+он% бір:он% бір NUM ; ! "eleven"
+он% екі:он% екі NUM ; ! "twelve"
 он% үш:он% үш NUM ; ! "thirteen"
 он% төрт:он% төрт NUM ; ! "fourteen"
 он% бес:он% бес NUM ; ! "fifteen"
@@ -1874,7 +1887,7 @@ LEXICON Numerals
 он% сегіз:он% сегіз NUM ; ! "eighteen"
 он% тоғыз:он% тоғыз NUM ; ! "nineteen"
 
-жиырма:жиырма NUM ; ! "twenty"         ! FIXME: This has an exceptional ordinal form: жиырмасыншы
+жиырма:жиырма NUM-TWENTY ; ! "twenty"
 отыз:отыз NUM ; ! "thirty"
 қырық:қырық NUM ; ! "forty"
 елу:елу NUM ; ! "fifty"
@@ -1890,22 +1903,15 @@ LEXICON Numerals
 миллиард:миллиард NUM ; ! "billion"
 триллион:триллион NUM ; ! "trillion"
 
-!ширек:ширек NUM ; ! "quarter"         ! FIXME:DISCUSS: POS
-!жарым:жарым NUM ; ! "half"            ! (consider that they don't have ordinal form obviously)
-!жарты:жарты NUM ; ! "half"
-
+! Technically this goes on to higher numbers,
+! but its use beyond 7 is rare and is of questionable grammaticality
 бір:біреу NUM-COLL ;
 екі:екеу NUM-COLL ;
 үш:үшеу NUM-COLL ;
 төрт:төртеу NUM-COLL ;
 бес:бесеу NUM-COLL ;
-алтау:алтау NUM-COLL ;
-жетеу:жетеу NUM-COLL ;
-
-! Technically this goes on to higher numbers
-! but its use beyond 5(?) is rare
-! and is of questionable grammaticality /not-I.S./
-! Grammar says first 7 numerals have this form, so let's extend it to 7 /I.S./
+алты:алтау NUM-COLL ;
+жеті:жетеу NUM-COLL ;
 
 I NUM-ROMAN ; ! ""
 II NUM-ROMAN ; ! ""
