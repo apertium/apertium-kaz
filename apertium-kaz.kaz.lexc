@@ -1559,21 +1559,10 @@ LEXICON ModalParticles
 ғой:ғой MOD-ASS ; ! "" Dir/LR
 ғой:қой MOD-ASS ; ! "" Dir/LR
 
-! ~Modal verbs
-!=============
-
-! FIXME
-! This is actually a modal verb, taking personal suffixes (V-PERS-S1).
-! Was required to tranlate tatar "-дыр"<mod_ind>
-! It requires some transfer rules (for replacing personal suffixes) as e.g. in
-! the following:
-!
-!# Олар мүмкiн көп кiтап оқыған шығар.
-!# Алар бәлки күп китап укыганнардыр.
-!
-! "сияқты" is similar too /IS/
-
-шығар:шығар MOD ;
+шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
+                  ! requires some transfer rules as e.g. in the following:
+                  !# Олар мүмкiн көп кiтап оқыған шығар.
+                  !# Алар бәлки күп китап укыганнардыр.
 
 
 !====================!
@@ -1663,10 +1652,17 @@ LEXICON ModalParticles
 !=====================!
 
 
-! Some of them are postpositions derived from nouns (or "auxilliary nouns" aka "служебные имена")
-! which take location cases (and most likely instrumental case too). Think about them later /I.S./
+! Many of them are derived from other parts of speech.
+! There is also a special category of nouns (like "front", "back", "center" etc) - so caled "auxilliary nouns"
+! ("служебные имена") - which are used as postpositioins when they take possessive endings and location cases.
+! They govern both nominative and genitive (with noun in genitive referring to a definite object), e.g.:
+! # Шкаф эчендә / Шкаф ішінде  =  in a cupboard
+! # Шкафның эчендә / Шкафтың ішінде  =  in the cupboard
+!
+! Currently these words are tagged as nouns (see the subsection at the end of the Nouns lexicon)
 
 ! which Govern the Nominative Case
+! ================================
 
 арқылы:арқылы POST ; ! "through, via, by means of" + NOM
 бойы:бойы POST ; ! "весь, в течении" + NOM
@@ -1675,7 +1671,14 @@ LEXICON ModalParticles
 бұрын:бұрын POST ; ! "before, ago" + NOM
 жөнінде:жөнінде POST ; ! "about, concerning" + NOM
 іспетті:іспетті POST ; ! ""
+қарамағындағы:қарамағындағы POST ; ! "" FIXME CHECK
+қарамағында:қарамағында POST ; ! "" FIXME CHECK
 мақсатында:мақсатында POST ; ! "for the purpose of" + NOM
+мен:%{M%}ен POST ; ! "with" + NOM
+мен:%{M%}енен POST ; ! "with" + NOM ! Dir/LR
+мен:бен POST ; ! "with" + NOM       ! Dir/LR
+мен:мен POST ; ! "with" + NOM       ! Dir/LR
+мен:пен POST ; ! "with" + NOM       ! Dir/LR
 сайын:сайын POST ; ! "every" + NOM
 секілді:секілді POST ; ! "like, как будто" + NOM
 сияқты:сияқты POST ; ! "like, как будто" + NOM     FIXME:CHECK: POS - "modal word"="бугай" ?
@@ -1683,32 +1686,13 @@ LEXICON ModalParticles
 үшін:үшін POST ; ! "for (the benefit of), in order" + NOM
 хақында:хақында POST ; ! "about, concerning" + NOM
 
-мен:%{M%}ен POST ; ! "with" + NOM
-мен:%{M%}енен POST ; ! "with" + NOM ! Dir/LR
-мен:мен POST ; ! "with" + NOM       ! Dir/LR
-мен:бен POST ; ! "with" + NOM       ! Dir/LR
-мен:пен POST ; ! "with" + NOM       ! Dir/LR
-
-қарамағында:қарамағында POST ; ! "" FIXME CHECK
-қарамағындағы:қарамағындағы POST ; ! "" FIXME CHECK
-
-! which Govern the Genitive Case (НЫҢ)
-
-!! so called "служебные имена" belong here.
-!! In Tatar they govern both nominative and genitive (with noun in genitive referring
-!! to a definite object):
-!! # Шкаф эчендә / Шкаф ішінде  =  in a cupboard
-!! # Шкафның эчендә / Шкафтың ішінде  =  in the cupboard
-!! Check whether in Kazakh they function the same way /I.S./ = they do /JNW/
-
-! ішінен POST ;   ! Compositional
-! астынан POST ;  ! Compositional
-! жанынан POST ;  ! Compositional
-! үстінен POST ;  ! Compositional
+! which Govern the Nominative/Genitive Cases
+! ==============================================
 
 жайында:жайында POST ; ! "about, concerning" + GEN  ! not sure about this /JNW/
 
-! which Govern the Dative Case (GA)
+! which Govern the Dative Case
+! ============================
 
 арналған:арналған POST ; ! "intended for" + DAT
 ғұрлы:ғұрлы POST ; ! "like, similar to" + DAT
@@ -1726,35 +1710,38 @@ LEXICON ModalParticles
 тарта:тарта POST ; ! "about, приблизительно" + DAT
 шейін:шейін POST ; ! "until, up to, as far as = дейін" + DAT
 
-! which Govern the Ablative Case (DAN)
+! which Govern the Ablative Case
+! ==============================
 
 әрі:әрі POST ; ! "further, дальше" + ABL
-басқа:басқа POST ; ! "besides, except" + ABL     ! FIXME: disambiguate бас<n><dat>
+басқа:басқа POST ; ! "besides, except" + ABL          ! FIXME disambiguate бас<n><dat>
 бері:бері POST ; ! "since" + ABL
-бұрын:бұрын POST ; ! "earlier than, раньше" + ABL ! FIXME: check case (nominative is for sure, maybe some other meaming if it comes after n.abl.)
+бұрын:бұрын POST ; ! "earlier than, раньше" + ABL
 гөрі:гөрі POST ; ! ""
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
 соң:соң POST ; ! "after, afterwards, then" + ABL
 
-! which Govern the Instrumental Case (MEN)
+! which Govern the Instrumental Case
+! ==================================
 
 бірге:бірге POST ; ! "with" + INS
 
 ! FIXME: To be checked
+! ====================
 
-бойымен:бойымен POST ;
+бетер:бетер POST ;
 бойда:бойда POST ;
+бойымен:бойымен POST ;
+!бөлек:!бөлек POST ; ! FIXME: өлек<n><nom>
+қабат:қабат POST ;
 қарал:қарал POST ;
 қаран:қаран POST ;
+!қатар:!қатар POST ; ! FIXME: қатар<n><nom>
+қоса:қоса POST ; ! "in addition to" + DAT
+!өзге:!өзге POST ; ! FIXME: өз<n><dat>
 салым:салым POST ;
 тарта:тарта POST ;
 таяу:таяу POST ;
-бетер:бетер POST ;
-!бөлек:!бөлек POST ; ! FIXME: өлек<n><nom>
-!өзге:!өзге POST ; ! FIXME: өз<n><dat>
-!қатар:!қатар POST ; ! FIXME: қатар<n><nom>
-қабат:қабат POST ;
-қоса:қоса POST ; ! "in addition to" + DAT
 
 
 !===================!
@@ -3752,6 +3739,7 @@ XXI NUM-ROMAN ; ! ""
 тақ:тақ N1 ; ! "throne"
 тақта:тақта N1 ; ! "board"
 тақырып:тақырып N1 ; ! "theme"
+талан%-тараж:талан%-тараж N1 ; ! ""
 талап:талап N1 ; ! "requirement"
 талас:талас N1 ; ! ""
 талибан:талибан N1 ; ! ""
