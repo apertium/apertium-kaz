@@ -1705,6 +1705,7 @@ LEXICON ModalParticles
 қарамастан:қарамастан POST ; ! "regardless, despite" + DAT
 қарсы:қарсы POST ; ! "anti-, against, contra-" + DAT
 құрлы:құрлы POST ; ! "like, similar to = ғұрлы" + DAT
+салым:салым POST ; ! ""
 сәйкес:сәйкес POST ; ! "in accordance with, conforming to" + DAT
 таман:таман POST ; ! "side, direction, toward(?)" + DAT  ! not sure /JNW/
 тарта:тарта POST ; ! "about, приблизительно" + DAT
@@ -4280,6 +4281,7 @@ XXI NUM-ROMAN ; ! ""
 швед:швед N1 ; ! ""
 якут:якут N1 ; ! ""
 яһуди:яһуди N1 ; ! "Jewish/Jew"
+славян:славян N1 ; ! ""
 
 ! FIXME
 ! =====
@@ -4379,6 +4381,8 @@ XXI NUM-ROMAN ; ! ""
 Тобольск:Тобольск NP-TOP ; ! ""
 Тобыл:Тобыл NP-TOP ; ! ""
 Уфа:Уфа NP-TOP ; ! ""
+
+Ханты%-Мансийск:Ханты%-Мансийск NP-TOP ; ! ""
 
 ! Cities of the world
 ! -------------------
@@ -4523,6 +4527,12 @@ XXI NUM-ROMAN ; ! ""
 Ыстанбұл:Ыстанбұл NP-TOP ; ! "Istanbul"
 Эр%-Рияд:Эр%-Рияд NP-TOP ; ! "" 
 Ямусукро:Ямусукро NP-TOP ; ! ""
+
+Бағдат:Бағдат NP-TOP ; ! ""
+Бұхара:Бұхара NP-TOP ; ! ""
+Дубай:Дубай NP-TOP ; ! ""
+Сана:Сана NP-TOP ; ! ""
+Ұлан%-Батыр:Ұлан%-Батыр NP-TOP ; ! ""
 
 ! Countries
 ! ---------
@@ -4747,6 +4757,7 @@ XXI NUM-ROMAN ; ! ""
 Еуропа:Еуропа NP-TOP ; ! "Europe"
 
 Ағеділ:Ағеділ NP-TOP ; ! "reka Belaya in Tatarstan/Bashkortstan"
+Ағеділ:Ақеділ NP-TOP ; ! "" Dir/LR
 Айдос:Айдос NP-TOP ; ! ""
 Ақсу:Ақсу NP-TOP ; ! ""
 Арал:Арал NP-TOP ; ! ""
@@ -7609,6 +7620,7 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 
 Дәурен:Дәурен NP-ANT-M ; ! ""
 Ержан:Ержан NP-ANT-M ; ! ""
+Мира:Мира NP-ANT-F ; ! ""
 
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
@@ -9643,6 +9655,11 @@ Wrigley:Wrigley NP-ORG ; ! ""
 Цинказ:Цинказ NP-ORG ; ! ""
 Этнодизайн:Этнодизайн NP-ORG ; ! ""
 
+Майкрософт:Майкрософт NP-ORG ; ! ""
+Нью%-Йорк% таймс:Нью%-Йорк% таймс NP-ORG ; ! ""
+Нью%-Йорк% таймс:Нью%-Йорк% Таймс NP-ORG ; ! "" Dir/LR
+Юроуп:Юроуп NP-ORG ; ! ""
+
 ! Other proper names (events etc)
 !================================
 
@@ -9722,6 +9739,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 ирандық:ирандық A4 ; ! ""
 ақтөбелік:ақтөбелік A4 ; ! ""
 ауғандық:ауғандық A4 ; ! ""
+марроколық:марроколық A4 ; ! ""
 
 ! Other
 ! -----
@@ -10093,6 +10111,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 халықтық:халықтық A4 ; ! ""
 шетелдік:шетелдік A4 ; ! ""
 
+мылқау:мылқау A4 ; ! ""
+
 ! A3 adj., adj.subst
 ! ==================
 
@@ -10208,6 +10228,11 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 құнарлы:құнарлы A2 ; ! ""
 кедей:кедей A2 ; ! ""
 кәдімгі:кәдімгі A2 ; ! ""
+
+берік:берік A2 ; ! ""
+бұйра:бұйра A2 ; ! ""
+дәмелі:дәмелі A2 ; ! ""
+қышқыл:қышқыл A2 ; ! "sour, acid"
 
 ! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst,
 ! and when not sure where exactly an adjective belongs
@@ -10343,7 +10368,6 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 қылмыстық:қылмыстық A1 ; ! "criminal"
 қымбат:қымбат A1 ; ! ""
 қысқа:қысқа A1 ; ! "short"
-қышқыл:қышқыл A1 ; ! "sour, acid"
 лайықты:лайықты A1 ; ! "suitable"
 мәдени:мәдени A1 ; ! "cultural"
 мәңгі:мәңгі A1 ; ! "eternal"
@@ -10600,6 +10624,9 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 ішінара:ішінара ADV ; ! ""
 кешкісін:кешкісін ADV ; ! ""
 небәрі:небәрі ADV ; ! ""
+
+ертең:ертең ADV ; ! ""
+қазір:қазір ADV ; ! ""
 
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
@@ -12157,6 +12184,18 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 іздестір:іздестір V-TV ; ! "" coop/caus?
 іздеттір:іздеттір V-TV ; ! "" caus/caus?
 
+бақталастыр:бақталастыр V-IV ; ! "" caus?
+даңғырла:даңғырла V-IV ; ! ""
+қиыс:қиыс V-IV ; ! ""
+құра:құра V-IV ; ! ""
+қызық:қызық V-IV ; ! ""
+отас:отас V-IV ; ! "" coop?
+
+қи:қи V-TV ; ! ""
+батыр:батыр V-TV ; ! "" caus
+даңғырлат:даңғырлат V-TV ; ! "" caus
+ота:ота V-TV ; ! ""
+
 !қада:қада V-TD ; ! "stick in"
 !қадақта:қадақта V-TD ; ! "to weigh in pounds"
 !қадамда:қадамда V-TD ; ! "to pace off"
@@ -13038,7 +13077,7 @@ kz:kz ABBR ; ! ""
 ШЫҰ:ШЫҰ ABBR ; ! "Shanghai Cooperaton Organization"
 экон%.:экон%. ABBR ; ! "economic"
 ЮНЕСКО:ЮНЕСКО ABBR ; ! ""
-
+EITI:EITI ABBR ; ! ""
 
 !===================!
  LEXICON Punctuation
