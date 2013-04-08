@@ -219,6 +219,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                             [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
                                   [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
  [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+                                                                 :Vow %>: _ ;
 
 "E Vowel Harmony"
 %{E%}:е <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | [ :0 - %{ъ%}:0 ] ] _ ;
@@ -269,6 +270,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "A back vowel harmony after и"
 %{A%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
                   [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
+        except
+                                     :Vow %>: _ ;
 
 !"E front vowel harmony after и"
 !%{E%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
@@ -342,6 +345,9 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 
 !!!! Disappearing stuff !!!!
+
+"Deletion of {A} directly after vowel"
+%{A%}:0 <=> :Vow %>: _ ;
 
 "Deletion of ы before у"
 ы:0 <=> _ :у/[ %>: | :0 ] ;
