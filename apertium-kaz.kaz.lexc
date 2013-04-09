@@ -26,7 +26,7 @@ Multichar_Symbols
 %<abbr%>      ! Abbreviation               ! Қысқарған сөз
 %<cop%>       ! Copula                     ! Копула
 %<part%>      ! Particle                   ! Демеулік
-!%<ideo%>      ! Ideophone                  ! Еліктеу сөз
+%<ideo%>      ! Ideophone                  ! Еліктеу сөз
 
 ! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
@@ -274,6 +274,7 @@ Adjectives ;
 Adverbs;
 Verbs ;
 Interjections ;
+Ideophones ;
 Abbreviations ;
 Punctuation ;
 Digits ; ! Use/Circ
@@ -990,6 +991,7 @@ LEXICON PersonalPronouns
 сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
 
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLIT ; ! Dir/LR
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLIT ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLIT ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLIT ;
@@ -1059,6 +1061,7 @@ LEXICON PRON-DEM-BUL
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
 бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-GENERAL ;
+бұл%<prn%>%<dem%>%<nom%>:бұ CLIT-GENERAL ; ! Dir/LR
 бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
 бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
 бұл%<prn%>%<dem%>%<dat%>:бұған CLIT ;
@@ -1537,6 +1540,10 @@ LEXICON INTERJ
 
 %<ij%>: # ;
 
+LEXICON IDEO
+
+%<ideo%>: # ;
+
 LEXICON ABBR
 
 %<abbr%>: # ;
@@ -1830,6 +1837,7 @@ InterrogativePronouns ;
 миллиондаған:миллиондаған DET-QNT ; ! ""
 миллиардтаған:миллиардтаған DET-QNT ; ! ""
 күллі:күллі DET-QNT ; ! ""
+исі:исі DET-QNT ; ! ""
 
 әлдебір:әлдебір DET-IND ; ! "a"
 бір:бір DET-IND ; ! "a"
@@ -2844,6 +2852,7 @@ XXI NUM-ROMAN ; ! ""
 көмірсутек:көмірсутек N1 ; ! ""
 көміртек:көміртек N1 ; ! ""
 көңіл:көңіл N1 ; ! "heart,will,desire"
+көңіл:көң%{y%}л N1 ; ! "heart,will,desire" Dir/LR
 көпшілік:көпшілік N1 ; ! ""
 көрініс:көрініс N1 ; ! ""
 көрініс:көрініс N1 ; ! "kind"
@@ -4219,6 +4228,27 @@ XXI NUM-ROMAN ; ! ""
 жетіген:жетіген N1 ; ! ""
 жұбаныш:жұбаныш N1 ; ! ""
 сауыт:сауыт N1 ; ! ""
+адыр:адыр N1 ; ! ""
+ажар:ажар N1 ; ! ""
+айбалта:айбалта N1 ; ! ""
+айғыз:айғыз N1 ; ! ""
+айла:айла N1 ; ! ""
+алғыс:алғыс N1 ; ! ""
+амандық:амандық N1 ; ! ""
+араздық:араздық N1 ; ! ""
+атқамінер:атқамінер N1 ; ! ""
+атты:атты N1 ; ! ""
+атшабар:атшабар N1 ; ! ""
+жағалау:жағалау N1 ; ! ""
+жыбыр:жыбыр N1 ; ! ""
+кек:кек N1 ; ! ""
+кемпір:кемпір N1 ; ! ""
+күбір:күбір N1 ; ! ""
+құран:құран N1 ; ! ""
+оп:оп N1 ; ! ""
+сыбаға:сыбаға N1 ; ! ""
+тілек:тілек N1 ; ! ""
+ымырт:ымырт N1 ; ! ""
 
 ! Nouns used as postpositions when <posssessive><case>
 ! ====================================================
@@ -7632,6 +7662,12 @@ Aйтғали:Aйтғали NP-ANT-M; ! "Aytğalıy" (Arabic)
 
 Барабба:Барабба NP-ANT-M ; ! ""
 Месахаб:Месахаб NP-ANT-M ; ! ""
+Абайжан:Абайжан NP-ANT-M ; ! ""
+Жұмағұл:Жұмағұл NP-ANT-M ; ! ""
+Сәрсен:Сәрсен NP-ANT-M ; ! ""
+Тектіғұл:Тектіғұл NP-ANT-M ; ! ""
+Топай:Топай NP-ANT-M ; ! ""
+Тұңғатар:Тұңғатар NP-ANT-M ; ! ""
 
 ! Fixme -- contains ascii characters ! Xaceh NP-ANT-M; ! "Xaceh" (Arabic)
 ! Fixme -- contains ascii characters ! Бatыpajiы NP-ANT-M; ! "Batıpajiı" (Kazakh)
@@ -9729,7 +9765,7 @@ New% York% Times:New% York% Times NP-AL ; ! ""
 таймс:таймс NP-AL ; ! ""
 Золото:Золото NP-AL ; ! ""
 Kazakhstan:Kazakhstan NP-AL ; ! ""
-
+Аймаңдай:Аймаңдай NP-AL ; ! ""
 !==================!
  LEXICON Adjectives
 !==================!
@@ -10125,6 +10161,15 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 шетелдік:шетелдік A4 ; ! ""
 
 мылқау:мылқау A4 ; ! ""
+айлы:айлы A4 ; ! ""
+ақырғы:ақырғы A4 ; ! ""
+араз:араз A4 ; ! ""
+дағдылы:дағдылы A4 ; ! ""
+жалаңаш:жалаңаш A4 ; ! ""
+қартаң:қартаң A4 ; ! ""
+қызулы:қызулы A4 ; ! ""
+өңшең:өңшең A4 ; ! ""
+үйлі:үйлі A4 ; ! ""
 
 ! A3 adj., adj.subst
 ! ==================
@@ -10246,6 +10291,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 бұйра:бұйра A2 ; ! ""
 дәмелі:дәмелі A2 ; ! ""
 қышқыл:қышқыл A2 ; ! "sour, acid"
+сорлы:сорлы A2 ; ! ""
+сүйкімді:сүйкімді A2 ; ! ""
 
 ! A1 adj.(comp), adj.(comp).advl, adj.(comp).subst,
 ! and when not sure where exactly an adjective belongs
@@ -10495,6 +10542,12 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 кездейсоқ:кездейсоқ A1 ; ! ""
 
 сау:сау A1 ; ! ""
+біртүрлі:біртүрлі A1 ; ! ""
+жалпақ:жалпақ A1 ; ! ""
+жылдам:жылдам A1 ; ! ""
+сақ:сақ A1 ; ! ""
+тақау:тақау A1 ; ! ""
+торы:торы A1 ; ! ""
 
 ! FIXME
 ! =====
@@ -10541,6 +10594,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 бұлайша:бұлайша ADV ; ! ""
 қалайша:қалайша ADV ; ! ""
 неліктен:неліктен ADV ; ! ""
+оншалық:оншалық ADV ; ! "" 
+соншалық:соншалық ADV ; ! "" 
 соншалықты:соншалықты ADV ; ! ""
 соншама:соншама ADV ; ! ""
 
@@ -10642,6 +10697,9 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 
 ертең:ертең ADV ; ! ""
 қазір:қазір ADV ; ! ""
+азғана:азғана ADV ; ! ""
+азғантай:азғантай ADV ; ! ""
+жағалап:жағалап ADV ; ! ""
 
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
@@ -12213,6 +12271,35 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 
 дауыста:дауыста V-IV ; ! ""
 
+ақылдас:ақылдас V-IV ; ! ""
+аңыра:аңыра V-IV ; ! ""
+арс% ет:арс% ет V-IV ; ! ""
+аяңда:аяңда V-IV ; ! ""
+бетте:бетте V-IV ; ! ""
+боқта:боқта V-IV ; ! ""
+жағала:жағала V-IV ; ! ""
+жалтақта:жалтақта V-IV ; ! ""
+киін:киін V-IV ; ! "" refl
+қамдан:қамдан V-IV ; ! "" refl
+қинал:қинал V-IV ; ! "" refl
+қызар:қызар V-IV ; ! ""
+сұрлан:сұрлан V-IV ; ! ""
+тақа:тақа V-IV ; ! ""
+томсар:томсар V-IV ; ! ""
+
+зек:зек V-TV ; ! ""
+үй:үй V-TV ; ! ""
+айтқыз:айтқыз V-TV ; ! "" caus
+асықтыр:асықтыр V-TV ; ! "" caus
+жетекте:жетекте V-TV ; ! ""
+қамда:қамда V-TV ; ! ""
+қина:қина V-TV ; ! ""
+мінгіз:мінгіз V-TV ; ! "" caus
+тақа:тақа V-TV ; ! ""
+ұқ:ұқ V-TV ; ! ""
+ұшыр:ұшыр V-TV ; ! "" caus
+шапқыла:шапқыла V-TV ; ! "" FIXME actually some mode
+
 !қада:қада V-TD ; ! "stick in"
 !қадақта:қадақта V-TD ; ! "to weigh in pounds"
 !қадамда:қадамда V-TD ; ! "to pace off"
@@ -12967,6 +13054,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 түсінікті:түсінікті INTERJ ; ! "understood"
 уа:уа INTERJ ; ! ""
 әу:әу INTERJ ; ! ""
+ойбай:ойбай INTERJ ; ! ""
 
 ! Вводные слова
 ! =============
@@ -12977,6 +13065,12 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 мәселен:мәселен INTERJ ; ! "e.g."
 мысалы:мысалы INTERJ ; ! "e.g."
 
+!==================!
+ LEXICON Ideophones
+!==================!
+
+арс:арс IDEO ; ! ""
+жарқ:жарқ IDEO ; ! ""
 
 !=====================!
  LEXICON Abbreviations
