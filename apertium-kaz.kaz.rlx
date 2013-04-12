@@ -64,8 +64,6 @@ LIST P3 = p3 ;
 # Verbal Properties
 # -----------------
 
-LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
-
 # Semantic lists
 # --------------
 
@@ -124,16 +122,23 @@ LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
 
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 
+LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
+
 SET V-NotGerund = V - Gerund ;
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
+
+LIST FourAuxilliaries = "тұр" "жүр" "отыр" "жатыр" ;
 
 # Barriers
 # --------
 
 SET S-BOUNDARY = CS | Interr | EOS ;
 
-SECTION
+
+# ======= #
+  SECTION
+# ======= #
 
 # some of the rules having nouns as constraints didn't work when the noun has
 # personal copulas as subreadings, so the rule removing personal copulas is
@@ -147,12 +152,20 @@ SECTION
 
 # АРАЛ ТЕҢІЗІ.
 
-SECTION
+
+# ======= #
+  SECTION
+# ======= #
+
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
+
+
 # Determiners
 # -----------
+
+
 
 "<бір>" SELECT Det IF (-1C A) (1 N);
     #! Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
@@ -168,8 +181,10 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #! Акча бармы? Бар<adj>, ләкин бик аз!
 
 
+
 # Nouns
 # -----
+
 
 
  REMOVE Attr IF
@@ -187,16 +202,52 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (1 N OR Prop OR Subst)
         (1 (px3sp))
 ;
+# 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
+
+
+# If a former gerund or verbal adjective was lexicalized as a noun, select noun
+ SELECT N IF
+        (0 N)
+        (0 Gerund  OR (gpr_pot))
+;
+# professions, such as "оқушы"; -U gerunds , in theory other gerunds too
+
+
+
+# Adjectives
+# ----------
+
+
+
+# select adverbial reading of adjectives if any verbal form except gerund follows
+ SELECT Advl IF
+         (1C V-NotGerund)
+;
 #
+
+# select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
+ REMOVE Advl IF
+        (0 A1)
+        (1 EOS)
+;
+ REMOVE Subst IF
+         (0 A1)
+         (1 EOS)
+;
+#
+
+
 
 # Wordform specific rules   # Adding new stuff here is discouraged.
 # -----------------------   # Try to generalize, if possible, existing rules.
+
 
 
  "<өте>" SELECT Adv IF
                 (1 A)
 ;
 #! Бірақ кеше _өте_ суық еді!
+
 
  "<кейін>" SELECT Post IF
                 (-1 Abl)
@@ -224,6 +275,40 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 # Бөлмеде шкаф бар, содан бiр кiтап ал.
 
+
+#
+ "<ешкім>" SELECT Pron IF
+                  (1* ("жоқ"i) OR (v neg) BARRIER EOS)
+;
+#  70. Оның рекордын әзірше ешкім бұза алған жоқ.
+
+#
+ "<қарай>" SELECT Post IF
+        (1* MOVEMENT-V)
+;
+#
+
+
+#
+ "<жылы>" SELECT N IF
+        (-1 Num)
+;
+#
+
+
+#
+ "<қарасты>" SELECT A IF
+        (-1 (dat))
+;
+# 177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы
+# тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
+
+
+#
+ "<атты>" REMOVE V IF
+        (NOT 1 EOS OR Cm)
+;
+#
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
@@ -272,40 +357,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 #
 
-
-# select adverbial reading (of adjectives) if any verbal form except gerund follows
- SELECT Advl IF
-         (1C V-NotGerund)
-;
-#
-
-
-#
- "<қарай>" SELECT Post IF
-        (1* MOVEMENT-V)
-;
-#
-
-
-#
- "<жылы>" SELECT N IF
-        (-1 Num)
-;
-#
-
-
-# select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
- REMOVE Advl IF
-        (0 A1)
-        (1 EOS)
-;
- REMOVE Subst IF
-         (0 A1)
-         (1 EOS)
-;
-#
-
-
 #
  REMOVE Participle IF
         (NOT 1C V OR Vaux)
@@ -342,7 +393,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 # 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
 
-
 # if a word is ambigious between verbal adjective and gerund (in nominative - if there is a case affix it's a bit
 # complicated since the verbal adjective can be substantivized), select verbal adverb reading if a noun follows
 # SELECT V-ADJECTIVE IF
@@ -360,21 +410,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (NOT 1 V)
 ;
 #! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
-
-
-#
- "<қарасты>" SELECT A IF
-        (-1 (dat))
-;
-#  177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
-
-
-#
- "<атты>" REMOVE V IF
-        (NOT 1 EOS OR Cm)
-;
-#
-
 
 # FIXME CHECK
 # the three ambiguities above are quite common - an adjective (A4) with -LI is
@@ -451,13 +486,5 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 #
  "<Енді>" SELECT Adv IF
         (-1 BOS)
-;
-#
-
-
-#
- SELECT N IF
-        (0 N)
-        (0 (ger))
 ;
 #
