@@ -56,6 +56,8 @@ LIST Pl = pl ;
 
 LIST Dat = dat ;
 LIST Acc = acc ;
+LIST Abl = abl ;
+LIST Loc = loc ;
 
 LIST P3 = p3 ;
 
@@ -78,7 +80,7 @@ SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Nu
 
 SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ;
 
-SET MARK =  Cm | ("\\") | ("\;") ;
+SET MARK =  Cm | ("\\") | ("\;") | ("\(") ;
 
 SET WORDMARK = WORD | MARK ;
 
@@ -143,6 +145,8 @@ SECTION
 ;
 #
 
+# АРАЛ ТЕҢІЗІ.
+
 SECTION
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
@@ -163,22 +167,44 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #! Акча бармы? Бар<adj>.
 #! Акча бармы? Бар<adj>, ләкин бик аз!
 
+
 # Nouns
 # -----
 
-REMOVE Attr IF (NOT 1 N);
-# FIXME: this delets <loc.attr> which can appear before non-nouns
 
+ REMOVE Attr IF
+       (0 N OR Prop)
+       (NOT 0 Loc)
+       (NOT 1 N OR Prop)
+;
+# 176. Орталықта Түркістанның төл тарихына арналған музейлік [0]экспозиция жасақталған.
+
+
+# Select attributive reading of the first noun of the II izafet construct
+# (as Tatar grammars call it)
+ SELECT Attr IF
+        (0C N OR Prop)
+        (1 N OR Prop OR Subst)
+        (1 (px3sp))
+;
+#
 
 # Wordform specific rules   # Adding new stuff here is discouraged.
 # -----------------------   # Try to generalize, if possible, existing rules.
 
 
-SELECT Adv IF (0 ("өте")) (1 A);
-    #! Бірақ кеше _өте_ суық еді!
+ "<өте>" SELECT Adv IF
+                (1 A)
+;
+#! Бірақ кеше _өте_ суық еді!
+
+ "<кейін>" SELECT Post IF
+                (-1 Abl)
+;
+#! 23. Айгүл санап біткеннен кейін айналасына қарады.
 
 
-#: ugly and RISKY
+# ugly and RISKY
  "<сол>" SELECT Det IF
         (NOT 1 ("қол"i) OR ("жақ"i))
 ;
