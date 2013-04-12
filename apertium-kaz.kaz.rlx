@@ -54,6 +54,7 @@ LIST Subst = subst ;
 LIST Sg = sg ;
 LIST Pl = pl ;
 
+LIST Dat = dat ;
 LIST Acc = acc ;
 
 LIST P3 = p3 ;
@@ -138,7 +139,7 @@ SECTION
 
 #
  REMOVE Copula IF
-        (NOT 1 EOS)
+        (NOT 1 EOS OR MARK)
 ;
 #
 
@@ -153,10 +154,14 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
     #! Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
     #! Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
-"<бар>" SELECT Det IF (1* NPMARK BARRIER N) ;
-    #! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
-    #! Акча бармы? Бар<adj>.
-    #! Акча бармы? Бар<adj>, ләкин бик аз!
+"<бар>" SELECT V IF (-1 Dat) ;
+"<бар>" SELECT A IF (-1 (px3sp)) ;
+"<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
+# 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
+# шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
+#! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+#! Акча бармы? Бар<adj>.
+#! Акча бармы? Бар<adj>, ләкин бик аз!
 
 # Nouns
 # -----
