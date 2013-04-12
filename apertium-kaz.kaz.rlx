@@ -238,6 +238,12 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 
+# Verbs
+# =====
+
+
+
+
 # Wordform specific rules   # Adding new stuff here is discouraged.
 # -----------------------   # Try to generalize, if possible, existing rules.
 
@@ -309,6 +315,59 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (NOT 1 EOS OR Cm)
 ;
 #
+
+
+ "<қайта>" SELECT Adv IF
+        (1 ("баста"i))
+;
+#
+
+
+#
+ "<Енді>" SELECT Adv IF
+        (-1 BOS)
+;
+#
+
+
+#
+ "<көптеген>" SELECT Det IF
+        (1 N + Pl)
+;
+#
+
+# ambigious with v.pass
+ "<құрал>" SELECT N IF
+        (-1 A OR (n attr))
+;
+#
+
+
+
+# UGLY
+# "сый" is certainly not <v.iv.imp> in the following example,
+# I don't think that сый<imp> is ever used
+ "<сый>" SELECT N
+;
+# 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
+
+
+
+# imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
+# but let's try to deal with it in a less ugly way
+ "<іс>" SELECT N IF
+        (-1 A)
+;
+# 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
+
+
+# FIXME: could be achieved with a more general rule I think
+ "<көрме>" SELECT N IF
+        (1 ("зал"i))
+;
+# 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан, қолөнершілердің шеберханасы...
+
+
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
@@ -385,14 +444,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 # 169. Музей қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
-
-# UGLY
-# "сый" is certainly not <v.iv.imp> in the following example,
-# I don't think that сый<imp> is ever used
- "<сый>" SELECT N
-;
-# 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
-
 # if a word is ambigious between verbal adjective and gerund (in nominative - if there is a case affix it's a bit
 # complicated since the verbal adjective can be substantivized), select verbal adverb reading if a noun follows
 # SELECT V-ADJECTIVE IF
@@ -422,34 +473,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 #
 
-# ambigious with v.pass
- "<құрал>" SELECT N IF
-        (-1 A OR (n attr))
-;
-#
-
-
-# imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
-# but let's try to deal with it in a less ugly way /IS/
- "<іс>" SELECT N IF
-        (-1 A)
-;
-# 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
-
-
-# FIXME: could be achieved with a more general rule I think
- "<көрме>" SELECT N IF
-        (1 ("зал"i))
-;
-# 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан, қолөнершілердің шеберханасы...
-
-
-#
- "<көптеген>" SELECT Det IF
-        (1 N + Pl)
-;
-#
-
 #
  SELECT Prop IF
         (0 N)
@@ -457,7 +480,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 ("[:upper:]+[:lower:]*"r))
         (NOT -1 BOS)  ;
 # 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
-# 1. АЗАМАТ ҚАЙДА?
 
 #
  SELECT Prop IF
@@ -466,25 +488,4 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 ("[:upper:][:upper:]+"r))
 # АЗАМАТ ҚАЙДА?
 
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:]+[:lower:]*"r))
-        (NOT -1 BOS)  ;
-# 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
-
-
-# FIXME: generealize
- "<қайта>" SELECT Adv IF
-        (1 ("баста"i))
-;
-#
-
-
-#
- "<Енді>" SELECT Adv IF
-        (-1 BOS)
-;
 #
