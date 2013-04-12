@@ -20,20 +20,20 @@ LIST EOS = (<<<) ;
 
 LIST A = adj ;
 LIST Adv = adv ;
-LIST Pron = prn ; 
+LIST Pron = prn ;
 LIST N = n ;
 LIST Prop = np ;
 LIST V = v ;
 LIST Vaux = vaux ;
 LIST Cop = cop ;
-LIST Det = det ; 
+LIST Det = det ;
 LIST CC = cnjcoo ;
 LIST CS = cnjsub ;
 LIST Interj = ij ;
-LIST Num = num ; 
-LIST Post = post ; 
-LIST Postadv = postadv ; 
-LIST Cm = cm ; 
+LIST Num = num ;
+LIST Post = post ;
+LIST Postadv = postadv ;
+LIST Cm = cm ;
 
 # POS sub-categories
 # ------------------
@@ -58,24 +58,24 @@ LIST Acc = acc ;
 
 LIST P3 = p3 ;
 
-# Verbal Properties 
+# Verbal Properties
 # -----------------
 
-LIST Prc = prc_perf prc_impf prc_cond prc_vol ;
+LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
 
-# Semantic lists 
+# Semantic lists
 # --------------
 
-LIST MOVEMENT-V = "жүгір" ; 
+LIST MOVEMENT-V = "жүгір" ;
 
-LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ; 
+LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ;
 
 # All possible word categories
 # ----------------------------
 
 SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
 
-SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ; 
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ;
 
 SET MARK =  Cm | ("\\") | ("\;") ;
 
@@ -87,7 +87,7 @@ SET ADJ-MOD = Postadv | Adv ;
 
 SET NPMARK = N-MOD | ADJ-MOD ;
 
-# Categories which cannot be part of a noun phrase 
+# Categories which cannot be part of a noun phrase
 # ------------------------------------------------
 
 SET NPNH = WORDMARK - PRE-N ;
@@ -112,45 +112,32 @@ LIST A/Advl = (adj advl) ;
 
 LIST A/Subst = (adj subst nom) ;
 
-SET A4 = A/Advl | A/Subst ;
+SET A1 = A/Advl | A/Subst ;
 
 # Verb sets
 # ---------
 
-LIST V-P3 = (v TD aor p3 sg) (v TD neg aor p3 sg) (v TD ifi p3 sg) (v tv fut_plan p3 sg)
-            (v TD aor p3 pl) (v TD neg aor p3 pl) (v TD ifi p3 pl) (v tv fut_plan p3 sg)
-            (v tv ifi p3 sg) (v tv aor p3 sg) (v tv prc_vol  p3 sg) (v TD fut_plan p3 sg)
-            (v tv ifi p3 pl) (v tv aor p3 pl) (v tv prc_vol  p3 pl) (v TD fut_plan p3 sg)
-            (v iv aor p3 sg) (v iv ifi p3 sg) (v TD  gna_cond p3  sg) (v tv  gna_cond p3  sg) 
-            (v iv aor p3 pl) (v iv ifi p3 pl) (v TD  gna_cond p3  pl) (v tv  gna_cond p3  pl)            
-            (vaux pres p3 sg) (vaux neg ifi p3 sg)
-            (vaux pres p3 pl) (vaux neg ifi p3 pl)
-            (cop neg p3 sg)  (cop ifi p3 sg) 
-            (cop neg p3 pl)  (cop ifi p3 pl) ;
-
-               # FIXME: I suppose that this ^ is ugly, but right now I dont know
-               # how else it can be done. It'll be improved as I go along with CG
-               # a bit more. Any feedback appreciated ;) /I.S./
+LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
 
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 
 SET V-NotGerund = V - Gerund ;
 
-LIST Pers-Copula = (cop p3 sg)   (cop p3 pl) ;
- 
-# Barriers 
+LIST Copula = (cop p3 sg) (cop p3 pl) ;
+
+# Barriers
 # --------
 
-SET S-BOUNDARY = CS | Interr | EOS ; 
+SET S-BOUNDARY = CS | Interr | EOS ;
 
 SECTION
 
-# some of the rules having nouns as constraints didn't work when the noun had
-# personal copulas as subreadings, so I placed the rule dealing with personal
-# copulas into a separate section /IS, 01-09-2012/
+# some of the rules having nouns as constraints didn't work when the noun has
+# personal copulas as subreadings, so the rule removing personal copulas is
+# placed into a separate section, before any other rules
 
 #
- REMOVE Pers-Copula IF
+ REMOVE Copula IF
         (NOT 1 EOS)
 ;
 #
@@ -159,46 +146,65 @@ SECTION
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
-#SELECT A IF (0 A OR Adv) (1* N BARRIER NPNHA); 
-# FIXME supresses a lot of correct readings
-
-# Determiners 
+# Determiners
 # -----------
 
-"<бір>" SELECT Det IF (-1C A) (1 N); 
-    #! Әхмәт тиз генә иске зур бер агачка йөгерә.
-    #! Әхмәт акрын гына иске зур бер агачка йөгерә.
+"<бір>" SELECT Det IF (-1C A) (1 N);
+    #! Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
+    #! Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
-"<бар>" SELECT Det IF (0 V OR Det OR A OR N) (1* NPMARK BARRIER N) ;
-    #! пример : Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
-    #! Акча бармы? Бар<pred>.
-    #! Акча бармы? Бар<pred>, ләкин бик аз!
+"<бар>" SELECT Det IF (1* NPMARK BARRIER N) ;
+    #! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+    #! Акча бармы? Бар<adj>.
+    #! Акча бармы? Бар<adj>, ләкин бик аз!
 
-# Nouns 
+# Nouns
 # -----
 
-REMOVE Attr IF (NOT 1 N); 
+REMOVE Attr IF (NOT 1 N);
 # FIXME: this delets <loc.attr> which can appear before non-nouns
 
-# Wordform specific    # Adding new stuff here is discouraged.  
-# -----------------    # Try to generalize, if possible, existing rules.
+
+# Wordform specific rules   # Adding new stuff here is discouraged.
+# -----------------------   # Try to generalize, if possible, existing rules.
+
 
 SELECT Adv IF (0 ("өте")) (1 A);
-    #! Бірақ кеше өте^өте/өт<v><TD><prc_impf>/өте<adv>/өте<v><TD><imp><p2><sg>$ суық еді!
+    #! Бірақ кеше _өте_ суық еді!
+
+
+#: ugly and RISKY
+ "<сол>" SELECT Det IF
+        (NOT 1 ("қол"i) OR ("жақ"i))
+;
+#
+
+
+#:
+ "<аса>" SELECT Adv IF
+        (1 A)
+;
+# "Әл-Истахри келтірген мәліметтер аса құнды саналады."
+
+
+#
+ "<ал>" REMOVE CC IF
+        (NOT -1 BOS OR Cm )
+;
+# Бөлмеде шкаф бар, содан бiр кiтап ал.
+
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
+
 REMOVE N IF (0 ("ақырын"));
-    # a temporary ugly rule for translating the story 
+    ## Айгүл оны _ақырын_ тыңдайды.
 
 SELECT A/Advl IF (0 ("ақырын"));
-    # a temporary ugly rule for translating the story 
-    # (1* V BARRIER S-BOUNDARY) can be added after the following verb is fixed
-    ## Айгүл оны ақырын<adj><advl> тыңдайды.
+    ## Айгүл оны _ақырын_ тыңдайды.
 
 REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
-    # a temporary ugly rule for translating the story 
     #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
 
 ###################   TO BE DONE   ####################
@@ -217,12 +223,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 
 #########################################################################################
 
-#:
- "<аса>" SELECT Adv IF
-        (1 A)
-;
-#  "Әл-Истахри келтірген мәліметтер аса құнды саналады."
-
 
 #:
  SELECT Interj IF
@@ -231,11 +231,13 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 #  "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
 
+
 # get rid of postposition reading if noun/pronoun/any_subst._thing/gerund doesn't precede
  REMOVE Post IF
          (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
 ;
-#  
+#
+
 
 # select adverbial reading (of adjectives) if any verbal form except gerund follows
  SELECT Advl IF
@@ -243,44 +245,35 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ;
 #
 
+
 #
  "<қарай>" SELECT Post IF
         (1* MOVEMENT-V)
 ;
-#  
+#
+
 
 #
  "<жылы>" SELECT N IF
         (-1 Num)
 ;
-#  
+#
 
-# select pure adjective reading ("predicative" in this case) of adjective if sentence ends
+
+# select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
  REMOVE Advl IF
-	(0 A4)
-	(1 EOS)
+        (0 A1)
+        (1 EOS)
 ;
  REMOVE Subst IF
-         (0 A4)
+         (0 A1)
          (1 EOS)
 ;
 #
 
-# ugly and RISKY
- "<сол>" SELECT Det IF
-        (NOT 1 ("қол") OR ("жақ"))
-;
-#  
 
 #
- "<ал>" REMOVE CC IF
-	(NOT -1 BOS OR Cm )
-;
-# Бөлмеде шкаф бар, содан бiр кiтап ал.
-
-
-#
- REMOVE Prc IF
+ REMOVE Participle IF
         (NOT 1C V OR Vaux)
 ;
 #
@@ -304,7 +297,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
  SELECT N IF
         (0 ("қор"))
         (-1 N)
-; 
+;
 # 169. Музей қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
@@ -312,7 +305,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 # "сый" is certainly not <v.iv.imp> in the following example,
 # I don't think that сый<imp> is ever used
  "<сый>" SELECT N
-; 
+;
 # 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
 
 
@@ -345,7 +338,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 #
  "<атты>" REMOVE V IF
         (NOT 1 EOS OR Cm)
-; 
+;
 #
 
 
@@ -363,7 +356,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 # ambigious with v.pass
  "<құрал>" SELECT N IF
         (-1 A OR (n attr))
-; 
+;
 #
 
 
@@ -371,28 +364,45 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 # but let's try to deal with it in a less ugly way /IS/
  "<іс>" SELECT N IF
         (-1 A)
-; 
+;
 # 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
 
 
 # FIXME: could be achieved with a more general rule I think
  "<көрме>" SELECT N IF
         (1 ("зал"i))
-; 
+;
 # 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан, қолөнершілердің шеберханасы...
 
 
 #
  "<көптеген>" SELECT Det IF
         (1 N + Pl)
-; 
+;
 #
 
 #
  SELECT Prop IF
         (0 N)
         (0 Prop)
-        (0 ("[:upper:][:lower:]+"r))
+        (0 ("[:upper:]+[:lower:]*"r))
+        (NOT -1 BOS)  ;
+# 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+# 1. АЗАМАТ ҚАЙДА?
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:][:upper:]+"r))
+# АЗАМАТ ҚАЙДА?
+
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:]+[:lower:]*"r))
         (NOT -1 BOS)  ;
 # 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
 
@@ -400,14 +410,16 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 # FIXME: generealize
  "<қайта>" SELECT Adv IF
         (1 ("баста"i))
-; 
+;
 #
+
 
 #
  "<Енді>" SELECT Adv IF
         (-1 BOS)
-; 
+;
 #
+
 
 #
  SELECT N IF
@@ -415,5 +427,3 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 (ger))
 ;
 #
-
-
