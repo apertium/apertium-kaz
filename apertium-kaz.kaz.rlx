@@ -263,6 +263,11 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #* 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
 
 
+# imperative form is a bare stem, so it is often ambigious with other pars of speech
+ REMOVE (imp) IF
+        (NOT 1 EOS OR MARK OR ("де"))
+##  96 . Ал оң жақ жағалауы батпақты, онда[0] қалың орман өскен.
+## Бар деп айттым мен оған.
 
 # Wordform specific rules   # Adding new stuff here is discouraged.
 # =======================   # Try to generalize, if possible, existing rules.
