@@ -281,8 +281,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 
-# Wordform specific rules   # Adding new stuff here is discouraged.
-# =======================   # Try to generalize, if possible, existing rules.
+# Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
+# =============================   # Try to generalize, if possible, existing rules.
 
 
 
@@ -380,14 +380,12 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #
 
 
-
 # UGLY
 # "сый" is certainly not <v.iv.imp> in the following example,
 # I don't think that сый<imp> is ever used
  "<сый>" SELECT N
 ;
 # 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
-
 
 
 # imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
@@ -405,10 +403,15 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан, қолөнершілердің шеберханасы...
 
 
+#
+ SELECT N IF
+        (0 ("же"i) + (gpr_fut))
+        (0 ("жер"i) + N)
+;
+## 24 . Ол "Азамат қай [0]жерге кетті?  Оны көрдіңдер ме?" деп іздеп жатыр.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
-
 
 REMOVE N IF (0 ("ақырын"));
     ## Айгүл оны _ақырын_ тыңдайды.
