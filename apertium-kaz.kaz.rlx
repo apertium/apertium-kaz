@@ -251,7 +251,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 #
  SELECT Participle IF
-        (0 Participle OR VerbalAdverb)
+        (0C Participle OR VerbalAdverb)
         (1 Vaux)
 ;
 ## 16 . Азамат ескі үлкен бір ағашқа қарай қатты [?]жүгіріп бара жатыр, ол сол
@@ -417,7 +417,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ## 24 . Ол "Азамат қай [0]жерге кетті?  Оны көрдіңдер ме?" деп іздеп жатыр.
 
- SELECT ("қара") IF
+"<қарайды>" SELECT ("қара") IF
         (-1 Dat)
 ;
 ## 30 . Айгүл терезеде тұрған анасына қарайды.
