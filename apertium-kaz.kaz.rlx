@@ -120,9 +120,11 @@ LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
 
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 
+SET V-NotGerund = V - Gerund ;
+
 LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
 
-SET V-NotGerund = V - Gerund ;
+LIST VerbalAdverb = gna_perf gna_impf ; # FIXME complete the list
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
 
@@ -245,7 +247,15 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
  REMOVE Participle IF
         (NOT 1C V OR Vaux)
 ;
-#*
+##
+
+#
+ SELECT Participle IF
+        (0 Participle OR VerbalAdverb)
+        (1 Vaux)
+;
+## 16 . Азамат ескі үлкен бір ағашқа қарай қатты [?]жүгіріп бара жатыр, ол сол
+## ағаштың артына Айгүлден [0]жасырынып жатыр.
 
 # [0] is auxilliary, because a participle preceedes, and [0] is not in imperative,
 # because there is a subject (i.e. something in nominative closest to the
@@ -268,6 +278,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (NOT 1 EOS OR MARK OR ("де"))
 ##  96 . Ал оң жақ жағалауы батпақты, онда[0] қалың орман өскен.
 ## Бар деп айттым мен оған.
+
+
 
 # Wordform specific rules   # Adding new stuff here is discouraged.
 # =======================   # Try to generalize, if possible, existing rules.
