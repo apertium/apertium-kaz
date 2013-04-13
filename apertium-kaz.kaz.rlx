@@ -245,7 +245,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
  REMOVE Participle IF
         (NOT 1C V OR Vaux)
 ;
-#
+#*
 
 # [0] is auxilliary, because a participle preceedes, and [0] is not in imperative,
 # because there is a subject (i.e. something in nominative closest to the
@@ -260,7 +260,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (-1 (prc_perf))
         (-1* (prn nom) BARRIER BOS)
 ;
-# 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
+#* 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
 
 
 
