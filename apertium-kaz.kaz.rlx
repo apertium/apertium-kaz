@@ -165,8 +165,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 
-# Deciding about the part-of-speech
-# =================================
+# Part-of-speech marking
+# ======================
 
 
 
@@ -229,7 +229,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
        (NOT 0 Loc)
        (NOT 1 N OR Prop)
 ;
-# 176. Орталықта Түркістанның төл тарихына арналған музейлік [0]экспозиция жасақталған.
+## 176. Орталықта Түркістанның төл тарихына арналған музейлік [0]экспозиция жасақталған.
+## (!) 184 . Үшінші қабатта «Тәуелсіз [0]Қазақстандағы жаңа Түркістан» атты экспозициялар қойылған.
 
 
 # Select attributive reading of the first noun of the II izafet construct
@@ -289,6 +290,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## өзін ресейлік Pussy Riot панк тобымен және New York Times басылымымен [0]қатар қойды.
 
 
+
 # Verbs
 # =====
 
@@ -299,6 +301,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (NOT 1C V OR Vaux)
 ;
 ##
+
 
 #
  SELECT Participle IF
@@ -335,17 +338,18 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
  REMOVE (imp) IF
         (NOT 1 EOS OR MARK OR ("де"))
+;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.
  REMOVE (imp) IF
         (-1* Adv OR Advl OR Loc BARRIER BOS)
         (@1 Nom LINK NOT @2 Cm)
+;
 ## 35 . Айгүл бақшаның ішінде ақырын басып жүр.
 ## 35*. Айгүл, бақшаның ішінде ақырын басып жүр.
 ## Сен, бақшаның ішінде ақырын басып жүр.
 ## Сен үйде тұр.
 ## Кітап ал.
-
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
