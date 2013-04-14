@@ -75,7 +75,7 @@ LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ;
 
 SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
 
-SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC ;
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC | (attr) ;
 
 SET MARK =  Cm | ("\\") | ("\;") | ("\(") ;
 
@@ -436,10 +436,19 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## 30 . Айгүл терезеде тұрған анасына қарайды.
 
 
+#
 "<Сондай-ақ>" SELECT CC IF
                      (-1 BOS)
 ;
 ## 87 . Сондай-ақ, Арал теңізінің көлемі жайлы, Арал теңізі жайлы ұғымдар сонау ерте дүние әдебиеттерінде де кездеседі.
+
+
+#
+ SELECT N IF
+        (0 ("құрама"i))
+        (-1 PRE-N)
+;
+## 76 . Қазақстандық құрама «А» тобында соңғы орында қалып қойды.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
