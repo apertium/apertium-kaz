@@ -352,6 +352,14 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## Кітап ал.
 
 
+# FIXME extend/generalize
+ SELECT (gpr_past) IF
+        (0C (ger_past) + Nom)
+        (1 N)
+;
+##  172 . Сот арқылы немесе өзгеде осындай құзыреті бар мемлекеттік органдардың
+## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе [0]жекелеген заттардың есебінен;
+
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
 # =============================   # Try to generalize, if possible, existing rules.
 
