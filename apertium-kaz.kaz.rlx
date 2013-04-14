@@ -15,8 +15,8 @@ SETS
 LIST BOS = (>>>) ;
 LIST EOS = (<<<) ;
 
-# First level tags
-# ----------------
+# First-level/Parts-of-speech tags
+# --------------------------------
 
 LIST A = adj ;
 LIST Adv = adv ;
@@ -48,8 +48,9 @@ LIST Advl = advl ;
 LIST Attr = attr ;
 LIST Subst = subst ;
 
-# Morphosyntactic properties
-# --------------------------
+# Morphosyntactic properties   # if you find yourself embracing the same tag in
+# --------------------------   # brackets over and over again, you may want to
+                               # add it here
 
 LIST Sg = sg ;
 LIST Pl = pl ;
@@ -116,6 +117,8 @@ SET A1 = A/Advl | A/Subst ;
 # Verb sets
 # ---------
 
+LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
+
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
 
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
@@ -128,7 +131,7 @@ LIST VerbalAdverb = gna_perf gna_impf ; # FIXME complete the list
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
 
-LIST FourAuxilliaries = "тұр" "жүр" "отыр" "жатыр" ;
+LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жатыр" ;
 
 # Barriers
 # --------
@@ -139,6 +142,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # ======= #
   SECTION
 # ======= #
+
 
 # some of the rules having nouns as constraints didn't work when the noun has
 # personal copulas as subreadings, so the rule removing personal copulas is
@@ -157,6 +161,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
   SECTION
 # ======= #
 
+
+SELECT FiniteVerb IF
+        (1 EOS OR ("де"i))               # FIXME s/де/SentenceBoundary/
+        (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
+;
+## 40 . Мүмкін бұл Азамат [0]шығар?
+##  13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
+## Мағынасы төңкеріліп [0]кетті деп ойламағаным үшін ғафу етіңіз.
 
 SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
@@ -261,12 +273,12 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # because there is a subject (i.e. something in nominative closest to the
 # beginning of the sentence)
  SELECT (vaux p3) IF
-        (0 FourAuxilliaries)
+        (0 FourAuxiliaries)
         (-1 (prc_perf))
         (@1 Nom)
 ;
  SELECT (vaux p3) IF
-        (0 FourAuxilliaries)
+        (0 FourAuxiliaries)
         (-1 (prc_perf))
         (-1* (prn nom) BARRIER BOS)
 ;
@@ -276,14 +288,15 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
  REMOVE (imp) IF
         (NOT 1 EOS OR MARK OR ("де"))
-##  96 . Ал оң жақ жағалауы батпақты, онда[0] қалың орман өскен.
-## Бар деп айттым мен оған.
+##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
+## [0]Бар деп айттым мен оған.
  REMOVE (imp) IF
         (-1* Adv OR Advl OR Loc BARRIER BOS)
         (@1 Nom LINK NOT @2 Cm)
 ## 35 . Айгүл бақшаның ішінде ақырын басып жүр.
 ## 35*. Айгүл, бақшаның ішінде ақырын басып жүр.
 ## Сен, бақшаның ішінде ақырын басып жүр.
+## Сен үйде тұр.
 ## Кітап ал.
 
 
