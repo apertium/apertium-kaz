@@ -127,7 +127,7 @@ SET V-NotGerund = V - Gerund ;
 
 LIST Participle = prc_perf prc_impf prc_cond prc_vol ;
 
-LIST VerbalAdverb = gna_perf gna_impf ; # FIXME complete the list
+LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
 
@@ -154,6 +154,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ##
 
+
+# Remove copula here
 ## АРАЛ ТЕҢІЗІ.
 
 
