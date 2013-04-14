@@ -304,75 +304,71 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # =============================   # Try to generalize, if possible, existing rules.
 
 
-
+#
  "<өте>" SELECT Adv IF
                 (1 A)
 ;
-#! Бірақ кеше _өте_ суық еді!
+## Бірақ кеше _өте_ суық еді!
 
 
+#
  "<кейін>" SELECT Post IF
                 (-1 Abl)
 ;
-#! 23. Айгүл санап біткеннен кейін айналасына қарады.
+## 23. Айгүл санап біткеннен кейін айналасына қарады.
 
 
 # ugly and RISKY
  "<сол>" SELECT Det IF
         (NOT 1 ("қол"i) OR ("жақ"i))
 ;
+##
+
+
 #
-
-
-#:
  "<аса>" SELECT Adv IF
         (1 A)
 ;
-# "Әл-Истахри келтірген мәліметтер аса құнды саналады."
+## "Әл-Истахри келтірген мәліметтер аса құнды саналады."
 
 
 #
  "<ал>" REMOVE CC IF
         (NOT -1 BOS OR Cm )
 ;
-# Бөлмеде шкаф бар, содан бiр кiтап ал.
+## Бөлмеде шкаф бар, содан бiр кiтап ал.
 
 
 #
  "<ешкім>" SELECT Pron IF
                   (1* ("жоқ"i) OR (v neg) BARRIER EOS)
 ;
-#  70. Оның рекордын әзірше ешкім бұза алған жоқ.
+## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
+
 
 #
  "<қарай>" SELECT Post IF
         (-1 Dat)
 ;
-#
+##
 
 
 #
  "<жылы>" SELECT N IF
         (-1 Num)
 ;
-#
+##
 
 
 #
  "<қарасты>" SELECT A IF
         (-1 (dat))
 ;
-# 177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы
-# тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
+## 177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы
+## тарихи-мемориалдық мұражайы атты филиал жұмыс жасайды.
 
 
 #
- "<атты>" REMOVE V IF
-        (NOT 1 EOS OR Cm)
-;
-#
-
-
  "<қайта>" SELECT Adv IF
         (1C V)
 ;
@@ -384,20 +380,21 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
  "<Енді>" SELECT Adv IF
         (-1 BOS)
 ;
-#
+##
 
 
 #
  "<көптеген>" SELECT Det IF
         (1 N + Pl)
 ;
-#
+##
+
 
 # ambigious with v.pass
  "<құрал>" SELECT N IF
         (-1 A OR (n attr))
 ;
-#
+##
 
 
 # UGLY
@@ -478,6 +475,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 V OR Vaux OR Cop)
         (0 P3)
 ;
+##
 
 ###################################### TO BE SORTED ############################
 
@@ -487,14 +485,14 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
          (-1 BOS)
          (1 Cm)
 ;
-#  "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
+## "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
 
 
 # get rid of postposition reading if noun/pronoun/any_subst._thing/gerund doesn't precede
  REMOVE Post IF
          (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
 ;
-#
+##
 
 
 #
@@ -502,50 +500,45 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 ("құрама"))
         (-1 (np top))
 ;
-# 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+
 
 # FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
 # (because it has cop p3 subreding I guess)
  "<жинағы>" SELECT N IF
         (-1 ("<жәдігерлер>"))
 ;
-# 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
+## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
+
 
 #
  SELECT N IF
         (0 ("қор"))
         (-1 N)
 ;
-# 169. Музей қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
-
-# if a word is ambigious between verbal adjective and gerund (in nominative - if there is a case affix it's a bit
-# complicated since the verbal adjective can be substantivized), select verbal adverb reading if a noun follows
-# SELECT V-ADJECTIVE IF
-#        (0 Gerund (nom))
-#        (0 V-ADJECTIVE)
-#        (1 N)
-#;
+## 169. Музей [1]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
-# RISKY
-#REMOVE Acc IF (0 ("қызықты")) (NOT 1 V);
+# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
+# accusative, and 2) with  a verb in <ifi> form.
  REMOVE Acc IF
         (0 (n acc) OR (adj subst acc))
         (0 A)
         (NOT 1 V)
 ;
-#! Еуро-2012 ^туралы/туралы<post>$ ^қызықты/қызық<adj><subst><acc>/қызықты<adj>/қызықты<adj><advl>/қызықты<adj><subst><nom>$ ^статистикаға/статистика<n><dat>$ көз салыңыз.
-
-# FIXME CHECK
-# the three ambiguities above are quite common - an adjective (A4) with -LI is
-# ambiguous with: 1) a noun or adjective in accusative, and 2) with  a verb in
-# <ifi> form. So it is a good idea to have a more general rule:
  REMOVE V IF
         (0 A)
         (0 (ifi))
         (NOT 1 EOS OR Cm)
 ;
-#
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+##
+
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
+
 
 #
  SELECT Prop IF
@@ -553,13 +546,12 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 Prop)
         (0 ("[:upper:]+[:lower:]*"r))
         (NOT -1 BOS)  ;
-# 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+
 
 #
  SELECT Prop IF
         (0 N)
         (0 Prop)
         (0 ("[:upper:][:upper:]+"r))
-# АЗАМАТ ҚАЙДА?
-
-#
+## АЗАМАТ ҚАЙДА?
