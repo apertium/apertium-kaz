@@ -495,8 +495,9 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 #
-"<Сондай-ақ>" SELECT CC IF
-                     (-1 BOS)
+ SELECT CC IF
+        (0 ("сондай-ақ"i))
+        (-1 BOS OR Cm)
 ;
 ## 87 . Сондай-ақ, Арал теңізінің көлемі жайлы, Арал теңізі жайлы ұғымдар сонау ерте дүние әдебиеттерінде де кездеседі.
 
