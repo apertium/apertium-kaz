@@ -447,8 +447,9 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 #
- "<Енді>" SELECT Adv IF
-        (-1 BOS)
+ "<енді>" SELECT Adv IF
+        (1* Acc BARRIER EOS)
+        (1* V BARRIER EOS)
 ;
 ##
 
