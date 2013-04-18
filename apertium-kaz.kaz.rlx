@@ -218,6 +218,14 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #! Акча бармы? Бар<adj>, ләкин бик аз!
 
 
+#
+REMOVE Det IF
+       (0C Pron)
+       (NOT 1 N OR A OR Subst)
+;
+##
+
+
 
 # Nouns
 # =====
