@@ -290,6 +290,20 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## өзін ресейлік Pussy Riot панк тобымен және New York Times басылымымен [0]қатар қойды.
 
 
+#
+ "<қарай>" SELECT Post IF
+        (-1 Dat)
+;
+##
+
+
+#
+ "<дейін>" SELECT Post IF
+        (-1 Dat)
+;
+##
+
+
 
 # Verbs
 # =====
@@ -407,13 +421,6 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (1* ("жоқ"i) OR (v neg) BARRIER EOS)
 ;
 ## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
-
-
-#
- "<қарай>" SELECT Post IF
-        (-1 Dat)
-;
-##
 
 
 #
