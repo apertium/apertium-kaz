@@ -175,8 +175,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 EOS OR ("де"i))               # FIXME s/де/SentenceBoundary/
         (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
 ;
-## 40 . Мүмкін бұл Азамат [0]шығар?
-##  13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
+## (!) 40 . Мүмкін бұл Азамат [0]шығар?
+##  (!) 13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
 ## Мағынасы төңкеріліп [0]кетті деп ойламағаным үшін ғафу етіңіз.
 
 
@@ -221,7 +221,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 # FIXME removes determiner even when there is a noun 1 to the right
 #REMOVE Det IF
 #       ((NEGATE 1 N OR Subst) OR (NEGATE 1 A LINK 1 N OR Subst))
-;
+#;
 ## 44 . Ол енді ол дыбысты анығырақ ести бастады.
 ## (!) 34 . Ол Азаматтың қайда екенін білсе де айтқысы келген жоқ.
 
@@ -316,6 +316,13 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 #
  "<дейін>" SELECT Post IF
         (-1 Dat)
+;
+##
+
+
+#
+ "<бері>" SELECT Post IF
+        (-1 Abl)
 ;
 ##
 
