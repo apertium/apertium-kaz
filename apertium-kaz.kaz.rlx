@@ -542,6 +542,31 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ;
 ## 76 . Қазақстандық құрама «А» тобында соңғы орында қалып қойды.
 
+
+#
+ SELECT N IF
+        (0 ("қор"))
+        (-1 N)
+;
+## 169. Музей [1]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
+
+
+#
+ SELECT A IF
+        (0 ("құрама"))
+        (-1 (np top))
+;
+## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+
+
+# FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
+# (because it has cop p3 subreding I guess)
+ "<жинағы>" SELECT N IF
+        (-1 ("<жәдігерлер>"))
+;
+## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
+
+
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
@@ -573,29 +598,6 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 ##
 
 ###################################### TO BE SORTED ############################
-
-#
- SELECT A IF
-        (0 ("құрама"))
-        (-1 (np top))
-;
-## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
-
-
-# FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
-# (because it has cop p3 subreding I guess)
- "<жинағы>" SELECT N IF
-        (-1 ("<жәдігерлер>"))
-;
-## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
-
-
-#
- SELECT N IF
-        (0 ("қор"))
-        (-1 N)
-;
-## 169. Музей [1]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
 # An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
