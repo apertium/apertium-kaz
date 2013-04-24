@@ -56,6 +56,7 @@ LIST Sg = sg ;
 LIST Pl = pl ;
 
 LIST Nom = nom ;
+LIST Gen = gen ;
 LIST Dat = dat ;
 LIST Acc = acc ;
 LIST Abl = abl ;
@@ -101,11 +102,6 @@ SET NOT-ADV = WORDMARK - Adv ;
 
 LIST N-SG-NOM = (n sg nom) ;
 LIST N-PL-NOM = (n pl nom) ;
-
-# Pronoun sets
-# ------------
-
-SET PRN-PERS = (prn pers) ;
 
 # Adjective sets
 # --------------
