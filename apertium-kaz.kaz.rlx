@@ -569,19 +569,8 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
 
 
-###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
-###################   SOME SHOULD BE REWRITTEN LATER                ####################
-
-REMOVE N IF (0 ("ақырын"));
-    ## Айгүл оны _ақырын_ тыңдайды.
-
-SELECT A/Advl IF (0 ("ақырын"));
-    ## Айгүл оны _ақырын_ тыңдайды.
-
-REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
-    #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
-
 ###################   TO BE DONE   ####################
+
 
 # Deciding about the number of a verb or copula in the 3 person
 # Basic idea is to remove plural reading if subject is not in plural,
@@ -598,6 +587,7 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 P3)
 ;
 ##
+
 
 ###################################### TO BE SORTED ############################
 
@@ -636,3 +626,17 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
         (0 Prop)
         (0 ("[:upper:][:upper:]+"r))
 ## АЗАМАТ ҚАЙДА?
+
+
+###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
+###################   SOME SHOULD BE REWRITTEN LATER                ####################
+
+
+REMOVE N IF (0 ("ақырын"));
+    ## Айгүл оны _ақырын_ тыңдайды.
+
+SELECT A/Advl IF (0 ("ақырын"));
+    ## Айгүл оны _ақырын_ тыңдайды.
+
+REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
+    #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
