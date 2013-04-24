@@ -548,7 +548,7 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (0 ("қор"))
         (-1 N)
 ;
-## 169. Музей [1]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
+## 169. Музей [0]қоры Қазақстан Республикасы Мәдениет және ақпарат министрінің...
 
 
 #
@@ -559,13 +559,12 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 ## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
 
 
-# FIXME: I wanted to refer "жәдігер" as a lemma, but it didn't work
-# (because it has cop p3 subreding I guess)
+#
  "<жинағы>" SELECT N IF
-        (-1 ("<жәдігерлер>"))
+            (-1 N + Pl)
 ;
 ## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
-
+## Қазақстан заңдарының жинағы
 
 ###################   TO BE DONE   ####################
 
@@ -641,11 +640,19 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 
 
 # ======= #
-  SECTION
+  SECTION     # experimental (or "CG is awesome!")
 # ======= #
 
 
-# FIXME 1) CHECK this approach.
+# FIXME
  SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек") BARRIER EOS) ;
 ## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
 ## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
+
+
+#
+ SUBSTITUTE (dat) (nom) TARGET (prn pers) IF (1* (ger_past) + Nom LINK 1 ("ұна") + (aor) BARRIER EOS) ;
+ SUBSTITUTE (ger_past) (inf) TARGET (ger_past nom) IF (1 ("ұна") + (aor) BARRIER EOS) ;
+ SUBSTITUTE (nom) (*) TARGET (inf nom) IF (1 ("ұна") + (aor) BARRIER EOS) ;
+ SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (p1)) ;
+## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
