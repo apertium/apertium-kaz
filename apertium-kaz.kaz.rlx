@@ -629,11 +629,6 @@ SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
         (0 ("[:upper:][:upper:]+"r))
 ## АЗАМАТ ҚАЙДА?
 
-# FIXME 1) CHECK this approach. 2) it can also be px2sg, px3sp etc.
- SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger px1sg) LINK 1 ("керек") BARRIER EOS) ;
-## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
-## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
-
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
@@ -647,3 +642,14 @@ SELECT A/Advl IF (0 ("ақырын"));
 
 REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
     #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
+
+
+# ======= #
+  SECTION
+# ======= #
+
+
+# FIXME 1) CHECK this approach.
+ SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек") BARRIER EOS) ;
+## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
+## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
