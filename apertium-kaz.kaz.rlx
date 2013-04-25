@@ -191,19 +191,21 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # ===========
 
 
-
+#
 "<бір>" SELECT Det IF (-1C A) (1 N);
-    #! Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
-    #! Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
+## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
+## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
+
+#
 "<бар>" SELECT V IF (-1 Dat) ;
 "<бар>" SELECT A IF (-1 (px3sp)) ;
 "<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
-# 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
-# шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
-#! Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
-#! Акча бармы? Бар<adj>.
-#! Акча бармы? Бар<adj>, ләкин бик аз!
+## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
+## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
+## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+## Акча бармы? Бар<adj>.
+## Акча бармы? Бар<adj>, ләкин бик аз!
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
@@ -228,6 +230,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 
+#
  REMOVE Attr IF
        (0 N OR Prop)
        (NOT 0 Loc)
@@ -244,7 +247,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 N OR Prop OR Subst)
         (1 (px3sp))
 ;
-# 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
+## 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
 
 
 # If a former gerund or verbal adjective was lexicalized as a noun, select noun
@@ -252,7 +255,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (0 N)
         (0 Gerund  OR (gpr_pot))
 ;
-# professions, such as "оқушы"; -U gerunds , in theory other gerunds too
+## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
 
 
@@ -265,7 +268,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  SELECT Advl IF
          (1C V-NotGerund)
 ;
-#
+##
+
 
 # select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
  REMOVE Advl IF
@@ -276,7 +280,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
          (0 A1)
          (1 EOS)
 ;
-#
+##
 
 
 
@@ -357,7 +361,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (-1 (prc_perf))
         (-1* (prn nom) BARRIER BOS)
 ;
-#* 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
+## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
 
 
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
@@ -486,7 +490,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # I don't think that сый<imp> is ever used
  "<сый>" SELECT N
 ;
-# 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
+## 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
 
 
 # imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
@@ -494,7 +498,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  "<іс>" SELECT N IF
         (-1 A)
 ;
-# 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
+## 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
 
 
 # FIXME: could be achieved with a more general rule I think
@@ -510,6 +514,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (0 ("жер"i) + N)
 ;
 ## 24 . Ол "Азамат қай [0]жерге кетті?  Оны көрдіңдер ме?" деп іздеп жатыр.
+
 
 "<қарайды>" SELECT ("қара") IF
                    (-1 Dat)
