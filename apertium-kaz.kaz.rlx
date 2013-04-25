@@ -62,6 +62,7 @@ LIST Acc = acc ;
 LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
+
 LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
@@ -221,7 +222,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (0C Det OR Pron)
         (1 Adv)
 ;
-##
+## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
 
 
 
@@ -265,13 +266,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 # select adverbial reading of adjectives if any verbal form except gerund follows
+# FIXME CHECK it might be a gerund as well
  SELECT Advl IF
          (1C V-NotGerund)
 ;
 ##
 
 
-# select pure adjective reading ("predicative" as it is called) of adjective if sentence ends
+# select pure adjective reading ("predicative" in this case) of an adjective if sentence ends
  REMOVE Advl IF
         (0 A1)
         (1 EOS)
@@ -402,7 +404,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # in 3 person is kind of optional too, so singular reading will work/is right for
 # the majority of the cases.
 #
-# Selecting plural reading might be more productive.
+# Selecting plural reading might be a more productive approach.
  REMOVE Pl IF
         (0 V OR Vaux OR Cop)
         (0 P3)
@@ -577,6 +579,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## 24 . Ол "Азамат қай [0]жерге кетті?  Оны көрдіңдер ме?" деп іздеп жатыр.
 
 
+#
 "<қарайды>" SELECT ("қара") IF
                    (-1 Dat)
 ;
