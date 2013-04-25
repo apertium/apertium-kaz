@@ -390,6 +390,67 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе [0]жекелеген заттардың есебінен;
 
 
+###################   TO BE DONE   ####################
+
+
+# Deciding about the number of a verb or copula in the 3 person
+# Basic idea is to remove plural reading if subject is not in plural,
+# but there a lot of corner cases, which lead to lots of mispredictions.
+# So let's just delete plural reading for now.
+#
+# In Tatar, when the subject indicates the number, this LAR affix for the verbs
+# in 3 person is kind of optional too, so singular reading will work/is right for
+# the majority of the cases.
+#
+# Selecting plural reading might be more productive.
+ REMOVE Pl IF
+        (0 V OR Vaux OR Cop)
+        (0 P3)
+;
+##
+
+
+###################################### TO BE SORTED ############################
+
+
+# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
+# accusative, and 2) with  a verb in <ifi> form.
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst acc))
+        (0 A)
+        (NOT 1 V)
+;
+ REMOVE V IF
+        (0 A)
+        (0 (ifi))
+        (NOT 1 EOS OR Cm)
+;
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
+
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:]+[:lower:]*"r))
+        (NOT -1 BOS)  ;
+## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
+
+
+#
+ SELECT Prop IF
+        (0 N)
+        (0 Prop)
+        (0 ("[:upper:][:upper:]+"r))
+## АЗАМАТ ҚАЙДА?
+
+################################################################################
+
+
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
 # =============================   # Try to generalize, if possible, existing rules.
@@ -579,65 +640,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 ("іш") + V)
 ;
 ## Шелекпен сыра ішемін.
-
-
-###################   TO BE DONE   ####################
-
-
-# Deciding about the number of a verb or copula in the 3 person
-# Basic idea is to remove plural reading if subject is not in plural,
-# but there a lot of corner cases, which lead to lots of mispredictions.
-# So let's just delete plural reading for now.
-#
-# In Tatar, when the subject indicates the number, this LAR affix for the verbs
-# in 3 person is kind of optional too, so singular reading will work/is right for
-# the majority of the cases.
-#
-# Selecting plural reading might be more productive.
- REMOVE Pl IF
-        (0 V OR Vaux OR Cop)
-        (0 P3)
-;
-##
-
-
-###################################### TO BE SORTED ############################
-
-
-# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
-# accusative, and 2) with  a verb in <ifi> form.
- REMOVE Acc IF
-        (0 (n acc) OR (adj subst acc))
-        (0 A)
-        (NOT 1 V)
-;
- REMOVE V IF
-        (0 A)
-        (0 (ifi))
-        (NOT 1 EOS OR Cm)
-;
- "<атты>" SELECT A IF
-                 (1 N)
-;
-## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
-## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
-
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:]+[:lower:]*"r))
-        (NOT -1 BOS)  ;
-## 108. Өйткені бүгінгі _Арал_ деген атау сол XVII ғасырдан бергі жерге берілген.
-
-
-#
- SELECT Prop IF
-        (0 N)
-        (0 Prop)
-        (0 ("[:upper:][:upper:]+"r))
-## АЗАМАТ ҚАЙДА?
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
