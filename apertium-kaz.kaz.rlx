@@ -66,13 +66,6 @@ LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
-# Semantic lists
-# --------------
-
-LIST MOVEMENT-V = "жүгір" ;
-
-LIST MOVEMENT-ADV = "тиз" "акрын" "әкрен" ;
-
 # All possible word categories
 # ----------------------------
 
@@ -176,9 +169,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## (!) 40 . Мүмкін бұл Азамат [0]шығар?
 ##  (!) 13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
 ## Мағынасы төңкеріліп [0]кетті деп ойламағаным үшін ғафу етіңіз.
-
-
-SELECT Adv IF (0 MOVEMENT-ADV) (0 A OR Adv) (1* MOVEMENT-V BARRIER S-BOUNDARY);
 
 
 #
