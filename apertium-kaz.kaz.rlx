@@ -207,6 +207,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
 ## Акча бармы? Бар<adj>.
 ## Акча бармы? Бар<adj>, ләкин бик аз!
+"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
