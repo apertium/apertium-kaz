@@ -322,6 +322,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ##
 
 
+#
+ "<бірге>" SELECT Post IF
+        (-1 Ins)
+;
+##
+
 
 # Verbs
 # =====
@@ -646,11 +652,21 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Шелекпен сыра ішемін.
 
 
-#
+# да<postadv/conj>
  SELECT Postadv IF
         (0 (gna_cond))
 ;
 ## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
+
+
+#
+ SELECT Adv IF
+        (0 ("бірге"))
+        (NOT -1 Ins)
+        (1 V)
+;
+## 6 . Азамат пен Айгүл ойнағанды жақсы көреді, олар әрдайым үлкен үйдің алдындағы бақшада [0]бірге ойнайды.
+## (!) Ол Азаматпен бірге келді.
 
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
