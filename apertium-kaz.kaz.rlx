@@ -678,3 +678,10 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
  SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (prn p1)) ;
  SUBSTITUTE (p3) (p2) TARGET ("ұна") + (aor) IF (@1 (prn p2)) ; # FIXME take the tag from the first word
 ## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
+
+### FIXME: Ilnar, could you look at this?
+##
+# "<да>" SELECT Postadv IF
+#        (-1 gna_cond)
+#;
+
