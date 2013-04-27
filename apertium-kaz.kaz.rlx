@@ -202,12 +202,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 "<бар>" SELECT V IF (-1 Dat) ;
 "<бар>" SELECT A IF (-1 (px3sp)) ;
 "<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
+"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
 ## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
 ## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
 ## Акча бармы? Бар<adj>.
 ## Акча бармы? Бар<adj>, ләкин бик аз!
-"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
@@ -646,6 +646,13 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Шелекпен сыра ішемін.
 
 
+#
+ SELECT Postadv IF
+        (0 (gna_cond))
+;
+## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
+
+
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
@@ -678,10 +685,3 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
  SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (prn p1)) ;
  SUBSTITUTE (p3) (p2) TARGET ("ұна") + (aor) IF (@1 (prn p2)) ; # FIXME take the tag from the first word
 ## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
-
-### FIXME: Ilnar, could you look at this?
-##
-# "<да>" SELECT Postadv IF
-#        (-1 gna_cond)
-#;
-
