@@ -195,11 +195,10 @@ Multichar_Symbols
 
 ! Modal particles
 %<qst%>       ! Modal question particle
-%<mod_foc%>   ! "Particles of politeness and ardent desire"
-              ! (as in [N. Poppe. Tatar Manual]) or
-              ! "what about ..." question particles" :)
-              ! (as in kir.lexc)
+%<emph%>      ! Emphasizing modal particle (for imperative and jussive/optative forms)
+              !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
+              !# -ғой/-қой
 %<mod%>       ! Modal verbs (шығар, сияқты etc)
 
 ! Punctuation
@@ -460,9 +459,9 @@ N-INFL-COMMON ;
 
 ! Modal/discourse particles
 
-LEXICON CLIT-MODFOC
+LEXICON CLIT-EMPH
 
-%+шы%<mod_foc%>:%>ш%{I%} # ;
+%+шы%<emph%>:%>ш%{I%} # ;
 # ;
 
 LEXICON CLIT-QST-MA
@@ -884,11 +883,11 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_impf%>:%>%{E%}т%{I%}н GER-POSS-REAL ;
 
 ! Imperatives
-%<imp%>%<p2%>%<sg%>: CLIT-MODFOC ;
-%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-MODFOC ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-MODFOC ;
-%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-MODFOC ;     ! Dir/LR FIXME CHECK
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-MODFOC ;
+%<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
 %<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT ;
@@ -1561,6 +1560,7 @@ LEXICON ModalParticles
 ма:ме QST ; ! "" Dir/LR
 ма:бе QST ; ! "" Dir/LR
 ма:пе QST ; ! "" Dir/LR
+ше:ше QST ; ! ""
 
 ғой:%~ғой MOD-ASS ; ! "" Dir/RL
 ғой:ғой MOD-ASS ; ! "" Dir/LR
