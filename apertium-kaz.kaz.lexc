@@ -1145,14 +1145,12 @@ PRON-DEM-ANA ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
-! FIXME DISCUSS: Since <reas><abl> is a feature only of "ol" and "sol",
-! below were going to be lexicalised and added as subordinative
-! conjunctions. /IS/
-! This is a bad idea though, because -ндықтан affix is a feature of verbs
-! as well, so we'll have to consider it a productive derivation anyway /IS/
+! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
+! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
+! productive derivation.
 
-ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
-сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
+!ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
+!сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
 
 
 !!!!!!!   I N T E R R O G A T I V E
@@ -1326,7 +1324,10 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
-%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы", which should have a <px3sp> analysis
+%<n%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASE-ETC ; ! (e.g. чик сакчылары=пограничники)
+                                                         !  FIXME CHECK: Is {S} needed here ?
+%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
+                       ! which should have a <px3sp> analysis
 
 LEXICON N3
 ! Singularia tantum
@@ -1519,7 +1520,7 @@ LEXICON CS
 
 LEXICON CA
 
-%<cnjadv%>: # ; 
+%<cnjadv%>: CLIT-GHANA-ETC ;
 
 LEXICON QST
 
@@ -1639,6 +1640,7 @@ LEXICON ModalParticles
 дегенмен:дегенмен CA ; ! "nevertheless"
 жазуынша:жазуынша CA ; ! ""
 мәлімдеуінше:мәлімдеуінше CA ; ! ""
+ондықтан:ондықтан CA ; ! "that is why"
 осы% себептен:осы% себептен CA ; ! "therefore"
 пікірінше:пікірінше CA ; ! ""
 сонда% да:сонда% да CA ; ! "nevertheless" Use/MT   = (tat) шулай да
