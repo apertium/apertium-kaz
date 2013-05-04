@@ -1320,14 +1320,20 @@ LEXICON N1
 %<n%>%<attr%>: # ;
 %<n%>: SUBST ;
 
+LEXICON N-COMPOUND-PX-COMMON
+
+:%>%{S%}%{I%}%{n%} CASE-ETC ;
+POSS-REAL ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
+                  ! which should have a <px3sp> analysis
+
+
 LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
-%<n%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
+%<n%>: N-COMPOUND-PX-COMMON ;
 %<n%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASE-ETC ; ! (e.g. чик сакчылары=пограничники)
-                                                         !  FIXME CHECK: Is {S} needed here ?
-%<n%>: POSS-REAL ;     ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
-                       ! which should have a <px3sp> analysis
+                                                      !  FIXME CHECK: Is {S} needed here ?
+
 
 LEXICON N3
 ! Singularia tantum
@@ -1436,6 +1442,10 @@ LEXICON NP-PAT-VICH
 LEXICON NP-ORG
 
 %<np%>%<org%>: CASE ; 
+
+LEXICON NP-ORG-COMPOUND 
+
+%<np%>%<org%>: N-COMPOUND-PX-COMMON ;   ! COMMON because no plural
 
 LEXICON NP-AL
 
@@ -9744,6 +9754,7 @@ Wrigley:Wrigley NP-ORG ; ! ""
 Google:Google NP-ORG ; ! ""
 Twitter:Twitter NP-ORG ; ! ""
 YouTube:YouTube NP-ORG ; ! ""
+Түрік% Әуежолдары:Түрік% Әуежолдар NP-ORG-COMPOUND ; ! "Turkish Airways"
 
 ! Other proper names (events etc)
 !================================
