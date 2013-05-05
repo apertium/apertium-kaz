@@ -140,12 +140,14 @@ Cx:Cy <=> :VoicelessCns/[ %>: | т:0 | д:0 | с:0 | %  | %{☭%}:0 ] _ ;
 !                        [ :BackVow :у [ :Cns - :FrontCns]* ]/[ %>: ] _ ;
 !                        [ ы:0 [ :и | :у ] [ :Cns - :FrontCns]* ]/%>: _ ;
 !                             [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
+                             [ :у :Cns* [ :VoicelessCns - :FrontCns ]/%{☭%}:0 ]/%>: _ ;
 
 
 
 "Voicing assimilation of back G"
 %{G%}:қ <=> [ :BackVow | ы:0 ] [ :Cns* [ :VoicelessCns - :FrontCns ] ]/[ %>: | [ :0 - [ Abstract:0 - %{☭%}:0 ] ] | т:0 | д:0 | с:0 ] _ ;
                                                                      [ %{а%}: %{с%}: ]/[ %>: | :%- ] _ ;
+                             [ :у :Cns* [ :VoicelessCns - :FrontCns ]/%{☭%}:0 ]/%>: _ ;
 !            except
 !    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
