@@ -123,7 +123,7 @@ LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
 
 LIST Copula = (cop p3 sg) (cop p3 pl) ;
 
-LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жатыр" ;
+LIST FourAuxiliaries = "<тұр>" "<жүр>" "<отыр>" "<жатыр>" ;
 
 # Barriers
 # --------
@@ -365,15 +365,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## кезеңдерді қамтитын, ... орталықтың экспозициясы негізгі сегіз ірі бөлімнен тұрады.
 
 
-# [0] is auxilliary, because a participle preceedes, and [0] is not in imperative,
-# because there is a subject (i.e. something in nominative closest to the
-# beginning of the sentence)
+# Imperative or not?
+# ------------------
+
+
+# <Vaux p3> is more common, so let's set it as default
+# Rules for selecting imperative reading of these three (if any) must be placed before this rule
  SELECT (vaux p3) IF
-        (0 FourAuxiliaries)
         (-1 (prc_perf))
-		  ((@1 Nom) OR (-1* (prn nom)))
+        (0 FourAuxiliaries - ("<жатыр>"))
 ;
 ## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
+## 36 . Әлі де болса Азаматты табуға әрекет етіп [0]жүр.
 
 
 # 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
@@ -382,18 +385,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.
- REMOVE (imp) IF # FIXME check this
-        (-1* Adv OR Advl OR Loc BARRIER BOS)
-        (@1 Nom LINK NOT @2 Cm)
-;
-## 35 . Айгүл бақшаның ішінде ақырын басып [0]жүр.
-## (!) Айгүл, бақшаның ішінде ақырын басып жүр.
-## (!) Сен, бақшаның ішінде ақырын басып жүр.
-## (!) Сен үйде тұр.
-## (!) Кітап ал.
 
 
-# FIXME extend/generalize
+# ----------
+
+
+#
  SELECT (gpr_past) IF
         (0C (ger_past) + Nom)
         (1 N)
