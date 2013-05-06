@@ -328,6 +328,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
     :VoicelessCns/[ %>: | :0 ] _ ;
         :FrontCns/[ %>: | :0 ] _ ;
             %{I%}: :Nasals %>: _ %{A%}: .#. ;  ! avoid conflict with "Deletion of dative {G} after px1sg, px2sg"
+             %{I%}: :Nasals %>: _ %{A%}: %  ;  ! ""
 !    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
 !!!"Assimilation of G to 
@@ -395,9 +396,10 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Deletion of accusative {N} after {n}"
 %{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
+            %{n%}: %>: _ %{I%}: %  ;
 
 "Deletion of {n} before genitive {N}s"
-%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. ]  ;
+%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. | %  ]  ;
 
 !"Deletion of ablative-initial {D} after {n}"
 !%{D%}:0 <=> %{n%}: %>: _ %{A%}: :н ;
@@ -410,6 +412,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Deletion of dative {G} after px1sg, px2sg"
 %{G%}:0 <=>  %{I%}: :Nasals %>: _ %{A%}: .#. ;
+             %{I%}: :Nasals %>: _ %{A%}: %  ;
 
 "/n/ deletion in px3 nominative"
 %{n%}:0 <=> _ .#. ;
