@@ -371,12 +371,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  SELECT (vaux p3) IF
         (0 FourAuxiliaries)
         (-1 (prc_perf))
-        (@1 Nom)
-;
- SELECT (vaux p3) IF
-        (0 FourAuxiliaries)
-        (-1 (prc_perf))
-        (-1* (prn nom) BARRIER BOS)
+		  ((@1 Nom) OR (-1* (prn nom)))
 ;
 ## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
 
