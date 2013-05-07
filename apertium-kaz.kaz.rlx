@@ -6,6 +6,8 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
 
+SUBREADINGS = LTR ; # Alternate, left-to-right
+
 # ============= #
 # Tags and sets #
 # ============= #
@@ -653,10 +655,11 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 # да<postadv/conj>
- SELECT Postadv IF
+ SELECT SUB:1 Postadv IF
         (0 (gna_cond))
 ;
-## 34 . Ол Азаматтың қайда екенін білсе+[0/1 or -1]де айтқысы келген жоқ.
+## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
+## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
 
 
 #
