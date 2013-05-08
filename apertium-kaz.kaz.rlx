@@ -655,6 +655,9 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
 ## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
 
+# <prc_cond> vs. <gna_cond>
+ REMOVE (prc_cond) IF
+        (NOT 1 ("бол") + V)
 
 #
  SELECT Adv IF
