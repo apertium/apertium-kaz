@@ -69,6 +69,8 @@ LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
+LIST Rquot = rquot ;
+
 # All possible word categories
 # ----------------------------
 
@@ -193,6 +195,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
 ## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
+#
+# Себебі Түрік Әуежолдары сынды бір серігіміз бар енді» деді.
+# Must be before "SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;"
+"<бар>" REMOVE Det IF
+               (1 ("енді"i))
+               (2 Rquot) ;
 
 #
 "<бар>" SELECT V IF (-1 Dat) ;
