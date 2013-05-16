@@ -287,12 +287,13 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  REMOVE Subst IF
          (0 A1)
          (1 EOS)
+			(NOT 0/1 Copula)
 ;
 
 
 # if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
- SELECT Copula IF
-        (0 (adj))
+ SELECT SUB:1 Copula IF
+        (0/0 (adj))
         (1 EOS OR MARK) ;
 
 ##
