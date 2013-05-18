@@ -426,10 +426,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
 # Selecting plural reading might be a more productive approach.
  REMOVE Pl IF
-        (0 V OR Vaux OR Cop)
+        (0 V OR Vaux)
         (0 P3)
 ;
 ##
+ REMOVE SUB:1 Pl IF
+        (0/1 Cop)
+        (0/1 P3)
+;
 
 
 ###################################### TO BE SORTED ############################
