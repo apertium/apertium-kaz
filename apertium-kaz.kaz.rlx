@@ -66,6 +66,7 @@ LIST Loc = loc ;
 LIST Ins = ins ;
 
 LIST P3 = p3 ;
+LIST P1 = p1 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
@@ -291,14 +292,28 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 
 
-# if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
- SELECT SUB:1 Copula IF
-        (0/0 (adj))
+## if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
+ SELECT SUB:1 Cop IF
+        (0 (adj))
         (1 EOS OR MARK) ;
+
+# REMOVE SUB:0 (adj) IF
+#        (NOT 0/1 (cop))
+#        (0/0 (adj))
+#        (1 EOS OR MARK) ;
+
+      
 
 ##
 
-
+##  "Біз қуаныштымыз."
+# SELECT SUB:1 P1 IF
+#        (0/1 Copula)
+#        (1 EOS OR MARK) ;
+REMOVE SUB:1 P3 IF
+       (0/1 Cop)
+       (0/1 P1) ;
+ 
 
 # Postpositions
 # =============
@@ -434,6 +449,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (0/1 Cop)
         (0/1 P3)
 ;
+
 
 
 ###################################### TO BE SORTED ############################
