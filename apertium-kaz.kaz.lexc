@@ -1035,7 +1035,7 @@ LEXICON PRON-DEM-INFL
 %<loc%>:нда CLIT-GENERAL ;
 %<px%>:нікі%{n%} CASE ;
 %<loc%>:ндагы ATTR/SUBST ;
-%<sim%>:ндай CASE ;
+%<sim%>:ндай CASE ;  ! FIXME: should have <det>, etc.
 %<adv%>:лай CLIT-GENERAL ;
 %<qnt%>:нша CLIT ;         !
 
@@ -1315,6 +1315,13 @@ LEXICON DET-REF
 
 !!!!!!!!!!!!!!!!!!!!!!     OTHER PART-OF-SPEECH LEXICONS
 
+LEXICON N1-ABBR
+
+%<n%>%<attr%>: # ;
+%<n%>:%- POSSESSION ;
+%<n%>:%- CASE-ETC ;
+
+
 LEXICON N1
 
 %<n%>%<attr%>: # ;
@@ -1558,6 +1565,7 @@ LEXICON IDEO
 LEXICON ABBR
 
 %<abbr%>: # ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
@@ -1960,6 +1968,7 @@ XXI NUM-ROMAN ; ! ""
 
 абақты:абақты N1 ; ! "jail"
 абсолют:абсолют N1 ; ! ""
+аберрация:аберрация N1 ; ! "aberration"
 абырой:абырой N1 ; ! "reputation,honor,respect"
 август:август N1 ; ! "August"
 авиация:авиация N1 ; ! ""
@@ -1981,6 +1990,7 @@ XXI NUM-ROMAN ; ! ""
 ағайынды:ағайынды N1 ; ! ""
 ағарту:ағарту N1 ; ! ""
 ағаш:ағаш N1 ; ! "tree"
+ағза:ағза N1 ; ! "organ"
 ағым:ағым N1 ; ! ""
 адам:адам N1 ; ! "man"
 адамзат:адамзат N1 ; ! "mankind"
@@ -2569,6 +2579,7 @@ XXI NUM-ROMAN ; ! ""
 жас:жас N1 ; ! "age"
 жасөспірім:жасөспірім N1 ; ! ""
 жастық:жастық N1 ; ! "pillow,pad"
+жасуша:жасуша N1 ; ! "cell (biol.)"
 жасырын:жасырын N1 ; ! "concealed"
 жатжұрттық:жатжұрттық N1 ; ! ""
 жауап:жауап N1 ; ! "answer"
@@ -2672,6 +2683,7 @@ XXI NUM-ROMAN ; ! ""
 жыныс:жыныс N1 ; ! ""
 жыр:жыр N1 ; ! "song"
 зайып:зайып N1 ; ! "spouse"
+зақымдалу:зақымдалу N1 ; ! "damage"
 зал:зал N1 ; ! "hall (large room)"
 залым:залым N1 ; ! ""
 замандас:замандас N1 ; ! ""
@@ -2751,6 +2763,7 @@ XXI NUM-ROMAN ; ! ""
 іргетас:іргетас N1 ; ! ""
 ірімшік:ірімшік N1 ; ! "cheese"
 іс:іс N1 ; ! "work"
+ісік:ісік N1 ; ! "tumour"
 істеу:істеу N1 ; ! "occupation,business"
 ішек:ішек N1 ; ! "intestine"
 ішік:ішік N1 ; ! "dobra string;fur coat"
@@ -3150,7 +3163,7 @@ XXI NUM-ROMAN ; ! ""
 құрмет:құрмет N1 ; ! "respect"
 құрсақ:құрсақ N1 ; ! "belly"
 құрылтайшы:құрылтайшы N1 ; ! ""
-құрылым:құрылым N1 ; ! ""
+құрылым:құрылым N1 ; ! "structure"
 құрылыс:құрылыс N1 ; ! "construction"
 құрым:құрым N1 ; ! "soot"
 құс:құс N1 ; ! "bird"
@@ -3343,6 +3356,7 @@ XXI NUM-ROMAN ; ! ""
 музей:музей N1 ; ! ""
 музыка:музыка N1 ; ! ""
 музыкант:музыкант N1 ; ! ""
+мутация:мутация N1 ; ! "mutation"
 мүгедек:мүгедек N1 ; ! ""
 мүдде:мүдде N1 ; ! "interest"
 мүйіз:мүйіз N1 ; ! "horn, antler(s)"
@@ -4289,6 +4303,10 @@ XXI NUM-ROMAN ; ! ""
 лауазымды:лауазымды N1 ; ! "должностной"
 сюрприз:сюрприз N1 ; ! "surprise"
 қолтаңба:қолтаңба N1 ; ! "autograph,signature"
+
+! Abbreviations
+! =============
+ДНҚ:ДНҚ%{а%} N1-ABBR ; ! "DNA"
 
 ! Nouns used as postpositions when <posssessive><case>
 ! ====================================================
@@ -9918,7 +9936,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 әлемдік:әлемдік A4 ; ! ""
 әрлі:әрлі A4 ; ! ""
 банктік:банктік A4 ; ! ""
-биологиялық:биологиялық A4 ; ! ""
+биологиялық:биологиялық A4 ; ! "biological"
 биохимиялық:биохимиялық A4 ; ! ""
 біртұтас:біртұтас A4 ; ! ""
 бойлы:бойлы A4 ; ! ""
@@ -10156,6 +10174,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 халықаралық:халықаралық A4 ; ! "international"
 химиялық:химиялық A4 ; ! ""
 христиандық:христиандық A4 ; ! ""
+хромосомалық:хромосомалық A4 ; ! "chromosomal"
 циклді:циклді A4 ; ! ""
 шалғынды:шалғынды A4 ; ! ""
 шексіз:шексіз A4 ; ! ""
@@ -10270,7 +10289,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 ! ==================
 
 адал:адал A3 ; ! ""
-алғашқы:алғашқы A3 ; ! "~initial"
+алғашқы:алғашқы A3 ; ! "~initial" FIXME: see алғаш ! Use/MT
 аппақ:аппақ A3 ; ! ""
 арнаулы:арнаулы A3 ; ! ""
 асыл:асыл A3 ; ! ""
@@ -10353,6 +10372,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 күрделі:күрделі A2 ; ! ""
 күрделі:күрделі A2 ; ! ""
 қайырлы:қайырлы A2 ; ! ""
+қайтымсыз:қайтымсыз A2 ; ! "irreversible" CHECK Use/MT
 қатаң:қатаң A2 ; ! ""
 құдіретті:құдіретті A2 ; ! ""
 құнды:құнды A2 ; ! ""
@@ -10801,7 +10821,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
 
-алғаш:алғаш ADV-WITH-KI ; ! "at first > first"
+алғаш:алғаш ADV-WITH-KI ; ! "at first > first/initial"
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
 биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
@@ -11476,6 +11496,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 игер:игер V-TV ; ! ""
 иір:иір V-TV ; ! "spin"
 иіске:иіске V-TV ; ! "smell"
+ионда:ионда V-TV ; ! "ionise"
 ирелеңде:ирелеңде V-IV ; ! "wind"
 ізде:ізде V-TV ; ! "seek,look for"
 ілгекте:ілгекте V-TV ; ! "to do up"
@@ -11753,6 +11774,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 қырсықтан:қырсықтан V-IV ; ! "to persist"
 қыртыстан:қыртыстан V-IV ; ! "to develop (of folds"
 қыршы:қыршы V-TV ; ! "to cut off" (tat) trimm
+қырыл:қырыл V-IV ; ! "be destroyed" Use/MT
 қырылдат:қырылдат V-TV ; ! "to wheeze" (kaz tat) caus
 қырылыстыр:қырылыстыр V-TV ; ! "to incite" (kaz tat) caus
 қырын:қырын V-IV ; ! "to shave"
@@ -11886,6 +11908,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 өткірлен:өткірлен V-IV ; ! "get sharp,be daring"
 өт:өт V-TV ; ! ""
 өштес:өштес V-IV ; ! "be at loggerheads with"
+пайда% бол:пайда% бол V-IV ; ! "appear" Use/MT
 пайдалан:пайдалан V-TV ; ! ""
 пәлден:пәлден V-TV ; ! "to grimace"
 пісір:пісір V-TV ; ! "to boil (food)"
@@ -11941,6 +11964,7 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 саулат:саулат V-TV ; ! "to  spill"
 сау:сау V-TV ; ! "to milk"
 сауық:сауық V-IV ; ! "get well,recover"
+сәлелендір:сәлелендір V-TV ; ! "expose"
 сез:сез V-TV ; ! "feel,forsee"
 секір:секір V-IV ; ! "leap,spring"
 сен:сен V-TV ; ! "believe"
@@ -12335,7 +12359,8 @@ Kazakhstan:Kazakhstan NP-AL ; ! ""
 орналастыр:орналастыр V-TV ; ! "" caus
 өзгерт:өзгерт V-TV ; ! "" caus
 тасы:тасы V-TV ; ! ""
-тасымалда:тасымалда V-TV ; ! ""
+тасымалда:тасымалда V-TV-NOPASS ; ! "move, transfer"
+тасымалда:тасымалдан V-TV-PASS ; ! "move, transfer"
 тигіз:тигіз V-TV ; ! "" caus
 төндір:төндір V-TV ; ! "" caus
 тудыр:тудыр V-TV ; ! "" caus
@@ -13208,7 +13233,7 @@ kz:kz ABBR ; ! ""
 геол%.:геол%. ABBR ; ! ""
 Гленкор:Гленкор ABBR ; ! ""
 ГЭС:ГЭС ABBR ; ! ""
-ДНҚ:ДНҚ ABBR ; ! ""
+ДНҚ:ДНҚ%{а%} ABBR ; ! "DNA"
 ЕҚЫҰ:ЕҚЫҰ ABBR ; ! "eng. OSCE, rus. ОБСЕ"
 Ембімұнайгаз:Ембімұнайгаз ABBR ; ! ""
 ЕурАзЭҚ:ЕурАзЭҚ ABBR ; ! ""

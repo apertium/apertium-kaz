@@ -726,6 +726,9 @@ SELECT A/Advl IF (0 ("ақырын"));
 REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
     #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
 
+REMOVE (pass) IF (0 ("қырыл"));
+    ## жасушалардың қырылуы
+
 
 # ======= #
   SECTION     # experimental
