@@ -144,6 +144,10 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (NOT 1 EOS OR MARK)
 ;
 
+ REMOVE SUB:1 Cop IF
+        (0 (adj) OR (n))
+        (NOT 1 EOS OR MARK) ;
+
 ##
 
 
