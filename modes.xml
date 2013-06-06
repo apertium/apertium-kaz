@@ -47,4 +47,17 @@
     </pipeline>
   </mode>
 
+  <mode name="kaz-disam-debug">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="kaz.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-kaz.kaz.rlx"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 </modes>
