@@ -18,7 +18,7 @@ LIST BOS = (>>>) ;
 LIST EOS = (<<<) ;
 
 # First-level/Parts-of-speech tags
-# --------------------------------
+# ================================
 
 LIST A = adj ;
 LIST Adv = adv ;
@@ -36,22 +36,23 @@ LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
 LIST Cm = cm ;
+LIST Rquot = rquot ;
 
 # POS sub-categories
-# ------------------
+# ==================
 
 LIST Pers = pers ;
 LIST Interr = itg ;
 
 # "Syntactic" tags
-# ----------------
+# ================
 
 LIST Advl = advl ;
 LIST Attr = attr ;
 LIST Subst = subst ;
 
 # Morphosyntactic properties   # if you find yourself embracing the same tag in
-# --------------------------   # brackets over and over again, you may want to
+# ==========================   # brackets over and over again, you may want to
                                # add it here
 
 LIST Sg = sg ;
@@ -70,10 +71,8 @@ LIST P1 = p1 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
-LIST Rquot = rquot ;
-
 # All possible word categories
-# ----------------------------
+# ============================
 
 SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
 
@@ -90,14 +89,14 @@ SET ADJ-MOD = Postadv | Adv ;
 SET NPMARK = N-MOD | ADJ-MOD ;
 
 # Categories which cannot be part of a noun phrase
-# ------------------------------------------------
+# ================================================
 
 SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
 
 # Adjective sets
-# --------------
+# ==============
 
 LIST A/Advl = (adj advl) ;
 
@@ -106,7 +105,7 @@ LIST A/Subst = (adj subst nom) ;
 SET A1 = A/Advl | A/Subst ;
 
 # Verb sets
-# ---------
+# =========
 
 LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
 
@@ -125,7 +124,7 @@ LIST Copula = (cop p3 sg) (cop p3 pl) ;
 LIST FourAuxiliaries = "<тұр>" "<жүр>" "<отыр>" "<жатыр>" ;
 
 # Barriers
-# --------
+# ========
 
 SET S-BOUNDARY = CS | Interr | EOS ;
 
@@ -151,8 +150,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ##
 
 
-# Remove copula here
-## АРАЛ ТЕҢІЗІ.
+# TODO: Remove copula here
+## АРАЛ [0]ТЕҢІЗІ.
 
 
 # ======= #
@@ -168,7 +167,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 #
  SELECT FiniteVerb IF
-        (1 EOS OR ("де"i))               # FIXME s/де/SentenceBoundary/
+        (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
         (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
 ;
 ## (!) 40 . Мүмкін бұл Азамат [0]шығар?
@@ -178,15 +177,15 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 #
  SELECT Interj IF
-         (-1 BOS)
-         (1 Cm)
+        (-1 BOS)
+        (1 Cm)
 ;
 ## "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
 
 
 #
  REMOVE Post IF
-         (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
+        (NOT -1 N OR Prop OR Pron OR Subst OR Gerund)
 ;
 ##
 
@@ -201,12 +200,13 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
 ## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
 
-#
-# Себебі Түрік Әуежолдары сынды бір серігіміз бар енді» деді.
+
 # Must be before "SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;"
 "<бар>" REMOVE Det IF
                (1 ("енді"i))
                (2 Rquot) ;
+## # Себебі Түрік Әуежолдары сынды бір серігіміз бар енді» деді.
+
 
 #
 "<бар>" SELECT V IF (-1 Dat) ;
@@ -290,34 +290,26 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 EOS)
 ;
  REMOVE Subst IF
-         (0 A1)
-         (1 EOS)
-			(NOT 0/1 Copula)
-;
+        (0 A1)
+        (1 EOS)
+        (NOT 0/1 Copula)
+##;
 
 
-## if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
+# if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
  SELECT SUB:1 Cop IF
         (0 (adj))
         (1 EOS OR MARK) ;
-
-# REMOVE SUB:0 (adj) IF
-#        (NOT 0/1 (cop))
-#        (0/0 (adj))
-#        (1 EOS OR MARK) ;
-
-      
-
 ##
 
-##  "Біз қуаныштымыз."
-# SELECT SUB:1 P1 IF
-#        (0/1 Copula)
-#        (1 EOS OR MARK) ;
+
+#
 REMOVE SUB:1 P3 IF
        (0/1 Cop)
        (0/1 P1) ;
- 
+##  "Біз қуаныштымыз."
+
+
 
 # Postpositions
 # =============
@@ -381,6 +373,13 @@ REMOVE SUB:1 P3 IF
 ##
 
 
+# FIXME CHECK really needed?
+# <prc_cond> vs. <gna_cond>
+ REMOVE (prc_cond) IF
+        (NOT 1 ("бол") + V)
+##
+
+
 #
  SELECT Participle IF
         (0C Participle OR VerbalAdverb)
@@ -388,6 +387,7 @@ REMOVE SUB:1 P3 IF
 ;
 ## 16 . Азамат ескі үлкен бір ағашқа қарай қатты [?]жүгіріп бара жатыр, ол сол
 ## ағаштың артына Айгүлден [0]жасырынып жатыр.
+
 
 #
  REMOVE Vaux IF
@@ -449,11 +449,14 @@ REMOVE SUB:1 P3 IF
         (0 P3)
 ;
 ##
+
+
+#
  REMOVE SUB:1 Pl IF
         (0/1 Cop)
         (0/1 P3)
 ;
-
+##
 
 
 ###################################### TO BE SORTED ############################
@@ -526,7 +529,7 @@ REMOVE SUB:1 P3 IF
 
 #
  "<аса>" SELECT Adv IF
-        (1 A)
+         (1 A)
 ;
 ## "Әл-Истахри келтірген мәліметтер аса құнды саналады."
 
@@ -696,9 +699,6 @@ REMOVE SUB:1 P3 IF
 ## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
 ## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
 
-# <prc_cond> vs. <gna_cond>
- REMOVE (prc_cond) IF
-        (NOT 1 ("бол") + V)
 
 #
  SELECT Adv IF
@@ -712,7 +712,7 @@ REMOVE SUB:1 P3 IF
 
 #
  "<жасар>" SELECT A IF
-            (-1 Num)
+                  (-1 Num)
 ;
 ## 7 . Азамат алты жасар кішкентай бала.
 
