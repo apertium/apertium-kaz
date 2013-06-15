@@ -18,11 +18,14 @@
 #          ## are not that frequent.
 
 
-#          # Several rules dealing with the same phenomena can be grouped together
+#          # Sometimes you can't disambiguate a form with only one rule. Several
+#          # rules dealing with the same thing can be grouped together.
 #           SELECT ABC IF
+#                  (0 DEF)
 #                  (1 KLM)
 #          ;
 #           REMOVE XYZ IF
+#                  (0 DEF)
 #                  (1 NOP)
 #                  (2 QRS)
 #          ;
@@ -180,7 +183,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 
  REMOVE SUB:1 Cop IF
-        (0 (adj) OR (n))
+        (0 A OR N)
         (NOT 1 EOS OR MARK) ;
 
 ##
