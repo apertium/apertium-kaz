@@ -1,4 +1,40 @@
 
+# ======================================================================================= #
+# A COMMENTARY ON FORMATTING OF MAJORITY OF RULES (read: a wannabe FORMATTING GUIDELINES) #
+# ======================================================================================= #
+
+# How most of the rules look like?
+# ================================
+
+#          # An explanation of what the rule does (if it's not obvious from code!), a name
+#          # or any other comment
+#           SELECT ABC IF
+#                  (0 DEF)
+#                  (1 GHI)
+#          ;
+#          ## A sentence the rule was written for.
+#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was modified accordingly
+#          ## (additional constraints etc.); or the rule still mispredicts on it, but this kind of sentences
+#          ## are not that frequent.
+
+
+#          # Several rules dealing with the same phenomena can be grouped together
+#           SELECT ABC IF
+#                  (1 KLM)
+#          ;
+#           REMOVE XYZ IF
+#                  (1 NOP)
+#                  (2 QRS)
+#          ;
+#          ## Example sentences for both of the rules.
+#          ## Another example sentence.
+#          ## (!) And another, on which the rule didn't/doesn't work.
+
+
+# ============================ #
+# END OF FORMATTING GUIDELINES #
+# ============================ #
+
 # ========== #
 # Delimiters #
 # ========== #
