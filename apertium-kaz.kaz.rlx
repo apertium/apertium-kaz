@@ -13,13 +13,13 @@
 #                  (1 GHI)
 #          ;
 #          ## A sentence the rule was written for.
-#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was modified accordingly
-#          ## (additional constraints etc.); or the rule still mispredicts on it, but this kind of sentences
-#          ## are not that frequent.
+#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was
+#          ## modified accordingly (additional constraints etc.); or the rule still
+##         ## mispredicts on it, but this kind of sentences aren't that frequent.
 
 
-#          # Sometimes you can't disambiguate a form with only one rule. Several
-#          # rules dealing with the same thing can be grouped together.
+#          # Sometimes you can't disambiguate a form with only one rule. In that case,
+##         # several rules dealing with the same thing are grouped together
 #           SELECT ABC IF
 #                  (0 DEF)
 #                  (1 KLM)
