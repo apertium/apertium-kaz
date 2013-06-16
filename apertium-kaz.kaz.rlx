@@ -332,7 +332,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 # if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
  SELECT SUB:1 Cop IF
-        (0 (adj))
+        (0 A)
         (1 EOS OR MARK) ;
 ##
 
