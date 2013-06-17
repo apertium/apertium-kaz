@@ -219,9 +219,34 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
  REMOVE Post IF
         (NOT -1 N OR Prop OR Pron OR Subst OR Gerund) # FIXME What about referring to all
-;                                                     # these as 'Nominal's?
+;                                                     # these (referring *consistently*) as
+                                                      # 'Nominal's?
 ##
 
+
+# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
+# accusative, and 2) with  a verb in <ifi> form.
+ REMOVE Acc IF
+        (0 (n acc) OR (adj subst nom))
+        (0 A)
+        (NOT 1 V)
+;
+ REMOVE V IF
+        (0 A)
+        (0 (ifi))
+        (NOT 1 EOS OR Cm)
+;
+ SELECT A IF
+        (-1 ("аса"i) OR ("өте"i))
+        (0 A)
+        (0 (n acc))
+;
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 91 . Өйткені, <...> Әл-Истахри келтірген мәліметтер аса [0]құнды саналады.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
 
 
 # Determiners
@@ -493,26 +518,6 @@ REMOVE SUB:1 P3 IF
 
 
 ###################################### TO BE SORTED ############################
-
-
-# An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
-# accusative, and 2) with  a verb in <ifi> form.
- REMOVE Acc IF
-        (0 (n acc) OR (adj subst acc))
-        (0 A)
-        (NOT 1 V)
-;
- REMOVE V IF
-        (0 A)
-        (0 (ifi))
-        (NOT 1 EOS OR Cm)
-;
- "<атты>" SELECT A IF
-                 (1 N)
-;
-## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
-## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
-
 
 #
  SELECT Prop IF
