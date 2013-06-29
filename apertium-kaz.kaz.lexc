@@ -290,12 +290,12 @@ LEXICON CASE-NONOM
 ! only it does not include nominative 
 !   1<num><nom> = 1, 1<num><acc> = 1-{N}{I} 
 
-%<gen%>:%>%{N%}%{I%}ң CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
-%<acc%>:%>%{N%}%{I%} CLIT ;
+%<gen%>:%>%{N%}%{I%}ң CLITICS ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
+%<acc%>:%>%{N%}%{I%} CLITICS ;
 %<abl%>:%>%{D%}%{A%}н # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<ins%>:%>%{M%}ен CLIT ;
+%<ins%>:%>%{M%}ен CLITICS ;
 
 LEXICON CASE-ETC-NONOM
 
@@ -485,20 +485,20 @@ LEXICON CLIT-GHANA-ETC
 %+да%<postadv%>:% %{D%}%{A%} # ; ! "1. even if"
 # ;
 
-LEXICON CLIT
+LEXICON CLIT-COPULA
+
+%+е%<cop%>: V-PERS-S1 ;
+
+LEXICON CLITICS
 
 CLIT-QST ;
 CLIT-MODASS ;
 CLIT-GHANA-ETC ;
 
-LEXICON CLIT-COPULAS
-
-%+е%<cop%>: V-PERS-S1 ;
-
-LEXICON CLIT-INCLUDING-COPULAS ! Can appear only after nominal parts of speech (and only
-                               ! after some cases).
-CLIT ;
-CLIT-COPULAS ;
+LEXICON CLITICS-INCLUDING-COPULA ! Can appear only after nominal parts of speech (and only
+                                 ! after some cases).
+CLITICS ;
+CLIT-COPULA ;
 
 
 
@@ -533,17 +533,17 @@ CLIT-COPULAS ;
 
 LEXICON CASE-COMMON
 
-%<gen%>:%>%{N%}%{I%}ң CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
-%<acc%>:%>%{N%}%{I%} CLIT ;
-%<ins%>:%>%{M%}ен CLIT ;
+%<gen%>:%>%{N%}%{I%}ң CLITICS ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
+%<acc%>:%>%{N%}%{I%} CLITICS ;
+%<ins%>:%>%{M%}ен CLITICS ;
 
 LEXICON CASE
 
 CASE-COMMON ;
-%<nom%>: CLIT-INCLUDING-COPULAS ;
-%<abl%>:%>%{D%}%{A%}н CLIT-INCLUDING-COPULAS ;
-%<loc%>:%>%{D%}%{A%} CLIT-INCLUDING-COPULAS ;
+%<nom%>: CLITICS-INCLUDING-COPULA ;
+%<abl%>:%>%{D%}%{A%}н CLITICS-INCLUDING-COPULA ;
+%<loc%>:%>%{D%}%{A%} CLITICS-INCLUDING-COPULA ;
 
 
 LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
@@ -551,13 +551,13 @@ LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
                 ! thing /02082012, IS/
 
 CASE-COMMON ;
-%<nom%>: CLIT ;
-%<abl%>:%>%{D%}%{A%}н CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT ;
+%<nom%>: CLITICS ;
+%<abl%>:%>%{D%}%{A%}н CLITICS ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
 
 LEXICON ATTR/SUBST
 
-%<attr%>: CLIT ;
+%<attr%>: CLITICS ;
 %<subst%>: CASE ;
 %<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
 
@@ -571,8 +571,8 @@ LEXICON ABE-ATTR/ADVL/SUBST
 ! Note that allowing of the (scarcely existing) [X +<abe> +<pers.cop> (+ modalpcle)] sequence
 ! would require some additional rules in kaz-tat.t2x /02082012, IS/
 
-%<attr%>: CLIT ;
-%<advl%>: CLIT ;
+%<attr%>: CLITICS ;
+%<advl%>: CLITICS ;
 %<subst%>: CASE-2 ;
 %<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
@@ -587,7 +587,7 @@ LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
                                             ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
                                             ! I'll give some arguments in a mail to apertium-turkic</s>
-%<sim%>:%>%{D%}%{A%}й CLIT ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
+%<sim%>:%>%{D%}%{A%}й CLITICS ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
                                             ! no case endings after it. In Kazakh it should be the same /I.S./ 
 LEXICON CASE-ETC
 
@@ -631,28 +631,28 @@ Abessive ; ! FIXME might lead to overgeneration:
 
 LEXICON COMPARATIVE
 
-%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
-CLIT ;
+%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS ;
+CLITICS ;
 
 LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
 
-%<adj%>: CLIT-INCLUDING-COPULAS ;                             !# жақсы адам
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT-INCLUDING-COPULAS ;   !# жақсырақ іс
+%<adj%>: CLITICS-INCLUDING-COPULA ;                             !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCLUDING-COPULA ;   !# жақсырақ іс
 
 %<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым
 
-%<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
-%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLIT ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+%<adj%>%<advl%>: CLITICS ;                               !# жақсы білемін
+%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLITICS ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
 LEXICON A2                 ! (derived/not fully lexicalised) adjectives without adverbial reading;
                            ! <adj> and <adj.subst> readings have comparison levels.
                            !# ескі
 
-%<adj%>: CLIT-INCLUDING-COPULAS ;                             !# ескі дос
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT-INCLUDING-COPULAS ;   !# ескірек заманда
+%<adj%>: CLITICS-INCLUDING-COPULA ;                             !# ескі дос
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCLUDING-COPULA ;   !# ескірек заманда
 
 %<adj%>%<subst%>: SUBST ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
@@ -662,7 +662,7 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
                            ! no comparison levels at all.
                            !# көктемгі, басты, бар, жоқ
 
-%<adj%>: CLIT-INCLUDING-COPULAS ;   !# көктемгі су тасқыны
+%<adj%>: CLITICS-INCLUDING-COPULA ;   !# көктемгі су тасқыны
 %<adj%>%<subst%>: SUBST ;           !# "...Самаранч ең бастыны түсінді..."
                                     !# "Аты бардың заты бар."
 
@@ -672,7 +672,7 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
 LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
                            !# ұлттық
 
-%<adj%>: CLIT-INCLUDING-COPULAS ;   !# ұлттық тағам
+%<adj%>: CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
 LEXICON V-ADJ
 
@@ -684,35 +684,35 @@ LEXICON V-ADJ
 
 LEXICON V-PERS-S1-NO3PERSON
 
-%<p1%>%<sg%>:%>%{M%}%{I%}н CLIT ;
-%<p2%>%<sg%>:%>с%{I%}ң CLIT ;
-%<p1%>%<pl%>:%>%{M%}%{I%}з CLIT ;
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLIT ;
+%<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS ;
+%<p2%>%<sg%>:%>с%{I%}ң CLITICS ;
+%<p1%>%<pl%>:%>%{M%}%{I%}з CLITICS ;
+%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS ;
 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLIT ;
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLIT ;
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLITICS ;
 
 LEXICON V-PERS-S1
 
 ! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>: CLIT ;
-%<p3%>%<pl%>: CLIT ;
+%<p3%>%<sg%>: CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
 LEXICON V-PERS-S2
 
 ! Used for: -DI-<ifi>, -sA-<prc_cond>, -sA-<gna_cond>
 
-%<p1%>%<sg%>:%>м CLIT ;
-%<p2%>%<sg%>:%>ң CLIT ;
-%<p3%>%<sg%>: CLIT ;
-%<p1%>%<pl%>:%>%{K%} CLIT ;
-%<p2%>%<pl%>:%>ңд%{A%}р CLIT ;
-%<p3%>%<pl%>: CLIT ;
+%<p1%>%<sg%>:%>м CLITICS ;
+%<p2%>%<sg%>:%>ң CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p1%>%<pl%>:%>%{K%} CLITICS ;
+%<p2%>%<pl%>:%>ңд%{A%}р CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
-%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLIT ;
-%<p2%>%<frm%>%<pl%>:%>ң%{I%}зд%{A%}р CLIT ;
+%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>ң%{I%}зд%{A%}р CLITICS ;
 
 LEXICON V-PERS-AOR
 
@@ -720,17 +720,17 @@ LEXICON V-PERS-AOR
 ! NOTE that: Алма театрға бара<aor><p3><sg> ма? – Алма в театр идёт?
 
 V-PERS-S1-NO3PERSON ;
-%<p1%>%<sg%>:%>м CLIT ;                    ! Dir/LR
-%<p3%>%<sg%>:%>д%{I%} CLIT ;
+%<p1%>%<sg%>:%>м CLITICS ;                    ! Dir/LR
+%<p3%>%<sg%>:%>д%{I%} CLITICS ;
 %<p3%>%<sg%>: CLIT-QST-MA ;              ! Dir/LR
-%<p3%>%<pl%>:%>д%{I%} CLIT ;
+%<p3%>%<pl%>:%>д%{I%} CLITICS ;
 %<p3%>%<pl%>: CLIT-QST-MA ;              ! Dir/LR ;
 
 LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>:%>т%{I%} CLIT ;
-%<p3%>%<sg%>:%>т%{I%} CLIT ;
+%<p3%>%<sg%>:%>т%{I%} CLITICS ;
+%<p3%>%<sg%>:%>т%{I%} CLITICS ;
 
 LEXICON VOL-ENDINGS
 
@@ -755,20 +755,20 @@ LEXICON VOL-ENDINGS
 LEXICON GER-CASE-NO_COPULA
 
 CASE-COMMON ;
-%<nom%>: CLIT ;
-%<abl%>:%>%{D%}%{A%}н CLIT ;
-%<loc%>:%>%{D%}%{A%} CLIT ;
+%<nom%>: CLITICS ;
+%<abl%>:%>%{D%}%{A%}н CLITICS ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
 
 LEXICON GER-ATTR/SUBST
 
-%<attr%>: CLIT ;
+%<attr%>: CLITICS ;
 !%<subst%>: CASE ;
 !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
 
 LEXICON GER-ABE-ATTR/ADVL/SUBST
 
-!%<attr%>: CLIT ;
-%<advl%>: CLIT ;
+!%<attr%>: CLITICS ;
+%<advl%>: CLITICS ;
 !%<subst%>: CASE-2 ;
 !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
@@ -778,9 +778,9 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
 
-%<px%>:%>%{N%}ікі%{n%} CLIT ;
+%<px%>:%>%{N%}ікі%{n%} CLITICS ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
-%<sim%>:%>%{D%}%{A%}й CLIT ;
+%<sim%>:%>%{D%}%{A%}й CLITICS ;
 
 LEXICON GER-CASE-ETC
 
@@ -828,16 +828,16 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<prc_perf%>:%>%{o%}%{I%}п CLIT-GHANA-ETC ;            ! Dir/LR
 %<neg%>%<prc_perf%>:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
 %<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;
-%<prc_fplan%>:%>%{M%}%{A%}%{K%} CLIT ;
-%<prc_fplan%>:%>%{M%}%{A%}%{K%}ш%{I%} CLIT ;           ! Dir/LR
+%<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS ;
+%<prc_fplan%>:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS ;           ! Dir/LR
 %<prc_plan%>:%>%{G%}%{A%}л%{I%} CLIT-GHANA-ETC ;
 
 ! Verbal adverbs
-%<gna_perf%>:%>%{I%}п CLIT ;
-%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLIT ;
+%<gna_perf%>:%>%{I%}п CLITICS ;
+%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLITICS ;
 
-%<gna_until%>:%>%{G%}%{A%}нш%{A%} CLIT ;
-%<gna_after%>:%>%{G%}%{A%}л%{I%} CLIT ;
+%<gna_until%>:%>%{G%}%{A%}нш%{A%} CLITICS ;
+%<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS ;
 
 ! Verbal Adjectives
 %<gpr_fut%>:%>%{A%}р V-ADJ ;
@@ -884,15 +884,15 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
-%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLIT ;
-!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLIT ;              ! FIXME check
-%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLIT ;
-%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLIT ;
-!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;         ! FIXME check
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLIT ;
+%<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLITICS ;
+!%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLITICS ;              ! FIXME check
+%<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS ;
+%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLITICS ;
+!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS ;         ! FIXME check
+%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLITICS ;
 
-!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
-!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLIT ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLITICS ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS ;  ! FIXME check
 
 LEXICON V-COMMON
 
@@ -960,16 +960,16 @@ LEXICON Copula
 
 LEXICON PRON-12SG-CASES
 
-%<gen%>:енің CLIT ;
-%<dat%>:аған CLIT ;
-%<acc%>:ені CLIT ;
-%<abl%>:енен CLIT ;
-%<loc%>:енде CLIT ;
-%<ins%>:енімен CLIT ;
+%<gen%>:енің CLITICS ;
+%<dat%>:аған CLITICS ;
+%<acc%>:ені CLITICS ;
+%<abl%>:енен CLITICS ;
+%<loc%>:енде CLITICS ;
+%<ins%>:енімен CLITICS ;
 %<px%>:енікі%{n%} CASE ;
 %<loc%>:ендегі ATTR/SUBST ;
-%<sim%>:ендей CLIT ;
-%<adv%>:еніңше CLIT ;
+%<sim%>:ендей CLITICS ;
+%<adv%>:еніңше CLITICS ;
 
 LEXICON PRON-PERS-INFL
 
@@ -977,42 +977,42 @@ CASE-ETC ;
 
 LEXICON PersonalPronouns
 
-мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLIT ;
+мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLITICS ;
 мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
 
-сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLIT ;
+сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLITICS ;
 сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
 
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLIT ; ! Dir/LR
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLITICS ; ! Dir/LR
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLIT ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша CLIT ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай CLITICS ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша CLITICS ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
-біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLIT ;
+біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLITICS ;
 
 сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
-сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLIT ;
+сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLITICS ;
 
 олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
-олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLIT ;
+олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLITICS ;
 
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLIT ;
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLITICS ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
-сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLIT ;
+сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLITICS ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
-! FIXME CHECK (CLIT-INCLUDING-COPULAS vs CLIT) I can't imagine forms like "бумын, бусың" etc.
+! FIXME CHECK (CLITICS-INCLUDING-COPULA vs CLIT) I can't imagine forms like "бумын, бусың" etc.
 ! in Tatar, but not sure how it works in Kazakh /I.S./
 !-----
 ! Good idea is to link prn.dem.sim forms alternatively to CLIT and CASE,
@@ -1021,23 +1021,23 @@ LEXICON PersonalPronouns
 
 LEXICON PRON-DEM-INFL
 
-%<gen%>:ның CLIT ;
-%<dat%>:ған CLIT ;
-%<acc%>:ны CLIT ;
-%<abl%>:дан CLIT-INCLUDING-COPULAS ;
-%<abl%>:нан CLIT-INCLUDING-COPULAS ; ! Dir/LR FIXME actually only "осы" seems to take this.
-%<loc%>:нда CLIT-INCLUDING-COPULAS ;
+%<gen%>:ның CLITICS ;
+%<dat%>:ған CLITICS ;
+%<acc%>:ны CLITICS ;
+%<abl%>:дан CLITICS-INCLUDING-COPULA ;
+%<abl%>:нан CLITICS-INCLUDING-COPULA ; ! Dir/LR FIXME actually only "осы" seems to take this.
+%<loc%>:нда CLITICS-INCLUDING-COPULA ;
 %<px%>:нікі%{n%} CASE ;
 %<loc%>:ндагы ATTR/SUBST ;
 %<sim%>:ндай CASE ;  ! FIXME: should have <det>, etc.
-%<adv%>:лай CLIT-INCLUDING-COPULAS ;
-%<qnt%>:нша CLIT ;         !
+%<adv%>:лай CLITICS-INCLUDING-COPULA ;
+%<qnt%>:нша CLITICS ;         !
 
 %<pl%>:%>%{L%}%{A%}р CASE-ETC ;
 %<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASE ;
 
 ! Commented out till these forms get implemented in tat.lexc too
-!%<TD%>:шалық CLIT ;        ! "that much"  ! FIXME: check cont lex
+!%<TD%>:шалық CLITICS ;        ! "that much"  ! FIXME: check cont lex
 !%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 ! FIXME: 1) link the below to PRON-DEM-INFL if possible
@@ -1053,19 +1053,19 @@ LEXICON PRON-DEM-BUL
 ! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASE ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
-бұл%<prn%>%<dem%>%<nom%>:бұл CLIT-INCLUDING-COPULAS ;
-бұл%<prn%>%<dem%>%<nom%>:бұ CLIT-INCLUDING-COPULAS ; ! Dir/LR
-бұл%<prn%>%<dem%>%<gen%>:бұның CLIT ;
-бұл%<prn%>%<dem%>%<gen%>:мұның CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<dat%>:бұған CLIT ;
-бұл%<prn%>%<dem%>%<acc%>:бұны CLIT ;
-бұл%<prn%>%<dem%>%<acc%>:мұны CLIT ; ! Dir/LR
-бұл%<prn%>%<dem%>%<abl%>:бұдан CLIT-INCLUDING-COPULAS ;
-бұл%<prn%>%<dem%>%<abl%>:мұнан CLIT-INCLUDING-COPULAS ; ! Dir/LR
-бұл%<prn%>%<dem%>%<loc%>:бұнда CLIT-INCLUDING-COPULAS ;
-бұл%<prn%>%<dem%>%<loc%>:мұнда CLIT-INCLUDING-COPULAS ; ! Dir/LR
-бұл%<prn%>%<dem%>%<ins%>:бұнымен CLIT ;
-бұл%<prn%>%<dem%>%<ins%>:мұнымен CLIT ; ! Dir/LR
+бұл%<prn%>%<dem%>%<nom%>:бұл CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<nom%>:бұ CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<gen%>:бұның CLITICS ;
+бұл%<prn%>%<dem%>%<gen%>:мұның CLITICS ; ! Dir/LR
+бұл%<prn%>%<dem%>%<dat%>:бұған CLITICS ;
+бұл%<prn%>%<dem%>%<acc%>:бұны CLITICS ;
+бұл%<prn%>%<dem%>%<acc%>:мұны CLITICS ; ! Dir/LR
+бұл%<prn%>%<dem%>%<abl%>:бұдан CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<abl%>:мұнан CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<loc%>:бұнда CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<ins%>:бұнымен CLITICS ;
+бұл%<prn%>%<dem%>%<ins%>:мұнымен CLITICS ; ! Dir/LR
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
@@ -1074,9 +1074,9 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASE ;
-бұл%<prn%>%<dem%>%<adv%>:былай CLIT-INCLUDING-COPULAS ;
-бұл%<prn%>%<dem%>%<adv%>:бұлай CLIT-INCLUDING-COPULAS ; ! Dir/LR
-бұл%<prn%>%<dem%>%<qnt%>:мұнша CLIT ;
+бұл%<prn%>%<dem%>%<adv%>:былай CLITICS-INCLUDING-COPULA ;
+бұл%<prn%>%<dem%>%<adv%>:бұлай CLITICS-INCLUDING-COPULA ; ! Dir/LR
+бұл%<prn%>%<dem%>%<qnt%>:мұнша CLITICS ;
 бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASE ;
 
 бұл%<prn%>%<dem%>%<pl%>:бұлар CASE-ETC ;
@@ -1084,17 +1084,17 @@ LEXICON PRON-DEM-BUL
 
 LEXICON PRON-DEM-MINA
 
-мына%<prn%>%<dem%>%<nom%>:мына CLIT-INCLUDING-COPULAS ;
-мына%<prn%>%<dem%>%<gen%>:мынаның CLIT ;
-мына%<prn%>%<dem%>%<dat%>:мынаған CLIT ;
-мына%<prn%>%<dem%>%<acc%>:мынаны CLIT ;
-мына%<prn%>%<dem%>%<abl%>:мынадан CLIT-INCLUDING-COPULAS ;
-мына%<prn%>%<dem%>%<loc%>:мынада CLIT-INCLUDING-COPULAS ;
-мына%<prn%>%<dem%>%<ins%>:мынамен CLIT ;
+мына%<prn%>%<dem%>%<nom%>:мына CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<gen%>:мынаның CLITICS ;
+мына%<prn%>%<dem%>%<dat%>:мынаған CLITICS ;
+мына%<prn%>%<dem%>%<acc%>:мынаны CLITICS ;
+мына%<prn%>%<dem%>%<abl%>:мынадан CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCLUDING-COPULA ;
+мына%<prn%>%<dem%>%<ins%>:мынамен CLITICS ;
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASE ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASE ;
-мына%<prn%>%<dem%>%<adv%>:мыналай CLIT-INCLUDING-COPULAS ;
+мына%<prn%>%<dem%>%<adv%>:мыналай CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASE ;
 
 мына%<prn%>%<dem%>%<pl%>:мыналар CASE-ETC ;
@@ -1102,17 +1102,17 @@ LEXICON PRON-DEM-MINA
 
 LEXICON PRON-DEM-ANA
 
-ана%<prn%>%<dem%>%<nom%>:ана CLIT-INCLUDING-COPULAS ;
-ана%<prn%>%<dem%>%<gen%>:ананың CLIT ;
-ана%<prn%>%<dem%>%<dat%>:анаған CLIT ;
-ана%<prn%>%<dem%>%<acc%>:ананы CLIT ;
-ана%<prn%>%<dem%>%<abl%>:анадан CLIT-INCLUDING-COPULAS ;
-ана%<prn%>%<dem%>%<loc%>:анада CLIT-INCLUDING-COPULAS ;
-ана%<prn%>%<dem%>%<ins%>:анамен CLIT ;
+ана%<prn%>%<dem%>%<nom%>:ана CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<gen%>:ананың CLITICS ;
+ана%<prn%>%<dem%>%<dat%>:анаған CLITICS ;
+ана%<prn%>%<dem%>%<acc%>:ананы CLITICS ;
+ана%<prn%>%<dem%>%<abl%>:анадан CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<loc%>:анада CLITICS-INCLUDING-COPULA ;
+ана%<prn%>%<dem%>%<ins%>:анамен CLITICS ;
 !ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASE ;
 !ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
 ана%<prn%>%<dem%>%<sim%>:анадай CASE ;
-!ана%<prn%>%<dem%>%<adv%>:аналай CLIT-INCLUDING-COPULAS ;
+!ана%<prn%>%<dem%>%<adv%>:аналай CLITICS-INCLUDING-COPULA ;
 !ана%<prn%>%<dem%>%<px3sp%>:анасы%{n%} CASE ;
 
 ана%<prn%>%<dem%>%<pl%>:аналар CASE-ETC ;
@@ -1124,19 +1124,19 @@ PRON-DEM-BUL ;
 PRON-DEM-MINA ;
 PRON-DEM-ANA ;
 
-сол%<prn%>%<dem%>%<nom%>:сол CLIT-INCLUDING-COPULAS ;
+сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCLUDING-COPULA ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
-сол%<prn%>%<dem%>%<ins%>:сонымен CLIT ;
+сол%<prn%>%<dem%>%<ins%>:сонымен CLITICS ;
 сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASE ;
 
-ол%<prn%>%<dem%>%<nom%>:ол CLIT ;
+ол%<prn%>%<dem%>%<nom%>:ол CLITICS ;
 ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
-ол%<prn%>%<dem%>%<ins%>:онымен CLIT ;
+ол%<prn%>%<dem%>%<ins%>:онымен CLITICS ;
 ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASE ;
 
-осы%<prn%>%<dem%>%<nom%>:осы CLIT ;
+осы%<prn%>%<dem%>%<nom%>:осы CLITICS ;
 осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
-осы%<prn%>%<dem%>%<ins%>:осымен CLIT ;
+осы%<prn%>%<dem%>%<ins%>:осымен CLITICS ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
 
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
@@ -1178,13 +1178,13 @@ LEXICON PRON-ITG-INFL
 
 LEXICON PRON-ITG-QAYSI
 
-қайсы%<prn%>%<itg%>%<nom%>:қайсы CLIT ;
-қайсы%<prn%>%<itg%>%<gen%>:қайсының CLIT ;
-қайсы%<prn%>%<itg%>%<dat%>:қайсыған CLIT ;
-қайсы%<prn%>%<itg%>%<acc%>:қайсыны CLIT ;
-қайсы%<prn%>%<itg%>%<abl%>:қайсыдан CLIT ;
-қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLIT ;
-қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLIT ;
+қайсы%<prn%>%<itg%>%<nom%>:қайсы CLITICS ;
+қайсы%<prn%>%<itg%>%<gen%>:қайсының CLITICS ;
+қайсы%<prn%>%<itg%>%<dat%>:қайсыған CLITICS ;
+қайсы%<prn%>%<itg%>%<acc%>:қайсыны CLITICS ;
+қайсы%<prn%>%<itg%>%<abl%>:қайсыдан CLITICS ;
+қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLITICS ;
+қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLITICS ;
 
 қайсы%<prn%>%<itg%>%<px%>:қайсынікі%{n%} CASE ;
 қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
@@ -1206,7 +1206,7 @@ LEXICON PRON-ITG-QANDAY
 
 ! Might be not complete (қандайларығыз? and possessive stuff in general)
 
-қандай%<prn%>%<itg%>%<sim%>:қандай CLIT ;
+қандай%<prn%>%<itg%>%<sim%>:қандай CLITICS ;
 ! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
 ! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
 ! it shouldn't receive <nom> tag I think /IS/
@@ -1247,7 +1247,7 @@ LEXICON PRON-RECIP
 LEXICON PRON-REF-ADV
 
 CASE-ETC ;
-%<adv%>:ше CLIT ;
+%<adv%>:ше CLITICS ;
 
 LEXICON PRON-REF
 
@@ -1490,7 +1490,7 @@ LEXICON DIGITLEX
 
 LEXICON POST
 
-%<post%>: CLIT ;
+%<post%>: CLITICS ;
 
 LEXICON POSTADV
 
@@ -1500,11 +1500,11 @@ LEXICON POSTADV
 
 LEXICON KI
 
-%<attr%>:%>%{G%}%{I%} CLIT ;
+%<attr%>:%>%{G%}%{I%} CLITICS ;
 
 LEXICON ADV
 
-%<adv%>: CLIT ;
+%<adv%>: CLITICS ;
 
 LEXICON ADV-WITH-KI
 
