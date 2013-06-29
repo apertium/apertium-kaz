@@ -105,8 +105,8 @@ LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
 
-LIST P3 = p3 ;
 LIST P1 = p1 ;
+LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
@@ -371,7 +371,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## TODO (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
 
 
-#
+# FIXME CHECK
 REMOVE SUB:1 P3 IF
        (0/1 Cop)
        (0/1 P1) ;
@@ -513,16 +513,8 @@ REMOVE SUB:1 P3 IF
 #
 # Selecting plural reading might be a more productive approach.
  REMOVE Pl IF
-        (0 V OR Vaux)
+        (0 V OR Vaux OR Cop)
         (0 P3)
-;
-##
-
-
-#
- REMOVE SUB:1 Pl IF
-        (0/1 Cop)
-        (0/1 P3)
 ;
 ##
 
