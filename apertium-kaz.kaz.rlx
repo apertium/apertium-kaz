@@ -34,7 +34,6 @@
 #          ## Another example sentence.
 #          ## (!) And another, on which the rule didn't/doesn't work.
 
-
 # ============================ #
 # END OF FORMATTING GUIDELINES #
 # ============================ #
@@ -46,7 +45,7 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
 SOFT-DELIMITERS = "<,>" ;
 
-SUBREADINGS = LTR ; # Alternate, left-to-right
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
 
 # ============= #
 # Tags and sets #
@@ -139,26 +138,18 @@ SET NOT-ADV = WORDMARK - Adv ;
 # ==============
 
 LIST A/Advl = (adj advl) ;
-
 LIST A/Subst = (adj subst nom) ;
-
 SET A1 = A/Advl | A/Subst ;
 
 # Verb sets
 # =========
 
 LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
-
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
-
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
-
 SET V-NotGerund = V - Gerund ;
-
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
-
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-
 LIST FourAuxiliaries = "<тұр>" "<жүр>" "<отыр>" "<жатыр>" ;
 
 # Barriers
@@ -172,11 +163,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # ======= #
 
 
-# some of the rules having nouns as constraints didn't work when the noun had
-# personal copulas as subreadings, so the rule removing personal copulas is
-# placed into a separate section, before any other rules
-
-
 #
  REMOVE Cop IF
         (NOT 1 EOS OR MARK)
@@ -184,8 +170,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ##
 
 
-# TODO: Remove copula here
-## АРАЛ [0]ТЕҢІЗІ.
+#
+ SELECT Cop IF
+        (1 EOS OR MARK)
+;
+## TODO (!) 13 . [0]Жоқ, Айгүлдің күшігі жоқ, оның мысығы бар.
+## TODO (!) Дұрыс, оның мысығы бар.
 
 
 # ======= #
@@ -365,14 +355,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (1 EOS)
         (NOT 0/1 Cop) ## FIXME CHECK
 ;
-## (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
-
-
-# if ambiguous between <adj> and <adj>+copula at end of sentence, should be copula
- SELECT SUB:1 Cop IF
-        (0 A)
-        (1 EOS OR MARK) ;
-##
+## TODO (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
 
 
 #
