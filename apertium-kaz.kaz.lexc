@@ -119,11 +119,6 @@ Multichar_Symbols
 %<fut%>       ! -{I}р                   ! future
 %<fut_plan%>  ! -{M}{A}{K}              ! future plan
 
-%<evid%>      ! evidential
-              ! Was used for -ган екен and -ыпты. The former is not handled here
-              ! in lexc anymore, the latter was renamed from <ifi><evid> to
-              ! <ifi_evid>
-
 !! Non-Finite verb forms
 
 !!! Participles
@@ -210,6 +205,8 @@ Multichar_Symbols
 %<lquot%>     ! Quote marker (left hand side)
 %<rpar%>      ! Parenthetical marker (right hand side)
 %<lpar%>      ! Parenthetical marker (left hand side)
+
+! Archiphonemes
 
 %{L%}         ! Archiphoneme 'l': realised as л, д, т
 %{N%}         ! Archiphoneme 'n': realised as н, д, т
@@ -632,7 +629,7 @@ Abessive ; ! FIXME might lead to overgeneration:
 !! i.e. change <adj><comp><subst> to <adj><subst><comp>
 !! and make use of ADJ-LEVELS class
 
-LEXICON ADJ-LEVELS
+LEXICON COMPARATIVE
 
 %<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;
 CLIT ;
@@ -641,10 +638,10 @@ LEXICON A1                ! adjectives that can be both substantivised and andve
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
 
-%<adj%>: CLIT ;                                       !# жақсы адам
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# жақсырақ іс
+%<adj%>: CLIT-INCLUDING-COPULAS ;                             !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT-INCLUDING-COPULAS ;   !# жақсырақ іс
 
-%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым 
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# жақсырақты таптым
 
 %<adj%>%<advl%>: CLIT ;                               !# жақсы білемін
@@ -654,8 +651,8 @@ LEXICON A2                 ! (derived/not fully lexicalised) adjectives without 
                            ! <adj> and <adj.subst> readings have comparison levels.
                            !# ескі
 
-%<adj%>: CLIT ;                                       !# ескі дос
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT ;             !# ескірек заманда
+%<adj%>: CLIT-INCLUDING-COPULAS ;                             !# ескі дос
+%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLIT-INCLUDING-COPULAS ;   !# ескірек заманда
 
 %<adj%>%<subst%>: SUBST ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
 %<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} SUBST ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
@@ -665,9 +662,9 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
                            ! no comparison levels at all.
                            !# көктемгі, басты, бар, жоқ
 
-%<adj%>: CLIT ;                                       !# көктемгі су тасқыны
-%<adj%>%<subst%>: SUBST ;                             !# "...Самаранч ең бастыны түсінді..."
-                                                      !# "Аты бардың заты бар."
+%<adj%>: CLIT-INCLUDING-COPULAS ;   !# көктемгі су тасқыны
+%<adj%>%<subst%>: SUBST ;           !# "...Самаранч ең бастыны түсінді..."
+                                    !# "Аты бардың заты бар."
 
 ! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
 ! e.g. *язгыдагы
@@ -675,7 +672,7 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
 LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
                            !# ұлттық
 
-%<adj%>: CLIT ;                                       !# ұлттық тағам
+%<adj%>: CLIT-INCLUDING-COPULAS ;   !# ұлттық тағам
 
 LEXICON V-ADJ
 
