@@ -1372,9 +1372,6 @@ LEXICON NP-ANT-M
 
 LEXICON NP-ANT-F
 
-! This isn't used at the moment,
-! but e.g. ?Polish cognoms ending with -ска would take this cont.class
-
 %<np%>%<ant%>%<f%>: NP-COMMON ;
 %<np%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
@@ -1423,6 +1420,10 @@ LEXICON NP-COG-IN
 
 NP-COG-OBIN-FEM ;
 
+LEXICON NPCOGFLEX
+
+! This isn't used at the moment,
+! but e.g. ?Polish cognoms ending with -ска would take this cont.class /I.S./ 
 
 LEXICON NP-PAT-VICH
 
