@@ -469,7 +469,6 @@ LEXICON CLIT-QST
 
 CLIT-QST-MA ;
 %+мекен%<qst%>:% %{M%}екен # ;
-%+ма% не%<qst%>:%>% %{M%}%{A%}% не # ;
 # ;
 
 LEXICON CLIT-MODASS
@@ -1173,8 +1172,7 @@ PRON-DEM-ANA ;
 
 LEXICON PRON-ITG-INFL
 
-%<prn%>%<itg%>: GER-INFL ;
-%<prn%>%<itg%>%<pl%>:%>%{L%}%{A%}р GER-INFL ;
+%<prn%>%<itg%>: SUBST ;
 
 LEXICON PRON-ITG-QAYSI
 
@@ -1186,13 +1184,7 @@ LEXICON PRON-ITG-QAYSI
 қайсы%<prn%>%<itg%>%<loc%>:қайсыда CLITICS ;
 қайсы%<prn%>%<itg%>%<ins%>:қайсымен CLITICS ;
 
-қайсы%<prn%>%<itg%>%<px%>:қайсынікі%{n%} CASE ;
-қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ; ! қайсысы, қайсыбыз, қайсығыз
-
-қайсы%<prn%>%<itg%>%<pl%>:қайсылар GER-CASE-ETC ;
-қайсы%<prn%>%<itg%>%<pl%>%<px3sp%>:қайсылары%{n%} GER-CASE-NO_COPULA ;
-! ^ кайсылары(б/г)ыз are rare but possible in Tatar, so maybe these forms should
-! be included too /IS/
+қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ;
 
 LEXICON PRON-ITG-QANSHA
 
@@ -1226,7 +1218,7 @@ PRON-ITG-QANDAY ;
 
 LEXICON PRON-QNT-POSS
 
-%<prn%>%<qnt%>: POSSESSION ;
+%<prn%>%<qnt%>: GER-POSS-REAL ;
 
 LEXICON PRON-QNT
 
@@ -1234,7 +1226,7 @@ LEXICON PRON-QNT
 
 LEXICON PRON-IND
 
-%<prn%>%<ind%>: GER-INFL ;
+%<prn%>%<ind%>: CASE ;
 
 
 LEXICON PRNNEG
@@ -1243,7 +1235,7 @@ LEXICON PRNNEG
 
 LEXICON PRON-RECIP
 
-%<prn%>%<recip%>: POSS-REAL ;
+%<prn%>%<recip%>: GER-POSS-REAL ;
 
 LEXICON PRON-REF-ADV
 
@@ -1566,7 +1558,9 @@ LEXICON ABBR
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON ModalParticles
+!======================!
+ LEXICON ModalParticles
+!======================!
 
 ма:%~ма QST ; ! "" Dir/RL
 ма:ма QST ; ! "" Dir/LR
@@ -1575,6 +1569,9 @@ LEXICON ModalParticles
 ма:ме QST ; ! "" Dir/LR
 ма:бе QST ; ! "" Dir/LR
 ма:пе QST ; ! "" Dir/LR
+ма% не:%~ма% не QST ; ! "" Dir/RL
+ма% не:ма% не QST ; ! "" Dir/LR
+ма% не:ме% не QST ; ! "" Dir/LR
 ше:ше QST ; ! ""
 
 ғой:%~ғой MOD-ASS ; ! "" Dir/RL
@@ -1802,9 +1799,9 @@ DemonstrativePronouns ;
 
 InterrogativePronouns ;
 
+басқа:басқа PRON-IND ; ! "other"
 бірдеме:бірдеме PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
-басқа:басқа PRON-IND ; ! "other"
 кей:кей PRON-IND ; ! "some" FIXME CHECK
 
 барлық:барлық PRON-QNT ; ! ""
