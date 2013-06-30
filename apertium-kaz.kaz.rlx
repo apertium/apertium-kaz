@@ -371,11 +371,12 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## TODO (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
 
 
-# FIXME CHECK
+#
 REMOVE SUB:1 P3 IF
        (0/1 Cop)
-       (0/1 P1) ;
-## "Біз қуаныштымыз."
+       (0/1 P1)
+;
+## "Біз [0]қуаныштымыз."
 
 
 
@@ -426,6 +427,13 @@ REMOVE SUB:1 P3 IF
         (-1 Dat)
 ;
 ##
+
+
+#
+ "<кейін>" SELECT Post IF
+                (-1 Abl)
+;
+## 23. Айгүл санап біткеннен кейін айналасына қарады.
 
 
 
@@ -509,7 +517,7 @@ REMOVE SUB:1 P3 IF
 #
 # In Tatar, when the subject indicates the number, this LAR affix for the verbs
 # in 3 person is kind of optional too, so singular reading will work/is right for
-# the majority of the cases.
+# the majority of cases.
 #
 # Selecting plural reading might be a more productive approach.
  REMOVE Pl IF
@@ -518,6 +526,13 @@ REMOVE SUB:1 P3 IF
 ;
 ##
 
+
+# Thought that the above rule should cover copulas, seems that it doesn't
+ REMOVE SUB:1 Pl IF
+        (0/1 Cop)
+        (0/1 P3)
+;
+##
 
 ###################################### TO BE SORTED ############################
 
@@ -536,13 +551,6 @@ REMOVE SUB:1 P3 IF
                 (1 A)
 ;
 ## Бірақ кеше _өте_ суық еді!
-
-
-#
- "<кейін>" SELECT Post IF
-                (-1 Abl)
-;
-## 23. Айгүл санап біткеннен кейін айналасына қарады.
 
 
 # ugly and RISKY
