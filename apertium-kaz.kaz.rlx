@@ -765,3 +765,23 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 
 REMOVE (pass) IF (0 ("қырыл"));
     ## жасушалардың қырылуы
+
+# ======= #
+  SECTION     # experimental
+# ======= #   # The following rules are for _translating_, therefore shouldn't be here (i.e. in apertium-kaz.kaz.rlx)
+
+
+# FIXME
+ SUBSTITUTE (nom) (dat) TARGET (prn pers) IF (1* (ger) + PersonalPossessives LINK 1 ("керек")) ;
+## [0]Мен үйге қайтуым керек. >> [0]Миңа өйгә кайтырга кирәк.
+## [0]Сен үйге қайтуың керек. >> [0]Сиңа өйгә кайтырга кирәк.
+
+
+#
+ SUBSTITUTE (dat) (nom) TARGET (prn pers) IF (1* (ger_past) + Nom LINK 1 ("ұна") + (aor)) ;
+ SUBSTITUTE (ger_past) (inf) TARGET (ger_past nom) IF (1 ("ұна") + (aor)) ;
+ SUBSTITUTE (nom) (*) TARGET (inf nom) IF (1 ("ұна") + (aor)) ;
+ SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (prn p1)) ;
+ SUBSTITUTE (p3) (p2) TARGET ("ұна") + (aor) IF (@1 (prn p2)) ; # FIXME take the tag from the first word
+## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
+
