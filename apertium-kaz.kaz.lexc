@@ -295,21 +295,20 @@ Ideophones ;
 Abbreviations ;
 Punctuation ;
 Digits ; ! Use/Circ
-!Guesser ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!
-!!!!                            N U M E R A L S 
+!!!!                            N U M E R A L S
 !!!!
-!!!! WARNING: This section should not be modified without consultation. 
+!!!! WARNING: This section should not be modified without consultation.
 !!!!          Test cases are in dev/numerals.
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CASE-NONOM
 
 ! This continuation lexicon is a copy of the normal case lexicon,
-! only it does not include nominative 
-!   1<num><nom> = 1, 1<num><acc> = 1-{N}{I} 
+! only it does not include nominative
+!   1<num><nom> = 1, 1<num><acc> = 1-{N}{I}
 
 %<gen%>:%>%{N%}%{I%}ң CLITICS ;
 %<dat%>:%>%{G%}%{A%} CLITICS ;
@@ -338,9 +337,9 @@ LEXICON SQRD
 
 ²%<num%>:2 # ;  ! Dir/LR
 ³%<num%>:3 # ;  ! Dir/LR
-²%<num%>:² # ; 
-³%<num%>:³ # ; 
-%<num%>: # ; 
+²%<num%>:² # ;
+³%<num%>:³ # ;
+%<num%>: # ;
 
 LEXICON NUM-DIGIT
 
@@ -417,28 +416,28 @@ LEXICON LASTDIGIT-REST
 8%0:8%0%{э%}%{н%}       NUM-DIGIT ; ! "сексен"
 9%0:9%0%{а%}%{н%}       NUM-DIGIT ; ! "тоқсан"
 
-LEXICON POWERS 
+LEXICON POWERS
 %0%0:%0%0%{э%}%{з%}     NUM-DIGIT ; ! "жүз"
 %0%0%0:%0%0%0%{а%}%{н%} NUM-DIGIT ; ! "мың"
 
 LEXICON LOOP
 
-%,:%, DIGITLEX ; 
-%.:%. DIGITLEX ; 
-%,:%, LASTDIGIT ; 
-%.:%. LASTDIGIT ; 
-%,:%, LASTDIGIT-REST ; 
-%.:%. LASTDIGIT-REST ; 
-%,:%, POWERS ; 
-%.:%. POWERS ; 
-      DIGITLEX ; 
+%,:%, DIGITLEX ;
+%.:%. DIGITLEX ;
+%,:%, LASTDIGIT ;
+%.:%. LASTDIGIT ;
+%,:%, LASTDIGIT-REST ;
+%.:%. LASTDIGIT-REST ;
+%,:%, POWERS ;
+%.:%. POWERS ;
+      DIGITLEX ;
       LASTDIGIT ;
       LASTDIGIT-REST ;
-      POWERS ; 
+      POWERS ;
 
 LEXICON DIGITLEX
 
-%0:%0 LOOP ; 
+%0:%0 LOOP ;
 1:1   LOOP ;
 2:2   LOOP ;
 3:3   LOOP ;
@@ -449,10 +448,8 @@ LEXICON DIGITLEX
 8:8   LOOP ;
 9:9   LOOP ;
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!       N U M E R A L     L E X I C O N     E N D S     H E R E 
+!!!!       N U M E R A L     L E X I C O N     E N D S     H E R E
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON SUBST
