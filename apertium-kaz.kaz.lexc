@@ -4,7 +4,10 @@
 
 ! See http://wiki.apertium.org/wiki/Turkic_lexicon
 
-Multichar_Symbols
+!=================!
+ Multichar_Symbols
+!=================!
+
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories = First-level tags
@@ -30,11 +33,11 @@ Multichar_Symbols
 ! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
 ! Proper noun types
-%<top%>       ! Toponym
+%<top%>       ! Toponym      ! Топоним
 %<ant%>       ! Anthroponym  ! Кісі есімі
 %<cog%>       ! Cognomen     ! Фамилия
 %<pat%>       ! Patronym     ! Әке текті есім
-%<org%>       ! Organization
+%<org%>       ! Organization ! Ұйым есімі
 %<al%>        ! Other        ! Басқалар
 
 !! gender of anthroponyms and cognoms
@@ -70,21 +73,32 @@ Multichar_Symbols
 %<ins%>       ! Instrumental
 
 !! some additional ~cases
-%<sim%>       ! Similative (<apprx> in kymorph)
+%<sim%>       ! Similative
               !# DAй
 %<abe%>       ! Abessive=Privative ! Лишительный
               !# -сыз/-сез (not used after posessives and cases)
-%<reas%>      ! Reason
-!обладательный !# LI (-лы/-ле) (not used after posessives and cases)
+%<reas%>      ! not used rigth now, just in case for
+              !# LIKTAN
 
 ! Levels of comparison of adjectives
 %<comp%>      ! Comparative
-%<sup%>       ! Superlative
+
+! TODO
+!! Some adjecives have a "weakening" form, e.g. яшел>яшькелт, сары>саргылт; but
+!! also ак>аксыл, кара>карасу. Sometimes they take the comparative RAK affix,
+!! e.g. кызгылтрак.
+
+! TODO
+!! There is also what can be called a synthetic superlative form (as opposed
+!! to the /ең<adv>+X<adj>/ construction) -- кап-кара, тип-тигез, төп-төгәл etc.
+!! Probably easiest way would be just to lexicalize them, but make sure that
+!! they don't take the comparative affix.
 
 ! Pronoun types
 %<pers%>      ! Personal
 %<recip%>     ! Reciprocal
-! Pronoun&Determiner types
+
+!! Pronoun&Determiner types
 %<dem%>       ! Demonstrative
 %<ind%>       ! Indefinite
 %<itg%>       ! Interrogative
@@ -111,34 +125,41 @@ Multichar_Symbols
 
 !! Tense / finite forms
 %<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
-%<aor%>       ! -{E}                    ! non-past (afaik /IS/)
-%<past%>      ! -{G}{A}н                ! past
-%<ifi%>       ! -{D}{I}                 ! eyewitness past
-%<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/)
-%<fut%>       ! -{I}р                   ! future
-%<fut_plan%>  ! -{M}{A}{K}              ! future plan
+%<aor%>       ! -{E}
+%<past%>      ! -{G}{A}н
+%<ifi%>       ! -{D}{I}
+%<ifi_evid%>  ! -{I}пт{I}
+%<fut%>       ! -{I}р
+%<fut_plan%>  ! -{M}{A}{K}
 
 !! Non-Finite verb forms
 
 !!! Participles
-%<prc_perf%>  ! -{I}п                   ! perfect participle
+%<prc_perf%>  ! Perfect participle
+              ! -{I}п
               !# "Бірақ мысығы үйде, _ұйықтап_ жатыр.";
-%<prc_impf%>  ! -{E}                    ! imperfect participle
+%<prc_impf%>  ! Imperfect participle
+              ! -{E}
               !# "...олар далада _ойнай_ алмады...";
-%<prc_vol%>   ! -{G}{I}                 ! volition participle
+%<prc_vol%>   ! Volition participle
+              ! -{G}{I}
               !# барғым келмейді;
-%<prc_cond%>  ! -с{A}                   ! conditional participle
+%<prc_cond%>  ! Conditional participle
+              ! -с{A}
               !# ...жесең болады...;
-%<prc_fplan%> ! -{M}{A}{K},             ! future plan participle
+%<prc_fplan%> ! Future plan participle
+              ! -{M}{A}{K},
               ! -{M}{A}{K}ш{I} Dir/LR
               !# "Шал қазға бармақшы болады.";
-%<prc_plan%>  ! -{G}{A}л{I}             ! plan participle
+%<prc_plan%>  ! Plan participle
+              ! -{G}{A}л{I}
               !# мен сөйлескелі келдім;
-!%<prc_irre%> ! -{E}{T}{I}н             ! irrealis participle
+!%<prc_irre%> ! Irrealis participle
+              ! -{E}{T}{I}н
               ! (This form is analyzed as <grp_impf> and <ger_impf>)
               ! (FIXME this might be wrong)
 
-!!! Verbal adverbs - Глагольные наречия
+!!! Verbal adverbs ! Көсемшелер !Глагольные наречия
 %<gna_perf%>  ! -{I}п
               !# "...ул вакытта инде кояш _баеп_, йолдызлар күренә башлаган
               !# иде..." (Ф.Хөсни);
@@ -146,11 +167,12 @@ Multichar_Symbols
               !# ...қайда екенін _білсе_, маған бұл туралы айтыр еді...;
 %<gna_until%> ! -{G}{A}нш{A}
               !# "Мен кеткенше ол жауап бермейді.";
-%<gna_after%> ! -{G}{A}л{I}             (ambiguous with prc_plan)
+%<gna_after%> ! -{G}{A}л{I}
+              ! (NOTE: ambiguous with prc_plan)
               !# "Сабақ _біткелі_ екі сағат өтті."; Ол кеткелі біз жұмыс
               !# істемейдік;
 
-!!! Verbal adjectives - Глагольные причастия
+!!! Verbal adjectives ! Есімшелер ! Глагольные причастия
 %<gpr_past%>  ! -{G}{A}н               ! past verbal adjective
               !# келген адам; оқылмаған кітап;
 %<gpr_impf%>  ! -{E}{T}{I}н            ! imperfect verbal adjective
@@ -174,7 +196,7 @@ Multichar_Symbols
               !# "Мен айтарымды айттым";
 %<ger_impf%>  ! -{E}{T}{I}н
               !# "Ол бүгін кешкілік болатынын айтты";
-! FIXME cover -{E}{T}{I}нд{I}{K} form
+! TODO cover -{E}{T}{I}нд{I}{K} form
 
 !! Transitivity
 %<tv%>        ! Transitive
@@ -189,11 +211,11 @@ Multichar_Symbols
 
 ! Modal particles
 %<qst%>       ! Modal question particle
-%<emph%>      ! Emphasizing modal particle (for imperative and jussive/optative forms)
+%<emph%>      ! Emphasizing modal particle
               !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
               !# -ғой/-қой
-%<mod%>       ! Modal verbs (шығар, сияқты etc)
+%<mod%>       ! Other modal words (шығар, сияқты etc)
 
 ! Punctuation
 %<sent%>      ! Sentence marker
