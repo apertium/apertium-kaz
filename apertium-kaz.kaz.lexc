@@ -76,7 +76,7 @@
 %<sim%>       ! Similative
               !# DAй
 %<abe%>       ! Abessive=Privative ! Лишительный
-              !# -сыз/-сез (not used after posessives and cases)
+              !# SIZ (not used after posessives and cases)
 %<reas%>      ! not used rigth now, just in case for
               !# LIKTAN
 
@@ -103,7 +103,7 @@
 %<ind%>       ! Indefinite
 %<itg%>       ! Interrogative
 %<qnt%>       ! Quantifier
-%<neg%>       ! Negative       !# еш нерсе
+%<neg%>       ! Negative       !# ешкім
               ! (NOTE: also used to denote negation in verbs, i.e for м{A})
 %<ref%>       ! Reflexive
 
@@ -201,7 +201,6 @@
 !! Transitivity
 %<tv%>        ! Transitive
 %<iv%>        ! Intransitive
-%<TD%>        ! Temporary tag
 
 ! Person
 %<p1%>        ! First person
@@ -211,6 +210,7 @@
 
 ! Modal particles
 %<qst%>       ! Modal question particle
+              !# м{A}
 %<emph%>      ! Emphasizing modal particle
               !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
@@ -332,7 +332,7 @@ LEXICON SUBST-NONOM
 N-INFL-COMMON-NONOM ;
 %<pl%>:%>%{L%}%{A%}р N-INFL-COMMON-NONOM ;
 
-LEXICON SQRD 
+LEXICON SQRD
 ! This lexicon includes common ways of writing squared, cubed etc.
 
 ²%<num%>:2 # ;  ! Dir/LR
