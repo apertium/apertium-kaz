@@ -408,6 +408,20 @@ REMOVE SUB:1 P3 IF
 
 
 #
+ "<қарағанда>" SELECT Post IF
+        (-1 Dat)
+;
+##
+
+
+#
+ "<қарамастан>" SELECT Post IF
+        (-1 Dat)
+;
+##
+
+
+#
  "<дейін>" SELECT Post IF
         (-1 Dat)
 ;
@@ -592,6 +606,13 @@ REMOVE SUB:1 P3 IF
 #
  "<жылы>" SELECT N IF
         (-1 Num)
+;
+##
+
+
+#
+ "<жылы>" SELECT N IF
+        (-1 A)
 ;
 ##
 
