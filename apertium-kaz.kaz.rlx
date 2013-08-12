@@ -349,6 +349,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
+# басым recognized as noun бас, select ADJ form
+ "<басым>" SELECT A IF
+        (1 (px3sp))
+;
+## Олардың ¶ басым бөлігі – 2011 жылы жұмыс іздеп, 
+
+
+# тұрғыны recognized as noun тұрғы should select тұрғын before қаза
+ "<тұрғыны>" SELECT ("тұрғын") IF
+        (1 ("қаза"))
+;
+## 2011 жылы 16 желтоқсанда 16 тұрғыны қаза тапқан
 
 
 # Adjectives
