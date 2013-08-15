@@ -227,7 +227,7 @@
 %<rpar%>      ! Parenthetical marker (right hand side)
 %<lpar%>      ! Parenthetical marker (left hand side)
 
-! Archiphonemes
+! Archiphonemes and escaped symbols
 
 %{L%}         ! Archiphoneme 'l': realised as л, д, т
 %{N%}         ! Archiphoneme 'n': realised as н, д, т
@@ -521,32 +521,63 @@ LEXICON CLITICS-INCLUDING-COPULA ! Can appear only after nominals
 COMMON-CLITICS ;
 CLIT-COPULA ;
 
-!!!!!!!!!!!!!!!!!!!!!!     NOMINAL INFLECTION (N-INFL-COMMON)
+!==============================================================================!
+!                         NOMINAL INFLECTION
+! This section contains everyhing needed to describe inflection of nominals.
+! It starts with the LEXICON FULL-NOMINAL-INFLECTION
+!==============================================================================!
 
+!-------------------------------------------------------------------------------
 ! The following combinations are possible (examples in Tatar):
 !
-! stem > case                                        : әти<nom> : әтине<acc>
-!
-! stem > poss-real > case                            : әтием<px1sg><nom> : әтиемне<px1sg><acc>
-! stem > poss-real > ныкы/дагы/дай(*1)               : әтиемнеке/китабындагы,өегездәге/әтиемдәй
-! stem > poss-real > ныкы/дагы > case                : Монда _эчеңдәгене_ тышка чыгарырга ярамый. (источник: musulman.su) 
-! stem > poss-real > [ныкы]/дагы > poss-real > case  : _Эчендәгесе_(*3) – тышында, диләр андый кешеләр турында. (источник: beznen.ru)
-!
-! stem > ныкы/дагы/дай                               : әтинеке/әтидәге/әтидәй
-! stem > ныкы/дагы(*2) > case                        : Бу соңгы _еллардагының_ өчтән икесе чамасы.
-!
-! stem > сыз(abe)                  WORKS
-! stem > сыз(abe) > case
-! stem > сыз(abe) > poss > case    (?)
-!
+! stem(plural) > case                                     # әти<nom>, әтине<acc>
+!----
+! stem(plural) > possessives > case                       !# әтиемне<px1sg><acc>
+! stem(plural) > possessives > ныкы/дагы/дай(*1)
+                                               !# әтиемнеке,китабындагы,әтиемдәй
+! stem(plural) > possessives > ныкы > case
+! stem(plural) > possessives > дагы(plural(*2)) > case
+                                   !# Монда _эчеңдәгене_ тышка чыгарырга ярамый.
+! stem(plural) > possessives > дагы(plural) > possessives > case
+                     !# _Эчендәгесе_(*3) – тышында, диләр андый кешеләр турында.
+!----
+! stem(plural) > ныкы/дагы/дай                         !# әтинеке/әтидәге/әтидәй
+! stem(plural) > ныкы/дагы > case  !#Бу соңгы _еллардагының_ өчтән икесе чамасы.
+!-----
+! stem(plural) > сыз
+! stem > сыз(plural) > case
+! stem > сыз(plural) > possessives > case
+!----
 ! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
-!     Indeed, when not substantivised, it has predicative use:
-!     "Бу яулык әнинеке." (vs "Әнинең яулыгы.")
-! *2. "дай" is considered to be an adverbializer, so no case endings after it (=no <subst> reading).
-!     (at least in Tatar, I think that in Kazakh it's the same)
-! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very frequent also;
+!     Indeed, when not substantivized, it is used as a predicate:
+!     "Бу яулык әнинеке." (vs "Әнинең яулыгы.)
+!
+!     Currently we don't mark it with a <subst> tag, but probably we should,
+!     since we let it continue with case tags.
+!
+!     An alternative to a [predicative general possessive <px>] vs
+!     [substantivized general possessive <px>subst>] opposition is to view it as
+!     an always substantivized thing and hence mark it with a <subst> tag
+!     (see e.g. http://wiki.apertium.org/wiki/Turkic_languages/Ki)
+!     At the end of sentences it will have attached copulas, which will indicate
+!     predicative use anyway.
+! *2. TODO: Does double plural in a word make sence? Ерак илләрдәгеләр looks ok,
+!     and occurs in the RFERL copus (though very rarely). Plural affix both
+!     before and after the the general possessive does not look ok.
+! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very
+!     frequent also.
 !     Most likely it is restricted to px3sp.
-!-------------------------------------------
+!-------------------------------------------------------------------------------
+
+!-------------------------------------------------------------------------------
+! A note on abessive SIZ:
+! It doesn't appear after possessives.
+! We don't let it take copula suffixes here. A counterexample could be e.g.
+! "жұмыс-сыз-бын", but that's only because "жұмыссыз" has lexicalized as an
+! adjective (try to grep "с[ыі]з[мбп][ыі]н" on a large corpora -- that's just a
+! few words which are rather  adjectives.
+! *Китапларсызлар is not legal, but китапларсыз and китапсызлар are possible.
+!-------------------------------------------------------------------------------
 
 LEXICON CASE-COMMON
 
