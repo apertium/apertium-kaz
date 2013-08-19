@@ -579,26 +579,24 @@ CLIT-COPULA ;
 ! *Китапларсызлар is not legal, but китапларсыз and китапсызлар are possible.
 !-------------------------------------------------------------------------------
 
-LEXICON CASE-COMMON
+LEXICON CASES-COMMON
 
 %<gen%>:%>%{N%}%{I%}ң COMMON-CLITICS ;
 %<dat%>:%>%{G%}%{A%} COMMON-CLITICS ;
 %<acc%>:%>%{N%}%{I%} COMMON-CLITICS ;
 %<ins%>:%>%{M%}ен COMMON-CLITICS ;
 
-LEXICON CASE
+LEXICON CASES
 
-CASE-COMMON ;
+CASES-COMMON ;
 %<nom%>: CLITICS-INCLUDING-COPULA ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCLUDING-COPULA ;
 %<loc%>:%>%{D%}%{A%} CLITICS-INCLUDING-COPULA ;
 
 
-LEXICON CASE-2  ! The difference from CASE is that CASE-2 doesn't continue
-                ! with personal copula suffixes. Atm used only for <abe>
-                ! thing /02082012, IS/
+LEXICON CASES-WITHOUT-COPULAS
 
-CASE-COMMON ;
+CASES-COMMON ;
 %<nom%>: COMMON-CLITICS ;
 %<abl%>:%>%{D%}%{A%}н COMMON-CLITICS ;
 %<loc%>:%>%{D%}%{A%} COMMON-CLITICS ;
@@ -606,8 +604,8 @@ CASE-COMMON ;
 LEXICON ATTR/SUBST
 
 %<attr%>: COMMON-CLITICS ;
-%<subst%>: CASE ;
-%<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
+%<subst%>: CASES ;
+%<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
 
 LEXICON ABE-ATTR/ADVL/SUBST
 
@@ -621,8 +619,8 @@ LEXICON ABE-ATTR/ADVL/SUBST
 
 %<attr%>: COMMON-CLITICS ;
 %<advl%>: COMMON-CLITICS ;
-%<subst%>: CASE-2 ;
-%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
+%<subst%>: CASES-WITHOUT-COPULAS ;
+%<subst%>%<pl%>:%>%{L%}%{A%}р CASES-WITHOUT-COPULAS ;
 
 LEXICON Abessive          ! Doesn't appear after possessives
 
@@ -631,27 +629,27 @@ LEXICON Abessive          ! Doesn't appear after possessives
 
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
-%<px%>:%>%{N%}ікі%{n%} CASE ;
+%<px%>:%>%{N%}ікі%{n%} CASES ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
                                             ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
                                             ! I'll give some arguments in a mail to apertium-turkic</s>
 %<sim%>:%>%{D%}%{A%}й COMMON-CLITICS ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
                                             ! no case endings after it. In Kazakh it should be the same /I.S./ 
-LEXICON CASE-ETC
+LEXICON CASES-ETC
 
-CASE ;
+CASES ;
 GENPOSS-ETC ;
 
 LEXICON POSS-REAL
 
-%<px1sg%>:%>%{I%}м CASE-ETC ;
-%<px2sg%>:%>%{I%}ң CASE-ETC ;
-%<px3sp%>:%>%{S%}%{I%}%{n%} CASE-ETC ;
-%<px1pl%>:%>%{I%}м%{I%}з CASE-ETC ;
-%<px2pl%>:%>%{I%}ңд%{A%}р CASE-ETC ;
+%<px1sg%>:%>%{I%}м CASES-ETC ;
+%<px2sg%>:%>%{I%}ң CASES-ETC ;
+%<px3sp%>:%>%{S%}%{I%}%{n%} CASES-ETC ;
+%<px1pl%>:%>%{I%}м%{I%}з CASES-ETC ;
+%<px2pl%>:%>%{I%}ңд%{A%}р CASES-ETC ;
 
-%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASE-ETC ;
-%<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASE-ETC ;
+%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
+%<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASES-ETC ;
 
 LEXICON POSSESSION ! I guess this was used once to implement some
                    ! recursive things, e.g. the sequence
@@ -662,7 +660,7 @@ POSS-REAL ;
 LEXICON N-INFL-COMMON
 
 POSSESSION ;
-CASE-ETC ;
+CASES-ETC ;
 Abessive ; ! FIXME might lead to overgeneration:
            !! check whether it occurs after substantivized stuff;
            !! not all pronouns take it. "Синсез" vs "*үземсез".
@@ -802,7 +800,7 @@ LEXICON VOL-ENDINGS
 
 LEXICON GER-CASE-NO_COPULA
 
-CASE-COMMON ;
+CASES-COMMON ;
 %<nom%>: COMMON-CLITICS ;
 %<abl%>:%>%{D%}%{A%}н COMMON-CLITICS ;
 %<loc%>:%>%{D%}%{A%} COMMON-CLITICS ;
@@ -810,8 +808,8 @@ CASE-COMMON ;
 LEXICON GER-ATTR/SUBST
 
 %<attr%>: COMMON-CLITICS ;
-!%<subst%>: CASE ;
-!%<subst%>%<pl%>:%>%{L%}%{A%}р CASE ;
+!%<subst%>: CASES ;
+!%<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
 
 LEXICON GER-ABE-ATTR/ADVL/SUBST
 
@@ -1013,14 +1011,14 @@ LEXICON PRON-12SG-CASES
 %<abl%>:енен COMMON-CLITICS ;
 %<loc%>:енде COMMON-CLITICS ;
 %<ins%>:енімен COMMON-CLITICS ;
-%<px%>:енікі%{n%} CASE ;
+%<px%>:енікі%{n%} CASES ;
 %<loc%>:ендегі ATTR/SUBST ;
 %<sim%>:ендей COMMON-CLITICS ;
 %<adv%>:еніңше COMMON-CLITICS ;
 
 LEXICON PRON-PERS-INFL
 
-CASE-ETC ;
+CASES-ETC ;
 
 LEXICON PersonalPronouns
 
@@ -1038,7 +1036,7 @@ LEXICON PersonalPronouns
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен COMMON-CLITICS ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASE ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASES ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша COMMON-CLITICS ;
@@ -1074,14 +1072,14 @@ LEXICON PRON-DEM-INFL
 %<abl%>:дан CLITICS-INCLUDING-COPULA ;
 %<abl%>:нан CLITICS-INCLUDING-COPULA ; ! Dir/LR FIXME actually only "осы" seems to take this.
 %<loc%>:нда CLITICS-INCLUDING-COPULA ;
-%<px%>:нікі%{n%} CASE ;
+%<px%>:нікі%{n%} CASES ;
 %<loc%>:ндагы ATTR/SUBST ;
-%<sim%>:ндай CASE ;  ! FIXME: should have <det>, etc.
+%<sim%>:ндай CASES ;  ! FIXME: should have <det>, etc.
 %<adv%>:лай CLITICS-INCLUDING-COPULA ;
 %<qnt%>:нша COMMON-CLITICS ;         !
 
-%<pl%>:%>%{L%}%{A%}р CASE-ETC ;
-%<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASE ;
+%<pl%>:%>%{L%}%{A%}р CASES-ETC ;
+%<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASES ;
 
 ! Commented out till these forms get implemented in tat.lexc too
 !%<TD%>:шалық COMMON-CLITICS ;        ! "that much"  ! FIXME: check cont lex
@@ -1097,7 +1095,7 @@ LEXICON PRON-DEM-BUL
 !-----
 ! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;) N-INFL-COMMON might lead to
 ! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
-! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASE ;
+! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASES ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
 бұл%<prn%>%<dem%>%<nom%>:бұл CLITICS-INCLUDING-COPULA ;
@@ -1113,21 +1111,21 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCLUDING-COPULA ; ! Dir/LR
 бұл%<prn%>%<dem%>%<ins%>:бұнымен COMMON-CLITICS ;
 бұл%<prn%>%<dem%>%<ins%>:мұнымен COMMON-CLITICS ; ! Dir/LR
-бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASE ; ! FIXME: check "м" vs "б"
+бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>:мұндай CASE ;
-бұл%<prn%>%<dem%>%<sim%>:бұндай CASE ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASE ;
-бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASE ;
-бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASE ;
+бұл%<prn%>%<dem%>%<sim%>:мұндай CASES ;
+бұл%<prn%>%<dem%>%<sim%>:бұндай CASES ; ! Dir/LR
+бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
+бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASES ;
+бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASES ;
 бұл%<prn%>%<dem%>%<adv%>:былай CLITICS-INCLUDING-COPULA ;
 бұл%<prn%>%<dem%>%<adv%>:бұлай CLITICS-INCLUDING-COPULA ; ! Dir/LR
 бұл%<prn%>%<dem%>%<qnt%>:мұнша COMMON-CLITICS ;
-бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASE ;
+бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASES ;
 
-бұл%<prn%>%<dem%>%<pl%>:бұлар CASE-ETC ;
-бұл%<prn%>%<dem%>%<pl%>%<px3sp%>:бұлары%{n%} CASE ;
+бұл%<prn%>%<dem%>%<pl%>:бұлар CASES-ETC ;
+бұл%<prn%>%<dem%>%<pl%>%<px3sp%>:бұлары%{n%} CASES ;
 
 LEXICON PRON-DEM-MINA
 
@@ -1138,14 +1136,14 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<abl%>:мынадан CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<ins%>:мынамен COMMON-CLITICS ;
-!мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASE ;
+!мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASES ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
-мына%<prn%>%<dem%>%<sim%>:мынадай CASE ;
+мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
 мына%<prn%>%<dem%>%<adv%>:мыналай CLITICS-INCLUDING-COPULA ;
-мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASE ;
+мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASES ;
 
-мына%<prn%>%<dem%>%<pl%>:мыналар CASE-ETC ;
-мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASE ;
+мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
+мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
 
 LEXICON PRON-DEM-ANA
 
@@ -1156,14 +1154,14 @@ LEXICON PRON-DEM-ANA
 ана%<prn%>%<dem%>%<abl%>:анадан CLITICS-INCLUDING-COPULA ;
 ана%<prn%>%<dem%>%<loc%>:анада CLITICS-INCLUDING-COPULA ;
 ана%<prn%>%<dem%>%<ins%>:анамен COMMON-CLITICS ;
-ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASE ;
+ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASES ;
 ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
-ана%<prn%>%<dem%>%<sim%>:анадай CASE ;
+ана%<prn%>%<dem%>%<sim%>:анадай CASES ;
 !ана%<prn%>%<dem%>%<adv%>:аналай CLITICS-INCLUDING-COPULA ;
-!ана%<prn%>%<dem%>%<px3sp%>:анасы%{n%} CASE ;
+!ана%<prn%>%<dem%>%<px3sp%>:анасы%{n%} CASES ;
 
-ана%<prn%>%<dem%>%<pl%>:аналар CASE-ETC ;
-ана%<prn%>%<dem%>%<pl%>%<px3sp%>:аналары%{n%} CASE ;
+ана%<prn%>%<dem%>%<pl%>:аналар CASES-ETC ;
+ана%<prn%>%<dem%>%<pl%>%<px3sp%>:аналары%{n%} CASES ;
 
 LEXICON DemonstrativePronouns
 
@@ -1174,17 +1172,17 @@ PRON-DEM-ANA ;
 сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCLUDING-COPULA ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
 сол%<prn%>%<dem%>%<ins%>:сонымен COMMON-CLITICS ;
-сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASE ;
+сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASES ;
 
 ол%<prn%>%<dem%>%<nom%>:ол CLITICS-INCLUDING-COPULA ;
 ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
 ол%<prn%>%<dem%>%<ins%>:онымен COMMON-CLITICS ;
-ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASE ;
+ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASES ;
 
 осы%<prn%>%<dem%>%<nom%>:осы COMMON-CLITICS ;
 осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
 осы%<prn%>%<dem%>%<ins%>:осымен COMMON-CLITICS ;
-осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASE ;
+осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASES ;
 
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
 ! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
@@ -1240,7 +1238,7 @@ LEXICON PRON-ITG-QANSHA
 ! Currently қанша<prn><itg> is translated with ничә<num><itg><subst> and
 ! қанша<adv><itg> is going to be translated with "күпме" or "никадәр"
 
-қанша%<prn%>%<itg%>:қанша CASE ;
+қанша%<prn%>%<itg%>:қанша CASES ;
 
 LEXICON PRON-ITG-QANDAY
 
@@ -1250,10 +1248,10 @@ LEXICON PRON-ITG-QANDAY
 ! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
 ! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
 ! it shouldn't receive <nom> tag I think /IS/
-қандай%<prn%>%<itg%>%<sim%>:қандай CASE ;
-қандай%<prn%>%<itg%>%<sim%>%<px3sp%>:қандайы%{n%} CASE ;
-қандай%<prn%>%<itg%>%<sim%>%<pl%>:қандайлар CASE ;
-қандай%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:қандайлары%{n%} CASE ;
+қандай%<prn%>%<itg%>%<sim%>:қандай CASES ;
+қандай%<prn%>%<itg%>%<sim%>%<px3sp%>:қандайы%{n%} CASES ;
+қандай%<prn%>%<itg%>%<sim%>%<pl%>:қандайлар CASES ;
+қандай%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:қандайлары%{n%} CASES ;
 
 LEXICON InterrogativePronouns
 
@@ -1274,12 +1272,12 @@ LEXICON PRON-QNT
 
 LEXICON PRON-IND
 
-%<prn%>%<ind%>: CASE ;
+%<prn%>%<ind%>: CASES ;
 
 
 LEXICON PRNNEG
 
-%<prn%>%<neg%>: CASE ;
+%<prn%>%<neg%>: CASES ;
 
 LEXICON PRON-RECIP
 
@@ -1287,7 +1285,7 @@ LEXICON PRON-RECIP
 
 LEXICON PRON-REF-ADV
 
-CASE-ETC ;
+CASES-ETC ;
 %<adv%>:ше COMMON-CLITICS ;
 
 LEXICON PRON-REF
@@ -1354,7 +1352,7 @@ LEXICON N1-ABBR
 
 %<n%>%<attr%>: # ;
 %<n%>:%- POSSESSION ;
-%<n%>:%- CASE-ETC ;
+%<n%>:%- CASES-ETC ;
 
 
 LEXICON N1
@@ -1364,7 +1362,7 @@ LEXICON N1
 
 LEXICON N-COMPOUND-PX-COMMON
 
-:%>%{S%}%{I%}%{n%} CASE-ETC ;
+:%>%{S%}%{I%}%{n%} CASES-ETC ;
 POSS-REAL ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
                   ! which should have a <px3sp> analysis
 
@@ -1373,7 +1371,7 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>: N-COMPOUND-PX-COMMON ;
-%<n%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASE-ETC ; ! (e.g. чик сакчылары=пограничники)
+%<n%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
                                                       !  FIXME CHECK: Is {S} needed here ?
 
 
@@ -1483,7 +1481,7 @@ LEXICON NP-PAT-VICH
 
 LEXICON NP-ORG
 
-%<np%>%<org%>: CASE ; 
+%<np%>%<org%>: CASES ; 
 
 LEXICON NP-ORG-COMPOUND 
 
@@ -1491,7 +1489,7 @@ LEXICON NP-ORG-COMPOUND
 
 LEXICON NP-AL
 
-%<np%>%<al%>: CASE ; 
+%<np%>%<al%>: CASES ; 
 
 LEXICON NUM-COMMON
 
