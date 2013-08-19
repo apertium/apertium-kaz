@@ -601,7 +601,7 @@ CASES-COMMON ;
 %<abl%>:%>%{D%}%{A%}н COMMON-CLITICS ;
 %<loc%>:%>%{D%}%{A%} COMMON-CLITICS ;
 
-LEXICON ATTR/SUBST
+LEXICON ATTR-SUBST
 
 %<attr%>: COMMON-CLITICS ;
 %<subst%>: CASES ;
@@ -630,7 +630,7 @@ LEXICON Abessive          ! Doesn't appear after possessives
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
 %<px%>:%>%{N%}ікі%{n%} CASES ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR/SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ; ! <s>FIXME:NOTE: I am in favour for changing the tag to loc2
                                             ! ("DAGI"=loc2 and not "DAGI"=loc"DA"+attr"GI") But first
                                             ! I'll give some arguments in a mail to apertium-turkic</s>
 %<sim%>:%>%{D%}%{A%}й COMMON-CLITICS ;                ! FIXME:CHECK:In Tatar this is considered to be an adverbializer, so
@@ -1012,7 +1012,7 @@ LEXICON PRON-12SG-CASES
 %<loc%>:енде COMMON-CLITICS ;
 %<ins%>:енімен COMMON-CLITICS ;
 %<px%>:енікі%{n%} CASES ;
-%<loc%>:ендегі ATTR/SUBST ;
+%<loc%>:ендегі ATTR-SUBST ;
 %<sim%>:ендей COMMON-CLITICS ;
 %<adv%>:еніңше COMMON-CLITICS ;
 
@@ -1037,7 +1037,7 @@ LEXICON PersonalPronouns
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASES ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR/SUBST ;
+ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR-SUBST ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай COMMON-CLITICS ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша COMMON-CLITICS ;
 
@@ -1073,7 +1073,7 @@ LEXICON PRON-DEM-INFL
 %<abl%>:нан CLITICS-INCLUDING-COPULA ; ! Dir/LR FIXME actually only "осы" seems to take this.
 %<loc%>:нда CLITICS-INCLUDING-COPULA ;
 %<px%>:нікі%{n%} CASES ;
-%<loc%>:ндагы ATTR/SUBST ;
+%<loc%>:ндагы ATTR-SUBST ;
 %<sim%>:ндай CASES ;  ! FIXME: should have <det>, etc.
 %<adv%>:лай CLITICS-INCLUDING-COPULA ;
 %<qnt%>:нша COMMON-CLITICS ;         !
@@ -1112,8 +1112,8 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<ins%>:бұнымен COMMON-CLITICS ;
 бұл%<prn%>%<dem%>%<ins%>:мұнымен COMMON-CLITICS ; ! Dir/LR
 бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
-бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR/SUBST ;
-бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR/SUBST ; ! Dir/LR
+бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR-SUBST ;
+бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
 бұл%<prn%>%<dem%>%<sim%>:мұндай CASES ;
 бұл%<prn%>%<dem%>%<sim%>:бұндай CASES ; ! Dir/LR
 бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
@@ -1137,7 +1137,7 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<ins%>:мынамен COMMON-CLITICS ;
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASES ;
-!мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR/SUBST ;
+!мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR-SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
 мына%<prn%>%<dem%>%<adv%>:мыналай CLITICS-INCLUDING-COPULA ;
 мына%<prn%>%<dem%>%<px3sp%>:мынасы%{n%} CASES ;
@@ -1155,7 +1155,7 @@ LEXICON PRON-DEM-ANA
 ана%<prn%>%<dem%>%<loc%>:анада CLITICS-INCLUDING-COPULA ;
 ана%<prn%>%<dem%>%<ins%>:анамен COMMON-CLITICS ;
 ана%<prn%>%<dem%>%<px%>:ананікі%{n%} CASES ;
-ана%<prn%>%<dem%>%<loc%>:анадағы ATTR/SUBST ;
+ана%<prn%>%<dem%>%<loc%>:анадағы ATTR-SUBST ;
 ана%<prn%>%<dem%>%<sim%>:анадай CASES ;
 !ана%<prn%>%<dem%>%<adv%>:аналай CLITICS-INCLUDING-COPULA ;
 !ана%<prn%>%<dem%>%<px3sp%>:анасы%{n%} CASES ;
