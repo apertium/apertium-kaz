@@ -326,7 +326,7 @@ GENPOSS-ETC ;
 
 LEXICON N-INFL-COMMON-NONOM
 
-POSSESSION ;
+POSSESSIVES ;
 CASE-ETC-NONOM ;
 
 LEXICON SUBST-NONOM
@@ -593,7 +593,6 @@ CASES-COMMON ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCLUDING-COPULA ;
 %<loc%>:%>%{D%}%{A%} CLITICS-INCLUDING-COPULA ;
 
-
 LEXICON CASES-WITHOUT-COPULAS
 
 CASES-COMMON ;
@@ -640,7 +639,7 @@ LEXICON CASES-ETC
 CASES ;
 GENPOSS-ETC ;
 
-LEXICON POSS-REAL
+LEXICON POSSESSIVES
 
 %<px1sg%>:%>%{I%}м CASES-ETC ;
 %<px2sg%>:%>%{I%}ң CASES-ETC ;
@@ -651,15 +650,9 @@ LEXICON POSS-REAL
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASES-ETC ;
 
-LEXICON POSSESSION ! I guess this was used once to implement some
-                   ! recursive things, e.g. the sequence
-                   ! [stem > poss-real > [ныкы]/дагы > poss-real > case]
-                   ! Some gerunds link to it
-POSS-REAL ;
-
 LEXICON N-INFL-COMMON
 
-POSSESSION ;
+POSSESSIVES ;
 CASES-ETC ;
 Abessive ; ! FIXME might lead to overgeneration:
            !! check whether it occurs after substantivized stuff;
@@ -833,7 +826,7 @@ LEXICON GER-CASE-ETC
 GER-CASE-NO_COPULA ;
 GER-GENPOSS-ETC ;
 
-LEXICON GER-POSS-REAL
+LEXICON GER-POSSESSIVES
 
 %<px1sg%>:%>%{I%}м GER-CASE-ETC ;
 %<px2sg%>:%>%{I%}ң GER-CASE-ETC ;
@@ -846,9 +839,9 @@ LEXICON GER-POSS-REAL
 
 LEXICON GER-INFL
 
-GER-POSS-REAL ;
+GER-POSSESSIVES ;
 GER-CASE-ETC ;
-%<pl%>:%>%{L%}%{A%}р GER-POSS-REAL ;
+%<pl%>:%>%{L%}%{A%}р GER-POSSESSIVES ;
 %<pl%>:%>%{L%}%{A%}р GER-CASE-ETC ;
 GER-ABE-ETC ;
 
@@ -895,11 +888,11 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 !%<neg%>%<gpr_pot2%>:%>%{G%}%{I%}с # ; FIXME looks wrong
 
 ! Gerunds
-%<ger_fut%>:%>%{A%}р GER-POSS-REAL ;
-%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSS-REAL ;
+%<ger_fut%>:%>%{A%}р GER-POSSESSIVES ;
+%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
 
-%<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-POSS-REAL ;
-%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} GER-POSS-REAL ;
+%<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-POSSESSIVES ;
+%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} GER-POSSESSIVES ;
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -920,7 +913,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_past%>:%>%{G%}%{A%}н GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}н%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
-%<ger_impf%>:%>%{E%}т%{I%}н GER-POSS-REAL ;
+%<ger_impf%>:%>%{E%}т%{I%}н GER-POSSESSIVES ;
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
@@ -991,8 +984,8 @@ LEXICON Vinfl-AUX
 
 LEXICON Copula
 
-е%<cop%>%<ger_past%>:екен GER-POSS-REAL ;
-е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к GER-POSS-REAL ;
+е%<cop%>%<ger_past%>:екен GER-POSSESSIVES ;
+е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к GER-POSSESSIVES ;
 
 е%<cop%>%<neg%>:емес V-PERS-S1 ;
 е%<cop%>%<past%>:екен V-PERS-S1 ;
@@ -1230,7 +1223,7 @@ LEXICON PRON-ITG-QAYSI
 қайсы%<prn%>%<itg%>%<loc%>:қайсыда COMMON-CLITICS ;
 қайсы%<prn%>%<itg%>%<ins%>:қайсымен COMMON-CLITICS ;
 
-қайсы%<prn%>%<itg%>:қайсы GER-POSS-REAL ;
+қайсы%<prn%>%<itg%>:қайсы GER-POSSESSIVES ;
 
 LEXICON PRON-ITG-QANSHA
 
@@ -1264,7 +1257,7 @@ PRON-ITG-QANDAY ;
 
 LEXICON PRON-QNT-POSS
 
-%<prn%>%<qnt%>: GER-POSS-REAL ;
+%<prn%>%<qnt%>: GER-POSSESSIVES ;
 
 LEXICON PRON-QNT
 
@@ -1281,7 +1274,7 @@ LEXICON PRNNEG
 
 LEXICON PRON-RECIP
 
-%<prn%>%<recip%>: GER-POSS-REAL ;
+%<prn%>%<recip%>: GER-POSSESSIVES ;
 
 LEXICON PRON-REF-ADV
 
@@ -1292,7 +1285,7 @@ LEXICON PRON-REF
 
 ! FIXME JNW please have a look at this
 ! Listing all forms here because of overgeneration with *өздерім,
-! *өздеріміз, *өзіңдер etc while linking to POSS-REAL. This was the idea.
+! *өздеріміз, *өзіңдер etc while linking to POSSESSIVES. This was the idea.
 ! Now they are handled more like personal pronouns (the same tags in the same
 ! order), so they should pass transfer without any trouble.
 !-----
@@ -1316,8 +1309,8 @@ LEXICON PRON-REF
 %<prn%>%<ref%>%<p2%>%<pl%>%<frm%>:%>д%{A%}р%>%{I%}ң%{I%}з PRON-REF-ADV ;
 
 ! This is how it was before:
-!%<prn%>%<ref%>: POSS-REAL ;
-!%<prn%>%<ref%>%<pl%>:%{L%}%{A%}р POSS-REAL ;
+!%<prn%>%<ref%>: POSSESSIVES ;
+!%<prn%>%<ref%>%<pl%>:%{L%}%{A%}р POSSESSIVES ;
 
 !!!!!!!!!!!!!!!!!!!!!!     DETERMINERS
 
@@ -1351,7 +1344,7 @@ LEXICON DET-REF
 LEXICON N1-ABBR
 
 %<n%>%<attr%>: # ;
-%<n%>:%- POSSESSION ;
+%<n%>:%- POSSESSIVES ;
 %<n%>:%- CASES-ETC ;
 
 
@@ -1363,7 +1356,7 @@ LEXICON N1
 LEXICON N-COMPOUND-PX-COMMON
 
 :%>%{S%}%{I%}%{n%} CASES-ETC ;
-POSS-REAL ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
+POSSESSIVES ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
                   ! which should have a <px3sp> analysis
 
 
