@@ -8,6 +8,7 @@ LANG1=kaz
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
+	$(LANG1).automorf.bin $(LANG2).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG2).autogen.att.gz \
         $(LANG1).rlx.bin modes
 
@@ -51,6 +52,17 @@ $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
 $(LANG1).automorf.att.gz: $(LANG1).automorf.hfst
 	hfst-fst2txt $< | gzip -9 -c > $@
 
+$(LANG1).autogen.bin: $(LANG1).autogen.att.gz
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	zcat < $< > .deps/$(LANG1).autogen.att
+	lt-comp lr .deps/$(LANG1).autogen.att $@
+
+$(LANG1).automorf.bin: $(LANG1).automorf.att.gz
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	zcat < $< > .deps/$(LANG1).automorf.att
+	lt-comp lr .deps/$(LANG1).automorf.att $@
+
+
 ###############################################################################
 ## Debugging transducers (for testvoc)
 ###############################################################################
@@ -87,6 +99,7 @@ apertium_kazdir=$(prefix)/lib/apertium/$(BASENAME)/
 apertium_kaz_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 apertium_kaz_DATA=$(LANG1).automorf.hfst $(LANG1).autogen.hfst \
+		    $(LANG1).automorf.bin $(LANG1).autogen.bin \
 		    $(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
 		    $(LANG1).rlx.bin modes
 
