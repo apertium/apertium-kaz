@@ -1,26 +1,27 @@
 
-# ============================================================================= #
+# ============================================================================ #
 #            A COMMENTARY ON FORMATTING OF MAJORITY OF RULES
 #              (read: a wannabe FORMATTING GUIDELINES)
-# ============================================================================= #
+# ============================================================================ #
 
 # How most of the rules look like?
 # ================================
 
-#          # An explanation of what the rule does (if it's not obvious from code!), a name
-#          # or any other comment
+#          # An explanation of what the rule does (if it's not obvious from
+#          # code!), a name or any other comment
 #           SELECT ABC IF
 #                  (0 DEF)
 #                  (1 GHI)
 #          ;
 #          ## A sentence the rule was written for.
-#          ## (!) A corner-case-sentence: the rule mispredicted on it initially but was
-#          ## modified accordingly (additional constraints etc.); or the rule still
-##         ## mispredicts on it, but this kind of sentences aren't that frequent.
+#          ## (!) A corner-case-sentence: the rule mispredicted on it initially
+#          ## but was modified accordingly (additional constraints etc.); or the
+##         ##  rule still mispredicts on it, but this kind of sentences aren't
+##         ## that frequent.
 
-
-#          # Sometimes you can't disambiguate a form with only one rule. In that case,
-##         # several rules dealing with the same thing are grouped together
+#          # Sometimes you can't disambiguate a form with only one rule. In that
+#          #  case, several rules dealing with the same thing are grouped
+#          # together
 #           SELECT ABC IF
 #                  (0 DEF)
 #                  (1 KLM)
@@ -113,7 +114,8 @@ LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 # All possible word categories
 # ============================
 
-SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
+SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj |
+           Num | ("\?") ;
 
 SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC | (attr) ;
 
