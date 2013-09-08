@@ -242,12 +242,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
 
 
- "<жаппай>" SELECT A IF
-                 (1 N)
-;
-## Қытай мамандары ауыл тұрғындарының қалаға жаппай ағылуын тоқтататын жаңа саясат жүргізуге шақырып отыр.
-
-
 # Proper noun vs noun
  SELECT Prop IF
         (0 N)
@@ -271,35 +265,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## Азамат пен Айгүл бақшада.
 
 
+#
+ SELECT Pron IF
+        (0C Det OR Pron)
+        (1 Adv)
+;
+## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
+
+
 
 # Determiners
 # ===========
 
-
-
-#
-"<бір>" SELECT Det IF (-1C A) (1 N);
-## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
-## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
-
-
-# Must be before "SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;"
-"<бар>" REMOVE Det IF
-               (1 ("енді"i))
-               (2 Rquot) ;
-## # Себебі Түрік Әуежолдары сынды бір серігіміз бар енді» деді.
-
-
-#
-"<бар>" SELECT V IF (-1 Dat) ;
-"<бар>" SELECT A IF (-1 (px3sp)) ;
-"<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
-"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
-## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
-## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген заттардың есебінен;
-## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
-## Акча бармы? Бар<adj>.
-## Акча бармы? Бар<adj>, ләкин бик аз!
 
 
 # FIXME removes determiner even when there is a noun 1 to the right
@@ -308,14 +285,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #;
 ## 44 . Ол енді ол дыбысты анығырақ ести бастады.
 ## (!) 34 . Ол Азаматтың қайда екенін білсе де айтқысы келген жоқ.
-
-
-#
- SELECT Pron IF
-        (0C Det OR Pron)
-        (1 Adv)
-;
-## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
 
 
 
@@ -351,18 +320,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
-# басым recognized as noun бас, select ADJ form
- "<басым>" SELECT A IF
-        (1 (px3sp))
-;
-## Олардың ¶ басым бөлігі – 2011 жылы жұмыс іздеп, 
-
-
-# тұрғыны recognized as noun тұрғы should select тұрғын before қаза
- "<тұрғыны>" SELECT ("тұрғын") IF
-        (1 ("қаза"))
-;
-## 2011 жылы 16 желтоқсанда 16 тұрғыны қаза тапқан
 
 
 # Adjectives
@@ -512,16 +469,19 @@ REMOVE SUB:1 P3 IF
 
 
 # <Vaux p3> is more common, so let's set it as default
-# Rules for selecting imperative reading of these three (if any) must be placed before this rule
+# Rules for selecting imperative reading of these three (if any) must be placed
+# before this rule
  SELECT (vaux p3) IF
         (-1 (prc_perf))
         (0 FourAuxiliaries - ("<жатыр>"))
 ;
-## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің ойнағанына қарап [0]тұр.
+## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің
+## ойнағанына қарап [0]тұр.
 ## 36 . Әлі де болса Азаматты табуға әрекет етіп [0]жүр.
 
 
-# 2p sg imperative form is a bare stem, so it is often ambigious with other parts of speech
+# 2p sg imperative form is a bare stem, so it is often ambigious with other
+# parts of speech
  REMOVE (imp) IF
         (NOT 1 EOS OR MARK OR ("де"))
 ;
@@ -538,7 +498,8 @@ REMOVE SUB:1 P3 IF
         (1 N)
 ;
 ##  172 . Сот арқылы немесе өзгеде осындай құзыреті бар мемлекеттік органдардың
-## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе [0]жекелеген заттардың есебінен;
+## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе
+## [0]жекелеген заттардың есебінен;
 
 
 ###################   TO BE DONE   ####################
@@ -576,7 +537,8 @@ REMOVE SUB:1 P3 IF
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
-# =============================   # Try to generalize, if possible, existing rules.
+# =============================   # Try to generalize, if possible, existing
+                                  # rules.
 
 
 
@@ -674,7 +636,8 @@ REMOVE SUB:1 P3 IF
 # I don't think that сый<imp> is ever used
  "<сый>" SELECT N
 ;
-## 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар есебінен;
+## 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар
+## есебінен.
 
 
 # imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
@@ -689,7 +652,8 @@ REMOVE SUB:1 P3 IF
  "<көрме>" SELECT N IF
         (1 ("зал"i))
 ;
-## 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан, қолөнершілердің шеберханасы...
+## 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан,
+## қолөнершілердің шеберханасы...
 
 
 #
@@ -712,7 +676,8 @@ REMOVE SUB:1 P3 IF
         (0 ("сондай-ақ"i))
         (-1 BOS OR Cm)
 ;
-## 87 . Сондай-ақ, Арал теңізінің көлемі жайлы, Арал теңізі жайлы ұғымдар сонау ерте дүние әдебиеттерінде де кездеседі.
+## 87 . Сондай-ақ, Арал теңізінің көлемі жайлы, Арал теңізі жайлы ұғымдар сонау
+## ерте дүние әдебиеттерінде де кездеседі.
 
 
 #
@@ -807,6 +772,54 @@ REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
 REMOVE (pass) IF (0 ("қырыл"));
     ## жасушалардың қырылуы
 
+
+ "<жаппай>" SELECT A IF
+                 (1 N)
+;
+## Қытай мамандары ауыл тұрғындарының қалаға жаппай ағылуын тоқтататын жаңа
+# саясат жүргізуге шақырып отыр.
+
+
+#
+"<бір>" SELECT Det IF (-1C A) (1 N);
+## Әхмәт тиз генә иске зур _бер_ агачка йөгерә.
+## Әхмәт акрын гына иске зур _бер_ агачка йөгерә.
+
+
+# Must be placed before "SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;"
+"<бар>" REMOVE Det IF
+               (1 ("енді"i))
+               (2 Rquot) ;
+## # Себебі Түрік Әуежолдары сынды бір серігіміз бар енді» деді.
+
+
+#
+"<бар>" SELECT V IF (-1 Dat) ;
+"<бар>" SELECT A IF (-1 (px3sp)) ;
+"<бар>" SELECT Det IF (1* NPMARK BARRIER N OR MARK) ;
+"<бар>" REMOVE Det IF (1 S-BOUNDARY OR MARK) ;
+## 172. Сот арқылы немесе өзгеде осындай құзыреті _бар_ мемлекеттік органдардың
+## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе жекелеген
+## заттардың есебінен.
+## Бар<det> җирдән карый, әмма Әхмәтне таба алмый.
+## Акча бармы? Бар<adj>.
+## Акча бармы? Бар<adj>, ләкин бик аз!
+
+
+# басым recognized as noun бас, select ADJ form
+ "<басым>" SELECT A IF
+        (1 (px3sp))
+;
+## Олардың басым бөлігі – 2011 жылы жұмыс іздеп,
+
+
+# тұрғыны recognized as noun тұрғы should select тұрғын before қаза
+ "<тұрғыны>" SELECT ("тұрғын") IF
+        (1 ("қаза"))
+;
+## 2011 жылы 16 желтоқсанда 16 тұрғыны қаза тапқан
+
+
 # ======= #
   SECTION     # experimental
 # ======= #   # The following rules are for _translating_, therefore shouldn't be here (i.e. in apertium-kaz.kaz.rlx)
@@ -825,4 +838,3 @@ REMOVE (pass) IF (0 ("қырыл"));
  SUBSTITUTE (p3) (p1) TARGET ("ұна") + (aor) IF (@1 (prn p1)) ;
  SUBSTITUTE (p3) (p2) TARGET ("ұна") + (aor) IF (@1 (prn p2)) ; # FIXME take the tag from the first word
 ## Маған сөздік түзіген ұнайды. >> Мин сүзлек төзергә яратам.
-
