@@ -820,6 +820,18 @@ REMOVE (pass) IF (0 ("қырыл"));
 ## 2011 жылы 16 желтоқсанда 16 тұрғыны қаза тапқан
 
 
+# V-Iп FourAuxiliaries-GAн жоқ-COP
+ "<жоқ>" SELECT A IF
+                (-2 (prc_perf))
+                (-1 (gpr_past))
+;
+ SELECT (gpr_past) IF
+	(-1 (prc_perf))
+	(1 ("жоқ"))
+;
+## 19 . Ол еш нәрсені көріп тұрған жоқ, ол санап жатыр.
+
+
 # ======= #
   SECTION     # experimental
 # ======= #   # The following rules are for _translating_, therefore shouldn't be here (i.e. in apertium-kaz.kaz.rlx)
