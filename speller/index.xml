@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hfstspeller dtdversion="1.0" hfstversion="3">
+  <info>
+    <locale>kk</locale>
+    <title>Apertium morphological analyser-based speller (Kazakh)</title>
+    <description>
+    </description>
+    <version vcsrev="GT_REVISION">GT_VERSION</version>
+    <date>DATE</date>
+    <producer>Apertium contributors</producer>
+    <contact email="bugs@divvun.no" 
+        website="http://divvun.no"/>
+  </info>
+  <acceptor type="general" id="acceptor.default.hfst">
+    <title>Apertium dictionary (Kazakh)</title>
+    <description>
+        Apertium dictionary for Kazakh compiled for HFST.
+    </description>
+  </acceptor>
+  <errmodel id="errmodel.default.hfst">
+    <title>Levenshtein edit distance transducer</title>
+    <description>
+        Correction model for keyboard misstrokes, at most 2 per word.
+    </description>
+        <type type="default"/>
+        <model>errormodel.default.hfst</model>
+    </errmodel>
+</hfstspeller>

@@ -5,6 +5,21 @@ AM_INIT_AUTOMAKE([apertium-kaz], [0.1.0], no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
 
+dnl HFST support
+AH_TEMPLATE(HAVE_HFSTOSPELL, [Have HFSTOSPELL])
+AC_ARG_ENABLE(ospell, AC_HELP_STRING([--enable-ospell],
+        [enable HFST spellchecking backend]),
+        [hfstospell=${enableval}], [hfstospell=no])
+dnl must be AS_IF for some aclocals to pick PKG_CHECK_MODULES somehow.
+dnl AC_PROVIDE_IFELSE doesn't work on mac?
+AS_IF([test x$hfstospell = xyes], [
+      PKG_CHECK_MODULES([HFSTOSPELL], [hfstospell >= 0.2])
+          AC_DEFINE(HAVE_HFSTOSPELL, 1)
+          CXXFLAGS="$CXXFLAGS $HFSTOSPELL_CFLAGS"
+        ])
+AM_CONDITIONAL([HAVE_HFSTOSPELL], [test x$hfstospell = xyes])
+
+
 AC_DEFUN([PKG_CHECK_APERTIUM], [
   APERTIUM_VER=0
   PKG_CHECK_MODULES(APERTIUM, apertium-3.2 >= 3.2.0,
@@ -90,6 +105,8 @@ if test x$ac_cv_path_PKG_CONFIG = xno
 then
   AC_MSG_ERROR([You don't have pkg-config installed.])
 fi
+
+
 
 
 AC_OUTPUT([Makefile apertium-kaz-0.1.pc])
