@@ -471,6 +471,9 @@ REMOVE SUB:1 P3 IF
  REMOVE Vaux IF
         (NOT -1 Participle)
 ;
+ SELECT Vaux IF
+        (-1C Participle)
+;
 ## 187 . Біздің дәуірімізден 1 миллион жыл бұрын өмір сүрген "тік жүретін адамнан" [0]бастап, өз замандастарына дейінгі
 ## кезеңдерді қамтитын, ... орталықтың экспозициясы негізгі сегіз ірі бөлімнен тұрады.
 
@@ -836,6 +839,14 @@ REMOVE (pass) IF (0 ("қырыл"));
         (-1 (prc_perf))
         (0 FourAuxiliaries)
         (1 ("жоқ"))
+;
+ "<жоқ>" SELECT SUB:1 Cop IF
+        (-2 (prc_perf))
+        (-1 FourAuxiliaries)
+;
+ "<жоқ>" REMOVE Subst IF
+        (-2 (prc_perf))
+        (-1 FourAuxiliaries)
 ;
 ## 19 . Ол еш нәрсені көріп тұрған жоқ, ол санап жатыр.
 
