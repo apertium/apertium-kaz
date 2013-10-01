@@ -174,18 +174,19 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 #
- REMOVE Cop IF
+ REMOVE SUB:1 Cop IF
         (NOT 1 EOS OR MARK)
 ;
 ##
 
 
 #
- SELECT Cop IF
+ SELECT SUB:1 Cop IF
         (1 EOS OR MARK)
+        (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
+        (NOT -1 BOS) ## Тарихы. (headings)
 ;
-## TODO (!) 13 . [0]Жоқ, Айгүлдің күшігі жоқ, оның мысығы бар.
-## TODO (!) Дұрыс, оның мысығы бар.
+## Жоқ, Айгүлдің күшігі [0]жоқ, оның мысығы [0]бар.
 
 
 # ======= #
