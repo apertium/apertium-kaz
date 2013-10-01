@@ -17,8 +17,8 @@
 #          ## (!) A corner-case-sentence: the rule mispredicted on it initially
 #          ## but was modified accordingly (additional constraints etc.); or the
 ##         ##  rule still mispredicts on it, but this kind of sentences aren't
-##         ## that frequent.
-
+##         ## that frequent. (Alternatively, place the corner-case sentence on
+           ## the same line as the constraint).
 #          # Sometimes you can't disambiguate a form with only one rule. In that
 #          #  case, several rules dealing with the same thing are grouped
 #          # together
@@ -149,7 +149,7 @@ SET NOT-ADV = WORDMARK - Adv ;
 
 LIST A/Advl = (adj advl) ;
 LIST A/Subst = (adj subst nom) ;
-SET A1 = A/Advl | A/Subst ;
+SET A1-Nom = A/Advl | A/Subst ;
 
 # Verb sets
 # =========
@@ -177,15 +177,18 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  REMOVE SUB:1 Cop IF
         (NOT 1 EOS OR MARK)
 ;
+ REMOVE SUB:1 Cop IF
+        (-1 BOS OR MARK) ## Headings or enumerations
+;
 ##
 
 
 #
- SELECT SUB:1 Cop IF
-        (1 EOS OR MARK)
-        (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
-        (NOT -1 BOS) ## Тарихы. (headings)
-;
+# SELECT SUB:1 Cop IF
+#        (1 EOS OR MARK)
+#        (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
+#        (NOT 0 FiniteVerb) ## 74 ... барлығы 53 ел [0]қатысты.
+#;
 ## Жоқ, Айгүлдің күшігі [0]жоқ, оның мысығы [0]бар.
 
 
@@ -344,17 +347,16 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ##
 
 
-# select pure adjective reading ("predicative" in this case) of an adjective if sentence ends
- REMOVE Advl IF
-        (0 A1)
-        (1 EOS)
+# select adj+cop reading at the end of a sentence
+ SELECT Sub:1 Cop IF
+        (0C A1-Nom)
+        (1 EOS OR MARK)
 ;
- REMOVE Subst IF
-        (0 A1)
-        (1 EOS)
-        (NOT 0/1 Cop) ## FIXME CHECK
+ REMOVE Subst IF # we want adj+cop reading here, not adj.subst+cop
+        (0C A1-Nom)
+        (1 EOS OR MARK)
 ;
-## TODO (!) Син әкренсең -- (adj+cop vs adj.subst+cop)?
+## 19 . Ол еш нәрсені көріп тұрған [0]жоқ, ол санап жатыр.
 
 
 #
@@ -835,12 +837,12 @@ REMOVE (pass) IF (0 ("қырыл"));
         (0 FourAuxiliaries)
         (1 ("жоқ"))
 ;
- "<жоқ>" SELECT A IF
-                (-2 (prc_perf))
-                (-1 (gpr_past))
-;
 ## 19 . Ол еш нәрсені көріп тұрған жоқ, ол санап жатыр.
 
+#
+ "<керек>" SELECT A
+;
+## 45 . Бұл Азамат болу керек!
 
 # ======= #
   SECTION     # experimental
