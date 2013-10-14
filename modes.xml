@@ -36,7 +36,7 @@
     </pipeline>
   </mode>
 
-  <mode name="kaz-disam">
+  <mode name="kaz-tagger">
     <pipeline>
       <program name="lt-proc -w">
         <file name="kaz.automorf.bin"/>
@@ -47,7 +47,7 @@
     </pipeline>
   </mode>
 
-  <mode name="kaz-disam-debug">
+  <mode name="kaz-disam">
     <pipeline>
       <program name="lt-proc -w">
         <file name="kaz.automorf.bin"/>
