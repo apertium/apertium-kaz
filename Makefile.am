@@ -138,10 +138,7 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_kaz_DATA=$(LANG1).automorf.hfst $(LANG1).autogen.hfst \
-		    $(LANG1).automorf.bin $(LANG1).autogen.bin \
-		    $(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
-		    $(LANG1).rlx.bin $(EXTRA_TARGETS)
+apertium_kaz_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
