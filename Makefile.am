@@ -10,7 +10,7 @@ BASENAME=apertium-$(LANG1)
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1).automorf.bin $(LANG2).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG2).autogen.att.gz \
-        $(LANG1).rlx.bin modes
+        $(LANG1).rlx.bin
 
 ###############################################################################
 ## Kazakh transducer
@@ -19,11 +19,11 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-twolc $< -o $@
- 
+
 .deps/$(LANG1).RL.lexc: $(BASENAME).$(LANG1).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	cat $< | grep -v 'Dir/LR' > $@
- 
+
 .deps/$(LANG1).LR.lexc: $(BASENAME).$(LANG1).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	cat $< | grep -v 'Dir/RL' > $@
@@ -78,7 +78,7 @@ debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
 	hfst-fst2fst -O -i $< -o $@
 
 ###############################################################################
-## Disambiguation rules 
+## Disambiguation rules
 ###############################################################################
 
 $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
@@ -96,7 +96,7 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 	python dev/editdist.py -v -s -d 1 -e '@0@' -i speller/editdist.default.txt -a .deps/acceptor.default.hfst \
 	| hfst-txt2fst  -e '@0@' -o .deps/editdist.default.hfst
 	hfst-disjunct .deps/strings.default.hfst .deps/editdist.default.hfst \
-	| hfst-minimise | hfst-repeat -f 1 -t 2 -o .deps/editstrings.default.hfst 
+	| hfst-minimise | hfst-repeat -f 1 -t 2 -o .deps/editstrings.default.hfst
 	hfst-disjunct .deps/words.default.hfst .deps/editstrings.default.hfst \
 	| hfst-fst2fst  -f olw -o $@
 
@@ -111,8 +111,16 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 	echo "?*;" | hfst-regexp2fst -S -o $@
 
 .deps/acceptor.default.hfst: $(LANG1).autogen.hfst
-	cat $< | hfst-fst2fst -t | hfst-project  --project=lower | hfst-minimise |hfst-fst2fst  -f olw -o $@ 
+	cat $< | hfst-fst2fst -t | hfst-project  --project=lower | hfst-minimise |hfst-fst2fst  -f olw -o $@
 
+
+###############################################################################
+## Distribution
+###############################################################################
+EXTRA_DIST=$(BASENAME).$(LANG1).lexc \
+	   $(BASENAME).$(LANG1).twol \
+	   $(BASENAME).$(LANG1).rlx  \
+	   modes.xml
 
 ###############################################################################
 ## Installation stuff
@@ -120,9 +128,6 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 #
 #   apertium_kaz_libdir: This is where the compiled binaries go
 #   apertium_kaz_srcdir: This is where the source files go
-
-modes: modes.xml
-	apertium-gen-modes modes.xml
 
 apertium_kazdir=$(prefix)/lib/apertium/$(BASENAME)/
 apertium_kaz_srcdir=$(prefix)/share/apertium/$(BASENAME)/
@@ -136,15 +141,25 @@ endif # HAVE_HFSTOSPELL
 apertium_kaz_DATA=$(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 		    $(LANG1).automorf.bin $(LANG1).autogen.bin \
 		    $(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
-		    $(LANG1).rlx.bin modes $(EXTRA_TARGETS)
+		    $(LANG1).rlx.bin $(EXTRA_TARGETS)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
+# Modes are not installed since they're all just "debug modes". All
+# modes are created by this goal.
+modes/$(LANG1)-morph.mode: modes.xml
+	apertium-validate-modes modes.xml
+	apertium-gen-modes modes.xml
+
+noinst_DATA=modes/$(LANG1)-morph.mode
+
 install-data-local:
-	if [ ! -d $(DESTDIR)$(apertium_kaz_srcdir) ]; then mkdir -p $(DESTDIR)$(apertium_kaz_srcdir); fi
+	test -d $(DESTDIR)$(apertium_kaz_srcdir) || mkdir -p $(DESTDIR)$(apertium_kaz_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_kaz_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_kaz_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_kaz_srcdir)
 
-CLEANFILES = -r $(TARGETS_COMMON) .deps/
+CLEANFILES = $(TARGETS_COMMON)
+clean-local:
+	-rm -rf .deps modes
