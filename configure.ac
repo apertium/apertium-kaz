@@ -109,4 +109,4 @@ fi
 
 
 
-AC_OUTPUT([Makefile apertium-kaz-0.1.pc])
+AC_OUTPUT([Makefile apertium-kaz.pc])
