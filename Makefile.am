@@ -8,8 +8,8 @@ LANG1=kaz
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
-	$(LANG1).automorf.bin $(LANG2).autogen.bin \
-	$(LANG1).automorf.att.gz $(LANG2).autogen.att.gz \
+	$(LANG1).automorf.bin $(LANG1).autogen.bin \
+	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
         $(LANG1).rlx.bin
 
 ###############################################################################
