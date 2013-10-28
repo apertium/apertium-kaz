@@ -4303,6 +4303,20 @@ XXI NUM-ROMAN ; ! ""
 шәугім:шәугім N1 ; ! "teapot" 
 түз:түз N1 ; ! "field" 
 
+реестр:реестр N5 ; ! "resource book; registry"
+код:код N5 ; ! "code"
+коммуна:коммуна N5 ; ! "commune"
+муниципалитет:муниципалитет N5 ; ! "municipality"
+саға:саға N1 ; ! "estuary"
+қашықтық:қашықтық N1 ; ! "remoteness(?)"
+галактика:галактика N5 ; ! "galaxy"
+тип:тип N5 ; ! "type"
+сушаруашылық:сушаруашылық N1 ; ! "bathometry(?)"  COMPOUND
+түпнұсқа:түпнұсқа N1 ; ! "original"   COMPOUND
+каталог:каталог N5 ; ! "catalogue"
+IC:IC%{э%}%{с%} N1 ; ! "индекс-каталог"
+
+
 ! Abbreviations
 ! =============
 ДНҚ:ДНҚ%{а%} N1-ABBR ; ! "DNA"
@@ -5004,7 +5018,7 @@ kettle:kettle шәйнек N1 ; ! " jewel"  ! Use/MT eng-kaz
 Еділ:Еділ NP-TOP ; ! "Volga river"
 Ертіс:Ертіс NP-TOP ; ! ""
 Есентай:Есентай NP-TOP ; ! ""
-Жайық:Жайық NP-TOP ; ! ""
+Жайық:Жайық NP-TOP ; ! "Ural river"
 Жейхун:Жейхун NP-TOP ; ! ""
 Жерорта% теңізі:Жерорта% теңіз NP-TOP ; ! "" FIXME: similar to N-COMPUND-PX cont.class for proper nouns
 Иртышъ:Иртышъ NP-TOP ; ! ""
@@ -5018,6 +5032,7 @@ kettle:kettle шәйнек N1 ; ! " jewel"  ! Use/MT eng-kaz
 Шолман:Шолман NP-TOP ; ! ""
 Ак%-Су:Ак%-Су NP-TOP ; ! ""
 Ыстықкөл:Ыстықкөл NP-TOP ; ! ""
+Обь:Обь NP-TOP ; ! "Ob river"
 
 Алай:Алай NP-TOP ; ! "Alay"
 Алаш:Алаш NP-TOP ; ! ""
@@ -9946,6 +9961,8 @@ YouTube:YouTube NP-ORG ; ! ""
 Чемпиондар% лигасы:Чемпиондар% лига NP-ORG-COMPOUND ; ! "UEFA Champions League"
 Реал% Мадрид:Реал% Мадрид%{☭%} NP-ORG ; ! "Real Madrid Club de Fútbol"
 
+NGC:NGC NP-ORG ; ! "Жаңа жалпы каталог = New General Catalogue"
+INSEE:INSEE NP-ORG ; ! "Францияның ұлттық статистика және экономикалық зерттеулер институты (фр. Institut national de la statistique et des études économiques, қысқ. INSEE немесе Insee"
 
 ! Other proper names (events etc)
 !================================
