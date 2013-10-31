@@ -20,28 +20,9 @@ AS_IF([test x$hfstospell = xyes], [
 AM_CONDITIONAL([HAVE_HFSTOSPELL], [test x$hfstospell = xyes])
 
 
-AC_DEFUN([PKG_CHECK_APERTIUM], [
-  APERTIUM_VER=0
-  PKG_CHECK_MODULES(APERTIUM, apertium-3.2 >= 3.2.0,
-  [
-      APERTIUM_VER=32
-  ],
-  [
-      PKG_CHECK_MODULES(APERTIUM, apertium-3.1 >= 3.1.0,
-      [
-          APERTIUM_VER=31
-      ],
-      [
-          PKG_CHECK_MODULES(APERTIUM, apertium-3.0 >= 3.0.0,
-          [
-              APERTIUM_VER=30
-          ])
-      ])
-  ])
-  AC_SUBST(APERTIUM_VER)
-])
+m4_define([required_apertium_version], [3.2.0])
+PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium-3.2 >= required_apertium_version)])
                           
-PKG_CHECK_APERTIUM
 
 #AC_DEFUN([PKG_CHECK_HFST], [
 #  HFST_VER=0
