@@ -128,7 +128,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).lexc \
 ## Installation stuff
 ###############################################################################
 #
-#   apertium_kaz_libdir: This is where the compiled binaries go
+#   apertium_kaz_dir: This is where the compiled binaries go
 #   apertium_kaz_srcdir: This is where the source files go
 
 apertium_kazdir=$(prefix)/lib/apertium/$(BASENAME)/
