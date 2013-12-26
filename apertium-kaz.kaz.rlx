@@ -115,6 +115,7 @@ LIST Loc = loc ;
 LIST Ins = ins ;
 
 LIST P1 = p1 ;
+LIST P2 = p2 ;
 LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
@@ -854,6 +855,12 @@ REMOVE (pass) IF (0 ("қырыл"));
  "<керек>" SELECT A
 ;
 ## 45 . Бұл Азамат болу керек!
+
+
+# Сен бардың ба?
+REMOVE (gen) IF 
+  (0 (ifi p2))
+  (-1* (prn nom))
 
 # ======= #
   SECTION     # experimental
