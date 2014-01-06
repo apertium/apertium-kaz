@@ -161,7 +161,7 @@ LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 SET V-NotGerund = V - Gerund ;
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
+LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жатыр" ;
 
 # Barriers
 # ========
@@ -488,7 +488,7 @@ REMOVE SUB:1 P3 IF
 # before this rule
  SELECT (vaux p3) IF
         (-1 (prc_perf))
-        (0 ("<жүр>") OR ("<тұр>") OR ("<отыр>"))
+        (0 FourAuxiliaries)
 ;
 ## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің
 ## ойнағанына қарап [0]тұр.
