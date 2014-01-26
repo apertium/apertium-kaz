@@ -92,7 +92,7 @@ $(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
 
 $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 	rm -f $@
-	zip -j $@ .deps/acceptor.default.hfst .deps/errmodel.default.hfst speller/index.xml
+	zip -Z store -j $@ .deps/acceptor.default.hfst .deps/errmodel.default.hfst speller/index.xml
 
 .deps/errmodel.default.hfst: .deps/words.default.hfst .deps/strings.default.hfst
 	python dev/editdist.py -v -s -d 1 -e '@0@' -i speller/editdist.default.txt -a .deps/acceptor.default.hfst \
