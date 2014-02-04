@@ -286,6 +286,16 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
 
 
+# INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
+#        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
+#        бет<n><px3sp><loc><subst><nom>/$
+# OUTPUT: [0]^терістік<n><attr> ^бетіндегі/бет<n><px3sp><loc><attr>...$
+ REMOVE V IF
+        (0 PRE-N)
+        (1C N)
+;
+#
+
 
 # Determiners
 # ===========
