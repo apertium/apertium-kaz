@@ -71,6 +71,7 @@ LIST EOS = (<<<) ;
 LIST A = adj ;
 LIST Adv = adv ;
 LIST Pron = prn ;
+LIST Pron-Pers = prn ;
 LIST N = n ;
 LIST Prop = np ;
 LIST V = v ;
@@ -866,4 +867,10 @@ REMOVE (pass) IF (0 ("қырыл"));
 REMOVE (gen) IF 
   (0 (ifi p2))
   (-1* (prn nom))
+
+SELECT Pron-Pers IF
+        (0 Pron-Pers)
+# INPUT: ^Мен/мен<cnjcoo>/мен<cnjcoo>/мен<prn><pers><p1><sg><nom>/
+# OUTPUT:[0]^мен<prn><pers><p1><sg><nom>
+
 
