@@ -4,44 +4,87 @@
 #              (read: a wannabe FORMATTING GUIDELINES)
 # ============================================================================ #
 
-# How most of the rules look like?
-# ================================
-
-#          # An explanation of what the rule does (if it's not obvious from
-#          # code!), a name or any other comment
-#           SELECT ABC IF
-#                  (0 DEF)
-#                  (1 GHI)
-#          ;
-#          ## A sentence the rule was written for.
-#          ## (!) A corner-case-sentence: the rule mispredicted on it initially
-#          ## but was modified accordingly (additional constraints etc.); or the
-##         ##  rule still mispredicts on it, but this kind of sentences aren't
-##         ## that frequent. (Alternatively, place the corner-case sentence on
-           ## the same line as the constraint).
-#          # Sometimes you can't disambiguate a form with only one rule. In that
-#          #  case, several rules dealing with the same thing are grouped
-#          # together
-#           SELECT ABC IF
-#                  (0 DEF)
-#                  (1 KLM)
-#          ;
-#           REMOVE XYZ IF
-#                  (0 DEF)
-#                  (1 NOP)
-#                  (2 QRS)
+# Lines do not exceed 79 characters.
+#
+# Rule layout
+# ===========
+#
+# There are two alternative layouts for writing a rule. An example for the
+# first one (of course the body of the rule won't be commented out):
+#
+#        # INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
+#        #        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
+#        #        бет<n><px3sp><loc><subst><nom>/$
+#        # OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$
+#                   ^бетіндегі/бет<n><px3sp><loc><attr>...$
+#         REMOVE V IF
+#                (0 PRE-N)
+#                (1C N)
+#        ;
+#        # any additional comments here (if necessary)
+#
+# An abstract example of the second layout:
+#
+#        # An explanation of what the rule does (if it's not obvious from
+#        # code!), a name or any other comment that clarifies its purpose
+#         SELECT ABC IF
+#                (0 DEF)
+#                (1 GHI)
+#        ;
+#        ## A sentence with the [0]form the rule was written for.
+#        ## (!) A corner-case-sentence: the rule mispredicted on it initially
+#        ## but was modified accordingly (additional constraints etc.); or the
+#        ## rule still mispredicts on it, but this kind of sentences aren't
+#        ## that frequent. (Alternatively, place the corner-case sentence on
+#        ## the same line as the additional constraint).
+#
+# The first layout is more appropriate when you come up with a rule inductively
+# (i.e. you see a sentence badly translated because of errors in disambiguation
+# and want to fix it), the second one when you arrived at it deductively. E.g:
+#
+#        # Participle appears immediately before a verb (verbal adverb doesn't)
+#         REMOVE Participle IF
+#                (NOT 1C V OR Vaux)
+#        ;
+#        ## Есік [0]ашып, ол үйге кірді.
+#
+# In context of apertium-kaz, the difference between a participle and a verbal
+# adverb is that participle immediately precedes a verb and verbal adverb
+# doesn't. We know this even without looking at tests, but it is a good idea
+# to back up the rule with a test case.
+#
+# Sometimes you can't fully disambiguate a form with only one rule. In that
+# case, several rules dealing with the same thing can be grouped together:
+#
+#         # What the rule does?
+#          SELECT ABC IF
+#                 (0 DEF)
+#                 (1 KLM)
+#         ;
+#          REMOVE XYZ IF
+#                 (0 DEF)
+#                 (1 NOP)
+#                 (2 QRS)
 #          ;
 #          ## Example sentences for both of the rules.
 #          ## Another example sentence.
-#          ## (!) And another, on which the rule didn't/doesn't work.
-
-# Where a rule must be placed?
-# ============================
-
-# In general, there are two kinds of rules -- ones that try to disambiguate
-# a certain wordform and ones which aren't tied up to any particular wordform
-# or lemma (i.e. no lemma or wordform for 0, they might have lemmas or wordforms
-# for other constraints).
+#
+# Where a rule is placed?
+# =======================
+#
+#                 Disambiguates a particular wordform?
+#                   /                         \
+#                 YES                         NO
+#                 /                             \
+#     "Wordform/lemma specific rules"        Readings of
+#     section at the end of the file        different POS?
+#                                           /           \
+#                                        YES            NO
+#                                       /                 \
+#                                "POS marking"             \
+#                              at the beginning             \
+#                                                   Corresponding section
+#                                                   ("Verbs", "Adjectives" etc.)
 
 # ============================ #
 # END OF FORMATTING GUIDELINES #
@@ -71,7 +114,7 @@ LIST EOS = (<<<) ;
 LIST A = adj ;
 LIST Adv = adv ;
 LIST Pron = prn ;
-LIST Pron-Pers = prn ;
+LIST Pron-Pers = (prn pers) ;
 LIST N = n ;
 LIST Prop = np ;
 LIST V = v ;
@@ -121,6 +164,24 @@ LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
+# Adjective sets
+# ==============
+
+LIST A/Advl = (adj advl) ;
+LIST A/Subst = (adj subst nom) ;
+SET A1-Nom = A/Advl | A/Subst ;
+
+# Verb sets
+# =========
+
+LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
+LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
+LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
+SET V-NotGerund = V - Gerund ;
+LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
+LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
+LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
+
 # All possible word categories
 # ============================
 
@@ -139,30 +200,14 @@ SET ADJ-MOD = Postadv | Adv ;
 
 SET NPMARK = N-MOD | ADJ-MOD ;
 
+SET NOMINAL = N | Prop | Pron | Subst | Gerund ;
+
 # Categories which cannot be part of a noun phrase
 # ================================================
 
 SET NPNH = WORDMARK - PRE-N ;
 SET NPNHA = WORDMARK - PRE-N - Adv ;
 SET NOT-ADV = WORDMARK - Adv ;
-
-# Adjective sets
-# ==============
-
-LIST A/Advl = (adj advl) ;
-LIST A/Subst = (adj subst nom) ;
-SET A1-Nom = A/Advl | A/Subst ;
-
-# Verb sets
-# =========
-
-LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
-LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
-LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
-SET V-NotGerund = V - Gerund ;
-LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
-LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
 
 # Barriers
 # ========
@@ -200,8 +245,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 
-# Part-of-speech marking
-# ======================
+# POS marking
+# ===========
 
 
 
@@ -223,12 +268,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ## "Мысалы, ежелгі заманның өзінде Арал теңізі көп елдерге мәлім болған."
 
 
-#
+# INPUT: ^Мен/Мен<cnjcoo>/Мен<post>/Мен<prn><pers><p1><sg><nom>$
+#        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
+# OUTPUT: ^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
+#         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
  REMOVE Post IF
-        (NOT -1 N OR Prop OR Pron OR Subst OR Gerund) # FIXME What about referring to all
-;                                                     # these (referring *consistently*) as
-                                                      # 'Nominal's?
-##
+        (NOT -1 NOMINAL)
+;
+#
 
 
 # An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
@@ -285,7 +332,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
 #        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
 #        бет<n><px3sp><loc><subst><nom>/$
-# OUTPUT: [0]^терістік<n><attr> ^бетіндегі/бет<n><px3sp><loc><attr>...$
+# OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>...$
  REMOVE V IF
         (0 PRE-N)
         (1C N)
@@ -550,11 +597,6 @@ REMOVE SUB:1 P3 IF
 ;
 ##
 
-###################################### TO BE SORTED ############################
-
-
-################################################################################
-
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
@@ -790,6 +832,8 @@ SELECT A/Advl IF (0 ("ақырын"));
 REMOVE N IF (0 ("жылы")) (NOT -1 N OR Num) ;
     #! Ауа райы бүгін әбден жақсы, ^жылы/жыл<n><px3sp><nom>/жылы<adj>/жылы<adj><subst><nom>.
 
+###############################################################################
+
 REMOVE (pass) IF (0 ("қырыл"));
     ## жасушалардың қырылуы
 
@@ -864,13 +908,16 @@ REMOVE (pass) IF (0 ("қырыл"));
 
 
 # Сен бардың ба?
-REMOVE (gen) IF 
+REMOVE (gen) IF
   (0 (ifi p2))
   (-1* (prn nom))
 
-SELECT Pron-Pers IF
-        (0 Pron-Pers)
-# INPUT: ^Мен/мен<cnjcoo>/мен<cnjcoo>/мен<prn><pers><p1><sg><nom>/
-# OUTPUT:[0]^мен<prn><pers><p1><sg><nom>
-
-
+# INPUT: ^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
+#        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
+# OUTPUT: ^Мен/Мен<prn><pers><p1><sg><nom>$
+#         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
+ SELECT Pron-Pers IF
+        (0 ("<Мен>"))
+        (-1 BOS)
+;
+#
