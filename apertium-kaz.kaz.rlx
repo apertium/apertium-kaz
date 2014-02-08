@@ -270,7 +270,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 # INPUT: ^Мен/Мен<cnjcoo>/Мен<post>/Мен<prn><pers><p1><sg><nom>$
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
-# OUTPUT: ^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
+# OUTPUT: [0]^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
 #         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
  REMOVE Post IF
         (NOT -1 NOMINAL)
@@ -332,7 +332,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
 #        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
 #        бет<n><px3sp><loc><subst><nom>/$
-# OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>...$
+# OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$
+#         ^бетіндегі/бет<n><px3sp><loc><attr>...$
  REMOVE V IF
         (0 PRE-N)
         (1C N)
@@ -914,7 +915,7 @@ REMOVE (gen) IF
 
 # INPUT: ^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
-# OUTPUT: ^Мен/Мен<prn><pers><p1><sg><nom>$
+# OUTPUT: [0]^Мен/Мен<prn><pers><p1><sg><nom>$
 #         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
  SELECT Pron-Pers IF
         (0 ("<Мен>"))
