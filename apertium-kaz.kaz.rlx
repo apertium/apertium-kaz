@@ -924,7 +924,8 @@ REMOVE (gen) IF
 #kaz-eng
 
 
-# INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
+# INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
+#        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
 # OUTPUT: [0]ол<prn><pers><p3><sg><gen> ^үйі/үй<n><px3sp><nom>$
  SELECT Pron-Pers IF
         (0 ("<оның>"i))
