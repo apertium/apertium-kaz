@@ -924,10 +924,10 @@ REMOVE (gen) IF
 #kaz-eng
 
 
-# INPUT: ^оның/он<num><subst><px2sg><nom>/ол<prn><pers><p3><sg><gen>/он<num><subst><px2sg><no+е<cop><p3><pl>/        # он<num><subst><px2sg><nom>+е<cop><p3><sg>$
-# оның үйі
-# OUTPUT: [0]ол<prn><pers><p3><sg><gen>
- SELECT Gen IF
-        (1 (n px3sp) )
+# INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
+# OUTPUT: [0]ол<prn><pers><p3><sg><gen> ^үйі/үй<n><px3sp><nom>$
+ SELECT Pron-Pers IF
+        (0 ("<оның>"i))
+        (1 (n px3sp))
 ;
 #kaz-eng
