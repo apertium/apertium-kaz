@@ -932,3 +932,21 @@ REMOVE (gen) IF
         (1 (n px3sp))
 ;
 #kaz-eng
+
+# INPUT: ^онымен/он<num><subst><px3sp><ins>/ол<prn><pers><p3><sg><ins>$^./.<sent>$
+# OUTPUT: [0]^онымен/ол<prn><pers><p3><sg><ins>$^./.<sent>$
+
+ SELECT Pron-Pers IF
+        (0 ("<онымен>"i))
+        (NOT -1 (Pron-Pers))
+;
+#kaz-eng
+# INPUT: ^бақша/бақша<n><nom> ^арқылы/арқылы<post>/арқылы<adv>$^
+# OUTPUT: [0]^бақша/бақша<n><nom> ^арқылы/арқылы<post>$^
+
+ REMOVE Adv IF
+        (-1 N)
+;
+#kaz-eng
+
+
