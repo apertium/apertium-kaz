@@ -950,3 +950,13 @@ REMOVE (gen) IF
 #kaz-eng
 
 
+# INPUT: ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>
+#        /дәрігер<n><nom>+е<cop><p3><pl>/дәрігер<n><nom>+е<cop><p3><sg>$^
+# OUTPUT: [0]^дәрігер/дәрігер<n><nom>+е<cop><p3><sg>$^
+ SELECT SUB:1 Sg IF
+		(-1C ("<Ол>"i) OR ("<Олар>"i))
+  #      (0/1 Cop)
+   #     (0/1 P3)
+;
+#kaz-eng
+
