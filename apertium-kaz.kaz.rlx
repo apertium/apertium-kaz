@@ -916,8 +916,8 @@ REMOVE (gen) IF
 
 # INPUT: ^Мен/Мен<cnjcoo>/Мен<post>/Мен<prn><pers><p1><sg><nom>$
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
-# OUTPUT: [0]^Мен/Мен<prn><pers><p1><sg><nom>$
-#         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
+# OUTPUT: [0]^Мен<prn><pers><p1><sg><nom>$
+#         ^қазақ<n><nom>+е<cop><p1><sg>$
  SELECT Pron-Pers IF
         (0 ("<Мен>"))
         (-1 BOS)
@@ -927,7 +927,7 @@ REMOVE (gen) IF
 
 # INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
 #        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
-# OUTPUT: [0]ол<prn><pers><p3><sg><gen> ^үйі/үй<n><px3sp><nom>$
+# OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
  SELECT Pron-Pers IF
         (0 ("<оның>"i))
         (1 (n px3sp))
@@ -935,8 +935,8 @@ REMOVE (gen) IF
 #kaz-eng
 
 
-# INPUT: ^онымен/он<num><subst><px3sp><ins>/ол<prn><pers><p3><sg><ins>$^./.<sent>$
-# OUTPUT: [0]^онымен/ол<prn><pers><p3><sg><ins>$^./.<sent>$
+# INPUT: ^онымен/он<num><subst><px3sp><ins>/ол<prn><pers><p3><sg><ins>$
+# OUTPUT: [0]^ол<prn><pers><p3><sg><ins>$
  SELECT Pron-Pers IF
         (0 ("<онымен>"i))
         (NOT -1 (Pron-Pers))
@@ -944,8 +944,8 @@ REMOVE (gen) IF
 #kaz-eng
 
 
-# INPUT: ^бақша/бақша<n><nom> ^арқылы/арқылы<post>/арқылы<adv>$
-# OUTPUT: ^бақша/бақша<n><nom> [0]^арқылы/арқылы<post>$^
+# INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
+# OUTPUT: ^бақша<n><nom>$ [0]^арқылы<post>$
  REMOVE Adv IF
         (0 Post)
         (-1 N)
