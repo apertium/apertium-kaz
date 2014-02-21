@@ -341,6 +341,19 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
 
 
+# INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
+# OUTPUT: ^бақша<n><nom>$ [0]^арқылы<post>$
+ REMOVE Adv IF
+        (0 Post)
+        (-1 N)
+        (NOT 0 ("бірге"i)) # мысығымен бірге<post> үйде<n>
+                           # бақшада бірге<adv> ойнайды<v>
+                           # бақша арқылы<post> барамын<v>
+;
+#kaz-eng
+
+
+
 # Determiners
 # ===========
 
@@ -940,15 +953,6 @@ REMOVE (gen) IF
  SELECT Pron-Pers IF
         (0 ("<онымен>"i))
         (NOT -1 (Pron-Pers))
-;
-#kaz-eng
-
-
-# INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
-# OUTPUT: ^бақша<n><nom>$ [0]^арқылы<post>$
- REMOVE Adv IF
-        (0 Post)
-        (-1 N)
 ;
 #kaz-eng
 
