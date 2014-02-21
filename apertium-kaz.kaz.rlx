@@ -962,3 +962,18 @@ REMOVE (gen) IF
    #     (0/1 P3)
 ;
 #kaz-eng
+
+
+# INPUT: ^Ол/ол<det><dem>/ол<prn><dem><nom>/ол<prn><pers><p3><sg><nom>/ол<prn><dem><nom>+е<cop><p3><pl>/ол<prn><dem><nom>+е<cop><p3><sg>$ #^әдемі/әдемі<adj>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><p3><pl>/
+#әдемі<adj>+е<cop><p3><sg>/әдемі<adj><subst><nom>+е<cop><p3><pl>/әдемі<adj><subst><nom>+е<cop><p3><sg>$
+# ^қыз/қыз<n><nom>/қыз<n><attr>/қыз<v><iv><imp><p2><sg>/қыз<n><nom>+е<cop><p3><pl>/қыз<n><nom>+е<cop><p3><sg>$^./.<sent>$
+
+# OUTPUT:[0]^Ол/ол<det><dem>/ол<prn><dem><nom>/ол<prn><pers><p3><sg><nom>/ол<prn><dem><nom>+е<cop><p3><pl>/ол<prn><dem><nom>+е<cop><p3><sg> #^әдемі/әдемі<adj>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><p3><pl>/
+#әдемі<adj>+е<cop><p3><sg>/әдемі<adj><subst><nom>+е<cop><p3><pl>/әдемі<adj><subst><nom>+е<cop><p3><sg>$
+# ^қыз/қыз<n><nom>+е<cop><p3><sg>$^./.<sent>$
+ SELECT SUB:1 Sg IF
+		(-1* ("<Ол>"i) OR ("<Олар>"i))
+  #      (0/1 Cop)
+   #     (0/1 P3)
+;
+#kaz-eng
