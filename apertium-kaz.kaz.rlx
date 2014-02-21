@@ -977,3 +977,7 @@ REMOVE (gen) IF
    #     (0/1 P3)
 ;
 #kaz-eng
+
+
+REMOVE SUB:1 Pl IF
+		(NOT -1* ("<Ол>"i) OR ("<Олар>"i))
