@@ -943,7 +943,7 @@ REMOVE (gen) IF
 # OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
  SELECT Pron-Pers IF
         (0 ("<оның>"i))
-        (1 (n px3sp))
+        (1* (n px3sp))
 ;
 #kaz-eng
 
