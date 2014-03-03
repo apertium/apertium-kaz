@@ -603,14 +603,11 @@ REMOVE SUB:1 P3 IF
 ;
 ##
 
-
 # Thought that the above rule should cover copulas, seems that sometimes it doesn't
- REMOVE SUB:1 Pl IF
+  REMOVE SUB:1 Pl IF
         (0/1 Cop)
-        (0/1 P3)
+       (0/1 P3)
 ;
-##
-
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
@@ -986,6 +983,18 @@ REMOVE (gen) IF
 #kaz-eng
 # FIXME doesn't work yet
 
+ SELECT SUB:1 Pl IF
+        (-1 ("<Біз>"i))
+        (0/1 Cop)
+        (0/1 P1)
+#Біз бақыттымыз
 
-REMOVE SUB:1 Pl IF
-		(NOT -1* ("<Ол>"i) OR ("<Олар>"i))
+
+ REMOVE SUB:1 Pl IF
+		 (NOT -1* ("<Ол>"i) OR ("<Олар>"i))
+;
+
+
+
+
+
