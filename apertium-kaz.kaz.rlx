@@ -944,6 +944,10 @@ REMOVE (gen) IF
 ;
 #kaz-eng
 
+SELECT Pron-Pers IF
+        (0 ("<онда>"i))
+        (1 N)
+;
 
 # INPUT: ^онымен/он<num><subst><px3sp><ins>/ол<prn><pers><p3><sg><ins>$
 # OUTPUT: [0]^ол<prn><pers><p3><sg><ins>$
@@ -982,6 +986,8 @@ REMOVE (gen) IF
 ;
 #kaz-eng
 # FIXME doesn't work yet
+
+
 
  SELECT SUB:1 Pl IF
         (-1 ("<Біз>"i))
