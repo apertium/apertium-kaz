@@ -116,6 +116,7 @@ LIST Adv = adv ;
 LIST Pron = prn ;
 LIST Pron-Pers = (prn pers) ;
 LIST N = n ;
+LIST IJ = ij ;
 LIST Prop = np ;
 LIST V = v ;
 LIST Vaux = vaux ;
@@ -276,7 +277,6 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (NOT -1 NOMINAL)
 ;
 #
-
 
 # An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
 # accusative, and 2) with  a verb in <ifi> form.
@@ -999,8 +999,3 @@ SELECT Pron-Pers IF
  REMOVE SUB:1 Pl IF
 		 (NOT -1* ("<Ол>"i) OR ("<Олар>"i))
 ;
-
-
-
-
-
