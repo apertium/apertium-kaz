@@ -222,6 +222,10 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 #
+
+
+
+
  REMOVE SUB:1 Cop IF
         (NOT 1 EOS OR MARK)
 ;
@@ -999,3 +1003,15 @@ SELECT Pron-Pers IF
  REMOVE SUB:1 Pl IF
 		 (NOT -1* ("<Ол>"i) OR ("<Олар>"i))
 ;
+
+
+ SELECT  Cop IF
+        (-1 ("<керек>"i))
+        (0 Cop)
+       
+;
+REMOVE Adv IF
+		 (0 ("<емес>"i)) 
+;
+       
+
