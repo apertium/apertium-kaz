@@ -993,11 +993,12 @@ SELECT Pron-Pers IF
 
 
 
- SELECT SUB:1 Pl IF
-        (-1 ("<Біз>"i))
-        (0/1 Cop)
-        (0/1 P1)
+ SELECT N IF
+        (0 ("<үстінде>"i)OR ("<астында>" i)OR ("<артында>" i))
+        (-1 N)
+;
 #Біз бақыттымыз
+
 
 
  REMOVE SUB:1 Pl IF
