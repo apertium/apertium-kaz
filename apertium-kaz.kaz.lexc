@@ -1856,6 +1856,7 @@ InterrogativePronouns ;
 бірдеме:бірдеме PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 кей:кей PRON-IND ; ! "some" FIXME CHECK
+әр:әр PRON-IND ; ! !"either" Use/MT 
 
 барлық:барлық PRON-QNT ; ! ""
 бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
@@ -1903,6 +1904,7 @@ InterrogativePronouns ;
 бірқатар:бірқатар DET-QNT ; ! "several"
 бірнеше:бірнеше DET-QNT ; ! "some"
 бүкіл:бүкіл DET-QNT ; ! "whole"
+жетерлік:жетерлік DET-QNT ; ! "enough" Use/MT
 көптеген:көптеген DET-QNT ; ! "many"
 қанша:қанша DET-QNT ; ! "how many"
 азырақ:азырақ DET-QNT ; ! "less"
@@ -1925,10 +1927,12 @@ InterrogativePronouns ;
 қайсыбір:қайсыбір DET-IND ; ! "some"
 әлденеше:әлденеше DET-IND ; ! ""
 бірер:бірер DET-IND ; ! ""
+сондай:сондай DET-IND ; ! "such" !Use/MT
 әр% түрлі:әр% түрлі DET-IND ; ! "various"
 
 қай:қай DET-ITG ; ! "which"
 қайсы:қайсы DET-ITG ; ! "which"
+кім:кім DET-ITG ; ! !"whose" Use/MT
 
 ешбір:ешбір DET-NEG ; ! "none, no"
 ешқандай:ешқандай DET-NEG ; ! "no [kind of], none"
