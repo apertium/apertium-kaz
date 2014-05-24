@@ -11,10 +11,11 @@
 Basic workflow is like the following (IS talking to himself):
 	1) mv expanded/current-state.txt.gz expanded/previous-state.txt.gz,
 	2) fix what needs to be fixed (or added) in apertium-kaz.kaz.lexc,
-	3) run ./qa.sh rus to see what consequences in the transducer your
+	3) run './qa.sh kaz' to see what consequences in the transducer your
 	   changes had,
 	4) if you are content with them, commit,
 	
 	repeat the cycle
 
 './qa.sh kaz' in apertium-kaz/ gives a diff of "previous" and "current" states.
+
