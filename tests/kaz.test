@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Expands the dictionary and compares it to the expansion of the previous
+# state of the dictionary (before you made changes).
+#
+# Currently expanding kaz.lexc with hfst-fst2strings takes too long, so we
+# concatenate txt.gz files from apertium-kaz/tests/morphotactics (expansions of
+# prefixed transducers) into one file in apertium-kaz/expanded and use that
+# instead.
+#
+# Both 'previous' and 'current' files are stored in ../expanded directory
+# sorted and compressed.
+
+# compile the transducer and regenerate .txt.gz files in tests/morphotactics
+make
+cd tests/morphotactics
+make
+cd ../..
+
+echo "" > /tmp/expanded.txt
+
+for file in tests/morphotactics/*.txt.gz
+do
+    zcat $file >> /tmp/expanded.txt
+done
+
+sort /tmp/expanded.txt | gzip -c > expanded/current-state.txt.gz
+
+diff -U0 <(zcat expanded/previous-state.txt.gz) <(zcat expanded/current-state.txt.gz) |
+dwdiff --diff-input | less
