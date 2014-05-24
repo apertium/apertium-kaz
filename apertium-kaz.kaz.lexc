@@ -324,15 +324,15 @@ LEXICON CASE-ETC-NONOM
 CASE-NONOM ;
 GENERAL-POSSESSIVE-ETC ;
 
-LEXICON N-INFL-COMMON-NONOM
+LEXICON FULL-NOMINAL-INFLECTION-NONOM
 
 POSSESSIVES ;
 CASE-ETC-NONOM ;
 
 LEXICON SUBST-NONOM
 
-N-INFL-COMMON-NONOM ;
-%<pl%>:%>%{L%}%{A%}р N-INFL-COMMON-NONOM ;
+FULL-NOMINAL-INFLECTION-NONOM ;
+%<pl%>:%>%{L%}%{A%}р FULL-NOMINAL-INFLECTION-NONOM ;
 
 LEXICON SQRD
 ! This lexicon includes common ways of writing squared, cubed etc.
@@ -596,33 +596,13 @@ LEXICON GENERAL-POSSESSIVE-ETC
 ! match in RFERL corpus for 'ныкылар'), probably not worh bothering at all.
 ! It could be handled in a way abessive is handled, but since NIKI in contrast
 ! to the abessive SIZ can appear after possessves, that would require
-! duplicatin possessives as well.
+! duplicating possessives as well.
 !------------------------------------------------------------------------------!
 
 %<px%>:%>%{N%}ікі%{n%} CASES ;
 %<px%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
-
-LEXICON ABE-ATTR/ADVL/SUBST
-
-! <abe> thing doesn't take personal copula suffixes (JNW, please correct me),
-! so SUBST reading of it is linked to CASE-2, not CASE.
-! A counterexample could be e.g. "бәхет-сез-мен", but that's only because "бәхетсез"
-! has lexicalised as an adjective.
-
-! Note that allowing of the (scarcely existing) [X +<abe> +<pers.cop> (+ modalpcle)] sequence
-! would require some additional rules in kaz-tat.t2x /02082012, IS/
-
-%<attr%>: CLITICS-NO-COP ;
-%<advl%>: CLITICS-NO-COP ;
-%<subst%>: CASES-WITHOUT-COPULAS ;
-%<subst%>%<pl%>:%>%{L%}%{A%}р CASES-WITHOUT-COPULAS ;
-
-LEXICON Abessive          ! Doesn't appear after possessives
-
-!%<abe%>:%>с%{I%}з ATTR/ADVL/SUBST ;
-%+сыз%<post%>:%>с%{I%}з ABE-ATTR/ADVL/SUBST ;
 
 LEXICON CASES-ETC
 
@@ -640,20 +620,28 @@ LEXICON POSSESSIVES
 %<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASES-ETC ;
 
+LEXICON ABESSIVE-SUBSTANTIVIZED
+
+%+сыз%<post%>%<subst%>:%>с%{I%}з CASES-WITHOUT-COPULAS ;
+%+сыз%<post%>%<subst%>%<pl%>:%>с%{I%}з%>%{L%}%{A%}р CASES-WITHOUT-COPULAS ;
+
+LEXICON ABESSIVE-POSTPOSITION
+
+%+сыз%<post%>:%>с%{I%}з CLITICS-NO-COP ;
+
 LEXICON PLURAL
 
 %<pl%>:%>%{L%}%{A%}р CASES-ETC ;
 %<pl%>:%>%{L%}%{A%}р POSSESSIVES ;
-%<pl%>:%>%{L%}%{A%}р Abessive ;
+%<pl%>:%>%{L%}%{A%}р ABESSIVE-POSTPOSITION ;
 
-LEXICON N-INFL-COMMON
+LEXICON FULL-NOMINAL-INFLECTION
 
 PLURAL ;
 CASES-ETC ;
 POSSESSIVES ;
-Abessive ; ! FIXME might lead to overgeneration:
-           !! check whether it occurs after substantivized stuff;
-           !! not all pronouns take it. "Синсез" vs "*үземсез".
+ABESSIVE-POSTPOSITION ;
+ABESSIVE-SUBSTANTIVIZED ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
@@ -673,8 +661,8 @@ LEXICON A1                ! adjectives that can be both substantivised and andve
 %<adj%>: CLITICS-INCL-COP ;                             !# жақсы адам
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# жақсырақ іс
 
-%<adj%>%<subst%>: N-INFL-COMMON ;                             !# жақсыны таптым
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} N-INFL-COMMON ;   !# жақсырақты таптым
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# жақсыны таптым
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# жақсырақты таптым
 
 %<adj%>%<advl%>: CLITICS-NO-COP ;                               !# жақсы білемін
 %<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
@@ -686,8 +674,8 @@ LEXICON A2                 ! (derived/not fully lexicalised) adjectives without 
 %<adj%>: CLITICS-INCL-COP ;                             !# ескі дос
 %<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# ескірек заманда
 
-%<adj%>%<subst%>: N-INFL-COMMON ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} N-INFL-COMMON ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
+%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
 
 LEXICON A3                 ! (derived/not fully lexicalised) adjectives without adverbial reading,
                            ! so-called "predicatives" (бар, жоқ);
@@ -695,7 +683,7 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
                            !# көктемгі, басты, бар, жоқ
 
 %<adj%>: CLITICS-INCL-COP ;         !# көктемгі су тасқыны
-%<adj%>%<subst%>: N-INFL-COMMON ;           !# "...Самаранч ең бастыны түсінді..."
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;           !# "...Самаранч ең бастыны түсінді..."
                                     !# "Аты бардың заты бар."
 
 ! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
@@ -710,7 +698,7 @@ LEXICON V-ADJ
 
 # ;
 %<subst%>: GER-INFL ; ! Dont't be confused by the name of the cont.class,
-                      ! it's basically just a simplified N-INFL-COMMON
+                      ! it's basically just a simplified FULL-NOMINAL-INFLECTION
 
 !!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION (V-INFL-COMMON)
 
@@ -779,7 +767,7 @@ LEXICON VOL-ENDINGS
 
 !!!!!!!   G E R U N D S   I N F L E C T I O N
 
-! This is a somewhat simplified version of N-INFL-COMMON.
+! This is a somewhat simplified version of FULL-NOMINAL-INFLECTION.
 ! The idea was to avoid overgeneration (I don't think that ger+DAGI would take
 ! case endings e.g. Same for ger+NIKI). Still, this cont.class might be not
 ! suitable for all of the gerunds. /IS/
@@ -1083,7 +1071,7 @@ LEXICON PRON-DEM-BUL
 ! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
 ! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
 !-----
-! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар N-INFL-COMMON ;) N-INFL-COMMON might lead to
+! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар FULL-NOMINAL-INFLECTION ;) FULL-NOMINAL-INFLECTION might lead to
 ! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
 ! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASES ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
@@ -1208,7 +1196,7 @@ PRON-DEM-ANA ;
 
 LEXICON PRON-ITG-INFL
 
-%<prn%>%<itg%>: N-INFL-COMMON ;
+%<prn%>%<itg%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON PRON-ITG-QAYSI
 
@@ -1348,7 +1336,7 @@ LEXICON N1-ABBR
 LEXICON N1
 
 %<n%>%<attr%>: # ;
-%<n%>: N-INFL-COMMON ;
+%<n%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON N-COMPOUND-PX-COMMON
 
@@ -1369,7 +1357,7 @@ LEXICON N3
 ! Singularia tantum
 
 %<n%>%<attr%>: # ;
-%<n%>: N-INFL-COMMON ;
+%<n%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON N5
 
@@ -1391,7 +1379,7 @@ N1 ;
 ADV ;
 
 LEXICON NP-COMMON
-N-INFL-COMMON ;
+FULL-NOMINAL-INFLECTION ;
 
 LEXICON NP-TOP
 
@@ -1484,29 +1472,29 @@ LEXICON NP-AL
 LEXICON NUM-COMMON
 
 %<num%>: # ;
-%<num%>%<subst%>: N-INFL-COMMON ;
+%<num%>%<subst%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM
 
 NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
-%<num%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+%<num%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
-%<num%>%<ord%>:%>с%{I%}нш%{I%} N-INFL-COMMON ;
+%<num%>%<ord%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-ITG ! This is a temporal solution
                 ! (could be integrated with the above)
 
 %<num%>%<itg%>: # ;
-%<num%>%<itg%>%<subst%>: N-INFL-COMMON ;
-%<num%>%<itg%>%<ord%>:%>%{I%}нш%{I%} N-INFL-COMMON ;
+%<num%>%<itg%>%<subst%>: FULL-NOMINAL-INFLECTION ;
+%<num%>%<itg%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-COLL
 
-%<num%>%<coll%>%<subst%>: N-INFL-COMMON ;
+%<num%>%<coll%>%<subst%>: FULL-NOMINAL-INFLECTION ;
 %<num%>%<coll%>%<advl%>: # ;
 
 LEXICON NUM-ROMAN
@@ -1530,7 +1518,7 @@ LEXICON POSTADV
 LEXICON KI
 
 %<attr%>:%>%{G%}%{I%} CLITICS-NO-COP ;
-%<subst%>:%>%{G%}%{I%} N-INFL-COMMON ;
+%<subst%>:%>%{G%}%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON ADV
 
