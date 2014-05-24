@@ -1,0 +1,77 @@
+PURPOSE STATEMENT
+=================
+
+The purpose of tests in this folder is to test pardefs. In context of a lexc
+file, with 'pardefs' we refer to lexicons which are continuations for stems (in
+contrast to lexicons which are continuations for other lexicons).
+
+GENERATING TESTS FROM THE PREFIXES
+==================================
+
+For each such 'pardef' lexicon, we provide a prefix file in prefixes/,
+containing one example word linked to that lexicon, with tags enough to
+distinguish it from other words. These prefix files get compiled into
+transducers, which then get intersected with the actual transducer of the
+language. The transducers obtained by the intersection get expanded, and the
+results of this expansion are stored in this folder in compressed plain text
+files. [1]
+
+Each file will show you the full paradigm of the example word linked to a
+particular lexicon (indicated in the name of the file).
+
+USAGE
+=====
+
+Ideally, such test files should be provided before starting to work on
+corresponding lexicons, containing only the output we would like to get from
+our transducer, and used much like we use .yaml files with 'aq-morftest' to
+check for regressions in morphophonology.
+
+But since we are testing an existing transducer, in our case they serve for
+visualizing the current state of the transducer -- i.e. to see where it
+overgenerates or what forms aren't implemented yet. Hopefully with time test
+files in this folder will stand not only for "how things are", but also for
+"how things should be".
+
+They will also show you the morphophonology errors (if there are any in the
+paradigm of the word chosen for the test), but that's not their main purpose.
+Their main purpose is to see that morphotactics were implemented correctly and
+we don't get any silly output (i.e. any silly sequences of affixes).
+
+The last point is important while working on a language pair involving our
+transducer. It is a good idea to make sure that the output of the transducer
+makes sense before trying to get a clean testvoc on it.
+
+'TESTVOC-LITE'
+--------------
+
+We can extract lexical forms (the right part of the entries) from test
+files in this folder and pass them through the translator, as we would
+while testvocing, but instead of testing the full output of the
+transducer, we will be testing only one word per paradigm.
+
+If we are certain that transducer overgenerates, but we can't change it for
+some reason, we can go even further -- by taking only a meaningful subset of
+the paradigm, and trying to get it testvoc clean.
+
+Anyway, having these test files allows us to provide expected translations in
+the target language for lexical forms from our test file (for all of them or
+only for part of them, depending on how good your transducer is):
+like this:
+'мәктәп<n><loc>:в школе' OR
+'мәктәптә:мәктәп<n><loc>:в школе'
+
+That way, one has to give good translations for lexical units (or at least to
+think about which forms would be good translations), and not just *some*
+translations to get a clean testvoc (like nominative in Russian for all Tatar
+cases, or infinitive for all verbal adverbs). These expected translations
+become good tests for one-word transfer rules, and, more importantly, they show
+what transfer rules actually do and what the defaults are.
+
+Notes
+=====
+
+[1] An easier way would be to expand the full transducer and then grep for
+prefixes like 'foo<adj>'. If the transducer is cyclic or simply too big to
+expand in a reasonable time, this is problematic. Intersection seems to take
+less time.
