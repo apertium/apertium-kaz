@@ -85,6 +85,7 @@ Vx:Vy <=> ء:0 Cns:* _ ;
 Vx:Vy <=> ي: _ ;
       except
           :CyrFrontVow [ ۋ: | ي: ]* _ ;
+          ر: ا: ي: _ ن: ;
       where
           Vx in ( ا و ۋ ە )
           Vy in ( я ё ю е )
@@ -94,6 +95,7 @@ Vx:Vy <=> ي: _ ;
 ي:0 <=> _ AraYotVow: ;
 !ي:0 <=> _ :YotVow ;
     except
+        ر: ا: _ و: ن: ;
 !        :CyrCns _ ;
         Cns: _ ;
 
