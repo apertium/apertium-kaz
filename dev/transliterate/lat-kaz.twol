@@ -1,0 +1,31 @@
+Alphabet
+a:а
+b:б
+c:ц c:с
+d:д
+e:е
+f:ф
+g:г
+y:0
+y:й
+a:я
+ ;
+
+Sets
+lats = a b c d e f g ;
+
+Rules
+
+"ya 1"
+y:0 <=> _ :я ;
+
+"ya 2"
+a:я <=> y:0 _ ;
+
+"ya 3"
+y:й <=> [a | e | #.#] _ [ a | e | .#. ] ;
+
+"ya 4"
+a:а /<= y: _ ;
+
+! y a -> я
