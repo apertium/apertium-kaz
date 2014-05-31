@@ -47,7 +47,7 @@ Sets
 
 BackVow = ا ۇ و ;
 
-Cns = ب ت پ ج چ خ د ر ز ژ س ش ع ف ق ك گ ڭ ل م ن ھ و ۇ ۋ ى ي ;
+Cns = ب ت پ ج چ خ د ر ز ژ س ش ع ف ق ك گ ڭ ل م ن ھ ۋ ى ي ;
 
 CyrCns = б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ;
 
@@ -55,7 +55,11 @@ FrontVow = ە ;
 
 CyrFrontVow = ә е і ү ө ;
 
-AraYotVow = ا و ۆ ە ;
+CyrBackVow = а ұ ы о ;
+
+CyrVow = ә е і ү ө а ұ ы о ;
+
+AraYotVow = ا و ۋ ە ;
 
 YotVow = я ё ю е ;
 
@@ -63,14 +67,15 @@ Rules
 
 "front some vow" 
 Vx:Vy <=> ء:0 Cns:* _ ;
-          ك: _ ;
-          _ ك: ;
+          [ ك: | گ: ] ( ۋ: | ي: ) _ ; ! ←
+          _ [ ك: | گ: ] ;
           ې: Cns:* _ ;
           _ Cns:* [ FrontVow: ] ;
           [ FrontVow: ] Cns:* _ ;
           :CyrFrontVow Cns:* _ ;
       except
-          ي: _ ;
+!          \[ ك: | گ: ] ي: _ ;
+          :CyrBackVow [ ۋ: | ي: ]* _ ;
       where
           Vx in ( ا ۇ و ى )
           Vy in ( ә ү ө і )
@@ -79,7 +84,7 @@ Vx:Vy <=> ء:0 Cns:* _ ;
 "й letters"
 Vx:Vy <=> ي: _ ;
       except
-          Cns: ي: _ ;
+          :CyrFrontVow [ ۋ: | ي: ]* _ ;
       where
           Vx in ( ا و ۋ ە )
           Vy in ( я ё ю е )
@@ -96,4 +101,7 @@ Vx:Vy <=> ي: _ ;
 ي:и <=> Cns: _ ;
 !ي:и <=> :CyrCns _ ;
 !ي:и <=> :CyrCns _ :CyrCns ;
+
+!"ۋ to ю after ي:и"
+!ۋ:ю <=> ي:и _ ;
 
