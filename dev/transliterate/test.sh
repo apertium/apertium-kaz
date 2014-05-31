@@ -44,3 +44,9 @@ echo "سۇرتكى" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst
 
 echo "رايون" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
 # should be район
+
+echo "بەكەر" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
+# should be бекер
+
+echo "پەرىشتە" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
+# should be періште
