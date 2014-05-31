@@ -38,3 +38,9 @@ echo "قويۋ" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | 
 
 echo "توركىن" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
 # hrrm
+
+echo "سۇرتكى" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
+# should be сүрткі
+
+echo "رايون" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
+# should be район
