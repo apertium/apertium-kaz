@@ -35,3 +35,6 @@ echo "كيىنىس" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst
 
 echo "قويۋ" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
 # should be қою
+
+echo "توركىن" | hfst-strings2fst  | hfst-compose-intersect -2 ara-kaz.hfst  | hfst-fst2strings 
+# hrrm
