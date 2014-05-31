@@ -1,0 +1,95 @@
+
+Alphabet 
+
+ А Ә Б В Г Ғ Д Е Ё Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ь Ы Ъ Э Ю Я
+ а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
+
+ ء:0
+ ا:а
+ ە:е
+ ه:h
+ ې:е
+ ب:б
+ ت:т
+ پ:п
+ ج:ж
+ چ:ч
+! خ:х
+ ح:х
+ د:д
+ ر:р
+ ز:з
+ ژ:ж
+ س:с
+ ش:ш
+ ع:ғ
+ ف:ф
+ ق:қ
+ ك:к
+ گ:г
+ ڭ:ң
+ ل:л
+ م:м
+ ن:н
+ ھ:һ
+ و:о
+ ۇ:ұ
+ ۋ:у
+ ى:ы
+ ي:й
+ ۆ:в
+
+
+ ;
+
+
+Sets 
+
+BackVow = ا ۇ و ;
+
+Cns = ب ت پ ج چ خ د ر ز ژ س ش ع ف ق ك گ ڭ ل م ن ھ و ۇ ۋ ى ي ;
+
+CyrCns = б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ;
+
+FrontVow = ە ;
+
+CyrFrontVow = ә е і ү ө ;
+
+AraYotVow = ا و ۆ ە ;
+
+YotVow = я ё ю е ;
+
+Rules 
+
+"front some vow" 
+Vx:Vy <=> ء:0 Cns:* _ ;
+          ك: _ ;
+          _ ك: ;
+          ې: Cns:* _ ;
+          _ Cns:* [ FrontVow: ] ;
+          [ FrontVow: ] Cns:* _ ;
+          :CyrFrontVow Cns:* _ ;
+      except
+          ي: _ ;
+      where
+          Vx in ( ا ۇ و ى )
+          Vy in ( ә ү ө і )
+      matched ;
+
+"й letters"
+Vx:Vy <=> ي: _ ;
+      where
+          Vx in ( ا و ۇ ە )
+          Vy in ( я ё ю е )
+      matched ;
+
+"й:0 for й letters"
+ي:0 <=> _ AraYotVow: ;
+    except
+        Cns: _ ;
+!ي:0 <=> _ :YotVow ;
+
+"ي is и after consonants"
+ي:и <=> Cns: _ ;
+!ي:и <=> :CyrCns _ :CyrCns ;
+
