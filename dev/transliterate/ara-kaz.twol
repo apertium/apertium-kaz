@@ -79,21 +79,21 @@ Vx:Vy <=> ء:0 Cns:* _ ;
 "й letters"
 Vx:Vy <=> ي: _ ;
       except
-          :CyrCns ي: _ ;
+          Cns: ي: _ ;
       where
           Vx in ( ا و ۋ ە )
           Vy in ( я ё ю е )
       matched ;
 
 "й:0 for й letters"
-!ي:0 <=> _ AraYotVow: ;
-ي:0 <=> _ :YotVow ;
+ي:0 <=> _ AraYotVow: ;
+!ي:0 <=> _ :YotVow ;
     except
-        :CyrCns _ ;
-!        Cns: _ ;
+!        :CyrCns _ ;
+        Cns: _ ;
 
 "ي is и after consonants"
-!ي:и <=> Cns: _ ;
-ي:и <=> :CyrCns _ ;
+ي:и <=> Cns: _ ;
+!ي:и <=> :CyrCns _ ;
 !ي:и <=> :CyrCns _ :CyrCns ;
 
