@@ -1246,6 +1246,10 @@ LEXICON PRON-IND
 
 %<prn%>%<ind%>: CASES ;
 
+LEXICON PRON-IND-PL
+
+%<prn%>%<ind%>%<pl%>: CASES ;
+
 
 LEXICON PRNNEG
 
@@ -1827,7 +1831,7 @@ DemonstrativePronouns ;
 InterrogativePronouns ;
 
 
-басқа:басқа PRON-IND ; ! "other"
+басқалар:басқалар PRON-IND-PL; ! "other"
 бірдеме:бірдеме PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 кей:кей PRON-IND ; ! "some" FIXME CHECK
@@ -2432,6 +2436,7 @@ XXI NUM-ROMAN ; ! ""
 веранда:веранда N1 ; ! ""
 взвод:взвод N1 ; ! ""
 видео:видео N1 ; ! ""
+видеокассет:видеокассет N1 ; ! ""
 виза:виза N1 ; ! ""
 вирус:вирус N1 ; ! ""
 витамин:витамин N1 ; ! ""
@@ -2571,6 +2576,7 @@ XXI NUM-ROMAN ; ! ""
 дирижер:дирижер N1 ; ! ""
 диссертация:диссертация N1 ; ! ""
 диссидент:диссидент N5 ; ! ""
+диск:диск N5 ; ! ""
 дифференциация:дифференциация N1 ; ! ""
 дін:дін N1 ; ! "religion"
 дің:дің N1 ; ! ""
@@ -2996,6 +3002,7 @@ XXI NUM-ROMAN ; ! ""
 кино:кино N1 ; ! ""
 кинотеатр:кинотеатр N1 ; ! ""
 кинофестиваль:кинофестиваль N1 ; ! ""
+кинофильм:кинофильм N1 ; ! ""
 кириллица:кириллица N1 ; ! ""
 кит:кит N1 ; ! ""
 кілем:кілем N1 ; ! "carpet"
@@ -3031,6 +3038,7 @@ XXI NUM-ROMAN ; ! ""
 комитет:комитет N1 ; ! "commission"
 комментарий:комментарий N1 ; ! ""
 коммент:коммент N1 ; ! ""
+коммуникация:коммуникация N1 ; ! ""
 компания:компания N1 ; ! "company"
 компартия:компартия N1 ; ! ""
 компас:компас N1 ; ! ""
@@ -4166,6 +4174,7 @@ XXI NUM-ROMAN ; ! ""
 телевидение:телевидение N1 ; ! ""
 телеграф:телеграф N1 ; ! ""
 теледидар:теледидар N1 ; ! "television set"
+теледидарлама:теледидарлама N1 ; ! "television"
 телескоп:телескоп N1 ; ! ""
 телефон:телефон N1 ; ! "telephone"
 темекі:темеке N1 ; ! "tobacco" Dir/LR
@@ -4654,6 +4663,7 @@ XXI NUM-ROMAN ; ! ""
 мосы:мосы N1 ; ! "" 
 шәугім:шәугім N1 ; ! "teapot" 
 түз:түз N1 ; ! "field" 
+таспа:таспа N1 ; ! "tape" 
 
 реестр:реестр N5 ; ! "resource book; registry"
 код:код N5 ; ! "code"
@@ -5019,7 +5029,9 @@ ATP:ATP ABBR ; !Use/MT
 бекон:бекон N1 ; !Use/MT
 бактериология:бактериология N1 ; !Use/MT
 аманат:аманат N1 ; !Use/MT
+қызық:қызық N1 ; !Use/MT
 наубайшы:наубайшы N1 ; !Use/MT
+ойын-сауық:ойын-сауық N1 ; !Use/MT
 соттың% жасауылы:соттың% жасауылы N1 ; !Use/MT
 кіріс:кіріс N1 ; !Use/MT
 балканизация:балканизация N1 ; !Use/MT
@@ -11926,6 +11938,7 @@ Witness:Witness NP-AL ; ! ""
 ауылды:ауылды A1 ; !Use/MT"
 әуе:әуе A1 ; !Use/MT"
 маскүнем:маскүнем A1 ; !Use/MT"
+визуалді:визуалді A1 ; ! "Use/MT eng-kaz"
 
 !===============!
  LEXICON Adverbs
@@ -12217,6 +12230,7 @@ Witness:Witness NP-AL ; ! ""
 әр% жерде:әр% жерде ADV ; ! "throughout"  ! Use/MT eng-kaz
 түсте:түсте ADV ; ! "afternoon"  ! Use/MT eng-kaz
 мында:мында ADV ; ! "here"  ! Use/MT eng-kaz
+олай:олай ADV ; ! ""  ! Use/MT eng-kaz
 қажырлы:қажырлы ADV ; ! ""  ! Use/MT eng-kaz
 ! this is analysed as something else (like солай)
 
@@ -12691,7 +12705,7 @@ Witness:Witness NP-AL ; ! ""
 ескер:ескер V-TV ; ! "pay attention"
 ескерт:ескерт V-TV ; ! ""
 есті:есті V-TV ; ! "hear"
-естіл:естіл V-TV ; ! "sound" !Use/MT
+естіл:естіл V-IV ; ! "sound" !Use/MT
 ет:ет V-TV ; ! "do,make"
 жабдықта:жабдықта V-TV ; ! "to  supply"
 жағала:жағала V-IV ; ! ""
@@ -14560,6 +14574,7 @@ cүй:сүй V-TV ; ! "love"  ! Use/MT eng-kaz
 тапсырыс% бер:тапсырыс% бер V-TV ; ! "order"  ! Use/MT eng-kaz
 ! maybe should be treated with a transfer rule
 үйлен:үйлен V-IV ; ! "marry"  ! Use/MT eng-kaz
+жүкте:жүкте V-TV ; ! "download"  ! Use/MT eng-kaz
 
 
 !=====================!
@@ -14764,6 +14779,7 @@ KZ:KZ ABBR ; ! ""
 экон%.:экон%. ABBR ; ! "economic"
 ЮНЕСКО:ЮНЕСКО ABBR ; ! ""
 янв%.:янв%. ABBR ; 
+DVD:DVD ABBR ; ! "DVD" !Use/MT
 
 !===================!
  LEXICON Punctuation
