@@ -19,7 +19,7 @@ for i in `cat /tmp/uig-kaz`; do
 		echo $C >> /tmp/kaz-kaz2; 
 	fi; 
 	
-	echo -e $U"\t"$K"\t"$X" "$C; done
+	echo -e $U"\t"$K"\t"$X" "$C;
 done
 
 cat /tmp/kaz-kaz2 | cut -f2 -d':' | lt-proc ~/source/apertium/languages/apertium-kaz/kaz.automorf.bin  > /tmp/kaz-ana
