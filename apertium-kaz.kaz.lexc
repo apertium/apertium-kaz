@@ -1838,7 +1838,7 @@ InterrogativePronouns ;
 кей:кей PRON-IND ; ! "some" FIXME CHECK
 әр:әр PRON-IND ; ! !"either" Use/MT 
 біреу:біреу PRON-IND ; ! !"someone" Use/MT 
-кейбіреу:кейбіреу PRON-IND ; ! 
+
 
 барлық:барлық PRON-QNT ; ! ""
 бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
@@ -1847,6 +1847,8 @@ InterrogativePronouns ;
 екеу:екеу PRON-QNT ; ! "both" !Use/MT
 әркім:әркім PRON-QNT ; ! ""
 көбі:көбі PRON-QNT ; ! "most" !Use/MT
+бірқатар:бірқатар PRON-QNT ; ! 
+кейбіреу:кейбіреу PRON-QNT ; ! 
 
 
 ешкім:ешкім PRNNEG ; ! ""
@@ -1892,7 +1894,7 @@ InterrogativePronouns ;
 қанша:қанша DET-QNT ; ! "how many"
 азырақ:азырақ DET-QNT ; ! "less"
 көбірек:көбірек DET-QNT ; ! "much"
-бірқатар:бірқатар DET-QNT ; ! 
+
 
 
 ондаған:ондаған DET-QNT ; ! ""
@@ -2618,7 +2620,7 @@ XXI NUM-ROMAN ; ! ""
 дүкен:дүкен N1 ; ! "shop"
 дүние:дүние N1 ; ! "world,possesions"
 дүние% жүзі:дүние% жүз N-COMPOUND-PX ; ! "world"
-дүниежүзі:дүниежүзі  N-COMPOUND-PX ; ! "world"
+дүниежүз:дүниежүз  N-COMPOUND-PX ; ! "world"
 дұға:дұға N1 ; ! "prayer"
 дұшпан:дұшпан N1 ; ! "enemy"
 дыбыс:дыбыс N1 ; ! "sound,noise"
@@ -2687,6 +2689,7 @@ XXI NUM-ROMAN ; ! ""
 жалау:жалау N1 ; ! "flag"
 жалбағай:жалбағай N1 ; ! ""
 жалбыз:жалбыз N1 ; ! "mint"
+жалбыр:жалбыр N1 ; ! 
 жалған:жалған N1 ; ! "untruth,lie"
 жалғас:жалғас N1 ; ! ""
 жалдап:жалдап N1 ; ! ""
@@ -3400,7 +3403,7 @@ XXI NUM-ROMAN ; ! ""
 лақап% ат:лақап% ат N1 ; ! "" Use/MT
 лақап:лақап N1 ; ! ""
 лақ:лақ N1 ; ! "kid,lacquer"
-ламаит:ламаит N1 ; !
+ламаит:ламаит N5 ; !
 лаңкестік:лаңкестік N1 ; ! ""
 лас:лас N1 ; ! "dirt"
 лат:лат N1 ; ! ""
@@ -3525,7 +3528,7 @@ XXI NUM-ROMAN ; ! ""
 металлургия:металлургия N1 ; ! ""
 метаморфизм:метаморфизм N5 ; ! ""
 метан:метан N1 ; ! ""
-метабуддизм:метабуддизм N1 ; !
+метабуддизм:метабуддизм N5 ; !
 метафизик:метафизик N1 ; ! ""
 метафморф:метаморф N1 ; ! ""
 метафора:метафора N1 ; ! ""
@@ -14752,6 +14755,7 @@ KZ:KZ ABBR ; ! ""
 б%.з%.д%.:б%.з%.д%. ABBR ; ! "BCE"
 б%.з%.д%.:б%.з%.д ABBR ; ! "BCE" Dir/LR
 биікт%.:биікт%. ABBR ; ! ""
+б%.т%.:б%.т%. ABBR ; ! "болып табылады"
 биол%.:биол%. ABBR ; ! ""
 Биохим:Биохим ABBR ; ! "Разведка&Добыча"
 БӨ:БӨ ABBR ; ! ""
