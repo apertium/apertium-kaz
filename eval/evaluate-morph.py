@@ -20,6 +20,9 @@ import sys;
 # The program calculates precision, recall and F-score.
 # The program also calculates for each line, the analysis diff.
 
+# precision = float(n_truepositive) / (float(n_truepositive + n_falsepositive));
+# recall = float(n_truepositive) / (float(n_truepositive + n_falsenegative));
+
 # precision = number of correct analyses / (number of correct analyses + number of incorrect analyses)
 # recall = number of correct analyses / (number of correct analyses + number of missing analyses)
 # F-score = (precision * recall) / (precision + recall)
