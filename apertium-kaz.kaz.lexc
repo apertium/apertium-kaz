@@ -1329,6 +1329,7 @@ LEXICON N1-ABBR
 %<n%>%<attr%>: # ;
 %<n%>:%- POSSESSIVES ;
 %<n%>:%- CASES-ETC ;
+%<n%>: CASES-ETC ; ! Dir/LR
 
 
 LEXICON N1
@@ -4735,6 +4736,8 @@ IC:IC%{э%}%{с%} N1 ; ! "индекс-каталог"
 ! =============
 
 ДНҚ:ДНҚ%{а%} N1-ABBR ; ! "DNA"
+млн:млн N1-ABBR ; ! "million"
+млрд:млрд%{а%}%{с%} N1-ABBR ; ! "billion"
 
 ! Nouns used as postpositions when <posssessive><case>
 ! ====================================================
@@ -14813,8 +14816,6 @@ KZ:KZ ABBR ; ! ""
 май%.:май%. ABBR ;
 МВт:МВт ABBR ; ! ""
 мемл:мемл ABBR ; ! "мемлекет"
-млн:млн ABBR ; ! "million"
-млрд:млрд ABBR ; ! "billion"
 м:м ABBR ; ! "m"
 мм:мм ABBR ; ! "mm"
 МСОП:МСОП ABBR ; ! ""
