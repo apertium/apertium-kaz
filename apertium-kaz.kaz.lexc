@@ -260,6 +260,7 @@
 %{с%}         !
 
 %{☭%}         ! Used to tell the phonology about a Russian word
+%{и%}         !
 
 %{❗%}         ! Obstacles on the road!!!
 %{ъ%}         ! Force back harmony
@@ -1361,6 +1362,10 @@ LEXICON N3
 LEXICON N5
 
 :%{☭%} N1 ;
+
+LEXICON N6
+
+:%{и%} N1 ; 
 
 
 !LEXICON NAT
@@ -3672,7 +3677,7 @@ XXI NUM-ROMAN ; ! ""
 обком:обком N1 ; ! ""
 облыс:облыс N1 ; ! "oblast"
 образ:образ N1 ; ! ""
-объект:объект N1 ; ! ""
+объект:объект N6 ; ! ""
 одақ:одақ N1 ; ! ""
 одақтас:одақтас N1 ; ! ""
 ой:ой N1 ; ! "depression,geol,thought"
