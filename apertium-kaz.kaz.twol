@@ -14,7 +14,7 @@ Alphabet
  %{й%}:0 %{л%}:0 %{н%}:0 %{з%}:0 %{с%}:0
 
  ! Russian words:
- %{☭%}:0 %{и%}:і
+ %{☭%}:0 %{і%}:і
 
  ! Obstacles on the road!!
  %{❗%}:0 ;
@@ -458,5 +458,5 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! ас%{т%}+{D}{A}н     ал%{д%}+{I}
 ! ас-тан              аст-ы
 
-"Deletion of {и} at end of word (i.e., in stand-alone forms)"
-%{и%}:0 <=> _ .#. ;
+"Deletion of {і} at end of word (i.e., in stand-alone forms)"
+%{і%}:0 <=> _ .#. ;

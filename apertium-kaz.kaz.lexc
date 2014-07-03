@@ -260,7 +260,7 @@
 %{с%}         !
 
 %{☭%}         ! Used to tell the phonology about a Russian word
-%{и%}         !
+%{і%}         !
 
 %{❗%}         ! Obstacles on the road!!!
 %{ъ%}         ! Force back harmony
@@ -1365,7 +1365,9 @@ LEXICON N5
 
 LEXICON N6
 
-:%{и%} N1 ; 
+:%{і%} N1 ; 
+N1 ;  ! Dir/LR     ! We want to analyse forms without %{і%}, since they're used
+                   ! but "properly" we want to generate forms with %{і%}
 
 
 !LEXICON NAT
@@ -2090,7 +2092,7 @@ XXI NUM-ROMAN ; ! ""
 айырмашылық:айырмашылық N1 ; ! ""
 академик:академик N1 ; ! ""
 академия:академия N1 ; ! ""
-акт:акт N1 ; ! "act"
+акт:акт N6 ; ! "act"
 актер:актер N1 ; ! ""
 актив:актив N5 ; ! ""
 актриса:актриса N1 ; ! ""
@@ -3099,7 +3101,7 @@ XXI NUM-ROMAN ; ! ""
 континент:континент N1 ; ! ""
 контингент:контингент N1 ; ! ""
 контр%-адмирал:контр%-адмирал N1 ; ! ""
-контракт:контракт N1 ; ! ""
+контракт:контракт N6 ; ! ""
 конференция:конференция N1 ; ! ""
 концентрация:концентрация N1 ; ! ""
 концерт:концерт N1 ; ! ""
@@ -4932,7 +4934,7 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 түше:түше N1 ; ! "member"  ! Use/MT eng-kaz
 картоп:картоп N1 ; ! "potato"  ! Use/MT eng-kaz
 секция:секция N1 ; ! " drawer"  ! Use/MT eng-kaz
-эффект:эффект N1 ; ! "effect"  ! Use/MT eng-kaz
+эффект:эффект N6 ; ! "effect"
 тәңір:тәңір N1 ; ! "God"  ! Use/MT eng-kaz
 тележка:тележка N1 ; ! " cart "  ! Use/MT eng-kaz
 занавес:занавес N1 ; ! " curtain"  ! Use/MT eng-kaz
@@ -4971,8 +4973,8 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 үйлесім:үйлесім N1 ; ! "harmony"  ! Use/MT eng-kaz
 себет:себет N1 ; ! "basket"  ! Use/MT eng-kaz
 танымдылық:танымдылық N1 ; ! "popularity"  ! Use/MT eng-kaz
-құрт:құрт N1 ; ! "worm"  ! Use/MT eng-kaz
-факт:факт N1 ; ! "fact"  ! Use/MT eng-kaz
+құрт:құрт N1 ; ! "worm"
+факт:факт N6 ; ! "fact"
 мотор:мотор N1 ; ! "  engine"  ! Use/MT eng-kaz
 көпір:көпір N1 ; ! "bridge"  ! Use/MT eng-kaz
 ферма:ферма N1 ; ! " farm"  ! Use/MT eng-kaz
@@ -5047,7 +5049,7 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 жиым:жиым N1 ; !Use/MT
 келу:келу N1 ; !Use/MT
 камераға% түсіруші:камераға% түсіруші N1 ; !Use/MT
-артефакт:артефакт N1 ; !Use/MT
+артефакт:артефакт N6 ;
 артерия:артерия N1 ; !Use/MT
 арсенал:арсенал N1 ; !Use/MT
 мышьяк:мышьяк N1 ; !Use/MT
@@ -5056,7 +5058,7 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 буынаяқты:буынаяқты N1 ; !Use/MT
 өсу:өсу N1 ; !Use/MT
 көркем% жұмыс:көркем% жұмыс N1 ; !Use/MT
-аспект:аспект N1 ; !Use/MT
+аспект:аспект N6 ;
 аспирин:аспирин N1 ; !Use/MT
 арша:арша N1 ; !Use/MT
 күлсалғыш:күлсалғыш N1 ; !Use/MT
