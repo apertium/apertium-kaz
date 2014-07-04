@@ -357,6 +357,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #kaz-eng
 
 
+# INPUT: ^заңды/заң<n><acc>/заңды<adj>/заң<n>+лы<post>$
+# INPUT: ^заңды/заң<n><acc>/заңды<adj>/заң<n>+лы<post>$
+ REMOVE Sub:1 Post IF
+ 	(0 N)
+	(0 A)
+;
+
+
 
 # Determiners
 # ===========

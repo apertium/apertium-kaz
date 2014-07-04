@@ -593,8 +593,8 @@ LEXICON ATTR-SUBST
 LEXICON GENERAL-POSSESSIVE-ETC
 
 !------------------------------------------------------------------------------!
-! <n.pl.NIKI.pl> sequence should not be allowed. This form is rare (1 (!)
-! match in RFERL corpus for 'ныкылар'), probably not worh bothering at all.
+! <n.pl.нікі.pl> sequence should not be allowed. This form is rare (1 (!)
+! match in RFERL corpus for 'нікілар'), probably not worh bothering at all.
 ! It could be handled in a way abessive is handled, but since NIKI in contrast
 ! to the abessive SIZ can appear after possessves, that would require
 ! duplicating possessives as well.
@@ -625,6 +625,10 @@ LEXICON ABESSIVE-POSTPOSITION
 
 %+сыз%<post%>:%>с%{I%}з CLITICS-NO-COP ;
 
+LEXICON LI-POSTPOSITION
+
+%+лы%<post%>:%>%{L%}%{I%} CLITICS-NO-COP ;
+
 LEXICON PLURAL
 
 %<pl%>:%>%{L%}%{A%}р CASES-ETC ;
@@ -637,6 +641,7 @@ PLURAL ;
 CASES-ETC ;
 POSSESSIVES ;
 ABESSIVE-POSTPOSITION ;
+LI-POSTPOSITION ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
