@@ -981,8 +981,9 @@ LEXICON Copula
 
 !!!!!!!   P E R S O N A L
 
-LEXICON PRON-12SG-CASES
+LEXICON PRON-P12SG-CASES
 
+%<nom%>:ен CLITICS-NO-COP ;
 %<gen%>:енің CLITICS-NO-COP ;
 %<dat%>:аған CLITICS-NO-COP ;
 %<acc%>:ені CLITICS-NO-COP ;
@@ -998,13 +999,11 @@ LEXICON PRON-PERS-INFL
 
 CASES-ETC ;
 
-LEXICON PersonalPronouns
+LEXICON PRON-PERS
 
-мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен CLITICS-NO-COP ;
-мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
+мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-P12SG-CASES ;
 
-сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен CLITICS-NO-COP ;
-сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
+сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-P12SG-CASES ;
 
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол CLITICS-NO-COP ;
 ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о CLITICS-NO-COP ; ! Dir/LR
@@ -1838,7 +1837,7 @@ LEXICON ABBR
  LEXICON Pronouns
 !================!
 
-PersonalPronouns ;
+PRON-PERS ;
 
 DemonstrativePronouns ;
 
