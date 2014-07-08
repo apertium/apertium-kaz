@@ -944,7 +944,6 @@ REMOVE (gen) IF
         (0 ("<Мен>"))
         (-1 BOS)
 ;
-#kaz-eng
 
 
 # INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
@@ -1029,3 +1028,7 @@ REMOVE Adv IF
 ;
        
 
+"<мен>" SELECT Post IF
+ 	(-1 NOMINAL)
+	(1 NOMINAL)
+;
