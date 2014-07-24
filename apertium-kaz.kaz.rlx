@@ -255,10 +255,10 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
 
 
-#
-SELECT N IF
-        (1 EOS OR ("<сурет>"i))
-        ;
+# This rule is too general, breaks a few things.
+#SELECT N IF
+#        (1 EOS OR ("<сурет>"i))
+#        ;
 
  SELECT FiniteVerb IF
         (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
