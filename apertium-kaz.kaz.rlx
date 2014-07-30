@@ -253,12 +253,14 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 # POS marking
 # ===========
 
+SELECT N IF
+        (0 ("сурет"i))
+        (-1 (adj advl) OR Det OR A)
+       ;
 
 
-# This rule is too general, breaks a few things.
-#SELECT N IF
-#        (1 EOS OR ("<сурет>"i))
-#        ;
+# This rule is too general, breaks a few things.Corrected
+
 
  SELECT FiniteVerb IF
         (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
