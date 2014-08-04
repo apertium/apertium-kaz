@@ -321,7 +321,7 @@ SELECT N IF
 ## 108. Өйткені бүгінгі [0]Арал деген атау сол XVII ғасырдан бергі жерге берілген.
  SELECT Prop IF
         (0 Prop)
-        (0 ("[:upper:][:upper:]+"r))
+        (0 ("<[:upper:][:upper:]+>"r))
 ;
 ## [0]АЗАМАТ ҚАЙДА?
  SELECT Prop IF
