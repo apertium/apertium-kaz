@@ -8140,9 +8140,9 @@ PSM:PSM N1 ; !"Use/MT"
 мәнет:мәнет N1 ; ! "" ! Use/MT
 сауда%-саттық:сауда%-саттық N1 ; ! "" ! Use/MT
 
+
 !===================!
  LEXICON ProperNouns
-!===================!
 
 
 ! Toponyms
@@ -8864,6 +8864,11 @@ PSM:PSM N1 ; !"Use/MT"
 Само:Само NP-TOP ; ! "" ! Use/MT
 Эфсе:Эфсе NP-TOP ; ! "" ! Use/MT
 Артемид:Артемид NP-TOP ; ! "" ! Use/MT
+
+Әбу%-Даби:Әбу%-Даби NP-TOP ; ! ""
+Әбу%-Даби:Әбу% Даби NP-TOP ; ! "" ! Dir/LR
+Әбу%-Даби:Абу%-Даби NP-TOP ; ! "" ! Dir/LR
+Әбу%-Даби:Абу% Даби NP-TOP ; ! "" ! Dir/LR
 
 ! Toponyms which DON'T take -ЛЫҚ affix (that means they are not city, coutry or
 ! region names)
@@ -12207,6 +12212,24 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 ! Fixme -- contains ascii characters ! Шamat NP-ANT-M ; ! "Shamat" (Arabic)
 ! Fixme -- contains ascii characters ! Шыhtemіp NP-ANT-M ; ! "Shıhtemip" (Kazakh)
 
+Станимир:Станимир NP-ANT-M ; ! "" ! Use/MT
+Сиязбек:Сиязбек NP-ANT-M ; ! "" ! Use/MT
+Сейітхан:Сейітхан NP-ANT-M ; ! "" ! Use/MT
+Роберто:Роберто NP-ANT-M ; ! "" ! Use/MT
+Рене:Рене NP-ANT-M ; ! "" ! Use/MT
+Мұхтарбай:Мұхтарбай NP-ANT-M ; ! "" ! Use/MT
+Мақсұт:Мақсұт NP-ANT-M ; ! "" ! Use/MT
+Қуанышбек:Қуанышбек NP-ANT-M ; ! "" ! Use/MT
+Бердібек:Бердібек NP-ANT-M ; ! "" ! Use/MT
+Амандос:Амандос NP-ANT-M ; ! "" ! Use/MT
+Алмазбек:Алмазбек NP-ANT-M ; ! "" ! Use/MT
+Шамиль:Шамиль NP-ANT-M ; ! "" ! Use/MT
+Шәміл:Шәміл NP-ANT-M ; ! "" ! Use/MT
+Эднан:Эднан NP-ANT-M ; ! "" ! Use/MT
+
+Шәмшә:Шәмшә NP-ANT-F ; ! "" ! Use/MT
+
+
 ! Patronyms
 ! =========
 
@@ -12219,6 +12242,17 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Петро:Петро NP-PAT-VICH ; ! ""
 Сергеевич:Сергее NP-PAT-VICH ; ! ""
 Янукович:Януко NP-PAT-VICH ; ! ""
+Николаевич:Николае NP-PAT-VICH ; ! ""
+Матвеевич:Матвее NP-PAT-VICH ; ! ""
+Алексеевич:Алексее NP-PAT-VICH ; ! ""
+Тимофеевич:Тимофее NP-PAT-VICH ; ! ""
+Евгениевич:Евгение NP-PAT-VICH ; ! ""
+Борусевич:Борусе NP-PAT-VICH ; ! ""
+Вукичевич:Вукиче NP-PAT-VICH ; ! ""
+Анатольевич:Анатолье NP-PAT-VICH ; ! ""
+Григорьевич:Григорье NP-PAT-VICH ; ! ""
+Юрьевич:Юрье NP-PAT-VICH ; ! ""
+
 
 ! Cognoms
 ! =======
@@ -12283,7 +12317,15 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 ! Masculine/feminine
 !-------------------
 
+Шевернадзе:Шевернадзе NP-COG-MF ; ! "" ! Use/MT 
+Шевалье:Шевалье NP-COG-MF ; ! "" ! Use/MT 
+Квасьневский:Квасьневский NP-COG-MF ; ! "" ! Use/MT 
+Азеведо:Азеведо NP-COG-MF ; ! "" ! Use/MT 
+Преваль:Преваль NP-COG-MF ; ! "" ! Use/MT 
+
 Авраменко:Авраменко NP-COG-MF ; ! ""
+Чейни:Чейни NP-COG-MF ; ! ""
+Рахмон:Рахмон NP-COG-MF ; ! ""
 Адамс:Адамс NP-COG-MF ; !"Use/MT"
 Аққұлы:Аққұлы NP-COG-MF ; ! ""
 Андрис:Андрис NP-COG-MF ; ! ""
@@ -12600,6 +12642,69 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 
 ! Masculine -ов and -ин cognoms
 !------------------------------
+
+Ордабаев:Ордабаев NP-COG-OB ; ! "" ! Use/MT
+Карабаев:Карабаев NP-COG-OB ; ! "" ! Use/MT
+Түймебаев:Түймебаев NP-COG-OB ; ! "" ! Use/MT
+Өтебаев:Өтебаев NP-COG-OB ; ! "" ! Use/MT
+Қонақбаев:Қонақбаев NP-COG-OB ; ! "" ! Use/MT
+Тоқпақбаев:Тоқпақбаев NP-COG-OB ; ! "" ! Use/MT
+Ермекбаев:Ермекбаев NP-COG-OB ; ! "" ! Use/MT
+Сәрсекбаев:Сәрсекбаев NP-COG-OB ; ! "" ! Use/MT
+Нәрікбаев:Нәрікбаев NP-COG-OB ; ! "" ! Use/MT
+Өксікбаев:Өксікбаев NP-COG-OB ; ! "" ! Use/MT
+Өтелбаев:Өтелбаев NP-COG-OB ; ! "" ! Use/MT
+Кекілбаев:Кекілбаев NP-COG-OB ; ! "" ! Use/MT
+Құлбаев:Құлбаев NP-COG-OB ; ! "" ! Use/MT
+Атамбаев:Атамбаев NP-COG-OB ; ! "" ! Use/MT
+Әшімбаев:Әшімбаев NP-COG-OB ; ! "" ! Use/MT
+Балғымбаев:Балғымбаев NP-COG-OB ; ! "" ! Use/MT
+Шалғымбаев:Шалғымбаев NP-COG-OB ; ! "" ! Use/MT
+Рахымбаев:Рахымбаев NP-COG-OB ; ! "" ! Use/MT
+Озғанбаев:Озғанбаев NP-COG-OB ; ! "" ! Use/MT
+Жиенбаев:Жиенбаев NP-COG-OB ; ! "" ! Use/MT
+Орынбаев:Орынбаев NP-COG-OB ; ! "" ! Use/MT
+Наарбаев:Наарбаев NP-COG-OB ; ! "" ! Use/MT
+Сапарбаев:Сапарбаев NP-COG-OB ; ! "" ! Use/MT
+Темірбаев:Темірбаев NP-COG-OB ; ! "" ! Use/MT
+Ертісбаев:Ертісбаев NP-COG-OB ; ! "" ! Use/MT
+Бүркітбаев:Бүркітбаев NP-COG-OB ; ! "" ! Use/MT
+Күрішбаев:Күрішбаев NP-COG-OB ; ! "" ! Use/MT
+Жошыбаев:Жошыбаев NP-COG-OB ; ! "" ! Use/MT
+Аюбаев:Аюбаев NP-COG-OB ; ! "" ! Use/MT
+Полежаев:Полежаев NP-COG-OB ; ! "" ! Use/MT
+Қалмырзаев:Қалмырзаев NP-COG-OB ; ! "" ! Use/MT
+Сарбалаев:Сарбалаев NP-COG-OB ; ! "" ! Use/MT
+Ақанаев:Ақанаев NP-COG-OB ; ! "" ! Use/MT
+Дунаев:Дунаев NP-COG-OB ; ! "" ! Use/MT
+Досаев:Досаев NP-COG-OB ; ! "" ! Use/MT
+Кәлетаев:Кәлетаев NP-COG-OB ; ! "" ! Use/MT
+Әбілтаев:Әбілтаев NP-COG-OB ; ! "" ! Use/MT
+Ертаев:Ертаев NP-COG-OB ; ! "" ! Use/MT
+Акеев:Акеев NP-COG-OB ; ! "" ! Use/MT
+Нұржекеев:Нұржекеев NP-COG-OB ; ! "" ! Use/MT
+Құлекеев:Құлекеев NP-COG-OB ; ! "" ! Use/MT
+Есекеев:Есекеев NP-COG-OB ; ! "" ! Use/MT
+Шөкеев:Шөкеев NP-COG-OB ; ! "" ! Use/MT
+Жаркеев:Жаркеев NP-COG-OB ; ! "" ! Use/MT
+Жіткеев:Жіткеев NP-COG-OB ; ! "" ! Use/MT
+Шүкеев:Шүкеев NP-COG-OB ; ! "" ! Use/MT
+Мирзиёев:Мирзиёев NP-COG-OB ; ! "" ! Use/MT
+Окунев:Окунев NP-COG-OB ; ! "" ! Use/MT
+Рябцев:Рябцев NP-COG-OB ; ! "" ! Use/MT
+Бабичев:Бабичев NP-COG-OB ; ! "" ! Use/MT
+Фомичев:Фомичев NP-COG-OB ; ! "" ! Use/MT
+Филчев:Филчев NP-COG-OB ; ! "" ! Use/MT
+Мордашев:Мордашев NP-COG-OB ; ! "" ! Use/MT
+Мұқашев:Мұқашев NP-COG-OB ; ! "" ! Use/MT
+Мамашев:Мамашев NP-COG-OB ; ! "" ! Use/MT
+Исекешев:Исекешев NP-COG-OB ; ! "" ! Use/MT
+Жәмішев:Жәмішев NP-COG-OB ; ! "" ! Use/MT
+Нехорошев:Нехорошев NP-COG-OB ; ! "" ! Use/MT
+Қуанышев:Қуанышев NP-COG-OB ; ! "" ! Use/MT
+Тарпищев:Тарпищев NP-COG-OB ; ! "" ! Use/MT
+Кузяев:Кузяев NP-COG-OB ; ! "" ! Use/MT
+Ермегияев:Ермегияев NP-COG-OB ; ! "" ! Use/MT
 
 Абайділданов:Абайділданов NP-COG-OB ; ! ""
 Абдолов:Абдолов NP-COG-OB ; ! ""
