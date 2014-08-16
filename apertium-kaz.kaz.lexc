@@ -836,11 +836,18 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 %<neg%>%<fut_plan%>:%>%{M%}%{A%}%{K%}% емес V-PERS-S1 ;
 
+%<past%>:%>%{G%}%{A%}н V-PERS-S1 ;
+%<neg%>%<past%>:%>%{G%}%{A%}н% емес V-PERS-S1 ;
+
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
+%<neg%>%<ifi%>:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;
+
+
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%} V-PERS-AOR ;
-%<past%>:%>%{G%}%{A%}н V-PERS-S1 ;
-%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
+%<past%>:%>%{G%}%{A%}н V-PERS-S1 ; ! Dir/LR
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; ! Dir/LR
 %<ifi_evid%>:%>%{I%}п V-PERS-IFI_EVID ;
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
