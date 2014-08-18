@@ -882,7 +882,7 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
 
 %<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-POSSESSIVES ;
-%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>сл%{I%}%{K%} GER-POSSESSIVES ;
+%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-POSSESSIVES ;
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -1501,7 +1501,9 @@ LEXICON NUM
 
 NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
-%<num%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+%<num%>%<ord%>%<subst%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+
+! <ord> is "det" is base form, <ord><subst> is "prn" reading
 
 LEXICON NUM-TWENTY
 
@@ -15410,7 +15412,7 @@ Witness:Witness NP-AL ; ! ""
 
 ну:ну A3 ; ! "дремучий; непроходимый; девственный; густой (о лесе, камыше)" ! "FIXME check this if in the correct category *kantoro" 
 орманды:орманды A3 ; ! "лесной; с лесом; имеющий лес" ! "FIXME check this if in the correct category *kantoro" 
-топырақты:топырақты A3 ; ! "земляной; покрытый землею" ! "FIXME check this if in the correct category *kantoro" ! "maybe should be generated from nouns" 
+топырақты:топырақты A4 ; ! "земляной; покрытый землею" ! "FIXME check this if in the correct category *kantoro" ! "maybe should be generated from nouns"  ! changed A3 to A4; might be A3 though? -JNW 2014-08-17
 
 ! A2 adj.(comp), adj.(comp).subst
 ! ===============================
@@ -15480,6 +15482,7 @@ Witness:Witness NP-AL ; ! ""
 қышқыл:қышқыл A2 ; ! "sour, acid"
 сорлы:сорлы A2 ; ! ""
 сүйкімді:сүйкімді A2 ; ! ""
+шұрайлы:шұрайлы A2 ; ! "fertile" ! CHECK A2
 
 ! A2 compass directions
 
@@ -15730,7 +15733,7 @@ Witness:Witness NP-AL ; ! ""
 тікелей:тікелей A1 ; ! ""
 тік:тік A1 ; ! ""
 тірі:тірі A1 ; ! "live"
-толық:толық A1 ; ! "full"
+толық:толық A1 ; ! "full, fully"
 торы:торы A1 ; ! ""
 төменгі:төменгі A1 ; ! ""
 төмен:төмен A1 ; ! "low"
@@ -15850,7 +15853,6 @@ Witness:Witness NP-AL ; ! ""
 оғаш:оғаш A1 ; ! "strange"  ! Use/MT eng-kaz
 қисық:қисық A1 ; ! "curve"  ! Use/MT eng-kaz
 алғыр:алғыр A1 ; ! "able"  ! Use/MT eng-kaz
-шұрайлы:шұрайлы A1 ; ! "fertile"  ! Use/MT eng-kaz
 мұңды:мұңды A1 ; ! "sad"  ! Use/MT eng-kaz
 жөн:жөн A1 ; ! "  ! Use/MT eng-kaz
 жөндеулі:жөндеулі A1 ; ! "  revised" ! Use/MT eng-kaz
@@ -17927,7 +17929,7 @@ oномастикалық:oномастикалық A1 ; !"Use/MT"
 ашын:ашын V-IV ; ! "возмущаться,испытывать душевную боль"
 ашыт:ашыт V-TV ; ! "itch,gawn,acidify"
 ая:ая V-TV ; ! "жалеть,щадить,сжаливаться"
-аяқта:аяқта V-TV ; ! "to complete"
+аяқта:аяқта V-TV ; ! "complete"
 аяла:аяла V-TV ; ! "беречь,ласкать,лелеять"
 аялда:аялда V-IV ; ! "задерживаться"
 аяңда:аяңда V-IV ; ! ""
