@@ -694,6 +694,14 @@ LEXICON A4                 ! "pure" adjectives - no adverbial and substantive re
 
 %<adj%>: CLITICS-INCL-COP ;   !# ұлттық тағам
 
+LEXICON A6                 ! (derived/not fully lexicalised) adjectives without comparative reading,
+                           ! no comparison levels at all.
+                           !# examples go here
+
+%<adj%>: CLITICS-INCL-COP ;                           !# example 1
+%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;           !# example 2
+%<adj%>%<advl%>: CLITICS-NO-COP ;                     !# example 3
+
 LEXICON V-ADJ
 
 # ;
@@ -1508,7 +1516,7 @@ NUM-COMMON ;
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
-%<num%>%<ord%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+%<num%>%<ord%>%<subst%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-ITG ! This is a temporal solution
                 ! (could be integrated with the above)
@@ -14889,7 +14897,7 @@ Witness:Witness NP-AL ; ! ""
 азаматтық:азаматтық A4 ; ! "citizen"
 азиялық:азиялық A4 ; ! ""
 айтарлықтай:айтарлықтай A4 ; ! ""
-айыпты:айыпты A4 ; ! ""
+айыпты:айыпты A2 ; ! "" ! A2 not A4: comp and subst forms found in google
 академиялық:академиялық A4 ; ! ""
 актерлік:актерлік A4 ; ! ""
 акустикалық:акустикалық A4 ; ! ""
@@ -15148,7 +15156,7 @@ Witness:Witness NP-AL ; ! ""
 радиоактивті:радиоактивті A4 ; ! ""
 радиолокациялық:радиолокациялық A4 ; ! ""
 радиоэлектрондық:радиоэлектрондық A4 ; ! ""
-разы:разы A4 ; ! ""
+разы:разы A3 ; ! "" ! A3 not A4, subst forms found
 ракеталық:ракеталық A4 ; ! ""
 реакциялық:реакциялық A4 ; ! ""
 реакцияшыл:реакцияшыл A4 ; ! ""
@@ -15234,7 +15242,7 @@ Witness:Witness NP-AL ; ! ""
 шектен% тыс:шектен% тыс A4 ; ! "" Use/MT
 шетелдік:шетелдік A4 ; ! "foreign"
 ықтимал:ықтимал A4 ; ! ""
-ырза:ырза A4 ; ! ""
+ырза:ырза A3 ; ! "" ! A3 not A4 - subst forms found in google
 іскер:іскер A4 ; ! "business"
 эволюциялық:эволюциялық A4 ; ! ""
 экваторлық:экваторлық A4 ; ! ""
@@ -15410,7 +15418,7 @@ Witness:Witness NP-AL ; ! ""
 туыс:туыс A3 ; ! ""
 тұйық:тұйық A3 ; ! ""
 тұрғын:тұрғын A3 ; ! ""
-тұтас:тұтас A3 ; ! ""
+тұтас:тұтас A1 ; ! "entire(ly), complete(ly), continuous(ly)" ! A1 not A3: comp forms found in google; advl in e.g. "аспанды бұлт тұтас жапты"
 үздік:үздік A3 ; ! ""
 үстеме:үстеме A3 ; ! ""
 федеральды:федеральды A3 ; ! "федеральный"
@@ -15473,7 +15481,6 @@ Witness:Witness NP-AL ; ! ""
 тиесілі:тиесілі A2 ; ! ""
 тиісті:тиісті A2 ; ! ""
 толы:толы A2 ; ! ""
-төзімді:төзімді A2 ; ! ""
 төзімді:төзімді A2 ; ! ""
 үстем:үстем A2 ; ! ""
 шағын:шағын A2 ; ! ""
@@ -15591,8 +15598,8 @@ Witness:Witness NP-AL ; ! ""
 жарқын:жарқын A1 ; ! "bright"
 жарлы:жарлы A1 ; ! "poor"
 жарық:жарық A1 ; ! "light, enlighted"
-жас:жас A1 ; ! "young"
-жасыл:жасыл A1 ; ! "green"
+жас:жас A1 ; ! "y2ung"
+жасыл:жасыл A2 ; ! "green"
 жексұрын:жексұрын A1 ; ! ""
 жеңіл:жеңіл A1 ; ! "light"
 жергілікті:жергілікті A1 ; ! "local"
@@ -15667,7 +15674,7 @@ Witness:Witness NP-AL ; ! ""
 қысқа:қысқа A1 ; ! "short"
 лайықты:лайықты A1 ; ! "suitable"
 мәдени:мәдени A1 ; ! "cultural"
-мәңгі:мәңгі A1 ; ! "eternal"
+мәңгі:мәңгі A6 ; ! "eternal" ! A6 not A1: no comp forms
 мейірімді:мейірімді A1 ; ! ""
 мемлекеттік:мемлекеттік A3 ; ! "governmental" ! A3 not A1 because no advl or comp readings
 мол:мол A1 ; ! "aplenty"?  ! FIXME: check POS and translation
@@ -15697,7 +15704,7 @@ Witness:Witness NP-AL ; ! ""
 өрескел:өрескел A1 ; ! ""
 өткен:өткен A3 ; ! "прошлый"
 өткір:өткір A1 ; ! "sharp, pointed"
-риза:риза A1 ; ! "pleased,согласный"
+риза:риза A3 ; ! "pleased,согласный(~satisfied)" ! A3 not A1, no comp or advl forms
 сабыр:сабыр A1 ; ! ""
 сақ:сақ A1 ; ! ""
 сары:сары A2 ; ! "yellow" ! A2 not A1 no ADVL
@@ -16470,7 +16477,6 @@ coercive:coercive A1 ; !"Use/MT"
 азапты:азапты A1 ; !"Use/MT"
 азғантай:азғантай A1 ; !"Use/MT"
 айғайшыл:айғайшыл A1 ; !"Use/MT"
-айыпты:айыпты A1 ; !"Use/MT"
 айырымды:айырымды A1 ; !"Use/MT"
 академиялық:академиялық A1 ; !"Use/MT"
 ақиқатты:ақиқатты A1 ; !"Use/MT"
@@ -16667,7 +16673,6 @@ coercive:coercive A1 ; !"Use/MT"
 типті:типті A1 ; !"Use/MT"
 тиянақты:тиянақты A1 ; !"Use/MT"
 тірі:тірі A1 ; !"Use/MT"
-төзімді:төзімді A1 ; !"Use/MT"
 тоқпақтай:тоқпақтай A1 ; !"Use/MT"
 төл:төл A1 ; !"Use/MT"
 топографиялық:топографиялық A1 ; !"Use/MT"
@@ -16707,7 +16712,7 @@ coercive:coercive A1 ; !"Use/MT"
 шотландиялық:Шотландиялық A1 ; !"Use/MT"
 шұғыл:шұғыл A1 ; !"Use/MT"
 шығарылған:шығарылған A1 ; !"Use/MT"
-шыдамды:шыдамды A1 ; !"Use/MT"
+шыдамды:шыдамды A2 ; ! "patient/steadfast"
 шын% мәнісінде:шын% мәнісінде A1 ; !"Use/MT"
 ықпалды:ықпалды A1 ; !"Use/MT"
 ылғи:ылғи A1 ; !"Use/MT"
