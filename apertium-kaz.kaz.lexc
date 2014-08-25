@@ -1562,9 +1562,9 @@ LEXICON ADV-WITH-KI
 ADV ;
 %<adv%>: KI ;
 
-LEXICON ADV-WITH-KI-I     ! Used only for бері<adv>/бергі<adv><attr> right now
+LEXICON ADV-WITH-KI-I     ! Used for бері<adv>/бергі<adv><attr> 'right now' and similar
 
-:і ADV ;
+:%{I%} ADV ;
 %<adv%>: KI ;
 
 LEXICON ADV-ITG
@@ -16502,7 +16502,7 @@ Witness:Witness NP-AL ; ! ""
 жергілікті:жергілікті A1 ; ! "local"
 жиі:жиі A1 ; ! "often"
 жіңішке:жіңішке A1 ; ! "thin"
-жоғарғы:жоғарғы A1 ; ! ""
+жоғарғы:жоғарғы A3 ; ! "high" ! Probably A3 not A1
 жоғары:жоғары A1 ; ! "high"
 жуан:жуан A1 ; ! "thick"
 жуық:жуық A1 ; ! "close"
@@ -18387,9 +18387,11 @@ retroactive:retroactive A1 ; !"Use/MT"
 төмен:төмен ADV-WITH-KI ; ! "lower"
 
 бері:бер ADV-WITH-KI-I ; ! "on the near side"
+жоғары:жоғар ADV-WITH-KI-I ; ! "high"
 
 !ақырғы A1 ; ! "last" FIXME NOTE this is rather noun + GI, not adv + GI /IS/
-!жоғары:жоғарғы A1 ; ! "high"
+
+
 
 ! Languages
 ! =========
