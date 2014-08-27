@@ -1247,7 +1247,7 @@ LEXICON PRON-ITG-QANDAY
 
 ! Might be not complete (қандайларығыз? and possessive stuff in general)
 
-қандай%<prn%>%<itg%>%<sim%>:қандай CLITICS-NO-COP ;
+%<prn%>%<itg%>%<sim%>: CLITICS-NO-COP ;
 ! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
 ! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
 ! it shouldn't receive <nom> tag I think /IS/
@@ -1893,10 +1893,11 @@ InterrogativePronouns ;
 кейбіреу:кейбіреу PRON-QNT ; ! 
 
 
-ешкім:ешкім PRNNEG ; ! ""
-ешнәрсе:ешнәрсе PRNNEG ; ! ""
-ештеңе:ештеңе PRNNEG ; ! ""
-ешбір:ешбір PRNNEG ; ! ""
+ешкім:ешкім PRNNEG ; ! "no one"
+ешнәрсе:ешнәрсе PRNNEG ; ! "nothing"
+ешнәрсе:еш% нәрсе PRNNEG ; ! "nothing" ! Dir/LR
+ештеңе:ештеңе PRNNEG ; ! "nothing"
+ешбір:ешбір PRNNEG ; ! "not one"
 
 
 бір%-бір:бір%-бір PRON-RECIP ; ! "each other, one another"
@@ -8614,6 +8615,7 @@ PSM:PSM N1 ; !"Use/MT"
 Минзәлә:Минзәлә NP-TOP ; ! ""
 Миннесота:Миннесота NP-TOP ; !"Use/MT"
 Минск:Минск NP-TOP ; ! ""
+Минск:Минск%{і%} NP-TOP ; ! "" ! Dir/LR
 Миссиссипи:Миссиссипи NP-TOP ; !"Use/MT"
 Миссури:Миссури NP-TOP ; !"Use/MT"
 Михайловка:Михайловка NP-TOP ; ! ""
@@ -16139,7 +16141,7 @@ Witness:Witness NP-AL ; ! ""
 хромосомалық:хромосомалық A4 ; ! "chromosomal"
 циклді:циклді A4 ; ! "cyclical"
 шалғынды:шалғынды A4 ; ! ""
-шексіз:шексіз A4 ; ! ""
+шексіз:шексіз A3 ; ! "unlimited,limitless" ! Probably A3 not A4: subst uses found in google
 шектен% тыс:шектен% тыс A4 ; ! "" Use/MT
 шетелдік:шетелдік A4 ; ! "foreign"
 ықтимал:ықтимал A4 ; ! ""
@@ -16231,7 +16233,6 @@ Witness:Witness NP-AL ; ! ""
 салалық:салалық A4 ; ! ""
 террористік:террористік A4 ; ! ""
 халықтық:халықтық A4 ; ! ""
-шетелдік:шетелдік A4 ; ! ""
 
 мылқау:мылқау A3 ; ! "mute" ! probably A3, not A4 and N1
 саңырау:саңырау A3 ; ! "deaf"
@@ -16324,7 +16325,7 @@ Witness:Witness NP-AL ; ! ""
 үздік:үздік A3 ; ! ""
 үстеме:үстеме A3 ; ! ""
 федеральды:федеральды A3 ; ! "федеральный"
-шынайы:шынайы A3 ; ! ""
+шынайы:шынайы A2 ; ! "true" ! A2 not A3 : comp forms found in google
 ынтымақты:ынтымақты A3 ; ! ""
 ! ресми:ресми A3 ; ! ""  A4 and N1, probably not A3
 
@@ -16477,7 +16478,7 @@ Witness:Witness NP-AL ; ! ""
 дәмді:дәмді A1 ; ! "yummy"
 дәу:дәу A1 ; ! "giant"
 демократиялық:демократиялық A1 ; ! "democratic"
-діни:діни A1 ; ! "religious"
+діни:діни A3 ; ! "religious" ! Probably A3 not A1 : no advl? or comp..
 дұрыс:дұрыс A1 ; ! "correct"
 едәуір:едәуір A1 ; ! ""
 ерекше:ерекше A1 ; ! "certain, special"
@@ -16535,7 +16536,7 @@ Witness:Witness NP-AL ; ! ""
 кішкене:кішкене A1 ; ! "little"
 кішкентай:кішкентай A2 ; ! "small, little" ! A2 not A1: no advl use?
 көк:көк A2 ; ! "blue" ! probably A2 not A1
-көне:көне A1 ; ! "old/ancient (thing)"
+көне:көне A2 ; ! "old/ancient (thing)" ! probably not A1 : no advl use?
 көңілді:көңілді A1 ; ! "happy"
 көп:көп A1 ; ! "many, much"
 көркем:көркем A1 ; ! "beautiful"
@@ -16631,7 +16632,7 @@ Witness:Witness NP-AL ; ! ""
 тақау:тақау A1 ; ! ""
 талай:талай A1 ; ! "~several"
 тапқыр:тапқыр A1 ; ! "cute" !Use/MT
-тарихи:тарихи A1 ; ! "historic"
+тарихи:тарихи A3 ; ! "historic"
 тар:тар A1 ; ! ""
 тәжірибелі:тәжірибелі A1 ; ! "experienced"
 тәуекел:тәуекел A1 ; ! ""
@@ -16916,7 +16917,6 @@ Witness:Witness NP-AL ; ! ""
 лақтырылған:лақтырылған A1 ; !"Use/MT"
 шектеулі:шектеулі A1 ; !"Use/MT"
 ботаникалық:ботаникалық A1 ; !"Use/MT"
-шексіз:шексіз A1 ; !"Use/MT"
 сынғыш:сынғыш A1 ; !"Use/MT"
 жеркенішті:жеркенішті A1 ; !"Use/MT"
 оқ% тимейтін:оқ% тимейтін A1 ; !"Use/MT"
@@ -17314,7 +17314,6 @@ coercive:coercive A1 ; !"Use/MT"
 сезікті:сезікті A1 ; !"Use/MT"
 жасампаз:жасампаз A1 ; !"Use/MT"
 болжалды:болжалды A1 ; !"Use/MT"
-аумақтық:аумақтық A1 ; !"Use/MT"
 третикалық:третикалық A1 ; !"Use/MT"
 теократиялық:теократиялық A1 ; !"Use/MT"
 терапевтикалық:терапевтикалық A1 ; !"Use/MT"
@@ -17534,7 +17533,6 @@ coercive:coercive A1 ; !"Use/MT"
 шведтік:Шведтік A1 ; !"Use/MT"
 швейцариялық:Швейцариялық A1 ; !"Use/MT"
 шеберлік:шеберлік A1 ; !"Use/MT"
-шетелдік:шетелдік A1 ; !"Use/MT"
 шетін:шетін A1 ; !"Use/MT"
 шіркеулік:шіркеулік A1 ; !"Use/MT"
 шолғыншы:шолғыншы A1 ; !"Use/MT"
