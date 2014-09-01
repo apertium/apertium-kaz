@@ -996,10 +996,11 @@ LEXICON Copula
 е%<cop%>%<ger_past%>:екен GER-POSSESSIVES ;
 е%<cop%>%<ger_perf%>:екен%>%{L%}%{I%}к GER-POSSESSIVES ;
 
-е%<cop%>%<neg%>:емес V-PERS-S1 ;
-е%<cop%>%<past%>:екен V-PERS-S1 ;
-е%<cop%>%<neg%>%<past%>:емес% екен V-PERS-S1 ;
+е%<cop%>%<aor%>%<evid%>:екен V-PERS-S1 ;
+е%<cop%>%<neg%>%<aor%>%<evid%>:емес% екен V-PERS-S1 ;
 е%<cop%>%<ifi%>:е%>%{D%}%{I%} V-PERS-S2 ;
+
+е%<cop%>%<aor%>%<neg%>:емес V-PERS-S1 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -16262,7 +16263,6 @@ Witness:Witness NP-AL ; ! ""
 қосалқы:қосалқы A4 ; ! ""
 құқылы:құқылы A4 ; ! "" ! Use/MT
 қырлы:қырлы A4 ; ! ""
-қырлы:қырлы A4 ; ! ""
 қытайлық:қытайлық A4 ; ! "" FIXME adj / n I guess (some other nationalities here in A4 too)
 құрамдас:құрамдас A4 ; ! ""
 құрылымдық:құрылымдық A4 ; ! ""
@@ -16685,7 +16685,7 @@ Witness:Witness NP-AL ; ! ""
 тәуелді:тәуелді A2 ; ! ""
 тиесілі:тиесілі A2 ; ! ""
 тиісті:тиісті A2 ; ! ""
-толы:толы A2 ; ! ""
+толы:толы A1 ; ! "full" ! A1 not A2: has advl uses, e.g. "атын толы жазды"
 төзімді:төзімді A2 ; ! ""
 үстем:үстем A2 ; ! ""
 шағын:шағын A2 ; ! ""
@@ -16775,7 +16775,7 @@ Witness:Witness NP-AL ; ! ""
 дайым:дайым A1 ; ! ""
 дайын:дайын A3 ; ! "ready, ripe" ! A3 not A1 because no comparative or advl uses
 даяр:даяр A3 ; ! "ready"
-дара:дара A1 ; ! ""
+дара:дара A3 ; ! "separate" ! Probably A3 not A1 because no comp or advl?
 дауылды:дауылды A1 ; ! "stormy" !Use/MT
 дәмді:дәмді A1 ; ! "yummy"
 дәу:дәу A1 ; ! "giant"
@@ -16861,11 +16861,11 @@ Witness:Witness NP-AL ; ! ""
 қашық:қашық A1 ; ! "far"
 қиын:қиын A1 ; ! "difficult"
 қоғамдық:қоғамдық A3 ; ! "communal/societal" ! Probably A3 not A1
-қолайлы:қолайлы A1 ; ! ""
+қолайлы:қолайлы A1 ; ! "?"
 қоңыр:қоңыр A1 ; ! "dark brown?"
 қорқынышты:қорқынышты A1 ; ! ""
 қош:қош A3 ; ! "" A3 not A1?  CHECK
-қою:қою A1 ; ! "dark, deep, thick"
+қою:қою A2 ; ! "dark, deep, thick (of liquids)" ! FIXME: check gloss; probably A2 not A1: no advl use?
 қуанышты:қуанышты A1 ; ! "glad"
 қу:қу A1 ; ! "?crafty,сухой,высохший"
 құрама:құрама A1 ; ! "united,collected"
@@ -17172,8 +17172,6 @@ Witness:Witness NP-AL ; ! ""
 !археологиялық:археологиялық A1 ; !"Use/MT"
 архаика:архаика A1 ; !"Use/MT"
 архивтік:архивтік A1 ; !"Use/MT"
-даулы:даулы A1 ; !"Use/MT"
-даулы:даулы A1 ; !"Use/MT"
 аридтік:аридтік A1 ; !"Use/MT"
 аристократтық:аристократтық A1 ; !"Use/MT"
 бронды:бронды A1 ; !"Use/MT"
@@ -17323,7 +17321,6 @@ coercive:coercive A1 ; !"Use/MT"
 сансыз:сансыз A1 ; !"Use/MT"
 ер:ер A1 ; !"Use/MT"
 қорқақ:қорқақ A1 ; !"Use/MT"
-ықтимал:ықтимал A1 ; !"Use/MT"
 кубтық:кубтық A1 ; !"Use/MT"
 аспаздық:аспаздық A1 ; !"Use/MT"
 ебдейсіз:ебдейсіз A1 ; !"Use/MT"
@@ -17499,7 +17496,6 @@ coercive:coercive A1 ; !"Use/MT"
 жылтырақ:жылтырақ A1 ; !"Use/MT"
 айтулы:айтулы A1 ; !"Use/MT"
 жылтыраған:жылтыраған A1 ; !"Use/MT"
-жүйелі:жүйелі A1 ; !"Use/MT"
 игілікті:игілікті A1 ; !"Use/MT"
 майлылау:майлылау A1 ; !"Use/MT"
 қызғаншақ:қызғаншақ A1 ; !"Use/MT"
@@ -17753,7 +17749,6 @@ coercive:coercive A1 ; !"Use/MT"
 кроатиялық:кроатиялық A1 ; !"Use/MT"
 қуанышты:қуанышты A1 ; !"Use/MT"
 Кубалық:кубалық A1 ; !"Use/MT"
-қырлы:қырлы A1 ; !"Use/MT"
 қысылшаң:қысылшаң A1 ; !"Use/MT"
 латиндік:латиндік A1 ; !"Use/MT"
 максимум:максимум A1 ; !"Use/MT"
