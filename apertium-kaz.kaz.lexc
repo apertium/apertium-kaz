@@ -600,9 +600,15 @@ LEXICON GENERAL-POSSESSIVE-ETC
 ! to the abessive SIZ can appear after possessves, that would require
 ! duplicating possessives as well.
 !------------------------------------------------------------------------------!
+! try нікілер?  -JNW
 
-%<px%>:%>%{N%}ікі%{n%} CASES ;
-%<px%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
+!gen.subst part was:
+!%<px%>:%>%{N%}ікі%{n%} CASES ;
+!%<px%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
+
+%<gen%>%<subst%>:%>%{N%}ікі%{n%} CASES ;
+%<gen%>%<subst%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
+
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
