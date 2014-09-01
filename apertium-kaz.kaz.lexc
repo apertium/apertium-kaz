@@ -1409,6 +1409,12 @@ LEXICON N6
 N1 ;  ! Dir/LR     ! We want to analyse forms without %{і%}, since they're used
                    ! but "properly" we want to generate forms with %{і%}
 
+LEXICON N-INFL-NKI
+
+%<n%>:%{I%}н KI ; ! Dir/LR - common variant in both Kazakh and Kyrgyz
+%<n%>:%{I%}ң KI ; 
+%<n%>: FULL-NOMINAL-INFLEXTION ;
+
 
 !LEXICON NAT
 ! Nationalites
@@ -4876,19 +4882,21 @@ IC:IC%{э%}%{с%} N1 ; ! "индекс-каталог"
 ! Nouns used as postpositions when <posssessive><case>
 ! ====================================================
 
-алд:ал%{д%} N1 ; ! "front"
+алд:ал%{д%} N-INFL-NKI ; ! "front"
+арт:арт N-INFL-NKI ; ! "back"
+аст:аст N-INFL-NKI ; ! "under"
+аст:ас%{т%} N-INFL-NKI ; ! "down side"
+үст:үст N-INFL-NKI ; ! "top"
+орта:орта N-INFL-NKI ; ! "middle"
+
 ара:ара N1 ; ! "among"
 арқа:арқа N1 ; ! "back"
-арт:арт N1 ; ! "back"
-аст:ас%{т%} N1 ; ! "down side"
-аст:аст N1 ; ! "under"
 бой:бой N1 ; ! ""
 жан:жан N1 ; ! "next to"
 қас:қас N1 ; ! "across from"
 орн:орн N1 ; ! "according to"
 тарап:тарап%{с%} N1 ; ! ""
 тұс:тұс N1 ; ! "~near"
-үст:үст N1 ; ! "top"
 
 ! Nationalities
 ! =============
