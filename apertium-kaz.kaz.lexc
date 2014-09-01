@@ -62,7 +62,7 @@
 %<px1pl%>     ! First person plural
 %<px2pl%>     ! Second person plural
 %<px3pl%>     ! Third person plural (for reflexive)
-%<px%>        ! General possessive          !# -нікі
+%<px%>        ! General possessive          !# -нікі  ! now gen.subst
 
 ! Cases
 %<nom%>       ! Nominative
@@ -813,7 +813,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
-%<px%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ;
+%<gen%>%<subst%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
@@ -1014,7 +1014,7 @@ LEXICON PRON-P12SG-CASES
 %<abl%>:енен CLITICS-NO-COP ;
 %<loc%>:енде CLITICS-NO-COP ;
 %<ins%>:енімен CLITICS-NO-COP ;
-%<px%>:енікі%{n%} CASES ;
+%<gen%>%<subst%>:енікі%{n%} CASES ;
 %<loc%>:ендегі ATTR-SUBST ;
 %<sim%>:ендей CLITICS-NO-COP ;
 %<adv%>:еніңше CLITICS-NO-COP ;
@@ -1029,7 +1029,7 @@ LEXICON PRON-P3SG-CASES
 %<abl%>:дан CLITICS-NO-COP ;
 %<loc%>:нда CLITICS-NO-COP ;
 %<ins%>:нымен CLITICS-NO-COP ;
-%<px%>:нікі%{n%} CASES ;
+%<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:ндағы ATTR-SUBST ;
 %<sim%>:ндай CLITICS-NO-COP ;
 %<adv%>:ныңша CLITICS-NO-COP ;
@@ -1078,7 +1078,7 @@ LEXICON PRON-DEM-INFL
 %<abl%>:дан CLITICS-INCL-COP ;
 %<abl%>:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
 %<loc%>:нда CLITICS-INCL-COP ;
-%<px%>:нікі%{n%} CASES ;
+%<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:ндагы ATTR-SUBST ;
 %<sim%>:ндай CASES ;  ! FIXME: should have <det>, etc.
 %<adv%>:лай CLITICS-INCL-COP ;
@@ -1117,7 +1117,7 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCL-COP ; ! Dir/LR
 бұл%<prn%>%<dem%>%<ins%>:бұнымен CLITICS-NO-COP ;
 бұл%<prn%>%<dem%>%<ins%>:мұнымен CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
+бұл%<prn%>%<dem%>%<gen%>%<subst%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR-SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
 бұл%<prn%>%<dem%>%<sim%>:мұндай CASES ;
@@ -1160,7 +1160,7 @@ LEXICON PRON-DEM-ANA
 %<abl%>:дан CLITICS-INCL-COP ;
 %<loc%>:да CLITICS-INCL-COP ;
 %<ins%>:мен CLITICS-NO-COP ;
-%<px%>:нікі%{n%} CASES ;
+%<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:дағы ATTR-SUBST ;
 %<sim%>:дай CASES ;
 !%<adv%>:лай CLITICS-INCL-COP ;
