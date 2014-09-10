@@ -118,6 +118,7 @@
 !! Mood
 %<imp%>       ! Imperative
 %<opt%>       ! Optative/jussive
+%<evid%>      ! Evidential, a.k.a. "indirect" / non-eyewitness / hearsay
 
 !! Derivation
 %<caus%>      ! Causative
@@ -863,7 +864,10 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<aor%>:%>%{E%} V-PERS-AOR ;
 %<past%>:%>%{G%}%{A%}н V-PERS-S1 ; ! Dir/LR
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; ! Dir/LR
-%<ifi_evid%>:%>%{I%}п V-PERS-IFI_EVID ;
+
+%<aor%>%<evid%>:%>%{E%}д%{I%}% екен V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
+%<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-S1 ;   ! барған екенмін / бармаған екенмін
+%<ifi%>%<evid%>:%>%{I%}п V-PERS-IFI_EVID ;         ! барыппын / бармаппын
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
