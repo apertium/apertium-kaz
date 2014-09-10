@@ -1021,11 +1021,14 @@ SELECT Pron-Pers IF
 # OUTPUT: ^Ол/ол<det><dem>/ол<prn><dem><nom>/ол<prn><pers><p3><sg><nom>$
 #         ^әдемі/әдемі<adj>/әдемі<adj><advl>/әдемі<adj><subst><nom>$
 #         [0]^қыз/қыз<n><nom>+е<cop><p3><sg>$^./.<sent>$
- SELECT SUB:1 Sg IF
+ 
+SELECT SUB:1 Sg IF
         (-1* ("<Ол>"i) OR ("<Олар>"i))
         (0/1 Cop)
         (0/1 P3)
 ;
+
+
 #kaz-eng
 # FIXME doesn't work yet
 
