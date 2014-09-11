@@ -503,6 +503,11 @@ CLIT-QST ;
 CLIT-MODASS ;
 CLIT-GHANA-ETC ;
 
+LEXICON CLITICS-NO-COP-NO-QST
+
+CLIT-MODASS ;
+CLIT-GHANA-ETC ;
+
 LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
                                  ! (and only after some cases).
 CLITICS-NO-COP ;
@@ -721,6 +726,7 @@ LEXICON V-ADJ
 LEXICON V-PERS-S1-NO3PERSON
 
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
+%<p1%>%<sg%>:%>м CLITICS-NO-COP ;                ! Dir/LR
 %<p2%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
 %<p1%>%<pl%>:%>%{M%}%{I%}з CLITICS-NO-COP ;
 %<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
@@ -756,11 +762,10 @@ LEXICON V-PERS-AOR
 ! NOTE that: Алма театрға бара<aor><p3><sg> ма? – Алма в театр идёт?
 
 V-PERS-S1-NO3PERSON ;
-%<p1%>%<sg%>:%>м CLITICS-NO-COP ;                    ! Dir/LR
-%<p3%>%<sg%>:%>д%{I%} CLITICS-NO-COP ;   ! Dir/LR
-%<p3%>%<sg%>: CLIT-QST-MA ;              
-%<p3%>%<pl%>:%>д%{I%} CLITICS-NO-COP ;   ! Dir/LR
-%<p3%>%<pl%>: CLIT-QST-MA ;              
+%<p3%>%<sg%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+%<p3%>%<sg%>: CLIT-QST ;                 ! Dir/LR
+%<p3%>%<pl%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+%<p3%>%<pl%>: CLIT-QST ;                 ! Dir/LR
 
 LEXICON V-PERS-IFI_EVID
 
