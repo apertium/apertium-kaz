@@ -133,6 +133,7 @@
 %<ifi_evid%>  ! -{I}пт{I}
 %<fut%>       ! -{I}р
 %<fut_plan%>  ! -{M}{A}{K}
+%<pih%>       ! -{E}тін       ! ~past imperfect ~"used to"
 
 !! Non-Finite verb forms
 
@@ -859,17 +860,18 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 %<neg%>%<fut_plan%>:%>%{M%}%{A%}%{K%}% емес V-PERS-S1 ;
 
 %<past%>:%>%{G%}%{A%}н V-PERS-S1 ;
-%<neg%>%<past%>:%>%{G%}%{A%}н% емес V-PERS-S1 ;
+%<neg%>%<past%>:%>%{G%}%{A%}н% емес V-PERS-S1 ;  ! more colloquial than regular negative
 
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
-%<neg%>%<ifi%>:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;
+%<neg%>%<ifi%>:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;    ! more colloquail than regular negative
 
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%} V-PERS-AOR ;
-%<past%>:%>%{G%}%{A%}н V-PERS-S1 ; ! Dir/LR
-%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ; ! Dir/LR
+%<past%>:%>%{G%}%{A%}н V-PERS-S1 ;      ! Dir/LR - see irregular forms above
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;        ! Dir/LR - see irregular forms above
+%<pih%>:%>%{E%}т%{I%}н V-PERS-S1 ;
 
 %<aor%>%<evid%>:%>%{E%}д%{I%}% екен V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
 %<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-S1 ;   ! барған екенмін / бармаған екенмін
