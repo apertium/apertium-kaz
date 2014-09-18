@@ -254,6 +254,8 @@
 
 %{а%}         ! Archiphoneme for back vowel numerals/abbreviation
 %{э%}         ! Archiphoneme for front vowel numerals/abbreviation
+%{ә%}         ! Surfaces as ә, but:
+              ! triggers front harmony for {I} and back harmony for {A}
 
 %{й%}         !
 %{л%}         !
@@ -1389,6 +1391,12 @@ LEXICON N1
 
 %<n%>%<attr%>: # ;
 %<n%>: FULL-NOMINAL-INFLECTION ;
+
+LEXICON N1-Ә
+
+:%{ә%} N1 ;            ! generate front for {I} and back for {A}
+:ә%{ъ%} N1 ;  ! Dir/LR ! analyse all back forms
+:ә N1 ;       ! Dir/LR ! analyse all front forms
 
 LEXICON N-COMPOUND-PX-COMMON
 
@@ -3143,8 +3151,7 @@ XXI NUM-ROMAN ; ! ""
 кит:кит N1 ; ! ""
 кілем:кілем N1 ; ! "carpet"
 кілт:кілт N1 ; ! "key"
-кінә:кінә%{ъ%} N1 ; ! "guilt"
-кінә:кінә N1 ; ! "guilt" ! Dir/LR
+кінә:кін N1-Ә ; ! "guilt"
 кірпік:кірпік N1 ; ! "eyelash"
 кіс:кіс N1 ; ! "stoat"
 кісі:кісі N1 ; ! "man,person"
@@ -3256,8 +3263,7 @@ XXI NUM-ROMAN ; ! ""
 кристалл:кристалл N1 ; ! ""
 критерий:критерий N1 ; ! ""
 куәгер:куәгер N1 ; ! ""
-куә:куә%{ъ%} N1 ; ! "witness"
-куә:куә N1 ; ! "witness" ! Dir/LR
+куә:ку N1-Ә ; ! "witness"
 куәлік:куәлік N1 ; ! "certificate"
 кубок:кубок N1 ; ! ""
 кулон:кулон N1 ; ! ""
@@ -3279,8 +3285,7 @@ XXI NUM-ROMAN ; ! ""
 күмән:күмән N1 ; ! ""
 күміс:күміс N1 ; ! ""
 күнәкар:күнәкар N1 ; ! ""
-күнә:күнә%{ъ%} N1 ; ! "sin"
-күнә:күнә N1 ; ! "sin" ! Dir/LR
+күнә:күн N1-Ә ; ! "sin"
 күндік:күндік N1 ; ! ""
 күнкөріс:күнкөріс N1 ; ! ""
 күн:күн N1 ; ! "day,sun"
