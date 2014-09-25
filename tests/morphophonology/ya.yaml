@@ -1,0 +1,15 @@
+Config:
+  hfst:
+    App: hfst-lookup
+    Gen: ../../kaz.autogen.hfst
+    Morph: ../../kaz.automorf.hfst
+
+Tests:
+  "[twol] aorist with я":
+    құй<v><tv><aor><p3><sg> : құяды
+    құй<v><tv><aor><p1><sg> : құямын
+
+  "[twol] future with я":
+    құй<v><tv><gpr_fut><acc> : құярды
+    құй<v><tv><fut><p1><sg> : құярмын
+
