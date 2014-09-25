@@ -279,7 +279,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{A%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
                   [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
         except
-                                     :Vow %>: _ ;
+                            [ :Vow - :и ] %>: _ ;
 
 !"E front vowel harmony after и"
 !%{E%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
@@ -288,19 +288,18 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{E%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
                   [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
 
-
 !!!!!!!!!!!!   й vowel harmony  !!!!!!!!!!
 
 "Vowel harmony for archiphoneme {A} after й and и"
 %{A%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
-        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я )
-        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ю  у )
+        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я  я )
+        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ұ  ю  у )
                matched ;
 
 "Vowel harmony for archiphoneme {E} after й" ! should be just like {A}
 %{E%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
-        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я )
-        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ю  у )
+        where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я  я )
+        LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ұ  ю  у )
               matched ;
 
 "Deletion of й before yoticised vowels when not earlier in a stem"
@@ -357,7 +356,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!! Disappearing stuff !!!!
 
 "Deletion of {A} directly after vowel"
-%{A%}:0 <=> :Vow %>: _ ;
+%{A%}:0 <=> [ :Vow - :и ] %>: _ ;
 
 "Deletion of ы before у"
 ы:0 <=> _ :у/[ %>: | :0 ] ;
