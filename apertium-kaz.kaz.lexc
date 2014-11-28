@@ -220,6 +220,8 @@
               !# -ғой/-қой
 %<mod%>       ! Other modal words (шығар, сияқты etc)
 
+%<unk%>       ! For foreign tokens
+
 ! Punctuation
 %<sent%>      ! Sentence marker
 %<guio%>      ! Hyphen
@@ -302,6 +304,7 @@ Interjections ;
 Ideophones ;
 Abbreviations ;
 Punctuation ;
+Guesser ;
 Digits ; ! Use/Circ
 
 !==============================================================================!
@@ -1581,9 +1584,9 @@ LEXICON NUM-ROMAN
 
 %<num%>%<ord%>: # ;
 
-LEXICON DIGITLEX
-
-%<num%>: # ;
+!LEXICON DIGITLEX
+!
+!%<num%>: # ;
 
 LEXICON POST
 
@@ -22135,4 +22138,40 @@ LASTDIGIT-REST ; ! Use/Circ
 !LEXICON Guesser
 !
 !<(а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н | ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы | ъ | э | ю | я)+> N1 ; 
+
+LEXICON NP-UNK 
+
+%<np%>%<unk%>: # ;
+
+LEXICON GUESS-QUEUE
+
+<(a | b | c | d | e | f | g | h | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z)+> NP-UNK ;
+
+LEXICON Guesser
+
+A:A GUESS-QUEUE ; 
+B:B GUESS-QUEUE ; 
+C:C GUESS-QUEUE ; 
+D:D GUESS-QUEUE ; 
+E:E GUESS-QUEUE ; 
+F:F GUESS-QUEUE ; 
+G:G GUESS-QUEUE ; 
+H:H GUESS-QUEUE ; 
+J:J GUESS-QUEUE ; 
+K:K GUESS-QUEUE ; 
+L:L GUESS-QUEUE ; 
+M:M GUESS-QUEUE ; 
+N:N GUESS-QUEUE ; 
+O:O GUESS-QUEUE ; 
+P:P GUESS-QUEUE ; 
+Q:Q GUESS-QUEUE ; 
+R:R GUESS-QUEUE ; 
+S:S GUESS-QUEUE ; 
+T:T GUESS-QUEUE ; 
+U:U GUESS-QUEUE ; 
+V:V GUESS-QUEUE ; 
+W:W GUESS-QUEUE ; 
+X:X GUESS-QUEUE ; 
+Y:Y GUESS-QUEUE ; 
+Z:Z GUESS-QUEUE ; 
 
