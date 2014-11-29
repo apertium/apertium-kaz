@@ -1066,3 +1066,12 @@ REMOVE Adv IF
  	(-1 NOMINAL)
 	(1 NOMINAL)
 ;
+
+#for choosing "астында" as n.px3sp.loc
+
+SELECT  N IF
+        (-1 N)
+        (0 (n.*.loc) OR Adv)
+       
+;
+
