@@ -2430,7 +2430,7 @@
 	"чемпионат" n px3sp loc +е cop aor p3 pl
 	"чемпионат" n px3sp loc +е cop aor p3 sg
 "<осыншама>"
-	"осыншама" ukjent <Correct!>
+	"осыншама" det dem <Correct!>
 "<голдың>"
 	"гол" n gen <Correct!>
 "<авторы>"
@@ -2625,7 +2625,7 @@
 "<«>"
 	"«" lquot <Correct!>
 "<А>"
-	"А" ukjent <Correct!>
+	"А" n nom <Correct!>
 "<»>"
 	"»" rquot <Correct!>
 "<тобында>"
@@ -3412,8 +3412,13 @@
 	"жалға" v tv coop prc_perf
 	"жалғас" v iv gna_perf
 	"жалғас" v iv prc_perf <Correct!>
-"<келеді деуге>"
-	"келеді деуге" ukjent <Correct!>
+"<келеді>"
+	"кел" vaux aor p3 pl
+	"кел" vaux aor p3 sg
+	"кел" v iv aor p3 pl
+	"кел" v iv aor p3 sg
+"<деуге>"
+	"де" v tv ger dat
 "<болады>"
 	"бол" v iv aor p3 pl
 	"бол" v iv aor p3 sg
@@ -3440,8 +3445,18 @@
 	"көне" adj subst nom
 	"көне" adj subst nom +е cop aor p3 pl
 	"көне" adj subst nom +е cop aor p3 sg
-"<зерттеулер мен>"
-	"зерттеулер мен" ukjent <Correct!>
+"<зерттеулер>"
+	"зертте" v iv ger pl nom
+	"зертте" v tv ger pl nom
+	"зерттеу" n pl nom
+	"зерттеу" n pl nom
+		"е" cop aor p3 pl
+	"зерттеу" n pl nom
+		"е" cop aor p3 sg
+"<мен>"
+	"мен" prn pers p1 sg nom
+	"мен" cnjcoo
+	"мен" post
 "<қазіргі>"
 	"қазір" adv attr <Correct!>
 "<жаңа>"
@@ -3478,8 +3493,18 @@
 	"он" num subst px2sg nom
 	"он" num subst px2sg nom +е cop aor p3 pl
 	"он" num subst px2sg nom +е cop aor p3 sg
-"<жағалауының даму>"
-	"жағалауының даму" ukjent <Correct!>
+"<жағалауының>"
+	"жағала" v iv ger px3sp gen
+	"жағалау" n px3sp gen
+"<даму>"
+	"дам" v iv ger nom
+	"дамы" v iv ger nom
+	"даму" n nom
+	"даму" n attr
+	"даму" n nom
+		"е" cop aor p3 pl
+	"даму" n nom
+		"е" cop aor p3 sg
 "<эволюциясын>"
 	"эволюция" n px3sp acc <Correct!>
 "<,>"
@@ -3704,8 +3729,23 @@
 	"пішін" n px3sp nom <Correct!>
 	"пішін" n px3sp nom +е cop aor p3 pl
 	"пішін" n px3sp nom +е cop aor p3 sg
-"<туралы мағлұмат>"
-	"туралы мағлұмат" ukjent <Correct!>
+"<туралы>"
+	"туралы" post
+	"тура" adj subst
+		"лы" post
+	"туралы" n nom
+	"туралы" n attr
+	"туралы" n nom
+		"е" cop aor p3 pl
+	"туралы" n nom
+		"е" cop aor p3 sg
+"<мағлұмат>"
+	"мағлұмат" n nom
+	"мағлұмат" n attr
+	"мағлұмат" n nom
+		"е" cop aor p3 pl
+	"мағлұмат" n nom
+		"е" cop aor p3 sg
 "<алуға>"
 	"ал" v tv ger dat <Correct!>
 	"ал" vaux ger dat
@@ -4070,8 +4110,32 @@
 
 "<Өйткені>"
 	"Өйткені" cnjsub <Correct!>
-"<оның батыс>"
-	"оның батыс" ukjent <Correct!>
+"<оның>"
+	"ол" prn dem gen
+	"ол" prn pers p3 sg gen
+	"он" num subst px2sg nom
+	"он" num subst px2sg nom
+		"е" cop aor p3 pl
+	"он" num subst px2sg nom
+		"е" cop aor p3 sg
+"<батыс>"
+	"батыс" adj
+	"батыс" n nom
+	"батыс" n attr
+	"батыс" adj subst nom
+	"бат" v iv coop imp p2 sg
+	"батыс" adj
+		"е" cop aor p3 pl
+	"батыс" adj
+		"е" cop aor p3 sg
+	"батыс" n nom
+		"е" cop aor p3 pl
+	"батыс" n nom
+		"е" cop aor p3 sg
+	"батыс" adj subst nom
+		"е" cop aor p3 pl
+	"батыс" adj subst nom
+		"е" cop aor p3 sg
 "<жағалауы>"
 	"жағала" v iv ger px3sp nom
 	"жағалау" n px3sp nom <Correct!>
@@ -4278,7 +4342,8 @@
 	"өзен" n pl nom +е cop aor p3 pl
 	"өзен" n pl nom +е cop aor p3 sg
 "<құяды>"
-	"құяды" ukjent <Correct!>
+	"құй" v tv aor p3 pl
+	"құй" v tv aor p3 sg
 "<»>"
 	"»" rquot <Correct!>
 "<.>"
@@ -4338,8 +4403,21 @@
 	"Худуд-ал Алам" np al nom <Correct!>
 	"Худуд-ал Алам" np al nom +е cop aor p3 pl
 	"Худуд-ал Алам" np al nom +е cop aor p3 sg
-"<шығыстан батысқа>"
-	"шығыстан батысқа" ukjent <Correct!>
+"<шығыстан>"
+	"шығыс" n abl
+	"шығыс" adj subst abl
+	"шығыс" n abl
+		"е" cop aor p3 pl
+	"шығыс" n abl
+		"е" cop aor p3 sg
+	"шығыс" adj subst abl
+		"е" cop aor p3 pl
+	"шығыс" adj subst abl
+		"е" cop aor p3 sg
+"<батысқа>"
+	"батыс" n dat
+	"батыс" adj subst dat
+	"батысқа" adv
 "<дейінгі>"
 	"дейінгі" adj <Correct!>
 "<әлем>"
@@ -4886,8 +4964,21 @@
 "<мен>"
 	"мен" post <Correct!>
 	"мен" prn pers p1 sg nom
-"<Арал маңын>"
-	"Арал маңын" ukjent <Correct!>
+"<Арал>"
+	"Арал" n nom
+	"Арал" n attr
+	"Арал" np top nom
+	"Арал" np top attr
+	"Арал" n nom
+		"е" cop aor p3 pl
+	"Арал" n nom
+		"е" cop aor p3 sg
+	"Арал" np top nom
+		"е" cop aor p3 pl
+	"Арал" np top nom
+		"е" cop aor p3 sg
+"<маңын>"
+	"маң" n px3sp acc
 "<зерттеуге>"
 	"зертте" v iv ger dat
 	"зертте" v tv ger dat <Correct!>
@@ -5235,8 +5326,16 @@
 	"жер" n loc +е cop aor p3 sg
 "<бірнеше>"
 	"бірнеше" det qnt <Correct!>
-"<көлік пен>"
-	"көлік пен" ukjent <Correct!>
+"<көлік>"
+	"көлік" n nom
+	"көлік" n attr
+	"көлік" n nom
+		"е" cop aor p3 pl
+	"көлік" n nom
+		"е" cop aor p3 sg
+"<пен>"
+	"мен" cnjcoo
+	"мен" post
 "<автобус>"
 	"автобус" n attr
 	"автобус" n nom <Correct!>
@@ -5357,7 +5456,7 @@
 	"Ақжанат" np ant m nom +е cop aor p3 pl
 	"Ақжанат" np ant m nom +е cop aor p3 sg
 "<Әминовтің>"
-	"Әминовтің" ukjent <Correct!>
+	"Әминов" np cog m gen <Correct!>
 "<үстінен>"
 	"үст" n px3sp abl <Correct!>
 	"үст" n px3sp abl +е cop aor p3 pl
@@ -5439,8 +5538,18 @@
 	"келесі" adj subst nom
 	"келесі" adj subst nom +е cop aor p3 pl
 	"келесі" adj subst nom +е cop aor p3 sg
-"<дүйсенбіге дейін>"
-	"дүйсенбіге дейін" ukjent <Correct!>
+"<дүйсенбіге>"
+	"дүйсенбі" n dat
+"<дейін>"
+	"де" v tv opt p1 sg
+	"дейін" post
+	"дейін" adv
+	"дейін" n nom
+	"дейін" n attr
+	"дейін" n nom
+		"е" cop aor p3 pl
+	"дейін" n nom
+		"е" cop aor p3 sg
 "<сотқа>"
 	"сот" n dat <Correct!>
 "<қатыса>"
@@ -5696,7 +5805,7 @@
 	"711" num <Correct!>
 	"711" num subst nom
 "<украиндық>"
-	"украиндық" ukjent <Correct!>
+	"украиндық" adj <Correct!>
 "<қол>"
 	"қол" n attr
 	"қол" n nom <Correct!>
@@ -6102,8 +6211,15 @@
 	"он" num subst px3sp nom
 	"он" num subst px3sp nom +е cop aor p3 pl
 	"он" num subst px3sp nom +е cop aor p3 sg
-"<атып тастаған>"
-	"атып тастаған" ukjent <Correct!>
+"<атып>"
+	"ат" v tv prc_perf
+	"ат" v tv gna_perf
+"<тастаған>"
+	"таста" v tv gpr_past
+	"таста" v tv ger_past nom
+	"таста" v tv past p3 pl
+	"таста" v tv past p3 sg
+	"таста" v tv gpr_past subst nom
 "<.>"
 	"." sent <Correct!>
 
@@ -6187,8 +6303,14 @@
 "<қашып>"
 	"қаш" v iv gna_perf
 	"қаш" v iv prc_perf <Correct!>
-"<кетті деп>"
-	"кетті деп" ukjent <Correct!>
+"<кетті>"
+	"кет" vaux ifi p3 pl
+	"кет" vaux ifi p3 sg
+	"кет" v iv ifi p3 pl
+	"кет" v iv ifi p3 sg
+"<деп>"
+	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<хабарланған>"
 	"хабарла" v tv pass ger_past nom
 	"хабарла" v tv pass gpr_past
@@ -6486,8 +6608,14 @@
 	"Тамыз" n nom
 	"Тамыз" n nom +е cop aor p3 pl
 	"Тамыз" n nom +е cop aor p3 sg
-"<айының басынан>"
-	"айының басынан" ukjent <Correct!>
+"<айының>"
+	"ай" n px3sp gen
+"<басынан>"
+	"бас" n px3sp abl
+	"бас" n px3sp abl
+		"е" cop aor p3 pl
+	"бас" n px3sp abl
+		"е" cop aor p3 sg
 "<бері>"
 	"бері" adv
 	"бері" post <Correct!>
@@ -6516,8 +6644,10 @@
 "<.>"
 	"." sent <Correct!>
 
-"<Ауғанстанның Бамиан>"
-	"Ауғанстанның Бамиан" ukjent <Correct!>
+"<Ауғанстанның>"
+	"Ауғанстан" np top gen
+"<Бамиан>"
+	"Бамиан" ukjent 
 "<уәлаятында>"
 	"уәлаят" n px3sp loc <Correct!>
 	"уәлаят" n px3sp loc +е cop aor p3 pl
@@ -6757,9 +6887,9 @@
 	"ресейлік" n nom +е cop aor p3 pl
 	"ресейлік" n nom +е cop aor p3 sg
 "<Pussy>"
-	"Pussy" ukjent <Correct!>
+	"Pussy" np unk <Correct!>
 "<Riot>"
-	"Riot" ukjent <Correct!>
+	"Riot" np unk <Correct!>
 "<панк>"
 	"панк" n attr <Correct!>
 	"панк" n nom
@@ -6862,8 +6992,19 @@
 "<Осы>"
 	"Осы" det dem <Correct!>
 	"Осы" prn dem nom
-"<аптаның басында>"
-	"аптаның басында" ukjent <Correct!>
+"<аптаның>"
+	"апта" n gen
+"<басында>"
+	"бас" n px3sp loc
+	"басын" n loc
+	"бас" n px3sp loc
+		"е" cop aor p3 pl
+	"бас" n px3sp loc
+		"е" cop aor p3 sg
+	"басын" n loc
+		"е" cop aor p3 pl
+	"басын" n loc
+		"е" cop aor p3 sg
 "<Эквадор>"
 	"Эквадор" np top attr <Correct!>
 	"Эквадор" np top nom
@@ -6910,7 +7051,7 @@
 	"Швеция" np top nom +е cop aor p3 pl
 	"Швеция" np top nom +е cop aor p3 sg
 "<Ассанжды>"
-	"Ассанжды" ukjent <Correct!>
+	"Ассанж" np cog mf acc <Correct!>
 "<аталған>"
 	"ата" v tv pass ger_past nom
 	"ата" v tv pass gpr_past <Correct!>
@@ -7028,8 +7169,12 @@
 	"теңізші" n pl px3sp nom <Correct!>
 	"теңізші" n pl px3sp nom +е cop aor p3 pl
 	"теңізші" n pl px3sp nom +е cop aor p3 sg
-"<мен белсендіні>"
-	"мен белсендіні" ukjent <Correct!>
+"<мен>"
+	"мен" prn pers p1 sg nom
+	"мен" cnjcoo
+	"мен" post
+"<белсендіні>"
+	"белсенді" adj subst acc
 "<елден>"
 	"ел" n abl <Correct!>
 	"ел" n abl +е cop aor p3 pl
@@ -7072,8 +7217,27 @@
 "<Қытайдың>"
 	"Қытай" n gen <Correct!>
 	"Қытай" np top gen
-"<арасындағы даулы>"
-	"арасындағы даулы" ukjent <Correct!>
+"<арасындағы>"
+	"ара" n px3sp loc attr
+	"ара" adj subst px3sp loc attr
+	"ара" n px3sp loc subst nom
+	"ара" adj subst px3sp loc subst nom
+	"ара" n px3sp loc subst nom
+		"е" cop aor p3 pl
+	"ара" n px3sp loc subst nom
+		"е" cop aor p3 sg
+	"ара" adj subst px3sp loc subst nom
+		"е" cop aor p3 pl
+	"ара" adj subst px3sp loc subst nom
+		"е" cop aor p3 sg
+"<даулы>"
+	"даулы" adj
+	"дау" n
+		"лы" post
+	"даулы" adj
+		"е" cop aor p3 pl
+	"даулы" adj
+		"е" cop aor p3 sg
 "<арал>"
 	"арал" n attr
 	"арал" n nom
@@ -7121,7 +7285,7 @@
 "<,>"
 	"," cm <Correct!>
 "<иммиграциялық>"
-	"иммиграциялық" ukjent <Correct!>
+	"иммиграциялық" adj <Correct!>
 "<полицияға>"
 	"полиция" n dat <Correct!>
 "<тапсыратынын>"
@@ -7312,8 +7476,17 @@
 	"наурыз" n nom
 	"наурыз" n nom +е cop aor p3 pl
 	"наурыз" n nom +е cop aor p3 sg
-"<айынан бастап>"
-	"айынан бастап" ukjent <Correct!>
+"<айынан>"
+	"ай" n px3sp abl
+	"ай" n px3sp abl
+		"е" cop aor p3 pl
+	"ай" n px3sp abl
+		"е" cop aor p3 sg
+"<бастап>"
+	"баста" vaux prc_perf
+	"баста" vaux gna_perf
+	"баста" v tv prc_perf
+	"баста" v tv gna_perf
 "<салына>"
 	"сал" v tv pass prc_impf <Correct!>
 "<бастаған>"
@@ -7944,8 +8117,14 @@
 "<№45>"
 	"№45" num <Correct!>
 	"№45" num subst nom
-"<бұйрығымен бекітілген>"
-	"бұйрығымен бекітілген" ukjent <Correct!>
+"<бұйрығымен>"
+	"бұйрық" n px3sp ins
+"<бекітілген>"
+	"бекіт" v tv pass gpr_past
+	"бекіт" v tv pass ger_past nom
+	"бекіт" v tv pass past p3 pl
+	"бекіт" v tv pass past p3 sg
+	"бекіт" v tv pass gpr_past subst nom
 "<Қазақстан>"
 	"Қазақстан" np top attr <Correct!>
 	"Қазақстан" np top nom
@@ -8326,8 +8505,24 @@
 "<.>"
 	"." sent <Correct!>
 
-"<Республиканың барлық>"
-	"Республиканың барлық" ukjent <Correct!>
+"<Республиканың>"
+	"Республика" n gen
+"<барлық>"
+	"барлық" adj
+	"барлық" adv
+	"барлық" det qnt
+	"барлық" adj advl
+	"барлық" prn qnt nom
+	"барлық" adj subst nom
+	"барлық" v iv imp p2 sg
+	"барлық" adj
+		"е" cop aor p3 pl
+	"барлық" adj
+		"е" cop aor p3 sg
+	"барлық" adj subst nom
+		"е" cop aor p3 pl
+	"барлық" adj subst nom
+		"е" cop aor p3 sg
 "<аумағында>"
 	"аумақ" n px3sp loc <Correct!>
 	"аумақ" n px3sp loc +е cop aor p3 pl
@@ -8451,7 +8646,7 @@
 	"қала" n px3sp loc +е cop aor p3 pl
 	"қала" n px3sp loc +е cop aor p3 sg
 "<Н>"
-	"Н" ukjent <Correct!>
+	"Н" n nom <Correct!>
 "<.>"
 	"." sent <Correct!>
 "<Оңдасынов>"
@@ -8509,8 +8704,19 @@
 	"жұмыс" n px3sp nom <Correct!>
 	"жұмыс" n px3sp nom +е cop aor p3 pl
 	"жұмыс" n px3sp nom +е cop aor p3 sg
-"<тәжірибесінде мектеп>"
-	"тәжірибесінде мектеп" ukjent <Correct!>
+"<тәжірибесінде>"
+	"тәжірибе" n px3sp loc
+	"тәжірибе" n px3sp loc
+		"е" cop aor p3 pl
+	"тәжірибе" n px3sp loc
+		"е" cop aor p3 sg
+"<мектеп>"
+	"мектеп" n nom
+	"мектеп" n attr
+	"мектеп" n nom
+		"е" cop aor p3 pl
+	"мектеп" n nom
+		"е" cop aor p3 sg
 "<мұғалімдерінің>"
 	"мұғалім" n pl px3sp gen <Correct!>
 "<мұражайлармен>"
@@ -8546,8 +8752,10 @@
 	"мұражай" n nom
 	"мұражай" n nom +е cop aor p3 pl
 	"мұражай" n nom +е cop aor p3 sg
-"<сабағын дайындауда>"
-	"сабағын дайындауда" ukjent <Correct!>
+"<сабағын>"
+	"сабақ" n px3sp acc
+"<дайындауда>"
+	"дайында" v tv ger loc
 "<мұғалім>"
 	"мұғалім" n attr
 	"мұғалім" n nom <Correct!>
