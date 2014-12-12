@@ -1396,7 +1396,7 @@
 	"енді" adv <Correct!>
 "<ол>"
 	"ол" prn pers p3 sg nom
-	"ол" det dem
+	"ол" det dem <Correct!>
 	"ол" prn dem nom
 	"ол" prn dem nom +е cop aor p3 pl
 	"ол" prn dem nom +е cop aor p3 sg
@@ -1620,7 +1620,7 @@
 "<,>"
 	"," cm <Correct!>
 "<52>"
-	"52" num
+	"52" num <Correct!>
 	"52" num subst nom
 "<мың>"
 	"мың" num <Correct!>
@@ -2664,31 +2664,44 @@
 	"орын" n loc +е cop aor p3 sg
 	"орында" v tv imp p2 sg
 "<болған>"
-	"бол" v iv ger_past nom
-	"бол" v iv gpr_past
-	"бол" v iv gpr_past subst nom
-	"бол" v iv past p3 pl
-	"бол" v iv past p3 sg <Correct!>
-	"бол" vaux ger_past nom
 	"бол" vaux gpr_past
-	"бол" vaux gpr_past subst nom
+	"бол" v iv gpr_past <Correct!>
+	"бол" vaux ger_past nom
+	"бол" v iv ger_past nom
 	"бол" vaux past p3 pl
 	"бол" vaux past p3 sg
+	"бол" vaux gpr_past subst nom
+	"бол" v iv past p3 pl
+	"бол" v iv past p3 sg
+	"бол" v iv gpr_past subst nom
 "<болатын>"
-	"бол" v iv gpr_impf
-	"бол" v iv gpr_impf subst nom
 	"бол" vaux gpr_impf
+	"бол" v iv gpr_impf 
+	"бол" vaux pih p3 pl
+	"бол" vaux pih p3 sg <Correct!> 
 	"бол" vaux gpr_impf subst nom
+	"бол" v iv pih p3 pl
+	"бол" v iv pih p3 sg
+	"бол" v iv gpr_impf subst nom
 	"болат" n px3sp acc
 "<,>"
 	"," cm
 "<бірақ>"
-	"бірақ" cnjcoo
+	"бірақ" cnjcoo <Correct!>
 "<1960>"
-	"1960" num
+	"1960" num <Correct!>
 	"1960" num subst nom
-"<жылдардан бастап>"
-	"жылдардан бастап" ukjent
+"<жылдардан>"
+	"жыл" n pl abl <Correct!>
+	"жыл" n pl abl
+		"е" cop aor p3 pl
+	"жыл" n pl abl
+		"е" cop aor p3 sg
+"<бастап>"
+	"баста" vaux prc_perf
+	"баста" vaux gna_perf
+	"баста" v tv prc_perf
+	"баста" v tv gna_perf <Correct!>
 "<теңіздің>"
 	"теңіз" n gen
 "<суы>"
@@ -2725,7 +2738,7 @@
 	"." sent <Correct!>
 
 "<1200>"
-	"1200" num
+	"1200" num <Correct!>
 	"1200" num subst nom
 "<жыл>"
 	"жыл" n attr
@@ -2813,17 +2826,12 @@
 	"уақыт" n px3sp loc <Correct!>
 	"уақыт" n px3sp loc +е cop aor p3 pl
 	"уақыт" n px3sp loc +е cop aor p3 sg
-"<өмір>"
-	"өмір" n attr
-	"өмір" n nom <Correct!>
-	"өмір" n nom +е cop aor p3 pl
-	"өмір" n nom +е cop aor p3 sg
-"<сүрген>"
-	"сүр" v tv ger_past nom
-	"сүр" v tv gpr_past
-	"сүр" v tv gpr_past subst nom
-	"сүр" v tv past p3 pl
-	"сүр" v tv past p3 sg
+"<өмір сүрген>"
+	"өмір сүр" v iv gpr_past <Correct!>
+	"өмір сүр" v iv ger_past nom
+	"өмір сүр" v iv past p3 pl
+	"өмір сүр" v iv past p3 sg
+	"өмір сүр" v iv gpr_past subst nom
 "<қызыл>"
 	"қызыл" adj <Correct!>
 	"қызыл" adj advl
@@ -4146,13 +4154,27 @@
 	"ғасыр" n loc <Correct!>
 	"ғасыр" n loc +е cop aor p3 pl
 	"ғасыр" n loc +е cop aor p3 sg
-"<өмір>"
-	"өмір" n attr
-	"өмір" n nom <Correct!>
-	"өмір" n nom +е cop aor p3 pl
-	"өмір" n nom +е cop aor p3 sg
-"<сүрген белгісіз>"
-	"сүрген белгісіз" ukjent <Correct!>
+"<өмір сүрген>"
+	"өмір сүр" v iv gpr_past <Correct!>
+	"өмір сүр" v iv ger_past nom
+	"өмір сүр" v iv past p3 pl
+	"өмір сүр" v iv past p3 sg
+	"өмір сүр" v iv gpr_past subst nom
+"<белгісіз>"
+	"белгі" n nom
+		"е" cop aor p2 frm sg
+	"белгісіз" adj <Correct!>
+	"белгі" n
+		"сыз" post
+	"белгісіз" adj subst nom
+	"белгісіз" adj
+		"е" cop aor p3 pl
+	"белгісіз" adj
+		"е" cop aor p3 sg
+	"белгісіз" adj subst nom
+		"е" cop aor p3 pl
+	"белгісіз" adj subst nom
+		"е" cop aor p3 sg
 "<автордың>"
 	"автор" n gen <Correct!>
 "<парсы>"
@@ -4219,7 +4241,7 @@
 "<теңізінің>"
 	"теңіз" n px3sp gen <Correct!>
 "<сипаттамасы>"
-	"сипаттама" n px3sp nom
+	"сипаттама" n px3sp nom <Correct!>
 	"сипаттама" n px3sp nom +е cop aor p3 pl
 	"сипаттама" n px3sp nom +е cop aor p3 sg
 "<берілген>"
@@ -4359,7 +4381,7 @@
 "<,>"
 	"," cm <Correct!>
 "<жалпы>"
-	"жалпы" adj
+	"жалпы" adj <Correct!>
 	"жалпы" adj advl
 	"жалпы" adj subst nom
 	"жалпы" adj subst nom +е cop aor p3 pl
@@ -4401,7 +4423,7 @@
 
 "<Сондықтан>"
 	"Сол" prn dem reas abl
-	"Сондықтан" cnjadv
+	"Сондықтан" cnjadv <Correct!>
 "<бұл>"
 	"бұл" det dem <Correct!>
 	"бұл" prn dem nom
@@ -4425,11 +4447,22 @@
 	"теңіз" n px3sp nom +е cop aor p3 pl
 	"теңіз" n px3sp nom +е cop aor p3 sg
 "<жайлы>"
+	"жайлы" post <Correct!>
 	"жайлы" adj
+	"жай" n
+		"лы" post
+	"жай" adj subst
+		"лы" post
 	"жайлы" adj advl
 	"жайлы" adj subst nom
-	"жайлы" adj subst nom +е cop aor p3 pl
-	"жайлы" adj subst nom +е cop aor p3 sg
+	"жайлы" adj
+		"е" cop aor p3 pl
+	"жайлы" adj
+		"е" cop aor p3 sg
+	"жайлы" adj subst nom
+		"е" cop aor p3 pl
+	"жайлы" adj subst nom
+		"е" cop aor p3 sg
 "<нақты>"
 	"нақты" adj <Correct!>
 	"нақты" adj advl
@@ -6110,12 +6143,20 @@
 	"шығар" v tv prc_perf <Correct!>
 "<әкетуі>"
 	"алып кет" v tv ger px3sp nom
-	"әкет" v tv ger px3sp nom
+	"әкет" v tv ger px3sp nom <Correct!>
 "<мүмкін>"
-	"мүмкін" adj <Correct!>
+	"мүмкін" adj
+	"мүмкін" adv
+	"мүмкін" adj advl
 	"мүмкін" adj subst nom
-	"мүмкін" adj subst nom +е cop aor p3 pl
-	"мүмкін" adj subst nom +е cop aor p3 sg
+	"мүмкін" adj
+		"е" cop aor p3 pl
+	"мүмкін" adj
+		"е" cop aor p3 sg <Correct!>
+	"мүмкін" adj subst nom
+		"е" cop aor p3 pl
+	"мүмкін" adj subst nom
+		"е" cop aor p3 sg
 "<.>"
 	"." sent <Correct!>
 
@@ -6524,7 +6565,7 @@
 "<әкетпес>"
 	"алып кет" v tv neg gpr_fut
 	"алып кет" v tv neg gpr_fut subst nom
-	"әкет" v tv neg gpr_fut
+	"әкет" v tv neg gpr_fut <Correct!>
 	"әкет" v tv neg gpr_fut subst nom
 "<үшін>"
 	"үш" num subst px3sp acc
@@ -6654,12 +6695,20 @@
 "<іске>"
 	"іс" n dat <Correct!>
 "<қатысты>"
+	"қатыс" n acc
+	"қатысты" post <Correct!>
+	"қатысты" adj
+	"қатысты" adv
+	"қатыс" n
+		"лы" post
 	"қат" v iv coop ifi p3 pl
 	"қат" v iv coop ifi p3 sg
-	"қатыс" n acc
 	"қатыс" v iv ifi p3 pl
 	"қатыс" v iv ifi p3 sg
 	"қатысты" adj
+		"е" cop aor p3 pl
+	"қатысты" adj
+		"е" cop aor p3 sg
 "<ештеңе>"
 	"ештеңе" prn neg nom <Correct!>
 	"ештеңе" prn neg nom +е cop aor p3 pl
@@ -7911,10 +7960,43 @@
 	"арқылы" post <Correct!>
 "<немесе>"
 	"немесе" cnjcoo <Correct!>
-"<өзгеде>"
-	"өзге" adj subst loc
-	"өзге" adj subst loc +е cop aor p3 pl
-	"өзге" adj subst loc +е cop aor p3 sg
+"<өзге де>"
+	"өзге" adj <Correct!>
+		"да" cnjcoo
+	"өзге" adj
+		"да" postadv
+	"өзге" adj advl
+		"да" cnjcoo
+	"өзге" adj advl
+		"да" postadv
+	"өзге" adj subst nom
+		"да" cnjcoo
+	"өзге" adj subst nom
+		"да" postadv
+	"өзге" adj
+		"е" cop aor p3 pl
+			"да" cnjcoo
+	"өзге" adj
+		"е" cop aor p3 pl
+			"да" postadv
+	"өзге" adj
+		"е" cop aor p3 sg
+			"да" cnjcoo
+	"өзге" adj
+		"е" cop aor p3 sg
+			"да" postadv
+	"өзге" adj subst nom
+		"е" cop aor p3 pl
+			"да" cnjcoo
+	"өзге" adj subst nom
+		"е" cop aor p3 pl
+			"да" postadv
+	"өзге" adj subst nom
+		"е" cop aor p3 sg
+			"да" cnjcoo
+	"өзге" adj subst nom
+		"е" cop aor p3 sg
+			"да" postadv
 "<осындай>"
 	"осы" prn dem sim nom <Correct!>
 	"осы" prn dem sim nom +е cop aor p3 pl
@@ -8062,14 +8144,17 @@
 "<сонымен>"
 	"сол" prn dem ins <Correct!>
 "<қатар>"
+	"қат" v iv gpr_fut
+	"қатар" post <Correct!>
+	"қатар" n nom
+	"қатар" n attr
 	"қат" v iv fut p3 pl
 	"қат" v iv fut p3 sg
-	"қат" v iv gpr_fut
 	"қат" v iv gpr_fut subst nom
-	"қатар" n attr
 	"қатар" n nom
-	"қатар" n nom +е cop aor p3 pl
-	"қатар" n nom +е cop aor p3 sg
+		"е" cop aor p3 pl
+	"қатар" n nom
+		"е" cop aor p3 sg
 "<оқушыларға>"
 	"оқушы" n pl dat <Correct!>
 	"оқы" v iv gpr_pot subst pl dat
@@ -8129,8 +8214,15 @@
 	"орталық" n ins <Correct!>
 "<»>"
 	"»" rquot <Correct!>
-"<таныстыру мақсатында>"
-	"таныстыру мақсатында" ukjent <Correct!>
+"<таныстыру>"
+	"таныстыр" v tv ger nom <Correct!>
+"<мақсатында>"
+	"мақсат" n px3sp loc
+	"мақсатында" post <Correct!>
+	"мақсат" n px3sp loc
+		"е" cop aor p3 pl
+	"мақсат" n px3sp loc
+		"е" cop aor p3 sg
 "<ұйымдастырылған>"
 	"ұйымдастыр" v tv pass ger_past nom
 	"ұйымдастыр" v tv pass gpr_past <Correct!>
@@ -8138,7 +8230,7 @@
 	"ұйымдастыр" v tv pass past p3 pl
 	"ұйымдастыр" v tv pass past p3 sg
 "<оқушылар>"
-	"оқушы" n pl nom
+	"оқушы" n pl nom <Correct!>
 	"оқушы" n pl nom +е cop aor p3 pl
 	"оқушы" n pl nom +е cop aor p3 sg
 	"оқы" v iv gpr_pot subst pl nom
@@ -8998,7 +9090,7 @@
 	"жұм" v tv fut_plan p3 pl
 	"жұм" v tv fut_plan p3 sg
 	"жұм" v tv prc_fplan
-	"жұмбақ" n attr
+	"жұмбақ" n attr <Correct!>
 	"жұмбақ" n nom
 	"жұмбақ" n nom +е cop aor p3 pl
 	"жұмбақ" n nom +е cop aor p3 sg
@@ -9076,13 +9168,18 @@
 
 "<">"
 	""" sent <Correct!>
-"<Орта>"
-	"Орта" n attr <Correct!>
-	"Орта" n nom
-	"Орта" n nom +е cop aor p3 pl
-	"Орта" n nom +е cop aor p3 sg
-"<ғасырлық>"
-	"ғасырлық" adj <Correct!>
+"<Орта ғасырлық>"
+	"орта ғасырлық" adj <Correct!>
+	"орта ғасырлық" adj advl
+	"орта ғасырлық" adj subst nom
+	"орта ғасырлық" adj
+		"е" cop aor p3 pl
+	"орта ғасырлық" adj
+		"е" cop aor p3 sg
+	"орта ғасырлық" adj subst nom
+		"е" cop aor p3 pl
+	"орта ғасырлық" adj subst nom
+		"е" cop aor p3 sg
 "<Түркістан>"
 	"Түркістан" np top attr <Correct!>
 	"Түркістан" np top nom
