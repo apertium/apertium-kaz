@@ -16,7 +16,7 @@
 # USAGE: ./qa.sh cg
 
 CG="vislcg3 -t -g apertium-kaz.kaz.rlx"
-CORPUS="corpus/corpus.ana.txt"
+CORPUS="tests/cg/corpus.kaz.disambiguated.txt"
 CGOUT="/tmp/cgOut.txt"
 
 cat $CORPUS | $CG > $CGOUT
