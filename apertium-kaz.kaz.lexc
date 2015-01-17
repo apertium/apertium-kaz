@@ -1545,13 +1545,13 @@ LEXICON NP-PAT-VICH
 
 LEXICON NP-ORG
 
-%<np%>%<org%>%<nom%>: # ;
+%<np%>%<org%>%<nom%>: CLITICS-INCL-COP ;
 %<np%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ;
 %<np%>%<org%>%<attr%>: # ;
 
 LEXICON NP-ORG-LAT
 
-%<np%>%<org%>%<nom%>: # ;
+%<np%>%<org%>%<nom%>: CLITICS-INCL-COP ;
 %<np%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
 %<np%>%<org%>:%- FULL-NOMINAL-INFLECTION-NONOM ;
 ! This one doesn't work right because of twol:
