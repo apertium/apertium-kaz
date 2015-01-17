@@ -1538,9 +1538,25 @@ LEXICON NP-PAT-VICH
 
 %<np%>%<pat%>%<f%>:вна NP-COMMON ;
 
+! WAS: (JNW 2015-01-17)
+!LEXICON NP-ORG
+!
+!%<np%>%<org%>: CASES ; 
+
 LEXICON NP-ORG
 
-%<np%>%<org%>: CASES ; 
+%<np%>%<org%>%<nom%>: # ;
+%<np%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ;
+%<np%>%<org%>%<attr%>: # ;
+
+LEXICON NP-ORG-LAT
+
+%<np%>%<org%>%<nom%>: # ;
+%<np%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
+%<np%>%<org%>:%- FULL-NOMINAL-INFLECTION-NONOM ;
+! This one doesn't work right because of twol:
+!%<np%>%<org%>:%' FULL-NOMINAL-INFLECTION-NONOM-NONOM ; ! Dir/LR
+%<np%>%<org%>%<attr%>: # ;
 
 LEXICON NP-ORG-COMPOUND 
 
@@ -15927,58 +15943,58 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 ! Organisations
 ! =============
 
-Airbus:Airbus NP-ORG ; ! ""
-Althea:Althea NP-ORG ; !"Use/MT"
-Amnesty% International:Amnesty% International NP-ORG ; ! ""
-Autodesk:Autodesk NP-ORG ; !"Use/MT"
-Chevron% Corporation:Chevron% Corporation NP-ORG ; ! ""
-Company:Company NP-ORG ; ! ""
-Conoco:Conoco NP-ORG ; ! ""
-Consolidated% Contractors% Company:Consolidated% Contractors% Company NP-ORG ; ! ""
-Efe:Efe NP-ORG ; !"Use/MT"
-Endesa:Endesa NP-ORG ; !"Use/MT"
-Ericsson:Ericsson NP-ORG ; !"Use/MT"
-Exxon:Exxon NP-ORG ; ! ""
-Exxon% Mobil% Corporation:Exxon% Mobil% Corporation NP-ORG ; ! ""
-Facebook:Facebook NP-ORG ; ! ""
-Freedom% House:Freedom% House NP-ORG ; ! ""
-Friendfeed:Friendfeed NP-ORG ; !"Use/MT"
-Google:Google NP-ORG ; ! ""
-Guardian:Guardian NP-ORG ; ! ""
-IBM:IBM NP-ORG ; ! ""
-Iberdrola:Iberdrola NP-ORG ; !"Use/MT"
-Inc:Inc NP-ORG ; ! ""
-Inpex:Inpex NP-ORG ; ! ""
-INSEE:INSEE NP-ORG ; ! "Францияның ұлттық статистика және экономикалық зерттеулер институты (фр. Institut national de la statistique et des études économiques, қысқ. INSEE немесе Insee"
-Investment:Investment NP-ORG ; ! ""
-Ipad:Ipad NP-ORG ; !"Use/MT"
-iPhone:iPhone NP-ORG ; !"Use/MT"
-iPod:iPod NP-ORG ; !"Use/MT"
-Javascript:Javascript NP-ORG ; !"Use/MT"
-Jenington:Jenington NP-ORG ; ! ""
-Karachaganak% Petroleum% Operating:Karachaganak% Petroleum% Operating NP-ORG ; ! ""
-KazakhGold:KazakhGold NP-ORG ; ! ""
-Kazakhmys:Kazakhmys NP-ORG ; ! ""
-Kazakhmys% Plc:Kazakhmys% Plc NP-ORG ; ! ""
-Limited:Limited NP-ORG ; ! ""
-Linux:Linux NP-ORG ; !"Use/MT"
-Ltd:Ltd NP-ORG ; ! ""
-Metallica:Metallica NP-ORG ; !"Use/MT"
-Mozilla:Mozilla NP-ORG ; !"Use/MT"
-MySpace:MySpace NP-ORG ; !"Use/MT"
-NGC:NGC NP-ORG ; ! "Жаңа жалпы каталог = New General Catalogue"
-NGO:NGO NP-ORG ; ! 
-Nike:Nike NP-ORG ; !"Use/MT"
-Nokia:Nokia NP-ORG ; !"Use/MT"
-Operating:Operating NP-ORG ; ! ""
-Plc:Plc NP-ORG ; ! ""
-SCAT:SCAT NP-ORG ; ! ""
-Shell:Shell NP-ORG ; ! ""
-SFOR:SFOR NP-ORG ; ! ""
-Twitter:Twitter NP-ORG ; ! ""
-Wordpress:Wordpress NP-ORG ; !"Use/MT"
-Wrigley:Wrigley NP-ORG ; ! ""
-YouTube:YouTube NP-ORG ; ! ""
+Airbus:Airbus NP-ORG-LAT ; ! ""
+Althea:Althea NP-ORG-LAT ; !""
+Amnesty% International:Amnesty% International NP-ORG-LAT ; ! ""
+Autodesk:Autodesk NP-ORG-LAT ; !""
+Chevron% Corporation:Chevron% Corporation NP-ORG-LAT ; ! ""
+Company:Company NP-ORG-LAT ; ! ""
+Conoco:Conoco NP-ORG-LAT ; ! ""
+Consolidated% Contractors% Company:Consolidated% Contractors% Company NP-ORG-LAT ; ! ""
+Efe:Efe NP-ORG-LAT ; !""
+Endesa:Endesa NP-ORG-LAT ; !""
+Ericsson:Ericsson NP-ORG-LAT ; !""
+Exxon:Exxon NP-ORG-LAT ; ! ""
+Exxon% Mobil% Corporation:Exxon% Mobil% Corporation NP-ORG-LAT ; ! ""
+Facebook:Facebook NP-ORG-LAT ; ! ""
+Freedom% House:Freedom% House NP-ORG-LAT ; ! ""
+Friendfeed:Friendfeed NP-ORG-LAT ; !""
+Google:Google%{а%}%{л%} NP-ORG-LAT ; ! ""
+Guardian:Guardian NP-ORG-LAT ; ! ""
+IBM:IBM NP-ORG-LAT ; ! ""
+Iberdrola:Iberdrola NP-ORG-LAT ; !"T"
+Inc:Inc NP-ORG-LAT ; ! ""
+Inpex:Inpex NP-ORG-LAT ; ! ""
+INSEE:INSEE NP-ORG-LAT ; ! "Францияның ұлттық статистика және экономикалық зерттеулер институты (фр. Institut national de la statistique et des études économiques, қысқ. INSEE немесе Insee"
+Investment:Investment NP-ORG-LAT ; ! ""
+Ipad:Ipad NP-ORG-LAT ; !"Use/MT"
+iPhone:iPhone NP-ORG-LAT ; !"Use/MT"
+iPod:iPod NP-ORG-LAT ; !"Use/MT"
+Javascript:Javascript%{э%}%{т%} NP-ORG-LAT ; !"Use/MT"
+Jenington:Jenington NP-ORG-LAT ; ! ""
+Karachaganak% Petroleum% Operating:Karachaganak% Petroleum% Operating NP-ORG-LAT ; ! ""
+KazakhGold:KazakhGold NP-ORG-LAT ; ! ""
+Kazakhmys:Kazakhmys NP-ORG-LAT ; ! ""
+Kazakhmys% Plc:Kazakhmys% Plc NP-ORG-LAT ; ! ""
+Limited:Limited NP-ORG-LAT ; ! ""
+Linux:Linux NP-ORG-LAT ; !"Use/MT"
+Ltd:Ltd NP-ORG-LAT ; ! ""
+Metallica:Metallica NP-ORG-LAT ; !"Use/MT"
+Mozilla:Mozilla NP-ORG-LAT ; !""
+MySpace:MySpace NP-ORG-LAT ; !""
+NGC:NGC NP-ORG-LAT ; ! "Жаңа жалпы каталог = New General Catalogue"
+NGO:NGO NP-ORG-LAT ; ! 
+Nike:Nike NP-ORG-LAT ; !""
+Nokia:Nokia NP-ORG-LAT ; !""
+Operating:Operating NP-ORG-LAT ; ! ""
+Plc:Plc NP-ORG-LAT ; ! ""
+SCAT:SCAT NP-ORG-LAT ; ! ""
+Shell:Shell NP-ORG-LAT ; ! ""
+SFOR:SFOR NP-ORG-LAT ; ! ""
+Twitter:Twitter NP-ORG-LAT ; ! ""
+Wordpress:Wordpress NP-ORG-LAT ; !"Use/MT"
+Wrigley:Wrigley NP-ORG-LAT ; ! ""
+YouTube:YouTube NP-ORG-LAT ; ! ""
 Авиа:Авиа NP-ORG ; !"Use/MT"
 Ақтөбемұнайгаз:Ақтөбемұнайгаз NP-ORG ; ! ""
 Амнести% Интернэшнл:Амнести% Интернэшнл NP-ORG ; ! ""
@@ -18513,6 +18529,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
 әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
 әрдайым:әрдайым ADV ; ! "always"
+әрең:әрең ADV ; ! "barely"
 әрі:әрі ADV ; ! "otherside"
 әрқашан:әрқашан ADV ; ! ""
 әрлі%-берлі:әрлі%-берлі ADV ; ! ""
@@ -20109,6 +20126,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қайта% ата:қайта% ата V-TV ; ! "rename" !Use/MT
 қайта% құр:қайта% құр V-TV ; ! "" !Use/MT
 қайт:қайт V-IV ; ! "return"
+қайт:қа%{э%}йт V-IV ; ! "do how"
 қайтала:қайтала V-TV ; ! ""
 қайтыс% бол:қайтыс% бол V-IV ; ! ""
 қайшыла:қайшыла V-TV ; ! "to cut with scissors"
