@@ -832,7 +832,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
-%<gen%>%<subst%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ;
+%<gen%>%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
