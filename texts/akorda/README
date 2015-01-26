@@ -1,0 +1,37 @@
+Instructions for Ubuntu on downloading news articles from akorda.kz in HTML (!)
+
+1. Install HTML::LinkExtractor module from CPAN
+
+sudo apt-get install cpanminus
+sudo cpanm HTML::LinkExtractor
+
+
+2. Download links.pl script and then get the links to news in English from akorda.kz
+
+./links.pl > links.en
+
+(takes a while)
+
+3. Obtain links to news in Kazakh by changing 'en' to 'kz'
+
+cat links.en | sed -E 's/php\/en\/page/php\/kz\/page/g' > links.kz
+
+
+4. Create separate folders for Kazakh and English, and move links there
+
+mkdir kz
+mkdir en
+mv links.kz kz
+mv links.en en
+
+
+5. Now download news-articles in each language
+
+cd kz
+wget -i links.kz
+
+cd ../en
+wget -i links.en
+
+
+6. Now you can extract content of the articles in plain text using extract_text.pl script, but this is the step, where I think better processing techniques should be applied (like STRAND) before stripping HTML.
