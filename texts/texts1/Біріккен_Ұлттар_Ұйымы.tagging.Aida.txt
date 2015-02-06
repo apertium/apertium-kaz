@@ -1661,7 +1661,7 @@
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"екінші" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
-"<ұсынысы>"****
+"<ұсынысы>"
 	"ұсыныс" n px3sp nom
 ;	"ұсыныс" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -1671,16 +1671,16 @@
 	"–" guio
 "<Азиядағы>"
 	"Азия" np top loc attr
-	"Азия" np top loc subst nom
+;	"Азия" np top loc subst nom
 ;	"Азия" np top loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"Азия" np top loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Өзара>"
 	"өзара" adj
-	"өзара" adv
-	"өзара" adj advl
-	"өзара" adj subst nom
+;	"өзара" adv
+;	"өзара" adj advl
+;	"өзара" adj subst nom
 ;	"өзара" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"өзара" adj
@@ -1699,7 +1699,7 @@
 "<және>"
 	"және" cnjcoo
 "<Сенім>"
-	"Сенім" np ant m nom SELECT:320
+;	"Сенім" np ant m nom SELECT:320
 ;	"сенім" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"сенім" n nom
@@ -1708,7 +1708,7 @@
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"Сенім" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"сенім" n nom SELECT:320
+	"сенім" n nom SELECT:320
 ;	"сенім" n attr SELECT:320
 "<Шаралары>"
 	"Шара" np ant f pl px3sp nom SELECT:320
@@ -1723,9 +1723,9 @@
 ;	"шара" n pl px3sp nom SELECT:320
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -1735,10 +1735,10 @@
 ;	"жөн" adj subst px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Кеңес>"
-	"Кеңес" np ant m nom SELECT:320
-	"Кеңес" np ant m nom SELECT:320
-		"е" cop aor p3 sg
-;	"кеңес" n nom SELECT:320
+;	"Кеңес" np ant m nom SELECT:320
+;	"Кеңес" np ant m nom SELECT:320
+;		"е" cop aor p3 sg
+	"кеңес" n nom SELECT:320
 ;	"кеңес" n attr SELECT:320
 ;	"кеңес" v iv imp p2 sg SELECT:320
 ;	"кеңес" n nom SELECT:320
@@ -1754,11 +1754,11 @@
 "<)>"
 	")" rpar
 "<шақыру>"
-	"шақыру" n nom SELECT:417
-	"шақыру" n nom SELECT:417
-		"е" cop aor p3 sg
+;	"шақыру" n nom SELECT:417
+;	"шақыру" n nom SELECT:417
+;		"е" cop aor p3 sg
 ;	"шақыру" n attr REMOVE:397
-;	"шақыр" v tv ger nom SELECT:417
+	"шақыр" v tv ger nom SELECT:417
 ;	"шақыру" n nom SELECT:417
 ;		"е" cop aor p3 pl REMOVE:649
 "<.>"
@@ -1774,7 +1774,7 @@
 "<басшысының>"
 	"басшы" n px3sp gen
 "<бұл>"
-	"бұл" det dem
+;	"бұл" det dem
 	"бұл" prn dem nom
 ;	"бұл" prn dem nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -1782,8 +1782,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастамасы>"
 	"бастама" n px3sp nom
-	"баста" v tv neg gpr_fut subst px3sp nom
-	"баста" v tv neg ger_fut px3sp nom
+;	"баста" v tv neg gpr_fut subst px3sp nom
+;	"баста" v tv neg ger_fut px3sp nom
 ;	"бастама" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"бастама" n px3sp nom
@@ -1791,7 +1791,7 @@
 ;	"баста" vaux neg ger_fut px3sp nom REMOVE:565
 ;	"баста" vaux neg gpr_fut subst px3sp nom REMOVE:565
 "<көпшілік>"
-	"көпшілік" n nom
+;	"көпшілік" n nom
 	"көпшілік" n attr
 ;	"көпшілік" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -1805,8 +1805,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<тарапынан>"
 	"тарап" n px3sp abl
-	"тарап" n px3sp abl
-		"е" cop aor p3 sg
+;	"тарап" n px3sp abl
+;		"е" cop aor p3 sg
 ;	"тарап" n px3sp abl
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
@@ -1843,7 +1843,7 @@
 	"Қазақстан" np top gen
 "<сыртқы>"
 	"сыртқы" adj
-	"сыртқы" adj subst nom
+;	"сыртқы" adj subst nom
 ;	"сыртқы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"сыртқы" adj
@@ -1877,7 +1877,7 @@
 	".." sent
 "<1992>"
 	"1992" num
-	"1992" num subst nom
+;	"1992" num subst nom
 "<жылдан>"
 	"жыл" n abl
 ;	"жыл" n abl
@@ -1889,14 +1889,14 @@
 ;	"бері" adv REMOVE:359
 "<Қазақстан>"
 	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+;	"Қазақстан" np top attr
 ;	"Қазақстан" np top nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"Қазақстан" np top nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<тек қана>"
-	"тек" adv
-		"ғана" postadv
+;	"тек" adv
+;		"ғана" postadv
 	"тек" n nom
 		"ғана" postadv
 ;	"тек" n nom
@@ -1907,7 +1907,7 @@
 ;			"ғана" postadv
 "<халықаралық>"
 	"халықаралық" adj
-	"халықаралық" adv
+;	"халықаралық" adv
 ;	"халықаралық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"халықаралық" adj
@@ -1921,7 +1921,7 @@
 ;	"мүше" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ретінде>"
-	"рет" n px3sp loc
+;	"рет" n px3sp loc
 	"ретінде" post
 ;	"рет" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
@@ -1929,7 +1929,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<қабылданып>"
 	"қабылда" v tv pass prc_perf
-	"қабылда" v tv pass gna_perf
+;	"қабылда" v tv pass gna_perf
 "<қоймай>"
 	"қой" v tv neg gna_perf
 ;	"қой" v tv neg prc_impf REMOVE:542
@@ -1944,9 +1944,9 @@
 ;	"бірге" adv SELECT:515
 "<онда>"
 	"ол" prn dem loc
-	"ол" prn pers p3 sg loc
-	"он" num subst loc
-	"онда" cnjsub
+;	"ол" prn pers p3 sg loc
+;	"он" num subst loc
+;	"онда" cnjsub
 ;	"ол" prn dem loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ол" prn dem loc
@@ -1959,9 +1959,9 @@
 	"өз" prn ref px3sp gen
 "<лайықты>"
 	"лайықты" adj subst nom
-	"лайықты" adj
-	"лайық" adj subst
-		"лы" post
+;	"лайықты" adj
+;	"лайық" adj subst
+;		"лы" post
 ;	"лайықты" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"лайықты" adj
@@ -1972,11 +1972,11 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"лайық" adj subst acc REMOVE:293
 "<орнын>"
-	"орн" n px3sp acc
+;	"орн" n px3sp acc
 	"орын" n px3sp acc
 "<таба>"
 	"тап" v tv prc_impf
-	"таба" n nom
+;	"таба" n nom
 ;	"таба" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"таба" n nom
@@ -1994,7 +1994,7 @@
 "<->"
 	"-" guio
 "<мен>"
-	"мен" prn pers p1 sg nom
+;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
 ;	"мен" post REMOVE:286
 "<ынтымақтастығы>"
@@ -2005,14 +2005,14 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<тарихындағы>"
 	"тарих" n px3sp loc attr
-	"тарих" n px3sp loc subst nom
+;	"тарих" n px3sp loc subst nom
 ;	"тарих" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"тарих" n px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<басты>"
 	"басты" adj subst nom
-	"басты" adj
+;	"басты" adj
 ;	"басты" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"басты" adj
@@ -2064,10 +2064,10 @@
 	"Қазақстан" np top dat
 "<2002>"
 	"2002" num
-	"2002" num subst nom
+;	"2002" num subst nom
 "<жылғы>"
 	"жылғы" adj
-	"жылғы" adj subst nom
+;	"жылғы" adj subst nom
 ;	"жылғы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жылғы" adj
@@ -2078,15 +2078,15 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<17>"
 	"17" num
-	"17" num subst nom
+;	"17" num subst nom
 "<->"
 	"-" guio
 "<18>"
 	"18" num
-	"18" num subst nom
+;	"18" num subst nom
 "<қазандағы>"
 	"қазан" n loc attr
-	"қазан" n loc subst nom
+;	"қазан" n loc subst nom
 ;	"қазан" n loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қазан" n loc subst nom
@@ -2119,8 +2119,8 @@
 	"," cm
 "<ол>"
 	"ол" prn pers p3 sg nom
-	"ол" det dem
-	"ол" prn dem nom
+;	"ол" det dem
+;	"ол" prn dem nom
 ;	"ол" prn dem nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ол" prn dem nom
@@ -2132,7 +2132,7 @@
 "<->"
 	"-" guio
 "<мен>"
-	"мен" prn pers p1 sg nom
+;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
 ;	"мен" post REMOVE:286
 "<онжылдық>"
@@ -2164,7 +2164,7 @@
 ;	"Қазақстан" np top attr REMOVE:397
 "<2003>"
 	"2003" num
-	"2003" num subst nom
+;	"2003" num subst nom
 "<жылы>"
 	"жыл" n px3sp nom SELECT:699
 ;	"жылы" adj
@@ -2190,7 +2190,7 @@
 "<ның>"
 	"*ның"
 "<дайындық>"
-	"дайындық" n nom
+;	"дайындық" n nom
 	"дайындық" n attr
 ;	"дайындық" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -2216,7 +2216,7 @@
 	"жүйе" n px3sp dat
 "<үлес>"
 	"үлес" n nom
-	"үлес" n attr
+;	"үлес" n attr
 ;	"үлес" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"үлес" n nom
@@ -2231,9 +2231,9 @@
 ;	"қосу" n nom SELECT:417 SELECT:408
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -2265,13 +2265,13 @@
 "<,>"
 	"," cm
 "<қазіргі>"
-	"қазір" adv attr
+;	"қазір" adv attr
 	"қазіргі" adj
-	"қазір" adv subst nom
-	"қазіргі" n nom
-	"қазіргі" n attr
-	"қазіргі" adj advl
-	"қазіргі" adj subst nom
+;	"қазір" adv subst nom
+;	"қазіргі" n nom
+;	"қазіргі" n attr
+;	"қазіргі" adj advl
+;	"қазіргі" adj subst nom
 ;	"қазіргі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қазіргі" adj
@@ -2296,7 +2296,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"таңда" v tv imp p2 sg REMOVE:599
 "<бітімгершілік>"
-	"бітімгершілік" n nom
+;	"бітімгершілік" n nom
 	"бітімгершілік" n attr
 ;	"бітімгершілік" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -2309,12 +2309,12 @@
 "<батальонының>"
 	"батальон" n px3sp gen
 "<адам>"
-	"адам" n nom
-		"е" cop aor p3 sg SELECT:1025
+;	"адам" n nom
+;		"е" cop aor p3 sg SELECT:1025
 ;	"адам" n attr REMOVE:397
 ;	"адам" n nom
 ;		"е" cop aor p3 pl REMOVE:649
-;	"адам" n nom SELECT:1025
+	"адам" n nom SELECT:1025
 "<,>"
 	"," cm
 "<бронетехника>"
@@ -2338,7 +2338,7 @@
 	"," cm
 "<әрі>"
 	"әрі" cnjcoo
-	"әрі" adv
+;	"әрі" adv
 ;	"әрі" post REMOVE:286
 "<БҰҰ>"
 	"БҰҰ" abbr
@@ -2361,8 +2361,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<үшін>"
 	"үшін" post
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+;	"үш" n px3sp acc
+;	"үш" num subst px3sp acc
 "<сатып алулар>"
 	"сатып алу" n pl nom SELECT:417
 ;	"сатып алу" n pl nom
@@ -2378,15 +2378,15 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<неғұрлым>"
 	"неғұрлым" adv
-	"неғұрлым" adv itg
+;	"неғұрлым" adv itg
 ;	"неғұрлым" adv itg
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"неғұрлым" adv itg
 ;		"е" cop aor p3 sg REMOVE:229
 "<белсенді>"
 	"белсенді" adj
-	"белсенді" adj advl
-	"белсенді" adj subst nom
+;	"белсенді" adj advl
+;	"белсенді" adj subst nom
 ;	"белсенді" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"белсенді" adj
@@ -2410,9 +2410,9 @@
 	".." sent
 "<1992>"
 	"1992" num
-	"1992" num subst nom
+;	"1992" num subst nom
 "<жылғы>"
-	"жылғы" adj
+;	"жылғы" adj
 	"жылғы" adj subst nom
 ;	"жылғы" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -2462,9 +2462,9 @@
 	"," cm
 "<қорларының>"
 	"қор" n pl px3sp gen
-	"қор" adj subst pl px3sp gen
-	"қорла" v tv ger_fut px3sp gen
-	"қорла" v tv gpr_fut subst px3sp gen
+;	"қор" adj subst pl px3sp gen
+;	"қорла" v tv ger_fut px3sp gen
+;	"қорла" v tv gpr_fut subst px3sp gen
 "<және>"
 	"және" cnjcoo
 "<бағдарламаларының>"
@@ -2481,7 +2481,7 @@
 	"." sent
 
 "<Олардың>"
-	"ол" prn dem pl gen
+;	"ол" prn dem pl gen
 	"олар" prn pers p3 pl gen
 "<қызметі>"
 	"қызмет" n px3sp nom
@@ -2491,9 +2491,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<техникалық>"
 	"техникалық" adj
-	"техникалық" adv
-	"техникалық" adj
-		"е" cop aor p3 sg
+;	"техникалық" adv
+;	"техникалық" adj
+;		"е" cop aor p3 sg
 ;	"техникалық" adj
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
@@ -2524,13 +2524,13 @@
 "<көрсетуге>"
 	"көрсет" v tv ger dat
 "<бағытталған>"
-	"бағытта" v tv pass gpr_past
-	"бағытталған" adj
-	"бағытта" v tv pass ger_past nom
-	"бағытталған" adj advl
-	"бағытталған" adj subst nom
+;	"бағытта" v tv pass gpr_past
+;	"бағытталған" adj
+;	"бағытта" v tv pass ger_past nom
+;	"бағытталған" adj advl
+;	"бағытталған" adj subst nom
 	"бағытта" v tv pass past p3 sg
-	"бағытта" v tv pass gpr_past subst nom
+;	"бағытта" v tv pass gpr_past subst nom
 ;	"бағытталған" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"бағытталған" adj
@@ -2543,13 +2543,13 @@
 "<..>"
 	".." sent
 "<Қазіргі>"
-	"қазір" adv attr
+;	"қазір" adv attr
 	"қазіргі" adj
-	"қазір" adv subst nom
-	"қазіргі" n nom
-	"қазіргі" n attr
-	"қазіргі" adj advl
-	"қазіргі" adj subst nom
+;	"қазір" adv subst nom
+;	"қазіргі" n nom
+;	"қазіргі" n attr
+;	"қазіргі" adj advl
+;	"қазіргі" adj subst nom
 ;	"қазіргі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қазіргі" adj
@@ -2586,7 +2586,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<келесі>"
 	"келесі" adj
-	"келесі" adj subst nom
+;	"келесі" adj subst nom
 ;	"келесі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"келесі" adj
@@ -2597,7 +2597,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<15>"
 	"15" num
-	"15" num subst nom
+;	"15" num subst nom
 "<ұйымы>"
 	"ұйым" n px3sp nom
 ;	"ұйым" n px3sp nom
@@ -2610,9 +2610,9 @@
 "<:>"
 	":" sent
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -2634,8 +2634,8 @@
 ;	"даму" n nom SELECT:408
 "<бағдарламасы>"
 	"бағдарлама" n px3sp nom
-	"бағдарлама" n px3sp nom
-		"е" cop aor p3 sg
+;	"бағдарлама" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"бағдарлама" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -2662,8 +2662,8 @@
 ;	"балалар" n nom SELECT:408
 "<қоры>"
 	"қор" n px3sp nom SELECT:808
-	"қор" n px3sp nom SELECT:808
-		"е" cop aor p3 sg
+;	"қор" n px3sp nom SELECT:808
+;		"е" cop aor p3 sg
 ;	"қор" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 ;	"қор" adj subst px3sp nom
@@ -2697,11 +2697,11 @@
 	"қоныстан" v iv ger nom
 "<қоры>"
 	"қор" n px3sp nom
-	"қор" adj subst px3sp nom
-	"қор" adj subst px3sp nom
-		"е" cop aor p3 sg
-	"қор" n px3sp nom
-		"е" cop aor p3 sg
+;	"қор" adj subst px3sp nom
+;	"қор" adj subst px3sp nom
+;		"е" cop aor p3 sg
+;	"қор" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"қор" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 ;	"қор" adj subst px3sp nom
@@ -2736,9 +2736,9 @@
 	"*мәселері"
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -2749,10 +2749,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<басқармасы>"
 	"басқарма" n px3sp nom
-	"басқар" v tv neg ger_fut px3sp nom
-	"басқар" v tv neg gpr_fut subst px3sp nom
-	"басқарма" n px3sp nom
-		"е" cop aor p3 sg
+;	"басқар" v tv neg ger_fut px3sp nom
+;	"басқар" v tv neg gpr_fut subst px3sp nom
+;	"басқарма" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"басқарма" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -2768,10 +2768,10 @@
 "<БҰҰ>"
 	"БҰҰ" abbr
 "<Жоғарғы>"
-	"жоғары" adv attr
+;	"жоғары" adv attr
 	"жоғарғы" adj
-	"жоғары" adv subst nom
-	"жоғарғы" adj subst nom
+;	"жоғары" adv subst nom
+;	"жоғарғы" adj subst nom
 ;	"жоғарғы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жоғарғы" adj
@@ -2800,9 +2800,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -2813,10 +2813,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<басқармасы>"
 	"басқарма" n px3sp nom
-	"басқар" v tv neg ger_fut px3sp nom
-	"басқар" v tv neg gpr_fut subst px3sp nom
-	"басқарма" n px3sp nom
-		"е" cop aor p3 sg
+;	"басқар" v tv neg ger_fut px3sp nom
+;	"басқар" v tv neg gpr_fut subst px3sp nom
+;	"басқарма" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"басқарма" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -2832,9 +2832,9 @@
 "<БҰҰ>"
 	"БҰҰ" abbr
 "<Еріктілері>"
-	"ерікті" adj subst pl px3sp nom
-		"е" cop aor p3 sg SELECT:445
-;	"ерікті" adj subst pl px3sp nom SELECT:445
+;	"ерікті" adj subst pl px3sp nom
+;		"е" cop aor p3 sg SELECT:445
+	"ерікті" adj subst pl px3sp nom SELECT:445
 ;	"ерікті" adj subst pl px3sp nom
 ;		"е" cop aor p3 pl SELECT:445 REMOVE:649
 "<(>"
@@ -2853,8 +2853,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<қоры>"
 	"қор" n px3sp nom SELECT:808
-	"қор" n px3sp nom SELECT:808
-		"е" cop aor p3 sg
+;	"қор" n px3sp nom SELECT:808
+;		"е" cop aor p3 sg
 ;	"қор" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 ;	"қор" adj subst px3sp nom
@@ -2872,7 +2872,7 @@
 	"," cm
 "<Халықаралық>"
 	"халықаралық" adj
-	"халықаралық" adv
+;	"халықаралық" adv
 ;	"халықаралық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"халықаралық" adj
@@ -2886,8 +2886,8 @@
 ;	"еңбек" n nom SELECT:408
 "<ұйымы>"
 	"ұйым" n px3sp nom
-	"ұйым" n px3sp nom
-		"е" cop aor p3 sg
+;	"ұйым" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"ұйым" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -2902,8 +2902,8 @@
 	"БҰҰ" abbr
 "<білім>"
 	"білім" n nom
-	"білім" n nom
-		"е" cop aor p3 sg
+;	"білім" n nom
+;		"е" cop aor p3 sg
 ;	"білім" n attr REMOVE:397
 ;	"білім" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -2933,9 +2933,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -2946,8 +2946,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<ұйымы>"
 	"ұйым" n px3sp nom
-	"ұйым" n px3sp nom
-		"е" cop aor p3 sg
+;	"ұйым" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"ұйым" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -2966,7 +2966,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<денсаулық>"
 	"денсаулық" n nom
-	"денсаулық" n attr
+;	"денсаулық" n attr
 ;	"денсаулық" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"денсаулық" n nom
@@ -2981,8 +2981,8 @@
 ;	"сақтау" n nom SELECT:408
 "<ұйымы>"
 	"ұйым" n px3sp nom
-	"ұйым" n px3sp nom
-		"е" cop aor p3 sg
+;	"ұйым" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"ұйым" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -3011,10 +3011,10 @@
 ;	"дамы" v iv ger nom SELECT:417
 ;	"даму" n nom SELECT:417 SELECT:408
 "<жөніндегі>"
-	"жөн" n px3sp loc attr
+;	"жөн" n px3sp loc attr
 	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -3025,8 +3025,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<ұйымы>"
 	"ұйым" n px3sp nom
-	"ұйым" n px3sp nom
-		"е" cop aor p3 sg
+;	"ұйым" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"ұйым" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -3041,8 +3041,8 @@
 	"*Дүниежізілік"
 "<Банк>"
 	"банк" n nom
-	"банк" n nom
-		"е" cop aor p3 sg
+;	"банк" n nom
+;		"е" cop aor p3 sg
 ;	"банк" n attr REMOVE:397
 ;	"банк" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -3056,7 +3056,7 @@
 	"," cm
 "<Халықаралық>"
 	"халықаралық" adj
-	"халықаралық" adv
+;	"халықаралық" adv
 ;	"халықаралық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"халықаралық" adj
@@ -3070,8 +3070,8 @@
 ;	"валюта" n nom SELECT:408
 "<қоры>"
 	"қор" n px3sp nom SELECT:808
-	"қор" n px3sp nom SELECT:808
-		"е" cop aor p3 sg
+;	"қор" n px3sp nom SELECT:808
+;		"е" cop aor p3 sg
 ;	"қор" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 ;	"қор" adj subst px3sp nom
@@ -3096,9 +3096,9 @@
 	"*ЖТҚБ"
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -3111,8 +3111,8 @@
 	"БҰҰ" abbr
 "<бағдарламасы>"
 	"бағдарлама" n px3sp nom
-	"бағдарлама" n px3sp nom
-		"е" cop aor p3 sg
+;	"бағдарлама" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"бағдарлама" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -3125,7 +3125,7 @@
 	"және" cnjcoo
 "<Қоғамдық>"
 	"қоғамдық" adj
-	"қоғамдық" adj subst nom
+;	"қоғамдық" adj subst nom
 ;	"қоғамдық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қоғамдық" adj
@@ -3143,9 +3143,9 @@
 ;	"ақпарат" n nom SELECT:408
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
-	"жөн" adj subst px3sp loc attr
-	"жөн" n px3sp loc subst nom
-	"жөн" adj subst px3sp loc subst nom
+;	"жөн" adj subst px3sp loc attr
+;	"жөн" n px3sp loc subst nom
+;	"жөн" adj subst px3sp loc subst nom
 ;	"жөн" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жөн" n px3sp loc subst nom
@@ -3156,8 +3156,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<департамент>"
 	"департамент" n nom
-	"департамент" n nom
-		"е" cop aor p3 sg
+;	"департамент" n nom
+;		"е" cop aor p3 sg
 ;	"департамент" n attr REMOVE:397
 ;	"департамент" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -3170,9 +3170,9 @@
 "<..>"
 	".." sent
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3183,8 +3183,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<Ұйымы>"
 	"ұйым" n px3sp nom
-	"ұйым" n px3sp nom
-		"е" cop aor p3 sg
+;	"ұйым" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"ұйым" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<(>"
@@ -3197,10 +3197,10 @@
 	"-" guio
 "<жалпы>"
 	"жалпы" adj
-	"жалпы" adv
-	"жалпы" n nom
-	"жалпы" adj subst nom
-	"жалпы" adj advl
+;	"жалпы" adv
+;	"жалпы" n nom
+;	"жалпы" adj subst nom
+;	"жалпы" adj advl
 ;	"жалпы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жалпы" adj
@@ -3217,16 +3217,16 @@
 "<құзыры>"
 	"*құзыры"
 "<бар>"
-	"бар" adj
-	"бар" n nom
+;	"бар" adj
+;	"бар" n nom
 	"бар" adj subst nom
 		"е" cop aor p3 sg
-	"бар" adj
-		"е" cop aor p3 sg
-	"бар" adj subst nom
-	"бар" v iv imp p2 sg
-	"бар" n nom
-		"е" cop aor p3 sg
+;	"бар" adj
+;		"е" cop aor p3 sg
+;	"бар" adj subst nom
+;	"бар" v iv imp p2 sg
+;	"бар" n nom
+;		"е" cop aor p3 sg
 ;	"бар" n attr REMOVE:397
 ;	"бар" adj
 ;		"е" cop aor p3 pl REMOVE:649
@@ -3239,11 +3239,11 @@
 	"," cm
 "<ашық>"
 	"ашық" adj
-	"ашық" adv
-	"ашық" n nom
-	"ашық" n attr
-	"ашық" adj advl
-	"ашық" adj subst nom
+;	"ашық" adv
+;	"ашық" n nom
+;	"ашық" n attr
+;	"ашық" adj advl
+;	"ашық" adj subst nom
 ;	"ашық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ашық" adj
@@ -3259,16 +3259,16 @@
 ;	"ашық" v iv imp p2 sg REMOVE:350
 "<түрдегі>"
 	"түр" n loc attr
-	"түр" n loc subst nom
+;	"түр" n loc subst nom
 ;	"түр" n loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"түр" n loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<халықаралық>"
 	"халықаралық" adj
-	"халықаралық" adv
-	"халықаралық" adj
-		"е" cop aor p3 sg
+;	"халықаралық" adv
+;	"халықаралық" adj
+;		"е" cop aor p3 sg
 ;	"халықаралық" adj
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
@@ -3281,8 +3281,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<әмбебап>"
 	"әмбебап" adj
-	"әмбебап" adj advl
-	"әмбебап" adj subst nom
+;	"әмбебап" adj advl
+;	"әмбебап" adj subst nom
 ;	"әмбебап" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әмбебап" adj
@@ -3292,7 +3292,7 @@
 ;	"әмбебап" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ұйым>"
-	"ұйым" n nom
+;	"ұйым" n nom
 	"ұйым" n nom
 		"е" cop aor p3 sg
 ;	"ұйым" n attr REMOVE:397
@@ -3302,9 +3302,9 @@
 	"." sent
 
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3321,7 +3321,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<1945>"
 	"1945" num
-	"1945" num subst nom
+;	"1945" num subst nom
 "<жылы>"
 	"жыл" n px3sp nom SELECT:699
 ;	"жылы" adj
@@ -3372,9 +3372,9 @@
 ;	"Қытай" np top nom SELECT:320 SELECT:408
 "<арасындағы>"
 	"ара" n px3sp loc attr
-	"ара" adj subst px3sp loc attr
-	"ара" n px3sp loc subst nom
-	"ара" adj subst px3sp loc subst nom
+;	"ара" adj subst px3sp loc attr
+;	"ара" n px3sp loc subst nom
+;	"ара" adj subst px3sp loc subst nom
 ;	"ара" n px3sp loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ара" n px3sp loc subst nom
@@ -3384,11 +3384,11 @@
 ;	"ара" adj subst px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<келісім>"
-	"келісім" adj
+;	"келісім" adj
 	"келісім" n nom
-	"келісім" n attr
-	"келісім" adj advl
-	"келісім" adj subst nom
+;	"келісім" n attr
+;	"келісім" adj advl
+;	"келісім" adj subst nom
 ;	"келісім" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"келісім" adj
@@ -3415,9 +3415,9 @@
 	"." sent
 
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3438,12 +3438,12 @@
 ;	"жар" v tv prc_vol p3 sg REMOVE:542
 "<1945>"
 	"1945" num
-	"1945" num subst nom
+;	"1945" num subst nom
 "<жылдың>"
 	"жыл" n gen
 "<26>"
 	"26" num
-	"26" num subst nom
+;	"26" num subst nom
 "<маусымында>"
 	"маусым" n px3sp loc
 ;	"маусым" n px3sp loc
@@ -3457,12 +3457,12 @@
 	"," cm
 "<1945>"
 	"1945" num
-	"1945" num subst nom
+;	"1945" num subst nom
 "<жылдың>"
 	"жыл" n gen
 "<24>"
 	"24" num
-	"24" num subst nom
+;	"24" num subst nom
 "<қазанында>"
 	"қазан" n px3sp loc
 ;	"қазан" n px3sp loc
@@ -3472,18 +3472,18 @@
 "<күшіне>"
 	"күш" n px3sp dat
 "<енді>"
-	"ен" n acc SELECT:1072
-	"ен" n SELECT:1072
-		"лы" post
+;	"ен" n acc SELECT:1072
+;	"ен" n SELECT:1072
+;		"лы" post
 ;	"ен" v iv ifi p3 pl REMOVE:642
 ;	"енді" adv SELECT:1072
-;	"ен" v iv ifi p3 sg SELECT:1072
+	"ен" v iv ifi p3 sg SELECT:1072
 "<..>"
 	".." sent
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3514,16 +3514,16 @@
 	"жарғы" n gen
 "<1>"
 	"1" num
-	"1" num subst nom
+;	"1" num subst nom
 "<->"
 	"-" guio
 "<2>"
 	"2" num
-	"2" num subst nom
+;	"2" num subst nom
 "<баптарында>"
 	"бап" n pl px3sp loc
-	"бапта" v tv ger_fut px3sp loc
-	"бапта" v tv gpr_fut subst px3sp loc
+;	"бапта" v tv ger_fut px3sp loc
+;	"бапта" v tv gpr_fut subst px3sp loc
 ;	"бап" n pl px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"бап" n pl px3sp loc
@@ -3541,9 +3541,9 @@
 	"осы" prn dem dat
 "<сәйкес>"
 	"сәйкес" post
-	"сәйкес" adj
-	"сәйкес" adj advl
-	"сәйкес" adj subst nom
+;	"сәйкес" adj
+;	"сәйкес" adj advl
+;	"сәйкес" adj subst nom
 ;	"сәйкес" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"сәйкес" adj
@@ -3553,9 +3553,9 @@
 ;	"сәйкес" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3572,7 +3572,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<мына>"
 	"мына" ij
-	"мына" nom
+;	"мына" nom
 ;	"мына" nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"мына" nom
@@ -3611,7 +3611,7 @@
 	"құрметте" v tv ger nom
 "<негізінде>"
 	"негіз" n px3sp loc
-	"негізінде" adv
+;	"негізінде" adv
 ;	"негіз" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"негіз" n px3sp loc
@@ -3635,7 +3635,7 @@
 ;	"ара" adj subst px3sp loc SELECT:1072
 ;	"арасында" adv SELECT:1072
 "<достық>"
-	"достық" n nom
+;	"достық" n nom
 	"достық" n attr
 ;	"достық" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -3651,10 +3651,10 @@
 	"-" guio
 "<қатынасты>"
 	"қатынас" n acc
-	"қатынас" n
-		"лы" post
-	"қатынас" v iv ifi p3 sg
-	"қатына" v iv coop ifi p3 sg
+;	"қатынас" n
+;		"лы" post
+;	"қатынас" v iv ifi p3 sg
+;	"қатына" v iv coop ifi p3 sg
 ;	"қатына" v iv coop ifi p3 pl REMOVE:642
 ;	"қатынас" v iv ifi p3 pl REMOVE:642
 "<дамыту>"
@@ -3669,7 +3669,7 @@
 	"ұлт" n pl gen
 "<осы>"
 	"осы" det dem
-	"осы" prn dem nom
+;	"осы" prn dem nom
 "<мақсаттарға>"
 	"мақсат" n pl dat
 "<жету>"
@@ -3682,12 +3682,12 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<үйлестіруші>"
 	"үйлестір" v tv gpr_pot
-	"үйлестір" v tv gpr_pot subst nom
+;	"үйлестір" v tv gpr_pot subst nom
 "<орталық>"
 	"орталық" adj
-	"орталық" n nom
-	"орталық" adj subst nom
-	"орталық" adj advl
+;	"орталық" n nom
+;	"орталық" adj subst nom
+;	"орталық" adj advl
 ;	"орталық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орталық" adj
@@ -3716,12 +3716,12 @@
 ;	"ол" prn dem gen SELECT:982
 ;	"он" num subst px2sg nom SELECT:982
 "<барлық>"
-	"барлық" adj
-	"барлық" adv
+;	"барлық" adj
+;	"барлық" adv
 	"барлық" det qnt
-	"барлық" adj advl
-	"барлық" prn qnt nom
-	"барлық" adj subst nom
+;	"барлық" adj advl
+;	"барлық" prn qnt nom
+;	"барлық" adj subst nom
 ;	"барлық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"барлық" adj
@@ -3733,14 +3733,14 @@
 ;	"барлық" v iv imp p2 sg REMOVE:599
 "<мүшелерінің>"
 	"мүше" n pl px3sp gen
-	"мүшеле" v tv ger_fut px3sp gen
-	"мүшеле" v tv gpr_fut subst px3sp gen
+;	"мүшеле" v tv ger_fut px3sp gen
+;	"мүшеле" v tv gpr_fut subst px3sp gen
 "<егеменді>"
 	"*егеменді"
 "<теңдігі>"
 	"теңдік" n px3sp nom
-	"теңдік" n px3sp nom
-		"е" cop aor p3 sg
+;	"теңдік" n px3sp nom
+;		"е" cop aor p3 sg
 ;	"теңдік" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<;>"
@@ -3751,11 +3751,11 @@
 
 "<олардың>"
 	"ол" prn dem pl gen
-	"олар" prn pers p3 pl gen
+;	"олар" prn pers p3 pl gen
 "<арасында>"
 	"ара" n px3sp loc
-	"ара" adj subst px3sp loc
-	"арасында" adv
+;	"ара" adj subst px3sp loc
+;	"арасында" adv
 ;	"ара" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ара" n px3sp loc
@@ -3765,13 +3765,13 @@
 ;	"ара" adj subst px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<туындайтын>"
-	"туында" v iv gpr_impf
-	"туында" v iv gpr_impf subst nom
+;	"туында" v iv gpr_impf
+;	"туында" v iv gpr_impf subst nom
 	"туында" v iv pih p3 sg
 ;	"туында" v iv pih p3 pl REMOVE:642
 "<халықаралық>"
 	"халықаралық" adj
-	"халықаралық" adv
+;	"халықаралық" adv
 ;	"халықаралық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"халықаралық" adj
@@ -3789,8 +3789,8 @@
 	"жанжал" n pl acc
 "<бейбіт>"
 	"бейбіт" adj
-	"бейбіт" adj advl
-	"бейбіт" adj subst nom
+;	"бейбіт" adj advl
+;	"бейбіт" adj subst nom
 ;	"бейбіт" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"бейбіт" adj
@@ -3810,7 +3810,7 @@
 • 
 
 "<олар>"
-	"ол" prn dem pl nom
+;	"ол" prn dem pl nom
 	"олар" prn pers p3 pl nom
 ;	"ол" prn dem pl nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -3821,9 +3821,9 @@
 ;	"олар" prn pers p3 pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3850,17 +3850,17 @@
 ;	"сәйкес" adj SELECT:438
 ;	"сәйкес" adj subst nom SELECT:438
 "<жүргізілетін>"
-	"жүргіз" v tv pass gpr_impf
-	"жүргіз" v tv pass gpr_impf subst nom
+;	"жүргіз" v tv pass gpr_impf
+;	"жүргіз" v tv pass gpr_impf subst nom
 	"жүргіз" v tv pass pih p3 sg
 ;	"жүргіз" v tv pass pih p3 pl REMOVE:642
 "<барлық>"
-	"барлық" adj
-	"барлық" adv
+;	"барлық" adj
+;	"барлық" adv
 	"барлық" det qnt
-	"барлық" adj advl
-	"барлық" prn qnt nom
-	"барлық" adj subst nom
+;	"барлық" adj advl
+;	"барлық" prn qnt nom
+;	"барлық" adj subst nom
 ;	"барлық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"барлық" adj
@@ -3879,11 +3879,11 @@
 "<көрсетуі>"
 	"көрсет" v tv ger px3sp nom
 "<керек>"
-	"керек" adj SELECT:958 SELECT:1025 SELECT:1025
-	"керек" adj subst nom SELECT:958
-		"е" cop aor p3 sg SELECT:1025 SELECT:1025
-	"керек" adj advl SELECT:958 SELECT:1025 SELECT:1025
-	"керек" adj subst nom SELECT:958 SELECT:1025 SELECT:1025
+;	"керек" adj SELECT:958 SELECT:1025 SELECT:1025
+;	"керек" adj subst nom SELECT:958
+;		"е" cop aor p3 sg SELECT:1025 SELECT:1025
+;	"керек" adj advl SELECT:958 SELECT:1025 SELECT:1025
+;	"керек" adj subst nom SELECT:958 SELECT:1025 SELECT:1025
 	"керек" adj SELECT:958
 		"е" cop aor p3 sg SELECT:1025 SELECT:1025
 ;	"керек" n attr REMOVE:397
@@ -3905,9 +3905,9 @@
 • 
 
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -3937,8 +3937,8 @@
 	"мемлекет" n pl gen
 "<ішкі>"
 	"ішкі" adj
-	"ішкі" adv
-	"ішкі" adj subst nom
+;	"ішкі" adv
+;	"ішкі" adj subst nom
 ;	"ішкі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ішкі" adj
@@ -3951,18 +3951,18 @@
 	"іс" n px3sp dat
 	"ісін" v iv prc_impf
 "<жататын>"
-	"жат" vaux gpr_impf
-	"жат" v iv gpr_impf
+;	"жат" vaux gpr_impf
+;	"жат" v iv gpr_impf
 	"жат" v iv pih p3 sg
-	"жат" vaux pih p3 sg
-	"жат" vaux gpr_impf subst nom
-	"жат" v iv gpr_impf subst nom
+;	"жат" vaux pih p3 sg
+;	"жат" vaux gpr_impf subst nom
+;	"жат" v iv gpr_impf subst nom
 ;	"жат" vaux pih p3 pl REMOVE:642
 ;	"жат" v iv pih p3 pl REMOVE:642
 "<әрекеттерге>"
 	"әрекет" n pl dat
 "<араласуына>"
-	"арала" v tv coop ger px3sp dat
+;	"арала" v tv coop ger px3sp dat
 	"аралас" v iv ger px3sp dat
 "<құқық>"
 	"құқық" n nom
@@ -3979,9 +3979,9 @@
 "<..>"
 	".." sent
 "<Біріккен>"
-	"бірік" v iv gpr_past
-	"бірік" v iv ger_past nom
-	"бірік" v iv gpr_past subst nom
+;	"бірік" v iv gpr_past
+;	"бірік" v iv ger_past nom
+;	"бірік" v iv gpr_past subst nom
 	"бірік" v iv past p3 sg
 ;	"бірік" v iv past p3 pl REMOVE:642
 "<Ұлттар>"
@@ -4015,18 +4015,18 @@
 	":" sent
 "<қытай>"
 	"қытай" n nom
-	"қытай" n nom
-		"е" cop aor p3 sg
+;	"қытай" n nom
+;		"е" cop aor p3 sg
 ;	"қытай" n attr REMOVE:397
 ;	"қытай" n nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
 	"," cm
 "<ағылшын>"
-	"ағылшын" adj
+;	"ағылшын" adj
 	"ағылшын" n nom
-	"ағылшын" adj subst nom
-	"ағылшын" adj advl
+;	"ағылшын" adj subst nom
+;	"ағылшын" adj advl
 ;	"ағылшын" adj
 ;		"е" cop aor p3 pl REMOVE:232
 ;	"ағылшын" adj
@@ -4053,7 +4053,7 @@
 	"," cm
 "<орыс>"
 	"орыс" n nom
-	"ор" v tv coop imp p2 sg
+;	"ор" v tv coop imp p2 sg
 ;	"орыс" n nom
 ;		"е" cop aor p3 pl REMOVE:232
 ;	"орыс" n nom
@@ -4065,8 +4065,8 @@
 	"*испан"
 "<тілдері>"
 	"тіл" n pl px3sp nom
-	"тіл" n pl px3sp nom
-		"е" cop aor p3 sg
+;	"тіл" n pl px3sp nom
+;		"е" cop aor p3 sg
 ;	"тіл" n pl px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<.>"
@@ -4079,13 +4079,13 @@
 ;	"бұл" prn dem pl abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<басқа>"
-	"бас" n dat
+;	"бас" n dat
 	"басқа" post
-	"басқа" adj
-	"басқа" adv
-	"басқа" adj advl
-	"басқа" prn ind nom
-	"басқа" adj subst nom
+;	"басқа" adj
+;	"басқа" adv
+;	"басқа" adj advl
+;	"басқа" prn ind nom
+;	"басқа" adj subst nom
 ;	"басқа" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"басқа" adj
@@ -4099,7 +4099,7 @@
 ;	"басқа" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Бас>"
-	"бас" n nom
+;	"бас" n nom
 	"бас" n attr
 ;	"бас" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -4109,14 +4109,14 @@
 ;	"бас" v tv imp p2 sg REMOVE:350
 "<Ассамблеяда>"
 	"ассамблея" n loc
-	"ассамблея" n loc
-		"е" cop aor p3 sg
+;	"ассамблея" n loc
+;		"е" cop aor p3 sg
 ;	"ассамблея" n loc
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
 	"," cm
 "<Қауіпсіздік>"
-	"қауіпсіздік" n nom
+;	"қауіпсіздік" n nom
 	"қауіпсіздік" n attr
 ;	"қауіпсіздік" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -4145,8 +4145,8 @@
 	"және" cnjcoo
 "<әлеуметтік>"
 	"әлеуметтік" adj
-	"әлеуметтік" adv
-	"әлеуметтік" adj subst nom
+;	"әлеуметтік" adv
+;	"әлеуметтік" adj subst nom
 ;	"әлеуметтік" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлеуметтік" adj
@@ -4162,7 +4162,7 @@
 ;	"кеңес" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<ресми>"
-	"ресми" n nom SELECT:1072
+;	"ресми" n nom SELECT:1072
 	"ресми" n attr SELECT:1072
 ;	"ресми" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -4184,7 +4184,7 @@
 ;	"тіл" n nom SELECT:408
 "<ретінде>"
 	"рет" n px3sp loc
-	"ретінде" post
+;	"ретінде" post
 ;	"рет" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"рет" n px3sp loc
