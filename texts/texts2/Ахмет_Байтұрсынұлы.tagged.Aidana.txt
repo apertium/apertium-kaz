@@ -280,9 +280,9 @@
 "<жетекшілерінің>"
 	"жетекші" n pl px3sp gen
 "<бірі>"
-	"бір" num subst px3sp nom
 ;	"бір" num subst px3sp nom
-;		"е" cop aor p3 sg
+	"бір" num subst px3sp nom
+		"е" cop aor p3 sg
 ;	"бір" num subst px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
@@ -295,9 +295,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 	"мемлекет" n nom SELECT:408
 "<қайраткері>"
-	"қайраткер" n px3sp nom
 ;	"қайраткер" n px3sp nom
-;		"е" cop aor p3 sg
+	"қайраткер" n px3sp nom
+		"е" cop aor p3 sg
 ;	"қайраткер" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
@@ -339,9 +339,9 @@
 ;	"сал" vaux gpr_pot REMOVE:565
 ;	"сал" vaux gpr_pot subst nom REMOVE:565
 "<ғалым>"
-	"ғалым" n nom
 ;	"ғалым" n nom
-;		"е" cop aor p3 sg
+	"ғалым" n nom
+		"е" cop aor p3 sg
 ;	"ғалым" n attr REMOVE:397
 ;	"ғалым" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -369,31 +369,24 @@
 	"*ағартушы"
 "<,>"
 	"," cm
-"<Алаш>"
-	"Алаш" np top nom
-;	"Алаш" np top nom
+"<Алаш Орда>"
+	"Алаш Орда" np top nom
+;	"Алаш Орда" np top nom
 ;		"е" cop aor p3 pl REMOVE:229
-;	"Алаш" np top nom
+;	"Алаш Орда" np top nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"Алаш" np top attr REMOVE:397
+;	"Алаш Орда" np top attr REMOVE:397
 "<->"
 	"-" guio
-"<Орда>"
-        "Орда" np top nom
-;	"орда" n attr SELECT:408
-;	"орда" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"орда" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"орда" n nom SELECT:408
+
 "<өкіметінің>"
 	"өкімет" n px3sp gen
 "<мүшесі>"
-	"мүше" n px3sp nom
+;	"мүше" n px3sp nom
 ;	"мүше" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
-;	"мүше" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
+	"мүше" n px3sp nom
+		"е" cop aor p3 sg REMOVE:229
 "<..>"
 	".." sent
 "<Атасы>"
@@ -809,11 +802,11 @@
 "<тұлғаның>"
 	"тұлға" n gen
 "<бірі>"
-	"бір" num subst px3sp nom
+;	"бір" num subst px3sp nom
 ;	"бір" num subst px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
-;	"бір" num subst px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
+	"бір" num subst px3sp nom
+		"е" cop aor p3 sg REMOVE:229
 "<болған>"
 	"бол" v iv past p3 sg
 ;	"бол" v iv gpr_past
@@ -963,11 +956,11 @@
 "<авторларының>"
 	"автор" n pl px3sp gen
 "<бірі>"
-	"бір" num subst px3sp nom
+;	"бір" num subst px3sp nom
 ;	"бір" num subst px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
-;	"бір" num subst px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
+	"бір" num subst px3sp nom
+		"е" cop aor p3 sg REMOVE:229
 "<Байтұрсынұлы>"
 	"*Байтұрсынұлы"
 "<болды>"
@@ -5743,9 +5736,9 @@
 	"еңбек" n pl gen
 ;	"еңбекте" v iv gpr_fut subst gen
 "<бірі>"
-	"бір" num subst px3sp nom
 ;	"бір" num subst px3sp nom
-;		"е" cop aor p3 sg
+	"бір" num subst px3sp nom
+		"е" cop aor p3 sg
 ;	"бір" num subst px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<.>"
