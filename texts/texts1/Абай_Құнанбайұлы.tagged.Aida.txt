@@ -231,10 +231,10 @@
 "<жаңартуды>"
 	"*жаңартуды"
 "<көздеген>"
-;	"көзде" v tv gpr_past
+	"көзде" v tv gpr_past
 ;	"көзде" v tv ger_past nom
 ;	"көзде" v tv gpr_past subst nom
-	"көзде" v tv past p3 sg
+;	"көзде" v tv past p3 sg
 ;	"көзде" v tv past p3 pl REMOVE:642
 "<реформатор>"
 ;	"реформатор" n nom
@@ -389,8 +389,8 @@
 ;	"ру" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<шыққан>"
-	"шық" v iv past p3 sg
-;	"шық" v iv gpr_past
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
 ;	"шық" v iv gpr_past subst nom
 ;	"шық" v iv ger_past nom
 ;	"шық" vaux gpr_past REMOVE:565
@@ -462,8 +462,8 @@
 "<алысқа>"
 	"алыс" adj subst dat
 "<кеткен>"
-	"кет" v iv past p3 sg
-;	"кет" v iv gpr_past
+;	"кет" v iv past p3 sg
+	"кет" v iv gpr_past
 ;	"кет" v iv gpr_past subst nom
 ;	"кет" v iv ger_past nom
 ;	"кет" vaux gpr_past REMOVE:565
@@ -642,8 +642,8 @@
 ;	"ат" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шыққан>"
-	"шық" v iv past p3 sg
-;	"шық" v iv gpr_past
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
 ;	"шық" v iv gpr_past subst nom
 ;	"шық" v iv ger_past nom
 ;	"шық" vaux gpr_past REMOVE:565
@@ -802,8 +802,8 @@
 ;	"орта" adj subst abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<шыққан>"
-	"шық" v iv past p3 sg
-;	"шық" v iv gpr_past
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
 ;	"шық" v iv gpr_past subst nom
 ;	"шық" v iv ger_past nom
 ;	"шық" vaux gpr_past REMOVE:565
@@ -995,8 +995,8 @@
 "<зеректігін>"
 	"зеректік" n px3sp acc
 "<байқағаннан>"
-;	"байқа" v tv ger_past abl
-	"байқа" v tv gpr_past subst abl
+	"байқа" v tv ger_past abl
+;	"байқа" v tv gpr_past subst abl
 "<кейін>"
 	"кейін" post SELECT:529
 ;	"кейін" n attr REMOVE:397
@@ -1541,10 +1541,10 @@
 	"де" v tv prc_perf
 ;	"де" v tv gna_perf
 "<тапқан>"
-;	"тап" v tv gpr_past
+	"тап" v tv gpr_past
 ;	"тап" v tv ger_past nom
 ;	"тап" v tv gpr_past subst nom
-	"тап" v tv past p3 sg
+;	"тап" v tv past p3 sg
 ;	"тап" v tv past p3 pl REMOVE:642
 "<істерін>"
 	"іс" n pl px3sp acc
@@ -2454,10 +2454,10 @@
 ;	"Айпара" np ant f nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<әйелінен>"
 	"әйел" n px3sp abl
@@ -2502,10 +2502,10 @@
 "<,>"
 	"," cm
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<4>"
 	"4" num
@@ -3109,10 +3109,10 @@
 "<”>"
 	"”" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<мәтел>"
 	"*мәтел"
@@ -3191,8 +3191,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"әйел" n attr REMOVE:397
 "<алған>"
-	"ал" v tv past p3 sg
-;	"ал" v tv gpr_past
+;	"ал" v tv past p3 sg
+	"ал" v tv gpr_past
 ;	"ал" v tv gpr_past subst nom
 ;	"ал" v tv ger_past nom
 ;	"ал" vaux gpr_past REMOVE:565
@@ -3202,9 +3202,9 @@
 ;	"ал" vaux gpr_past subst nom REMOVE:565
 ;	"ал" v tv past p3 pl REMOVE:642
 "<адам>"
-	"адам" n nom
 ;	"адам" n nom
-;		"е" cop aor p3 sg
+	"адам" n nom
+		"е" cop aor p3 sg
 ;	"адам" n attr REMOVE:397
 ;	"адам" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -3303,8 +3303,8 @@
 ;	"өз" prn ref px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<алған>"
-	"ал" v tv past p3 sg
-;	"ал" v tv gpr_past
+;	"ал" v tv past p3 sg
+	"ал" v tv gpr_past
 ;	"ал" v tv gpr_past subst nom
 ;	"ал" v tv ger_past nom
 ;	"ал" vaux gpr_past REMOVE:565
@@ -3467,10 +3467,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"шағында" v tv imp p2 sg REMOVE:599
 "<үйленген>"
-;	"үйлен" v iv gpr_past
+	"үйлен" v iv gpr_past
 ;	"үйлен" v iv ger_past nom
 ;	"үйлен" v iv gpr_past subst nom
-	"үйлен" v iv past p3 sg
+;	"үйлен" v iv past p3 sg
 ;	"үйлен" v iv past p3 pl REMOVE:642
 "<ең>"
 	"ең" adv
@@ -3648,9 +3648,9 @@
 "<Зеренің>"
 	"Зере" np ant f gen
 "<таусылмайтын>"  
-;	"тауыс" v tv pass neg gpr_impf
+	"тауыс" v tv pass neg gpr_impf
 ;	"тауыс" v tv pass neg gpr_impf subst nom
-	"тауыс" v tv pass neg pih p3 sg
+;	"тауыс" v tv pass neg pih p3 sg
 ;	"тауыс" v tv pass neg pih p3 pl REMOVE:642
 "<мол>"
 	"мол" adj
@@ -3985,9 +3985,9 @@
 ;	"сабақ" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жүргізілетін>"
-	"жүргіз" v tv pass gpr_impf
+;	"жүргіз" v tv pass gpr_impf
 ;	"жүргіз" v tv pass gpr_impf subst nom
-;	"жүргіз" v tv pass pih p3 sg
+	"жүргіз" v tv pass pih p3 sg
 ;	"жүргіз" v tv pass pih p3 pl REMOVE:642
 "<еді>"
 	"е" cop ifi p3 sg
@@ -4200,10 +4200,10 @@
 ;	"тіл" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<жазылған>"
-;	"жаз" v tv pass gpr_past
+	"жаз" v tv pass gpr_past
 ;	"жаз" v tv pass ger_past nom
 ;	"жаз" v tv pass gpr_past subst nom
-	"жаз" v tv pass past p3 sg
+;	"жаз" v tv pass past p3 sg
 ;	"жаз" v tv pass past p3 pl REMOVE:642
 "<ертегі>"
 	"*ертегі"
@@ -4570,10 +4570,10 @@
 "<алымдылығын>"
 	"*алымдылығын"
 "<аңғарған>"
-;	"аңғар" v tv gpr_past
+	"аңғар" v tv gpr_past
 ;	"аңғар" v tv ger_past nom
 ;	"аңғар" v tv gpr_past subst nom
-	"аңғар" v tv past p3 sg
+;	"аңғар" v tv past p3 sg
 ;	"аңғар" v tv past p3 pl REMOVE:642
 "<Құнанбай>"
 ;	"Құнанбай" np cog mf nom
@@ -4750,8 +4750,8 @@
 ;	"қас" adj subst px3sp loc SELECT:1072
 ;	"қасында" adv SELECT:1072
 "<болған>"
-	"бол" v iv past p3 sg
-;	"бол" v iv gpr_past
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
 ;	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
@@ -4809,8 +4809,8 @@
 "<ыдырай>"
 	"*ыдырай"
 "<бастаған>"
-	"баста" v tv past p3 sg
-;	"баста" v tv gpr_past
+;	"баста" v tv past p3 sg
+	"баста" v tv gpr_past
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" v tv ger_past nom
 ;	"баста" vaux gpr_past REMOVE:565
@@ -4834,8 +4834,8 @@
 "<кіріптар>"
 	"*кіріптар"
 "<еткен>"
-	"ет" v tv past p3 sg
-;	"ет" v tv gpr_past
+;	"ет" v tv past p3 sg
+	"ет" v tv gpr_past
 ;	"ет" v tv gpr_past subst nom
 ;	"ет" v tv ger_past nom
 ;	"ет" vaux gpr_past REMOVE:565
@@ -5187,10 +5187,10 @@
 "<”>"
 	"”" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<тұжырымға>"
 	"тұжырым" n dat
@@ -5487,8 +5487,8 @@
 "<жаншып>"
 	"*жаншып"
 "<жүрген>"
-	"жүр" v iv past p3 sg
-;	"жүр" v iv gpr_past
+;	"жүр" v iv past p3 sg
+	"жүр" v iv gpr_past
 ;	"жүр" v iv gpr_past subst nom
 ;	"жүр" v iv ger_past nom
 ;	"жүр" vaux gpr_past REMOVE:565
@@ -5571,10 +5571,10 @@
 "<Таймақкөл>"
 	"*Таймақкөл"
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<жерімді>"
 	"жер" n px1sg acc SELECT:776
@@ -5596,10 +5596,10 @@
 "<”>"
 	"”" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<жалған>"
 	"жалған" adj
@@ -5629,11 +5629,11 @@
 "<бойынша>"
 	"бойынша" post
 "<көтерілген>"
-;	"көтер" v tv pass gpr_past
+	"көтер" v tv pass gpr_past
 ;	"көтеріл" v iv gpr_past
 ;	"көтер" v tv pass ger_past nom
 ;	"көтеріл" v iv ger_past nom
-	"көтеріл" v iv past p3 sg
+;	"көтеріл" v iv past p3 sg
 ;	"көтер" v tv pass past p3 sg
 ;	"көтер" v tv pass gpr_past subst nom
 ;	"көтеріл" v iv gpr_past subst nom
@@ -5862,10 +5862,10 @@
 "<”>"
 	"”" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<бір топ>"
 	"бір топ" det qnt
@@ -5949,10 +5949,10 @@
 	"айда" v tv pass prc_perf SELECT:556
 ;	"айда" v tv pass gna_perf SELECT:556
 "<келген>"
-;	"кел" vaux gpr_past SELECT:568
+	"кел" vaux gpr_past SELECT:568
 ;	"кел" vaux ger_past nom SELECT:568
 ;	"кел" vaux gpr_past subst nom SELECT:568
-	"кел" vaux past p3 sg SELECT:568
+;	"кел" vaux past p3 sg SELECT:568
 ;	"кел" v iv gpr_past SELECT:568
 ;	"кел" v iv ger_past nom SELECT:568
 ;	"кел" v iv past p3 pl SELECT:568
@@ -6298,10 +6298,10 @@
 "<тани>"
 	"таны" v tv prc_impf
 "<бастаған>"
-;	"баста" vaux gpr_past SELECT:568
+	"баста" vaux gpr_past SELECT:568
 ;	"баста" vaux ger_past nom SELECT:568
 ;	"баста" vaux gpr_past subst nom SELECT:568
-	"баста" vaux past p3 sg SELECT:568
+;	"баста" vaux past p3 sg SELECT:568
 ;	"баста" v tv gpr_past SELECT:568
 ;	"баста" v tv ger_past nom SELECT:568
 ;	"баста" v tv past p3 pl SELECT:568
@@ -6451,8 +6451,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақын" n attr REMOVE:397
 "<болған>"
-	"бол" v iv past p3 sg
-;	"бол" v iv gpr_past
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
 ;	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
@@ -6569,10 +6569,10 @@
 "<”>"
 	"”" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<тұжырымын>"
 	"тұжырым" n px3sp acc
@@ -7084,9 +7084,9 @@
 "<жетік>"
 	"*жетік"
 "<білетін>"
-;	"біл" v tv gpr_impf
+	"біл" v tv gpr_impf
 ;	"біл" v tv gpr_impf subst nom
-	"біл" v tv pih p3 sg
+;	"біл" v tv pih p3 sg
 ;	"біл" v tv pih p3 pl REMOVE:642
 "<Абай>"
 	"Абай" np ant m nom SELECT:320
@@ -7193,9 +7193,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<тартқан>"
 ;	"тарт" v tv gpr_past
-;	"тарт" v tv ger_past nom
+	"тарт" v tv ger_past nom
 ;	"тарт" v tv gpr_past subst nom
-	"тарт" v tv past p3 sg
+;	"тарт" v tv past p3 sg
 ;	"тарт" v tv past p3 pl REMOVE:642
 "<шағында>"
 	"шақ" n px3sp loc
@@ -7408,10 +7408,10 @@
 "<Қарамола>"
 	"*Қарамола"
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<жерде>"
 	"жер" n loc SELECT:776
@@ -7456,9 +7456,9 @@
 "<губернасиясына>"
 	"*губернасиясына"
 "<қарайтын>"
-;	"қара" v tv gpr_impf
+	"қара" v tv gpr_impf
 ;	"қара" v tv gpr_impf subst nom
-	"қара" v tv pih p3 sg
+;	"қара" v tv pih p3 sg
 ;	"қара" v tv pih p3 pl REMOVE:642
 "<5>"
 	"5" num
@@ -7504,10 +7504,10 @@
 ;	"бас" v tv imp p2 sg REMOVE:599
 ;	"бас" v iv imp p2 sg REMOVE:599
 "<қосқан>"
-;	"қос" v tv gpr_past
+	"қос" v tv gpr_past
 ;	"қос" v tv ger_past nom
 ;	"қос" v tv gpr_past subst nom
-	"қос" v tv past p3 sg
+;	"қос" v tv past p3 sg
 ;	"қос" v tv past p3 pl REMOVE:642
 "<төтенше>"
 	"төтенше" adj
@@ -7559,10 +7559,10 @@
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<сайланған>"
-;	"сайла" v tv pass gpr_past
+	"сайла" v tv pass gpr_past
 ;	"сайла" v tv pass ger_past nom
 ;	"сайла" v tv pass gpr_past subst nom
-	"сайла" v tv pass past p3 sg
+;	"сайла" v tv pass past p3 sg
 ;	"сайла" v tv pass past p3 pl REMOVE:642
 "<Абайға>"
 	"Абай" np ant m dat SELECT:320
@@ -7655,8 +7655,8 @@
 ;	"Абай" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастаған>"
-	"баста" v tv past p3 sg
-;	"баста" v tv gpr_past
+;	"баста" v tv past p3 sg
+	"баста" v tv gpr_past
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" v tv ger_past nom
 ;	"баста" vaux gpr_past REMOVE:565
@@ -7690,8 +7690,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<тұратын>"
 ;	"тұр" v iv gpr_impf subst nom
-;	"тұр" v iv gpr_impf
-	"тұр" v iv pih p3 sg
+	"тұр" v iv gpr_impf
+;	"тұр" v iv pih p3 sg
 ;	"тұр" vaux gpr_impf REMOVE:565
 ;	"тұр" vaux pih p3 pl REMOVE:565
 ;	"тұр" vaux pih p3 sg REMOVE:565
@@ -7772,10 +7772,10 @@
 "<ежелден>"
 	"*ежелден"
 "<қалыптасқан>"
-;	"қалыптас" v iv gpr_past
+	"қалыптас" v iv gpr_past
 ;	"қалыптас" v iv ger_past nom
 ;	"қалыптас" v iv gpr_past subst nom
-	"қалыптас" v iv past p3 sg
+;	"қалыптас" v iv past p3 sg
 ;	"қалыптас" v iv past p3 pl REMOVE:642
 "<кертартпа>"
 	"кертартпа" adj
@@ -7837,10 +7837,10 @@
 "<зомбылыққа>"
 	"зомбылық" n dat
 "<негізделген>"
-;	"негізде" v tv pass gpr_past
+	"негізде" v tv pass gpr_past
 ;	"негізде" v tv pass ger_past nom
 ;	"негізде" v tv pass gpr_past subst nom
-	"негізде" v tv pass past p3 sg
+;	"негізде" v tv pass past p3 sg
 ;	"негізде" v tv pass past p3 pl REMOVE:642
 "<заңына да>"
 	"заң" n px3sp dat
@@ -7978,10 +7978,10 @@
 	"көк" n dat
 ;	"көк" adj subst dat
 "<көтерген>"
-;	"көтер" v tv gpr_past
+	"көтер" v tv gpr_past
 ;	"көтер" v tv ger_past nom
 ;	"көтер" v tv gpr_past subst nom
-	"көтер" v tv past p3 sg
+;	"көтер" v tv past p3 sg
 ;	"көтер" v tv past p3 pl REMOVE:642
 "<Қарамола>"
 	"*Қарамола"
@@ -8034,10 +8034,10 @@
 "<Кұнту>"
 	"*Кұнту"
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<жуандардан>"
 	"жуан" adj subst pl abl
@@ -8047,7 +8047,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастаған>"
 ;	"баста" v tv past p3 sg
-;	"баста" v tv gpr_past
+	"баста" v tv gpr_past
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" v tv ger_past nom
 ;	"баста" vaux gpr_past REMOVE:565
@@ -8055,7 +8055,7 @@
 ;	"баста" vaux past p3 pl REMOVE:565
 ;	"баста" vaux past p3 sg REMOVE:565
 ;	"баста" vaux gpr_past subst nom REMOVE:565
-	"баста" v tv past p3 pl 
+;	"баста" v tv past p3 pl 
 "<16>"
 	"16" num
 ;	"16" num subst nom
@@ -8097,10 +8097,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ши" n attr REMOVE:397
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<жерде>"
 	"жер" n loc SELECT:776
@@ -8378,10 +8378,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"үміт" n attr REMOVE:397
 "<күткен>"
-;	"күт" v tv gpr_past
+	"күт" v tv gpr_past
 ;	"күт" v tv ger_past nom
 ;	"күт" v tv gpr_past subst nom
-	"күт" v tv past p3 sg
+;	"күт" v tv past p3 sg
 ;	"күт" v tv past p3 pl REMOVE:642
 "<баласы>"
 	"бала" n px3sp nom
@@ -8441,10 +8441,10 @@
 "<тақырыпқа>"
 	"тақырып" n dat
 "<арнаған>"
-;	"арна" v tv gpr_past
+	"арна" v tv gpr_past
 ;	"арна" v tv ger_past nom
 ;	"арна" v tv gpr_past subst nom
-	"арна" v tv past p3 sg
+;	"арна" v tv past p3 sg
 ;	"арна" v tv past p3 pl REMOVE:642
 "<топтама>"
 	"топта" v tv neg imp p2 sg
@@ -8510,8 +8510,8 @@
 "<тіренішіндей>"
 	"*тіренішіндей"
 "<болған>"
-	"бол" v iv past p3 sg
-;	"бол" v iv gpr_past
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
 ;	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
@@ -8578,10 +8578,10 @@
 ;	"осы" prn dem sim nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<қабаттасқан>"
-;	"қабатта" v tv coop gpr_past
+	"қабатта" v tv coop gpr_past
 ;	"қабатта" v tv coop ger_past nom
 ;	"қабатта" v tv coop gpr_past subst nom
-	"қабатта" v tv coop past p3 sg
+;	"қабатта" v tv coop past p3 sg
 ;	"қабатта" v tv coop past p3 pl REMOVE:642
 "<қайғы>"
 ;	"қайғы" n nom
@@ -8599,12 +8599,12 @@
 "<күрт>"
 	"күрт" adv
 "<сынған>"
-;	"сын" v iv gpr_past
+	"сын" v iv gpr_past
 ;	"сынған" adj
 ;	"сын" v iv ger_past nom
 ;	"сынған" adj advl
 ;	"сынған" adj subst nom
-	"сын" v iv past p3 sg
+;	"сын" v iv past p3 sg
 ;	"сын" v iv gpr_past subst nom
 ;	"сынған" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -8844,10 +8844,10 @@
 "<Шәкәрімге>"
 	"Шәкәрім" np ant m dat
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<ұрпақтың>"
 	"ұрпақ" n gen
@@ -8918,10 +8918,10 @@
 "<үлгісімен>"
 	"үлгі" n px3sp ins
 "<салынған>"
-;	"сал" v tv pass gpr_past
+	"сал" v tv pass gpr_past
 ;	"сал" v tv pass ger_past nom
 ;	"сал" v tv pass gpr_past subst nom
-	"сал" v tv pass past p3 sg
+;	"сал" v tv pass past p3 sg
 ;	"сал" v tv pass past p3 pl REMOVE:642
 "<қос>"
 	"қос" adj
@@ -8996,8 +8996,8 @@
 ;	"Оразбай" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастаған>"
-	"баста" v tv past p3 sg
-;	"баста" v tv gpr_past
+;	"баста" v tv past p3 sg
+	"баста" v tv gpr_past
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" v tv ger_past nom
 ;	"баста" vaux gpr_past REMOVE:565
@@ -9383,10 +9383,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақын" n attr REMOVE:397
 "<жазған>"
-;	"жаз" v tv gpr_past
+	"жаз" v tv gpr_past
 ;	"жаз" v tv ger_past nom
 ;	"жаз" v tv gpr_past subst nom
-	"жаз" v tv past p3 sg
+;	"жаз" v tv past p3 sg
 ;	"жаз" v tv past p3 pl REMOVE:642
 "<өлеңдерін>"
 	"өлең" n pl px3sp acc
@@ -9444,10 +9444,10 @@
 "<сөзбен>"
 	"сөз" n ins
 "<жазылған>"
-;	"жаз" v tv pass gpr_past
+	"жаз" v tv pass gpr_past
 ;	"жаз" v tv pass ger_past nom
 ;	"жаз" v tv pass gpr_past subst nom
-	"жаз" v tv pass past p3 sg
+;	"жаз" v tv pass past p3 sg
 ;	"жаз" v tv pass past p3 pl REMOVE:642
 "<ғақлия>"
 	"*ғақлия"
@@ -9651,10 +9651,10 @@
 ;	"кенже" n attr SELECT:320
 ;	"кенже" adj subst nom SELECT:320
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<7>"
 	"7" num
@@ -9695,8 +9695,8 @@
 "<Келіндей>"
 	"келін" n sim
 "<алған>"
-	"ал" v tv past p3 sg
-;	"ал" v tv gpr_past
+;	"ал" v tv past p3 sg
+	"ал" v tv gpr_past
 ;	"ал" v tv gpr_past subst nom
 ;	"ал" v tv ger_past nom
 ;	"ал" vaux gpr_past REMOVE:565
@@ -9870,10 +9870,10 @@
 ;	"ерте" adj comp subst loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<жазылған>"
-;	"жаз" v tv pass gpr_past
+	"жаз" v tv pass gpr_past
 ;	"жаз" v tv pass ger_past nom
 ;	"жаз" v tv pass gpr_past subst nom
-	"жаз" v tv pass past p3 sg
+;	"жаз" v tv pass past p3 sg
 ;	"жаз" v tv pass past p3 pl REMOVE:642
 "<өлеңдері>"
 	"өлең" n pl px3sp nom
@@ -10052,10 +10052,10 @@
 ;	"қу" v tv gpr_impf subst nom
 ;	"қу" v tv pih p3 pl REMOVE:642
 "<танытқан>"
-;	"таныт" v tv gpr_past
+	"таныт" v tv gpr_past
 ;	"таныт" v tv ger_past nom
 ;	"таныт" v tv gpr_past subst nom
-	"таныт" v tv past p3 sg
+;	"таныт" v tv past p3 sg
 ;	"таныт" v tv past p3 pl REMOVE:642
 "<үлкен>"
 	"үлкен" adj
@@ -10265,10 +10265,10 @@
 ;	"жан" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<шығарған>"
-;	"шығар" v tv gpr_past
+	"шығар" v tv gpr_past
 ;	"шығар" v tv ger_past nom
 ;	"шығар" v tv gpr_past subst nom
-	"шығар" v tv past p3 sg
+;	"шығар" v tv past p3 sg
 ;	"шығар" v tv past p3 pl REMOVE:642
 "<төл>"
 	"төл" adj
@@ -10401,10 +10401,10 @@
 ;	"орысша" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<аударған>"
-;	"аудар" v tv gpr_past
+	"аудар" v tv gpr_past
 ;	"аудар" v tv ger_past nom
 ;	"аудар" v tv gpr_past subst nom
-	"аудар" v tv past p3 sg
+;	"аудар" v tv past p3 sg
 ;	"аудар" v tv past p3 pl REMOVE:642
 "<өлеңдері>"
 	"өлең" n pl px3sp nom
@@ -10700,11 +10700,11 @@
 ;	"дін" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<тараған>"
-;	"тара" v iv gpr_past
+	"тара" v iv gpr_past
 ;	"тара" v tv gpr_past
 ;	"тара" v iv ger_past nom
 ;	"тара" v tv ger_past nom
-	"тара" v tv past p3 sg
+;	"тара" v tv past p3 sg
 ;	"тара" v iv past p3 sg
 ;	"тара" v iv gpr_past subst nom
 ;	"тара" v tv gpr_past subst nom
@@ -10820,10 +10820,10 @@
 "<»>"
 	"»" rquot
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<атпен>"
 	"ат" n ins
@@ -10847,10 +10847,10 @@
 "<өзінше>"
 	"өз" prn ref px3sp adv
 "<сенген>"
-;	"сен" v tv gpr_past
+	"сен" v tv gpr_past
 ;	"сен" v tv ger_past nom
 ;	"сен" v tv gpr_past subst nom
-	"сен" v tv past p3 sg
+;	"сен" v tv past p3 sg
 ;	"сен" v tv past p3 pl REMOVE:642
 "<діни>"
 ;	"діни" adj
@@ -11509,10 +11509,10 @@
 "<">"
 	""" sent
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<күрделі>"
 	"күрделі" adj
@@ -11601,9 +11601,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"тыс" n attr REMOVE:397
 "<өмір сүретін>"
-;	"өмір сүр" v iv gpr_impf
+	"өмір сүр" v iv gpr_impf
 ;	"өмір сүр" v iv gpr_impf subst nom
-	"өмір сүр" v iv pih p3 sg
+;	"өмір сүр" v iv pih p3 sg
 ;	"өмір сүр" v iv pih p3 pl REMOVE:642
 "<объективті>"
 	"объективті" adj
@@ -11625,9 +11625,9 @@
 "<нәтижесіңде>"
 	"*нәтижесіңде"
 "<пайда болатын>"
-;	"пайда бол" v iv gpr_impf
+	"пайда бол" v iv gpr_impf
 ;	"пайда бол" v iv gpr_impf subst nom
-	"пайда бол" v iv pih p3 sg
+;	"пайда бол" v iv pih p3 sg
 ;	"пайда бол" v iv pih p3 pl REMOVE:642
 "<ғылым>"
 	"ғылым" n nom
@@ -11641,10 +11641,10 @@
 "<білімнің>"
 	"білім" n gen
 "<жинақталған>"
-;	"жинақта" v tv pass gpr_past
+	"жинақта" v tv pass gpr_past
 ;	"жинақта" v tv pass ger_past nom
 ;	"жинақта" v tv pass gpr_past subst nom
-	"жинақта" v tv pass past p3 sg
+;	"жинақта" v tv pass past p3 sg
 ;	"жинақта" v tv pass past p3 pl REMOVE:642
 "<қоры>"
 	"қор" n px3sp nom
@@ -11711,10 +11711,10 @@
 "<,>"
 	"," cm
 "<жиған>"
-;	"жи" v tv gpr_past
+	"жи" v tv gpr_past
 ;	"жи" v tv ger_past nom
 ;	"жи" v tv gpr_past subst nom
-	"жи" v tv past p3 sg
+;	"жи" v tv past p3 sg
 ;	"жи" v tv past p3 pl REMOVE:642
 "<қазынамызды>"
 	"қазына" n px1pl acc
@@ -11834,10 +11834,10 @@
 "<">"
 	""" sent
 "<көздеген>"
-;	"көзде" v tv gpr_past
+	"көзде" v tv gpr_past
 ;	"көзде" v tv ger_past nom
 ;	"көзде" v tv gpr_past subst nom
-	"көзде" v tv past p3 sg
+;	"көзде" v tv past p3 sg
 ;	"көзде" v tv past p3 pl REMOVE:642
 "<мақсаты>"
 	"мақсат" n px3sp nom
@@ -11862,9 +11862,9 @@
 	"ту" v iv prc_impf
 ;	"ту" v tv prc_impf
 "<пайда болатын>"
-;	"пайда бол" v iv gpr_impf
+	"пайда бол" v iv gpr_impf
 ;	"пайда бол" v iv gpr_impf subst nom
-	"пайда бол" v iv pih p3 sg
+;	"пайда бол" v iv pih p3 sg
 ;	"пайда бол" v iv pih p3 pl REMOVE:642
 "<жан>"
 	"жан" n attr SELECT:408
@@ -11959,8 +11959,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"тамыр" n attr REMOVE:397
 "<алған>"
-	"ал" v tv past p3 sg
-;	"ал" v tv gpr_past
+;	"ал" v tv past p3 sg
+	"ал" v tv gpr_past
 ;	"ал" v tv gpr_past subst nom
 ;	"ал" v tv ger_past nom
 ;	"ал" vaux gpr_past REMOVE:565
@@ -12197,10 +12197,10 @@
 ;	"тіл" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<қалыптасқан>"
-;	"қалыптас" v iv gpr_past
+	"қалыптас" v iv gpr_past
 ;	"қалыптас" v iv ger_past nom
 ;	"қалыптас" v iv gpr_past subst nom
-	"қалыптас" v iv past p3 sg
+;	"қалыптас" v iv past p3 sg
 ;	"қалыптас" v iv past p3 pl REMOVE:642
 "<шығыс>"
 	"шығыс" adj
@@ -12620,10 +12620,10 @@
 	"тіл" v tv pass prc_impf
 	"тіл" n px3sp dat
 "<енбеген>"
-;	"ен" v iv neg gpr_past
+	"ен" v iv neg gpr_past
 ;	"ен" v iv neg ger_past nom
 ;	"ен" v iv neg gpr_past subst nom
-	"ен" v iv neg past p3 sg
+;	"ен" v iv neg past p3 sg
 ;	"ен" v iv neg past p3 pl REMOVE:642
 "<араб>"
 	"араб" n nom
@@ -12806,13 +12806,13 @@
 "<перзентлеріне>"
 	"*перзентлеріне"
 "<арналған>"
-;	"арна" v tv pass gpr_past
+	"арна" v tv pass gpr_past
 ;	"арнал" v iv gpr_past
 ;	"арнал" v iv gpr_past subst nom
 ;	"арна" v tv pass ger_past nom
 ;	"арнал" v iv ger_past nom
 ;	"арнал" v iv past p3 sg
-	"арна" v tv pass past p3 sg
+;	"арна" v tv pass past p3 sg
 ;	"арна" v tv pass gpr_past subst nom
 ;	"арналған" post REMOVE:286
 ;	"арна" v tv pass past p3 pl REMOVE:642
@@ -12872,10 +12872,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"иман" n attr REMOVE:397
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<->"
 	"-" guio
@@ -12910,10 +12910,10 @@
 "<екенін>"
 	"е" cop ger_past px3sp acc
 "<баяндаған>"
-;	"баянда" v tv gpr_past
+	"баянда" v tv gpr_past
 ;	"баянда" v tv ger_past nom
 ;	"баянда" v tv gpr_past subst nom
-	"баянда" v tv past p3 sg
+;	"баянда" v tv past p3 sg
 ;	"баянда" v tv past p3 pl REMOVE:642
 "<13>"
 	"13" num
@@ -12921,9 +12921,9 @@
 "<->"
 	"-" guio
 "<сөзі>"
-	"сөз" n px3sp nom
 ;	"сөз" n px3sp nom
-;		"е" cop aor p3 sg
+	"сөз" n px3sp nom
+		"е" cop aor p3 sg
 ;	"сөз" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:649
 "<.>"
@@ -13010,10 +13010,10 @@
 ;	"тіл" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<қалыптасқан>"
-;	"қалыптас" v iv gpr_past
+	"қалыптас" v iv gpr_past
 ;	"қалыптас" v iv ger_past nom
 ;	"қалыптас" v iv gpr_past subst nom
-	"қалыптас" v iv past p3 sg
+;	"қалыптас" v iv past p3 sg
 ;	"қалыптас" v iv past p3 pl REMOVE:642
 "<атауларын>"
 	"атау" n pl px3sp acc SELECT:417
@@ -13275,10 +13275,10 @@
 ;	"абай" adj advl SELECT:320
 ;	"абай" adj subst nom SELECT:320
 "<өмір сүрген>"
-;	"өмір сүр" v iv gpr_past
+	"өмір сүр" v iv gpr_past
 ;	"өмір сүр" v iv ger_past nom
 ;	"өмір сүр" v iv gpr_past subst nom
-	"өмір сүр" v iv past p3 sg
+;	"өмір сүр" v iv past p3 sg
 ;	"өмір сүр" v iv past p3 pl REMOVE:642
 "<көзеңде>"
 	"*көзеңде"
@@ -13634,8 +13634,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<келетін>"
 ;	"кел" v iv gpr_impf subst nom
-;	"кел" v iv gpr_impf
-	"кел" v iv pih p3 sg
+	"кел" v iv gpr_impf
+;	"кел" v iv pih p3 sg
 ;	"кел" vaux gpr_impf REMOVE:565
 ;	"кел" vaux pih p3 pl REMOVE:565
 ;	"кел" vaux pih p3 sg REMOVE:565
@@ -13854,8 +13854,8 @@
 ;	"кедергі" n nom SELECT:408
 "<болатын>"
 ;	"болат" n px3sp acc
-;	"бол" v iv gpr_impf
-	"бол" v iv pih p3 sg
+	"бол" v iv gpr_impf
+;	"бол" v iv pih p3 sg
 ;	"бол" v iv gpr_impf subst nom
 ;	"бол" vaux gpr_impf REMOVE:565
 ;	"бол" vaux pih p3 pl REMOVE:565
@@ -14022,8 +14022,8 @@
 "<күрескері>"
 	"*күрескері"
 "<болған>"
-	"бол" v iv past p3 sg
-;	"бол" v iv gpr_past
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
 ;	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
@@ -14347,12 +14347,12 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<болмаған>"
 ;	"болмаған" adj subst nom
-;	"бол" v iv neg gpr_past
+	"бол" v iv neg gpr_past
 ;	"болмаған" adj
 ;	"бол" v iv neg gpr_past subst nom
 ;	"бол" v iv neg ger_past nom
 ;	"болмаған" adj advl
-	"бол" v iv neg past p3 sg
+;	"бол" v iv neg past p3 sg
 ;	"болмаған" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"болмаған" adj
@@ -14624,9 +14624,9 @@
 ;	"біз" prn pers p1 pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<білетін>"
-;	"біл" v tv gpr_impf
+	"біл" v tv gpr_impf
 ;	"біл" v tv gpr_impf subst nom
-	"біл" v tv pih p3 sg
+;	"біл" v tv pih p3 sg
 ;	"біл" v tv pih p3 pl REMOVE:642
 "<ақын>"
 	"ақын" n nom
@@ -14867,10 +14867,10 @@
 ;	"Санкт-Петербург" np top loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<басылған>"
-;	"бас" v tv pass gpr_past
+	"бас" v tv pass gpr_past
 ;	"бас" v tv pass ger_past nom
 ;	"бас" v tv pass gpr_past subst nom
-	"бас" v tv pass past p3 sg
+;	"бас" v tv pass past p3 sg
 ;	"бас" v tv pass past p3 pl REMOVE:642
 "<Абай>"
 	"Абай" np ant m nom SELECT:320
@@ -15160,8 +15160,8 @@
 ;	"іш" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<шыққан>"
-	"шық" v iv past p3 sg
-;	"шық" v iv gpr_past
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
 ;	"шық" v iv gpr_past subst nom
 ;	"шық" v iv ger_past nom
 ;	"шық" vaux gpr_past REMOVE:565
@@ -15340,12 +15340,12 @@
 	"Абай" np ant m dat SELECT:320
 ;	"абай" adj subst dat SELECT:320
 "<тағылған>"
-;	"тақ" v tv pass gpr_past
+	"тақ" v tv pass gpr_past
 ;	"тағыл" v iv gpr_past
 ;	"тақ" v tv pass ger_past nom
 ;	"тағыл" v iv ger_past nom
 ;	"тағыл" v iv past p3 sg
-	"тақ" v tv pass past p3 sg
+;	"тақ" v tv pass past p3 sg
 ;	"тақ" v tv pass gpr_past subst nom
 ;	"тағыл" v iv gpr_past subst nom
 ;	"тақ" v tv pass past p3 pl REMOVE:642
@@ -16093,9 +16093,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"жын" n attr REMOVE:397
 "<шақыратын>"
-;	"шақыр" v tv gpr_impf
+	"шақыр" v tv gpr_impf
 ;	"шақыр" v tv gpr_impf subst nom
-	"шақыр" v tv pih p3 sg
+;	"шақыр" v tv pih p3 sg
 ;	"шақыр" v tv pih p3 pl REMOVE:642
 "<бақсылар>"
 	"бақсы" n pl nom
@@ -16140,9 +16140,9 @@
 ;	"ұрпақ" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<санайтын>"
-;	"сана" v tv gpr_impf
+	"сана" v tv gpr_impf
 ;	"сана" v tv gpr_impf subst nom
-	"сана" v tv pih p3 sg
+;	"сана" v tv pih p3 sg
 ;	"сана" v tv pih p3 pl REMOVE:642
 "<қожалар>"
 	"қожа" n pl nom
@@ -16455,10 +16455,10 @@
 	"шақыр" v tv prc_perf
 ;	"шақыр" v tv gna_perf
 "<қойған>"
-;	"қой" v tv gpr_past
+	"қой" v tv gpr_past
 ;	"қой" v tv ger_past nom
 ;	"қой" v tv gpr_past subst nom
-	"қой" v tv past p3 sg
+;	"қой" v tv past p3 sg
 ;	"қой" v tv past p3 pl REMOVE:642
 "<аты>"
 	"ат" n px3sp nom
@@ -16530,12 +16530,12 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ене" n attr REMOVE:397
 "<бастаған>"
-;	"баста" vaux gpr_past
+	"баста" vaux gpr_past
 ;	"баста" v tv gpr_past
 ;	"баста" vaux ger_past nom
 ;	"баста" v tv ger_past nom
 ;	"баста" v tv past p3 sg
-	"баста" vaux past p3 sg
+;	"баста" vaux past p3 sg
 ;	"баста" vaux gpr_past subst nom
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" vaux past p3 pl REMOVE:642
@@ -16708,8 +16708,8 @@
 ;	"болыс" v iv imp p2 sg REMOVE:599
 ;	"бол" v iv coop imp p2 sg REMOVE:599
 "<болған>"
-	"бол" v iv past p3 sg
-;	"бол" v iv gpr_past
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
 ;	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
@@ -17342,8 +17342,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"қарсы" adv REMOVE:359
 "<шыққан>"
-	"шық" v iv past p3 sg
-;	"шық" v iv gpr_past
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
 ;	"шық" v iv gpr_past subst nom
 ;	"шық" v iv ger_past nom
 ;	"шық" vaux gpr_past REMOVE:565
@@ -17759,19 +17759,19 @@
 "<)>"
 	")" rpar
 "<деген>"
-;	"де" v tv gpr_past
+	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
 ;	"де" v tv gpr_past subst nom
-	"де" v tv past p3 sg
+;	"де" v tv past p3 sg
 ;	"де" v tv past p3 pl REMOVE:642
 "<өлеңін>"
 	"өлең" n px3sp acc
 "<жариялаған>"
 ;	"жарияла" v iv gpr_past
 ;	"жарияла" v tv gpr_past
-;	"жарияла" v iv ger_past nom
+	"жарияла" v iv ger_past nom
 ;	"жарияла" v tv ger_past nom
-	"жарияла" v tv past p3 sg
+;	"жарияла" v tv past p3 sg
 ;	"жарияла" v iv past p3 sg
 ;	"жарияла" v iv gpr_past subst nom
 ;	"жарияла" v tv gpr_past subst nom
@@ -18177,9 +18177,9 @@
 ;	"бол" v iv gna_perf SELECT:556
 ;	"бол" vaux prc_perf SELECT:556 REMOVE:565
 "<тұратын>"
-;	"тұр" vaux gpr_impf SELECT:568
+	"тұр" vaux gpr_impf SELECT:568
 ;	"тұр" vaux gpr_impf subst nom SELECT:568
-	"тұр" vaux pih p3 sg SELECT:568
+;	"тұр" vaux pih p3 sg SELECT:568
 ;	"тұр" v iv gpr_impf SELECT:568
 ;	"тұр" v iv pih p3 pl SELECT:568
 ;	"тұр" v iv pih p3 sg SELECT:568
@@ -18276,10 +18276,10 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"бойы" n attr REMOVE:397
 "<жинаған>"
-;	"жина" v tv gpr_past
+	"жина" v tv gpr_past
 ;	"жина" v tv ger_past nom
 ;	"жина" v tv gpr_past subst nom
-	"жина" v tv past p3 sg
+;	"жина" v tv past p3 sg
 ;	"жина" v tv past p3 pl REMOVE:642
 "<малдан>"
 	"мал" n abl
@@ -18322,12 +18322,12 @@
 ;	"қал" v iv ger dat SELECT:417
 "<болатын>"
 ;	"болат" n px3sp acc
-	"бол" v iv gpr_impf
+;	"бол" v iv gpr_impf
 ;	"бол" v iv pih p3 sg
 ;	"бол" v iv gpr_impf subst nom
 ;	"бол" vaux gpr_impf REMOVE:565
 ;	"бол" vaux pih p3 pl REMOVE:565
-;	"бол" vaux pih p3 sg REMOVE:565
+	"бол" vaux pih p3 sg REMOVE:565
 ;	"бол" vaux gpr_impf subst nom REMOVE:565
 ;	"бол" v iv pih p3 pl REMOVE:642
 "<еді>"
@@ -18460,9 +18460,9 @@
 	"*халге"
 "<душар болған>"
 ;	"душар бол" v iv gpr_past
-;	"душар бол" v iv ger_past nom
+	"душар бол" v iv ger_past nom
 ;	"душар бол" v iv gpr_past subst nom
-	"душар бол" v iv past p3 sg
+;	"душар бол" v iv past p3 sg
 ;	"душар бол" v iv past p3 pl REMOVE:642
 "<еді>"
 	"е" cop ifi p3 sg
@@ -18526,10 +18526,10 @@
 ;	"бол" v iv gna_perf SELECT:556
 ;	"бол" vaux prc_perf SELECT:556 REMOVE:565
 "<көрмеген>"
-;	"көр" vaux neg gpr_past SELECT:568
+	"көр" vaux neg gpr_past SELECT:568
 ;	"көр" vaux neg ger_past nom SELECT:568
 ;	"көр" vaux neg gpr_past subst nom SELECT:568
-	"көр" vaux neg past p3 sg SELECT:568
+;	"көр" vaux neg past p3 sg SELECT:568
 ;	"көр" v tv neg gpr_past SELECT:568
 ;	"көр" v tv neg ger_past nom SELECT:568
 ;	"көр" v tv neg past p3 pl SELECT:568
@@ -19412,10 +19412,10 @@
 	"ал" v tv ger dat
 ;	"ал" vaux ger dat REMOVE:565
 "<жұмылған>"
-;	"жұм" v tv pass gpr_past
+	"жұм" v tv pass gpr_past
 ;	"жұм" v tv pass ger_past nom
 ;	"жұм" v tv pass gpr_past subst nom
-	"жұм" v tv pass past p3 sg
+;	"жұм" v tv pass past p3 sg
 ;	"жұм" v tv pass past p3 pl REMOVE:642
 "<еңбек>"
 	"еңбек" n nom
@@ -19448,8 +19448,8 @@
 	"ізгілік" n
 		"лы" post
 "<болатынын>"
-	"бол" v iv gpr_impf subst px3sp acc
-;	"бол" v iv ger_impf px3sp acc
+;	"бол" v iv gpr_impf subst px3sp acc
+	"бол" v iv ger_impf px3sp acc
 ;	"бол" vaux ger_impf px3sp acc REMOVE:565
 ;	"бол" vaux gpr_impf subst px3sp acc REMOVE:565
 "<қадап>"
@@ -20211,10 +20211,10 @@
 "<уездерде>"
 	"*уездерде"
 "<болған>"
-	"бол" v iv past p3 sg
+;	"бол" v iv past p3 sg
 ;	"бол" v iv gpr_past
 ;	"бол" v iv gpr_past subst nom
-;	"бол" v iv ger_past nom
+	"бол" v iv ger_past nom
 ;	"бол" vaux gpr_past REMOVE:565
 ;	"бол" vaux ger_past nom REMOVE:565
 ;	"бол" vaux past p3 pl REMOVE:565
@@ -20272,10 +20272,10 @@
 ;	"абай" adj advl SELECT:320
 ;	"абай" adj subst nom SELECT:320
 "<аударған>"
-;	"аудар" v tv gpr_past
+	"аудар" v tv gpr_past
 ;	"аудар" v tv ger_past nom
 ;	"аудар" v tv gpr_past subst nom
-	"аудар" v tv past p3 sg
+;	"аудар" v tv past p3 sg
 ;	"аудар" v tv past p3 pl REMOVE:642
 "<өлеңдерін>"
 	"өлең" n pl px3sp acc
@@ -20360,10 +20360,10 @@
 ;	"абай" adj advl SELECT:320
 ;	"абай" adj subst nom SELECT:320
 "<аударған>"
-;	"аудар" v tv gpr_past
+	"аудар" v tv gpr_past
 ;	"аудар" v tv ger_past nom
 ;	"аудар" v tv gpr_past subst nom
-	"аудар" v tv past p3 sg
+;	"аудар" v tv past p3 sg
 ;	"аудар" v tv past p3 pl REMOVE:642
 "<шығармалар>"
 	"шығарма" n pl nom
@@ -20488,10 +20488,10 @@
 "<сөзбен>"
 	"сөз" n ins
 "<жазылған>"
-;	"жаз" v tv pass gpr_past
+	"жаз" v tv pass gpr_past
 ;	"жаз" v tv pass ger_past nom
 ;	"жаз" v tv pass gpr_past subst nom
-	"жаз" v tv pass past p3 sg
+;	"жаз" v tv pass past p3 sg
 ;	"жаз" v tv pass past p3 pl REMOVE:642
 "<ғибраттарында>"
 	"ғибрат" n pl px3sp loc
@@ -20571,10 +20571,10 @@
 ;	"кеңес" n attr REMOVE:397
 ;	"кеңес" v iv imp p2 sg REMOVE:599
 "<сұраған>"
-;	"сұра" v tv gpr_past
+	"сұра" v tv gpr_past
 ;	"сұра" v tv ger_past nom
 ;	"сұра" v tv gpr_past subst nom
-	"сұра" v tv past p3 sg
+;	"сұра" v tv past p3 sg
 ;	"сұра" v tv past p3 pl REMOVE:642
 "<дала>"
 	"дала" n attr SELECT:408
@@ -20749,9 +20749,9 @@
 ;	"кел" v iv gpr_past subst pl nom SELECT:568
 ;		"да" postadv
 "<санасатын>"
-	"сана" v tv coop gpr_impf
+;	"сана" v tv coop gpr_impf
 ;	"сана" v tv coop gpr_impf subst nom
-;	"сана" v tv coop pih p3 sg
+	"сана" v tv coop pih p3 sg
 ;	"сана" v tv coop pih p3 pl REMOVE:642
 "<.>"
 	"." sent
@@ -21162,9 +21162,9 @@
 "<ең>"
 	"ең" adv
 "<жақсы көретін>"
-;	"жақсы көр" v tv gpr_impf
+	"жақсы көр" v tv gpr_impf
 ;	"жақсы көр" v tv gpr_impf subst nom
-	"жақсы көр" v tv pih p3 sg
+;	"жақсы көр" v tv pih p3 sg
 ;	"жақсы көр" v tv pih p3 pl REMOVE:642
 "<інісі>"
 	"іні" n px3sp nom
@@ -21990,8 +21990,8 @@
 "<ыкпал>"
 	"*ыкпал"
 "<еткен>"
-	"ет" v tv past p3 sg
-;	"ет" v tv gpr_past
+;	"ет" v tv past p3 sg
+	"ет" v tv gpr_past
 ;	"ет" v tv gpr_past subst nom
 ;	"ет" v tv ger_past nom
 ;	"ет" vaux gpr_past REMOVE:565
@@ -22651,8 +22651,8 @@
 ;	"шығармашылық" adj subst px3sp dat
 "<арналған>"
 ;	"арна" v tv pass gpr_past
-;	"арнал" v iv gpr_past
-	"арналған" post
+	"арнал" v iv gpr_past
+;	"арналған" post
 ;	"арна" v tv pass ger_past nom
 ;	"арнал" v iv ger_past nom
 ;	"арнал" v iv past p3 sg
