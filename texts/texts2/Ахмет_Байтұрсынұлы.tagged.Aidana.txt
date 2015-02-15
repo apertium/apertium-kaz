@@ -529,12 +529,12 @@
 "<сыныптық>"
 	"*сыныптық"
 "<орыс>"
-	"орыс" n nom
+;	"орыс" n nom
 ;	"орыс" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орыс" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"орыс" n attr REMOVE:397
+	"орыс" n attr REMOVE:397
 ;	"ор" v tv coop imp p2 sg REMOVE:599
 "<->"
 	"-" guio
@@ -679,12 +679,12 @@
 "<уездеріндегі>"
 	"*уездеріндегі"
 "<орыс>"
-	"орыс" n nom
+;	"орыс" n nom
 ;	"орыс" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орыс" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"орыс" n attr REMOVE:397
+	"орыс" n attr REMOVE:397
 ;	"ор" v tv coop imp p2 sg REMOVE:599
 "<->"
 	"-" guio
@@ -2087,9 +2087,9 @@
 "<абақтыға>"
 	"абақты" n dat
 "<отырып>"
-	"отыр" v iv prc_perf SELECT:556
+;	"отыр" v iv prc_perf SELECT:556
 ;	"отыр" vaux gna_perf SELECT:556
-;	"отыр" v iv gna_perf SELECT:556
+	"отыр" v iv gna_perf SELECT:556
 ;	"отыр" vaux prc_perf SELECT:556 REMOVE:565
 "<шықты>"
 	"шық" vaux ifi p3 sg SELECT:568
@@ -2314,8 +2314,8 @@
 ;	"тікелей" adj SELECT:438
 ;	"тікелей" adj subst nom SELECT:438
 "<араласып>"
-;	"аралас" v iv gna_perf
-	"арала" v tv coop gna_perf
+	"аралас" v iv gna_perf
+;	"арала" v tv coop gna_perf
 ;	"арала" v tv coop prc_perf REMOVE:542
 ;	"аралас" v iv prc_perf REMOVE:542
 "<,>"
@@ -2719,8 +2719,8 @@
 ;	"орынбасар" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<тағайындалды>"
@@ -5022,11 +5022,11 @@
 "<оянуына>"
 	"оян" v iv ger px3sp dat
 "<ықпал>"
-	"ықпал" n nom
+;	"ықпал" n nom
 ;	"ықпал" n nom
 ;		"е" cop aor p3 pl REMOVE:229
-;	"ықпал" n nom
-;		"е" cop aor p3 sg REMOVE:229
+	"ықпал" n nom
+		"е" cop aor p3 sg REMOVE:229
 ;	"ықпал" n attr REMOVE:397
 "<етті>"
 	"ет" v tv ifi p3 sg SELECT:265
@@ -5043,11 +5043,11 @@
 	"ақын" n gen
 ;	"Ақын" np ant m gen
 "<азаматтық>"
-	"азаматтық" adj
+;	"азаматтық" adj
 ;	"азаматтық" n nom
 ;	"азаматтық" n attr
 ;	"азаматтық" adj advl
-;	"азаматтық" adj subst nom
+	"азаматтық" adj subst nom
 ;	"азаматтық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"азаматтық" adj
@@ -5186,9 +5186,9 @@
 "<»>"
 	"»" rquot
 "<негізгі>"
-	"негізгі" adj
+;	"негізгі" adj
 ;	"негізгі" adv
-;	"негізгі" adj subst nom
+	"негізгі" adj subst nom
 ;	"негізгі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"негізгі" adj
@@ -8916,9 +8916,9 @@
 ;	"фольклор" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<қазақ>"
 	"қазақ" n attr SELECT:408
 ;	"қазақ" n nom
@@ -9421,9 +9421,9 @@
 ;	"теория" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<мәдениет>"
 	"мәдениет" n attr SELECT:408
 ;	"мәдениет" n nom
@@ -9682,9 +9682,9 @@
 ;	"үй" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<ескерткіші>"
 	"ескерткіш" n px3sp nom
 ;	"ескерткіш" n px3sp nom
@@ -10331,8 +10331,8 @@
 ;	"сәйкес" adj SELECT:438
 ;	"сәйкес" adj subst nom SELECT:438
 "<қосып>"
-	"қос" v tv prc_perf SELECT:556
-;	"қос" v tv gna_perf SELECT:556
+;	"қос" v tv prc_perf SELECT:556
+	"қос" v tv gna_perf SELECT:556
 "<отырған>"
 ;	"отыр" vaux gpr_past SELECT:568
 ;	"отыр" vaux ger_past nom SELECT:568
@@ -10885,9 +10885,9 @@
 ;	"саз" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<ой>"
 ;	"ой" ij
 	"ой" n nom
@@ -11173,8 +11173,8 @@
 ;	"халық" n pl acc
 ;		"да" postadv
 "<пайдаланып>"
-	"пайдалан" v tv prc_perf SELECT:556
-;	"пайдалан" v tv gna_perf SELECT:556
+;	"пайдалан" v tv prc_perf SELECT:556
+	"пайдалан" v tv gna_perf SELECT:556
 "<отырғандықтан>"
 	"отыр" vaux ger_perf abl SELECT:568
 ;	"отыр" v iv ger_perf abl SELECT:568
@@ -12173,8 +12173,8 @@
 ;	"іргетас" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<қаланды>"
@@ -13026,9 +13026,9 @@
 ;	"ғылым" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<әдебиет>"
 	"әдебиет" n attr SELECT:408
 ;	"әдебиет" n nom
@@ -13284,9 +13284,9 @@
 ;	"әдебиет" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<жазба>"
 	"жазба" n attr SELECT:408
 ;	"жазба" n nom
@@ -13478,9 +13478,9 @@
 "<Кітаптың>"
 	"кітап" n gen
 "<бірінші>"
-	"бір" num ord
+;	"бір" num ord
 ;	"бірінші" adj
-;	"бір" num ord subst nom
+	"бір" num ord subst nom
 ;	"бірінші" adj advl
 ;	"бірінші" adj subst nom
 ;	"бірінші" adj
@@ -13561,8 +13561,8 @@
 "<сөздің>"
 	"сөз" n gen
 "<толып>"
-	"тол" v iv prc_perf SELECT:556
-;	"тол" v iv gna_perf SELECT:556
+;	"тол" v iv prc_perf SELECT:556
+	"тол" v iv gna_perf SELECT:556
 "<жатқан>"
 	"жат" vaux gpr_past SELECT:568
 ;	"жат" vaux ger_past nom SELECT:568
@@ -13581,9 +13581,9 @@
 ;	"қыр" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<сыры>"
 	"сыр" n px3sp nom
 ;	"сыр" n px3sp nom
@@ -13606,9 +13606,9 @@
 ;	"тара" v tv ger pl nom SELECT:417
 ;	"тарау" adj subst pl nom SELECT:417
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<тармақтар>"
 	"тармақ" n pl nom
 ;	"тармақ" n pl nom
@@ -14115,8 +14115,8 @@
 "<имандарын>"
 	"иман" n pl px3sp acc
 "<сатып>"
-	"сат" v tv prc_perf SELECT:556
-;	"сат" v tv gna_perf SELECT:556
+;	"сат" v tv prc_perf SELECT:556
+	"сат" v tv gna_perf SELECT:556
 "<жүргенде>"
 	"жүр" vaux ger_past loc SELECT:568
 ;	"жүр" vaux gpr_past subst loc SELECT:568
@@ -14286,38 +14286,38 @@
 ;	"түр" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<болмаса да>"
-	"бол" v iv neg gna_cond p3 sg
-		"да" postadv SELECT:851
-;	"бол" vaux neg prc_cond p3 pl REMOVE:542
-;		"да" cnjcoo
-;	"бол" vaux neg prc_cond p3 pl REMOVE:542
-;		"да" postadv
-;	"бол" vaux neg prc_cond p3 sg REMOVE:542
-;		"да" cnjcoo
-;	"бол" vaux neg prc_cond p3 sg REMOVE:542
-;		"да" postadv
-;	"бол" v iv neg prc_cond p3 pl REMOVE:542
-;		"да" cnjcoo
-;	"бол" v iv neg prc_cond p3 pl REMOVE:542
-;		"да" postadv
-;	"бол" v iv neg prc_cond p3 sg REMOVE:542
-;		"да" cnjcoo
-;	"бол" v iv neg prc_cond p3 sg REMOVE:542
-;		"да" postadv
-;	"бол" vaux neg gna_cond p3 pl REMOVE:565
-;		"да" cnjcoo
-;	"бол" vaux neg gna_cond p3 pl REMOVE:565
-;		"да" postadv
-;	"бол" vaux neg gna_cond p3 sg REMOVE:565
-;		"да" cnjcoo
-;	"бол" vaux neg gna_cond p3 sg REMOVE:565
-;		"да" postadv
-;	"бол" v iv neg gna_cond p3 pl REMOVE:642
-;		"да" cnjcoo
-;	"бол" v iv neg gna_cond p3 pl REMOVE:642
-;		"да" postadv
 ;	"бол" v iv neg gna_cond p3 sg
-;		"да" cnjcoo SELECT:851
+;		"да" postadv SELECT:851
+;	"бол" vaux neg prc_cond p3 pl REMOVE:542
+;		"да" cnjcoo
+;	"бол" vaux neg prc_cond p3 pl REMOVE:542
+;		"да" postadv
+;	"бол" vaux neg prc_cond p3 sg REMOVE:542
+;		"да" cnjcoo
+;	"бол" vaux neg prc_cond p3 sg REMOVE:542
+;		"да" postadv
+;	"бол" v iv neg prc_cond p3 pl REMOVE:542
+;		"да" cnjcoo
+;	"бол" v iv neg prc_cond p3 pl REMOVE:542
+;		"да" postadv
+;	"бол" v iv neg prc_cond p3 sg REMOVE:542
+;		"да" cnjcoo
+;	"бол" v iv neg prc_cond p3 sg REMOVE:542
+;		"да" postadv
+;	"бол" vaux neg gna_cond p3 pl REMOVE:565
+;		"да" cnjcoo
+;	"бол" vaux neg gna_cond p3 pl REMOVE:565
+;		"да" postadv
+;	"бол" vaux neg gna_cond p3 sg REMOVE:565
+;		"да" cnjcoo
+;	"бол" vaux neg gna_cond p3 sg REMOVE:565
+;		"да" postadv
+;	"бол" v iv neg gna_cond p3 pl REMOVE:642
+;		"да" cnjcoo
+;	"бол" v iv neg gna_cond p3 pl REMOVE:642
+;		"да" postadv
+	"бол" v iv neg gna_cond p3 sg
+		"да" cnjcoo SELECT:851
 "<шын>"
 ;	"шын" adj
 ;	"шын" adv
@@ -14765,12 +14765,12 @@
 ;	"ол" prn dem nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<орыс>"
-	"орыс" n nom
+;	"орыс" n nom
 ;	"орыс" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орыс" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"орыс" n attr REMOVE:397
+	"орыс" n attr REMOVE:397
 ;	"ор" v tv coop imp p2 sg REMOVE:599
 "<классиктерінің>"
 	"*классиктерінің"
@@ -14997,9 +14997,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"балықшы" n attr REMOVE:397
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<балық>"
 	"балық" n nom
 ;	"балық" n nom
@@ -15769,9 +15769,9 @@
 ;	"фонетика" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мен>"
-	"мен" post SELECT:1065
+;	"мен" post SELECT:1065
 ;	"мен" prn pers p1 sg nom SELECT:1065
-;	"мен" cnjcoo SELECT:1065
+	"мен" cnjcoo SELECT:1065
 "<грамматикасын>"
 	"грамматика" n px3sp acc
 "<талдауда>"
