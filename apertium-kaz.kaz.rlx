@@ -685,16 +685,6 @@ REMOVE SUB:1 P3 IF
 ;
 ## Бөлмеде шкаф бар, содан бiр кiтап ал.
 
-
-# FIXME test
- SELECT Pron IF
-        (0 ("ешкі"i))
-        (0 ("ешкім"i))
-        (1* ("жоқ"i) OR (v neg) BARRIER EOS)
-;
-## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
-
-
 #
  "<жылы>" SELECT N IF
         (-1 Num)
@@ -871,6 +861,9 @@ REMOVE SUB:1 P3 IF
 ;
 ## 7 . Азамат алты жасар кішкентай бала.
 
+ SELECT Pron IF
+        (0 ("<ешкім>"i))
+## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
