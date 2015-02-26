@@ -1481,6 +1481,14 @@ LEXICON NP-TOP-COMPOUND
 %<np%>%<top%>: N-COMPOUND-PX-COMMON ;
 %<np%>%<top%>%<attr%>:%>%{s%}%{I%}%{n%} # ;
 
+LEXICON NP-TOP-ABBR
+
+%<np%>%<top%>%<attr%>: # ;
+%<np%>%<top%>%<nom%>: CLITICS-INCL-COP ;
+%<np%>%<top%>:%- NP-COMMON ;
+
+%<np%>%<top%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+
 
 LEXICON NP-ANT-M
 
@@ -3230,6 +3238,7 @@ XXI NUM-ROMAN ; ! ""
 комедия:комедия N1 ; ! ""
 комета:комета N1 ; ! ""
 комик:комик N1 ; ! ""
+коминтерн:коминтерн N1 ; ! ""
 комиссариат:комиссариат N1 ; ! ""
 комиссар:комиссар N1 ; ! ""
 комиссия:комиссия N1 ; ! ""
@@ -8502,6 +8511,7 @@ PSM:PSM N1 ; !"Use/MT"
 Вроцлав:Вроцлав NP-TOP ; ! ""
 Вьентьян:Вьентьян NP-TOP ; ! "" 
 Вьетнам:Вьетнам NP-TOP ; ! "Vietnam"
+ВДР:ВДР%{а%}%{й%} NP-TOP-ABBR ; ! "Vietnam Democratic Republic"
 Гаага:Гаага NP-TOP ; ! ""
 Габон:Габон NP-TOP ; ! ""
 Гавайи:Гавайи NP-TOP ; ! ""
@@ -9026,6 +9036,7 @@ PSM:PSM N1 ; !"Use/MT"
 Уфа:Уфа NP-TOP ; ! ""
 Уэльс:Уэльс NP-TOP ; !"Use/MT"
 Үлыбритания:Үлыбритания NP-TOP ; ! "Great Britain"
+Үндіқытай:Үндіқытай NP-TOP ; ! "Indochina"
 Үндістан:Үндістан NP-TOP ; ! "India"
 Үрімжі:Үрімжі NP-TOP ; ! "Urumchi"
 Ұдмұртстан:Ұдмұртстан NP-TOP ; ! "Udmurtia" 
@@ -16064,6 +16075,7 @@ YouTube:YouTube NP-ORG-LAT ; ! ""
 Гарвард:Гарвард NP-ORG ; ! ""
 Голос% Америки:Голос% Америки NP-ORG ; ! ""
 Гринпис:Гринпис NP-ORG ; !"Use/MT"
+ҒА:ҒА NP-ORG-LAT ; ! "Academy of Sciences"
 Жайықмұнайгаз:Жайықмұнайгаз NP-ORG ; ! ""
 Икар:Икар NP-ORG ; !"Use/MT"
 Интерфакс:Интерфакс NP-ORG ; ! ""
@@ -21154,6 +21166,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 іс:іс V-IV ; ! "swell"
 іске% қос:іске% қос V-TV ; ! "originate" !Use/MT
 істе:істе V-TV ; ! "do,make"
+істе:істе V-IV ; ! "work"
 іші% пыс:іші% пыс V-IV ; ! "be bored" 
 іш:іш V-TV ; ! "drink"
 іште% сақта:іште% сақта V-TV ; ! ""
@@ -21548,7 +21561,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 мамықта:мамықта V-TV ; ! "" ! Use/MT
 манаура:манаура V-IV ; ! "be in a sluggish and drowsy state"
 манаура:манаура V-IV ; ! "be in a sluggish and drowsy state"
-марапатта:марапатта V-TV ; ! ""
+марапатта:марапатта V-TV ; ! "recognise (e.g., with award)"
 масала:масала V-IV ; ! "save oneself from mosquitos' stings" (tat) trimm FIXME
 масқарала:масқарала V-TV ; ! "put to shame"
 мастан:мастан V-IV ; ! "get drunk"
@@ -22428,7 +22441,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 !мал:мал V-TD ; ! "scoop,ladle out,to dip"
 !мамандан:мамандан V-TD ; ! "specialize"
 !манаура:манаура V-TD ; ! "be in a sluggish and drowsy state"
-!марапатта:марапатта V-TV ; ! ""
 !масала:масала V-TD ; ! "save oneself from mosquitos' stings"
 !масқарала:масқарала V-TD ; ! "put to shame"
 !мастан:мастан V-TD ; ! "get drunk"

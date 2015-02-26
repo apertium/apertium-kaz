@@ -143,7 +143,7 @@ LIST Interr = itg ;
 LIST Advl = advl ;
 LIST Attr = attr ;
 LIST Subst = subst ;
-LIST N-LIKE = subst n np prn ;
+LIST N-LIKE = subst n np prn ; # Actually, see NOMINAL
 
 # Morphosyntactic properties   # if you find yourself embracing the same tag in
 # ==========================   # brackets over and over again, you may want to
@@ -427,8 +427,19 @@ SELECT N IF
  SELECT Det IF
         (0 Det)
         (0 (gpr_ppot))
+;
 ## жетерлік has both readings, but we almost always want to translate it as det
 
+
+REMOVE PersonalPossessives IF
+		(0 NOMINAL)
+		(NOT 0 (gen))
+		(1 (px3sp))
+;
+## only indefinite possessors can leave off the genitive suffix, and something possessed itself has to be definite,
+## so: something possessed can only possess something else if it has gen case,
+## so: px* with no gen cannot precede px3sp, so if that's one of the possible readings, you probably don't want it.
+## 1929 ж. сырттай өлім жазасына кесілді.
 
 
 # Adjectives
@@ -1084,3 +1095,8 @@ SELECT  N IF
 #	(-1* Acc BARRIER N-LIKE)
 #;
 ### Соны қайтып қыласың?
+
+SELECT V-IV IF
+		(0 ("істе"))
+		(NOT -1 NOMINAL)
+;
