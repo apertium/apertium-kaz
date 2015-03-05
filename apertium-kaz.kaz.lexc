@@ -223,6 +223,7 @@
 %<unk%>       ! For foreign tokens
 
 ! Punctuation
+%<percent%>   ! Percent
 %<sent%>      ! Sentence marker
 %<guio%>      ! Hyphen
 %<cm%>        ! Comma
@@ -18028,7 +18029,7 @@ Witness:Witness NP-AL ; ! ""
 бірыңғай:бірыңғай A1 ; ! ""
 боз:боз A1 ; ! "white-grey"
 бос:бос A1 ; ! "empty, free, hollow"
-бөтен:бөтен A1 ; ! "other"
+бөтен:бөтен A3 ; ! "other" ! was A1 -FMT
 бүтін:бүтін A1 ; ! "whole"
 ғажап:ғажап A1 ; ! ""
 ғылыми:ғылыми A1 ; ! "scientific"
