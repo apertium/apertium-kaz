@@ -1,9 +1,16 @@
-all:
-	hfst-twolc kaz-ara.twol | hfst-fst2fst -O -o kaz-ara.ohfst
-	hfst-twolc ara-kaz.twol -o ara-kaz.hfst
-	hfst-twolc lat-kaz.twol -o lat-kaz.hfst
-	hfst-twolc ara-kaz.twol | hfst-fst2fst -O -o ara-kaz.ohfst
-	hfst-twolc lat-kaz.twol | hfst-fst2fst -O -o lat-kaz.ohfst
+all: cyr-ara ara-kaz lat-kaz
+
+cyr-ara: cyr-ara.twol
+	hfst-twolc $< | hfst-fst2fst -O -o $@.ohfst
+	hfst-twolc $< -o $@.hfst
+
+ara-kaz: ara-kaz.twol
+	hfst-twolc $< | hfst-fst2fst -O -o $@.ohfst
+	hfst-twolc $< -o $@.hfst
+
+lat-kaz: lat-kaz.twol
+	hfst-twolc $< | hfst-fst2fst -O -o $@.ohfst
+	hfst-twolc $< -o $@.hfst
 
 clean:
-	rm -rf *.ohfst
+	rm -rf *.ohfst *.hfst
