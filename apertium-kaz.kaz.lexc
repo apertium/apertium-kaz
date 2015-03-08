@@ -5106,7 +5106,7 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 !!!! obtained via:
 !!!! $ dev/lexcdiff.py apertium-eng-kaz.kaz.lexc.orig ../apertium-kaz/apertium-kaz.kaz.lexc --lex Nouns --comment "Use/MT eng-kaz"
 !!!! 
-күн% тәртібі:күн% тәртібі N1 ; !"Use/MT"
+күн% тәртібі:күн% тәртібі N-COMPOUND-PX-COMMON ; ! "schedule"
 бұрыштама:бұрыштама N1 ; !"Use/MT"
 мың:мың N1 ; !"Use/MT"
 көрсетілім:көрсетілім N1 ; !"Use/MT"
@@ -5148,10 +5148,10 @@ Aзиялық:Aзиялық N1 ; ! "asian" !Use/MT
 инстиут:инстиут N1 ; ! "institute"  ! Use/MT eng-kaz
 аяу:аяу N1 ; ! "mercy"  ! Use/MT eng-kaz
 
-лезвие:лезвие N1 ; ! " blade"  ! Use/MT eng-kaz
-таңба:таңба N1 ; ! "stamp "  ! Use/MT eng-kaz
-шнур:шнур N1 ; ! " cord"  ! Use/MT eng-kaz
-жаңғақ:жаңғақ N1 ; ! " nut"  ! Use/MT eng-kaz
+лезвие:лезвие N1 ; ! "razor blade"
+таңба:таңба N1 ; ! "stamp/brand"
+шнур:шнур N1 ; ! "cord"
+жаңғақ:жаңғақ N1 ; ! "nut"
 иін:иін N1 ; ! "arch"  ! Use/MT eng-kaz
 қамыт:қамыт N1 ; ! "  collar "  ! Use/MT eng-kaz
 кірпіш:кірпіш N1 ; ! "brick"  ! Use/MT eng-kaz
@@ -7510,7 +7510,7 @@ MRI:MRI N1 ; !"Use/MT"
 романист:романист N1 ; !"Use/MT"
 санауыш:санауыш N1 ; !"Use/MT"
 нуклеотид:нуклеотид N1 ; !"Use/MT"
-жаңғақтар:жаңғақтар N1 ; !"Use/MT"
+! жаңғақтар:жаңғақтар N1 ; !"Use/MT" ! FIXME: why are we lexicalising plurals?
 нәрлі:нәрлі N1 ; !"Use/MT"
 нунциатура:нунциатура N1 ; !"Use/MT"
 шұрат:шұрат N1 ; !"Use/MT"
