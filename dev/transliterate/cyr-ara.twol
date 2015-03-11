@@ -1,9 +1,10 @@
 
 Alphabet 
 
- ء ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي
+ !ء
+ ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي  ٸ ٶ ٷ ٵ 
  
- % ء
+ !% ء
 
  ! ء ا ە ه ې ب ت پ ج چ خ ح د ر ز ژ س ش ع ف ق ك گ ڭ ل م ن ھ و ۇ ۋ ى ي ۆ
 
@@ -12,7 +13,7 @@ Alphabet
  Б:ب
  В:ۋ
  Г:گ
- Ғ:غ
+ Ғ:ع
  Д:د
  Е:ە
  Ё:يو
@@ -54,7 +55,7 @@ Alphabet
  б:ب
  в:ۋ
  г:گ
- ғ:غ
+ ғ:ع
  д:د
  е:ە
  ё:يو
@@ -91,8 +92,12 @@ Alphabet
  э:ە
  ю:يۋ
  я:يا
- % :% ء
+! % :% ء
 ! % :◌
+! ء:ٴ
+ ء:0
+ %,:%،
+ %;:%؛
 
  ;
 
@@ -112,6 +117,14 @@ backVow = а о ы ұ у
 Cons = б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ 
        Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ ;
 
+frontVowCyrNoE = і ү ө ә
+                 І Ү Ө Ә ;
+
+frontConsCyr = к г
+               К Г ;
+
+frontLetter = ك گ ە ;
+
 Rules 
 
 !"ь -> 0" 
@@ -120,9 +133,35 @@ Rules
 !"0 -> ء"
 !0:ء <=> .#. _ ;
 
-"ء -> 0"
-ء:0 <=> _ :letter* [ :گ | :ك | :ە ];
-        _ [ backCons: | backVow: ] ;
-        _ Cons:* backVow: ;
+! ٵ ٶ ٷ ٸ
 
+!"ء -> 0"
+!ء:0 <=> _ :letter* [ :گ | :ك | :ە ];
+!        _ [ backCons: | backVow: ] ;
+!        _ Cons:* backVow: ;
 
+"retain dayekshe"
+! when front vowel but no front stuff follows"
+ء:ٴ <=> _ \:frontLetter frontVowCyrNoE: \:frontLetter* %  ;
+
+!"make dayekshe-modified vowel letters"
+!Vx:Vy <=> ء:0 _ ;
+!      where
+!          VX in ( і ү ө ә )
+!          Vy in ( ٸ ٷ ٶ ٵ )
+!      matched ;
+
+"ө+dayekshe"
+ө:ٶ <=> ء:0 _ \:frontLetter* %  ;
+
+"ө+dayekshe"
+ү:ٷ <=> ء:0 _ \:frontLetter* %  ;
+
+"ө+dayekshe"
+ә:ٵ <=> ء:0 _ \:frontLetter* %  ;
+
+"ө+dayekshe"
+і:ٸ <=> ء:0 _ \:frontLetter* %  ;
+
+"don't double ي"
+и:0 <=> _ [ я: | ю: | е: | ё: ] ;
