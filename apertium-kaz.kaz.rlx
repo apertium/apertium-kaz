@@ -269,13 +269,24 @@ SELECT N IF
 
 # This rule is too general, breaks a few things.Corrected
 
+
+
+# INPUT: for examle: "ата келді" translated as "grandfather come" 
 SELECT N IF
 	(0 ("ата"))
        ( (NOT -1 N) OR (NOT -1 BOS))
+	( (NOT -1 (Nacc)) OR (NOT -1 BOS))
 
+
+
+# INPUT:  "жүз теңге" translated as "hundred coins", екі жүз адам "two handred people"
+#"адамдардың жүзі" translated a "face of people"
+# ^жүз/жүз<num>/жүз<n><nom>/жүз<n><attr>/жүз<num><subst><nom>/жүз<v><iv><imp><p2><sg>/жүз<n><nom>+е<cop><aor><p3><pl>/жүз<n><nom>+е<cop><aor><p3><sg>/жүз<num><subst><nom>+е<cop><aor><p3><pl>/жүз<num><subst><nom>+е<cop><aor><p3><sg>$^
 SELECT Num IF
-	((0 Num) OR (-1 Num))
+	((0 Num) OR (-1 ))
 	(1 N)
+
+
 
  SELECT FiniteVerb IF
         (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
