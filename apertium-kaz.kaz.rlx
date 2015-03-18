@@ -273,6 +273,9 @@ SELECT N IF
 	(0 ("ата"))
        ( (NOT -1 N) OR (NOT -1 BOS))
 
+SELECT Num IF
+	((0 Num) OR (-1 Num))
+	(1 N)
 
  SELECT FiniteVerb IF
         (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
