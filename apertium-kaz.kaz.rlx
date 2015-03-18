@@ -269,6 +269,10 @@ SELECT N IF
 
 # This rule is too general, breaks a few things.Corrected
 
+SELECT N IF
+	(0 ("ата"))
+       ( (NOT -1 N) OR (NOT -1 BOS))
+
 
  SELECT FiniteVerb IF
         (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
@@ -1110,3 +1114,9 @@ SELECT V-IV IF
 # OUTPUT: ^іш<v><tv><prc_vol><p3><pl>/іш<v><tv><prc_vol><p3><sg>$
 #         кел<vaux><ifi><p3><pl>/кел<vaux><ifi><p3><sg>/кел<v><iv><ifi><p3><pl>/кел<v><iv><ifi><p3><sg>$
 SELECT Prc-vol IF (1 ("кел")) ;
+
+
+        
+;
+
+
