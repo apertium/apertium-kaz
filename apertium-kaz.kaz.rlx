@@ -269,7 +269,15 @@ SELECT N IF
 
 # This rule is too general, breaks a few things.Corrected
 
+#INPUT: ^әдемі/әдемі<adj> 
+#^жер/же<v><tv><gpr_fut>/жер<n><nom>/жер<n><attr>/же<v><tv><fut><p3><pl>/же<v><tv><fut><p3><sg>/же<v><tv><gpr_fut><subst><nom>/жер<v><iv><imp><p2><sg>/жер<v><tv><imp><p2><sg>/жер<n><nom>+е<cop><aor><p3><pl>/жер<n><nom>+е<cop><aor><p3><sg>$
+#OUPUT:  ^әдемі/әдемі<adj> 
+#^жер/жер<n><nom>$
 
+SELECT N IF
+	(0 ("жер"))
+	(-1 A)
+;
 
 # INPUT: for examle: "ата келді" translated as "grandfather come" 
 SELECT N IF
@@ -1126,11 +1134,12 @@ SELECT V-IV IF
 # INPUT:  ^іш<v><tv><prc_vol><p3><pl>/іш<v><tv><prc_vol><p3><sg>/ішкі<adj><subst><px3sp><nom>$
 #         кел<vaux><ifi><p3><pl>/кел<vaux><ifi><p3><sg>/кел<v><iv><ifi><p3><pl>/кел<v><iv><ifi><p3><sg>$
 # OUTPUT: ^іш<v><tv><prc_vol><p3><pl>/іш<v><tv><prc_vol><p3><sg>$
-#         кел<vaux><ifi><p3><pl>/кел<vaux><ifi><p3><sg>/кел<v><iv><ifi><p3><pl>/кел<v><iv><ifi><p3><sg>$
+#         ккел<vaux><ifi><p3><sg>/кел<v><iv><ifi><p3><pl>/кел<v><iv><ifi><p3><sg>$
 SELECT Prc-vol IF (1 ("кел")) ;
 
 
         
 ;
+
 
 
