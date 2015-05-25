@@ -4,7 +4,7 @@
 
 LANGUAGE=kaz
 
-all: N1.txt.gz A1.txt.gz V-TV.txt.gz PRON.txt.gz PRON-REF.txt.gz
+all: NP-LAT.txt.gz N1.txt.gz A1.txt.gz V-TV.txt.gz PRON.txt.gz PRON-REF.txt.gz
 
 .deps/.d:
 	test -d .deps || mkdir .deps
