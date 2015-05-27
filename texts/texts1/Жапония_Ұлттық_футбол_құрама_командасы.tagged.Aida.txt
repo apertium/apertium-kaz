@@ -328,8 +328,8 @@
 ;	"да" postadv
 ;	"да" adv
 "<оларды>"
-;	"ол" prn dem pl acc
-	"олар" prn pers p3 pl acc
+	"ол" prn dem pl acc
+;	"олар" prn pers p3 pl acc
 "<бұрынғыша>"
 	"*бұрынғыша"
 "<,>"
@@ -475,20 +475,20 @@
 ;	"негізгі" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<форма>"
-;	"форма" n attr SELECT:408
+	"форма" n attr SELECT:408
 ;	"форма" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"форма" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-	"форма" n nom SELECT:408
+;	"форма" n nom SELECT:408
 "<мойнында>"
 	"мойын" n px3sp loc
 ;	"мойын" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"мойын" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
-"<қызыл>"
-	"қызыл" adj
+"<қазыл>"
+	"қаз" v tv pass imp p2 sg
 "<квадрат>"
 	"*квадрат"
 "<,>"
@@ -500,8 +500,8 @@
 ;	"иық" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<ақ>"
-;	"ақ" postadv
-	"ақ" adj
+	"ақ" postadv
+;	"ақ" adj
 ;	"ақ" adj subst nom
 ;	"ақ" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -519,10 +519,10 @@
 ;	"сызық" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<бар>"
-	"бар" adj SELECT:916
+;	"бар" adj SELECT:916
 ;	"бар" adj subst nom SELECT:916
-;	"бар" adj
-;		"е" cop aor p3 pl REMOVE:229
+	"бар" adj
+		"е" cop aor p3 pl REMOVE:229
 ;	"бар" adj
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"бар" n nom
@@ -544,8 +544,8 @@
 	"мен" cnjcoo
 ;	"мен" post REMOVE:286
 "<ақ>"
-;	"ақ" postadv
-	"ақ" adj
+	"ақ" postadv
+;	"ақ" adj
 ;	"ақ" adj subst nom
 ;	"ақ" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -599,8 +599,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"форма" n attr REMOVE:397
 "<ақ>"
-;	"ақ" postadv
-	"ақ" adj
+	"ақ" postadv
+;	"ақ" adj
 ;	"ақ" adj subst nom
 ;	"ақ" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -639,8 +639,8 @@
 "<және>"
 	"және" cnjcoo
 "<ақ>"
-;	"ақ" postadv
-	"ақ" adj
+	"ақ" postadv
+;	"ақ" adj
 ;	"ақ" adj subst nom
 ;	"ақ" adj
 ;		"е" cop aor p3 pl REMOVE:229
