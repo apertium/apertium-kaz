@@ -59,7 +59,7 @@ Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч
            %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} ; ! %- ;
 
 CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ Ц Ч Ш Щ Ь Ъ Ю
-           б в г ғ д ж з И й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
+           б в г ғ д ж з и й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
            %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} ; ! %- ;
 
 AbstrCns = %{й%} %{л%} %{н%} %{з%} %{с%} ;  
@@ -244,6 +244,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                  [ і:0 | ы:0 ]/[ %>: ] _ ;
                                         [ й: ]/[ %>: ] _ ;
    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+                     [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
+
 
 "Harmony of unepenthesised vowel in some stems"
 %{y%}:і <=> [ :FrontVow :Cns* :CnsRight ]/[ %>: | :0 ] _ [ :Cns [ .#. | :Cns ] ]/[ :0 | %>: ] ;
@@ -369,8 +371,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Deletion of {S} after a consonant"
 !%{S%}:0 <=> [ :Cns | й: ]/[ %>: | :0 ] _ ;
-%{S%}:0 <=> [ :CnsRight ]/[ %>: | :0 ] _ ;
-           [ AbstrCns: ]/[ %>: | %-: ] _ ;
+%{S%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
+            AbstrCns:/[ %>: | %-: ] _ ;
 
 "Deletion of {I} after vowels"
 %{I%}:0 <=> [ :VowRight ]/[ :0 | %>: ] _ ;
