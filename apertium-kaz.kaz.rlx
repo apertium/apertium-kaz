@@ -1142,4 +1142,15 @@ SELECT Prc-vol IF (1 ("кел")) ;
 ;
 
 
+# INPUT:  ^Орал/орал<n><nom>/орал<n><attr>/Орал<np><top><nom>/Орал<np><top><attr>/ора<v><tv><pass><imp><p2><sg>/Орал<np><ant><f><nom>/Орал<np><ant><m><nom>/орал<n><nom>+е<cop><aor><p3><pl>/орал<n><nom>+е<cop><aor><p3><sg>/Орал<np><top><nom>+е<cop><aor><p3><pl>/Орал<np><top><nom>+е<cop><aor><p3><sg>/Орал<np><ant><f><nom>+е<cop><aor><p3><pl>/Орал<np><ant><f><nom>+е<cop><aor><p3><sg>/Орал<np><ant><m><nom>+е<cop><aor><p3><pl>/Орал<np><ant><m><nom>+е<cop><aor><p3><sg>$ 
+#^тауы/тауы<n><nom>/тауы<n><attr>/тау<n><px3sp><nom>/тауы<n><nom>+е<cop><aor><p3><pl>/тауы<n><nom>+е<cop><aor><p3><sg>/тау<n><px3sp><nom>+е<cop><aor><p3><pl>/тау<n><px3sp><nom>+е<cop><aor><p3><sg>$^
+
+# OUTPUT:  ^Орал/Орал<np><top><attr>
+#тау<n><px3sp><nom>
+SELECT (np top attr) IF (1 ("тауы")) ;
+
+
+        
+;
+
 
