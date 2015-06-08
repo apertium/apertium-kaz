@@ -2,7 +2,7 @@
 	"радиан" n gen @nmod #1->4
 "<басқа да>"
 	"басқа" adj @amod #2->3
-		"да" postadv #3->2
+		"да" postadv @advmod #3->2
 "<бірліктермен>"
 	"бірлік" n pl ins @x #4->5
 "<байланысы>"
@@ -11,26 +11,26 @@
 	"." sent @punct #6->5
 
 "<Радианның>"
-	"радиан" n gen
+	"радиан" n gen @nmod #1->
 "<басқа да>"
-	"басқа" adj 
-		"да" postadv
+	"басқа" adj @amod #2->
+		"да" postadv @advmod #3->2
 "<бұрышты>"
-	"бұрыш" n acc
+	"бұрыш" n acc @x #4->
 "<өлшеу>"
-	"өлшеу" n nom
+	"өлшеу" n nom @nmod #5->
 "<бірліктерімен>"
-	"бірлік" n pl px3sp ins
+	"бірлік" n pl px3sp ins @nmod #6->
 "<арақатынасын>"
-	"арақатынас" n px3sp acc
+	"арақатынас" n px3sp acc @x #7->
 "<мына>"
-	"мына" det dem
+	"мына" det dem @det #8->9
 "<формуламен>"
-	"формула" n ins @nmod 
+	"формула" n ins @nmod #9->10
 "<сипатталады>"
-	"сипатта" v tv pass aor p3 sg @main
+	"сипатта" v tv pass aor p3 sg @main #10->0
 "<:>"
-	"." sent @punct
+	"." sent @punct #11->10
 
 "<Сәрә>"
 	"*сәрә"
