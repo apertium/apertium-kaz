@@ -96,8 +96,7 @@
 !! they don't take the comparative affix.
 
 ! Pronoun types
- 
-%<pers%>     ! Personal
+%<pers%>      ! Personal
 %<recip%>     ! Reciprocal
 
 !! Pronoun&Determiner types
@@ -105,11 +104,10 @@
 %<ind%>       ! Indefinite
 %<itg%>       ! Interrogative
 %<qnt%>       ! Quantifier
-%<def%>       ! Quantifier
 %<neg%>       ! Negative       !# ешкім
               ! (NOTE: also used to denote negation in verbs, i.e for м{A})
 %<ref%>       ! Reflexive
-%<pos%> 
+
 ! Numeral types
 %<ord%>       ! Ordinal
 %<coll%>      ! Collective
@@ -318,7 +316,6 @@ Digits ; ! Use/Circ
 !             Test cases are in dev/numerals.
 !==============================================================================!
 
-
 LEXICON CASE-NONOM
 
 ! This continuation lexicon is a copy of the normal case lexicon,
@@ -327,7 +324,6 @@ LEXICON CASE-NONOM
 
 %<gen%>:%>%{N%}%{I%}ң CLITICS-NO-COP ;
 %<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
-%<dat%>:%>%{A%} CLITICS-NO-COP ;
 %<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
 %<abl%>:%>%{D%}%{A%}н # ;
 %<loc%>:%>%{D%}%{A%} # ;
@@ -636,13 +632,13 @@ GENERAL-POSSESSIVE-ETC ;
 LEXICON POSSESSIVES
 
 %<px1sg%>:%>%{I%}м CASES-ETC ;
-%<px2sg%>%<frm%>:%>%{I%}ң CASES-ETC ;
-%<px3sp%>:%>%{I%} CASES-ETC ;
+%<px2sg%>:%>%{I%}ң CASES-ETC ;
+%<px3sp%>:%>%{S%}%{I%}%{n%} CASES-ETC ;
 %<px1pl%>:%>%{I%}м%{I%}з CASES-ETC ;
-%<px2pl%>%<frm%>:%>%{I%}ңд%{A%}р CASES-ETC ;
+%<px2pl%>:%>%{I%}ңд%{A%}р CASES-ETC ;
 
-%<px2sg%>:%>%{I%}ң%{I%}з CASES-ETC ;
-%<px2pl%>:%{I%}ң%{I%}з CASES-ETC ;
+%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
+%<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASES-ETC ;
 
 LEXICON ABESSIVE-POSTPOSITION
 
@@ -733,29 +729,22 @@ LEXICON V-ADJ
 
 !!!!!!!!!!!!!!!!!!!!!!     VERBAL INFLECTION (V-INFL-COMMON)
 
-
-
 LEXICON V-PERS-S1-NO3PERSON
 
 ! Pointed to by: V-PERS-S1 and V-PERS-AOR
 ! Irregular p1.sg form is in V-PERS-AOR
-%<p2%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
+
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
-
-
+%<p2%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
 %<p1%>%<pl%>:%>%{M%}%{I%}з CLITICS-NO-COP ;
 %<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
-%<p2%>%<frm%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
-
+%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLITICS-NO-COP ;
+%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-S1
 
-
 ! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
-
-
 
 V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>: CLITICS-NO-COP ;
@@ -779,8 +768,6 @@ LEXICON V-PERS-AOR
 
 ! As the name indicates, used for -{E}-<aor>
 ! NOTE that: Алма театрға бара<aor><p3><sg> ма? – Алма в театр идёт?
-
-
 
 V-PERS-S1-NO3PERSON ;
 
@@ -887,8 +874,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 %<past%>:%>%{G%}%{A%}н V-PERS-S1 ;
 %<neg%>%<past%>:%>%{G%}%{A%}н% емес V-PERS-S1 ;  ! more colloquial than regular negative
 
- 
-
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
 %<neg%>%<ifi%>:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;    ! more colloquail than regular negative
 
 
@@ -896,7 +882,7 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%} V-PERS-AOR ;
 %<past%>:%>%{G%}%{A%}н V-PERS-S1 ;      ! Dir/LR - see irregular forms above
-%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;        ! Dir/LR - see irregular forms above
 %<pih%>:%>%{E%}т%{I%}н V-PERS-S1 ;
 
 %<aor%>%<evid%>:%>%{E%}д%{I%}% екен V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
@@ -1076,7 +1062,6 @@ LEXICON PRON-P3SG-CASES
 %<adv%>:ныңша CLITICS-NO-COP ;
 
 
-
 LEXICON PRON-PERS-INFL
 
 CASES-ETC ;
@@ -1102,77 +1087,6 @@ LEXICON PRON-PERS
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLITICS-NO-COP ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLITICS-NO-COP ;
-
-
-LEXICON PRON-POS
-
-менің%<prn%>%<pos%>%<p1%>%<nom%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<gen%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<dat%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<acc%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<abl%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<loc%>:менің CLITICS-NO-COP ;
-менің%<prn%>%<pos%>%<p1%>%<ins%>:менің CLITICS-NO-COP ;
-
-cенің%<prn%>%<pos%>%<p2%>%<nom%>:cенің CLITICS-INCL-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<gen%>:cенің CLITICS-NO-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<dat%>:cенің CLITICS-NO-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<acc%>:cенің CLITICS-NO-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<abl%>:cенің CLITICS-NO-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<loc%>:cенің CLITICS-NO-COP ;
-cенің%<prn%>%<pos%>%<p2%>%<ins%>:cенің CLITICS-NO-COP ;
-
-оның%<prn%>%<pos%>%<p3%>%<nom%>:оның CLITICS-INCL-COP ;
-оның%<prn%>%<pos%>%<p3%>%<gen%>:оның CLITICS-NO-COP ;
-оның%<prn%>%<pos%>%<p3%>%<dat%>:оның CLITICS-NO-COP ;
-оның%<prn%>%<pos%>%<p3%>%<acc%>:оның CLITICS-NO-COP ;
-оның%<prn%>%<pos%>%<p3%>%<abl%>:оның CLITICS-NO-COP ;
-оның%<prn%>%<pos%>%<p3%>%<loc%>:оның CLITICS-NO-COP ;
-оның%<prn%>%<pos%>%<p3%>%<ins%>:оның CLITICS-NO-COP ;
-
-
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<nom%>:олардың CLITICS-INCL-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<gen%>:олардың CLITICS-NO-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<dat%>:олардың CLITICS-NO-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<acc%>:олардың CLITICS-NO-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<abl%>:олардың CLITICS-NO-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<loc%>:олардың CLITICS-NO-COP ;
-олардың%<prn%>%<pos%>%<p3%>%<pl%>%<ins%>:олардың CLITICS-NO-COP ;
-
-біздің%<prn%>%<pos%>%<p1%>%<nom%>:біздің CLITICS-INCL-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<gen%>:біздің CLITICS-NO-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<dat%>:біздің CLITICS-NO-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<acc%>:біздің CLITICS-NO-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<abl%>:біздің CLITICS-NO-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<loc%>:біздің CLITICS-NO-COP ;
-біздің%<prn%>%<pos%>%<p1%>%<ins%>:біздің CLITICS-NO-COP ;
-
-біздердің%<prn%>%<pos%>%<p1%>%<nom%>:біздердің CLITICS-INCL-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<gen%>:біздердің CLITICS-NO-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<dat%>:біздердің CLITICS-NO-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<acc%>:біздердің CLITICS-NO-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<abl%>:біздердің CLITICS-NO-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<loc%>:біздердің CLITICS-NO-COP ;
-біздердің%<prn%>%<pos%>%<p1%>%<ins%>:біздердің CLITICS-NO-COP ;
-
-сіздің%<prn%>%<pos%>%<p2%>%<nom%>:сіздің CLITICS-INCL-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<gen%>:сіздің CLITICS-NO-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<dat%>:сіздің CLITICS-NO-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<acc%>:сіздің CLITICS-NO-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<abl%>:сіздің CLITICS-NO-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<loc%>:сіздің CLITICS-NO-COP ;
-сіздің%<prn%>%<pos%>%<p2%>%<ins%>:сіздің CLITICS-NO-COP ;
-
-сіздердің%<prn%>%<pos%>%<p2%>%<nom%>:сіздердің CLITICS-INCL-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<gen%>:сіздердің CLITICS-NO-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<dat%>:сіздердің CLITICS-NO-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<acc%>:сіздердің CLITICS-NO-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<abl%>:сіздердің CLITICS-NO-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<loc%>:сіздердің CLITICS-NO-COP ;
-сіздердің%<prn%>%<pos%>%<p2%>%<ins%>:сіздердің CLITICS-NO-COP ;
-
-
-
 
 !!!!!!!   D E M O N S T R A T I V E
 
@@ -1206,7 +1120,6 @@ LEXICON PRON-DEM-INFL
 
 ! FIXME: 1) link the below to PRON-DEM-INFL if possible
 !            (later, once we are certain about things)
-
 
 LEXICON PRON-DEM-BUL
 
@@ -1304,57 +1217,6 @@ PRON-DEM-MINA ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLITICS-NO-COP ;
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASES ;
 
-қандай%<prn%>%<ind%>%<nom%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<gen%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<dat%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<acc%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<abl%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<loc%>:қандай CLITICS-NO-COP ;
-қандай%<prn%>%<ind%>%<ins%>:қандай CLITICS-NO-COP ;
-
-осындай%<prn%>%<ind%>%<nom%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<gen%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<dat%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<acc%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<abl%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<loc%>:осындай CLITICS-NO-COP ;
-осындай%<prn%>%<ind%>%<ins%>:осындай CLITICS-NO-COP ;
-
-ешқандай%<prn%>%<ind%>%<nom%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<gen%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<dat%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<acc%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<abl%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<loc%>:ешқандай CLITICS-NO-COP ;
-ешқандай%<prn%>%<ind%>%<ins%>:ешқандай CLITICS-NO-COP ;
-
-барлық%<prn%>%<def%>%<nom%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<gen%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<dat%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<acc%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<abl%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<loc%>:барлық CLITICS-NO-COP ;
-барлық%<prn%>%<def%>%<ins%>:барлық CLITICS-NO-COP ;
-
-өзі%<prn%>%<ref%>%<nom%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<gen%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<dat%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<acc%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<abl%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<loc%>:өзі CLITICS-NO-COP ;
-өзі%<prn%>%<ref%>%<ins%>:өзі CLITICS-NO-COP ;
-
-өзім%<prn%>%<ref%>:өзім CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<gen%>:өзім CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<dat%>:өзіме CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<acc%>:өзім CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<abl%>:өзім CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<loc%>:өзім CLITICS-NO-COP ;
-өзім%<prn%>%<ref%>%<ins%>:өзім CLITICS-NO-COP ;
-
-
-
-
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
 ! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
 ! productive derivation.
@@ -1415,8 +1277,7 @@ LEXICON PRON-ITG-QANSHA
 
 %<prn%>%<itg%>: CASES ;
 
-
-
+LEXICON PRON-ITG-QANDAY
 
 ! Might be not complete (қандайларығыз? and possessive stuff in general)
 
@@ -1433,6 +1294,7 @@ LEXICON InterrogativePronouns
 
 қайсы:қайсы PRON-ITG-QAYSI ;
 қанша:қанша PRON-ITG-QANSHA ;
+қандай:қандай PRON-ITG-QANDAY ;
 нәрсе:нәрсе PRON-ITG-INFL ; ! "thing" ! Use/MT
 не:не PRON-ITG-INFL ; ! "what"
 немене:немене PRON-ITG-INFL ; ! "what"
@@ -1528,8 +1390,6 @@ LEXICON N1-ABBR
 
 %<n%>%<attr%>: # ;
 %<n%>:%- POSSESSIVES ;
-
-%<n%>: V-PERS-S1 ;
 %<n%>:%- CASES-ETC ;
 %<n%>: CASES-ETC ; ! Dir/LR
 
@@ -2094,7 +1954,6 @@ DemonstrativePronouns ;
 
 InterrogativePronouns ;
 
-PRON-POS ;
 
 басқалар:басқалар PRON-IND-PL ; ! "other"
 басқа:басқа PRON-IND ; ! "other"
@@ -2106,7 +1965,7 @@ PRON-POS ;
 біреу:біреу PRON-IND ; ! !"someone" Use/MT 
 
 
-!барлық:барлық PRON-QNT ; ! ""
+барлық:барлық PRON-QNT ; ! ""
 бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 біреу:біреу PRON-QNT ; ! ""
@@ -2141,7 +2000,6 @@ PRON-POS ;
 мынау:мынау DET-DEM ;
 ол:ол DET-DEM ;
 осы:осы DET-DEM ;
-қандай:қандай DET-IND;
 сол:сол DET-DEM ;
 сонау:сонау DET-DEM ;
 осынау:осынау DET-DEM ;
@@ -2153,7 +2011,7 @@ PRON-POS ;
 әртүрлі:әртүрлі DET-QNT ; ! "~every kind"
 әр:һәр DET-QNT ; ! "every" Dir/LR
 бар:бар DET-QNT ; ! "all"
-!барлық:барлық DET-QNT ; ! "all"
+барлық:барлық DET-QNT ; ! "all"
 бірқатар:бірқатар DET-QNT ; ! "several"
 бірнеше:бірнеше DET-QNT ; ! "some"
 бүкіл:бүкіл DET-QNT ; ! "whole"
@@ -3498,6 +3356,8 @@ XXI NUM-ROMAN ; ! ""
 комсомол:комсомол N1 ; ! ""
 конгресс:конгресс N1 ; ! ""
 конденсатор:конденсатор N1 ; ! ""
+
+конденсат:конденсат N1 ; ! ""
 конкурс:конкурс N1 ; ! ""
 конституция:конституция N1 ; ! ""
 конструктор:конструктор N1 ; ! ""
@@ -3711,7 +3571,6 @@ XXI NUM-ROMAN ; ! ""
 қате:қате N1 ; ! "fault,mistake,error"
 қателік:қателік N1 ; ! ""
 қатер:қатер N1 ; ! "hazard"
-қатты% зат:қатты% зат N1 ; ! ""
 қатыc:қатыc N1 ; ! ""
 қатынас:қатынас N1 ; ! "relation"
 қатын:қатын N1 ; ! "woman, lady, wife of Khan, etc."
@@ -3829,6 +3688,11 @@ XXI NUM-ROMAN ; ! ""
 қызылша:қызылша N1 ; ! "beet,beetroot"
 қызынақ:қызынақ N1 ; ! ""
 қылмыс:қылмыс N1 ; ! "crime"
+мырыш:мырыш N1 ; ! ""
+флюорит:флюорит N1 ; ! ""
+вольфрам:вольфрам N1 ; ! ""
+хромит:хромит N1 ; ! ""
+қорғасын:қорғасын N1 ; ! ""
 қымыз:қымыз N1 ; ! "qymyz"
 қымыздық:қымыздық N1 ; !"Use/MT"
 қыңырлық:қыңырлық N1 ; !"Use/MT"
@@ -4053,6 +3917,7 @@ XXI NUM-ROMAN ; ! ""
 мөлшер:мөлшер N1 ; ! "measure amount"
 мөртабан:мөртабан N1 ; ! "stamp"
 мрамор:мрамор N1 ; ! ""
+табак:табак N1 ; ! ""
 музей:музей N1 ; ! ""
 музыка:музыка N1 ; ! ""
 музыкант:музыкант N1 ; ! ""
@@ -4206,6 +4071,8 @@ XXI NUM-ROMAN ; ! ""
 оркестр:оркестр N1 ; ! ""
 орман:орман N1 ; ! "forest"
 орман% шаруашылық:орман% шаруашылық N-COMPOUND-PX ; ! 
+
+мал% шаруашылық:мал% шаруашылық N-COMPOUND-PX ; ! 
 орталық:орталық N1 ; ! "center"
 орта:орта N1 ; ! "middle,surroundings,environment"
 орынбасар:орынбасар N1 ; ! "representative"
@@ -4769,7 +4636,7 @@ XXI NUM-ROMAN ; ! ""
 темп:темп N1 ; ! ""
 тентек:тентек N1 ; ! "" ! FIXME: probably just ADJ (see A1)
 теңге:тенге N1 ; ! "" Dir/LR
-теңге:теңге N1 ; ! "coin"
+палата:палата N1 ; ! ""
 теңдік:теңдік N1 ; ! ""
 теңіз:теңіз N1 ; ! "sea"
 теңіз% балдыр:теңіз% балдыр N-COMPOUND-PX ; !"Use/MT"
@@ -4922,6 +4789,7 @@ XXI NUM-ROMAN ; ! ""
 универсиада:универсиада N1 ; ! ""
 университет:университет N1 ; ! "university"
 уран:уран N1 ; ! ""
+табель:табель N1 ; ! ""
 у:у N1 ; ! "poison"
 училище:училище N1 ; ! ""
 уыс:уыс N1 ; ! "" ! Use/MT
@@ -5190,6 +5058,7 @@ XXI NUM-ROMAN ; ! ""
 шөже:шөже N1 ; ! "chick (baby chicken)"
 шөлмек:шөлмек N1 ; ! "bottle"
 шөл:шөл N1 ; ! "desert"
+шөлейт:шөлейт N1 ; ! "desert"
 шөп:шөп N1 ; ! "grass,green-fodder"
 штаб:штаб N5 ; ! ""
 штат:штат N1 ; ! ""
@@ -5854,7 +5723,7 @@ AББ:AББ N1 ; !"Use/MT"
 қопарылғыш% зат:қопарылғыш% зат N1 ; !"Use/MT"
 орындалу:орындалу N1 ; !"Use/MT"
 фракция:фракция N1 ; !"Use/MT"
-экспорттауш:экспорттауш N1 ; !"Use/MT"
+экспорттаушы:экспорттаушы N1 ; !"Use/MT"
 аяқ% киім:аяқ% киім N1 ; !"Use/MT"
 тұжырымдау:тұжырымдау N1 ; !"Use/MT"
 флотилия:флотилия N1 ; !"Use/MT"
@@ -6123,6 +5992,7 @@ AББ:AББ N1 ; !"Use/MT"
 аэродром:аэродром N1 ; !"Use/MT"
 баған:баған N1 ; !"Use/MT"
 бағдарламалық% қамсыздандыру:бағдарламалық% қамсыздандыру N1 ; !"Use/MT"
+қамсыздандыру:қамсыздандыру N1 ; !"Use/MT"
 бадам:бадам N1 ; !"Use/MT"
 бадья:бадья N1 ; !"Use/MT"
 баобаб:баобаб N1 ; !"Use/MT"
@@ -8707,7 +8577,7 @@ PSM:PSM N1 ; !"Use/MT"
 ! Toponyms which can take -ЛЫҚ affix to denote inhabitants of cities, countries
 ! or regions
 ! -----------------------------------------------------------------------------
-
+Қазақстан:Қазақстан NP-TOP ; ! ""
 Абай:Абай NP-TOP ; ! ""
 Абакан:Абакан NP-TOP ; ! ""
 Абиджан:Абиджан NP-TOP ; ! ""
@@ -9492,6 +9362,7 @@ PSM:PSM N1 ; !"Use/MT"
 Загреб:Загреб NP-TOP ; ! "" 
 Заир:Заир NP-TOP ; ! ""
 Зайсан:Зайсан NP-TOP ; ! ""
+Алакөл:Алакөл NP-TOP ; ! ""
 Замбия:Замбия NP-TOP ; ! ""
 Занзибар:Занзибар NP-TOP ; ! ""
 Зәй:Зәй NP-TOP ; ! ""
@@ -17443,7 +17314,6 @@ Witness:Witness NP-AL ; ! ""
 майлайтын:майлайтын A1 ; ! ""
 майланатын:майланатын A1 ; ! ""
 майланған:майланған A1 ; ! ""
-майлы:майлы A4 ; ! ""
 маймақ:маймақ A1 ; ! ""
 майталман:майталман A1 ; ! ""
 майып:майып A1 ; ! ""
@@ -18251,7 +18121,6 @@ Witness:Witness NP-AL ; ! ""
 авиациялық:авиациялық A4 ; ! ""
 автономиялық:автономиялық A4 ; ! "autonomous"
 авторитарлық:авторитарлық A4 ; ! "authoritarian"
-агроөнеркәсіптік:агроөнеркәсіптік A4 ; !
 агротехникалық:агротехникалық A4 ; ! ""
 адриатикалық:адриатикалық A4 ; !"Use/MT"
 азаматтық:азаматтық A4 ; ! "citizen"
@@ -18270,7 +18139,6 @@ Witness:Witness NP-AL ; ! ""
 аналитикалық:аналитикалық A4 ; ! ""
 антропогендік:антропогендік A4 ; ! ""
 антропологиялық:антропологиялық A4 ; ! "anthropological"
-аралық:аралық A4 ; ! 
 аргентиналық:аргентиналық A4 ; !"Use/MT"
 аристотельдік:аристотельдік A4 ; !"Use/MT"
 арктикалық:арктикалық A4 ; ! ""
@@ -18288,12 +18156,10 @@ Witness:Witness NP-AL ; ! ""
 аустралиялық:аустралиялық A4 ; !"Use/MT"
 аустриялық:аустриялық A4 ; !"Use/MT"
 ауылдық:ауылдық A4 ; ! ""
-аэроғарыштық:Аэроғарыштық A4 ; !"Use/MT"
+Аэроғарыш:Аэроғарыш A4 ; !"Use/MT"
 аян:аян A4 ; ! ""
 әлемдік:әлемдік A4 ; ! ""
 әрлі:әрлі A4 ; ! ""
-балалы:балалы A4 ; ! ""
-балтық:балтық A4 ; ! ""
 банкаралық:банкаралық A4 ; ! "" !Use/MT
 банктік:банктік A4 ; ! ""
 биологиялық:биологиялық A4 ; ! "biological"
@@ -18343,7 +18209,6 @@ Witness:Witness NP-AL ; ! ""
 динамикалық:динамикалық A4 ; ! "dynamic"
 дипломатиялық:дипломатиялық A4 ; ! ""
 диэлектрик:диэлектрик A4 ; ! ""
-дорбалы:дорбалы A4 ; ! ""
 докторлық:докторлық A4 ; ! ""
 доминантты:доминантты A4 ; ! ""
 драмалық:драмалық A4 ; ! ""
@@ -18380,12 +18245,11 @@ Witness:Witness NP-AL ; ! ""
 интеллектуалдық:интеллектуалдық A4 ; ! ""
 ирактық:ирактық A4 ; !"Use/MT"
 ирандық:ирандық A4 ; !"Use/MT"
-ирландиялық:Ирландиялық A4 ; !"Use/MT"
+ирландиялық:ирландиялық A4 ; !"Use/MT"
 испандық:испандық A4 ; !"Use/MT"
 исламшыл:исламшыл A4 ; ! ""
 кассалық:кассалық A4 ; !"Use/MT"
 каспийлік:каспийлік A4 ; !"Use/MT"
-капиталистік:капиталистік A4 ; !"Use/MT"
 католик:католик A4 ; !"Use/MT"
 кедендік:кедендік A4 ; ! ""
 кеңесшілік:кеңесшілік  A4 ; !"Use/MT"
@@ -18408,7 +18272,6 @@ Witness:Witness NP-AL ; ! ""
 кореялық:кореялық A4 ; !"Use/MT"
 коррупциялық:коррупциялық A4 ; ! ""
 корреспонденттік:корреспонденттік A4 ; ! "" ! Use/MT
-көпіршікті:көпіршікті A4 ; ! ""
 көрнекі:көрнекі A4 ; ! ""
 кредиттік:кредиттік A4 ; !"Use/MT"
 кристалдық:кристалдық A4 ; ! ""
@@ -18511,7 +18374,6 @@ Witness:Witness NP-AL ; ! ""
 периодтық:периодтық A4 ; ! ""
 периодты:периодты A4 ; ! ""
 перспективалық:перспективалық A4 ; ! "" ! Use/MT
-періштелік:періштелік A4 ; ! ""
 пластикалық:пластикалық A4 ; ! ""
 платформалық:платформалық A4 ; ! ""
 политехникалық:политехникалық A4 ; ! ""
@@ -18676,7 +18538,7 @@ Witness:Witness NP-AL ; ! ""
 небір:небір A4 ; ! ""
 отбасылық:отбасылық A4 ; ! ""
 отбасылық:отбасылық A4 ; ! ""
-Олимпиадалық:олимпиадалық A4 ; ! ""
+Олимпиадалық:Олимпиадалық A4 ; ! ""
 өзекті:өзекті A4 ; ! ""
 өлі:өлі A3 ; ! ""
 !өлі:өлі A1 ; ! ""
@@ -18901,7 +18763,6 @@ Witness:Witness NP-AL ; ! ""
 активті:активті A1 ; ! ""
 ақ:ақ A2 ; ! "white" ! seems to be A2 -JNW
 ақырын:ақырын A1 ; ! "slow"
-ақшыл% көк:ақшыл% көк A2 ; ! "lilac" ! seems to be A2 -JNW
 ала:ала A3 ; ! "~speckled/mottled" ! probably A3 -JNW
 аласа:аласа A1 ; ! "low"
 алуан:алуан A1 ; ! ""
@@ -18962,11 +18823,9 @@ Witness:Witness NP-AL ; ! ""
 есіл:есіл A1 ; ! ""
 ескі:ескі A1 ; ! "old"
 жабық:жабық A1 ; ! "closed"
-жағымды:жағымды A1 ; ! 
 жайлы:жайлы A1 ; ! ""
 жақсы:жақсы A1 ; ! "good"
 жақын:жақын A1 ; ! "close"
-жалаңаяқ:жалаңаяқ A3 ; !
 жалғыз:жалғыз A1 ; ! "lonely"
 жалпақ:жалпақ A1 ; ! ""
 жалпы:жалпы A1 ; ! "united,collected"
@@ -18986,7 +18845,6 @@ Witness:Witness NP-AL ; ! ""
 жіңішке:жіңішке A1 ; ! "thin"
 жоғарғы:жоғарғы A3 ; ! "high" ! Probably A3 not A1
 жоғары:жоғары A1 ; ! "high"
-жоғарыда% айтылған:жоғарыда% айтылған A1 ; ! "aforesaid"
 жуан:жуан A1 ; ! "thick"
 жуық:жуық A1 ; ! "close"
 жүдеу:жүдеу A1 ; ! "weak, thin"
@@ -19078,7 +18936,7 @@ Witness:Witness NP-AL ; ! ""
 орнықты:орнықты A1 ; ! "firm, solid, strong, durable"
 ортақ:ортақ A2 ; ! "general, common"
 орта:орта A1 ; ! "средний"
-орталық:орталық A4 ; ! "central" !Use/MT
+орталық:орталық A1 ; ! "central" !Use/MT
 өзара:өзара A1 ; ! "mutual"
 өзара% тәуелді:өзара% тәуелді A1 ; ! "interdependent" !Use/MT
 өзге:өзге A1 ; ! ""
@@ -19099,7 +18957,6 @@ Witness:Witness NP-AL ; ! ""
 сенімді:сенімді A1 ; ! ""
 серпінді:серпінді A1 ; ! "dynamic"
 сирек:сирек A1 ; ! "rare; rarely"
-сойқан:сойқан A1 ; ! "rare; rarely"
 сол:сол A1 ; ! "left"
 соң:соң A1 ; ! "last" ! FIXME:CHECK
 суық:суық A1 ; ! "cold"
@@ -19229,7 +19086,7 @@ Witness:Witness NP-AL ; ! ""
 қылмысты:қылмысты A1 ; ! "Use/MT eng-kaz"
 мәдениетті:мәдениетті A1 ; ! "Use/MT eng-kaz"
 қорытынды:қорытынды A1 ; ! "Use/MT eng-kaz"
-барлық:барлық A4 ; ! "Use/MT eng-kaz"
+барлық:барлық A1 ; ! "Use/MT eng-kaz"
 адами:адами A1 ; ! "Use/MT eng-kaz"
 қазіргі:қазіргі A1 ; ! "Use/MT eng-kaz"
 күншығыс:күншығыс A1 ; ! "Use/MT eng-kaz"
@@ -19659,7 +19516,7 @@ coercive:coercive A1 ; !"Use/MT"
 пайдасыз:пайдасыз A4 ; ! "useless"
 футуристиялық:футуристиялық A1 ; !"Use/MT"
 галактикалық:галактикалық A1 ; !"Use/MT"
-Галилеянин:галилеянин A4 ; !"Use/MT"
+Галилеянин:Галилеянин A1 ; !"Use/MT"
 гастрономдық:гастрономдық A1 ; !"Use/MT"
 генеалогиялық:генеалогиялық A1 ; !"Use/MT"
 елдік:елдік A1 ; !"Use/MT"
@@ -19680,7 +19537,7 @@ coercive:coercive A1 ; !"Use/MT"
 игілікті:игілікті A1 ; !"Use/MT"
 майлылау:майлылау A1 ; !"Use/MT"
 қызғаншақ:қызғаншақ A1 ; !"Use/MT"
-Грегориандық:грегориандық A4 ; !"Use/MT"
+Грегориандық:Грегориандық A1 ; !"Use/MT"
 қисынсыз:қисынсыз A1 ; !"Use/MT"
 гимнастикалық:гимнастикалық A1 ; !"Use/MT"
 қалталық:қалталық A1 ; !"Use/MT"
@@ -19885,7 +19742,6 @@ coercive:coercive A1 ; !"Use/MT"
 жалғасымды:жалғасымды A1 ; !"Use/MT"
 жалықтыратын:жалықтыратын A1 ; !"Use/MT"
 жанды:жанды A1 ; !"Use/MT"
-жанданған:жанданған A4 ; !"Use/MT"
 Жапондық:жапондық A1 ; !"Use/MT"
 жаядай:жаядай A1 ; !"Use/MT"
 жеркенішті:жеркенішті A1 ; !"Use/MT"
@@ -20199,7 +20055,7 @@ oномастикалық:oномастикалық A1 ; !"Use/MT"
 ара:ара A1 ; !"Use/MT"
 азотты:азотты A1 ; !"Use/MT"
 түнгі:түнгі A1 ; !"Use/MT"
-шулы:шулы A4 ; !"Use/MT"
+шулы:шулы A1 ; !"Use/MT"
 көшпенді:көшпенді A1 ; !"Use/MT"
 нормалы:нормалы A1 ; !"Use/MT"
 солтүтік-шығыс:солтүтік-шығыс A1 ; !"Use/MT"
@@ -20322,7 +20178,7 @@ oномастикалық:oномастикалық A1 ; !"Use/MT"
 танылатын:танылатын A1 ; !"Use/MT"
 тіркегіш:тіркегіш A1 ; !"Use/MT"
 ойын-сауық:ойын-сауық A1 ; !"Use/MT"
-тіктөртбұрышты:тіктөртбұрышты A4 ; !"Use/MT"
+тіктөртбұрышт:тіктөртбұрышт A1 ; !"Use/MT"
 реккурентті:реккурентті A1 ; !"Use/MT"
 қайта% өнделетін:қайта% өнделетін A1 ; !"Use/MT"
 қызылдау:қызылдау A1 ; !"Use/MT"
@@ -20887,25 +20743,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 елеулі:елеулі ADV ; !"Use/MT"
 жәй:жәй ADV ; ! "" ! Use/MT
 жай% ғана:жай% ғана ADV ; ! "just/simply"
-онда:онда ADV ; !"Use/MT"
-осында:осында ADV ; !"Use/MT"
-тұрақты:тұрақты ADV ; !"Use/MT"
-үш% рет:үш% рет ADV ; !"Use/MT"
-төмен% қарай:төмен% қарай ADV ; !"Use/MT"
-батысқа% қарай:батысқа% қарай ADV ; !"Use/MT"
-біртүрлі:біртүрлі ADV ; !"Use/MT"
-шын% жүректен:шын% жүректен ADV ; !"Use/MT"
-жоғары% қарай:жоғары% қарай ADV ; !"Use/MT"
-маңыздысы:маңыздысы ADV ; !"Use/MT"
-оңтүстікке% қарай:оңтүстікке% қарай ADV ; !"Use/MT"
-айқын% түрде:айқын% түрде ADV ; !"Use/MT"
-шексіз:шексіз ADV ; !"Use/MT"
-интеллектуалды:интеллектуалды ADV ; !"Use/MT"
-көлденең:көлденең ADV ; !"Use/MT"
-қызықты:қызықты ADV ; !"Use/MT"
-циркулярлы:циркулярлы ADV ; !"Use/MT"
-салт:салт ADV ; !"Use/MT"
-жоғары% қарай:жоғары% қарай ADV ; !"Use/MT"
 
 
 ! Adverbs wich take -KI and become an attr/adj
@@ -21794,7 +21631,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 бер:бер V-TV ; ! "давать,отдавать,сдавать"
 бесеуле:бесеуле V-TV ; ! "to do something in groups of five"
 бет:бет V-IV ; ! "~end" FIXME CHECK
-бетін% қайтар:бетін% қайтар V-TV ; ! ""
 бетте:бетте V-IV ; ! ""
 биікте:биікте V-IV ; ! ""
 биле:биле V-TV ; ! "танцевать;владеть,править"
@@ -21820,6 +21656,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 бой% ұсын:бой% ұсын V-TV ; ! "повиноваться"
 боқта:боқта V-IV ; ! ""
 бол:бол V-IV ; ! "1. быть"
+бол:бол V-IV ; ! "be/become"
 болбыра:болбыра V-IV ; ! "to become languid"
 болдыр:болдыр V-IV ; ! "to get tired"
 болдыр:болдыр V-TV ; ! "допускать" (kaz tat) caus
@@ -21943,7 +21780,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 доғар:доғар V-TV ; ! ""
 долдан:долдан V-IV ; ! ""
 домала:домала V-IV ; ! "slide down"
-дрейфте:дрейфте V-IV ; ! ""
 душар% бол:душар% бол V-IV ; ! ""
 дыбыс% шығар:дыбыс% шығар V-IV ; ! ""
 европалас:европалас V-IV ; ! "to become europeanised" (tat) recognise европалаш
@@ -22343,7 +22179,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 күрделендір:күрделендір V-TV ; ! ""
 күрес:күрес V-IV ; ! "deal,fight,wrestle"
 күркілде:күркілде V-IV ; ! "to wheeze"
-күркіре:күркіре V-IV ; ! ""
 күрсілде:күрсілде V-IV ; ! "to thunder"
 күрсін:күрсін V-IV ; ! ""
 күт:күт V-TV ; ! "wait"
@@ -22411,7 +22246,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 қал:қал V-IV ; ! "remain"
 қалқала:қалқала V-TV ; ! "to project"
 қалқы:қалқы V-IV ; ! "surface"
-қалтыра:қалтыра V-IV ; ! ""
 қалықта:қалықта V-IV ; ! "to soar"
 қалыңда:қалыңда V-IV ; ! "to become fat"
 қалыптал:қалыптал V-IV ; ! "to go into a usual"
@@ -22865,7 +22699,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 сәйкестен:сәйкестен V-IV ; ! ""
 сез:сез V-TV ; ! "feel,forsee"
 секір:секір V-IV ; ! "leap,spring"
-селдет:селдет V-TV ; ! ""
 семір:семір V-IV ; ! "" 
 сен:сен V-TV ; ! "believe"
 сенбе:сенбе V-TV ; ! "hesitate"
@@ -23036,13 +22869,11 @@ retroactive:retroactive A1 ; !"Use/MT"
 тежел:тежел V-IV ; ! ""
 тежет:тежет V-TV ; ! ""
 тездет:тездет V-TV ; ! "to quicken"
-текіректетіп% шапқыла:текіректетіп% шапқыла V-IV ; ! ""
 тексер:тексер V-TV ; ! "examine"
 текшеле:текшеле V-TV ; ! "to put together in rows or layers" (tat) trimm
 қоңырау% шал:қоңырау% шал V-TV ; ! "call" !Use/MT
 телмір:телмір V-IV ; ! "to stare"
 темірле:темірле V-TV ; ! "to encircle"
-теңсел:теңсел V-IV ; ! ""
 теп:теп V-TV ; ! ""
 тербел:тербел V-IV ; ! "to rock"
 тербет:тербет V-TV ; ! "to rock"
@@ -23125,7 +22956,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 түй:түй V-TV ; ! ""
 түкір:түкір V-TV ; ! "spit"
 түкір:түкір V-TV ; ! "spit"
-түнер:түнер V-IV ; ! ""
 тұншықтыр:тұншықтыр V-TV ; ! ""
 түңіл:түңіл V-IV ; ! ""
 түптен:түптен V-IV ; ! "to put out shoots (of plants)" (tat) trimm
@@ -23210,7 +23040,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 үңгі:үңгі V-TV ; ! ""
 үрейлен:үрейлен V-IV ; ! ""
 үркі:үркі V-IV ; ! ""
-үркіт:үркіт V-TV ; ! ""
 үрле:үрле V-TV ; ! "blow"
 үр:үр V-IV ; ! "bark(dog)"
 үсік% шал:үсік% шал V-IV ; ! "" 
