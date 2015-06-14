@@ -1,0 +1,9410 @@
+"<Иран>"
+	"Иран" np top nom @subj #1->18
+"<(>"
+	"(" lpar @punct #2->7
+"<1935>"
+	"1935" num @nummod #3->4
+"<жылға>"
+	"жыл" n dat @x #4->7
+"<дейін>"
+	"дейін" post @case #5->4
+"<Парсы>"
+	"парсы" n nom @nmod #6->7
+"<елі>"
+	"ел" n px3sp nom @appos #7->1
+"<)>"
+	")" rpar @punct #8->7
+"<,>"
+	"," cm @punct #9->7
+"<Иран>"
+	"Иран" np top nom @nmod #10->12
+"<Ислам>"
+	"Ислам" n attr @cmpnd #11->12
+"<Республикасы>"
+	"республика" n px3sp nom @appos #12->1
+"<—>"
+	"—" guio @punct #13->12
+"<Азияның>"
+	"Азия" np top gen @nmod #14->16
+"<оңтүстік-батыс>"
+	"оңтүстік-батыс" adj @amod #15->16
+"<бөлігінде>"
+	"бөлік" n px3sp loc @nmod #16->17
+"<орналасқан>"
+	"орналас" v iv gpr_past @acl #17->18
+"<мемлекет>"
+	"мемлекет" n nom @main #18->0
+		"е" cop aor p3 sg @cop #19->18
+"<.>"
+	"." sent
+
+"<Жер>"
+	"жер" n nom @nmod #1->2
+"<көлемі>"
+	"көлем" n px3sp nom @subj #2->5
+"<1,648>"
+	"1,648" num @nummod #3->4
+"<млн.>"
+	"млн." abbr @nummod #4->5
+"<км²>"
+	"км²" abbr @main #5->0
+		"е" cop aor p3 sg @cop #6->5
+"<.>" 
+	"." sent @punct #7->5
+
+"<Халқы>"
+	"халық" n px3sp nom @subj #1->4
+"<65,2>"
+	"65,2" num @nummod #2->3
+"<млн.>"
+	"млн." abbr @nummod #3->4
+"<адам>"
+	"адам" n nom @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<(>"
+	"(" lpar @punct #6->7
+"<1999>"
+	"1999" num @appos #7->4
+"<)>"
+	")" rpar @punct #8->7
+"<.>"
+	"." sent @punct #9->4
+
+"<Халқының>"
+	"халық" n px3sp gen @nmod #1->3
+"<ұлттық>"
+	"ұлттық" adj @amod #2->3
+"<құрамы>"
+	"құрам" n px3sp nom @subj #3->30
+"<:>"
+	":" sent @punct #4->3
+"<парсылар>"
+	"парсы" n pl nom @conj #5->30
+"<(>"
+	"(" lpar @punct #6->7
+"<51%>"
+	"51" num percent nom @appos #7->5
+"<)>"
+	")" rpar @punct #8->7
+"<,>"
+	"," cm @punct #9->30
+"<әзірбайжандар>"
+	"әзірбайжан" n pl nom @conj #10->30
+"<(>"
+	"(" lpar @punct #11->12
+"<27%>" 
+	"27" num percent nom @appos #12->10
+"<)>"
+	")" rpar @punct #13->12
+"<,>"
+	"," cm @punct #14->30
+"<күрдтер>"
+	"күрд" n pl nom @conj #15->30
+"<(>"
+	"(" lpar @punct #16->17
+"<5%>"
+	"5" num percent nom @appos #17->15
+"<)>"
+	")" rpar @punct #18->17
+"<,>"
+	"," cm @punct #19->30
+"<арабтар>"
+	"араб" n pl nom @conj #20->30
+"<,>"
+	"," cm @punct #21->30
+"<түрікмендер>"
+	"түрікмен" n pl nom @conj #22->30
+"<,>"
+	"," cm @punct #23->30
+"<белуджилер>"
+	"белуджи" n pl nom @conj #24->30
+"<,>"
+	"," cm @punct #25->24
+"<армяндар>"
+	"армян" n pl nom @conj #26->30
+"<,>"
+	"," cm @punct #27->26
+"<еврейлер>"
+	"еврей" n pl nom @conj #28->30
+"<,>"
+	"," cm @punct #29->30
+"<т.б.>" 
+	"т.б." abbr @main #30->0
+		"е" cop aor p3 pl @cop #31->30 
+			"." sent @punct #32->30
+
+"<Қала>"
+	"қала" n nom @nmod #1->2
+"<халқы>"
+	"халық" n px3sp nom @subj #2->3
+"<58,3%>"
+	"58,3" num percent nom @main #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Астанасы>"
+	"астана" n px3sp nom @subj #1->4
+"<—>"
+	"—" guio @punct #2->1
+"<Тегеран>"
+	"Тегеран" np top nom @nmod #3->4
+"<қаласы>"
+	"қала" n px3sp nom @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<(>"
+	"(" lpar #6->10
+"<айналасын>"
+	"айнала" n px3sp acc @obj #7->8
+"<қосқанда>"
+	"қос" v tv ger_past loc @x #8->10
+"<12>"
+	"12" num @nummod #9->10
+"<миллионнан>"
+	"миллион" num subst abl @appos #10->4
+"<астам>"
+	"астам" post @case #11->10
+"<)>"
+	")" rpar #12->10
+"<.>"
+	"." sent #13->4
+
+"<Одан>"
+	"ол" prn dem abl @nmod #1->29
+"<басқа>"
+	"басқа" post @case #2->1
+"<Мешхед>"
+	"Мешхед" np top nom @conj #3->21
+"<(>"
+	"(" lpar @punct #4->6
+"<1,5>"
+	"1,5" num @nummod #5->6
+"<млн.>"
+	"млн." num @appos #6->3
+"<)>"
+	")" rpar @punct #7->6
+"<,>"
+	"," cm @punct #8->21
+"<Исфаһан>"
+	"Исфаһан" np top nom @conj #9->21
+"<(>"
+	"(" lpar @punct #10->12
+"<1>"
+	"1" num @nummod #11->12
+"<млн.>"
+	"млн." num @appos #12->9
+"<)>"
+	")" rpar @punct #13->12
+"<,>"
+	"," cm @punct #14->21
+"<Тебриз>"
+	"Тебриз" np top nom @conj #15->21
+"<(>"
+	"(" lpar @punct #16->18
+"<852>"
+	"852" num @nummod #17->18
+"<мың>"
+	"мың" num @appos #18->15
+"<)>"
+	")" rpar @punct #19->18
+"<,>"
+	"," cm @punct #20->21
+"<Шираз>"
+	"Шираз" np top nom @nmod #21->28
+"<(>"
+	"(" lpar @punct #22->24
+"<800>"
+	"800" num @nummod #23->24
+"<мың>"
+	"мың" num @appos #24->21
+"<)>"
+	")" rpar @punct #25->24
+"<сияқты>"
+	"сияқты" post @case #26->21
+"<ірі>"
+	"ірі" adj @amod #27->28
+"<қалалар>"
+	"қала" n pl nom @subj #28->29
+"<бар>"
+	"бар" adj @main #29->0
+		"е" cop aor p3 sg @cop #30->29
+"<.>" 
+	"." sent @punct #31->29
+
+"<Ресми>"
+	"ресми" adj @amod #1->2
+"<тілі>"
+	"тіл" n px3sp nom @subj #2->5
+"<—>"
+	"—" guio @punct #3->2
+"<парсы>"
+	"парсы" n nom @nmod #4->5
+"<тілі>"
+	"тіл" n px3sp nom @main #5->0
+		"е" cop aor p3 sg @cop #6->5
+"<.>"
+	"." sent @punct #7->5
+
+"<Мемлекеттік>"
+	"мемлекеттік" adj @amod #1->2
+"<діні>" 
+	"дін" n px3sp nom @subj #2->7
+"<—>"
+	"—" guio @punct #3->2
+"<ислам>"
+	"Ислам" n attr @cmpnd #4->5
+"<дінінің>"
+	"дін" n px3sp gen @nmod #5->7
+"<шиит>"
+	"шиит" n attr @cmpnd #6->7
+"<тармағы>"
+	"тармақ" n px3sp nom @main #7->0
+		"е" cop aor p3 sg @cop #8->7
+"<.>"
+	"." sent @punct #9->7
+
+"<Иран>"
+	"Иран" np top nom @subj #1->4
+"<—>"
+	"—" guio @punct #2->1
+"<діни>"
+	"діни" adj @amod #3->4
+"<мемлекет>"
+	"мемлекет" n nom @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<.>"
+	"." sent @punct #6->4
+
+"<Елдегі>"
+	"ел" n loc attr @cmpnd #1->5
+"<саяси>"
+	"саяси" adj @conj #2->4
+"<және>"
+	"және" cnjcoo @cc #3->4
+"<діни>"
+	"діни" adj @amod #4->5
+"<билік>"
+	"билік" n nom @subj #5->10
+"<аятолла>"
+	"аятолла" n attr @cmpnd #6->9 
+"<Сейд>"
+	"Сейд" np ant m attr @name #7->9
+"<Әли>"
+	"Әли" np ant m attr @name #8->9
+"<Хаменеидің>"
+	"Хаменеи" np cog mf gen @x #9->10
+"<қолында>"
+	"қол" n px3sp loc @main #10->0
+		"е" cop aor p3 sg @cop #11->10
+"<.>"
+	"." sent @punct #12->10
+
+"<Президент>"
+	"президент" n nom @subj #1->16
+"<(>"
+	"(" lpar @punct #2->8
+"<1997>"
+	"1997" num @nummod #3->4
+"<жылдан>"
+	"жыл" n abl @x #4->8
+"<бастап>"
+	"баста" post @case #5->4
+"<Сейд>"
+	"Сейд" np ant m attr @name #6->7
+"<Мохаммед>"
+	"Мохаммед" np ant m attr @name #7->8
+"<Хатами>"
+	"Хатами" np cog mf nom @appos #8->1
+"<)>"
+	")" rpar @punct #9->8
+"<4>"
+	"4" num @nummod #10->11
+"<жылға>"
+	"жыл" n dat @nmod #11->12
+"<сайланады>"
+	"сайла" v tv pass aor p3 sg @conj #12->16
+"<және>"
+	"және" cnjcoo @cc #13->16
+"<Министр>"
+	"министр" n nom @nmod #14->15
+"<Кабинетін>"
+	"кабинет" n px3sp acc @obj #15->16
+"<басқарады>"
+	"басқар" v tv aor p3 sg @main #16->0
+"<.>"
+	"." sent @punct #17->16
+
+"<Жоғарғы>"
+	"жоғары" adv attr @amod #1->4
+"<заң>"
+	"заң" n nom @obj #2->3
+"<шығарушы>"
+	"шығар" v tv gpr_pot @acl #3->4
+"<орган>"
+	"орган" n nom @subj #4->24
+"<—>"
+	"—" guio @punct #5->4
+"<бір>"
+	"бір" num @nummod #6->7
+"<палаталы>" 
+	"палата" n nom @nmod #7->9
+		"лы" post @case #8->7
+"<парламент>"
+	"парламент" n nom @appos #9->4
+"<—>"
+	"—" guio @punct #10->9
+"<Ислам>"
+	"Ислам" n nom @nmod #11->12
+"<кеңесі>"
+	"кеңес" n px3sp nom @nmod #12->13
+"<жиналысы>"
+	"жиналыс" n px3sp nom @appos #13->4
+"<(>"
+	"(" lpar @punct #14->15
+"<меджлис>"
+	"меджлис" n nom @appos #15->13
+"<)>"
+	")" rpar @punct #16->15
+"<4>"
+	"4" num @nummod #17->18
+"<жыл>"
+	"жыл" n nom @nmod #18->20
+"<сайын>"
+	"сайын" post @case #19->18
+"<сайланып>"
+	"сайла" v tv pass prc_perf @acl #20->23
+"<отыратын>"
+	"отыр" vaux gpr_impf @aux #21->20
+"<290>"
+	"290" num @nummod #22->23
+"<депутаттан>"
+	"депутат" n abl @nmod #23->24
+"<тұрады>"
+	"тұр" v iv aor p3 sg @main #24->0
+"<.>"
+	"." sent @punct #25->24
+
+"<1981>"
+	"1981" num @nummod #1->2
+"<жылғы>"
+	"жыл" n nom @nmod #2->4
+		"ғы" post @case #3->2
+"<конституциясы>"
+	"конституция" n px3sp nom @nmod #4->13
+"<бойынша>"
+	"бойынша" post @case #5->4
+"<,>"
+	"," cm @punct #6->5
+"<елде>"
+	"ел" n loc @nmod #7->13
+"<саяси>"
+	"саяси" adj @conj #8->10
+"<және>"
+	"және" cnjcoo @cc #9->10
+"<діни>"
+	"діни" adj @amod #10->11
+"<емес>"
+	"емес" postadv @advmod #11->10
+"<ұйымдарға>"
+	"ұйым" n pl dat #12->13
+"<тыйым салынған>"
+	"тыйым сал" v tv pass past p3 sg @main #13->0
+"<.>"
+	"." sent @punct #14->13
+
+"<Ұлттық>"
+	"ұлттық" adj @amod #1->2
+"<мейрамы>"
+	"мейрам" n px3sp nom @subj #2->4
+"<11>"
+	"11" num @nummod #3->4
+"<ақпан>"
+	"ақпан" n nom @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<—>"
+	"—" guio @punct #6->4
+"<Революция>"
+	"революция" n nom @nmod #7->8
+"<күні>"
+	"күн" n px3sp nom @appos #8->4
+"<(>"
+	"(" lpar @punct #9->10
+"<1979>"
+	"1979" num @appos #10->4
+"<)>"
+	")" rpar @punct #11->10
+"<.>"
+	"." sent @punct #12->4
+
+"<Ұлттық>"
+	"ұлттық" adj @amod #1->2
+"<ақша>"
+	"ақша" n nom @nmod #2->3
+"<бірлігі>"
+	"бірлік" n px3sp nom @subj #3->5
+"<—>"
+	"—" guio @punct #4->3
+"<риал>"
+	"риал" n nom @main #5->0
+		"е" cop aor p3 sg @cop #6->5
+"<.>"
+	"." sent @punct #7->5
+
+"<Иран>"
+	"Иран" np top nom @subj #1->12
+"<Армян>"
+	"армян" n attr @cmpnd #2->4
+"<таулы>" 
+	"таулы" adj @amod #3->4
+"<қыратының>"
+	"қырат" n px3sp gen @nmod #4->5
+"<оңтүстік-шығысы>"
+	"оңтүстік-шығыс" adj subst px3sp nom @conj #5->11
+"<мен>"
+	"мен" cnjcoo @cc #6->11
+"<Иран>"
+	"Иран" np top nom @nmod #7->9
+"<таулы>"
+	"таулы" adj @amod #8->9
+"<қыратының>"
+	"қырат" n px3sp gen @nmod #9->11
+"<батыс>"
+	"батыс" adj @amod #10->11
+"<бөлігінде>"
+	"бөлік" n px3sp loc @nmod #11->12
+"<орналасқан>"
+	"орналас" v iv past p3 sg @main #12->0
+"<.>"
+	"." sent @punct #13->12
+
+"<Шет>"
+	"шет" n nom @nmod #1->2
+"<жақтарында>"
+	"жақ" n pl px3sp loc @remnant #2->30
+"<Солтүстік>"
+	"солтүстік" adj @amod #3->4
+"<Иран>"
+	"Иран" np top nom @conj #4->18
+"<(>"
+	"(" lpar @punct #5->6
+"<Эльбурс>"
+	"Эльбурс" np top nom @appos #6->4
+"<)>"
+	")" rpar @punct #7->6
+"<,>"
+	"," cm @punct #8->18
+"<Оңтүстік>"
+	"оңтүстік" adj @amod #9->10
+"<Иран>"
+	"Иран" np top nom @conj #10->18
+"<(>"
+	"(" lpar @punct #11->14
+"<Загрос>"
+	"Загрос" np top nom @conj #12->14
+"<,>"
+	"," cm @punct #13->14
+"<Мекран>"
+	"Мекран" np top nom @appos #14->10
+"<)>"
+	")" rpar @punct #15->14
+"<,>"
+	"," cm @punct #16->18
+"<Шығыс>"
+	"шығыс" adj @amod #17->18
+"<Иран>"
+	"Иран" np top nom @nmod #18->28
+"<(>"
+	"(" lpar @punct #19->26
+"<Серхед>"
+	"Серхед" np top nom @conj #20->26
+"<,>"
+	"," cm @punct #21->26
+"<Пеленган>"
+	"Пеленган" np top nom @conj #22->26
+"<,>"
+	"," cm @punct #23->26
+"<Боран>"
+	"Боран" np top nom @conj #24->26
+"<,>"
+	"," cm @punct #25->26
+"<Келат>"
+	"Келат" np top nom @appos #26->18
+"<)>"
+	")" rpar @punct #27->26
+"<таулары>"
+	"тау" n pl px3sp nom @remnant #28->37
+"<,>"
+	"," cm @punct #29->37
+"<ортасында>"
+	"орта" n px3sp loc @nmod #30->38
+"<Кухруд>"
+	"Кухруд" np top nom @nmod #31->32
+"<жотасы>"
+	"жота" n px3sp nom @conj #32->36
+"<,>"
+	"," cm @punct #33->36
+"<Деште-Кевир>"
+	"Деште-Кевир" np top nom @conj #34->36
+"<,>"
+	"," cm @punct #35->36
+"<Деште-Лух>"
+	"Деште-Лух" np top nom @nmod #36->37
+"<шөлдері>"
+	"шөл" n pl px3sp nom @subj #37->38
+"<орналасқан>"
+	"орналас" v iv gpr_past subst nom @main #38->0
+		"е" cop aor p3 sg @cop #39->38
+"<.>"
+	"." sent @punct #40->38
+
+"<Солтүстік-батысын>"
+	"солтүстік-батыс" adj subst px3sp acc @remnant #1->12
+"<Оңтүстік>"
+	"оңтүстік" adj @amod #2->3
+"<Каспий>"
+	"Каспий" np top nom @conj #3->5
+"<және>"
+	"және" cnjcoo @cc #4->5
+"<Кура-Аракс>"
+	"Кура-Аракс" np top nom @nmod #5->6
+"<ойпаттары>"
+	"ойпат" n pl px3sp nom @remnant #6->15
+"<,>"
+	"," cm @punct #7->15
+"<солтүстік-шығысын>"
+	"солтүстік-шығыс" adj subst px3sp acc @remnant #8->12
+"<Горган>"
+	"Горган" np top nom @nmod #9->10
+"<жазығы>"
+	"жазық" n px3sp nom @remnant #10->15
+"<,>"
+	"," cm @punct #11->15
+"<оңтүстігін>"
+	"оңтүстік" adj subst px3sp acc @obj #12->16
+"<—>"
+	"—" guio @punct #13->12
+"<Гермезир>"
+	"Гермезир" np top nom @nmod #14->15
+"<шөлі>"
+	"шөл" n px3sp nom @subj #15->16
+"<алып>"
+	"ал" v tv prc_perf @main #16->0
+"<жатыр>"
+	"жат" vaux pres p3 sg @aux #17->16
+"<.>"
+	"." sent @punct #18->16
+
+"<Жері>"
+	"жер" n px3sp nom 
+;	"жер" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"жер" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"же" v tv ger_fut px3sp nom 
+;	"же" v tv gpr_fut subst px3sp nom 
+"<,>"
+	"," cm
+"<негізінен>"
+;	"негіз" n px3sp abl
+	"негізінен" adv
+;	"негіз" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"негіз" n px3sp abl
+;		"е" cop aor p3 sg 
+"<,>"
+	"," cm
+"<таулы>"
+;	"таулы" adj
+;	"таулы" adj subst nom
+;	"таулы" adj
+;		"е" cop aor p3 pl 
+	"таулы" adj
+		"е" cop aor p3 sg 
+;	"таулы" adj subst nom
+;		"е" cop aor p3 pl 
+;	"таулы" adj subst nom
+;		"е" cop aor p3 sg 
+;	"тау" n
+;		"лы" post 
+"<.>"
+	"." sent
+
+"<Климаты>"
+	"климат" n px3sp nom
+;	"климат" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"климат" n px3sp nom
+;		"е" cop aor p3 sg 
+"<субтропиктік>"
+;	"субтропиктік" adj
+	"субтропиктік" adj
+		"е" cop aor p3 sg
+;	"субтропиктік" adj
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<континенттік>"
+	"континенттік" adj
+;	"континенттік" adj
+;		"е" cop aor p3 pl 
+;	"континенттік" adj
+;		"е" cop aor p3 sg 
+"<,>"
+	"," cm
+"<жазы>"
+	"жаз" n px3sp nom
+;	"жаз" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"жаз" n px3sp nom
+;		"е" cop aor p3 sg 
+"<ыстық>"
+;	"ыстық" adj
+;	"ыстық" adj advl
+;	"ыстық" adj subst nom
+	"ыстық" adj subst nom
+		"е" cop aor p3 sg
+;	"ыстық" adj
+;		"е" cop aor p3 sg
+;	"ыстық" adj
+;		"е" cop aor p3 pl 
+;	"ыстық" adj subst nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<қысы>"
+	"қыс" n px3sp nom
+;	"қыс" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"қыс" n px3sp nom
+;		"е" cop aor p3 sg 
+"<солтүстігінде>"
+	"солтүстік" n px3sp loc
+;	"солтүстік" adj subst px3sp loc
+;	"солтүстік" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"солтүстік" n px3sp loc
+;		"е" cop aor p3 sg 
+;	"солтүстік" adj subst px3sp loc
+;		"е" cop aor p3 pl 
+;	"солтүстік" adj subst px3sp loc
+;		"е" cop aor p3 sg 
+"<салқын>"
+;	"салқын" adj
+;	"салқын" n nom
+	"салқын" adj subst nom
+		"е" cop aor p3 sg
+;	"салқын" adj advl
+;	"салқын" adj subst nom
+;	"салқын" n nom
+;		"е" cop aor p3 sg
+;	"салқын" adj
+;		"е" cop aor p3 sg
+;	"салқын" n attr 
+;	"салқын" adj
+;		"е" cop aor p3 pl 
+;	"салқын" n nom
+;		"е" cop aor p3 pl 
+;	"салқын" adj subst nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<оңтүстігінде>"
+	"оңтүстік" n px3sp loc
+;	"оңтүстік" adj subst px3sp loc
+;	"оңтүстік" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"оңтүстік" n px3sp loc
+;		"е" cop aor p3 sg 
+;	"оңтүстік" adj subst px3sp loc
+;		"е" cop aor p3 pl 
+;	"оңтүстік" adj subst px3sp loc
+;		"е" cop aor p3 sg 
+"<жылы>"
+;	"жыл" n px3sp nom 
+;	"жыл" n px3sp nom 
+;		"е" cop aor p3 sg
+;	"жылы" adj
+;		"е" cop aor p3 pl 
+;	"жыл" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"жылы" adj subst nom
+;		"е" cop aor p3 pl 
+	"жылы" adj 
+;	"жылы" adv 
+;	"жылы" adj advl 
+;	"жылы" adj subst nom 
+	"жылы" adj 
+		"е" cop aor p3 sg
+;	"жылы" adj subst nom 
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Парсы>"
+	"парсы" n nom
+;	"парсы" n attr 
+"<және>"
+	"және" cnjcoo
+"<Оман>"
+	"Оман" np top attr 
+;	"Оман" np top nom 
+"<шығанақтары>"
+	"шығанақ" n pl px3sp nom
+"<жағалауларының>"
+	"жағалау" n pl px3sp gen
+"<климаты>"
+	"климат" n px3sp nom
+"<тропиктік>"
+	"тропиктік" adj
+;	"тропиктік" adj
+;		"е" cop aor p3 pl 
+;	"тропиктік" adj
+;		"е" cop aor p3 sg 
+"<.>"
+	"." sent
+
+"<Қаңтардағы>"
+	"қаңтар" n loc attr
+;	"қаңтар" n loc subst nom
+"<орташа>"
+	"орташа" adj
+;	"орташа" n nom
+;	"орташа" n attr
+;	"орташа" adj subst nom
+"<температура>"
+	"температура" n nom
+"<2°С-тан>"
+	"2°С" num subst abl
+"<19,4°С-қа>"
+	"19,4°С" num subst dat
+"<дейін>"
+	"дейін" post 
+;	"дейін" n attr 
+;	"де" v tv opt p1 sg 
+;	"дейін" adv 
+;	"дейін" n nom 
+;	"дейін" n nom 
+;		"е" cop aor p3 sg
+;	"дейін" n nom 
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm
+"<шілде>"
+	"шілде" n attr 
+;	"шілде" n nom
+;		"е" cop aor p3 pl 
+;	"шілде" n nom
+;		"е" cop aor p3 sg 
+;	"шілде" n nom 
+"<айында>"
+	"ай" n px3sp loc
+"<29,4>"
+	"29,4" num
+;	"29,4" num subst nom
+"<—>"
+	"—" guio
+"<32,5°С>"
+	"32,5°С" num
+;	"32,5°С" num subst nom
+"<.>"
+	"." sent
+
+"<Жауын-шашынның>"
+	"жауын-шашын" n gen
+"<жылдық>"
+	"жылдық" adj
+;	"жылдық" adj subst nom
+"<мөлш.>"
+	"мөлш." abbr
+"<500>"
+	"500" num
+;	"500" num subst nom
+"<мм>"
+;	"мм" n nom
+	"мм" n nom
+		"е" cop aor p3 sg
+;	"мм" n attr 
+;	"мм" n nom
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<Эльбурс>"
+	"*Эльбурс"
+"<тауы>"
+;	"тауы" n nom
+	"тау" n px3sp nom
+;	"тауы" n attr 
+"<беткейінде>"
+	"*беткейінде"
+"<2000>"
+	"2000" num
+;	"2000" num subst nom
+"<мм>"
+;	"мм" n nom
+	"мм" n nom
+		"е" cop aor p3 sg
+;	"мм" n attr 
+;	"мм" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Систан>"
+	"*Систан"
+"<ойысында>"
+	"*ойысында"
+"<50>"
+	"50" num
+;	"50" num subst nom
+"<—>"
+	"—" guio
+"<60>"
+	"60" num
+;	"60" num subst nom
+"<мм>"
+;	"мм" n nom
+	"мм" n nom
+		"е" cop aor p3 sg
+;	"мм" n attr 
+;	"мм" n nom
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<Жер>"
+	"жер" n attr 
+;	"жер" n nom 
+"<беті>"
+	"бет" n px3sp nom
+;	"бет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"бет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<суы>"
+	"су" n px3sp nom
+;	"су" adj subst px3sp nom
+;	"су" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"су" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"су" adj subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"су" adj subst px3sp nom
+;		"е" cop aor p3 sg 
+"<аз>"
+;	"аз" v iv imp p2 sg 
+;	"аз" adj 
+;	"аз" n nom 
+;	"аз" n attr 
+;	"аз" adj advl 
+;	"аз" adj subst nom 
+;	"аз" adj 
+;		"е" cop aor p3 pl
+	"аз" adj 
+		"е" cop aor p3 sg
+;	"аз" n nom 
+;		"е" cop aor p3 pl
+;	"аз" n nom 
+;		"е" cop aor p3 sg
+;	"аз" adj subst nom 
+;		"е" cop aor p3 pl
+;	"аз" adj subst nom 
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Ірі>"
+	"ірі" adj
+;	"ірі" adj advl
+;	"ірі" adj subst nom
+;	"ірі" adj
+;		"е" cop aor p3 pl 
+;	"ірі" adj
+;		"е" cop aor p3 sg 
+;	"ірі" adj subst nom
+;		"е" cop aor p3 pl 
+;	"ірі" adj subst nom
+;		"е" cop aor p3 sg 
+"<өзендері>"
+	"өзен" n pl px3sp nom
+;	"өзен" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"өзен" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<—>"
+	"—" guio
+"<Карун>"
+	"*Карун"
+"<,>"
+	"," cm
+"<Сефидруд>"
+	"*Сефидруд"
+"<,>"
+	"," cm
+"<Гильменд>"
+	"*Гильменд"
+"<,>"
+	"," cm
+"<Қиыр>"
+	"*Қиыр"
+"<солтүстігінде>"
+	"солтүстік" n px3sp loc
+;	"солтүстік" adj subst px3sp loc
+"<Атрек>"
+	"*Атрек"
+"<,>"
+	"," cm
+"<Аракс>"
+	"Аракс" np top attr 
+;	"Аракс" np top nom 
+"<өзендері>"
+	"өзен" n pl px3sp nom
+;	"өзен" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"өзен" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<бар>"
+;	"бар" adj 
+;	"бар" adj subst nom 
+;		"е" cop aor p3 sg
+;	"бар" adj subst nom 
+;	"бар" adj 
+;		"е" cop aor p3 sg
+;	"бар" n attr 
+	"бар" adj
+		"е" cop aor p3 pl 
+;	"бар" n nom
+;		"е" cop aor p3 pl 
+;	"бар" adj subst nom
+;		"е" cop aor p3 pl 
+;	"бар" n nom 
+;	"бар" det qnt 
+;	"бар" v iv imp p2 sg 
+;	"бар" n nom 
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Таулы>"
+	"таулы" adj
+;	"таулы" adj subst nom
+;	"таулы" adj
+;		"е" cop aor p3 pl 
+;	"таулы" adj
+;		"е" cop aor p3 sg 
+;	"таулы" adj subst nom
+;		"е" cop aor p3 pl 
+;	"таулы" adj subst nom
+;		"е" cop aor p3 sg 
+;	"тау" n
+;		"лы" post 
+;	"Тау" np ant m
+;		"лы" post 
+"<аудандарда>"
+	"аудан" n pl loc
+"<көптеген>"
+	"көптеген" det qnt
+;	"көпте" v tv gpr_past 
+;	"көпте" v tv ger_past nom 
+;	"көпте" v tv gpr_past subst nom 
+"<көлдер>"
+	"көл" n pl nom
+;	"көл" n pl nom
+;		"е" cop aor p3 pl 
+;	"көл" n pl nom
+;		"е" cop aor p3 sg 
+"<кездеседі>"
+	"кездес" v iv aor p3 sg
+;	"кездес" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Жері>"
+	"жер" n px3sp nom 
+;	"жер" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"жер" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"же" v tv ger_fut px3sp nom 
+;	"же" v tv gpr_fut subst px3sp nom 
+"<сары>"
+	"сары" adj
+;	"сары" adj subst nom
+;	"сары" adj subst nom
+;		"е" cop aor p3 sg
+;	"сары" adj
+;		"е" cop aor p3 sg
+;	"сары" adj
+;		"е" cop aor p3 pl 
+;	"сары" adj subst nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<қоңыр>"
+	"қоңыр" adj
+;	"қоңыр" adj subst nom
+"<және>"
+	"және" cnjcoo
+"<қызғылт>"
+	"қызғылт" adj
+;	"қызғылт" adj subst nom
+"<топырақты>"
+	"топырақты" adj
+		"е" cop aor p3 sg
+;	"топырақты" adj
+;	"топырақ" n acc 
+;	"топырақ" n
+;		"лы" post 
+;	"топырақты" adj
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent 
+
+"<Тау>"
+	"тау" n nom
+;	"Тау" np ant m nom
+;	"тау" n nom
+;		"е" cop aor p3 pl 
+;	"тау" n nom
+;		"е" cop aor p3 sg 
+;	"Тау" np ant m nom
+;		"е" cop aor p3 pl 
+;	"Тау" np ant m nom
+;		"е" cop aor p3 sg 
+;	"тау" n attr 
+"<беткейлері>"
+	"*беткейлері"
+"<орманды>"
+;	"орманды" adj subst nom
+;		"е" cop aor p3 sg
+;	"орманды" adj
+;	"орманды" adj
+;		"е" cop aor p3 sg
+;	"орманды" adj subst nom
+;	"орман" n acc 
+;	"орман" n
+;		"лы" post 
+	"орманды" adj subst nom
+		"е" cop aor p3 pl 
+;	"орманды" adj
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<өзендер>"
+;	"өзен" n pl nom
+	"өзен" n pl nom
+		"е" cop aor p3 pl 
+;	"өзен" n pl nom
+;		"е" cop aor p3 sg 
+"<бойы>"
+	"бойы" post
+;	"бойы" n nom
+;	"бойы" n attr
+;	"бой" n px3sp nom
+"<шалғын>"
+;	"шалғын" n nom
+	"шалғын" n nom
+		"е" cop aor p3 sg
+;	"шалғын" n attr 
+;	"шалғын" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<ішкі>"
+	"ішкі" adj
+;	"ішкі" adv
+;	"ішкі" adj subst nom
+"<аудандары>"
+	"аудан" n pl px3sp nom
+"<шөл>"
+;	"шөл" n nom
+	"шөл" n nom
+		"е" cop aor p3 sg
+;	"шөл" n attr 
+;	"шөл" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<шөлейт>"
+	"*шөлейт"
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<жерінде>"
+	"жер" n px3sp loc 
+;	"же" v tv ger_fut px3sp loc 
+;	"же" v tv gpr_fut subst px3sp loc 
+"<сүтқоректілердің>"
+	"сүтқоректі" n pl gen
+"<100-ге>"
+	"100" num subst dat
+"<тарта>"
+	"тарта" post
+;	"тарт" v tv prc_impf 
+"<,>"
+	"," cm
+"<құстардың>"
+	"құс" n pl gen
+"<400-ге>"
+	"400" num subst dat
+"<жуық>"
+	"жуық" post
+;	"жуық" adj
+;	"жуық" adj advl
+;	"жуық" adj subst nom
+;	"жуық" adj subst nom
+;		"е" cop aor p3 sg
+;	"жуық" adj
+;		"е" cop aor p3 sg
+;	"жуық" adj
+;		"е" cop aor p3 pl 
+;	"жуық" adj subst nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<бауырымен>"
+	"бауыр" n px3sp ins
+"<жорғалаушылардың>"
+	"*жорғалаушылардың"
+"<80-ге>"
+	"80" num subst dat
+"<жуық>"
+	"жуық" post
+;	"жуық" adj
+;	"жуық" adj advl
+;	"жуық" adj subst nom
+"<түрі>"
+	"түр" n px3sp nom
+;	"түр" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"түр" n px3sp nom
+;		"е" cop aor p3 sg 
+"<бар>"
+;	"бар" adj 
+	"бар" adj subst nom 
+		"е" cop aor p3 sg
+;	"бар" adj subst nom 
+;	"бар" adj 
+;		"е" cop aor p3 sg
+;	"бар" n attr 
+;	"бар" adj
+;		"е" cop aor p3 pl 
+;	"бар" n nom
+;		"е" cop aor p3 pl 
+;	"бар" adj subst nom
+;		"е" cop aor p3 pl 
+;	"бар" n nom 
+;	"бар" det qnt 
+;	"бар" n nom 
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Шектес>"
+	"шектес" adj
+;	"шектес" adj advl
+;	"шектес" adj subst nom
+;	"шектес" adj
+;		"е" cop aor p3 pl 
+;	"шектес" adj
+;		"е" cop aor p3 sg 
+;	"шектес" adj subst nom
+;		"е" cop aor p3 pl 
+;	"шектес" adj subst nom
+;		"е" cop aor p3 sg 
+;	"шекте" v tv coop imp p2 sg 
+"<теңіздері>"
+	"теңіз" n pl px3sp nom
+;	"теңіз" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"теңіз" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<балыққа>"
+	"балық" n dat
+"<бай>"
+;	"бай" adj
+;	"бай" n nom
+;	"бай" adj subst nom
+;		"е" cop aor p3 sg
+;	"бай" adj advl
+;	"бай" adj subst nom
+;	"бай" n nom
+;		"е" cop aor p3 sg
+;	"бай" adj
+;		"е" cop aor p3 sg
+;	"бай" n attr 
+	"бай" adj
+		"е" cop aor p3 pl 
+;	"бай" n nom
+;		"е" cop aor p3 pl 
+;	"бай" adj subst nom
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<Пайдалы>"
+	"пайдалы" adj
+;	"пайдалы" adv
+;	"пайдалы" adj subst nom
+;	"пайдалы" adj
+;		"е" cop aor p3 pl 
+;	"пайдалы" adj
+;		"е" cop aor p3 sg 
+;	"пайдалы" adj subst nom
+;		"е" cop aor p3 pl 
+;	"пайдалы" adj subst nom
+;		"е" cop aor p3 sg 
+;	"пайда" n
+;		"лы" post 
+"<қазындылары>"
+	"*қазындылары"
+"<:>"
+	":" sent
+"<мұнай>"
+;	"мұнай" n nom
+;	"мұнай" n nom
+;		"е" cop aor p3 sg
+;	"мұнай" n attr 
+	"мұнай" n nom
+		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<газ>"
+	"газ" n nom
+;	"газ" n nom
+;		"е" cop aor p3 pl 
+;	"газ" n nom
+;		"е" cop aor p3 sg 
+;	"газ" n attr 
+"<,>"
+	"," cm
+"<тас>"
+;	"тас" n nom
+;	"тас" n attr
+	"тас" n nom
+		"е" cop aor p3 pl 
+;	"тас" n nom
+;		"е" cop aor p3 sg 
+"<көмір>"
+;	"көмір" n nom
+;	"көмір" n nom
+;		"е" cop aor p3 sg
+;	"көмір" n attr 
+	"көмір" n nom
+		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<темір>"
+;	"темір" adj
+;	"темір" n nom
+;	"темір" adj subst nom
+;	"темір" adj advl
+	"темір" adj
+		"е" cop aor p3 pl 
+;	"темір" adj
+;		"е" cop aor p3 sg 
+;	"темір" n nom
+;		"е" cop aor p3 pl 
+;	"темір" n nom
+;		"е" cop aor p3 sg 
+;	"темір" adj subst nom
+;		"е" cop aor p3 pl 
+;	"темір" adj subst nom
+;		"е" cop aor p3 sg 
+;	"темір" n attr 
+"<,>"
+	"," cm
+"<хромит>"
+	"*хромит"
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<жеріне>"
+	"жер" n px3sp dat 
+;	"же" v tv ger_fut px3sp dat 
+;	"же" v tv gpr_fut subst px3sp dat 
+"<адам баласы>"
+;	"адам баласы" n nom
+	"адам баласы" n px3sp nom
+"<тым>"
+	"тым" adv
+"<ерте>"
+	"ерте" adj subst nom
+;	"ерте" adj
+;	"ерте" adv
+;	"ерте" adj advl
+;	"ерт" v tv prc_impf 
+"<заманнан>"
+	"заман" n abl
+"<бері>"
+	"бері" post
+;	"бері" adv 
+"<қоныстанған>"
+	"қоныстан" v iv past p3 sg 
+;	"қоныстан" v iv gpr_past 
+;	"қоныстан" v iv ger_past nom 
+;	"қоныстан" v iv gpr_past subst nom 
+;	"қоныстан" v iv past p3 pl  
+"<.>"
+	"." sent
+
+"<Б.з.б.>"
+	"б.з.б." abbr
+"<3>"
+	"3" num
+;	"3" num subst nom
+"<->"
+	"-" guio
+"<мыңжылдықта>"
+	"мыңжылдық" n loc
+"<қазіргі>"
+;	"қазіргі" n nom 
+	"қазіргі" n attr 
+;	"қазір" adv attr 
+;	"қазіргі" adj 
+;	"қазір" adv subst nom 
+;	"қазіргі" adj advl 
+;	"қазіргі" adj subst nom 
+"<Иранның>"
+	"Иран" np top gen
+"<оңтүстік-батысында>"
+	"оңтүстік-батыс" n px3sp loc
+;	"оңтүстік-батыс" adj subst px3sp loc
+"<алғашқы>"
+;	"алғаш" adv attr
+	"алғашқы" adj
+;	"алғашқы" adv
+;	"алғаш" adv subst nom
+;	"алғашқы" adj subst nom
+"<мемлекеттер>"
+	"мемлекет" n pl nom
+"<құрыла>"
+	"құр" v tv pass prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Б.з.б.>"
+	"б.з.б." abbr
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<->"
+	"-" guio
+"<мыңжылдықта>"
+	"мыңжылдық" n loc
+"<бұл>"
+;	"бұл" det dem
+	"бұл" prn dem nom
+;	"бұл" prn dem nom
+;		"е" cop aor p3 pl 
+;	"бұл" prn dem nom
+;		"е" cop aor p3 sg 
+"<аймаққа>"
+	"аймақ" n dat
+"<Орталық>"
+	"орталық" adj
+;	"орталық" n nom
+;	"орталық" n attr
+;	"орталық" adj advl
+;	"орталық" adj subst nom
+"<Азиядан>"
+	"Азия" np top abl
+"<арий>"
+	"*арий"
+"<тайпалары>"
+	"тайпа" n pl px3sp nom
+"<келіп>"
+	"кел" v iv prc_perf
+;	"кел" v iv gna_perf
+"<қоныстанды>"
+	"қоныстан" v iv ifi p3 sg
+;	"қоныстан" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Б.з.б.>"
+	"б.з.б." abbr
+"<673>"
+	"673" num
+;	"673" num subst nom
+"<–>"
+	"–" guio
+"<672>"
+	"672" num
+;	"672" num subst nom
+"<ж.>"
+	"ж." abbr
+"<қазіргі>"
+;	"қазір" adv attr
+	"қазіргі" adj
+;	"қазір" adv subst nom
+;	"қазіргі" n nom
+;	"қазіргі" n attr
+;	"қазіргі" adj advl
+;	"қазіргі" adj subst nom
+"<Иранның>"
+	"Иран" np top gen
+"<солтүстік-батысында>"
+	"солтүстік-батыс" n px3sp loc
+;	"солтүстік-батыс" adj subst px3sp loc
+"<Мидия>"
+	"мидия" n attr 
+;	"мидия" n nom 
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<пайда болып>"
+	"пайда бол" v iv gna_perf
+;	"пайда бол" v iv prc_perf 
+"<,>"
+	"," cm
+"<616>"
+	"616" num
+;	"616" num subst nom
+"<–>"
+	"–" guio
+"<605>"
+	"605" num
+;	"605" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Ассирияны>"
+	"*Ассирияны"
+"<талқандап>"
+	"талқанда" v tv gna_perf
+;	"талқанда" v tv prc_perf 
+"<,>"
+	"," cm
+"<аса>"
+	"аса" adv 
+;	"ас" v iv prc_impf 
+;	"ас" v tv prc_impf 
+;	"аса" adj advl 
+;	"аса" adj subst nom 
+;	"аса" adj 
+"<ірі>"
+	"ірі" adj
+;	"ірі" adj advl
+;	"ірі" adj subst nom
+"<мемлекетке>"
+	"мемлекет" n dat
+"<айналды>"
+	"айнал" v iv ifi p3 sg
+;	"айнал" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Б.з.б.>"
+	"б.з.б." abbr
+"<550>"
+	"550" num
+;	"550" num subst nom
+"<ж.>"
+	"ж." abbr
+"<өкімет>"
+	"өкімет" n attr 
+;	"өкімет" n nom 
+"<билігі>"
+	"билік" n px3sp nom
+"<парсылық>"
+	"*парсылық"
+"<Ахемен>"
+	"*Ахемен"
+"<әулетіне>"
+	"әулет" n px3sp dat
+"<көшті>"
+;	"көш" n acc
+;	"көш" n
+;		"лы" post
+	"көш" v iv ifi p3 sg
+;	"көш" v iv ifi p3 pl 
+"<(>"
+	"(" lpar
+"<қ.>"
+	"қ." abbr
+"<Ахемен>"
+	"*Ахемен"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Ахемен>"
+	"*Ахемен"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекетінің>"
+	"мемлекет" n px3sp gen
+"<шекарасы>"
+	"шекара" n px3sp nom
+"<шығыста>"
+	"шығыс" n loc
+;	"шығыс" adj subst loc
+"<Үнді>"
+	"Үнді" np top nom
+;	"үн" n acc
+;	"үн" n
+;		"лы" post
+"<өзеннен>"
+	"өзен" n abl
+"<батыста>"
+	"батыс" n loc
+;	"батыс" adj subst loc
+"<Эгей>"
+	"*Эгей"
+"<теңізіне>"
+	"теңіз" n px3sp dat
+"<дейін>"
+	"дейін" post 
+"<,>"
+	"," cm
+"<солтүстікте>"
+	"солтүстік" n loc
+;	"солтүстік" adj subst loc
+"<Армениядан>"
+	"Армения" np top abl
+"<оңтүстікте>"
+	"оңтүстік" n loc
+;	"оңтүстік" adj subst loc
+"<Ніл>"
+	"*Ніл"
+"<өзендеріне>"
+	"өзен" n pl px3sp dat
+"<дейін>"
+	"дейін" post 
+;	"дейін" adv 
+;	"дейін" n attr 
+;	"де" v tv opt p1 sg 
+;	"дейін" n nom 
+"<жетті>"
+	"жет" v iv ifi p3 sg
+;	"жет" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Батыс>"
+	"батыс" adj
+;	"батыс" n nom
+;	"батыс" adj subst nom
+;	"батыс" n attr 
+;	"бат" v iv coop imp p2 sg 
+"<пен>"
+	"мен" cnjcoo
+;	"мен" post
+"<Шығысты>"
+	"шығыс" n acc
+;	"шығыс" adj subst acc
+;	"шық" v iv coop ifi p3 pl 
+;	"шық" v iv coop ifi p3 sg 
+;	"шығыс" n
+;		"лы" post 
+;	"шығыс" adj subst
+;		"лы" post 
+"<жалғастыратын>"
+	"жалғастыр" v tv gpr_impf
+;	"жалғастыр" v tv gpr_impf subst nom
+;	"жалғастыр" v tv pih p3 sg
+;	"жалғастыр" v tv pih p3 pl 
+"<сауда>"
+;	"сау" n loc
+;	"сау" adj subst loc
+	"сауда" n nom
+;	"сауда" n attr
+"<жолдары>"
+	"жол" n pl px3sp nom
+;	"жолда" v tv ger_fut px3sp nom
+;	"жолда" v tv gpr_fut subst px3sp nom
+"<үшін>"
+	"үшін" post
+;	"үш" n px3sp acc
+;	"үш" num subst px3sp acc
+"<бұл>"
+;	"бұл" det dem
+	"бұл" prn dem nom
+"<мемлекет>"
+	"мемлекет" n nom
+;	"мемлекет" n attr
+"<гректермен>"
+	"грек" n pl ins
+"<ұзаққа>"
+	"ұзақ" adj subst dat
+"<созылған>"
+	"соз" v tv pass gpr_past
+;	"созыл" v iv gpr_past
+;	"соз" v tv pass ger_past nom
+;	"созыл" v iv ger_past nom
+;	"созыл" v iv past p3 sg
+;	"соз" v tv pass past p3 sg
+;	"соз" v tv pass gpr_past subst nom
+;	"созыл" v iv gpr_past subst nom
+;	"соз" v tv pass past p3 pl 
+;	"созыл" v iv past p3 pl 
+"<соғыс>"
+	"соғыс" n nom
+;	"соғыс" n attr 
+;	"соғыс" v iv imp p2 sg 
+;	"соғ" v iv coop imp p2 sg 
+;	"соқ" v iv coop imp p2 sg 
+"<жүргізді>"
+	"жүргіз" v tv ifi p3 sg
+;	"жүргіз" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Сақтар>"
+	"cақ" n pl nom
+;	"Сақтар" np ant m nom
+;	"сақ" adj subst pl nom
+;	"сақта" v tv gpr_fut 
+;	"сақта" v tv fut p3 pl 
+;	"сақта" v tv fut p3 sg 
+;	"сақта" v tv gpr_fut subst nom 
+"<еліне>"
+	"ел" n px3sp dat
+"<бірнеше>"
+	"бірнеше" det qnt
+"<дүркін>"
+	"*дүркін"
+"<басқыншылық>"
+	"*басқыншылық"
+"<жорықтар>"
+	"жорық" n pl nom
+"<жасады>"
+	"жаса" v tv ifi p3 sg
+;	"жаса" v tv ifi p3 pl 
+"<(>"
+	"(" lpar
+"<қ.>"
+	"қ." abbr
+"<Кир>"
+	"Кир" np ant m nom
+"<ІІ>"
+	"ІІ" num
+"<,>"
+	"," cm
+"<Дарий>"
+	"Дарий" np ant m nom
+"<І>"
+	"І" num
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Ахемен>"
+	"*Ахемен"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекетін>"
+	"мемлекет" n px3sp acc
+"<б.з.б.>"
+	"б.з.б." abbr
+"<330>"
+	"330" num
+;	"330" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Александр>"
+	"Александр" np ant m attr
+"<Македонский>"
+	"Македонский" np cog m nom
+"<талқандады>"
+	"талқанда" v tv ifi p3 sg
+;	"талқанда" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr 
+"<эллиндік>"
+	"*эллиндік"
+"<мемлекеттердің>"
+	"мемлекет" n pl gen
+"<билігіне>"
+	"билік" n px3sp dat
+"<көшіп>"
+	"көш" v iv gna_perf
+;	"көш" v iv prc_perf 
+"<,>"
+	"," cm
+"<б.з.б.>"
+	"б.з.б." abbr
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<орта>"
+	"орта" adj
+;	"орта" n nom
+;	"орта" n attr
+;	"орта" adj advl
+;	"орта" adj subst nom
+"<тұсынан>"
+	"тұс" n px3sp abl
+;	"тұс" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"тұс" n px3sp abl
+;		"е" cop aor p3 sg 
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<Парфия>"
+	"*Парфия"
+"<патшалығына>"
+	"патшалық" n px3sp dat
+;	"патшалық" adj subst px3sp dat
+"<бағынды>"
+	"бағын" v iv ifi p3 sg
+;	"бағын" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<224>"
+	"224" num
+;	"224" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Парфия>"
+	"*Парфия"
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<құлап>"
+	"құла" v iv gna_perf
+;	"құла" v iv prc_perf 
+"<,>"
+	"," cm
+"<орнына>"
+;	"орн" n px3sp dat
+	"орын" n px3sp dat
+"<Сасани>"
+	"*Сасани"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<құрылды>"
+	"құр" v tv pass ifi p3 sg
+;	"құр" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Сасани>"
+	"*Сасани"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекеті>" 
+	"мемлекет" n px3sp nom
+"<Оңтүстік>"
+;	"оңтүстік" n nom 
+	"оңтүстік" n attr 
+;	"оңтүстік" adj 
+;	"оңтүстік" adv 
+;	"оңтүстік" adj subst nom 
+"<Арабияны>"
+	"Арабия" np top acc
+"<,>"
+	"," cm
+"<Сирияны>"
+	"Сирия" np top acc
+"<,>"
+	"," cm
+"<Палестинаны>"
+	"Палестина" np top acc
+"<,>"
+	"," cm
+"<Мысырды>"
+	"Мысыр" np top acc
+"<жаулап>"
+	"жаула" v tv prc_perf 
+;	"жаула" v tv gna_perf 
+"<алды>"
+	"ал" vaux ifi p3 sg  
+;	"алд" n px3sp nom 
+;	"алд" n px3sp nom 
+;		"е" cop aor p3 pl
+;	"алд" n px3sp nom 
+;		"е" cop aor p3 sg
+;	"ал" v tv ifi p3 pl  
+;	"ал" v tv ifi p3 sg  
+;	"ал" vaux ifi p3 pl   
+"<.>"
+	"." sent
+
+"<Византияға>"
+	"Византия" np top dat
+"<қауіп>"
+	"қауіп" n nom
+;	"қауіп" n attr 
+"<төндірді>"
+	"төндір" v tv ifi p3 sg
+;	"төндір" v tv ifi p3 pl 
+"<,>"
+	"," cm
+"<Түрік>"
+	"түрік" n nom
+;	"түрік" n attr 
+"<қағанатымен>"
+	"*қағанатымен"
+"<соғыс>"
+	"соғыс" n nom
+;	"соғыс" n attr 
+"<жүргізді>"
+	"жүргіз" v tv ifi p3 sg
+;	"жүргіз" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Бірақ>"
+	"бірақ" cnjcoo
+"<Сасани>"
+	"*Сасани"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<арабтардың>"
+	"араб" n pl gen
+"<шабуылынан>"
+	"шабуыл" n px3sp abl
+"<құлап>"
+	"құла" v iv gna_perf
+;	"құла" v iv prc_perf 
+"<,>"
+	"," cm
+"<7>"
+	"7" num
+;	"7" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<->"
+	"-" guio
+"<жартысында>"
+	"жарты" adj subst px3sp loc
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr
+"<Араб>"
+	"араб" n attr 
+;	"араб" n nom 
+"<халифаты>"
+	"халифат" n px3sp nom
+"<құрамына>"
+	"құрам" n px3sp dat
+"<қосылды>"
+	"қос" v tv pass ifi p3 sg
+;	"қос" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<8>"
+	"8" num
+;	"8" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<Араб>"
+	"араб" n attr 
+;	"араб" n nom 
+"<халифатының>"
+	"халифат" n px3sp gen
+"<билеушісі>"
+	"билеуші" n px3sp nom 
+;	"биле" v tv gpr_pot subst px3sp nom 
+"<Әбу>"
+	"Әбу" np ant m nom
+"<әл>"
+	"әл" n nom
+;	"әл" n attr 
+"<->"
+	"-" guio
+"<Аббас>"
+	"Аббас" np ant m nom
+"<әс>"
+	"*әс"
+"<->"
+	"-" guio
+"<Саффах>"
+	"*Саффах"
+"<халифат>"
+	"халифат" n attr 
+;	"халифат" n nom 
+"<астанасын>"
+	"астана" n px3sp acc
+"<Бағдадқа>"
+	"Бағдад" np top dat
+"<көшірді>"
+	"көшір" v tv ifi p3 sg
+;	"көшір" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+"<аумағы>"
+	"аумақ" n px3sp nom
+"<ұзақ>"
+	"ұзақ" adj
+;	"ұзақ" adv
+;	"ұзақ" adj advl
+;	"ұзақ" adj subst nom
+"<жылдар>"
+	"жыл" n pl nom
+"<бойы>"
+	"бойы" post
+;	"бойы" n nom
+;	"бойы" n attr
+;	"бой" n px3sp nom
+"<Аббас>"
+	"Аббас" np ant m nom
+"<әулеті>"
+	"әулет" n px3sp nom
+"<билеген>"
+	"биле" v tv gpr_past
+;	"биле" v tv ger_past nom
+;	"биле" v tv gpr_past subst nom
+;	"биле" v tv past p3 sg
+;	"биле" v tv past p3 pl 
+"<Бағдад>"
+	"Бағдад" np top nom
+	"Бағдад" np top attr
+"<халифаты>"
+	"халифат" n px3sp nom
+"<құрамында>"
+	"құрам" n px3sp loc
+"<болып>"
+	"бол" v iv gna_perf
+;	"бол" v iv prc_perf 
+"<,>"
+	"," cm
+"<мәдени>"
+	"мәдени" adj
+"<және>"
+	"және" cnjcoo
+"<экон.>"
+	"экон." abbr
+"<дамуды>"
+	"даму" n acc 
+;	"дам" v iv ger acc 
+;	"дамы" v iv ger acc 
+"<басынан>"
+	"бас" n px3sp abl
+"<кешірді>"
+	"кешір" v tv ifi p3 sg
+;	"кешір" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<9>"
+	"9" num
+;	"9" num subst nom
+"<—>"
+	"—" guio
+"<10>"
+	"10" num
+;	"10" num subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+"<елде>"
+	"ел" n loc
+"<Араб>"
+	"араб" n attr 
+;	"араб" n nom 
+"<халифатына>"
+	"халифат" n px3sp dat
+"<шартты>"
+;	"шартты" n nom 
+;	"шартты" n attr 
+;	"шарт" n acc 
+;	"шарт" n
+;		"лы" post 
+;	"шартты" adj subst nom 
+	"шартты" adj 
+;	"шартты" adv 
+;	"шартты" adj advl 
+"<түрде ғана>"
+	"түр" n loc
+		"ғана" postadv
+"<тәуелді>"
+;	"тәуелді" adj
+	"тәуелді" adj subst nom
+;	"тәуелді" adj
+;		"е" cop aor p3 pl 
+;	"тәуелді" adj
+;		"е" cop aor p3 sg 
+;	"тәуелді" adj subst nom
+;		"е" cop aor p3 pl 
+;	"тәуелді" adj subst nom
+;		"е" cop aor p3 sg 
+"<болған>"
+	"бол" v iv past p3 sg
+;	"бол" v iv gpr_past
+;	"бол" v iv gpr_past subst nom
+;	"бол" v iv ger_past nom
+;	"бол" vaux gpr_past 
+;	"бол" vaux ger_past nom 
+;	"бол" vaux past p3 pl 
+;	"бол" vaux past p3 sg 
+;	"бол" vaux gpr_past subst nom 
+;	"бол" v iv past p3 pl 
+"<әмірліктер>"
+	"*әмірліктер"
+"<құрылды>"
+	"құр" v tv pass ifi p3 sg
+;	"құр" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Елде>"
+	"ел" n loc
+"<экономикалық>"
+	"экономикалық" adj
+"<және>"
+	"және" cnjcoo
+"<мәдени>"
+	"мәдени" adj
+"<өрлеу>"
+	"өрлеу" n nom 
+;	"өрлеу" n attr 
+;	"өрле" v iv ger nom 
+"<байқалып>"
+	"байқал" v iv gna_perf
+;	"байқа" v tv pass gna_perf
+;	"байқа" v tv pass prc_perf 
+;	"байқал" v iv prc_perf 
+"<,>"
+	"," cm
+"<қалалар>"
+	"қала" n pl nom
+"<өсе>"
+	"өс" v iv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Сондай>"
+;	"сол" prn dem sim nom
+	"сондай" det ind
+"<әмірліктердің>"
+	"*әмірліктердің"
+"<бірі>"
+	"бір" num subst px3sp nom
+"<Самани>"
+	"*Самани"
+"<әулеті>"
+	"әулет" n px3sp nom
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<биліктен>"
+	"билік" n abl
+"<кеткеннен>"
+;	"кет" v iv gpr_past subst abl
+	"кет" v iv ger_past abl
+;	"кет" vaux ger_past abl 
+;	"кет" vaux gpr_past subst abl 
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n nom 
+;	"кейін" n attr 
+"<Шығыс>"
+	"шығыс" adj
+;	"шығыс" n nom
+;	"шығыс" n attr
+;	"шығыс" adj subst nom
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr
+"<Ауғанстанмен>"
+	"Ауғанстан" np top ins
+"<және>"
+	"және" cnjcoo
+"<Орта>"
+	"орта" adj
+;	"орта" n nom
+;	"орта" n attr
+;	"орта" adj advl
+;	"орта" adj subst nom
+"<Азияның>"
+	"Азия" np top gen
+"<бір>"
+	"бір" num
+;	"бір" det ind
+;	"бір" num subst nom
+"<бөлігімен>"
+	"бөлік" n px3sp ins
+"<бірге>"
+	"бірге" post 
+;	"бір" num subst dat 
+;	"бірге" adv 
+"<түркі>"
+	"түркі" adj
+;	"түркі" adj advl
+;	"түркі" adj subst nom
+"<текті>"
+;	"тек" n acc
+	"тек" n
+		"лы" post
+"<Ғазнауи>"
+	"*Ғазнауи"
+"<әулеті>"
+	"әулет" n px3sp nom
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<билеген>"
+	"биле" v tv gpr_past
+;	"биле" v tv ger_past nom
+;	"биле" v tv gpr_past subst nom
+;	"биле" v tv past p3 sg
+;	"биле" v tv past p3 pl 
+"<мемлекеттің>"
+	"мемлекет" n gen
+"<құрамына>"
+	"құрам" n px3sp dat
+"<кірді>"
+	"кір" v iv ifi p3 sg
+;	"кір" n acc 
+;	"кір" adj subst acc 
+;	"кір" v iv ifi p3 pl 
+"<(>"
+	"(" lpar
+"<қ.>"
+	"қ." abbr
+"<Ғазнауи>"
+	"*Ғазнауи"
+"<әулеті>"
+	"әулет" n px3sp nom
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<11>"
+	"11" num
+;	"11" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<Иранға>"
+	"Иран" np top dat
+"<түрік>"
+	"түрік" n nom
+;	"түрік" n attr 
+"<->"
+	"-" guio
+"<оғыздар>"
+	"*оғыздар"
+"<(>"
+	"(" lpar
+"<салжұқ>"
+	"*салжұқ"
+"<)>"
+	")" rpar
+"<басып>"
+	"бас" v iv prc_perf
+;	"бас" v iv gna_perf
+;	"бас" v tv prc_perf
+;	"бас" v tv gna_perf
+"<кіре>"
+	"кір" v iv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" v tv ifi p3 pl 
+;	"баста" v tv ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Көп ұзамай>"
+	"көп ұзамай" adv
+"<олар>"
+	"ол" prn dem pl nom
+;	"олар" prn pers p3 pl nom
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 pl 
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 sg 
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 pl 
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 sg 
+"<Ғазнауи>"
+	"*Ғазнауи"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<әскерін>"
+	"әскер" n px3sp acc
+"<талқандап>"
+	"талқанда" v tv gna_perf
+;	"талқанда" v tv prc_perf 
+"<,>"
+	"," cm
+"<бүкіл>"
+	"бүкіл" det qnt
+"<Иранды>"
+	"Иран" np top acc
+;	"Иран" np top
+;		"лы" post
+"<және>"
+	"және" cnjcoo
+"<көрші>"
+;	"көрші" n nom
+	"көрші" n attr
+"<елдерді>"
+	"ел" n pl acc
+"<басып алып>"
+	"басып ал" v tv gna_perf
+;	"басып ал" v tv prc_perf 
+"<салжұқтар>"
+	"*салжұқтар"
+"<мемлекетін>"
+	"мемлекет" n px3sp acc
+"<құрды>"
+;	"кұр" v iv ifi p3 sg 
+	"құр" v tv ifi p3 sg 
+;	"құр" adj subst acc 
+;	"құр" v tv ifi p3 pl  
+;	"кұр" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<12>"
+	"12" num
+;	"12" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<салжұқтар>"
+	"*салжұқтар"
+"<бірнеше>"
+	"бірнеше" det qnt
+"<сұлтандыққа>"
+	"*сұлтандыққа"
+"<бөлініп>"
+	"бөл" v tv pass prc_perf 
+;	"бөлін" v tv prc_perf 
+"<кетті де>"
+	"кет" vaux ifi p3 sg 
+		"да" cnjcoo
+;	"кет" vaux ifi p3 sg 
+;		"да" postadv
+;	"кет" vaux ifi p3 pl  
+;		"да" cnjcoo
+;	"кет" vaux ifi p3 pl  
+;		"да" postadv
+"<,>"
+	"," cm
+"<осы>"
+	"осы" det dem
+;	"осы" prn dem nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<аяғына>"
+	"аяқ" n px3sp dat
+"<таман>"
+	"таман" post
+"<бүкіл>"
+	"бүкіл" det qnt
+"<Иранды>"
+	"Иран" np top acc
+;	"Иран" np top
+;		"лы" post
+"<түркі>"
+	"түркі" adj
+;	"түркі" adj advl
+;	"түркі" adj subst nom
+"<қыпшақ>"
+	"қыпшақ" n attr 
+;	"қыпшақ" n nom 
+"<тайпасынан>"
+	"тайпа" n px3sp abl
+"<шыққан>"
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
+;	"шық" v iv gpr_past subst nom
+;	"шық" v iv ger_past nom
+;	"шық" v iv past p3 pl 
+"<Хорезм>"
+	"Хорезм" np top nom
+;	"Хорезм" np top attr 
+"<шаїы>"
+	"*шаї"
+"<Текеш>"
+	"*Текеш"
+"<басып алды>"
+	"басып ал" v tv ifi p3 sg
+;	"басып ал" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1220>"
+	"1220" num
+;	"1220" num subst nom
+"<—>"
+	"—" guio
+"<56>"
+	"56" num
+;	"56" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Иранды>"
+	"Иран" np top acc
+;	"Иран" np top
+;		"лы" post
+"<Шыңғыс>"
+	"Шыңғыс" np ant m nom
+"<хан>"
+	"хан" n attr 
+;	"хан" n nom 
+"<әулеті>"
+	"әулет" n px3sp nom
+"<жаулап>"
+	"жаула" v tv prc_perf 
+;	"жаула" v tv gna_perf 
+"<алды>"
+	"ал" vaux ifi p3 sg  
+;	"ал" vaux ifi p3 pl   
+"<.>"
+	"." sent
+
+"<Олар>"
+	"ол" prn dem pl nom
+;	"олар" prn pers p3 pl nom
+"<елде>"
+	"ел" n loc
+"<Хулагу>"
+	"*Хулагу"
+"<әулетіне>"
+	"әулет" n px3sp dat
+"<қарайтын>"
+	"қара" v tv gpr_impf
+;	"қара" v tv gpr_impf subst nom
+"<ильхандар>"
+	"*ильхандар"
+"<мемлекетін>"
+	"мемлекет" n px3sp acc
+"<құрды>"
+;	"кұр" v iv ifi p3 sg 
+	"құр" v tv ifi p3 sg 
+;	"құр" v tv ifi p3 pl  
+;	"кұр" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<14>"
+	"14" num
+;	"14" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<30>"
+	"30" num
+;	"30" num subst nom
+"<->"
+	"-" guio
+"<жылдары>"
+	"жыл" n pl px3sp nom
+"<ильхандар>"
+	"*ильхандар"
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<бірнеше>"
+	"бірнеше" det qnt
+"<иелікке>"
+	"иелік" n dat
+"<бөлініп>"
+	"бөл" v tv pass prc_perf 
+;	"бөлін" v tv prc_perf 
+;	"бөл" v tv pass gna_perf 
+;	"бөлін" v tv gna_perf 
+"<кетті де>"
+	"кет" vaux ifi p3 sg 
+		"да" cnjcoo
+;	"кет" vaux ifi p3 sg 
+;		"да" postadv
+;	"кет" vaux ifi p3 pl  
+;		"да" cnjcoo
+;	"кет" vaux ifi p3 pl  
+;		"да" postadv
+"<,>"
+	"," cm
+"<1380>"
+	"1380" num
+;	"1380" num subst nom
+"<—>"
+	"—" guio
+"<93>"
+	"93" num
+;	"93" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Иранды>"
+	"Иран" np top acc
+;	"Иран" np top
+;		"лы" post
+"<Әмір Темір>"
+	"Әмір Темір" np ant m nom
+"<әскерлері>"
+	"әскер" n pl px3sp nom
+;	"әскер" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"әскер" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<басып алды>"
+	"басып ал" v tv ifi p3 sg
+;	"басып ал" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Әмір Темір>"
+	"Әмір Темір" np ant m nom
+"<өлгеннен>"
+	"өл" v iv ger_past abl
+;	"өл" v iv gpr_past subst abl
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n nom 
+;	"кейін" n attr 
+"<Шығыс>"
+	"шығыс" adj
+;	"шығыс" n nom
+;	"шығыс" n attr
+;	"шығыс" adj subst nom
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr
+"<Темір>"
+	"Темір" np ant m nom 
+;	"темір" adj 
+;	"темір" n nom 
+;	"темір" n attr 
+;	"темір" adj advl 
+;	"темір" adj subst nom 
+"<әулетінің>"
+	"әулет" n px3sp gen
+"<билігінде>"
+	"билік" n px3sp loc
+"<қалып>"
+;	"қалып" n nom
+;		"е" cop aor p3 sg
+;	"қалып" n nom
+	"қал" v iv gna_perf
+;	"қалып" n attr 
+;	"қал" vaux prc_perf 
+;	"қал" v iv prc_perf 
+;	"қал" vaux gna_perf 
+;	"қалып" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Батыс>"
+	"батыс" adj
+;	"батыс" n nom
+;	"батыс" n attr
+;	"батыс" adj subst nom
+;	"бат" v iv coop imp p2 sg 
+"<Иранда>"
+	"Иран" np top loc
+"<Қарақойлы>"
+	"*Қарақойлы"
+"<мемлекеті>"
+	"мемлекет" n px3sp nom
+"<құрылды>"
+	"құр" v tv pass ifi p3 sg
+;	"құр" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<16>"
+	"16" num
+;	"16" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<Кіші>"
+	"кіші" n nom 
+;	"кіші" n attr 
+;	"кіші" adj 
+;	"кіші" adv 
+;	"кіші" adj subst nom 
+"<Азиядан>"
+	"Азия" np top abl
+"<шыққан>"
+;	"шық" v iv past p3 sg
+	"шық" v iv gpr_past
+;	"шық" v iv gpr_past subst nom
+;	"шық" v iv ger_past nom
+;	"шық" vaux gpr_past 
+;	"шық" vaux ger_past nom 
+;	"шық" vaux past p3 pl 
+;	"шық" vaux past p3 sg 
+;	"шық" vaux gpr_past subst nom 
+;	"шық" v iv past p3 pl 
+"<түркі>"
+	"түркі" adj
+;	"түркі" adj advl
+;	"түркі" adj subst nom
+"<тайпалары>"
+	"тайпа" n pl px3sp nom
+;	"тайпа" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"тайпа" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<қызылбастар>"
+	"*қызылбастар"
+"<)>"
+	")" rpar
+"<Иранға>"
+	"Иран" np top dat
+"<басып>"
+	"бас" v iv prc_perf
+;	"бас" v iv gna_perf
+;	"бас" v tv prc_perf
+;	"бас" v tv gna_perf
+"<кіріп>"
+	"кір" v iv gna_perf
+;	"кір" v iv prc_perf 
+"<,>"
+	"," cm
+"<1501>"
+	"1501" num
+;	"1501" num subst nom
+"<—>"
+	"—" guio
+"<1610>"
+	"1610" num
+;	"1610" num subst nom
+"<ж.>"
+	"ж." abbr
+"<елді>"
+	"ел" n acc
+;	"ел" n
+;		"лы" post
+"<толығымен>"
+	"толық" adj subst px3sp ins
+;	"толығымен" adj
+;	"толығымен" adj advl
+;	"толығымен" adj subst nom
+"<бағындырып>"
+	"*бағындырып"
+"<,>"
+	"," cm
+"<Сефеви>"
+	"*Сефеви"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекетін>"
+	"мемлекет" n px3sp acc
+"<құрды>"
+;	"кұр" v iv ifi p3 sg 
+	"құр" v tv ifi p3 sg 
+;	"құр" n acc 
+;	"құр" adj subst acc 
+;	"құр" v tv ifi p3 pl  
+;	"кұр" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<17>"
+	"17" num
+;	"17" num subst nom
+"<—>"
+	"—" guio
+"<18>"
+	"18" num
+;	"18" num subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+"<Иранның>"
+	"Иран" np top gen
+"<экономикасы>"
+	"экономика" n px3sp nom
+;	"экономика" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"экономика" n px3sp nom
+;		"е" cop aor p3 sg 
+"<құлдырап>"
+	"*құлдырап"
+"<,>"
+	"," cm
+"<халықтың>"
+	"халық" n gen
+"<жағдайы>"
+	"жағдай" n px3sp nom
+"<нашарлап>"
+	"*нашарлап"
+"<кетті>"
+	"кет" v iv ifi p3 sg
+;	"кет" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Ұсақ>"
+	"ұсақ" adj
+"<халықтар>"
+	"халық" n pl nom
+;	"халық" n pl nom
+;		"е" cop aor p3 sg
+;	"халық" n pl nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<ауғандар>"
+	"ауған" n pl nom
+"<,>"
+	"," cm
+"<түрікмендер>"
+	"түрікмен" n pl nom
+"<,>"
+	"," cm
+"<Әзірбайжандар>"
+	"Әзірбайжан" np top pl nom
+"<,>"
+	"," cm
+"<күрдтер>"
+	"күрд" n pl nom
+"<,>"
+	"," cm
+"<армян>"
+	"армян" n pl nom
+"<,>"
+	"," cm
+"<грузиндер>"
+	"грузин" n pl nom
+;	"грузин" n pl nom
+;		"е" cop aor p3 pl 
+;	"грузин" n pl nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<орталықтың>"
+	"орталық" n gen
+;	"орталық" adj subst gen
+"<езгісіне>"
+	"*езгісіне"
+"<қарсы>"
+;	"қарсы" adj subst nom
+	"қарсы" adj
+;	"қарсы" adv
+;	"қарсы" adj advl
+;	"қарсы" post 
+"<жиі>"
+	"жиі" adj
+;	"жиі" adv
+;	"жиі" adj advl
+;	"жиі" adj subst nom
+"<->"
+	"-" guio
+"<жиі>"
+	"жиі" adj
+;	"жиі" adv
+;	"жиі" adj advl
+;	"жиі" adj subst nom
+"<көтеріліс>"
+	"көтеріліс" n nom
+;	"көтеріліс" n attr 
+"<жасап>"
+	"жаса" v tv prc_perf 
+;	"жаса" v tv gna_perf 
+"<тұрды>"
+	"тұр" vaux ifi p3 sg 
+;	"тұр" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Әсіресе>"
+	"әсіресе" adv
+"<,>"
+	"," cm
+"<18>"
+	"18" num
+;	"18" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<->"
+	"-" guio
+"<жартысында>"
+	"жарты" adj subst px3sp loc
+"<елдегі>"
+	"ел" n loc attr
+;	"ел" n loc subst nom
+"<үстемдік>"
+	"үстемдік" n attr 
+;	"үстемдік" n nom 
+"<үшін>"
+	"үшін" post
+;	"үш" n px3sp acc
+;	"үш" num subst px3sp acc
+"<екі>"
+	"екі" num
+;	"екі" num subst nom
+"<әулеттің>"
+	"әулет" n gen
+"<(>"
+	"(" lpar
+"<Зенд>"
+	"*Зенд"
+"<және>"
+	"және" cnjcoo
+"<Каджар>"
+	"*Каджар"
+"<)>"
+	")" rpar
+"<арасындағы>"
+	"ара" n px3sp loc attr
+;	"ара" adj subst px3sp loc attr
+;	"ара" n px3sp loc subst nom
+;	"ара" adj subst px3sp loc subst nom
+"<үздіксіз>"
+	"үздік" adj subst
+		"сыз" post
+;	"үздік" adj
+;		"е" cop aor p2 frm sg 
+;	"үздік" adj subst nom
+;		"е" cop aor p2 frm sg 
+"<соғыс>"
+	"соғыс" n nom
+;	"соғыс" n attr
+;	"соғыс" n nom
+;		"е" cop aor p3 pl 
+;	"соғыс" n nom
+;		"е" cop aor p3 sg 
+;	"соғ" v iv coop imp p2 sg 
+;	"соқ" v iv coop imp p2 sg 
+;	"соғыс" v iv imp p2 sg 
+"<халықты>"
+	"халық" n acc
+;	"халық" n
+;		"лы" post
+"<әбден>"
+;	"әбден" adj
+	"әбден" adv
+;	"әбден" adj advl
+;	"әбден" adj subst nom
+;	"әбден" adj
+;		"е" cop aor p3 pl 
+;	"әбден" adj
+;		"е" cop aor p3 sg 
+;	"әбден" adj subst nom
+;		"е" cop aor p3 pl 
+;	"әбден" adj subst nom
+;		"е" cop aor p3 sg 
+"<қалжыратты>"
+	"*қалжыратты"
+"<.>"
+	"." sent
+
+"<18>"
+	"18" num
+;	"18" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<аяғында>"
+	"аяқ" n px3sp loc
+;	"аяқ" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"аяқ" n px3sp loc
+;		"е" cop aor p3 sg 
+"<билікке>"
+	"билік" n dat
+"<Каджар>"
+	"*Каджар"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<келді>"
+	"кел" v iv ifi p3 sg
+;	"кел" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Осы>"
+	"осы" det dem
+;	"осы" prn dem nom
+"<кезден>"
+	"кез" n abl
+"<елдің>"
+	"ел" n gen
+"<ішкі>"
+	"ішкі" adj
+;	"ішкі" adv
+;	"ішкі" adj subst nom
+"<істеріне>"
+	"іс" n pl px3sp dat
+;	"істе" v tv ger_fut px3sp dat
+;	"істе" v tv gpr_fut subst px3sp dat
+"<еур.>"
+	"еур." abbr
+"<мемлекеттер>"
+	"мемлекет" n pl nom
+;	"мемлекет" n pl nom
+;		"е" cop aor p3 pl 
+;	"мемлекет" n pl nom
+;		"е" cop aor p3 sg 
+"<(>"
+	"(" lpar
+"<Англия>"
+	"Англия" np top nom
+;	"Англия" np top nom
+;		"е" cop aor p3 pl 
+;	"Англия" np top nom
+;		"е" cop aor p3 sg 
+;	"Англия" np top attr 
+"<,>"
+	"," cm
+"<Франция>"
+	"Франция" np top nom
+;	"Франция" np top nom
+;		"е" cop aor p3 pl 
+;	"Франция" np top nom
+;		"е" cop aor p3 sg 
+;	"Франция" np top attr 
+"<)>"
+	")" rpar
+"<араласа>"
+	"арала" v tv coop prc_impf 
+;	"аралас" v iv prc_impf 
+;	"арала" v tv prc_cond p3 pl 
+;	"арала" v tv prc_cond p3 sg 
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<19>"
+	"19" num
+;	"19" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<басында>"
+	"бас" n px3sp loc
+;	"басын" n loc
+"<болған>"
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+;	"бол" v iv gpr_past subst nom
+;	"бол" v iv ger_past nom
+;	"бол" vaux gpr_past 
+;	"бол" vaux ger_past nom 
+;	"бол" vaux past p3 pl 
+;	"бол" vaux past p3 sg 
+;	"бол" vaux gpr_past subst nom 
+;	"бол" v iv past p3 pl 
+"<орыс>"
+	"орыс" n nom
+;	"орыс" n nom
+;		"е" cop aor p3 pl 
+;	"орыс" n nom
+;		"е" cop aor p3 sg 
+;	"орыс" n attr 
+;	"ор" v tv coop imp p2 sg 
+"<->"
+	"-" guio
+"<иран>"
+	"*иран"
+"<соғысынан>"
+	"соғыс" n px3sp abl
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n attr 
+;	"кейін" n nom 
+"<елде>"
+	"ел" n loc
+"<шетелдіктердің>"
+	"шетелдік" n pl gen
+"<билігі>"
+	"билік" n px3sp nom
+"<күшейіп>"
+	"күшей" v iv prc_perf 
+"<кетті>"
+	"кет" vaux ifi p3 sg 
+;	"кет" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<19>"
+	"19" num
+;	"19" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<аяғына>"
+	"аяқ" n px3sp dat
+"<таман>"
+	"таман" post
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr 
+"<еур.>"
+	"еур." abbr
+"<мемлекеттердің>"
+	"мемлекет" n pl gen
+"<жартылай>"
+	"жартылай" adv
+"<отарына>"
+;	"ота" v iv ger_fut px3sp dat
+;	"ота" v tv ger_fut px3sp dat
+	"отар" n px3sp dat
+;	"ота" v iv gpr_fut subst px3sp dat
+;	"ота" v tv gpr_fut subst px3sp dat
+"<айнала>"
+	"айнал" v iv prc_impf
+;	"айнала" n nom
+;	"айнала" n nom
+;		"е" cop aor p3 pl 
+;	"айнала" n nom
+;		"е" cop aor p3 sg 
+;	"айнала" n attr 
+"<бастады>"
+;	"баста" v tv ifi p3 sg
+	"баста" vaux ifi p3 sg
+;	"баста" vaux ifi p3 pl 
+;	"баста" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1901>"
+	"1901" num
+;	"1901" num subst nom
+"<ж.>"
+	"ж." abbr
+"<ағылшындар>"
+	"ағылшын" n pl nom
+;	"ағылшын" adj subst pl nom
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<мұнайын>"
+	"мұнай" n px3sp acc
+"<шығаруға>"
+	"шығару" n dat 
+;	"шығар" v tv ger dat 
+"<рұқсат>"
+	"рұқсат" n nom
+;	"рұқсат" n attr
+"<алып>"
+;	"алып" n nom
+;		"е" cop aor p3 sg
+;	"алып" adj subst nom
+;	"алып" adj
+;		"е" cop aor p3 sg
+	"ал" v tv gna_perf
+;	"алып" adj
+;	"алып" n nom
+;	"алып" adj subst nom
+;		"е" cop aor p3 sg
+;	"алып" adj advl
+;	"алып" n attr 
+;	"ал" vaux prc_perf 
+;	"ал" v tv prc_perf 
+;	"ал" vaux gna_perf 
+;	"алып" n nom
+;		"е" cop aor p3 pl 
+;	"алып" adj subst nom
+;		"е" cop aor p3 pl 
+;	"алып" adj
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<1909>"
+	"1909" num
+;	"1909" num subst nom
+"<ж.>"
+	"ж." abbr
+"<бірлескен>"
+	"бірлес" v iv gpr_past
+;	"бірлескен" adj
+;	"бірлескен" adv
+;	"бірлес" v iv ger_past nom
+;	"бірлескен" adj advl
+;	"бірлескен" adj subst nom
+;	"бірлес" v iv past p3 sg
+;	"бірлес" v iv gpr_past subst nom
+;	"бірлес" v iv past p3 pl 
+"<ағылшын>"
+;	"ағылшын" adj
+	"ағылшын" n nom
+;	"ағылшын" adj subst nom
+;	"ағылшын" adj advl
+;	"ағылшын" n attr 
+"<->"
+	"-" guio
+"<парсы>"
+	"парсы" n nom
+;	"парсы" n attr
+"<мұнай>"
+	"мұнай" n attr 
+;	"мұнай" n nom 
+"<компаниясы>"
+	"компания" n px3sp nom
+"<құрылды>"
+	"құр" v tv pass ifi p3 sg
+;	"құр" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Елдің>"
+	"ел" n gen
+"<солтүстігіне>"
+	"солтүстік" n px3sp dat
+;	"солтүстік" adj subst px3sp dat
+"<Ресей>"
+	"Ресей" np top nom
+;	"Ресей" np top attr 
+"<,>"
+	"," cm
+"<оңтүстігіне>"
+	"оңтүстік" n px3sp dat
+	"оңтүстік" adj subst px3sp dat
+"<Ұлыбритания>"
+	"Ұлыбритания" np top nom
+;	"Ұлыбритания" np top attr 
+"<қожалық>"
+	"*қожалық"
+"<ете>"
+	"ет" v tv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1905>"
+	"1905" num
+;	"1905" num subst nom
+"<—>"
+	"—" guio
+"<11>"
+	"11" num
+;	"11" num subst nom
+"<ж.>"
+	"ж." abbr
+"<елде>"
+	"ел" n loc
+"<шетелдіктерге>"
+	"шетелдік" n pl dat
+"<қарсы>"
+	"қарсы" post
+;	"қарсы" adj
+;	"қарсы" adj subst nom
+;	"қарсы" adj advl
+;	"қарсы" adv 
+"<ұлт>"
+	"ұлт" n nom
+;	"ұлт" n attr 
+"<->"
+	"-" guio
+"<азаттық>"
+	"азаттық" n attr 
+;	"азаттық" n nom 
+"<қозғалысы>"
+	"қозғалыс" n px3sp nom
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+;	"бол" vaux prc_perf 
+;	"бол" vaux gna_perf 
+"<өтті>"
+	"өт" v tv ifi p3 sg
+;	"өт" v iv ifi p3 sg
+;	"өт" v iv ifi p3 pl 
+;	"өт" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Оның>"
+	"ол" prn pers p3 sg gen 
+;	"он" num subst px2sg nom
+;		"е" cop aor p3 pl 
+;	"он" num subst px2sg nom
+;		"е" cop aor p3 sg 
+;	"ол" prn dem gen 
+;	"он" num subst px2sg nom 
+"<барысында>"
+	"барыс" n px3sp loc
+"<конституция>"
+	"конституция" n nom
+;	"конституция" n attr 
+"<жарияланып>"
+	"жарияла" v tv pass gna_perf
+;	"жарияла" v tv pass prc_perf 
+"<,>"
+	"," cm
+"<меджлис>"
+	"*меджлис"
+"<шақырылды>"
+	"шақыр" v tv pass ifi p3 sg
+;	"шақыр" v tv pass ifi p3 pl 
+"<,>"
+	"," cm
+"<ақсүйектік>"
+	"*ақсүйектік"
+"<дәрежелер>"
+	"дәреже" n pl nom
+;	"дәреже" n pl nom
+;		"е" cop aor p3 pl 
+;	"дәреже" n pl nom
+;		"е" cop aor p3 sg 
+"<жойылды>"
+	"жой" v tv pass ifi p3 sg
+;	"жой" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Бірақ>"
+	"бірақ" cnjcoo
+"<1918>"
+	"1918" num
+;	"1918" num subst nom
+"<ж.>"
+	"ж." abbr
+"<ағылшындар>"
+	"ағылшын" n pl nom
+;	"ағылшын" adj subst pl nom
+"<бүкіл>"
+	"бүкіл" det qnt
+"<Иранды>"
+	"Иран" np top acc
+;	"Иран" np top
+;		"лы" post
+"<басып алып>"
+	"басып ал" v tv gna_perf
+;	"басып ал" v tv prc_perf 
+"<,>"
+	"," cm
+"<1919>"
+	"1919" num
+;	"1919" num subst nom
+"<ж.>"
+	"ж." abbr
+"<оны>"
+	"ол" prn dem acc
+;	"ол" prn pers p3 sg acc
+;	"он" num subst px3sp nom
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 sg 
+"<кіріптарлық>"
+	"*кіріптарлық"
+"<шарттарға>"
+	"шарт" n pl dat
+"<қол қоюға>"
+	"қол қою" n dat 
+;	"қол қой" v tv ger dat 
+"<мәжбүр етті>"
+	"мәжбүр ет" v tv ifi p3 sg
+;	"мәжбүр ет" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Елде>"
+	"ел" n loc
+"<ағылшын>"
+;	"ағылшын" adj
+	"ағылшын" n nom
+;	"ағылшын" n attr
+;	"ағылшын" adj advl
+;	"ағылшын" adj subst nom
+"<үстемдігіне>"
+	"үстемдік" n px3sp dat
+"<қарсы>"
+	"қарсы" post
+;	"қарсы" adj
+;	"қарсы" adj subst nom
+;	"қарсы" adj advl
+;	"қарсы" adv 
+"<жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+"<толқулар>"
+	"*толқулар"
+"<басталды>"
+	"баста" v tv pass ifi p3 sg
+;	"баста" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1921>"
+	"1921" num
+;	"1921" num subst nom
+"<ж.>"
+	"ж." abbr
+"<21>"
+	"21" num
+;	"21" num subst nom
+"<ақпанда>"
+	"ақпан" n loc
+;	"ақпан" n loc
+;		"е" cop aor p3 pl 
+;	"ақпан" n loc
+;		"е" cop aor p3 sg 
+"<әскерилер>"
+	"әскери" adj subst pl nom
+;	"әскери" adj subst pl nom
+;		"е" cop aor p3 pl 
+;	"әскери" adj subst pl nom
+;		"е" cop aor p3 sg 
+"<Реза>"
+	"*Реза"
+"<ханның>"
+	"хан" n gen
+"<басшылығымен>"
+	"басшылық" n px3sp ins
+"<мемл.>"
+	"мемл." abbr
+"<төңкеріс>"
+	"төңкеріс" n nom
+;	"төңкеріс" n nom
+;		"е" cop aor p3 pl 
+;	"төңкеріс" n nom
+;		"е" cop aor p3 sg 
+;	"төңкеріс" n attr 
+"<ұйымдастырып>"
+	"ұйымдастыр" v tv gna_perf
+;	"ұйымдастыр" v tv prc_perf 
+"<,>"
+	"," cm
+"<жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+"<үкімет>"
+	"үкімет" n nom
+;	"үкімет" n attr 
+"<құрды>"
+	"кұр" v iv ifi p3 sg 
+;	"құр" v tv ifi p3 sg 
+;	"құр" v tv ifi p3 pl  
+;	"кұр" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+"<үкімет>"
+	"үкімет" n nom
+;	"үкімет" n attr
+;	"үкімет" n nom
+;		"е" cop aor p3 pl 
+;	"үкімет" n nom
+;		"е" cop aor p3 sg 
+"<халықтың>"
+	"халық" n gen
+"<қысымымен>"
+	"қысым" n px3sp ins
+"<1919>"
+	"1919" num
+;	"1919" num subst nom
+"<ж.>"
+	"ж." abbr
+"<ағылшын>"
+;	"ағылшын" adj
+	"ағылшын" n nom
+;	"ағылшын" adj subst nom
+;	"ағылшын" adj advl
+;	"ағылшын" n attr 
+"<->"
+	"-" guio
+"<парсы>"
+	"парсы" n attr 
+;	"парсы" n nom 
+"<шартын>"
+	"шарт" n px3sp acc
+"<жойылды>"
+	"жой" v tv pass ifi p3 sg
+;	"жой" v tv pass ifi p3 pl 
+"<деп>"
+	"де" v tv prc_perf
+;	"де" v tv gna_perf
+"<жариялады>"
+	"жарияла" v tv ifi p3 sg
+;	"жарияла" v iv ifi p3 sg
+;	"жарияла" v iv ifi p3 pl 
+;	"жарияла" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Армияға>"
+	"армия" n dat
+"<сүйенген>"
+	"сүйен" v iv gpr_past
+;	"сүйен" v iv ger_past nom
+;	"сүйен" v iv gpr_past subst nom
+;	"сүйен" v iv past p3 sg
+;	"сүйен" v iv past p3 pl 
+"<Реза>"
+	"*Реза"
+"<хан>"
+	"хан" n nom
+;	"хан" n attr
+;	"хан" n nom
+;		"е" cop aor p3 pl 
+;	"хан" n nom
+;		"е" cop aor p3 sg 
+"<Орталықтың>"
+	"орталық" n gen
+;	"орталық" adj subst gen
+"<билігін>"
+	"билік" n px3sp acc
+"<күшейту>"
+	"күшейт" v tv ger nom
+"<үшін>"
+	"үшін" post
+;	"үш" n px3sp acc
+;	"үш" num subst px3sp acc
+"<сепаратистік>"
+	"*сепаратистік"
+"<пиғылдағы>"
+	"*пиғылдағы"
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<ақсүйектерімен>"
+	"ақсүйек" n pl px3sp ins
+"<үздіксіз>"
+	"үздік" adj subst
+		"сыз" post
+;	"үздік" adj
+;		"е" cop aor p2 frm sg 
+;	"үздік" adj subst nom
+;		"е" cop aor p2 frm sg 
+"<күрес>"
+	"күрес" n nom
+;	"күрес" n attr 
+;	"күрес" v iv imp p2 sg 
+"<жүргізді>"
+	"жүргіз" v tv ifi p3 sg
+;	"жүргіз" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1925>"
+	"1925" num
+;	"1925" num subst nom
+"<ж.>"
+	"ж." abbr
+"<31>"
+	"31" num
+;	"31" num subst nom
+"<қазанда>"
+	"қазан" n loc
+"<5>"
+	"5" num
+;	"5" num subst nom
+"<->"
+	"-" guio
+"<меджлис>"
+	"*меджлис"
+"<Каджар>"
+	"*Каджар"
+"<әулетін>"
+	"әулет" n px3sp acc
+"<тақтан>"
+	"тақ" n abl
+;	"тақ" adj subst abl
+"<түсті>"
+	"түс" v iv ifi p3 sg 
+;	"түс" n acc 
+;	"түс" n 
+;		"лы" post
+;	"түс" v iv ifi p3 pl  
+"<деп>"
+	"де" v tv prc_perf
+;	"де" v tv gna_perf
+"<жариялады>"
+	"жарияла" v tv ifi p3 sg
+;	"жарияла" v iv ifi p3 sg
+;	"жарияла" v iv ifi p3 pl 
+;	"жарияла" v tv ifi p3 pl 
+"<,>"
+	"," cm
+"<12>"
+	"12" num
+;	"12" num subst nom
+"<желтоқсанда>"
+	"желтоқсан" n loc
+"<Құрылтай>"
+;	"құрылтай" adj
+	"құрылтай" n nom
+;	"құрылтай" n attr
+;	"құрылтай" adj advl
+;	"құрылтай" adj subst nom
+"<жиналысы>"
+	"жиналыс" n px3sp nom
+"<Реза>"
+	"*Реза"
+"<ханды>"
+	"хан" n acc
+;	"хан" n
+;		"лы" post
+"<Реза>"
+	"*Реза"
+"<шаї>"
+	"*шаї"
+"<Пехлеви>"
+	"*Пехлеви"
+"<деп>"
+	"де" v tv prc_perf
+;	"де" v tv gna_perf
+"<жариялады>"
+	"жарияла" v tv ifi p3 sg
+;	"жарияла" v iv ifi p3 sg
+;	"жарияла" v iv ifi p3 pl 
+;	"жарияла" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Елде>"
+	"ел" n loc
+"<нарықтық>"
+	"нарықтық" adj
+"<қатынастар>"
+	"қатынас" n pl nom
+"<тез>"
+	"тез" adj advl 
+;	"тез" adj 
+;	"тез" adv 
+;	"тез" adj subst nom 
+"<дами>"
+	"дамы" v iv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Халықтың>"
+	"халық" n gen
+"<мәдени>"
+	"мәдени" adj
+"<және>"
+	"және" cnjcoo
+"<тұрмыстық>"
+	"тұрмыстық" adj
+"<өмірінде>"
+	"өмір" n px3sp loc
+"<көптеген>"
+	"көптеген" det qnt
+;	"көпте" v tv gpr_past 
+;	"көпте" v tv ger_past nom 
+;	"көпте" v tv past p3 pl 
+;	"көпте" v tv past p3 sg 
+;	"көпте" v tv gpr_past subst nom 
+"<өзгерістер>"
+	"өзгеріс" n pl nom
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+"<өтті>"
+	"өт" v tv ifi p3 sg
+;	"өт" v iv ifi p3 sg
+;	"өт" v iv ifi p3 pl 
+;	"өт" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Алайда>"
+;	"Алай" np top loc
+;	"Алай" np ant m loc
+	"алайда" adv
+;	"алайда" cnjadv
+"<,>"
+	"," cm
+"<1929>"
+	"1929" num
+;	"1929" num subst nom
+"<—>"
+	"—" guio
+"<33>"
+	"33" num
+;	"33" num subst nom
+"<ж.>"
+	"ж." abbr
+"<болған>"
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+;	"бол" v iv gpr_past subst nom
+;	"бол" v iv ger_past nom
+;	"бол" v iv past p3 pl 
+"<дүниежүз.>"
+	"дүниежүз." abbr
+"<экономикалық>"
+	"экономикалық" adj
+;	"экономикалық" adj
+;		"е" cop aor p3 pl 
+;	"экономикалық" adj
+;		"е" cop aor p3 sg 
+"<дағдарыс>"
+	"дағдарыс" n nom
+;	"дағдарыс" n attr
+;	"дағдарыс" n nom
+;		"е" cop aor p3 pl 
+;	"дағдарыс" n nom
+;		"е" cop aor p3 sg 
+;	"дағдар" v iv coop imp p2 sg 
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<экономикасын>"
+	"экономика" n px3sp acc
+"<тұралатып>"
+	"*тұралатып"
+"<тастады>"
+	"таста" v tv ifi p3 sg
+;	"таста" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Халықтың>"
+	"халық" n gen
+;	"Халық" np ant m gen
+"<тұрмысы>"
+	"тұрмыс" n px3sp nom
+;	"тұрмыс" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"тұрмыс" n px3sp nom
+;		"е" cop aor p3 sg 
+"<нашарлап>"
+	"*нашарлап"
+"<,>"
+	"," cm
+"<елде>"
+	"ел" n loc
+;	"ел" n loc
+;		"е" cop aor p3 pl 
+;	"ел" n loc
+;		"е" cop aor p3 sg 
+"<толқулар>"
+	"*толқулар"
+"<басталды>"
+	"баста" v tv pass ifi p3 sg
+;	"баста" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Ол>"
+;	"ол" prn pers p3 sg nom
+	"ол" det dem
+;	"ол" prn dem nom
+;	"ол" prn dem nom
+;		"е" cop aor p3 pl 
+;	"ол" prn dem nom
+;		"е" cop aor p3 sg 
+"<толқулар>"
+	"*толқулар"
+"<күшпен>"
+	"күш" n ins
+"<басылып>"
+	"бас" v tv pass prc_perf 
+;	"бас" v tv pass gna_perf 
+"<отырды>"
+	"отыр" vaux ifi p3 sg 
+;	"отыр" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<->"
+	"-" guio
+"<дүниежүз.>"
+	"дүниежүз." abbr
+"<соғыс>"
+	"соғыс" n attr 
+;	"соғыс" n nom
+;		"е" cop aor p3 pl 
+;	"соғыс" n nom
+;		"е" cop aor p3 sg 
+;	"соғ" v iv coop imp p2 sg 
+;	"соқ" v iv coop imp p2 sg 
+;	"соғыс" v iv imp p2 sg 
+;	"соғыс" n nom 
+"<жылдарында>"
+	"жыл" n pl px3sp loc
+;	"жыл" n pl px3sp loc
+;		"е" cop aor p3 pl 
+;	"жыл" n pl px3sp loc
+;		"е" cop aor p3 sg 
+"<Иранға>"
+	"Иран" np top dat
+"<одақтастар>"
+	"одақтас" n pl nom
+"<әскерлері>"
+	"әскер" n pl px3sp nom
+"<енгізілді>"
+	"енгіз" v tv pass ifi p3 sg
+;	"енгіз" v tv pass ifi p3 pl 
+"<(>"
+	"(" lpar
+"<1941>"
+	"1941" num
+;	"1941" num subst nom
+"<ж.>"
+	"ж." abbr
+"<тамызда>"
+	"тамыз" n loc
+;	"тамыз" n loc
+;		"е" cop aor p3 pl 
+;	"тамыз" n loc
+;		"е" cop aor p3 sg 
+"<ағылшын>"
+;	"ағылшын" adj
+	"ағылшын" n nom
+;	"ағылшын" adj subst nom
+;	"ағылшын" adj advl
+;	"ағылшын" adj
+;		"е" cop aor p3 pl 
+;	"ағылшын" adj
+;		"е" cop aor p3 sg 
+;	"ағылшын" n nom
+;		"е" cop aor p3 pl 
+;	"ағылшын" n nom
+;		"е" cop aor p3 sg 
+;	"ағылшын" adj subst nom
+;		"е" cop aor p3 pl 
+;	"ағылшын" adj subst nom
+;		"е" cop aor p3 sg 
+;	"ағылшын" n attr 
+"<және>"
+	"және" cnjcoo
+"<кеңес>"
+	"кеңес" n attr 
+;	"кеңес" n nom
+;	"кеңес" n nom 
+"<әскерлері>"
+;	"әскер" n pl px3sp nom
+;	"әскер" n pl px3sp nom
+;		"е" cop aor p3 sg
+	"әскер" n pl px3sp nom
+		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<1942>"
+	"1942" num
+;	"1942" num subst nom
+"<ж.>"
+	"ж." abbr
+"<аяғына>"
+	"аяқ" n px3sp dat
+"<таман>"
+	"таман" post
+"<АҚШ>"
+	"АҚШ" np top nom
+"<әскерлері>"
+;	"әскер" n pl px3sp nom
+	"әскер" n pl px3sp nom
+		"е" cop aor p3 pl 
+;	"әскер" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<1941>"
+	"1941" num
+;	"1941" num subst nom
+"<ж.>"
+	"ж." abbr
+"<16>"
+	"16" num
+;	"16" num subst nom
+"<қыркүйекте>"
+	"қыркүйек" n loc
+"<Реза>"
+	"*Реза"
+"<шаї>"
+	"*шаї"
+"<тақтан>"
+	"тақ" n abl
+;	"тақ" adj subst abl
+"<өз>"
+	"өз" det ref
+"<еркімен>"
+	"еркімен" adj
+;	"еркімен" adj subst nom
+"<бас тартып>"
+	"бас тарт" v tv gna_perf
+;	"бас тарт" v tv prc_perf 
+"<,>"
+	"," cm
+"<орнына>"
+;	"орн" n px3sp dat
+	"орын" n px3sp dat
+"<баласы>"
+	"бала" n px3sp nom
+"<Мұхаммед>"
+	"Мұхаммед" np ant m nom
+"<Реза>"
+	"*Реза"
+"<Пехлеви>"
+	"*Пехлеви"
+"<шаї>"
+	"*шаї"
+"<болды>"
+	"бол" v iv ifi p3 sg
+;	"бол" vaux ifi p3 pl 
+;	"бол" vaux ifi p3 sg 
+;	"бол" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1942>"
+	"1942" num
+;	"1942" num subst nom
+"<ж.>"
+	"ж." abbr
+"<29>"
+	"29" num
+;	"29" num subst nom
+"<қаңтарда>"
+	"қаңтар" n loc
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr 
+"<КСРО>"
+	"КСРО" abbr
+"<және>"
+	"және" cnjcoo
+"<Ұлыбритания>"
+	"Ұлыбритания" np top attr 
+;	"Ұлыбритания" np top nom 
+"<мемлекеттерімен>"
+	"мемлекет" n pl px3sp ins
+"<одақтастық>"
+	"*одақтастық"
+"<туралы>"
+;	"туралы" n attr
+;	"туралы" n nom
+;	"туралы" n nom
+;		"е" cop aor p3 pl 
+;	"туралы" n nom
+;		"е" cop aor p3 sg 
+	"туралы" post 
+;	"тура" adj subst
+;		"лы" post 
+"<шартқа>"
+	"шарт" n dat
+"<қол қойды>"
+	"қол қой" v tv ifi p3 sg
+;	"қол қой" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1943>"
+	"1943" num
+;	"1943" num subst nom
+"<ж.>"
+	"ж." abbr
+"<9>"
+	"9" num
+;	"9" num subst nom
+"<қыркүйекте>"
+	"қыркүйек" n loc
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr
+"<Германияға>"
+	"Германия" np top dat
+"<соғыс>"
+	"соғыс" n nom
+;	"соғыс" n nom
+;		"е" cop aor p3 pl 
+;	"соғыс" n nom
+;		"е" cop aor p3 sg 
+;	"соғыс" n attr 
+;	"соғыс" v iv imp p2 sg 
+;	"соғ" v iv coop imp p2 sg 
+;	"соқ" v iv coop imp p2 sg 
+"<жариялады>"
+	"жарияла" v tv ifi p3 sg
+;	"жарияла" v iv ifi p3 sg
+;	"жарияла" v iv ifi p3 pl 
+;	"жарияла" v tv ifi p3 pl 
+"<,>"
+	"," cm
+"<бірақ>"
+	"бірақ" cnjcoo
+"<соғыс>"
+	"соғыс" n attr 
+;	"соғ" v iv coop imp p2 sg 
+;	"соқ" v iv coop imp p2 sg 
+;	"соғыс" v iv imp p2 sg 
+;	"соғыс" n nom 
+"<қимылдарына>"
+	"қимыл" n pl px3sp dat
+"<араласқан жоқ>"
+	"аралас" v iv neg ifi p3 sg
+;	"арала" v tv coop neg ifi p3 sg
+;	"арала" v tv coop neg ifi p3 pl 
+;	"аралас" v iv neg ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Тегеран>"
+	"Тегеран" np top attr 
+;	"Тегеран" np top nom 
+"<конференциясы>"
+	"конференция" n px3sp nom
+"<кезінде>"
+	"кез" n px3sp loc
+;	"кез" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"кез" n px3sp loc
+;		"е" cop aor p3 sg 
+"<1943>"
+	"1943" num
+;	"1943" num subst nom
+"<ж.>"
+	"ж." abbr
+"<1>"
+	"1" num
+;	"1" num subst nom
+"<желтоқсанда>"
+	"желтоқсан" n loc
+;	"желтоқсан" n loc
+;		"е" cop aor p3 pl 
+;	"желтоқсан" n loc
+;		"е" cop aor p3 sg 
+"<КСРО>"
+	"КСРО" abbr
+"<,>"
+	"," cm
+"<АҚШ>"
+	"АҚШ" np top nom
+"<,>"
+	"," cm
+"<Ұлыбритания>"
+	"Ұлыбритания" np top attr 
+;	"Ұлыбритания" np top nom 
+"<үкіметтері>"
+	"үкімет" n pl px3sp nom
+"<Иранға>"
+	"Иран" np top dat
+"<территориялық>"
+	"*территориялық"
+"<тұтастығын>"
+	"тұтастық" n px3sp acc
+"<сақтауға>"
+	"сақтау" n dat 
+;	"сақта" v tv ger dat 
+"<әзір>"
+	"әзір" n nom 
+;	"әзір" n attr 
+;	"әзір" adj 
+;	"әзір" adv 
+;	"әзір" adj subst nom 
+"<екендіктерін>"
+	"*екендіктерін"
+"<мәлімдеді>"
+	"мәлімде" v tv ifi p3 sg
+;	"мәлімде" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Соғыстан>"
+	"соғыс" n abl
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n attr 
+;	"кейін" n nom 
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<үкіметі>"
+	"үкімет" n px3sp nom
+"<Батыс>"
+	"батыс" adj
+;	"батыс" n nom
+;	"батыс" n attr
+;	"батыс" adj subst nom
+"<елдерімен>"
+	"ел" n pl px3sp ins
+"<тығыз>"
+	"тығыз" adj
+;	"тығыз" adj advl
+;	"тығыз" adj subst nom
+"<байланыс>"
+	"байланыс" n nom
+;	"байланыс" n attr 
+;	"байланыс" v iv imp p2 sg 
+"<орнатты>"
+	"орнат" v tv ifi p3 sg
+;	"орнат" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1953>"
+	"1953" num
+;	"1953" num subst nom
+"<ж.>"
+	"ж." abbr
+"<ел>"
+	"ел" n attr 
+;	"ел" n nom 
+"<тәуелсіздігін>"
+	"тәуелсіздік" n px3sp acc
+"<күшейтуге>"
+	"күшейт" v tv ger dat
+"<тырысқан>"
+;	"тырыс" v iv gpr_past
+;	"тырыс" v iv ger_past nom
+;	"тырыс" v iv gpr_past subst nom
+	"тырыс" v iv past p3 sg
+;	"тырыс" v iv past p3 pl 
+"<М.>"
+	"М." abbr
+"<Мосаддық>"
+	"*Мосаддық"
+"<үкіметі>"
+	"үкімет" n px3sp nom
+"<құлатылды>"
+	"*құлатылды"
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr 
+"<шаһы>"
+	"*шаһы"
+"<М>"
+	"М." abbr
+"<Р>"
+	"Р." abbr
+"<Пехлевидің>"
+	"*Пехлевидің"
+"<көмегімен>"
+	"көмек" n px3sp ins
+"<АҚШ>"
+	"АҚШ" np top nom
+"<елдің>"
+	"ел" n gen
+"<ішкі>"
+	"ішкі" adj
+;	"ішкі" adv
+;	"ішкі" adj subst nom
+"<өміріне>"
+	"өмір" n px3sp dat
+"<белсене>"
+;	"белсен" v iv prc_impf
+	"белсене" adv
+"<араласа>"
+	"арала" v tv coop prc_impf 
+;	"аралас" v iv prc_impf 
+;	"арала" v tv prc_cond p3 pl 
+;	"арала" v tv prc_cond p3 sg 
+;	"арала" v tv gna_cond p3 pl 
+;	"арала" v tv gna_cond p3 sg 
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" v tv ifi p3 pl 
+;	"баста" v tv ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Ел>"
+	"ел" n nom
+;	"ел" n attr 
+"<1955>"
+	"1955" num
+;	"1955" num subst nom
+"<ж.>"
+	"ж." abbr
+"<АҚШ-пен>"
+	"АҚШ" np top ins
+"<әскери>"
+	"әскери" adj
+;	"әскери" adj subst nom
+"<келісімдер>"
+	"келісім" n pl nom
+;	"келісім" adj subst pl nom
+"<жасасты>"
+	"жаса" v tv coop ifi p3 sg
+;	"жаса" v tv coop ifi p3 pl 
+"<,>"
+	"," cm
+"<1960>"
+	"1960" num
+;	"1960" num subst nom
+"<жылдан>"
+	"жыл" n abl
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<Батыс>"
+	"батыс" adj
+;	"батыс" n nom
+;	"батыс" n attr
+;	"батыс" adj subst nom
+"<үлгісінде>"
+	"үлгі" n px3sp loc
+"<дами>"
+	"дамы" v iv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Елде>"
+	"ел" n loc
+"<шет>"
+;	"шет" n nom
+	"шет" n attr
+;	"шет" n nom
+"<ел>"
+	"ел" n attr 
+;	"ел" n nom 
+"<капиталының>"
+	"капитал" n px3sp gen
+"<үстемдік>"
+	"үстемдік" n nom
+;	"үстемдік" n attr 
+"<алуы>"
+	"ал" v tv ger px3sp nom
+;	"ал" vaux ger px3sp nom 
+"<,>"
+	"," cm
+"<ұлттық>"
+	"ұлттық" adj
+;	"ұлттық" adv
+"<құндылықтардың>"
+	"құндылық" n pl gen
+"<аяққа>"
+	"аяқ" n dat
+"<басылуы>"
+	"бас" v tv pass ger px3sp nom
+"<1978>"
+	"1978" num
+;	"1978" num subst nom
+"<—>"
+	"—" guio
+"<79>"
+	"79" num
+;	"79" num subst nom
+"<ж.>"
+	"ж." abbr
+"<халықтың>"
+	"халық" n gen
+"<шаһ>"
+	"*шаһ"
+"<үкіметіне>"
+	"үкімет" n px3sp dat
+"<қарсы>"
+	"қарсы" post
+;	"қарсы" adj
+;	"қарсы" adj subst nom
+;	"қарсы" adj advl
+;	"қарсы" adv 
+"<жаппай>"
+	"жаппай" adj advl 
+;	"жаппай" adj subst nom 
+;	"жаппай" adj 
+;	"жап" v tv neg prc_impf 
+;	"жап" v tv neg prc_perf 
+;	"жап" v tv neg gna_perf 
+;	"жаппай" adv 
+"<бас>"
+	"бас" n nom
+;	"бас" n attr 
+;	"бас" v tv imp p2 sg 
+;	"бас" v iv imp p2 sg 
+"<көтеруіне>"
+	"көтер" v tv ger px3sp dat
+"<алып келді>"
+	"алып кел" v tv ifi p3 sg
+;	"алып кел" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Оны>"
+	"ол" prn dem acc
+;	"ол" prn pers p3 sg acc
+;	"он" num subst px3sp nom
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 sg 
+"<елдегі>"
+	"ел" n loc attr
+	"ел" n loc subst nom
+"<шиит>"
+	"шиит" n attr
+	"шиит" n nom
+"<дінбасылары>"
+	"дінбасы" n pl px3sp nom
+"<басқарды>"
+	"басқар" v tv ifi p3 sg
+;	"басқар" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1979>"
+	"1979" num
+;	"1979" num subst nom
+"<ж.>"
+	"ж." abbr
+"<11>"
+	"11" num
+;	"11" num subst nom
+"<ақпанда>"
+	"ақпан" n loc
+"<болған>"
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+;	"бол" v iv gpr_past subst nom
+;	"бол" v iv ger_past nom
+;	"бол" v iv past p3 pl 
+"<революция>"
+	"революция" n attr 
+;	"революция" n nom 
+"<нәтижесінде>"
+	"нәтиже" n px3sp loc
+"<шаї>"
+	"*шаї"
+"<үкіметі>"
+	"үкімет" n px3sp nom
+;	"үкімет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"үкімет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<құлап>"
+	"құла" v iv gna_perf
+;	"құла" v iv prc_perf 
+"<,>"
+	"," cm
+"<1>"
+	"1" num
+;	"1" num subst nom
+"<сәуірден>"
+	"сәуір" n abl
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr
+"<Ислам>"
+	"Ислам" n attr 
+;	"Ислам" n nom 
+"<Республикасы>"
+	"республика" n px3sp nom
+"<жарияланды>"
+	"жарияла" v tv pass ifi p3 sg
+;	"жарияла" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Үкімет>"
+	"үкімет" n attr 
+;	"үкімет" n nom 
+"<басына>"
+	"бас" n px3sp dat
+;	"басын" v tv prc_impf 
+"<шиит>"
+	"шиит" n nom
+	"шиит" n attr
+"<дінбасыларының>"
+	"дінбасы" n pl px3sp gen
+"<көсемі>"
+	"көсем" n px3sp nom
+;	"көсем" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"көсем" n px3sp nom
+;		"е" cop aor p3 sg 
+"<аятолла>"
+	"аятолла" n attr
+	"аятолла" n nom
+"<Р.>"
+	"Р." abbr
+"<Хомейни>"
+	"Хомейни" np cog mf nom
+"<келді>"
+	"кел" v iv ifi p3 sg
+;	"кел" vaux ifi p3 pl 
+;	"кел" vaux ifi p3 sg 
+;	"кел" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Саяси>"
+	"саяси" adj
+;	"саяси" adv
+;	"саяси" adj
+;		"е" cop aor p3 pl 
+;	"саяси" adj
+;		"е" cop aor p3 sg 
+"<партияларға>"
+	"партия" n pl dat
+"<тыйым салынды>"
+	"тыйым сал" v tv pass ifi p3 sg
+;	"тыйым сал" v tv pass ifi p3 pl 
+"<,>"
+	"," cm
+"<шаһ>"
+	"*шаһ"
+"<үкіметі>"
+	"үкімет" n px3sp nom
+"<жойылды>"
+	"жой" v tv pass ifi p3 sg
+;	"жой" v tv pass ifi p3 pl 
+"<,>"
+	"," cm
+"<Батыстың>"
+	"батыс" n gen
+;	"батыс" adj subst gen
+"<иелігіндегі>"
+	"иелік" n px3sp loc attr
+;	"иелік" n px3sp loc subst nom
+"<барлық>"
+	"барлық" adj
+;	"барлық" adv
+;	"барлық" det qnt
+;	"барлық" adj advl
+;	"барлық" prn qnt nom
+;	"барлық" adj subst nom
+"<компаниялар>"
+	"компания" n pl nom
+"<мүлкі>"
+	"мүлік" n px3sp nom
+;	"мүлік" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"мүлік" n px3sp nom
+;		"е" cop aor p3 sg 
+"<мемлекет>"
+	"мемлекет" n attr 
+;	"мемлекет" n nom 
+"<меншігіне>"
+	"меншік" n px3sp dat
+"<алынды>"
+	"ал" v tv pass ifi p3 sg
+;	"ал" v tv pass ifi p3 pl 
+"<,>"
+	"," cm
+"<ел>"
+	"ел" n nom
+;	"ел" n attr 
+"<СЕАТО>"
+	"*СЕАТО"
+"<блогынан>"
+	"*блогынан"
+"<шығып>"
+	"шық" v iv gna_perf
+;	"шық" vaux prc_perf 
+;	"шық" v iv prc_perf 
+;	"шық" vaux gna_perf 
+"<,>"
+	"," cm
+"<Блоктарға>"
+	"блокта" v tv gpr_fut subst dat
+"<қосылмау>"
+	"қос" v tv pass neg ger nom
+"<қозғалысына>"
+	"қозғалыс" n px3sp dat
+"<мүше>"
+	"мүше" n nom
+;	"мүше" n attr 
+"<болып>"
+	"бол" v iv gna_perf
+;	"бол" vaux prc_perf 
+;	"бол" v iv prc_perf 
+;	"бол" vaux gna_perf 
+"<енді>"
+;	"енді" adv
+	"ен" v iv ifi p3 sg
+;	"ен" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1980>"
+	"1980" num
+;	"1980" num subst nom
+"<–>"
+	"–" guio
+"<1990>"
+	"1990" num
+;	"1990" num subst nom
+"<ж.>"
+	"ж." abbr
+"<болған>"
+;	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+;	"бол" v iv gpr_past subst nom
+;	"бол" v iv ger_past nom
+;	"бол" vaux gpr_past 
+;	"бол" vaux ger_past nom 
+;	"бол" vaux past p3 pl 
+;	"бол" vaux past p3 sg 
+;	"бол" vaux gpr_past subst nom 
+;	"бол" v iv past p3 pl 
+"<иран>"
+	"*иран"
+"<->"
+	"-" guio
+"<ирак>"
+	"*ирак"
+"<соғысы>"
+	"соғыс" n px3sp nom
+;	"соғыс" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"соғыс" n px3sp nom
+;		"е" cop aor p3 sg 
+"<ел>"
+	"ел" n attr 
+;	"ел" n nom 
+"<экономикасына>"
+	"экономика" n px3sp dat
+"<өте>"
+	"өте" adv
+;	"өт" v iv prc_impf 
+;	"өт" v tv prc_impf 
+;	"өте" v tv imp p2 sg 
+"<ауыр>"
+;	"ауыр" n nom
+	"ауыр" n nom
+		"е" cop aor p3 sg
+;	"ауыр" v iv imp p2 sg
+;	"ауыр" n attr 
+;	"ауыр" n nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<700>"
+	"700" num
+;	"700" num subst nom
+"<млрд.>"
+	"млрд." abbr
+"<АҚШ>"
+	"АҚШ" np top nom
+"<долларынан>"
+	"доллар" n px3sp abl
+;	"доллар" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"доллар" n px3sp abl
+;		"е" cop aor p3 sg 
+"<астам>"
+;	"астам" adj
+	"астам" adj advl
+;	"астам" adj subst nom
+;	"астам" adj
+;		"е" cop aor p3 pl 
+;	"астам" adj
+;		"е" cop aor p3 sg 
+;	"астам" adj subst nom
+;		"е" cop aor p3 pl 
+;	"астам" adj subst nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<зардаптар>"
+	"зардап" n pl nom
+;	"зардап" n pl nom
+;		"е" cop aor p3 pl 
+;	"зардап" n pl nom
+;		"е" cop aor p3 sg 
+"<әкелді>"
+;	"алып кел" v tv ifi p3 sg
+	"әкел" v tv ifi p3 sg
+;	"әкел" v tv ifi p3 pl 
+;	"алып кел" v tv ifi p3 pl 
+"<(>"
+	"(" lpar
+"<қ.>"
+	"қ." abbr
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top nom
+;		"е" cop aor p3 pl 
+;	"Иран" np top nom
+;		"е" cop aor p3 sg 
+;	"Иран" np top attr 
+"<—>"
+	"—" guio
+"<Ирак>"
+	"Ирақ" np top attr 
+;	"Ирақ" np top nom
+;		"е" cop aor p3 pl 
+;	"Ирақ" np top nom
+;		"е" cop aor p3 sg 
+;	"Ирақ" np top nom 
+"<соғысы>"
+	"соғыс" n px3sp nom
+;	"соғыс" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"соғыс" n px3sp nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Қазіргі>"
+;	"қазір" adv attr
+	"қазіргі" adj
+;	"қазір" adv subst nom
+;	"қазіргі" n nom
+;	"қазіргі" n attr
+;	"қазіргі" adj advl
+;	"қазіргі" adj subst nom
+"<кезде>"
+	"кез" n loc
+;	"кез" n loc
+;		"е" cop aor p3 pl 
+;	"кез" n loc
+;		"е" cop aor p3 sg 
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<үкіметі>"
+	"үкімет" n px3sp nom
+;	"үкімет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"үкімет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<Батыс>"
+	"батыс" adj
+;	"батыс" n nom
+;	"батыс" n attr
+;	"батыс" adj subst nom
+;	"бат" v iv coop imp p2 sg 
+"<елдері>"
+	"ел" n pl px3sp nom
+;	"ел" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"ел" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<қолданып>"
+	"қолдан" v tv prc_perf 
+"<отырған>"
+;	"отыр" vaux gpr_past 
+;	"отыр" vaux ger_past nom 
+;	"отыр" vaux gpr_past subst nom 
+	"отыр" vaux past p3 sg 
+;	"отыр" vaux past p3 pl  
+"<оқшаулау>"
+	"*оқшаулау"
+"<саясаты>"
+	"саясат" n px3sp nom
+"<ықпалын>"
+	"ықпал" n px3sp acc
+"<бәсеңдету>"
+	"бәсеңдет" v tv ger nom
+"<үшін>"
+	"үшін" post
+;	"үш" n px3sp acc
+;	"үш" num subst px3sp acc
+"<белсенді>"
+	"белсенді" adj
+;	"белсенді" adj advl
+;	"белсенді" adj subst nom
+;	"белсен" v iv ifi p3 pl 
+;	"белсен" v iv ifi p3 sg 
+"<сыртқы>"
+;	"сыртқы" adj
+	"сыртқы" adj subst nom
+"<саясат>"
+	"саясат" n nom
+;	"саясат" n attr 
+"<жүргізуде>"
+	"жүргіз" v tv ger loc
+"<.>"
+	"." sent
+
+"<Ел>"
+;	"ел" n attr 
+	"ел" n nom
+"<экономикасының>"
+	"экономика" n px3sp gen
+"<негізі>"
+	"негіз" n px3sp nom 
+;	"негіз" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"негіз" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"негізі" adv 
+"<мұнай>"
+	"мұнай" n nom
+;	"мұнай" n nom
+;		"е" cop aor p3 pl 
+;	"мұнай" n nom
+;		"е" cop aor p3 sg 
+;	"мұнай" n attr 
+"<және>"
+	"және" cnjcoo
+"<мұнай>"
+	"мұнай" n nom
+;	"мұнай" n nom
+;		"е" cop aor p3 pl 
+;	"мұнай" n nom
+;		"е" cop aor p3 sg 
+;	"мұнай" n attr 
+"<мен>"
+;	"мен" post 
+	"мен" cnjcoo 
+"<газ>"
+	"газ" n nom
+;	"газ" n attr
+;	"газ" n nom
+;		"е" cop aor p3 pl 
+;	"газ" n nom
+;		"е" cop aor p3 sg 
+"<өңдеу>"
+	"өңдеу" n attr 
+;	"өңдеу" n nom
+;		"е" cop aor p3 pl 
+;	"өңдеу" n nom
+;		"е" cop aor p3 sg 
+;	"өңде" v tv ger nom 
+;	"өңдеу" n nom 
+"<өнеркәсіптері>"
+;	"өнеркәсіп" n pl px3sp nom
+;	"өнеркәсіп" n pl px3sp nom
+;		"е" cop aor p3 sg
+	"өнеркәсіп" n pl px3sp nom
+		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<Мемл.>"
+	"мемл." abbr
+"<кірістің>"
+	"кіріс" n gen
+;	"кіріс" adj subst gen
+;	"кір" v iv coop ifi p2 sg 
+"<1>"
+	"1" num
+;	"1" num subst nom
+"</>"
+	"/" sym
+"<3>"
+	"3" num
+;	"3" num subst nom
+"<және>"
+	"және" cnjcoo
+"<экспорттың>"
+	"экспорт" n gen
+"<90%-ына>"
+	"90" num percent subst px3sp dat
+"<жуығы>"
+	"жуық" adj subst px3sp nom
+"<осы>"
+	"осы" det dem
+;	"осы" prn dem nom
+"<салалардан>"
+	"сала" n pl abl
+"<алынады>"
+	"ал" v tv pass aor p3 sg
+;	"ал" v tv pass aor p3 pl 
+"<.>"
+	"." sent
+
+"<Елде>"
+	"ел" n loc
+"<жыл сайын>"
+	"жыл сайын" adv
+"<180>"
+	"180" num
+;	"180" num subst nom
+"<млн.>"
+	"млн." abbr
+"<т-ға>"
+	"т" unk dat
+"<жуық>"
+	"жуық" adj subst nom
+;	"жуық" adj
+;	"жуық" adj advl
+;	"жуық" post 
+"<мұнай>"
+	"мұнай" n nom
+;	"мұнай" n nom
+;		"е" cop aor p3 sg
+;	"мұнай" n attr 
+;	"мұнай" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<58>"
+	"58" num
+;	"58" num subst nom
+"<млрд.>"
+	"млрд." abbr
+"<м3>"
+	"м³" abbr
+"<газ>"
+	"газ" n nom
+;	"газ" n nom
+;		"е" cop aor p3 sg
+;	"газ" n attr 
+;	"газ" n nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<қоры>"
+	"қор" n px3sp nom
+;	"қор" adj subst px3sp nom
+;	"қор" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"қор" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"қор" adj subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"қор" adj subst px3sp nom
+;		"е" cop aor p3 sg 
+"<14>"
+	"14" num
+;	"14" num subst nom
+"<трл.>"
+	"трл." abbr
+"<м3>"
+	"м³" abbr
+"<шамасында>"
+	"шама" n px3sp loc
+;	"шама" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"шама" n px3sp loc
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<өндіріледі>"
+	"өндір" v tv pass aor p3 sg
+;	"өндір" v tv pass aor p3 pl 
+"<.>"
+	"." sent
+
+"<Экономиканың>"
+	"экономика" n gen
+"<басқа>"
+;	"бас" n dat
+	"басқа" post
+;	"басқа" adj
+;	"басқа" adj subst nom
+;	"басқа" adj advl
+;	"басқа" prn ind nom
+;	"басқа" adv 
+"<салалары да>"
+	"сала" n pl px3sp nom
+		"да" cnjcoo
+;	"сала" n pl px3sp nom
+;		"да" postadv
+;			"да" postadv
+"<дамыған>"
+;	"дамы" v iv gpr_past
+;	"дамы" v iv ger_past nom
+;	"дамы" v iv gpr_past subst nom
+	"дамы" v iv past p3 sg
+;	"дамы" v iv past p3 pl 
+"<,>"
+	"," cm
+"<бірақ>"
+	"бірақ" cnjcoo
+"<сыртқы>"
+	"сыртқы" adj
+;	"сыртқы" adj subst nom
+"<экон.>"
+	"экон." abbr
+"<байланыстардың>"
+	"байланыс" n pl gen
+"<нашарлығынан>"
+	"*нашарлығынан"
+"<және>"
+	"және" cnjcoo
+"<қаржы>"
+	"қаржы" n nom
+;	"қаржы" n attr 
+"<жетіспеушілігінен>"
+	"жет" v iv coop neg ger_abs px3sp abl
+;	"жетіс" v iv neg ger_abs px3sp abl
+"<толық>"
+	"толық" adj
+;	"толық" adj advl
+;	"толық" adj subst nom
+"<қуатымен>"
+	"қуат" n px3sp ins
+"<жұмыс істей>"
+	"жұмыс істе" v iv prc_impf
+"<алмауда>"
+	"ал" vaux neg ger loc 
+"<.>"
+	"." sent
+
+"<Өнеркәсіпке>"
+	"өнеркәсіп" n dat
+"<қажетті>"
+	"қажетті" adj advl
+;	"қажетті" adj subst nom
+;	"қажетті" adj
+;	"қажет" n
+;		"лы" post 
+;	"қажет" adj subst
+;		"лы" post 
+;	"қажет" n acc 
+;	"қажет" adj subst acc 
+"<құрал>"
+	"құрал" n nom
+;	"құрал" n nom
+;		"е" cop aor p3 pl 
+;	"құрал" n nom
+;		"е" cop aor p3 sg 
+;	"құрал" n attr 
+;	"құра" v tv pass imp p2 sg 
+"<->"
+	"-" guio
+"<саймандар>"
+	"*саймандар"
+"<90%-ға>"
+	"90" num percent subst dat
+"<дейін>"
+	"дейін" post 
+;	"де" v tv opt p1 sg 
+;	"дейін" n attr 
+;	"дейін" adv 
+;	"дейін" n nom 
+"<шеттен>"
+	"шет" n abl
+"<әкелінеді>"
+;	"алып кел" v tv pass aor p3 sg
+	"әкел" v tv pass aor p3 sg
+;	"әкел" v tv pass aor p3 pl 
+;	"алып кел" v tv pass aor p3 pl 
+"<.>"
+	"." sent
+
+"<Ауыл шаруашылығы>"
+	"ауыл шаруашылық" n px3sp nom
+"<нашар>"
+	"нашар" adj advl 
+;	"нашар" n attr 
+;	"нашар" adj 
+;	"нашар" n nom 
+;	"нашар" adj subst nom 
+"<дамыған>"
+	"дамы" v iv past p3 sg 
+;	"дамы" v iv past p3 pl  
+"<.>"
+	"." sent
+
+"<Тұрғындар>"
+	"тұрғын" n pl nom
+;	"тұрғын" adj subst pl nom
+"<үшін>"
+	"үшін" post
+"<бидай>"
+	"бидай" n nom
+;	"бидай" n nom
+;		"е" cop aor p3 sg
+;	"бидай" n attr 
+;	"бидай" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<күріш>"
+	"күріш" n nom
+;	"күріш" n nom
+;		"е" cop aor p3 pl 
+;	"күріш" n nom
+;		"е" cop aor p3 sg 
+;	"күріш" n attr 
+"<,>"
+	"," cm
+"<қант>"
+	"қант" n nom
+;	"қант" n nom
+;		"е" cop aor p3 pl 
+;	"қант" n nom
+;		"е" cop aor p3 sg 
+;	"қант" n attr 
+"<,>"
+	"," cm
+"<өсімдік>"
+	"өсімдік" n attr 
+;	"өсімдік" n nom 
+"<майы>"
+	"май" n px3sp nom
+;	"май" n px3sp nom
+;		"е" cop aor p3 sg
+;	"май" n px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<шеттен>"
+;	"шет" n abl
+	"шет" n abl
+		"е" cop aor p3 sg
+;	"шет" n abl
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<жыл сайын>"
+	"жыл сайын" adv
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<млрд.>"
+	"млрд." abbr
+"<АҚШ>"
+	"АҚШ" np top nom
+"<долл>"
+	"*долл"
+"<->"
+	"-" guio
+"<на>"
+	"*на"
+"<)>"
+	")" rpar
+"<әкелінеді>"
+;	"алып кел" v tv pass aor p3 sg
+	"әкел" v tv pass aor p3 sg
+;	"әкел" v tv pass aor p3 pl 
+;	"алып кел" v tv pass aor p3 pl 
+"<.>"
+	"." sent
+
+"<Соңғы>"
+;	"соң" adv attr
+	"соңғы" adj
+;	"соң" adv subst nom
+;	"соңғы" n nom
+;	"соңғы" n attr
+;	"соңғы" adj advl
+;	"соңғы" adj subst nom
+"<жылдары>"
+	"жыл" n pl px3sp nom
+"<туризм>"
+	"туризм" n nom
+;	"туризм" n attr 
+"<дами>"
+	"дамы" v iv prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Ұлттық>"
+	"ұлттық" adj
+"<байлықтың>"
+	"байлық" n gen
+"<36%-ы>"
+	"36" num percent subst px3sp nom
+;	"36" num percent subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"36" num percent subst px3sp nom
+;		"е" cop aor p3 sg 
+"<өнеркәсіптен>"
+;	"өнеркәсіп" n abl
+	"өнеркәсіп" n abl
+		"е" cop aor p3 sg
+;	"өнеркәсіп" n abl
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<22%-ы>"
+	"22" num percent subst px3sp nom
+;	"22" num percent subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"22" num percent subst px3sp nom
+;		"е" cop aor p3 sg 
+"<ауыл шаруашылығынан>"
+;	"ауыл шаруашылық" n px3sp abl
+	"ауыл шаруашылық" n px3sp abl
+		"е" cop aor p3 sg
+;	"ауыл шаруашылық" n px3sp abl
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<қалғаны>"
+	"қал" v iv gpr_past subst px3sp nom
+;	"қал" v iv ger_past px3sp nom
+"<қызмет көрсету>"
+	"қызмет көрсет" v tv ger nom
+"<секторынан>"
+	"сектор" n px3sp abl
+"<тұрады>"
+	"тұр" v iv aor p3 sg
+;	"тұр" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Мұнай>"
+	"мұнай" n attr 
+;	"мұнай" n nom
+"<экспортынан>"
+	"экспорт" n px3sp abl
+"<жыл сайын>"
+	"жыл сайын" adv
+"<16,3>"
+	"16,3" num
+;	"16,3" num subst nom
+"<млрд.>"
+	"млрд." abbr
+"<АҚШ>"
+	"АҚШ" np top nom
+"<доллары>"
+	"доллар" n px3sp nom
+;	"доллар" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"доллар" n px3sp nom
+;		"е" cop aor p3 sg 
+"<түседі>"
+	"түс" v iv aor p3 sg
+;	"түс" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Ұлттық>"
+	"ұлттық" adj
+"<табыс>"
+	"табыс" n nom
+;	"табыс" n attr 
+"<75>"
+	"75" num
+;	"75" num subst nom
+"<млрд.>"
+	"млрд." abbr
+"<АҚШ>"
+	"АҚШ" np top nom
+	"АҚШ" np top attr
+"<доллар>"
+	"доллар" n attr 
+;	"доллар" n nom
+;		"е" cop aor p3 pl 
+;	"доллар" n nom
+;		"е" cop aor p3 sg 
+;	"доллар" n nom 
+"<көлемінде>"
+;	"көлем" n px3sp loc
+	"көлем" n px3sp loc
+		"е" cop aor p3 sg
+;	"көлем" n px3sp loc
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<жан басына>"
+;	"жан бас" n dat
+	"жан бас" n px3sp dat
+"<шаққанда>"
+	"шақ" v tv ger_past loc
+;	"шақ" v tv gpr_past subst loc
+"<—>"
+	"—" guio
+"<1250>"
+	"1250" num
+;	"1250" num subst nom
+"<долл.>"
+	"долл." abbr
+"<шамасында>"
+	"шама" n px3sp loc
+;	"шама" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"шама" n px3sp loc
+;		"е" cop aor p3 sg 
+"<.>"
+	"." sent 
+
+"<Елдегі>"
+	"ел" n loc attr
+;	"ел" n loc subst nom
+"<басты>"
+	"басты" adj subst nom
+;	"басты" adj
+"<проблеманың>"
+	"проблема" n gen
+"<бірі>"
+	"бір" num subst px3sp nom
+;	"бір" num subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"бір" num subst px3sp nom
+;		"е" cop aor p3 sg 
+"<—>"
+	"—" guio
+"<жұмыссыздық>"
+;	"жұмыссыздық" n nom
+	"жұмыссыздық" n nom
+		"е" cop aor p3 sg
+;	"жұмыссыздық" n attr 
+;	"жұмыссыздық" n nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<3,5>"
+	"3,5" num
+;	"3,5" num subst nom
+"<млн.>"
+	"млн." abbr
+"<адам>"
+	"адам" n nom
+;	"адам" n nom
+;		"е" cop aor p3 pl 
+;	"адам" n nom
+;		"е" cop aor p3 sg 
+;	"адам" n attr 
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Мұнайдан>"
+	"мұнай" n abl
+"<басқа>"
+;	"бас" n dat
+	"басқа" post
+;	"басқа" adj
+;	"басқа" adj subst nom
+;	"басқа" adj advl
+;	"басқа" prn ind nom
+;	"басқа" adv 
+"<экспортқа>"
+	"экспорт" n dat
+"<кейбір>"
+;	"кейбір" adv
+	"кейбір" det ind
+"<өнеркәсіп>"
+	"өнеркәсіп" n attr 
+;	"өнеркәсіп" n nom
+;		"е" cop aor p3 pl 
+;	"өнеркәсіп" n nom
+;		"е" cop aor p3 sg 
+;	"өнеркәсіп" n nom 
+"<тауарлары>"
+	"тауар" n pl px3sp nom
+;	"тауар" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"тауар" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<ауыл шаруашылығы>"
+	"ауыл шаруашылық" n px3sp nom
+;	"ауыл шаруашылық" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"ауыл шаруашылық" n px3sp nom
+;		"е" cop aor p3 sg 
+"<өнімдері>"
+	"өнім" n pl px3sp nom
+;	"өнім" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"өнім" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<кілем>"
+	"кілем" n nom
+;	"кілем" n nom
+;		"е" cop aor p3 pl 
+;	"кілем" n nom
+;		"е" cop aor p3 sg 
+;	"кілем" n attr 
+"<,>"
+	"," cm
+"<халық>"
+;	"халық" n nom
+	"халық" n attr
+"<тұтыну>"
+	"тұтыну" n attr 
+;	"тұтын" v tv ger nom 
+;	"тұтыну" n nom 
+"<тауарлары>"
+	"тауар" n pl px3sp nom
+"<шығарылады>"
+;	"шығарыл" v iv aor p3 sg
+	"шығар" v tv pass aor p3 sg
+;	"шығар" v tv pass aor p3 pl 
+;	"шығарыл" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Шеттен>"
+	"шет" n abl
+"<—>"
+	"—" guio
+"<азық-түлік>"
+	"азық-түлік" n attr 
+;	"азық-түлік" n nom
+;		"е" cop aor p3 pl 
+;	"азық-түлік" n nom
+;		"е" cop aor p3 sg 
+;	"азық-түлік" n nom 
+"<өнімдері>"
+	"өнім" n pl px3sp nom
+;	"өнім" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"өнім" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<30%>"
+	"30" num percent
+;	"30" num percent subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<машина>"
+	"машина" n nom
+;	"машина" n nom
+;		"е" cop aor p3 pl 
+;	"машина" n nom
+;		"е" cop aor p3 sg 
+;	"машина" n attr 
+"<,>"
+	"," cm
+"<құрал>"
+	"құрал" n nom
+;	"құрал" n nom
+;		"е" cop aor p3 pl 
+;	"құрал" n nom
+;		"е" cop aor p3 sg 
+;	"құрал" n attr 
+;	"құра" v tv pass imp p2 sg 
+"<->"
+	"-" guio
+"<жабдықтар>"
+;	"жабдықта" v tv gpr_fut
+;	"жабдықта" v tv fut p3 sg
+;	"жабдықта" v tv gpr_fut subst nom
+	"жабдық" n pl nom 
+;	"жабдықта" v tv fut p3 pl 
+;	"жабдық" n pl nom 
+;		"е" cop aor p3 pl
+;	"жабдық" n pl nom 
+;		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<кейбір>"
+;	"кейбір" adv
+	"кейбір" det ind
+"<өнеркәсіп>"
+	"өнеркәсіп" n attr 
+;	"өнеркәсіп" n nom 
+"<шикізаттары>"
+	"шикізат" n pl px3sp nom
+"<әкелінеді>"
+;	"алып кел" v tv pass aor p3 sg
+	"әкел" v tv pass aor p3 sg
+;	"әкел" v tv pass aor p3 pl 
+;	"алып кел" v tv pass aor p3 pl 
+"<.>"
+	"." sent
+
+"<Негізгі>"
+	"негізгі" adj
+;	"негізгі" adv
+;	"негізгі" adj subst nom
+"<сауда>"
+;	"сау" n loc
+;	"сау" adj subst loc
+;	"сауда" n nom
+	"сауда" n attr
+"<серіктестері>"
+	"серіктес" n pl px3sp nom
+;	"серіктес" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"серіктес" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<:>"
+	":" sent
+"<Германия>"
+	"Германия" np top nom
+;	"Германия" np top attr 
+"<,>"
+	"," cm
+"<Жапония>"
+	"Жапония" np top nom
+;	"Жапония" np top attr 
+"<,>"
+	"," cm
+"<Ұлыбритания>"
+	"Ұлыбритания" np top nom
+;	"Ұлыбритания" np top attr 
+"<,>"
+	"," cm
+"<Италия>"
+	"Италия" np top nom
+;	"Италия" np top attr 
+"<,>"
+	"," cm
+"<араб>"
+	"араб" n attr 
+;	"араб" n nom
+"<елдері>"
+	"ел" n pl px3sp nom
+;	"ел" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"ел" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Түркия>"
+	"Түркия" np top nom
+;	"Түркия" np top attr 
+"<,>"
+	"," cm
+"<Қазақстанмен>"
+	"Қазақстан" np top ins
+"<дипломатиялық>"
+	"дипломатиялық" adj
+"<және>"
+	"және" cnjcoo
+"<экономикалық>"
+	"экономикалық" adj
+"<байланыс>"
+	"байланыс" n nom
+;	"байланыс" n attr 
+;	"байланыс" v iv imp p2 sg 
+"<1992>"
+	"1992" num
+;	"1992" num subst nom
+"<ж.>"
+	"ж." abbr
+"<орнады>"
+	"орна" v iv ifi p3 sg
+;	"орна" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Қазақстан>"
+	"Қазақстан" np top attr 
+;	"Қазақстан" np top nom
+"<Президенті>"
+	"президент" n px3sp nom
+"<Нұрсұлтан>"
+	"Нұрсұлтан" np ant m attr
+"<Назарбаев>"
+	"Назарбаев" np cog m nom
+"<екі>"
+	"екі" num
+;	"екі" num subst nom
+;	"екі" num subst nom
+;		"е" cop aor p3 pl 
+;	"екі" num subst nom
+;		"е" cop aor p3 sg 
+"<рет>"
+	"рет" n nom
+;	"рет" n attr 
+"<(>"
+	"(" lpar
+"<1992>"
+	"1992" num
+;	"1992" num subst nom
+"<;>"
+	";" sent
+"<1996>"
+	"1996" num
+;	"1996" num subst nom
+"<)>"
+	")" rpar
+"<Иранда>"
+	"Иран" np top loc
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+"<қайтты>"
+	"қайт" v iv ifi p3 sg
+;	"қайт" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Сол>"
+;	"сол" adj
+	"сол" det dem
+;	"сол" adj advl
+;	"сол" prn dem nom
+;	"сол" adj subst nom
+"<кезегінде>"
+	"кезек" n px3sp loc
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<басшылары да>"
+	"басшы" n pl px3sp nom
+		"да" cnjcoo
+;	"басшы" n pl px3sp nom
+;		"да" postadv
+;	"басшы" n pl px3sp nom
+;		"е" cop aor p3 sg
+;			"да" cnjcoo
+;	"басшы" n pl px3sp nom
+;		"е" cop aor p3 sg
+;			"да" postadv
+;	"басшы" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;			"да" cnjcoo
+;	"басшы" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;			"да" postadv
+"<(>"
+	"(" lpar
+"<1993>"
+	"1993" num
+;	"1993" num subst nom
+"<ж.>"
+	"ж." abbr
+"<А.>"
+	"А."
+"<Хашеми>"
+	"*Хашеми"
+"<Рафсанджани>"
+	"*Рафсанджани"
+"<,>"
+	"," cm
+"<1998>"
+	"1998" num
+;	"1998" num subst nom
+"<ж.>"
+	"ж." abbr
+"<М.>"
+	"М." abbr
+"<Хатами>"
+	"*Хатами"
+"<)>"
+	")" rpar
+"<Қазақстанда>"
+	"Қазақстан" np top loc
+"<болды>"
+	"бол" v iv ifi p3 sg
+;	"бол" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Екі>"
+	"екі" num
+;	"екі" num subst nom
+;	"екі" num subst nom
+;		"е" cop aor p3 pl 
+;	"екі" num subst nom
+;		"е" cop aor p3 sg 
+"<жақ>"
+	"жақ" n attr 
+;	"жақ" n nom
+;		"е" cop aor p3 pl 
+;	"жақ" n nom
+;		"е" cop aor p3 sg 
+;	"жақ" v iv imp p2 sg 
+;	"жақ" v tv imp p2 sg 
+;	"жақ" n nom 
+"<арасында>"
+	"ара" n px3sp loc 
+;	"ара" adj subst px3sp loc 
+;	"арасында" adv 
+"<40-қа>"
+	"40" num subst dat
+"<жуық>"
+	"жуық" post
+;	"жуық" adj
+;	"жуық" adj advl
+;	"жуық" adj subst nom
+"<келісімдерге>"
+	"келісім" n pl dat
+;	"келісім" adj subst pl dat
+"<қол қойылған>"
+;	"қол қой" v tv pass gpr_past
+;	"қол қой" v tv pass ger_past nom
+;	"қол қой" v tv pass gpr_past subst nom
+	"қол қой" v tv pass past p3 sg
+;	"қол қой" v tv pass past p3 pl 
+"<,>"
+	"," cm
+"<соның>"
+	"сол" prn dem gen
+"<ішінде>"
+	"іш" n px3sp loc
+;	"ішінде" adv
+"<ең>"
+	"ең" adv
+"<маңыздылары>"
+	"маңызды" adj subst pl px3sp nom
+"<мұнай>"
+	"мұнай" n nom
+;	"мұнай" n attr 
+"<мен>"
+	"мен" post 
+;	"мен" prn pers p1 sg nom 
+;	"мен" cnjcoo 
+"<газды>"
+;	"газды" adj subst nom
+;	"газды" adj
+;	"газды" adj advl
+	"газ" n acc 
+;	"газ" n
+;		"лы" post 
+"<Иран>"
+	"Иран" np top nom
+;	"Иран" np top attr 
+"<арқылы>"
+	"арқылы" post
+;	"арқылы" adv
+"<шетке>"
+	"шет" n dat
+"<шығару>"
+;	"шығару" n nom 
+	"шығару" n nom 
+		"е" cop aor p3 sg
+;	"шығару" n attr 
+;	"шығар" v tv ger nom 
+;	"шығару" n nom 
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+"<астанадағы>"
+	"астана" n loc attr
+;	"астана" n loc subst nom
+"<құрылысқа>"
+	"құрылыс" n dat
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<жағының>"
+	"жақ" n px3sp gen
+;	"жағын" v iv imp p2 frm sg 
+;	"жағын" v tv imp p2 frm sg 
+"<қатысуы>"
+;	"қатысу" n px3sp nom 
+	"қатысу" n px3sp nom 
+		"е" cop aor p3 sg
+;	"қат" v iv coop ger px3sp nom 
+;	"қатыс" v iv ger px3sp nom 
+;	"қатысу" n px3sp nom 
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Каспий>"
+	"Каспий" np top nom
+;	"Каспий" np top attr 
+"<тенізі>"
+	"*тенізі"
+"<мәртебесін>"
+	"мәртебе" n px3sp acc
+"<шешу>"
+	"шеш" v tv ger nom
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<мәселелер>"
+;	"мәселе" n pl nom
+	"мәселе" n pl nom
+		"е" cop aor p3 sg
+;	"мәселе" n pl nom
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<2002>"
+	"2002" num
+;	"2002" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Алматы>"
+	"Алматы" np top nom
+;	"Алматы" np top attr 
+"<—>"
+	"—" guio
+"<Тегеран>"
+	"Тегеран" np top attr 
+;	"Тегеран" np top nom 
+"<бағытында>"
+	"бағыт" n px3sp loc
+"<темір жол>"
+	"темір жол" n attr 
+;	"темір жол" n nom 
+"<байланысы>"
+	"байланыс" n px3sp nom
+"<орнатылды>"
+;	"орнатыл" v tv ifi p3 sg
+	"орнат" v tv pass ifi p3 sg
+;	"орнат" v tv pass ifi p3 pl 
+;	"орнатыл" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<әдебиеті>"
+	"әдебиет" n px3sp nom
+"<ежелгі>"
+;	"ежел" adv attr
+	"ежелгі" adj
+;	"ежел" adv subst nom
+;	"ежелгі" adj subst nom
+"<дәуірде>"
+	"дәуір" n loc
+"<және>"
+	"және" cnjcoo
+"<орта>"
+	"орта" adj
+;	"орта" n nom
+;	"орта" n attr
+;	"орта" adj advl
+;	"орта" adj subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+"<парсы>"
+	"парсы" n attr 
+;	"парсы" n nom 
+"<тілі>"
+	"тіл" n px3sp nom
+;	"тіл" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"тіл" n px3sp nom
+;		"е" cop aor p3 sg 
+"<тобына>"
+	"топ" n px3sp dat
+"<жататын>"
+;	"жат" v iv gpr_impf subst nom
+	"жат" v iv gpr_impf
+;	"жат" v iv pih p3 sg
+;	"жат" vaux gpr_impf 
+;	"жат" vaux pih p3 pl 
+;	"жат" vaux pih p3 sg 
+;	"жат" vaux gpr_impf subst nom 
+;	"жат" v iv pih p3 pl 
+"<халықтар>"
+;	"халық" n pl nom
+	"халық" n pl nom
+		"е" cop aor p3 sg
+;	"халық" n pl nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<парсы>"
+	"парсы" n nom
+;	"парсы" n attr 
+"<,>"
+	"," cm
+"<тәжік>"
+	"тәжік" n nom
+;	"тәжік" n attr 
+"<,>"
+	"," cm
+"<ауған>"
+	"ауған" n nom
+;	"ауған" n attr 
+"<,>"
+	"," cm
+"<күрд>"
+	"күрд" n nom
+;	"күрд" n attr 
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<)>"
+	")" rpar
+"<мен>"
+;	"мен" prn pers p1 sg nom
+	"мен" cnjcoo
+;	"мен" post 
+"<түркі>"
+	"түркі" adj
+;	"түркі" adj advl
+;	"түркі" adj subst nom
+"<тілінде>"
+	"тіл" n px3sp loc
+;	"тіл" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"тіл" n px3sp loc
+;		"е" cop aor p3 sg 
+"<сөйлейтін>"
+	"сөйле" v tv gpr_impf
+;	"сөйле" v tv gpr_impf subst nom
+;	"сөйле" v tv pih p3 sg
+;	"сөйле" v tv pih p3 pl 
+"<(>"
+	"(" lpar
+"<өзбек>"
+	"өзбек" n nom
+;	"өзбек" n attr 
+"<,>"
+	"," cm
+"<түрікмен>"
+	"түрікмен" adj
+;	"түрікмен" adj
+;		"е" cop aor p3 pl 
+;	"түрікмен" adj
+;		"е" cop aor p3 sg 
+"<,>"
+	"," cm
+"<Әзірбайжан>"
+	"Әзірбайжан" np top nom
+;	"Әзірбайжан" np top attr 
+"<,>"
+	"," cm
+"<түрік>"
+	"түрік" n nom
+;	"түрік" n attr 
+"<)>"
+	")" rpar
+"<халықтардың>"
+	"халық" n pl gen
+"<әдебиеті>"
+	"әдебиет" n px3sp nom
+"<арқылы>"
+	"арқылы" post
+;	"арқылы" adv 
+"<қалыптасты>"
+	"қалыптас" v iv ifi p3 sg
+;	"қалыптас" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+"<әдебиетінің>"
+	"әдебиет" n px3sp gen
+"<классикалық>"
+	"классикалық" adj
+"<дәуірін>"
+	"дәуір" n px3sp acc
+"<(>"
+	"(" lpar
+"<7>"
+	"7" num
+;	"7" num subst nom
+"<—>"
+	"—" guio
+"<16>"
+	"16" num
+;	"16" num subst nom
+"<ғасырлар>"
+	"ғасыр" n pl nom
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 pl 
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<парсы>"
+	"парсы" n nom
+;		"е" cop aor p3 pl 
+;	"парсы" n nom
+;		"е" cop aor p3 sg 
+;	"парсы" n attr 
+"<не>"
+	"не" cnjcoo
+;	"не" adv itg
+;	"не" prn itg nom
+"<парсы>"
+	"парсы" n nom
+;	"парсы" n nom
+;		"е" cop aor p3 pl 
+;	"парсы" n nom
+;		"е" cop aor p3 sg 
+;	"парсы" n attr 
+"<->"
+	"-" guio
+"<тәжік>"
+	"тәжік" n attr 
+;	"тәжік" n nom
+;		"е" cop aor p3 pl 
+;	"тәжік" n nom
+;		"е" cop aor p3 sg 
+;	"тәжік" n nom 
+"<әдебиеті>"
+	"әдебиет" n px3sp nom
+;	"әдебиет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"әдебиет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<деп>"
+	"де" v tv gna_perf
+;	"де" v tv prc_perf 
+"<атанды>"
+;	"атан" n acc
+;	"атан" n
+;		"лы" post
+	"атан" v iv ifi p3 sg
+;	"атан" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Сасани>"
+	"*Сасани"
+"<әулеті>"
+	"әулет" n px3sp nom
+"<мемлекетін>"
+	"мемлекет" n px3sp acc
+"<Араб>"
+	"араб" n attr 
+;	"араб" n nom
+;	"араб" n nom 
+"<халифаты>"
+	"халифат" n px3sp nom
+;	"халифат" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"халифат" n px3sp nom
+;		"е" cop aor p3 sg 
+"<басып алған>"
+;	"басып ал" v tv gpr_past
+;	"басып ал" v tv ger_past nom
+;	"басып ал" v tv gpr_past subst nom
+	"басып ал" v tv past p3 sg
+;	"басып ал" v tv past p3 pl 
+"<соң>"
+;	"соң" post
+;	"соң" adj
+	"соң" adv
+;	"соң" n nom
+;	"соң" adj subst nom
+;		"е" cop aor p3 sg
+;	"соң" adj advl
+;	"соң" adj subst nom
+;	"соң" n nom
+;		"е" cop aor p3 sg
+;	"соң" adj
+;		"е" cop aor p3 sg
+;	"соң" n attr 
+;	"соң" adj
+;		"е" cop aor p3 pl 
+;	"соң" n nom
+;		"е" cop aor p3 pl 
+;	"соң" adj subst nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<7>"
+	"7" num
+;	"7" num subst nom
+"<ғасыр>"
+	"ғасыр" n nom
+;	"ғасыр" n nom
+;		"е" cop aor p3 pl 
+;	"ғасыр" n nom
+;		"е" cop aor p3 sg 
+;	"ғасыр" n attr 
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<араб>"
+	"араб" n attr 
+;	"араб" n nom
+;	"араб" n nom 
+"<тілі>"
+	"тіл" n px3sp nom
+;	"тіл" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"тіл" n px3sp nom
+;		"е" cop aor p3 sg 
+"<негізгі>"
+	"негізгі" adj
+;	"негізгі" adv
+;	"негізгі" adj subst nom
+"<әдеби>"
+	"әдеби" adj
+;	"әдеби" adj
+"<тіл>"
+	"тіл" n nom
+;	"тіл" n attr 
+;	"тіл" v tv imp p2 sg 
+"<болып>"
+	"бол" v iv gna_perf
+;	"бол" v iv prc_perf 
+"<,>"
+	"," cm
+"<парсы>"
+	"парсы" n attr 
+;	"парсы" n nom
+;		"е" cop aor p3 pl 
+;	"парсы" n nom
+;		"е" cop aor p3 sg 
+;	"парсы" n nom 
+"<тіліндегі>"
+	"тіл" n px3sp loc attr
+;	"тіл" n px3sp loc subst nom
+;	"тіл" n px3sp loc subst nom
+;		"е" cop aor p3 pl 
+;	"тіл" n px3sp loc subst nom
+;		"е" cop aor p3 sg 
+"<құнды>"
+	"құнды" adj subst nom
+;	"құнды" adj
+;	"құн" n acc 
+;	"құн" n
+;		"лы" post 
+"<шығармалар>"
+	"шығарма" n pl nom
+"<араб>"
+	"араб" n attr 
+;	"араб" n nom
+;		"е" cop aor p3 pl 
+;	"араб" n nom
+;		"е" cop aor p3 sg 
+;	"араб" n nom 
+"<тіліне>"
+;	"тіл" v tv pass prc_impf
+	"тіл" n px3sp dat
+"<аударылды>"
+	"аудар" v tv pass ifi p3 sg
+;	"аудар" v tv pass ifi p3 pl 
+"<(>"
+	"(" lpar
+"<“>"
+	"“" lquot
+"<Қалила>"
+	"*Қалила"
+"<мен>"
+;	"мен" prn pers p1 sg nom
+	"мен" cnjcoo
+;	"мен" post 
+"<Димна>"
+	"*Димна"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Парсы>"
+	"парсы" n attr 
+;	"парсы" n nom
+"<тіліндегі>"
+	"тіл" n px3sp loc attr
+;	"тіл" n px3sp loc subst nom
+"<әдебиет>"
+	"әдебиет" n nom
+;	"әдебиет" n nom
+;		"е" cop aor p3 sg
+;	"әдебиет" n attr 
+;	"әдебиет" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<әсіресе>"
+	"әсіресе" adv
+"<,>"
+	"," cm
+"<Рудаки>"
+	"*Рудаки"
+"<(>"
+	"(" lpar
+"<860>"
+	"860" num
+;	"860" num subst nom
+"<—>"
+	"—" guio
+"<941>"
+	"941" num
+;	"941" num subst nom
+"<)>"
+	")" rpar
+"<тұсында>"
+	"тұс" n px3sp loc
+;	"тұс" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"тұс" n px3sp loc
+;		"е" cop aor p3 sg 
+"<толық>"
+	"толық" adj advl 
+;	"толық" adj
+;		"е" cop aor p3 pl 
+;	"толық" adj
+;		"е" cop aor p3 sg 
+;	"толық" adj subst nom
+;		"е" cop aor p3 pl 
+;	"толық" adj subst nom
+;		"е" cop aor p3 sg 
+;	"толық" adj 
+;	"толық" adj subst nom 
+"<қалыптасты>"
+	"қалыптас" v iv ifi p3 sg
+;	"қалыптас" v iv ifi p3 pl 
+"<,>"
+	"," cm
+"<кейін>"
+;	"кейін" n nom
+	"кейін" adv
+;	"кейін" post 
+;	"кейін" n attr 
+"<Фирдауси>"
+	"*Фирдауси"
+"<(>"
+	"(" lpar
+"<940>"
+	"940" num
+;	"940" num subst nom
+"<—>"
+	"—" guio
+"<1020>"
+	"1020" num
+;	"1020" num subst nom
+"<ж. ш.>"
+	"ж. ш." abbr
+"<)>"
+	")" rpar
+"<“>"
+	"“" lquot
+"<Шаһнама>"
+	"*Шаһнама"
+"<”>"
+	"”" rquot
+"<эпопеясын>"
+	"эпопея" n px3sp acc
+"<жазды>"
+	"жаз" v tv ifi p3 sg 
+;	"жаз" n acc 
+;	"жаз" n 
+;		"лы" post
+;	"жаз" v tv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Көрнекті>"
+;	"көрнекті" adj
+	"көрнекті" adj subst nom
+"<ақын>"
+	"ақын" n nom
+;	"ақын" n attr 
+"<әрі>"
+	"әрі" cnjcoo
+;	"әрі" post
+;	"әрі" adv 
+"<ғалым>"
+	"ғалым" n nom
+;	"ғалым" n attr
+"<Омар>"
+	"Омар" np ant m nom
+	"Омар" np ant m attr
+"<Хайям>"
+	"*Хайям"
+"<(>"
+	"(" lpar
+"<1048>"
+	"1048" num
+;	"1048" num subst nom
+"<ж. ш. т.>"
+	"ж. ш. т." abbr
+"<—>"
+	"—" guio
+"<1122>"
+	"1122" num
+;	"1122" num subst nom
+"<жылдан>"
+	"жыл" n abl
+;	"жыл" n abl
+;		"е" cop aor p3 pl 
+;	"жыл" n abl
+;		"е" cop aor p3 sg 
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n attr 
+;	"кейін" n nom 
+"<)>"
+	")" rpar
+"<сол>"
+	"сол" det dem 
+;	"сол" v iv imp p2 sg 
+;	"сол" adj 
+;	"сол" adj advl 
+;	"сол" prn dem nom 
+;	"сол" adj subst nom 
+"<заманның>"
+	"заман" n gen
+"<әлеум.>"
+	"әлеум." abbr
+"<болмысын>"
+	"болмыс" n px3sp acc
+"<жырлады>"
+	"*жырлады"
+"<.>"
+	"." sent
+
+"<Әзірбайжан>"
+	"Әзірбайжан" np top attr 
+;	"Әзірбайжан" np top nom 
+"<ақыны>"
+;	"ақы" n acc
+	"ақын" n px3sp nom
+;	"ақын" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"ақын" n px3sp nom
+;		"е" cop aor p3 sg 
+"<Низамидің>"
+	"*Низамидің"
+"<(>"
+	"(" lpar
+"<1141>"
+	"1141" num
+;	"1141" num subst nom
+"<—>"
+	"—" guio
+"<1209>"
+	"1209" num
+;	"1209" num subst nom
+"<)>"
+	")" rpar
+"<“>"
+	"“" lquot
+"<Бестік>"
+	"*Бестік"
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<“>"
+	"“" lquot
+"<Хамса>"
+	"*Хамса"
+"<”>"
+	"”" rquot
+"<)>"
+	")" rpar
+"<атты>"
+	"атты" adj 
+;	"ат" v tv ifi p3 pl 
+;	"ат" v tv ifi p3 sg 
+;	"ат" n acc 
+;	"ат" n 
+;		"лы" post
+;	"атты" n nom 
+;	"атты" n attr 
+"<шығармасы>"
+	"шығарма" n px3sp nom
+;	"шығар" v tv neg ger_fut px3sp nom
+;	"шығар" v tv neg gpr_fut subst px3sp nom
+"<жазылған>"
+	"жаз" v tv pass gpr_past
+;	"жаз" v tv pass ger_past nom
+;	"жаз" v tv pass gpr_past subst nom
+;	"жаз" v tv pass past p3 sg
+;	"жаз" v tv pass past p3 pl 
+"<кезден>"
+	"кез" n abl
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<Иран>"
+;	"Иран" np top attr 
+	"Иран" np top nom
+"<әдебиетінде>"
+	"әдебиет" n px3sp loc
+"<адамгершілік>"
+	"*адамгершілік"
+"<тақырыбы>"
+	"тақырып" n px3sp nom
+;	"тақырып" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"тақырып" n px3sp nom
+;		"е" cop aor p3 sg 
+"<өріс>"
+	"өріс" n nom
+"<алды>"
+	"ал" v tv ifi p3 sg 
+;	"ал" v tv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Иран>"
+;	"Иран" np top attr 
+	"Иран" np top nom
+"<әдебиетінің>"
+	"әдебиет" n px3sp gen
+"<гүлденген>"
+	"*гүлденген"
+"<кезі>"
+	"кез" n px3sp nom
+;	"кез" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"кез" n px3sp nom
+;		"е" cop aor p3 sg 
+"<—>"
+	"—" guio
+"<13>"
+	"13" num
+;	"13" num subst nom
+"<—>"
+	"—" guio
+"<14>"
+	"14" num
+;	"14" num subst nom
+"<ғасырлар>"
+;	"ғасыр" n pl nom
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 sg
+	"ғасыр" n pl nom
+		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<Бұл>"
+	"бұл" det dem
+"<кезде>"
+	"кез" n loc
+"<Закани>"
+	"*Закани"
+"<,>"
+	"," cm
+"<ибн>"
+	"*ибн"
+"<->"
+	"-" guio
+"<Ямин>"
+	"*Ямин"
+"<,>"
+	"," cm
+"<Сағди>"
+	"*Сағди"
+"<,>"
+	"," cm
+"<Хафиз>"
+	"Хафиз" np ant m nom
+"<сияқты>"
+;	"сияқ" n acc
+	"сияқты" post
+;	"сияқты" adv
+;	"сияқ" n
+;		"лы" post
+;	"сияқты" n nom
+;	"сияқты" n attr 
+"<атақты>"
+	"атақты" adj subst nom
+;	"атақты" adj
+;	"атақ" n acc 
+;	"атақ" n
+;		"лы" post 
+"<ақындар>"
+	"ақын" n pl nom
+"<шықты>"
+	"шық" v iv ifi p3 sg
+;	"шық" vaux ifi p3 pl 
+;	"шық" vaux ifi p3 sg 
+;	"шық" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<революциясы>"
+	"революция" n px3sp nom
+;	"революция" n px3sp nom
+;		"е" cop aor p3 sg
+;	"революция" n px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<1905>"
+	"1905" num
+;	"1905" num subst nom
+"<—>"
+	"—" guio
+"<11>"
+	"11" num
+;	"11" num subst nom
+"<)>"
+	")" rpar
+"<және>"
+	"және" cnjcoo
+"<азаматтық>"
+	"азаматтық" adj
+;	"азаматтық" n nom
+;	"азаматтық" n attr
+;	"азаматтық" adj advl
+;	"азаматтық" adj subst nom
+"<қозғалыс>"
+	"қозғалыс" n nom
+;	"қозғалыс" n nom
+;		"е" cop aor p3 sg
+;	"қозғалыс" n attr 
+;	"қозғалыс" n nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<1918>"
+	"1918" num
+;	"1918" num subst nom
+"<—>"
+	"—" guio
+"<21>"
+	"21" num
+;	"21" num subst nom
+"<)>"
+	")" rpar
+"<кезінде>"
+	"кез" n px3sp loc
+;	"кез" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"кез" n px3sp loc
+;		"е" cop aor p3 sg 
+"<А.>"
+	"А."
+"<Фарахани>"
+	"*Фарахани"
+"<,>"
+	"," cm
+"<М.>"
+	"М." abbr
+"<Кермани>"
+	"*Кермани"
+"<,>"
+	"," cm
+"<М>"
+	"М." abbr
+"<Т.>"
+	"Т." abbr
+"<Бехар>"
+	"*Бехар"
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<ақындар>"
+	"ақын" n pl nom
+;	"ақын" n pl nom
+;		"е" cop aor p3 pl 
+;	"ақын" n pl nom
+;		"е" cop aor p3 sg 
+"<демокр.>"
+	"демокр." abbr
+"<идеяның>"
+	"идея" n gen
+"<жыршысы>"
+	"жыршы" n px3sp nom
+"<болды>"
+	"бол" v iv ifi p3 sg
+;	"бол" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Бұл>"
+	"бұл" det dem
+"<кезде>"
+	"кез" n loc
+;	"кез" n loc
+;		"е" cop aor p3 pl 
+;	"кез" n loc
+;		"е" cop aor p3 sg 
+"<С.>"
+	"С." abbr
+"<Хедаяттың>"
+	"*Хедаяттың"
+"<“>"
+	"“" lquot
+"<Қаңғыбас>"
+	"*Қаңғыбас"
+"<төбет>"
+	"төбет" n nom
+;	"төбет" n nom
+;		"е" cop aor p3 pl 
+;	"төбет" n nom
+;		"е" cop aor p3 sg 
+;	"төбет" n attr 
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1943>"
+	"1943" num
+;	"1943" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<“>"
+	"“" lquot
+"<Азғындық>"
+	"*Азғындық"
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1944>"
+	"1944" num
+;	"1944" num subst nom
+"<)>"
+	")" rpar
+"<әңгімелер>"
+	"әңгіме" n pl nom
+;	"әңгіме" adj subst pl nom
+;	"әңгіме" n pl nom
+;		"е" cop aor p3 pl 
+;	"әңгіме" n pl nom
+;		"е" cop aor p3 sg 
+;	"әңгіме" adj subst pl nom
+;		"е" cop aor p3 pl 
+;	"әңгіме" adj subst pl nom
+;		"е" cop aor p3 sg 
+"<жинақтары>"
+	"жинақ" n pl px3sp nom
+;	"жинақта" v tv ger_fut px3sp nom
+;	"жинақта" v tv gpr_fut subst px3sp nom
+;	"жинақ" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"жинақ" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<мен>"
+	"мен" cnjcoo
+;	"мен" post
+"<“>"
+	"“" lquot
+"<Хаджи>"
+	"*Хаджи"
+"<аға>"
+	"аға" n nom
+;	"аға" n nom
+;		"е" cop aor p3 pl 
+;	"аға" n nom
+;		"е" cop aor p3 sg 
+;	"аға" n attr 
+;	"ақ" v iv prc_impf 
+"<”>"
+	"”" rquot
+"<повесі>"
+	"*повесі"
+"<(>"
+	"(" lpar
+"<1945>"
+	"1945" num
+;	"1945" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Б.>"
+	"Б." abbr
+"<Алевидің>"
+	"*Алевидің"
+"<“>"
+	"“" lquot
+"<Елу>"
+	"елу" num
+;	"елу" num subst nom
+;	"елу" num subst nom
+;		"е" cop aor p3 pl 
+;	"елу" num subst nom
+;		"е" cop aor p3 sg 
+"<үш>"
+	"үш" num
+;	"үш" n nom
+;	"үш" num subst nom
+;	"үш" n nom
+;		"е" cop aor p3 pl 
+;	"үш" n nom
+;		"е" cop aor p3 sg 
+;	"үш" num subst nom
+;		"е" cop aor p3 pl 
+;	"үш" num subst nom
+;		"е" cop aor p3 sg 
+;	"үш" n attr 
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1942>"
+	"1942" num
+;	"1942" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<“>"
+	"“" lquot
+"<Түрме>"
+	"түрме" n attr 
+;	"түрме" n nom
+;		"е" cop aor p3 pl 
+;	"түрме" n nom
+;		"е" cop aor p3 sg 
+;	"түр" v tv neg imp p2 sg 
+;	"түрме" n nom 
+"<жазбалары>"
+	"жазба" n pl px3sp nom
+;	"жазба" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"жазба" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1941>"
+	"1941" num
+;	"1941" num subst nom
+"<)>"
+	")" rpar
+"<сияқты>"
+;	"сияқ" n acc
+;	"сияқты" n attr
+	"сияқты" adv
+;	"сияқ" n
+;		"лы" post
+;	"сияқты" n nom
+;	"сияқты" post 
+"<түнек>"
+	"түнек" n attr 
+;	"түнек" n nom 
+"<жылдарын>"
+	"жыл" n pl px3sp acc
+"<суреттеген>"
+	"суретте" v tv gpr_past
+;	"суретте" v tv ger_past nom
+;	"суретте" v tv gpr_past subst nom
+;	"суретте" v tv past p3 sg
+;	"суретте" v tv past p3 pl 
+"<романдары>"
+	"роман" n pl px3sp nom
+"<жарияланды>"
+	"жарияла" v tv pass ifi p3 sg
+;	"жарияла" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Ирандағы>"
+	"Иран" np top loc attr
+;	"Иран" np top loc subst nom
+"<әлеуметтік>"
+	"әлеуметтік" adj
+;	"әлеуметтік" adv
+;	"әлеуметтік" adj subst nom
+"<проблемаларды>"
+	"проблема" n pl acc
+"<көрсеткен>"
+	"көрсет" v tv gpr_past
+;	"көрсет" v tv ger_past nom
+;	"көрсет" v tv gpr_past subst nom
+;	"көрсет" v tv past p3 sg
+;	"көрсет" v tv past p3 pl 
+"<Ускуидің>"
+	"*Ускуидің"
+"<“>"
+	"“" lquot
+"<Періште>"
+	"періште" n nom
+;	"періште" n attr 
+"<жылағанда>"
+	"жыла" v iv ger_past loc
+	"жыла" v iv gpr_past subst loc
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1963>"
+	"1963" num
+;	"1963" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Саркоштың>"
+	"*Саркоштың"
+"<“>"
+	"“" lquot
+"<Көз>"
+	"көз" n attr 
+;	"көз" n nom 
+"<жасының>"
+	"жас" n px3sp gen
+;	"жас" adj subst px3sp gen
+"<зары>"
+	"зар" n px3sp nom
+;	"зар" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"зар" n px3sp nom
+;		"е" cop aor p3 sg 
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1965>"
+	"1965" num
+;	"1965" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<А.>"
+	"А." abbr
+"<М.>"
+	"М." abbr
+"<Афганидің>"
+	"*Афганидің"
+"<“>"
+	"“" lquot
+"<Аху>"
+	"*Аху"
+"<->"
+	"-" guio
+"<ханумның>"
+	"*ханумның"
+"<күйеуі>"
+	"күйеу" n px3sp nom
+;	"күйеу" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"күйеу" n px3sp nom
+;		"е" cop aor p3 sg 
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1962>"
+	"1962" num
+;	"1962" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<роман>"
+	"роман" n nom
+;	"роман" n attr 
+"<->"
+	"-" guio
+"<повестері>"
+	"повесть" n pl px3sp nom
+"<жарияланды>"
+	"жарияла" v tv pass ifi p3 sg
+;	"жарияла" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<әдебиетінен>"
+	"әдебиет" n px3sp abl
+;	"әдебиет" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"әдебиет" n px3sp abl
+;		"е" cop aor p3 sg 
+"<“>"
+	"“" lquot
+"<Парсы>"
+	"парсы" n nom
+;	"парсы" n nom
+;		"е" cop aor p3 pl 
+;	"парсы" n nom
+;		"е" cop aor p3 sg 
+;	"парсы" n attr 
+"<ертегілері>"
+	"*ертегілері"
+"<”>"
+	"”" rquot
+"<(>"
+	"(" lpar
+"<1958>"
+	"1958" num
+	"1958" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Омар>"
+	"Омар" np ant m nom
+;	"Омар" np ant m nom
+;		"е" cop aor p3 pl 
+;	"Омар" np ant m nom
+;		"е" cop aor p3 sg 
+"<Хайям>"
+	"*Хайям"
+"<рубаилары>"
+	"*рубаилары"
+"<(>"
+	"(" lpar
+"<1965>"
+	"1965" num
+;	"1965" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Сағдидың>"
+	"*Сағдидың"
+"<“>"
+	"“" lquot
+"<Бустан>"
+	"*Бустан"
+"<”>"
+	"”" rquot
+"<дастаны>"
+	"дастан" n px3sp nom
+;	"дастан" n px3sp nom
+;		"е" cop aor p3 sg
+;	"дастан" n px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<1970>"
+	"1970" num
+;	"1970" num subst nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<қазақ>"
+	"қазақ" n attr 
+;	"қазақ" n nom 
+"<тіліне>"
+;	"тіл" v tv pass prc_impf
+	"тіл" n px3sp dat
+"<аударылды>"
+	"аудар" v tv pass ifi p3 sg
+;	"аудар" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+;		"е" cop aor p3 pl 
+;	"Иран" np top nom
+;		"е" cop aor p3 sg 
+;	"Иран" np top nom 
+"<территориясында>"
+	"территория" n px3sp loc
+"<неолит>"
+	"*неолит"
+"<дәуіріне>"
+	"дәуір" n px3sp dat
+"<жататын>"
+;	"жат" v iv gpr_impf subst nom
+	"жат" v iv gpr_impf
+;	"жат" v iv pih p3 sg
+;	"жат" vaux gpr_impf 
+;	"жат" vaux pih p3 pl 
+;	"жат" vaux pih p3 sg 
+;	"жат" vaux gpr_impf subst nom 
+;	"жат" v iv pih p3 pl 
+"<,>"
+	"," cm
+"<қабырғалары>"
+	"қабырға" n pl px3sp nom
+;	"қабырға" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"қабырға" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<өрнектелген>"
+	"*өрнектелген"
+"<егіншілік>"
+	"егіншілік" n attr 
+;	"егіншілік" n nom
+;		"е" cop aor p3 pl 
+;	"егіншілік" n nom
+;		"е" cop aor p3 sg 
+;	"егіншілік" n nom 
+"<құрылыстары>"
+	"құрылыс" n pl px3sp nom
+;	"құрылыс" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"құрылыс" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<адам>"
+	"адам" n nom
+;	"адам" n attr 
+"<және>"
+	"және" cnjcoo
+"<жануарлар>"
+	"жануар" n pl nom
+"<бейнелері>"
+	"бейне" n pl px3sp nom
+;	"бейнеле" v tv ger_fut px3sp nom
+;	"бейнеле" v tv gpr_fut subst px3sp nom
+;	"бейне" n pl px3sp nom
+;		"е" cop aor p3 sg
+;	"бейне" n pl px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<әшекейлі>"
+	"әшекей" n
+		"лы" post
+"<қыш>"
+	"*қыш"
+"<ыдыстар>"
+	"ыдыс" n pl nom
+;	"ыдыс" n pl nom
+;		"е" cop aor p3 sg
+;	"ыдыс" n pl nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<б.з.б.>"
+	"б.з.б." abbr
+"<5>"
+	"5" num
+;	"5" num subst nom
+"<—>"
+	"—" guio
+"<4>"
+	"4" num
+;	"4" num subst nom
+"<ғасырлар>"
+	"ғасыр" n pl nom
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 sg
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Сузы>"
+	"*Сузы"
+"<,>"
+	"," cm
+"<Тепе>"
+	"*Тепе"
+"<->"
+	"-" guio
+"<Сиалк>"
+	"*Сиалк"
+"<,>"
+	"," cm
+"<Тали>"
+	"Тали" np ant f nom
+;	"Тали" np ant f nom
+;		"е" cop aor p3 pl 
+;	"Тали" np ant f nom
+;		"е" cop aor p3 sg 
+"<->"
+	"-" guio
+"<Бакун>"
+	"*Бакун"
+"<)>"
+	")" rpar
+"<сақталған>"
+;	"сақтал" v iv past p3 sg 
+	"сақта" v tv pass past p3 sg 
+;	"сақта" v tv pass gpr_past 
+;	"сақтал" v iv gpr_past 
+;	"сақта" v tv pass ger_past nom 
+;	"сақтал" v iv ger_past nom 
+;	"сақта" v tv pass gpr_past subst nom 
+;	"сақтал" v iv gpr_past subst nom 
+;	"сақта" v tv pass past p3 pl  
+;	"сақтал" v iv past p3 pl  
+"<.>"
+	"." sent
+
+"<Хұзыстан>"
+	"*Хұзыстан"
+"<,>"
+	"," cm
+"<Курдстан>"
+	"Курдстан" np top attr
+	"Курдстан" np top nom
+"<жартастарындағы>"
+	"жартас" n pl px3sp loc attr
+;	"жартас" n pl px3sp loc subst nom
+;	"жартас" n pl px3sp loc subst nom
+;		"е" cop aor p3 pl 
+;	"жартас" n pl px3sp loc subst nom
+;		"е" cop aor p3 sg 
+"<рельефтер>"
+	"*рельефтер"
+"<,>"
+	"," cm
+"<Сұзыдан>"
+	"*Сұзыдан"
+"<табылған>"
+;	"тап" v tv pass gpr_past
+;	"тап" v tv pass ger_past nom
+;	"тап" v tv pass gpr_past subst nom
+;	"тап" v tv pass past p3 sg
+	"тап" v tv pass past p3 pl 
+"<,>"
+	"," cm
+"<асыл>"
+	"асыл" adj
+;	"асыл" adj subst nom
+;	"асыл" adj
+;		"е" cop aor p3 pl 
+;	"асыл" adj
+;		"е" cop aor p3 sg 
+;	"асыл" adj subst nom
+;		"е" cop aor p3 pl 
+;	"асыл" adj subst nom
+;		"е" cop aor p3 sg 
+;	"ас" v tv pass imp p2 sg 
+"<металдан>"
+	"метал" n abl
+"<жасалған>"
+	"жаса" v tv pass gpr_past
+;	"жаса" v tv pass ger_past nom
+;	"жаса" v tv pass gpr_past subst nom
+;	"жаса" v tv pass past p3 sg
+;	"жаса" v tv pass past p3 pl 
+"<көркем>"
+;	"көркем" adj
+;	"көркем" adj advl
+	"көркем" adj subst nom
+;	"көркем" adj
+;		"е" cop aor p3 pl 
+;	"көркем" adj
+;		"е" cop aor p3 sg 
+;	"көркем" adj subst nom
+;		"е" cop aor p3 pl 
+;	"көркем" adj subst nom
+;		"е" cop aor p3 sg 
+"<заттар>"
+	"зат" n pl nom
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom 
+"<өнерінің>"
+;	"өн" v iv ger_fut px3sp gen
+	"өнер" n px3sp gen
+;	"өн" v iv gpr_fut subst px3sp gen
+"<өз>"
+	"өз" det ref
+"<заманында>"
+	"заман" n px3sp loc
+"<жоғары>"
+	"жоғары" adj
+;	"жоғары" adv
+;	"жоғары" adj advl
+;	"жоғары" adj subst nom
+"<дәрежеде>"
+	"дәреже" n loc
+"<болғанын>"
+;	"бол" v iv gpr_past subst px3sp acc
+	"бол" v iv ger_past px3sp acc
+"<дәлелдейді>"
+	"дәлелде" v tv aor p3 sg
+;	"дәлелде" v tv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+;		"е" cop aor p3 pl 
+;	"Иран" np top nom
+;		"е" cop aor p3 sg 
+;	"Иран" np top nom 
+"<жерінде>"
+	"жер" n px3sp loc 
+;	"же" v tv ger_fut px3sp loc 
+;	"же" v tv gpr_fut subst px3sp loc 
+"<сақтар>"
+	"сақ" adj subst pl nom
+;	"сақ" adj subst pl nom
+;		"е" cop aor p3 pl 
+;	"сақ" adj subst pl nom
+;		"е" cop aor p3 sg 
+;	"сақта" v tv gpr_fut 
+;	"сақта" v tv fut p3 pl 
+;	"сақта" v tv fut p3 sg 
+;	"сақта" v tv gpr_fut subst nom 
+"<тарихына>"
+	"тарих" n px3sp dat
+"<қатысты>"
+;	"қатысты" adj
+	"қатысты" post
+;	"қатысты" adj
+;		"е" cop aor p3 pl 
+;	"қатысты" adj
+;		"е" cop aor p3 sg 
+;	"қатыс" n acc 
+;	"қатыс" v iv ifi p3 sg 
+;	"қат" v iv coop ifi p3 pl 
+;	"қат" v iv coop ifi p3 sg 
+;	"қатыс" v iv ifi p3 pl 
+;	"қатысты" adv 
+;	"қатыс" n
+;		"лы" post 
+"<мәдени>"
+	"мәдени" adj
+"<ескерткіштер де>"
+	"ескерткіш" n pl nom
+		"да" cnjcoo
+;	"ескерткіш" n pl nom
+;		"да" postadv
+"<мол>"
+	"мол" adj
+;	"мол" adv
+;	"мол" adj advl
+;	"мол" adj subst nom
+"<сақталған>"
+;	"сақта" v tv pass gpr_past
+;	"сақтал" v iv gpr_past
+;	"сақта" v tv pass ger_past nom
+;	"сақтал" v iv ger_past nom
+;	"сақтал" v iv past p3 sg
+;	"сақта" v tv pass past p3 sg
+;	"сақта" v tv pass gpr_past subst nom
+;	"сақтал" v iv gpr_past subst nom
+	"сақта" v tv pass past p3 pl 
+;	"сақтал" v iv past p3 pl 
+"<(>"
+	"(" lpar
+"<қ.>"
+	"қ." abbr
+"<Бехистун>"
+	"*Бехистун"
+"<сына>"
+	"сына" v tv imp p2 sg
+;	"сын" v iv prc_impf 
+"<жазуы>"
+;	"жазу" n px3sp nom 
+	"жазу" n px3sp nom 
+		"е" cop aor p3 sg
+;	"жаз" v tv ger px3sp nom 
+;	"жазу" n px3sp nom 
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Сасани>"
+	"*Сасани"
+"<әулеті>"
+	"әулет" n px3sp nom
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"әулет" n px3sp nom
+;		"е" cop aor p3 sg 
+"<дәуірінде>"
+	"дәуір" n px3sp loc
+;	"дәуір" n px3sp loc
+;		"е" cop aor p3 sg
+;	"дәуір" n px3sp loc
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<3>"
+	"3" num
+;	"3" num subst nom
+"<—>"
+	"—" guio
+"<7>"
+	"7" num
+;	"7" num subst nom
+"<ғасырлар>"
+	"ғасыр" n pl nom
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 pl 
+;	"ғасыр" n pl nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<қалаларды>"
+	"қала" n pl acc
+"<қорған>"
+	"қорған" n attr 
+;	"қор" v iv gpr_past 
+;	"қор" v tv gpr_past 
+;	"қор" v iv ger_past nom 
+;	"қор" v tv ger_past nom 
+;	"қор" v iv past p3 pl 
+;	"қор" v iv past p3 sg 
+;	"қор" v iv gpr_past subst nom 
+;	"қор" v tv past p3 pl 
+;	"қор" v tv past p3 sg 
+;	"қор" v tv gpr_past subst nom 
+;	"қорған" v iv imp p2 sg 
+;	"қорған" n nom 
+"<ішіне>"
+	"іш" n px3sp dat
+"<жүйелі>"
+	"жүйелі" adj
+;	"жүйелі" adv
+;	"жүйе" n
+;		"лы" post 
+"<жоба>"
+	"жоба" n nom
+;	"жоба" n attr 
+"<бойынша>"
+	"бойынша" post
+"<салу>"
+	"сал" v tv ger nom
+;	"сал" vaux ger nom 
+"<қанат>"
+	"қанат" n nom
+;	"қанат" n attr 
+;	"қанат" v tv imp p2 sg 
+"<жайды>"
+	"жай" v tv ifi p3 sg
+;	"жай" n acc 
+;	"жай" adj subst acc 
+;	"жай" v tv ifi p3 pl 
+"<(>"
+	"(" lpar
+"<мыс.>"
+	"мыс." abbr
+"<,>"
+	"," cm
+"<Нишапур>"
+	"*Нишапур"
+"<қаласы>"
+	"қала" n px3sp nom
+"<шахмат>"
+	"шахмат" n attr 
+;	"шахмат" n nom 
+"<жүйесімен>"
+	"жүйе" n px3sp ins
+"<салынған>"
+;	"сал" v tv pass gpr_past
+;	"сал" v tv pass ger_past nom
+;	"сал" v tv pass gpr_past subst nom
+	"сал" v tv pass past p3 sg
+;	"сал" v tv pass past p3 pl 
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Мүсін>"
+	"мүсін" n nom
+;	"мүсін" n attr
+"<жасау>"
+	"жасау" n nom 
+;	"жасау" n attr 
+;	"жаса" v tv ger nom 
+"<,>"
+	"," cm
+"<жартастарға>"
+	"жартас" n pl dat
+"<рельеф>"
+	"*рельеф"
+"<қашау>"
+	"қаша" v tv ger nom
+"<елеулі>"
+	"елеулі" adj
+;	"елеулі" adv
+;	"елеулі" adj subst nom
+"<орын>"
+	"орын" n nom
+;	"орын" n attr 
+"<алды>"
+	"ал" v tv ifi p3 sg 
+;	"алд" n px3sp nom 
+;	"ал" vaux ifi p3 pl  
+;	"ал" vaux ifi p3 sg  
+;	"ал" v tv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Алтын>"
+	"алтын" adj
+;	"алтын" n nom
+;	"Алтын" np ant f nom
+;	"алтын" adj advl
+;	"алтын" adj subst nom
+;	"алтын" n attr 
+"<,>"
+	"," cm
+"<күміс>"
+	"күміс" n nom
+;	"күміс" n attr 
+"<,>"
+	"," cm
+"<қола>"
+	"қола" n nom
+;	"қола" n attr 
+"<және>"
+	"және" cnjcoo
+"<әйнектен>"
+	"*әйнектен"
+"<әр түрлі>"
+	"әр түрлі" adj
+;	"әр түрлі" det ind
+;	"әр түрлі" adj advl
+;	"әр түрлі" adj subst nom
+"<бұйымдар>"
+	"бұйым" n pl nom
+"<жасау>"
+	"жасау" n nom 
+;	"жасау" n attr 
+;	"жаса" v tv ger nom 
+"<,>"
+	"," cm
+"<жүн>"
+	"жүн" n nom
+;	"жүн" n attr 
+"<және>"
+	"және" cnjcoo
+"<жібек>"
+;	"жібек" n nom
+	"жібек" n attr
+"<мата>"
+	"мата" n nom
+;	"мата" n attr 
+;	"мата" v tv imp p2 sg 
+"<тоқу>"
+	"*тоқу"
+"<өркен>"
+	"өркен" n nom
+;	"өркен" n attr 
+"<жайды>"
+	"жай" v tv ifi p3 sg 
+;	"жай" n acc 
+;	"жай" adj subst acc 
+;	"жай" v tv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<7>"
+	"7" num
+;	"7" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<арабтардың>"
+	"араб" n pl gen
+"<ислам>"
+	"Ислам" n attr 
+;	"Ислам" n nom 
+"<дінін>"
+	"дін" n px3sp acc
+"<таратуына>"
+	"тарату" n px3sp dat 
+;	"тарат" v tv ger px3sp dat 
+"<байланысты>"
+	"байланысты" adj subst nom
+;	"байланысты" adj
+;	"байланыс" n acc 
+;	"байланыс" v iv ifi p3 pl 
+;	"байланыс" v iv ifi p3 sg 
+;	"байланыс" n
+;		"лы" post 
+"<мұнаралы>"
+	"мұнара" n
+		"лы" post
+"<мешіттер>"
+	"мешіт" n pl nom
+"<,>"
+	"," cm
+"<медреселер>"
+	"медресе" n pl nom
+"<,>"
+	"," cm
+"<күмбездер>"
+	"күмбез" n pl nom
+"<пайда болды>"
+	"пайда бол" v iv ifi p3 sg
+;	"пайда бол" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1305>"
+	"1305" num
+;	"1305" num subst nom
+"<—>"
+	"—" guio
+"<13>"
+	"13" num
+;	"13" num subst nom
+"<ж.>"
+	"ж." abbr
+"<осы>"
+	"осы" det dem
+;	"осы" prn dem nom
+"<дәуірдегі>"
+	"дәуір" n loc attr
+;	"дәуір" n loc subst nom
+"<сәулет>"
+	"сәулет" n attr 
+;	"сәулет" n nom
+;		"е" cop aor p3 pl 
+;	"сәулет" n nom
+;		"е" cop aor p3 sg 
+;	"сәулет" n nom 
+"<өнерінің>"
+;	"өн" v iv ger_fut px3sp gen
+	"өнер" n px3sp gen
+;	"өн" v iv gpr_fut subst px3sp gen
+"<көрнекті>"
+	"көрнекті" adj
+;	"көрнекті" adj subst nom
+;	"көрнекті" adj
+;		"е" cop aor p3 pl 
+;	"көрнекті" adj
+;		"е" cop aor p3 sg 
+;	"көрнекті" adj subst nom
+;		"е" cop aor p3 pl 
+;	"көрнекті" adj subst nom
+;		"е" cop aor p3 sg 
+"<ескерткіші>"
+	"ескерткіш" n px3sp nom
+;	"ескерткіш" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"ескерткіш" n px3sp nom
+;		"е" cop aor p3 sg 
+"<Ольджейту>"
+	"*Ольджейту"
+"<->"
+	"-" guio
+"<Ходабенде>"
+	"*Ходабенде"
+"<кесенесі>"
+	"кесене" n px3sp nom
+;	"кесене" n px3sp nom
+;		"е" cop aor p3 sg
+;	"кесене" n px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<сәулетші>"
+;	"сәулетші" n nom
+	"сәулетші" n attr
+;	"сәулетші" n nom
+;		"е" cop aor p3 pl 
+;	"сәулетші" n nom
+;		"е" cop aor p3 sg 
+"<Әли>"
+	"Әли" np ant m nom
+;	"Әли" np ant m nom
+;		"е" cop aor p3 pl 
+;	"Әли" np ant m nom
+;		"е" cop aor p3 sg 
+"<шаї>"
+	"*шаї"
+"<)>"
+	")" rpar
+"<тұрғызылды>"
+	"тұрғыз" v tv pass ifi p3 sg
+;	"тұрғыз" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<14>"
+	"14" num
+;	"14" num subst nom
+"<ғасырдан>"
+	"ғасыр" n abl
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n attr 
+;	"кейін" n nom 
+"<қолжазба>"
+	"қолжазба" n nom
+;	"қолжазба" n attr 
+"<көркемдеу>"
+	"*көркемдеу"
+"<,>"
+	"," cm
+"<қабырғаға>"
+	"қабырға" n dat
+"<сурет>"
+	"сурет" n nom
+;	"сурет" n attr 
+"<салу>"
+	"сал" v tv ger nom
+;	"сал" vaux ger nom 
+"<дамыды>"
+	"дамы" v iv ifi p3 sg
+;	"дамы" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<15>"
+	"15" num
+;	"15" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<Иран>"
+;	"Иран" np top attr 
+;	"Иран" np top nom
+"<миниатюрасының>"
+	"миниатюра" n px3sp gen
+"<өркендеуіне>"
+	"өркенде" v iv ger px3sp dat
+"<Герат>"
+	"Герат" np top attr 
+;	"Герат" np top nom 
+"<мектебі>"
+	"мектеп" n px3sp nom
+"<үлкен>"
+	"үлкен" adj advl 
+;	"үлкен" n attr 
+;	"үлкен" adj 
+;	"үлкен" n nom 
+;	"үлкен" adj subst nom 
+"<әсер етті>"
+	"әсер ет" v tv ifi p3 sg
+;	"әсер ет" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<16>"
+	"16" num
+;	"16" num subst nom
+"<—>"
+	"—" guio
+"<17>"
+	"17" num
+;	"17" num subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+"<пайда болған>"
+	"пайда бол" v iv gpr_past
+;	"пайда бол" v iv ger_past nom
+;	"пайда бол" v iv gpr_past subst nom
+;	"пайда бол" v iv past p3 sg
+;	"пайда бол" v iv past p3 pl 
+"<Тебриз>"
+	"Тебриз" np top nom
+"<,>"
+	"," cm
+"<Шираз>"
+	"Шираз" np top nom
+"<,>"
+	"," cm
+"<Исфаһан>"
+	"Исфаһан" np top nom
+"<(>"
+	"(" lpar
+"<Риза>"
+	"Риза" np ant m nom
+	"Риза" np ant m attr
+	"риза" adj
+;	"риза" adj subst nom
+"<Аббаси>"
+	"*Аббаси"
+"<,>"
+	"," cm
+"<т.б.>"
+	"т.б." abbr
+"<)>"
+	")" rpar
+"<мектептері>"
+	"мектеп" n pl px3sp nom
+"<миниатюра>"
+	"миниатюра" n attr 
+;	"миниатюра" n nom 
+"<өнерін>"
+;	"өн" v iv ger_fut px3sp acc
+	"өнер" n px3sp acc
+;	"өн" v iv gpr_fut subst px3sp acc
+"<жоғары>"
+	"жоғары" adj
+;	"жоғары" adv
+;	"жоғары" adj advl
+;	"жоғары" adj subst nom
+"<дәрежеге>"
+	"дәреже" n dat
+"<көтерді>"
+	"көтер" v tv ifi p3 sg
+;	"көтер" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<18>"
+	"18" num
+;	"18" num subst nom
+"<—>"
+	"—" guio
+"<19>"
+	"19" num
+;	"19" num subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+;	"ғасыр" n pl loc
+;		"е" cop aor p3 pl 
+;	"ғасыр" n pl loc
+;		"е" cop aor p3 sg 
+"<еур.>"
+	"еур." abbr
+"<өнердің>"
+	"өнер" n gen
+;	"өн" v iv gpr_fut subst gen 
+"<ықпалымен>"
+	"ықпал" n px3sp ins
+"<сулы>"
+;	"сулы" adj
+;	"сулы" n nom
+	"су" n
+		"лы" post 
+;	"су" adj subst
+;		"лы" post 
+;	"сулы" n attr 
+"<және>"
+	"және" cnjcoo
+"<майлы>"
+	"май" n
+		"лы" post
+"<бояумен>"
+	"бояу" n ins 
+;	"боя" v tv ger ins 
+"<орындалған>"
+	"орында" v tv pass gpr_past
+;	"орындал" v iv gpr_past
+;	"орында" v tv pass ger_past nom
+;	"орындал" v iv ger_past nom
+;	"орындал" v iv past p3 sg
+;	"орында" v tv pass past p3 sg
+;	"орында" v tv pass gpr_past subst nom
+;	"орындал" v iv gpr_past subst nom
+;	"орында" v tv pass past p3 pl 
+;	"орындал" v iv past p3 pl 
+"<алғашқы>"
+;	"алғаш" adv attr
+	"алғашқы" adj
+;	"алғашқы" adv
+;	"алғаш" adv subst nom
+;	"алғашқы" adj subst nom
+"<туындылар>"
+	"*туындылар"
+"<өмірге>"
+	"өмір" n dat
+"<келді>"
+	"кел" v iv ifi p3 sg
+;	"кел" vaux ifi p3 pl 
+;	"кел" vaux ifi p3 sg 
+;	"кел" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+"<типті>"
+	"типті" adj subst nom
+;	"типті" adj
+;	"типті" adj advl
+;	"тип" n acc 
+"<архитектуралық>"
+	"архитектуралық" adj
+;	"архитектуралық" adj
+;		"е" cop aor p3 pl 
+;	"архитектуралық" adj
+;		"е" cop aor p3 sg 
+"<құрылыстар>"
+	"құрылыс" n pl nom
+;	"құрылыс" n pl nom
+;		"е" cop aor p3 pl 
+;	"құрылыс" n pl nom
+;		"е" cop aor p3 sg 
+"<салына>"
+	"сал" v tv pass prc_impf
+;	"сал" n px3sp dat
+"<бастады>"
+;	"баста" vaux ifi p3 sg
+	"баста" vaux ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Иранның>"
+	"Иран" np top gen
+"<жаңа>"
+	"жаңа" adj
+;	"жаңа" adv
+;	"жаңа" adj advl
+;	"жаңа" adj subst nom
+;	"жаңа" adj
+;		"е" cop aor p3 pl 
+;	"жаңа" adj
+;		"е" cop aor p3 sg 
+;	"жаңа" adj subst nom
+;		"е" cop aor p3 pl 
+;	"жаңа" adj subst nom
+;		"е" cop aor p3 sg 
+"<архитектуралық>"
+	"архитектуралық" adj
+;	"архитектуралық" adj
+;		"е" cop aor p3 pl 
+;	"архитектуралық" adj
+;		"е" cop aor p3 sg 
+"<мұралары>"
+	"мұра" n pl px3sp nom
+;	"мұра" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"мұра" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<қазіргі>"
+;	"қазіргі" n nom 
+	"қазіргі" n attr 
+;	"қазіргі" adj
+;		"е" cop aor p3 pl 
+;	"қазіргі" adj
+;		"е" cop aor p3 sg 
+;	"қазір" adv subst nom
+;		"е" cop aor p3 pl 
+;	"қазір" adv subst nom
+;		"е" cop aor p3 sg 
+;	"қазіргі" n nom
+;		"е" cop aor p3 pl 
+;	"қазіргі" n nom
+;		"е" cop aor p3 sg 
+;	"қазіргі" adj subst nom
+;		"е" cop aor p3 pl 
+;	"қазіргі" adj subst nom
+;		"е" cop aor p3 sg 
+;	"қазір" adv attr 
+;	"қазіргі" adj 
+;	"қазір" adv subst nom 
+;	"қазіргі" adj advl 
+;	"қазіргі" adj subst nom 
+"<стиль>"
+	"стиль" n nom
+;	"стиль" n nom
+;		"е" cop aor p3 pl 
+;	"стиль" n nom
+;		"е" cop aor p3 sg 
+;	"стиль" n attr 
+"<мен>"
+	"мен" cnjcoo
+"<ұлттық>"
+	"ұлттық" adj
+;	"ұлттық" adv
+;	"ұлттық" adj
+;		"е" cop aor p3 pl 
+;	"ұлттық" adj
+;		"е" cop aor p3 sg 
+"<үлгідегі>"
+	"үлгі" n loc attr
+;	"үлгі" n loc subst nom
+;	"үлгі" n loc subst nom
+;		"е" cop aor p3 pl 
+;	"үлгі" n loc subst nom
+;		"е" cop aor p3 sg 
+"<сәулет>"
+	"сәулет" n attr 
+	"сәулет" n nom
+"<өнерін>"
+;	"өн" v iv ger_fut px3sp acc
+	"өнер" n px3sp acc
+;	"өн" v iv gpr_fut subst px3sp acc
+"<ұштастырған>"
+	"*ұштастырған"
+"<.>"
+	"." sent
+
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<басынан>"
+	"бас" n px3sp abl
+"<мүсін>"
+	"мүсін" n nom
+;	"мүсін" n attr 
+"<,>"
+	"," cm
+"<графика>"
+	"графика" n nom
+;	"графика" n attr 
+"<,>"
+	"," cm
+"<кескіндеме>"
+	"кескіндеме" n attr 
+;	"кескіндеме" n nom 
+"<жанры>"
+	"жанр" n px3sp nom
+"<дамып>"
+;	"дам" v iv prc_perf 
+	"дамы" v iv prc_perf 
+"<келеді>"
+	"кел" vaux aor p3 sg 
+;	"кел" vaux aor p3 pl  
+"<.>"
+	"." sent
+
+"<Сән>"
+	"сән" n nom
+;	"сән" n nom
+;		"е" cop aor p3 pl 
+;	"сән" n nom
+;		"е" cop aor p3 sg 
+;	"сән" n attr 
+"<және>"
+	"және" cnjcoo
+"<қосалқы>"
+	"қосалқы" adj
+;	"қосалқы" n nom
+;	"қосалқы" n attr
+;	"қосалқы" adj advl
+;	"қосалқы" adj subst nom
+"<өнердің>"
+	"өнер" n gen
+;	"өн" v iv gpr_fut subst gen
+"<дәстүрлі>"
+	"дәстүрлі" adj
+;	"дәстүрлі" adv
+;	"дәстүрлі" adj subst nom
+;	"дәстүрлі" adj
+;		"е" cop aor p3 pl 
+;	"дәстүрлі" adj
+;		"е" cop aor p3 sg 
+;	"дәстүрлі" adj subst nom
+;		"е" cop aor p3 pl 
+;	"дәстүрлі" adj subst nom
+;		"е" cop aor p3 sg 
+;	"дәстүр" n
+;		"лы" post 
+"<түрлері>"
+	"түр" n pl px3sp nom
+;	"түр" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"түр" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<сақталған>"
+;	"сақта" v tv pass gpr_past
+;	"сақтал" v iv gpr_past
+;	"сақта" v tv pass ger_past nom
+;	"сақтал" v iv ger_past nom
+;	"сақтал" v iv past p3 sg
+;	"сақта" v tv pass past p3 sg
+;	"сақта" v tv pass gpr_past subst nom
+;	"сақтал" v iv gpr_past subst nom
+;	"сақта" v tv pass past p3 pl 
+	"сақтал" v iv past p3 pl 
+"<.>"
+	"." sent
+
+"<Кәсіби>"
+	"кәсіби" adj
+;	"кәсіби" adv
+;	"кәсіби" adj subst nom
+"<және>"
+	"және" cnjcoo
+"<халық>"
+	"халық" n attr 
+;	"халық" n nom 
+"<музыкасының>"
+	"музыка" n px3sp gen
+"<ғасырлық>"
+	"ғасырлық" adj
+"<дәстүрі>"
+	"дәстүр" n px3sp nom
+;	"дәстүр" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"дәстүр" n px3sp nom
+;		"е" cop aor p3 sg 
+"<бар>"
+	"бар" adj 
+		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top nom
+"<музыкасы>"
+	"музыка" n px3sp nom
+"<,>"
+	"," cm
+"<негізінен>"
+;	"негіз" n px3sp abl
+	"негізінен" adv
+;	"негіз" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"негіз" n px3sp abl
+;		"е" cop aor p3 sg 
+"<,>"
+	"," cm
+"<монодиялық>"
+	"*монодиялық"
+"<(>"
+	"(" lpar
+"<бір>"
+	"бір" num
+;	"бір" det ind
+;	"бір" num subst nom
+;	"бір" num subst nom
+;		"е" cop aor p3 pl 
+;	"бір" num subst nom
+;		"е" cop aor p3 sg 
+"<дауысты>"
+	"дауысты" adj subst nom
+;	"дауысты" adj
+;	"дауысты" adj advl
+;	"дауысты" adj
+;		"е" cop aor p3 pl 
+;	"дауысты" adj
+;		"е" cop aor p3 sg 
+;	"дауысты" adj subst nom
+;		"е" cop aor p3 pl 
+;	"дауысты" adj subst nom
+;		"е" cop aor p3 sg 
+;	"дауыс" n acc 
+;	"дауыс" n
+;		"лы" post 
+"<)>"
+	")" rpar
+"<түрде>"
+	"түр" n loc
+"<кездеседі>"
+	"кездес" v iv aor p3 sg
+;	"кездес" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Халық>"
+	"халық" n attr 
+;	"халық" n nom 
+;	"Халық" np ant m nom 
+"<музыкасының>"
+	"музыка" n px3sp gen
+"<теснифа>"
+	"*теснифа"
+"<(>"
+	"(" lpar
+"<баллада>"
+	"баллада" n nom
+;	"баллада" n nom
+;		"е" cop aor p3 pl 
+;	"баллада" n nom
+;		"е" cop aor p3 sg 
+;	"баллада" n attr 
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<теране>"
+	"*теране"
+"<(>"
+	"(" lpar
+"<жергілікті>"
+	"жергілікті" adj
+"<әуен>"
+	"әуен" n nom
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<қасида>"
+	"*қасида"
+"<(>"
+	"(" lpar
+"<ода>"
+	"*ода"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<ғазел>"
+	"*ғазел"
+"<(>"
+	"(" lpar
+"<лирикалық>"
+	"лирикалық" adj
+"<ән>"
+	"ән" n nom
+;	"ән" n nom
+;		"е" cop aor p3 pl 
+;	"ән" n nom
+;		"е" cop aor p3 sg 
+"<)>"
+	")" rpar
+"<түрлері>"
+	"түр" n pl px3sp nom
+;	"түр" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"түр" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<көп>"
+	"көп" adj advl 
+;	"көп" adj
+;		"е" cop aor p3 pl 
+;	"көп" adj
+;		"е" cop aor p3 sg 
+;	"көп" adj subst nom
+;		"е" cop aor p3 pl 
+;	"көп" adj subst nom
+;		"е" cop aor p3 sg 
+;	"көп" adj 
+;	"көп" adv 
+;	"көп" adj subst nom 
+"<тараған>"
+;	"тара" v tv past p3 sg 
+;	"тара" v iv past p3 sg 
+;	"тара" v iv gpr_past 
+;	"тара" v tv gpr_past 
+;	"тара" v iv ger_past nom 
+;	"тара" v tv ger_past nom 
+;	"тара" v iv gpr_past subst nom 
+;	"тара" v tv gpr_past subst nom 
+	"тара" v iv past p3 pl  
+;	"тара" v tv past p3 pl  
+"<.>"
+	"." sent
+
+"<Музыкалық>"
+	"музыкалық" adj
+"<аспаптары>"
+	"аспап" n pl px3sp nom
+;	"аспап" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"аспап" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<:>"
+	":" sent
+"<саз>"
+	"саз" n nom
+;	"саз" n nom
+;		"е" cop aor p3 sg
+;	"саз" n attr 
+;	"саз" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<тар>"
+	"тар" adj
+;	"тар" adj advl
+;	"тар" adj subst nom
+;	"тар" adj
+;		"е" cop aor p3 pl 
+;	"тар" adj
+;		"е" cop aor p3 sg 
+;	"тар" adj subst nom
+;		"е" cop aor p3 pl 
+;	"тар" adj subst nom
+;		"е" cop aor p3 sg 
+"<(>"
+	"(" lpar
+"<ішекті>"
+	"ішекті" adj subst nom
+;	"ішекті" adj
+;	"ішекті" adj advl
+;	"ішекті" adj
+;		"е" cop aor p3 pl 
+;	"ішекті" adj
+;		"е" cop aor p3 sg 
+;	"ішекті" adj subst nom
+;		"е" cop aor p3 pl 
+;	"ішекті" adj subst nom
+;		"е" cop aor p3 sg 
+;	"ішек" n acc 
+;	"ішек" n
+;		"лы" post 
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<кеманча>"
+	"*кеманча"
+"<(>"
+	"(" lpar
+"<әшекті>"
+	"*әшекті"
+"<->"
+	"-" guio
+"<ысқылы>"
+	"*ысқылы"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<керней>"
+	"*керней"
+"<,>"
+	"," cm
+"<зурна>"
+	"*зурна"
+"<(>"
+	"(" lpar
+"<үрлемелі>"
+	"*үрлемелі"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<зарб>"
+	"*зарб"
+"<(>"
+	"(" lpar
+"<соқпалы>"
+	"*соқпалы"
+"<)>"
+	")" rpar
+"<.>"
+	"." sent
+
+"<Арабтар>"
+	"араб" n pl nom
+"<жаулап>"
+	"жаула" v tv prc_perf 
+;	"жаула" v tv gna_perf 
+"<алғаннан>"
+	"ал" vaux ger_past abl 
+;	"ал" vaux gpr_past subst abl 
+;	"ал" v tv ger_past abl 
+;	"ал" v tv gpr_past subst abl 
+"<кейін>"
+	"кейін" post 
+;	"кейін" adv 
+;	"кейін" n nom 
+;	"кейін" n attr 
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+"<музыкасына>"
+	"музыка" n px3sp dat
+"<мұсылмандық>"
+;	"мұсылмандық" adj
+;	"мұсылмандық" adj advl
+	"мұсылмандық" adj subst nom
+"<араб>"
+	"араб" n attr 
+;	"араб" n nom 
+"<мәдениетінің>"
+	"мәдениет" n px3sp gen
+"<ықпалы>"
+	"ықпал" n px3sp nom
+"<тиді>"
+	"ти" v iv ifi p3 sg
+;	"ти" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<9>"
+	"9" num
+;	"9" num subst nom
+"<ғасырдан>"
+	"ғасыр" n abl
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<сарай>"
+	"сарай" n attr 
+;	"сарай" n nom 
+"<өнері>"
+;	"өн" v iv ger_fut px3sp nom
+	"өнер" n px3sp nom
+;	"өн" v iv gpr_fut subst px3sp nom
+;	"өнер" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"өнер" n px3sp nom
+;		"е" cop aor p3 sg 
+"<дамып>"
+	"дамы" v iv gna_perf
+;	"дам" v iv gna_perf
+;	"дам" v iv prc_perf 
+;	"дамы" v iv prc_perf 
+"<,>"
+	"," cm
+"<халық>"
+	"халық" n attr 
+	"халық" n nom 
+"<арасында>"
+	"ара" n px3sp loc 
+;	"ара" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"ара" n px3sp loc
+;		"е" cop aor p3 sg 
+;	"ара" adj subst px3sp loc
+;		"е" cop aor p3 pl 
+;	"ара" adj subst px3sp loc
+;		"е" cop aor p3 sg 
+;	"ара" adj subst px3sp loc 
+;	"арасында" adv 
+"<мутребтердің>"
+	"*мутребтердің"
+"<(>"
+	"(" lpar
+"<әнші>"
+	"әнші" n nom
+;	"әнші" n attr 
+"<->"
+	"-" guio
+"<бишілер>"
+	"*бишілер"
+"<)>"
+	")" rpar
+"<даңқы>"
+	"даңқ" n px3sp nom
+"<жойылды>"
+	"жой" v tv pass ifi p3 sg
+;	"жой" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<19>"
+	"19" num
+;	"19" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<->"
+	"-" guio
+"<жартысынан>"
+	"жарты" adj subst px3sp abl
+;	"жарты" adj subst px3sp abl
+;		"е" cop aor p3 pl 
+;	"жарты" adj subst px3sp abl
+;		"е" cop aor p3 sg 
+"<Иран>"
+	"Иран" np top attr 
+;	"Иран" np top nom
+;		"е" cop aor p3 pl 
+;	"Иран" np top nom
+;		"е" cop aor p3 sg 
+;	"Иран" np top nom 
+"<музыкасына>"
+	"музыка" n px3sp dat
+"<еур.>"
+	"еур." abbr
+"<муз>"
+	"*муз"
+"<мәдениеті>"
+	"мәдениет" n px3sp nom
+"<әсер етті>"
+	"әсер ет" v tv ifi p3 sg
+;	"әсер ет" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<->"
+	"-" guio
+"<жылдары>"
+	"жыл" n pl px3sp nom
+"<композитор>"
+	"композитор" n nom
+;	"композитор" n attr 
+"<әрі>"
+	"әрі" cnjcoo
+;	"әрі" post
+"<шебер>"
+	"шебер" n nom
+;	"шебер" n attr 
+"<орындаушы>"
+	"орында" v tv gpr_pot
+;	"орында" v tv gpr_pot subst nom
+"<,>"
+	"," cm
+"<Тегеран>"
+	"Тегеран" np top nom
+	"Тегеран" np top attr
+"<университетінің>"
+	"университет" n px3sp gen
+"<профессоры>"
+	"профессор" n px3sp nom
+"<Әли>"
+	"Әли" np ant m nom
+;	"Әли" np ant m nom
+;		"е" cop aor p3 pl 
+;	"Әли" np ant m nom
+;		"е" cop aor p3 sg 
+"<Наги>"
+	"*Наги"
+"<Уәзири>"
+	"*Уәзири"
+"<ұлттық>"
+	"ұлттық" adj
+;	"ұлттық" adv
+;	"ұлттық" adj
+;		"е" cop aor p3 pl 
+;	"ұлттық" adj
+;		"е" cop aor p3 sg 
+"<музыканы>"
+	"музыка" n acc
+"<оқып>"
+	"оқы" v tv gna_perf
+;	"оқы" v iv gna_perf
+;	"оқы" v iv prc_perf 
+;	"оқы" v tv prc_perf 
+"<->"
+	"-" guio
+"<үйренудің>"
+	"үйрен" v tv ger gen
+"<негізін>"
+	"негіз" n px3sp acc
+"<салды>"
+;	"сал" n acc
+;	"сал" n
+;		"лы" post
+	"сал" v tv ifi p3 sg
+;	"сал" vaux ifi p3 pl 
+;	"сал" vaux ifi p3 sg 
+;	"сал" v tv ifi p3 pl 
+"<,>"
+	"," cm
+"<музыкалық>"
+	"музыкалық" adj
+"<теориясынан>"
+	"теория" n px3sp abl
+;	"теория" n px3sp abl
+;		"е" cop aor p3 pl 
+;	"теория" n px3sp abl
+;		"е" cop aor p3 sg 
+"<оқулық>"
+	"*оқулық"
+"<жазып>"
+	"жаз" v tv gna_perf
+;	"жаз" v tv prc_perf 
+"<,>"
+	"," cm
+"<Тегеранда>"
+	"Тегеран" np top loc
+"<музыкалық>"
+	"музыкалық" adj
+"<мектебін>"
+	"мектеп" n px3sp acc
+"<ашты>"
+	"аш" v tv ifi p3 sg 
+;	"аш" v tv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<Иранда>"
+	"Иран" np top loc
+"<Рудаки>"
+	"*Рудаки"
+"<атынд.>"
+	"атынд." abbr
+"<Опера>"
+	"опера" n nom
+;	"опера" n nom
+;		"е" cop aor p3 pl 
+;	"опера" n nom
+;		"е" cop aor p3 sg 
+;	"опера" n attr 
+"<және>"
+	"және" cnjcoo
+"<балет>"
+	"балет" n attr 
+;	"балет" n nom
+;		"е" cop aor p3 pl 
+;	"балет" n nom
+;		"е" cop aor p3 sg 
+;	"балет" n nom 
+"<театры>"
+;	"театр" n px3sp nom
+	"театр" n px3sp nom
+		"е" cop aor p3 sg
+;	"театр" n px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<1967>"
+	"1967" num
+;	"1967" num subst nom
+"<,>"
+	"," cm
+"<Тегеран>"
+	"Тегеран" np top nom
+;	"Тегеран" np top nom
+;		"е" cop aor p3 pl 
+;	"Тегеран" np top nom
+;		"е" cop aor p3 sg 
+;	"Тегеран" np top attr 
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<Телевизия>"
+;	"телевизия" n nom
+	"телевизия" n attr
+;	"телевизия" n nom
+;		"е" cop aor p3 pl 
+;	"телевизия" n nom
+;		"е" cop aor p3 sg 
+"<балет>"
+	"балет" n attr 
+;	"балет" n nom
+;		"е" cop aor p3 pl 
+;	"балет" n nom
+;		"е" cop aor p3 sg 
+;	"балет" n nom 
+"<труппасы>"
+;	"труппа" n px3sp nom
+	"труппа" n px3sp nom
+		"е" cop aor p3 sg
+;	"труппа" n px3sp nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<филармония>"
+	"*филармония"
+"<(>"
+	"(" lpar
+"<1953>"
+	"1953" num
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<2>"
+	"2" num
+;	"2" num subst nom
+"<симф.>"
+	"симф." abbr
+"<оркестр>"
+	"оркестр" n nom
+"<жұмыс істейді>"
+	"жұмыс істе" v iv aor p3 sg
+;	"жұмыс істе" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<Театр>"
+	"театр" n attr 
+;	"театр" n nom
+;		"е" cop aor p3 pl 
+;	"театр" n nom
+;		"е" cop aor p3 sg 
+;	"театр" n nom 
+"<өнерінің>"
+	"өнер" n px3sp gen
+;	"өн" v iv ger_fut px3sp gen 
+;	"өн" v iv gpr_fut subst px3sp gen 
+"<негізі>"
+	"негіз" n px3sp nom 
+;	"негіз" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"негіз" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"негізі" adv 
+"<халықтық>"
+	"халықтық" adj
+;	"халықтық" n nom
+;	"халықтық" n attr
+;	"халықтық" adj
+;		"е" cop aor p3 pl 
+;	"халықтық" adj
+;		"е" cop aor p3 sg 
+;	"халықтық" n nom
+;		"е" cop aor p3 pl 
+;	"халықтық" n nom
+;		"е" cop aor p3 sg 
+"<салт>"
+	"салт" n nom
+;	"салт" n nom
+;		"е" cop aor p3 pl 
+;	"салт" n nom
+;		"е" cop aor p3 sg 
+;	"салт" n attr 
+"<->"
+	"-" guio
+"<дәстүрлерде>"
+	"дәстүр" n pl loc
+;	"дәстүр" n pl loc
+;		"е" cop aor p3 pl 
+;	"дәстүр" n pl loc
+;		"е" cop aor p3 sg 
+"<жатыр>"
+;	"жатыр" vaux imp p2 sg
+	"жат" vaux pres p3 sg
+;	"жат" vaux pres p3 pl 
+"<.>"
+	"." sent
+
+"<Ежелгі>"
+;	"ежел" adv attr
+	"ежелгі" adj
+;	"ежел" adv subst nom
+;	"ежелгі" adj subst nom
+;	"ежелгі" adj
+;		"е" cop aor p3 pl 
+;	"ежелгі" adj
+;		"е" cop aor p3 sg 
+;	"ежел" adv subst nom
+;		"е" cop aor p3 pl 
+;	"ежел" adv subst nom
+;		"е" cop aor p3 sg 
+;	"ежелгі" adj subst nom
+;		"е" cop aor p3 pl 
+;	"ежелгі" adj subst nom
+;		"е" cop aor p3 sg 
+"<базигер>"
+	"*базигер"
+"<театры>"
+	"театр" n px3sp nom
+"<жайлы>"
+	"жайлы" post
+;	"жайлы" adj
+;	"жайлы" adj advl
+;	"жайлы" adj subst nom
+;	"жайлы" adj
+;		"е" cop aor p3 pl 
+;	"жайлы" adj
+;		"е" cop aor p3 sg 
+;	"жайлы" adj subst nom
+;		"е" cop aor p3 pl 
+;	"жайлы" adj subst nom
+;		"е" cop aor p3 sg 
+;	"жай" n
+;		"лы" post 
+;	"жай" adj subst
+;		"лы" post 
+"<деректер>"
+	"дерек" n pl nom
+;	"дерек" n pl nom
+;		"е" cop aor p3 pl 
+;	"дерек" n pl nom
+;		"е" cop aor p3 sg 
+"<сақталған>"
+;	"сақтал" v iv past p3 sg 
+	"сақта" v tv pass past p3 sg 
+;	"сақта" v tv pass gpr_past 
+;	"сақтал" v iv gpr_past 
+;	"сақта" v tv pass ger_past nom 
+;	"сақтал" v iv ger_past nom 
+;	"сақта" v tv pass gpr_past subst nom 
+;	"сақтал" v iv gpr_past subst nom 
+;	"сақта" v tv pass past p3 pl  
+;	"сақтал" v iv past p3 pl  
+"<.>"
+	"." sent
+
+"<Пантомима>"
+	"пантомима" n nom
+;	"пантомима" n attr 
+"<,>"
+	"," cm
+"<көлеңке>"
+	"көлеңке" n nom
+;	"көлеңке" n attr 
+"<және>"
+	"және" cnjcoo
+"<қуыршақ>"
+	"қуыршақ" n attr 
+;	"қуыршақ" n nom 
+"<театрлары>"
+	"театр" n pl px3sp nom
+"<болған>"
+	"бол" v iv past p3 sg 
+;	"бол" v iv gpr_past 
+;	"бол" v iv ger_past nom 
+;	"бол" v iv gpr_past subst nom 
+;	"бол" v iv past p3 pl  
+"<.>"
+	"." sent
+
+"<10>"
+	"10" num
+;	"10" num subst nom
+"<ғасырда>"
+	"ғасыр" n loc
+"<пайда болған>"
+	"пайда бол" v iv gpr_past
+;	"пайда бол" v iv ger_past nom
+;	"пайда бол" v iv gpr_past subst nom
+;	"пайда бол" v iv past p3 sg
+;	"пайда бол" v iv past p3 pl 
+"<мистерия>"
+	"мистерия" n nom
+;	"мистерия" n attr 
+"<діни>"
+;	"діни" adj
+	"діни" adj subst nom
+"<ғұрып>"
+	"*ғұрып"
+"<шахсей>"
+	"*шахсей"
+"<->"
+	"-" guio
+"<вахсейдің>"
+	"*вахсейдің"
+"<құрамына>"
+	"құрам" n px3sp dat
+"<енді>"
+	"ен" v iv ifi p3 sg 
+;	"ен" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<17>"
+	"17" num
+;	"17" num subst nom
+"<—>"
+	"—" guio
+"<18>"
+	"18" num
+;	"18" num subst nom
+"<ғасырларда>"
+	"ғасыр" n pl loc
+"<ол>"
+	"ол" prn pers p3 sg nom 
+;	"ол" prn dem nom 
+;	"ол" det dem 
+"<трагедиялық>"
+	"трагедиялық" adj
+;	"трагедиялық" adv
+"<мистерия>"
+	"мистерия" n attr 
+;	"мистерия" n nom 
+"<түрлерінің>"
+	"түр" n pl px3sp gen
+"<бірі>"
+	"бір" num subst px3sp nom
+;	"бір" num subst px3sp nom
+;		"е" cop aor p3 pl 
+;	"бір" num subst px3sp nom
+;		"е" cop aor p3 sg 
+"<—>"
+	"—" guio
+"<тазийенің>"
+	"*тазийенің"
+"<негізін>"
+	"негіз" n px3sp acc
+"<қалады>"
+;	"қал" v iv aor p3 sg
+	"қала" v tv ifi p3 sg
+;	"қал" vaux aor p3 pl 
+;	"қал" vaux aor p3 sg 
+;	"қала" v tv ifi p3 pl 
+;	"қал" v iv aor p3 pl 
+"<.>"
+	"." sent
+
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<30>"
+	"30" num
+;	"30" num subst nom
+"<->"
+	"-" guio
+"<жылдарына>"
+	"жыл" n pl px3sp dat
+"<дейін>"
+	"дейін" post 
+"<кезбе>"
+	"кез" v iv neg imp p2 sg
+"<актерлер>"
+	"актер" n pl nom
+;	"актер" n pl nom
+;		"е" cop aor p3 pl 
+;	"актер" n pl nom
+;		"е" cop aor p3 sg 
+"<—>"
+	"—" guio
+"<масқарапаздар>"
+	"*масқарапаздар"
+"<өнер>"
+;	"өн" v iv gpr_fut
+	"өнер" n nom
+;	"өн" v iv gpr_fut subst nom
+;	"өн" v iv fut p3 sg
+;	"өнер" n nom
+;		"е" cop aor p3 pl 
+;	"өнер" n nom
+;		"е" cop aor p3 sg 
+;	"өнер" n attr 
+;	"өн" v iv fut p3 pl 
+"<көрсетіп>"
+	"көрсет" v tv prc_perf 
+"<келді>"
+	"кел" vaux ifi p3 sg 
+;	"кел" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1911>"
+	"1911" num
+;	"1911" num subst nom
+"<—>"
+	"—" guio
+"<12>"
+	"12" num
+;	"12" num subst nom
+"<ж.>"
+	"ж." abbr
+"<еур.>"
+	"еур." abbr
+"<театрлар>"
+	"театр" n pl nom
+"<тәжірибелерін>"
+	"тәжірибе" n pl px3sp acc
+"<пайдалана>"
+	"пайдалан" v tv prc_impf
+"<отырып>"
+	"отыр" vaux gna_perf 
+;	"отыр" vaux prc_perf 
+;	"отыр" v iv prc_perf 
+;	"отыр" v iv gna_perf 
+"<Ұлттық>"
+	"ұлттық" adj
+;	"ұлттық" adv
+;	"ұлттық" adj
+;		"е" cop aor p3 pl 
+;	"ұлттық" adj
+;		"е" cop aor p3 sg 
+"<театр>"
+	"театр" n nom
+;	"театр" n nom
+;		"е" cop aor p3 sg
+;	"театр" n attr 
+;	"театр" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<1917>"
+	"1917" num
+;	"1917" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Иранның>"
+	"Иран" np top gen
+"<комедия>"
+	"комедия" n attr
+"<театры>"
+	"театр" n px3sp nom
+"<ашылды>"
+	"аш" v tv pass ifi p3 sg
+;	"аш" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Бұл>"
+	"бұл" det dem
+"<театрларды>"
+	"театр" n pl acc
+"<құруда>"
+	"құр" v tv ger loc
+"<актер>"
+	"актер" n nom
+;	"актер" n attr 
+"<Сейед>"
+	"Сейед" np ant m attr
+	"Сейед" np ant m nom
+"<Әли>"
+	"Әли" np ant m nom
+	"Әли" np ant m attr
+"<Нәсірдің>"
+	"Нәсір" np cog mf gen
+"<еңбегі>"
+	"еңбек" n px3sp nom
+"<зор>"
+;	"зор" adj
+;	"зор" n nom
+;	"зор" adj subst nom
+;		"е" cop aor p3 sg
+;	"зор" adj subst nom
+;	"зор" n nom
+;		"е" cop aor p3 sg
+	"зор" adj
+		"е" cop aor p3 sg
+;	"зор" n attr 
+;	"зор" adj
+;		"е" cop aor p3 pl 
+;	"зор" n nom
+;		"е" cop aor p3 pl 
+;	"зор" adj subst nom
+;		"е" cop aor p3 pl 
+"<.>"
+	"." sent
+
+"<1929>"
+	"1929" num
+;	"1929" num subst nom
+"<жылдан>"
+	"жыл" n abl
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<әйел>"
+	"әйел" n attr
+"<актерлер>"
+	"актер" n pl nom
+"<көріне>"
+	"көрін" v iv prc_impf
+;	"көр" v tv pass prc_impf
+"<бастады>"
+	"баста" vaux ifi p3 sg 
+;	"баста" v tv ifi p3 pl 
+;	"баста" v tv ifi p3 sg 
+;	"баста" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1930>"
+	"1930" num
+;	"1930" num subst nom
+"<—>"
+	"—" guio
+"<40>"
+	"40" num
+;	"40" num subst nom
+"<ж.>"
+	"ж." abbr
+"<театр>"
+	"театр" n attr 
+;	"театр" n nom
+;		"е" cop aor p3 pl 
+;	"театр" n nom
+;		"е" cop aor p3 sg 
+;	"театр" n nom 
+"<репертуарларынан>"
+	"репертуар" n pl px3sp abl
+;	"репертуар" n pl px3sp abl
+;		"е" cop aor p3 pl 
+;	"репертуар" n pl px3sp abl
+;		"е" cop aor p3 sg 
+"<өңделген>"
+	"өңде" v tv pass gpr_past
+;	"өңде" v tv pass ger_past nom
+;	"өңде" v tv pass gpr_past subst nom
+;	"өңде" v tv pass past p3 sg
+;	"өңде" v tv pass past p3 pl 
+"<Батыс>"
+	"батыс" adj
+"<Еуропа>"
+	"Еуропа" np top nom
+"<драмалары>"
+	"драма" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo 
+"<мелодрамалар>"
+	"мелодрама" n pl nom
+"<орын>"
+	"орын" n nom
+"<алды>"
+	"ал" v tv ifi p3 sg 
+"<.>"
+	"." sent
+
+"<1940>"
+	"1940" num
+;	"1940" num subst nom
+"<жылдан>"
+	"жыл" n abl
+"<Иран>"
+	"Иран" np top nom
+"<театры>"
+	"театр" n px3sp nom
+"<дағдарысқа>"
+	"дағдарыс" n dat
+"<ұшырады>"
+	"ұшыра" v iv ifi p3 sg
+;	"ұшыр" v tv aor p3 sg
+;	"ұшыр" v tv aor p3 pl 
+;	"ұшыра" v iv ifi p3 pl 
+"<,>"
+	"," cm
+"<1960>"
+	"1960" num
+;	"1960" num subst nom
+"<жылдардың>"
+	"жыл" n pl gen
+"<басында>"
+	"бас" n px3sp loc
+;	"басын" n loc
+;	"бас" n px3sp loc
+;		"е" cop aor p3 pl 
+;	"бас" n px3sp loc
+;		"е" cop aor p3 sg 
+;	"басын" n loc
+;		"е" cop aor p3 pl 
+;	"басын" n loc
+;		"е" cop aor p3 sg 
+"<қайта>"
+	"қайта" adv
+;	"қайт" v iv prc_impf 
+"<өрлеу>"
+	"өрлеу" n attr 
+;	"өрлеу" n nom
+;		"е" cop aor p3 pl 
+;	"өрлеу" n nom
+;		"е" cop aor p3 sg 
+;	"өрле" v iv ger nom 
+;	"өрлеу" n nom 
+"<жолына>"
+	"жол" n px3sp dat
+"<түсті>"
+	"түс" v iv ifi p3 sg 
+;	"түс" v iv ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1963>"
+	"1963" num
+;	"1963" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Тегеранда>"
+	"Тегеран" np top loc
+;	"Тегеран" np top loc
+;		"е" cop aor p3 pl 
+;	"Тегеран" np top loc
+;		"е" cop aor p3 sg 
+"<кәсіби>"
+	"кәсіби" adj
+;	"кәсіби" adv
+;	"кәсіби" adj subst nom
+;	"кәсіби" adj
+;		"е" cop aor p3 pl 
+;	"кәсіби" adj
+;		"е" cop aor p3 sg 
+;	"кәсіби" adj subst nom
+;		"е" cop aor p3 pl 
+;	"кәсіби" adj subst nom
+;		"е" cop aor p3 sg 
+"<актерлер>"
+	"актер" n pl nom
+;	"актер" n pl nom
+;		"е" cop aor p3 pl 
+;	"актер" n pl nom
+;		"е" cop aor p3 sg 
+"<дайындайтын>"
+	"дайында" v tv gpr_impf
+;	"дайындайтын" adj
+;	"дайындайтын" adj advl
+;	"дайындайтын" adj subst nom
+;	"дайында" v tv pih p3 sg
+;	"дайында" v tv gpr_impf subst nom
+;	"дайындайтын" adj
+;		"е" cop aor p3 pl 
+;	"дайындайтын" adj
+;		"е" cop aor p3 sg 
+;	"дайындайтын" adj subst nom
+;		"е" cop aor p3 pl 
+;	"дайындайтын" adj subst nom
+;		"е" cop aor p3 sg 
+;	"дайында" v tv pih p3 pl 
+"<драм.>"
+	"драм." abbr
+"<студия>"
+	"студия" n nom
+;	"студия" n nom
+;		"е" cop aor p3 pl 
+;	"студия" n nom
+;		"е" cop aor p3 sg 
+;	"студия" n attr 
+"<ашылды>"
+	"аш" v tv pass ifi p3 sg
+;	"аш" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Тегеранда>"
+	"Тегеран" np top loc
+;	"Тегеран" np top loc
+;		"е" cop aor p3 pl 
+;	"Тегеран" np top loc
+;		"е" cop aor p3 sg 
+"<“>"
+	"“" lquot
+"<25>"
+	"25" num
+;	"25" num subst nom
+"<->"
+	"-" guio
+"<шахривар>"
+	"*шахривар"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<“>"
+	"“" lquot
+"<Касра>"
+	"*Касра"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<“>"
+	"“" lquot
+"<Нәсір>"
+	"*Нәсір"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<“>"
+	"“" lquot
+"<Жамейе>"
+	"*Жамейе"
+"<Барбод>"
+	"*Барбод"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<Мешхедте>"
+	"*Мешхедте"
+"<Ұлттық>"
+	"ұлттық" adj
+;	"ұлттық" adv
+;	"ұлттық" adj
+;		"е" cop aor p3 pl 
+;	"ұлттық" adj
+;		"е" cop aor p3 sg 
+"<театр>"
+	"театр" n nom
+;	"театр" n nom
+;		"е" cop aor p3 sg
+;	"театр" n attr 
+;	"театр" n nom
+;		"е" cop aor p3 pl 
+"<,>"
+	"," cm
+"<Исфаһанда>"
+	"*Исфаһан" np top loc
+"<“>"
+	"“" lquot
+"<Сепахан>"
+	"*Сепахан"
+"<”>"
+	"”" rquot
+"<,>"
+	"," cm
+"<Хамаданда>"
+	"*Хамаданда"
+"<“>"
+	"“" lquot
+"<Були>"
+	"*Були"
+"<”>"
+	"”" rquot
+"<театрлары>"
+	"театр" n pl px3sp nom
+;	"театр" n pl px3sp nom
+;		"е" cop aor p3 pl 
+;	"театр" n pl px3sp nom
+;		"е" cop aor p3 sg 
+"<жұмыс істеді>"
+;	"жұмыс істе" v iv ifi p3 sg
+	"жұмыс істе" v iv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1968>"
+	"1968" num
+;	"1968" num subst nom
+"<жылдан>"
+	"жыл" n abl
+;	"жыл" n abl
+;		"е" cop aor p3 pl 
+;	"жыл" n abl
+;		"е" cop aor p3 sg 
+"<бастап>"
+	"баста" v tv gna_perf
+;	"баста" vaux prc_perf 
+;	"баста" v tv prc_perf 
+;	"баста" vaux gna_perf 
+"<Ширазда>"
+	"*Ширазда"
+"<театр>"
+	"театр" n attr 
+;	"театр" n nom
+;		"е" cop aor p3 pl 
+;	"театр" n nom
+;		"е" cop aor p3 sg 
+;	"театр" n nom 
+"<фестивалы>"
+	"фестиваль" n px3sp nom
+;	"фестиваль" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"фестиваль" n px3sp nom
+;		"е" cop aor p3 sg 
+"<өткізіліп>"
+	"өткіз" v tv pass prc_perf 
+;	"өткіз" v tv pass gna_perf 
+"<тұрды>"
+	"тұр" vaux ifi p3 sg 
+;	"тұр" v iv ifi p3 pl 
+;	"тұр" v iv ifi p3 sg 
+;	"тұр" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1973>"
+	"1973" num
+;	"1973" num subst nom
+"<ж.>"
+	"ж." abbr
+"<осы>"
+	"осы" det dem
+;	"осы" prn dem nom
+"<фестивальға>"
+	"*фестивальға"
+"<Қазақ>"
+;	"қазақ" adj
+;	"қазақ" adj advl
+;	"қазақ" n nom
+	"қазақ" n attr
+;	"қазақ" adj subst nom
+;	"қазақ" adj
+;		"е" cop aor p3 pl 
+;	"қазақ" adj
+;		"е" cop aor p3 sg 
+;	"қазақ" n nom
+;		"е" cop aor p3 pl 
+;	"қазақ" n nom
+;		"е" cop aor p3 sg 
+;	"қазақ" adj subst nom
+;		"е" cop aor p3 pl 
+;	"қазақ" adj subst nom
+;		"е" cop aor p3 sg 
+"<драма>"
+	"драма" n attr 
+;	"драма" n nom
+;		"е" cop aor p3 pl 
+;	"драма" n nom
+;		"е" cop aor p3 sg 
+;	"драма" n nom 
+"<театрының>"
+	"театр" n px3sp gen
+"<труппасы>"
+	"труппа" n px3sp nom
+;	"труппа" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"труппа" n px3sp nom
+;		"е" cop aor p3 sg 
+"<қатысып>"
+	"қатыс" v iv gna_perf
+;	"қат" v iv coop gna_perf
+;	"қат" v iv coop prc_perf 
+;	"қатыс" v iv prc_perf 
+"<,>"
+	"," cm
+"<Ш.>"
+	"Ш." abbr
+"<Айтматовтың>"
+	"Айтматов" np cog m gen
+"<“>"
+	"“" lquot
+"<Ана>"
+	"Ана" np ant f nom 
+;	"ана" n nom
+;		"е" cop aor p3 pl 
+;	"ана" n nom
+;		"е" cop aor p3 sg 
+;	"Ана" np ant f nom
+;		"е" cop aor p3 pl 
+;	"Ана" np ant f nom
+;		"е" cop aor p3 sg 
+;	"ана" n nom 
+;	"ана" n attr 
+"<—>"
+	"—" guio
+"<Жер>"
+	"жер" n nom 
+;	"жер" n nom
+;		"е" cop aor p3 pl 
+;	"жер" n nom
+;		"е" cop aor p3 sg 
+;	"жер" n attr 
+;	"жер" v tv imp p2 sg 
+;	"жер" v iv imp p2 sg 
+;	"же" v tv fut p3 pl 
+;	"же" v tv gpr_fut 
+;	"же" v tv gpr_fut subst nom 
+;	"же" v tv fut p3 sg 
+"<->"
+	"-" guio
+"<ана>"
+	"ана" n nom
+;	"ана" n nom
+;		"е" cop aor p3 pl 
+;	"ана" n nom
+;		"е" cop aor p3 sg 
+;	"ана" n attr 
+"<”>"
+	"”" rquot
+"<спектаклін>"
+	"спектакль" n px3sp acc
+"<көрсетті>"
+	"көрсет" v tv ifi p3 sg
+;	"көрсет" v tv ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1930>"
+	"1930" num
+;	"1930" num subst nom
+"<ж.>"
+	"ж." abbr
+"<тұңғыш>"
+	"тұңғыш" adj
+;	"тұңғыш" adj advl
+;	"тұңғыш" adj subst nom
+;	"тұңғыш" adj
+;		"е" cop aor p3 pl 
+;	"тұңғыш" adj
+;		"е" cop aor p3 sg 
+;	"тұңғыш" adj subst nom
+;		"е" cop aor p3 pl 
+;	"тұңғыш" adj subst nom
+;		"е" cop aor p3 sg 
+"<“>"
+	"“" lquot
+"<Әб>"
+	"*Әб"
+"<аби>"
+	"*аби"
+"<”>"
+	"”" rquot
+"<атты>"
+	"атты" n nom
+;	"атты" adj
+;	"атты" adj
+;		"е" cop aor p3 pl 
+;	"атты" adj
+;		"е" cop aor p3 sg 
+;	"атты" n nom
+;		"е" cop aor p3 pl 
+;	"атты" n nom
+;		"е" cop aor p3 sg 
+;	"ат" n acc 
+;	"ат" v tv ifi p3 sg 
+;	"ат" v tv ifi p3 pl 
+;	"ат" n
+;		"лы" post 
+;	"атты" n attr 
+"<фарстық>"
+	"*фарстық"
+"<фильм>"
+;	"фильм" n nom
+	"фильм" n nom
+		"е" cop aor p3 sg
+;	"фильм" n attr 
+;	"фильм" n nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<реж.>"
+	"реж." abbr
+"<Эханиян>"
+	"*Эханиян"
+"<)>"
+	")" rpar
+"<,>"
+	"," cm
+"<1934>"
+	"1934" num
+;	"1934" num subst nom
+"<ж.>"
+	"ж." abbr
+"<дыбысты>"
+;	"дыбыс" n acc
+	"дыбыс" n
+		"лы" post
+"<“>"
+	"“" lquot
+"<Лор>"
+	"*Лор"
+"<қызы>"
+;	"қызы" n nom
+	"қыз" n px3sp nom
+;	"қызы" n nom
+;		"е" cop aor p3 pl 
+;	"қызы" n nom
+;		"е" cop aor p3 sg 
+;	"қыз" n px3sp nom
+;		"е" cop aor p3 pl 
+;	"қыз" n px3sp nom
+;		"е" cop aor p3 sg 
+;	"қызы" n attr 
+"<”>"
+	"”" rquot
+"<фильмі>"
+	"фильм" n px3sp nom
+;	"фильм" n px3sp nom
+;		"е" cop aor p3 sg
+;	"фильм" n px3sp nom
+;		"е" cop aor p3 pl 
+"<(>"
+	"(" lpar
+"<реж.>"
+	"реж."
+"<А.>"
+	"А." abbr
+"<Х.>"
+	"Х." abbr
+"<Сепента>"
+	"*Сепента"
+"<)>"
+	")" rpar
+"<түсірілді>"
+	"түсір" v tv pass ifi p3 sg
+;	"түсір" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<20>"
+	"20" num
+;	"20" num subst nom
+"<ғасырдың>"
+	"ғасыр" n gen
+"<40>"
+	"40" num
+;	"40" num subst nom
+"<->"
+	"-" guio
+"<жылдарына>"
+	"жыл" n pl px3sp dat
+"<дейін>"
+	"дейін" post 
+"<,>"
+	"," cm
+"<көбінесе>"
+	"көбінесе" adv
+"<,>"
+	"," cm
+"<шетелдік>"
+	"шетелдік" adj
+"<фильмдер>"
+	"фильм" n pl nom
+"<көрсетіліп>"
+	"көрсет" v tv pass prc_perf 
+"<келді>"
+	"кел" vaux ifi p3 sg 
+;	"кел" vaux ifi p3 pl  
+"<.>"
+	"." sent
+
+"<1946>"
+	"1946" num
+;	"1946" num subst nom
+"<ж.>"
+	"ж." abbr
+"<Тегеранда>"
+	"Тегеран" np top loc
+"<“>"
+	"“" lquot
+"<Митра>"
+	"митра" n nom
+;	"митра" n nom
+;		"е" cop aor p3 pl 
+;	"митра" n nom
+;		"е" cop aor p3 sg 
+;	"митра" n attr 
+"<->"
+	"-" guio
+"<фильм>"
+	"фильм" n nom
+;	"фильм" n nom
+;		"е" cop aor p3 pl 
+;	"фильм" n nom
+;		"е" cop aor p3 sg 
+;	"фильм" n attr 
+"<”>"
+	"”" rquot
+"<киностудиясы>"
+	"*киностудиясы"
+"<құрылды>"
+	"құр" v tv pass ifi p3 sg
+;	"құр" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<1960>"
+	"1960" num
+;	"1960" num subst nom
+"<—>"
+	"—" guio
+"<1970>"
+	"1970" num
+;	"1970" num subst nom
+"<ж.>"
+	"ж." abbr
+"<музыкалық>"
+	"музыкалық" adj
+"<комедияларға>"
+	"комедия" n pl dat
+"<,>"
+	"," cm
+"<шағын>"
+	"шағын" adj
+"<драмаларға>"
+	"драма" n pl dat
+"<,>"
+	"," cm
+"<мифтік>"
+	"мифтік" adj
+"<және>"
+	"және" cnjcoo
+"<тарихи>"
+	"тарихи" adj
+"<сюжеттерге>"
+	"сюжет" n pl dat
+"<құрылған>"
+;	"құр" v tv pass gpr_past
+;	"құр" v tv pass ger_past nom
+;	"құр" v tv pass gpr_past subst nom
+	"құр" v tv pass past p3 sg
+;	"құр" v tv pass past p3 pl 
+"<фильмдер>"
+	"фильм" n pl nom
+"<қойылды>"
+	"қой" v tv pass ifi p3 sg
+;	"қой" v tv pass ifi p3 pl 
+"<.>"
+	"." sent
+
+"<Тегеранда>"
+	"Тегеран" np top loc
+"<1955>"
+	"1955" num
+;	"1955" num subst nom
+"<жылдан>"
+	"жыл" n abl
+;	"жыл" n abl
+;		"е" cop aor p3 pl 
+;	"жыл" n abl
+;		"е" cop aor p3 sg 
+"<халықар>"
+	"*халықар"
+"<.>"
+	"." sent
+
+"<,>"
+	"," cm
+"<1970>"
+	"1970" num
+;	"1970" num subst nom
+"<жылдан>"
+	"жыл" n abl
+;	"жыл" n abl
+;		"е" cop aor p3 pl 
+;	"жыл" n abl
+;		"е" cop aor p3 sg 
+"<ұлттық>"
+	"ұлттық" adj
+"<кинофестивальдер>"
+	"кинофестиваль" n pl nom
+"<өткізіліп>"
+	"өткіз" v tv pass prc_perf 
+"<тұрады>"
+	"тұр" vaux aor p3 sg 
+;	"тұр" vaux aor p3 pl  
+"<.>"
+	"." sent
+
+"<Иран>"
+	"Иран" np top nom
+"<кинематографиясының>"
+	"кинематография" n px3sp gen
+"<дамуына>"
+	"даму" n px3sp dat 
+;	"дам" v iv ger px3sp dat 
+;	"дамы" v iv ger px3sp dat 
+"<реж.>"
+	"реж."
+"<И.>"
+	"И." abbr
+
+"<Кушан>"
+	"*Кушан"
+"<,>"
+	"," cm
+"<М.>"
+	"М." abbr
+
+"<Мисагие>"
+	"*Мисагие"
+"<,>"
+	"," cm
+"<Мохтасем>"
+	"*Мохтасем"
+"<,>"
+	"," cm
+"<М.>"
+	"М." abbr
+"<Мохсени>"
+	"*Мохсени"
+"<,>"
+	"," cm
+"<С.>"
+	"С."
+"<Ясеми>"
+	"*Ясеми"
+"<,>"
+	"," cm
+"<Ш.>"
+	"Ш." abbr
+"<Рафия>"
+	"*Рафия"
+"<елеулі>"
+	"елеулі" adj
+;	"елеулі" adv
+;	"елеулі" adj subst nom
+;	"елеулі" adj
+;		"е" cop aor p3 pl 
+;	"елеулі" adj
+;		"е" cop aor p3 sg 
+;	"елеулі" adj subst nom
+;		"е" cop aor p3 pl 
+;	"елеулі" adj subst nom
+;		"е" cop aor p3 sg 
+"<үлес>"
+	"үлес" n nom
+;	"үлес" n nom
+;		"е" cop aor p3 pl 
+;	"үлес" n nom
+;		"е" cop aor p3 sg 
+;	"үлес" n attr 
+"<қосты>"
+	"қос" v tv ifi p3 sg 
+"<.>"
+	"." sent
+
