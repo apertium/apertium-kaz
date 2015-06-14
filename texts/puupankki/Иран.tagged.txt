@@ -36,7 +36,7 @@
 	"мемлекет" n nom @main #18->0
 		"е" cop aor p3 sg @cop #19->18
 "<.>"
-	"." sent
+	"." sent @punct #20->18
 
 "<Жер>"
 	"жер" n nom @nmod #1->2
@@ -153,7 +153,7 @@
 	"қала" n px3sp nom @main #4->0
 		"е" cop aor p3 sg @cop #5->4
 "<(>"
-	"(" lpar #6->10
+	"(" lpar @punct #6->10
 "<айналасын>"
 	"айнала" n px3sp acc @obj #7->8
 "<қосқанда>"
@@ -165,9 +165,9 @@
 "<астам>"
 	"астам" post @case #11->10
 "<)>"
-	")" rpar #12->10
+	")" rpar @punct #12->10
 "<.>"
-	"." sent #13->4
+	"." sent @punct #13->4
 
 "<Одан>"
 	"ол" prn dem abl @nmod #1->29
@@ -406,7 +406,7 @@
 "<емес>"
 	"емес" postadv @advmod #11->10
 "<ұйымдарға>"
-	"ұйым" n pl dat #12->13
+	"ұйым" n pl dat @nmod #12->13
 "<тыйым салынған>"
 	"тыйым сал" v tv pass past p3 sg @main #13->0
 "<.>"
@@ -609,15 +609,15 @@
 	"." sent @punct #7->5
 
 "<Климаты>"
-	"климат" n px3sp nom
+	"климат" n px3sp nom @nmod
 "<субтропиктік>"
-	"субтропиктік" adj
+	"субтропиктік" adj @amod
 "<,>"
-	"," cm
+	"," cm @punct
 "<континенттік>"
-	"континенттік" adj
+	"континенттік" adj @amod
 "<,>"
-	"," cm
+	"," cm @punct
 "<жазы>"
 	"жаз" n px3sp nom
 "<ыстық>"
@@ -674,24 +674,9 @@
 "<оңтүстігінде>"
 	"оңтүстік" n px3sp loc
 ;	"оңтүстік" adj subst px3sp loc
-;	"оңтүстік" n px3sp loc
-;		"е" cop aor p3 pl 
-;	"оңтүстік" n px3sp loc
-;		"е" cop aor p3 sg 
-;	"оңтүстік" adj subst px3sp loc
-;		"е" cop aor p3 pl 
-;	"оңтүстік" adj subst px3sp loc
-;		"е" cop aor p3 sg 
 "<жылы>"
 ;	"жыл" n px3sp nom 
-;	"жыл" n px3sp nom 
 ;		"е" cop aor p3 sg
-;	"жылы" adj
-;		"е" cop aor p3 pl 
-;	"жыл" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"жылы" adj subst nom
-;		"е" cop aor p3 pl 
 	"жылы" adj 
 ;	"жылы" adv 
 ;	"жылы" adj advl 
@@ -701,7 +686,7 @@
 ;	"жылы" adj subst nom 
 ;		"е" cop aor p3 sg
 "<.>"
-	"." sent
+	"." sent @punct
 
 "<Парсы>"
 	"парсы" n nom
@@ -727,40 +712,23 @@
 	"." sent
 
 "<Қаңтардағы>"
-	"қаңтар" n loc attr
-;	"қаңтар" n loc subst nom
+	"қаңтар" n loc attr @amod
 "<орташа>"
-	"орташа" adj
-;	"орташа" n nom
-;	"орташа" n attr
-;	"орташа" adj subst nom
+	"орташа" adj @amod
 "<температура>"
-	"температура" n nom
+	"температура" n nom @subj
 "<2°С-тан>"
 	"2°С" num subst abl
 "<19,4°С-қа>"
 	"19,4°С" num subst dat
 "<дейін>"
-	"дейін" post 
-;	"дейін" n attr 
-;	"де" v tv opt p1 sg 
-;	"дейін" adv 
-;	"дейін" n nom 
-;	"дейін" n nom 
-;		"е" cop aor p3 sg
-;	"дейін" n nom 
-;		"е" cop aor p3 pl
+	"дейін" post @case
 "<,>"
 	"," cm
 "<шілде>"
-	"шілде" n attr 
-;	"шілде" n nom
-;		"е" cop aor p3 pl 
-;	"шілде" n nom
-;		"е" cop aor p3 sg 
-;	"шілде" n nom 
+	"шілде" n nom @nmod
 "<айында>"
-	"ай" n px3sp loc
+	"ай" n px3sp loc @nmod
 "<29,4>"
 	"29,4" num
 ;	"29,4" num subst nom
@@ -793,7 +761,7 @@
 	"." sent
 
 "<Эльбурс>"
-	"*Эльбурс"
+	"Эльбурс" np top nom
 "<тауы>"
 ;	"тауы" n nom
 	"тау" n px3sp nom
@@ -804,12 +772,7 @@
 	"2000" num
 ;	"2000" num subst nom
 "<мм>"
-;	"мм" n nom
-	"мм" n nom
-		"е" cop aor p3 sg
-;	"мм" n attr 
-;	"мм" n nom
-;		"е" cop aor p3 pl 
+	"мм" abbr
 "<,>"
 	"," cm
 "<Систан>"
@@ -825,56 +788,21 @@
 	"60" num
 ;	"60" num subst nom
 "<мм>"
-;	"мм" n nom
-	"мм" n nom
-		"е" cop aor p3 sg
-;	"мм" n attr 
-;	"мм" n nom
-;		"е" cop aor p3 pl 
+	"мм" abbr
 "<.>"
 	"." sent
 
 "<Жер>"
-	"жер" n attr 
-;	"жер" n nom 
+	"жер" n nom  @nmod #1->2
 "<беті>"
-	"бет" n px3sp nom
-;	"бет" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"бет" n px3sp nom
-;		"е" cop aor p3 sg 
+	"бет" n px3sp nom @nmod #2->3
 "<суы>"
-	"су" n px3sp nom
-;	"су" adj subst px3sp nom
-;	"су" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"су" n px3sp nom
-;		"е" cop aor p3 sg 
-;	"су" adj subst px3sp nom
-;		"е" cop aor p3 pl 
-;	"су" adj subst px3sp nom
-;		"е" cop aor p3 sg 
+	"су" n px3sp nom @nmod #3->4
 "<аз>"
-;	"аз" v iv imp p2 sg 
-;	"аз" adj 
-;	"аз" n nom 
-;	"аз" n attr 
-;	"аз" adj advl 
-;	"аз" adj subst nom 
-;	"аз" adj 
-;		"е" cop aor p3 pl
-	"аз" adj 
-		"е" cop aor p3 sg
-;	"аз" n nom 
-;		"е" cop aor p3 pl
-;	"аз" n nom 
-;		"е" cop aor p3 sg
-;	"аз" adj subst nom 
-;		"е" cop aor p3 pl
-;	"аз" adj subst nom 
-;		"е" cop aor p3 sg
-"<.>"
-	"." sent
+	"аз" adj @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<.>" 
+	"." sent @punct #6->4
 
 "<Ірі>"
 	"ірі" adj
