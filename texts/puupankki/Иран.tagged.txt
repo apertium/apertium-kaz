@@ -595,68 +595,31 @@
 	"." sent @punct #18->16
 
 "<Жері>"
-	"жер" n px3sp nom 
-;	"жер" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"жер" n px3sp nom
-;		"е" cop aor p3 sg 
-;	"же" v tv ger_fut px3sp nom 
-;	"же" v tv gpr_fut subst px3sp nom 
+	"жер" n px3sp nom @subj #1->5
 "<,>"
-	"," cm
+	"," cm @punct #2->1
 "<негізінен>"
-;	"негіз" n px3sp abl
-	"негізінен" adv
-;	"негіз" n px3sp abl
-;		"е" cop aor p3 pl 
-;	"негіз" n px3sp abl
-;		"е" cop aor p3 sg 
+	"негізінен" adv @parataxis #3->1
 "<,>"
-	"," cm
+	"," cm @punct #4->3
 "<таулы>"
-;	"таулы" adj
-;	"таулы" adj subst nom
-;	"таулы" adj
-;		"е" cop aor p3 pl 
-	"таулы" adj
-		"е" cop aor p3 sg 
-;	"таулы" adj subst nom
-;		"е" cop aor p3 pl 
-;	"таулы" adj subst nom
-;		"е" cop aor p3 sg 
-;	"тау" n
-;		"лы" post 
+	"таулы" adj @main #5->0
+		"е" cop aor p3 sg @cop #6->5
 "<.>"
-	"." sent
+	"." sent @punct #7->5
 
 "<Климаты>"
 	"климат" n px3sp nom
-;	"климат" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"климат" n px3sp nom
-;		"е" cop aor p3 sg 
 "<субтропиктік>"
-;	"субтропиктік" adj
 	"субтропиктік" adj
-		"е" cop aor p3 sg
-;	"субтропиктік" adj
-;		"е" cop aor p3 pl 
 "<,>"
 	"," cm
 "<континенттік>"
 	"континенттік" adj
-;	"континенттік" adj
-;		"е" cop aor p3 pl 
-;	"континенттік" adj
-;		"е" cop aor p3 sg 
 "<,>"
 	"," cm
 "<жазы>"
 	"жаз" n px3sp nom
-;	"жаз" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"жаз" n px3sp nom
-;		"е" cop aor p3 sg 
 "<ыстық>"
 ;	"ыстық" adj
 ;	"ыстық" adj advl
