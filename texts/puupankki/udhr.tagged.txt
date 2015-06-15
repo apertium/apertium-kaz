@@ -1,0 +1,3575 @@
+"<Барлық>"
+	"барлық" det qnt @det #1->2
+"<адамдар>"
+	"адам" n pl nom @subj #2->12
+"<тумысынан>"
+	"тумысынан" adv @advmod #3->12
+"<азат>"
+	"азат" adj @conj #4->9
+"<және>"
+	"және" cnjcoo @cc #5->9
+"<қадір-қасиеті>"
+	"қадір-қасиет" n px3sp nom @conj #6->8
+"<мен>"
+	"мен" cnjcoo @cc #7->8
+"<құқықтары>"
+	"құқық" n pl px3sp nom @subj #8->9
+"<тең>"
+	"тең" adj @advcl #9->12
+"<болып>"
+	"бол" v iv gna_perf @cop #10->9
+"<дүниеге>"
+	"дүние" n dat @nmod #11->12
+"<келеді>"
+	"кел" v iv aor p3 sg @main #12->0
+"<.>"
+	"." sent @punct #13->12
+
+"<Адамдарға>"
+	"адам" n pl dat @nmod #1->5
+"<ақыл-парасат>"
+	"ақыл-парасат" n nom @conj #2->4
+"<,>"
+	"," cm @punct #3->4
+"<ар-ождан>"
+	"ар-ождан" n nom @subj #4->5
+"<берілген>"
+	"бер" v tv pass past p3 pl @x #5->15
+"<,>"
+	"," cm @punct #6->5
+"<сондықтан>"
+	"сондықтан" cnjadv @cc #7->15
+"<олар>"
+	"олар" prn pers p3 pl nom @subj #8->14
+"<бір-бірімен>"
+	"бір-бір" prn recip px3sp ins @nmod #9->14
+"<туыстық>"
+	"туыстық" adj @conj #10->12
+"<,>"
+	"," cm @punct #11->12
+"<бауырмалдық>"
+	"бауырмалдық" adj @amod #12->13
+"<қарым-қатынас>"
+	"қарым-қатынас" n nom @obj #13->14
+"<жасаулары>"
+	"жаса" v tv ger pl px3sp nom @x #14->15
+"<тиіс>"
+	"тиіс" adj @main #15->0
+		"е" cop aor p3 pl @cop #16->15
+"<.>"
+	"." sent @punct #17->15
+
+"<Әр>"
+	"әр" det qnt @det #1->2
+"<адам>"
+	"адам" n nom @subj #2->47
+"<,>"
+	"," cm @punct #3->2
+"<нәсіліне>"
+	"нәсіл" n px3sp dat @conj #4->33
+"<,>"
+	"," cm @punct #5->33
+"<түр-түсіне>"
+	"түр-түс" n px3sp dat @conj #6->33
+"<,>"
+	"," cm @punct #7->33
+"<жынысына>"
+	"жыныс" n px3sp dat @conj #8->33
+"<,>"
+	"," cm @punct #9->33
+"<тіліне>"
+	"тіл" n px3sp dat @conj #10->33
+"<,>"
+	"," cm @punct #11->33
+"<дініне>"
+	"дін" n px3sp dat @conj #12->33
+"<,>"
+	"," cm @punct #13->33
+"<саяси>"
+	"саяси" adj @conj #14->16
+"<немесе>"
+	"немесе" cnjcoo @cc #15->16
+"<басқа да>"
+	"басқа" adj @amod #16->18
+		"да" postadv @advmod #17->16
+"<наным-сенімдеріне>"
+	"наным-сенім" n pl px3sp dat @conj #18->33
+"<,>"
+	"," cm @punct #19->33
+"<ұлттық>"
+	"ұлттық" adj @conj #20->23
+"<,>"
+	"," cm @punct #21->23
+"<немесе>"
+	"немесе" cnjcoo @cc #22->23
+"<әлеуметтік>"
+	"әлеуметтік" adj @amod #23->24
+"<тегіне>"
+	"тек" n px3sp dat @conj #24->33
+"<,>"
+	"," cm @punct #25->33
+"<мүліктік>"
+	"мүліктік" adj @conj #26->31
+"<,>"
+	"," cm @punct #27->31
+"<тектік-топтық>"
+	"тектік-топтық" adj @conj #28->31
+"<,>"
+	"," cm @punct #29->31
+"<немесе>"
+	"немесе" cnjcoo @cc #30->31
+"<басқа да>"
+	"басқа" adj @amod #31->33
+		"да" postadv @advmod #32->31
+"<жағдаяттарға>"
+	"жағдаят" n pl dat @x #33->37
+"<қарамастан>"
+	"қарамастан" post @case #34->33
+"<осы>"
+	"осы" det dem @det #35->36
+"<Декларацияда>"
+	"декларация" n loc @nmod #36->37
+"<жарияланған>"
+	"жарияла" v tv pass gpr_past @acl #37->39
+"<барлық>"
+	"барлық" det qnt @det #38->39
+"<құқықтар>"
+	"құқық" n pl nom @x #39->42
+"<мен>"
+	"мен" cnjcoo @cc #40->41
+"<бостандықтарға>"
+	"бостандық" n pl dat @x #41->42
+"<алаланбай>"
+	"алала" v tv pass neg gna_perf @x #42->46
+"<,>"
+	"," cm @punct #43->42
+"<бірдей>"
+	"бір" num subst sim @advmod #44->46
+"<тең>"
+	"тең" adj advl @advmod #45->46
+"<ие болуы>"
+	"ие бол" v iv ger px3sp nom @subj #46->47
+"<тиіс>"
+	"тиіс" adj @main #47->0
+		"е" cop aor p3 sg  @cop #48->47
+"<.>"
+	"." sent @punct #49->47
+
+"<Сонымен қатар>"
+	"сонымен қатар" adv @advmod
+"<,>"
+	"," cm @punct
+"<ешкім де>"
+	"ешкім" prn neg nom 
+		"да" postadv @advmod
+"<өзі>"
+	"өз" prn ref px3sp nom
+"<тұратын>"
+	"тұратын" adj advl
+	"тұратын" adj subst nom
+	"тұратын" adj
+;	"тұр" v iv gpr_impf
+;	"тұр" v iv pih p3 pl
+;	"тұр" v iv pih p3 sg
+;	"тұр" v iv gpr_impf subst nom
+"<елінің>"
+	"ел" n px3sp gen
+"<,>"
+	"," cm @punct
+"<не>"
+	"не" cnjcoo @cc
+	"не" prn itg nom
+"<болмаса>"
+	"бол" v iv neg gna_cond p3 sg
+"<территорияның>"
+	"территория" n gen @nmod
+"<саяси>"
+	"саяси" adj @conj 
+"<,>"
+	"," cm @punct
+"<құқықтық>"
+	"құқықтық" n attr @conj
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<халықаралық>"
+	"халықаралық" adj @amod
+"<мәртебесінің>"
+	"мәртебе" n px3sp gen @nmod
+"<негізі>"
+	"негіз" n px3sp nom 
+"<бойынша>"
+	"бойынша" post @case
+"<,>"
+	"," cm @punct
+"<және де>"
+	"және" cnjcoo @cc
+		"да" postadv @advmod
+"<ол>"
+	"ол" prn pers p3 sg nom
+	"ол" det dem
+	"ол" prn dem nom
+"<территория>"
+	"территория" n nom
+;	"территория" n attr
+"<тәуелсіз>"
+	"тәуелсіз" adj
+		"е" cop aor p3 sg
+;	"тәуелсіз" adj
+;		"е" cop aor p3 pl
+;	"тәуелсіз" adj
+;	"тәуелсіз" adj advl
+;	"тәуелсіз" adj subst nom
+"<,>"
+	"," cm @punct
+"<әлде>"
+	"әл" n loc
+;	"әл" n loc
+;		"е" cop aor p3 pl
+;	"әл" n loc
+;		"е" cop aor p3 sg
+"<біреудің>"
+	"біреу" prn ind gen
+	"біреу" prn qnt gen
+	"біреу" num coll subst gen
+"<қарамағында>"
+	"қарамағында" post @case
+"<,>"
+	"," cm @punct
+"<әлде>"
+	"әл" n loc
+"<өзін-өзі>"
+	"өз" prn ref px3sp acc
+"<басқарушы>"
+	"басқарушы" n nom
+;	"басқарушы" n attr
+;	"басқар" v tv gpr_pot
+;	"басқарушы" adj
+;	"басқарушы" adj subst nom
+;	"басқарушы" adj advl
+;	"басқар" v tv gpr_pot subst nom
+"<емес>"
+	"е" cop neg aor p3 sg
+;	"е" cop neg aor p3 pl
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<оның>"
+	"ол" prn pers p3 sg gen
+"<егемендігі>"
+	"егемендік" n px3sp nom
+"<әртүрлі>"
+	"әртүрлі" det qnt @det
+"<нысанда>"
+	"нысан" n loc
+"<шектеулі>"
+	"шектеулі" adj
+	"шектеулі" adj subst nom
+;	"шектеу" n
+;		"лы" post @case
+"<болған>"
+	"бол" v iv gpr_past
+	"бол" v iv gpr_past subst nom
+	"бол" v iv ger_past nom
+"<күннің>"
+	"күн" n gen
+"<өзінде де>"
+	"өз" prn ref px3sp loc
+		"е" cop aor p3 sg
+			"да" postadv
+;	"өз" prn ref px3sp loc
+;		"да" postadv
+"<,>"
+	"," cm @punct
+"<алаланбауы>"
+	"алала" v tv pass neg ger px3sp nom
+	"алалан" v iv neg ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<өмір сүруге>"
+	"өмір сүр" v iv ger dat
+"<,>"
+	"," cm @punct
+"<бостандықта>"
+	"бостандық" n loc
+"<болуға>"
+	"бол" v iv ger dat
+;	"бол" vaux ger dat
+"<және>"
+	"және" cnjcoo @cc
+"<оның>"
+;	"ол" prn dem gen
+;	"ол" prn pers p3 sg gen
+"<жеке>"
+	"жеке" adj
+	"жеке" adv
+	"жеке" n nom
+	"жеке" n attr
+	"жеке" adj subst nom
+"<басына>"
+	"бас" n px3sp dat
+;	"басын" v tv prc_impf
+"<қол>"
+	"қол" adj
+	"қол" n nom
+	"қол" adj subst nom
+;	"қол" n attr
+"<сұғылмауына>"
+	"*сұғылмауына"
+"<құқылы>"
+	"құқылы" adj
+;	"құқылы" adj
+;		"е" cop aor p3 pl
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ешкім де>"
+	"ешкім" prn neg nom @subj #1->5
+		"да" postadv @advmod #2->1
+"<құлдықта>"
+	"құлдық" n loc @conj #3->5
+"<немесе>"
+	"немесе" cnjcoo @cc #4->5
+"<кіріптарлықта>"
+	"кіріптарлық" n loc @nmod #5->6
+"<ұсталуы>"
+	"ұста" v tv pass ger px3sp nom @subj #5->6
+"<тиіс>"
+	"тиіс" adj @main #6->0
+"<емес>"
+	"е" cop neg aor p3 sg @cop #7->6
+"<.>"
+	"." sent @punct #8->6
+
+"<Құлдық>"
+	"құлдық" n nom @conj #1->3
+"<пен>"
+	"мен" cnjcoo @cc #2->3
+"<құл>"
+	"құл" n nom @nmod #3->4
+"<саудасына>"
+	"сауда" n px3sp dat @nmod #4->
+"<,>"
+	"," cm @punct #5->4
+"<қандай>"
+	"қан" n sim @x
+	"қандай" prn itg sim @x
+	"қандай" prn itg sim nom @x
+"<түрде>"
+	"түр" n loc @nmod #7->8
+"<болса да>"
+	"бол" v iv gna_cond p3 sg @advcl #8->11
+		"да" postadv @advmod #9->8
+"<,>"
+	"," cm @punct #10->8
+"<тыйым салынады>"
+	"тыйым сал" v tv pass aor p3 sg @main #11->0
+"<.>"
+	"." sent @punct #12->11
+
+"<Ешкім де>"
+	"ешкім" prn neg nom @subj #1->
+		"да" postadv @advmod #2->
+"<азапталуға>"
+	"азапта" v tv pass ger dat #3->
+"<немесе>"
+	"немесе" cnjcoo @cc #4->
+"<қадір-қасиетін>"
+	"қадір-қасиет" n px3sp acc @obj #5->
+"<қорлайтындай>"
+	"қорла" v tv gpr_impf subst sim @advcl #6->
+"<адамшылыққа>"
+	"адамшылық" n dat @x #7->
+"<жатпайтын>"
+	"жат" v iv neg gpr_impf @acl #8->
+"<қатыгездік>"
+	"қатыгездік" n attr @cmpnd #9->10
+"<жолмен>"
+	"жол" n ins @nmod #10->
+"<жәбірленуге>"
+	"*жәбірленуге" @x #11->
+"<,>"
+	"," cm @punct #12->
+"<немесе>"
+	"немесе" cnjcoo @cc #13->
+"<жазалануға>"
+	"жазала" v tv pass ger dat @x #14->
+"<тиіс>"
+	"тиіс" adj @main #15->
+"<емес>"
+	"е" cop neg aor p3 sg @cop #16->15
+"<.>"
+	"." sent @punct #17->15
+
+"<Әр>"
+	"әр" det qnt @det #1->2
+"<адам>"
+	"адам" n nom @subj #2->5
+"<қай>"
+	"қай" det itg @det #3->4
+"<жерде>"
+	"жер" n loc @nmod #4->5
+"<жүрсе де>"
+	"жүр" v iv gna_cond p3 sg @advcl #5->
+		"да" postadv @advmod #6->5
+"<,>"
+	"," cm @punct #7->5
+"<құқықтық>"
+	"құқықтық" n nom @nmod #8->
+"<субъектісі>"
+	"субъект" n px3sp nom @nmod #9->
+"<ретінде>"
+	"ретінде" post @case #10->
+"<танылуына>"
+	"таны" v tv pass ger px3sp dat @x #11->
+"<құқылы>"
+	"құқылы" adj @x #12->
+		"е" cop aor p3 sg @cop #13->12
+"<.>"
+	"." sent @punct #14->12
+
+"<Заң>"
+	"заң" n nom @nmod
+"<алдында>"
+	"алд" n px3sp loc
+"<жұрттың>"
+	"жұрт" n gen @nmod
+"<бәрі>"
+	"бәрі" prn qnt px3sp nom
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" adj subst nom
+	"тең" adj advl
+"<және де>"
+	"және" cnjcoo @cc
+		"да" postadv @postadv
+"<заң>"
+	"заң" n nom
+"<арқылы>"
+	"арқылы" post @case
+"<алаланбай>"
+	"алала" v tv pass neg gna_perf
+	"алалан" v iv neg gna_perf
+;	"алала" v tv pass neg prc_impf
+;	"алала" v tv pass neg prc_perf
+;	"алалан" v iv neg prc_impf
+;	"алалан" v iv neg prc_perf
+"<,>"
+	"," cm @punct
+"<бірдей>"
+	"бір" num subst sim
+;	"бірдей" adj
+;	"бірдей" adv
+;	"бірдей" adj advl
+;	"бірдей" adj subst nom
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" adj subst nom
+	"тең" adj advl
+;	"тең" n attr
+"<қорғалуға>"
+	"қорға" v tv pass ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Барлық>"
+	"барлық" det qnt @det #1->2
+"<адам>"
+	"адам" n nom @subj #2->
+"<осы>"
+	"осы" det dem @det #3->4
+"<Декларацияның>"
+	"декларация" n gen @nmod
+"<ережелерін>"
+	"ереже" n pl px3sp acc @obj
+"<бұзатын>"
+	"бұз" v tv gpr_impf @acl
+"<кемсітуден>"
+	"кемсіту" n abl @nmod
+"<және>"
+	"және" cnjcoo @cc
+"<кемсітуге>"
+	"кемсіту" n dat
+"<арандатушылықтың>"
+	"арандатушылық" n gen
+"<барлық>"
+	"барлық" det qnt @det
+"<түрінен>"
+	"түр" n px3sp abl
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" adj subst nom
+	"тең" adj advl
+;	"тең" n attr
+"<қорғалуға>"
+	"қорға" v tv pass ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<,>"
+	"," cm @punct
+"<конституциямен>"
+	"конституция" n ins @nmod
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<заңмен>"
+	"заң" n ins
+"<берілген>"
+	"бер" v tv pass gpr_past
+	"бер" v tv pass ger_past nom
+	"бер" v tv pass gpr_past subst nom
+	"бер" v tv pass past p3 sg
+;	"бер" v tv pass past p3 pl
+"<негізгі>"
+	"негізгі" adj
+	"негізгі" adv
+	"негізгі" adj subst nom
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<бұзылған>"
+	"бұз" v tv pass gpr_past
+	"бұз" v tv pass ger_past nom
+	"бұз" v tv pass gpr_past subst nom
+	"бұз" v tv pass past p3 sg
+;	"бұз" v tv pass past p3 pl
+"<жағдайда>"
+	"жағдай" n loc
+	"жағдай" n loc
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<құқығын>"
+	"құқық" n px3sp acc
+"<құзыретті>"
+	"құзырет" n acc
+	"құзырет" n
+		"лы" post @case
+"<ұлттық>"
+	"ұлттық" adj
+"<сот>"
+	"сот" n nom
+"<арқылы>"
+	"арқылы" post @case
+"<тиімді>"
+	"тиімді" adj
+	"тиімді" adv
+	"тиімді" adj subst nom
+"<түрде>"
+	"түр" n loc
+"<қалпына келтіруге>"
+	"қалпына келтіру" n dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ешкім де>"
+	"ешкім" prn neg nom
+		"да" postadv
+"<негізсіз>"
+	"негізсіз" adj subst nom
+	"негізсіз" adj
+;	"негіз" n
+;		"сыз" post @case
+"<тұтқындалуға>"
+	"тұтқында" v tv pass ger dat
+"<,>"
+	"," cm @punct
+"<қамауда>"
+	"қама" v tv ger loc
+"<ұсталуға>"
+	"ұста" v tv pass ger dat
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<қуғынға>"
+	"қуғын" n dat
+"<ұшыратылуға>"
+	"ұшыратыл" v iv ger dat
+"<тиіс>"
+	"тиіс" adj
+"<емес>"
+	"е" cop neg aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<,>"
+	"," cm @punct
+"<өзінің>"
+	"өз" prn ref px3sp gen
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo @cc
+"<міндеттерін>"
+	"міндет" n pl px3sp acc
+	"міндетте" v tv ger_fut px3sp acc
+	"міндетте" v tv gpr_fut subst px3sp acc
+"<анықтап>"
+	"анықта" v tv gna_perf
+;	"анықта" v tv prc_perf
+"<,>"
+	"," cm @punct
+"<өзіне>"
+	"өз" prn ref px3sp dat
+"<тағылған>"
+	"тақ" v tv pass gpr_past
+	"тағыл" v iv gpr_past
+	"тақ" v tv pass ger_past nom
+	"тағыл" v iv ger_past nom
+	"тағыл" v iv past p3 sg
+	"тақ" v tv pass past p3 sg
+	"тақ" v tv pass gpr_past subst nom
+	"тағыл" v iv gpr_past subst nom
+;	"тақ" v tv pass past p3 pl
+;	"тағыл" v iv past p3 pl
+"<қылмыстық>"
+	"қылмыстық" adj
+"<айыптаудың>"
+	"айыптау" n gen
+;	"айыпта" v tv ger gen
+"<негізділігін>"
+	"негізділік" n px3sp acc
+"<белгілеу>"
+	"белгіле" v tv ger nom
+"<үшін>"
+	"үшін" post @case
+	"үш" n px3sp acc
+	"үш" num subst px3sp acc
+"<,>"
+	"," cm @punct
+"<ісі>"
+	"іс" n px3sp nom
+"<толық>"
+	"толық" adj
+	"толық" adj advl
+	"толық" adj subst nom
+"<теңдік>"
+	"теңдік" n attr
+;	"теңдік" n nom
+"<негізінде>"
+	"негіз" n px3sp loc
+"<,>"
+	"," cm @punct
+"<әділеттік>"
+	"әділеттік" n nom
+"<талаптарға>"
+	"талап" n pl dat
+"<сай>"
+	"сай" adj
+	"сай" adj subst nom
+"<,>"
+	"," cm @punct
+"<тәуелсіз>"
+	"тәуелсіз" adj
+	"тәуелсіз" adj advl
+	"тәуелсіз" adj subst nom
+"<және>"
+	"және" cnjcoo @cc
+"<әділ>"
+	"әділ" adj
+	"әділ" n nom
+	"әділ" n attr
+	"әділ" adj advl
+	"әділ" adj subst nom
+"<сот>"
+	"сот" n nom
+;	"сот" n attr
+"<арқылы>"
+	"арқылы" post @case
+"<ашық>"
+	"ашық" adj
+	"ашық" adv
+	"ашық" n nom
+	"ашық" adj subst nom
+	"ашық" adj advl
+"<қаралуына>"
+	"қара" v tv pass ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Қылмыс>"
+	"қылмыс" n nom
+"<жасады>"
+	"жаса" v tv ifi p3 sg
+;	"жаса" v tv ifi p3 pl
+"<деп>"
+	"де" v tv gna_perf
+"<айыпталған>"
+	"айыпта" v tv pass gpr_past
+	"айыпта" v tv pass ger_past nom
+	"айыпта" v tv pass gpr_past subst nom
+	"айыпта" v tv pass past p3 sg
+;	"айыпта" v tv pass past p3 pl
+"<әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<,>"
+	"," cm @punct
+"<қорғану>"
+	"қорған" v iv ger nom
+"<құқығы>"
+	"құқық" n px3sp nom
+;	"құқық" n px3sp nom
+;		"е" cop aor p3 pl
+;	"құқық" n px3sp nom
+;		"е" cop aor p3 sg
+"<қамтамасыздандырылып>"
+	"қамтамасыздандырыл" v iv gna_perf
+"<,>"
+	"," cm @punct
+"<заңды>"
+	"заңды" n nom
+	"заңды" adj
+	"заңды" adv
+"<және>"
+	"және" cnjcoo @cc
+"<ашық>"
+	"ашық" adj
+	"ашық" adv
+	"ашық" n nom
+	"ашық" n attr
+	"ашық" adj advl
+	"ашық" adj subst nom
+"<сот>"
+	"сот" n nom
+;	"сот" n nom
+;		"е" cop aor p3 pl
+;	"сот" n nom
+;		"е" cop aor p3 sg
+;	"сот" n attr
+"<талқылауы>"
+	"талқыла" v tv ger px3sp nom
+"<оның>"
+	"ол" prn dem gen
+	"ол" prn pers p3 sg gen
+"<кінәсін>"
+	"кінә" n px3sp acc
+"<толық>"
+	"толық" adj
+	"толық" adj advl
+	"толық" adj subst nom
+"<анықтағанға>"
+	"анықта" v tv ger_past dat
+	"анықта" v tv gpr_past subst dat
+"<дейін>"
+	"дейін" post @case
+"<,>"
+	"," cm @punct
+"<кінәсіз>"
+	"кінә" n
+		"сыз" post @case
+;	"кінә" n nom
+;		"е" cop aor p2 frm sg
+"<деп>"
+	"де" v tv prc_perf
+	"де" v tv gna_perf
+"<есептелуге>"
+	"есепте" v tv pass ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+;	"құқық" n px3sp nom
+;		"е" cop aor p3 pl
+;	"құқық" n px3sp nom
+;		"е" cop aor p3 sg
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Ешкім де>"
+	"ешкім" prn neg nom
+		"да" postadv
+"<жасаған>"
+	"жаса" v tv gpr_past
+	"жаса" v tv ger_past nom
+	"жаса" v tv gpr_past subst nom
+"<әрекеті>"
+	"әрекет" n px3sp nom
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<әрекетсіздігі>"
+	"әрекетсіздік" n px3sp nom
+"<негізінде>"
+	"негіз" n px3sp loc
+	"негізінде" adv
+	"негіз" n px3sp loc
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<егер>"
+	"еге" v tv gpr_fut
+	"егер" cnjsub
+	"еге" v tv gpr_fut subst nom
+	"еге" v tv fut p3 sg
+;	"еге" v tv fut p3 pl
+"<ол>"
+	"ол" prn pers p3 sg nom
+"<әрекеті>"
+	"әрекет" n px3sp nom
+"<ұлттық>"
+	"ұлттық" adj
+"<заңдар>"
+	"заң" n pl nom
+"<мен>"
+	"мен" cnjcoo @cc
+"<халықаралық>"
+	"халықаралық" adj
+"<құқық>"
+	"құқық" n nom
+"<бойынша>"
+	"бойынша" post @case
+"<қылмыс>"
+	"қылмыс" n nom
+;	"қылмыс" n attr
+"<болып>"
+	"бол" v iv gna_perf
+"<саналмаса>"
+	"сана" v tv pass neg gna_cond p3 sg
+;	"сана" v tv pass neg prc_cond p3 pl
+;	"сана" v tv pass neg prc_cond p3 sg
+;	"сана" v tv pass neg gna_cond p3 pl
+"<,>"
+	"," cm @punct
+"<жауапқа>"
+	"жауап" n dat
+	"жауап" adj subst dat
+"<тартылмайды>"
+	"тарт" v tv pass neg aor p3 sg @main
+"<.>"
+	"." sent @punct
+
+"<Сонымен қатар>"
+	"сонымен қатар" adv
+"<қылмыс>"
+	"қылмыс" n attr
+;	"қылмыс" n nom
+"<үшін>"
+	"үшін" post @case
+"<берілген>"
+	"бер" v tv pass gpr_past
+	"бер" v tv pass ger_past nom
+"<жаза>"
+	"жаза" n nom
+		"е" cop aor p3 sg
+	"жаза" n nom
+;	"жаза" n attr
+;	"жаз" v tv prc_impf
+;	"жаза" n nom
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<қылмыс>"
+	"қылмыс" n nom
+;	"қылмыс" n attr
+"<жасалған>"
+	"жаса" v tv pass gpr_past
+	"жаса" v tv pass ger_past nom
+	"жаса" v tv pass gpr_past subst nom
+	"жаса" v tv pass past p3 sg
+;	"жаса" v tv pass past p3 pl
+"<кезде>"
+	"кез" n loc
+"<заңмен>"
+	"заң" n ins
+"<көзделген>"
+	"көзде" v tv pass gpr_past
+	"көзде" v tv pass ger_past nom
+	"көзде" v tv pass gpr_past subst nom
+	"көзде" v tv pass past p3 sg
+;	"көзде" v tv pass past p3 pl
+"<жазадан>"
+	"жаза" n abl
+"<ауыр>"
+	"ауыр" n nom
+;	"ауыр" n attr
+"<болмауға>"
+	"бол" v iv neg ger dat
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<жеке>"
+	"жеке" n nom
+;	"жеке" n attr
+;	"жеке" adj
+;	"жеке" adv
+;	"жеке" adj subst nom
+"<және>"
+	"және" cnjcoo @cc
+"<отбасылық>"
+	"отбасылық" adj
+	"отбасылық" n nom
+	"отбасылық" n attr
+"<өміріне>"
+	"өмір" n px3sp dat
+"<өзгелердің>"
+	"өзге" adj subst pl gen
+	"өзгеле" v tv gpr_fut subst gen
+"<өз>"
+	"өз" det ref
+"<бетінше>"
+	"*бетінше"
+"<араласуынан>"
+	"арала" v tv coop ger px3sp abl
+	"аралас" v iv ger px3sp abl
+"<,>"
+	"," cm @punct
+"<озбырлық>"
+	"озбырлық" n nom
+"<жасап>"
+	"жаса" v tv gna_perf
+"<баспанасына>"
+	"баспана" n px3sp dat
+"<,>"
+	"," cm @punct
+"<хат>"
+	"хат" n nom
+;	"хат" n attr
+"<жазысып>"
+	"жаз" v tv coop gna_perf
+;	"жаз" v tv coop prc_perf
+"<->"
+	"-" guio
+"<алысу>"
+	"ал" v tv coop ger nom
+	"алыс" v iv ger nom
+"<құпиясына>"
+	"құпия" n px3sp dat
+	"құпия" adj subst px3sp dat
+"<қол>"
+	"қол" adj
+	"қол" n nom
+	"қол" adj subst nom
+;	"қол" n attr
+"<сұғуынан>"
+	"*сұғуынан"
+"<,>"
+	"," cm @punct
+"<ар-намысы>"
+	"ар-намыс" n px3sp nom
+"<мен>"
+	"мен" cnjcoo @cc
+"<абырой>"
+	"абырой" n attr
+;	"абырой" n nom
+"<беделіне>"
+	"бедел" n px3sp dat
+"<нұқсан>"
+	"нұқсан" n nom
+;	"нұқсан" n attr
+"<келтіруінен>"
+	"келтір" v tv ger px3sp abl
+"<қорғалуға>"
+	"қорға" v tv pass ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<әр>"
+	"әр" det qnt @det
+"<мемлекеттің>"
+	"мемлекет" n gen
+"<ішінде>"
+	"іш" n px3sp loc
+"<жүріп>"
+	"жүр" v iv gna_perf
+;	"жүр" v iv prc_perf
+"<->"
+	"-" guio
+"<тұруына>"
+	"тұр" v iv ger px3sp dat
+;	"тұр" vaux ger px3sp dat
+"<және>"
+	"және" cnjcoo @cc
+"<өз>"
+	"өз" det ref
+"<қалауынша>"
+	"қалауынша" adv
+"<тұратын>"
+	"тұратын" adj advl
+	"тұратын" adj subst nom
+	"тұратын" adj
+;	"тұр" v iv gpr_impf
+;	"тұр" v iv pih p3 pl
+;	"тұр" v iv pih p3 sg
+;	"тұр" v iv gpr_impf subst nom
+"<мекен-жайды>"
+	"мекен-жай" n acc
+"<таңдауына>"
+	"таңда" v tv ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<кез>"
+	"кез" n nom
+;	"кез" n attr
+"<->"
+	"-" guio
+"<келген>"
+	"кел" v iv past p3 sg
+	"кел" v iv gpr_past
+	"кел" v iv gpr_past subst nom
+	"кел" v iv ger_past nom
+;	"кел" v iv past p3 pl
+"<елден>"
+	"ел" n abl
+	"ел" n abl
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<соның>"
+	"сол" prn dem gen
+"<ішінде>"
+	"іш" n px3sp loc
+"<өзінің>"
+	"өз" prn ref px3sp gen
+"<туған>"
+	"туған" adj subst nom
+	"туған" n nom
+	"туған" adj
+	"туған" n attr
+;	"ту" v iv gpr_past
+;	"ту" v tv gpr_past
+;	"ту" v iv ger_past nom
+;	"ту" v tv ger_past nom
+;	"ту" v iv past p3 pl
+;	"ту" v iv past p3 sg
+;	"ту" v iv gpr_past subst nom
+;	"ту" v tv past p3 pl
+;	"ту" v tv past p3 sg
+;	"ту" v tv gpr_past subst nom
+"<елінен>"
+	"ел" n px3sp abl
+	"ел" n px3sp abl
+		"е" cop aor p3 sg
+;	"ел" n px3sp abl
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<басқа>"
+	"басқа" det ind
+"<елге>"
+	"ел" n dat
+"<қоныс>"
+	"қоныс" n nom
+"<аударуға>"
+	"аудар" v tv ger dat
+"<және>"
+	"және" cnjcoo @cc
+"<өз>"
+	"өз" det ref
+"<еліне>"
+	"ел" n px3sp dat
+"<қайтып>"
+	"қайт" v iv gna_perf
+"<оралуға>"
+	"оралу" n dat
+;	"ора" v tv pass ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<қуғынға>"
+	"қуғын" n dat
+"<ұшыраған>"
+	"ұшыра" v iv gpr_past
+	"ұшыра" v iv ger_past nom
+	"ұшыра" v iv gpr_past subst nom
+	"ұшыра" v iv past p3 sg
+;	"ұшыра" v iv past p3 pl
+"<жағдайда>"
+	"жағдай" n loc
+	"жағдай" n loc
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<басқа>"
+	"басқа" det ind
+"<елдерден>"
+	"ел" n pl abl
+"<баспана>"
+	"баспана" n nom
+"<іздеп>"
+	"ізде" v tv gna_perf
+;	"ізде" v tv prc_perf
+"<және>"
+	"және" cnjcoo @cc
+"<сол>"
+	"сол" det dem
+"<баспананы>"
+	"баспана" n acc
+"<пайдалануға>"
+	"пайдалану" n dat
+;	"пайдалан" v tv ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Бұл>"
+	"бұл" det dem @det
+"<құқық>"
+	"құқық" n nom
+"<шынтуатында>"
+	"*шынтуатында"
+"<саяси>"
+	"саяси" adj
+	"саяси" adv
+"<емес>"
+	"е" cop neg aor p3 sg
+;	"е" cop neg aor p3 pl
+"<қылмыстың>"
+	"қылмыс" n gen
+	"қылмысты" adj subst px2sg nom
+"<негізінде>"
+	"негіз" n px3sp loc
+	"негіз" n px3sp loc
+		"е" cop aor p3 sg
+;	"негіз" n px3sp loc
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<Біріккен>"
+	"бірік" v iv gpr_past
+	"бірік" v iv ger_past nom
+	"бірік" v iv gpr_past subst nom
+"<Ұлттар>"
+	"ұлт" n pl nom
+"<Ұйымының>"
+	"ұйым" n px3sp gen
+"<мақсаттары>"
+	"мақсат" n pl px3sp nom
+;	"мақсат" n pl px3sp nom
+;		"е" cop aor p3 pl
+;	"мақсат" n pl px3sp nom
+;		"е" cop aor p3 sg
+"<мен>"
+	"мен" post @case
+;	"мен" prn pers p1 sg nom
+;	"мен" cnjcoo
+"<қағидаларына>"
+	"қағида" n pl px3sp dat
+"<қайшы>"
+	"қайшы" adj advl
+;	"қайшы" adj
+;	"қайшы" n nom
+;	"қайшы" adj subst nom
+"<келетін>"
+	"кел" v iv gpr_impf subst nom
+	"кел" v iv gpr_impf
+	"кел" v iv pih p3 sg
+;	"кел" v iv pih p3 pl
+"<әрекеттері>"
+	"әрекет" n pl px3sp nom
+"<үшін>"
+	"үшін" post @case
+	"үш" n px3sp acc
+	"үш" num subst px3sp acc
+"<қуғындалғандарға>"
+	"*қуғындалғандарға"
+"<жүрмейді>"
+	"жүр" v iv neg aor p3 sg
+;	"жүр" v iv neg aor p3 pl
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<азаматтыққа>"
+	"азаматтық" n dat
+	"азаматтық" adj subst dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ешкімді де>"
+	"ешкім" prn neg acc
+		"да" postadv
+"<азаматтығынан>"
+	"азаматтық" n px3sp abl
+	"азаматтық" adj subst px3sp abl
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<азаматтығын>"
+	"азаматтық" n px3sp acc
+	"азаматтық" adj subst px3sp acc
+"<өзгерту>"
+	"өзгерту" n attr
+;	"өзгерт" v tv ger nom
+;	"өзгерту" n nom
+"<құқығынан>"
+	"құқық" n px3sp abl
+"<еріксіз>"
+	"еріксіз" adj subst nom
+	"еріксіз" adj
+	"еріксіз" adv
+	"еріксіз" adj advl
+;	"ерік" n
+;		"сыз" post @case
+"<айыруға>"
+	"айыру" n dat
+;	"айыр" v tv ger dat
+"<болмайды>"
+	"бол" v iv neg aor p3 sg
+;	"бол" v iv neg aor p3 pl
+"<.>"
+	"." sent @punct
+
+"<Кәмелеттік>"
+	"кәмелеттік" adj
+"<жасқа>"
+	"жас" n dat
+	"жас" adj subst dat
+"<толған>"
+	"тол" v iv gpr_past
+	"тол" v iv ger_past nom
+	"тол" v iv gpr_past subst nom
+	"тол" v iv past p3 sg
+;	"толған" v iv imp p2 sg
+;	"тол" v iv past p3 pl
+"<ерлер>"
+	"ерле" v iv gpr_fut
+	"ерле" v tv gpr_fut
+	"ерле" v iv gpr_fut subst nom
+	"ерле" v tv gpr_fut subst nom
+;	"ер" n pl nom
+;	"ер" adj subst pl nom
+"<мен>"
+	"мен" post @case
+;	"мен" prn pers p1 sg nom
+;	"мен" cnjcoo
+"<әйелдер>"
+	"әйел" n pl nom
+"<өздерінің>"
+	"өз" prn ref px3pl gen
+"<нәсіліне>"
+	"нәсіл" n px3sp dat
+"<,>"
+	"," cm @punct
+"<ұлтына>"
+	"ұлт" n px3sp dat
+"<,>"
+	"," cm @punct
+"<дініне>"
+	"дін" n px3sp dat
+"<қарамастан>"
+	"қарамастан" post @case
+;	"қара" v tv neg gpr_fut subst abl
+;	"қарамастан" n attr
+;	"қарамастан" n nom
+"<некеге>"
+	"неке" n dat
+"<тұрып>"
+	"тұр" v iv gna_perf
+;	"тұр" v iv prc_perf
+"<,>"
+	"," cm @punct
+"<отбасын>"
+	"отбасы" n acc
+	"отбасы" n px3sp acc
+"<құруға>"
+	"құр" v tv ger dat
+	"кұр" v iv ger dat
+	"құры" v iv ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Олар>"
+	"ол" prn dem pl nom
+	"олар" prn pers p3 pl nom
+"<некеге>"
+	"неке" n dat
+"<тұрған>"
+	"тұр" v iv past p3 sg
+	"тұр" v iv gpr_past
+	"тұр" v iv gpr_past subst nom
+	"тұр" v iv ger_past nom
+;	"тұр" v iv past p3 pl
+"<,>"
+	"," cm @punct
+"<некеде>"
+	"неке" n loc
+"<болған>"
+	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+	"бол" v iv gpr_past subst nom
+	"бол" v iv ger_past nom
+;	"бол" v iv past p3 pl
+"<және>"
+	"және" cnjcoo @cc
+"<ажырасқан>"
+	"ажыра" v iv coop gpr_past
+	"ажыра" v tv coop gpr_past
+	"ажыра" v iv coop ger_past nom
+	"ажыра" v tv coop ger_past nom
+	"ажыра" v tv coop past p3 sg
+	"ажыра" v iv coop past p3 sg
+	"ажыра" v iv coop gpr_past subst nom
+	"ажыра" v tv coop gpr_past subst nom
+;	"ажыра" v iv coop past p3 pl
+;	"ажыра" v tv coop past p3 pl
+"<кезде>"
+	"кез" n loc
+"<бірдей>"
+	"бір" num subst sim
+	"бірдей" adj
+	"бірдей" adv
+	"бірдей" adj advl
+	"бірдей" adj subst nom
+"<кұқықтарды>"
+	"құқық" n pl acc
+"<пайдаланады>"
+	"пайдалан" v tv aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Неке>"
+	"неке" n nom
+"<,>"
+	"," cm @punct
+"<тек>"
+	"тек" cnjcoo @cc
+	"тек" adv
+	"тек" n nom
+;	"тек" n attr
+"<екі>"
+	"екі" num
+	"екі" num subst nom
+"<жақтың>"
+	"жақ" v tv ifi p2 sg
+	"жақ" v iv ifi p2 sg
+;	"жақ" n gen
+"<өзара>"
+	"өзара" adj
+	"өзара" adv
+	"өзара" adj advl
+	"өзара" adj subst nom
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<және>"
+	"және" cnjcoo @cc
+"<толық>"
+	"толық" adj
+	"толық" adj advl
+	"толық" adj subst nom
+"<келісімі>"
+	"келісім" n px3sp nom
+	"келісім" adj subst px3sp nom
+"<бойынша ғана>"
+	"бойынша" post @case
+		"ғана" postadv
+"<қиылады>"
+	"қи" v tv pass aor p3 sg
+;	"қи" v tv pass aor p3 pl
+"<.>"
+	"." sent @punct
+
+"<Отбасы>"
+	"отбасы" n nom @subj #1->
+"<қоғамның>"
+	"қоғам" n gen @nmod #2->
+"<табиғи>"
+	"табиғи" adj @conj #3->5
+"<және>"
+	"және" cnjcoo @cc #4->5
+"<негізгі>" 
+	"негізгі" adj @amod #5->
+"<ұясы>"
+	"ұя" n px3sp nom @x #6-> 
+"<болып>"
+	"бол" v iv gna_perf @advcl #7->
+"<табылады>"
+	"тап" v tv pass aor p3 sg #8->
+"<,>"
+	"," cm @punct #9->
+"<және>"
+	"және" cnjcoo @cc #10->
+"<қоғам>"
+	"қоғам" n nom @conj #11->13
+"<мен>"
+	"мен" cnjcoo @cc #12->13
+"<мемлекет>"
+;	"мемлекет" n nom @nmod #13-> 
+"<тарапынан>"
+	"тарап" n px3sp abl @nmod #14-> 
+"<қорғалуға>"
+	"қорға" v tv pass ger dat #15->
+"<құқылы>"
+	"құқылы" adj @x #16->
+		"е" cop aor p3 sg @cop #17->16
+"<.>"
+	"." sent @punct #18->16
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<дүние>"
+	"дүние" n nom
+	"дүние" n attr
+"<мүлікті>"
+	"мүлік" n
+		"лы" post @case
+	"мүлік" adj subst
+		"лы" post @case
+;	"мүлік" n acc
+;	"мүлік" adj subst acc
+"<жеке>"
+	"жеке" n nom
+;	"жеке" n attr
+;	"жеке" adj
+;	"жеке" adv
+;	"жеке" adj subst nom
+"<өзі>"
+	"өз" prn ref px3sp nom
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<басқалармен>"
+	"басқа" adj subst pl ins
+	"басқалар" prn ind pl ins
+"<бірлесіп>"
+	"бірлес" v iv prc_perf
+	"бірлес" v iv gna_perf
+"<иемденуге>"
+	"иемден" v tv ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ешкім де>"
+	"ешкім" prn neg nom
+		"да" postadv
+"<өз>"
+	"өз" det ref
+"<мүлкінен>"
+	"мүлік" n px3sp abl
+"<еріксіз>"
+	"еріксіз" adj subst nom
+	"еріксіз" adj
+	"еріксіз" adv
+	"еріксіз" adj advl
+"<айрылмауға>"
+	"айрыл" v iv neg ger dat
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<ой-пікір>"
+	"ой-пікір" n nom
+"<,>"
+	"," cm @punct
+"<ар-ождан>"
+	"ар-ождан" n nom
+"<және>"
+	"және" cnjcoo @cc
+"<дін>"
+	"дін" n nom
+"<бостандығына>"
+	"бостандық" n px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+	"бар" adj
+		"е" cop aor p3 sg
+"<;>"
+	";" sent
+"<бұл>"
+	"бұл" det dem @det
+"<құқық>"
+	"құқық" n nom
+"<өз>"
+	"өз" det ref @det
+"<дінін>"
+	"дін" n px3sp acc
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<наным-сенімін>"
+	"наным-сенім" n px3sp acc
+"<өзгерту>"
+	"өзгерту" n attr
+;	"өзгерт" v tv ger nom
+;	"өзгерту" n nom
+"<еркіндігін>"
+	"еркіндік" n px3sp acc
+"<,>"
+	"," cm @punct
+"<өз>"
+	"өз" det ref @det
+"<дінін>"
+	"дін" n px3sp acc
+"<,>"
+	"," cm @punct
+"<наным-сенімін>"
+	"наным-сенім" n px3sp acc
+"<жеке>"
+	"жеке" n nom
+;	"жеке" n attr
+;	"жеке" adj
+;	"жеке" adv
+;	"жеке" adj subst nom
+"<өзі>"
+	"өз" prn ref px3sp nom
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<басқа>"
+	"бас" n dat
+	"басқа" adj subst nom
+	"басқа" adj
+	"басқа" adv
+	"басқа" adj advl
+	"басқа" prn ind nom
+"<адамдармен>"
+	"адам" n pl ins
+"<бірігіп>"
+	"бірік" v iv gna_perf
+"<тұтып>"
+	"тұт" v tv gna_perf
+;	"тұт" v tv prc_perf
+"<,>"
+	"," cm @punct
+"<жария>"
+	"жария" n nom
+	"жария" n attr
+"<түрде>"
+	"түр" n loc
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<жеке>"
+	"жеке" adj
+	"жеке" adv
+	"жеке" n nom
+	"жеке" n attr
+	"жеке" adj subst nom
+"<жолмен>"
+	"жол" n ins
+"<уағыздау>"
+	"уағызда" v tv ger nom
+"<,>"
+	"," cm @punct
+"<құдайға>"
+	"құдай" n dat
+	"Құдай" n dat
+"<құлшылық>"
+	"құлшылық" n nom
+"<ету>"
+	"ет" v tv ger nom
+"<,>"
+	"," cm @punct
+"<діни>"
+	"діни" adj
+	"діни" adj subst nom
+"<салт-жораларын>"
+	"салт" n px3sp acc
+"<орындау>"
+	"орында" v tv ger nom
+"<бостандығын да>"
+	"бостандық" n px3sp acc
+		"да" postadv
+"<қамтыйды>"
+	"*қамтыйды"
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<наным>"
+	"нан" n px1sg nom
+;	"нан" n px1sg nom
+;		"е" cop aor p3 pl
+;	"нан" n px1sg nom
+;		"е" cop aor p3 sg
+"<->"
+	"-" guio
+"<наным-сенім>"
+	"наным-сенім" n attr
+	"наным-сенім" n nom
+"<бостандығына>"
+	"бостандық" n px3sp dat
+"<және>"
+	"және" cnjcoo @cc
+"<өз>"
+	"өз" det ref @det
+"<көзқарасын>"
+	"көзқарас" n px3sp acc
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<білдіруіне>"
+	"білдір" v tv ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+	"бар" adj subst nom
+		"е" cop aor p3 sg
+	"бар" adj subst nom
+	"бар" adj
+		"е" cop aor p3 sg
+"<;>"
+	";" sent
+"<бұл>"
+	"бұл" det dem
+"<құқық>"
+	"құқық" n nom
+"<өз>"
+	"өз" det ref
+"<наным-сенімін>"
+	"наным-сенім" n px3sp acc
+"<кедергісіз>"
+	"кедергі" n
+		"сыз" post @case
+;	"кедергі" n nom
+;		"е" cop aor p2 frm sg
+"<ұстану>"
+	"ұстан" v iv ger nom
+	"ұстан" v tv ger nom
+"<еркіндігін>"
+	"еркіндік" n px3sp acc
+"<және>"
+	"және" cnjcoo @cc
+"<мемлекеттік>"
+	"мемлекеттік" adj
+"<шекаралар>"
+	"шекара" n pl nom
+"<тәртібіне>"
+	"тәртіп" n px3sp dat
+"<тәуелді>"
+	"тәуелді" adj
+	"тәуелді" adj subst nom
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+"<қалмай>"
+	"қал" vaux neg gna_perf
+;	"қал" vaux neg prc_impf
+;	"қал" vaux neg prc_perf
+"<,>"
+	"," cm @punct
+"<ақпараттар>"
+	"ақпарат" n pl nom
+"<мен>"
+	"мен" cnjcoo
+"<идеяларды>"
+	"идея" n pl acc
+"<еркін>"
+	"еркін" adj advl
+;	"еркін" adj
+;	"еркін" adj subst nom
+"<іздеп>"
+	"ізде" v tv gna_perf
+"<,>"
+	"," cm @punct
+"<кез>"
+	"кез" n nom
+;	"кез" n attr
+"<->"
+	"-" guio
+"<келген>"
+	"кел" v iv past p3 sg
+	"кел" v iv gpr_past
+	"кел" v iv gpr_past subst nom
+	"кел" v iv ger_past nom
+;	"кел" v iv past p3 pl
+"<құралдар>"
+	"құрал" n pl nom
+"<арқылы>"
+	"арқылы" post @case
+;	"арқылы" adv
+"<тарату>"
+	"тарату" n attr
+;	"тарат" v tv ger nom
+;	"тарату" n nom
+"<бостандығын да>"
+	"бостандық" n px3sp acc
+		"да" postadv
+"<қамтыйды>"
+	"*қамтыйды"
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<бейбіт>"
+	"бейбіт" adj
+	"бейбіт" adj advl
+	"бейбіт" adj subst nom
+"<жиналыстар>"
+	"жиналыс" n pl nom
+"<және>"
+	"және" cnjcoo @cc
+"<ассоциацияларды>"
+	"ассоциация" n pl acc
+"<құру>"
+	"құр" v tv ger nom
+	"кұр" v iv ger nom
+	"құры" v iv ger nom
+"<бостандығына>"
+	"бостандық" n px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ешкімді де>"
+	"ешкім" prn neg acc
+		"да" postadv
+"<белгілі>"
+	"белгілі" n nom
+;	"белгілі" n attr
+;	"белгілі" adj
+;	"белгілі" adv
+;	"белгілі" adj subst nom
+"<бір>"
+	"бір" num
+	"бір" det ind
+	"бір" num subst nom
+"<ассоциацияға>"
+	"ассоциация" n dat
+"<зорлықпен>"
+	"зорлық" n ins
+"<кіргізуге>"
+	"*кіргізуге"
+"<болмайды>"
+	"бол" v iv neg aor p3 sg
+;	"бол" vaux neg aor p3 pl
+;	"бол" vaux neg aor p3 sg
+;	"бол" v iv neg aor p3 pl
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<,>"
+	"," cm @punct
+"<өз>"
+	"өз" det ref
+"<елін>"
+	"ел" n px3sp acc
+"<басқару>"
+	"басқару" n attr
+;	"басқару" n nom
+"<ісіне>"
+	"іс" n px3sp dat
+;	"ісін" v iv prc_impf
+"<тікелей>"
+	"тікелей" adj
+	"тікелей" adj advl
+	"тікелей" adj subst nom
+"<өзі>"
+	"өз" prn ref px3sp nom
+		"е" cop aor p3 sg
+;	"өз" prn ref px3sp nom
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<ерікті>"
+	"ерікті" adj subst nom
+	"ерікті" adj
+	"ерікті" adv
+	"ерікті" adj advl
+;	"ерік" n acc
+;	"ерік" v iv ifi p3 pl
+;	"ерік" v iv ifi p3 sg
+;	"ерік" n
+;		"лы" post @case
+"<түрде>"
+	"түр" n loc
+;	"түр" n loc
+;		"е" cop aor p3 pl
+;	"түр" n loc
+;		"е" cop aor p3 sg
+"<сайланған>"
+	"сайланған" adj advl
+	"сайланған" adj
+	"сайланған" adj subst nom
+;	"сайла" v tv pass gpr_past
+;	"сайла" v tv pass ger_past nom
+;	"сайла" v tv pass past p3 pl
+;	"сайла" v tv pass past p3 sg
+;	"сайла" v tv pass gpr_past subst nom
+"<өкілдері>"
+	"өкіл" n pl px3sp nom
+;	"өкіл" n pl px3sp nom
+;		"е" cop aor p3 pl
+;	"өкіл" n pl px3sp nom
+;		"е" cop aor p3 sg
+"<арқылы>"
+	"арқылы" post @case
+;	"арқылы" adv
+"<қатысуға>"
+	"қатысу" n dat
+;	"қат" v iv coop ger dat
+;	"қатыс" v iv ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+;	"бар" adj
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<өз>"
+	"өз" det ref
+"<елінде>"
+	"ел" n px3sp loc
+"<мемлекеттік>"
+	"мемлекеттік" adj
+"<қызметке>"
+	"қызмет" n dat
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" n attr
+	"тең" adj advl
+	"тең" adj subst nom
+"<дәрежеде>"
+	"дәреже" n loc
+"<қол>"
+	"қол" adj
+	"қол" n nom
+	"қол" adj subst nom
+;	"қол" n attr
+"<жеткізуге>"
+	"жеткіз" v tv ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Халықтың>"
+	"халық" n gen
+"<еркі>"
+	"ерік" n px3sp nom
+"<үкімет>"
+	"үкімет" n attr
+;	"үкімет" n nom
+"<билігінің>"
+	"билік" n px3sp gen
+"<негізі>"
+	"негізі" adv
+;	"негіз" n px3sp nom
+"<болуы>"
+	"бол" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<;>"
+	";" sent
+"<бұл>"
+	"бұл" det dem
+"<ерік>"
+	"ерік" n nom
+"<мерзімді>"
+	"мерзімді" adj subst nom
+	"мерзімді" adj
+	"мерзімді" adj advl
+;	"мерзім" n acc
+;	"мерзім" n
+;		"лы" post @case
+"<және>"
+	"және" cnjcoo @cc
+"<бұрмаланбаған>"
+	"бұрмала" v tv pass neg gpr_past
+	"бұрмала" v tv pass neg ger_past nom
+	"бұрмала" v tv pass neg gpr_past subst nom
+	"бұрмала" v tv pass neg past p3 sg
+;	"бұрмала" v tv pass neg past p3 pl
+"<сайлау>"
+	"сайлау" n nom
+;	"сайлау" n attr
+;	"сайла" v tv ger nom
+"<арқылы>"
+	"арқылы" post @case
+;	"арқылы" adv
+"<жүзеге асырылуы>"
+	"жүзеге асыр" v tv pass ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Сайлау>"
+	"сайлау" n nom
+	"сайлау" n attr
+"<жалпыға>"
+	"жалпы" n dat
+	"жалпы" adj subst dat
+"<бірдей>"
+	"бір" num subst sim
+;	"бірдей" adj
+;	"бірдей" adv
+;	"бірдей" adj advl
+;	"бірдей" adj subst nom
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" n attr
+	"тең" adj advl
+	"тең" adj subst nom
+"<сайлау>"
+	"сайлау" n attr
+;	"сайла" v tv ger nom
+;	"сайлау" n nom
+"<құқығы>"
+	"құқық" n px3sp nom
+"<негізінде>"
+	"негіз" n px3sp loc
+	"негіз" n px3sp loc
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<жасырын>"
+	"жасырын" adj
+	"жасырын" adv
+	"жасырын" n nom
+	"жасырын" adj subst nom
+	"жасырын" adj advl
+;	"жасырын" n attr
+"<дауыс беру>"
+	"дауыс бер" v tv ger nom
+"<жолымен>"
+	"жол" n px3sp ins
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<осы сияқты>"
+	"осы сияқты" adv
+"<сайлау>"
+	"сайлау" n attr
+;	"сайла" v tv ger nom
+;	"сайлау" n nom
+"<бостандығын>"
+	"бостандық" n px3sp acc
+"<қамтамасыз ететін>"
+	"қамтамасыз ет" v tv gpr_impf
+	"қамтамасыз ет" v tv gpr_impf subst nom
+	"қамтамасыз ет" v tv pih p3 sg
+;	"қамтамасыз ет" v tv pih p3 pl
+"<басқа да>"
+	"бас" n dat
+		"да" postadv
+	"басқа" post @case
+		"да" postadv
+	"басқа" adj
+		"да" postadv
+	"басқа" adv
+		"да" postadv
+	"басқа" adj advl
+		"да" postadv
+	"басқа" prn ind nom
+		"да" postadv
+	"басқа" adj subst nom
+		"да" postadv
+"<,>"
+	"," cm @punct
+"<осы>"
+	"осы" det dem
+"<мәндес>"
+	"мәндес" adj
+	"мәндес" adj advl
+	"мәндес" adj subst nom
+"<әдістер>"
+	"әдіс" n pl nom
+"<арқылы>"
+	"арқылы" post @case
+;	"арқылы" adv
+"<өткізілүі>"
+	"*өткізілүі"
+"<тиіс>"
+	"тиіс" adj
+	"тиіс" adj subst nom
+;	"тиіс" adj subst nom
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<,>"
+	"," cm @punct
+"<қоғам>"
+	"қоғам" n attr
+;	"қоғам" n nom
+;		"е" cop aor p3 pl
+;	"қоғам" n nom
+;		"е" cop aor p3 sg
+;	"қоғам" n nom
+"<мүшесі>"
+	"мүше" n px3sp nom
+"<ретінде>"
+	"ретінде" post @case
+"<,>"
+	"," cm @punct
+"<әлеуметтік>"
+	"әлеуметтік" adj
+	"әлеуметтік" adv
+"<жағынан>"
+	"жақ" n px3sp abl
+"<қамсыздандырылуына>"
+	"қамсыздандыр" v tv pass ger px3sp dat
+"<және>"
+	"және" cnjcoo @cc
+"<оның>"
+	"ол" prn dem gen
+	"ол" prn pers p3 sg gen
+"<қадір-қасиеті>"
+	"қадір-қасиет" n px3sp nom
+"<қолдау>"
+	"қолда" v tv ger nom
+"<табуына>"
+	"тап" v tv ger px3sp dat
+"<,>"
+	"," cm @punct
+"<жеке>"
+	"жеке" adj
+	"жеке" adv
+	"жеке" n nom
+	"жеке" n attr
+	"жеке" adj subst nom
+"<басы>"
+	"бас" n px3sp nom
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<кемелденуіне>"
+	"*кемелденуіне"
+"<қажетті>"
+	"қажетті" adj advl
+	"қажетті" adj subst nom
+	"қажетті" adj
+;	"қажет" n acc
+;	"қажет" adj subst acc
+;	"қажет" v tv ifi p3 sg
+;	"қажет" v tv ifi p3 pl
+;	"қажет" n
+;		"лы" post @case
+;	"қажет" adj subst
+;		"лы" post @case
+"<экономикалық>"
+	"экономикалық" adj
+	"экономикалық" adj
+		"е" cop aor p3 sg
+"<,>"
+	"," cm @punct
+"<әлеуметтік>"
+	"әлеуметтік" adj
+	"әлеуметтік" adv
+"<және>"
+	"және" cnjcoo @cc
+"<мәдени>"
+	"мәдени" adj
+"<салалар>"
+	"сала" n pl nom
+"<бойынша>"
+	"бойынша" post @case
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<әрбір>"
+	"әрбір" det qnt @det
+"<мемлекеттің>"
+	"мемлекет" n gen
+"<құрылымы>"
+	"құрылым" n px3sp nom
+"<мен>"
+	"мен" post @case
+"<рессурстарына>"
+	"*рессурстарына"
+"<сай>"
+	"сай" adj
+	"сай" adj subst nom
+"<,>"
+	"," cm @punct
+"<ұлттық>"
+	"ұлттық" adj
+	"ұлттық" adv
+"<ыкпал>"
+	"*ыкпал"
+"<және>"
+	"және" cnjcoo @cc
+"<халықаралық>"
+	"халықаралық" adj
+"<ынтымақтастық>"
+	"ынтымақтастық" n nom
+"<арқылы>"
+	"арқылы" post @case
+"<жүзеге асырылуына>"
+	"жүзеге асыр" v tv pass ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<еңбек>"
+	"еңбек" n nom
+"<етуге>"
+	"ет" v tv ger dat
+"<,>"
+	"," cm @punct
+"<жұмыс>"
+	"жұмыс" n attr
+	"жұмыс" n nom
+"<түрін>"
+	"түр" n px3sp acc
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<таңдауға>"
+	"таңда" v tv ger dat
+"<,>"
+	"," cm @punct
+"<әділ>"
+	"әділ" adj
+	"әділ" n nom
+	"әділ" adj subst nom
+	"әділ" adj advl
+;	"әділ" n attr
+"<және>"
+	"және" cnjcoo @cc
+"<қолайлы>"
+	"қолайлы" adj
+	"қолайлы" adj advl
+	"қолайлы" adj subst nom
+"<еңбек>"
+	"еңбек" n attr
+;	"еңбек" n nom
+"<жағдайына>"
+	"жағдай" n px3sp dat
+"<,>"
+	"," cm @punct
+"<жұмыссыздықтан>"
+	"жұмыссыздық" n abl
+"<қорғалуына>"
+	"қорға" v tv pass ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<құндылығы>"
+	"құндылық" n px3sp nom
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" n attr
+	"тең" adj advl
+	"тең" adj subst nom
+"<еңбегі>"
+	"еңбек" n px3sp nom
+"<үшін>"
+	"үшін" post @case
+"<,>"
+	"," cm @punct
+"<нендей>"
+	"нендей" adv itg
+"<бір>"
+	"бір" num
+	"бір" num subst nom
+;	"бір" det ind
+"<кемсітусіз>"
+	"кемсіту" n nom
+		"е" cop aor p2 frm sg
+	"кемсіту" n
+		"сыз" post @case
+"<,>"
+	"," cm @punct
+"<тең>"
+	"тең" adj
+	"тең" n nom
+	"тең" n attr
+	"тең" adj advl
+	"тең" adj subst nom
+"<еңбек>"
+	"еңбек" n nom
+	"еңбек" n attr
+"<ақы>"
+	"ақы" n nom
+;	"ақы" n attr
+"<алуына>"
+	"ал" v tv ger px3sp dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Жұмыс істеп>"
+	"жұмыс істе" v iv prc_perf
+"<жүрген>"
+	"жүр" vaux gpr_past
+	"жүр" vaux ger_past nom
+	"жүр" vaux gpr_past subst nom
+	"жүр" vaux past p3 sg
+;	"жүр" vaux past p3 pl
+"<әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<өзінің>"
+	"өз" prn ref px3sp gen
+"<және>"
+	"және" cnjcoo @cc
+"<отбасының>"
+	"отбасы" n gen
+"<ылайықты>"
+	"ылайықты" adj
+	"ылайықты" adj advl
+	"ылайықты" adj subst nom
+"<өмір сүруін>"
+	"өмір сүр" v iv ger px3sp acc
+"<қамтамасыз ететіндей>"
+	"қамтамасыз ет" v tv gpr_impf subst sim
+"<әділ>"
+	"әділ" adj
+	"әділ" n nom
+	"әділ" adj subst nom
+	"әділ" adj advl
+;	"әділ" n attr
+"<және>"
+	"және" cnjcoo @cc
+"<қанағаттанарлық>"
+	"қанағаттанарлық" adj
+"<,>"
+	"," cm @punct
+"<және>"
+	"және" cnjcoo @cc
+"<,>"
+	"," cm @punct
+"<қажет болған>"
+	"қажет бол" v iv gpr_past
+	"қажет бол" v iv ger_past nom
+	"қажет бол" v iv gpr_past subst nom
+	"қажет бол" v iv past p3 sg
+;	"қажет бол" v iv past p3 pl
+"<кезде>"
+	"кез" n loc
+	"кез" n loc
+		"е" cop aor p3 sg
+;	"кез" n loc
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<басқа>"
+	"бас" n dat
+	"басқа" adj subst nom
+	"басқа" adj
+	"басқа" adv
+	"басқа" adj advl
+	"басқа" prn ind nom
+"<әлеуметтік>"
+	"әлеуметтік" adj
+	"әлеуметтік" adv
+"<қамсыздандыру>"
+	"қамсыздандыр" v tv ger nom
+"<құралдары>"
+	"құрал" n pl px3sp nom
+"<арқылы>"
+	"арқылы" post @case
+"<толықтырылып>"
+	"толықтыр" v tv pass prc_perf
+"<отыратын>"
+	"отыр" vaux gpr_impf
+	"отыр" vaux gpr_impf subst nom
+	"отыр" vaux pih p3 sg
+;	"отыр" vaux pih p3 pl
+"<,>"
+	"," cm @punct
+"<сый-сияпатқа>"
+	"сый-сияпат" n dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n attr
+;	"адам" n nom
+"<кәсіподақтарын>"
+	"кәсіподақ" n pl px3sp acc
+"<құруға>"
+	"құр" v tv ger dat
+	"кұр" v iv ger dat
+	"құры" v iv ger dat
+"<және>"
+	"және" cnjcoo @cc
+"<өз>"
+	"өз" det ref @det
+"<мүдделерін>"
+	"мүдде" n pl px3sp acc
+"<қорғау>"
+	"қорға" v tv ger nom
+"<үшін>"
+	"үшін" post @case
+"<,>"
+	"," cm @punct
+"<кәсіподақтарына>"
+	"кәсіподақ" n pl px3sp dat
+"<кіруге>"
+	"кір" v iv ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<тынығуға>"
+	"*тынығуға"
+"<және>"
+	"және" cnjcoo @cc
+"<мәдени>"
+	"мәдени" adj
+"<демалуға>"
+	"демал" v iv ger dat
+"<,>"
+	"," cm @punct
+"<оның>"
+;	"ол" prn dem gen
+;	"ол" prn pers p3 sg gen
+"<ішінде>"
+	"іш" n px3sp loc
+"<ақылға>"
+	"ақыл" n dat
+"<қонымды>"
+	"қонымды" adj
+	"қонымды" adj advl
+	"қонымды" adj subst nom
+"<шектеулі>"
+	"шектеулі" adj
+	"шектеулі" adj subst nom
+;	"шектеу" n
+;		"лы" post @case
+"<жұмыс>"
+	"жұмыс" n attr
+;	"жұмыс" n nom
+"<күніне>"
+	"күн" n px3sp dat
+"<және>"
+	"және" cnjcoo @cc
+"<мерзімді>"
+	"мерзімді" adj subst nom
+	"мерзімді" adj
+	"мерзімді" adj advl
+;	"мерзім" n acc
+;	"мерзім" n
+;		"лы" post @case
+"<ақылы>"
+	"ақылы" adj
+	"ақылы" adv
+	"ақылы" adj subst nom
+	"ақылы" adj advl
+	"ақыл" n px3sp nom
+;	"ақы" n
+;		"лы" post @case
+"<демалысқа>"
+	"демалыс" n dat
+"<,>"
+	"," cm @punct
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg @cop
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+"<өзінің>"
+	"өз" prn ref px3sp gen
+"<және>"
+	"және" cnjcoo @cc
+"<отбасы>"
+	"отбасы" n nom
+;	"отбасы" n px3sp nom
+"<мүшелерінің>"
+	"мүше" n pl px3sp gen
+	"мүшеле" v tv ger_fut px3sp gen
+	"мүшеле" v tv gpr_fut subst px3sp gen
+"<ден>"
+	"*ден"
+"<->"
+	"-" guio
+"<саулығын>"
+	"*саулығын"
+"<әл-ауқатын>"
+	"әл-ауқат" n px3sp acc
+"<қамтамасыз ететіндей>"
+	"қамтамасыз ет" v tv gpr_impf subst sim
+"<,>"
+	"," cm @punct
+"<тамақты>"
+	"тамақ" n acc
+	"тамақ" n
+		"лы" post @case
+"<,>"
+	"," cm @punct
+"<киімді>"
+	"киім" n acc
+	"киім" n
+		"лы" post @case
+"<,>"
+	"," cm @punct
+"<баспананы>"
+	"баспана" n acc
+"<,>"
+	"," cm @punct
+"<медициналық>"
+	"медициналық" adj
+	"медициналық" adv
+"<күтімді>"
+	"күтім" n acc
+	"күтім" n
+		"лы" post @case
+"<қамтыйтын>"
+	"*қамтыйтын"
+"<өмір сүру>"
+	"өмір сүр" v iv ger nom
+"<деңгейіне>"
+	"деңгей" n px3sp dat
+"<құқылы>"
+	"құқылы" adj
+"<және>"
+	"және" cnjcoo @cc
+"<де>"
+	"да" postadv
+"<жұмыссыз>"
+	"жұмыссыз" adj subst nom
+	"жұмыссыз" adj
+	"жұмыссыз" adj advl
+;	"жұмыс" n
+;		"сыз" post @case
+"<қалған>"
+	"қал" v iv past p3 sg
+	"қал" v iv gpr_past
+	"қал" v iv gpr_past subst nom
+	"қал" v iv ger_past nom
+;	"қал" v iv past p3 pl
+"<күнде>"
+	"күн" n loc
+	"күнде" adv
+	"күн" n loc
+		"е" cop aor p3 sg
+;	"күн" n loc
+;		"е" cop aor p3 pl
+"<,>"
+	"," cm @punct
+"<науқас>"
+	"науқас" adj
+	"науқас" adj advl
+	"науқас" adj subst nom
+"<болған>"
+	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+	"бол" v iv gpr_past subst nom
+	"бол" v iv ger_past nom
+;	"бол" v iv past p3 pl
+"<кезде>"
+	"кез" n loc
+"<,>"
+	"," cm @punct
+"<мүгедек>"
+	"мүгедек" n nom
+;	"мүгедек" n attr
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+"<қалған>"
+	"қал" vaux gpr_past
+	"қал" vaux ger_past nom
+	"қал" vaux gpr_past subst nom
+	"қал" vaux past p3 sg
+;	"қал" vaux past p3 pl
+"<,>"
+	"," cm @punct
+"<жесір>"
+	"жесір" n nom
+;	"жесір" n attr
+"<болып>"
+	"бол" v iv prc_perf
+;	"бол" v iv gna_perf
+"<қалған>"
+	"қал" vaux gpr_past
+	"қал" vaux ger_past nom
+	"қал" vaux gpr_past subst nom
+	"қал" vaux past p3 sg
+;	"қал" vaux past p3 pl
+"<күнде>"
+	"күн" n loc
+"<,>"
+	"," cm @punct
+"<қартайған>"
+	"қартайған" adj
+	"қартайған" adj advl
+	"қартайған" adj subst nom
+"<шақта>"
+	"шақ" n loc
+"<,>"
+	"," cm @punct
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<өзіне>"
+	"өз" prn ref px3sp dat
+"<байланысты>"
+	"байланысты" adj subst nom
+	"байланысты" adj
+;	"байланыс" n acc
+;	"байланыс" n
+;		"лы" post @case
+"<емес>"
+	"е" cop neg aor p3 sg
+;	"е" cop neg aor p3 pl
+;	"емес" adv
+"<басқа да>"
+	"бас" n dat
+		"да" postadv
+	"басқа" adj subst nom
+		"да" postadv
+	"басқа" adj
+		"да" postadv
+	"басқа" adv
+		"да" postadv
+	"басқа" adj advl
+		"да" postadv
+	"басқа" prn ind nom
+		"да" postadv
+"<себептермен>"
+	"себеп" n pl ins
+"<тіршілік>"
+	"тіршілік" n nom
+;	"тіршілік" n attr
+"<ету>"
+	"ет" v tv ger nom
+;	"ет" vaux ger nom
+"<мүмкіншілігінен>"
+	"мүмкіншілік" adj subst px3sp abl
+"<айырылып>"
+	"айыр" v tv pass prc_perf
+	"айырыл" v iv prc_perf
+	"айрыл" v iv prc_perf
+;	"айыр" v tv pass gna_perf
+;	"айырыл" v iv gna_perf
+;	"айрыл" v iv gna_perf
+"<қалған>"
+	"қал" vaux gpr_past
+	"қал" vaux ger_past nom
+	"қал" vaux gpr_past subst nom
+	"қал" vaux past p3 sg
+;	"қал" vaux past p3 pl
+"<жағдайда>"
+	"жағдай" n loc
+"<қамсыздандырылуына>"
+	"қамсыздандыр" v tv pass ger px3sp dat
+"<құқылы>"
+	"құқылы" adj
+"<.>"
+	"." sent @punct
+
+"<Ана>"
+	"ана" n nom
+	"ана" n attr
+"<және>"
+	"және" cnjcoo @cc
+"<нәресте>"
+	"нәресте" n nom
+"<болу>"
+	"бол" v iv ger nom
+"<жағдайы>"
+	"жағдай" n px3sp nom
+"<айрықша>"
+	"айрықша" n nom
+	"айрықша" n attr
+;	"айрықша" adj
+;	"айрықша" adv
+;	"айрықша" adj advl
+;	"айрықша" adj subst nom
+"<қамқорлық>"
+	"қамқорлық" n nom
+;	"қамқорлық" n attr
+"<пен>"
+	"мен" cnjcoo @cc
+"<көмек>"
+	"көмек" n nom
+;	"көмек" n attr
+"<алуға>"
+	"ал" v tv ger dat
+"<құқық>"
+	"құқық" n nom
+"<береді>"
+	"бер" v tv aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Балалардың>"
+	"бала" n pl gen
+"<бәрі>"
+	"бәрі" prn qnt px3sp nom
+"<,>"
+	"," cm @punct
+"<некелі>"
+	"некелі" adj
+	"некелі" adj subst nom
+;	"неке" n
+;		"лы" post @case
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<некесіз>"
+	"неке" n
+		"сыз" post @case
+;	"неке" n nom
+;		"е" cop aor p2 frm sg
+"<туған>"
+	"туған" n nom
+;	"туған" n attr
+;	"ту" v iv gpr_past
+;	"ту" v tv gpr_past
+;	"туған" adj
+;	"ту" v iv ger_past nom
+;	"ту" v tv ger_past nom
+;	"ту" v iv past p3 pl
+;	"ту" v iv past p3 sg
+;	"ту" v iv gpr_past subst nom
+;	"ту" v tv past p3 pl
+;	"ту" v tv past p3 sg
+;	"ту" v tv gpr_past subst nom
+;	"туған" adj subst nom
+"<,>"
+	"," cm @punct
+"<бірдей>"
+	"бір" num subst sim
+	"бірдей" adj
+	"бірдей" adv
+	"бірдей" adj advl
+	"бірдей" adj subst nom
+"<әлеуметтік>"
+	"әлеуметтік" adj
+"<қорғауды>"
+	"қорға" v tv ger acc
+"<пайдаланады>"
+	"пайдалан" v tv aor p3 sg
+;	"пайдалан" v tv aor p3 pl
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<білім>"
+	"білім" n nom
+;	"білім" n attr
+"<алуға>"
+	"ал" v tv ger dat
+"<құқығы>"
+	"құқық" n px3sp nom
+"<бар>"
+	"бар" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Білім>"
+	"білім" n nom
+"<беру>"
+	"бер" v tv ger nom
+"<,>"
+	"," cm @punct
+"<ең>"
+	"ең" adv
+"<болмағанда>"
+	"бол" v iv neg gpr_past subst loc
+	"бол" v iv neg ger_past loc
+	"болмаған" adj subst loc
+"<бастауыш>"
+	"*бастауыш"
+"<және>"
+	"және" cnjcoo @cc
+"<жалпы>"
+	"жалпы" adj
+	"жалпы" adv
+	"жалпы" n nom
+	"жалпы" n attr
+	"жалпы" adj advl
+	"жалпы" adj subst nom
+"<білім>"
+	"білім" n nom
+"<,>"
+	"," cm @punct
+"<тегін>"
+	"тегін" adj
+	"тегін" adj advl
+	"тегін" adj subst nom
+;	"тек" n px3sp acc
+"<болуы>"
+	"бол" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Бастауыш>"
+	"*Бастауыш"
+"<білім>"
+	"білім" n nom
+"<баршаға>"
+	"барша" adj subst dat
+"<міндетті>"
+	"міндет" n acc
+	"міндетті" adj
+;	"міндет" n
+;		"лы" post @case
+"<болуы>"
+	"бол" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Техникалық>"
+	"техникалық" adj @conj
+"<және>"
+	"және" cnjcoo @cc
+"<кәсіптік>"
+	"кәсіптік" adj
+"<білім>"
+	"білім" n nom
+	"білім" n attr
+"<көпшіліктің>"
+	"көпшілік" n gen
+"<қолы>"
+	"қол" n px3sp nom
+	"қол" adj subst px3sp nom
+"<жетерліктей>"
+	"жет" v iv gpr_ppot sim
+	"жетерлік" adj subst sim
+"<болуы>"
+	"бол" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+;	"тиіс" adj
+;		"е" cop aor p3 sg
+"<және>"
+	"және" cnjcoo @cc
+"<жоғары>"
+	"жоғары" adj
+	"жоғары" adv
+	"жоғары" adj advl
+	"жоғары" adj subst nom
+"<білім де>"
+	"білім" n nom
+		"да" postadv
+	"білім" n nom
+		"е" cop aor p3 sg
+			"да" postadv
+;	"білім" n nom
+;		"е" cop aor p3 pl
+;			"да" postadv
+"<,>"
+	"," cm @punct
+"<әркімнің>"
+	"әркім" prn qnt gen
+"<қабілетіне>"
+	"қабілет" n px3sp dat
+"<қарай>"
+	"қарай" post @case
+"<көпшіліктің>"
+	"көпшілік" n gen
+"<қолы>"
+	"қол" n px3sp nom
+	"қол" adj subst px3sp nom
+"<жетерліктей>"
+	"жет" v iv gpr_ppot sim
+	"жетерлік" adj subst sim
+"<болуы>"
+	"бол" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Білім>"
+	"білім" n nom
+"<беру>"
+	"бер" v tv ger nom
+"<адамның>"
+	"адам" n gen
+"<жеке>"
+	"жеке" n attr
+;	"жеке" adj
+;	"жеке" adv
+;	"жеке" adj subst nom
+;	"жеке" n nom
+"<басының>"
+	"бас" n px3sp gen
+"<толық>"
+	"толық" adj
+	"толық" adj advl
+	"толық" adj subst nom
+"<кемелденуіне>"
+	"*кемелденуіне"
+"<және>"
+	"және" cnjcoo @cc
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo @cc
+"<негізгі>"
+	"негізгі" adj
+	"негізгі" adv
+	"негізгі" adj subst nom
+"<бостандықтарына>"
+	"бостандық" n pl px3sp dat
+"<деген>"
+	"де" v tv gpr_past
+	"де" v tv ger_past nom
+	"де" v tv gpr_past subst nom
+	"де" v tv past p3 sg
+;	"де" v tv past p3 pl
+"<құрметті>"
+	"құрмет" n acc
+	"құрметті" adj
+	"құрметті" adj subst nom
+	"құрметті" adj advl
+;	"құрмет" n
+;		"лы" post @case
+"<арттыруға>"
+	"арттыр" v tv ger dat
+"<бағытталуы>"
+	"бағытта" v tv pass ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Білім>"
+	"білім" n nom
+"<беру>"
+	"бер" v tv ger nom
+"<барлық>"
+	"барлық" adj
+	"барлық" adv
+	"барлық" det qnt @det
+	"барлық" adj advl
+	"барлық" prn qnt nom
+	"барлық" adj subst nom
+"<ұлттар>"
+	"ұлт" n pl nom
+"<,>"
+	"," cm @punct
+"<нәсілдік>"
+	"нәсілдік" adj
+"<және>"
+	"және" cnjcoo @cc
+"<діни>"
+	"діни" adj
+"<топтары>"
+	"топ" n pl px3sp nom
+	"топта" v tv ger_fut px3sp nom
+	"топта" v tv gpr_fut subst px3sp nom
+"<арасында>"
+	"ара" n px3sp loc
+"<түсіністік>"
+	"түсін" v tv coop ifi p1 pl
+"<,>"
+	"," cm @punct
+"<шыдамдылық>"
+	"шыдамдылық" n nom
+"<пен>"
+	"мен" cnjcoo @cc
+"<достық>"
+	"достық" n nom
+"<қарым-қатынас>"
+	"қарым-қатынас" n nom @obj 
+"<орнатуға>"
+	"орнату" n dat
+;	"орнат" v tv ger dat
+"<ықпал>"
+	"ықпал" n nom
+"<жасап>"
+	"жаса" v tv gna_perf
+"<және>"
+	"және" cnjcoo @cc
+"<Біріккен>"
+	"бірік" v iv gpr_past
+	"бірік" v iv ger_past nom
+"<Ұлттар>"
+	"ұлт" n pl nom
+"<Ұйымының>"
+	"ұйым" n px3sp gen
+"<бейбітшілікті>"
+	"бейбітшілік" n acc
+	"бейбітшілік" n
+		"лы" post @case
+"<қуаттау>"
+	"*қуаттау"
+"<жолындағы>"
+	"жол" n px3sp loc attr
+;	"жол" n px3sp loc subst nom
+"<жұмысына>"
+	"жұмыс" n px3sp dat
+"<ыкпал>"
+	"*ыкпал"
+"<жасап>"
+	"жаса" v tv gna_perf
+;	"жаса" v tv prc_perf
+"<,>"
+	"," cm @punct
+"<дем>"
+	"дем" n nom
+;	"дем" n attr
+"<беруі>"
+	"бер" v tv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Ата-аналардың>"
+	"ата-ана" n pl gen
+"<өздерінің>"
+	"өз" prn ref px3pl gen
+"<жас>"
+	"жас" adj
+	"жас" adv
+	"жас" n nom
+	"жас" n attr
+	"жас" adj subst nom
+"<балаларына>"
+	"бала" n pl px3sp dat
+"<білім>"
+	"білім" n nom
+;	"білім" n attr
+"<беру>"
+	"бер" v tv ger nom
+;	"бер" vaux ger nom
+"<түрін>"
+	"түр" n px3sp acc
+"<таңдауда>"
+	"таңда" v tv ger loc
+"<құқығы>"
+	"құқық" n px3sp nom
+"<басымды>"
+	"басымды" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+	"адам" n attr
+"<қоғамның>"
+	"қоғам" n gen
+"<мәдени>"
+	"мәдени" adj
+"<өміріне>"
+	"өмір" n px3sp dat
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<қатысуға>"
+	"қатысу" n dat
+;	"қат" v iv coop ger dat
+;	"қатыс" v iv ger dat
+"<,>"
+	"," cm @punct
+"<өнерден>"
+	"өнер" n abl
+	"өн" v iv gpr_fut subst abl
+;	"өнер" n abl
+;		"е" cop aor p3 pl
+;	"өнер" n abl
+;		"е" cop aor p3 sg
+"<рахат>"
+	"*рахат"
+"<->"
+	"-" guio
+"<ләззат>"
+	"ләззат" n nom
+"<алуға>"
+	"ал" v tv ger dat
+"<,>"
+	"," cm @punct
+"<ғылыми>"
+	"ғылыми" adj
+	"ғылыми" adv
+	"ғылыми" adj advl
+	"ғылыми" adj subst nom
+"<прогресске>"
+	"прогресс" n dat
+"<ат>"
+	"ат" n nom
+"<салысуға>"
+	"сал" v tv coop ger dat
+"<әрі>"
+	"әрі" cnjcoo @cc
+	"әрі" post @case
+	"әрі" adv
+"<оның>"
+	"ол" prn dem gen
+	"ол" prn pers p3 sg gen
+"<игілігін>"
+	"игілік" n px3sp acc
+"<пайдалануға>"
+	"пайдалану" n dat
+;	"пайдалан" v tv ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+;	"адам" n attr
+"<өзі>"
+	"өз" prn ref px3sp nom
+"<автор>"
+	"автор" n nom
+;	"автор" n attr
+"<болып>"
+	"бол" v iv gna_perf
+"<табылатын>"
+	"тап" v tv pass gpr_impf
+	"тап" v tv pass gpr_impf subst nom
+"<ғылыми>"
+	"ғылыми" adj
+	"ғылыми" adv
+	"ғылыми" adj advl
+	"ғылыми" adj subst nom
+"<еңбегінің>"
+	"еңбек" n px3sp gen
+"<,>"
+	"," cm @punct
+"<әдеби>"
+	"әдеби" adj
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<көркем>"
+	"көркем" adj
+	"көркем" adj advl
+	"көркем" adj subst nom
+"<шығармаларының>"
+	"шығарма" n pl px3sp gen
+"<нәтижесінде>"
+	"нәтиже" n px3sp loc
+"<туындайтын>"
+	"туында" v iv gpr_impf
+	"туында" v iv gpr_impf subst nom
+"<рухани>"
+	"рухани" adj
+	"рухани" adv
+	"рухани" adj subst nom
+"<және>"
+	"және" cnjcoo @cc
+"<материалды>"
+	"материал" n acc
+	"материал" n
+		"лы" post @case
+"<мүдделерін>"
+	"мүдде" n pl px3sp acc
+"<қорғауға>"
+	"қорға" v tv ger dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+;	"адам" n attr
+"<осы>"
+	"осы" det dem
+	"осы" prn dem nom
+"<декларацияда>"
+	"декларация" n loc
+"<баянды>"
+	"баян" n acc
+	"баян" n
+		"лы" post @case
+"<етілген>"
+	"ет" v tv pass gpr_past
+	"ет" v tv pass ger_past nom
+	"ет" v tv pass gpr_past subst nom
+"<құқықтар>"
+	"құқық" n pl nom
+"<мен>"
+	"мен" cnjcoo @cc
+"<бостандықтарды>"
+	"бостандық" n pl acc
+"<толық>"
+	"толық" adj advl
+;	"толық" adj
+;	"толық" adj subst nom
+"<жүзеге асыра>"
+	"жүзеге асыр" v tv prc_impf
+"<алатын>"
+	"ал" vaux gpr_impf
+	"ал" vaux gpr_impf subst nom
+	"ал" vaux pih p3 sg
+;	"ал" vaux pih p3 pl
+"<әлеуметтік>"
+	"әлеуметтік" adj @conj
+"<және>"
+	"және" cnjcoo @cc
+"<халықаралық>"
+	"халықаралық" adj @amod
+"<тәртіпке>"
+	"тәртіп" n dat
+"<құқылы>"
+	"құқылы" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Әр>"
+	"әр" det qnt @det
+"<адамның>"
+	"адам" n gen
+"<,>"
+	"," cm @punct
+"<адам баласының>"
+	"адам баласы" n gen
+	"адам баласы" n px3sp gen
+"<еркін>"
+	"еркін" adj
+	"еркін" adv
+	"еркін" adj advl
+	"еркін" adj subst nom
+"<және>"
+	"және" cnjcoo @cc
+"<толық>"
+	"толық" adj
+	"толық" adj advl
+	"толық" adj subst nom
+"<кемелденуіне>"
+	"*кемелденуіне"
+"<мүмкіншілік>"
+	"мүмкіншілік" adj advl
+;	"мүмкіншілік" adj
+"<беретін>"
+	"бер" v tv gpr_impf subst nom
+	"бер" v tv gpr_impf
+	"бер" v tv pih p3 sg
+;	"бер" v tv pih p3 pl
+"<қоғам>"
+	"қоғам" n attr
+;	"қоғам" n nom
+"<алдында>"
+	"алд" n px3sp loc
+"<міндеттері>"
+	"міндет" n pl px3sp nom
+	"міндетте" v tv ger_fut px3sp nom
+	"міндетте" v tv gpr_fut subst px3sp nom
+"<бар>"
+	"бар" adj
+	"бар" adj subst nom
+;	"бар" adj
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Өзінің>"
+	"өз" prn ref px3sp gen
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo
+"<бостандықтарын>"
+	"бостандық" n pl px3sp acc
+"<жүзеге асыруда>"
+	"жүзеге асыру" n loc
+;	"жүзеге асыр" v tv ger loc
+"<әр>"
+	"әр" det qnt @det
+"<адам>"
+	"адам" n nom
+	"адам" n attr
+"<тек>"
+	"тек" n nom
+	"тек" n attr
+;	"тек" cnjcoo
+;	"тек" adv
+"<басқа>"
+	"бас" n dat
+	"басқа" adj
+	"басқа" adj subst nom
+	"басқа" adj advl
+	"басқа" prn ind nom
+"<адамдардың>"
+	"адам" n pl gen
+"<құқықтары>"
+	"құқық" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo
+"<бостандықтарын>"
+	"бостандық" n pl px3sp acc
+"<тиісті>"
+	"тиісті" adj subst nom
+	"тиісті" adj
+	"тиіс" adj subst
+		"лы" post @case
+;	"тиіс" adj subst acc
+;	"ти" v iv coop ifi p3 pl
+;	"ти" v iv coop ifi p3 sg
+"<түрде>"
+	"түр" n loc
+"<тану>"
+	"тан" v iv ger nom
+	"таны" v tv ger nom
+"<және>"
+	"және" cnjcoo @cc
+"<құрметтеу>"
+	"құрметте" v tv ger nom
+"<мақсаты>"
+	"мақсат" n px3sp nom
+	"көзде" v tv pass ger_past nom
+	"көзде" v tv pass gpr_past subst nom
+	"көзде" v tv pass past p3 sg
+;	"көзде" v tv pass past p3 pl
+"<жағдайда ғана>"
+	"жағдай" n loc
+		"ғана" postadv
+"<және>"
+	"және" cnjcoo @cc
+"<демократиялық>"
+	"демократиялық" adj
+"<қоғамдағы>"
+	"қоғам" n loc attr
+"<моральдің>"
+	"мораль" n gen
+"<,>"
+	"," cm @punct
+"<қоғамдық>"
+	"қоғамдық" adj
+"<тәртіп>"
+	"тәртіп" n nom
+"<пен>"
+	"мен" cnjcoo @cc
+"<игіліктің>"
+	"игілік" n gen
+"<әділетті>"
+	"әділет" n acc
+	"әділет" n
+		"лы" post @case
+"<талаптарын>"
+	"талап" n pl px3sp acc
+"<қанағаттандыру>"
+	"қанағаттандыр" v tv ger nom
+"<мақсаты>"
+	"мақсат" n px3sp nom
+"<көзделген>"
+	"көзде" v tv pass gpr_past
+	"көзде" v tv pass ger_past nom
+	"көзде" v tv pass gpr_past subst nom
+	"көзде" v tv pass past p3 sg
+;	"көзде" v tv pass past p3 pl
+"<жағдайда ғана>"
+	"жағдай" n loc
+		"ғана" postadv
+	"жағдай" n loc
+		"е" cop aor p3 sg
+			"ғана" postadv
+"<,>"
+	"," cm @punct
+"<заңмен>"
+	"заң" n ins
+"<белгіленген>"
+	"белгіленген" adj advl
+	"белгіленген" adj
+	"белгіленген" adj subst nom
+;	"белгіле" v tv pass past p3 pl
+;	"белгіле" v tv pass gpr_past
+;	"белгіле" v tv pass ger_past nom
+;	"белгіле" v tv pass past p3 sg
+;	"белгіле" v tv pass gpr_past subst nom
+"<шектеуге>"
+	"шектеу" n dat
+;	"шекте" v tv ger dat
+"<ұшырауы>"
+	"ұшыра" v iv ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Осы>"
+	"осы" det dem
+	"осы" prn dem nom
+"<бостандықтар>"
+	"бостандық" n pl nom
+"<мен>"
+	"мен" cnjcoo
+"<құқықтарды>"
+	"құқық" n pl acc
+"<жүзеге асырылуы>"
+	"жүзеге асыр" v tv pass ger px3sp nom
+"<Біріккен>"
+	"бірік" v iv gpr_past
+	"бірік" v iv ger_past nom
+	"бірік" v iv gpr_past subst nom
+"<Ұлттар>"
+	"ұлт" n pl nom
+"<Ұйымының>"
+	"ұйым" n px3sp gen
+"<мақсаттары>"
+	"мақсат" n pl px3sp nom
+"<мен>"
+	"мен" cnjcoo
+"<қағидаларына>"
+	"қағида" n pl px3sp dat
+"<қайшы>"
+	"қайшы" adj
+	"қайшы" adj advl
+	"қайшы" n nom
+	"қайшы" adj subst nom
+"<келмеуі>"
+	"кел" v iv neg ger px3sp nom
+"<тиіс>"
+	"тиіс" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent @punct
+
+"<Осы>"
+	"осы" det dem
+"<Декларациядағы>"
+	"декларация" n loc attr
+	"декларация" n loc subst nom
+"<ешбір>"
+	"ешбір" det neg
+	"ешбір" prn neg nom
+"<қағида>"
+	"қағида" n nom
+;	"қағида" n attr
+"<қасыбір>"
+	"қайсыбір" det ind
+"<мемлекетке>"
+	"мемлекет" n dat
+"<,>"
+	"," cm @punct
+"<адамдар>"
+	"адам" n pl nom
+"<тобына>"
+	"топ" n px3sp dat
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<жеке>"
+	"жеке" adj
+	"жеке" adv
+	"жеке" n nom
+	"жеке" n attr
+	"жеке" adj subst nom
+"<адамдарға>"
+	"адам" n pl dat
+"<аталмыш>"
+	"аталмыш" adj
+"<Декларацияда>"
+	"декларация" n loc
+"<баянды>"
+	"баян" n acc
+	"баян" n
+		"лы" post @case
+"<етілген>"
+	"ет" v tv pass gpr_past
+	"ет" v tv pass ger_past nom
+	"ет" v tv pass gpr_past subst nom
+"<құқықтар>"
+	"құқық" n pl nom
+"<мен>"
+	"мен" cnjcoo
+"<бостандықтарды>"
+	"бостандық" n pl acc
+"<жоятын>"
+	"жой" v tv gpr_impf
+	"жой" v tv gpr_impf subst nom
+"<қызметпен>"
+	"қызмет" n ins
+"<айналысу>"
+	"айнал" v iv coop ger nom
+	"айналыс" v iv ger nom
+"<немесе>"
+	"немесе" cnjcoo @cc
+"<іс-әрекет>"
+	"іс-әрекет" n nom
+	"іс-әрекет" n attr
+"<жасау>"
+	"жаса" v tv ger nom
+"<құқығын>"
+	"құқық" n px3sp acc
+"<береді>"
+	"бер" v tv aor p3 sg
+;	"бер" v tv aor p3 pl
+"<деп>"
+	"де" v tv gna_perf
+"<пайымдалуы>"
+	"*пайымдалуы"
+"<тиіс>"
+	"тиіс" adj
+"<емес>"
+	"е" cop neg aor p3 sg
+"<.>"
+	"." sent @punct
