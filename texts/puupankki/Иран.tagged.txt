@@ -3054,7 +3054,7 @@
 "<,>"
 	"," cm @punct
 "<меджлис>"
-	"*меджлис"
+	"меджлис" n nom
 "<шақырылды>"
 	"шақыр" v tv pass ifi p3 sg
 ;	"шақыр" v tv pass ifi p3 pl 
@@ -3324,7 +3324,8 @@
 "<->"
 	"-" guio
 "<меджлис>"
-	"*меджлис"
+	"меджлис" n nom
+	"меджлис" n attr
 "<Каджар>"
 	"*Каджар"
 "<әулетін>"
@@ -3374,8 +3375,7 @@
 "<Пехлеви>"
 	"*Пехлеви"
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+	"де" v tv gna_perf
 "<жариялады>"
 	"жарияла" v tv ifi p3 sg
 ;	"жарияла" v iv ifi p3 sg
@@ -3385,53 +3385,41 @@
 	"." sent @punct
 
 "<Елде>"
-	"ел" n loc
+	"ел" n loc @x #1->5
 "<нарықтық>"
-	"нарықтық" adj
+	"нарықтық" adj @amod #2->3
 "<қатынастар>"
-	"қатынас" n pl nom
+	"қатынас" n pl nom @subj #3->5
 "<тез>"
-	"тез" adj advl 
-;	"тез" adj 
-;	"тез" adv 
-;	"тез" adj subst nom 
+	"тез" adj advl @advmod #4->5
+;	"тез" adv @advmod #4->5
 "<дами>"
-	"дамы" v iv prc_impf
-"<бастады>"
-	"баста" vaux ifi p3 sg 
-;	"баста" vaux ifi p3 pl  
+	"дамы" v iv prc_impf @main #5->0
+"<бастады>" 
+	"баста" vaux ifi p3 sg @aux #6->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->5
 
 "<Халықтың>"
-	"халық" n gen
+	"халық" n gen @nmod #1->5
 "<мәдени>"
-	"мәдени" adj
+	"мәдени" adj @conj #2->4
 "<және>"
-	"және" cnjcoo @cc
+	"және" cnjcoo @cc #3->4
 "<тұрмыстық>"
-	"тұрмыстық" adj
+	"тұрмыстық" adj @amod #4->5
 "<өмірінде>"
-	"өмір" n px3sp loc
+	"өмір" n px3sp loc @x #5->6
 "<көптеген>"
-	"көптеген" det qnt @det
-;	"көпте" v tv gpr_past 
-;	"көпте" v tv ger_past nom 
-;	"көпте" v tv past p3 pl 
-;	"көпте" v tv past p3 sg 
-;	"көпте" v tv gpr_past subst nom 
+;	"көпте" v tv gpr_past @x #6->7
 "<өзгерістер>"
-	"өзгеріс" n pl nom
+	"өзгеріс" n pl nom @subj #7->8
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+	"бол" v iv gna_perf @advcl #8->9
 "<өтті>"
-	"өт" v tv ifi p3 sg
-;	"өт" v iv ifi p3 sg
-;	"өт" v iv ifi p3 pl 
-;	"өт" v tv ifi p3 pl 
+	"өт" v tv ifi p3 sg @main #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 "<Алайда>"
 ;	"Алай" np top loc
@@ -3486,31 +3474,21 @@
 	"." sent @punct
 
 "<Халықтың>"
-	"халық" n gen
-;	"Халық" np ant m gen
+	"халық" n gen @nmod #1->2
 "<тұрмысы>"
-	"тұрмыс" n px3sp nom
-;	"тұрмыс" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"тұрмыс" n px3sp nom
-;		"е" cop aor p3 sg 
+	"тұрмыс" n px3sp nom @x #2->3
 "<нашарлап>"
-	"*нашарлап"
+	"*нашарлап" @x #3->7
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->7
 "<елде>"
-	"ел" n loc
-;	"ел" n loc
-;		"е" cop aor p3 pl 
-;	"ел" n loc
-;		"е" cop aor p3 sg 
+	"ел" n loc @nmod #5->7
 "<толқулар>"
-	"*толқулар"
+	"толқу" n pl nom @subj #6->7
 "<басталды>"
-	"баста" v tv pass ifi p3 sg
-;	"баста" v tv pass ifi p3 pl 
+	"баста" v tv pass ifi p3 sg @main #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 "<Ол>"
 	"ол" det dem @det #1->2
@@ -3521,7 +3499,7 @@
 "<басылып>"
 	"бас" v tv pass prc_perf @main #4->0
 "<отырды>"
-	"отыр" vaux ifi p3 sg @aux #5->4
+	"отыр" vaux ifi p3 pl @aux #5->4
 "<.>"
 	"." sent @punct #6->4
 
