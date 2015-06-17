@@ -1,0 +1,2615 @@
+"<Балаларды>"
+	"бала" n pl acc
+"<оқытқан да>"
+	"оқыт" v tv ger_past nom
+		"да" cnjcoo
+	"оқыт" v tv ger_past nom
+		"да" postadv
+	"оқыт" v tv gpr_past subst nom
+		"да" cnjcoo
+	"оқыт" v tv gpr_past subst nom
+		"да" postadv
+	"оқыт" v tv past p3 sg
+		"да" cnjcoo
+	"оқыт" v tv past p3 sg
+		"да" postadv
+;	"оқыт" v tv past p3 pl REMOVE:687
+;		"да" cnjcoo
+;	"оқыт" v tv past p3 pl REMOVE:687
+;		"да" postadv
+"<жақсы>"
+	"жақсы" adj
+	"жақсы" adv
+		"е" cop aor p3 sg
+	"жақсы" adj advl
+"<,>"
+	"," cm
+"<бірақ>"
+	"бірақ" cnjcoo @cc
+"<құлшылық>"
+	"құлшылық" n nom
+;	"құлшылық" n attr REMOVE:431
+"<қыларлық қана>"
+	"қыл" v tv gpr_ppot nom
+		"ғана" postadv
+"<,>"
+	"," cm
+"<түркі>"
+	"түркі" adj advl SELECT:483
+;	"түркі" adj SELECT:483
+"<танырлық қана>"
+	"таны" v tv gpr_ppot nom
+		"ғана" postadv
+"<таза>"
+	"таза" adj advl SELECT:483
+;	"таза" adj SELECT:483
+"<оқытса>"
+	"оқыт" v tv prc_cond p3 sg SELECT:601
+;	"оқыт" v tv prc_cond p3 pl SELECT:601 REMOVE:687
+"<болады>"
+	"бол" vaux aor p3 sg SELECT:613
+;	"бол" vaux aor p3 pl SELECT:613 REMOVE:687
+"<.>"
+	"." sent
+
+"<Аның>"
+	"ол" prn pers p3 sg gen @nmod #1->
+"<үшін>"
+	"үшін" post @case #2->1
+"<бұл>"
+	"бұл" det dem @det #3->
+"<жер>"
+	"жер" n nom
+"<Дар-әл-Харб>"
+	"Дар-әл-Харб" np top nom
+		"е" cop aor p3 sg @cop
+"<,>"
+	"," cm
+"<мұнда>"
+	"бұл" prn dem loc @
+"<әуел>"
+	"әуел" adj
+	"әуел" adj advl
+	"әуел" adj subst nom
+"<мал>"
+	"мал" n nom
+"<табу>"
+	"тап" v tv ger nom
+"<керек>"
+	"керек" adj SELECT:994
+	"керек" adj SELECT:994
+		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<онан>"
+	"ол" prn dem abl
+"<соң>"
+	"соң" post
+"<ғараб>"
+	"ғараб" n nom
+"<,>"
+	"," cm
+"<парсы>"
+	"парсы" n nom
+"<керек>"
+;	"керек" adj SELECT:299
+;	"керек" adj SELECT:299
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Қарны>"
+	"*Қарны"
+"<аш>"
+	"аш" adj
+	"аш" adj advl
+	"аш" adj subst nom
+;	"аш" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"аш" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"аш" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"аш" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"аш" v tv imp p2 sg REMOVE:384
+"<кісінің>"
+	"кісі" n gen
+	"кіс" n px3sp gen
+"<көңіліне>"
+	"көңіл" n px3sp dat
+"<ақыл>"
+	"ақыл" n nom
+	"ақыл" n nom
+		"е" cop aor p3 sg
+;	"ақыл" n attr REMOVE:431
+;	"ақыл" n nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<бойында>"
+	"бой" n px3sp loc
+;	"бой" n px3sp loc
+;		"е" cop aor p3 pl REMOVE:237
+;	"бой" n px3sp loc
+;		"е" cop aor p3 sg REMOVE:237
+;	"бойында" post REMOVE:320
+"<ар>"
+	"ар" n nom
+	"ар" n nom
+		"е" cop aor p3 sg
+;	"ар" n attr REMOVE:431
+;	"ар" n nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<ғылымға>"
+	"ғылым" n dat
+"<құмарлық>"
+	"*құмарлық"
+"<қайдан>"
+	"қай" prn ind abl
+	"қайдан" adv itg
+;	"қай" prn ind abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"қай" prn ind abl
+;		"е" cop aor p3 sg REMOVE:237
+;	"қайдан" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"қайдан" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+"<тұрсын>"
+	"тұр" v iv opt p3 sg
+;	"тұр" vaux opt p3 pl REMOVE:610
+;	"тұр" vaux opt p3 sg REMOVE:610
+;	"тұр" v iv opt p3 pl REMOVE:687
+"<?>"
+	"?" sent
+
+"<Ашап>"
+	"*Ашап"
+"<->"
+	"-" guio
+"<ішуге>"
+	"іш" v tv ger dat
+"<малдың>"
+	"мал" n gen
+	"малды" adj subst px2sg nom
+;	"малды" adj subst px2sg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"малды" adj subst px2sg nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"мал" v tv ifi p2 sg REMOVE:332
+"<тапшылығы да>"
+	"тапшылық" n px3sp nom
+		"да" cnjcoo
+	"тапшылық" n px3sp nom
+		"да" postadv
+	"тапшылық" n px3sp nom
+		"е" cop aor p3 sg
+			"да" cnjcoo
+	"тапшылық" n px3sp nom
+		"е" cop aor p3 sg
+			"да" postadv
+;	"тапшылық" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:694
+;			"да" cnjcoo
+;	"тапшылық" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:694
+;			"да" postadv
+"<,>"
+	"," cm
+"<ағайынның>"
+	"*ағайынның"
+"<араздығына>"
+	"араздық" n px3sp dat
+"<уа>"
+	"уа" ij
+	"уа" cnjcoo
+"<әр түрлі>"
+	"әр түрлі" adj
+	"әр түрлі" det ind
+	"әр түрлі" adj advl
+	"әр түрлі" adj subst nom
+;	"әр түрлі" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"әр түрлі" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"әр түрлі" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"әр түрлі" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<бәлеге>"
+	"бәле" n dat
+"<,>"
+	"," cm
+"<ұрлық>"
+	"ұрлық" n nom
+;	"ұрлық" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;	"ұрлық" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;	"ұрлық" n attr REMOVE:431
+"<,>"
+	"," cm
+"<зорлық>"
+	"зорлық" n nom
+;	"зорлық" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;	"зорлық" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;	"зорлық" n attr REMOVE:431
+"<,>"
+	"," cm
+"<қулық>"
+	"қулық" n nom
+;	"қулық" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;	"қулық" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;	"қулық" n attr REMOVE:431
+"<,>"
+	"," cm
+"<сұмдық>"
+	"сұмдық" adj
+	"сұмдық" n nom
+	"сұмдық" n attr
+;	"сұмдық" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"сұмдық" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"сұмдық" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"сұмдық" n nom
+;		"е" cop aor p3 sg REMOVE:237
+"<секілді>"
+	"секіл" n acc
+	"секілді" post
+	"секіл" n
+		"лы" post
+;	"секілді" adv REMOVE:393
+"<нәрселерге>"
+	"нәрсе" n pl dat
+	"нәрсе" prn itg pl dat
+"<үйірлендіруге>"
+	"*үйірлендіруге"
+"<себеп>"
+	"себеп" n nom
+;	"себеп" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"себеп" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"себеп" n attr REMOVE:431
+"<болатұғын>"
+	"*болатұғын"
+"<нәрсе>"
+	"нәрсе" n nom
+	"нәрсе" prn itg nom
+		"е" cop aor p3 sg
+	"нәрсе" prn itg nom
+	"нәрсе" n nom
+		"е" cop aor p3 sg
+;	"нәрсе" n attr REMOVE:431
+;	"нәрсе" n nom
+;		"е" cop aor p3 pl REMOVE:694
+;	"нәрсе" prn itg nom
+;		"е" cop aor p3 pl REMOVE:694
+"<.>"
+	"." sent
+
+"<Мал>"
+	"мал" n nom @obj #1->2
+"<тапса>"
+	"тап" v tv gna_cond p3 sg @advcl #2->5
+"<,>"
+	"," cm @punct #3->2
+"<қарын>"
+	"қарын" n nom @obj #4->5
+"<тояды>"
+	"той" v tv ifi p3 sg @main #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Онан>"
+	"ол" prn dem abl
+;	"ол" prn dem abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"ол" prn dem abl
+;		"е" cop aor p3 sg REMOVE:237
+"<соң>"
+	"соң" post
+	"соң" adj
+	"соң" adv
+	"соң" n nom
+	"соң" n attr
+	"соң" adj advl
+	"соң" adj subst nom
+;	"соң" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"соң" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"соң" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"соң" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"соң" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"соң" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<білім>"
+	"білім" n nom
+;	"білім" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"білім" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"білім" n attr REMOVE:431
+"<түгіл>"
+	"түгіл" cnjcoo
+"<өнер>"
+	"өн" v iv gpr_fut
+	"өнер" n nom
+	"өн" v iv fut p3 sg
+	"өн" v iv gpr_fut subst nom
+;	"өнер" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"өнер" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"өн" v iv fut p3 pl REMOVE:687
+;	"өнер" n attr REMOVE:431
+"<керек>"
+	"керек" adj SELECT:994
+	"керек" adj subst nom SELECT:994
+	"керек" adj advl SELECT:994
+;	"керек" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" n attr REMOVE:431
+;	"керек" vaux pres p3 sg REMOVE:610
+;	"керек" vaux pres p3 pl REMOVE:610
+;	"керек" n nom SELECT:994
+"<екен>"
+	"е" cop aor evid p3 sg
+;	"е" cop aor evid p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Соны>"
+	"сол" prn dem acc
+"<үйренейін>"
+	"үйрен" v tv opt p1 sg
+"<,>"
+	"," cm
+"<не>"
+	"не" cnjcoo
+	"не" adv itg
+	"не" prn itg nom
+;	"не" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<балама>"
+	"балама" adj advl SELECT:483
+;	"балама" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"балама" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"балама" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"балама" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"балама" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"балама" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"балама" n attr REMOVE:431
+;	"бала" n px1sg dat SELECT:483
+;	"балама" adj SELECT:483
+;	"балама" n nom SELECT:483
+;	"балама" adj subst nom SELECT:483
+"<үйретейін>"
+	"үйрет" v tv opt p1 sg
+"<деп>"
+	"де" v tv gna_perf
+;	"де" v tv prc_perf REMOVE:587
+"<ойына>"
+	"ой" n px3sp dat
+"<жақсы>"
+	"жақсы" adj advl SELECT:483
+;	"жақсы" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n attr REMOVE:431
+;	"жақсы" adj SELECT:483
+;	"жақсы" adv SELECT:483
+;	"жақсы" n nom SELECT:483
+;	"жақсы" adj subst nom SELECT:483
+"<түседі>"
+	"түс" v iv aor p3 sg
+;	"түс" v iv aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Орысша>"
+	"орысша" adv
+	"орысша" n nom
+	"орысша" n attr
+;	"орысша" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"орысша" n nom
+;		"е" cop aor p3 sg REMOVE:237
+"<оқу>"
+	"оқу" n nom SELECT:451
+;	"оқу" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқу" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқы" v iv ger nom SELECT:451
+;	"оқы" v tv ger nom SELECT:451
+;	"оқу" n attr SELECT:451 REMOVE:431
+"<керек>"
+	"керек" adj SELECT:994
+	"керек" adj subst nom SELECT:994
+		"е" cop aor p3 sg
+	"керек" adj advl SELECT:994
+	"керек" adj subst nom SELECT:994
+	"керек" adj SELECT:994
+		"е" cop aor p3 sg
+;	"керек" n attr REMOVE:431
+;	"керек" vaux pres p3 pl REMOVE:610
+;	"керек" vaux pres p3 sg REMOVE:610
+;	"керек" adj subst nom
+;		"е" cop aor p3 pl REMOVE:694
+;	"керек" adj
+;		"е" cop aor p3 pl REMOVE:694
+;	"керек" n nom
+;		"е" cop aor p3 pl REMOVE:694
+;	"керек" n nom SELECT:994
+;	"керек" n nom SELECT:994
+;		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<хикмет те>"
+	"хикмет" n nom
+		"да" cnjcoo
+	"хикмет" n nom
+		"да" postadv
+;	"хикмет" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" cnjcoo
+;	"хикмет" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" postadv
+;	"хикмет" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" cnjcoo
+;	"хикмет" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" postadv
+"<,>"
+	"," cm
+"<мал да>"
+	"мал" n nom
+		"да" cnjcoo
+	"мал" n nom
+		"да" postadv
+;	"мал" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" cnjcoo
+;	"мал" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" postadv
+;	"мал" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" cnjcoo
+;	"мал" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" postadv
+"<,>"
+	"," cm
+"<өнер де>"
+	"өнер" n nom
+		"да" cnjcoo
+	"өнер" n nom
+		"да" postadv
+	"өн" v iv gpr_fut subst nom
+		"да" cnjcoo
+	"өн" v iv gpr_fut subst nom
+		"да" postadv
+	"өн" v iv fut p3 sg
+		"да" cnjcoo
+	"өн" v iv fut p3 sg
+		"да" postadv
+;	"өнер" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" cnjcoo
+;	"өнер" n nom
+;		"е" cop aor p3 pl REMOVE:240
+;			"да" postadv
+;	"өнер" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" cnjcoo
+;	"өнер" n nom
+;		"е" cop aor p3 sg REMOVE:240
+;			"да" postadv
+;	"өн" v iv fut p3 pl REMOVE:687
+;		"да" cnjcoo
+;	"өн" v iv fut p3 pl REMOVE:687
+;		"да" postadv
+"<,>"
+	"," cm
+"<ғылым да>"
+	"ғылым" n nom
+		"да" cnjcoo
+	"ғылым" n nom
+		"да" postadv
+;	"ғылым" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" cnjcoo
+;	"ғылым" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" postadv
+;	"ғылым" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" cnjcoo
+;	"ғылым" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" postadv
+"<—>"
+	"—" guio
+"<бәрі>"
+	"бәрі" prn qnt px3sp nom
+"<орыста>"
+	"орыс" n loc
+;	"орыс" n loc
+;		"е" cop aor p3 pl REMOVE:237
+;	"орыс" n loc
+;		"е" cop aor p3 sg REMOVE:237
+"<тұр>"
+	"тұр" v iv imp p2 sg
+;	"тұр" vaux imp p2 sg REMOVE:610
+;	"тұр" vaux pres p3 pl REMOVE:610
+;	"тұр" vaux pres p3 sg REMOVE:610
+"<.>"
+	"." sent
+
+"<Зарарынан>"
+	"*Зарарынан"
+"<қашық>"
+	"қашық" adj
+	"қашық" adj advl
+	"қашық" adj subst nom
+;	"қашық" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"қашық" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"қашық" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қашық" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<болуға>"
+	"бол" v iv ger dat
+;	"бол" vaux ger dat REMOVE:610
+"<,>"
+	"," cm
+"<пайдасына>"
+	"пайда" n px3sp dat
+"<ортақ>"
+	"ортақ" adj
+	"ортақ" adj subst nom
+;	"ортақ" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"ортақ" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"ортақ" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ортақ" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<болуға>"
+	"бол" v iv ger dat
+;	"бол" vaux ger dat REMOVE:610
+"<тілін>"
+	"тіл" v tv pass imp p2 sg
+	"тіл" n px3sp acc
+"<,>"
+	"," cm
+"<оқуын>"
+	"оқу" n px3sp acc SELECT:451
+;	"оқы" v iv ger px3sp acc SELECT:451
+;	"оқы" v tv ger px3sp acc SELECT:451
+"<,>"
+	"," cm
+"<ғылымын>"
+	"ғылым" n px3sp acc
+"<білмек>"
+	"біл" v tv prc_fplan
+	"біл" v tv fut_plan p3 sg
+;	"біл" v tv fut_plan p3 pl REMOVE:687
+"<керек>"
+;	"керек" adj SELECT:299
+;	"керек" adj SELECT:299
+;		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Аның>"
+	"ол" prn pers p3 sg gen
+"<үшін>"
+	"үшін" post REMOVE:320
+"<олар>"
+	"ол" prn dem pl nom
+	"олар" prn pers p3 pl nom
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 sg REMOVE:237
+"<дүниенің>"
+	"дүние" n gen
+"<тілін>"
+	"тіл" n px3sp acc
+;	"тіл" v tv pass imp p2 sg REMOVE:644
+"<білді>"
+	"біл" v tv ifi p3 sg
+;	"біл" v tv ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<мұндай>"
+	"бұл" prn dem sim nom
+;	"бұл" prn dem sim nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бұл" prn dem sim nom
+;		"е" cop aor p3 sg REMOVE:237
+"<болды>"
+	"бол" v iv ifi p3 sg
+;	"бол" vaux ifi p3 pl REMOVE:610
+;	"бол" vaux ifi p3 sg REMOVE:610
+;	"бол" v iv ifi p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Сен>"
+	"сен" prn pers p2 sg nom
+;	"сен" v tv imp p2 sg REMOVE:644
+"<оның>"
+	"он" num subst px2sg nom SELECT:293
+;	"он" num subst px2sg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"он" num subst px2sg nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ол" prn dem gen SELECT:293
+;	"ол" prn pers p3 sg gen SELECT:293
+"<тілін>"
+	"тіл" n px3sp acc
+;	"тіл" v tv pass imp p2 sg REMOVE:644
+"<білсең>"
+	"біл" v tv gna_cond p2 sg
+;	"біл" v tv prc_cond p2 sg REMOVE:587
+"<,>"
+	"," cm
+"<көкірек>"
+	"көкірек" n nom
+;	"көкірек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"көкірек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"көкірек" n attr REMOVE:431
+"<->"
+	"-" guio
+"<көзің>"
+	"көз" n px2sg nom
+;	"көз" n px2sg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"көз" n px2sg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<ашылады>"
+	"аш" v tv pass aor p3 sg
+;	"аш" v tv pass aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Əрбіреудің>"
+	"*Əрбіреудің"
+"<тілін>"
+	"тіл" v tv pass imp p2 sg
+;	"тіл" n px3sp acc REMOVE:465
+"<өнерін>"
+	"өн" v iv ger_fut px3sp acc
+	"өнер" n px3sp acc
+	"өн" v iv gpr_fut subst px3sp acc
+"<білген>"
+	"біл" v tv gpr_past
+	"біл" v tv ger_past nom
+	"біл" v tv gpr_past subst nom
+	"біл" v tv past p3 sg
+;	"біл" v tv past p3 pl REMOVE:687
+"<кісі>"
+	"кісі" n nom
+	"кіс" n px3sp nom
+;	"кісі" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"кісі" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"кіс" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"кіс" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"кісі" n attr REMOVE:431
+"<соныменен>"
+	"*соныменен"
+"<бірдейлік>"
+	"бірдейлік" n nom
+;	"бірдейлік" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бірдейлік" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"бірдейлік" n attr REMOVE:431
+"<дағуасына>"
+	"*дағуасына"
+"<кіреді>"
+	"кір" v iv aor p3 sg
+;	"кір" v iv aor p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<аса>"
+	"аса" adj advl
+	"аса" adj subst nom
+	"аса" adj
+	"аса" adv
+;	"аса" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"аса" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"аса" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"аса" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ас" v iv prc_impf REMOVE:587
+;	"ас" v tv prc_impf REMOVE:587
+"<арсыздана>"
+	"*арсыздана"
+"<жалынбайды>"
+	"жалын" v iv neg aor p3 sg
+;	"жалын" v iv neg aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Дінге де>"
+	"дін" n dat
+		"да" cnjcoo
+	"дін" n dat
+		"да" postadv
+"<жақсы>"
+	"жақсы" n nom SELECT:1108
+;	"жақсы" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n attr REMOVE:431
+;	"жақсы" adj SELECT:1108
+;	"жақсы" adv SELECT:1108
+;	"жақсы" adj subst nom SELECT:1108
+;	"жақсы" adj advl SELECT:1108
+"<—>"
+	"—" guio
+"<білгендік>"
+	"біл" v tv ger_perf nom
+"<.>"
+	"." sent
+
+"<Жорғалықпенен>"
+	"*Жорғалықпенен"
+"<көңілін>"
+	"көңіл" n px3sp acc
+"<алсам>"
+	"ал" v tv gna_cond p1 sg
+;	"ал" vaux prc_cond p1 sg REMOVE:587
+;	"ал" v tv prc_cond p1 sg REMOVE:587
+;	"ал" vaux gna_cond p1 sg REMOVE:610
+"<екен>"
+	"е" cop aor evid p3 sg
+;	"е" cop aor evid p3 pl REMOVE:687
+"<деген>"
+	"де" v tv gpr_past
+	"де" v tv ger_past nom
+	"де" v tv gpr_past subst nom
+	"де" v tv past p3 sg
+;	"де" v tv past p3 pl REMOVE:687
+"<надан>"
+	"надан" adj
+	"надан" adj advl
+	"надан" adj subst nom
+;	"надан" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"надан" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"надан" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"надан" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<әке>"
+	"әке" n nom
+;	"әке" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"әке" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"әке" n attr REMOVE:431
+"<->"
+	"-" guio
+"<шешесін>"
+	"шеше" n px3sp acc
+"<,>"
+	"," cm
+"<ағайын>"
+	"ақ" v iv opt p1 sg
+	"ағай" n px3sp acc
+"<->"
+	"-" guio
+"<жұртын>"
+	"жұрт" n px3sp acc
+"<,>"
+	"," cm
+"<дінін>"
+	"дін" n px3sp acc
+"<адамшылығын>"
+	"*адамшылығын"
+"<жаурыннан>"
+	"*жаурыннан"
+"<бір>"
+	"бір" num
+	"бір" det ind
+	"бір" num subst nom
+;	"бір" num subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бір" num subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қаққанға>"
+	"қақ" v tv ger_past dat
+	"қақ" v tv gpr_past subst dat
+"<сатады>"
+	"сат" v tv aor p3 sg
+;	"сат" v tv aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Тек>"
+	"тек" cnjcoo
+	"тек" adv
+	"тек" n nom
+;	"тек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"тек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"тек" n attr REMOVE:431
+"<майырдың>"
+	"майыр" v tv ifi p2 sg
+"<күлгені>"
+	"күл" v iv ger_past px3sp nom
+	"күл" v iv gpr_past subst px3sp nom
+"<керек>"
+	"керек" vaux pres p3 sg SELECT:299
+;	"керек" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" adj SELECT:299
+;	"керек" n nom SELECT:299
+;	"керек" n attr SELECT:299
+;	"керек" adj advl SELECT:299
+;	"керек" adj subst nom SELECT:299
+;	"керек" vaux pres p3 pl SELECT:299 REMOVE:687
+"<деп>"
+	"де" v tv gna_perf
+;	"де" v tv prc_perf REMOVE:587
+"<,>"
+	"," cm
+"<к…>"
+	"*к…"
+"<ашылса да>"
+	"аш" v tv pass gna_cond p3 sg
+		"да" postadv SELECT:884
+;	"аш" v tv pass prc_cond p3 pl REMOVE:587
+;		"да" cnjcoo
+;	"аш" v tv pass prc_cond p3 pl REMOVE:587
+;		"да" postadv
+;	"аш" v tv pass prc_cond p3 sg REMOVE:587
+;		"да" cnjcoo
+;	"аш" v tv pass prc_cond p3 sg REMOVE:587
+;		"да" postadv
+;	"аш" v tv pass gna_cond p3 pl REMOVE:687
+;		"да" cnjcoo
+;	"аш" v tv pass gna_cond p3 pl REMOVE:687
+;		"да" postadv
+;	"аш" v tv pass gna_cond p3 sg
+;		"да" cnjcoo SELECT:884
+"<қам>"
+	"қам" n nom
+;	"қам" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қам" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қам" n attr REMOVE:431
+"<жемейді>"
+	"же" v tv neg aor p3 sg
+;	"же" v tv neg aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Орыстың>"
+	"орыс" n gen
+	"ор" v tv coop ifi p2 sg
+"<ғылыми>"
+	"ғылыми" adj
+	"ғылыми" adv
+	"ғылыми" adj advl
+	"ғылыми" adj subst nom
+	"ғылыми" adj subst nom
+		"е" cop aor p3 sg
+	"ғылыми" adj
+		"е" cop aor p3 sg
+;	"ғылыми" adj
+;		"е" cop aor p3 pl REMOVE:694
+;	"ғылыми" adj subst nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<өнері>"
+	"өн" v iv ger_fut px3sp nom
+	"өнер" n px3sp nom
+	"өн" v iv gpr_fut subst px3sp nom
+;	"өнер" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"өнер" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<—>"
+	"—" guio
+"<дүниенің>"
+	"дүние" n gen
+"<кілті>"
+	"кілт" n px3sp nom
+	"кілт" n px3sp nom
+		"е" cop aor p3 sg
+;	"кілт" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<оны>"
+	"ол" prn dem acc
+	"ол" prn pers p3 sg acc
+	"он" num subst px3sp nom
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"он" num subst px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<білгенге>"
+	"біл" v tv ger_past dat
+	"біл" v tv gpr_past subst dat
+"<дүние>"
+	"дүние" n nom
+;	"дүние" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"дүние" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"дүние" n attr REMOVE:431
+"<арзанырақ>"
+	"арзан" adj comp advl SELECT:483
+;	"арзан" adj comp
+;		"е" cop aor p3 pl REMOVE:237
+;	"арзан" adj comp
+;		"е" cop aor p3 sg REMOVE:237
+;	"арзан" adj comp subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"арзан" adj comp subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"арзан" adj comp SELECT:483
+;	"арзан" adj comp subst nom SELECT:483
+"<түседі>"
+	"түс" v iv aor p3 sg
+;	"түс" v iv aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Ләкин>"
+	"ләкин" cnjcoo
+"<осы>"
+	"осы" prn dem nom SELECT:372
+;	"осы" det dem SELECT:372
+"<күнде>"
+	"күн" n loc
+	"күнде" adv
+;	"күн" n loc
+;		"е" cop aor p3 pl REMOVE:237
+;	"күн" n loc
+;		"е" cop aor p3 sg REMOVE:237
+;	"күнде" v tv imp p2 sg REMOVE:644
+"<орыс>"
+	"орыс" n attr SELECT:442
+;	"орыс" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"орыс" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ор" v tv coop imp p2 sg REMOVE:384
+;	"орыс" n nom SELECT:442
+"<ғылымын>"
+	"ғылым" n px3sp acc
+"<баласына>"
+	"бала" n px3sp dat
+"<үйреткен>"
+	"үйрет" v tv gpr_past
+	"үйрет" v tv ger_past nom
+	"үйрет" v tv gpr_past subst nom
+	"үйрет" v tv past p3 sg
+;	"үйрет" v tv past p3 pl REMOVE:687
+"<жандар>"
+	"жан" n pl nom
+;	"жан" n pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жан" n pl nom
+;		"е" cop aor p3 sg REMOVE:237
+"<соның>"
+	"сол" prn dem gen
+"<қаруымен>"
+	"қару" n px3sp ins SELECT:451
+;	"қар" v tv ger px3sp ins SELECT:451
+;	"қары" v iv ger px3sp ins SELECT:451
+"<тағы>"
+	"тақ" n px3sp nom SELECT:1108
+;	"тақ" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"тақ" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"тақ" adj subst px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"тақ" adj subst px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"тағы" postadv SELECT:1108
+;	"тағы" adv SELECT:1108
+;	"тақ" adj subst px3sp nom SELECT:1108
+"<қазақты>"
+	"қазақ" n acc
+	"қазақ" n
+		"лы" post
+"<аңдысам>"
+	"аңды" v tv coop aor p1 sg
+	"аңды" v tv gna_cond p1 sg
+;	"аңды" v tv prc_cond p1 sg REMOVE:587
+"<екен>"
+	"е" cop aor evid p3 sg
+;	"е" cop aor evid p3 pl REMOVE:687
+"<дейді>"
+	"де" v tv aor p3 sg
+;	"де" v tv aor p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Жоқ>"
+	"жоқ" ij SELECT:309
+;	"жоқ" adj
+;		"е" cop aor p3 pl REMOVE:240
+;	"жоқ" adj
+;		"е" cop aor p3 sg REMOVE:240
+;	"жоқ" adj subst nom
+;		"е" cop aor p3 pl REMOVE:240
+;	"жоқ" adj subst nom
+;		"е" cop aor p3 sg REMOVE:240
+;	"жоқ" adj SELECT:309
+;	"жоқ" adv SELECT:309
+;	"жоқ" adj subst nom SELECT:309
+"<,>"
+	"," cm
+"<олай>"
+	"ол" prn dem adv
+	"олай" adv
+;	"ол" prn dem adv
+;		"е" cop aor p3 pl REMOVE:237
+;	"ол" prn dem adv
+;		"е" cop aor p3 sg REMOVE:237
+"<ниет>"
+	"ниет" n nom
+;	"ниет" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ниет" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ниет" n attr REMOVE:431
+"<керек>"
+	"керек" adj SELECT:994
+	"керек" adj subst nom SELECT:994
+	"керек" adj advl SELECT:994
+;	"керек" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"керек" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"керек" n attr REMOVE:431
+;	"керек" vaux pres p3 sg REMOVE:610
+;	"керек" vaux pres p3 pl REMOVE:610
+;	"керек" n nom SELECT:994
+"<емес>"
+	"е" cop neg aor p3 sg SELECT:299
+;	"емес" adv SELECT:299
+;	"е" cop neg aor p3 pl SELECT:299 REMOVE:687
+"<.>"
+	"." sent
+
+"<Малды>"
+	"малды" adj advl
+	"малды" adj
+	"малды" adj subst nom
+;	"малды" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"малды" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"малды" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"малды" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"мал" v tv ifi p3 pl REMOVE:332
+;	"мал" v tv ifi p3 sg REMOVE:332
+;	"мал" n
+;		"лы" post REMOVE:405
+;	"мал" n acc REMOVE:327
+"<қалай>"
+	"қалай" adv itg
+;	"қалай" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"қалай" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+;	"қала" v tv prc_impf REMOVE:587
+"<адал>"
+	"адал" adj
+	"адал" adv
+	"адал" n nom
+	"адал" n attr
+	"адал" adj subst nom
+;	"адал" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"адал" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"адал" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"адал" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"адал" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"адал" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<еңбек>"
+	"еңбек" n nom
+;	"еңбек" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"еңбек" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"еңбек" n attr REMOVE:431
+"<қылғанда>"
+	"қыл" v tv ger_past loc
+	"қыл" v tv gpr_past subst loc
+"<табады екен>"
+	"тап" v tv aor evid p3 sg
+;	"тап" v tv aor evid p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<соны>"
+	"сол" prn dem acc
+"<үйретейін>"
+	"үйрет" v tv opt p1 sg
+"<,>"
+	"," cm
+"<мені>"
+	"мен" prn pers p1 sg acc
+"<көріп>"
+	"көр" v tv gna_perf
+"<және>"
+	"және" cnjcoo
+"<үйренушілер>"
+	"үйрен" v tv gpr_pot subst pl nom
+"<кебейсе>"
+	"*кебейсе"
+"<,>"
+	"," cm
+"<ұлықсыған>"
+	"*ұлықсыған"
+"<орыстардың>"
+	"орыс" n pl gen
+"<жұртқа>"
+	"жұрт" n dat
+"<бірдей>"
+	"бір" num subst sim SELECT:293
+;	"бірдей" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"бірдей" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"бірдей" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бірдей" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"бірдей" adj SELECT:293
+;	"бірдей" adv SELECT:293
+;	"бірдей" adj advl SELECT:293
+;	"бірдей" adj subst nom SELECT:293
+"<законы>"
+	"закон" n px3sp nom
+;	"закон" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"закон" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<болмаса>"
+	"бол" v iv neg gna_cond p3 sg
+;	"бол" vaux neg prc_cond p3 pl REMOVE:587
+;	"бол" vaux neg prc_cond p3 sg REMOVE:587
+;	"бол" v iv neg prc_cond p3 pl REMOVE:587
+;	"бол" v iv neg prc_cond p3 sg REMOVE:587
+;	"бол" vaux neg gna_cond p3 pl REMOVE:610
+;	"бол" vaux neg gna_cond p3 sg REMOVE:610
+;	"бол" v iv neg gna_cond p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<законсыз>"
+	"закон" n
+		"сыз" post
+;	"закон" n nom
+;		"е" cop aor p2 frm sg REMOVE:237
+"<қорлығына>"
+	"қорлық" n px3sp dat
+"<көнбес>"
+	"көн" v tv neg gpr_fut
+	"көн" v tv neg gpr_fut subst nom
+	"көн" v tv neg fut p3 sg
+;	"көн" v tv neg fut p3 pl REMOVE:687
+"<едік>"
+	"е" cop ifi p1 pl
+"<.>"
+	"." sent
+
+"<Қазаққа>"
+	"қазақ" n dat
+	"қазақ" adj subst dat
+"<күзетші>"
+	"күзетші" n nom
+;	"күзетші" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"күзетші" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"күзетші" n attr REMOVE:431
+;	"күзет" v tv imp p2 sg REMOVE:644
+;		"шы" emph
+"<болайын>"
+	"бол" v iv opt p1 sg
+;	"бол" vaux opt p1 sg REMOVE:610
+"<деп>"
+	"де" v tv gna_perf
+;	"де" v tv prc_perf REMOVE:587
+"<,>"
+	"," cm
+"<біз де>"
+	"біз" prn pers p1 pl nom
+		"да" cnjcoo
+	"біз" prn pers p1 pl nom
+		"да" postadv
+;	"біз" prn pers p1 pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" cnjcoo
+;	"біз" prn pers p1 pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" postadv
+;	"біз" prn pers p1 pl nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" cnjcoo
+;	"біз" prn pers p1 pl nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" postadv
+"<ел>"
+	"ел" n nom
+;	"ел" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ел" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ел" n attr REMOVE:431
+"<болып>"
+	"бол" v iv gna_perf
+;	"бол" vaux prc_perf REMOVE:587
+;	"бол" v iv prc_perf REMOVE:587
+;	"бол" vaux gna_perf REMOVE:610
+"<,>"
+	"," cm
+"<жұрт>"
+	"жұрт" n nom
+;	"жұрт" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жұрт" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жұрт" n attr REMOVE:431
+"<білгенді>"
+	"біл" v tv ger_past acc
+	"біл" v tv gpr_past subst acc
+"<біліп>"
+	"біл" v tv gna_perf
+;	"біл" v tv prc_perf REMOVE:587
+"<,>"
+	"," cm
+"<жұрт>"
+	"жұрт" n attr SELECT:442
+;	"жұрт" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жұрт" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жұрт" n nom SELECT:442
+"<қатарына>"
+	"қат" v iv ger_fut px3sp dat
+	"қатар" n px3sp dat
+	"қат" v iv gpr_fut subst px3sp dat
+"<қосылудың>"
+	"қос" v tv pass ger gen
+"<қамын>"
+	"қам" n px3sp acc
+"<жейік>"
+	"же" v tv opt p1 pl
+"<деп>"
+	"де" v tv prc_perf
+	"де" v tv gna_perf
+"<ниеттеніп>"
+	"ниеттен" v iv prc_perf
+	"ниеттен" v iv gna_perf
+"<үйрену>"
+	"үйрен" v tv ger nom
+"<керек>"
+	"керек" vaux pres p3 sg SELECT:299
+;	"керек" adj SELECT:299
+;	"керек" n nom SELECT:299
+;	"керек" n attr SELECT:299
+;	"керек" adj advl SELECT:299
+;	"керек" adj subst nom SELECT:299
+;	"керек" adj SELECT:299
+;		"е" cop aor p3 pl
+;	"керек" adj SELECT:299
+;		"е" cop aor p3 sg
+;	"керек" n nom SELECT:299
+;		"е" cop aor p3 pl
+;	"керек" n nom SELECT:299
+;		"е" cop aor p3 sg
+;	"керек" adj subst nom SELECT:299
+;		"е" cop aor p3 pl
+;	"керек" adj subst nom SELECT:299
+;		"е" cop aor p3 sg
+;	"керек" vaux pres p3 pl SELECT:299 REMOVE:687
+"<.>"
+	"." sent
+
+"<Қазірде>"
+	"қазір" n loc
+	"қазірде" adv
+;	"қазір" n loc
+;		"е" cop aor p3 pl REMOVE:237
+;	"қазір" n loc
+;		"е" cop aor p3 sg REMOVE:237
+"<орыстан>"
+	"орыс" n abl
+;	"орыс" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"орыс" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<оқыған>"
+	"оқыған" adj advl
+	"оқыған" adj subst nom
+	"оқыған" adj
+;	"оқыған" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқыған" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқыған" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқыған" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқы" v iv gpr_past REMOVE:384
+;	"оқы" v tv gpr_past REMOVE:384
+;	"оқы" v iv ger_past nom REMOVE:384
+;	"оқы" v tv ger_past nom REMOVE:384
+;	"оқы" v iv past p3 pl REMOVE:384
+;	"оқы" v iv past p3 sg REMOVE:384
+;	"оқы" v iv gpr_past subst nom REMOVE:384
+;	"оқы" v tv past p3 pl REMOVE:384
+;	"оқы" v tv past p3 sg REMOVE:384
+;	"оқы" v tv gpr_past subst nom REMOVE:384
+"<балалардан>"
+	"бала" n pl abl
+	"балалар" n abl
+;	"бала" n pl abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n pl abl
+;		"е" cop aor p3 sg REMOVE:237
+;	"балалар" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"балалар" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<артық>"
+	"артық" adj
+	"артық" adv
+	"артық" adj advl
+	"артық" adj subst nom
+;	"артық" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<жақсы>"
+	"жақсы" adj
+	"жақсы" adv
+	"жақсы" n nom
+	"жақсы" n attr
+	"жақсы" adj advl
+	"жақсы" adj subst nom
+;	"жақсы" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<кісі>"
+	"кісі" n nom
+	"кіс" n px3sp nom
+;	"кісі" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"кісі" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"кіс" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"кіс" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"кісі" n attr REMOVE:431
+"<шыға>"
+	"шық" v iv prc_impf
+;	"шық" vaux prc_impf REMOVE:610
+"<алмай да>"
+	"ал" v tv neg prc_impf SELECT:601
+		"да" cnjcoo
+	"ал" v tv neg prc_impf SELECT:601
+		"да" postadv
+	"ал" v tv neg prc_perf SELECT:601
+		"да" cnjcoo
+	"ал" v tv neg prc_perf SELECT:601
+		"да" postadv
+;	"ал" vaux neg gna_perf SELECT:601
+;		"да" cnjcoo
+;	"ал" vaux neg gna_perf SELECT:601
+;		"да" postadv
+;	"ал" v tv neg gna_perf SELECT:601
+;		"да" cnjcoo
+;	"ал" v tv neg gna_perf SELECT:601
+;		"да" postadv
+;	"ал" vaux neg prc_impf SELECT:601 REMOVE:620
+;		"да" cnjcoo
+;	"ал" vaux neg prc_impf SELECT:601 REMOVE:620
+;		"да" postadv
+;	"ал" vaux neg prc_perf SELECT:601 REMOVE:620
+;		"да" cnjcoo
+;	"ал" vaux neg prc_perf SELECT:601 REMOVE:620
+;		"да" postadv
+"<тұр>"
+	"тұр" vaux pres p3 sg SELECT:613 SELECT:633
+;	"тұр" v iv imp p2 sg SELECT:613
+;	"тұр" vaux imp p2 sg SELECT:613 SELECT:633
+;	"тұр" vaux pres p3 pl SELECT:613 SELECT:633 REMOVE:687
+"<.>"
+	"." sent
+
+"<Себебі>"
+	"себебі" cnjsub
+	"себеп" n px3sp nom
+;	"себеп" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"себеп" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<:>"
+	":" sent
+"<ата-анасы>"
+	"ата-ана" n px3sp nom
+	"ата-ана" n px3sp nom
+		"е" cop aor p3 sg
+;	"ата-ана" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<ағайын>"
+	"ақ" v iv opt p1 sg
+	"ағай" n px3sp acc
+"<->"
+	"-" guio
+"<туғаны>"
+	"туған" n px3sp nom SELECT:451
+;	"туған" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"туған" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"туған" adj subst px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"туған" adj subst px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ту" v iv ger_past px3sp nom SELECT:451
+;	"ту" v tv ger_past px3sp nom SELECT:451
+;	"ту" v iv gpr_past subst px3sp nom SELECT:451
+;	"ту" v tv gpr_past subst px3sp nom SELECT:451
+;	"туған" adj subst px3sp nom SELECT:451
+"<бір>"
+	"бір" num SELECT:293
+	"бір" num subst nom SELECT:293
+;	"бір" num subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бір" num subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"бір" det ind SELECT:293
+"<жағынан>"
+	"жақ" n px3sp abl
+;	"жақ" n px3sp abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақ" n px3sp abl
+;		"е" cop aor p3 sg REMOVE:237
+"<бұзып>"
+	"бұз" v tv prc_perf SELECT:601
+;	"бұз" v tv gna_perf SELECT:601
+"<жатыр>"
+	"жатыр" vaux imp p2 sg
+	"жат" vaux pres p3 sg
+;	"жат" vaux pres p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Сөйтсе де>"
+	"сөйтсе" cnjadv
+		"да" postadv SELECT:884
+	"сөйт" v iv gna_cond p3 sg
+		"да" postadv SELECT:884
+;	"сөйт" v iv prc_cond p3 pl REMOVE:587
+;		"да" cnjcoo
+;	"сөйт" v iv prc_cond p3 pl REMOVE:587
+;		"да" postadv
+;	"сөйт" v iv prc_cond p3 sg REMOVE:587
+;		"да" cnjcoo
+;	"сөйт" v iv prc_cond p3 sg REMOVE:587
+;		"да" postadv
+;	"сөйт" v iv gna_cond p3 pl REMOVE:687
+;		"да" cnjcoo
+;	"сөйт" v iv gna_cond p3 pl REMOVE:687
+;		"да" postadv
+;	"сөйтсе де" cnjadv SELECT:884
+;	"сөйтсе" cnjadv
+;		"да" cnjcoo SELECT:884
+;	"сөйт" v iv gna_cond p3 sg
+;		"да" cnjcoo SELECT:884
+"<осы>"
+	"осы" det dem
+	"осы" prn dem nom
+"<оқыған>"
+	"оқыған" adj advl
+	"оқыған" adj subst nom
+	"оқыған" adj
+;	"оқыған" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқыған" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқыған" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқыған" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқы" v iv gpr_past REMOVE:384
+;	"оқы" v tv gpr_past REMOVE:384
+;	"оқы" v iv ger_past nom REMOVE:384
+;	"оқы" v tv ger_past nom REMOVE:384
+;	"оқы" v iv past p3 pl REMOVE:384
+;	"оқы" v iv past p3 sg REMOVE:384
+;	"оқы" v iv gpr_past subst nom REMOVE:384
+;	"оқы" v tv past p3 pl REMOVE:384
+;	"оқы" v tv past p3 sg REMOVE:384
+;	"оқы" v tv gpr_past subst nom REMOVE:384
+"<балалар>"
+	"бала" n pl nom
+	"балалар" n nom
+;	"бала" n pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n pl nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"балалар" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"балалар" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"балалар" n attr REMOVE:431
+"<—>"
+	"—" guio
+"<ана>"
+	"ана" n nom
+;	"ана" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ана" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ана" n attr REMOVE:431
+"<оқымаған>"
+	"оқымаған" adj advl
+	"оқымаған" adj subst nom
+	"оқымаған" adj
+;	"оқымаған" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқымаған" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқымаған" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"оқымаған" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"оқы" v iv neg gpr_past REMOVE:384
+;	"оқы" v tv neg gpr_past REMOVE:384
+;	"оқы" v iv neg ger_past nom REMOVE:384
+;	"оқы" v tv neg ger_past nom REMOVE:384
+;	"оқы" v iv neg past p3 pl REMOVE:384
+;	"оқы" v iv neg past p3 sg REMOVE:384
+;	"оқы" v iv neg gpr_past subst nom REMOVE:384
+;	"оқы" v tv neg past p3 pl REMOVE:384
+;	"оқы" v tv neg past p3 sg REMOVE:384
+;	"оқы" v tv neg gpr_past subst nom REMOVE:384
+"<қазақ>"
+	"қазақ" n attr SELECT:442
+;	"қазақ" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қазақ" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қазақ" n nom SELECT:442
+"<балаларынан>"
+	"бала" n pl px3sp abl
+	"балалар" n px3sp abl
+;	"бала" n pl px3sp abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n pl px3sp abl
+;		"е" cop aor p3 sg REMOVE:237
+;	"балалар" n px3sp abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"балалар" n px3sp abl
+;		"е" cop aor p3 sg REMOVE:237
+"<үздік>"
+	"үз" v tv ifi p1 pl
+	"үздік" adj
+	"үздік" adv
+	"үздік" adj subst nom
+	"үздік" adj subst nom
+		"е" cop aor p3 sg
+	"үздік" adj
+		"е" cop aor p3 sg
+;	"үздік" adj
+;		"е" cop aor p3 pl REMOVE:694
+;	"үздік" adj subst nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<озық>"
+	"озық" adj
+	"озық" adv
+	"озық" adj advl
+	"озық" adj subst nom
+;	"озық" adj
+;		"е" cop aor p3 pl REMOVE:240
+;	"озық" adj
+;		"е" cop aor p3 sg REMOVE:240
+;	"озық" adj subst nom
+;		"е" cop aor p3 pl REMOVE:240
+;	"озық" adj subst nom
+;		"е" cop aor p3 sg REMOVE:240
+"<.>"
+	"." sent
+
+"<Не>"
+	"не" cnjcoo
+	"не" adv itg
+	"не" prn itg nom
+;	"не" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қылса да>"
+	"қыл" v tv gna_cond p3 sg
+		"да" postadv SELECT:884
+;	"қыл" v tv prc_cond p3 pl REMOVE:587
+;		"да" cnjcoo
+;	"қыл" v tv prc_cond p3 pl REMOVE:587
+;		"да" postadv
+;	"қыл" v tv prc_cond p3 sg REMOVE:587
+;		"да" cnjcoo
+;	"қыл" v tv prc_cond p3 sg REMOVE:587
+;		"да" postadv
+;	"қыл" v tv gna_cond p3 pl REMOVE:687
+;		"да" cnjcoo
+;	"қыл" v tv gna_cond p3 pl REMOVE:687
+;		"да" postadv
+;	"қыл" v tv gna_cond p3 sg
+;		"да" cnjcoo SELECT:884
+"<сөзді>"
+	"сөз" n acc
+	"сөз" n
+		"лы" post
+"<ұқтырса>"
+	"*ұқтырса"
+"<болады>"
+	"бол" v iv aor p3 sg
+;	"бол" vaux aor p3 pl REMOVE:610
+;	"бол" vaux aor p3 sg REMOVE:610
+;	"бол" v iv aor p3 pl REMOVE:687
+"<оларға>"
+	"ол" prn dem pl dat
+	"олар" prn pers p3 pl dat
+"<.>"
+	"." sent
+
+"<Жақсы>"
+	"жақсы" adj
+	"жақсы" adv
+	"жақсы" n nom
+	"жақсы" n attr
+	"жақсы" adj advl
+	"жақсы" adj subst nom
+;	"жақсы" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жақсы" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<атаның>"
+	"ата" n gen SELECT:283
+	"атан" n px2sg nom SELECT:283
+;	"атан" n px2sg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"атан" n px2sg nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"атан" v iv imp p2 frm sg SELECT:283
+"<балалары да>"
+	"бала" n pl px3sp nom
+		"да" cnjcoo
+	"бала" n pl px3sp nom
+		"да" postadv
+	"балалар" n px3sp nom
+		"да" cnjcoo
+	"балалар" n px3sp nom
+		"да" postadv
+;	"бала" n pl px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" cnjcoo
+;	"бала" n pl px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" postadv
+;	"бала" n pl px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" cnjcoo
+;	"бала" n pl px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" postadv
+;	"балалар" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" cnjcoo
+;	"балалар" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" postadv
+;	"балалар" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" cnjcoo
+;	"балалар" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" postadv
+"<көп>"
+	"көп" adj advl SELECT:483
+;	"көп" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"көп" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"көп" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"көп" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"көп" adj SELECT:483
+;	"көп" adv SELECT:483
+;	"көп" adj subst nom SELECT:483
+"<оқыған жоқ>"
+	"оқы" v tv neg ifi p3 sg
+	"оқы" v iv neg ifi p3 sg
+;	"оқы" v iv neg ifi p3 pl REMOVE:687
+;	"оқы" v tv neg ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<қайта>"
+	"қайта" adv
+;	"қайт" v iv prc_impf REMOVE:587
+;	"қайт" v tv prc_impf REMOVE:587
+"<кедейдің>"
+	"кедей" n gen
+	"кедей" adj subst gen
+"<баласын>"
+	"бала" n px3sp acc
+"<орысқа>"
+	"орыс" n dat
+"<қорлап>"
+	"қорла" v tv prc_perf SELECT:601
+;	"қорла" v tv gna_perf SELECT:601
+"<берді>"
+	"бер" vaux ifi p3 sg SELECT:613
+;	"бер" v tv ifi p3 pl SELECT:613
+;	"бер" v tv ifi p3 sg SELECT:613
+;	"бер" vaux ifi p3 pl SELECT:613 REMOVE:687
+"<.>"
+	"." sent
+
+"<Олар>"
+	"ол" prn dem pl nom
+	"олар" prn pers p3 pl nom
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ол" prn dem pl nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"олар" prn pers p3 pl nom
+;		"е" cop aor p3 sg REMOVE:237
+"<осыдан>"
+	"осы" prn dem abl
+;	"осы" prn dem abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"осы" prn dem abl
+;		"е" cop aor p3 sg REMOVE:237
+"<артық>"
+	"артық" adj
+	"артық" adv
+	"артық" adj advl
+	"артық" adj subst nom
+;	"артық" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қайда>"
+	"қай" prn ind loc
+	"қайда" adv itg
+;	"қай" prn ind loc
+;		"е" cop aor p3 pl REMOVE:237
+;	"қай" prn ind loc
+;		"е" cop aor p3 sg REMOVE:237
+;	"қайда" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"қайда" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+"<барсын>"
+	"бар" v iv opt p3 sg
+;	"бар" v iv opt p3 pl REMOVE:687
+"<?>"
+	"?" sent
+
+"<Және>"
+	"және" cnjcoo
+"<де>"
+	"да" cnjcoo
+	"да" postadv
+;	"де" v tv imp p2 sg REMOVE:644
+"<кейбір>"
+	"кейбір" adv
+	"кейбір" det ind
+"<қазақтар>"
+	"қазақ" n pl nom
+;	"қазақ" n pl nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қазақ" n pl nom
+;		"е" cop aor p3 sg REMOVE:237
+"<ағайынымен>"
+	"*ағайынымен"
+"<араздасканда>"
+	"*араздасканда"
+"<:>"
+	":" sent
+"<“>"
+	"“" lquot
+"<Сенің>"
+	"сен" prn pers p2 sg gen
+;	"сен" v tv imp p2 frm sg REMOVE:644
+"<осы>"
+	"осы" det dem
+	"осы" prn dem nom
+"<зорлығыңа>"
+	"зорлық" n px2sg dat
+"<көнгенше>"
+	"көн" v tv gna_until
+"<,>"
+	"," cm
+"<баламды>"
+	"бала" n px1sg acc
+"<солдатқа>"
+	"солдат" n dat
+"<беріп>"
+	"бер" v tv gna_perf
+;	"бер" vaux prc_perf REMOVE:587
+;	"бер" v tv prc_perf REMOVE:587
+;	"бер" vaux gna_perf REMOVE:610
+"<,>"
+	"," cm
+"<басыма>"
+	"бас" n px1sg dat
+"<шаш>"
+	"шаш" n nom
+	"шаш" n nom
+		"е" cop aor p3 sg
+	"шаш" v tv imp p2 sg
+;	"шаш" n attr REMOVE:431
+;	"шаш" n nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<аузыма>"
+	"ауыз" n px1sg dat
+	"аузы" n px1sg dat
+"<мұрт>"
+	"мұрт" n nom
+;	"мұрт" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"мұрт" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"мұрт" n attr REMOVE:431
+"<қойып>"
+	"қой" v tv prc_perf SELECT:601
+;	"қой" v tv gna_perf SELECT:601
+"<кетпесем бе>"
+	"кет" vaux neg gna_cond p1 sg SELECT:613
+		"ма" qst
+;	"кет" vaux neg prc_cond p1 sg REMOVE:587
+;		"ма" qst
+;	"кет" v iv neg prc_cond p1 sg REMOVE:587
+;		"ма" qst
+;	"кет" v iv neg gna_cond p1 sg SELECT:613
+;		"ма" qst
+"<!>"
+	"!" sent
+"<”>"
+	"”" rquot
+"<деуші>"
+	"де" v tv gpr_pot
+	"де" v tv gpr_pot subst nom
+"<еді>"
+	"е" cop ifi p3 sg
+;	"е" cop ifi p3 pl REMOVE:687
+"<.>"
+	"." sent
+
+"<Осындай>"
+	"осы" prn dem sim nom
+;	"осы" prn dem sim nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"осы" prn dem sim nom
+;		"е" cop aor p3 sg REMOVE:237
+"<жаман>"
+	"жаман" adj
+	"жаман" adv
+	"жаман" n nom
+	"жаман" n attr
+	"жаман" adj advl
+	"жаман" adj subst nom
+;	"жаман" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"жаман" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"жаман" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жаман" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жаман" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жаман" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<сөзді>"
+	"сөз" n acc
+	"сөз" n
+		"лы" post
+"<,>"
+	"," cm
+"<Құдайдан>"
+	"құдай" n abl
+	"Құдай" n abl
+;	"құдай" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"құдай" n abl
+;		"е" cop aor p3 sg REMOVE:237
+;	"Құдай" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"Құдай" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<қорықпай>"
+	"қорық" v iv neg gna_perf
+;	"қорық" v iv neg prc_impf REMOVE:587
+;	"қорық" v iv neg prc_perf REMOVE:587
+"<,>"
+	"," cm
+"<пендеден>"
+	"пенде" n abl
+;	"пенде" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"пенде" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<ұялмай>"
+	"ұял" v iv neg prc_impf
+	"ұял" v iv neg prc_perf
+	"ұял" v iv neg gna_perf
+"<айтқан>"
+	"айт" v tv gpr_past
+	"айт" v tv ger_past nom
+	"айт" v tv gpr_past subst nom
+	"айт" v tv past p3 sg
+;	"айт" v tv past p3 pl REMOVE:687
+"<қазақтардың>"
+	"қазақ" n pl gen
+"<баласы>"
+	"бала" n px3sp nom
+;	"бала" n px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<оқығанменен>"
+	"*оқығанменен"
+"<не>"
+	"не" cnjcoo
+	"не" adv itg
+	"не" prn itg nom
+;	"не" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<бола>"
+	"бол" v iv prc_impf
+;	"бол" vaux prc_impf REMOVE:610
+"<қойсын>"
+	"қой" v tv opt p3 sg
+;	"қой" v tv opt p3 pl REMOVE:687
+"<?>"
+	"?" sent
+
+"<Сонда да>"
+	"сонда да" cnjadv
+	"сол" prn dem loc
+		"да" cnjcoo
+	"сол" prn dem loc
+		"да" postadv
+	"сонда" cnjadv
+		"да" cnjcoo
+	"сонда" cnjadv
+		"да" postadv
+;	"сол" prn dem loc
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" cnjcoo
+;	"сол" prn dem loc
+;		"е" cop aor p3 pl REMOVE:237
+;			"да" postadv
+;	"сол" prn dem loc
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" cnjcoo
+;	"сол" prn dem loc
+;		"е" cop aor p3 sg REMOVE:237
+;			"да" postadv
+"<өзге>"
+	"өзге" adj
+	"өзге" adj advl
+	"өзге" adj subst nom
+;	"өзге" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"өзге" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"өзге" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"өзге" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қазақ>"
+	"қазақ" n attr SELECT:442
+;	"қазақ" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қазақ" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қазақ" n nom SELECT:442
+"<балаларынан>"
+	"бала" n pl px3sp abl
+;	"бала" n pl px3sp abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n pl px3sp abl
+;		"е" cop aor p3 sg REMOVE:237
+"<артық>"
+	"артық" adj
+	"артық" adv
+	"артық" adj advl
+	"артық" adj subst nom
+;	"артық" adj
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj
+;		"е" cop aor p3 sg REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"артық" adj subst nom
+;		"е" cop aor p3 sg REMOVE:237
+"<үйренгені>"
+	"үйрен" v tv ger_past px3sp nom
+	"үйрен" v tv gpr_past subst px3sp nom
+"<немене>"
+	"немене" prn itg nom
+	"немене" prn itg nom
+		"е" cop aor p3 sg
+;	"немене" prn itg nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<қай>"
+	"қай" det itg
+	"қай" prn ind nom
+;	"қай" prn ind nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қай" prn ind nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қай" v tv imp p2 sg REMOVE:644
+"<кеп>"
+	"кел" v iv prc_perf
+;	"кел" vaux prc_perf REMOVE:610
+"<үйреніпті>"
+	"үйрен" v tv ifi evid p3 sg
+"<?>"
+	"?" sent
+
+"<Кірді>"
+	"кір" v iv ifi p3 sg
+;	"кір" n acc REMOVE:327
+;	"кір" adj subst acc REMOVE:327
+;	"кір" v iv ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<шықты>"
+	"шық" v iv ifi p3 sg
+;	"шық" vaux ifi p3 pl REMOVE:610
+;	"шық" vaux ifi p3 sg REMOVE:610
+;	"шық" v iv ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<ілді>"
+	"іл" v tv ifi p3 sg
+;	"іл" v tv ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<қайтты>"
+	"қайт" v iv ifi p3 sg
+;	"қайт" v iv ifi p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<түбегейлеп>"
+	"*түбегейлеп"
+"<қуған>"
+	"қу" v tv gpr_past
+	"қу" v tv ger_past nom
+	"қу" v tv gpr_past subst nom
+	"қу" v tv past p3 sg
+;	"қу" v tv past p3 pl REMOVE:687
+"<бала да>"
+	"бала" n nom
+		"да" cnjcoo
+	"бала" n nom
+		"да" postadv
+"<жоқ>"
+	"жоқ" ij
+	"жоқ" adj
+	"жоқ" adv
+	"жоқ" adj subst nom
+	"жоқ" adj subst nom
+		"е" cop aor p3 sg
+	"жоқ" adj
+		"е" cop aor p3 sg
+;	"жоқ" adj
+;		"е" cop aor p3 pl REMOVE:694
+;	"жоқ" adj subst nom
+;		"е" cop aor p3 pl REMOVE:694
+"<.>"
+	"." sent
+
+"<Əкесі>"
+	"*Əкесі"
+"<ел>"
+	"ел" n nom
+;	"ел" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ел" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"ел" n attr REMOVE:431
+"<ақшасыменен>"
+	"*ақшасыменен"
+"<оқығанға>"
+	"оқы" v iv ger_past dat
+	"оқы" v tv ger_past dat
+	"оқы" v iv gpr_past subst dat
+	"оқы" v tv gpr_past subst dat
+	"оқыған" adj subst dat
+"<әрең>"
+	"әрең" adv
+"<оқытады>"
+	"оқыт" v tv aor p3 sg
+;	"оқыт" v tv aor p3 pl REMOVE:687
+"<,>"
+	"," cm
+"<өз>"
+	"өз" det ref @det
+"<малын>"
+	"мал" n px3sp acc
+;	"мал" v tv pass imp p2 sg REMOVE:644
+"<не>"
+	"не" cnjcoo
+	"не" adv itg
+	"не" prn itg nom
+;	"не" adv itg
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" adv itg
+;		"е" cop aor p3 sg REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"не" prn itg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қылып>"
+	"қыл" v tv prc_perf
+	"қыл" v tv gna_perf
+"<шығарсын>"
+	"шығар" v tv opt p3 sg
+;	"шығар" v tv opt p3 pl REMOVE:687
+"<?>"
+	"?" sent
+
+"<Турасын>"
+	"тура" adj subst px3sp acc
+	"тура" v tv opt p3 sg
+;	"тура" v tv opt p3 pl REMOVE:687
+"<ойлағанда>"
+	"ойла" v tv ger_past loc
+	"ойла" v tv gpr_past subst loc
+"<,>"
+	"," cm
+"<балаңа>"
+	"бала" n px2sg dat
+"<қатын>"
+	"қатын" n nom
+;	"қатын" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қатын" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қатын" n attr REMOVE:431
+"<әперме>"
+	"әпер" v tv neg imp p2 sg
+"<,>"
+	"," cm
+"<енші>"
+	"енші" n nom
+;	"енші" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"енші" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"енші" n attr REMOVE:431
+;	"ен" v iv imp p2 sg REMOVE:644
+;		"шы" emph
+"<берме>"
+	"бер" v tv neg imp p2 sg
+;	"бер" vaux neg imp p2 sg REMOVE:610
+"<,>"
+	"," cm
+"<барыңды>"
+	"бар" n px2sg acc
+	"бар" adj subst px2sg acc
+"<салсаң да>"
+	"сал" v tv gna_cond p2 sg
+		"да" postadv SELECT:884
+;	"сал" vaux prc_cond p2 sg REMOVE:587
+;		"да" cnjcoo
+;	"сал" vaux prc_cond p2 sg REMOVE:587
+;		"да" postadv
+;	"сал" v tv prc_cond p2 sg REMOVE:587
+;		"да" cnjcoo
+;	"сал" v tv prc_cond p2 sg REMOVE:587
+;		"да" postadv
+;	"сал" vaux gna_cond p2 sg REMOVE:610
+;		"да" cnjcoo
+;	"сал" vaux gna_cond p2 sg REMOVE:610
+;		"да" postadv
+;	"сал" v tv gna_cond p2 sg
+;		"да" cnjcoo SELECT:884
+"<,>"
+	"," cm
+"<орыстың>"
+	"орыс" n gen
+;	"ор" v tv coop ifi p2 sg REMOVE:384
+"<ғылымын>"
+	"ғылым" n px3sp acc
+"<үйрет>"
+	"үйрет" v tv imp p2 sg
+"<!>"
+	"!" sent
+
+"<Мына>"
+	"мына" ij
+	"мына" prn dem nom
+;	"мына" prn dem nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"мына" prn dem nom
+;		"е" cop aor p3 sg REMOVE:237
+"<мен>"
+	"мен" post SELECT:1101
+;	"мен" prn pers p1 sg nom SELECT:1101
+;	"мен" cnjcoo SELECT:1101
+"<айтқан>"
+	"айт" v tv gpr_past
+	"айт" v tv ger_past nom
+	"айт" v tv gpr_past subst nom
+	"айт" v tv past p3 sg
+;	"айт" v tv past p3 pl REMOVE:687
+"<жол>"
+	"жол" n nom
+;	"жол" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жол" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жол" n attr REMOVE:431
+"<—>"
+	"—" guio
+"<мал>"
+	"мал" n nom
+;	"мал" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"мал" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"мал" n attr REMOVE:431
+;	"мал" v tv imp p2 sg REMOVE:644
+"<аяр>"
+	"ая" v tv gpr_fut
+	"ая" v tv gpr_fut subst nom
+	"ая" v tv fut p3 sg
+;	"ая" v tv fut p3 pl REMOVE:687
+"<жол>"
+	"жол" n nom
+;	"жол" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"жол" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"жол" n attr REMOVE:431
+"<емес>"
+	"е" cop neg aor p3 sg SELECT:299
+;	"емес" adv SELECT:299
+;	"е" cop neg aor p3 pl SELECT:299 REMOVE:687
+"<.>"
+	"." sent
+
+"<Құдайдан>"
+	"құдай" n abl
+	"Құдай" n abl
+;	"құдай" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"құдай" n abl
+;		"е" cop aor p3 sg REMOVE:237
+;	"Құдай" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"Құдай" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<қорық>"
+	"қорық" n nom
+	"қорық" n nom
+		"е" cop aor p3 sg
+	"қорық" v iv imp p2 sg
+;	"қорық" n attr REMOVE:431
+;	"қорық" n nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<пендеден>"
+	"пенде" n abl
+;	"пенде" n abl
+;		"е" cop aor p3 pl REMOVE:237
+;	"пенде" n abl
+;		"е" cop aor p3 sg REMOVE:237
+"<ұял>"
+	"ұял" v iv imp p2 sg
+"<,>"
+	"," cm
+"<балаң>"
+	"бала" n px2sg nom
+;	"бала" n px2sg nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n px2sg nom
+;		"е" cop aor p3 sg REMOVE:237
+"<бала>"
+	"бала" n nom
+;	"бала" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бала" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"бала" n attr REMOVE:431
+"<болсын>"
+	"бол" v iv opt p3 sg
+;	"бол" vaux opt p3 pl REMOVE:610
+;	"бол" vaux opt p3 sg REMOVE:610
+;	"бол" v iv opt p3 pl REMOVE:687
+"<десең>"
+	"де" v tv gna_cond p2 sg
+;	"де" v tv prc_cond p2 sg REMOVE:587
+"<—>"
+	"—" guio
+"<оқыт>"
+	"оқыт" v tv imp p2 sg
+"<,>"
+	"," cm
+"<мал>"
+	"мал" n nom
+;	"мал" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"мал" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"мал" n attr REMOVE:431
+;	"мал" v tv imp p2 sg REMOVE:644
+"<аяма>"
+	"ая" v tv neg imp p2 sg SELECT:299
+;	"ая" n px1sg dat SELECT:299
+"<!>"
+	"!" sent
+
+"<Əйтпесе>"
+	"*Əйтпесе"
+"<,>"
+	"," cm
+"<бір>"
+	"бір" num SELECT:293
+	"бір" num subst nom SELECT:293
+;	"бір" num subst nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"бір" num subst nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"бір" det ind SELECT:293
+"<ит>"
+	"ит" n nom
+	"ит" n attr
+;	"ит" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"ит" n nom
+;		"е" cop aor p3 sg REMOVE:237
+"<қазақ>"
+	"қазақ" n nom
+;	"қазақ" n nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"қазақ" n nom
+;		"е" cop aor p3 sg REMOVE:237
+;	"қазақ" n attr REMOVE:431
+"<болып>"
+	"бол" v iv gna_perf
+;	"бол" vaux prc_perf REMOVE:587
+;	"бол" v iv prc_perf REMOVE:587
+;	"бол" vaux gna_perf REMOVE:610
+"<қалган>"
+	"*қалган"
+"<соң>"
+	"соң" adj subst nom
+		"е" cop aor p3 sg
+	"соң" adj
+	"соң" adv
+	"соң" n nom
+	"соң" adj
+		"е" cop aor p3 sg
+	"соң" adj advl
+	"соң" adj subst nom
+	"соң" n nom
+		"е" cop aor p3 sg
+;	"соң" post REMOVE:320
+;	"соң" n attr REMOVE:431
+;	"соң" adj subst nom
+;		"е" cop aor p3 pl REMOVE:694
+;	"соң" adj
+;		"е" cop aor p3 pl REMOVE:694
+;	"соң" n nom
+;		"е" cop aor p3 pl REMOVE:694
+"<,>"
+	"," cm
+"<саған>"
+	"сен" prn pers p2 sg dat
+"<рақат>"
+	"*рақат"
+"<керсетер>"
+	"*керсетер"
+"<ме>"
+	"ма" qst
+"<,>"
+	"," cm
+"<өзі>"
+	"өз" prn ref px3sp nom
+;	"өз" prn ref px3sp nom
+;		"е" cop aor p3 pl REMOVE:237
+;	"өз" prn ref px3sp nom
+;		"е" cop aor p3 sg REMOVE:237
+"<рақат>"
+	"*рақат"
+"<көрер ме>"
+	"көр" v tv gpr_fut subst nom
+		"ма" qst
+	"көр" v tv fut p3 sg
+		"ма" qst
+;	"көр" vaux fut p3 pl REMOVE:610
+;		"ма" qst
+;	"көр" vaux fut p3 sg REMOVE:610
+;		"ма" qst
+;	"көр" vaux gpr_fut subst nom REMOVE:610
+;		"ма" qst
+;	"көр" v tv fut p3 pl REMOVE:687
+;		"ма" qst
+"<,>"
+	"," cm
+"<яки>"
+	"*яки"
+"<жұртқа>"
+	"жұрт" n dat
+"<рақат>"
+	"*рақат"
+"<керсетер>"
+	"*керсетер"
+"<ме>"
+	"ма" qst
+"<?>"
+	"?" sent
