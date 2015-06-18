@@ -1,0 +1,418 @@
+"<Қалыңыз>"
+	"қал" n px2sg frm nom @x #1->2
+"<қалай>"
+	"қалай" adv itg @x #2->0
+		"е" cop aor p3 sg @cop #3->2
+"<?>" 
+	"?" sent @punct #3->2
+
+"<Рақмет>"
+	"рақмет" ij @disc #1->3
+"<,>"
+	"," cm @punct #2->1
+"<жақсы>"
+	"жақсы" adj @x #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Сіздің>"
+	"сіз" prn pers p2 sg frm gen @nmod #1->2
+"<атыңыз>"
+	"ат" n px2sg frm nom @subj #2->3
+"<кім>"
+	"кім" prn itg nom @main #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<?>"
+	"?" sent @punct #5->3
+
+"<Сізбен>"
+	"сіз" prn pers p2 sg frm ins @nmod #1->2
+"<танысқаныма>"
+	"таны" v tv coop ger_past px1sg dat @x #2->3
+"<қуаныштымын>"
+	"қуанышты" adj @main #3->0
+		"е" cop aor p1 sg @cop #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->5
+"<Қазақ>"
+	"қазақ" n nom @nmod #2->3
+"<тілінде>"
+	"тіл" n px3sp loc @x #3->5
+"<жақсы>"
+	"жақсы" adj advl @advmod #4->5
+"<сөйлей>"
+	"сөйле" v tv prc_impf @main #5->0
+"<алмаймын>"
+	"ал" vaux neg aor p1 sg @aux #6->5
+"<.>"
+	"." sent @punct #7->5
+
+"<Сіз>"
+	"сіз" prn pers p2 sg frm nom @subj #1->3
+"<орысша>"
+	"орысша" adv @advmod #2->3
+"<сөйлейсіз бе>"
+	"сөйле" v tv aor p2 frm sg @main #3->0
+		"ма" qst @disc #4->3
+"<?>"
+	"?" sent @punct #5->3
+
+"<Осында>"
+	"осы" prn dem loc @advmod #1->6
+"<орыс>"
+	"орыс" n nom @nmod #2->3
+"<тілінде>"
+	"тіл" n px3sp loc @nmod #3->4
+"<сөйлейтін>"
+	"сөйле" v tv gpr_impf @acl #4->5
+"<адам>"
+	"адам" n nom @subj #5->6
+"<бар ма>"
+	"бар" adj @main #6->0
+		"е" cop aor p3 sg @cop #7->6
+			"ма" qst @disc #8->6
+"<?>"
+	"?" sent @punct #9->6
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->2
+"<түсінбеймін>"
+	"түсін" v tv neg aor p1 sg @main #2->0
+"<.>"
+	"." sent @punct #3->2
+
+"<Дәретхана>"
+	"дәретхана" n nom @subj #1->2
+"<қайда>"
+	"қайда" adv itg @x #2->0
+"<екен>"
+	"е" cop aor evid p3 sg @cop #3->2
+"<?>"
+	"?" sent @punct #4->2
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->3
+"<полицияны>"
+	"полиция" n acc @obj #2->3
+"<шақырамын>"
+	"шақыр" v tv aor p1 sg @main #3->0
+"<.>"
+	"." sent @punct #4->2
+
+"<Ұрыны>"
+	"ұры" n acc @obj #1->2
+"<ұстаңдар>"
+	"ұста" v tv imp p2 pl @main #2->0
+"<.>"
+	"." sent @punct #3->2
+
+"<Маған>"
+	"мен" prn pers p1 sg dat @nmod #1->3
+"<көмек>"
+	"көмек" n nom @subj #2->3
+"<керек>"
+	"керек" adj @main #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->2
+"<адасып>"
+	"адас" v iv prc_perf @main #2->0
+"<кеттім>"
+	"кет" vaux ifi p1 sg @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->3
+"<сөмкемді>"
+	"сөмке" n px1sg acc @obj #2->3
+"<жоғалтып>"
+	"жоғалт" v tv prc_perf @main #3->0
+"<алдым>"
+	"ал" vaux ifi p1 sg @aux #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->3
+"<әмиянімді>"
+	"*әмиян" n px1sg acc @obj #2->3
+"<жоғалтып>"
+	"жоғалт" v tv prc_perf @main #3->0
+"<алдым>"
+	"ал" vaux ifi p1 sg @aux #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->2
+"<ауырып>"
+	"ауыр" v iv prc_perf @main #2->0
+"<тұрмын>"
+	"тұр" vaux pres p1 sg @aux #3->2
+"<.>"
+	"." sent @punct #4->2
+
+"<Мен>"
+	"мен" prn pers p1 sg nom @subj #1->2
+"<жаралымын>"
+	"жаралы" adj @main #2->0
+		"е" cop aor p1 sg @cop #3->2
+"<.>" 
+	"." sent @punct #4->2
+
+"<Маған>"
+	"мен" prn pers p1 sg dat @x #1->3
+"<дәрігер>"
+	"дәрігер" n nom @subj #2->3
+"<керек>"
+	"керек" adj @main #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<.>"
+	"." sent @punct #5->3
+
+"<Сізден>"
+	"сіз" prn pers p2 sg frm abl @x #1->2
+"<қоңырау шалуға>"
+	"қоңырау шал" v tv ger dat @x #2->3
+"<бола ма>"
+	"бол" v iv aor p3 sg @main #3->0
+		"ма" qst @disc #4->3
+"<?>"  
+	"?" sent @punct #5->3
+
+"<Астанаға>"
+	"Астана" np top dat @nmod #1->2
+"<билет>"
+	"билет" n nom @subj #2->4
+"<қанша>"
+	"қанша" prn itg nom @x #3->4
+"<тұрады>"
+	"тұр" v iv aor p3 sg @main #4->0
+"<?>"
+	"?" sent @punct #5->4
+
+"<Астанаға>"
+	"Астана" np top dat @nmod #1->3
+"<бір>"
+	"бір" num @nummod #2->3
+"<билет>"
+	"билет" n nom @obj #3->4
+"<беріңіз>"
+	"бер" v tv imp p2 frm sg @main #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<Мына>"
+	"мына" det dem @det #1->2
+"<пойыз>"
+	"пойыз" n nom @x #2->4
+"<қайда>"
+	"қайда" adv itg @x #3->4
+"<барады>"
+	"бар" v iv aor p3 sg @main #4->0
+"<?>"
+	"?" sent @punct #5->4
+
+"<Астанаға>"
+	"Астана" np top dat @nmod #1->2
+"<баратын>"
+	"бар" v iv gpr_impf @acl #2->3
+"<пойыз>"
+	"пойыз" n nom @subj #3->4
+"<қайда>"
+	"қайда" adv itg @x #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<?>"
+	"?" sent @punct #5->4
+
+"<Мына>"
+	"мына" det dem @det #1->2
+"<автобус>"
+	"автобус" n nom @subj #2->4
+"<Астанаға>"
+	"Астана" np top dat @nmod #3->4
+"<тоқтай ма>"
+	"тоқта" v iv aor p3 sg @main #4->0
+		"ма" qst @disc #5->4
+"<?>"
+	"?" sent @punct #6->4
+
+"<Пойыз>"
+	"пойыз" n nom @subj #1->4
+"<Астанаға>"
+	"Астана" np top dat @nmod #2->1
+"<қашан>"
+	"қашан" adv itg @x #3->4
+"<шығады>"
+	"шық" v iv aor p3 sg @main #4->0
+"<?>"
+	"?" sent @punct #5->4
+
+"<Мына>"
+	"мына" det dem @det #1->2
+"<пойыз>"
+	"пойыз" n nom @subj #2->5
+"<Астанаға>"
+	"Астана" np top dat @x #3->5
+"<қашан>"
+	"қашан" adv itg @x #4->5
+"<жетеді>"
+	"жет" v iv aor p3 sg @main #5->0
+"<?>"
+	"?" sent @punct #6->5
+
+"<Сіз>"
+	"сіз" prn pers p2 sg frm nom @subj #1->4
+"<кітапхананы>"
+	"кітапхана" n acc @obj #2->4
+"<картадан>"
+	"карта" n abl @nmod #3->4
+"<көрсете>"
+	"көрсет" v tv prc_impf @main #4->0
+"<аласыз ба>"
+	"ал" vaux aor p2 frm sg @aux #5->4
+		"ма" qst @disc #6->4
+"<?>"
+	"?" sent @punct #7->4
+
+"<Сізде>"
+	"сіз" prn pers p2 sg frm loc @x #1->4
+"<бос>"
+	"бос" adj @amod #2->3
+"<бөлмелер>"
+	"бөлме" n pl nom @subj #3->4
+"<бар ма>"
+	"бар" adj @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+			"ма" qst @disc #6->4
+"<?>"
+	"?" sent @punct #7->4
+
+"<Екі>"
+	"екі" num @nummod #1->2
+"<адамға>"
+	"адам" n dat @x #2->5
+"<бөлме>"
+	"бөлме" n nom @subj #3->5
+"<қанша>"
+	"қанша" prn itg nom @x #4->5
+"<тұрады>"
+	"тұр" v iv aor p3 sg @main #5->0
+"<?>"
+	"?" sent @punct #6->5
+
+"<Осы>"
+	"осы" det dem @det #1->2
+"<бөлмеде>"
+	"бөлме" n loc @nmod #2->5
+"<төсек>"
+	"төсек" n attr @cmpnd #3->4
+"<жайма>"
+	"жайма" n nom @subj #4->5
+"<бар ма>"
+	"бар" adj @main #5->0
+		"е" cop aor p3 sg @cop #6->5
+			"ма" qst @disc #7->5
+"<?>"
+	"?" sent @punct #8->5
+
+"<Маған>"
+	"мен" prn pers p1 sg dat @x #1->6
+"<алдымен>"
+	"алдымен" adv @advmod #2->4
+"<бөлмені>"
+	"бөлме" n acc @obj #3->4
+"<қарап>"
+	"қара" v tv prc_perf @x #4->6
+"<шығуға>"
+	"шық" vaux ger dat @aux #5->4
+"<бола ма>"
+	"бол" v iv aor p3 sg @main #6->0 
+		"ма" qst @disc #7->6
+"<?>"
+	"?" sent @punct #8->6
+
+"<Сізде>"
+	"сіз" prn pers p2 sg frm loc @x #1->4
+"<бірдеме>"
+	"бірдеме" prn ind nom @subj #2->4
+"<тазалау>"
+	"таза" adj comp @x #3->2
+"<бар ма>"
+	"бар" adj @main #4->0
+		"е" cop aor p3 sg @cop #5->4
+			"ма" qst @disc #6->4
+"<?>"
+	"?" sent @punct #7->4
+
+"<Сіз>"
+	"сіз" prn pers p2 sg frm nom @subj #1->4
+"<басқа>"
+	"басқа" det ind @det #2->3
+"<қонақ үйді>"
+	"қонақ үй" n acc @obj #3->4
+"<ұсына>"
+	"ұсын" v tv prc_impf @main #4->0
+"<аласыз ба>"
+	"ал" vaux aor p2 frm sg @aux #5->4
+		"ма" qst @disc #6->4
+"<?>" 
+	"?" sent @punct #7->4
+
+"<Сізде>"
+	"сіз" prn pers p2 sg frm loc @x #1->3
+"<сейф>"
+	"сейф" n nom @subj #2->3
+"<бар ма>"
+	"бар" adj @main #3->0
+		"е" cop aor p3 sg @cop #4->3
+			"ма" qst @disc #5->3
+"<?>"
+	"?" sent @punct #6->3
+
+"<Таңғы ас>"
+	"таңғы ас" n nom @subj #1->2
+"<енгізілген бе>"
+	"енгіз" v tv pass past p3 sg @main #2->0
+		"ма" qst @disc #3->2
+"<?>"
+	"?" sent @punct #4->2
+
+"<Өтінемін>"
+	"өтін" v tv aor p1 sg @disc #1->5
+"<,>"
+	"," cm @punct #2->1
+"<менің>"
+	"мен" prn pers p1 sg gen @nmod #3->4
+"<бөлмемді>"
+	"бөлме" n px1sg acc @obj #4->5
+"<жинаңыз>"
+	"жина" v tv imp p2 frm sg @main #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Мынау>"
+	"мынау" prn dem nom @subj #1->3
+"<қанша>"
+	"қанша" prn itg nom @x #2->3
+"<тұрады>"
+	"тұр" v iv aor p3 sg @main #3->0
+"<?>"
+	"?" sent @punct #4->3
+
+"<Тіпті>"
+	"тіпті" adv @advmod #1->2
+"<қымбат қой>"
+	"қымбат" adj @main #2->0
+		"е" cop aor p3 sg @cop #3->2
+			"ғой" mod_ass @disc #4->2
+"<!>"
+	"!" sent @punct #5->2
