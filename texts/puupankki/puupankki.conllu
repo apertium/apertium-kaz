@@ -2035,6 +2035,17 @@
 6	_	е	_	cop	aor|p3|sg	5	cop
 7	.	.	_	sent	_	5	punct @punct
 
+1	Парсы	парсы	_	n	nom	3	conj
+2	және	және	_	cnjcoo	_	3	cc
+3	Оман	Оман	_	np	top|nom	4	nmod
+4	шығанақтары	шығанақ	_	n	pl|px3sp|nom	5	x
+5	жағалауларының	жағалау	_	n	pl|px3sp|gen	6	x
+6	климаты	климат	_	n	px3sp|nom	7	subj
+7-8	тропиктік	_	_	_	_	_	_
+7	_	тропиктік	_	adj	_	0	main
+8	_	е	_	cop	aor|p3|sg	7	cop
+9	.	.	_	sent	_	7	punct
+
 1	Жер	жер	_	n	nom	2	nmod
 2	беті	бет	_	n	px3sp|nom	3	nmod
 3	суы	су	_	n	px3sp|nom	4	nmod
@@ -2042,6 +2053,202 @@
 4	_	аз	_	adj	_	0	main
 5	_	е	_	cop	aor|p3|sg	4	cop
 6	.	.	_	sent	_	4	punct @punct
+
+1	Таулы	таулы	_	adj	_	2	amod
+2	аудандарда	аудан	_	n	pl|loc	5	nmod
+3	көптеген	көптеген	_	det	qnt	4	det
+4	көлдер	көл	_	n	pl|nom	5	subj
+5	кездеседі	кездес	_	v	iv|aor|p3|pl	0	main
+6	.	.	_	sent	_	5	punct
+
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	жерінде	жер	_	n	px3sp|loc	3	x
+3	сүтқоректілердің	сүтқоректі	_	n	pl|gen	4	x
+4	100-ге	100	_	num	subst|dat	13	conj
+5	тарта	тарта	_	post	_	4	case
+6	,	,	_	cm	_	13	punct
+7	құстардың	құс	_	n	pl|gen	8	x
+8	400-ге	400	_	num	subst|dat	13	conj
+9	жуық	жуық	_	post	_	8	case
+10	,	,	_	cm	_	13	punct
+11	бауырымен	бауыр	_	n	px3sp|ins	12	x
+12	жорғалаушылардың	жорғалаушы	_	n	pl|gen	13	x
+13	80-ге	80	_	num	subst|dat	15	x
+14	жуық	жуық	_	post	_	13	case
+15	түрі	түр	_	n	px3sp|nom	16	x
+16-17	бар	_	_	_	_	_	_
+16	_	бар	_	adj	_	0	main
+17	_	е	_	cop	aor|p3|sg	16	cop
+18	.	.	_	sent	_	16	punct
+
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	жеріне	жер	_	n	px3sp|dat	3	x
+3	адам баласы	адам баласы	_	n	px3sp|nom	8	x
+4	тым	тым	_	adv	_	8	advmod
+5	ерте	ерте	_	adj	_	6	amod
+6	заманнан	заман	_	n	abl	8	x
+7	бері	бері	_	post	_	6	case
+8	қоныстанған	қоныстан	_	v	iv|past|p3|sg	0	main
+9	.	.	_	sent	_	8	punct
+
+1	Б.з.б.	б.з.б.	_	abbr	_	4	x
+2	3	3	_	num	_	4	x
+3	-	-	_	guio	_	4	x
+4	мыңжылдықта	мыңжылдық	_	n	loc	10	x
+5	қазіргі	қазір	_	adv	attr	6	x
+6	Иранның	Иран	_	np	top|gen	7	nmod
+7	оңтүстік-батысында	оңтүстік-батыс	_	n	px3sp|loc	10	x
+8	алғашқы	алғашқы	_	adj	_	9	amod
+9	мемлекеттер	мемлекет	_	n	pl|nom	10	subj
+10	құрыла	құр	_	v	tv|pass|prc_impf	0	main
+11	бастады	баста	_	vaux	ifi|p3|sg	10	aux
+12	.	.	_	sent	_	10	punct
+
+1	Б.з.б.	б.з.б.	_	abbr	_	4	x
+2	2	2	_	num	_	4	x
+3	-	-	_	guio	_	4	punct
+4	мыңжылдықта	мыңжылдық	_	n	loc	11	x
+5	бұл	бұл	_	det	dem	6	det
+6	аймаққа	аймақ	_	n	dat	11	x
+7	Орталық	орталық	_	adj	_	8	amod
+8	Азиядан	Азия	_	np	top|abl	11	x
+9	арий	арий	_	n	nom	10	nmod
+10	тайпалары	тайпа	_	n	pl|px3sp|nom	11	x
+11	келіп	кел	_	v	iv|gna_perf	12	advcl
+12	қоныстанды	қоныстан	_	v	iv|ifi|p3|sg	0	main
+13	.	.	_	sent	_	12	punct
+
+1	Б.з.б.	б.з.б.	_	abbr	_	3	x
+2	550	550	_	num	_	3	x
+3	ж.	ж.	_	abbr	_	9	x
+4	өкімет	өкімет	_	n	nom	5	nmod
+5	билігі	билік	_	n	px3sp|nom	9	x
+6	парсылық	парсылық	_	adj	_	7	amod
+7	Ахемен	Ахемен	_	np	al|nom	8	x
+8	әулетіне	әулет	_	n	px3sp|dat	9	x
+9	көшті	көш	_	v	iv|ifi|p3|sg	0	main
+10	.	.	_	sent	_	9	punct
+
+1	Ахемен	Ахемен	_	np	al|nom	2	nmod
+2	әулеті	әулет	_	n	px3sp|nom	3	x
+3	мемлекетін	мемлекет	_	n	px3sp|acc	10	obj
+4	б.з.б.	б.з.б.	_	abbr	_	6	x
+5	330	330	_	num	_	6	x
+6	ж.	ж.	_	abbr	_	10	x
+7	Александр	Александр	_	np	ant|m|attr	8	name
+8	Македонский	Македонский	_	np	cog|m|nom	9	subj
+9	талқандады	талқанда	_	v	tv|ifi|p3|sg	0	main
+10	.	.	_	sent	_	10	punct
+
+1	Иран	Иран	_	np	top|nom	16	subj
+2	эллиндік	эллиндік	_	adj	_	3	amod
+3	мемлекеттердің	мемлекет	_	n	pl|gen	4	nmod
+4	билігіне	билік	_	n	px3sp|dat	5	x
+5	көшіп	көш	_	v	iv|gna_perf	16	advcl
+6	,	,	_	cm	_	5	punct
+7	б.з.б.	б.з.б.	_	abbr	_	9	x
+8	2	2	_	num	_	9	x
+9	ғасырдың	ғасыр	_	n	gen	12	x
+10	орта	орта	_	adj	_	12	amod
+11	тұсынан	тұс	_	n	px3sp|abl	13	x
+12	бастап	баста	_	v	tv|gna_perf	16	advcl
+13	Парфия	Парфия	_	np	al|nom	15	nmod
+14	патшалығына	патшалық	_	n	px3sp|dat	16	nmod
+15	бағынды	бағын	_	v	iv|ifi|p3|sg	0	main
+16	.	.	_	sent	_	16	punct
+
+1	224	224	_	num	_	2	x
+2	ж.	ж.	_	abbr	_	5	x
+3	Парфия	Парфия	_	np	al|nom	4	nmod
+4	мемлекеті	мемлекет	_	n	px3sp|nom	5	x
+5	құлап	құла	_	v	iv|gna_perf	11	advcl
+6	,	,	_	cm	_	5	punct
+7	орнына	орын	_	n	px3sp|dat	11	x
+8	Сасани	Сасани	_	np	al|nom	9	nmod
+9	әулеті	әулет	_	n	px3sp|nom	10	nmod
+10	мемлекеті	мемлекет	_	n	px3sp|nom	11	subj
+11	құрылды	құр	_	v	tv|pass|ifi|p3|sg	0	main
+12	.	.	_	sent	_	11	punct
+
+1	Сасани	Сасани	_	np	al|nom	2	nmod
+2	әулеті	әулет	_	n	px3sp|nom	3	x
+3	мемлекеті	мемлекет	_	n	px3sp|nom	12	x
+4	Оңтүстік	оңтүстік	_	adj	_	5	amod
+5	Арабияны	Арабия	_	np	top|acc	11	conj
+6	,	,	_	cm	_	11	punct
+7	Сирияны	Сирия	_	np	top|acc	11	conj
+8	,	,	_	cm	_	11	punct
+9	Палестинаны	Палестина	_	np	top|acc	11	conj
+10	,	,	_	cm	_	11	punct
+11	Мысырды	Мысыр	_	np	top|acc	12	obj
+12	жаулап	жаула	_	v	tv|prc_perf	0	main
+13	алды	ал	_	vaux	ifi|p3|sg	12	aux
+14	.	.	_	sent	_	12	punct
+
+1	Византияға	Византия	_	np	top|dat	3	nmod
+2	қауіп	қауіп	_	n	nom	3	x
+3	төндірді	төндір	_	v	tv|ifi|p3|sg	8	conj
+4	,	,	_	cm	_	8	punct
+5	Түрік	түрік	_	n	nom	6	nmod
+6	қағанатымен	қағанат	_	n	px3sp|ins	8	nmod
+7	соғыс	соғыс	_	n	nom	8	x
+8	жүргізді	жүргіз	_	v	tv|ifi|p3|sg	0	main
+9	.	.	_	sent	_	8	punct
+
+1	Бірақ	бірақ	_	cnjcoo	_	18	cc
+2	Сасани	Сасани	_	np	al|nom	3	nmod
+3	әулеті	әулет	_	n	px3sp|nom	7	subj
+4	мемлекеті	мемлекет	_	n	px3sp|nom	5	x
+5	арабтардың	араб	_	n	pl|gen	6	nmod
+6	шабуылынан	шабуыл	_	n	px3sp|abl	7	nmod
+7	құлап	құла	_	v	iv|gna_perf	18	advcl
+8	,	,	_	cm	_	7	punct
+9	7	7	_	num	_	10	x
+10	ғасырдың	ғасыр	_	n	gen	13	x
+11	2	2	_	num	_	13	x
+12	-	-	_	guio	_	13	punct
+13	жартысында	жарты	_	adj	subst|px3sp|loc	18	x
+14	Иран	Иран	_	np	top|nom	18	subj
+15	Араб	араб	_	n	nom	16	x
+16	халифаты	халифат	_	n	px3sp|nom	17	x
+17	құрамына	құрам	_	n	px3sp|dat	18	x
+18	қосылды	қос	_	v	tv|pass|ifi|p3|sg	0	main
+19	.	.	_	sent	_	18	punct
+
+1	8	8	_	num	_	2	x
+2	ғасырда	ғасыр	_	n	loc	12	x
+3	Араб	араб	_	n	attr	4	cmpnd
+4	халифатының	халифат	_	n	px3sp|gen	5	x
+5	билеушісі	билеуші	_	n	px3sp|nom	12	x
+6	Әбу	Әбу	_	np	ant|m|nom	8	name
+7	әл-Аббас	әл-Аббас	_	np	cog|mf|nom	8	name
+8	әс-Саффах	әс-Саффах	_	np	cog|mf|nom	12	subj
+9	халифат	халифат	_	n	nom	10	nmod
+10	астанасын	астана	_	n	px3sp|acc	12	obj
+11	Бағдадқа	Бағдад	_	np	top|dat	12	nmod
+12	көшірді	көшір	_	v	tv|ifi|p3|sg	0	main
+13	.	.	_	sent	_	12	punct
+
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	аумағы	аумақ	_	n	px3sp|nom	11	x
+3	ұзақ	ұзақ	_	adj	_	4	amod
+4	жылдар	жыл	_	n	pl|nom	11	x
+5	бойы	бойы	_	post	_	4	case
+6	Аббас	Аббас	_	np	al|nom	7	nmod
+7	әулеті	әулет	_	n	px3sp|nom	8	x
+8	билеген	биле	_	v	tv|gpr_past	10	acl
+9	Бағдад	Бағдад	_	np	top|nom	10	nmod
+10	халифаты	халифат	_	n	px3sp|nom	11	x
+11	құрамында	құрам	_	n	px3sp|loc	19	x
+12	болып	бол	_	v	iv|gna_perf	11	aux
+13	,	,	_	cm	_	12	punct
+14	мәдени	мәдени	_	adj	_	16	conj
+15	және	және	_	cnjcoo	_	16	cc
+16	экон.	экон.	_	abbr	_	17	x
+17	дамуды	даму	_	n	acc	19	obj
+18	басынан	бас	_	n	px3sp|abl	19	x
+19	кешірді	кешір	_	v	tv|ifi|p3|sg	0	main
+20	.	.	_	sent	_	19	punct
 
 1	9	9	_	num	_	3	x
 2	—	—	_	guio	_	3	punct
@@ -2340,6 +2547,117 @@
 14	бастады	баста	_	vaux	ifi|p3|pl	13	aux
 15	.	.	_	sent	_	13	punct
 
+1	19	19	_	num	_	2	x
+2	ғасырдың	ғасыр	_	n	gen	3	nmod
+3	басында	бас	_	n	px3sp|loc	4	nmod
+4	болған	бол	_	v	iv|gpr_past	8	x
+5	орыс	орыс	_	n	attr	7	cmpnd
+6	-	-	_	guio	_	7	punct
+7	иран	иран	_	n	nom	8	nmod
+8	соғысынан	соғыс	_	n	px3sp|abl	13	nmod
+9	кейін	кейін	_	post	_	8	case
+10	елде	ел	_	n	loc	13	x
+11	шетелдіктердің	шетелдік	_	n	pl|gen	12	nmod
+12	билігі	билік	_	n	px3sp|nom	13	subj
+13	күшейіп	күшей	_	v	iv|prc_perf	0	main
+14	кетті	кет	_	vaux	ifi|p3|sg	13	aux
+15	.	.	_	sent	_	13	punct
+
+1	Елдің	ел	_	n	gen	2	nmod
+2	солтүстігіне	солтүстік	_	n	px3sp|dat	3	x
+3	Ресей	Ресей	_	np	top|nom	6	x
+4	,	,	_	cm	_	6	punct
+5	оңтүстігіне	оңтүстік	_	n	px3sp|dat	6	x
+6	Ұлыбритания	Ұлыбритания	_	np	top|nom	8	x
+7	қожалық	қожалық	_	n	nom	8	x
+8	ете	ет	_	v	tv|prc_impf	0	main
+9	бастады	баста	_	vaux	ifi|p3|sg	8	aux
+10	.	.	_	sent	_	8	punct
+
+1	1905	1905	_	num	_	3	x
+2	—	—	_	guio	_	3	x
+3	11	11	_	num	_	4	x
+4	ж.	ж.	_	abbr	_	9	x
+5	елде	ел	_	n	loc	9	x
+6	шетелдіктерге	шетелдік	_	n	pl|dat	9	x
+7	қарсы	қарсы	_	post	_	6	case
+8	ұлт-азаттық	ұлт-азаттық	_	adj	_	9	amod
+9	қозғалысы	қозғалыс	_	n	px3sp|nom	10	x
+10	болып	бол	_	v	iv|gna_perf	9	cop
+11	өтті	өт	_	v	tv|ifi|p3|sg	0	main
+12	.	.	_	sent	_	11	punct
+
+1	Оның	ол	_	prn	pers|p3|sg|gen	2	nmod
+2	барысында	барыс	_	n	px3sp|loc	4	x
+3	конституция	конституция	_	n	nom	4	x
+4	жарияланып	жарияла	_	v	tv|pass|gna_perf	11	x
+5	,	,	_	cm	_	4	punct
+6	меджлис	меджлис	_	n	nom	7	x
+7	шақырылды	шақыр	_	v	tv|pass|ifi|p3|sg	11	x
+8	,	,	_	cm	_	11	punct
+9	ақсүйектік	ақсүйектік	_	adj	_	10	amod
+10	дәрежелер	дәреже	_	n	pl|nom	11	subj
+11	жойылды	жой	_	v	tv|pass|ifi|p3|pl	0	main
+12	.	.	_	sent	_	11	punct
+
+1	Елде	ел	_	n	loc	7	nmod
+2	ағылшын	ағылшын	_	n	nom	3	nmod
+3	үстемдігіне	үстемдік	_	n	px3sp|dat	7	nmod
+4	қарсы	қарсы	_	post	_	3	case
+5	жаңа	жаңа	_	adj	_	6	amod
+6	толқулар	толқу	_	n	pl|nom	7	subj
+7	басталды	баста	_	v	tv|pass|ifi|p3|pl	0	main
+8	.	.	_	sent	_	7	punct
+
+1	1921	1921	_	num	_	2	x
+2	ж.	ж.	_	abbr	_	4	x
+3	21	21	_	num	_	4	x
+4	ақпанда	ақпан	_	n	loc	11	x
+5	әскерилер	әскери	_	adj	subst|pl|nom	11	x
+6	Реза	Реза	_	np	ant|m|attr	7	x
+7	ханның	хан	_	n	gen	8	x
+8	басшылығымен	басшылық	_	n	px3sp|ins	11	x
+9	мемл.	мемл.	_	abbr	_	10	x
+10	төңкеріс	төңкеріс	_	n	nom	11	x
+11	ұйымдастырып	ұйымдастыр	_	v	tv|gna_perf	15	advcl
+12	,	,	_	cm	_	11	punct
+13	жаңа	жаңа	_	adj	_	14	amod
+14	үкімет	үкімет	_	n	nom	15	subj
+15	құрды	кұр	_	v	iv|ifi|p3|sg	0	main
+16	.	.	_	sent	_	15	punct
+
+1	Жаңа	жаңа	_	adj	_	2	amod
+2	үкімет	үкімет	_	n	nom	11	x
+3	халықтың	халық	_	n	gen	4	nmod
+4	қысымымен	қысым	_	n	px3sp|ins	11	x
+5	1919	1919	_	num	_	6	x
+6	ж.	ж.	_	abbr	_	11	x
+7	ағылшын	ағылшын	_	n	attr	9	cmpnd
+8	-	-	_	guio	_	9	punct
+9	парсы	парсы	_	n	nom	10	nmod
+10	шартын	шарт	_	n	px3sp|acc	11	obj
+11	жойылды	жой	_	v	tv|pass|ifi|p3|sg	12	ccomp
+12	деп	де	_	v	tv|gna_perf	13	advcl
+13	жариялады	жарияла	_	v	tv|ifi|p3|sg	0	main
+14	.	.	_	sent	_	13	punct
+
+1	Армияға	армия	_	n	dat	2	x
+2	сүйенген	сүйен	_	v	iv|gpr_past	4	x
+3	Реза	Реза	_	np	ant|m|nom	4	x
+4	хан	хан	_	n	nom	7	x
+5	Орталықтың	орталық	_	n	gen	6	x
+6	билігін	билік	_	n	px3sp|acc	7	obj
+7	күшейту	күшейт	_	v	tv|ger|nom	15	advcl
+8	үшін	үшін	_	post	_	7	case
+9	сепаратистік	сепаратистік	_	adj	_	10	x
+10	пиғылдағы	пиғыл	_	n	loc|attr	11	x
+11	Иран	Иран	_	np	top|nom	12	nmod
+12	ақсүйектерімен	ақсүйек	_	n	pl|px3sp|ins	15	x
+13	үздіксіз	үздіксіз	_	adj	_	14	amod
+14	күрес	күрес	_	n	nom	15	x
+15	жүргізді	жүргіз	_	v	tv|ifi|p3|sg	0	main
+16	.	.	_	sent	_	15	punct
+
 1	Елде	ел	_	n	loc	5	x
 2	нарықтық	нарықтық	_	adj	_	3	amod
 3	қатынастар	қатынас	_	n	pl|nom	5	subj
@@ -2359,6 +2677,22 @@
 8	өтті	өт	_	v	tv|ifi|p3|sg	0	main
 9	.	.	_	sent	_	9	punct
 
+1	Алайда	алайда	_	cnjadv	_	14	x
+2	,	,	_	cm	_	1	punct
+3	1929	1929	_	num	_	5	x
+4	—	—	_	guio	_	5	x
+5	33	33	_	num	_	6	x
+6	ж.	ж.	_	abbr	_	7	x
+7	болған	бол	_	v	iv|gpr_past	10	acl
+8	дүниежүз.	дүниежүз.	_	abbr	_	10	x
+9	экономикалық	экономикалық	_	adj	_	10	amod
+10	дағдарыс	дағдарыс	_	n	nom	14	x
+11	Иран	Иран	_	np	top|nom	12	nmod
+12	экономикасын	экономика	_	n	px3sp|acc	14	x
+13	тұралатып	тұралат	_	v	iv|gna_perf	14	x
+14	тастады	таста	_	v	tv|ifi|p3|sg	0	main
+15	.	.	_	sent	_	14	punct
+
 1	Халықтың	халық	_	n	gen	2	nmod
 2	тұрмысы	тұрмыс	_	n	px3sp|nom	3	x
 3	нашарлап	*нашарлап	_	_	_	7	x
@@ -2374,6 +2708,74 @@
 4	басылып	бас	_	v	tv|pass|prc_perf	0	main
 5	отырды	отыр	_	vaux	ifi|p3|pl	4	aux
 6	.	.	_	sent	_	4	punct
+
+1	1941	1941	_	num	_	2	x
+2	ж.	ж.	_	abbr	_	4	x
+3	16	16	_	num	_	4	x
+4	қыркүйекте	қыркүйек	_	n	loc	10	x
+5	Реза	Реза	_	np	ant|m|nom	10	x
+6	шаһ	шаһ	_	n	nom	5	x
+7	тақтан	тақ	_	n	abl	10	x
+8	өз	өз	_	det	ref	10	x
+9	еркімен	еркімен	_	adj	_	10	x
+10	бас тартып	бас тарт	_	v	tv|gna_perf	17	advcl
+11	,	,	_	cm	_	10	punct
+12	орнына	орын	_	n	px3sp|dat	17	x
+13	баласы	бала	_	n	px3sp|nom	17	x
+14	Мұхаммед	Мұхаммед	_	np	ant|m|attr	16	name
+15	Реза	Реза	_	np	ant|m|attr	16	name
+16	Пехлеви	Пехлеви	_	np	cog|mf|nom	17	x
+17	шаһ	шаһ	_	n	nom	0	x
+18	болды	бол	_	v	iv|ifi|p3|sg	17	cop
+19	.	.	_	sent	_	17	punct
+
+1	1943	1943	_	num	_	2	x
+2	ж.	ж.	_	abbr	_	4	x
+3	9	9	_	num	_	4	x
+4	қыркүйекте	қыркүйек	_	n	loc	8	x
+5	Иран	Иран	_	np	top|nom	8	x
+6	Германияға	Германия	_	np	top|dat	8	x
+7	соғыс	соғыс	_	n	nom	8	x
+8	жариялады	жарияла	_	v	tv|ifi|p3|sg	13	conj
+9	,	,	_	cm	_	13	punct
+10	бірақ	бірақ	_	cnjcoo	_	13	cc
+11	соғыс	соғыс	_	n	nom	13	x
+12	қимылдарына	қимыл	_	n	pl|px3sp|dat	13	x
+13	араласқан жоқ	арала	_	v	tv|coop|neg|ifi|p3|sg	0	main
+14	.	.	_	sent	_	13	punct
+
+1	Тегеран	Тегеран	_	np	top|nom	2	nmod
+2	конференциясы	конференция	_	n	px3sp|nom	3	x
+3	кезінде	кез	_	n	px3sp|loc	17	nmod
+4	1943	1943	_	num	_	5	x
+5	ж.	ж.	_	abbr	_	7	x
+6	1	1	_	num	_	7	x
+7	желтоқсанда	желтоқсан	_	n	loc	17	x
+8	КСРО	КСРО	_	np	top|nom	12	conj
+9	,	,	_	cm	_	12	punct
+10	АҚШ	АҚШ	_	np	top|nom	12	conj
+11	,	,	_	cm	_	12	punct
+12	Ұлыбритания	Ұлыбритания	_	np	top|nom	13	x
+13	үкіметтері	үкімет	_	n	pl|px3sp|nom	20	subj
+14	Иранға	Иран	_	np	top|dat	17	x
+15	территориялық	территориялық	_	adj	_	16	x
+16	тұтастығын	тұтастық	_	n	px3sp|acc	17	obj
+17	сақтауға	сақта	_	v	tv|ger|dat	20	x
+18	әзір	әзір	_	n	nom	19	x
+19	екендіктерін	екендік	_	n	pl|px3sp|acc	20	obj
+20	мәлімдеді	мәлімде	_	v	tv|ifi|p3|pl	0	main
+21	.	.	_	sent	_	20	punct
+
+1	Соғыстан	соғыс	_	n	abl	9	nmod
+2	кейін	кейін	_	post	_	1	case
+3	Иран	Иран	_	np	top|nom	4	nmod
+4	үкіметі	үкімет	_	n	px3sp|nom	9	x
+5	Батыс	батыс	_	n	nom	6	x
+6	елдерімен	ел	_	n	pl|px3sp|ins	9	x
+7	тығыз	тығыз	_	adj	_	8	amod
+8	байланыс	байланыс	_	n	nom	9	x
+9	орнатты	орнат	_	v	tv|ifi|p3|sg	0	main
+10	.	.	_	sent	_	9	punct
 
 1	Иран	Иран	_	np	top|nom	2	nmod
 2	шаһы	шаһ	_	n	px3sp|nom	5	appos
@@ -2406,6 +2808,31 @@
 14	дами	дамы	_	v	iv|prc_impf	0	main
 15	бастады	баста	_	vaux	ifi|p3|sg	14	aux
 16	.	.	_	sent	_	14	punct
+
+1	Елде	ел	_	n	loc	6	x
+2	шет	шет	_	n	attr	3	cmpnd
+3	ел	ел	_	n	nom	4	nmod
+4	капиталының	капитал	_	n	px3sp|gen	5	nmod
+5	үстемдік	үстемдік	_	n	nom	6	x
+6	алуы	ал	_	v	tv|ger|px3sp|nom	23	x
+7	,	,	_	cm	_	6	punct
+8	ұлттық	ұлттық	_	adj	_	9	x
+9	құндылықтардың	құндылық	_	n	pl|gen	11	x
+10	аяққа	аяқ	_	n	dat	11	x
+11	басылуы	бас	_	v	tv|pass|ger|px3sp|nom	23	x
+12	1978	1978	_	num	_	14	x
+13	—	—	_	guio	_	14	x
+14	79	79	_	num	_	15	x
+15	ж.	ж.	_	abbr	_	22	x
+16	халықтың	халық	_	n	gen	18	nmod
+17	шаһ	шаһ	_	n	attr	18	cmpnd
+18	үкіметіне	үкімет	_	n	px3sp|dat	23	x
+19	қарсы	қарсы	_	post	_	18	case
+20	жаппай	жаппай	_	adj	_	21	amod
+21	бас	бас	_	n	nom	22	x
+22	көтеруіне	көтер	_	v	tv|ger|px3sp|dat	23	x
+23	алып келді	алып кел	_	v	tv|ifi|p3|sg	0	main
+24	.	.	_	sent	_	23	punct
 
 1	Оны	ол	_	prn	pers|p3|sg|acc	5	obj
 2	елдегі	ел	_	n	loc|attr	4	x
@@ -2445,10 +2872,116 @@
 9	келді	кел	_	v	iv|ifi|p3|sg	0	main
 10	.	.	_	sent	_	9	punct
 
+1	Мемл.	мемл.	_	abbr	_	2	x
+2	кірістің	кіріс	_	n	gen	7	x
+3	1	1	_	num	_	5	x
+4	/	/	_	sym	_	5	x
+5	3	3	_	num	_	2	x
+6	және	және	_	cnjcoo	_	7	cc
+7	экспорттың	экспорт	_	n	gen	8	nmod
+8	90%-ына	90	_	num	percent|px3sp|dat	9	x
+9	жуығы	жуық	_	adj	subst|px3sp|nom	12	x
+10	осы	осы	_	det	dem	11	det
+11	салалардан	сала	_	n	pl|abl	12	x
+12	алынады	ал	_	v	tv|pass|aor|p3|sg	0	main
+13	.	.	_	sent	_	12	punct
+
+1	Экономиканың	экономика	_	n	gen	3	nmod
+2	басқа	басқа	_	adj	_	3	amod
+3-4	салалары да	_	_	_	_	_	_
+3	_	сала	_	n	pl|px3sp|nom	5	subj
+4	_	да	_	postadv	_	3	advmod
+5	дамыған	дамы	_	v	iv|past|p3|pl	17	conj
+6	,	,	_	cm	_	17	punct
+7	бірақ	бірақ	_	cnjcoo	_	17	cc
+8	сыртқы	сыртқы	_	adj	_	10	amod
+9	экон.	экон.	_	abbr	_	10	x
+10	байланыстардың	байланыс	_	n	pl|gen	11	nmod
+11	нашарлығынан	нашарлық	_	n	px3sp|abl	14	conj
+12	және	және	_	cnjcoo	_	14	cc
+13	қаржы	қаржы	_	n	nom	14	x
+14	жетіспеушілігінен	жет	_	v	iv|coop|neg|ger_abs|px3sp|abl	17	x
+15	толық	толық	_	adj	_	16	amod
+16	қуатымен	қуат	_	n	px3sp|ins	17	x
+17	жұмыс істей	жұмыс істе	_	v	iv|prc_impf	0	main
+18	алмауда	ал	_	vaux	neg|ger|loc	17	aux
+19	.	.	_	sent	_	17	punct
+
+1	Өнеркәсіпке	өнеркәсіп	_	n	dat	7	x
+2	қажетті	қажетті	_	adj	_	3	amod
+3	құрал-саймандар	құрал-саймандар	_	n	nom	7	x
+4	90%-ға	90	_	num	percent|dat	7	x
+5	дейін	дейін	_	post	_	4	case
+6	шеттен	шет	_	n	abl	7	x
+7	әкелінеді	алып кел	_	v	tv|pass|aor|p3|sg	0	main
+8	.	.	_	sent	_	7	punct
+
 1	Ауыл шаруашылығы	ауыл шаруашылық	_	n	px3sp|nom	3	subj
 2	нашар	нашар	_	adj	advl	3	advmod
 3	дамыған	дамы	_	v	iv|past|p3|sg	0	main
 4	.	.	_	sent	_	3	punct
+
+1	Соңғы	соң	_	adv	attr	2	x
+2	жылдары	жыл	_	n	pl|px3sp|nom	4	x
+3	туризм	туризм	_	n	nom	4	subj
+4	дами	дамы	_	v	iv|prc_impf	0	main
+5	бастады	баста	_	vaux	ifi|p3|sg	4	aux
+6	.	.	_	sent	_	4	punct
+
+1	Мұнай	мұнай	_	n	nom	2	nmod
+2	экспортынан	экспорт	_	n	px3sp|abl	8	x
+3	жыл сайын	жыл сайын	_	adv	_	8	x
+4	16,3	16,3	_	num	_	5	x
+5	млрд.	млрд.	_	abbr	_	6	x
+6	АҚШ	АҚШ	_	np	top|nom	7	nmod
+7	доллары	доллар	_	n	px3sp|nom	8	subj
+8	түседі	түс	_	v	iv|aor|p3|pl	0	main
+9	.	.	_	sent	_	8	punct
+
+1	Мұнайдан	мұнай	_	n	abl	16	x
+2	басқа	басқа	_	post	_	1	case
+3	экспортқа	экспорт	_	n	dat	16	x
+4	кейбір	кейбір	_	det	ind	5	det
+5	өнеркәсіп	өнеркәсіп	_	n	nom	6	nmod
+6	тауарлары	тауар	_	n	pl|px3sp|nom	16	x
+7	,	,	_	cm	_	6	punct
+8	ауыл шаруашылығы	ауыл шаруашылық	_	n	px3sp|nom	9	x
+9	өнімдері	өнім	_	n	pl|px3sp|nom	14	x
+10	,	,	_	cm	_	14	punct
+11	кілем	кілем	_	n	nom	14	conj
+12	,	,	_	cm	_	14	punct
+13	халық	халық	_	n	nom	14	conj
+14	тұтыну	тұтыну	_	n	nom	15	nmod
+15	тауарлары	тауар	_	n	pl|px3sp|nom	16	x
+16	шығарылады	шығар	_	v	tv|pass|aor|p3|sg	0	main
+17	.	.	_	sent	_	16	punct
+
+1	Негізгі	негізгі	_	adj	_	2	amod
+2	сауда	сауда	_	n	nom	3	nmod
+3	серіктестері	серіктес	_	n	pl|px3sp|nom	18	appos
+4	:	:	_	sent	_	3	punct
+5	Германия	Германия	_	np	top|nom	18	conj
+6	,	,	_	cm	_	18	punct
+7	Жапония	Жапония	_	np	top|nom	18	conj
+8	,	,	_	cm	_	18	punct
+9	Ұлыбритания	Ұлыбритания	_	np	top|nom	18	conj
+10	,	,	_	cm	_	18	punct
+11	Италия	Италия	_	np	top|nom	18	conj
+12	,	,	_	cm	_	18	punct
+13	араб	араб	_	n	nom	14	nmod
+14	елдері	ел	_	n	pl|px3sp|nom	18	conj
+15	,	,	_	cm	_	18	punct
+16	Түркия	Түркия	_	np	top|nom	18	conj
+17	,	,	_	cm	_	18	punct
+18	Қазақстанмен	Қазақстан	_	np	top|ins	25	x
+19	дипломатиялық	дипломатиялық	_	adj	_	21	conj
+20	және	және	_	cnjcoo	_	21	cc
+21	экономикалық	экономикалық	_	adj	_	22	amod
+22	байланыс	байланыс	_	n	nom	25	x
+23	1992	1992	_	num	_	24	x
+24	ж.	ж.	_	abbr	_	25	x
+25	орнады	орна	_	v	iv|ifi|p3|pl	0	main
+26	.	.	_	sent	_	25	punct
 
 1	Қазақстан	Қазақстан	_	np	top|nom	2	nmod
 2	Президенті	президент	_	n	px3sp|nom	14	subj
@@ -2477,6 +3010,169 @@
 9	орнатылды	орнат	_	v	tv|pass|ifi|p3|sg	0	main
 10	.	.	_	sent	_	9	punct
 
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	әдебиетінің	әдебиет	_	n	px3sp|gen	4	x
+3	классикалық	классикалық	_	adj	_	4	amod
+4	дәуірін	дәуір	_	n	px3sp|acc	18	obj
+5	(	(	_	lpar	_	9	punct
+6	7	7	_	num	_	9	x
+7	—	—	_	guio	_	9	punct
+8	16	16	_	num	_	9	x
+9	ғасырлар	ғасыр	_	n	pl|nom	4	appos
+10	)	)	_	rpar	_	9	punct
+11	парсы	парсы	_	n	nom	16	conj
+12	не	не	_	cnjcoo	_	16	cc
+13	парсы	парсы	_	n	attr	15	cmpnd
+14	-	-	_	guio	_	15	punct
+15	тәжік	тәжік	_	n	nom	16	nmod
+16	әдебиеті	әдебиет	_	n	px3sp|nom	17	x
+17	деп	де	_	v	tv|gna_perf	19	x
+18	атанды	атан	_	v	iv|ifi|p3|sg	0	main
+19	.	.	_	sent	_	19	punct
+
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	революциясы	революция	_	n	px3sp|nom	10	conj
+3	(	(	_	lpar	_	6	punct
+4	1905	1905	_	num	_	6	x
+5	—	—	_	guio	_	6	punct
+6	11	11	_	num	_	2	x
+7	)	)	_	rpar	_	6	punct
+8	және	және	_	cnjcoo	_	10	cc
+9	азаматтық	азаматтық	_	adj	_	10	amod
+10	қозғалыс	қозғалыс	_	n	nom	16	x
+11	(	(	_	lpar	_	14	punct
+12	1918	1918	_	num	_	14	x
+13	—	—	_	guio	_	14	punct
+14	21	21	_	num	_	10	x
+15	)	)	_	rpar	_	14	punct
+16	кезінде	кез	_	n	px3sp|loc	29	x
+17	А.	А.	_	abbr	_	18	name
+18	Фарахани	Фарахани	_	np	cog|mf|nom	23	conj
+19	,	,	_	cm	_	23	punct
+20	М.	М.	_	abbr	_	21	name
+21	Кермани	Кермани	_	np	cog|mf|nom	23	conj
+22	,	,	_	cm	_	23	punct
+23	М	М.	_	abbr	_	23	name
+24	Т.	Т.	_	abbr	_	23	name
+25	Бехар	Бехар	_	np	cog|mf|nom	2929	x
+26	,	,	_	cm	_	23	punct
+27	т.б.	т.б.	_	abbr	_	23	x
+28	ақындар	ақын	_	n	pl|nom	29	subj
+29	демокр.	демокр.	_	abbr	_	28	x
+30	идеяның	идея	_	n	gen	29	x
+31	жыршысы	жыршы	_	n	px3sp|nom	0	main
+32	болды	бол	_	v	iv|ifi|p3|sg	29	cop
+33	.	.	_	sent	_	29	punct
+
+1	Хұзыстан	Хұзыстан	_	np	top|nom	3	conj
+2	,	,	_	cm	_	3	punct
+3	Курдстан	Курдстан	_	np	top|nom	4	nmod
+4	жартастарындағы	жартас	_	n	pl|px3sp|loc|attr	5	x
+5	рельефтер	рельеф	_	n	pl|nom	8	x
+6	,	,	_	cm	_	5	punct
+7	Сұзыдан	*Сұзыдан	_	unk	_	8	x
+8	табылған	тап	_	v	tv|pass|past|p3|sg	22	conj
+9	,	,	_	cm	_	22	punct
+10	асыл	асыл	_	adj	_	11	amod
+11	металдан	метал	_	n	abl	12	x
+12	жасалған	жаса	_	v	tv|pass|gpr_past	14	x
+13	көркем	көркем	_	adj	_	14	amod
+14	заттар	зат	_	n	pl|nom	21	x
+15	Иран	Иран	_	np	top|nom	16	nmod
+16	өнерінің	өнер	_	n	px3sp|gen	18	nmod
+17	өз	өз	_	det	ref	18	det
+18	заманында	заман	_	n	px3sp|loc	21	x
+19	жоғары	жоғары	_	adj	_	20	amod
+20	дәрежеде	дәреже	_	n	loc	21	x
+21	болғанын	бол	_	v	iv|ger_past|px3sp|acc	22	x
+22	дәлелдейді	дәлелде	_	v	tv|aor|p3|sg	0	main
+23	.	.	_	sent	_	22	punct
+
+1	Иран	Иран	_	np	top|nom	2	nmod
+2	жерінде	жер	_	n	px3sp|loc	3	x
+3	сақтар	сақта	_	v	tv|gpr_fut	4	x
+4	тарихына	тарих	_	n	px3sp|dat	10	x
+5	қатысты	қатысты	_	post	_	4	case
+6	мәдени	мәдени	_	adj	_	7	amod
+7-8	ескерткіштер де	_	_	_	_	_	_
+7	_	ескерткіш	_	n	pl|nom	10	subj
+8	_	да	_	postadv	_	7	advmod
+9	мол	мол	_	adj	_	10	x
+10	сақталған	сақта	_	v	tv|pass|past|p3|pl	0	main
+11	.	.	_	sent	_	10	punct
+
+1	Сасани	Сасани	_	np	al|nom	2	nmod
+2	әулеті	әулет	_	n	px3sp|nom	3	x
+3	дәуірінде	дәуір	_	n	px3sp|loc	8	x
+4	(	(	_	lpar	_	5	punct
+5	3	3	_	num	_	4	x
+6	—	—	_	guio	_	4	punct
+7	7	7	_	num	_	5	x
+8	ғасырлар	ғасыр	_	n	pl|nom	3	appos
+9	)	)	_	rpar	_	5	punct
+10	қалаларды	қала	_	n	pl|acc	8	obj
+11	қорған	қор	_	v	tv|gpr_past	9	acl
+12	ішіне	іш	_	n	px3sp|dat	13	x
+13	жүйелі	жүйелі	_	adj	_	11	amod
+14	жоба	жоба	_	n	nom	13	x
+15	бойынша	бойынша	_	post	_	11	case
+16	салу	сал	_	v	tv|ger|nom	14	x
+17	қанат	қанат	_	n	nom	14	subj
+18	жайды	жай	_	v	tv|ifi|p3|sg	0	main
+19	(	(	_	lpar	_	22	punct
+20	мыс.	мыс.	_	abbr	_	22	x
+21	,	,	_	cm	_	16	punct
+22	Нишапур	Нишапур	_	np	top|nom	19	nmod
+23	қаласы	қала	_	n	px3sp|nom	22	x
+24	шахмат	шахмат	_	n	nom	21	x
+25	жүйесімен	жүйе	_	n	px3sp|ins	22	x
+26	салынған	сал	_	v	tv|pass|past|p3|sg	14	parataxis
+27	)	)	_	rpar	_	22	punct
+28	.	.	_	sent	_	14	punct
+
+1	Мүсін	мүсін	_	n	nom	2	x
+2	жасау	жаса	_	v	tv|ger|nom	9	x
+3	,	,	_	cm	_	2	punct
+4	жартастарға	жартас	_	n	pl|dat	6	x
+5	рельеф	рельеф	_	n	nom	6	x
+6	қашау	қаша	_	v	tv|ger|nom	9	x
+7	елеулі	елеулі	_	adj	_	8	amod
+8	орын	орын	_	n	nom	9	x
+9	алды	ал	_	v	tv|ifi|p3|sg	0	main
+10	.	.	_	sent	_	9	punct
+
+1	Алтын	алтын	_	adj	_	7	conj
+2	,	,	_	cm	_	7	punct
+3	күміс	күміс	_	n	attr	7	conj
+4	,	,	_	cm	_	7	punct
+5	қола	қола	_	n	attr	7	conj
+6	және	және	_	cnjcoo	_	7	cc
+7	әйнектен	*әйнектен	_	_	_	9	x
+8	әр түрлі	әр түрлі	_	det	ind	9	det
+9	бұйымдар	бұйым	_	n	pl|nom	10	x
+10	жасау	жаса	_	v	tv|ger|nom	18	x
+11	,	,	_	cm	_	10	punct
+12	жүн	_	_	_	_	_	_
+12	және	және	_	cnjcoo	_	14	cc
+13	жібек	жібек	_	n	attr	15	cmpnd
+14	мата	мата	_	n	nom	16	x
+15	тоқу	*тоқу	_	v	TD	18	x
+16	өркен	өркен	_	n	nom	18	subj
+17	жайды	жай	_	v	tv|ifi|p3|sg	0	main
+18	.	.	_	sent	_	18	punct
+
+1	14	14	_	num	_	2	x
+2	ғасырдан	ғасыр	_	n	abl	10	x
+3	кейін	кейін	_	post	_	2	case
+4	қолжазба	қолжазба	_	n	nom	5	x
+5	көркемдеу	*көркемдеу	_	v	TD	10	x
+6	,	,	_	cm	_	5	punct
+7	қабырғаға	қабырға	_	n	dat	9	x
+8	сурет	сурет	_	n	nom	9	subj
+9	салу	сал	_	v	tv|ger|nom	10	x
+10	дамыды	дамы	_	v	iv|ifi|p3|sg	0	main
+11	.	.	_	sent	_	10	punct
+
 1	15	15	_	num	_	2	x
 2	ғасырда	ғасыр	_	n	loc	9	x
 3	Иран	Иран	_	np	top|nom	4	nmod
@@ -2487,6 +3183,49 @@
 8	үлкен	үлкен	_	adj	advl	9	advmod
 9	әсер етті	әсер ет	_	v	tv|ifi|p3|sg	0	main
 10	.	.	_	sent	_	9	punct
+
+1	20	20	_	num	_	2	x
+2	ғасырда	ғасыр	_	n	loc	7	x
+3	жаңа	жаңа	_	adj	_	6	amod
+4	типті	типті	_	adj	_	6	amod
+5	архитектуралық	архитектуралық	_	adj	_	6	amod
+6	құрылыстар	құрылыс	_	n	pl|nom	7	subj
+7	салына	сал	_	v	tv|pass|prc_impf	0	main
+8	бастады	баста	_	vaux	ifi|p3|pl	7	aux
+9	.	.	_	sent	_	7	punct
+
+1	20	20	_	num	_	2	x
+2	ғасырдың	ғасыр	_	n	gen	3	x
+3	басынан	бас	_	n	px3sp|abl	10	x
+4	мүсін	мүсін	_	n	nom	8	conj
+5	,	,	_	cm	_	8	punct
+6	графика	графика	_	n	nom	8	conj
+7	,	,	_	cm	_	8	punct
+8	кескіндеме	кескіндеме	_	n	nom	9	nmod
+9	жанры	жанр	_	n	px3sp|nom	10	subj
+10	дамып	дамы	_	v	iv|prc_perf	0	main
+11	келеді	кел	_	vaux	aor|p3|sg	10	aux
+12	.	.	_	sent	_	10	punct
+
+1	Сән	сән	_	n	attr	3	conj
+2	және	және	_	cnjcoo	_	3	cc
+3	қосалқы	қосалқы	_	n	attr	4	cmpnd
+4	өнердің	өнер	_	n	gen	6	nmod
+5	дәстүрлі	дәстүрлі	_	adj	_	6	amod
+6	түрлері	түр	_	n	pl|px3sp|nom	7	subj
+7	сақталған	сақта	_	v	tv|pass|past|p3|pl	0	main
+8	.	.	_	sent	_	7	punct
+
+1	Кәсіби	кәсіби	_	adj	_	3	x
+2	және	және	_	cnjcoo	_	3	cc
+3	халық	халық	_	n	attr	4	cmpnd
+4	музыкасының	музыка	_	n	px3sp|gen	6	x
+5	ғасырлық	ғасырлық	_	adj	_	6	amod
+6	дәстүрі	дәстүр	_	n	px3sp|nom	7	x
+7-8	бар	_	_	_	_	_	_
+7	_	бар	_	adj	_	0	main
+8	_	е	_	cop	aor|p3|sg	7	cop
+9	.	.	_	sent	_	7	punct
 
 1	Арабтар	араб	_	n	pl|nom	2	subj
 2	жаулап	жаула	_	v	tv|prc_perf	11	advcl
@@ -2501,6 +3240,77 @@
 11	тиді	ти	_	v	iv|ifi|p3|sg	0	main
 12	.	.	_	sent	_	11	punct
 
+1	9	9	_	num	_	2	x
+2	ғасырдан	ғасыр	_	n	abl	3	x
+3	бастап	баста	_	v	tv|gna_perf	6	advcl
+4	сарай	сарай	_	n	nom	5	nmod
+5	өнері	өнер	_	n	px3sp|nom	6	x
+6	дамып	дамы	_	v	iv|gna_perf	15	advcl
+7	,	,	_	cm	_	6	punct
+8	халық	халық	_	n	nom	9	nmod
+9	арасында	ара	_	n	px3sp|loc	15	x
+10	мутребтердің	мутреб	_	n	pl|gen	14	nmod
+11	(	(	_	lpar	_	12	punct
+12	әнші-бишілер	әнші-биші	_	n	pl|nom	10	appos
+13	)	)	_	rpar	_	12	punct
+14	даңқы	даңқ	_	n	px3sp|nom	15	subj
+15	жойылды	жой	_	v	tv|pass|ifi|p3|sg	0	main
+16	.	.	_	sent	_	15	punct
+
+1	19	19	_	num	_	2	x
+2	ғасырдың	ғасыр	_	n	gen	5	x
+3	2	2	_	num	_	5	x
+4	-	-	_	guio	_	5	x
+5	жартысынан	жарты	_	adj	subst|px3sp|abl	11	x
+6	Иран	Иран	_	np	top|nom	7	nmod
+7	музыкасына	музыка	_	n	px3sp|dat	11	x
+8	еуропалық	еуропалық	_	adj	_	9	amod
+9	музыка	музыка	_	n	nom	10	nmod
+10	мәдениеті	мәдениет	_	n	px3sp|nom	11	x
+11	әсер етті	әсер ет	_	v	tv|ifi|p3|sg	0	main
+12	.	.	_	sent	_	11	punct
+
+1	Ежелгі	ежелгі	_	adj	_	3	amod
+2	базигер	*базигер	_	_	_	3	x
+3	театры	театр	_	n	px3sp|nom	6	x
+4	жайлы	жайлы	_	post	_	3	case
+5	деректер	дерек	_	n	pl|nom	6	subj
+6	сақталған	сақта	_	v	tv|pass|past|p3|pl	0	main
+7	.	.	_	sent	_	6	punct
+
+1	Пантомима	пантомима	_	n	nom	5	conj
+2	,	,	_	cm	_	5	punct
+3	көлеңке	көлеңке	_	n	nom	5	conj
+4	және	және	_	cnjcoo	_	5	cc
+5	қуыршақ	қуыршақ	_	n	nom	5	nmod
+6	театрлары	театр	_	n	pl|px3sp|nom	7	subj
+7	болған	бол	_	v	iv|past|p3|pl	0	main
+8	.	.	_	sent	_	7	punct
+
+1	10	10	_	num	_	2	x
+2	ғасырда	ғасыр	_	n	loc	3	x
+3	пайда болған	пайда бол	_	v	iv|gpr_past	4	x
+4	мистерия	мистерия	_	n	attr	5	x
+5	діни	діни	_	adj	_	5	amod
+6	ғұрып	ғұрып	_	n	nom	8	x
+7	шахсей-вахсейдің	шахсей-вахсей	_	n	gen	7	nmod
+8	құрамына	құрам	_	n	px3sp|dat	8	x
+9	енді	ен	_	v	iv|ifi|p3|sg	0	main
+10	.	.	_	sent	_	8	punct
+
+1	Бұл	бұл	_	det	dem	2	det
+2	театрларды	театр	_	n	pl|acc	3	obj
+3	құруда	құр	_	v	tv|ger|loc	9	advcl
+4	актер	актер	_	n	attr	5	x
+5	Сейед	Сейед	_	np	ant|m|attr	6	name
+6	Әли	Әли	_	np	ant|m|attr	7	name
+7	Нәсірдің	Нәсір	_	np	cog|mf|gen	8	nmod
+8	еңбегі	еңбек	_	n	px3sp|nom	9	x
+9-10	зор	_	_	_	_	_	_
+9	_	зор	_	adj	_	0	main
+10	_	е	_	cop	aor|p3|sg	9	cop
+11	.	.	_	sent	_	9	punct @punct
+
 1	1929	1929	_	num	_	2	x
 2	жылдан	жыл	_	n	abl	3	x
 3	бастап	баста	_	v	tv|gna_perf	6	advcl
@@ -2509,6 +3319,38 @@
 6	көріне	көрін	_	v	iv|prc_impf	0	main
 7	бастады	баста	_	vaux	ifi|p3|sg	6	aux
 8	.	.	_	sent	_	6	punct @punct
+
+1	1930	1930	_	num	_	3	x
+2	—	—	_	guio	_	3	x
+3	40	40	_	num	_	4	x
+4	ж.	ж.	_	abbr	_	7	x
+5	театр	театр	_	n	nom	6	nmod
+6	репертуарларынан	репертуар	_	n	pl|px3sp|abl	7	nmod
+7	өңделген	өңде	_	v	tv|pass|gpr_past	10	x
+8	Батыс	батыс	_	adj	_	9	x
+9	Еуропа	Еуропа	_	np	top|nom	10	nmod
+10	драмалары	драма	_	n	pl|px3sp|nom	12	conj
+11	мен	мен	_	cnjcoo	_	12	cc
+12	мелодрамалар	мелодрама	_	n	pl|nom	14	x
+13	орын	орын	_	n	nom	14	x
+14	алды	ал	_	v	tv|ifi|p3|sg	0	main
+15	.	.	_	sent	_	14	punct @punct
+
+1	1940	1940	_	num	_	2	x
+2	жылдан	жыл	_	n	abl	6	x
+3	Иран	Иран	_	np	top|nom	4	nmod
+4	театры	театр	_	n	px3sp|nom	6	x
+5	дағдарысқа	дағдарыс	_	n	dat	6	x
+6	ұшырады	ұшыра	_	v	iv|ifi|p3|sg	14	conj
+7	,	,	_	cm	_	14	punct
+8	1960	1960	_	num	_	9	x
+9	жылдардың	жыл	_	n	pl|gen	10	x
+10	басында	бас	_	n	px3sp|loc	14	x
+11	қайта	қайта	_	adv	_	12	x
+12	өрлеу	өрле	_	v	iv|ger|nom	13	x
+13	жолына	жол	_	n	px3sp|dat	14	x
+14	түсті	түс	_	v	iv|ifi|p3|sg	0	main
+15	.	.	_	sent	_	14	punct @punct
 
 1	1963	1963	_	num	_	2	nummod
 2	ж.	ж.	_	abbr	_	9	x
