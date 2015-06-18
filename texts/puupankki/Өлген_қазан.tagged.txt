@@ -55,7 +55,7 @@
 "<шық>"
 	"шық" v iv imp p2 sg @conj #3->6
 "<,>"
-	"," cm @punct #4->
+	"," cm @punct #4->6
 "<тамақ>"
 	"тамақ" n nom @obj #5->6
 "<іш>"
@@ -104,7 +104,7 @@
 "<Бұл>"
 	"бұл" det dem @det #1->2
 "<жолы>"
-	"жол" n px3sp nom @x #2->6
+	"жол" n px3sp nom @x #2->25
 "<үй>"
 	"үй" n nom @nmod #3->4
 "<иесі>"
@@ -114,7 +114,7 @@
 "<құрметтейді>"
 	"құрметте" v tv aor p3 sg @conj #6->25
 "<,>"
-	"," cm @punct #7->6
+	"," cm @punct #7->25
 "<төрден>"
 	"төр" n abl @nmod #8->10
 "<орын>"
@@ -122,7 +122,7 @@
 "<береді>"
 	"бер" v tv aor p3 sg @conj #10->25
 "<,>"
-	"," cm @punct #11->10
+	"," cm @punct #11->25
 "<ет>"
 	"ет" n nom @subj #12->13
 "<келгенде>"
@@ -155,234 +155,127 @@
 	"." sent @punct #26->25
 
 "<Қожа>"
-	"қожа" n nom
-	"қожа" n attr
-	"Қожа" np ant m nom
-;	"қожа" n nom
-;		"е" cop aor p3 pl 
-;	"қожа" n nom
-;		"е" cop aor p3 sg 
-;	"Қожа" np ant m nom
-;		"е" cop aor p3 pl 
-;	"Қожа" np ant m nom
-;		"е" cop aor p3 sg 
+	"Қожа" np ant m nom @subj #1->3
 "<етті>"
-	"ет" n acc
-	"ет" n
-		"лы" post @case
-	"ет" v tv ifi p3 sg
-;	"ет" vaux ifi p3 pl 
-;	"ет" vaux ifi p3 sg 
-;	"ет" v tv ifi p3 pl 
-"<жемей>"
-	"же" v tv neg gna_perf
-;	"же" v tv neg prc_impf 
-;	"же" v tv neg prc_perf 
+	"ет" n acc @obj #2->3
+"<жемей>" 
+	"же" v tv neg gna_perf @advcl #3->20
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->3
 "<табаққа>"
-	"табақ" n dat
+	"табақ" n dat @nmod #5->8
 "<шапанының>"
-	"шапан" n px3sp gen
+	"шапан" n px3sp gen @nmod #6->7
 "<жеңін>"
-	"жең" n px3sp acc
+	"жең" n px3sp acc @obj #7->8
 "<малып>"
-	"мал" v tv gna_perf
-;	"мал" v tv prc_perf 
+	"мал" v tv gna_perf @advcl #8->20
 "<:>"
-	":" sent @punct
-
-
+	":" sent @punct #9->8
 "<->"
-	"-" guio
+	"-" guio @punct #10->8
 "<Же>"
-	"же" v tv imp p2 sg
+	"же" v tv imp p2 sg @conj #11->15
 "<,>"
-	"," cm @punct
+	"," cm @punct #12->15
 "<шапаным>"
-	"шапан" n px1sg nom
-;	"шапан" n px1sg nom
-;		"е" cop aor p3 pl 
-;	"шапан" n px1sg nom
-;		"е" cop aor p3 sg 
+	"шапан" n px1sg nom @voc #13->15
 "<,>"
-	"," cm @punct
+	"," cm @punct #14->13
 "<же>"
-	"же" v tv imp p2 sg
+	"же" v tv imp p2 sg @ccomp #15->18
 "<!>"
-	"!" sent @punct
-
+	"!" sent @punct #16->15
 "<->"
-	"-" guio
+	"-" guio @punct #17->15
 "<деп>"
-	"де" v tv gna_perf
-;	"де" v tv prc_perf 
+	"де" v tv gna_perf @advcl #18->20
 "<,>"
-	"," cm @punct
+	"," cm @punct #19->18
 "<отыра>"
-	"отыр" v iv prc_impf
-;	"отыр" vaux prc_impf 
+	"отыр" v iv prc_impf @main #20->0
 "<береді>"
-	"бер" vaux aor p3 sg 
-;	"бер" v tv aor p3 pl 
-;	"бер" v tv aor p3 sg 
-;	"бер" vaux aor p3 pl  
+	"бер" vaux aor p3 sg @aux #21->20
 "<.>"
-	"." sent @punct
-
-
+	"." sent @punct #22->20
 
 "<Үй>"
-	"үй" n attr 
-;	"үй" n nom
-;		"е" cop aor p3 pl 
-;	"үй" n nom
-;		"е" cop aor p3 sg 
-;	"үй" v tv imp p2 sg 
-;	"үй" n nom 
+	"үй" n nom @nmod #1->2
 "<иесі>"
-	"ие" n px3sp nom
-;	"ие" n px3sp nom
-;		"е" cop aor p3 pl 
-;	"ие" n px3sp nom
-;		"е" cop aor p3 sg 
+	"ие" n px3sp nom @subj #2->18
 "<:>"
-	":" sent @punct
-
-
+	":" sent @punct #3->2
 "<->"
-	"-" guio
+	"-" guio @punct #4->2
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen
+	"сіз" prn pers p2 sg frm gen @subj #5->8
 "<бұ>"
-	"бұл" prn dem nom
-;	"бұл" prn dem nom
-;		"е" cop aor p3 pl 
-;	"бұл" prn dem nom
-;		"е" cop aor p3 sg 
+	"бұл" prn dem nom @subj #6->7
 "<не>"
-	"не" cnjcoo @cc
-	"не" adv itg
-	"не" prn itg nom
-;	"не" adv itg
-;		"е" cop aor p3 pl 
-;	"не" adv itg
-;		"е" cop aor p3 sg 
-;	"не" prn itg nom
-;		"е" cop aor p3 pl 
-;	"не" prn itg nom
-;		"е" cop aor p3 sg 
+	"не" prn itg nom @parataxis #7->13
 "<қылғаныңыз>"
-	"қыл" v tv ger_past px2sg frm nom
-	"қыл" v tv gpr_past subst px2sg frm nom
+	"қыл" v tv ger_past px2sg frm nom @appos #8->6
+		"е" cop aor p3 sg @cop #9->7
 "<?>"
-	"?" sent @punct
-
+	"?" sent @punct #10->7
 "<Шапан>"
-	"шапан" n nom
-	"шапан" n attr
-;	"шапан" n nom
-;		"е" cop aor p3 pl 
-;	"шапан" n nom
-;		"е" cop aor p3 sg 
+	"шапан" n nom @subj #11->13
 "<ет>"
-	"ет" n nom
-;	"ет" n nom
-;		"е" cop aor p3 pl 
-;	"ет" n nom
-;		"е" cop aor p3 sg 
-;	"ет" n attr 
-;	"ет" vaux imp p2 sg 
-;	"ет" v tv imp p2 sg 
+	"ет" n nom @obj #12->13
 "<жейтін бе>"
-	"же" v tv gpr_impf subst nom
-		"ма" qst
-	"же" v tv pih p3 sg
-		"ма" qst
-;	"же" v tv pih p3 pl 
-;		"ма" qst
-"<еді>"
-	"е" cop ifi p3 sg
-;	"е" cop ifi p3 pl 
+	"же" v tv gpr_impf @ccomp #13->18
+		"ма" qst @disc #14->13
+"<еді>" 
+	"е" cop ifi p3 sg @cop #15->13
 "<?>"
-	"?" sent @punct
-
+	"?" sent @punct #16->13
 "<->"
-	"-" guio
+	"-" guio @punct #17->13
 "<дейді>"
-	"де" v tv aor p3 sg
-;	"де" v tv aor p3 pl 
+	"де" v tv aor p3 sg @main #18->0
 "<.>"
-	"." sent @punct
-
-
+	"." sent @punct #19->18
 
 "<Сонда>"
-	"сол" prn dem loc
-	"сонда" cnjadv
-;	"сол" prn dem loc
-;		"е" cop aor p3 pl 
-;	"сол" prn dem loc
-;		"е" cop aor p3 sg 
+	"сонда" cnjadv @cc #1->21
 "<Қожа>"
-	"Қожа" np ant m nom 
-;	"қожа" n nom
-;		"е" cop aor p3 pl 
-;	"қожа" n nom
-;		"е" cop aor p3 sg 
-;	"Қожа" np ant m nom
-;		"е" cop aor p3 pl 
-;	"Қожа" np ant m nom
-;		"е" cop aor p3 sg 
-;	"қожа" n nom 
-;	"қожа" n attr 
+	"Қожа" np ant m nom @subj #2->21
 "<:>"
-	":" sent @punct
-
-
+	":" sent @punct #3->2
 "<->"
-	"-" guio
+	"-" guio @punct #4->2
 "<Сен>"
-	"сен" prn pers p2 sg nom
-;	"сен" v tv imp p2 sg 
+	"сен" prn pers p2 sg nom @subj #5->7
 "<кісіні>"
-	"кісі" n acc
+	"кісі" n acc @obj #6->7
 "<сыйламайды екенсің>"
-	"сыйла" v tv neg aor evid p2 sg
+	"сыйла" v tv neg aor evid p2 sg @parataxis #7->14
 "<,>"
-	"," cm @punct
+	"," cm @punct #8->14
 "<киімді>"
-	"киім" n acc
-	"киім" n
-		"лы" post @case
+	"киім" n acc @obj #9->10
 "<сыйлайды екенсің>"
-	"сыйла" v tv aor evid p2 sg
+	"сыйла" v tv aor evid p2 sg @parataxis #10->14
 "<.>"
-	"." sent @punct
-
+	"." sent @punct #11->10
 "<Сондықтан>"
-	"сондықтан" cnjadv
+	"сондықтан" cnjadv @cc #12->21
 "<шапаныма>"
-	"шапан" n px1sg dat
+	"шапан" n px1sg dat @x #13->14
 "<жегізіп>"
-	"*жегізіп"
+	"жегіз" v tv prc_perf @ccomp #14->19
 "<отырғаным>"
-	"отыр" v iv gpr_past subst px1sg nom
-	"отыр" v iv ger_past px1sg nom
-;	"отыр" vaux ger_past px1sg nom 
-;	"отыр" vaux gpr_past subst px1sg nom 
+	"отыр" vaux ger_past px1sg nom @aux #15->14
+		"е" cop aor p3 sg @cop #16->14
 "<!>"
-	"!" sent @punct
-
+	"!" sent @punct #17->14
 "<->"
-	"-" guio
+	"-" guio @punct #18->14
 "<деп>"
-	"де" v tv gna_perf
-;	"де" v tv prc_perf 
+	"де" v tv gna_perf @advcl #19->21
 "<,>"
-	"," cm @punct
+	"," cm @punct #20->19
 "<жауап береді>"
-	"жауап бер" v iv aor p3 sg
-;	"жауап бер" v iv aor p3 pl 
+	"жауап бер" v iv aor p3 sg @main #21->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #22->21
