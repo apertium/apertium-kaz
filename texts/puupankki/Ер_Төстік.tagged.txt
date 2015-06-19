@@ -292,12 +292,7 @@
 ;	"кеш" adj subst dat 
 ;	"кешке" adv 
 "<жақын>"
-	"жақын" n attr  
-;	"жақын" adj 
-;	"жақын" adv 
-;	"жақын" adj advl 
-;	"жақын" adj subst nom 
-;	"жақын" n nom  
+	"жақын" n nom  
 "<кемпірі>"
 	"кемпір" n px3sp nom
 "<төсегінен>"
@@ -419,26 +414,23 @@
 "<Тарғақ>"
 	"*Тарғақ"
 "<жығылмай>"
-	"жық" v tv pass neg gna_perf
+	"жық" v tv pass neg gna_perf @advcl #2->8
 "<,>"
-	"," cm @punct
+	"," cm @punct #3->2
 "<бір>"
-	"бір" num 
-	"бір" num subst nom 
-;	"бір" det ind 
+	"бір" num @nummod #4->5
 "<қанатын>"
 	"қанат" n px3sp acc @obj #5->6
 "<сабалап>"
-	"сабала" v tv gna_perf @advcl #6->
+	"сабала" v tv gna_perf @advcl #6->8
 "<,>"
 	"," cm @punct #7->6
 "<қаша>"
-	"қаш" v iv prc_impf
+	"қаш" v iv prc_impf @main #8->0
 "<береді>"
-	"бер" vaux aor p3 sg 
-;	"бер" vaux aor p3 pl 
+	"бер" vaux aor p3 sg @aux #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
 "<Төстік>"
 	"*Төстік"
@@ -454,33 +446,27 @@
 	"." sent @punct #6->4
 
 "<Сөйтіп>"
-	"сөйт" v iv prc_perf @advcl #1->
+	"сөйт" v iv prc_perf @advcl #1->10
 "<жүргенде>"
 	"жүр" vaux ger_past loc @aux #2->1 
 "<,>"
 	"," cm @punct #3->1
 "<тарғақ>"
-	"тарғақ" n nom 
+	"тарғақ" n nom @x #4->
 "<бір>"
-	"бір" num 
-	"бір" num subst nom 
-;	"бір" det ind 
+	"бір" num @x #5->
 "<кемпірдің>"
-	"кемпір" n gen @nmod
-"<өрмегінің>"
-	"өрмек" n px3sp gen @nmod
+	"кемпір" n gen @nmod #6->
+"<өрмегінің>" 
+	"өрмек" n px3sp gen @nmod #7->
 "<үстінен>"
-	"үст" n px3sp abl @nmod
+	"үст" n px3sp abl @nmod #8->
 "<қарғып>"
-	"қарғы" v iv prc_perf
-	"қарғы" v iv gna_perf
+	"қарғы" v iv gna_perf @advcl #9->10
 "<өтеді>"
-	"өт" v tv aor p3 sg
-	"өт" v iv aor p3 sg
-;	"өт" v iv aor p3 pl 
-;	"өт" v tv aor p3 pl 
+	"өт" v tv aor p3 sg @main #10->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->10
 
 "<Қуып>"
 	"қу" v tv prc_perf 
@@ -490,25 +476,20 @@
 ;	"кел" vaux prc_impf 
 "<жатқан>"
 	"жат" vaux gpr_past 
-	"жат" vaux ger_past nom 
-	"жат" vaux gpr_past subst nom 
-	"жат" vaux past p3 sg 
-;	"жат" vaux past p3 pl  
 "<Төстік>"
 	"*Төстік"
 "<те>"
 	"да" cnjcoo @cc
 	"да" postadv
 "<өрмектен>"
-	"өрмек" n abl
+	"өрмек" n abl @nmod
 "<секіреді>"
-	"секір" v iv aor p3 sg
+	"секір" v iv aor p3 sg @main
 "<.>"
 	"." sent @punct
 
 "<Сөйткенде>"
-	"сөйт" v iv ger_past loc
-	"сөйт" v iv gpr_past subst loc
+	"сөйт" v iv ger_past loc @advcl #1->
 "<Төстіктің>"
 	"*Төстіктің"
 "<бір>"
