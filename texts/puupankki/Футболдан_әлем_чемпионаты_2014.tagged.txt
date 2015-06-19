@@ -3,55 +3,55 @@
 "<әлем>"
 	"әлем" n nom @nmod #2->3
 "<чемпионаты>"
-	"чемпионат" n px3sp nom @x #3->10
+	"чемпионат" n px3sp nom @appos #3->10
 "<2014>"
-	"2014" num @x #4->3
+	"2014" num @cmpnd #4->3
 "<—>"
 	"—" guio @punct #5->4
 "<ФИФА-ның>"
-	"ФИФА" np org gen @x #6->10
+	"ФИФА" np org gen @nmod #6->10
 "<20-шы>"
-	"20" num ord @x #7->10
+	"20" num ord @amod #7->10
 "<футболдан>"
-	"футбол" n abl @x #8->10
+	"футбол" n abl @nmod #8->10
 "<әлем>"
 	"әлем" n nom @nmod #9->10
 "<чемпионаты>"
-	"чемпионат" n px3sp nom @conj #10->25
+	"чемпионат" n px3sp nom @parataxis #10->25
 		"е" cop aor p3 sg @cop #11->10
 "<,>"
 	"," cm @punct #12->10
 "<финалдық>"
 	"финалдық" adj @amod #13->14
 "<кезеңі>"
-	"кезең" n px3sp nom @x #14->16
+	"кезең" n px3sp nom @subj #14->25
 "<2014>"
-	"2014" num @x #15->16
+	"2014" num @amod #15->16
 "<жылдың>" 
-	"жыл" n gen @x #16->21
+	"жыл" n gen @nmod #16->22
 "<12>"
-	"12" num @x #17->18
+	"12" num @amod #17->18
 "<маусым>"
 	"маусым" n nom @conj #18->21
 "<мен>"
 	"мен" cnjcoo @cc #19->21
 "<13>"
-	"13" num @nummod #20->21
+	"13" num @amod #20->21
 "<шілде>"
 	"шілде" n nom @nmod #21->22
 "<күндері>"
-	"күн" n pl px3sp nom @x #22->23
+	"күн" n pl px3sp nom @nmod #22->23
 "<аралығында>"
-	"аралық" n px3sp loc @x #23->25
+	"аралық" n px3sp loc @nmod #23->25
 "<Бразилияда>"
-	"Бразилия" np top loc @nmod #24->15
+	"Бразилия" np top loc @nmod #24->25
 "<өтті>"
 	"өт" v iv ifi p3 sg @main #25->0
 "<.>"
 	"." sent @punct #26->25
 
 "<Ашылу>"
-	"ашылу" n nom @nmod #1->2
+	"аш" v tv pass ger nom @nmod #1->2
 "<матчы>"
 	"матч" n px3sp nom @remnant #2->6
 "<Сан-Паулуда>"
@@ -63,7 +63,7 @@
 "<финалы>"
 	"финал" n px3sp nom @subj #6->10
 "<Рио-де-Жанейродағы>"
-	"Рио-де-Жанейро" np top loc attr @nmod #7->8
+	"Рио-де-Жанейро" np top loc attr @amod #7->8
 "<Маракана>"
 	"Маракана" np al nom @nmod #8->9
 "<стадионында>"
@@ -90,7 +90,7 @@
 "<,>"
 	"," cm @punct #8->7
 "<2014>"
-	"2014" num @x #9->10
+	"2014" num @amod #9->10
 "<жылдың>"
 	"жыл" n gen @nmod #10->11
 "<чемпионаты>"
@@ -100,11 +100,11 @@
 "<өту>"
 	"өт" v iv ger nom @subj #13->14
 "<керек>"
-	"керек" adj @main #14->0
+	"керек" adj @conj #14->25
 "<болды>"
 	"бол" v iv ifi p3 sg @cop #15->14
 "<және>"
-	"және" cnjcoo @cc #16->13
+	"және" cnjcoo @cc #16->25
 "<Бразилия>"
 	"Бразилия" np top nom @subj #17->20
 "<сол>"
@@ -112,41 +112,39 @@
 "<чемпионатты>"
 	"чемпионат" n acc @obj #19->20
 "<өткізуге>"
-	"өткіз" v tv ger dat @acl #20->21
+	"өткіз" v tv ger dat @advcl #20->22
 "<ниет>"
 	"ниет" n nom @obj #21->22
 "<білдірген>"
 	"білдір" v tv gpr_past @amod #22->25
 "<жалғыз ғана>"
-	"жалғыз" adj @nmod #23->25
+	"жалғыз" adj @amod #23->25
 		"ғана" postadv @advmod #24->23
 "<ел>"
-	"ел" n nom @conj #25->14
+	"ел" n nom @main #25->0
 "<еді>"
 	"е" cop ifi p3 sg @cop #26->25
 "<.>"
 	"." sent @punct #27->25
 
 "<Қалған>"
-	"қал" v iv gpr_past @amod #1->4
-"<оңтүстік>"
-	"оңтүстік" adj @amod #2->3
-"<америкалық>"
-	"америкалық" adj @amod #3->4
+	"қал" v iv gpr_past @amod #1->3
+"<оңтүстік америкалық>"
+	"оңтүстік америкалық" adj @amod #2->3
 "<елдер>"
-	"ел" n pl nom @subj #4->9
+	"ел" n pl nom @subj #3->8
 "<2003>"
-	"2003" num subst nom @nmod #5->6
+	"2003" num @amod #4->5
 "<жылы>"
-	"жыл" n px3sp nom @nmod #6->9
+	"жыл" n px3sp nom @nmod #5->8
 "<Бразилия>"
-	"Бразилия" np top nom @nmod #7->8
+	"Бразилия" np top nom @nmod #6->7
 "<үміткерлігін>" 
-	"үміткерлік" n px3sp acc @obj #8->9
+	"үміткерлік" n px3sp acc @obj #7->8
 "<қолдаған>"
-	"қолда" v tv past p3 sg @main #9->0
+	"қолда" v tv past p3 sg @main #8->0
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #9->8
 
 "<Бразилиямен>"
 	"Бразилия" np top ins @nmod #1->2
@@ -223,72 +221,72 @@
 	"." sent @punct #37->6
 
 "<Кейінірек>"
-	"кейінірек" adv @advmod #1->6
+	"кейін" adv comp @advmod #1->6
 "<ФИФА>"
 	"ФИФА" np org nom @subj #2->6
 "<ротация>"
 	"ротация" n nom @nmod #3->4
 "<принципі>"
-	"принцип" n px3sp nom @nmod #4->5
+	"принцип" n px3sp nom @subj #4->5
 "<өзгеретінін>"
-	"өзгер" v iv ger_impf px3sp acc @obj #5->6
+	"өзгер" v iv ger_impf px3sp acc @ccomp #5->6
 "<жариялады>"
 	"жарияла" v tv ifi p3 sg @main #6->0
 "<.>"
 	"." sent @punct #7->6
 
 "<Енді>"
-	"енді" adv @x #1->5
+	"енді" adv @advmod #1->27
 "<2018>"
-	"2018" num @x #2->3
+	"2018" num @amod #2->3
 "<жылдың>"
-	"жыл" n gen @x #3->4
+	"жыл" n gen @nmod #3->4
 "<чемпионатын>"
-	"чемпионат" n px3sp acc @x #4->5
+	"чемпионат" n px3sp acc @obj #4->5
 "<өткізу>"
 	"өткіз" v tv ger nom @x #5->6
 "<құқығына>"
-	"құқық" n px3sp dat @x #6->7
+	"құқық" n px3sp dat @nmod #6->7
 "<қатысатын>"
-	"қатыс" v iv gpr_impf @x #7->8
+	"қатыс" v iv gpr_impf @acl #7->8
 "<кандидаттар>"
-	"кандидат" n pl nom @x #8->9
+	"кандидат" n pl nom @nmod #8->9
 "<додасына>"
-	"дода" n px3sp dat @x #9->19
+	"дода" n px3sp dat @nmod #9->27
 "<,>"
 	"," cm @punct #10->9
 "<соңғы>"
-	"соң" adv attr @x #11->13
+	"соң" adv attr @amod #11->13
 "<екі>"
-	"екі" num @x #12->13
+	"екі" num @nummod #12->13
 "<чемпионатты>"
-	"чемпионат" n acc @x #13->19
+	"чемпионат" n acc @obj #13->19
 "<(>"
 	"(" lpar @punct #14->17
 "<КАФ>"
-	"КАФ" np unk @conj #15->17
+	"КАФ" np al nom @conj #15->17
 "<және>"
 	"және" cnjcoo @cc #16->17
 "<КОНМЕБОЛ>"
-	"КОНМЕБОЛ" np unk @appos #17->13
+	"КОНМЕБОЛ" np al nom @appos #17->13
 "<)>"
 	")" rpar @punct #18->17
 "<өткізген>"
-	"өткіз" v tv gpr_past @x #19->20
+	"өткіз" v tv gpr_past @acl #19->20
 "<елдерден>"
-	"ел" n pl abl @x #20->27
+	"ел" n pl abl @nmod #20->25
 "<басқа>" 
 	"басқа" post @case #21->20
 "<,>"
 	"," cm @punct #22->20
 "<барлық>"
-	"барлық" det qnt @det #23->24
+	"барлық" det qnt @det #23->25
 "<конфедерациялардан>"
-	"конфедерация" n pl abl @x #24->27
+	"конфедерация" n pl abl @nmod #24->25
 "<елдер>"
-	"ел" n pl nom @x #25->27
+	"ел" n pl nom @subj #25->27
 "<сынға>"
-	"сын" n dat @x #26->27
+	"сын" n dat @nmod #26->27
 "<түседі>"
 	"түс" v iv aor p3 sg @main #27->0
 "<.>"
@@ -305,11 +303,11 @@
 "<екі>"
 	"екі" num @nummod #5->6
 "<рет>"
-	"рет" n nom @x #6->7
+	"рет" n nom @nmod #6->7
 "<өткізген>"
 	"өткіз" v tv gpr_past @acl #7->9
 "<бесінші>"
-	"бес" num ord @x #8->9
+	"бес" num ord @amod #8->9
 "<ел>"
 	"ел" n nom @main #9->0
 "<болды>"
@@ -338,54 +336,54 @@
 	"." sent @punct #21->9
 
 "<Осыған>"
-	"осы" prn dem dat @x #1->9
+	"осы" prn dem dat @nmod #1->9
 "<дейін>"
 	"дейін" post @case #2->1
 "<Бразилияда>"
 	"Бразилия" np top loc @nmod #3->9
 "<футболдан>"
-	"футбол" n abl @x #4->6
+	"футбол" n abl @nmod #4->6
 "<әлем>"
-	"әлем" n nom @x #5->6
+	"әлем" n nom @nmod #5->6
 "<чемпионаты>"
-	"чемпионат" n px3sp nom @x #6->9
+	"чемпионат" n px3sp nom @subj #6->9
 "<1950>"
-	"1950" num subst nom @x #7->8
+	"1950" num @amod #7->8
 "<жылы>"
-	"жыл" n px3sp nom @x #8->9
+	"жыл" n px3sp nom @nmod #8->9
 "<өткен>"
-	"өт" v iv gpr_past @x #9->0
+	"өт" v iv gpr_past @main #9->0
 "<болатын>"
 	"бол" v iv pih p3 sg @cop #10->9
 "<.>"
-	"." sent @punct #11->10
+	"." sent @punct #11->9
 
 "<ӘЧ>"
-	"ӘЧ" np al attr @cmpnd #1->4
+	"ӘЧ" np al nom @nmod #1->5
 "<->"
 	"-" guio @punct #2->1
 "<2014>"
-	"2014" num @x #3->1
+	"2014" num @cmpnd #3->1
 "<іріктеу>"
 	"ірікте" v tv ger nom @x #4->5
 "<айналымы>"
-	"айналым" n px3sp nom @x #5->10
+	"айналым" n px3sp nom @subj #5->17
 "<2011>"
-	"2011" num @x #6->7
+	"2011" num @amod #6->7
 "<жылдың>"
-	"жыл" n gen @x #7->9
+	"жыл" n gen @nmod #7->9
 "<маусым>"
-	"маусым" n attr @x #8->9
+	"маусым" n attr @cmpnd #8->9
 "<айында>"
-	"ай" n px3sp loc @x #9->10
+	"ай" n px3sp loc @nmod #9->10
 "<басталып>"
 	"баста" v tv pass gna_perf @advcl #10->17
 "<,>"
 	"," cm @punct #12->10
 "<2013>"
-	"2013" num @x #13->14
+	"2013" num @amod #13->14
 "<жылдың>"
-	"жыл" n gen @x #14->16
+	"жыл" n gen @nmod #14->16
 "<қараша>"
 	"қараша" n attr @x #15->16
 "<айында>"
@@ -400,9 +398,71 @@
 "<жарысқа>"
 	"жарыс" n dat @nmod #2->3
 "<шығатындар>"
-	"шық" v iv gpr_impf subst pl nom @main #3->0
+	"шық" v iv gpr_impf subst pl nom @subj #3->30
 "<:>"
 	":" sent @punct #4->3
+"<Еуропа>"
+	"Еуропа" np top nom @conj #5->30
+"<(>"
+	"(" lpar @punct #6->7
+"<УЕФА>"
+	"УЕФА" np al nom @parataxis #7->5
+"<)>"
+	")" rpar @punct 8->7
+"<,>"
+	"," cm @punct #9->30
+"<Азия>"
+	"Азия" np top nom @conj #10->30
+"<(>"
+	"(" lpar @punct #11->12
+"<АФК>"
+	"АФК" np al nom @parataxis #12->10
+"<)>"
+	")" rpar @punct #13->12
+"<,>"
+	"," cm @punct #14->30
+"<Африка>"
+	"Африка" np top nom @conj #15->30
+"<(>"
+	"(" lpar @punct #16->17
+"<КАФ>"
+	"КАФ" np al nom @parataxis #17->15
+"<)>"
+	")" rpar @punct #18->17
+"<,>"
+	"," cm @punct #19->30
+"<Солтүстік Америка>"
+	"Солтүстік Америка" np top nom @conj #20->30
+"<(>"
+	"(" lpar @punct #21->22
+"<КОНКАКАФ>"
+	"КОНКАКАФ" np al nom @parataxis #22->20
+"<)>"
+	")" rpar @punct #23->22
+"<,>"
+	"," cm @punct #24->30
+"<Оңтүстік Америка>"
+	"Оңтүстік Америка" np top nom @conj #25->30
+"<(>"
+	"(" lpar @punct #26->27
+"<КОНМЕБОЛ>"
+	"КОНМЕБОЛ" np al nom @parataxis #27->25
+"<)>"
+	")" rpar @punct #28->27
+"<,>"
+	"," cm @punct #29->20
+"<Океания>"
+	"Океания" np top nom @main #30->0
+		"е" cop aor p3 sg @cop #31->
+"<(>"
+	"(" lpar @punct #32->33
+"<ОФК>"
+	"ОФК" np al nom @parataxis #33->30
+"<)>"
+	")" rpar @punct #34->33
+"<.>"
+	"." sent @punct #35->30
+
 
 "<Бразилия>"
 	"Бразилия" np top nom @subj #1->2
