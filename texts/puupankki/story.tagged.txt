@@ -406,7 +406,7 @@
 "<Оны>"
 	"ол" prn pers p3 sg acc @obj #8->9
 "<көрдіңдер ме>"
-	"көр" v tv ifi p2 pl @x #9->13
+	"көр" v tv ifi p2 pl @ccomp #9->13
 		"ма" qst @disc #10->9
 "<?>"
 	"?" sent @punct #11->9
@@ -441,7 +441,7 @@
 "<Азаматты>"
 	"Азамат" np ant m acc @obj #3->4
 "<көрдің бе>"
-	"көр" v tv ifi p2 sg @parataxis #4->8
+	"көр" v tv ifi p2 sg @ccomp #4->8
 		"ма" qst @disc #5->4
 "<?>"
 	"?" sent @punct #6->4
@@ -537,7 +537,7 @@
 "<кеткенін>"
 	"кет" v iv ger_past px3sp acc @obj #9->10
 "<біледі>"
-	"біл" v tv aor p3 sg @parataxis #10->11
+	"біл" v tv aor p3 sg @ccomp #10->11
 "<деп>"
 	"де" v tv gna_perf @advcl #11->12
 "<ойлайды>"
@@ -554,7 +554,7 @@
 "<,>"
 	"," cm @punct #4->3
 "<айтшы>"
-	"айт" v tv imp p2 sg @parataxis #5->9
+	"айт" v tv imp p2 sg @ccomp #5->9
 		"шы" emph @disc #6->5
 "<!>"
 	"!" sent @punct #7->5
@@ -578,7 +578,7 @@
 "<,>"
 	"," cm @punct #5->4
 "<айта>"
-	"айт" v tv prc_impf @parataxis #6->9
+	"айт" v tv prc_impf @ccomp #6->9
 "<алмаймын>"
 	"ал" vaux neg aor p1 sg @aux #7->6
 "<">"
@@ -838,7 +838,7 @@
 "<Сені>"
 	"сен" prn pers p2 sg acc @obj #2->3
 "<таптым>"
-	"тап" v tv ifi p1 sg @parataxis #3->6
+	"тап" v tv ifi p1 sg @ccomp #3->6
 "<!>"
 	"!" sent @punct #4->3
 "<">"
