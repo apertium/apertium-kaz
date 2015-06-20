@@ -151,9 +151,9 @@
 "<Күшік>"
 	"күшік" n nom @subj #1->4
 "<балалармен>"
-	"бала" n pl ins @nmod #2->4
+	"бала" n pl ins @nmod #2->3
 "<ойнағанды>"
-	"ойна" v tv ger_past acc @obj #3->4
+	"ойна" v tv ger_past acc @ccomp #3->4
 "<жақсы көреді>"
 	"жақсы көр" v tv aor p3 sg @main #4->0
 "<.>"
@@ -231,11 +231,11 @@
 "<бірге>"
 	"бірге" adv @advmod #4->13
 "<үйде>"
-	"үй" n loc @x #5->13
+	"үй" n loc @nmod #5->13
 "<,>"
 	"," cm @punct #6->13
 "<ол>"
-	"ол" prn pers p3 sg nom @subj #7->12
+	"ол" prn pers p3 sg nom @subj #7->13
 "<терезеден>"
 	"терезе" n abl @nmod #8->12
 "<Азамат>"
@@ -245,7 +245,7 @@
 "<Айгүлдің>"
 	"Айгүл" np ant f gen @subj #11->12
 "<ойнағанына>"
-	"ойна" v tv ger_past px3sp dat @nmod #12->13
+	"ойна" v tv ger_past px3sp dat @ccomp #12->13
 "<қарап>"
 	"қара" v tv prc_perf @main #13->0
 "<тұр>"
@@ -254,7 +254,7 @@
 	"." sent @punct #15->13
 
 "<Азамат>"
-	"Азамат" np ant m nom @subj #1->17
+	"Азамат" np ant m nom @subj #1->9
 "<ескі>"
 	"ескі" adj advl @advmod #2->9
 "<үлкен>"
@@ -270,7 +270,7 @@
 "<жүгіріп>"
 	"жүгір" v iv gna_perf @advcl #8->9
 "<бара>"
-	"бар" v iv prc_impf @x #9->17
+	"бар" v iv prc_impf @parataxis #9->17
 "<жатыр>"
 	"жат" vaux pres p3 sg @aux #10->9
 "<,>"
@@ -322,7 +322,7 @@
 "<еш нәрсені>"
 	"ешнәрсе" prn neg acc @obj #2->3
 "<көріп>"
-	"көр" v tv prc_perf @x #3->7
+	"көр" v tv prc_perf @parataxis #3->7
 "<тұрған жоқ>"
 	"тұр" vaux neg ifi p3 sg @aux #4->3
 "<,>"
@@ -375,9 +375,9 @@
 	"." sent @punct #4->2
 
 "<Айгүл>"
-	"Айгүл" np ant f nom @subj #1->2
+	"Айгүл" np ant f nom @subj #1->6
 "<санап>"
-	"сана" v tv prc_perf @nmod #2->6
+	"сана" v tv prc_perf @advcl #2->6
 "<біткеннен>"
 	"біт" vaux ger_past abl @aux #3->2
 "<кейін>"
@@ -620,7 +620,6 @@
 	"ақырын" adj advl @advmod #4->5
 "<басып>"
 	"бас" v iv prc_perf @main #5->0
-	"бас" v tv prc_perf @main #5->0
 "<жүр>"
 	"жүр" vaux pres p3 sg @aux #6->5
 "<.>"
@@ -737,11 +736,11 @@
 "<Ол>"
 	"ол" det dem @det #1->2
 "<дыбыс>"
-	"дыбыс" n nom @obj #2->4
+	"дыбыс" n nom @subj #2->4
 "<қайта>"
 	"қайта" adv @advmod #3->4
 "<естіледі>"
-	"естіл" v iv aor p3 sg @main #4->0
+	"есіт" v tv pass aor p3 sg @main #4->0
 "<!>"
 	"!" sent @punct #5->4
 
@@ -862,7 +861,7 @@
 "<қарай>"
 	"қарай" post @case #6->5
 "<келе>"
-	"кел" v iv prc_impf @conj #7->16
+	"кел" v iv prc_impf @parataxis #7->16
 "<жатыр>"
 	"жат" vaux pres p3 sg @aux #8->7
 "<,>"
