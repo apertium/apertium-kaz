@@ -2670,9 +2670,9 @@
 12	қоныстанды	қоныстан	_	v	iv|ifi|p3|sg	0	main	_	_
 13	.	.	_	sent	_	12	punct	_	_
 
-1	Б.з.б.	б.з.б.	_	abbr	_	3	x	_	_
-2	550	550	_	num	_	3	x	_	_
-3	ж.	ж.	_	abbr	_	9	x	_	_
+1	Б.з.б.	б.з.б.	_	abbr	_	3	cmpnd	_	_
+2	550	550	_	num	_	3	amod	_	_
+3	ж.	ж.	_	abbr	_	9	nmod	_	_
 4	өкімет	өкімет	_	n	nom	5	nmod	_	_
 5	билігі	билік	_	n	px3sp|nom	9	x	_	_
 6	парсылық	парсылық	_	adj	_	7	amod	_	_
@@ -2684,9 +2684,9 @@
 1	Ахемен	Ахемен	_	np	al|nom	2	nmod	_	_
 2	әулеті	әулет	_	n	px3sp|nom	3	x	_	_
 3	мемлекетін	мемлекет	_	n	px3sp|acc	10	obj	_	_
-4	б.з.б.	б.з.б.	_	abbr	_	6	x	_	_
+4	б.з.б.	б.з.б.	_	abbr	_	6	cmpnd	_	_
 5	330	330	_	num	_	6	amod	_	_
-6	ж.	ж.	_	abbr	_	10	x	_	_
+6	ж.	ж.	_	abbr	_	9	nmod	_	_
 7	Александр	Александр	_	np	ant|m|attr	8	name	_	_
 8	Македонский	Македонский	_	np	cog|m|nom	9	subj	_	_
 9	талқандады	талқанда	_	v	tv|ifi|p3|sg	0	main	_	_
@@ -2709,10 +2709,10 @@
 15	бағынды	бағын	_	v	iv|ifi|p3|sg	0	main	_	_
 16	.	.	_	sent	_	15	punct	_	_
 
-1	224	224	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	5	x	_	_
+1	224	224	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	5	nmod	_	_
 3	Парфия	Парфия	_	np	al|nom	4	nmod	_	_
-4	мемлекеті	мемлекет	_	n	px3sp|nom	5	x	_	_
+4	мемлекеті	мемлекет	_	n	px3sp|nom	5	subj	_	_
 5	құлап	құла	_	v	iv|gna_perf	11	advcl	_	_
 6	,	,	_	cm	_	5	punct	_	_
 7	орнына	орын	_	n	px3sp|dat	11	x	_	_
@@ -3126,16 +3126,16 @@
 9	бастады	баста	_	vaux	ifi|p3|sg	8	aux	_	_
 10	.	.	_	sent	_	8	punct	_	_
 
-1	1905	1905	_	num	_	3	x	_	_
-2	—	—	_	guio	_	3	x	_	_
-3	11	11	_	num	_	4	x	_	_
-4	ж.	ж.	_	abbr	_	9	x	_	_
-5	елде	ел	_	n	loc	9	x	_	_
-6	шетелдіктерге	шетелдік	_	n	pl|dat	9	x	_	_
+1	1905	1905	_	num	_	3	cmpnd	_	_
+2	—	—	_	guio	_	3	punct	_	_
+3	11	11	_	num	_	4	amod	_	_
+4	ж.	ж.	_	abbr	_	10	nmod	_	_
+5	елде	ел	_	n	loc	10	nmod	_	_
+6	шетелдіктерге	шетелдік	_	n	pl|dat	10	nmod	_	_
 7	қарсы	қарсы	_	post	_	6	case	_	_
 8	ұлт-азаттық	ұлт-азаттық	_	adj	_	9	amod	_	_
-9	қозғалысы	қозғалыс	_	n	px3sp|nom	11	x	_	_
-10	болып	бол	_	v	iv|gna_perf	9	cop	_	_
+9	қозғалысы	қозғалыс	_	n	px3sp|nom	10	subj	_	_
+10	болып	бол	_	v	iv|gna_perf	11	advcl	_	_
 11	өтті	өт	_	v	tv|ifi|p3|sg	0	main	_	_
 12	.	.	_	sent	_	11	punct	_	_
 
@@ -3161,10 +3161,10 @@
 7	басталды	баста	_	v	tv|pass|ifi|p3|pl	0	main	_	_
 8	.	.	_	sent	_	7	punct	_	_
 
-1	1921	1921	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	4	x	_	_
-3	21	21	_	num	_	4	x	_	_
-4	ақпанда	ақпан	_	n	loc	11	x	_	_
+1	1921	1921	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	4	nmod	_	_
+3	21	21	_	num	_	4	amod	_	_
+4	ақпанда	ақпан	_	n	loc	11	nmod	_	_
 5	әскерилер	әскери	_	adj	subst|pl|nom	11	x	_	_
 6	Реза	Реза	_	np	ant|m|attr	7	x	_	_
 7	ханның	хан	_	n	gen	8	x	_	_
@@ -3182,8 +3182,8 @@
 2	үкімет	үкімет	_	n	nom	11	x	_	_
 3	халықтың	халық	_	n	gen	4	nmod	_	_
 4	қысымымен	қысым	_	n	px3sp|ins	11	x	_	_
-5	1919	1919	_	num	_	6	x	_	_
-6	ж.	ж.	_	abbr	_	11	x	_	_
+5	1919	1919	_	num	_	6	amod	_	_
+6	ж.	ж.	_	abbr	_	11	nmod	_	_
 7	ағылшын	ағылшын	_	n	attr	9	cmpnd	_	_
 8	-	-	_	guio	_	9	punct	_	_
 9	парсы	парсы	_	n	nom	10	nmod	_	_
@@ -3231,10 +3231,10 @@
 
 1	Алайда	алайда	_	cnjadv	_	14	x	_	_
 2	,	,	_	cm	_	1	punct	_	_
-3	1929	1929	_	num	_	5	x	_	_
-4	—	—	_	guio	_	5	x	_	_
-5	33	33	_	num	_	6	x	_	_
-6	ж.	ж.	_	abbr	_	7	x	_	_
+3	1929	1929	_	num	_	5	cmpnd	_	_
+4	—	—	_	guio	_	5	punct	_	_
+5	33	33	_	num	_	6	amod	_	_
+6	ж.	ж.	_	abbr	_	7	nmod	_	_
 7	болған	бол	_	v	iv|gpr_past	10	acl	_	_
 8	дүниежүз.	дүниежүз.	_	abbr	_	10	x	_	_
 9	экономикалық	экономикалық	_	adj	_	10	amod	_	_
@@ -3261,10 +3261,10 @@
 5	отырды	отыр	_	vaux	ifi|p3|pl	4	aux	_	_
 6	.	.	_	sent	_	4	punct	_	_
 
-1	1941	1941	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	4	x	_	_
-3	16	16	_	num	_	4	x	_	_
-4	қыркүйекте	қыркүйек	_	n	loc	10	x	_	_
+1	1941	1941	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	4	nmod	_	_
+3	16	16	_	num	_	4	amod	_	_
+4	қыркүйекте	қыркүйек	_	n	loc	10	nmod	_	_
 5	Реза	Реза	_	np	ant|m|nom	10	x	_	_
 6	шаһ	шаһ	_	n	nom	5	x	_	_
 7	тақтан	тақ	_	n	abl	10	x	_	_
@@ -3281,10 +3281,10 @@
 18	болды	бол	_	v	iv|ifi|p3|sg	17	cop	_	_
 19	.	.	_	sent	_	17	punct	_	_
 
-1	1943	1943	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	4	x	_	_
-3	9	9	_	num	_	4	x	_	_
-4	қыркүйекте	қыркүйек	_	n	loc	8	x	_	_
+1	1943	1943	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	4	nmod	_	_
+3	9	9	_	num	_	4	amod	_	_
+4	қыркүйекте	қыркүйек	_	n	loc	8	nmod	_	_
 5	Иран	Иран	_	np	top|nom	8	x	_	_
 6	Германияға	Германия	_	np	top|dat	8	x	_	_
 7	соғыс	соғыс	_	n	nom	8	x	_	_
@@ -3299,10 +3299,10 @@
 1	Тегеран	Тегеран	_	np	top|nom	2	nmod	_	_
 2	конференциясы	конференция	_	n	px3sp|nom	3	x	_	_
 3	кезінде	кез	_	n	px3sp|loc	17	nmod	_	_
-4	1943	1943	_	num	_	5	x	_	_
-5	ж.	ж.	_	abbr	_	7	x	_	_
-6	1	1	_	num	_	7	x	_	_
-7	желтоқсанда	желтоқсан	_	n	loc	17	x	_	_
+4	1943	1943	_	num	_	5	amod	_	_
+5	ж.	ж.	_	abbr	_	7	nmod	_	_
+6	1	1	_	num	_	7	amod	_	_
+7	желтоқсанда	желтоқсан	_	n	loc	17	nmod	_	_
 8	КСРО	КСРО	_	np	top|nom	12	conj	_	_
 9	,	,	_	cm	_	12	punct	_	_
 10	АҚШ	АҚШ	_	np	top|nom	12	conj	_	_
@@ -3345,8 +3345,8 @@
 14	.	.	_	sent	_	12	punct	_	_
 
 1	Ел	ел	_	n	nom	7	subj	_	_
-2	1955	1955	_	num	_	3	x	_	_
-3	ж.	ж.	_	abbr	_	7	x	_	_
+2	1955	1955	_	num	_	3	amod	_	_
+3	ж.	ж.	_	abbr	_	7	nmod	_	_
 4	АҚШ-пен	АҚШ	_	np	top|ins	7	x	_	_
 5	әскери	әскери	_	adj	_	6	amod	_	_
 6	келісімдер	келісім	_	n	pl|nom	7	obj	_	_
@@ -3372,10 +3372,10 @@
 9	құндылықтардың	құндылық	_	n	pl|gen	11	x	_	_
 10	аяққа	аяқ	_	n	dat	11	x	_	_
 11	басылуы	бас	_	v	tv|pass|ger|px3sp|nom	23	x	_	_
-12	1978	1978	_	num	_	14	x	_	_
-13	—	—	_	guio	_	14	x	_	_
-14	79	79	_	num	_	15	x	_	_
-15	ж.	ж.	_	abbr	_	22	x	_	_
+12	1978	1978	_	num	_	14	cmpnd	_	_
+13	—	—	_	guio	_	14	punct	_	_
+14	79	79	_	num	_	15	amod	_	_
+15	ж.	ж.	_	abbr	_	22	nmod	_	_
 16	халықтың	халық	_	n	gen	18	nmod	_	_
 17	шаһ	шаһ	_	n	nom	18	nmod	_	_
 18	үкіметіне	үкімет	_	n	px3sp|dat	23	x	_	_
@@ -3393,10 +3393,10 @@
 5	басқарды	басқар	_	v	tv|ifi|p3|sg	0	main	_	_
 6	.	.	_	sent	_	5	punct	_	_
 
-1	1979	1979	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	5	x	_	_
-3	11	11	_	num	_	4	x	_	_
-4	ақпанда	ақпан	_	n	loc	5	x	_	_
+1	1979	1979	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	5	nmod	_	_
+3	11	11	_	num	_	4	amod	_	_
+4	ақпанда	ақпан	_	n	loc	5	nmod	_	_
 5	болған	бол	_	v	iv|gpr_past	6	acl	_	_
 6	революция	революция	_	n	nom	7	nmod	_	_
 7	нәтижесінде	нәтиже	_	n	px3sp|loc	10	x	_	_
@@ -3424,10 +3424,10 @@
 9	келді	кел	_	v	iv|ifi|p3|sg	0	main	_	_
 10	.	.	_	sent	_	9	punct	_	_
 
-1	1980	1980	_	num	_	3	x	_	_
-2	–	–	_	guio	_	3	x	_	_
-3	1990	1990	_	num	_	4	x	_	_
-4	ж.	ж.	_	abbr	_	5	x	_	_
+1	1980	1980	_	num	_	3	cmpnd	_	_
+2	–	–	_	guio	_	3	punct	_	_
+3	1990	1990	_	num	_	4	amod	_	_
+4	ж.	ж.	_	abbr	_	5	nmod	_	_
 5	болған	бол	_	v	iv|gpr_past	9	acl	_	_
 6	Иран	Иран	_	np	top|attr	8	cmpnd	_	_
 7	—	—	_	guio	_	8	punct	_	_
@@ -3554,8 +3554,8 @@
 20	және	және	_	cnjcoo	_	21	cc	_	_
 21	экономикалық	экономикалық	_	adj	_	22	amod	_	_
 22	байланыс	байланыс	_	n	nom	25	x	_	_
-23	1992	1992	_	num	_	24	x	_	_
-24	ж.	ж.	_	abbr	_	25	x	_	_
+23	1992	1992	_	num	_	24	amod	_	_
+24	ж.	ж.	_	abbr	_	25	nmod	_	_
 25	орнады	орна	_	v	iv|ifi|p3|pl	0	main	_	_
 26	.	.	_	sent	_	25	punct	_	_
 
@@ -3575,8 +3575,8 @@
 14	қайтты	қайт	_	v	iv|ifi|p3|sg	0	main	_	_
 15	.	.	_	sent	_	14	punct	_	_
 
-1	2002	2002	_	num	_	2	x	_	_
-2	ж.	ж.	_	abbr	_	9	x	_	_
+1	2002	2002	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	9	nmod	_	_
 3	Алматы	Алматы	_	np	top|nom	5	x	_	_
 4	—	—	_	guio	_	5	punct	_	_
 5	Тегеран	Тегеран	_	np	top|nom	6	nmod	_	_
@@ -3896,10 +3896,10 @@
 7	бастады	баста	_	vaux	ifi|p3|sg	6	aux	_	_
 8	.	.	_	sent	_	6	punct	_	_
 
-1	1930	1930	_	num	_	3	x	_	_
-2	—	—	_	guio	_	3	x	_	_
-3	40	40	_	num	_	4	x	_	_
-4	ж.	ж.	_	abbr	_	7	x	_	_
+1	1930	1930	_	num	_	3	cmpnd	_	_
+2	—	—	_	guio	_	3	punct	_	_
+3	40	40	_	num	_	4	amod	_	_
+4	ж.	ж.	_	abbr	_	7	nmod	_	_
 5	театр	театр	_	n	nom	6	nmod	_	_
 6	репертуарларынан	репертуар	_	n	pl|px3sp|abl	7	nmod	_	_
 7	өңделген	өңде	_	v	tv|pass|gpr_past	10	x	_	_
@@ -3928,9 +3928,9 @@
 14	түсті	түс	_	v	iv|ifi|p3|sg	0	main	_	_
 15	.	.	_	sent	_	14	punct	_	_
 
-1	1963	1963	_	num	_	2	nummod	_	_
-2	ж.	ж.	_	abbr	_	9	x	_	_
-3	Тегеранда	Тегеран	_	np	top|loc	9	x	_	_
+1	1963	1963	_	num	_	2	amod	_	_
+2	ж.	ж.	_	abbr	_	9	nmod	_	_
+3	Тегеранда	Тегеран	_	np	top|loc	9	nmod	_	_
 4	кәсіби	кәсіби	_	adj	_	5	amod	_	_
 5	актерлер	актер	_	n	pl|nom	6	x	_	_
 6	дайындайтын	дайында	_	v	tv|gpr_impf	8	acl	_	_
