@@ -1577,8 +1577,8 @@
 13	.	.	_	sent	_	11	punct	_	_
 
 1	Күшік	күшік	_	n	nom	4	subj	_	_
-2	балалармен	бала	_	n	pl|ins	4	nmod	_	_
-3	ойнағанды	ойна	_	v	tv|ger_past|acc	4	obj	_	_
+2	балалармен	бала	_	n	pl|ins	3	nmod	_	_
+3	ойнағанды	ойна	_	v	tv|ger_past|acc	4	ccomp	_	_
 4	жақсы көреді	жақсы көр	_	v	tv|aor|p3|sg	0	main	_	_
 5	.	.	_	sent	_	4	punct	_	_
 
@@ -1626,19 +1626,19 @@
 2	анасы	ана	_	n	px3sp|nom	7	remnant	_	_
 3	мысығымен	мысық	_	n	px3sp|ins	13	nmod	_	_
 4	бірге	бірге	_	adv	_	13	advmod	_	_
-5	үйде	үй	_	n	loc	13	x	_	_
+5	үйде	үй	_	n	loc	13	nmod	_	_
 6	,	,	_	cm	_	13	punct	_	_
-7	ол	ол	_	prn	pers|p3|sg|nom	12	subj	_	_
+7	ол	ол	_	prn	pers|p3|sg|nom	13	subj	_	_
 8	терезеден	терезе	_	n	abl	12	nmod	_	_
 9	Азамат	Азамат	_	np	ant|m|nom	11	conj	_	_
 10	пен	мен	_	cnjcoo	_	11	cc	_	_
 11	Айгүлдің	Айгүл	_	np	ant|f|gen	12	subj	_	_
-12	ойнағанына	ойна	_	v	tv|ger_past|px3sp|dat	13	nmod	_	_
+12	ойнағанына	ойна	_	v	tv|ger_past|px3sp|dat	13	ccomp	_	_
 13	қарап	қара	_	v	tv|prc_perf	0	main	_	_
 14	тұр	тұр	_	vaux	pres|p3|sg	13	aux	_	_
 15	.	.	_	sent	_	13	punct	_	_
 
-1	Азамат	Азамат	_	np	ant|m|nom	17	subj	_	_
+1	Азамат	Азамат	_	np	ant|m|nom	9	subj	_	_
 2	ескі	ескі	_	adj	advl	9	advmod	_	_
 3	үлкен	үлкен	_	adj	_	5	amod	_	_
 4	бір	бір	_	det	ind	5	det	_	_
@@ -1646,7 +1646,7 @@
 6	қарай	қарай	_	post	_	5	case	_	_
 7	қатты	қатты	_	adj	advl	8	advmod	_	_
 8	жүгіріп	жүгір	_	v	iv|gna_perf	9	advcl	_	_
-9	бара	бар	_	v	iv|prc_impf	17	x	_	_
+9	бара	бар	_	v	iv|prc_impf	17	parataxis	_	_
 10	жатыр	жат	_	vaux	pres|p3|sg	9	aux	_	_
 11	,	,	_	cm	_	17	punct	_	_
 12	ол	ол	_	prn	pers|p3|sg|nom	17	subj	_	_
@@ -1675,7 +1675,7 @@
 
 1	Ол	ол	_	prn	pers|p3|sg|nom	3	subj	_	_
 2	еш нәрсені	ешнәрсе	_	prn	neg|acc	3	obj	_	_
-3	көріп	көр	_	v	tv|prc_perf	7	x	_	_
+3	көріп	көр	_	v	tv|prc_perf	7	parataxis	_	_
 4	тұрған жоқ	тұр	_	vaux	neg|ifi|p3|sg	3	aux	_	_
 5	,	,	_	cm	_	3	punct	_	_
 6	ол	ол	_	prn	pers|p3|sg|nom	7	subj	_	_
@@ -1705,8 +1705,8 @@
 3	_	е	_	cop	aor|p3|sg	2	cop	_	_
 4	.	.	_	sent	_	2	punct	_	_
 
-1	Айгүл	Айгүл	_	np	ant|f|nom	2	subj	_	_
-2	санап	сана	_	v	tv|prc_perf	6	nmod	_	_
+1	Айгүл	Айгүл	_	np	ant|f|nom	6	subj	_	_
+2	санап	сана	_	v	tv|prc_perf	6	advcl	_	_
 3	біткеннен	біт	_	vaux	ger_past|abl	2	aux	_	_
 4	кейін	кейін	_	post	_	3	case	_	_
 5	айналасына	айнала	_	n	px3sp|dat	6	nmod	_	_
@@ -1839,11 +1839,9 @@
 2	бақшаның	бақша	_	n	gen	3	nmod	_	_
 3	ішінде	іш	_	n	px3sp|loc	5	nmod	_	_
 4	ақырын	ақырын	_	adj	advl	5	advmod	_	_
-5-6	басып	_	_	_	_	_	_	_	_
-5	_	бас	_	v	iv|prc_perf	0	main	_	_
-6	_	бас	_	v	tv|prc_perf	0	main	_	_
-7	жүр	жүр	_	vaux	pres|p3|sg	5	aux	_	_
-8	.	.	_	sent	_	5	punct	_	_
+5	басып	бас	_	v	iv|prc_perf	0	main	_	_
+6	жүр	жүр	_	vaux	pres|p3|sg	5	aux	_	_
+7	.	.	_	sent	_	5	punct	_	_
 
 1	Әлі де болса	әлі де болса	_	adv	_	4	advmod	_	_
 2	Азаматты	Азамат	_	np	ant|m|acc	3	obj	_	_
@@ -1906,9 +1904,9 @@
 6	?	?	_	sent	_	3	punct	_	_
 
 1	Ол	ол	_	det	dem	2	det	_	_
-2	дыбыс	дыбыс	_	n	nom	4	obj	_	_
+2	дыбыс	дыбыс	_	n	nom	4	subj	_	_
 3	қайта	қайта	_	adv	_	4	advmod	_	_
-4	естіледі	естіл	_	v	iv|aor|p3|sg	0	main	_	_
+4	естіледі	есіт	_	v	tv|pass|aor|p3|sg	0	main	_	_
 5	!	!	_	sent	_	4	punct	_	_
 
 1	Айгүл	Айгүл	_	np	ant|f|nom	4	subj	_	_
@@ -1980,7 +1978,7 @@
 4	көңілді	көңілді	_	adj	advl	7	advmod	_	_
 5	үйге	үй	_	n	dat	7	nmod	_	_
 6	қарай	қарай	_	post	_	5	case	_	_
-7	келе	кел	_	v	iv|prc_impf	16	conj	_	_
+7	келе	кел	_	v	iv|prc_impf	16	parataxis	_	_
 8	жатыр	жат	_	vaux	pres|p3|sg	7	aux	_	_
 9	,	,	_	cm	_	16	punct	_	_
 10	бір нәрсе	бір нәрсе	_	prn	ind|nom	11	obj	_	_
