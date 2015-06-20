@@ -3029,13 +3029,13 @@
 "<Осы>"
 	"осы" det dem @det #1->4
 "<бостандықтар>"
-	"бостандық" n pl nom @x #2->4
+	"бостандық" n pl nom @conj #2->4
 "<мен>"
 	"мен" cnjcoo @cc #3->4
 "<құқықтарды>"
-	"құқық" n pl acc @x #4->5
+	"құқық" n pl acc @obj #4->5
 "<жүзеге асырылуы>"
-	"жүзеге асыр" v tv pass ger px3sp nom @x #5->6
+	"жүзеге асыр" v tv pass ger px3sp nom @subj #5->11
 "<Біріккен Ұлттар Ұйымының>"
 	"Біріккен Ұлттар Ұйымы" np org px3sp gen @nmod #6->9
 "<мақсаттары>"
@@ -3043,16 +3043,14 @@
 "<мен>"
 	"мен" cnjcoo @cc #8->9
 "<қағидаларына>"
-	"қағида" n pl px3sp dat @x #9->11
-"<қайшы>"
-	"қайшы" adj advl @x #10->11
-"<келмеуі>"
-	"кел" v iv neg ger px3sp nom @x #11->12
+	"қағида" n pl px3sp dat @nmod #9->11
+"<қайшы келмеуі>"
+	"қайшы кел" v iv neg ger px3sp nom @x #10->11
 "<тиіс>"
-	"тиіс" adj @main #12->0
-		"е" cop aor p3 sg @cop #13->12
+	"тиіс" adj @main #11->0
+		"е" cop aor p3 sg @cop #12->11
 "<.>"
-	"." sent @punct #14->12
+	"." sent @punct #13->11
 
 "<Осы>"
 	"осы" det dem @det #1->2
