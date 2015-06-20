@@ -67,9 +67,9 @@
 "<Айгүл>"
 	"Айгүл" np ant f nom @subj #3->5
 "<ойнағанды>"
-	"ойна" v tv ger_past acc @obj #4->5
+	"ойна" v tv ger_past acc @ccomp #4->5
 "<жақсы көреді>"
-	"жақсы көр" v tv aor p3 pl @conj #5->14
+	"жақсы көр" v tv aor p3 pl @parataxis #5->14
 "<,>"
 	"," cm  @punct #6->14
 "<олар>"
@@ -110,7 +110,7 @@
 "<оның>"
 	"ол" prn pers p3 sg gen @nmod #2->3
 "<қарындасы>"
-	"қарындас" n px3sp nom @conj #3->7
+	"қарындас" n px3sp nom @parataxis #3->8
 		"е" cop aor p3 sg @cop #4->3
 "<,>"
 	"," cm @punct #5->8
@@ -133,7 +133,7 @@
 "<күшігі>"
 	"күшік" n px3sp nom @subj #4->5
 "<бар>"
-	"бар" adj subst nom @conj #5->11
+	"бар" adj subst nom @parataxis #5->11
 		"е" cop aor p3 sg @cop #6->5
 "<,>"
 	"," cm @punct #7->11
