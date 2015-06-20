@@ -649,11 +649,11 @@
 	"." sent @punct #10->8
 
 "<Сөйтсе де>"
-	"сөйтсе де" cnjadv @x #1->12
+	"сөйтсе де" cnjadv @advmod #1->12
 "<осы>"
 	"осы" det dem @det #2->4
 "<оқыған>"
-	"оқы" v iv gpr_past @x #3->4
+	"оқы" v iv gpr_past @acl #3->4
 "<балалар>"
 	"бала" n pl nom @subj #4->12
 "<—>"
@@ -671,7 +671,7 @@
 "<,>"
 	"," cm @punct #11->12
 "<озық>"
-	"озық" adj @x #12->0
+	"озық" adj @main #12->0
 		"е" cop aor p3 sg @cop #13->12
 "<.>"
 	"." sent @punct #14->12

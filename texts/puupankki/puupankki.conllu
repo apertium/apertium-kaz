@@ -459,20 +459,19 @@
 12	.	.	_	sent	_	10	punct	_	_
 
 1	Осы	осы	_	det	dem	4	det	_	_
-2	бостандықтар	бостандық	_	n	pl|nom	4	x	_	_
+2	бостандықтар	бостандық	_	n	pl|nom	4	conj	_	_
 3	мен	мен	_	cnjcoo	_	4	cc	_	_
-4	құқықтарды	құқық	_	n	pl|acc	5	x	_	_
-5	жүзеге асырылуы	жүзеге асыр	_	v	tv|pass|ger|px3sp|nom	6	x	_	_
+4	құқықтарды	құқық	_	n	pl|acc	5	obj	_	_
+5	жүзеге асырылуы	жүзеге асыр	_	v	tv|pass|ger|px3sp|nom	11	subj	_	_
 6	Біріккен Ұлттар Ұйымының	Біріккен Ұлттар Ұйымы	_	np	org|px3sp|gen	9	nmod	_	_
 7	мақсаттары	мақсат	_	n	pl|px3sp|nom	9	conj	_	_
 8	мен	мен	_	cnjcoo	_	9	cc	_	_
-9	қағидаларына	қағида	_	n	pl|px3sp|dat	11	x	_	_
-10	қайшы	қайшы	_	adj	advl	11	x	_	_
-11	келмеуі	кел	_	v	iv|neg|ger|px3sp|nom	12	x	_	_
-12-13	тиіс	_	_	_	_	_	_	_	_
-12	_	тиіс	_	adj	_	0	main	_	_
-13	_	е	_	cop	aor|p3|sg	12	cop	_	_
-14	.	.	_	sent	_	12	punct	_	_
+9	қағидаларына	қағида	_	n	pl|px3sp|dat	11	nmod	_	_
+10	қайшы келмеуі	қайшы кел	_	v	iv|neg|ger|px3sp|nom	11	x	_	_
+11-12	тиіс	_	_	_	_	_	_	_	_
+11	_	тиіс	_	adj	_	0	main	_	_
+12	_	е	_	cop	aor|p3|sg	11	cop	_	_
+13	.	.	_	sent	_	11	punct	_	_
 
 1	Қалыңыз	қал	_	n	px2sg|frm|nom	2	x	_	_
 2-3	қалай	_	_	_	_	_	_	_	_
@@ -1106,9 +1105,9 @@
 9	жатыр	жат	_	vaux	pres|p3|sg	8	aux	_	_
 10	.	.	_	sent	_	8	punct	_	_
 
-1	Сөйтсе де	сөйтсе де	_	cnjadv	_	12	x	_	_
+1	Сөйтсе де	сөйтсе де	_	cnjadv	_	12	advmod	_	_
 2	осы	осы	_	det	dem	4	det	_	_
-3	оқыған	оқы	_	v	iv|gpr_past	4	x	_	_
+3	оқыған	оқы	_	v	iv|gpr_past	4	acl	_	_
 4	балалар	бала	_	n	pl|nom	12	subj	_	_
 5	—	—	_	guio	_	4	punct	_	_
 6	ана	ана	_	det	dem	9	det	_	_
@@ -1118,7 +1117,7 @@
 10	үздік	үздік	_	adj	_	12	conj	_	_
 11	,	,	_	cm	_	12	punct	_	_
 12-13	озық	_	_	_	_	_	_	_	_
-12	_	озық	_	adj	_	0	x	_	_
+12	_	озық	_	adj	_	0	main	_	_
 13	_	е	_	cop	aor|p3|sg	12	cop	_	_
 14	.	.	_	sent	_	12	punct	_	_
 
@@ -1524,8 +1523,8 @@
 1	Азамат	Азамат	_	np	ant|m|nom	3	conj	_	_
 2	пен	мен	_	cnjcoo	_	3	cc	_	_
 3	Айгүл	Айгүл	_	np	ant|f|nom	5	subj	_	_
-4	ойнағанды	ойна	_	v	tv|ger_past|acc	5	obj	_	_
-5	жақсы көреді	жақсы көр	_	v	tv|aor|p3|pl	14	conj	_	_
+4	ойнағанды	ойна	_	v	tv|ger_past|acc	5	ccomp	_	_
+5	жақсы көреді	жақсы көр	_	v	tv|aor|p3|pl	14	parataxis	_	_
 6	,	,	_	cm	_	14	punct	_	_
 7	олар	олар	_	prn	pers|p3|pl|nom	14	subj	_	_
 8	әрдайым	әрдайым	_	adv	_	14	advmod	_	_
@@ -1549,7 +1548,7 @@
 1	Қыз	қыз	_	n	nom	3	subj	_	_
 2	оның	ол	_	prn	pers|p3|sg|gen	3	nmod	_	_
 3-4	қарындасы	_	_	_	_	_	_	_	_
-3	_	қарындас	_	n	px3sp|nom	7	conj	_	_
+3	_	қарындас	_	n	px3sp|nom	8	parataxis	_	_
 4	_	е	_	cop	aor|p3|sg	3	cop	_	_
 5	,	,	_	cm	_	8	punct	_	_
 6	ол	ол	_	prn	pers|p3|sg|nom	8	subj	_	_
@@ -1564,7 +1563,7 @@
 3	бір	бір	_	num	_	4	det	_	_
 4	күшігі	күшік	_	n	px3sp|nom	5	subj	_	_
 5-6	бар	_	_	_	_	_	_	_	_
-5	_	бар	_	adj	subst|nom	11	conj	_	_
+5	_	бар	_	adj	subst|nom	11	parataxis	_	_
 6	_	е	_	cop	aor|p3|sg	5	cop	_	_
 7	,	,	_	cm	_	11	punct	_	_
 8	қазір	қазір	_	adv	_	11	advmod	_	_
@@ -2085,8 +2084,8 @@
 13	,	,	_	cm	_	12	punct	_	_
 14	өйткені	өйткені	_	cnjsub	_	22	x	_	_
 15	Колумбия	Колумбия	_	np	top|nom	21	x	_	_
-16	1986	1986	_	num	_	17	x	_	_
-17	жылдың	жыл	_	n	gen	20	x	_	_
+16	1986	1986	_	num	_	17	amod	_	_
+17	жылдың	жыл	_	n	gen	20	nmod	_	_
 18	футболдан	футбол	_	n	abl	19	x	_	_
 19	әлем	әлем	_	n	nom	20	x	_	_
 20	чемпионатын	чемпионат	_	n	px3sp|acc	21	x	_	_
@@ -2249,7 +2248,7 @@
 
 1	Иран	Иран	_	np	top|nom	18	subj	_	_
 2	(	(	_	lpar	_	7	punct	_	_
-3	1935	1935	_	num	_	4	nummod	_	_
+3	1935	1935	_	num	_	4	amod	_	_
 4	жылға	жыл	_	n	dat	7	x	_	_
 5	дейін	дейін	_	post	_	4	case	_	_
 6	Парсы	парсы	_	n	nom	7	nmod	_	_
@@ -2390,7 +2389,7 @@
 1	Мемлекеттік	мемлекеттік	_	adj	_	2	amod	_	_
 2	діні	дін	_	n	px3sp|nom	7	subj	_	_
 3	—	—	_	guio	_	2	punct	_	_
-4	ислам	Ислам	_	n	attr	5	cmpnd	_	_
+4	ислам	Ислам	_	n	nom	5	nmod	_	_
 5	дінінің	дін	_	n	px3sp|gen	7	nmod	_	_
 6	шиит	шиит	_	n	attr	7	cmpnd	_	_
 7-8	тармағы	_	_	_	_	_	_	_	_
@@ -2422,7 +2421,7 @@
 
 1	Президент	президент	_	n	nom	16	subj	_	_
 2	(	(	_	lpar	_	8	punct	_	_
-3	1997	1997	_	num	_	4	nummod	_	_
+3	1997	1997	_	num	_	4	amod	_	_
 4	жылдан	жыл	_	n	abl	8	x	_	_
 5	бастап	баста	_	post	_	4	case	_	_
 6	Сейд	Сейд	_	np	ant|m|attr	7	name	_	_
@@ -2465,7 +2464,7 @@
 24	тұрады	тұр	_	v	iv|aor|p3|sg	0	main	_	_
 25	.	.	_	sent	_	24	punct	_	_
 
-1	1981	1981	_	num	_	2	nummod	_	_
+1	1981	1981	_	num	_	2	amod	_	_
 2-3	жылғы	_	_	_	_	_	_	_	_
 2	_	жыл	_	n	nom	4	nmod	_	_
 3	_	ғы	_	post	_	2	case	_	_
@@ -2762,7 +2761,7 @@
 12	-	-	_	guio	_	13	punct	_	_
 13	жартысында	жарты	_	adj	subst|px3sp|loc	18	x	_	_
 14	Иран	Иран	_	np	top|nom	18	subj	_	_
-15	Араб	араб	_	n	nom	16	x	_	_
+15	Араб	араб	_	n	nom	16	nmod	_	_
 16	халифаты	халифат	_	n	px3sp|nom	17	x	_	_
 17	құрамына	құрам	_	n	px3sp|dat	18	x	_	_
 18	қосылды	қос	_	v	tv|pass|ifi|p3|sg	0	main	_	_
@@ -2770,7 +2769,7 @@
 
 1	8	8	_	num	_	2	x	_	_
 2	ғасырда	ғасыр	_	n	loc	12	x	_	_
-3	Араб	араб	_	n	attr	4	cmpnd	_	_
+3	Араб	араб	_	n	nom	4	nmod	_	_
 4	халифатының	халифат	_	n	px3sp|gen	5	x	_	_
 5	билеушісі	билеуші	_	n	px3sp|nom	12	x	_	_
 6	Әбу	Әбу	_	np	ant|m|nom	8	name	_	_
@@ -3353,7 +3352,7 @@
 6	келісімдер	келісім	_	n	pl|nom	7	obj	_	_
 7	жасасты	жаса	_	v	tv|coop|ifi|p3|sg	14	conj	_	_
 8	,	,	_	cm	_	14	punct	_	_
-9	1960	1960	_	num	_	10	x	_	_
+9	1960	1960	_	num	_	10	amod	_	_
 10	жылдан	жыл	_	n	abl	11	x	_	_
 11	бастап	баста	_	v	tv|gna_perf	14	advcl	_	_
 12	Батыс	батыс	_	n	nom	13	nmod	_	_
@@ -3378,7 +3377,7 @@
 14	79	79	_	num	_	15	x	_	_
 15	ж.	ж.	_	abbr	_	22	x	_	_
 16	халықтың	халық	_	n	gen	18	nmod	_	_
-17	шаһ	шаһ	_	n	attr	18	cmpnd	_	_
+17	шаһ	шаһ	_	n	nom	18	nmod	_	_
 18	үкіметіне	үкімет	_	n	px3sp|dat	23	x	_	_
 19	қарсы	қарсы	_	post	_	18	case	_	_
 20	жаппай	жаппай	_	adj	_	21	amod	_	_
@@ -3401,8 +3400,8 @@
 5	болған	бол	_	v	iv|gpr_past	6	acl	_	_
 6	революция	революция	_	n	nom	7	nmod	_	_
 7	нәтижесінде	нәтиже	_	n	px3sp|loc	10	x	_	_
-8	шаһ	шаһ	_	n	nom	9	x	_	_
-9	үкіметі	үкімет	_	n	px3sp|nom	10	x	_	_
+8	шаһ	шаһ	_	n	nom	9	nmod	_	_
+9	үкіметі	үкімет	_	n	px3sp|nom	10	subj	_	_
 10	құлап	құла	_	v	iv|gna_perf	18	x	_	_
 11	,	,	_	cm	_	10	punct	_	_
 12	1	1	_	num	_	13	x	_	_
@@ -3888,8 +3887,8 @@
 10	_	е	_	cop	aor|p3|sg	9	cop	_	_
 11	.	.	_	sent	_	9	punct	_	_
 
-1	1929	1929	_	num	_	2	x	_	_
-2	жылдан	жыл	_	n	abl	3	x	_	_
+1	1929	1929	_	num	_	2	amod	_	_
+2	жылдан	жыл	_	n	abl	3	nmod	_	_
 3	бастап	баста	_	v	tv|gna_perf	6	advcl	_	_
 4	әйел	әйел	_	n	attr	5	cmpnd	_	_
 5	актерлер	актер	_	n	pl|nom	6	subj	_	_
@@ -3913,15 +3912,15 @@
 14	алды	ал	_	v	tv|ifi|p3|sg	0	main	_	_
 15	.	.	_	sent	_	14	punct	_	_
 
-1	1940	1940	_	num	_	2	x	_	_
-2	жылдан	жыл	_	n	abl	6	x	_	_
+1	1940	1940	_	num	_	2	amod	_	_
+2	жылдан	жыл	_	n	abl	6	nmod	_	_
 3	Иран	Иран	_	np	top|nom	4	nmod	_	_
 4	театры	театр	_	n	px3sp|nom	6	x	_	_
 5	дағдарысқа	дағдарыс	_	n	dat	6	x	_	_
 6	ұшырады	ұшыра	_	v	iv|ifi|p3|sg	14	conj	_	_
 7	,	,	_	cm	_	14	punct	_	_
-8	1960	1960	_	num	_	9	x	_	_
-9	жылдардың	жыл	_	n	pl|gen	10	x	_	_
+8	1960	1960	_	num	_	9	amod	_	_
+9	жылдардың	жыл	_	n	pl|gen	10	nmod	_	_
 10	басында	бас	_	n	px3sp|loc	14	x	_	_
 11	қайта	қайта	_	adv	_	12	x	_	_
 12	өрлеу	өрле	_	v	iv|ger|nom	13	x	_	_
@@ -3940,7 +3939,7 @@
 9	ашылды	аш	_	v	tv|pass|ifi|p3|sg	0	main	_	_
 10	.	.	_	sent	_	9	punct	_	_
 
-1	1968	1968	_	num	_	2	nummod	_	_
+1	1968	1968	_	num	_	2	amod	_	_
 2	жылдан	жыл	_	n	abl	3	nmod	_	_
 3	бастап	баста	_	v	tv|gna_perf	7	advcl	_	_
 4	Ширазда	Шираз	_	np	top|loc	7	nmod	_	_
