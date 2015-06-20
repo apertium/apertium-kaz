@@ -293,8 +293,8 @@
 15	халықаралық	халықаралық	_	adj	_	16	amod	_	_
 16	құқық	құқық	_	n	nom	19	x	_	_
 17	бойынша	бойынша	_	post	_	16	case	_	_
-18	қылмыс	қылмыс	_	n	nom	19	x	_	_
-19	болып	бол	_	v	iv|gna_perf	18	x	_	_
+18	қылмыс	қылмыс	_	n	nom	20	x	_	_
+19	болып	бол	_	v	iv|gna_perf	18	cop	_	_
 20	саналмаса	сана	_	v	tv|pass|neg|gna_cond|p3|sg	23	advcl	_	_
 21	,	,	_	cm	_	23	punct	_	_
 22	жауапқа	жауап	_	n	dat	23	x	_	_
@@ -877,11 +877,11 @@
 13	_	да	_	cnjcoo	_	15	cc	_	_
 14	,	,	_	cm	_	15	punct	_	_
 15-16	ғылым да	_	_	_	_	_	_	_	_
-15	_	ғылым	_	n	nom	15	nmod	_	_
+15	_	ғылым	_	n	nom	18	nmod	_	_
 16	_	да	_	cnjcoo	_	15	cc	_	_
 17	—	—	_	guio	_	18	punct	_	_
 18	бәрі	бәрі	_	prn	qnt|px3sp|nom	20	x	_	_
-19	орыста	орыс	_	n	loc	20	x	_	_
+19	орыста	орыс	_	n	loc	20	nmod	_	_
 20	тұр	тұр	_	v	iv|pres|p3|sg	0	main	_	_
 21	.	.	_	sent	_	20	punct	_	_
 
@@ -972,16 +972,16 @@
 2	майырдың	майыр	_	n	gen	3	nmod	_	_
 3	күлгені	күл	_	v	iv|ger_past|px3sp|nom	4	x	_	_
 4-5	керек	_	_	_	_	_	_	_	_
-4	_	керек	_	adj	_	13	x	_	_
-5	_	е	_	cop	aor|p3|sg	5	cop	_	_
-6	деп	де	_	v	tv|gna_perf	5	x	_	_
-7	,	,	_	cm	_	5	punct	_	_
-8	көзі	көз	_	n	px3sp|nom	10	x	_	_
+4	_	керек	_	adj	_	6	ccomp	_	_
+5	_	е	_	cop	aor|p3|sg	4	cop	_	_
+6	деп	де	_	v	tv|gna_perf	11	advcl	_	_
+7	,	,	_	cm	_	6	punct	_	_
+8	көзі	көз	_	n	px3sp|nom	11	x	_	_
 9-10	ашылса да	_	_	_	_	_	_	_	_
-9	_	аш	_	v	tv|pass|gna_cond|p3|sg	12	x	_	_
-10	_	да	_	postadv	_	10	advmod	_	_
+9	_	аш	_	v	tv|pass|gna_cond|p3|sg	11	x	_	_
+10	_	да	_	postadv	_	9	advmod	_	_
 11	қам жемейді	қам же	_	v	tv|neg|aor|p3|sg	0	main	_	_
-12	.	.	_	sent	_	12	punct	_	_
+12	.	.	_	sent	_	11	punct	_	_
 
 1	Орыстың	орыс	_	n	gen	4	nmod	_	_
 2	ғылымы	ғылым	_	n	px3sp|nom	4	conj	_	_
@@ -1054,7 +1054,7 @@
 27	.	.	_	sent	_	26	punct	_	_
 
 1	Қазаққа	қазақ	_	n	dat	2	x	_	_
-2	күзетші	күзетші	_	n	nom	3	x	_	_
+2	күзетші	күзетші	_	n	nom	4	x	_	_
 3	болайын	бол	_	v	iv|opt|p1|sg	2	x	_	_
 4	деп	де	_	v	tv|gna_perf	21	x	_	_
 5	,	,	_	cm	_	4	punct	_	_
@@ -1215,11 +1215,11 @@
 7-8	немене	_	_	_	_	_	_	_	_
 7	_	немене	_	prn	itg|nom	11	conj	_	_
 8	_	е	_	cop	aor|p3|sg	7	cop	_	_
-9	,	,	_	cm	_	11	punct	_	_
-10	қай	қай	_	prn	ind|nom	11	x	_	_
-11	кеп	кеп	_	n	nom	11	x	_	_
+9	,	,	_	cm	_	12	punct	_	_
+10	қай	қай	_	prn	ind|nom	12	x	_	_
+11	кеп	кеп	_	n	nom	12	x	_	_
 12	үйреніпті	үйрен	_	v	tv|ifi|evid|p3|sg	0	main	_	_
-13	?	?	_	sent	_	11	punct	_	_
+13	?	?	_	sent	_	12	punct	_	_
 
 1	Кірді	кір	_	v	iv|ifi|p3|sg	7	conj	_	_
 2	,	,	_	cm	_	7	punct	_	_
@@ -1333,18 +1333,18 @@
 1	Баяғыда	баяғыда	_	adv	_	4	advmod	_	_
 2	біреу	біреу	_	prn	ind|nom	4	subj	_	_
 3	той	той	_	n	nom	4	obj	_	_
-4	жасапты	жаса	_	v	tv|ifi|evid|p3|sg	14	conj	_	_
-5	,	,	_	cm	_	14	punct	_	_
-6	тойға	той	_	n	dat	10	nmod	_	_
-7	көп	көп	_	det	qnt	9	det	_	_
-8	кісі	кісі	_	n	nom	10	subj	_	_
-9	жиналыпты	жина	_	v	tv|pass|ifi|evid|p3|sg	14	conj	_	_
-10	,	,	_	cm	_	14	punct	_	_
+4	жасапты	жаса	_	v	tv|ifi|evid|p3|sg	13	conj	_	_
+5	,	,	_	cm	_	13	punct	_	_
+6	тойға	той	_	n	dat	9	nmod	_	_
+7	көп	көп	_	det	qnt	8	det	_	_
+8	кісі	кісі	_	n	nom	9	subj	_	_
+9	жиналыпты	жина	_	v	tv|pass|ifi|evid|p3|sg	13	conj	_	_
+10	,	,	_	cm	_	13	punct	_	_
 11-12	Қожа да	_	_	_	_	_	_	_	_
-11	_	Қожа	_	np	ant|m|nom	14	subj	_	_
-12	_	да	_	postadv	_	12	advmod	_	_
+11	_	Қожа	_	np	ant|m|nom	13	subj	_	_
+12	_	да	_	postadv	_	11	advmod	_	_
 13	келіпті	кел	_	v	iv|ifi|evid|p3|sg	0	main	_	_
-14	.	.	_	sent	_	14	punct	_	_
+14	.	.	_	sent	_	13	punct	_	_
 
 1	Қожанасырдың	Қожанасыр	_	np	ant|m|gen	3	nmod	_	_
 2	үстіндегі	үст	_	n	px3sp|loc|attr	3	amod	_	_
@@ -1551,13 +1551,13 @@
 3-4	қарындасы	_	_	_	_	_	_	_	_
 3	_	қарындас	_	n	px3sp|nom	7	conj	_	_
 4	_	е	_	cop	aor|p3|sg	3	cop	_	_
-5	,	,	_	cm	_	7	punct	_	_
-6	ол	ол	_	prn	pers|p3|sg|nom	7	subj	_	_
-7	бес	бес	_	num	_	7	nummod	_	_
+5	,	,	_	cm	_	8	punct	_	_
+6	ол	ол	_	prn	pers|p3|sg|nom	8	subj	_	_
+7	бес	бес	_	num	_	8	nummod	_	_
 8-9	жаста	_	_	_	_	_	_	_	_
 8	_	жас	_	n	loc	0	main	_	_
-9	_	е	_	cop	aor|p3|sg	7	cop	_	_
-10	.	.	_	sent	_	7	punct	_	_
+9	_	е	_	cop	aor|p3|sg	8	cop	_	_
+10	.	.	_	sent	_	8	punct	_	_
 
 1	Азаматтың	Азамат	_	np	ant|m|gen	4	nmod	_	_
 2	кішкентай	кішкентай	_	adj	_	4	amod	_	_
@@ -2192,12 +2192,12 @@
 9	айында	ай	_	n	px3sp|loc	10	nmod	_	_
 10	басталып	баста	_	v	tv|pass|gna_perf	17	advcl	_	_
 11	,	,	_	cm	_	10	punct	_	_
-12	2013	2013	_	num	_	14	amod	_	_
-13	жылдың	жыл	_	n	gen	16	nmod	_	_
-14	қараша	қараша	_	n	attr	16	x	_	_
-15	айында	ай	_	n	px3sp|loc	17	x	_	_
+12	2013	2013	_	num	_	13	amod	_	_
+13	жылдың	жыл	_	n	gen	15	nmod	_	_
+14	қараша	қараша	_	n	attr	15	x	_	_
+15	айында	ай	_	n	px3sp|loc	16	x	_	_
 16	аяқталды	аяқта	_	v	tv|pass|ifi|p3|sg	0	main	_	_
-17	.	.	_	sent	_	17	punct	_	_
+17	.	.	_	sent	_	16	punct	_	_
 
 1	Бразилия	Бразилия	_	np	top|nom	9	subj	_	_
 2	қабылдаушы	қабылда	_	v	tv|gpr_pot	3	acl	_	_
@@ -2477,7 +2477,7 @@
 7	елде	ел	_	n	loc	13	nmod	_	_
 8	саяси	саяси	_	adj	_	10	conj	_	_
 9	және	және	_	cnjcoo	_	10	cc	_	_
-10	діни	діни	_	adj	_	11	amod	_	_
+10	діни	діни	_	adj	_	12	amod	_	_
 11	емес	емес	_	postadv	_	10	advmod	_	_
 12	ұйымдарға	ұйым	_	n	pl|dat	13	nmod	_	_
 13	тыйым салынған	тыйым сал	_	v	tv|pass|past|p3|sg	0	main	_	_
@@ -2688,12 +2688,12 @@
 2	әулеті	әулет	_	n	px3sp|nom	3	x	_	_
 3	мемлекетін	мемлекет	_	n	px3sp|acc	10	obj	_	_
 4	б.з.б.	б.з.б.	_	abbr	_	6	x	_	_
-5	330	330	_	num	_	6	x	_	_
+5	330	330	_	num	_	6	amod	_	_
 6	ж.	ж.	_	abbr	_	10	x	_	_
 7	Александр	Александр	_	np	ant|m|attr	8	name	_	_
 8	Македонский	Македонский	_	np	cog|m|nom	9	subj	_	_
 9	талқандады	талқанда	_	v	tv|ifi|p3|sg	0	main	_	_
-10	.	.	_	sent	_	10	punct	_	_
+10	.	.	_	sent	_	9	punct	_	_
 
 1	Иран	Иран	_	np	top|nom	16	subj	_	_
 2	эллиндік	эллиндік	_	adj	_	3	amod	_	_
@@ -2703,14 +2703,14 @@
 6	,	,	_	cm	_	5	punct	_	_
 7	б.з.б.	б.з.б.	_	abbr	_	9	x	_	_
 8	2	2	_	num	_	9	x	_	_
-9	ғасырдың	ғасыр	_	n	gen	12	x	_	_
-10	орта	орта	_	adj	_	12	amod	_	_
-11	тұсынан	тұс	_	n	px3sp|abl	13	x	_	_
-12	бастап	баста	_	v	tv|gna_perf	16	advcl	_	_
-13	Парфия	Парфия	_	np	al|nom	15	nmod	_	_
-14	патшалығына	патшалық	_	n	px3sp|dat	16	nmod	_	_
+9	ғасырдың	ғасыр	_	n	gen	11	x	_	_
+10	орта	орта	_	adj	_	11	amod	_	_
+11	тұсынан	тұс	_	n	px3sp|abl	12	x	_	_
+12	бастап	баста	_	v	tv|gna_perf	15	advcl	_	_
+13	Парфия	Парфия	_	np	al|nom	14	nmod	_	_
+14	патшалығына	патшалық	_	n	px3sp|dat	15	nmod	_	_
 15	бағынды	бағын	_	v	iv|ifi|p3|sg	0	main	_	_
-16	.	.	_	sent	_	16	punct	_	_
+16	.	.	_	sent	_	15	punct	_	_
 
 1	224	224	_	num	_	2	x	_	_
 2	ж.	ж.	_	abbr	_	5	x	_	_
@@ -3137,7 +3137,7 @@
 6	шетелдіктерге	шетелдік	_	n	pl|dat	9	x	_	_
 7	қарсы	қарсы	_	post	_	6	case	_	_
 8	ұлт-азаттық	ұлт-азаттық	_	adj	_	9	amod	_	_
-9	қозғалысы	қозғалыс	_	n	px3sp|nom	10	x	_	_
+9	қозғалысы	қозғалыс	_	n	px3sp|nom	11	x	_	_
 10	болып	бол	_	v	iv|gna_perf	9	cop	_	_
 11	өтті	өт	_	v	tv|ifi|p3|sg	0	main	_	_
 12	.	.	_	sent	_	11	punct	_	_
@@ -3571,7 +3571,7 @@
 7	(	(	_	lpar	_	10	punct	_	_
 8	1992	1992	_	num	_	10	conj	_	_
 9	;	;	_	sent	_	10	punct	_	_
-10	1996	1996	_	num	_	10	appos	_	_
+10	1996	1996	_	num	_	6	appos	_	_
 11	)	)	_	rpar	_	10	punct	_	_
 12	Иранда	Иран	_	np	top|loc	13	nmod	_	_
 13	болып	бол	_	v	iv|prc_perf	14	advcl	_	_
@@ -3605,9 +3605,9 @@
 14	-	-	_	guio	_	15	punct	_	_
 15	тәжік	тәжік	_	n	nom	16	nmod	_	_
 16	әдебиеті	әдебиет	_	n	px3sp|nom	17	x	_	_
-17	деп	де	_	v	tv|gna_perf	19	x	_	_
+17	деп	де	_	v	tv|gna_perf	18	x	_	_
 18	атанды	атан	_	v	iv|ifi|p3|sg	0	main	_	_
-19	.	.	_	sent	_	19	punct	_	_
+19	.	.	_	sent	_	18	punct	_	_
 
 1	Иран	Иран	_	np	top|nom	2	nmod	_	_
 2	революциясы	революция	_	n	px3sp|nom	10	conj	_	_
@@ -3626,22 +3626,22 @@
 15	)	)	_	rpar	_	14	punct	_	_
 16	кезінде	кез	_	n	px3sp|loc	29	x	_	_
 17	А.	А.	_	abbr	_	18	name	_	_
-18	Фарахани	Фарахани	_	np	cog|mf|nom	23	conj	_	_
-19	,	,	_	cm	_	23	punct	_	_
+18	Фарахани	Фарахани	_	np	cog|mf|nom	25	conj	_	_
+19	,	,	_	cm	_	25	punct	_	_
 20	М.	М.	_	abbr	_	21	name	_	_
-21	Кермани	Кермани	_	np	cog|mf|nom	23	conj	_	_
-22	,	,	_	cm	_	23	punct	_	_
-23	М	М.	_	abbr	_	23	name	_	_
-24	Т.	Т.	_	abbr	_	23	name	_	_
+21	Кермани	Кермани	_	np	cog|mf|nom	25	conj	_	_
+22	,	,	_	cm	_	25	punct	_	_
+23	М	М.	_	abbr	_	25	name	_	_
+24	Т.	Т.	_	abbr	_	25	name	_	_
 25	Бехар	Бехар	_	np	cog|mf|nom	29	x	_	_
-26	,	,	_	cm	_	23	punct	_	_
-27	т.б.	т.б.	_	abbr	_	23	x	_	_
-28	ақындар	ақын	_	n	pl|nom	29	subj	_	_
-29	демокр.	демокр.	_	abbr	_	28	x	_	_
-30	идеяның	идея	_	n	gen	29	x	_	_
+26	,	,	_	cm	_	25	punct	_	_
+27	т.б.	т.б.	_	abbr	_	25	x	_	_
+28	ақындар	ақын	_	n	pl|nom	31	subj	_	_
+29	демокр.	демокр.	_	abbr	_	30	x	_	_
+30	идеяның	идея	_	n	gen	31	x	_	_
 31	жыршысы	жыршы	_	n	px3sp|nom	0	main	_	_
-32	болды	бол	_	v	iv|ifi|p3|sg	29	cop	_	_
-33	.	.	_	sent	_	29	punct	_	_
+32	болды	бол	_	v	iv|ifi|p3|sg	31	cop	_	_
+33	.	.	_	sent	_	31	punct	_	_
 
 1	Хұзыстан	Хұзыстан	_	np	top|nom	3	conj	_	_
 2	,	,	_	cm	_	3	punct	_	_
@@ -3682,32 +3682,32 @@
 
 1	Сасани	Сасани	_	np	al|nom	2	nmod	_	_
 2	әулеті	әулет	_	n	px3sp|nom	3	x	_	_
-3	дәуірінде	дәуір	_	n	px3sp|loc	8	x	_	_
-4	(	(	_	lpar	_	5	punct	_	_
-5	3	3	_	num	_	4	x	_	_
-6	—	—	_	guio	_	4	punct	_	_
-7	7	7	_	num	_	5	x	_	_
+3	дәуірінде	дәуір	_	n	px3sp|loc	11	x	_	_
+4	(	(	_	lpar	_	8	punct	_	_
+5	3	3	_	num	_	7	x	_	_
+6	—	—	_	guio	_	7	punct	_	_
+7	7	7	_	num	_	8	x	_	_
 8	ғасырлар	ғасыр	_	n	pl|nom	3	appos	_	_
-9	)	)	_	rpar	_	5	punct	_	_
-10	қалаларды	қала	_	n	pl|acc	8	obj	_	_
-11	қорған	қор	_	v	tv|gpr_past	9	acl	_	_
-12	ішіне	іш	_	n	px3sp|dat	13	x	_	_
-13	жүйелі	жүйелі	_	adj	_	11	amod	_	_
-14	жоба	жоба	_	n	nom	13	x	_	_
-15	бойынша	бойынша	_	post	_	11	case	_	_
-16	салу	сал	_	v	tv|ger|nom	14	x	_	_
-17	қанат	қанат	_	n	nom	14	subj	_	_
+9	)	)	_	rpar	_	8	punct	_	_
+10	қалаларды	қала	_	n	pl|acc	11	obj	_	_
+11	қорған	қор	_	v	tv|gpr_past	12	acl	_	_
+12	ішіне	іш	_	n	px3sp|dat	14	x	_	_
+13	жүйелі	жүйелі	_	adj	_	14	amod	_	_
+14	жоба	жоба	_	n	nom	16	x	_	_
+15	бойынша	бойынша	_	post	_	14	case	_	_
+16	салу	сал	_	v	tv|ger|nom	18	x	_	_
+17	қанат	қанат	_	n	nom	15	subj	_	_
 18	жайды	жай	_	v	tv|ifi|p3|sg	0	main	_	_
-19	(	(	_	lpar	_	22	punct	_	_
-20	мыс.	мыс.	_	abbr	_	22	x	_	_
-21	,	,	_	cm	_	16	punct	_	_
-22	Нишапур	Нишапур	_	np	top|nom	19	nmod	_	_
-23	қаласы	қала	_	n	px3sp|nom	22	x	_	_
-24	шахмат	шахмат	_	n	nom	21	x	_	_
-25	жүйесімен	жүйе	_	n	px3sp|ins	22	x	_	_
-26	салынған	сал	_	v	tv|pass|past|p3|sg	14	parataxis	_	_
-27	)	)	_	rpar	_	22	punct	_	_
-28	.	.	_	sent	_	14	punct	_	_
+19	(	(	_	lpar	_	16	punct	_	_
+20	мыс.	мыс.	_	abbr	_	26	x	_	_
+21	,	,	_	cm	_	20	punct	_	_
+22	Нишапур	Нишапур	_	np	top|nom	23	nmod	_	_
+23	қаласы	қала	_	n	px3sp|nom	26	x	_	_
+24	шахмат	шахмат	_	n	nom	25	x	_	_
+25	жүйесімен	жүйе	_	n	px3sp|ins	26	x	_	_
+26	салынған	сал	_	v	tv|pass|past|p3|sg	0	parataxis	_	_
+27	)	)	_	rpar	_	16	punct	_	_
+28	.	.	_	sent	_	18	punct	_	_
 
 1	Мүсін	мүсін	_	n	nom	2	x	_	_
 2	жасау	жаса	_	v	tv|ger|nom	9	x	_	_
@@ -3861,7 +3861,7 @@
 2	,	,	_	cm	_	5	punct	_	_
 3	көлеңке	көлеңке	_	n	nom	5	conj	_	_
 4	және	және	_	cnjcoo	_	5	cc	_	_
-5	қуыршақ	қуыршақ	_	n	nom	5	nmod	_	_
+5	қуыршақ	қуыршақ	_	n	nom	6	nmod	_	_
 6	театрлары	театр	_	n	pl|px3sp|nom	7	subj	_	_
 7	болған	бол	_	v	iv|past|p3|pl	0	main	_	_
 8	.	.	_	sent	_	7	punct	_	_
@@ -3870,12 +3870,12 @@
 2	ғасырда	ғасыр	_	n	loc	3	x	_	_
 3	пайда болған	пайда бол	_	v	iv|gpr_past	4	x	_	_
 4	мистерия	мистерия	_	n	attr	5	x	_	_
-5	діни	діни	_	adj	_	5	amod	_	_
-6	ғұрып	ғұрып	_	n	nom	8	x	_	_
-7	шахсей-вахсейдің	шахсей-вахсей	_	n	gen	7	nmod	_	_
-8	құрамына	құрам	_	n	px3sp|dat	8	x	_	_
+5	діни	діни	_	adj	_	6	amod	_	_
+6	ғұрып	ғұрып	_	n	nom	9	x	_	_
+7	шахсей-вахсейдің	шахсей-вахсей	_	n	gen	8	nmod	_	_
+8	құрамына	құрам	_	n	px3sp|dat	9	x	_	_
 9	енді	ен	_	v	iv|ifi|p3|sg	0	main	_	_
-10	.	.	_	sent	_	8	punct	_	_
+10	.	.	_	sent	_	9	punct	_	_
 
 1	Бұл	бұл	_	det	dem	2	det	_	_
 2	театрларды	театр	_	n	pl|acc	3	obj	_	_
@@ -3954,7 +3954,7 @@
 
 1	Радианның	радиан	_	n	gen	4	nmod	_	_
 2-3	басқа да	_	_	_	_	_	_	_	_
-2	_	басқа	_	adj	_	3	amod	_	_
+2	_	басқа	_	adj	_	4	amod	_	_
 3	_	да	_	postadv	_	2	advmod	_	_
 4	бірліктермен	бірлік	_	n	pl|ins	5	x	_	_
 5	байланысы	байланыс	_	n	px3sp|nom	0	x	_	_

@@ -234,14 +234,14 @@
 "<,>"
 	"," cm @punct #14->15
 "<ғылым да>"
-	"ғылым" n nom @nmod #15->15
+	"ғылым" n nom @nmod #15->18
 		"да" cnjcoo @cc #16->15
 "<—>"
 	"—" guio @punct #17->18
 "<бәрі>"
 	"бәрі" prn qnt px3sp nom @x #18->20
 "<орыста>"
-	"орыс" n loc @x #19->20
+	"орыс" n loc @nmod #19->20
 "<тұр>"
 	"тұр" v iv pres p3 sg @main #20->0
 "<.>"
@@ -405,21 +405,21 @@
 "<күлгені>"
 	"күл" v iv ger_past px3sp nom @x #3->4
 "<керек>"
-	"керек" adj @x #5->13
-		"е" cop aor p3 sg @cop #6->5
+	"керек" adj @ccomp #4->6
+		"е" cop aor p3 sg @cop #5->4
 "<деп>"
-	"де" v tv gna_perf @x #7->5
+	"де" v tv gna_perf @advcl #6->11
 "<,>"
-	"," cm @punct #8->5
+	"," cm @punct #7->6
 "<көзі>"
-	"көз" n px3sp nom @x #9->10
+	"көз" n px3sp nom @x #8->11
 "<ашылса да>"
-	"аш" v tv pass gna_cond p3 sg @x #10->12
-		"да" postadv @advmod #11->10
+	"аш" v tv pass gna_cond p3 sg @x #9->11
+		"да" postadv @advmod #10->9
 "<қам жемейді>"
-	"қам же" v tv neg aor p3 sg @main #12->0
+	"қам же" v tv neg aor p3 sg @main #11->0
 "<.>"
-	"." sent @punct #14->12
+	"." sent @punct #12->11
 
 "<Орыстың>"
 	"орыс" n gen @nmod #1->4
@@ -557,7 +557,7 @@
 "<Қазаққа>"
 	"қазақ" n dat @x #1->2
 "<күзетші>"
-	"күзетші" n nom @x #2->3
+	"күзетші" n nom @x #2->4
 "<болайын>"
 	"бол" v iv opt p1 sg @x #3->2
 "<деп>"
@@ -843,15 +843,15 @@
 	"немене" prn itg nom @conj #7->11
 		"е" cop aor p3 sg @cop #8->7
 "<,>"
-	"," cm @punct #8->11
+	"," cm @punct #9->12
 "<қай>"
-	"қай" prn ind nom @x #9->11
+	"қай" prn ind nom @x #10->12
 "<кеп>"
-	"кеп" n nom @x #10->11
+	"кеп" n nom @x #11->12
 "<үйреніпті>"
-	"үйрен" v tv ifi evid p3 sg @main #11->0
+	"үйрен" v tv ifi evid p3 sg @main #12->0
 "<?>"
-	"?" sent @punct #12->11
+	"?" sent @punct #13->12
 
 "<Кірді>"
 	"кір" v iv ifi p3 sg @conj #1->7
