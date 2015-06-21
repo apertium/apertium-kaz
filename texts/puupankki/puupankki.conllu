@@ -823,7 +823,7 @@
 22	нәрселерге	нәрсе	_	n	pl|dat	23	conj	_	_
 23	үйірлендіруге	үйірлендір	_	v	tv|ger|dat	24	x	_	_
 24	себеп	себеп	_	n	nom	25	x	_	_
-25	болатұғын	бол	_	v	iv|gpr_impf	26	x	_	_
+25	болатұғын	бол	_	v	iv|gpr_impf	26	acl	_	_
 26-27	нәрсе	_	_	_	_	_	_	_	_
 26	_	нәрсе	_	n	nom	0	x	_	_
 27	_	е	_	cop	aor|p3|sg	26	cop	_	_
@@ -927,11 +927,11 @@
 1	Әрбіреудің	әрбіреу	_	prn	ind|gen	2	nmod	_	_
 2	тілін	тіл	_	n	px3sp|acc	4	conj	_	_
 3	өнерін	өнер	_	n	px3sp|acc	4	obj	_	_
-4	білген	біл	_	v	tv|gpr_past	5	x	_	_
-5	кісі	кісі	_	n	nom	9	x	_	_
-6	соныменен	сол	_	prn	dem|ins	9	x	_	_
+4	білген	біл	_	v	tv|gpr_past	5	acl	_	_
+5	кісі	кісі	_	n	nom	9	subj	_	_
+6	соныменен	сол	_	prn	dem|ins	9	nmod	_	_
 7	бірдейлік	бірдейлік	_	n	nom	8	nmod	_	_
-8	дағуасына	дағуа	_	n	px3sp|dat	9	x	_	_
+8	дағуасына	дағуа	_	n	px3sp|dat	9	nmod	_	_
 9	кіреді	кір	_	v	iv|aor|p3|sg	13	conj	_	_
 10	,	,	_	cm	_	13	punct	_	_
 11	аса	аса	_	adj	advl	12	x	_	_
@@ -950,10 +950,10 @@
 7	.	.	_	sent	_	3	punct	_	_
 
 1	Жорғалықпенен	жорғалық	_	n	ins	3	x	_	_
-2	көңілін	көңіл	_	n	px3sp|acc	3	x	_	_
+2	көңілін	көңіл	_	n	px3sp|acc	3	obj	_	_
 3	алсам	ал	_	v	tv|gna_cond|p1|sg	5	x	_	_
 4	екен	е	_	cop	aor|evid|p3|sg	3	x	_	_
-5	деген	де	_	v	tv|gpr_past	7	x	_	_
+5	деген	де	_	v	tv|gpr_past	7	acl	_	_
 6	надан	надан	_	adj	_	7	amod	_	_
 7	әке-шешесін	әке-шеше	_	n	px3sp|acc	12	conj	_	_
 8	,	,	_	cm	_	12	punct	_	_
@@ -1001,11 +1001,11 @@
 
 1	Ләкин	ләкин	_	cnjcoo	_	15	cc	_	_
 2	осы	осы	_	det	dem	3	det	_	_
-3	күнде	күн	_	n	loc	7	x	_	_
+3	күнде	күн	_	n	loc	7	nmod	_	_
 4	орыс	орыс	_	n	nom	5	nmod	_	_
 5	ғылымын	ғылым	_	n	px3sp|acc	7	obj	_	_
 6	баласына	бала	_	n	px3sp|dat	7	x	_	_
-7	үйреткен	үйрет	_	v	tv|gpr_past	8	x	_	_
+7	үйреткен	үйрет	_	v	tv|gpr_past	8	acl	_	_
 8	жандар	жан	_	n	pl|nom	15	x	_	_
 9	соның	сол	_	prn	dem|gen	10	subj	_	_
 10	қаруымен	қары	_	v	iv|ger|px3sp|ins	13	x	_	_
@@ -1187,20 +1187,20 @@
 29	еді	е	_	cop	ifi|p3|sg	28	cop	_	_
 30	.	.	_	sent	_	28	punct	_	_
 
-1	Осындай	осы	_	det	ind	3	x	_	_
+1	Осындай	осы	_	det	ind	3	det	_	_
 2	жаман	жаман	_	adj	_	3	amod	_	_
 3	сөзді	сөз	_	n	acc	10	obj	_	_
 4	,	,	_	cm	_	3	punct	_	_
-5	Құдайдан	Құдай	_	n	abl	6	obj	_	_
+5	Құдайдан	Құдай	_	n	abl	6	nmod	_	_
 6	қорықпай	қорық	_	v	iv|neg|gna_perf	10	advcl	_	_
 7	,	,	_	cm	_	6	punct	_	_
-8	пендеден	пенде	_	n	abl	9	x	_	_
+8	пендеден	пенде	_	n	abl	9	nmod	_	_
 9	ұялмай	ұял	_	v	iv|neg|gna_perf	10	advcl	_	_
 10	айтқан	айт	_	v	tv|gpr_past	12	acl	_	_
 11	қазақтардың	қазақ	_	n	pl|gen	12	nmod	_	_
 12	баласы	бала	_	n	px3sp|nom	13	subj	_	_
-13	оқығанменен	оқы	_	v	iv|ger_past|ins	15	x	_	_
-14	не	не	_	prn	itg|nom	15	x	_	_
+13	оқығанменен	оқы	_	v	iv|ger_past|ins	15	nmod	_	_
+14	не	не	_	prn	itg|nom	15	subj	_	_
 15	бола	бол	_	v	iv|prc_impf	0	x	_	_
 16	қойсын	қой	_	vaux	opt|p3|sg	15	aux	_	_
 17	?	?	_	sent	_	16	punct	_	_
@@ -1731,8 +1731,8 @@
 16	.	.	_	sent	_	14	punct	_	_
 
 1	Айгүл	Айгүл	_	np	ant|f|nom	5	subj	_	_
-2	Азаматтың	Азамат	_	np	ant|m|gen	3	nmod	_	_
-3	қайда	қайда	_	adv	itg	5	obj	_	_
+2	Азаматтың	Азамат	_	np	ant|m|gen	3	subj	_	_
+3	қайда	қайда	_	adv	itg	5	ccomp	_	_
 4	екенін	е	_	cop	ger_past|px3sp|acc	3	cop	_	_
 5	білмейді	біл	_	v	tv|neg|aor|p3|sg	0	main	_	_
 6	.	.	_	sent	_	5	punct	_	_
@@ -1799,16 +1799,18 @@
 
 1	"	"	_	sent	_	5	punct	_	_
 2	Азамат	Азамат	_	np	ant|m|nom	3	subj	_	_
-3	қайда	қайда	_	adv	itg	5	x	_	_
-4	,	,	_	cm	_	3	punct	_	_
-5-6	айтшы	_	_	_	_	_	_	_	_
-5	_	айт	_	v	tv|imp|p2|sg	9	ccomp	_	_
-6	_	шы	_	emph	_	5	disc	_	_
-7	!	!	_	sent	_	5	punct	_	_
-8	"	"	_	sent	_	5	punct	_	_
-9	деп	де	_	v	tv|gna_perf	10	advcl	_	_
-10	сұрайды	сұра	_	v	tv|aor|p3|sg	0	main	_	_
-11	.	.	_	sent	_	10	punct	_	_
+3-4	қайда	_	_	_	_	_	_	_	_
+3	_	қайда	_	adv	itg	6	ccomp	_	_
+4	_	е	_	cop	aor|p3|sg	3	cop	_	_
+5	,	,	_	cm	_	3	punct	_	_
+6-7	айтшы	_	_	_	_	_	_	_	_
+6	_	айт	_	v	tv|imp|p2|sg	10	ccomp	_	_
+7	_	шы	_	emph	_	6	disc	_	_
+8	!	!	_	sent	_	6	punct	_	_
+9	"	"	_	sent	_	6	punct	_	_
+10	деп	де	_	v	tv|gna_perf	11	advcl	_	_
+11	сұрайды	сұра	_	v	tv|aor|p3|sg	0	main	_	_
+12	.	.	_	sent	_	11	punct	_	_
 
 1	"	"	_	sent	_	6	punct	_	_
 2	Жоқ	жоқ	_	ij	_	6	disc	_	_
@@ -1824,8 +1826,8 @@
 12	.	.	_	sent	_	11	punct	_	_
 
 1	Ол	ол	_	prn	pers|p3|sg|nom	7	subj	_	_
-2	Азаматтың	Азамат	_	np	ant|m|gen	3	nmod	_	_
-3	қайда	қайда	_	adv	itg	5	obj	_	_
+2	Азаматтың	Азамат	_	np	ant|m|gen	3	subj	_	_
+3	қайда	қайда	_	adv	itg	5	ccomp	_	_
 4	екенін	е	_	cop	ger_past|px3sp|acc	3	cop	_	_
 5-6	білсе де	_	_	_	_	_	_	_	_
 5	_	біл	_	v	tv|gna_cond|p3|sg	7	advcl	_	_
@@ -3902,8 +3904,8 @@
 4	ж.	ж.	_	abbr	_	7	nmod	_	_
 5	театр	театр	_	n	nom	6	nmod	_	_
 6	репертуарларынан	репертуар	_	n	pl|px3sp|abl	7	nmod	_	_
-7	өңделген	өңде	_	v	tv|pass|gpr_past	10	x	_	_
-8	Батыс	батыс	_	adj	_	9	x	_	_
+7	өңделген	өңде	_	v	tv|pass|gpr_past	10	acl	_	_
+8	Батыс	батыс	_	adj	_	9	amod	_	_
 9	Еуропа	Еуропа	_	np	top|nom	10	nmod	_	_
 10	драмалары	драма	_	n	pl|px3sp|nom	12	conj	_	_
 11	мен	мен	_	cnjcoo	_	12	cc	_	_

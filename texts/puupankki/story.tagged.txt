@@ -424,9 +424,9 @@
 "<Айгүл>"
 	"Айгүл" np ant f nom @subj #1->5
 "<Азаматтың>"
-	"Азамат" np ant m gen @nmod #2->3
+	"Азамат" np ant m gen @subj #2->3
 "<қайда>"
-	"қайда" adv itg @obj #3->5
+	"қайда" adv itg @ccomp #3->5
 "<екенін>"
 	"е" cop ger_past px3sp acc @cop #4->3
 "<білмейді>"
@@ -550,22 +550,23 @@
 "<Азамат>"
 	"Азамат" np ant m nom @subj #2->3
 "<қайда>"
-	"қайда" adv itg @x #3->5
+	"қайда" adv itg @ccomp #3->6
+		"е" cop aor p3 sg @cop #4->3
 "<,>"
-	"," cm @punct #4->3
+	"," cm @punct #5->3
 "<айтшы>"
-	"айт" v tv imp p2 sg @ccomp #5->9
-		"шы" emph @disc #6->5
+	"айт" v tv imp p2 sg @ccomp #6->10
+		"шы" emph @disc #7->6
 "<!>"
-	"!" sent @punct #7->5
+	"!" sent @punct #8->6
 "<">"
-	""" sent @punct #8->5
+	""" sent @punct #9->6
 "<деп>"
-	"де" v tv gna_perf @advcl #9->10
+	"де" v tv gna_perf @advcl #10->11
 "<сұрайды>"
-	"сұра" v tv aor p3 sg @main #10->0
+	"сұра" v tv aor p3 sg @main #11->0
 "<.>"
-	"." sent @punct #11->10
+	"." sent @punct #12->11
 
 "<">"
 	""" sent @punct #1->6
@@ -595,9 +596,9 @@
 "<Ол>"
 	"ол" prn pers p3 sg nom @subj #1->7
 "<Азаматтың>"
-	"Азамат" np ant m gen @nmod #2->3
+	"Азамат" np ant m gen @subj #2->3
 "<қайда>"
-	"қайда" adv itg @obj #3->5
+	"қайда" adv itg @ccomp #3->5
 "<екенін>"
 	"е" cop ger_past px3sp acc @cop #4->3
 "<білсе де>"
