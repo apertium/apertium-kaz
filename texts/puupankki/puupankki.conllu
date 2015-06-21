@@ -25,7 +25,7 @@
 11	,	,	_	cm	_	12	punct	_	_
 12	бауырмалдық	бауырмалдық	_	adj	_	13	amod	_	_
 13	қарым-қатынас	қарым-қатынас	_	n	nom	14	obj	_	_
-14	жасаулары	жаса	_	v	tv|ger|pl|px3sp|nom	15	x	_	_
+14	жасаулары	жаса	_	v	tv|ger|pl|px3sp|nom	15	subj	_	_
 15-16	тиіс	_	_	_	_	_	_	_	_
 15	_	тиіс	_	adj	_	0	main	_	_
 16	_	е	_	cop	aor|p3|pl	15	cop	_	_
@@ -125,7 +125,7 @@
 37	оның	ол	_	prn	pers|p3|sg|gen	38	nmod	_	_
 38	егемендігі	егемендік	_	n	px3sp|nom	41	subj	_	_
 39	әртүрлі	әртүрлі	_	det	qnt	40	det	_	_
-40	нысанда	нысан	_	n	loc	41	x	_	_
+40	нысанда	нысан	_	n	loc	41	nmod	_	_
 41	шектеулі	шектеулі	_	adj	_	43	acl	_	_
 42	болған	бол	_	v	iv|gpr_past	41	cop	_	_
 43	күннің	күн	_	n	gen	44	nmod	_	_
@@ -227,13 +227,13 @@
 7-8	және де	_	_	_	_	_	_	_	_
 7	_	және	_	cnjcoo	_	16	cc	_	_
 8	_	да	_	postadv	_	7	advmod	_	_
-9	заң	заң	_	n	nom	11	x	_	_
-10	арқылы	арқылы	_	post	_	8	case	_	_
-11	алаланбай	алала	_	v	tv|pass|neg|gna_perf	15	x	_	_
+9	заң	заң	_	n	nom	11	nmod	_	_
+10	арқылы	арқылы	_	post	_	9	case	_	_
+11	алаланбай	алала	_	v	tv|pass|neg|gna_perf	15	advcl	_	_
 12	,	,	_	cm	_	11	punct	_	_
 13	бірдей	бір	_	num	subst|sim	14	x	_	_
-14	тең	тең	_	adj	advl	15	x	_	_
-15	қорғалуға	қорға	_	v	tv|pass|ger|dat	16	x	_	_
+14	тең	тең	_	adj	advl	15	advmod	_	_
+15	қорғалуға	қорға	_	v	tv|pass|ger|dat	16	advcl	_	_
 16-17	құқылы	_	_	_	_	_	_	_	_
 16	_	құқылы	_	adj	_	0	main	_	_
 17	_	е	_	cop	aor|p3|sg	15	cop	_	_
@@ -252,7 +252,7 @@
 11	барлық	барлық	_	det	qnt	12	det	_	_
 12	түрінен	түр	_	n	px3sp|abl	13	x	_	_
 13	тең	тең	_	adj	advl	14	x	_	_
-14	қорғалуға	қорға	_	v	tv|pass|ger|dat	15	x	_	_
+14	қорғалуға	қорға	_	v	tv|pass|ger|dat	15	advcl	_	_
 15-16	құқылы	_	_	_	_	_	_	_	_
 15	_	құқылы	_	adj	_	0	main	_	_
 16	_	е	_	cop	aor|p3|sg	15	cop	_	_
@@ -270,7 +270,7 @@
 8	ұсталуға	ұста	_	v	tv|pass|ger|dat	11	conj	_	_
 9	немесе	немесе	_	cnjcoo	_	11	cc	_	_
 10	қуғынға	қуғын	_	n	dat	11	x	_	_
-11	ұшыратылуға	ұшыратыл	_	v	iv|ger|dat	12	x	_	_
+11	ұшыратылуға	ұшыратыл	_	v	iv|ger|dat	12	advcl	_	_
 12	тиіс	тиіс	_	adj	_	0	main	_	_
 13	емес	е	_	cop	neg|aor|p3|sg	12	cop	_	_
 14	.	.	_	sent	_	12	punct	_	_
@@ -319,7 +319,7 @@
 6	өзгерту	өзгерт	_	v	tv|ger|nom	7	nmod	_	_
 7	құқығынан	құқық	_	n	px3sp|abl	9	nmod	_	_
 8	еріксіз	еріксіз	_	adj	advl	9	advmod	_	_
-9	айыруға	айыр	_	v	tv|ger|dat	10	x	_	_
+9	айыруға	айыр	_	v	tv|ger|dat	10	ccomp	_	_
 10	болмайды	бол	_	v	iv|neg|aor|p3|sg	0	main	_	_
 11	.	.	_	sent	_	10	punct	_	_
 
@@ -353,7 +353,7 @@
 12	мен	мен	_	cnjcoo	_	13	cc	_	_
 13	мемлекет	мемлекет	_	n	nom	14	nmod	_	_
 14	тарапынан	тарап	_	n	px3sp|abl	15	nmod	_	_
-15	қорғалуға	қорға	_	v	tv|pass|ger|dat	16	x	_	_
+15	қорғалуға	қорға	_	v	tv|pass|ger|dat	16	advcl	_	_
 16-17	құқылы	_	_	_	_	_	_	_	_
 16	_	құқылы	_	adj	_	0	main	_	_
 17	_	е	_	cop	aor|p3|sg	16	cop	_	_
@@ -365,7 +365,7 @@
 3	өз	өз	_	det	ref	4	det	_	_
 4	мүлкінен	мүлік	_	n	px3sp|abl	6	x	_	_
 5	еріксіз	еріксіз	_	adj	advl	6	advmod	_	_
-6	айрылмауға	айрыл	_	v	iv|neg|ger|dat	7	x	_	_
+6	айрылмауға	айрыл	_	v	iv|neg|ger|dat	7	ccomp	_	_
 7-8	тиіс	_	_	_	_	_	_	_	_
 7	_	тиіс	_	adj	_	0	main	_	_
 8	_	е	_	cop	aor|p3|sg	7	cop	_	_
@@ -390,9 +390,9 @@
 2	_	да	_	postadv	_	1	advmod	_	_
 3	белгілі	белгілі	_	adj	_	5	amod	_	_
 4	бір	бір	_	det	ind	5	det	_	_
-5	ассоциацияға	ассоциация	_	n	dat	7	x	_	_
-6	зорлықпен	зорлық	_	n	ins	7	x	_	_
-7	кіргізуге	кіргіз	_	v	tv|ger|dat	8	x	_	_
+5	ассоциацияға	ассоциация	_	n	dat	7	nmod	_	_
+6	зорлықпен	зорлық	_	n	ins	7	nmod	_	_
+7	кіргізуге	кіргіз	_	v	tv|ger|dat	8	ccomp	_	_
 8	болмайды	бол	_	v	iv|neg|aor|p3|sg	0	main	_	_
 9	.	.	_	sent	_	8	punct	_	_
 
@@ -405,7 +405,7 @@
 7	қамқорлық	қамқорлық	_	n	nom	9	conj	_	_
 8	пен	мен	_	cnjcoo	_	9	cc	_	_
 9	көмек	көмек	_	n	nom	10	obj	_	_
-10	алуға	ал	_	v	tv|ger|dat	12	x	_	_
+10	алуға	ал	_	v	tv|ger|dat	12	ccomp	_	_
 11	құқық	құқық	_	n	nom	12	obj	_	_
 12	береді	бер	_	v	tv|aor|p3|pl	0	main	_	_
 13	.	.	_	sent	_	12	punct	_	_
@@ -425,10 +425,10 @@
 13	.	.	_	sent	_	12	punct	_	_
 
 1	Әр	әр	_	det	qnt	2	det	_	_
-2	адамның	адам	_	n	gen	5	x	_	_
-3	білім	білім	_	n	nom	4	x	_	_
+2	адамның	адам	_	n	gen	5	nmod	_	_
+3	білім	білім	_	n	nom	4	obj	_	_
 4	алуға	ал	_	v	tv|ger|dat	5	nmod	_	_
-5	құқығы	құқық	_	n	px3sp|nom	6	x	_	_
+5	құқығы	құқық	_	n	px3sp|nom	6	subj	_	_
 6-7	бар	_	_	_	_	_	_	_	_
 6	_	бар	_	adj	_	0	main	_	_
 7	_	е	_	cop	aor|p3|sg	6	cop	_	_
@@ -586,8 +586,8 @@
 4	_	е	_	cop	aor|p3|sg	3	cop	_	_
 5	.	.	_	sent	_	3	punct	_	_
 
-1	Сізден	сіз	_	prn	pers|p2|sg|frm|abl	2	x	_	_
-2	қоңырау шалуға	қоңырау шал	_	v	tv|ger|dat	3	x	_	_
+1	Сізден	сіз	_	prn	pers|p2|sg|frm|abl	2	nmod	_	_
+2	қоңырау шалуға	қоңырау шал	_	v	tv|ger|dat	3	ccomp	_	_
 3-4	бола ма	_	_	_	_	_	_	_	_
 3	_	бол	_	v	iv|aor|p3|sg	0	main	_	_
 4	_	ма	_	qst	_	3	disc	_	_
@@ -1752,7 +1752,7 @@
 1	Ал	ал	_	cnjcoo	_	6	cc	_	_
 2	күшік	күшік	_	n	nom	6	subj	_	_
 3	,	,	_	cm	_	2	punct	_	_
-4	әлбетте	әлбетте	_	adv	_	2	parataxis	_	_
+4	әлбетте	әлбетте	_	adv	_	2	disc	_	_
 5	,	,	_	cm	_	2	punct	_	_
 6	сөйлей	сөйле	_	v	tv|prc_impf	0	main	_	_
 7	алмайды	ал	_	vaux	neg|aor|p3|sg	6	aux	_	_
@@ -1844,7 +1844,7 @@
 
 1	Әлі де болса	әлі де болса	_	adv	_	4	advmod	_	_
 2	Азаматты	Азамат	_	np	ant|m|acc	3	obj	_	_
-3	табуға	тап	_	v	tv|ger|dat	4	x	_	_
+3	табуға	тап	_	v	tv|ger|dat	4	xcomp	_	_
 4	әрекет етіп	әрекет ет	_	v	iv|prc_perf	0	main	_	_
 5	жүр	жүр	_	vaux	pres|p3|sg	4	aux	_	_
 6	.	.	_	sent	_	4	punct	_	_
@@ -1873,7 +1873,7 @@
 7	бірақ	бірақ	_	cnjcoo	_	9	cc	_	_
 8	Азаматты	Азамат	_	np	ant|m|acc	9	obj	_	_
 9	таба	тап	_	v	tv|prc_impf	0	main	_	_
-10	алмай	ал	_	v	tv|neg|prc_impf	9	aux	_	_
+10	алмай	ал	_	vaux	neg|prc_impf	9	aux	_	_
 11	жатыр	жат	_	vaux	pres|p3|sg	9	aux	_	_
 12	.	.	_	sent	_	9	punct	_	_
 
@@ -1944,7 +1944,7 @@
 
 1	Одан	ол	_	prn	dem|abl	7	nmod	_	_
 2	кейін	кейін	_	post	_	1	case	_	_
-3	оған	ол	_	prn	dem|dat	7	x	_	_
+3	оған	ол	_	prn	dem|dat	7	nmod	_	_
 4	кішкентай	кішкентай	_	adj	_	6	amod	_	_
 5	бір	бір	_	det	ind	6	det	_	_
 6	қол	қол	_	n	nom	7	subj	_	_
@@ -2048,7 +2048,7 @@
 17	Бразилия	Бразилия	_	np	top|nom	20	subj	_	_
 18	сол	сол	_	det	dem	19	det	_	_
 19	чемпионатты	чемпионат	_	n	acc	20	obj	_	_
-20	өткізуге	өткіз	_	v	tv|ger|dat	22	advcl	_	_
+20	өткізуге	өткіз	_	v	tv|ger|dat	22	xcomp	_	_
 21	ниет	ниет	_	n	nom	22	obj	_	_
 22	білдірген	білдір	_	v	tv|gpr_past	25	amod	_	_
 23-24	жалғыз ғана	_	_	_	_	_	_	_	_
@@ -2069,7 +2069,7 @@
 9	.	.	_	sent	_	8	punct	_	_
 
 1	Бразилиямен	Бразилия	_	np	top|ins	2	nmod	_	_
-2	таласуға	тала	_	v	tv|coop|ger|dat	6	x	_	_
+2	таласуға	тала	_	v	tv|coop|ger|dat	6	xcomp	_	_
 3	талпынысты	талпыныс	_	n	acc	6	obj	_	_
 4-5	Колумбия ғана	_	_	_	_	_	_	_	_
 4	_	Колумбия	_	np	top|nom	6	x	_	_
@@ -3297,24 +3297,24 @@
 14	.	.	_	sent	_	13	punct	_	_
 
 1	Тегеран	Тегеран	_	np	top|nom	2	nmod	_	_
-2	конференциясы	конференция	_	n	px3sp|nom	3	x	_	_
-3	кезінде	кез	_	n	px3sp|loc	17	nmod	_	_
+2	конференциясы	конференция	_	n	px3sp|nom	3	nmod	_	_
+3	кезінде	кез	_	n	px3sp|loc	20	nmod	_	_
 4	1943	1943	_	num	_	5	amod	_	_
 5	ж.	ж.	_	abbr	_	7	nmod	_	_
 6	1	1	_	num	_	7	amod	_	_
-7	желтоқсанда	желтоқсан	_	n	loc	17	nmod	_	_
+7	желтоқсанда	желтоқсан	_	n	loc	20	nmod	_	_
 8	КСРО	КСРО	_	np	top|nom	12	conj	_	_
 9	,	,	_	cm	_	12	punct	_	_
 10	АҚШ	АҚШ	_	np	top|nom	12	conj	_	_
 11	,	,	_	cm	_	12	punct	_	_
-12	Ұлыбритания	Ұлыбритания	_	np	top|nom	13	x	_	_
+12	Ұлыбритания	Ұлыбритания	_	np	top|nom	13	nmod	_	_
 13	үкіметтері	үкімет	_	n	pl|px3sp|nom	20	subj	_	_
-14	Иранға	Иран	_	np	top|dat	17	x	_	_
-15	территориялық	территориялық	_	adj	_	16	x	_	_
+14	Иранға	Иран	_	np	top|dat	20	nmod	_	_
+15	территориялық	территориялық	_	adj	_	16	amod	_	_
 16	тұтастығын	тұтастық	_	n	px3sp|acc	17	obj	_	_
-17	сақтауға	сақта	_	v	tv|ger|dat	20	x	_	_
-18	әзір	әзір	_	n	nom	19	x	_	_
-19	екендіктерін	екендік	_	n	pl|px3sp|acc	20	obj	_	_
+17	сақтауға	сақта	_	v	tv|ger|dat	18	ccomp	_	_
+18	әзір	әзір	_	adj	_	20	obj	_	_
+19	екендіктерін	е	_	cop	ger_perf|px3pl|acc	18	cop	_	_
 20	мәлімдеді	мәлімде	_	v	tv|ifi|p3|pl	0	main	_	_
 21	.	.	_	sent	_	20	punct	_	_
 
@@ -3609,9 +3609,9 @@
 1	Иран	Иран	_	np	top|nom	2	nmod	_	_
 2	революциясы	революция	_	n	px3sp|nom	10	conj	_	_
 3	(	(	_	lpar	_	6	punct	_	_
-4	1905	1905	_	num	_	6	x	_	_
+4	1905	1905	_	num	_	6	cmpnd	_	_
 5	—	—	_	guio	_	6	punct	_	_
-6	11	11	_	num	_	2	x	_	_
+6	11	11	_	num	_	2	amod	_	_
 7	)	)	_	rpar	_	6	punct	_	_
 8	және	және	_	cnjcoo	_	10	cc	_	_
 9	азаматтық	азаматтық	_	adj	_	10	amod	_	_

@@ -52,7 +52,7 @@
 "<қарым-қатынас>"
 	"қарым-қатынас" n nom @obj #13->14
 "<жасаулары>"
-	"жаса" v tv ger pl px3sp nom @x #14->15
+	"жаса" v tv ger pl px3sp nom @subj #14->15
 "<тиіс>"
 	"тиіс" adj @main #15->0
 		"е" cop aor p3 pl @cop #16->15
@@ -232,7 +232,7 @@
 "<әртүрлі>"
 	"әртүрлі" det qnt @det #39->40
 "<нысанда>"
-	"нысан" n loc @x #40->41
+	"нысан" n loc @nmod #40->41
 "<шектеулі>"
 	"шектеулі" adj @acl #41->43
 "<болған>"
@@ -400,19 +400,19 @@
 	"және" cnjcoo @cc #7->16
 		"да" postadv @advmod #8->7
 "<заң>"
-	"заң" n nom @x #9->11
+	"заң" n nom @nmod #9->11
 "<арқылы>"
-	"арқылы" post @case #10->8
+	"арқылы" post @case #10->9
 "<алаланбай>"
-	"алала" v tv pass neg gna_perf @x #11->15
+	"алала" v tv pass neg gna_perf @advcl #11->15
 "<,>"
 	"," cm @punct #12->11
 "<бірдей>"
 	"бір" num subst sim @x #13->14
 "<тең>"
-	"тең" adj advl @x #14->15
+	"тең" adj advl @advmod #14->15
 "<қорғалуға>"
-	"қорға" v tv pass ger dat @x #15->16
+	"қорға" v tv pass ger dat @advcl #15->16
 "<құқылы>"
 	"құқылы" adj @main #16->0
 		"е" cop aor p3 sg @cop #17->15
@@ -446,7 +446,7 @@
 "<тең>"
 	"тең" adj advl @x #13->14
 "<қорғалуға>"
-	"қорға" v tv pass ger dat @x #14->15
+	"қорға" v tv pass ger dat @advcl #14->15
 "<құқылы>"
 	"құқылы" adj @main #15->0
 		"е" cop aor p3 sg @cop #16->15
@@ -525,7 +525,7 @@
 "<қуғынға>"
 	"қуғын" n dat @x #10->11
 "<ұшыратылуға>"
-	"ұшыратыл" v iv ger dat @x #11->12
+	"ұшыратыл" v iv ger dat @advcl #11->12
 "<тиіс>"
 	"тиіс" adj @main #12->0
 "<емес>"
@@ -1063,7 +1063,7 @@
 "<еріксіз>"
 	"еріксіз" adj advl @advmod #8->9
 "<айыруға>"
-	"айыр" v tv ger dat @x #9->10
+	"айыр" v tv ger dat @ccomp #9->10
 "<болмайды>"
 	"бол" v iv neg aor p3 sg @main #10->0
 "<.>"
@@ -1204,7 +1204,7 @@
 "<тарапынан>"
 	"тарап" n px3sp abl @nmod #14->15
 "<қорғалуға>"
-	"қорға" v tv pass ger dat @x #15->16
+	"қорға" v tv pass ger dat @advcl #15->16
 "<құқылы>"
 	"құқылы" adj @main #16->0
 		"е" cop aor p3 sg @cop #17->16
@@ -1251,7 +1251,7 @@
 "<еріксіз>"
 	"еріксіз" adj advl @advmod #5->6
 "<айрылмауға>"
-	"айрыл" v iv neg ger dat @x #6->7
+	"айрыл" v iv neg ger dat @ccomp #6->7
 "<тиіс>"
 	"тиіс" adj @main #7->0
 		"е" cop aor p3 sg @cop #8->7
@@ -1525,11 +1525,11 @@
 "<бір>"
 	"бір" det ind @det #4->5
 "<ассоциацияға>"
-	"ассоциация" n dat @x #5->7
+	"ассоциация" n dat @nmod #5->7
 "<зорлықпен>"
-	"зорлық" n ins @x #6->7
+	"зорлық" n ins @nmod #6->7
 "<кіргізуге>"
-	"кіргіз" v tv ger dat @x #7->8
+	"кіргіз" v tv ger dat @ccomp #7->8
 "<болмайды>"
 	"бол" v iv neg aor p3 sg @main #8->0
 "<.>"
@@ -2372,7 +2372,7 @@
 "<көмек>"
 	"көмек" n nom @obj #9->10
 "<алуға>"
-	"ал" v tv ger dat @x #10->12
+	"ал" v tv ger dat @ccomp #10->12
 "<құқық>"
 	"құқық" n nom @obj #11->12
 "<береді>"
@@ -2410,13 +2410,13 @@
 "<Әр>"
 	"әр" det qnt @det #1->2
 "<адамның>"
-	"адам" n gen @x #2->5
+	"адам" n gen @nmod #2->5
 "<білім>"
-	"білім" n nom @x #3->4
+	"білім" n nom @obj #3->4
 "<алуға>"
 	"ал" v tv ger dat @nmod #4->5
 "<құқығы>"
-	"құқық" n px3sp nom @x #5->6
+	"құқық" n px3sp nom @subj #5->6
 "<бар>"
 	"бар" adj @main #6->0
 		"е" cop aor p3 sg @cop #7->6
