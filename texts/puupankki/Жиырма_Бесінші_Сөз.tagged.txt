@@ -364,7 +364,7 @@
 	"." sent @punct #7->3
 
 "<Жорғалықпенен>"
-	"жорғалық" n ins @x #1->3
+	"жорғалық" n ins @nmod #1->3
 "<көңілін>"
 	"көңіл" n px3sp acc @obj #2->3
 "<алсам>"
@@ -470,7 +470,7 @@
 "<соның>"
 	"сол" prn dem gen @subj #9->10
 "<қаруымен>"
-	"қары" v iv ger px3sp ins @x #10->13
+	"қары" v iv ger px3sp ins @nmod #10->13
 "<тағы>"
 	"тағы" postadv @advmod #11->10
 "<қазақты>"
@@ -555,26 +555,26 @@
 	"." sent @punct #27->26
 
 "<Қазаққа>"
-	"қазақ" n dat @x #1->2
+	"қазақ" n dat @x #1->3
 "<күзетші>"
-	"күзетші" n nom @x #2->4
+	"күзетші" n nom @ccomp #2->4
 "<болайын>"
-	"бол" v iv opt p1 sg @x #3->2
+	"бол" v iv opt p1 sg @cop #3->2
 "<деп>"
-	"де" v tv gna_perf @x #4->21
+	"де" v tv gna_perf @advcl #4->21
 "<,>"
 	"," cm @punct #5->4
 "<біз де>"
 	"біз" prn pers p1 pl nom @x #6->19
 		"да" postadv @advmod #7->6
 "<ел>"
-	"ел" n nom @x #8->9
+	"ел" n nom @x #8->19
 "<болып>"
-	"бол" v iv gna_perf @x #9->19
+	"бол" v iv gna_perf @cop #9->8
 "<,>"
-	"," cm @punct #10->9
+	"," cm @punct #10->8
 "<жұрт>"
-	"жұрт" n nom @x #11->12
+	"жұрт" n nom @subj #11->12
 "<білгенді>"
 	"біл" v tv ger_past acc @x #12->13
 "<біліп>"
@@ -590,7 +590,7 @@
 "<қамын>"
 	"қам" n px3sp acc @obj #18->19
 "<жейік>"
-	"же" v tv opt p1 pl @x #19->21
+	"же" v tv opt p1 pl @ccomp #19->21
 "<деп>"
 	"де" v tv gna_perf @x #20->19
 "<ниеттеніп>"
@@ -684,11 +684,11 @@
 "<сөзді>"
 	"сөз" n acc @obj #4->5
 "<ұқтырса>"
-	"ұқтыр" v tv gna_cond p3 sg @x #5->6
+	"ұқтыр" v tv gna_cond p3 sg @advcl #5->6
 "<болады>"
 	"бол" v iv aor p3 sg @main #6->0
 "<оларға>"
-	"олар" prn pers p3 pl dat @x #7->6
+	"олар" prn pers p3 pl dat @subj #7->5
 "<.>"
 	"." sent @punct #8->6
 
@@ -741,7 +741,7 @@
 "<қазақтар>"
 	"қазақ" n pl nom @x #4->6
 "<ағайынымен>"
-	"ағайын" n px3sp ins @x #5->6
+	"ағайын" n px3sp ins @nmod #5->6
 "<араздасканда>"
 	"араздас" v TD ger_past loc @x #6->28
 "<:>"
@@ -887,11 +887,11 @@
 "<ел>"
 	"ел" n nom @nmod #2->3
 "<ақшасыменен>"
-	"ақша" n px3sp ins @x #3->4
+	"ақша" n px3sp ins @nmod #3->4
 "<оқығанға>"
 	"оқы" v iv ger_past dat @x #4->6
 "<әрең>"
-	"әрең" adv @x #5->6
+	"әрең" adv @advmod #5->6
 "<оқытады>"
 	"оқыт" v tv aor p3 sg @x #6->12
 "<,>"

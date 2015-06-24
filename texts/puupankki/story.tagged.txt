@@ -383,7 +383,7 @@
 "<кейін>"
 	"кейін" post @case #4->3
 "<айналасына>"
-	"айнала" n px3sp dat @nmod #5->6
+	"айнала" n px3sp dat @obj #5->6
 "<қарады>"
 	"қара" v tv ifi p3 sg @main #6->0
 "<.>"
@@ -512,7 +512,7 @@
 "<тұрған>"
 	"тұр" v iv gpr_past @acl #3->4
 "<анасына>"
-	"ана" n px3sp dat @nmod #4->5
+	"ана" n px3sp dat @obj #4->5
 "<қарайды>"
 	"қара" v tv aor p3 sg @main #5->0
 "<.>"
@@ -646,7 +646,7 @@
 "<орындықтардың>"
 	"орындық" n pl gen @nmod #3->4
 "<астына>"
-	"аст" n px3sp dat @nmod #4->5
+	"аст" n px3sp dat @obj #4->5
 "<қарап>"
 	"қара" v tv prc_perf @conj #5->11
 "<жатыр>"
@@ -791,9 +791,9 @@
 "<Бұл>"
 	"бұл" prn dem nom @subj #1->2
 "<Азамат>"
-	"Азамат" np ant m nom @x #2->4
+	"Азамат" np ant m nom @subj #2->4
 "<болу>"
-	"бол" v iv ger nom @x #3->2
+	"бол" v iv ger nom @cop #3->2
 "<керек>"
 	"керек" adj @main #4->0
 		"е" cop aor p3 sg @cop #5->4
