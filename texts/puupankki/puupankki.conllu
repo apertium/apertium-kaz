@@ -1717,7 +1717,7 @@
 3	Азамат	Азамат	_	np	ant|m|nom	6	subj	_	_
 4	қай	қай	_	det	itg	5	det	_	_
 5	жерге	жер	_	n	dat	6	nmod	_	_
-6	кетті	кет	_	v	iv|ifi|p3|sg	9	x	_	_
+6	кетті	кет	_	v	iv|ifi|p3|sg	9	parataxis	_	_
 7	?	?	_	sent	_	6	punct	_	_
 8	Оны	ол	_	prn	pers|p3|sg|acc	9	obj	_	_
 9-10	көрдіңдер ме	_	_	_	_	_	_	_	_
@@ -4013,12 +4013,234 @@
 10	сипатталады	сипатта	_	v	tv|pass|aor|p3|sg	0	main	_	_
 11	:	:	_	sent	_	10	punct	_	_
 
-1	Ерназар	Ерназар	_	np	top|nom	2	x	_	_
+1	Ерте	ерте	_	adj	_	2	amod	_	_
+2	заманда	заман	_	n	loc	6	nmod	_	_
+3	Ерназар	Ерназар	_	np	ant|m|nom	4	obj	_	_
+4	деген	де	_	v	tv|gpr_past	5	acl	_	_
+5	кісі	кісі	_	n	nom	6	subj	_	_
+6	болыпты	бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+7	.	.	_	sent	_	6	punct	_	_
+
+1	Ерназардың	Ерназар	_	np	ant|m|gen	2	nmod	_	_
+2	өзі	өз	_	prn	ref|px3sp|nom	3	subj	_	_
+3	бай	бай	_	adj	_	0	main	_	_
+4	болыпты	бол	_	v	iv|ifi|evid|p3|sg	3	cop	_	_
+5	.	.	_	sent	_	3	punct	_	_
+
+1	Төрт	төрт	_	num	_	2	nummod	_	_
+2	түлік	түлік	_	n	nom	3	nmod	_	_
+3	малы	мал	_	n	px3sp|nom	4	subj	_	_
+4	сай болыпты	сай бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
+1	Қора	қора	_	n	nom	2	subj	_	_
+2	толған	тол	_	v	iv|gpr_past	3	acl	_	_
+3	қойлары	қой	_	n	pl|px3sp|nom	4	subj	_	_
+4	болыпты	бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
+1	Келе-келе	келе-кел	_	adv	_	3	advmod	_	_
+2	түйелері	түйе	_	n	pl|px3sp|nom	3	subj	_	_
+3	болыпты	бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+4	.	.	_	sent	_	3	punct	_	_
+
+1	Өріс	өріс	_	n	nom	2	subj	_	_
+2	толған	тол	_	v	iv|gpr_past	3	acl	_	_
+3	жылқылары	жылқы	_	n	pl|px3sp|nom	4	subj	_	_
+4	болыпты	бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
+1	Ерназардың	Ерназар	_	np	ant|m|gen	3	nmod	_	_
+2	сегіз	сегіз	_	num	_	3	nummod	_	_
+3	ұлы	ұл	_	n	px3sp|nom	4	subj	_	_
+4	болыпты	бол	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
+1	Бір	бір	_	num	_	2	nummod	_	_
+2	жылы	жыл	_	n	px3sp|nom	12	nmod	_	_
+3	үлкен	үлкен	_	adj	_	4	amod	_	_
+4	жұт	жұт	_	n	nom	5	subj	_	_
+5	болып	бол	_	v	iv|gna_perf	12	advcl	_	_
+6	,	,	_	cm	_	5	punct	_	_
+7	ел	ел	_	n	nom	12	subj	_	_
+8	малын	мал	_	n	px3sp|acc	12	obj	_	_
+9	алысқа	алыс	_	adj	subst|dat	11	conj	_	_
+10	,	,	_	cm	_	11	punct	_	_
+11	отарға	отар	_	n	dat	12	nmod	_	_
+12	айдап	айда	_	v	tv|prc_perf	0	main	_	_
+13	кетіпті	кет	_	vaux	ifi|evid|p3|sg	12	aux	_	_
+14	.	.	_	sent	_	12	punct	_	_
+
+1	Ерназардың	Ерназар	_	np	ant|m|gen	3	nmod	_	_
+2	сегіз	сегіз	_	num	_	3	nummod	_	_
+3-4	ұлы да	_	_	_	_	_	_	_	_
+3	_	ұл	_	n	px3sp|nom	7	subj	_	_
+4	_	да	_	postadv	_	3	advmod	_	_
+5	соның	сол	_	prn	dem|gen	6	nmod	_	_
+6	ішінде	іш	_	n	px3sp|loc	7	nmod	_	_
+7	кетіпті	кет	_	v	iv|ifi|evid|p3|sg	0	main	_	_
+8	.	.	_	sent	_	7	punct	_	_
+
+1	Бір	бір	_	num	_	3	nummod	_	_
+2	қыстық	қыстық	_	adj	_	3	amod	_	_
+3	азығын	азық	_	n	px3sp|acc	4	obj	_	_
+4	алып	ал	_	v	tv|gna_perf	10	advcl	_	_
+5	,	,	_	cm	_	4	punct	_	_
+6	кемпірі	кемпір	_	n	px3sp|nom	8	conj	_	_
+7	мен	мен	_	cnjcoo	_	8	cc	_	_
+8	Ерназар	Ерназар	_	np	ant|m|nom	10	subj	_	_
+9	үйінде	үй	_	n	px3sp|loc	10	nmod	_	_
+10	қалыпты	қал	_	v	iv|ifi|evid|p3|pl	0	main	_	_
+11	.	.	_	sent	_	10	punct	_	_
+
+1	Ерназардың	Ерназар	_	np	ant|m|gen	3	nmod	_	_
+2	сегіз	сегіз	_	num	_	3	nummod	_	_
+3	ұлы	ұл	_	n	px3sp|nom	12	subj	_	_
+4	сол	сол	_	det	dem	5	det	_	_
+5	кеткеннен	кет	_	v	iv|ger_past|abl	12	advcl	_	_
+6-7	хабарсыз	_	_	_	_	_	_	_	_
+6	_	хабар	_	n	_	8	nmod	_	_
+7	_	сыз	_	post	_	6	case	_	_
+8	кетеді	кет	_	v	iv|aor|p3|pl	12	conj	_	_
+9	,	,	_	cm	_	12	punct	_	_
+10	айлар	ай	_	n	pl|nom	10	subj	_	_
+11	өтеді	өт	_	v	iv|aor|p3|pl	12	parataxis	_	_
+12	,	,	_	cm	_	10	punct	_	_
+13	келмейді	кел	_	v	iv|neg|aor|p3|pl	0	main	_	_
+14	.	.	_	sent	_	12	punct	_	_
+
+1	Ерназардың	Ерназар	_	np	ant|m|gen	2	nmod	_	_
+2	азығы	азық	_	n	px3sp|nom	3	subj	_	_
+3	таусылады	тауыс	_	v	tv|pass|aor|p3|sg	9	parataxis	_	_
+4	,	,	_	cm	_	3	punct	_	_
+5	ашығады	ашық	_	v	iv|aor|p3|sg	9	conj	_	_
+6	,	,	_	cm	_	9	punct	_	_
+7	жейтін	же	_	v	tv|gpr_impf	8	acl	_	_
+8	тамақ	тамақ	_	n	nom	9	obj	_	_
+9	таппайды	тап	_	v	tv|neg|aor|p3|sg	0	main	_	_
+10	.	.	_	sent	_	9	punct	_	_
+
+1	Кемпірі	кемпір	_	n	px3sp|nom	2	nmod	_	_
+2	екеуінің	екеу	_	num	coll|subst|px3sp|gen	4	nmod	_	_
+3	тұруға	тұр	_	v	iv|ger|dat	6	advcl	_	_
+4	әлдері	әл	_	n	pl|px3sp|nom	6	subj	_	_
+5	әрең-әрең	әрең-әрең	_	adv	_	6	advmod	_	_
+6	келеді	кел	_	v	iv|aor|p3|pl	0	main	_	_
+7	.	.	_	sent	_	6	punct	_	_
+
+1	Бір	бір	_	num	_	2	nummod	_	_
+2	күні	күн	_	n	px3sp|nom	11	nmod	_	_
+3	кешке	кеш	_	n	dat	11	nmod	_	_
+4	жақын	жақын	_	post	_	3	case	_	_
+5	кемпірі	кемпір	_	n	px3sp|nom	11	subj	_	_
+6	төсегінен	төсек	_	n	px3sp|abl	7	nmod	_	_
+7	тұрып	тұр	_	v	iv|gna_perf	11	advcl	_	_
+8	,	,	_	cm	_	7	punct	_	_
+9	үйінің	үй	_	n	px3sp|gen	10	nmod	_	_
+10	түндігін	түндік	_	n	px3sp|acc	11	obj	_	_
+11	ашады	аш	_	v	tv|aor|p3|sg	0	main	_	_
+12	.	.	_	sent	_	11	punct	_	_
+
+1	Тұруға	тұр	_	v	iv|ger|dat	3	advcl	_	_
+2	мұршасы	мұрша	_	n	px3sp|nom	3	subj	_	_
+3	келмей	кел	_	v	iv|neg|prc_perf	5	acl	_	_
+4	жатқан	жат	_	vaux	gpr_past	3	aux	_	_
+5	шал	шал	_	n	nom	7	subj	_	_
+6	шаңыраққа	шаңырақ	_	n	dat	7	nmod	_	_
+7	қараса	қара	_	v	tv|gna_cond|p3|sg	17	advcl	_	_
+8	,	,	_	cm	_	7	punct	_	_
+9	шаңырақтың	шаңырақ	_	n	gen	10	nmod	_	_
+10	күлдіреуішінде	күлдіреуіш	_	n	px3sp|loc	17	nmod	_	_
+11	керулі	керулі	_	adj	_	15	acl	_	_
+12	тұрған	тұр	_	v	iv|gpr_past	11	cop	_	_
+13	кер	кер	_	adj	_	14	amod	_	_
+14	биенің	бие	_	n	gen	15	nmod	_	_
+15	төстігі	төстік	_	n	px3sp|nom	17	subj	_	_
+16	көзіне	көз	_	n	px3sp|dat	17	nmod	_	_
+17	түседі	түс	_	v	iv|aor|p3|sg	0	main	_	_
+18	.	.	_	sent	_	17	punct	_	_
+
+1	Ерназар	Ерназар	_	np	ant|m|nom	2	subj	_	_
 2	қуанып	қуан	_	v	iv|gna_perf	5	advcl	_	_
 3	,	,	_	cm	_	2	punct	_	_
-4	есі	ес	_	n	px3sp|nom	5	x	_	_
+4	есі	ес	_	n	px3sp|nom	5	subj	_	_
 5	шығады	шық	_	v	iv|aor|p3|sg	0	main	_	_
 6	.	.	_	sent	_	5	punct	_	_
+
+1	Төстік	Төстік	_	np	ant|m|nom	8	subj	_	_
+2	бір	бір	_	num	_	3	nummod	_	_
+3	күні	күн	_	n	px3sp|nom	8	nmod	_	_
+4	ауылдың	ауыл	_	n	gen	4	nmod	_	_
+5	арасында	ара	_	n	px3sp|loc	5	nmod	_	_
+6	отырған	отыр	_	v	iv|gpr_past	6	acl	_	_
+7	тарғақты	тарғақ	_	n	acc	8	obj	_	_
+8	садақпен	садақ	_	n	ins	8	nmod	_	_
+9	тартып	тарт	_	v	tv|prc_perf	0	main	_	_
+10	қалады	қал	_	vaux	aor|p3|sg	8	aux	_	_
+11	.	.	_	sent	_	8	punct	_	_
+
+1	Садақ	садақ	_	n	nom	4	subj	_	_
+2	тарғақтың	тарғақ	_	n	gen	3	nmod	_	_
+3	қанатын	қанат	_	n	px3sp|acc	4	obj	_	_
+4	үзіп	үз	_	v	tv|prc_perf	0	main	_	_
+5	кетеді	кет	_	vaux	aor|p3|sg	4	aux	_	_
+6	.	.	_	sent	_	4	punct	_	_
+
+1	Тарғақ	тарғақ	_	n	nom	8	subj	_	_
+2	жығылмай	жық	_	v	tv|pass|neg|gna_perf	8	advcl	_	_
+3	,	,	_	cm	_	2	punct	_	_
+4	бір	бір	_	num	_	5	nummod	_	_
+5	қанатын	қанат	_	n	px3sp|acc	6	obj	_	_
+6	сабалап	сабала	_	v	tv|gna_perf	8	advcl	_	_
+7	,	,	_	cm	_	6	punct	_	_
+8	қаша	қаш	_	v	iv|prc_impf	0	main	_	_
+9	береді	бер	_	vaux	aor|p3|sg	8	aux	_	_
+10	.	.	_	sent	_	8	punct	_	_
+
+1	Төстік	Төстік	_	np	ant|m|nom	4	subj	_	_
+2	ұстайын	ұста	_	v	tv|opt|p1|sg	3	ccomp	_	_
+3	деп	де	_	v	tv|gna_perf	4	advcl	_	_
+4	қуып	қу	_	v	tv|prc_perf	0	main	_	_
+5	жүреді	жүр	_	vaux	aor|p3|sg	4	aux	_	_
+6	.	.	_	sent	_	4	punct	_	_
+
+1	Сөйтіп	сөйт	_	v	iv|gna_perf	2	advcl	_	_
+2	жүргенде	жүр	_	v	iv|ger_past|loc	10	advcl	_	_
+3	,	,	_	cm	_	1	punct	_	_
+4	тарғақ	тарғақ	_	n	nom	10	subj	_	_
+5	бір	бір	_	det	ind	6	det	_	_
+6	кемпірдің	кемпір	_	n	gen	7	nmod	_	_
+7	өрмегінің	өрмек	_	n	px3sp|gen	8	nmod	_	_
+8	үстінен	үст	_	n	px3sp|abl	9	nmod	_	_
+9	қарғып	қарғы	_	v	iv|gna_perf	10	advcl	_	_
+10	өтеді	өт	_	v	tv|aor|p3|sg	0	main	_	_
+11	.	.	_	sent	_	10	punct	_	_
+
+1	Қуып	қу	_	v	tv|prc_perf	4	acl	_	_
+2	келе	кел	_	vaux	prc_impf	1	aux	_	_
+3	жатқан	жат	_	vaux	gpr_past	2	aux	_	_
+4-5	Төстік те	_	_	_	_	_	_	_	_
+4	_	Төстік	_	np	ant|m|nom	7	subj	_	_
+5	_	да	_	postadv	_	4	advmod	_	_
+6	өрмектен	өрмек	_	n	abl	7	nmod	_	_
+7	секіреді	секір	_	v	iv|aor|p3|sg	0	main	_	_
+8	.	.	_	sent	_	7	punct	_	_
+
+1	Сөйткенде	сөйт	_	v	iv|ger_past|loc	6	advcl	_	_
+2	Төстіктің	Төстік	_	np	ant|m|gen	4	nmod	_	_
+3	бір	бір	_	num	_	4	nummod	_	_
+4	бақайы	бақай	_	n	px3sp|nom	6	subj	_	_
+5	өрмекті	өрмек	_	n	acc	6	obj	_	_
+6	іліп	іл	_	v	tv|prc_perf	0	main	_	_
+7	кетеді	кет	_	vaux	aor|p3|sg	6	aux	_	_
+8	.	.	_	sent	_	6	punct	_	_
+
+1	Өрмектің	өрмек	_	n	gen	3	nmod	_	_
+2	бірсыпыра	бірсыпыра	_	det	qnt	3	det	_	_
+3	жібі	жіп	_	n	px3sp|nom	4	subj	_	_
+4	үзіліп	үз	_	v	tv|pass|prc_perf	0	main	_	_
+5	қалады	қал	_	vaux	aor|p3|sg	4	aux	_	_
+6	.	.	_	sent	_	4	punct	_	_
 
 
 
