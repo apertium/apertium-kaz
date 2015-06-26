@@ -941,11 +941,7 @@
 "<,>"
 	"," cm @punct
 "<өзендер>"
-;	"өзен" n pl nom
 	"өзен" n pl nom
-		"е" cop aor p3 pl 
-;	"өзен" n pl nom
-;		"е" cop aor p3 sg 
 "<бойы>"
 	"бойы" post @case
 ;	"бойы" n nom
@@ -955,7 +951,6 @@
 ;	"шалғын" n nom
 	"шалғын" n nom
 		"е" cop aor p3 sg
-;	"шалғын" n attr 
 ;	"шалғын" n nom
 ;		"е" cop aor p3 pl 
 "<,>"
@@ -970,7 +965,6 @@
 ;	"шөл" n nom
 	"шөл" n nom
 		"е" cop aor p3 sg
-;	"шөл" n attr 
 ;	"шөл" n nom
 ;		"е" cop aor p3 pl 
 "<,>"
@@ -985,36 +979,34 @@
 "<жерінде>"
 	"жер" n px3sp loc @nmod #2->16
 "<сүтқоректілердің>"
-	"сүтқоректі" n pl gen @x #3->4
+	"сүтқоректі" n pl gen @remnant #3->11
 "<100-ге>"
-	"100" num subst dat @conj #4->13
+	"100" num subst dat @remnant #4->12
 "<тарта>"
 	"тарта" post @case #5->4
 "<,>"
-	"," cm @punct #6->13
+	"," cm @punct #6->4
 "<құстардың>"
-	"құс" n pl gen @x #7->8
+	"құс" n pl gen @remnant #7->11
 "<400-ге>"
-	"400" num subst dat @conj #8->13
+	"400" num subst dat @remnant #8->12
 "<жуық>"
 	"жуық" post @case #9->8
 "<,>"
-	"," cm @punct #10->13
-"<бауырымен>"
-	"бауыр" n px3sp ins @x #11->12
-"<жорғалаушылардың>"
-	"жорғалаушы" n pl gen @x #12->13
+	"," cm @punct #10->8
+"<бауырымен жорғалаушылардың>"
+	"бауырымен жорғалаушы" n pl gen @nmod #11->14
 "<80-ге>"
-	"80" num subst dat @nmod #13->15
+	"80" num subst dat @nummod #12->14
 "<жуық>"
-	"жуық" post @case #14->13
+	"жуық" post @case #13->12
 "<түрі>"
-	"түр" n px3sp nom @subj #15->16
+	"түр" n px3sp nom @subj #14->15
 "<бар>"
-	"бар" adj @main #16->0
-		"е" cop aor p3 sg @cop #17->16
+	"бар" adj @main #15->0
+		"е" cop aor p3 sg @cop #16->15
 "<.>"
-	"." sent @punct #18->16
+	"." sent @punct #17->15
 
 "<Шектес>"
 	"шектес" adj
@@ -2288,9 +2280,9 @@
 "<мемлекеттердің>"
 	"мемлекет" n pl gen @subj #7->9
 "<жартылай>"
-	"жартылай" adv @advmod #8->9
+	"жартылай" adv @advmod #8->7
 "<отарына>"
-	"ота" v iv ger_fut px3sp dat @x #9->10
+	"отар" n px3sp dat @nmod #9->10
 "<айнала>"
 	"айнал" v iv prc_impf @main #10->0
 "<бастады>"
@@ -2299,81 +2291,43 @@
 	"." sent @punct #12->10
 
 "<1901>"
-	"1901" num
+	"1901" num @amod #1->2
 "<ж.>"
-	"ж." abbr
+	"ж." abbr @nmod #2->8
 "<ағылшындар>"
-	"ағылшын" n pl nom
+	"ағылшын" n pl nom @subj #3->8
 "<Иран>"
-	"Иран" np top nom 
+	"Иран" np top nom @nmod #4->5
 "<мұнайын>"
-	"мұнай" n px3sp acc
+	"мұнай" n px3sp acc @obj #5->6
 "<шығаруға>"
-	"шығару" n dat 
-;	"шығар" v tv ger dat 
+	"шығар" v tv ger dat @ccomp #6->8
 "<рұқсат>"
-	"рұқсат" n nom
-;	"рұқсат" n attr
+	"рұқсат" n nom @obj #7->8
 "<алып>"
-;	"алып" n nom
-;		"е" cop aor p3 sg
-;	"алып" adj subst nom
-;	"алып" adj
-;		"е" cop aor p3 sg
-	"ал" v tv gna_perf
-;	"алып" adj
-;	"алып" n nom
-;	"алып" adj subst nom
-;		"е" cop aor p3 sg
-;	"алып" adj advl
-;	"алып" n attr 
-;	"ал" vaux prc_perf 
-;	"ал" v tv prc_perf 
-;	"ал" vaux gna_perf 
-;	"алып" n nom
-;		"е" cop aor p3 pl 
-;	"алып" adj subst nom
-;		"е" cop aor p3 pl 
-;	"алып" adj
-;		"е" cop aor p3 pl 
+	"ал" v tv gna_perf @advcl #8->19
 "<,>"
-	"," cm @punct
+	"," cm @punct #9->8
 "<1909>"
-	"1909" num
-;	"1909" num subst nom
+	"1909" num @amod #10->11
 "<ж.>"
-	"ж." abbr
+	"ж." abbr @nmod #12->19
 "<бірлескен>"
-	"бірлес" v iv gpr_past
-;	"бірлескен" adj
-;	"бірлескен" adv
-;	"бірлес" v iv ger_past nom
-;	"бірлескен" adj advl
-;	"бірлескен" adj subst nom
-;	"бірлес" v iv past p3 sg
-;	"бірлес" v iv gpr_past subst nom
-;	"бірлес" v iv past p3 pl 
+	"бірлес" v iv gpr_past @acl #13->18
 "<ағылшын>"
-;	"ағылшын" adj
-	"ағылшын" n nom
-;	"ағылшын" adj subst nom
-;	"ағылшын" adj advl
-;	"ағылшын" n attr 
+	"ағылшын" n attr @compound #14->16
 "<->"
-	"-" guio
+	"-" guio @punct #15->16
 "<парсы>"
-	"парсы" n nom
-;	"парсы" n attr
+	"парсы" n nom @nmod #16->18
 "<мұнай>"
-	"мұнай" n attr 
-;	"мұнай" n nom 
+	"мұнай" n nom @nmod #17->18
 "<компаниясы>"
-	"компания" n px3sp nom
+	"компания" n px3sp nom @subj #18->19
 "<құрылды>"
-	"құр" v tv pass ifi p3 sg
-;	"құр" v tv pass ifi p3 pl 
+	"құр" v tv pass ifi p3 sg @main #19->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #20->19
 
 "<Елдің>"
 	"ел" n gen @nmod #1->2
@@ -2513,17 +2467,17 @@
 "<ақпанда>"
 	"ақпан" n loc @nmod #4->11
 "<әскерилер>"
-	"әскери" adj subst pl nom @x #5->11
+	"әскери" adj subst pl nom @subj #5->11
 "<Реза>"
 	"Реза" np ant m attr @name #6->7
 "<ханның>"
 	"хан" n gen @nmod #7->8
 "<басшылығымен>"
 	"басшылық" n px3sp ins @nmod #8->11
-"<мемл.>"
-	"мемл." abbr @x #9->10
+"<мемлекеттік>"
+	"мемлекеттік" adj @amod #9->10
 "<төңкеріс>"
-	"төңкеріс" n nom @x #10->11
+	"төңкеріс" n nom @subj #10->11
 "<ұйымдастырып>"
 	"ұйымдастыр" v tv gna_perf @advcl #11->15
 "<,>"
@@ -2927,9 +2881,9 @@
 "<бірақ>"
 	"бірақ" cnjcoo @cc #10->13
 "<соғыс>"
-	"соғыс" n nom @x #11->13
+	"соғыс" n nom @nmod #11->13
 "<қимылдарына>"
-	"қимыл" n pl px3sp dat @x #12->13
+	"қимыл" n pl px3sp dat @nmod #12->13
 "<араласқан жоқ>"
 	"арала" v tv coop neg ifi p3 sg @main #13->0
 "<.>"
@@ -2989,7 +2943,7 @@
 "<Батыс>"
 	"батыс" n nom @nmod #5->6
 "<елдерімен>"
-	"ел" n pl px3sp ins @x #6->9
+	"ел" n pl px3sp ins @nmod #6->9
 "<тығыз>"
 	"тығыз" adj @amod #7->8
 "<байланыс>"
@@ -3033,7 +2987,7 @@
 "<Пехлевидің>"
 	"Пехлеви" np cog mf gen @nmod #5->6
 "<көмегімен>"
-	"көмек" n px3sp ins @x #6->12
+	"көмек" n px3sp ins @nmod #6->12
 "<АҚШ>"
 	"АҚШ" np top nom @x #7->12
 "<елдің>"
@@ -3125,7 +3079,7 @@
 "<жаппай>"
 	"жаппай" adj @amod #20->21
 "<бас>"
-	"бас" n nom @x #21->22
+	"бас" n nom @obj #21->22
 "<көтеруіне>"
 	"көтер" v tv ger px3sp dat @advcl #22->23
 "<алып келді>"
@@ -3209,7 +3163,7 @@
 "<Саяси>"
 	"саяси" adj @amod #1->2
 "<партияларға>"
-	"партия" n pl dat @x #2->3
+	"партия" n pl dat @obj #2->3
 "<тыйым салынды>"
 	"тыйым сал" v tv pass ifi p3 sg @x #3->
 "<,>"
@@ -3387,9 +3341,9 @@
 	"." sent @punct
 
 "<Мемл.>"
-	"мемл." abbr @x #1->2
+	"мемл." abbr @amod #1->2
 "<кірістің>"
-	"кіріс" n gen @x #2->7
+	"кіріс" n gen @conj #2->7
 "<1>"
 	"1" num @nmod #3->2
 "</>"
