@@ -22,7 +22,7 @@
 	"Қожа" np ant m nom @subj #11->13
 		"да" postadv @advmod #12->11
 "<келіпті>"
-	"кел" v iv ifi evid p3 sg @main #13->0
+	"кел" v iv ifi evid p3 sg @root #13->0
 "<.>"
 	"." sent @punct #14->13
 
@@ -33,7 +33,7 @@
 "<киімі>"
 	"киім" n px3sp nom @subj #3->4
 "<жаман>"
-	"жаман" adj @main #4->0
+	"жаман" adj @root #4->0
 "<екен>" 
 	"е" cop aor evid p3 sg @cop #5->4
 "<.>"
@@ -44,7 +44,7 @@
 "<ешкім>"
 	"ешкім" prn neg nom @subj #2->3
 "<елемепті>"
-	"еле" v tv neg ifi evid p3 sg @main #3->0
+	"еле" v tv neg ifi evid p3 sg @root #3->0
 "<.>"
 	"." sent @punct #4->3
 
@@ -67,7 +67,7 @@
 "<->"
 	"-" guio @punct #9->6
 "<демепті>"
-	"де" v tv neg ifi evid p3 pl @main #10->0
+	"де" v tv neg ifi evid p3 pl @root #10->0
 "<.>"
 	"." sent @punct #11->10
 
@@ -97,7 +97,7 @@
 "<қайта>"
 	"қайт" v tv gna_impf @advcl #13->14
 "<келеді>"
-	"кел" v iv aor p3 sg @main #14->0
+	"кел" v iv aor p3 sg @root #14->0
 "<.>"
 	"." sent @punct #15->14
 
@@ -150,7 +150,7 @@
 "<,>"
 	"," cm @punct #24->23
 "<қошеметтейді>"
-	"қошеметтей" v iv ifi p3 pl @main #25->0
+	"қошеметтей" v iv ifi p3 pl @root #25->0
 "<.>"
 	"." sent @punct #26->25
 
@@ -193,7 +193,7 @@
 "<,>"
 	"," cm @punct #19->18
 "<отыра>"
-	"отыр" v iv prc_impf @main #20->0
+	"отыр" v iv prc_impf @root #20->0
 "<береді>"
 	"бер" vaux aor p3 sg @aux #21->20
 "<.>"
@@ -232,7 +232,7 @@
 "<->"
 	"-" guio @punct #17->13
 "<дейді>"
-	"де" v tv aor p3 sg @main #18->0
+	"де" v tv aor p3 sg @root #18->0
 "<.>"
 	"." sent @punct #19->18
 
@@ -276,7 +276,7 @@
 "<,>"
 	"," cm @punct #20->19
 "<жауап береді>"
-	"жауап бер" v iv aor p3 sg @main #21->0
+	"жауап бер" v iv aor p3 sg @root #21->0
 "<.>"
 	"." sent @punct #22->21
 
