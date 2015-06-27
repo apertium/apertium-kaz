@@ -6,7 +6,7 @@
 "<бірліктермен>"
 	"бірлік" n pl ins @nmod #4->5
 "<байланысы>"
-	"байланыс" n px3sp nom @main #5->0
+	"байланыс" n px3sp nom @root #5->0
 "<.>"
 	"." sent @punct #6->5
 
@@ -28,7 +28,7 @@
 "<формуламен>"
 	"формула" n ins @nmod #9->10
 "<сипатталады>"
-	"сипатта" v tv pass aor p3 sg @main #10->0
+	"сипатта" v tv pass aor p3 sg @root #10->0
 "<:>"
 	":" sent @punct #11->10
 
@@ -70,7 +70,7 @@
 "<формуласы>"
 	"формула" n px3sp nom @x #12->
 "<шығады>"
-	"шық" v iv aor p3 sg @main #13->0
+	"шық" v iv aor p3 sg @root #13->0
 "<.>"
 	"." sent @punct #14->13
 

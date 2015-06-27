@@ -21,7 +21,7 @@
 "<дүниеге>"
 	"дүние" n dat @nmod #11->12
 "<келеді>"
-	"кел" v iv aor p3 sg @main #12->0
+	"кел" v iv aor p3 sg @root #12->0
 "<.>"
 	"." sent @punct #13->12
 
@@ -54,7 +54,7 @@
 "<жасаулары>"
 	"жаса" v tv ger pl px3sp nom @subj #14->15
 "<тиіс>"
-	"тиіс" adj @main #15->0
+	"тиіс" adj @root #15->0
 		"е" cop aor p3 pl @cop #16->15
 "<.>"
 	"." sent @punct #17->15
@@ -150,7 +150,7 @@
 "<ие болуы>"
 	"ие бол" v iv ger px3sp nom @subj #46->47
 "<тиіс>"
-	"тиіс" adj @main #47->0
+	"тиіс" adj @root #47->0
 		"е" cop aor p3 sg @cop #48->47
 "<.>"
 	"." sent @punct #49->47
@@ -247,7 +247,7 @@
 "<алаланбауы>"
 	"алала" v tv pass neg ger px3sp nom @subj #47->48
 "<тиіс>"
-	"тиіс" adj @main #48->0
+	"тиіс" adj @root #48->0
 		"е" cop aor p3 sg @cop #49->48
 "<.>"
 	"." sent @punct #50->48
@@ -277,7 +277,7 @@
 "<сұғылмауына>"
 	"сұқ" v tv pass neg ger px3sp dat @advcl #12->13
 "<құқылы>"
-	"құқылы" adj @main #13->0
+	"құқылы" adj @root #13->0
 		"е" cop aor p3 sg @cop #14->13
 "<.>"
 	"." sent @punct #15->13
@@ -294,7 +294,7 @@
 "<ұсталуы>"
 	"ұста" v tv pass ger px3sp nom @subj #6->7
 "<тиіс>"
-	"тиіс" adj @main #7->0
+	"тиіс" adj @root #7->0
 "<емес>"
 	"е" cop neg aor p3 sg @cop #8->7
 "<.>"
@@ -320,7 +320,7 @@
 "<,>"
 	"," cm @punct #10->8
 "<тыйым салынады>"
-	"тыйым сал" v tv pass aor p3 sg @main #11->0
+	"тыйым сал" v tv pass aor p3 sg @root #11->0
 "<.>"
 	"." sent @punct #12->11
 
@@ -352,7 +352,7 @@
 "<жазалануға>"
 	"жазала" v tv pass ger dat @advcl #14->15
 "<тиіс>"
-	"тиіс" adj @main #15->0
+	"тиіс" adj @root #15->0
 "<емес>"
 	"е" cop neg aor p3 sg @cop #16->15
 "<.>"
@@ -380,7 +380,7 @@
 "<танылуына>"
 	"таны" v tv pass ger px3sp dat @advcl #11->12
 "<құқылы>"
-	"құқылы" adj @main #12->0
+	"құқылы" adj @root #12->0
 		"е" cop aor p3 sg @cop #13->12
 "<.>"
 	"." sent @punct #14->12
@@ -414,7 +414,7 @@
 "<қорғалуға>"
 	"қорға" v tv pass ger dat @advcl #15->16
 "<құқылы>"
-	"құқылы" adj @main #16->0
+	"құқылы" adj @root #16->0
 		"е" cop aor p3 sg @cop #17->15
 "<.>"
 	"." sent @punct #18->16
@@ -448,7 +448,7 @@
 "<қорғалуға>"
 	"қорға" v tv pass ger dat @advcl #14->15 
 "<құқылы>"
-	"құқылы" adj @main #15->0 
+	"құқылы" adj @root #15->0 
 		"е" cop aor p3 sg @cop #16->15
 "<.>"
 	"." sent @punct #17->15
@@ -527,7 +527,7 @@
 "<ұшыратылуға>"
 	"ұшыратыл" v iv ger dat @advcl #11->12
 "<тиіс>"
-	"тиіс" adj @main #12->0
+	"тиіс" adj @root #12->0
 "<емес>"
 	"е" cop neg aor p3 sg @cop #13->12
 "<.>"
@@ -612,7 +612,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x #34->
 "<бар>"
-	"бар" adj @main #35->0
+	"бар" adj @root #35->0
 		"е" cop aor p3 sg @cop #36->35
 "<.>"
 	"." sent @punct #37->35
@@ -678,7 +678,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom
 "<бар>"
-	"бар" adj @main
+	"бар" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -727,7 +727,7 @@
 "<жауапқа>"
 	"жауап" n dat @obj #22->23
 "<тартылмайды>"
-	"тарт" v tv pass neg aor p3 sg @main #23->0
+	"тарт" v tv pass neg aor p3 sg @root #23->0
 "<.>"
 	"." sent @punct #24->23
 
@@ -842,7 +842,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x
 "<бар>"
-	"бар" adj @main
+	"бар" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -881,7 +881,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x
 "<бар>"
-	"бар" adj @main
+	"бар" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -980,7 +980,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x #15->
 "<бар>"
-	"бар" adj @main #16->0
+	"бар" adj @root #16->0
 		"е" cop aor p3 sg @cop #17->16
 "<.>"
 	"." sent @punct #18->16
@@ -1029,7 +1029,7 @@
 "<қуғындалғандарға>"
 	"*қуғындалғандарға"
 "<жүрмейді>"
-	"жүр" v iv neg aor p3 sg @main
+	"жүр" v iv neg aor p3 sg @root
 "<.>"
 	"." sent @punct
 
@@ -1042,7 +1042,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @subj #4->5
 "<бар>"
-	"бар" adj @main #5->0
+	"бар" adj @root #5->0
 		"е" cop aor p3 sg @cop #6->5
 "<.>"
 	"." sent @punct #7->5
@@ -1065,7 +1065,7 @@
 "<айыруға>"
 	"айыр" v tv ger dat @ccomp #9->10
 "<болмайды>"
-	"бол" v iv neg aor p3 sg @main #10->0
+	"бол" v iv neg aor p3 sg @root #10->0
 "<.>"
 	"." sent @punct #11->10
 
@@ -1108,7 +1108,7 @@
 "<құруға>"
 	"құр" v tv ger dat @x #18->19
 "<құқылы>"
-	"құқылы" adj @main #19->0
+	"құқылы" adj @root #19->0
 		"е" cop aor p3 sg @cop #20->19
 "<.>"
 	"." sent @punct #21->19
@@ -1143,7 +1143,7 @@
 "<кұқықтарды>"
 	"құқық" n pl acc @obj #10->11
 "<пайдаланады>"
-	"пайдалан" v tv aor p3 sg @main #11->0
+	"пайдалан" v tv aor p3 sg @root #11->0
 "<.>"
 	"." sent @punct #12->11
 
@@ -1171,7 +1171,7 @@
 	"бойынша" post @case #11->10
 		"ғана" postadv @advmod #12->10
 "<қиылады>"
-	"қи" v tv pass aor p3 sg @main #13->0
+	"қи" v tv pass aor p3 sg @root #13->0
 "<.>"
 	"." sent @punct #14->13
 
@@ -1206,7 +1206,7 @@
 "<қорғалуға>"
 	"қорға" v tv pass ger dat @advcl #15->16
 "<құқылы>"
-	"құқылы" adj @main #16->0
+	"құқылы" adj @root #16->0
 		"е" cop aor p3 sg @cop #17->16
 "<.>"
 	"." sent @punct #18->16
@@ -1236,7 +1236,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x #12->13
 "<бар>"
-	"бар" adj @main #13->0
+	"бар" adj @root #13->0
 		"е" cop aor p3 sg @cop #14->13
 "<.>"
 	"." sent @punct #15->13
@@ -1253,7 +1253,7 @@
 "<айрылмауға>"
 	"айрыл" v iv neg ger dat @ccomp #6->7
 "<тиіс>"
-	"тиіс" adj @main #7->0
+	"тиіс" adj @root #7->0
 		"е" cop aor p3 sg @cop #8->7
 "<.>"
 	"." sent @punct #9->7
@@ -1512,7 +1512,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @subj #9->10
 "<бар>"
-	"бар" adj @main #10->0
+	"бар" adj @root #10->0
 		"е" cop aor p3 sg @cop #11->10
 "<.>"
 	"." sent @punct #12->10
@@ -1531,7 +1531,7 @@
 "<кіргізуге>"
 	"кіргіз" v tv ger dat @ccomp #7->8
 "<болмайды>"
-	"бол" v iv neg aor p3 sg @main #8->0
+	"бол" v iv neg aor p3 sg @root #8->0
 "<.>"
 	"." sent @punct #9->8
 
@@ -1634,7 +1634,7 @@
 "<жеткізуге>"
 	"жеткіз" v tv ger dat @x #10->11
 "<құқылы>"
-	"құқылы" adj @main #11->0
+	"құқылы" adj @root #11->0
 		"е" cop aor p3 sg @cop #12->11
 "<.>"
 	"." sent @punct #13->11
@@ -1897,7 +1897,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x #44->
 "<бар>"
-	"бар" adj @main #45->
+	"бар" adj @root #45->
 		"е" cop aor p3 sg @cop #46->45
 "<.>"
 	"." sent @punct #47->45
@@ -1944,7 +1944,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @x #19->
 "<бар>"
-	"бар" adj @main #20->0
+	"бар" adj @root #20->0
 		"е" cop aor p3 sg @cop #21->20
 "<.>"
 	"." sent @punct #22->20
@@ -2066,7 +2066,7 @@
 "<сый-сияпатқа>"
 	"сый-сияпат" n dat
 "<құқылы>"
-	"құқылы" adj @main
+	"құқылы" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -2096,7 +2096,7 @@
 "<кіруге>"
 	"кір" v iv ger dat @x #12->
 "<құқылы>"
-	"құқылы" adj @main #13->0
+	"құқылы" adj @root #13->0
 		"е" cop aor p3 sg @cop #14->13
 "<.>"
 	"." sent @punct #15->13
@@ -2376,7 +2376,7 @@
 "<құқық>"
 	"құқық" n nom @obj #11->12
 "<береді>"
-	"бер" v tv aor p3 sg @main #12->0
+	"бер" v tv aor p3 sg @root #12->0
 "<.>"
 	"." sent @punct #13->12
 
@@ -2403,7 +2403,7 @@
 "<қорғауды>"
 	"қорғау" n acc @obj #11->12
 "<пайдаланады>"
-	"пайдалан" v tv aor p3 sg @main #12->0
+	"пайдалан" v tv aor p3 sg @root #12->0
 "<.>"
 	"." sent @punct #13->12
 
@@ -2418,7 +2418,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @subj #5->6
 "<бар>"
-	"бар" adj @main #6->0
+	"бар" adj @root #6->0
 		"е" cop aor p3 sg @cop #7->6
 "<.>"
 	"." sent @punct #8->6
@@ -2448,7 +2448,7 @@
 "<болуы>"
 	"бол" v iv ger px3sp nom @x #11->
 "<тиіс>"
-	"тиіс" adj @main #12->0
+	"тиіс" adj @root #12->0
 		"е" cop aor p3 sg @cop #13->12
 "<.>"
 	"." sent @punct #14->12
@@ -2464,7 +2464,7 @@
 "<болуы>"
 	"бол" v iv ger px3sp nom @cop #5->4
 "<тиіс>"
-	"тиіс" adj @main #6->0
+	"тиіс" adj @root #6->0
 		"е" cop aor p3 sg @cop #7->6
 "<.>"
 	"." sent @punct #8->6
@@ -2568,7 +2568,7 @@
 "<бағытталуы>"
 	"бағытта" v tv pass ger px3sp nom
 "<тиіс>"
-	"тиіс" adj @main
+	"тиіс" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -2649,7 +2649,7 @@
 "<беруі>"
 	"бер" v tv ger px3sp nom @x
 "<тиіс>"
-	"тиіс" adj @main
+	"тиіс" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
@@ -2673,7 +2673,7 @@
 "<құқығы>"
 	"құқық" n px3sp nom @subj #9->10
 "<басымды>"
-	"басымды" adj @main #10->0
+	"басымды" adj @root #10->0
 		"е" cop aor p3 sg @cop #11->10
 "<.>"
 	"." sent @punct #12->10
@@ -3047,7 +3047,7 @@
 "<қайшы келмеуі>"
 	"қайшы кел" v iv neg ger px3sp nom @subj #10->11
 "<тиіс>"
-	"тиіс" adj @main #11->0
+	"тиіс" adj @root #11->0
 		"е" cop aor p3 sg @cop #12->11
 "<.>"
 	"." sent @punct #13->11
@@ -3113,7 +3113,7 @@
 "<пайымдалуы>"
 	"*пайымдалуы"
 "<тиіс>"
-	"тиіс" adj @main
+	"тиіс" adj @root
 "<емес>"
 	"е" cop neg aor p3 sg @cop
 "<.>"

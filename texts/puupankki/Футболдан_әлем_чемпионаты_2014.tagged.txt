@@ -46,7 +46,7 @@
 "<Бразилияда>"
 	"Бразилия" np top loc @nmod #24->25
 "<өтті>"
-	"өт" v iv ifi p3 sg @main #25->0
+	"өт" v iv ifi p3 sg @root #25->0
 "<.>"
 	"." sent @punct #26->25
 
@@ -69,7 +69,7 @@
 "<стадионында>"
 	"стадион" n px3sp loc @nmod #9->10
 "<орын алды>"
-	"орын ал" v iv ifi p3 sg @main #10->0
+	"орын ал" v iv ifi p3 sg @root #10->0
 "<.>"
 	"." sent @punct #11->10
 
@@ -121,7 +121,7 @@
 	"жалғыз" adj @amod #23->25
 		"ғана" postadv @advmod #24->23
 "<ел>"
-	"ел" n nom @main #25->0
+	"ел" n nom @root #25->0
 "<еді>"
 	"е" cop ifi p3 sg @cop #26->25
 "<.>"
@@ -142,7 +142,7 @@
 "<үміткерлігін>" 
 	"үміткерлік" n px3sp acc @obj #7->8
 "<қолдаған>"
-	"қолда" v tv past p3 sg @main #8->0
+	"қолда" v tv past p3 sg @root #8->0
 "<.>"
 	"." sent @punct #9->8
 
@@ -214,7 +214,7 @@
 "<Мексика>"
 	"Мексика" np top nom @subj #34->35
 "<өткізген>"
-	"өткіз" v tv gpr_past @main #35->0
+	"өткіз" v tv gpr_past @root #35->0
 "<болатын>"
 	"бол" v iv pih p3 sg @cop #36->35
 "<.>"
@@ -231,7 +231,7 @@
 "<өзгеретінін>"
 	"өзгер" v iv ger_impf px3sp acc @ccomp #5->6
 "<жариялады>"
-	"жарияла" v tv ifi p3 sg @main #6->0
+	"жарияла" v tv ifi p3 sg @root #6->0
 "<.>"
 	"." sent @punct #7->6
 
@@ -288,7 +288,7 @@
 "<сынға>"
 	"сын" n dat @nmod #26->27
 "<түседі>"
-	"түс" v iv aor p3 sg @main #27->0
+	"түс" v iv aor p3 sg @root #27->0
 "<.>"
 	"." sent @punct #28->27
 
@@ -309,7 +309,7 @@
 "<бесінші>"
 	"бес" num ord @amod #8->9
 "<ел>"
-	"ел" n nom @main #9->0
+	"ел" n nom @root #9->0
 "<болды>"
 	"бол" v iv ifi p3 sg @cop #10->9
 "<(>"
@@ -352,7 +352,7 @@
 "<жылы>"
 	"жыл" n px3sp nom @nmod #8->9
 "<өткен>"
-	"өт" v iv gpr_past @main #9->0
+	"өт" v iv gpr_past @root #9->0
 "<болатын>"
 	"бол" v iv pih p3 sg @cop #10->9
 "<.>"
@@ -389,7 +389,7 @@
 "<айында>"
 	"ай" n px3sp loc @nmod #15->16
 "<аяқталды>"
-	"аяқта" v tv pass ifi p3 sg @main #16->0
+	"аяқта" v tv pass ifi p3 sg @root #16->0
 "<.>"
 	"." sent @punct #17->16
 
@@ -452,7 +452,7 @@
 "<,>"
 	"," cm @punct #29->20
 "<Океания>"
-	"Океания" np top nom @main #30->0
+	"Океания" np top nom @root #30->0
 		"е" cop aor p3 sg @cop #31->
 "<(>"
 	"(" lpar @punct #32->33
@@ -505,7 +505,7 @@
 "<чемпионатына>"
 	"чемпионат" n px3sp dat @nmod #10->11
 "<квалификацияланды>"
-	"квалификациялан" v iv ifi p3 pl @main #11->0
+	"квалификациялан" v iv ifi p3 pl @root #11->0
 "<.>"
 	"." sent @punct #12->
 
@@ -536,7 +536,7 @@
 "<финалға>"
 	"финал" n dat @nmod #13->14
 "<шығады>"
-	"шық" v iv aor p3 pl @main #14->0
+	"шық" v iv aor p3 pl @root #14->0
 "<.>"
 	"." sent @punct #15->14
 
@@ -555,7 +555,7 @@
 "<бойынша>"
 	"бойынша" post @case #7->6
 "<анықталады>"
-	"анықта" v tv pass aor p3 sg @main #8->0
+	"анықта" v tv pass aor p3 sg @root #8->0
 "<:>"
 	":" sent @punct #9->8
 
