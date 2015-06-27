@@ -34,7 +34,7 @@
 "<ар-ождан>"
 	"ар-ождан" n nom @subj #4->5
 "<берілген>"
-	"бер" v tv pass past p3 pl @x #5->15
+	"бер" v tv pass past p3 pl @conj #5->15
 "<,>"
 	"," cm @punct #6->5
 "<сондықтан>"
@@ -392,7 +392,7 @@
 "<жұрттың>"
 	"жұрт" n gen @nmod #3->4
 "<бәрі>"
-	"бәрі" prn qnt px3sp nom @x #4->5
+	"бәрі" prn qnt px3sp nom @subj #4->5
 "<тең>"
 	"тең" adj advl @conj #5->16
 		"е" cop aor p3 sg @cop #6->5
@@ -408,7 +408,7 @@
 "<,>"
 	"," cm @punct #12->11
 "<бірдей>"
-	"бір" num subst sim @x #13->14
+	"бір" num subst sim @advmod #13->16
 "<тең>"
 	"тең" adj advl @advmod #14->15
 "<қорғалуға>"
@@ -420,35 +420,35 @@
 	"." sent @punct #18->16
 
 "<Барлық>"
-	"барлық" det qnt @det #1->2
+	"барлық" det qnt @det #1->2 
 "<адам>"
-	"адам" n nom @subj #2->6
+	"адам" n nom @subj #2->15 
 "<осы>"
-	"осы" det dem @det #3->4
+	"осы" det dem @det #3->4 
 "<Декларацияның>"
-	"декларация" n gen @nmod #4->5
+	"декларация" n gen @nmod #4->5 
 "<ережелерін>"
-	"ереже" n pl px3sp acc @obj #5->6
+	"ереже" n pl px3sp acc @obj #5->6 
 "<бұзатын>"
-	"бұз" v tv gpr_impf @acl #6->7
+	"бұз" v tv gpr_impf @acl #6->7 
 "<кемсітуден>"
-	"кемсіту" n abl @remnant #7->12
+	"кемсіту" n abl @conj #7->12 
 "<және>"
-	"және" cnjcoo @cc #8->12
+	"және" cnjcoo @cc #8->12 
 "<кемсітуге>"
-	"кемсіту" n dat @x #9->10
+	"кемсіту" n dat @nmod #9->10 
 "<арандатушылықтың>"
-	"арандатушылық" n gen @x #10->12
+	"арандатушылық" n gen @nmod #10->12 
 "<барлық>"
-	"барлық" det qnt @det #11->12
+	"барлық" det qnt @det #11->12 
 "<түрінен>"
-	"түр" n px3sp abl @x #12->13
+	"түр" n px3sp abl @nmod #12->14 
 "<тең>"
-	"тең" adj advl @x #13->14
+	"тең" adj advl @advmod #13->14 
 "<қорғалуға>"
-	"қорға" v tv pass ger dat @advcl #14->15
+	"қорға" v tv pass ger dat @advcl #14->15 
 "<құқылы>"
-	"құқылы" adj @main #15->0
+	"құқылы" adj @main #15->0 
 		"е" cop aor p3 sg @cop #16->15
 "<.>"
 	"." sent @punct #17->15
@@ -517,13 +517,13 @@
 "<,>"
 	"," cm @punct #6->11
 "<қамауда>"
-	"қама" v tv ger loc @x #7->8
+	"қама" n loc @nmod #7->8
 "<ұсталуға>"
 	"ұста" v tv pass ger dat @conj #8->11
 "<немесе>"
 	"немесе" cnjcoo @cc #9->11
 "<қуғынға>"
-	"қуғын" n dat @x #10->11
+	"қуғын" n dat @nmod #10->11
 "<ұшыратылуға>"
 	"ұшыратыл" v iv ger dat @advcl #11->12
 "<тиіс>"
@@ -687,23 +687,23 @@
 	"ешкім" prn neg nom @subj #1->23
 		"да" postadv @advmod #2->1
 "<жасаған>"
-	"жаса" v tv ger_past nom @x #3->4
+	"жаса" v tv gpr_past @acl #3->6
 "<әрекеті>"
 	"әрекет" n px3sp nom @conj #4->6
 "<немесе>"
 	"немесе" cnjcoo @cc #5->6
 "<әрекетсіздігі>"
-	"әрекетсіздік" n px3sp nom @x #6->23
+	"әрекетсіздік" n px3sp nom @nmod #6->7
 "<негізінде>"
-	"негіз" n px3sp loc @x #7->23
+	"негіз" n px3sp loc @nmod #7->23
 "<,>"
 	"," cm @punct #8->20
 "<егер>"
-	"егер" cnjsub @x #9->20
+	"егер" cnjsub @mark #9->20
 "<ол>"
 	"ол" det dem @det #10->11
 "<әрекеті>"
-	"әрекет" n px3sp nom @x #11->19
+	"әрекет" n px3sp nom @subj #11->20
 "<ұлттық>"
 	"ұлттық" adj @amod #12->13
 "<заңдар>"
@@ -713,11 +713,11 @@
 "<халықаралық>"
 	"халықаралық" adj @amod #15->16
 "<құқық>"
-	"құқық" n nom @x #16->19
+	"құқық" n nom @nmod #16->18
 "<бойынша>"
 	"бойынша" post @case #17->16
 "<қылмыс>"
-	"қылмыс" n nom @x #18->20
+	"қылмыс" n nom @ccomp #18->20
 "<болып>"
 	"бол" v iv gna_perf @cop #19->18
 "<саналмаса>"
@@ -725,7 +725,7 @@
 "<,>"
 	"," cm @punct #21->23
 "<жауапқа>"
-	"жауап" n dat @x #22->23
+	"жауап" n dat @obj #22->23
 "<тартылмайды>"
 	"тарт" v tv pass neg aor p3 sg @main #23->0
 "<.>"
@@ -1036,11 +1036,11 @@
 "<Әр>"
 	"әр" det qnt @det #1->2
 "<адамның>"
-	"адам" n gen @x #2->5
+	"адам" n gen @nmod #2->4
 "<азаматтыққа>"
 	"азаматтық" n dat @nmod #3->4
 "<құқығы>"
-	"құқық" n px3sp nom @x #4->5
+	"құқық" n px3sp nom @subj #4->5
 "<бар>"
 	"бар" adj @main #5->0
 		"е" cop aor p3 sg @cop #6->5
@@ -1048,7 +1048,7 @@
 	"." sent @punct #7->5
 
 "<Ешкімді де>"
-	"ешкім" prn neg acc @x #1->10
+	"ешкім" prn neg acc @obj #1->9
 		"да" postadv @advmod #2->1
 "<азаматтығынан>"
 	"азаматтық" n px3sp abl @conj #3->7
@@ -1057,7 +1057,7 @@
 "<азаматтығын>"
 	"азаматтық" n px3sp acc @obj #5->6
 "<өзгерту>"
-	"өзгерт" v tv ger nom @nmod #6->7
+	"өзгерт" v tv ger nom @acl #6->7
 "<құқығынан>"
 	"құқық" n px3sp abl @nmod #7->9
 "<еріксіз>"
@@ -1156,9 +1156,9 @@
 "<екі>"
 	"екі" num @nummod #4->5
 "<жақтың>"
-	"жақ" n gen @x #5->10
+	"жақ" n gen @nmod #5->10
 "<өзара>"
-	"өзара" adj @conj #6->9
+	"өзара" adj @amod #6->10
 "<еркін>"
 	"еркін" adj @conj #7->9
 "<және>"
@@ -1176,7 +1176,7 @@
 	"." sent @punct #14->13
 
 "<Отбасы>"
-	"отбасы" n nom @subj #1->15
+	"отбасы" n nom @subj #1->16
 "<қоғамның>"
 	"қоғам" n gen @nmod #2->6
 "<табиғи>"
@@ -1186,11 +1186,11 @@
 "<негізгі>"
 	"негізгі" adj @amod #5->6
 "<ұясы>"
-	"ұя" n px3sp nom @x #6->7
+	"ұя" n px3sp nom @advcl #6->8
 "<болып>"
-	"бол" v iv gna_perf @advcl #7->8
+	"бол" v iv gna_perf @cop #7->6
 "<табылады>"
-	"тап" v tv pass aor p3 sg @x #8->16
+	"тап" v tv pass aor p3 sg @conj #8->16
 "<,>"
 	"," cm @punct #9->16
 "<және>"
@@ -1242,12 +1242,12 @@
 	"." sent @punct #15->13
 
 "<Ешкім де>"
-	"ешкім" prn neg nom @x #1->6
+	"ешкім" prn neg nom @subj #1->7
 		"да" postadv @advmod #2->1
 "<өз>"
 	"өз" det ref @det #3->4
 "<мүлкінен>"
-	"мүлік" n px3sp abl @x #4->6
+	"мүлік" n px3sp abl @nmod #4->6
 "<еріксіз>"
 	"еріксіз" adj advl @advmod #5->6
 "<айрылмауға>"
@@ -1506,11 +1506,11 @@
 "<ассоциацияларды>"
 	"ассоциация" n pl acc @obj #6->7
 "<құру>"
-	"құр" v tv ger nom @x #7->8
+	"құр" v tv ger nom @acl #7->8
 "<бостандығына>"
-	"бостандық" n px3sp dat @x #8->9
+	"бостандық" n px3sp dat @nmod #8->9
 "<құқығы>"
-	"құқық" n px3sp nom @x #9->10
+	"құқық" n px3sp nom @subj #9->10
 "<бар>"
 	"бар" adj @main #10->0
 		"е" cop aor p3 sg @cop #11->10
@@ -1518,7 +1518,7 @@
 	"." sent @punct #12->10
 
 "<Ешкімді де>"
-	"ешкім" prn neg acc @x #1->8
+	"ешкім" prn neg acc @obj #1->7
 		"да" postadv @advmod #2->1
 "<белгілі>"
 	"белгілі" adj @amod #3->5
@@ -2358,11 +2358,11 @@
 "<және>"
 	"және" cnjcoo @cc #2->3
 "<нәресте>"
-	"нәресте" n nom @subj #3->12
+	"нәресте" n nom @acl #3->5
 "<болу>"
-	"бол" v iv ger nom @x #4->5
+	"бол" v iv ger nom @cop #4->3
 "<жағдайы>"
-	"жағдай" n px3sp nom @x #5->9
+	"жағдай" n px3sp nom @subj #5->12
 "<айрықша>"
 	"айрықша" adj @amod #6->7
 "<қамқорлық>"
@@ -2376,7 +2376,7 @@
 "<құқық>"
 	"құқық" n nom @obj #11->12
 "<береді>"
-	"бер" v tv aor p3 pl @main #12->0
+	"бер" v tv aor p3 sg @main #12->0
 "<.>"
 	"." sent @punct #13->12
 
@@ -2391,17 +2391,17 @@
 "<немесе>"
 	"немесе" cnjcoo @cc #5->6
 "<некесіз>"
-	"некесіз" adj advl @x #6->7
+	"некесіз" adj advl @advmod #6->7
 "<туған>"
 	"ту" v iv gpr_past @acl #7->2
 "<,>"
 	"," cm @punct #8->7
 "<бірдей>"
-	"бір" num subst sim @x #9->12
+	"бірдей" adj @amod #9->11
 "<әлеуметтік>"
-	"әлеуметтік" adj @x #10->11
+	"әлеуметтік" adj @amod #10->11
 "<қорғауды>"
-	"қорға" v tv ger acc @obj #11->12
+	"қорғау" n acc @obj #11->12
 "<пайдаланады>"
 	"пайдалан" v tv aor p3 sg @main #12->0
 "<.>"
@@ -2458,7 +2458,7 @@
 "<білім>"
 	"білім" n nom @subj #2->4
 "<баршаға>"
-	"барша" adj subst dat @x #3->4
+	"барша" prn def dat @nmod #3->4
 "<міндетті>"
 	"міндетті" adj @subj #4->6
 "<болуы>"
@@ -2655,23 +2655,23 @@
 	"." sent @punct
 
 "<Ата-аналардың>"
-	"ата-ана" n pl gen @subj #1->8
+	"ата-ана" n pl gen @nmod #1->9
 "<өздерінің>"
-	"өз" prn ref px3pl gen @x #2->4
+	"өз" prn ref px3pl gen @nmod #2->4
 "<жас>"
 	"жас" adj @amod #3->4
 "<балаларына>"
-	"бала" n pl px3sp dat @nmod #4->8
+	"бала" n pl px3sp dat @nmod #4->6
 "<білім>"
-	"білім" n nom @x #5->6
+	"білім" n nom @obj #5->6
 "<беру>"
-	"бер" v tv ger nom @x #6->7
+	"бер" v tv ger nom @acl #6->7
 "<түрін>"
 	"түр" n px3sp acc @obj #7->8
 "<таңдауда>"
-	"таңда" v tv ger loc @x #8->9
+	"таңда" v tv ger loc @advcl #8->9
 "<құқығы>"
-	"құқық" n px3sp nom @x #9->10
+	"құқық" n px3sp nom @subj #9->10
 "<басымды>"
 	"басымды" adj @main #10->0
 		"е" cop aor p3 sg @cop #11->10
@@ -3045,7 +3045,7 @@
 "<қағидаларына>"
 	"қағида" n pl px3sp dat @nmod #9->11
 "<қайшы келмеуі>"
-	"қайшы кел" v iv neg ger px3sp nom @x #10->11
+	"қайшы кел" v iv neg ger px3sp nom @subj #10->11
 "<тиіс>"
 	"тиіс" adj @main #11->0
 		"е" cop aor p3 sg @cop #12->11

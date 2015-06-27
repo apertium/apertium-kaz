@@ -29,7 +29,7 @@
 "<Сізбен>"
 	"сіз" prn pers p2 sg frm ins @nmod #1->2
 "<танысқаныма>"
-	"таны" v tv coop ger_past px1sg dat @x #2->3
+	"таны" v tv coop ger_past px1sg dat @advcl #2->3
 "<қуаныштымын>"
 	"қуанышты" adj @main #3->0
 		"е" cop aor p1 sg @cop #4->3
@@ -169,7 +169,7 @@
 	"." sent @punct #4->2
 
 "<Маған>"
-	"мен" prn pers p1 sg dat @x #1->3
+	"мен" prn pers p1 sg dat @nmod #1->3
 "<дәрігер>"
 	"дәрігер" n nom @subj #2->3
 "<керек>"
@@ -331,7 +331,7 @@
 "<бөлмені>"
 	"бөлме" n acc @obj #3->4
 "<қарап>"
-	"қара" v tv prc_perf @x #4->6
+	"қара" v tv prc_perf @subj #4->6
 "<шығуға>"
 	"шық" vaux ger dat @aux #5->4
 "<бола ма>"
@@ -345,7 +345,7 @@
 "<бірдеме>"
 	"бірдеме" prn ind nom @subj #2->4
 "<тазалау>"
-	"таза" adj comp @x #3->2
+	"таза" adj comp @amod #3->2
 "<бар ма>"
 	"бар" adj @main #4->0
 		"е" cop aor p3 sg @cop #5->4

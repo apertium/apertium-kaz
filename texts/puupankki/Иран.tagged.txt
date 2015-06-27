@@ -2989,13 +2989,13 @@
 "<көмегімен>"
 	"көмек" n px3sp ins @nmod #6->12
 "<АҚШ>"
-	"АҚШ" np top nom @x #7->12
+	"АҚШ" np top nom @subj #7->12
 "<елдің>"
 	"ел" n gen @nmod #8->9
 "<ішкі>"
 	"ішкі" adj @amod #9->10
 "<өміріне>"
-	"өмір" n px3sp dat @x #10->12
+	"өмір" n px3sp dat @nmod #10->12
 "<белсене>"
 	"белсене" adv @advmod #11->12
 "<араласа>"
@@ -3039,7 +3039,7 @@
 	"." sent @punct #16->14
 
 "<Елде>"
-	"ел" n loc @nmod #1->6
+	"ел" n loc @nmod #1->22
 "<шет>"
 	"шет" n attr @cmpnd #2->3
 "<ел>"
@@ -3049,9 +3049,9 @@
 "<үстемдік>"
 	"үстемдік" n nom @obj #5->6
 "<алуы>"
-	"ал" v tv ger px3sp nom @x #6->23
+	"ал" v tv ger px3sp nom @conj #6->11
 "<,>"
-	"," cm @punct #7->6
+	"," cm @punct #7->11
 "<ұлттық>"
 	"ұлттық" adj @amod #8->9
 "<құндылықтардың>"
@@ -3059,7 +3059,7 @@
 "<аяққа>"
 	"аяқ" n dat @nmod #10->11
 "<басылуы>"
-	"бас" v tv pass ger px3sp nom @x #11->23
+	"бас" v tv pass ger px3sp nom @subj #11->22
 "<1978>"
 	"1978" num @cmpnd #12->14
 "<—>"
@@ -3069,23 +3069,21 @@
 "<ж.>"
 	"ж." abbr @nmod #15->22
 "<халықтың>"
-	"халық" n gen @nmod #16->18
+	"халық" n gen @subj #16->21
 "<шаһ>"
 	"шаһ" n nom @nmod #17->18
 "<үкіметіне>"
-	"үкімет" n px3sp dat @nmod #18->23
+	"үкімет" n px3sp dat @nmod #18->22
 "<қарсы>"
 	"қарсы" post @case #19->18
 "<жаппай>"
-	"жаппай" adj @amod #20->21
-"<бас>"
-	"бас" n nom @obj #21->22
-"<көтеруіне>"
-	"көтер" v tv ger px3sp dat @advcl #22->23
+	"жаппай" adj advl @advmod #20->21
+"<бас көтеруіне>"
+	"бас көтер" v tv ger px3sp dat @ccomp #21->22
 "<алып келді>"
-	"алып кел" v tv ifi p3 sg @main #23->0
+	"алып кел" v tv ifi p3 pl @main #22->0
 "<.>"
-	"." sent @punct #24->23
+	"." sent @punct #23->22
 
 "<Оны>"
 	"ол" prn pers p3 sg acc @obj #1->5
@@ -3317,35 +3315,33 @@
 "<Ел>"
 	"ел" n nom @nmod #1->2
 "<экономикасының>"
-	"экономика" n px3sp gen @x #2->3
+	"экономика" n px3sp gen @nmod #2->3
 "<негізі>"
-	"негіз" n px3sp nom @x #3->
+	"негіз" n px3sp nom @subj #3->10
 "<мұнай>"
-	"мұнай" n nom
+	"мұнай" n nom @conj #4->9
 "<және>"
-	"және" cnjcoo @cc #5->
+	"және" cnjcoo @cc #5->9
 "<мұнай>"
-	"мұнай" n nom @x
+	"мұнай" n nom @conj #6->8
 "<мен>"
-	"мен" cnjcoo @cc #7->
-"<газ>"
-	"газ" n nom
+	"мен" cnjcoo @cc #7->8
+"<газ>" 
+	"газ" n nom @obj #8->9
 "<өңдеу>"
-	"өңдеу" n attr 
-;	"өңде" v tv ger nom 
-;	"өңдеу" n nom 
+	"өңде" v tv ger nom @acl #9->10
 "<өнеркәсіптері>"
-	"өнеркәсіп" n pl px3sp nom
-		"е" cop aor p3 pl 
+	"өнеркәсіп" n pl px3sp nom @main #10->0
+		"е" cop aor p3 sg @cop #11->10
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->10
 
-"<Мемл.>"
-	"мемл." abbr @amod #1->2
+"<Мемлекеттік>"
+	"мемлекеттік" adj @amod #1->2
 "<кірістің>"
-	"кіріс" n gen @conj #2->7
+	"кіріс" n gen @remnant #2->7
 "<1>"
-	"1" num @nmod #3->2
+	"1" num @remnant #3->8
 "</>"
 	"/" sym @punct #4->3
 "<3>"
@@ -3355,9 +3351,9 @@
 "<экспорттың>"
 	"экспорт" n gen @nmod #7->8
 "<90%-ына>"
-	"90" num percent px3sp dat @x #8->9
+	"90" num percent px3sp dat @nmod #8->9
 "<жуығы>"
-	"жуық" adj subst px3sp nom @x #9->12
+	"жуық" adj subst px3sp nom @subj #9->12
 "<осы>"
 	"осы" det dem @det #10->11
 "<салалардан>"
@@ -3599,7 +3595,7 @@
 "<Ұлттық>"
 	"ұлттық" adj @amod #1->2
 "<табыс>"
-	"табыс" n nom @x #2->
+	"табыс" n nom @subj #2->14
 "<75>"
 	"75" num @cmpnd #3->4
 "<млрд.>"
@@ -3607,59 +3603,52 @@
 "<АҚШ>"
 	"АҚШ" np top attr @cmpnd #5->6
 "<доллар>"
-	"доллар" n nom @x #6->7
+	"доллар" n nom @nmod #6->7
 "<көлемінде>"
-	"көлем" n px3sp loc
+	"көлем" n px3sp loc @conj #7->14
 "<,>"
-	"," cm @punct
+	"," cm @punct #8->14
 "<жан басына>"
-;	"жан бас" n dat
-	"жан бас" n px3sp dat
+	"жан басы" n dat @nmod #9->10
 "<шаққанда>"
-	"шақ" v tv ger_past loc
+	"шақ" v tv ger_past loc @advcl #10->14
 "<—>"
-	"—" guio
+	"—" guio @punct #11->10
 "<1250>"
-	"1250" num @cmpnd
+	"1250" num @nummod #12->13
 "<долл.>"
-	"долл." abbr
+	"долл." abbr @nmod #13->14
 "<шамасында>"
-	"шама" n px3sp loc
-;	"шама" n px3sp loc
-;		"е" cop aor p3 pl 
-;	"шама" n px3sp loc
-;		"е" cop aor p3 sg 
+	"шама" n px3sp loc @main #14->0
+		"е" cop aor p3 pl @cop #15->14
 "<.>"
-	"." sent @punct 
+	"." sent @punct #16->14
 
 "<Елдегі>"
 	"ел" n loc attr @amod #1->3
 "<басты>"
-	"басты" adj @x #2->3
+	"басты" adj @amod #2->3
 "<проблеманың>"
-	"проблема" n gen @x #3->4
+	"проблема" n gen @nmod #3->4
 "<бірі>"
-	"бір" num subst px3sp nom @x #4->
+	"бір" num subst px3sp nom @subj #4->6
 "<—>"
-	"—" guio @x #5->
+	"—" guio @punct #5->6
 "<жұмыссыздық>"
-;	"жұмыссыздық" n nom
-	"жұмыссыздық" n nom
-		"е" cop aor p3 sg
-"<(>"
-	"(" lpar @punct #7->10
+	"жұмыссыздық" n nom @main #6->0
+		"е" cop aor p3 sg @cop #7->6
+"<(>" 
+	"(" lpar @punct #8->10
 "<3,5>"
-	"3,5" num @cmpnd #8->9
+	"3,5" num @cmpnd #9->9
 "<млн.>"
-	"млн." abbr @nummod #9->10
+	"млн." abbr @nummod #10->10
 "<адам>"
-	"адам" n nom
-;	"адам" n nom
-;		"е" cop aor p3 sg 
+	"адам" n nom @parataxis #11->6
 "<)>"
-	")" rpar @punct #11->10
+	")" rpar @punct #12->11
 "<.>"
-	"." sent @punct #12->
+	"." sent @punct #13->6
 
 "<Мұнайдан>"
 	"мұнай" n abl @nmod #1->16
@@ -3676,9 +3665,9 @@
 "<,>"
 	"," cm @punct #7->6
 "<ауыл шаруашылығы>"
-	"ауыл шаруашылық" n px3sp nom @x #8->9
+	"ауыл шаруашылық" n px3sp nom @nmod #8->9
 "<өнімдері>"
-	"өнім" n pl px3sp nom @x #9->14
+	"өнім" n pl px3sp nom @conj #9->14
 "<,>"
 	"," cm @punct #10->14
 "<кілем>"
@@ -3690,42 +3679,42 @@
 "<тұтыну>"
 	"тұтыну" n nom @nmod #14->15
 "<тауарлары>"
-	"тауар" n pl px3sp nom @x #15->16
+	"тауар" n pl px3sp nom @obj #15->16
 "<шығарылады>"
 	"шығар" v tv pass aor p3 sg @main #16->0
 "<.>"
 	"." sent @punct #17->16
 
 "<Шеттен>"
-	"шет" n abl @nmod #1->
+	"шет" n abl @nmod #1->16
 "<—>"
 	"—" guio @punct #2->1
 "<азық-түлік>"
-	"азық-түлік" n nom @x #3->4
+	"азық-түлік" n nom @nmod #3->4
 "<өнімдері>"
-	"өнім" n pl px3sp nom @x #4->
+	"өнім" n pl px3sp nom @conj #4->15
 "<(>"
 	"(" lpar @punct #5->6
 "<30%>"
-	"30" num percent nom @appos #6->3
+	"30" num percent nom @appos #6->4
 "<)>"
 	")" rpar @punct #7->6
 "<,>"
-	"," cm @punct #8->6
+	"," cm @punct #8->15
 "<машина>"
-	"машина" n nom @x #9->
+	"машина" n nom @conj #9->15
 "<,>"
-	"," cm @punct #10->
+	"," cm @punct #10->15
 "<құрал-жабдықтар>"
-	"құрал-жабдықтар" n pl nom @x #11->
+	"құрал-жабдықтар" n pl nom @conj #11->15
 "<,>"
-	"," cm @punct #12->
+	"," cm @punct #12->15
 "<кейбір>"
 	"кейбір" det ind @det #13->14
 "<өнеркәсіп>"
 	"өнеркәсіп" n nom @nmod #14->15
 "<шикізаттары>"
-	"шикізат" n pl px3sp nom @x #15->16
+	"шикізат" n pl px3sp nom @obj #15->16
 "<әкелінеді>"
 	"алып кел" v tv pass aor p3 pl @main #16->0
 "<.>"
@@ -4125,7 +4114,7 @@
 "<тәжік>"
 	"тәжік" n nom @nmod #15->16
 "<әдебиеті>"
-	"әдебиет" n px3sp nom @x #16->17
+	"әдебиет" n px3sp nom @obj #16->17
 "<деп>"
 	"де" v tv gna_perf @advcl #17->18
 "<атанды>"
@@ -4579,7 +4568,7 @@
 "<азаматтық>"
 	"азаматтық" adj @amod #9->10
 "<қозғалыс>"
-	"қозғалыс" n nom @x #10->16
+	"қозғалыс" n nom @nmod #10->16
 "<(>"
 	"(" lpar @punct #11->14
 "<1918>"
@@ -4591,35 +4580,35 @@
 "<)>"
 	")" rpar @punct #15->14
 "<кезінде>"
-	"кез" n px3sp loc @x #16->29
+	"кез" n px3sp loc @nmod #16->29
 "<А.>"
 	"А." abbr @name #17->18
 "<Фарахани>"
-	"Фарахани" np cog mf nom @conj #18->25
+	"Фарахани" np cog mf nom @conj #18->27
 "<,>"
-	"," cm @punct #19->25
+	"," cm @punct #19->27
 "<М.>"
 	"М." abbr @name #20->21
 "<Кермани>"
-	"Кермани" np cog mf nom @conj #21->25
+	"Кермани" np cog mf nom @conj #21->27
 "<,>"
-	"," cm @punct #22->25
+	"," cm @punct #22->27
 "<М.>"
 	"М." abbr @name #23->25
 "<Т.>"
 	"Т." abbr @name #24->25
 "<Бехар>"
-	"Бехар" np cog mf nom @x #25->29
+	"Бехар" np cog mf nom @subj #25->27
 "<,>"
-	"," cm @punct #26->25
+	"," cm @punct #26->27
 "<т.б.>"
-	"т.б." abbr @x #27->25
+	"т.б." abbr @appos #27->28
 "<ақындар>"
 	"ақын" n pl nom @subj #28->31
-"<демокр.>"
-	"демокр." abbr @x #29->30
+"<демократиялық>"
+	"демократиялық" adj @amod #29->30
 "<идеяның>"
-	"идея" n gen @x #30->31
+	"идея" n gen @nmod #30->31
 "<жыршысы>"
 	"жыршы" n px3sp nom @main #31->0
 "<болды>"
@@ -5103,52 +5092,52 @@
 "<жартастарындағы>"
 	"жартас" n pl px3sp loc attr @amod #4->5
 "<рельефтер>"
-	"рельеф" n pl nom @x #5->8
+	"рельеф" n pl nom @conj #5->14
 "<,>"
-	"," cm @punct #6->5
+	"," cm @punct #6->14
 "<Сұзыдан>"
-	"*Сұзыдан" unk @x #7->8
+	"Сұзы" np top abl @nmod #7->8
 "<табылған>"
-	"тап" v tv pass past p3 sg @conj #8->22
+	"тап" v tv pass gpr_past @conj #8->12
 "<,>"
-	"," cm @punct #9->22
+	"," cm @punct #9->12
 "<асыл>"
 	"асыл" adj @amod #10->11
 "<металдан>"
-	"метал" n abl @x #11->12
+	"метал" n abl @nmod #11->12
 "<жасалған>"
 	"жаса" v tv pass gpr_past @acl #12->14
 "<көркем>"
 	"көркем" adj @amod #13->14
 "<заттар>"
-	"зат" n pl nom @x #14->21
+	"зат" n pl nom @subj #14->22
 "<Иран>"
 	"Иран" np top nom @nmod #15->16
 "<өнерінің>"
-	"өнер" n px3sp gen @nmod #16->18
+	"өнер" n px3sp gen @subj #16->20
 "<өз>"
 	"өз" det ref @det #17->18
 "<заманында>"
-	"заман" n px3sp loc @x #18->21
+	"заман" n px3sp loc @nmod #18->20
 "<жоғары>"
 	"жоғары" adj @amod #19->20
 "<дәрежеде>"
-	"дәреже" n loc @x #20->21
+	"дәреже" n loc @ccomp #20->22
 "<болғанын>"
-	"бол" v iv ger_past px3sp acc @x #21->22
+	"бол" v iv ger_past px3sp acc @cop #21->20
 "<дәлелдейді>"
-	"дәлелде" v tv aor p3 sg @main #22->0
+	"дәлелде" v tv aor p3 pl @main #22->0
 "<.>"
 	"." sent @punct #23->22
 
 "<Иран>"
 	"Иран" np top nom @nmod #1->2
 "<жерінде>"
-	"жер" n px3sp loc @x #2->3
+	"жер" n px3sp loc @nmod #2->3
 "<сақтар>"
-	"сақта" v tv gpr_fut @x #3->4
+	"сақ" n pl nom @nmod #3->4
 "<тарихына>"
-	"тарих" n px3sp dat @x #4->10
+	"тарих" n px3sp dat @nmod #4->7
 "<қатысты>"
 	"қатысты" post @case #5->4
 "<мәдени>"
@@ -5157,7 +5146,7 @@
 	"ескерткіш" n pl nom @subj #7->10
 		"да" postadv @advmod #8->7
 "<мол>"
-	"мол" adj @x #9->10
+	"мол" adj advl @advmod #9->10
 "<сақталған>"
 	"сақта" v tv pass past p3 pl @main #10->0
 "<.>"
@@ -5168,7 +5157,7 @@
 "<әулеті>"
 	"әулет" n px3sp nom @nmod #2->3
 "<дәуірінде>"
-	"дәуір" n px3sp loc @nmod #3->11
+	"дәуір" n px3sp loc @nmod #3->18
 "<(>"
 	"(" lpar @punct #4->8
 "<3>"
@@ -5182,27 +5171,27 @@
 "<)>"
 	")" rpar @punct #9->8
 "<қалаларды>"
-	"қала" n pl acc @obj #10->11
+	"қала" n pl acc @obj #10->16
 "<қорған>"
-	"қор" v tv gpr_past @acl #11->12
+	"қорған" n nom @nmod #11->12
 "<ішіне>"
-	"іш" n px3sp dat @x #12->14
+	"іш" n px3sp dat @nmod #12->16
 "<жүйелі>"
 	"жүйелі" adj @amod #13->14
 "<жоба>"
-	"жоба" n nom @x #14->16
+	"жоба" n nom @nmod #14->16
 "<бойынша>"
 	"бойынша" post @case #15->14
 "<салу>"
-	"сал" v tv ger nom @x #16->18
+	"сал" v tv ger nom @subj #16->18
 "<қанат>"
-	"қанат" n nom @subj #17->15
+	"қанат" n nom @obj #17->18
 "<жайды>"
 	"жай" v tv ifi p3 sg @main #18->0
 "<(>"
 	"(" lpar @punct #19->16
 "<мыс.>"
-	"мыс." abbr @x #20->26
+	"мыс." abbr @advmod #20->26
 "<,>"
 	"," cm @punct #21->20
 "<Нишапур>"
@@ -5223,7 +5212,7 @@
 "<Мүсін>"
 	"мүсін" n nom @obj #1->2
 "<жасау>"
-	"жаса" v tv ger nom @x #2->9
+	"жаса" v tv ger nom @conj #2->6
 "<,>"
 	"," cm @punct #3->2
 "<жартастарға>"
@@ -5231,15 +5220,13 @@
 "<рельеф>"
 	"рельеф" n nom @obj #5->6
 "<қашау>"
-	"қаша" v tv ger nom @x #6->9
+	"қаша" v tv ger nom @subj #6->8
 "<елеулі>"
-	"елеулі" adj @amod #7->8
-"<орын>"
-	"орын" n nom @obj #8->9
-"<алды>"
-	"ал" v tv ifi p3 sg @main #9->0
+	"елеулі" adj advl @advmod #7->8
+"<орын алды>"
+	"орын ал" v tv ifi p3 sg @main #8->0
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #10->8
 
 "<Алтын>"
 	"алтын" adj @conj #1->7
@@ -5250,19 +5237,19 @@
 "<,>"
 	"," cm @punct #4->7
 "<қола>"
-	"қола" n attr @conj #5->7
+	"қола" n nom @conj #5->7
 "<және>"
 	"және" cnjcoo @cc #6->7
 "<әйнектен>"
-	"*әйнектен" @x #7->9
+	"әйнек" n abl @nmod #7->10
 "<әр түрлі>"
 	"әр түрлі" det ind @det #8->9
 "<бұйымдар>"
-	"бұйым" n pl nom @x #9->10
+	"бұйым" n pl nom @obj #9->10
 "<жасау>"
-	"жаса" v tv ger nom @x #10->18
+	"жаса" v tv ger nom @conj #10->16
 "<,>"
-	"," cm @punct #11->10
+	"," cm @punct #11->16
 "<жүн>"
 	"жүн" n attr @conj #12->13
 "<және>"
@@ -5270,15 +5257,13 @@
 "<жібек>"
 	"жібек" n attr @cmpnd #14->15
 "<мата>"
-	"мата" n nom @x #15->16
+	"мата" n nom @obj #15->16
 "<тоқу>"
-	"*тоқу" v TD @x #16->18
-"<өркен>"
-	"өркен" n nom @subj #17->18
-"<жайды>"
-	"жай" v tv ifi p3 sg @main #18->0
+	"тоқ" v tv ger nom @subj #16->17
+"<өркен жайды>"
+	"өркен жай" v iv ifi p3 sg @main #17->0
 "<.>"
-	"." sent @punct #19->18
+	"." sent @punct #18->17
 
 "<7>"
 	"7" num @amod #1->2
@@ -5386,7 +5371,7 @@
 ;	"Әли" np ant m nom
 ;		"е" cop aor p3 sg 
 "<шаһ>"
-	"шаһ"
+	"шаһ" n nom
 "<)>"
 	")" rpar @punct
 "<тұрғызылды>"
@@ -5402,17 +5387,17 @@
 "<кейін>"
 	"кейін" post @case #3->2
 "<қолжазба>"
-	"қолжазба" n nom @x #4->5
+	"қолжазба" n nom @obj #4->5
 "<көркемдеу>"
-	"*көркемдеу" v TD @x #5->10
+	"көркемдеу" v tv ger nom @conj #5->9
 "<,>"
-	"," cm @punct #6->5
+	"," cm @punct #6->9
 "<қабырғаға>"
-	"қабырға" n dat @x #7->9
+	"қабырға" n dat @nmod #7->9
 "<сурет>"
-	"сурет" n nom @subj #8->9
+	"сурет" n nom @obj #8->9
 "<салу>"
-	"сал" v tv ger nom @x #9->10
+	"сал" v tv ger nom @subj #9->10
 "<дамыды>"
 	"дамы" v iv ifi p3 sg @main #10->0
 "<.>"
@@ -5425,75 +5410,68 @@
 "<Иран>"
 	"Иран" np top nom @nmod #3->4
 "<миниатюрасының>"
-	"миниатюра" n px3sp gen @x #4->5
+	"миниатюра" n px3sp gen @subj #4->5
 "<өркендеуіне>"
-	"өркенде" v iv ger px3sp dat @x #5->9
+	"өркенде" v iv ger px3sp dat @ccomp #5->10
 "<Герат>"
 	"Герат" np top nom @nmod #6->7
 "<мектебі>"
-	"мектеп" n px3sp nom @subj #7->9
+	"мектеп" n px3sp nom @subj #7->10
 "<үлкен>"
-	"үлкен" adj advl @advmod #8->9
-"<әсер етті>"
-	"әсер ет" v tv ifi p3 sg @main #9->0
+	"үлкен" adj @amod #8->9
+"<әсер>"
+	"әсер" n nom @obj #9->10
+"<етті>"
+	"ет" v tv ifi p3 sg @main #10->0
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #11->10
 
 "<16>"
-	"16" num
+	"16" num @conj #1->3
 "<—>"
-	"—" guio
+	"—" guio @punct #2->3
 "<17>"
-	"17" num
+	"17" num @amod #3->4
 "<ғасырларда>"
-	"ғасыр" n pl loc
+	"ғасыр" n pl loc @nmod #4->5
 "<пайда болған>"
-	"пайда бол" v iv gpr_past
-;	"пайда бол" v iv ger_past nom
-;	"пайда бол" v iv gpr_past subst nom
+	"пайда бол" v iv gpr_past @acl #5->6
 "<Тебриз>"
-	"Тебриз" np top nom
+	"Тебриз" np top nom @conj #6->10
 "<,>"
-	"," cm @punct
+	"," cm @punct #7->10
 "<Шираз>"
-	"Шираз" np top nom
+	"Шираз" np top nom @conj #8->10
 "<,>"
-	"," cm @punct
+	"," cm @punct #9->10
 "<Исфаһан>"
-	"Исфаһан" np top nom
+	"Исфаһан" np top nom @nmod #10->17
 "<(>"
-	"(" lpar @punct
+	"(" lpar @punct #11->15
 "<Риза>"
-	"Риза" np ant m attr @name
+	"Риза" np ant m attr @name #12->13
 "<Аббаси>"
-	"Аббаси" np cog mf nom
+	"Аббаси" np cog mf nom @conj #13->15
 "<,>"
-	"," cm @punct
+	"," cm @punct #14->15
 "<т.б.>"
-	"т.б." abbr
+	"т.б." abbr @advmod #15->10
 "<)>"
-	")" rpar @punct
+	")" rpar @punct #16->15
 "<мектептері>"
-	"мектеп" n pl px3sp nom
+	"мектеп" n pl px3sp nom @subj #17->22
 "<миниатюра>"
-	"миниатюра" n attr 
-;	"миниатюра" n nom 
+	"миниатюра" n nom @nmod #18->19
 "<өнерін>"
-;	"өн" v iv ger_fut px3sp acc
-	"өнер" n px3sp acc
-;	"өн" v iv gpr_fut subst px3sp acc
+	"өнер" n px3sp acc @obj #19->22
 "<жоғары>"
-	"жоғары" adj
-;	"жоғары" adv
-;	"жоғары" adj advl
-;	"жоғары" adj subst nom
+	"жоғары" adj @amod #20->21
 "<дәрежеге>"
-	"дәреже" n dat
+	"дәреже" n dat @nmod #21->22
 "<көтерді>"
-	"көтер" v tv ifi p3 sg
-;	"көтер" v tv ifi p3 pl 
+	"көтер" v tv ifi p3 pl @main #22->0 
 "<.>"
-	"." sent @punct
+	"." sent @punct #23->22
 
 "<18>"
 	"18" num
@@ -5653,17 +5631,17 @@
 	"." sent @punct #8->7
 
 "<Кәсіби>"
-	"кәсіби" adj @x #1->3
+	"кәсіби" adj @conj #1->3
 "<және>"
 	"және" cnjcoo @cc #2->3
 "<халық>"
 	"халық" n attr @cmpnd #3->4
 "<музыкасының>"
-	"музыка" n px3sp gen @x #4->6
+	"музыка" n px3sp gen @nmod #4->6
 "<ғасырлық>"
 	"ғасырлық" adj @amod #5->6
 "<дәстүрі>"
-	"дәстүр" n px3sp nom @x #6->7
+	"дәстүр" n px3sp nom @subj #6->7
 "<бар>"
 	"бар" adj @main #7->0
 		"е" cop aor p3 sg @cop #8->7
@@ -5937,7 +5915,7 @@
 "<сарай>"
 	"сарай" n nom @nmod #4->5
 "<өнері>"
-	"өнер" n px3sp nom @x #5->6
+	"өнер" n px3sp nom @subj #5->6
 "<дамып>"
 	"дамы" v iv gna_perf @advcl #6->15
 "<,>"
@@ -5945,7 +5923,7 @@
 "<халық>"
 	"халық" n nom @nmod #8->9
 "<арасында>"
-	"ара" n px3sp loc @x #9->15
+	"ара" n px3sp loc @nmod #9->15
 "<мутребтердің>"
 	"мутреб" n pl gen @nmod #10->14
 "<(>"
@@ -5974,17 +5952,19 @@
 "<Иран>"
 	"Иран" np top nom @nmod #6->7
 "<музыкасына>"
-	"музыка" n px3sp dat @x #7->11
+	"музыка" n px3sp dat @arg #7->11
 "<еуропалық>"
-	"еуропалық" adj @amod #8->9
+	"еуропалық" adj @amod #8->10
 "<музыка>"
 	"музыка" n nom @nmod #9->10
 "<мәдениеті>"
-	"мәдениет" n px3sp nom @x #10->11
-"<әсер етті>"
-	"әсер ет" v tv ifi p3 sg @main #11->0
+	"мәдениет" n px3sp nom @subj #10->11
+"<әсер>"
+	"әсер" n nom @obj #11->12
+"<етті>"
+	"ет" v tv ifi p3 sg @main #12->0
 "<.>"
-	"." sent @punct #12->11
+	"." sent @punct #13->12
 
 "<20>"
 	"20" num @amod #1->2
@@ -6194,7 +6174,7 @@
 "<Ежелгі>"
 	"ежелгі" adj @amod #1->3
 "<базигер>"
-	"*базигер" @x #2->3
+	"базигер" n nom @nmod #2->3
 "<театры>"
 	"театр" n px3sp nom @nmod #3->6
 "<жайлы>"
@@ -6299,13 +6279,13 @@
 "<кезбе>"
 	"кезбе" n attr @cmpnd #7->8
 "<актерлер>"
-	"актер" n pl nom @x #8->
+	"актер" n pl nom @subj #8->12
 "<—>"
-	"—" guio @punct #9->
+	"—" guio @punct #9->8
 "<масқарапаздар>"
-	"масқарапаз" n pl nom @x #10->
+	"масқарапаз" n pl nom @appos #10->8
 "<өнер>"
-	"өнер" n nom @x #11->12
+	"өнер" n nom @obj #11->12
 "<көрсетіп>"
 	"көрсет" v tv prc_perf @main #12->0
 "<келді>"
@@ -6326,7 +6306,7 @@
 "<театрлар>"
 	"театр" n pl nom @x #6->7
 "<тәжірибелерін>"
-	"тәжірибе" n pl px3sp acc @x #7->8
+	"тәжірибе" n pl px3sp acc @obj #7->8
 "<пайдалана>"
 	"пайдалан" v tv prc_impf @x #8->
 "<отырып>"
@@ -6334,27 +6314,23 @@
 "<Ұлттық>"
 	"ұлттық" adj @amod #10->11
 "<театр>"
-	"театр" n nom
-;	"театр" n nom
-;		"е" cop aor p3 sg
-;	"театр" n nom
-;		"е" cop aor p3 pl 
+	"театр" n nom @x #11->
 "<,>"
-	"," cm @punct
+	"," cm @punct #12->
 "<1917>"
-	"1917" num @amod
+	"1917" num @amod #13->
 "<ж.>"
-	"ж." abbr @nmod
+	"ж." abbr @nmod #14->
 "<Иранның>"
-	"Иран" np top gen @nmod
+	"Иран" np top gen @nmod #15->
 "<комедия>"
-	"комедия" n nom @nmod
+	"комедия" n nom @nmod #16->
 "<театры>"
-	"театр" n px3sp nom @subj
+	"театр" n px3sp nom @subj #17->
 "<ашылды>"
-	"аш" v tv pass ifi p3 sg @main
+	"аш" v tv pass ifi p3 sg @main #18->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #19->18
 
 "<Бұл>"
 	"бұл" det dem @det #1->2
@@ -6363,7 +6339,7 @@
 "<құруда>"
 	"құр" v tv ger loc @advcl #3->9
 "<актер>"
-	"актер" n attr @x #4->5
+	"актер" n nom @appos #4->7
 "<Сейед>"
 	"Сейед" np ant m attr @name #5->6
 "<Әли>"
@@ -6371,7 +6347,7 @@
 "<Нәсірдің>"
 	"Нәсір" np cog mf gen @nmod #7->8
 "<еңбегі>"
-	"еңбек" n px3sp nom @x #8->9
+	"еңбек" n px3sp nom @subj #8->9
 "<зор>"
 	"зор" adj @main #9->0
 		"е" cop aor p3 sg @cop #10->9
@@ -6418,11 +6394,11 @@
 "<мен>"
 	"мен" cnjcoo @cc #11->12
 "<мелодрамалар>"
-	"мелодрама" n pl nom @x #12->14
+	"мелодрама" n pl nom @subj #12->14
 "<орын>"
-	"орын" n nom @x #13->14
+	"орын" n nom @obj #13->14
 "<алды>"
-	"ал" v tv ifi p3 sg @main #14->0
+	"ал" v tv ifi p3 pl @main #14->0
 "<.>"
 	"." sent @punct #15->14
 
@@ -6433,7 +6409,7 @@
 "<Иран>"
 	"Иран" np top nom @nmod #3->4
 "<театры>"
-	"театр" n px3sp nom @subj #4->6
+	"театр" n px3sp nom @subj #4->14
 "<дағдарысқа>"
 	"дағдарыс" n dat @nmod #5->6
 "<ұшырады>"
@@ -6449,7 +6425,7 @@
 "<қайта>"
 	"қайта" adv @advmod #11->12
 "<өрлеу>"
-	"өрле" v iv ger nom @x #12->13
+	"өрле" v iv ger nom @acl #12->13
 "<жолына>"
 	"жол" n px3sp dat @nmod #13->14
 "<түсті>"
