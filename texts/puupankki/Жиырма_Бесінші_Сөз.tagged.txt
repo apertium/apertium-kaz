@@ -154,7 +154,7 @@
 	"нәрсе" n nom @root #26->0
 		"е" cop aor p3 sg @cop #27->26
 "<.>"
-	"." sent @punct #28->26
+	"." sent @punct #28->
 
 "<Мал>"
 	"мал" n nom @obj #1->2
@@ -559,7 +559,7 @@
 "<деп>"
 	"де" v tv gna_perf @conj #4->20
 "<,>"
-	"," cm @punct #5->4
+	"," cm @punct #5->20
 "<біз де>"
 	"біз" prn pers p1 pl nom @subj #6->19
 		"да" postadv @advmod #7->6
@@ -821,10 +821,10 @@
 "<қойсын>"
 	"қой" vaux opt p3 sg @aux #16->15
 "<?>"
-	"?" sent @punct #17->16
+	"?" sent @punct #17->15
 
 "<Сонда да>"
-	"сонда да" cnjadv @cc #1->11
+	"сонда да" cnjadv @cc #1->12
 "<өзге>"
 	"өзге" adj @amod #2->4
 "<қазақ>"
@@ -836,7 +836,7 @@
 "<үйренгені>"
 	"үйрен" v tv ger_past px3sp nom @subj #6->7
 "<немене>"
-	"немене" prn itg nom @conj #7->11
+	"немене" prn itg nom @conj #7->12
 		"е" cop aor p3 sg @cop #8->7
 "<,>"
 	"," cm @punct #9->12
