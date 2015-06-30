@@ -187,6 +187,7 @@ SET V-NotGerund = V - Gerund ;
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
 LIST Prc-vol = prc_vol ;
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
+LIST VerbalAdjective = gpr_past gpr_fut gpr_pot ;
 LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
 LIST V-IV = (v iv) ;
 LIST V-TV = (v tv) ;
@@ -439,11 +440,21 @@ SELECT Num IF
 
 # Select attributive reading of the first noun of the II izafet construct
 # (as Tatar grammars call it)
- SELECT Attr IF
+# SELECT Attr IF
+#        (0C N OR Prop)
+#        (1 N OR Prop OR Subst)
+#        (1 (px3sp))
+#;
+
+# Select attributive reading of the first noun of the II izafet construct
+# (as Tatar grammars call it)
+ SELECT Nom IF
         (0C N OR Prop)
         (1 N OR Prop OR Subst)
         (1 (px3sp))
 ;
+
+
 ## 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
 
 
@@ -520,6 +531,9 @@ REMOVE SUB:1 P3 IF
 ## 148 . Ол АҚШ үкіметін WikiLeaks сайтын қудалауын тоқтатуға шақырып,
 ## өзін ресейлік Pussy Riot панк тобымен және New York Times басылымымен [0]қатар қойды.
 
+"<қатар>" SELECT Post IF
+                 (-1C N + Ins)
+;
 
 #
  "<қарай>" SELECT Post IF
@@ -1153,4 +1167,7 @@ SELECT (np top attr) IF (1 ("тауы")) ;
         
 ;
 
+#"Орыс мәдениетінің қалыптасу ерекшеліктері негізінен төмендегі факторларға тығыз байланысты болды."
+REMOVE Acc IF (1C V-IV) ;
 
+REMOVE VerbalAdjective IF (1 Cm) ;

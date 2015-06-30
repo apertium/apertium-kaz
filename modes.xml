@@ -41,8 +41,20 @@
       <program name="lt-proc -w">
         <file name="kaz.automorf.bin"/>
       </program>
-      <program name="cg-proc -w -n -1">
+      <program name="cg-proc -1">
         <file name="kaz.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz-debug">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="kaz.automorf.bin"/>
+      </program>
+      <program name="cg-conv -a -l" />
+      <program name="vislcg3 --trace -g">
+        <file name="apertium-kaz.kaz.rlx"/>
       </program>
     </pipeline>
   </mode>
@@ -53,7 +65,7 @@
         <file name="kaz.automorf.bin"/>
       </program>
       <program name="cg-conv -a -l" />
-      <program name="vislcg3 --trace -g">
+      <program name="vislcg3 -g">
         <file name="apertium-kaz.kaz.rlx"/>
       </program>
     </pipeline>

@@ -2,8 +2,10 @@
 <tagger name="catalan">
 <tagset>
   <def-label name="NOM">
+    <tags-item tags="n"/>
     <tags-item tags="n.*"/>
     <tags-item tags="adj.subst.*"/>
+    <tags-item tags="adj.comp.subst.*"/>
   </def-label> 
   <def-label name="LQUOT">
     <tags-item tags="lquot"/>
@@ -285,6 +287,13 @@
       <label-item label="QST"/>
     </sequence>
 </def-mult>
+<def-mult name="NOMPOST">  
+    <sequence>
+      <label-item label="NOM"/>
+      <label-item label="POST"/>
+    </sequence>
+</def-mult>
+
 </def-mult>
 </tagset>
 <forbid>
