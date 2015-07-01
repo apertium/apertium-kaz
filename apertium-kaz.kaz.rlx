@@ -170,6 +170,16 @@ LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
+# Specific lexemes 
+# ==========================
+
+LIST Year = "жылғы" "жыл" ; 
+
+# Noun sets 
+# ==============
+
+SET NGDAALI = Nom | Dat | Dat | Acc | Abl | Loc | Ins ;
+
 # Adjective sets
 # ==============
 
@@ -187,7 +197,7 @@ SET V-NotGerund = V - Gerund ;
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
 LIST Prc-vol = prc_vol ;
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-LIST VerbalAdjective = gpr_past gpr_fut gpr_pot ;
+LIST VerbalAdjective = gpr_past gpr_fut gpr_pot gpr_impf ;
 LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
 LIST V-IV = (v iv) ;
 LIST V-TV = (v tv) ;
@@ -453,6 +463,7 @@ SELECT Num IF
         (1 N OR Prop OR Subst)
         (1 (px3sp))
 ;
+# Was: SELECT 'Attr'
 
 
 ## 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
@@ -530,10 +541,6 @@ REMOVE SUB:1 P3 IF
 ## 174 . Орталық сонымен [0]қатар оқушыларға тәрбие беруде де маңызды рөл атқарады.
 ## 148 . Ол АҚШ үкіметін WikiLeaks сайтын қудалауын тоқтатуға шақырып,
 ## өзін ресейлік Pussy Riot панк тобымен және New York Times басылымымен [0]қатар қойды.
-
-"<қатар>" SELECT Post IF
-                 (-1C N + Ins)
-;
 
 #
  "<қарай>" SELECT Post IF
@@ -1078,7 +1085,6 @@ SELECT SUB:1 Sg IF
         (0/1 P3)
 ;
 
-
 #kaz-eng
 # FIXME doesn't work yet
 
@@ -1102,7 +1108,7 @@ SELECT SUB:1 Pl IF
 ;
 
 
- SELECT  Cop IF
+SELECT  Cop IF
         (-1 ("<керек>"i))
         (0 Cop)
        
@@ -1112,18 +1118,18 @@ REMOVE Adv IF
 ;
        
 
-"<мен>" SELECT Post IF
- 	(-1 NOMINAL)
-	(1 NOMINAL)
-;
+#"<мен>" SELECT Post IF
+# 	(-1 NOMINAL)
+#	(1 NOMINAL)
+#;
 
 #for choosing "астында" as n.px3sp.loc
 
-SELECT  N IF
-        (-1 N)
-        (0 (n.*.loc) OR Adv)
-       
-;
+#SELECT  N IF
+#        (-1 N)
+#        (0 (n.*.loc) OR Adv)
+#       
+#;
 
 
 ## two verbs қай
@@ -1167,7 +1173,48 @@ SELECT (np top attr) IF (1 ("тауы")) ;
         
 ;
 
-#"Орыс мәдениетінің қалыптасу ерекшеліктері негізінен төмендегі факторларға тығыз байланысты болды."
-REMOVE Acc IF (1C V-IV) ;
+###############################################################################
+# FMT:
 
-REMOVE VerbalAdjective IF (1 Cm) ;
+#Орыс мәдениетінің қалыптасу ерекшеліктері негізінен төмендегі факторларға тығыз байланысты болды.
+
+REMOVE Acc IF 
+      (1C V-IV) ;
+
+REMOVE VerbalAdjective IF 
+       (1 Cm) ;
+
+"<қатар>" SELECT Post IF
+                 (-1C N + Ins)
+;
+
+REMOVE Num + Subst IF 
+      (0C Num) 
+      (1C Num LINK 1 N) ;
+
+REMOVE N + Attr IF 
+      (1 PersonalPossessives) 
+      (NOT -1* Gen OR Nom BARRIER (*) - N) ;
+
+REMOVE A + Subst + $$NGDAALI IF 
+      (0 N + $$NGDAALI) ;
+
+REMOVE Num + Subst IF 
+      (-1C Num) 
+      (1C N) ;
+
+REMOVE VerbalAdjective + Subst IF
+       (-1C Gen)
+       (1C N) ;
+
+REMOVE A + Subst IF 
+      (0C A - Subst OR A + Subst) ;
+
+REMOVE Num + Subst IF 
+      (0C Num - Subst OR Num + Subst) ;
+
+REMOVE Num + Subst IF 
+       (1C Year) ;
+
+REMOVE Participle IF
+      (NOT 1* Vaux) ;

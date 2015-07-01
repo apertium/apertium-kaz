@@ -371,13 +371,12 @@ LEXICON NUM-DIGIT
 %<num%>%<coll%>%<subst%>%<nom%>:%-%{A%}у # ;
 %<num%>%<coll%>%<subst%>:%-%{A%}у SUBST-NONOM ;
 
-%<num%>%<percent%>:%% # ;
-%<num%>%<percent%>%<subst%>%<nom%>:%% # ;
+%<num%>%<percent%>%<nom%>:%% # ;
 
-%<num%>%<percent%>%<subst%>:%%%{а%}%{з%}%- SUBST-NONOM ;
-%<num%>%<percent%>%<subst%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
-%<num%>%<percent%>%<subst%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-%<num%>%<percent%>%<subst%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>:%%%{а%}%{з%}%- SUBST-NONOM ;
+%<num%>%<percent%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+%<num%>%<percent%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
 
 °С%<num%>:°С # ;
 °С%<num%>%<subst%>%<nom%>:°С # ;
@@ -7533,7 +7532,7 @@ Ethernet:Ethernet N1 ; !"Use/MT"
 әзілкеш:әзілкеш N1 ; !"Use/MT"
 жонглер:жонглер N1 ; !"Use/MT"
 құмыра:құмыра N1 ; !"Use/MT"
-үлкен:үлкен N1 ; !"Use/MT"
+!үлкен:үлкен N1 ; !"Use/MT"
 секіргіш:секіргіш N1 ; !"Use/MT"
 адалдау:адалдау N1 ; !"Use/MT"
 әділқазылар:әділқазылар N1 ; !"Use/MT"

@@ -25,10 +25,10 @@
 	"тұрғын" n px3sp nom @subj #1->4
 "<шамамен>"
 	"шама" n ins @nmod #2->4
-"<683 273>"
-	"683 273" num @nummod #3->4
+"<683,273>"
+	"683,273" num @nummod #3->4
 "<адам>"
-	"адам" n nom @ROOT #4->0
+	"адам" n nom @root #4->0
 		"е" cop aor p3 sg @cop #5->4
 "<(>"
 	"(" lpar @punct #6->8
