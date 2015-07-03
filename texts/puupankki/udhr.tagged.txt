@@ -307,7 +307,7 @@
 "<құл>"
 	"құл" n nom @nmod #3->4
 "<саудасына>"
-	"сауда" n px3sp dat @nmod #4->11
+	"сауда" n px3sp dat @obj #4->12
 "<,>"
 	"," cm @punct #5->4
 "<қандай>"
@@ -319,10 +319,12 @@
 		"да" postadv @advmod #9->8
 "<,>"
 	"," cm @punct #10->8
-"<тыйым салынады>"
-	"тыйым сал" v tv pass aor p3 sg @root #11->0
+"<тыйым>"
+	"тыйым" n nom @obj #11->12
+"<салынады>"
+	"сал" v tv pass aor p3 sg @root #12->0
 "<.>"
-	"." sent @punct #12->11
+	"." sent @punct #13->12
 
 "<Ешкім де>"
 	"ешкім" prn neg nom @subj #1->15

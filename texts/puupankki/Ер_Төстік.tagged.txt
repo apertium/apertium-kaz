@@ -584,27 +584,19 @@
 	"." sent @punct
 
 "<Төстік>"
-	"Төстік" np ant m nom
+	"Төстік" np ant m nom @subj #1->6
 "<бұрын>"
-	"бұрын" adv
-;	"бұрын" post
+	"бұрын" adv @advmod #2->6
 "<ағалары>"
-	"аға" n pl px3sp nom
+	"аға" n pl px3sp nom @subj #3->4
 "<бар>"
-	"бар" adj
-	"бар" adj subst nom
-;	"бар" n nom
-;	"бар" det qnt
+	"бар" adj @ccomp #4->6
 "<екенін>"
-	"е" cop ger_past px3sp acc
-"<естіген жоқ>"
-	"есті" v tv neg ifi p3 sg
-;	"есті" v tv neg ifi p3 pl
-"<екен>"
-	"е" cop aor evid p3 sg
-;	"е" cop aor evid p3 pl
+	"е" cop ger_past px3sp acc @cop #5->4
+"<естіген жоқ екен>"
+	"есті" v tv neg past evid p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 "<Әке>"
 	"әке" n nom
