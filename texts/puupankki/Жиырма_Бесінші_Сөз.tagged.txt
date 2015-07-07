@@ -32,7 +32,7 @@
 	"." sent @punct #18->16
 
 "<Аның>"
-	"ол" prn pers p3 sg gen @nmod #1->5
+	"ол" prn pers p3 sg gen @nmod:poss #1->5
 "<үшін>"
 	"үшін" post @case #2->1
 "<бұл>"
@@ -77,7 +77,7 @@
 "<аш>"
 	"аш" adj @acl #2->3
 "<кісінің>" 
-	"кісі" n gen @nmod #3->4
+	"кісі" n gen @nmod:poss #3->4
 "<көңіліне>"
 	"көңіл" n px3sp dat @remnant #4->10
 "<ақыл>"
@@ -108,14 +108,14 @@
 "<ішуге>"
 	"іш" v tv ger dat @acl #3->5
 "<малдың>"
-	"мал" n gen @nmod #4->5
+	"мал" n gen @nmod:poss #4->5
 "<тапшылығы да>"
 	"тапшылық" n px3sp nom @subj #5->26
 		"да" postadv @advmod #6->5
 "<,>"
 	"," cm @punct #7->23
 "<ағайынның>"
-	"ағайын" n gen @nmod #8->9
+	"ағайын" n gen @nmod:poss #8->9
 "<араздығына>"
 	"араздық" n px3sp dat @conj #9->23
 "<уа>"
@@ -280,13 +280,13 @@
 	"." sent @punct #16->14
 
 "<Аның>"
-	"ол" prn pers p3 sg gen @nmod #1->6
+	"ол" prn pers p3 sg gen @nmod:poss #1->6
 "<үшін>"
 	"үшін" post @case #2->1
 "<олар>"
 	"олар" prn pers p3 pl nom @subj #3->6
 "<дүниенің>"
-	"дүние" n gen @nmod #4->5
+	"дүние" n gen @nmod:poss #4->5
 "<тілін>"
 	"тіл" n px3sp acc @obj #5->6
 "<білді>"
@@ -303,7 +303,7 @@
 "<Сен>"
 	"сен" prn pers p2 sg nom @subj #1->4
 "<оның>"
-	"ол" prn pers p3 sg gen @nmod #2->3
+	"ол" prn pers p3 sg gen @nmod:poss #2->3
 "<тілін>"
 	"тіл" n px3sp acc @obj #3->4
 "<білсең>"
@@ -322,7 +322,7 @@
 	"." sent @punct #10->9
 
 "<Әрбіреудің>"
-	"әрбіреу" prn ind gen @nmod #1->2
+	"әрбіреу" prn ind gen @nmod:poss #1->2
 "<тілін>"
 	"тіл" n px3sp acc @conj #2->4
 "<өнерін>"
@@ -399,7 +399,7 @@
 "<Тек>"
 	"тек" adv @advmod #1->4
 "<майырдың>"
-	"майыр" n gen @nmod #2->3
+	"майыр" n gen @nmod:poss #2->3
 "<күлгені>"
 	"күл" v iv ger_past px3sp nom @csubj #3->4
 "<керек>"
@@ -420,7 +420,7 @@
 	"." sent @punct #12->11
 
 "<Орыстың>"
-	"орыс" n gen @nmod #1->4
+	"орыс" n gen @nmod:poss #1->4
 "<ғылымы>"
 	"ғылым" n px3sp nom @conj #2->4
 "<,>"
@@ -430,7 +430,7 @@
 "<—>"
 	"—" guio @punct #5->7
 "<дүниенің>"
-	"дүние" n gen @nmod #6->7
+	"дүние" n gen @nmod:poss #6->7
 "<кілті>"
 	"кілт" n px3sp nom @parataxis #7->14
 		"е" cop aor p3 sg @cop #8->7
@@ -530,7 +530,7 @@
 "<ұлықсыған>"
 	"ұлықсы" v iv gpr_past @acl #17->18
 "<орыстардың>"
-	"орыс" n pl gen @nmod #18->21
+	"орыс" n pl gen @nmod:poss #18->21
 "<жұртқа>"
 	"жұрт" n dat @x #19->22
 "<бірдей>"
@@ -691,7 +691,7 @@
 "<Жақсы>"
 	"жақсы" adj @amod #1->2
 "<атаның>"
-	"ата" n gen @nmod #2->3
+	"ата" n gen @nmod:poss #2->3
 "<балалары да>"
 	"бала" n pl px3sp nom @subj #3->6
 		"да" postadv @advmod #4->3
@@ -704,7 +704,7 @@
 "<қайта>"
 	"қайта" adv @advmod #8->12
 "<кедейдің>"
-	"кедей" n gen @nmod #9->10
+	"кедей" n gen @nmod:poss #9->10
 "<баласын>"
 	"бала" n px3sp acc @obj #10->12
 "<орысқа>"
@@ -745,7 +745,7 @@
 "<“>"
 	"“" lquot @punct #8->23
 "<Сенің>"
-	"сен" prn pers p2 sg gen @nmod #9->11
+	"сен" prn pers p2 sg gen @nmod:poss #9->11
 "<осы>"
 	"осы" det dem @det #10->11
 "<зорлығыңа>"
@@ -809,7 +809,7 @@
 "<айтқан>"
 	"айт" v tv gpr_past @acl #10->11
 "<қазақтардың>"
-	"қазақ" n pl gen @nmod #11->12
+	"қазақ" n pl gen @nmod:poss #11->12
 "<баласы>"
 	"бала" n px3sp nom @subj #12->14
 "<оқығанменен>"
@@ -933,7 +933,7 @@
 "<,>"
 	"," cm @punct #14->12
 "<орыстың>"
-	"орыс" n gen @nmod #15->16
+	"орыс" n gen @nmod:poss #15->16
 "<ғылымын>"
 	"ғылым" n px3sp acc @obj #16->17
 "<үйрет>"

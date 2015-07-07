@@ -79,7 +79,7 @@
 "<үлкен>"
 	"үлкен" adj @amod #9->10
 "<үйдің>"
-	"үй" n gen @nmod #10->11
+	"үй" n gen @nmod:poss #10->11
 "<алдындағы>"
 	"алд" n px3sp loc attr @amod #11->12
 "<бақшада>"
@@ -108,7 +108,7 @@
 "<Қыз>"
 	"қыз" n nom @subj #1->3
 "<оның>"
-	"ол" prn pers p3 sg gen @nmod #2->3
+	"ол" prn pers p3 sg gen @nmod:poss #2->3
 "<қарындасы>"
 	"қарындас" n px3sp nom @parataxis #3->8
 		"е" cop aor p3 sg @cop #4->3
@@ -125,7 +125,7 @@
 	"." sent @punct #10->8
 
 "<Азаматтың>"
-	"Азамат" np ant m gen @nmod #1->4
+	"Азамат" np ant m gen @nmod:poss #1->4
 "<кішкентай>"
 	"кішкентай" adj @amod #2->4
 "<бір>"
@@ -174,7 +174,7 @@
 "<Ал>"
 	"ал" cnjcoo @cc #1->4
 "<Айгүлдің>"
-	"Айгүл" np ant f gen @nmod #2->3
+	"Айгүл" np ant f gen @nmod:poss #2->3
 "<күшігі>"
 	"күшік" n px3sp nom @subj #3->4
 "<бар ма>"
@@ -189,7 +189,7 @@
 "<,>"
 	"," cm @punct #2->1
 "<Айгүлдің>"
-	"Айгүл" np ant f gen @nmod #3->4
+	"Айгүл" np ant f gen @nmod:poss #3->4
 "<күшігі>"
 	"күшік" n px3sp nom @subj #4->5
 "<жоқ>"
@@ -198,7 +198,7 @@
 "<,>"
 	"," cm @punct #7->10
 "<оның>"
-	"ол" prn pers p3 sg gen @nmod #8->9
+	"ол" prn pers p3 sg gen @nmod:poss #8->9
 "<мысығы>"
 	"мысық" n px3sp nom @subj #9->10
 "<бар>"
@@ -223,7 +223,7 @@
 	"." sent @punct #7->5
 
 "<Олардың>"
-	"олар" prn pers p3 pl gen @nmod #1->2
+	"олар" prn pers p3 pl gen @nmod:poss #1->2
 "<анасы>"
 	"ана" n px3sp nom @remnant #2->7
 "<мысығымен>"
@@ -280,7 +280,7 @@
 "<сол>"
 	"сол" det dem @det #13->14
 "<ағаштың>"
-	"ағаш" n gen @nmod #14->15
+	"ағаш" n gen @nmod:poss #14->15
 "<артына>"
 	"арт" n px3sp dat @nmod #15->17
 "<Айгүлден>"
@@ -354,7 +354,7 @@
 "<Азамат>"
 	"Азамат" np ant m nom @subj #2->6
 "<ағаштың>"
-	"ағаш" n gen @nmod #3->4
+	"ағаш" n gen @nmod:poss #3->4
 "<жанында>"
 	"жан" n px3sp loc @nmod #4->6
 "<не>"
@@ -614,7 +614,7 @@
 "<Айгүл>"
 	"Айгүл" np ant f nom @subj #1->5
 "<бақшаның>"
-	"бақша" n gen @nmod #2->3
+	"бақша" n gen @nmod:poss #2->3
 "<ішінде>"
 	"іш" n px3sp loc @nmod #3->5
 "<ақырын>"
@@ -644,7 +644,7 @@
 "<және>"
 	"және" cnjcoo @cc #2->3
 "<орындықтардың>"
-	"орындық" n pl gen @nmod #3->4
+	"орындық" n pl gen @nmod:poss #3->4
 "<астына>"
 	"аст" n px3sp dat @obj #4->5
 "<қарап>"
@@ -713,7 +713,7 @@
 "<үлкен>" 
 	"үлкен" adj @amod #11->12
 "<ағаштың>"
-	"ағаш" n gen @nmod #12->13
+	"ағаш" n gen @nmod:poss #12->13
 "<артынан>"
 	"арт" n px3sp abl @nmod #13->14
 "<шығып>"
@@ -824,7 +824,7 @@
 "<ол>"
 	"ол" prn pers p3 sg nom @subj #3->7
 "<оның>" 
-	"ол" prn pers p3 sg gen @nmod #4->5
+	"ол" prn pers p3 sg gen @nmod:poss #4->5
 "<басын да>"
 	"бас" n px3sp acc @obj #5->7
 		"да" postadv @advmod #6->5

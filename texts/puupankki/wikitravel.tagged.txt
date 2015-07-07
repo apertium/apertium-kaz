@@ -17,7 +17,7 @@
 	"." sent @punct #5->3
 
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen @nmod #1->2
+	"сіз" prn pers p2 sg frm gen @nmod:poss #1->2
 "<атыңыз>"
 	"ат" n px2sg frm nom @subj #2->3
 "<кім>"
@@ -391,7 +391,7 @@
 "<,>"
 	"," cm @punct #2->1
 "<менің>"
-	"мен" prn pers p1 sg gen @nmod #3->4
+	"мен" prn pers p1 sg gen @nmod:poss #3->4
 "<бөлмемді>"
 	"бөлме" n px1sg acc @obj #4->5
 "<жинаңыз>"
