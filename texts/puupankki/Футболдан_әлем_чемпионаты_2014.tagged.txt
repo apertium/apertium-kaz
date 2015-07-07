@@ -98,7 +98,7 @@
 "<Оңтүстік Америкада>"
 	"Оңтүстік Америка" np top loc @nmod #12->13
 "<өту>"
-	"өт" v iv ger nom @subj #13->14
+	"өт" v iv ger nom @csubj #13->14
 "<керек>"
 	"керек" adj @conj #14->25
 "<болды>"
@@ -186,7 +186,7 @@
 "<чемпионатын>"
 	"чемпионат" n px3sp acc @obj #20->21
 "<өткізу>"
-	"өткіз" v tv ger nom @subj #21->12
+	"өткіз" v tv ger nom @csubj #21->12
 "<керек>"
 	"керек" adj @conj #22->35
 "<еді>"
@@ -398,7 +398,7 @@
 "<жарысқа>"
 	"жарыс" n dat @nmod #2->3
 "<шығатындар>"
-	"шық" v iv gpr_impf subst pl nom @subj #3->30
+	"шық" v iv gpr_impf subst pl nom @csubj #3->30
 "<:>"
 	":" sent @punct #4->3
 "<Еуропа>"
