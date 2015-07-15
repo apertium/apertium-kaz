@@ -304,12 +304,17 @@ SELECT N IF
 SELECT Num IF
 	((0 Num) OR (-1 ))
 	(1 N)
-
-
+;
+# INPUT:  "Біздің жегіміз келеді" must be translated as "We want to eat". The system transalted as "Our want to eat".The translation of pronoun must be personal pronoun  
+SELECT Pron-Pers IF
+	(1 V)
+	((0 Pron-Pers + Gen))
+	(NOT (-1 Pron-Pers) OR (NOT (1 N)) )
+;
 
  SELECT FiniteVerb IF
-        (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
-        (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
+      (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
+       (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
 ;
 ## (!) 40 . Мүмкін бұл Азамат [0]шығар?
 ##  (!) 13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
