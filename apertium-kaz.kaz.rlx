@@ -1218,3 +1218,14 @@ REMOVE Num + Subst IF
 
 REMOVE Participle IF
       (NOT 1* Vaux) ;
+
+
+
+
+#morph disambiquashion example кеңсе-(1-adj, 2-noun)
+SELECT A IF  
+       (1 N);
+
+SELECT Adv IF (1 V);
+
+
