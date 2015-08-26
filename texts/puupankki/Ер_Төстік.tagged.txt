@@ -27,7 +27,7 @@
 "<Төрт>"
 	"төрт" num @nummod #1->2
 "<түлік>"
-	"түлік" n nom @nmod #2->3
+	"түлік" n nom @nmod:poss #2->3
 "<малы>"
 	"мал" n px3sp nom @subj #3->4
 "<сай болыпты>"
@@ -195,7 +195,7 @@
 	"." sent @punct #10->9
 
 "<Кемпірі>"
-	"кемпір" n px3sp nom @nmod #1->2
+	"кемпір" n px3sp nom @nmod:poss #1->2
 "<екеуінің>"
 	"екеу" num coll subst px3sp gen @nmod:poss #2->4
 "<тұруға>"
