@@ -1113,7 +1113,8 @@
 "<,>"
 	"," cm
 "<оқудан>"
-	"оқы" v iv ger abl
+	"оқу" n abl
+;	"оқы" v iv ger abl
 ;	"оқы" v tv ger abl
 "<шығарып>"
 	"шығар" v tv gna_perf
@@ -4011,7 +4012,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"бала" n attr REMOVE:397
 "<оқуға>"
-	"оқы" v iv ger dat
+	"оқу" n dat
+;	"оқы" v iv ger dat
 ;	"оқы" v tv ger dat
 "<бар>"
 	"бар" adj
@@ -4090,7 +4092,9 @@
 "<оқуын ғана>"
 ;	"оқы" v iv ger px3sp acc
 ;		"ғана" postadv
-	"оқы" v tv ger px3sp acc
+;	"оқы" v tv ger px3sp acc
+;		"ғана" postadv
+	"оқы" n px3sp acc
 		"ғана" postadv
 "<місе>"
 	"*місе"
@@ -4107,8 +4111,8 @@
 "<бетінше>"
 	"*бетінше"
 "<жетілдіруге>"
-	"жетілдіру" n dat SELECT:417
-;	"жетілдір" v tv ger dat SELECT:417
+;	"жетілдіру" n dat SELECT:417
+	"жетілдір" v tv ger dat SELECT:417
 "<ұмтылады>"
 	"ұмтыл" v iv aor p3 sg
 ;	"ұмтыл" v iv aor p3 pl REMOVE:642
@@ -4440,7 +4444,8 @@
 ;	"бұл" prn dem nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<оқуын>"
-	"оқы" v iv ger px3sp acc
+	"оқу" n px3sp acc
+;	"оқы" v iv ger px3sp acc
 ;	"оқы" v tv ger px3sp acc
 "<әрі>"
 ;	"әрі" cnjcoo
@@ -4526,7 +4531,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;			"да" postadv
 "<оқуы>"
-	"оқы" v iv ger px3sp nom
+    "оқу" n px3sp nom
+;	"оқы" v iv ger px3sp nom
 ;	"оқы" v tv ger px3sp nom
 "<аяқталады>"
 	"аяқта" v tv pass aor p3 sg
@@ -5046,8 +5052,8 @@
 ;	"сол" v iv gpr_fut subst dat
 "<қарсы>"
 ;	"қарсы" post
-;	"қарсы" adj
-	"қарсы" adv
+	"қарсы" adj
+;	"қарсы" adv
 ;	"қарсы" adj advl
 ;	"қарсы" adj subst nom
 ;	"қарсы" adj
@@ -5059,8 +5065,8 @@
 ;	"қарсы" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<күресуге>"
-;	"күресу" n dat SELECT:417
-	"күрес" v iv ger dat 
+	"күресу" n dat SELECT:417
+;	"күрес" v iv ger dat 
 "<бел>"
 	"бел" n nom
 ;	"бел" n attr
@@ -5368,8 +5374,8 @@
 ;	"тең" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ұстауға>"
-	"ұстау" n dat SELECT:417
-;	"ұста" v tv ger dat SELECT:417
+;	"ұстау" n dat SELECT:417
+	"ұста" v tv ger dat SELECT:417
 "<күш салды>"
 	"күш сал" v iv ifi p3 sg
 ;	"күш сал" v iv ifi p3 pl REMOVE:642
@@ -5453,13 +5459,13 @@
 ;	"ел" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<басқарудағы>"
-	"басқару" n loc attr SELECT:417
+;	"басқару" n loc attr SELECT:417
 ;	"басқару" n loc subst nom SELECT:417
 ;	"басқару" n loc subst nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"басқару" n loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"басқар" v tv ger loc attr SELECT:417
+	"басқар" v tv ger loc attr SELECT:417
 "<бұл>"
 	"бұл" det dem
 ;	"бұл" prn dem nom
@@ -9216,8 +9222,8 @@
 ;	"өлең" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жазуды>"
-	"жазу" n acc SELECT:417
-;	"жаз" v tv ger acc SELECT:417
+;	"жазу" n acc SELECT:417
+	"жаз" v tv ger acc SELECT:417
 "<10>"
 	"10" num
 ;	"10" num subst nom
@@ -9297,8 +9303,8 @@
 "<өлеңдеріне>"
 	"өлең" n pl px3sp dat
 "<шығаруды>"
-	"шығару" n acc SELECT:417
-;	"шығар" v tv ger acc SELECT:417
+;	"шығару" n acc SELECT:417
+	"шығар" v tv ger acc SELECT:417
 "<шамамен>"
 	"шама" n ins SELECT:1072
 ;	"шамамен" adv SELECT:1072
@@ -9756,8 +9762,8 @@
 ;	"өлең" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жазуды>"
-	"жазу" n acc SELECT:417
-;	"жаз" v tv ger acc SELECT:417
+;	"жазу" n acc SELECT:417
+	"жаз" v tv ger acc SELECT:417
 "<10>"
 	"10" num
 ;	"10" num subst nom
@@ -10537,8 +10543,8 @@
 "<портретін>"
 	"портрет" n px3sp acc
 "<жасауға>"
-	"жасау" n dat SELECT:417
-;	"жаса" v tv ger dat SELECT:417
+;	"жасау" n dat SELECT:417
+	"жаса" v tv ger dat SELECT:417
 "<,>"
 	"," cm
 "<ішкі>"
@@ -11144,8 +11150,8 @@
 "<мәселелерді>"
 	"мәселе" n pl acc
 "<түсіндіруге>"
-	"түсіндіру" n dat SELECT:417
-;	"түсіндір" v tv ger dat SELECT:417
+;	"түсіндіру" n dat SELECT:417
+	"түсіндір" v tv ger dat SELECT:417
 "<қолданады>"
 	"қолдан" v tv aor p3 sg
 ;	"қолдан" v tv aor p3 pl REMOVE:642
@@ -12277,12 +12283,8 @@
 	"дін" n dat
 "<,>"
 	"," cm
-"<оқу>"
-	"оқы" v iv ger nom
-"<->"
-	"-" guio
-"<ағартуға>"
-	"ағарту" n dat
+"<оқу-ағартуға>"
+	"оқу-ағарту" n dat
 "<,>"
 	"," cm
 "<өнер>"
@@ -14813,8 +14815,8 @@
 	"." sent
 
 "<Жарық>"
-	"жарық" adj
-;	"жарық" n nom
+;	"жарық" adj
+	"жарық" n nom
 ;	"жарық" n attr
 ;	"жарық" adj advl
 ;	"жарық" adj subst nom
@@ -14831,13 +14833,13 @@
 ;	"жарық" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<көруінен>"
-	"көру" n px3sp abl SELECT:417
+;	"көру" n px3sp abl SELECT:417
 ;	"көру" n px3sp abl
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"көру" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"көр" vaux ger px3sp abl SELECT:417
-;	"көр" v tv ger px3sp abl SELECT:417
+	"көр" v tv ger px3sp abl SELECT:417
 "<бірнеше>"
 	"бірнеше" det qnt
 "<жыл>"
@@ -15572,7 +15574,8 @@
 "<,>"
 	"," cm
 "<бағалау>"
-	"бағала" v tv ger nom
+;	"бағала" v tv ger nom
+	"бағалау" n nom
 "<оған>"
 ;	"ол" prn dem dat
 	"ол" prn pers p3 sg dat
@@ -17054,7 +17057,7 @@
 "<өкілдерімен>"
 	"өкіл" n pl px3sp ins
 "<араласуы>"
-	"арала" v tv coop ger px3sp nom
+;	"арала" v tv coop ger px3sp nom
 	"аралас" v iv ger px3sp nom
 "<орасан>"
 	"орасан" adv
@@ -18317,8 +18320,8 @@
 	"жұта" v iv gna_perf
 ;	"жұта" v iv prc_perf REMOVE:542
 "<қалуға>"
-	"қалу" n dat SELECT:417
-;	"қал" vaux ger dat SELECT:417
+;	"қалу" n dat SELECT:417
+	"қал" vaux ger dat SELECT:417
 ;	"қал" v iv ger dat SELECT:417
 "<болатын>"
 ;	"болат" n px3sp acc
@@ -21942,8 +21945,8 @@
 "<бастырып>"
 	"*бастырып"
 "<шығаруға>"
-	"шығару" n dat SELECT:417
-;	"шығар" v tv ger dat SELECT:417
+;	"шығару" n dat SELECT:417
+	"шығар" v tv ger dat SELECT:417
 "<көп>"
 	"көп" adj
 ;	"көп" adv
