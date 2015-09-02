@@ -1900,8 +1900,8 @@
 "<игеріле>"
 	"игер" v tv pass prc_impf
 "<бастауына>"
-	"бастау" n px3sp dat SELECT:417
-;	"баста" vaux ger px3sp dat SELECT:417
+;	"бастау" n px3sp dat SELECT:417
+	"баста" vaux ger px3sp dat SELECT:417
 ;	"баста" v tv ger px3sp dat SELECT:417
 "<ықпал>"
 	"ықпал" n nom
@@ -2674,7 +2674,8 @@
 "<субтропикалық>"
 	"*субтропикалық"
 "<белдеуде>"
-	"белде" v iv ger loc
+	"белдеу" n loc
+;	"белде" v iv ger loc
 "<,>"
 	"," cm
 "<солтүстік>"
@@ -2733,7 +2734,8 @@
 ;	"тропикалық" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<белдеуде>"
-	"белде" v iv ger loc
+	"белдеу" n loc
+;	"белде" v iv ger loc
 "<орналасқан>"
 	"орналас" v iv past p3 sg SELECT:265
 ;	"орналас" v iv gpr_past SELECT:265
@@ -3462,8 +3464,8 @@
 ;	"же" v tv gpr_fut subst nom SELECT:776
 ;	"же" v tv fut p3 sg SELECT:776
 "<өңдеумен>"
-	"өңдеу" n ins SELECT:417
-;	"өңде" v tv ger ins SELECT:417
+;	"өңдеу" n ins SELECT:417
+	"өңде" v tv ger ins SELECT:417
 "<,>"
 	"," cm
 "<мал>"
@@ -4824,8 +4826,8 @@
 "<елдің>"
 	"ел" n gen
 "<бірігуін>"
-	"бірігу" n px3sp acc SELECT:417
-;	"бірік" v iv ger px3sp acc SELECT:417
+;	"бірігу" n px3sp acc SELECT:417
+	"бірік" v iv ger px3sp acc SELECT:417
 "<аяқтап>"
 	"аяқта" v tv gna_perf
 ;	"аяқта" v tv prc_perf REMOVE:542
@@ -6331,6 +6333,7 @@
 "<Ұлыбританияның>"
 	"Ұлыбритания" np top gen
 "<қолдауына>"
+	"қолдау" n px3sp dat
 	"қолда" v tv ger px3sp dat
 "<сүйенген>"
 	"сүйен" v iv gpr_past
@@ -6452,8 +6455,8 @@
 ;	"арал" n pl px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<бас тартуға>"
-	"бас тарту" n dat SELECT:417
-;	"бас тарт" v tv ger dat SELECT:417
+;	"бас тарту" n dat SELECT:417
+	"бас тарт" v tv ger dat SELECT:417
 "<мәжбүр>"
 	"мәжбүр" adj
 ;	"мәжбүр" adj subst nom
@@ -7462,8 +7465,8 @@
 ;	"диктатура" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<орнатуды>"
-	"орнату" n acc SELECT:417
-;	"орнат" v tv ger acc SELECT:417
+;	"орнату" n acc SELECT:417
+	"орнат" v tv ger acc SELECT:417
 "<талап етті>"
 	"талап ет" v iv ifi p3 sg
 ;	"талап ет" v iv ifi p3 pl REMOVE:642
@@ -7875,8 +7878,8 @@
 ;	"шабуыл" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жасауға>"
-	"жасау" n dat SELECT:417
-;	"жаса" v tv ger dat SELECT:417
+;	"жасау" n dat SELECT:417
+	"жаса" v tv ger dat SELECT:417
 "<дайындалды>"
 	"дайында" v tv pass ifi p3 sg
 ;	"дайында" v tv pass ifi p3 pl REMOVE:642
@@ -12141,7 +12144,8 @@
 "<">"
 	""" sent
 "<бейнелеу>"
-	"бейнеле" v tv ger nom
+;	"бейнеле" v tv ger nom
+	"бейнелеу" n attr
 "<өнерінің>"
 ;	"өн" v iv ger_fut px3sp gen
 	"өнер" n px3sp gen
@@ -12652,6 +12656,7 @@
 	""" sent
 "<бейнелеу>"
 	"бейнеле" v tv ger nom
+	"бейнелеу" n attr
 "<өнерінде>"
 ;	"өн" v iv ger_fut px3sp loc
 	"өнер" n px3sp loc
@@ -14262,6 +14267,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<өрістеу>"
 	"өрісте" v iv ger nom
+	"өрістеу" n nom
 "<кезеңін>"
 	"кезең" n px3sp acc
 "<бастады>"
@@ -14913,9 +14919,9 @@
 "<артқандығын>"
 	"арт" v iv ger_perf px3sp acc
 "<көруге>"
-	"көру" n dat SELECT:417
+;	"көру" n dat SELECT:417
 ;	"көр" vaux ger dat SELECT:417
-;	"көр" v tv ger dat SELECT:417
+	"көр" v tv ger dat SELECT:417
 "<болады>"
 	"бол" v iv aor p3 sg
 ;	"бол" vaux aor p3 pl REMOVE:565
