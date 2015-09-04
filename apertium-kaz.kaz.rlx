@@ -298,6 +298,15 @@ SELECT N IF
 	( (NOT -1 (Nacc)) OR (NOT -1 BOS))
 
 
+# INPUT: for examle: "Мен жазуым мүмкін" translated as "I may write" 
+ SELECT V IF
+        (-1 Pron-Pers)
+	
+;
+
+
+
+
 
 # INPUT:  "жүз теңге" translated as "hundred coins", екі жүз адам "two handred people"
 #"адамдардың жүзі" translated a "face of people"
@@ -875,6 +884,8 @@ REMOVE SUB:1 P3 IF
         (-1 (np top))
 ;
 ## 69. Франция құрамасының бұрынғы ойыншысы Мишель Платини...
+
+
 
 
 #
