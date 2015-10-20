@@ -71,5 +71,14 @@
     </pipeline>
   </mode>
 
+  <mode name="kaz-spell">
+    <pipeline>
+      <program name="hfst-ospell -S -n 10">
+        <file name="kaz.zhfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 
 </modes>
