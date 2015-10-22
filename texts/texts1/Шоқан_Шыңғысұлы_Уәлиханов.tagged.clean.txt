@@ -3184,12 +3184,12 @@
 "<талантын>"
 	"талант" n px3sp acc
 "<ашуда>"
-	"ашу" n loc SELECT:417
+;	"ашу" n loc SELECT:417
 ;	"ашу" n loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ашу" n loc
 ;		"е" cop aor p3 sg REMOVE:229
-;	"аш" v tv ger loc SELECT:417
+	"аш" v tv ger loc SELECT:417
 "<бұл>"
 	"бұл" det dem
 ;	"бұл" prn dem nom
@@ -8920,8 +8920,8 @@ px2sg nom SELECT:982
 "<карталарын>"
 	"карта" n pl px3sp acc
 "<жасаумен>"
-	"жасау" n ins SELECT:417
-;	"жаса" v tv ger ins SELECT:417
+;	"жасау" n ins SELECT:417
+	"жаса" v tv ger ins SELECT:417
 "<айналысып>"
 	"айналыс" v iv gna_perf
 ;	"айнал" v iv coop gna_perf
@@ -8991,16 +8991,16 @@ px2sg nom SELECT:982
 "<зерттеуді де>"
 ;	"зерттеу" n acc SELECT:417
 ;		"да" cnjcoo
-	"зерттеу" n acc SELECT:417
+;	"зерттеу" n acc SELECT:417
+;		"да" postadv
+;	"зертте" v iv ger acc SELECT:417
+;		"да" cnjcoo
+;	"зертте" v iv ger acc SELECT:417
+;		"да" postadv
+;	"зертте" v tv ger acc SELECT:417
+;		"да" cnjcoo
+	"зертте" v tv ger acc SELECT:417
 		"да" postadv
-;	"зертте" v iv ger acc SELECT:417
-;		"да" cnjcoo
-;	"зертте" v iv ger acc SELECT:417
-;		"да" postadv
-;	"зертте" v tv ger acc SELECT:417
-;		"да" cnjcoo
-;	"зертте" v tv ger acc SELECT:417
-;		"да" postadv
 "<жалғастырды>"
 	"жалғастыр" v tv ifi p3 sg
 ;	"жалғастыр" v tv ifi p3 pl REMOVE:642
@@ -9227,12 +9227,12 @@ px2sg nom SELECT:982
 "<қатыгездік>"
 	"*қатыгездік"
 "<жасауы>"
-	"жасау" n px3sp nom SELECT:417
+;	"жасау" n px3sp nom SELECT:417
 ;	"жасау" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жасау" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"жаса" v tv ger px3sp nom SELECT:417
+	"жаса" v tv ger px3sp nom SELECT:417
 "<салдарынан>"
 	"сал" n pl px3sp abl
 ;	"салдар" n px3sp abl
@@ -10731,12 +10731,12 @@ px2sg nom SELECT:982
 ;	"келісім" adj subst pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жасау>"
-	"жасау" n attr SELECT:417 SELECT:408
+;	"жасау" n attr SELECT:417 SELECT:408
 ;	"жасау" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жасау" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"жаса" v tv ger nom SELECT:417
+	"жаса" v tv ger nom SELECT:417
 ;	"жасау" n nom SELECT:417 SELECT:408
 "<үшін>"
 	"үшін" post
@@ -12896,8 +12896,8 @@ px2sg nom SELECT:982
 	"*Шоқан"
 "<еңбектерінде>"
 	"еңбек" n pl px3sp loc
-	"еңбекте" v iv ger_fut px3sp loc
-	"еңбекте" v iv gpr_fut subst px3sp loc
+;	"еңбекте" v iv ger_fut px3sp loc
+;	"еңбекте" v iv gpr_fut subst px3sp loc
 ;	"еңбек" n pl px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"еңбек" n pl px3sp loc
