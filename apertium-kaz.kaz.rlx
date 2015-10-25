@@ -279,6 +279,13 @@ SELECT N IF
        ;
 
 
+#INPUT: ^Сіздің/сіз<prn><pers><p2><sg><frm><gen>$ ^атыңыз/ат<v><tv><imp><p2><frm><sg>/ат<n><px2sg><frm><nom>/ат<n><px2sg><frm><nom>+е<cop><aor><p3><pl>/ат<n><px2sg><frm><nom>+е<cop><aor><p3><sg>$ ^кім/кім<det><itg>/кім<prn><itg><nom>/кім<prn><itg><nom>+е<cop><aor><p3><pl>/кім<prn><itg><nom>+е<cop><aor><p3><sg>$^?/?<sent>$^./.<sent>$
+#OUPUT: ^Сіздің/сіз<prn><pers><p2><sg><frm><gen>$ ^атыңыз/ат<n><px2sg><frm><nom>$ ^кім/кім<det><itg>$^?/?<sent>$^./.<sent>$
+SELECT N IF
+        (0 ("ат"i))
+        (-1 (prn pers))
+       ;
+
 # This rule is too general, breaks a few things.Corrected
 
 #INPUT: ^әдемі/әдемі<adj> 
