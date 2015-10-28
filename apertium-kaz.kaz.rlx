@@ -244,7 +244,13 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
 
 
-
+# INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
+#        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
+# OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
+ SELECT Pron-Pers IF
+        (0 ("<оның>"i))
+        (1 (n px3sp nom))
+;
 
  REMOVE SUB:1 Cop IF
         (NOT 1 EOS OR MARK)
@@ -253,6 +259,8 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (-1 BOS OR MARK) ## Headings or enumerations
 ;
 ##
+
+
 
 
 #
@@ -1054,13 +1062,7 @@ REMOVE (gen) IF
 ;
 
 
-# INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
-#        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
-# OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
- SELECT Pron-Pers IF
-        (0 ("<оның>"i))
-        (1* (n px3sp))
-;
+
 #kaz-eng
 
 SELECT Pron-Pers IF
