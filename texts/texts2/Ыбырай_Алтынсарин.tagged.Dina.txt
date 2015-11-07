@@ -488,7 +488,7 @@
 	".." sent
 "<Өзінің>"
 	"өз" prn ref px3sp gen
-"<>"
+"<мінез>"
 	"мінез" n nom
 ;	"мінез" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -1169,10 +1169,10 @@
 "<былайша>"
 	"*былайша"
 "<білдірген>"
-	"білдір" v tv gpr_past
+;	"білдір" v tv gpr_past
 ;	"білдір" v tv ger_past nom
 ;	"білдір" v tv gpr_past subst nom
-;	"білдір" v tv past p3 sg
+	"білдір" v tv past p3 sg
 ;	"білдір" v tv past p3 pl REMOVE:642
 "<:>"
 	":" sent
@@ -1910,7 +1910,8 @@
 "<,>"
 	"," cm
 "<ұлы>"
-	"ұл" n px3sp nom
+	"ұлы" adj subst
+;	"ұл" n px3sp nom
 ;	"ұл" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ұл" n px3sp nom
@@ -2291,7 +2292,8 @@
 "<,>"
 	"," cm
 "<Торғай>"
-	"торғай" n attr SELECT:408
+	"Торғай" np top
+;	"торғай" n attr SELECT:408
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"торғай" n nom
@@ -2440,7 +2442,8 @@
 "<..>"
 	".." sent
 "<Торғай>"
-	"торғай" n attr SELECT:408
+	"Торғай" np top
+;	"торғай" n attr SELECT:408
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"торғай" n nom
@@ -2571,7 +2574,7 @@
 
 "<Оған>"
 	"ол" prn dem dat
-	"ол" prn pers p3 sg dat
+;	"ол" prn pers p3 sg dat
 "<14>"
 	"14" num
 ;	"14" num subst nom
@@ -2702,7 +2705,7 @@
 	"–" guio
 "<деп>"
 	"де" v tv prc_perf
-	"де" v tv gna_perf
+;	"де" v tv gna_perf
 "<жазады>"
 	"жаз" v tv aor p3 sg
 ;	"жаз" v tv aor p3 pl REMOVE:642
@@ -2753,7 +2756,8 @@
 	"." sent
 
 "<И>"
-	"и" v tv imp p2 sg
+	"И" abbr
+;	"и" v tv imp p2 sg
 "<.>"
 	"." sent
 
@@ -3604,7 +3608,7 @@
 "<,>"
 	"," cm
 "<орыс>"
-	"орыс" n nom
+;	"орыс" n nom
 ;	"орыс" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орыс" n nom
@@ -3696,7 +3700,8 @@
 ;	"Ыбырай" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Торғай>"
-	"торғай" n attr SELECT:408
+	"Торғай" np top
+;	"торғай" n attr SELECT:408
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"торғай" n nom
@@ -3847,7 +3852,8 @@
 ;	"аралық" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Торғай>"
-	"торғай" n attr SELECT:408
+	"Торғай" np top
+;	"торғай" n attr SELECT:408
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"торғай" n nom
@@ -3867,7 +3873,8 @@
 "<(>"
 	"(" lpar
 "<Торғай>"
-	"торғай" n nom
+	"Торғай" np top
+;	"торғай" n nom
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:232
 ;	"торғай" n nom
@@ -3944,7 +3951,8 @@
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
 "<Торғай>"
-	"торғай" n attr SELECT:408
+	"Торғай" np top
+;	"торғай" n attr SELECT:408
 ;	"торғай" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"торғай" n nom
@@ -4126,7 +4134,7 @@
 ;	"қарсы" adv REMOVE:359
 "<күрестің>"
 	"күрес" n gen
-	"күрес" v iv ifi p2 sg
+;	"күрес" v iv ifi p2 sg
 "<бір>"
 ;	"бір" num
 	"бір" det ind
@@ -5208,8 +5216,8 @@
 "<білімін>"
 	"білім" n px3sp acc
 "<көтеретін>"
-;	"көтер" v tv gpr_impf
-	"көтер" v tv gpr_impf subst nom
+	"көтер" v tv gpr_impf
+;	"көтер" v tv gpr_impf subst nom
 ;	"көтер" v tv pih p3 sg
 ;	"көтер" v tv pih p3 pl REMOVE:642
 "<,>"
@@ -5896,8 +5904,8 @@
 "<">"
 	""" sent
 "<Кел>"
-;	"кел" v iv imp p2 sg
-	"кел" vaux imp p2 sg REMOVE:565
+	"кел" v iv imp p2 sg
+;	"кел" vaux imp p2 sg REMOVE:565
 "<,>"
 	"," cm
 "<балалар>"
@@ -6005,14 +6013,14 @@
 ;	"туған" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"туған" n attr REMOVE:397
-	"ту" v iv gpr_past SELECT:417
+;	"ту" v iv gpr_past SELECT:417
 ;	"ту" v tv gpr_past SELECT:417
 ;	"туған" adj SELECT:417
 ;	"ту" v iv ger_past nom SELECT:417
 ;	"ту" v tv ger_past nom SELECT:417
 ;	"туған" adj subst nom SELECT:417
 ;	"ту" v iv past p3 pl SELECT:417
-;	"ту" v iv past p3 sg SELECT:417
+	"ту" v iv past p3 sg SELECT:417
 ;	"ту" v iv gpr_past subst nom SELECT:417
 ;	"ту" v tv past p3 pl SELECT:417
 ;	"ту" v tv past p3 sg SELECT:417
@@ -6060,8 +6068,8 @@
 "<,>"
 	"," cm
 "<ақын>"
-	"ақын" n nom
-;	"ақын" n attr
+;	"ақын" n nom
+	"ақын" n attr
 ;	"ақын" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ақын" n nom
@@ -7133,7 +7141,8 @@
 "<табиғаттың>"
 	"табиғат" n gen
 "<келісті>"
-	"келіс" v iv ifi p3 sg
+	"келісті" adj
+;	"келіс" v iv ifi p3 sg
 ;	"кел" v iv coop ifi p3 sg
 ;	"кел" v iv coop ifi p3 pl REMOVE:642
 ;	"келіс" v iv ifi p3 pl REMOVE:642
@@ -7606,8 +7615,7 @@
 ;	"еңбек" n
 ;		"лы" post
 "<сүю>"
-	"сүй" v tv ger nom
-;	"cүй" v tv ger nom
+	"cүй" v tv ger nom
 "<және>"
 	"және" cnjcoo
 "<қадірлеу>"
@@ -7622,7 +7630,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<әңгімелерінің>"
 	"әңгіме" n pl px3sp gen
-	"әңгіме" adj subst pl px3sp gen
+;	"әңгіме" adj subst pl px3sp gen
 "<негізгі>"
 	"негізгі" adj
 ;	"негізгі" adv
@@ -8026,7 +8034,7 @@
 ;	"күн" n attr REMOVE:397
 "<сайын>"
 	"сайын" post
-	"сай" adj subst px3sp acc
+;	"сай" adj subst px3sp acc
 "<өз>"
 	"өз" det ref
 "<бейнетіммен>"
@@ -8675,7 +8683,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 "<соларға>"
 	"сол" prn dem pl dat
-	"сол" v iv gpr_fut subst dat
+;	"сол" v iv gpr_fut subst dat
 "<үш>"
 	"үш" num
 ;	"үш" n nom
@@ -9594,8 +9602,8 @@
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"Бай" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"бай" adj SELECT:320
-	"бай" n nom SELECT:320
+	"бай" adj SELECT:320
+;	"бай" n nom SELECT:320
 ;	"бай" n attr SELECT:320
 ;	"бай" adj advl SELECT:320
 ;	"бай" adj subst nom SELECT:320
@@ -9948,7 +9956,8 @@
 "<">"
 	""" sent
 "<Мына>"
-	"мына" ij
+	"мына" prn dem
+;	"мына" ij
 ;	"мына" nom
 ;	"мына" nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -9994,7 +10003,8 @@
 "<,>"
 	"," cm
 "<ана>"
-	"ана" n nom
+	"ана" prn dem
+;	"ана" n nom
 ;	"ана" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ана" n nom
@@ -10059,7 +10069,8 @@
 "<,>"
 	"," cm
 "<ана>"
-	"ана" n nom
+	"ана" prn dem
+;	"ана" n nom
 ;	"ана" n attr
 ;	"ана" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -10128,7 +10139,8 @@
 ;	"сен" prn pers p2 sg nom
 ;		"да" postadv
 "<мына>"
-	"мына" ij
+	"мына" prn dem
+;	"мына" ij
 ;	"мына" nom
 ;	"мына" nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -10879,7 +10891,7 @@
 ;	"кез" n nom
 	"кез" n nom
 		"е" cop aor p3 sg
-	"кез" v iv imp p2 sg
+;	"кез" v iv imp p2 sg
 ;	"кез" n attr REMOVE:397
 ;	"кез" n nom
 ;		"е" cop aor p3 pl REMOVE:649
@@ -11866,7 +11878,8 @@
 "<,>"
 	"," cm
 "<мына>"
-	"мына" ij
+	"мына" prn dem
+;	"мына" ij
 ;	"мына" nom
 ;	"мына" nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -12079,7 +12092,8 @@
 ;	"адам" n
 ;		"лы" post
 "<сүйетін>"
-	"сүйетін" adj
+	"сүй" v tv gpr_impf
+;	"сүйетін" adj
 ;	"сүйетін" adj advl
 ;	"сүйетін" adj subst nom
 ;	"сүйетін" adj
