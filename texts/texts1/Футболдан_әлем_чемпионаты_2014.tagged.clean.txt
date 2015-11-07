@@ -5,12 +5,12 @@
 ;	"футбол" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионаты>"
 	"чемпионат" n px3sp nom
 ;	"чемпионат" n px3sp nom
@@ -30,12 +30,12 @@
 ;	"футбол" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионаты>"
 	"чемпионат" n px3sp nom
 ;	"чемпионат" n px3sp nom
@@ -69,12 +69,12 @@
 ;	"футбол" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионаты>"
 ;	"чемпионат" n px3sp nom
 	"чемпионат" n px3sp nom
@@ -114,12 +114,12 @@
 	"13" num
 ;	"13" num subst nom
 "<шілде>"
-	"шілде" n attr SELECT:408
+;	"шілде" n attr SELECT:408
 ;	"шілде" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"шілде" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"шілде" n nom SELECT:408
+	"шілде" n nom SELECT:408
 "<күндері>"
 	"күн" n pl px3sp nom
 ;	"күнде" v tv ger_fut px3sp nom
@@ -149,34 +149,21 @@
 	"." sent
 
 "<Ашылу>"
-	"ашылу" n attr SELECT:408
+;	"ашылу" n attr SELECT:408
 ;	"ашылу" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ашылу" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"аш" v tv pass ger nom REMOVE:350
-;	"ашылу" n nom SELECT:408
+	"ашылу" n nom SELECT:408
 "<матчы>"
 	"матч" n px3sp nom
 ;	"матч" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"матч" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
-"<Сан>"
-	"сан" n nom
-;	"сан" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"сан" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"сан" n attr REMOVE:397
-"<->"
-	"-" guio
-"<Паулуда>"
-	"Паулу" np ant m loc
-;	"Паулу" np ant m loc
-;		"е" cop aor p3 sg
-;	"Паулу" np ant m loc
-;		"е" cop aor p3 pl REMOVE:649
+"<Сан-Паулуда>"
+	"Сан-Паулу" np top loc
 "<,>"
 	"," cm
 "<ал>"
@@ -205,12 +192,12 @@
 ;	"стадион" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<орын>"
-	"орын" n attr SELECT:408
+;	"орын" n attr SELECT:408
 ;	"орын" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орын" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"орын" n nom SELECT:408
+	"орын" n nom SELECT:408
 "<алды>"
 	"ал" v tv ifi p3 sg
 ;	"алд" n px3sp nom
@@ -224,12 +211,12 @@
 "<..>"
 	".." sent
 "<Әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионаттары>"
 	"чемпионат" n pl px3sp nom
 ;	"чемпионат" n pl px3sp nom
@@ -556,12 +543,12 @@
 ;	"футбол" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионатын>"
 	"чемпионат" n px3sp acc
 "<өткізу>"
@@ -980,12 +967,12 @@
 ;	"футбол" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионаты>"
 	"чемпионат" n px3sp nom
 ;	"чемпионат" n px3sp nom
@@ -1054,13 +1041,13 @@
 	"2014" num
 ;	"2014" num subst nom
 "<іріктеу>"
-	"іріктеу" n attr SELECT:408
+;	"іріктеу" n attr SELECT:408
 ;	"іріктеу" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"іріктеу" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ірікте" v tv ger nom REMOVE:350
-;	"іріктеу" n nom SELECT:408
+	"іріктеу" n nom SELECT:408
 "<айналымы>"
 	"айналым" n px3sp nom
 ;	"айналым" n px3sp nom
@@ -1073,12 +1060,12 @@
 "<жылдың>"
 	"жыл" n gen
 "<маусым>"
-	"маусым" n attr SELECT:408
+;	"маусым" n attr SELECT:408
 ;	"маусым" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"маусым" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"маусым" n nom SELECT:408
+	"маусым" n nom SELECT:408
 "<айында>"
 	"ай" n px3sp loc
 ;	"ай" n px3sp loc
@@ -1096,12 +1083,12 @@
 "<жылдың>"
 	"жыл" n gen
 "<қараша>"
-	"қараша" n attr SELECT:408
+;	"қараша" n attr SELECT:408
 ;	"қараша" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қараша" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"қараша" n nom SELECT:408
+	"қараша" n nom SELECT:408
 "<айында>"
 	"ай" n px3sp loc
 ;	"ай" n px3sp loc
@@ -1148,12 +1135,12 @@
 ;	"қабылда" v tv gpr_pot REMOVE:350
 ;	"қабылда" v tv gpr_pot subst nom REMOVE:350
 "<ел>"
-	"ел" n attr SELECT:408
+;	"ел" n attr SELECT:408
 ;	"ел" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ел" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"ел" n nom SELECT:408
+	"ел" n nom SELECT:408
 "<ретінде>"
 ;	"рет" n px3sp loc
 	"ретінде" post
@@ -1189,12 +1176,12 @@
 ;	"түр" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<чемпионат>"
-	"чемпионат" n attr SELECT:408
+;	"чемпионат" n attr SELECT:408
 ;	"чемпионат" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"чемпионат" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"чемпионат" n nom SELECT:408
+	"чемпионат" n nom SELECT:408
 "<қатысушысы>"
 	"қатысушы" n px3sp nom SELECT:417
 ;	"қатысушы" n px3sp nom
@@ -1247,8 +1234,8 @@
 ;	"ұлттық" adj
 ;		"е" cop aor p3 sg REMOVE:229
 "<құрама>"
-	"құрама" n nom SELECT:800
-;	"құрама" n attr SELECT:800
+;	"құрама" n nom SELECT:800
+	"құрама" n attr SELECT:800
 ;	"құрама" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"құрама" adj
@@ -1282,12 +1269,12 @@
 ;	"ұйым" n pl abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<әлем>"
-	"әлем" n attr SELECT:408
+;	"әлем" n attr SELECT:408
 ;	"әлем" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлем" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"әлем" n nom SELECT:408
+	"әлем" n nom SELECT:408
 "<чемпионатына>"
 	"чемпионат" n px3sp dat
 "<квалификацияланды>"
