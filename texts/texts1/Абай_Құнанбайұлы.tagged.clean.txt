@@ -1173,8 +1173,8 @@
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"басқару" n nom
 ;		"е" cop aor p3 sg REMOVE:229
-;	"басқар" v tv ger nom SELECT:417
-	"басқару" n nom SELECT:417 SELECT:408
+	"басқар" v tv ger nom
+;	"басқару" n nom SELECT:417 SELECT:408
 "<ісіне>"
 	"іс" n px3sp dat
 ;	"ісін" v iv prc_impf REMOVE:542
@@ -2795,8 +2795,8 @@
 "<Сірә>"
 	"*Сірә"
 "<да>"
-	"да" cnjcoo
-;	"да" postadv
+;	"да" cnjcoo
+	"да" postadv
 ;	"да" adv
 "<оңбас>"
 	"*оңбас"
@@ -4092,10 +4092,10 @@
 "<оқуын ғана>"
 ;	"оқы" v iv ger px3sp acc
 ;		"ғана" postadv
-;	"оқы" v tv ger px3sp acc
-;		"ғана" postadv
-	"оқы" n px3sp acc
+	"оқы" v tv ger px3sp acc
 		"ғана" postadv
+;	"оқы" n px3sp acc
+;		"ғана" postadv
 "<місе>"
 	"*місе"
 "<тұтпай>"
@@ -5065,8 +5065,8 @@
 ;	"қарсы" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<күресуге>"
-	"күресу" n dat SELECT:417
-;	"күрес" v iv ger dat 
+;	"күресу" n dat SELECT:417
+	"күрес" v iv ger dat 
 "<бел>"
 	"бел" n nom
 ;	"бел" n attr
@@ -5221,8 +5221,8 @@
 ;	"болыс" v iv imp p2 sg REMOVE:599
 	"болыс" n nom SELECT:408
 "<сайлауына>"
-	"сайлау" n px3sp dat SELECT:417
-;	"сайла" v tv ger px3sp dat SELECT:417
+;	"сайлау" n px3sp dat SELECT:417
+	"сайла" v tv ger px3sp dat SELECT:417
 "<түсіп>"
 	"түс" v iv gna_perf
 ;	"түс" v iv prc_perf REMOVE:542
@@ -12432,10 +12432,10 @@
 "<,>"
 	"," cm
 "<Абайда да>"
-;	"Абай" np ant m loc SELECT:320
-;		"да" cnjcoo
 	"Абай" np ant m loc SELECT:320
-		"да" postadv
+		"да" cnjcoo
+;	"Абай" np ant m loc SELECT:320
+;		"да" postadv
 ;	"абай" adj subst loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;			"да" cnjcoo
@@ -13818,10 +13818,10 @@
 "<,>"
 	"," cm
 "<болмақшы да>"
-;	"бол" v iv prc_fplan
-;		"да" cnjcoo
 	"бол" v iv prc_fplan
-		"да" postadv
+		"да" cnjcoo
+;	"бол" v iv prc_fplan
+;		"да" postadv
 ;	"бол" vaux prc_fplan REMOVE:565
 ;		"да" cnjcoo
 ;	"бол" vaux prc_fplan REMOVE:565
@@ -15574,8 +15574,8 @@
 "<,>"
 	"," cm
 "<бағалау>"
-;	"бағала" v tv ger nom
-	"бағалау" n nom
+	"бағала" v tv ger nom
+;	"бағалау" n nom
 "<оған>"
 ;	"ол" prn dem dat
 	"ол" prn pers p3 sg dat
