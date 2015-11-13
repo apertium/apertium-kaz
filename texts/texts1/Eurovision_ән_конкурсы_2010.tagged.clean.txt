@@ -170,8 +170,9 @@
 	"*Рыбак"
 "<әкелдi>"
 	"*әкелдi"
-"<..>"
-	".." sent
+"<.>"
+	"." sent
+	
 "<Норвегия>"
 	"Норвегия" np top attr SELECT:408
 ;	"Норвегия" np top nom
@@ -196,15 +197,8 @@
 "<150>"
 	"150" num
 ;	"150" num subst nom
-"<млн>"
-	"млн" n nom
-;	"млн" n nom
-;		"е" cop aor p3 sg
-;	"млн" n attr REMOVE:397
-;	"млн" n nom
-;		"е" cop aor p3 pl REMOVE:649
-"<.>"
-	"." sent
+"<млн.>"
+	"млн." abbr
 
 "<норвеж>"
 	"*норвеж"
@@ -216,15 +210,8 @@
 "<17>"
 	"17" num
 ;	"17" num subst nom
-"<млн>"
-	"млн" n nom
-;	"млн" n nom
-;		"е" cop aor p3 sg
-;	"млн" n attr REMOVE:397
-;	"млн" n nom
-;		"е" cop aor p3 pl REMOVE:649
-"<.>"
-	"." sent
+"<млн.>"
+	"млн." abbr
 
 "<)>"
 	")" rpar
@@ -260,8 +247,9 @@
 ;	"бол" vaux pih p3 sg REMOVE:565
 ;	"бол" vaux gpr_impf subst nom REMOVE:565
 ;	"бол" v iv pih p3 pl REMOVE:642
-"<..>"
-	".." sent
+"<.>"
+	"." sent
+	
 "<Share>"
 	"Share" np unk
 "<The>"
@@ -270,16 +258,8 @@
 	"Moment" np unk
 "<->"
 	"-" guio
-"<қаз>"
-	"қаз" v tv imp p2 sg SELECT:265
-;	"қаз" n nom SELECT:265
-;	"қаз" n attr SELECT:265
-;	"қаз" n nom SELECT:265
-;		"е" cop aor p3 pl
-;	"қаз" n nom SELECT:265
-;		"е" cop aor p3 sg
-"<.>"
-	"." sent
+"<қаз.>"
+	"қаз." abbr
 
 "<Сәтті>"
 ;	"сәтті" adj advl SELECT:438
@@ -337,8 +317,7 @@
 	")" rpar
 "<т.б.>"
 	"т.б." abbr
-"<.>"
-	"." sent
+	    "." sent
 
 "<Еуровидение>"
 	"*Еуровидение"
@@ -395,8 +374,9 @@
 "<ойлап тапты>"
 	"ойлап тап" v tv ifi p3 sg
 ;	"ойлап тап" v tv ifi p3 pl REMOVE:642
-"<..>"
-	".." sent
+"<.>"
+	"." sent
+	
 "<Еуровидение>"
 	"*Еуровидение"
 "<2010>"
@@ -430,8 +410,9 @@
 ;	"қат" v iv coop aor p3 sg
 ;	"қат" v iv coop aor p3 pl REMOVE:642
 ;	"қатыс" v iv aor p3 pl REMOVE:642
-"<..>"
-	".." sent
+"<.>"
+	"." sent
+	
 "<Отыз>"
 	"отыз" num
 ;	"отыз" num subst nom
@@ -460,6 +441,5 @@
 ;	"қат" v iv coop aor p3 sg
 ;	"қат" v iv coop aor p3 pl REMOVE:642
 ;	"қатыс" v iv aor p3 pl REMOVE:642
-"<..>"
-	".." sent
-
+"<.>"
+	"." sent
