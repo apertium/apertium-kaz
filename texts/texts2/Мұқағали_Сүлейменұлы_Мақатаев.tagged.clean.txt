@@ -2632,10 +2632,10 @@
 "<“>"
 	"“" lquot
 "<Өзіңнен де>"
-	"өз" prn ref px2sg abl
-		"да" cnjcoo
 ;	"өз" prn ref px2sg abl
-;		"да" postadv
+;		"да" cnjcoo
+	"өз" prn ref px2sg abl
+		"да" postadv
 ;	"өз" prn ref px2sg abl
 ;		"е" cop aor p3 pl REMOVE:229
 ;			"да" cnjcoo
@@ -5011,10 +5011,10 @@
 "<“>"
 	"“" lquot
 "<Тіпті де>"
-	"тіпті" adv
-		"да" cnjcoo
 ;	"тіпті" adv
-;		"да" postadv
+;		"да" cnjcoo
+	"тіпті" adv
+		"да" postadv
 "<мен>"
 	"мен" prn pers p1 sg nom
 ;	"мен" cnjcoo
@@ -7027,13 +7027,13 @@
 ;	"бол" v iv prc_perf REMOVE:542
 ;	"бол" vaux gna_perf REMOVE:565
 "<қалу>"
-	"қалу" n nom SELECT:417
+;	"қалу" n nom SELECT:417
 ;	"қалу" n nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"қалу" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"қалу" n attr REMOVE:397
-;	"қал" vaux ger nom SELECT:417
+	"қал" vaux ger nom SELECT:417
 ;	"қал" v iv ger nom SELECT:417
 "<”>"
 	"”" rquot
@@ -7381,10 +7381,10 @@
 ;	"сын" v iv imp p2 sg REMOVE:350
 ;	"сын" n nom SELECT:408
 "<саласында да>"
-	"сала" n px3sp loc
-		"да" cnjcoo
 ;	"сала" n px3sp loc
-;		"да" postadv
+;		"да" cnjcoo
+	"сала" n px3sp loc
+		"да" postadv
 ;	"сала" n px3sp loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;			"да" cnjcoo
@@ -8844,13 +8844,13 @@
 "<мұрасын>"
 	"мұра" n px3sp acc
 "<зерттеуде>"
-	"зерттеу" n loc SELECT:417
+;	"зерттеу" n loc SELECT:417
 ;	"зерттеу" n loc
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"зерттеу" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"зертте" v iv ger loc SELECT:417
-;	"зертте" v tv ger loc SELECT:417
+	"зертте" v tv ger loc SELECT:417
 "<3>"
 	"3" num
 ;	"3" num subst nom
