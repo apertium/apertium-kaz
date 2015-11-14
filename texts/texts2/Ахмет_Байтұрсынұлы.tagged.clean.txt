@@ -3665,10 +3665,10 @@
 "<ұстаздық>"
 	"*ұстаздық"
 "<жұмысынан да>"
-	"жұмыс" n px3sp abl
-		"да" cnjcoo
 ;	"жұмыс" n px3sp abl
-;		"да" postadv
+;		"да" cnjcoo
+	"жұмыс" n px3sp abl
+		"да" postadv
 ;	"жұмыс" n px3sp abl
 ;		"е" cop aor p3 pl REMOVE:229
 ;			"да" cnjcoo
@@ -11172,10 +11172,10 @@
 ;	"түркі" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<халықтарды да>"
-	"халық" n pl acc
-		"да" cnjcoo
 ;	"халық" n pl acc
-;		"да" postadv
+;		"да" cnjcoo
+	"халық" n pl acc
+		"да" postadv
 "<пайдаланып>"
 ;	"пайдалан" v tv prc_perf SELECT:556
 	"пайдалан" v tv gna_perf SELECT:556
@@ -14290,38 +14290,38 @@
 ;	"түр" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<болмаса да>"
-;	"бол" v iv neg gna_cond p3 sg
-;		"да" postadv SELECT:851
-;	"бол" vaux neg prc_cond p3 pl REMOVE:542
-;		"да" cnjcoo
-;	"бол" vaux neg prc_cond p3 pl REMOVE:542
-;		"да" postadv
-;	"бол" vaux neg prc_cond p3 sg REMOVE:542
-;		"да" cnjcoo
-;	"бол" vaux neg prc_cond p3 sg REMOVE:542
-;		"да" postadv
-;	"бол" v iv neg prc_cond p3 pl REMOVE:542
-;		"да" cnjcoo
-;	"бол" v iv neg prc_cond p3 pl REMOVE:542
-;		"да" postadv
-;	"бол" v iv neg prc_cond p3 sg REMOVE:542
-;		"да" cnjcoo
-;	"бол" v iv neg prc_cond p3 sg REMOVE:542
-;		"да" postadv
-;	"бол" vaux neg gna_cond p3 pl REMOVE:565
-;		"да" cnjcoo
-;	"бол" vaux neg gna_cond p3 pl REMOVE:565
-;		"да" postadv
-;	"бол" vaux neg gna_cond p3 sg REMOVE:565
-;		"да" cnjcoo
-;	"бол" vaux neg gna_cond p3 sg REMOVE:565
-;		"да" postadv
-;	"бол" v iv neg gna_cond p3 pl REMOVE:642
-;		"да" cnjcoo
-;	"бол" v iv neg gna_cond p3 pl REMOVE:642
-;		"да" postadv
 	"бол" v iv neg gna_cond p3 sg
-		"да" cnjcoo SELECT:851
+		"да" postadv SELECT:851
+;	"бол" vaux neg prc_cond p3 pl REMOVE:542
+;		"да" cnjcoo
+;	"бол" vaux neg prc_cond p3 pl REMOVE:542
+;		"да" postadv
+;	"бол" vaux neg prc_cond p3 sg REMOVE:542
+;		"да" cnjcoo
+;	"бол" vaux neg prc_cond p3 sg REMOVE:542
+;		"да" postadv
+;	"бол" v iv neg prc_cond p3 pl REMOVE:542
+;		"да" cnjcoo
+;	"бол" v iv neg prc_cond p3 pl REMOVE:542
+;		"да" postadv
+;	"бол" v iv neg prc_cond p3 sg REMOVE:542
+;		"да" cnjcoo
+;	"бол" v iv neg prc_cond p3 sg REMOVE:542
+;		"да" postadv
+;	"бол" vaux neg gna_cond p3 pl REMOVE:565
+;		"да" cnjcoo
+;	"бол" vaux neg gna_cond p3 pl REMOVE:565
+;		"да" postadv
+;	"бол" vaux neg gna_cond p3 sg REMOVE:565
+;		"да" cnjcoo
+;	"бол" vaux neg gna_cond p3 sg REMOVE:565
+;		"да" postadv
+;	"бол" v iv neg gna_cond p3 pl REMOVE:642
+;		"да" cnjcoo
+;	"бол" v iv neg gna_cond p3 pl REMOVE:642
+;		"да" postadv
+;	"бол" v iv neg gna_cond p3 sg
+;		"да" cnjcoo SELECT:851
 "<шын>"
 ;	"шын" adj
 ;	"шын" adv
