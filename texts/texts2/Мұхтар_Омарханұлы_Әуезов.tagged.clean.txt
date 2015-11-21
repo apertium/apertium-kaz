@@ -1250,7 +1250,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"орталық" n attr REMOVE:397
 "<атқару>"
-	"атқар" v tv ger nom
+;	"атқар" v tv ger nom
+	"атқару" n nom
 "<комитетінің>"
 	"комитет" n px3sp gen
 "<мүшесі>"
@@ -1654,7 +1655,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"орталық" n attr REMOVE:397
 "<атқару>"
-	"атқар" v tv ger nom
+;	"атқар" v tv ger nom
+	"атқару" n nom
 "<комитетінің>"
 	"комитет" n px3sp gen
 "<(>"
@@ -2013,7 +2015,8 @@
 "<«>"
 	"«" lquot
 "<Үйлену>"
-	"үйлен" v iv ger nom
+;	"үйлен" v iv ger nom
+	"үйлену" n nom
 "<»>"
 	"»" rquot
 "<,>"
@@ -8698,7 +8701,8 @@
 "<->"
 	"-" guio
 "<да>"
-	"да" cnjcoo
+;	"да" cnjcoo
+	"да" loc
 ;	"да" postadv
 ;	"да" adv
 "<бірнеше>"
@@ -9218,7 +9222,8 @@
 "<->"
 	"-" guio
 "<да>"
-	"да" cnjcoo
+	"да" loc
+;	"да" cnjcoo
 ;	"да" postadv
 ;	"да" adv
 "<әдеби>"
@@ -9685,7 +9690,8 @@
 "<»>"
 	"»" rquot
 "<да>"
-	"да" cnjcoo
+	"да" loc
+;	"да" cnjcoo
 ;	"да" postadv
 ;	"да" adv
 "<ірі>"
@@ -10176,10 +10182,10 @@
 	"ол" prn dem pl acc
 ;	"олар" prn pers p3 pl acc
 "<зерттеуге де>"
-	"зерттеу" n dat SELECT:417
-		"да" cnjcoo
 ;	"зерттеу" n dat SELECT:417
-;		"да" postadv
+;		"да" cnjcoo
+	"зерттеу" n dat SELECT:417
+		"да" postadv
 ;	"зертте" v iv ger dat SELECT:417
 ;		"да" cnjcoo
 ;	"зертте" v iv ger dat SELECT:417
@@ -15759,8 +15765,8 @@
 "<Орманбаевтың>"
 	"*Орманбаевтың"
 "<да>"
-	"да" cnjcoo
-;	"да" postadv
+;	"да" cnjcoo
+	"да" postadv
 ;	"да" adv
 "<бір>"
 ;	"бір" num
