@@ -311,7 +311,7 @@ SELECT N IF
 	(0 ("ата"))
        ( (NOT -1 N) OR (NOT -1 BOS))
 	( (NOT -1 (Nacc)) OR (NOT -1 BOS))
-
+;
 
 # INPUT: for examle: "Мен жазуым мүмкін" translated as "I may write" 
  SELECT V IF
@@ -956,6 +956,7 @@ REMOVE SUB:1 P3 IF
 
  SELECT Pron IF
         (0 ("<ешкім>"i))
+;
 ## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
@@ -1050,7 +1051,7 @@ REMOVE (pass) IF (0 ("қырыл"));
 REMOVE (gen) IF
   (0 (ifi p2))
   (-1* (prn nom))
-
+;
 
 # INPUT: ^Мен/Мен<cnjcoo>/Мен<post>/Мен<prn><pers><p1><sg><nom>$
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
