@@ -95,25 +95,28 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 	rm -f $@
 	zip -Z store -j $@ .deps/acceptor.default.hfst .deps/errmodel.default.hfst speller/index.xml
 
-.deps/errmodel.default.hfst: .deps/words.default.hfst .deps/strings.default.hfst
-	python dev/editdist.py -v -s -d 1 -e '@0@' -i speller/editdist.default.txt -a .deps/acceptor.default.hfst \
-	| hfst-txt2fst  -e '@0@' -o .deps/editdist.default.hfst
-	hfst-disjunct .deps/strings.default.hfst .deps/editdist.default.hfst \
-	| hfst-minimise | hfst-repeat -f 1 -t 2 -o .deps/editstrings.default.hfst
-	hfst-disjunct .deps/words.default.hfst .deps/editstrings.default.hfst \
-	| hfst-fst2fst  -f olw -o $@
+.deps/editdist.default.hfst: speller/editdist.default.txt .deps/acceptor.default.hfst
+	python dev/editdist.py -v -s -d 1 -e '@0@' -i $< -a .deps/acceptor.default.hfst >$@.txt
+	hfst-txt2fst -i $@.txt -e '@0@' -o $@
+	rm -f $@.txt
+
+.deps/editstrings.default.hfst: .deps/strings.default.hfst .deps/editdist.default.hfst
+	hfst-disjunct $^ | hfst-minimise | hfst-repeat -f 1 -t 2 -o $@
+
+.deps/errmodel.default.hfst: .deps/words.default.hfst .deps/editstrings.default.hfst
+	hfst-disjunct $^ | hfst-fst2fst -f olw -o $@
 
 .deps/words.default.hfst: speller/words.default.txt
 	grep -v -e "^#" -e "^$$" $< | hfst-strings2fst  -j -o $@
 
 .deps/strings.default.hfst: speller/strings.default.txt .deps/anystar.hfst
-	grep -v -e "^#" -e "^$$" $< | hfst-strings2fst  -j | hfst-concatenate .deps/anystar.hfst - |\
-	hfst-concatenate - .deps/anystar.hfst -o $@
+	grep -v -e "^#" -e "^$$" $< | hfst-strings2fst  -j | hfst-concatenate .deps/anystar.hfst - \
+	  | hfst-concatenate - .deps/anystar.hfst -o $@
 
 .deps/anystar.hfst:
 	echo "?*;" | hfst-regexp2fst -S -o $@
 
-.deps/acceptor.default.hfst: $(LANG1).autogen.hfst
+.deps/acceptor.default.hfst: $(LANG1).autogen.hfst .deps/.d
 	cat $< | hfst-fst2fst -t | hfst-project  --project=lower | hfst-minimise |hfst-fst2fst  -f olw -o $@
 
 
