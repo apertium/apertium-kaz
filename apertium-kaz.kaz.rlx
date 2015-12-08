@@ -401,6 +401,7 @@ SELECT Num IF
         (1 ("мен") + Post)
         (2 Prop)
 ;
+   
 ## [0]Азамат пен Айгүл бақшада.
 
 
@@ -778,15 +779,15 @@ REMOVE SUB:1 P3 IF
  "<жылы>" SELECT N IF
         (-1 Num)
 ;
-##
 
-
+## "<теңге>"
+  SELECT N IF
+        (0 A)
+;
 #
  "<жылы>" SELECT N IF
         (-1 A)
 ;
-##
-
 
 #
  "<қарасты>" SELECT A IF
@@ -1249,6 +1250,8 @@ SELECT A IF
        (1 N);
 
 SELECT Adv IF (1 V);
-
+#morph disambiquashion example еңбектен-(1-verb, 2-noun)
+SELECT V IF (0 Pron)
+            (1 N + Abl);
 
 
