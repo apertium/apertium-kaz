@@ -329,6 +329,7 @@ SELECT N IF
 SELECT Num IF
 	((0 Num) OR (-1 ))
 	(1 N)
+	(NOT 0 ("бірге"))
 ;
 
 
@@ -482,14 +483,18 @@ SELECT Num IF
 #        (1 (px3sp))
 #;
 
+
 # Select attributive reading of the first noun of the II izafet construct
 # (as Tatar grammars call it)
- SELECT Nom IF
-        (0C N OR Prop)
-        (1 N OR Prop OR Subst)
-        (1 (px3sp))
+# SELECT Nom IF
+#        (0C N OR Prop)
+#        (1 N OR Prop OR Subst)
+#        (1 (px3sp))
 ;
 # Was: SELECT 'Attr'
+#
+# this rule didn't work for 'қазба' in:
+# Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
 
 
 ## 111. Түркияның оңтүстік-шығысындағы [0]Газиантеп қаласында кеше болған жарылыстан қаза тапқандар саны 9-ға жетті.
@@ -731,17 +736,17 @@ REMOVE SUB:1 P3 IF
 # the majority of cases.
 #
 # Selecting plural reading might be a more productive approach.
- REMOVE Pl IF
-        (0 V OR Vaux OR Cop)
-        (0 P3)
-;
+# REMOVE Pl IF
+#        (0 V OR Vaux OR Cop)
+#        (0 P3)
+#;
 ##
 
 # Thought that the above rule should cover copulas, seems that sometimes it doesn't
-  REMOVE SUB:1 Pl IF
-        (0/1 Cop)
-       (0/1 P3)
-;
+#  REMOVE SUB:1 Pl IF
+#        (0/1 Cop)
+#       (0/1 P3)
+#;
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
@@ -780,8 +785,8 @@ REMOVE SUB:1 P3 IF
         (-1 Num)
 ;
 
-## "<теңге>"
-  SELECT N IF
+##
+ "<теңге>" SELECT N IF
         (0 A)
 ;
 #
@@ -1127,10 +1132,12 @@ SELECT SUB:1 Pl IF
 #Біз бақыттымыз
 
 
-
- REMOVE SUB:1 Pl IF
-		 (NOT -1* ("<Ол>"i) OR ("<Олар>"i))
-;
+# this rule doesn't work for 'бақшада' in
+# Азамат пен Айгүл бақшада .
+#
+# REMOVE SUB:1 Pl IF
+#		 (NOT -1* ("<Ол>"i) OR ("<Олар>"i))
+#;
 
 
 SELECT  Cop IF
@@ -1215,9 +1222,11 @@ REMOVE Num + Subst IF
       (0C Num) 
       (1C Num LINK 1 N) ;
 
-REMOVE N + Attr IF 
-      (1 PersonalPossessives) 
-      (NOT -1* Gen OR Nom BARRIER (*) - N) ;
+# this rule didn't work for 'қазба' in:
+# Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
+#REMOVE N + Attr IF
+#      (1 PersonalPossessives)
+#      (NOT -1* Gen OR Nom BARRIER (*) - N) ;
 
 REMOVE A + Subst + $$NGDAALI IF 
       (0 N + $$NGDAALI) ;
@@ -1230,8 +1239,9 @@ REMOVE VerbalAdjective + Subst IF
        (-1C Gen)
        (1C N) ;
 
-REMOVE A + Subst IF 
-      (0C A - Subst OR A + Subst) ;
+REMOVE A + Subst IF
+      (0C A - Subst OR A + Subst )
+      (NOT 0 ("бар")) ;
 
 REMOVE Num + Subst IF 
       (0C Num - Subst OR Num + Subst) ;
@@ -1246,8 +1256,9 @@ REMOVE Participle IF
 
 
 #morph disambiquashion example кеңсе-(1-adj, 2-noun)
-SELECT A IF  
-       (1 N);
+#SELECT A OR Adv + Attr IF
+#       (1 N);
+
 
 SELECT Adv IF (1 V);
 #morph disambiquashion example еңбектен-(1-verb, 2-noun)
