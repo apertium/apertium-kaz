@@ -314,11 +314,12 @@ SELECT N IF
 ;
 
 # INPUT: for examle: "Мен жазуым мүмкін" translated as "I may write" 
- SELECT V IF
-        (-1 Pron-Pers)
-	
-;
-
+# SELECT V IF
+#        (-1 Pron-Pers)
+#	    (NOT 0 ("сол"))
+#;
+#
+# this rule fails several times when tested against puupankki corpus
 
 
 
@@ -330,12 +331,18 @@ SELECT Num IF
 	((0 Num) OR (-1 ))
 	(1 N)
 	(NOT 0 ("бірге"))
+	(NOT -1 A)
+	(NOT 0 ("бір"))
+	(NOT 0 ("ол"))
 ;
+#
+# exceptions are added to handle e.g. 'мысығымен бірге үйде отыр', 'ол бір дыбысты естиді', 'үлкен бір ағаш'
 
 
  SELECT FiniteVerb IF
       (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
        (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
+       (NOT 0/1 Cop)
 ;
 ## (!) 40 . Мүмкін бұл Азамат [0]шығар?
 ##  (!) 13 . Жоқ, Айгүлдің күшігі жоқ, оның мысығы [0]бар.
@@ -518,7 +525,7 @@ SELECT Num IF
 REMOVE PersonalPossessives IF
 		(0 NOMINAL)
 		(NOT 0 (gen))
-		(1 (px3sp))
+		(1C (px3sp))
 ;
 ## only indefinite possessors can leave off the genitive suffix, and something possessed itself has to be definite,
 ## so: something possessed can only possess something else if it has gen case,
@@ -669,10 +676,12 @@ REMOVE SUB:1 P3 IF
 ## 187 . Біздің дәуірімізден 1 миллион жыл бұрын өмір сүрген "тік жүретін адамнан" [0]бастап, өз замандастарына дейінгі
 ## кезеңдерді қамтитын, ... орталықтың экспозициясы негізгі сегіз ірі бөлімнен тұрады.
 
- REMOVE Vaux IF 
-        (0 Vaux OR V)
-        (1 Vaux) 
-; 
+# REMOVE Vaux IF
+#        (0 Vaux OR V)
+#        (1 Vaux)
+#;
+#
+# counterexample: 'таба алмай жатыр', the word 'алмай' should be <vaux>
        
 
 # Imperative or not?
@@ -1092,11 +1101,11 @@ SELECT Pron-Pers IF
 #        е<cop><p3><pl>/дәрігер<n><nom>+е<cop><p3><sg>$^./.<sent>$
 # OUTPUT: ^Ол/ол<det><dem>/ол<prn><dem><nom>/ол<prn><pers><p3><sg><nom>$
 #         [0]^дәрігер/дәрігер<n><nom>+е<cop><p3><sg>$^./.<sent>$
- SELECT SUB:1 Sg IF
-        (-1 ("<Ол>"i) OR ("<Олар>"i))
-        (0/1 Cop)
-        (0/1 P3)
-;
+# SELECT SUB:1 Sg IF
+#        (-1 ("<Ол>"i) OR ("<Олар>"i))
+#        (0/1 Cop)
+#        (0/1 P3)
+#;
 #kaz-eng
 # FIXME this rule is unnecessary because of the next rule
 
@@ -1109,11 +1118,11 @@ SELECT Pron-Pers IF
 #         ^әдемі/әдемі<adj>/әдемі<adj><advl>/әдемі<adj><subst><nom>$
 #         [0]^қыз/қыз<n><nom>+е<cop><p3><sg>$^./.<sent>$
  
-SELECT SUB:1 Sg IF
-        (-1* ("<Ол>"i) OR ("<Олар>"i))
-        (0/1 Cop)
-        (0/1 P3)
-;
+#SELECT SUB:1 Sg IF
+#        (-1* ("<Ол>"i) OR ("<Олар>"i))
+#        (0/1 Cop)
+#        (0/1 P3)
+#;
 
 #kaz-eng
 # FIXME doesn't work yet
@@ -1260,7 +1269,8 @@ REMOVE Participle IF
 #       (1 N);
 
 
-SELECT Adv IF (1 V);
+#SELECT Adv IF (1 V);       #it didn't work for 'не' in 'Ал Азамат ағаштың жанында не істеп жатыр ?'
+
 #morph disambiquashion example еңбектен-(1-verb, 2-noun)
 SELECT V IF (0 Pron)
             (1 N + Abl);
