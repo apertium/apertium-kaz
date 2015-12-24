@@ -3394,10 +3394,10 @@
 "<бар>"
 ;	"бар" adj
 ;	"бар" n nom
-	"бар" adj subst nom
-		"е" cop aor p3 sg
-;	"бар" adj
+;	"бар" adj subst nom
 ;		"е" cop aor p3 sg
+	"бар" adj
+		"е" cop aor p3 sg
 ;	"бар" adj subst nom
 ;	"бар" v iv imp p2 sg
 ;	"бар" n nom
@@ -3586,8 +3586,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"орталық" n attr REMOVE:397
 "<мемлекеттік>"
-;	"мемлекеттік" adj
-	"мемлекеттік" adj subst nom
+	"мемлекеттік" adj
+;	"мемлекеттік" adj subst nom
 ;	"мемлекеттік" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"мемлекеттік" adj
@@ -4765,11 +4765,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"христиан" n attr REMOVE:397
 "<миссионерлері>"
-	"миссионер" adj subst pl px3sp nom
-;	"миссионер" adj subst pl px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"миссионер" adj subst pl px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
+	"миссионер" n pl px3sp nom
 "<келе>"
 	"кел" v iv prc_impf
 ;	"кел" vaux prc_impf REMOVE:565
@@ -5434,8 +5430,8 @@
 	"1868" num
 ;	"1868" num subst nom
 "<жылғы>"
-;	"жылғы" adj
-	"жылғы" adj subst nom
+	"жылғы" adj
+;	"жылғы" adj subst nom
 ;	"жылғы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"жылғы" adj
@@ -7068,8 +7064,8 @@
 ;	"әскер" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<кеңестік>"
-	"кеңестік" adj subst nom
-;	"кеңестік" adj
+;	"кеңестік" adj subst nom
+	"кеңестік" adj
 ;	"кеңестік" adj advl
 ;	"кеңестік" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -9227,19 +9223,15 @@
 ;	"арасында" adv SELECT:1072
 "<">"
 	""" sent
-"<АҚШ>"
-	"АҚШ" abbr
-"<->"
-	"-" guio
-"<тан>"
-	"тан" abl
+"<АҚШ-тан>"
+	"АҚШ" np top abl
 "<">"
 	""" sent
 "<кейінгі>"
-;	"кейін" adv attr
+	"кейін" adv attr
 ;	"кейінгі" adj
 ;	"кейін" adv subst nom
-	"кейінгі" adj subst nom
+;	"кейінгі" adj subst nom
 ;	"кейінгі" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"кейінгі" adj
@@ -11076,11 +11068,7 @@
 "<->"
 	"-" guio
 "<жартысында>"
-	"жарты" adj subst px3sp loc
-;	"жарты" adj subst px3sp loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"жарты" adj subst px3sp loc
-;		"е" cop aor p3 sg REMOVE:229
+	"жарты" n px3sp loc
 "<Шимода>"
 	"*Шимода"
 "<Сейджидің>"
@@ -11892,11 +11880,7 @@
 "<->"
 	"-" guio
 "<жартысынан>"
-	"жарты" adj subst px3sp abl
-;	"жарты" adj subst px3sp abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"жарты" adj subst px3sp abl
-;		"е" cop aor p3 sg REMOVE:229
+	"жарты" n px3sp abl
 "<бастап>"
 	"баста" v tv gna_perf
 ;	"баста" vaux prc_perf REMOVE:542
@@ -13560,8 +13544,8 @@
 ;	"консерватория" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<бар>"
-;	"бар" adj SELECT:916
-	"бар" adj subst nom SELECT:916
+	"бар" adj SELECT:916
+;	"бар" adj subst nom SELECT:916
 ;	"бар" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"бар" adj
@@ -15260,10 +15244,10 @@
 ;	"өт" v iv past p3 pl REMOVE:642
 ;	"өт" v tv past p3 pl REMOVE:642
 "<жөн>"
-;	"жөн" adj
+	"жөн" adj
 ;	"жөн" n nom
-	"жөн" adj subst nom
-		"е" cop aor p3 sg
+;	"жөн" adj subst nom
+;		"е" cop aor p3 sg
 ;	"жөн" adj advl
 ;	"жөн" adj subst nom
 ;	"жөн" n nom

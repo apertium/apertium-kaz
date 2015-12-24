@@ -109,11 +109,7 @@
 ;	"екінші" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жартысында>"
-	"жарты" adj subst px3sp loc
-;	"жарты" adj subst px3sp loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"жарты" adj subst px3sp loc
-;		"е" cop aor p3 sg REMOVE:229
+	"жарты" n px3sp loc
 "<Қазақстанда>"
 	"Қазақстан" np top loc
 ;	"Қазақстан" np top loc
@@ -490,8 +486,8 @@
 "<(>"
 	"(" lpar
 "<орталығы>"
-;	"орталық" n px3sp nom
-	"орталық" adj subst px3sp nom
+	"орталық" n px3sp nom
+;	"орталық" adj subst px3sp nom
 ;	"орталық" n px3sp nom
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"орталық" n px3sp nom
@@ -673,8 +669,8 @@
 	"." sent
 
 "<Арғы>"
-;	"арғы" adj
-	"арғы" adj subst nom
+	"арғы" adj
+;	"арғы" adj subst nom
 ;	"арғы" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"арғы" adj
@@ -2574,8 +2570,8 @@
 ;	"жоғары" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<әскери>"
-;	"әскери" adj
-	"әскери" adj subst nom
+	"әскери" adj
+;	"әскери" adj subst nom
 ;	"әскери" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әскери" adj
@@ -7250,9 +7246,9 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<белгілі>"
-;	"белгілі" adj
+	"белгілі" adj
 ;	"белгілі" adv
-	"белгілі" adj subst nom
+;	"белгілі" adj subst nom
 ;	"белгілі" n nom
 ;	"белгілі" n attr
 ;	"белгілі" adj
@@ -7651,9 +7647,9 @@ px2sg nom SELECT:982
 "<халқының>"
 	"халық" n px3sp gen
 "<энциклопедиялық>"
-;	"энциклопедиялық" adj
+	"энциклопедиялық" adj
 ;	"энциклопедиялық" adj advl
-	"энциклопедиялық" adj subst nom
+;	"энциклопедиялық" adj subst nom
 ;	"энциклопедиялық" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"энциклопедиялық" adj
@@ -10416,9 +10412,9 @@ px2sg nom SELECT:982
 "<«>"
 	"«" lquot
 "<науқасына>"
-	"*науқасына"
+	"науқас" n px3sp dat
 "<байланысты>"
-	"байланысты" adj subst nom
+	"байланысты" post
 ;	"байланысты" adj
 ;	"байланысты" adj
 ;		"е" cop aor p3 pl REMOVE:229
@@ -13431,9 +13427,9 @@ px2sg nom SELECT:982
 ;	"ерте" adj subst abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<елдігі>"
-	"елдік" adj subst px3sp nom
-		"е" cop aor p3 sg SELECT:445
-;	"елдік" adj subst px3sp nom SELECT:445
+;	"елдік" adj subst px3sp nom
+;		"е" cop aor p3 sg SELECT:445
+	"елдік" adj subst px3sp nom SELECT:445
 ;	"елдік" adj subst px3sp nom
 ;		"е" cop aor p3 pl SELECT:445 REMOVE:649
 "<,>"
