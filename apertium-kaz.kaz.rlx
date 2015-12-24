@@ -260,17 +260,26 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 ##
 
-
+## Example: handle 'орында' in
+## Қазақстанның басқа қалаларымен салыстырғанда тұрғыны жөнінен 3-ші орында ( Алматы мен Астанадан кейін ) .
+ SELECT SUB:1 Cop IF
+        (1 (lpar))
+        (2* (rpar) BARRIER EOS)
+ ;
 
 
 #
-# SELECT SUB:1 Cop IF
-#        (1 EOS OR MARK)
-#        (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
-#        (NOT 0 FiniteVerb) ## 74 ... барлығы 53 ел [0]қатысты.
-#;
+ SELECT SUB:1 Cop IF
+        (1 MARK)
+        (2*/1 Cop BARRIER EOS)
+        (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
+        (NOT 0 FiniteVerb) ## 74 ... барлығы 53 ел [0]қатысты.
+;
 ## Жоқ, Айгүлдің күшігі [0]жоқ, оның мысығы [0]бар.
 
+ SELECT SUB:1 Cop IF
+        (1 EOS)
+ ;
 
 # ======= #
   SECTION
@@ -614,11 +623,11 @@ REMOVE SUB:1 P3 IF
 ;
 ##
 
-
+# бірге is an adverb, since dropping it results in grammatically correct phrase
 #
- "<бірге>" SELECT Post IF
-        (-1 Ins)
-;
+# "<бірге>" SELECT Post IF
+#        (-1 Ins)
+#;
 ##
 
 
