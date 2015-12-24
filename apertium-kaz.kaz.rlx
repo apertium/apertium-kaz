@@ -1284,4 +1284,7 @@ REMOVE Participle IF
 SELECT V IF (0 Pron)
             (1 N + Abl);
 
-
+SELECT Pron IF
+    (0 ("не"))
+    (1 ("үшін"))
+;
