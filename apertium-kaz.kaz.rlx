@@ -257,6 +257,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
  REMOVE SUB:1 Cop IF
         (-1 BOS OR MARK) ## Headings or enumerations
+        (NOT 1 EOS)
 ;
 ##
 
@@ -279,6 +280,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 
  SELECT SUB:1 Cop IF
         (1 EOS)
+        (NOT 0 V)
  ;
 
 # ======= #
@@ -343,6 +345,7 @@ SELECT Num IF
 	(NOT -1 A)
 	(NOT 0 ("бір"))
 	(NOT 0 ("ол"))
+	(NOT 0 ("біреу"))
 ;
 #
 # exceptions are added to handle e.g. 'мысығымен бірге үйде отыр', 'ол бір дыбысты естиді', 'үлкен бір ағаш'
@@ -438,8 +441,11 @@ SELECT Num IF
  REMOVE V IF
         (0 PRE-N)
         (1C N)
+        (NOT 0 Gerund)
+        (NOT 0 VerbalAdjective)
 ;
 #
+# failed for a gerund 'өлшеу' in 'Радианның басқа да бұрышты өлшеу бірліктерімен арақатынасын мына формуламен сипатталады' => excluded gerunds and verbal adjectives in the rule
 
 
 # INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
@@ -712,7 +718,7 @@ REMOVE SUB:1 P3 IF
 # 2p sg imperative form is a bare stem, so it is often ambigious with other
 # parts of speech
  REMOVE (imp) IF
-        (NOT 1 EOS OR MARK OR ("де"))
+        (NOT 1 EOS OR MARK OR ("де") OR Rquot)
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.

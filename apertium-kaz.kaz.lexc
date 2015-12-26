@@ -1178,6 +1178,10 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
 мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
 
+LEXICON PRON-DEM-MINAU
+
+мынау%<prn%>%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
+
 LEXICON PRON-DEM-ANA
 
 %<nom%>: CLITICS-INCL-COP ;
@@ -1200,6 +1204,7 @@ LEXICON DemonstrativePronouns
 
 PRON-DEM-BUL ;
 PRON-DEM-MINA ;
+PRON-DEM-MINAU ;
 ана%<prn%>%<dem%> PRON-DEM-ANA ;
 
 сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCL-COP ;
@@ -2007,6 +2012,7 @@ InterrogativePronouns ;
 бұл:бұл DET-DEM ;
 ол:ол DET-DEM ;
 мынау:мынау DET-DEM ;
+мына:мына DET-DEM ;
 ол:ол DET-DEM ;
 осы:осы DET-DEM ;
 сол:сол DET-DEM ;
@@ -2029,6 +2035,7 @@ InterrogativePronouns ;
 қанша:қанша DET-QNT ; ! "how many"
 азырақ:азырақ DET-QNT ; ! "less"
 көбірек:көбірек DET-QNT ; ! "much"
+көп:көп DET-QNT ; ! "many"
 бір% топ:бір% топ DET-QNT ; ! "a bunch of"
 
 
@@ -2052,6 +2059,7 @@ InterrogativePronouns ;
 бірер:бірер DET-IND ; ! ""
 сондай:сондай DET-IND ; ! "such" !Use/MT
 әр% түрлі:әр% түрлі DET-IND ; ! "various"
+басқа:басқа DET-IND ; ! "another"
 
 қай:қай DET-ITG ; ! "which"
 қайсы:қайсы DET-ITG ; ! "which"
@@ -4955,6 +4963,7 @@ XXI NUM-ROMAN ; ! ""
 қақтығыс:қақтығыс N1 ; ! ""
 қақырық:қақырық N1 ; !
 қалайы:қалайы N1 ; ! "tin"
+қал:қал N1 ; ! "doing" e.g. in 'қалыңыз қалай?'
 қала:қала N1 ; ! "city"
 қалақша:қалақша N1 ; !
 қаламгер:қаламгер N1 ; ! ""
@@ -9323,7 +9332,7 @@ PSM:PSM N1 ; !"Use/MT"
 әліпби:әліпби N1 ; !"Use/MT"
 әлсіздік:әлсіздік N1 ; !"Use/MT"
 әмбебаптылық:әмбебаптылық N1 ; !"Use/MT"
-әмиян:әмиян N1 ; ! ""
+әмиян:әмиян%{і%} N1 ; ! "wallet"
 әмірлік:әмірлік N1 ; ! ""
 әмірші:әмірші N1 ; !"Use/MT"
 әңгімелеу:әңгімелеу N1 ; !"Use/MT"
@@ -16280,6 +16289,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Қожагелді:Қожагелді NP-ANT-M ; ! "Qojageldi" (Arabic)
 Қожақ:Қожақ NP-ANT-M ; ! "Qojaq" (Greek)
 Қожа:Қожа NP-ANT-M ; ! "Qoja" (Arabic)
+Қожеке:Қожеке NP-ANT-M ; ! "Qojeke" (version of Qoja)
 Қожанасыр:Қожанасыр NP-ANT-M ; ! ""
 Қожанияз:Қожанияз NP-ANT-M ; ! "Qojanıyaz" (Arabic)
 Қожатай:Қожатай NP-ANT-M ; ! "Qojatay" (Arabic)
@@ -22811,6 +22821,7 @@ Witness:Witness NP-AL ; ! ""
 есен:есен A2 ; ! ""
 есен:есен A2 ; ! ""
 жабайы:жабайы A2 ; ! ""
+жаралы:жаралы A2 ; ! "injured"
 жедел:жедел A2 ; ! ""
 иен:иен A2 ; ! ""
 кінәлі:кінәлі A2 ; ! ""
@@ -26381,6 +26392,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 жаула:жаула V-TV ; ! ""
 жаулап% ал:жаулап% ал V-TV ; ! 
 же:же V-TV ; ! "eat"
+жегіз:жегіз V-TV ; ! "feed"
 жезөкшеле:жезөкшеле V-TV ; ! 
 жекеле:жекеле V-TV ; ! "to separate"
 жекешелендір:жекешелендір V-TV ; ! "" caus?
@@ -26865,6 +26877,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қотырлан:қотырлан V-IV ; ! "to get mangy"
 қошамет% көрсет:қошамет% көрсет V-TV ; ! 
 қошаметте:қошаметте V-TV ; ! "to approve"
+қошеметте:қошеметте V-TV ; ! "respect"
 көшіріп% жаз:көшіріп% жаз V-TV ; ! 
 көшір:көшір V-TV ; ! "copy/move" caus?
 көш:көш V-IV ; ! "lead a nomad's life,move to another place"
@@ -28621,6 +28634,7 @@ cүй:сүй V-TV ; ! "love"  ! Use/MT eng-kaz
 ой:ой INTERJ ; ! "hey"
 өй:өй INTERJ ; ! ""
 өтінем:өтінем INTERJ ; ! "please"
+рақмет:рақмет INTERJ ; ! "thank you"
 сәлем:сәлем INTERJ ; ! ""
 түсінікті:түсінікті INTERJ ; ! "understood"
 уа:уа INTERJ ; ! ""
