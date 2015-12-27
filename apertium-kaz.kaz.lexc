@@ -785,7 +785,7 @@ LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>:%>т%{I%} CLITICS-NO-COP ;
-%<p3%>%<sg%>:%>т%{I%} CLITICS-NO-COP ;
+%<p3%>%<pl%>:%>т%{I%} CLITICS-NO-COP ;
 
 LEXICON VOL-ENDINGS
 
@@ -888,6 +888,7 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<aor%>%<evid%>:%>%{E%}д%{I%}% екен V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
 %<past%>%<evid%>:%>%{G%}%{A%}н% екен V-PERS-S1 ;   ! барған екенмін / бармаған екенмін
 %<ifi%>%<evid%>:%>%{I%}п V-PERS-IFI_EVID ;         ! барыппын / бармаппын
+%<neg%>%<ifi%>%<evid%>:%>%{G%}%{A%}н% жоқ% екен V-PERS-S1 ; ! барған жоқ екенмін
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
@@ -1887,6 +1888,7 @@ LEXICON ABBR
 ғұрлы:ғұрлы POST ; ! "like, similar to" + DAT
 дейін:дейін POST ; ! "until, up to, as far as" + DAT
 жуық:жуық POST ; ! "about, приблизительно" + DAT  ! not sure /JNW/
+жақын:жақын POST ; ! "ближе к" + DAT
 ілгері:ілгері POST ; ! "forward, ahead" + DAT ! not sure about translation /JNW/
 қарағанда:қарағанда POST ; ! "according to; than(?)" + DAT
 қарай:қарай POST ; ! "toward" + DAT
@@ -1912,6 +1914,7 @@ LEXICON ABBR
 бұрын:бұрын POST ; ! "earlier than, раньше" + ABL
 гөрі:гөрі POST ; ! ""
 кейін:кейін POST ; ! "after, afterwards, later" + ABL
+тыс:тыс POST ; ! "out of" + ABL
 соң:соң POST ; ! "after, afterwards, then" + ABL
 содан% кейін:содан% кейін POST ; ! "after that" Use/MT
 ! which Govern the Instrumental Case
@@ -2013,11 +2016,13 @@ InterrogativePronouns ;
 ол:ол DET-DEM ;
 мынау:мынау DET-DEM ;
 мына:мына DET-DEM ;
+мұндай:мұндай DET-DEM ; ! 'like this'
 ол:ол DET-DEM ;
 осы:осы DET-DEM ;
 сол:сол DET-DEM ;
 сонау:сонау DET-DEM ;
 осынау:осынау DET-DEM ;
+осындай:осындай DET-DEM ; ! "such"
 
 
 әр:әр DET-QNT ; ! "every"
@@ -2029,6 +2034,7 @@ InterrogativePronouns ;
 барлық:барлық DET-QNT ; ! "all"
 бірқатар:бірқатар DET-QNT ; ! "several"
 бірнеше:бірнеше DET-QNT ; ! "some"
+бірсыпыра:бірсыпыра DET-QNT ; ! "quite, pretty much"
 бүкіл:бүкіл DET-QNT ; ! "whole"
 жетерлік:жетерлік DET-QNT ; ! "enough" Use/MT
 көптеген:көптеген DET-QNT ; ! "many"
@@ -2400,7 +2406,7 @@ XXI NUM-ROMAN ; ! ""
 алфавит:алфавит N1 ; ! ""
 алшы:алшы N1 ; ! ""
 алыпсатар:алыпсатар N1 ; ! ""
-алыс:алыс N1 ; ! ""
+!алыс:алыс N1 ; ! "" ! seems like adj.subst
 алыспақ:алыспақ N1 ; ! ""
 алыстық:алыстық N1 ; ! ""
 альбатрос:альбатрос N1 ; !
@@ -5832,6 +5838,7 @@ XXI NUM-ROMAN ; ! ""
 күлдеуіш:күлдеуіш N1 ; ! ""
 күлкі:күлкі N1 ; ! ""
 күл:күл N1 ; ! "ashes"
+күлдіреуіш:күлдіреуіш N1 ; ! "перекрестные реечки шанырака"
 құл:құл N1 ; ! "slave"
 кулон:кулон N1 ; ! ""
 құлпынай:құлпынай N1 ; ! ""
@@ -6402,6 +6409,7 @@ XXI NUM-ROMAN ; ! ""
 мұрса:мұрса N1 ; ! ""
 мұрсат:мұрсат N1 ; ! ""
 мұрт:мұрт N1 ; ! "moustache"
+мұрша:мұрша N1 ; ! "strength"
 мұрындық:мұрындық N1 ; ! ""
 мұрын:мұр%{y%}н N1 ; ! "nose"
 мүсәтір:мүсәтір N1 ; ! ""
@@ -6638,7 +6646,7 @@ XXI NUM-ROMAN ; ! ""
 өндірісші:өндірісші N1 ; ! "" !Use/MT
 өндіруші:өндіруші N1 ; ! ""
 өнеге:өнеге N1 ; ! ""
-он% екі% елі% ішек:он% екі% елі% ішек N1 ; !
+!он% екі% елі% ішек:он% екі% елі% ішек N1 ; ! to bring it back after testing the tagger
 он% екі% қырлы:он% екі% қырлы N1 ; !
 өнеркәсіп:өнеркәсіп N1 ; ! "industry"
 өнеркәсіпші:өнеркәсіпші N1 ; ! ""
@@ -7626,6 +7634,7 @@ XXI NUM-ROMAN ; ! ""
 тарап:тарап N1 ; ! "direction"
 тарату:тарату N1 ; ! "distribution"
 тарау:тарау N1 ; ! "chapter"
+тарғақ:тарғақ N1 ; !
 тарих% бастау:тарих% бастау N1 ; ! ""
 тарихнама:тарихнама N1 ; !
 тарих:тарих N1 ; ! "history"
@@ -7895,6 +7904,7 @@ XXI NUM-ROMAN ; ! ""
 туника:туника N1 ; ! ""
 түн% орта:түн% орта N1 ; ! ""
 түн:түн N1 ; ! "night"
+түндік:түндік N1 ; ! "tundik"
 тұншықтыру:тұншықтыру N1 ; !
 түп:түп N1 ; ! "fundament,trunk of a tree,bed of a river,lake"
 тұрақтандырғыш:тұрақтандырғыш N1 ; ! ""
@@ -17746,6 +17756,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Тоты:Тоты NP-ANT-F ; ! "Totı" (Kazakh)
 Төлеген:Төлеген NP-ANT-M ; ! ""
 Төлепберді:Төлепберді NP-ANT-M ; ! "Tölepberdi"
+Төстік:Төстік NP-ANT-M ; ! ""
 Тринити:Тринити NP-ANT-F ; !"Use/MT"
 Трент:Трент NP-ANT-M ; !"Use/MT"
 Трентон:Трентон NP-ANT-M ; !"Use/MT"
@@ -21028,6 +21039,8 @@ Witness:Witness NP-AL ; ! ""
 
 ! --Ainur-new-adjectives------
 
+керулі:керулі A1 ; ! ""
+кер:кер A1 ; ! "stubborn"
 қаба:қаба A2 ; !
 қабаған:қабаған A1 ; !
 қабақты:қабақты A1 ; !
@@ -22049,7 +22062,7 @@ Witness:Witness NP-AL ; ! ""
 фракциялық:фракциялық A4 ; ! ""
 функционал:функционал A1 ; ! ""
 хабарландыратын:хабарландыратын A1 ; ! ""
-хабарсыз:хабарсыз A1 ; ! ""
+!хабарсыз:хабарсыз A1 ; ! "" ! looks like n + сыз.post
 хлорлы:хлорлы A3 ; ! ""
 хроникалық:хроникалық A4 ; ! ""
 циклдық:циклдық A4 ; ! ""
@@ -22202,6 +22215,7 @@ Witness:Witness NP-AL ; ! ""
 астрономиялық:астрономиялық A4 ; ! "astronomical"
 аталмыш:аталмыш A4 ; ! ""
 атаулы:атаулы A4 ; ! ""
+атқарушылық:атқарушылық A4 ; ! "executive"
 атмосфералық:атмосфералық A4 ; ! "atmospherical"
 атомдық:атомдық A4 ; ! ""
 атты:атты A4 ; ! ""
@@ -24655,7 +24669,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 құшақталған:құшақталған A4 ; ! 
 күшін% жойған:күшін% жойған A4 ; ! 
 қуырылған:қуырылған A4 ; ! 
-қызмет% көрсетілген:қызмет% көрсетілген A4 ; ! 
+қызмет% көрсетілген:қызмет% көрсетілген A4 ; !
+қыстық:қыстық A4 ; ! "winter"
 лаулаған:лаулаған A4 ; ! 
 майлы:майлы A4 ; !"Use/MT"
 мақтанған:мақтанған A4 ; ! 
@@ -24752,6 +24767,11 @@ retroactive:retroactive A1 ; !"Use/MT"
 дөрекі:дөрекі ADV ; ! 
 жексұрынды:жексұрынды ADV ; ! 
 жол%-жөнекей:жол%-жөнекей ADV; ! "Use/MT"
+бара%-бара ADV ; ! ""
+жүре%-бара ADV ; ! ""
+жүре%-жүре ADV ; ! ""
+жүре%-келе ADV ; ! ""
+келе%-келе ADV ; ! "little by little"
 бірқалыпты:бірқалыпты ADV ; ! ""
 жақында:жақында ADV ; ! "nearly" !Use/MT
 жуырда:жуырда ADV ; ! ""
@@ -24859,6 +24879,9 @@ retroactive:retroactive A1 ; !"Use/MT"
 әйтеуір:әйтеуір ADV ; ! "somehow"
 әйтпегенде:әйтпегенде ADV ; ! ""
 әлгіде:әлгіде ADV ; ! ""
+әрең-әрең ADV ; ! "barely"
+әлтек-тәлтек ADV ; ! ""
+қалт-құлт ADV ; ! ""
 әлі:әлі ADV ; ! "now" !FIXME:CHECK
 әлі% де:әлі% де ADV ; ! ""
 әлі% де% болса:әлі% де% болса ADV ; ! "still" ! Use/MT
@@ -25109,7 +25132,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 маңыздысы:маңыздысы ADV ; ! 
 өмірбақи:өмірбақи ADV ; ! 
 онда:онда ADV ; ! 
-оңтүстікке% қарай:оңтүстікке% қарай ADV ; ! 
+!оңтүстікке% қарай:оңтүстікке% қарай ADV ; ! to bring back after testing the tagger
 орынсыз:орынсыз ADV ; ! 
 осында:осында ADV ; ! 
 өтірік:өтірік ADV ; ! 
@@ -25827,7 +25850,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 аңса:аңса V-TV ; ! 
 антала:антала V-TV ; ! "press,surround,encircle"
 аңтарыл:аңтарыл V-IV ; ! "to be disturbed"
-ант% бер:ант% бер V-TV ; !"Use/MT"
+!ант% бер:ант% бер V-TV ; !"Use/MT" ! to bring it back after testing the tagger
 анықта:анықта V-TV ; ! "elucidate,clarify,define,specify"
 анықта:анықта V-TV ; ! "выяснять,определять,уточнять"
 аңыра:аңыра V-IV ; ! ""
@@ -26564,6 +26587,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 іште% сақта:іште% сақта V-TV ; ! ""
 қабатта:қабатта V-TV ; ! "to pile in layers"
 қабық% ал:қабық% ал V-TV ; !
+қабыл% ал:қабыл% ал V-TV ; ! "agree"
 қабылда:қабылда V-TV-NOPASS ; ! ""
 қабылда:қабылдан V-TV-PASS ; ! ""
 қабын:қабын V-IV ; ! 
@@ -26773,6 +26797,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 ки:ки V-TV ; ! "wear"
 кимеле:кимеле V-TV ; ! "to push"
 кимеле:кимеле V-TV ; ! "перебивать"
+қимылда:қимылда V-IV ; ! "move, act"
 қина:қина V-TV ; ! ""
 қинал:қинал V-IV ; ! "" refl
 қира:қира V-IV ; ! ""
@@ -27222,6 +27247,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 сағын:сағын V-TV ; ! "miss"
 саздан:саздан V-IV ; ! "to become miry"
 сайла:сайла V-TV ; ! ""
+сай% бол:сай% бол V-IV ; ! ""
 сайлат:сайлат V-TV ; ! "to let choose"
 сайра:сайра V-IV ; ! "to sing (of birds)"
 сайыс:сайыс V-IV ; ! "to joust"
@@ -28754,6 +28780,7 @@ AББ:AББ ABBR ; !"Use/MT"
 г:г ABBR ; ! "грамм"
 Ғ%.С%.:Ғ%.С%. ABBR ; ! ""
 ғ%.:ғ%. ABBR ; ! "" Use/MT
+Ғ%.:Ғ%. ABBR ; ! ""
 дек%.:дек%. ABBR ;
 ДНҚ:ДНҚ%{а%} ABBR ; ! "DNA"
 ДСҰ:ДСҰ ABBR ; ! "WTO"

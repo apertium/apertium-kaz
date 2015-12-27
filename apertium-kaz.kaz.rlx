@@ -410,6 +410,8 @@ SELECT Num IF
  SELECT Prop IF
         (0 ("[:upper:]+[:lower:]*"r))
         (NOT -1 BOS)
+        (NOT 0 ("Кеңес"))
+        (NOT 0 ("Отан"))
 ;
 ## 108. Өйткені бүгінгі [0]Арал деген атау сол XVII ғасырдан бергі жерге берілген.
  SELECT Prop IF
@@ -456,6 +458,7 @@ SELECT Num IF
         (NOT 0 ("бірге"i)) # мысығымен бірге<post> үйде<n>
                            # бақшада бірге<adv> ойнайды<v>
                            # бақша арқылы<post> барамын<v>
+        (NOT 0 ("бұрын"))  # Төстік бұрын ағалары бар екенін естіген жоқ екен .
 ;
 #kaz-eng
 
@@ -523,10 +526,12 @@ SELECT Num IF
 
 
 # If a former gerund or verbal adjective was lexicalized as a noun, select noun
- SELECT N IF
-        (0 N)
-        (0 Gerund  OR (gpr_pot))
-;
+# SELECT N IF
+#        (0 N)
+#        (0 Gerund  OR (gpr_pot))
+#;
+# the rule contradicts with some of the analyzes in puupankki, which is considered to be 'gold' standard
+#
 ## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
 
@@ -557,9 +562,11 @@ REMOVE PersonalPossessives IF
 # FIXME CHECK it might be a gerund as well
  SELECT Advl IF
          (1C V-NotGerund)
+         (NOT 1C Participle)
+         (NOT 1 ("бол"))
 ;
 ##
-
+# example: 'ұзақ болып келеді', here 'ұзақ' is adjective (according to wikipedia.tagged.txt in puupankki)
 
 # select adj+cop reading at the end of a sentence
  SELECT Sub:1 Cop IF
@@ -718,7 +725,7 @@ REMOVE SUB:1 P3 IF
 # 2p sg imperative form is a bare stem, so it is often ambigious with other
 # parts of speech
  REMOVE (imp) IF
-        (NOT 1 EOS OR MARK OR ("де") OR Rquot)
+        (NOT 1 EOS OR MARK OR ("де") OR Rquot OR (guio))
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
 ## [0]Бар деп айттым мен оған.
