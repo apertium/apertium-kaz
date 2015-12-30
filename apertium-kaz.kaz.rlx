@@ -253,7 +253,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 ;
 
  REMOVE SUB:1 Cop IF
-        (NOT 1 EOS OR MARK)
+        (NOT 1 EOS OR MARK OR ("де"))
 ;
  REMOVE SUB:1 Cop IF
         (-1 BOS OR MARK) ## Headings or enumerations
@@ -275,6 +275,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (2*/1 Cop BARRIER EOS)
         (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
         (NOT 0 FiniteVerb) ## 74 ... барлығы 53 ел [0]қатысты.
+        (NOT 2 N)
 ;
 ## Жоқ, Айгүлдің күшігі [0]жоқ, оның мысығы [0]бар.
 
@@ -346,6 +347,7 @@ SELECT Num IF
 	(NOT 0 ("бір"))
 	(NOT 0 ("ол"))
 	(NOT 0 ("біреу"))
+	(NOT 0 ("үшін"))
 ;
 #
 # exceptions are added to handle e.g. 'мысығымен бірге үйде отыр', 'ол бір дыбысты естиді', 'үлкен бір ағаш'
@@ -375,6 +377,7 @@ SELECT Num IF
 #         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
  REMOVE Post IF
         (NOT -1 NOMINAL)
+        (NOT -1 ("\*.+"r))
 ;
 #
 
@@ -430,7 +433,7 @@ SELECT Num IF
 #
  SELECT Pron IF
         (0C Det OR Pron)
-        (1 Adv)
+        (1C Adv)
 ;
 ## 44 . [0]Ол енді ол дыбысты анығырақ ести бастады.
 
@@ -459,6 +462,7 @@ SELECT Num IF
                            # бақшада бірге<adv> ойнайды<v>
                            # бақша арқылы<post> барамын<v>
         (NOT 0 ("бұрын"))  # Төстік бұрын ағалары бар екенін естіген жоқ екен .
+        (NOT 1 A)
 ;
 #kaz-eng
 
@@ -560,13 +564,15 @@ REMOVE PersonalPossessives IF
 
 # select adverbial reading of adjectives if any verbal form except gerund follows
 # FIXME CHECK it might be a gerund as well
- SELECT Advl IF
+ SELECT Advl OR Adv IF
          (1C V-NotGerund)
-         (NOT 1C Participle)
+         #(NOT 1C Participle)
          (NOT 1 ("бол"))
+         (NOT 0 ("балама"))
+         (NOT 1 ("де"))
 ;
 ##
-# example: 'ұзақ болып келеді', here 'ұзақ' is adjective (according to wikipedia.tagged.txt in puupankki)
+# example: in 'балама үйретейін' the 'балама' shouldn't be treated as adj.advl (equivalent), it should be n.px1sq.dat (to my son)
 
 # select adj+cop reading at the end of a sentence
  SELECT Sub:1 Cop IF
@@ -681,6 +687,7 @@ REMOVE SUB:1 P3 IF
 #
  SELECT Participle IF
         (0C Participle OR VerbalAdverb)
+        (NOT 0C (prc_cond) OR (gna_cond))
         (1 Vaux)
 ;
 ## 16 . Азамат ескі үлкен бір ағашқа қарай қатты [?]жүгіріп бара жатыр, ол сол
@@ -736,8 +743,9 @@ REMOVE SUB:1 P3 IF
 
 #
  SELECT (gpr_past) IF
-        (0C (ger_past) + Nom)
-        (1 N)
+        (0 (ger_past) + Nom)
+        (1C N)
+        (NOT 0 Det)
 ;
 
 
@@ -970,9 +978,11 @@ REMOVE SUB:1 P3 IF
 # да<postadv/conj>
  SELECT SUB:1 Postadv IF
         (0 (gna_cond))
+        (NOT 0 (cnjadv))
 ;
 ## 34 . Ол Азаматтың қайда екенін [0]білсе+[0/1_or_-1]де айтқысы келген жоқ.  # with SUBREADINGS = LTR ; option
 ## Ол Азаматтың қайла екенін [0]білсе+[0/1]де+[0/2_or_-1]мі?                  # with SUBREADINGS = LTR ; option
+## Сөйтсе де осы оқыған балалар — ана оқымаған қазақ балаларынан үздік , озық .
 
 
 #
@@ -1260,7 +1270,10 @@ REMOVE Num + Subst IF
 #      (NOT -1* Gen OR Nom BARRIER (*) - N) ;
 
 REMOVE A + Subst + $$NGDAALI IF 
-      (0 N + $$NGDAALI) ;
+      (0 N + $$NGDAALI)
+      (NOT 0 ("бар"))
+;
+# could be 'bar' as a drinking place VS 'бар' as 'there is/are'
 
 REMOVE Num + Subst IF 
       (-1C Num) 
@@ -1272,7 +1285,11 @@ REMOVE VerbalAdjective + Subst IF
 
 REMOVE A + Subst IF
       (0C A - Subst OR A + Subst )
-      (NOT 0 ("бар")) ;
+      (NOT 0 ("бар"))
+      (NOT 0 ("жоқ"))
+;
+# example: Кірді , шықты , ілді , қайтты , түбегейлеп қуған бала да жоқ .
+# 'жоқ' should be adj.subst here
 
 REMOVE Num + Subst IF 
       (0C Num - Subst OR Num + Subst) ;
