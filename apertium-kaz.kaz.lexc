@@ -1999,7 +1999,7 @@ InterrogativePronouns ;
 әр:әр PRON-IND ; ! !"either" Use/MT 
 біреу:біреу PRON-IND ; ! !"someone" Use/MT 
 
-
+әрқайсысы:әрқайсы PRON-QNT-POSS ; ! "each of"
 барлық:барлық PRON-QNT ; ! ""
 бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
@@ -2597,6 +2597,7 @@ XXI NUM-ROMAN ; ! ""
 арбалет:арбалет N1 ; !
 аргинин:аргинин N1 ; !
 арғымақ:арғымақ N1 ; ! "thoroughbred"
+арғын:арғын N1 ; !
 ардагер:ардагер N1 ; ! ""
 ардақ:ардақ N1 ; ! ""
 ареал:ареал N1 ; ! ""
@@ -2803,6 +2804,7 @@ XXI NUM-ROMAN ; ! ""
 әділетсіздік:әділетсіздік N1 ; ! ""
 әдіс:әдіс N1 ; ! "method"
 әже:әже N1 ; ! "grandmother"
+әжуа:әжуа N1 ; ! ""
 әзір:әзір N1 ; ! "now"
 әзірлік:әзірлік N1 ; ! ""
 әйел:әйел N1 ; ! "woman"
@@ -2952,6 +2954,7 @@ XXI NUM-ROMAN ; ! ""
 балағаттаушылық:балағаттаушылық N1 ; ! ""
 балайна:балайна N1 ; ! ""
 балақай:балақай N1 ; ! ""
+балақ:балақ N1 ; ! ""
 балаңқұрт:балаңқұрт N1 ; !
 бала% өлтіру:бала% өлтіру N1 ; !
 балапан:балапан N1 ; ! "chick"
@@ -5296,6 +5299,7 @@ XXI NUM-ROMAN ; ! ""
 қаражат:қаражат N1 ; ! "finances"
 қаражидек:қаражидек N1 ; !
 қарақат:қарақат N1 ; ! ""
+қаракесек:қаракесек N1 ; ! ""
 қарақшы:қарақшы N1 ; ! "robber"
 қарақшылық:қарақшылық N1 ; ! ""
 қара% металлургия:қара% металлургия N1 ; !
@@ -5680,6 +5684,7 @@ XXI NUM-ROMAN ; ! ""
 кладизм:кладизм N1 ; ! ""
 кладограмма:кладограмма N1 ; ! ""
 клапан:клапан N1 ; ! ""
+классик:классик N1 ; ! ""
 классика:классика N1 ; ! ""
 классификация:классификация N1 ; ! ""
 классицизм:классицизм N5 ; ! ""
@@ -7981,6 +7986,7 @@ XXI NUM-ROMAN ; ! ""
 сүлгі:сүлгі N1 ; ! ""
 сүлік:сүлік N1 ; ! "leech,mooch"
 сұлтан:сұлтан N1 ; ! ""
+сұлтандық:сұлтандық N1 ; ! ""
 сульфат:сульфат N1 ; ! ""
 сұмдық:сұмдық N1 ; ! "cunning"
 сүмелек:сүмелек N1 ; !"Use/MT"
@@ -14056,6 +14062,7 @@ PSM:PSM N1 ; !"Use/MT"
 Колумбия:Колумбия NP-TOP ; ! ""
 Коми:Коми NP-TOP ; ! ""
 Комор:Комор NP-TOP ; ! ""
+Қоңыр%-көкше:Қоңыр%-көкше NP-TOP ; ! ""
 Константинополь:Константинополь NP-TOP ; ! ""
 Копенгаген:Копенгаген NP-TOP ; ! "Copenhagen"
 Корея:Корея NP-TOP ; ! "Korea"
@@ -16836,6 +16843,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Жорам:Жорам NP-ANT-M ; ! ""
 Жорж:Жорж NP-ANT-M ; !"Use/MT"
 Жорахан:Жорахан NP-ANT-M ; ! "Joraxan" (Arabic)
+Жортар:Жортар NP-ANT-M ; ! ""
 Жосапат:Жосапат NP-ANT-M ; ! ""
 Жүзбай:Жүзбай NP-ANT-M ; ! "Jüzbay" (Kazakh)
 Жүнісәлі:Жүнісәлі NP-ANT-M ; ! "Jünisäli" (Ancient Hebrew)
@@ -17203,6 +17211,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Күнке:Күнке NP-ANT-M ; ! ""
 Күнсұлу:Күнсұлу NP-ANT-F ; ! "Künsulıw" (Kazakh)
 Күнту:Күнту NP-ANT-M ; ! "Küntiw" (Kazakh)
+Күңке:Күңке NP-ANT-F ; ! ""
 Күшікбай:Күшікбай NP-ANT-M ; ! "Küşikbay"
 Қабай:Қабай NP-ANT-M ; ! "Qabay" (Old Turkic)
 Қабиб:Қабиб NP-ANT-M ; ! "Qabıyb" (Arabic)
@@ -17232,6 +17241,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Қазығали:Қазығали NP-ANT-M ; ! "Qazığalıy" (Arabic)
 Қазықан:Қазықан NP-ANT-M ; ! "Qazıqan" (Arabic)
 Қайдар:Қайдар NP-ANT-M ; ! "Qaydar" (Arabic)
+Қайдос:Қайдос NP-ANT-M ; !
 Қайрат:Қайрат NP-ANT-M ; ! "Qayrat" (Arabic)
 Қайсар:Қайсар NP-ANT-M ; ! "Qaysar" (Arabic)
 Қайым:Қайым NP-ANT-M ; ! "Qayım" (Arabic)
@@ -17781,6 +17791,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Мырзамұрат:Мырзамұрат NP-ANT-M ; ! "Mırzamurat" (Arabic)
 Мырзахан:Мырзахан NP-ANT-M ; ! "Mırzaqan"  (sometimes M?)
 Мырзахан:Мырзахан NP-ANT-M ; ! "Mırzaxan" (Arabic)
+Мырзатай:Мырзатай NP-ANT-M ; ! ""
 Мырзахмет:Мырзахмет NP-ANT-M ; ! "Mırzaxmet" (Arabic)
 Мырқасым:Мырқасым NP-ANT-M ; ! "Mırqasım" (Arabic)
 Мырхайдар:Мырхайдар NP-ANT-M ; ! "Mırxaydar" (Arabic)
@@ -18029,6 +18040,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Октябрь:Октябрь NP-ANT-M ; ! "Oktyabrʲ" 
 Олег:Олег NP-ANT-M ; ! "Oleg" (Skandinavian)
 Олжабай:Олжабай NP-ANT-M ; ! "Oljabay" (Kazakh)
+Олжай:Олжай NP-ANT-M ; ! ""
 Олжас:Олжас NP-ANT-M ; ! "Oljas" (Kazakh)
 Оливер:Оливер NP-ANT-M ; !"Use/MT"
 Олли:Олли NP-ANT-M ; !"Use/MT"
@@ -18824,6 +18836,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Үрімжан:Үрімжан NP-ANT-M ; ! "Ürimjan" (Persian)
 Үрімхан:Үрімхан NP-ANT-M ; ! "Ürimxan" (Persian)
 Үркімбай:Үркімбай NP-ANT-M ; ! "Ürkimbay"
+Үркер:Үркер NP-ANT-M ; ! ""
 Үрқыз:Үрқыз NP-ANT-F ; ! "" 
 Үсен:Үсен NP-ANT-M ; ! "Üsen" (Arabic)
 Үстем:Үстем NP-ANT-M ; ! "Üstem" (Kazakh)
@@ -19265,6 +19278,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Мұхамедиұлы:Мұхамедиұлы NP-COG-M ; ! ""
 Нөкенұлы:Нөкенұлы NP-COG-M ; ! ""
 Островский:Островский NP-COG-M ; ! ""
+Өскенбайұлы:Өскенбайұлы NP-COG-M ; ! ""
 Пернешұлы:Пернешұлы NP-COG-M ; ! ""
 Рахметоллаұлы:Рахметоллаұлы NP-COG-M ; ! ""
 Рахмадиұлы:Рахмадиұлы NP-COG-M ; ! ""
@@ -19283,6 +19297,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Түйтеұлы:Түйтеұлы NP-COG-M ; ! ""
 Уреки:Уреки NP-COG-M ; !"Use/MT"
 Чайковский:Чайковский NP-COG-M ; ! ""
+Чернышевский:Чернышевский NP-COG-M ; ! ""
 Ширак:Ширак NP-COG-M ; ! ""
 Цзиньпин:Цзиньпин NP-COG-M ; !"Use/MT"
 Янг:Янг NP-COG-M ; ! ""
@@ -19390,6 +19405,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Генко:Генко NP-COG-MF ; ! ""
 Герасименко:Герасименко NP-COG-MF ; ! ""
 Герман:Герман NP-COG-MF ; !"Use/MT"
+Герцен:Герцен NP-COG-MF ; ! ""
 Гете:Гете NP-COG-MF ; ! ""
 Ги% Мун:Ги% Мун NP-COG-MF ; ! ""
 Гитлер:Гитлер NP-COG-MF ; ! ""
@@ -19447,6 +19463,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Донченко:Донченко NP-COG-MF ; ! ""
 Доренко:Доренко NP-COG-MF ; ! ""
 Доценко:Доценко NP-COG-MF ; ! ""
+Дрепер:Дрепер NP-COG-MF ; ! ""
 Дубровченко:Дубровченко NP-COG-MF ; ! ""
 Думенко:Думенко NP-COG-MF ; ! ""
 Дыбенко:Дыбенко NP-COG-MF ; ! ""
@@ -19455,6 +19472,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Дяченко:Дяченко NP-COG-MF ; ! ""
 Ердоған:Ердоған NP-COG-MF ; ! ""
 Жанта:Жанта NP-COG-MF ; !"Use/MT"
+Жәми:Жәми NP-COG-MF ; ! ""
 Жовтис:Жовтис NP-COG-MF ; ! ""
 Жовтис:Жовтис%{☭%} NP-COG-MF ; ! ""
 Забалета:Забалета NP-COG-MF ; ! ""
@@ -19600,6 +19618,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Мюррей:Мюррей NP-COG-MF ; !"Use/MT"
 Наварро:Наварро NP-COG-MF ; !"Use/MT"
 Надаль:Надаль NP-COG-MF ; !"Use/MT"
+Науаи:Науаи NP-COG-MF ; ! ""
 Нахименко:Нахименко NP-COG-MF ; ! ""
 Низами:Низами NP-COG-MF ; ! ""
 Никитенко:Никитенко NP-COG-MF ; ! ""
@@ -19682,6 +19701,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Сааведра:Сааведра NP-COG-MF ; ! ""
 Сабиров:Сабиров NP-COG-MF ; ! ""
 Савченко:Савченко NP-COG-MF ; ! ""
+Сағди:Сағди NP-COG-MF ; ! ""
 Сазерленд:Сазерленд NP-COG-MF ; !"Use/MT"
 Сакс:Сакс NP-COG-MF ; !"Use/MT"
 Сальгадо:Сальгадо NP-COG-MF ; !"Use/MT"
@@ -19704,6 +19724,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Соза:Соза NP-COG-MF ; ! ""
 Сонко:Сонко NP-COG-MF ; ! ""
 Снонетта:Снонетта NP-COG-MF ; ! ""
+Спиноза:Спиноза NP-COG-MF ; ! ""
 Старченко:Старченко NP-COG-MF ; ! ""
 Сталлоне:Сталлоне NP-COG-MF ; ! ""
 Стрип:Стрип NP-COG-MF ; !"Use/MT"
@@ -19741,6 +19762,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Фернандес:Фернандес NP-COG-MF ; !"Use/MT"
 Ферреро:Ферреро NP-COG-MF ; !"Use/MT"
 Ферхойген:Ферхойген NP-COG-MF ; !"Use/MT"
+Физули:Физули NP-COG-MF ; ! ""
 Филиппенко:Филиппенко NP-COG-MF ; ! ""
 Фламенко:Фламенко NP-COG-MF ; ! ""
 Фицджеральд:Фицджеральд NP-COG-MF ; !"Use/MT"
@@ -22640,6 +22662,7 @@ Witness:Witness NP-AL ; ! ""
 патриархтық:патриархтық A4 ; ! ""
 патриоттық:патриоттық A4 ; ! ""
 пәлеқор:пәлеқор A1 ; ! ""
+пәлендей:пәлендей A1 ; ! ""
 пәруайсыз:пәруайсыз A1 ; ! ""
 пәтуәлі:пәтуәлі A3 ; ! ""
 пейзаждық:пейзаждық A4 ; ! ""
@@ -23060,6 +23083,7 @@ Witness:Witness NP-AL ; ! ""
 ұстамсыз:ұстамсыз A1 ; ! ""
 ұтылған:ұтылған A1 ; ! ""
 ұтылыссыз:ұтылыссыз A1 ; ! ""
+ұтымды:ұтымды A1 ; ! ""
 ұтыссыз:ұтыссыз A1 ; ! ""
 ұшатын:ұшатын A1 ; ! ""
 ұшқыр:ұшқыр A1 ; ! ""
@@ -25807,6 +25831,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 жүре%-келе ADV ; ! ""
 келе%-келе ADV ; ! "little by little"
 бірқалыпты:бірқалыпты ADV ; ! ""
+жастайынан:жастайынан ADV ; ! ""
 жақында:жақында ADV ; ! "nearly" !Use/MT
 жуырда:жуырда ADV ; ! ""
 жоғары:жоғары  ADV ; ! "up" !Use/MT
@@ -25831,6 +25856,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 өспелі:өспелі ADV ; ! ""
 өтірік:өтірік ADV ; ! 
 сағатта:сағатта ADV ; ! "o'clock" !Use/MT
+сірә% да:сірә% да ADV ; ! "never"
 соншалық:соншалық ADV ; ! "" 
 соншалықты:соншалықты ADV ; ! ""
 соншама:соншама ADV ; ! ""
@@ -26907,6 +26933,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 арқалан:арқалан V-IV ; ! "to lean upon someone"
 арқалат:арқалат V-TV ; ! "to load on someone's back"
 арқанда:арқанда V-TV ; ! "to tie"
+арқау% ет:арқау% ет V-TV ; ! ""
 арқыра:арқыра V-IV ; ! "to neigh loudly (of a stallion)"
 арлан:арлан V-IV ; ! "be ashamed"
 арманда:арманда V-IV ; ! 
@@ -27048,6 +27075,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 батыл% бол:батыл% бол V-IV ; !
 батылдан:батылдан V-IV ; !
 батыр:батыр V-TV ; ! "" caus
+баул:баул V-TV ; ! ""
 баянда:баянда V-TV ; ! "докладывать,рассказывать,излагать"
 баян% ет:баян% ет V-TV ; ! ""
 баянда:баянда V-TV;
@@ -27308,7 +27336,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 ері:ері V-IV ; ! "melt"
 ерік:ерік V-IV ; ! "be bored"
 ерін:ерін V-IV ; ! "лениться"
-еріт:еріт V-TV ; ! 
+еріт:еріт V-TV ; !
+еркелет:еркелет V-TV ; ! ""
 еркінде:еркінде V-IV ; ! "to feel free"
 ерле:ерле V-IV ; ! "to distinguish oneself"
 ерле:ерле V-TV ; ! "седлать"
@@ -28138,6 +28167,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 нақұрыстан:нақұрыстан V-IV ; ! "to become abnormal"
 нақыста:нақыста V-TV ; ! "to decorate with designs"
 наразылық% білдір:наразылық% білдір V-IV ; ! "" Use/MT
+насихатта:насихатта V-TV ; ! ""
 нашарлан:нашарлан V-IV ; ! "to become worse"
 негізде:негізде V-TV ; ! ""
 некелес:некелес V-IV ; ! "to marry"
@@ -28153,6 +28183,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 нығызда:нығызда V-TV ; ! 
 нысанаға% ти:нысанаға% ти V-TV ; ! ""
 озбырлық% қыл:озбырлық% қыл V-TV ; !
+оза% шап:оза% шап V-TV ; ! ""
 ойбайла:ойбайла V-IV ; ! "to complain loudly"
 ойқаста:ойқаста V-IV ; ! "to go"
 ойлан:ойлан V-IV ; ! "ponder"
@@ -28168,6 +28199,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 оқыт:оқыт V-TV ; ! "" caus
 олқысын:олқысын V-IV ; ! "not to  be content (with)" (tat) trimm
 оңайлан:оңайлан V-IV ; ! "to become easy"
+оң:оң V-IV ; ! "get better"
 оңда:оңда V-TV ; ! "to repair"
 опала:опала V-TV ; ! "to powder"
 ора:ора V-TV ; ! "wrap around"
