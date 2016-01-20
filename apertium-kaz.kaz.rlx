@@ -419,6 +419,7 @@ SELECT Num IF
         (NOT -1 BOS)
         (NOT 0 ("Кеңес"))
         (NOT 0 ("Отан"))
+        (NOT 0 ("сен"))
 ;
 ## 108. Өйткені бүгінгі [0]Арал деген атау сол XVII ғасырдан бергі жерге берілген.
  SELECT Prop IF
@@ -779,17 +780,17 @@ REMOVE SUB:1 P3 IF
 # the majority of cases.
 #
 # Selecting plural reading might be a more productive approach.
-# REMOVE Pl IF
-#        (0 V OR Vaux OR Cop)
-#        (0 P3)
-#;
+ REMOVE Pl IF
+        (0 V OR Vaux OR Cop)
+        (0 P3)
+;
 ##
 
 # Thought that the above rule should cover copulas, seems that sometimes it doesn't
-#  REMOVE SUB:1 Pl IF
-#        (0/1 Cop)
-#       (0/1 P3)
-#;
+  REMOVE SUB:1 Pl IF
+        (0/1 Cop)
+       (0/1 P3)
+;
 
 
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
