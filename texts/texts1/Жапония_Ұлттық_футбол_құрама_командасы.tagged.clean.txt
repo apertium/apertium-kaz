@@ -61,46 +61,18 @@
 ;	"құрама" adj subst acc
 "<">"
 	""" sent
-"<Сакка>"
-	"*Сакка"
-"<Ниппон>"
-	"*Ниппон"
-"<Дайхё>"
-	"*Дайхё"
+"<Сакка Ниппон Дайхё>"
+	"Сакка Ниппон Дайхё" np al nom
 "<">"
 	""" sent
-"<(>"
-	"(" lpar
-"<жапон>"
-	"*жапон"
-"<.>"
-	"." sent
- サッカー日本代表
-
-"<)>"
-	")" rpar
 "<,>"
 	"," cm
 "<">"
 	""" sent
-"<Ниппон>"
-	"*Ниппон"
-"<Дайхё>"
-	"*Дайхё"
+"<Ниппон Дайхё>"
+	"Ниппон Дайхё" np al nom
 "<">"
 	""" sent
-"<(>"
-	"(" lpar
-"<(>"
-	"(" lpar
-"<жапон>"
-	"*жапон"
-"<.>"
-	"." sent
- 日本代表
-
-"<)>"
-	")" rpar
 "<,>"
 	"," cm
 "<немесе>"
@@ -128,21 +100,9 @@
 "<">"
 	""" sent
 "<Дайхё>"
-	"*Дайхё"
+	"Дайхё" np al nom
 "<">"
 	""" sent
-"<(>"
-	"(" lpar
-"<(>"
-	"(" lpar
-"<жапон>"
-	"*жапон"
-"<.>"
-	"." sent
- 代表
-
-"<)>"
-	")" rpar
 "<деп атайды>"
 	"деп ата" v tv aor p3 sg
 ;	"деп ата" v tv aor p3 pl REMOVE:642
@@ -303,7 +263,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"көк" n attr REMOVE:397
 "<Самурайлар>"
-	"*Самурайлар"
+	"самурай" n pl nom
 "<">"
 	""" sent
 "<">"
@@ -322,7 +282,7 @@
 ;	"ол" prn dem pl acc
 	"олар" prn pers p3 pl acc
 "<бұрынғыша>"
-	"*бұрынғыша"
+	"бұрынғыша" adv
 "<,>"
 	"," cm
 "<бапкер>"
@@ -352,21 +312,11 @@
 "<">"
 	""" sent
 "<Zaccheroni>"
-	"*Zaccheroni"
+	"Zaccheroni" np unk
 "<Japan>"
 	"Japan" np unk
 "<">"
 	""" sent
-"<(>"
-	"(" lpar
-"<жапон>"
-	"*жапон"
-"<.>"
-	"." sent
- ザッケローニジャパン
-
-"<)>"
-	")" rpar
 "<,>"
 	"," cm
 "<немесе>"
@@ -379,18 +329,9 @@
 	"Japan" np unk
 "<">"
 	""" sent
-"<(>"
-	"(" lpar
-"<жапон>"
-	"*жапон"
-"<.>"
-	"." sent
- ザックジャパン
-
-"<)>"
-	")" rpar
 "<..>"
 	".." sent
+
 "<Қазіргі>"
 	"қазір" adv attr
 ;	"қазіргі" adj
@@ -422,7 +363,7 @@
 ;	"уақыт" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Жапон>"
-	"*Жапон"
+	"жапон" n nom
 "<Ұлттық>"
 	"ұлттық" adj
 ;	"ұлттық" adv
@@ -440,7 +381,7 @@
 "<формамен>"
 	"форма" n ins
 "<Adidas>"
-	"*Adidas"
+	"Adidas" np al nom
 "<компаниясы>"
 	"компания" n px3sp nom
 ;	"компания" n px3sp nom
@@ -481,7 +422,7 @@
 "<қызыл>"
 	"қызыл" adj
 "<квадрат>"
-	"*квадрат"
+	"квадрат" n nom
 "<,>"
 	"," cm
 "<иығында>"
@@ -529,7 +470,7 @@
 ;	"бар" n nom SELECT:916
 ;	"бар" det qnt SELECT:916
 "<футболка>"
-	"*футболка"
+	"футболка" n nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -548,7 +489,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақ" v iv imp p2 sg REMOVE:599
 "<шортыдан>"
-	"*шортыдан"
+	"шорты" n abl
 "<,>"
 	"," cm
 "<және>"
@@ -571,7 +512,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"көк" n attr REMOVE:397
 "<гетрдан>"
-	"*гетрдан"
+	"гетр" n abl
 "<тұрады>"
 	"тұр" v iv aor p3 sg
 ;	"тұр" vaux aor p3 pl REMOVE:565
@@ -581,7 +522,7 @@
 	"." sent
 
 "<Сақтық>"
-	"*Сақтық"
+	"сақтық" adj
 "<форма>"
 	"форма" n nom
 ;	"форма" n nom
@@ -603,7 +544,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақ" v iv imp p2 sg REMOVE:599
 "<футболка>"
-	"*футболка"
+	"футболка" n nom
 "<,>"
 	"," cm
 "<көк>"
@@ -624,7 +565,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"көк" n attr REMOVE:397
 "<шорттан>"
-	"*шорттан"
+	"шорт" n abl
 "<,>"
 	"," cm
 "<және>"
@@ -643,7 +584,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақ" v iv imp p2 sg REMOVE:599
 "<гетрлардан>"
-	"*гетрлардан"
+	"гетр" n pl abl
 "<тұрады>"
 	"тұр" v iv aor p3 sg
 ;	"тұр" vaux aor p3 pl REMOVE:565
@@ -652,7 +593,7 @@
 "<..>"
 	".." sent
 "<Жапон>"
-	"*Жапон"
+	"жапон" n nom
 "<құрамасы>"
 	"құрама" n px3sp nom
 ;	"құрама" adj subst px3sp nom
@@ -688,7 +629,7 @@
 ;	"ең көп" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<қаражаттандырылатын>"
-	"*қаражаттандырылатын"
+	"қаражаттандыр" v tv pass gpr_impf
 "<құрамалардың>"
 	"құрама" n pl gen
 ;	"құрама" adj subst pl gen
@@ -727,11 +668,11 @@
 "<:>"
 	":" sent
 "<Kirin>"
-	"*Kirin"
+	"Kirin" np unk
 "<,>"
 	"," cm
 "<Adidas>"
-	"*Adidas"
+	"Adidas" np unk
 "<,>"
 	"," cm
 "<Sony>"
@@ -739,28 +680,28 @@
 "<,>"
 	"," cm
 "<Saison>"
-	"*Saison"
+	"Saison" np unk
 "<Card>"
 	"Card" np unk
 "<International>"
-	"*International"
+	"International" np unk
 "<,>"
 	"," cm
 "<FamilyMart>"
-	"*FamilyMart"
+	"FamilyMart" np unk
 "<,>"
 	"," cm
 "<Fujifilm>"
-	"*Fujifilm"
+	"Fujifilm" np unk
 "<,>"
 	"," cm
 "<Japan>"
 	"Japan" np unk
 "<Airlines>"
-	"*Airlines"
+	"Airlines" np unk
 "<және>"
 	"және" cnjcoo
 "<Nissan>"
-	"*Nissan"
+	"Nissan" np unk
 "<..>"
 	".." sent
