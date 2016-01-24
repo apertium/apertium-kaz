@@ -1,7 +1,7 @@
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Шыңғысұлы>"
-	"*Шыңғысұлы"
+	"Шыңғысұлы" np cog m nom
 "<Уәлиханов>"
 	"Уәлиханов" np cog m nom
 ;	"Уәлиханов" np cog m nom
@@ -12,9 +12,9 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Шыңғысұлы>"
-	"*Шыңғысұлы"
+	"Шыңғысұлы" np cog m nom
 "<Уәлиханов>"
 	"Уәлиханов" np cog m nom
 ;	"Уәлиханов" np cog m nom
@@ -55,7 +55,7 @@
 ;	"Мұхаммед" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Қанафия>"
-	"*Қанафия"
+	"Қанафия" np cog mf nom
 "<;>"
 	";" sent
 "<1835>"
@@ -144,7 +144,7 @@
 ;	"ту" v tv past p3 sg SELECT:417
 ;	"ту" v tv gpr_past subst nom SELECT:417
 "<демократтық>"
-	"*демократтық"
+	"демократтық" adj
 "<,>"
 	"," cm
 "<ағартушылық>"
@@ -184,42 +184,45 @@
 "<,>"
 	"," cm
 "<шығыстанушы>"
-	"*шығыстанушы"
+	"шығыстанушы" n nom
+		"е" cop aor p3 sg
 "<,>"
 	"," cm
 "<тарихшы>"
-	"тарихшы" n nom
+;	"тарихшы" n nom
 ;	"тарихшы" n nom
 ;		"е" cop aor p3 pl REMOVE:232
-;	"тарихшы" n nom
-;		"е" cop aor p3 sg REMOVE:232
+	"тарихшы" n nom
+		"е" cop aor p3 sg REMOVE:232
 ;	"тарихшы" n attr REMOVE:397
 "<,>"
 	"," cm
 "<фольклоршы>"
-	"*фольклоршы"
+	"фольклоршы" n nom
+		"е" cop aor p3 sg
 "<,>"
 	"," cm
 "<этнограф>"
-	"этнограф" n nom
+;	"этнограф" n nom
 ;	"этнограф" n nom
 ;		"е" cop aor p3 pl REMOVE:232
-;	"этнограф" n nom
-;		"е" cop aor p3 sg REMOVE:232
+	"этнограф" n nom
+		"е" cop aor p3 sg REMOVE:232
 ;	"этнограф" n attr REMOVE:397
 "<,>"
 	"," cm
 "<географ>"
-	"географ" n nom
+;	"географ" n nom
 ;	"географ" n nom
 ;		"е" cop aor p3 pl REMOVE:232
-;	"географ" n nom
-;		"е" cop aor p3 sg REMOVE:232
+	"географ" n nom
+		"е" cop aor p3 sg REMOVE:232
 ;	"географ" n attr REMOVE:397
 "<,>"
 	"," cm
 "<ағартушы>"
-	"*ағартушы"
+	"ағартушы" n nom
+		"е" cop aor p3 sg
 "<.>"
 	"." sent
 
@@ -245,14 +248,14 @@
 "<«>"
 	"«" lquot
 "<Шоқаным>"
-	"*Шоқаным"
+	"Шоқан" np ant m px1sg nom
 "<»>"
 	"»" rquot
 "<деп>"
 	"де" v tv gna_perf
 ;	"де" v tv prc_perf REMOVE:542
 "<еркелетіп>"
-	"*еркелетіп"
+	"еркелет" v tv gna_perf
 "<айтуымен>"
 	"айт" v tv ger px3sp ins
 "<,>"
@@ -260,7 +263,7 @@
 "<«>"
 	"«" lquot
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<»>"
 	"»" rquot
 "<аталып>"
@@ -279,8 +282,9 @@
 ;	"кет" vaux past p3 pl SELECT:568 REMOVE:642
 "<..>"
 	".." sent
+
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<1835>"
 	"1835" num
 ;	"1835" num subst nom
@@ -300,7 +304,7 @@
 ;	"ай" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Құсмұрын>"
-	"*Құсмұрын"
+	"Құсмұрын" np top nom
 "<бекетінде>"
 	"бекет" n px3sp loc
 ;	"бекет" n px3sp loc
@@ -345,7 +349,7 @@
 ;	"облыс" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Сарыкөл>"
-	"*Сарыкөл"
+	"Сарыкөл" np top nom
 "<ауданындағы>"
 	"аудан" n px3sp loc attr
 ;	"аудан" n px3sp loc subst nom
@@ -354,7 +358,7 @@
 ;	"аудан" n px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Күнтимес>"
-	"*Күнтимес"
+	"Күнтимес" np top nom
 "<ордасында>"
 	"орда" n px3sp loc
 ;	"орда" n px3sp loc
@@ -453,7 +457,7 @@
 ;	"Шыңғыс" np ant m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Уәлиханұлы>"
-	"*Уәлиханұлы"
+	"Уәлиханұлы" np cog m nom
 "<сол>"
 	"сол" det dem SELECT:669
 ;	"сол" adj
@@ -480,9 +484,9 @@
 ;	"кез" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Аманқарағай>"
-	"*Аманқарағай"
+	"Аманқарағай" np top nom
 "<дуанының>"
-	"*дуанының"
+	"дуан" n px3sp gen
 "<(>"
 	"(" lpar
 "<орталығы>"
@@ -497,7 +501,7 @@
 ;	"орталық" adj subst px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Қараоба>"
-	"*Қараоба"
+	"Қараоба" np top nom
 "<мекені>"
 	"мекен" n px3sp nom
 ;	"мекен" n px3sp nom
@@ -574,7 +578,7 @@
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
 "<Құсмұрын>"
-	"*Құсмұрын"
+	"Құсмұрын" np top nom
 "<қамалына>"
 	"қамал" n px3sp dat
 "<ауысқаннан>"
@@ -590,7 +594,7 @@
 ;	"кейін" adv SELECT:529
 ;	"кейін" n nom SELECT:529
 "<дуан>"
-	"*дуан"
+	"дуан" n nom
 "<аты>"
 	"ат" n px3sp nom
 ;	"ат" n px3sp nom
@@ -598,7 +602,7 @@
 ;	"ат" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Құсмұрын>"
-	"*Құсмұрын"
+	"Құсмұрын" np top nom
 "<болып>"
 	"бол" v iv prc_perf
 ;	"бол" v iv gna_perf
@@ -611,7 +615,7 @@
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<өз>"
 	"өз" det ref
 "<атасы>"
@@ -738,7 +742,7 @@
 "<,>"
 	"," cm
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<оның>"
 ;	"ол" prn dem gen
 	"ол" prn pers p3 sg gen
@@ -748,12 +752,13 @@
 ;	"он" num subst px2sg nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шөбересі>"
-	"*шөбересі"
+	"шөбере" n px3sp nom
+		"е" cop aor p3 sg
 "<.>"
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<балалық>"
 	"балалық" n attr SELECT:408
 ;	"балалық" n nom
@@ -782,7 +787,7 @@
 ;	"кез" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Обаған>"
-	"*Обаған"
+	"Обаған" np top nom
 "<бойындағы>"
 	"бой" n px3sp loc attr
 ;	"бой" n px3sp loc subst nom
@@ -791,7 +796,7 @@
 ;	"бой" n px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Күнтимес>"
-	"*Күнтимес"
+	"Күнтимес" np top nom
 "<ордасында>"
 	"орда" n px3sp loc
 ;	"орда" n px3sp loc
@@ -830,7 +835,7 @@
 ;	"сала" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Аққанбұрлық>"
-	"*Аққанбұрлық"
+	"Аққанбұрлық" np top nom
 "<алабындағы>"
 	"алап" n px3sp loc attr
 ;	"алап" n px3sp loc subst nom
@@ -885,7 +890,7 @@
 ;	"әже" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Айғаным>"
-	"*Айғаным"
+	"Айғаным" np ant f nom
 "<тұратын>"
 ;	"тұр" v iv gpr_impf subst nom
 	"тұр" v iv gpr_impf
@@ -896,7 +901,7 @@
 ;	"тұр" vaux gpr_impf subst nom REMOVE:565
 ;	"тұр" v iv pih p3 pl REMOVE:642
 "<Сырымбеттегі>"
-	"*Сырымбеттегі"
+	"Сырымбет" np ant m loc attr
 "<хан>"
 ;	"хан" n attr SELECT:408
 ;	"хан" n nom
@@ -921,8 +926,8 @@
 ;	"орда" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 ;			"да" postadv
-"<балдәурен>"
-	"*балдәурен"
+"<бал дәурен>"
+	"бал дәурен" n nom
 "<күндерін>"
 	"күн" n pl px3sp acc
 ;	"күнде" v tv ger_fut px3sp acc
@@ -989,7 +994,7 @@
 "<,>"
 	"," cm
 "<Күнтимес>"
-	"*Күнтимес"
+	"Күнтимес" np top nom
 "<ордасындағы>"
 	"орда" n px3sp loc attr SELECT:408
 ;	"орда" n px3sp loc subst nom
@@ -1036,7 +1041,7 @@
 ;	"таны" v tv past p3 sg
 ;	"таны" v tv past p3 pl REMOVE:642
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<сол>"
 	"сол" det dem SELECT:669
 ;	"сол" adj
@@ -1063,7 +1068,7 @@
 ;	"мектеп" n loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<ортағасырлық>"
-	"*ортағасырлық"
+	"ортағасырлық" adj
 "<қыпшақ>"
 	"қыпшақ" n nom
 ;	"қыпшақ" n nom
@@ -1074,7 +1079,7 @@
 "<->"
 	"-" guio
 "<шағатай>"
-	"*шағатай"
+	"шағатай" n nom
 "<тілін>"
 	"тіл" n px3sp acc
 ;	"тіл" v tv pass imp p2 sg REMOVE:599
@@ -1116,7 +1121,7 @@
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<жақын>"
 	"жақын" adj
 ;	"жақын" adv
@@ -1171,13 +1176,13 @@
 "<білімге>"
 	"білім" n dat
 "<бейім>"
-	"*бейім"
+	"бейім" adj
 "<әрі>"
 	"әрі" cnjcoo
 ;	"әрі" adv
 ;	"әрі" post REMOVE:286
 "<құмар>"
-	"құмар" adj advl SELECT:438
+;	"құмар" adj advl SELECT:438
 ;	"құмар" adj
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"құмар" adj
@@ -1191,7 +1196,7 @@
 ;	"құмар" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"құмар" n attr REMOVE:397
-;	"құмар" adj SELECT:438
+	"құмар" adj SELECT:438
 ;	"құмар" n nom SELECT:438
 ;	"құмар" adj subst nom SELECT:438
 "<болған>"
@@ -1209,7 +1214,7 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<тарихи>"
 	"тарихи" adj
 ;	"тарихи" adv
@@ -1275,9 +1280,9 @@
 ;	"ол" prn dem nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<жастайынан>"
-	"*жастайынан"
+	"жастайынан" adv
 "<данагөй>"
-	"*данагөй"
+	"данагөй" adj
 "<билердің>"
 	"би" n pl gen
 ;	"биле" v tv gpr_fut subst gen
@@ -1286,8 +1291,8 @@
 ;	"әңгіме" adj subst pl px3sp acc
 "<,>"
 	"," cm
-"<акындардың>"
-	"*акындардың"
+"<ақындардың>"
+	"ақын" n pl gen
 "<өлең>"
 	"өлең" n nom
 ;	"өлең" n nom
@@ -1373,7 +1378,7 @@
 ;	"әже" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Айғанымның>"
-	"*Айғанымның"
+	"Айғаным" np ant gen
 "<ықпалы>"
 	"ықпал" n px3sp nom
 ;	"ықпал" n px3sp nom
@@ -1430,7 +1435,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"жас" n attr REMOVE:397
 "<Шоқанға>"
-	"*Шоқанға"
+	"Шоқан" np ant m dat
 "<ежелгі>"
 ;	"ежел" adv attr
 	"ежелгі" adj
@@ -1473,17 +1478,8 @@
 ;	"әңгіме" adj subst pl px3sp acc
 "<,>"
 	"," cm
-"<мақал>"
-	"мақал" n nom
-;	"мақал" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"мақал" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"мақал" n attr REMOVE:397
-"<->"
-	"-" guio
-"<мәтелдері>"
-	"*мәтелдері"
+"<мақал-мәтелдері>"
+	"мақал-мәтел" n pl px3sp nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -1526,7 +1522,7 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<12>"
 	"12" num
 ;	"12" num subst nom
@@ -1544,7 +1540,7 @@
 ;	"де" v tv opt p1 sg SELECT:501
 ;	"дейін" n nom SELECT:501
 "<Құсмұрындағы>"
-	"*Құсмұрындағы"
+	"Құсмұрын" np top loc attr
 "<мектепте>"
 	"мектеп" n loc
 ;	"мектеп" n loc
@@ -1585,7 +1581,7 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<ауылдық>"
 	"ауылдық" adj
 ;	"ауылдық" adj advl
@@ -1599,7 +1595,7 @@
 ;	"ауылдық" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастауыш>"
-	"*бастауыш"
+	"бастауыш" adj
 "<мектепте>"
 	"мектеп" n loc
 ;	"мектеп" n loc
@@ -1639,7 +1635,7 @@
 "<,>"
 	"," cm
 "<шағатай>"
-	"*шағатай"
+	"шағатай" n nom
 "<тілдерінің>"
 	"тіл" n pl px3sp gen
 "<негізін>"
@@ -1659,552 +1655,9 @@
 ;	"ал" v tv ifi p3 pl REMOVE:642
 "<..>"
 	".." sent
+
 "<Шоқанның>"
-	"*Шоқанның"
-"<жақын>"
-	"жақын" adj
-;	"жақын" adv
-;	"жақын" n nom
-;	"жақын" n attr
-;	"жақын" adj advl
-;	"жақын" adj subst nom
-;	"жақын" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"жақын" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"жақын" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"жақын" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"жақын" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"жақын" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-"<туыстарының>"
-	"туыс" n pl px3sp gen
-;	"туыс" adj subst pl px3sp gen
-"<естеліктеріне>"
-	"естелік" n pl px3sp dat
-"<қарағанда>"
-	"қарағанда" post SELECT:487
-;	"қара" v tv ger_past loc SELECT:487
-;	"қара" v tv gpr_past subst loc SELECT:487
-"<,>"
-	"," cm
-"<ол>"
-	"ол" prn pers p3 sg nom
-;	"ол" det dem
-;	"ол" prn dem nom
-;	"ол" prn dem nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ол" prn dem nom
-;		"е" cop aor p3 sg REMOVE:229
-"<бала>"
-;	"бала" n attr SELECT:408
-;	"бала" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"бала" n nom
-;		"е" cop aor p3 sg REMOVE:229
-	"бала" n nom SELECT:408
-"<кезінен>"
-	"кез" n px3sp abl
-;	"кез" n px3sp abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"кез" n px3sp abl
-;		"е" cop aor p3 sg REMOVE:229
-"<білімге>"
-	"білім" n dat
-"<бейім>"
-	"*бейім"
-"<әрі>"
-	"әрі" cnjcoo
-;	"әрі" adv
-;	"әрі" post REMOVE:286
-"<құмар>"
-	"құмар" adj advl SELECT:438
-;	"құмар" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"құмар" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"құмар" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"құмар" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"құмар" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"құмар" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"құмар" n attr REMOVE:397
-;	"құмар" adj SELECT:438
-;	"құмар" n nom SELECT:438
-;	"құмар" adj subst nom SELECT:438
-"<болған>"
-	"бол" v iv past p3 sg SELECT:265
-;	"бол" vaux gpr_past SELECT:265
-;	"бол" v iv gpr_past SELECT:265
-;	"бол" vaux ger_past nom SELECT:265
-;	"бол" v iv ger_past nom SELECT:265
-;	"бол" vaux gpr_past subst nom SELECT:265
-;	"бол" v iv gpr_past subst nom SELECT:265
-;	"бол" vaux past p3 pl SELECT:265 REMOVE:565
-;	"бол" vaux past p3 sg SELECT:265 REMOVE:565
-;	"бол" v iv past p3 pl SELECT:265 REMOVE:642
-"<.>"
-	"." sent
-
-"<Шоқан>"
-	"*Шоқан"
-"<тарихи>"
-	"тарихи" adj
-;	"тарихи" adv
-;	"тарихи" adj subst nom
-;	"тарихи" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"тарихи" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"тарихи" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"тарихи" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-"<аңыз>"
-	"аңыз" n nom
-;	"аңыз" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"аңыз" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"аңыз" n attr REMOVE:397
-"<->"
-	"-" guio
-"<әңгімелерге>"
-	"әңгіме" n pl dat
-;	"әңгіме" adj subst pl dat
-"<ерте>"
-;	"ерте" adj subst nom
-;	"ерте" adj
-;	"ерте" adv
-	"ерте" adj advl
-;	"ерте" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"ерте" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"ерте" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ерте" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"ерт" v tv prc_impf REMOVE:350
-"<бастан-ақ>"
-	"бас" n abl
-		"-ақ" postadv
-;	"бас" n abl
-;		"е" cop aor p3 pl REMOVE:229
-;			"-ақ" postadv
-;	"бас" n abl
-;		"е" cop aor p3 sg REMOVE:229
-;			"-ақ" postadv
-"<қызыққан>"
-	"қызық" v iv past p3 sg SELECT:265
-;	"қызық" v iv gpr_past SELECT:265
-;	"қызық" v iv ger_past nom SELECT:265
-;	"қызық" v iv gpr_past subst nom SELECT:265
-;	"қызық" v iv past p3 pl SELECT:265 REMOVE:642
-"<.>"
-	"." sent
-
-"<Ол>"
-	"ол" prn pers p3 sg nom
-;	"ол" det dem
-;	"ол" prn dem nom
-;	"ол" prn dem nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ол" prn dem nom
-;		"е" cop aor p3 sg REMOVE:229
-"<жастайынан>"
-	"*жастайынан"
-"<данагөй>"
-	"*данагөй"
-"<билердің>"
-	"би" n pl gen
-;	"биле" v tv gpr_fut subst gen
-"<әңгімелерін>"
-	"әңгіме" n pl px3sp acc
-;	"әңгіме" adj subst pl px3sp acc
-"<,>"
-	"," cm
-"<акындардың>"
-	"*акындардың"
-"<өлең>"
-	"өлең" n nom
-;	"өлең" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"өлең" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"өлең" n attr REMOVE:397
-"<->"
-	"-" guio
-"<жырларын>"
-	"жыр" n pl px3sp acc
-"<зор>"
-	"зор" adj
-;	"зор" n nom
-;	"зор" n attr
-;	"зор" adj subst nom
-;	"зор" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"зор" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"зор" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"зор" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"зор" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"зор" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-"<ықыласпен>"
-	"ықылас" n ins
-"<тыңдап>"
-	"тыңда" v tv prc_perf
-;	"тыңда" v tv gna_perf
-"<өсті>"
-;	"өст" v tv ifi p3 sg
-	"өс" v iv ifi p3 sg
-;	"өс" v iv ifi p3 pl REMOVE:642
-;	"өст" v tv ifi p3 pl REMOVE:642
-"<.>"
-	"." sent
-
-"<Оған>"
-;	"ол" prn dem dat
-	"ол" prn pers p3 sg dat
-"<тәрбие>"
-	"тәрбие" n nom
-;	"тәрбие" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"тәрбие" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"тәрбие" n attr REMOVE:397
-"<беруде>"
-	"бер" v tv ger loc
-;	"бер" vaux ger loc REMOVE:565
-"<сұлтан>"
-;	"сұлтан" n attr SELECT:408
-;	"сұлтан" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"сұлтан" n nom
-;		"е" cop aor p3 sg REMOVE:229
-	"сұлтан" n nom SELECT:408
-"<әулетінен>"
-	"әулет" n px3sp abl
-;	"әулет" n px3sp abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"әулет" n px3sp abl
-;		"е" cop aor p3 sg REMOVE:229
-"<шыққан>"
-;	"шық" v iv past p3 sg
-	"шық" v iv gpr_past
-;	"шық" v iv gpr_past subst nom
-;	"шық" v iv ger_past nom
-;	"шық" vaux gpr_past REMOVE:565
-;	"шық" vaux ger_past nom REMOVE:565
-;	"шық" vaux past p3 pl REMOVE:565
-;	"шық" vaux past p3 sg REMOVE:565
-;	"шық" vaux gpr_past subst nom REMOVE:565
-;	"шық" v iv past p3 pl REMOVE:642
-"<әжесі>"
-	"әже" n px3sp nom
-;	"әже" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"әже" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
-"<Айғанымның>"
-	"*Айғанымның"
-"<ықпалы>"
-	"ықпал" n px3sp nom
-;	"ықпал" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ықпал" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
-"<күшті>"
-	"күшті" adj advl SELECT:438
-;	"күшті" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"күшті" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"күшті" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"күшті" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"күш" n
-;		"лы" post REMOVE:371
-;	"күш" n acc SELECT:438
-;	"күшті" adj SELECT:438
-;	"күшті" adj subst nom SELECT:438
-"<болды>"
-	"бол" v iv ifi p3 sg
-;	"бол" vaux ifi p3 pl REMOVE:565
-;	"бол" vaux ifi p3 sg REMOVE:565
-;	"бол" v iv ifi p3 pl REMOVE:642
-"<.>"
-	"." sent
-
-"<Ол>"
-	"ол" prn pers p3 sg nom SELECT:338
-;	"ол" prn dem nom SELECT:338
-;	"ол" prn dem nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ол" prn dem nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"ол" det dem SELECT:338
-"<жас>"
-	"жас" adj
-;	"жас" adv
-;	"жас" n nom
-;	"жас" adj subst nom
-;	"жас" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"жас" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"жас" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"жас" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"жас" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"жас" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"жас" n attr REMOVE:397
-"<Шоқанға>"
-	"*Шоқанға"
-"<ежелгі>"
-;	"ежел" adv attr
-	"ежелгі" adj
-;	"ежел" adv subst nom
-;	"ежелгі" adj subst nom
-;	"ежелгі" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"ежелгі" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"ежел" adv subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ежел" adv subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"ежелгі" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ежелгі" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-"<қазақ>"
-;	"қазақ" n attr SELECT:408
-;	"қазақ" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"қазақ" n nom
-;		"е" cop aor p3 sg REMOVE:229
-	"қазақ" n nom SELECT:408
-"<аңыздарын>"
-	"аңыз" n pl px3sp acc
-"<,>"
-	"," cm
-"<аңыз>"
-	"аңыз" n nom
-;	"аңыз" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"аңыз" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"аңыз" n attr REMOVE:397
-"<->"
-	"-" guio
-"<әңгімелерін>"
-	"әңгіме" n pl px3sp acc
-;	"әңгіме" adj subst pl px3sp acc
-"<,>"
-	"," cm
-"<мақал>"
-	"мақал" n nom
-;	"мақал" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"мақал" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"мақал" n attr REMOVE:397
-"<->"
-	"-" guio
-"<мәтелдері>"
-	"*мәтелдері"
-"<мен>"
-;	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
-;	"мен" post REMOVE:286
-"<даналық>"
-	"даналық" n attr SELECT:408
-;	"даналық" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"даналық" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"даналық" n nom SELECT:408
-"<сөздерін>"
-	"сөз" n pl px3sp acc
-"<жиі>"
-	"жиі" adj advl SELECT:438
-;	"жиі" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"жиі" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"жиі" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"жиі" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"жиі" adj SELECT:438
-;	"жиі" adv SELECT:438
-;	"жиі" adj subst nom SELECT:438
-"<айтып>"
-	"айт" v tv prc_perf SELECT:556
-;	"айт" v tv gna_perf SELECT:556
-"<отыратын>"
-;	"отыр" vaux gpr_impf SELECT:568
-;	"отыр" vaux gpr_impf subst nom SELECT:568
-	"отыр" vaux pih p3 sg SELECT:568
-;	"отыр" v iv gpr_impf SELECT:568
-;	"отыр" v iv pih p3 pl SELECT:568
-;	"отыр" v iv pih p3 sg SELECT:568
-;	"отыр" v iv gpr_impf subst nom SELECT:568
-;	"отыр" vaux pih p3 pl SELECT:568 REMOVE:642
-"<.>"
-	"." sent
-
-"<Шоқан>"
-	"*Шоқан"
-"<12>"
-	"12" num
-;	"12" num subst nom
-"<жасына>"
-	"жас" n px3sp dat
-;	"жас" adj subst px3sp dat
-"<дейін>"
-	"дейін" post SELECT:501
-;	"дейін" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"дейін" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"дейін" adv REMOVE:359
-;	"дейін" n attr REMOVE:397
-;	"де" v tv opt p1 sg SELECT:501
-;	"дейін" n nom SELECT:501
-"<Құсмұрындағы>"
-	"*Құсмұрындағы"
-"<мектепте>"
-	"мектеп" n loc
-;	"мектеп" n loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"мектеп" n loc
-;		"е" cop aor p3 sg REMOVE:229
-"<оқып>"
-	"оқы" v tv gna_perf
-;	"оқы" v iv gna_perf
-;	"оқы" v iv prc_perf REMOVE:542
-;	"оқы" v tv prc_perf REMOVE:542
-"<,>"
-	"," cm
-"<мұсылман>"
-	"мұсылман" n attr SELECT:408
-;	"мұсылман" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"мұсылман" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"мұсылман" n nom SELECT:408
-"<діні>"
-	"дін" n px3sp nom
-;	"дін" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"дін" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
-"<ілімімен>"
-	"ілім" n px3sp ins
-"<танысты>"
-	"таны" v tv coop ifi p3 sg SELECT:265
-;	"тан" v iv coop ifi p3 sg SELECT:265
-;	"таныс" adj subst acc SELECT:265
-;	"таныс" adj subst SELECT:265
-;		"лы" post
-;	"тан" v iv coop ifi p3 pl SELECT:265 REMOVE:642
-;	"таны" v tv coop ifi p3 pl SELECT:265 REMOVE:642
-"<.>"
-	"." sent
-
-"<Шоқан>"
-	"*Шоқан"
-"<ауылдық>"
-	"ауылдық" adj
-;	"ауылдық" adj advl
-;	"ауылдық" adj subst nom
-;	"ауылдық" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"ауылдық" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"ауылдық" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ауылдық" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-"<бастауыш>"
-	"*бастауыш"
-"<мектепте>"
-	"мектеп" n loc
-;	"мектеп" n loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"мектеп" n loc
-;		"е" cop aor p3 sg REMOVE:229
-"<оқып>"
-	"оқы" v iv prc_perf SELECT:556
-;	"оқы" v tv prc_perf SELECT:556
-;	"оқы" v iv gna_perf SELECT:556
-;	"оқы" v tv gna_perf SELECT:556
-"<жүріп-ақ>"
-	"жүр" vaux gna_perf SELECT:568
-		"-ақ" postadv
-;	"жүр" vaux prc_perf REMOVE:542
-;		"-ақ" postadv
-;	"жүр" v iv prc_perf REMOVE:542
-;		"-ақ" postadv
-;	"жүр" v iv gna_perf SELECT:568
-;		"-ақ" postadv
-"<араб>"
-	"араб" n nom
-;	"араб" n nom
-;		"е" cop aor p3 sg
-;	"араб" n attr REMOVE:397
-;	"араб" n nom
-;		"е" cop aor p3 pl REMOVE:649
-"<,>"
-	"," cm
-"<парсы>"
-	"парсы" n nom
-;	"парсы" n nom
-;		"е" cop aor p3 pl REMOVE:232
-;	"парсы" n nom
-;		"е" cop aor p3 sg REMOVE:232
-;	"парсы" n attr REMOVE:397
-"<,>"
-	"," cm
-"<шағатай>"
-	"*шағатай"
-"<тілдерінің>"
-	"тіл" n pl px3sp gen
-"<негізін>"
-	"негіз" n px3sp acc
-"<үйреніп>"
-	"үйрен" v tv gna_perf
-;	"үйрен" v tv prc_perf REMOVE:542
-"<алды>"
-	"ал" v tv ifi p3 sg
-;	"алд" n px3sp nom
-;	"алд" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"алд" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"ал" vaux ifi p3 pl REMOVE:565
-;	"ал" vaux ifi p3 sg REMOVE:565
-;	"ал" v tv ifi p3 pl REMOVE:642
-"<..>"
-	".." sent
-"<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<ата-бабалары>"
 	"ата-баба" n pl px3sp nom
 ;	"ата-баба" n pl px3sp nom
@@ -2421,7 +1874,7 @@
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<әкесі>"
 	"әке" n px3sp nom
 ;	"әке" n px3sp nom
@@ -2581,7 +2034,7 @@
 ;	"әскери" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шен>"
-	"*шен"
+	"шен" n nom
 "<->"
 	"-" guio
 "<полковник>"
@@ -2624,7 +2077,7 @@
 ;	"аппарат" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<бірсыпыра>"
-	"*бірсыпыра"
+	"бірсыпыра" adv
 "<жауапты>"
 ;	"жауапты" adj advl
 ;	"жауапты" adj subst nom
@@ -2655,7 +2108,7 @@
 "<:>"
 	":" sent
 "<Құсмұрын>"
-	"*Құсмұрын"
+	"Құсмұрын" np top nom
 "<округінің>"
 	"округ" n px3sp gen
 "<аға>"
@@ -2791,7 +2244,7 @@
 ;	"рет" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<дворян>"
-	"*дворян"
+	"дворян" n nom
 "<атағы>"
 	"атақ" n px3sp nom
 ;	"атақ" n px3sp nom
@@ -2804,8 +2257,8 @@
 "<.>"
 	"." sent
 
-"<Шоқаннын>"
-	"*Шоқаннын"
+"<Шоқанның>"
+	"Шоқан" np ant m gen
 "<анасы>"
 	"ана" n px3sp nom
 ;	"ана" n px3sp nom
@@ -2921,7 +2374,7 @@
 "<армиясының>"
 	"армия" n px3sp gen
 "<полковнигі>"
-	"*полковнигі"
+	"полковник" n px3sp nom
 "<,>"
 	"," cm
 "<белгілі>"
@@ -2952,7 +2405,7 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"қазақ" n attr REMOVE:397
 "<биі>"
-	"*биі"
+	"би" n px3sp nom
 "<,>"
 	"," cm
 "<Баянауыл>"
@@ -2974,7 +2427,7 @@
 ;	"сыртқы" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<округының>"
-	"*округының"
+	"округ" n px3sp gen
 "<аға>"
 	"аға" n attr SELECT:408
 ;	"аға" n nom
@@ -3034,7 +2487,7 @@
 ;	"жаса" v tv fut p3 sg SELECT:869
 ;	"жаса" v tv gpr_fut subst nom SELECT:869
 "<Шоқанды>"
-	"*Шоқанды"
+	"Шоқан" np ant m acc
 "<әкесі>"
 	"әке" n px3sp nom
 ;	"әке" n px3sp nom
@@ -3136,7 +2589,7 @@
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<бүкіл>"
 	"бүкіл" det qnt
 "<келешегі>"
@@ -3282,7 +2735,7 @@
 ;	"көпте" v tv past p3 sg
 ;	"көпте" v tv past p3 pl REMOVE:642
 "<пәндер>"
-	"*пәндер"
+	"пән" n pl nom
 "<әскери>"
 	"әскери" adj
 ;	"әскери" adj subst nom
@@ -3426,7 +2879,7 @@
 	"ой" n
 		"лы" post
 "<интеллигенттерінің>"
-	"*интеллигенттерінің"
+	"интеллигент" n pl px3sp gen
 "<өкілдері>"
 	"өкіл" n pl px3sp nom
 ;	"өкіл" n pl px3sp nom
@@ -3485,7 +2938,7 @@
 "<және>"
 	"және" cnjcoo
 "<прогресшіл>"
-	"*прогресшіл"
+	"прогресшіл" adj
 "<ой>"
 ;	"ой" ij
 	"ой" n nom
@@ -3531,8 +2984,9 @@
 ;	"бол" v iv past p3 pl REMOVE:642
 "<..>"
 	".." sent
+
 "<Қырағы>"
-	"*Қырағы"
+	"қырағы" adj
 "<да>"
 	"да" cnjcoo
 ;	"да" postadv
@@ -3542,7 +2996,7 @@
 	"зейін" n
 		"лы" post
 "<Шоқанға>"
-	"*Шоқанға"
+	"Шоқан" np ant m dat
 "<сурет>"
 	"сурет" n nom
 ;	"сурет" n nom
@@ -3679,7 +3133,7 @@
 ;	"же" v tv ger_fut px3sp nom SELECT:776
 ;	"же" v tv gpr_fut subst px3sp nom SELECT:776
 "<Сырымбеттің>"
-	"*Сырымбеттің"
+	"Сырымбет" np ant m gen
 "<жазғы>"
 	"жазғы" adj
 ;	"жазғы" adj subst nom
@@ -3717,7 +3171,7 @@
 	"сал" v tv ger ins
 ;	"сал" vaux ger ins REMOVE:565
 "<шұғылданады>"
-	"*шұғылданады"
+	"шұғылдан" v iv aor p3 sg
 "<.>"
 	"." sent
 
@@ -3751,7 +3205,7 @@
 ;	"суретте" v tv ger_fut px3sp acc
 ;	"суретте" v tv gpr_fut subst px3sp acc
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<">"
 	""" sent
 "<корпустан>"
@@ -3812,13 +3266,10 @@
 "<.>"
 	"." sent
 
-"<Н>"
-	"*Н"
-"<.>"
-	"." sent
-
+"<Н.>"
+	"Н." abbr
 "<Потанин>"
-	"*Потанин"
+	"Потанин" np cog m nom
 "<:>"
 	":" sent
 "<">"
@@ -3885,7 +3336,7 @@
 ;	"кез" n px1pl loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<өзінің>"
 	"өз" prn ref px3sp gen
 "<әңгімелерімен>"
@@ -3924,7 +3375,7 @@
 "<,>"
 	"," cm
 "<саят>"
-	"*саят"
+	"саят" n nom
 "<құру>"
 	"құр" v tv ger nom
 ;	"кұр" v iv ger nom
@@ -3953,7 +3404,7 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<сұңқарды>"
 	"сұңқар" n acc
 "<қалай>"
@@ -3993,7 +3444,7 @@
 	"." sent
 
 "<Дауылпаз>"
-	"*Дауылпаз"
+	"дауылпаз" n nom
 "<бен>"
 	"мен" cnjcoo
 ;	"мен" post REMOVE:286
@@ -4058,7 +3509,7 @@
 ;	"өз" prn ref px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<өнерінің>"
 	"өнер" n px3sp gen
 ;	"өн" v iv ger_fut px3sp gen REMOVE:350
@@ -4075,7 +3526,7 @@
 ;	"ол" prn dem dat
 	"ол" prn pers p3 sg dat
 "<курстастарының>"
-	"*курстастарының"
+	"курстас" n pl px3sp gen
 "<қызығып>"
 	"қызық" v iv gna_perf
 ;	"қызық" v iv prc_perf REMOVE:542
@@ -4108,7 +3559,7 @@
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<кадет>"
 ;	"кадет" n attr SELECT:408
 ;	"кадет" n nom
@@ -4269,7 +3720,7 @@
 "<Азияны>"
 	"Азия" np top acc
 "<арлап>"
-	"*арлап"
+	"арла" v tv gna_perf
 "<жан-жақты>"
 ;	"жан-жақ" n acc
 	"жан-жақ" n
@@ -4278,7 +3729,7 @@
 ;	"тан" v iv coop ger acc
 	"таны" v tv coop ger acc
 "<армандады>"
-	"*армандады"
+	"арманда" v iv ifi p3 sg
 "<.>"
 	"." sent
 
@@ -4437,7 +3888,7 @@
 ;	"бітір" vaux gpr_past subst nom REMOVE:565
 ;	"бітір" v tv past p3 pl REMOVE:642
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Батыс>"
 	"батыс" adj
 ;	"батыс" n nom
@@ -4608,9 +4059,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"губернатор" n attr REMOVE:397
 "<Гасфорттың>"
-	"*Гасфорттың"
+	"Гасфорт" np cog m gen
 "<адьютанты>"
-	"*адьютанты"
+	"адьютант" n px3sp nom
 "<болып>"
 	"бол" v iv prc_perf
 ;	"бол" v iv gna_perf
@@ -4746,7 +4197,7 @@
 ;	"ұстаз" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Костылецкийдің>"
-	"*Костылецкийдің"
+	"Костылецкий" np cog m gen
 "<өтініші>"
 	"өтініш" n px3sp nom
 ;	"өтініш" n px3sp nom
@@ -4767,7 +4218,7 @@
 ;	"көрнекті" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шығыстанушы>"
-	"*шығыстанушы"
+	"шығыстанушы" n nom
 "<,>"
 	"," cm
 "<Қазан>"
@@ -4791,18 +4242,12 @@
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"профессор" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
-"<Н>"
-	"*Н"
-"<.>"
-	"." sent
-
-"<И>"
-	"и" v tv imp p2 sg
-"<.>"
-	"." sent
-
+"<Н.>"
+	"Н." abbr
+"<И.>"
+	"И." abbr
 "<Березиннің>"
-	"*Березиннің"
+	"Березин" np cog m gen
 "<тапсырмаларын>"
 	"тапсырма" n pl px3sp acc
 "<орындайды>"
@@ -4812,9 +4257,9 @@
 	"." sent
 
 "<Березин>"
-	"*Березин"
+	"Березин" np cog m nom
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<жинаған>"
 	"жина" v tv gpr_past
 ;	"жина" v tv ger_past nom
@@ -4930,9 +4375,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"профессор" n attr REMOVE:397
 "<Березин>"
-	"*Березин"
+	"Березин" np cog m nom
 "<бастырып>"
-	"*бастырып"
+	"бастырып" v tv prc_perf
 "<шығарған>"
 	"шығар" v tv gpr_past
 ;	"шығар" v tv ger_past nom
@@ -4942,7 +4387,7 @@
 "<">"
 	""" sent
 "<Тоқтамыс>"
-	"*Тоқтамыс"
+	"Тоқтамыс" np ant m nom
 "<ханның>"
 	"хан" n gen
 "<жарлығы>"
@@ -5414,8 +4859,8 @@ px2sg nom SELECT:982
 ;	"табиғат" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"табиғат" n attr REMOVE:397
-"<зандары>"
-	"*зандары"
+"<заңдары>"
+	"заң" n pl px3sp nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -5469,8 +4914,8 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"физикалық" adj
 ;		"е" cop aor p3 sg REMOVE:229
-"<зандарға>"
-	"*зандарға"
+"<заңдарға>"
+	"заң" n pl px3sp dat
 "<негізделсе>"
 	"негізде" v tv pass gna_cond p3 sg
 ;	"негізде" v tv pass prc_cond p3 pl REMOVE:542
@@ -5507,8 +4952,8 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"әлеуметтік" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
-"<зандардың>"
-	"*зандардың"
+"<заңдардың>"
+	"заң" n pl px3sp gen
 "<күшімен>"
 	"күш" n px3sp ins
 "<,>"
@@ -5528,8 +4973,8 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 "<өмірдің>"
 	"өмір" n gen
-"<әртұрлі>"
-	"*әртұрлі"
+"<әртүрлі>"
+	"әртүрлі" det qnt
 "<жақтарымен>"
 	"жақ" n pl px3sp ins
 ;	"жақта" v tv ger_fut px3sp ins
@@ -5537,7 +4982,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<тайпалық>"
-	"*тайпалық"
+	"тайпалық" adj
 "<организм>"
 ;	"организм" n attr SELECT:408
 ;	"организм" n nom
@@ -5550,9 +4995,10 @@ px2sg nom SELECT:982
 "<шарттарымен>"
 	"шарт" n pl px3sp ins
 "<толығады>"
-	"*толығады"
+	"толық" v iv aor p3 sg
 "<..>"
 	".." sent
+
 "<1855>"
 	"1855" num
 ;	"1855" num subst nom
@@ -5624,11 +5070,11 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<Аягөз>"
-	"*Аягөз"
+	"Аягөз" np top nom
 "<,>"
 	"," cm
 "<Қапал>"
-	"*Қапал"
+	"Қапал" np top nom
 "<арқылы>"
 ;	"арқылы" adv
 	"арқылы" post REMOVE:286
@@ -5808,7 +5254,7 @@ px2sg nom SELECT:982
 ;	"қазақ" adj subst pl loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шамандықтың>"
-	"*шамандықтың"
+	"шамандық" n gen
 "<қалдығы>"
 	"қалдық" n px3sp nom
 ;	"қалдық" adj subst px3sp nom
@@ -5900,7 +5346,7 @@ px2sg nom SELECT:982
 ;	"әскери" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<лауазымы>"
-	"*лауазымы"
+	"лауазым" n px3sp nom
 "<бір>"
 	"бір" num
 ;	"бір" det ind
@@ -5912,13 +5358,13 @@ px2sg nom SELECT:982
 "<сатыға>"
 	"саты" n dat
 "<жоғарылап>"
-	"*жоғарылап"
+	"жоғарыла" v iv gna_perf
 "<,>"
 	"," cm
 "<поручик>"
-	"*поручик"
+	"поручик" n nom
 "<шенін>"
-	"*шенін"
+	"шен" n px3sp acc
 "<алады>"
 	"ал" v tv aor p3 sg
 ;	"ал" vaux aor p3 pl REMOVE:565
@@ -5965,7 +5411,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Хоментовский>"
-	"*Хоментовский"
+	"Хоментовский" np cog m nom
 "<басқарған>"
 	"басқар" v tv gpr_past
 ;	"басқар" v tv ger_past nom
@@ -6226,11 +5672,11 @@ px2sg nom SELECT:982
 "<">"
 	""" sent
 "<Көкетай>"
-	"*Көкетай"
+	"Көкетай" np ant m nom
 "<ханның>"
 	"хан" n gen
 "<ертегісі>"
-	"*ертегісі"
+	"ертегі" n px3sp nom
 "<">"
 	""" sent
 "<жырын>"
@@ -6266,7 +5712,7 @@ px2sg nom SELECT:982
 "<даналығының>"
 	"даналық" n px3sp gen
 "<туындысы>"
-	"*туындысы"
+	"туынды" n px3sp nom
 "<,>"
 	"," cm
 "<барша>"
@@ -6288,11 +5734,11 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"халық" n attr REMOVE:397
 "<ертегілерінің>"
-	"*ертегілерінің"
+	"ертегі" n pl px3sp gen
 "<,>"
 	"," cm
 "<хикаялары>"
-	"*хикаялары"
+	"хикая" n pl px3sp nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -6338,17 +5784,8 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 pl REMOVE:649
 "<,>"
 	"," cm
-"<әдет>"
-	"әдет" n nom
-;	"әдет" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"әдет" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"әдет" n attr REMOVE:397
-"<->"
-	"-" guio
-"<ғұрпы>"
-	"*ғұрпы"
+"<әдет-ғұрпы>"
+	"әдет-ғұрып" n px3sp nom
 "<жөніндегі>"
 	"жөн" n px3sp loc attr
 ;	"жөн" adj subst px3sp loc attr
@@ -6444,26 +5881,20 @@ px2sg nom SELECT:982
 ;	"жаз" v tv gpr_past subst nom
 ;	"жаз" v tv past p3 sg
 ;	"жаз" v tv past p3 pl REMOVE:642
-"<К>"
-	"*К"
-"<.>"
-	"." sent
-
+"<К.>"
+	"К." abbr
 "<Риттердің>"
-	"*Риттердің"
+	"Риттер" np cog m gen
 "<,>"
 	"," cm
-"<А>"
-	"*А"
-"<.>"
-	"." sent
-
+"<А.>"
+	"А." abbr
 "<Гумбольттің>"
-	"*Гумбольттің"
+	"Гумбольт" np cog m gen
 "<,>"
 	"," cm
 "<шығыстанушы>"
-	"*шығыстанушы"
+	"шығыстанушы" n nom
 "<ғалымдар>"
 	"ғалым" n pl nom
 ;	"ғалым" n pl nom
@@ -6471,12 +5902,12 @@ px2sg nom SELECT:982
 ;	"ғалым" n pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шотт>"
-	"*Шотт"
+	"Шотт" np cog mf nom
 "<пен>"
 	"мен" cnjcoo
 ;	"мен" post REMOVE:286
 "<Клапроттың>"
-	"*Клапроттың"
+	"Клапрот" np cog mf gen
 "<еңбектеріне>"
 	"еңбек" n pl px3sp dat
 ;	"еңбекте" v iv ger_fut px3sp dat
@@ -6497,7 +5928,7 @@ px2sg nom SELECT:982
 "<Бұдан кейін>"
 	"бұдан кейін" adv
 "<Құлжа>"
-	"*Құлжа"
+	"Құлжа" np top nom
 "<қаласында>"
 	"қала" n px3sp loc
 ;	"қала" n px3sp loc
@@ -6565,7 +5996,7 @@ px2sg nom SELECT:982
 	"мен" cnjcoo
 ;	"мен" post
 "<бүгіні>"
-	"*бүгіні"
+	"бүгін" n px3sp nom
 "<туралы>"
 ;	"туралы" n attr
 ;	"туралы" n nom
@@ -6772,7 +6203,7 @@ px2sg nom SELECT:982
 ;	"жыл" n pl px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<армандайтын>"
-	"*армандайтын"
+	"арманда" v iv pih p3 sg
 "<.>"
 	"." sent
 
@@ -6852,15 +6283,15 @@ px2sg nom SELECT:982
 	"мен" cnjcoo SELECT:1065
 "<жағдайын>"
 	"жағдай" n px3sp acc
-"<жаксы>"
-	"*жаксы"
+"<жақсы>"
+	"жақсы" adv
 "<білетін>"
 	"біл" v tv gpr_impf
 ;	"біл" v tv gpr_impf subst nom
 ;	"біл" v tv pih p3 sg
 ;	"біл" v tv pih p3 pl REMOVE:642
 "<Шоқанға>"
-	"*Шоқанға"
+	"Шоқан" np ant m dat
 "<орыс>"
 ;	"орыс" n attr SELECT:408
 ;	"орыс" n nom
@@ -6966,7 +6397,7 @@ px2sg nom SELECT:982
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Батыс>"
 	"батыс" adj
 ;	"батыс" n nom
@@ -7012,13 +6443,10 @@ px2sg nom SELECT:982
 "<.>"
 	"." sent
 
-"<Х>"
-	"*Х"
-"<.>"
-	"." sent
-
+"<Х.>"
+	"Х."
 "<Гасфорттың>"
-	"*Гасфорттың"
+	"Гасфорт" np cog mf gen
 "<Орталық>"
 	"орталық" adj
 ;	"орталық" n nom
@@ -7123,8 +6551,8 @@ px2sg nom SELECT:982
 ;	"таны" v tv coop prc_perf REMOVE:542
 "<,>"
 	"," cm
-"<қырғыздардын>"
-	"*қырғыздардын"
+"<қырғыздардың>"
+	"қырғыз" n pl gen
 "<тарихи>"
 	"тарихи" adj
 ;	"тарихи" adv
@@ -7178,11 +6606,8 @@ px2sg nom SELECT:982
 ;	"ал" v tv ifi p3 pl REMOVE:642
 "<..>"
 	".." sent
-"<Ш>"
-	"*Ш"
-"<.>"
-	"." sent
-
+"<Ш.>"
+	"Ш." abbr
 "<Уәлиханов>"
 	"Уәлиханов" np cog m nom
 ;	"Уәлиханов" np cog m nom
@@ -7272,30 +6697,12 @@ px2sg nom SELECT:982
 ;	"географ" n nom
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"географ" n attr REMOVE:397
-"<П>"
-	"*П"
-"<.>"
-	"." sent
-
-"<С>"
-	"*С"
-"<.>"
-	"." sent
-
-"<Семенов>"
-	"Семенов" np cog m nom
-;	"Семенов" np cog m nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Семенов" np cog m nom
-;		"е" cop aor p3 sg REMOVE:229
-"<->"
-	"-" guio
-"<Тян>"
-	"*Тян"
-"<->"
-	"-" guio
-"<Шанскиймен>"
-	"*Шанскиймен"
+"<П.>"
+	"П." abbr
+"<С.>"
+	"С." abbr
+"<Семенов-Тян-Шанскиймен>"
+	"Семенов-Тян-Шанский" np cog m ins
 "<танысты>"
 	"таны" v tv coop ifi p3 sg SELECT:265
 ;	"тан" v iv coop ifi p3 sg SELECT:265
@@ -7408,37 +6815,16 @@ px2sg nom SELECT:982
 ;	"жылы" adv SELECT:699
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
-"<П>"
-	"*П"
-"<.>"
-	"." sent
-
-"<С>"
-	"*С"
-"<.>"
-	"." sent
-
-"<Семенов>"
-	"Семенов" np cog m nom
-;	"Семенов" np cog m nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Семенов" np cog m nom
-;		"е" cop aor p3 sg REMOVE:229
-"<->"
-	"-" guio
-"<Тян>"
-	"*Тян"
-"<->"
-	"-" guio
-"<Шанскийдің>"
-	"*Шанскийдің"
+"<П.>"
+	"П." abbr
+"<С.>"
+	"С." abbr
+"<Семенов-Тян-Шанскийдің>"
+	"Семенов-Тян-Шанский" np cog m gen
 "<ұсынуымен>"
 	"ұсын" v tv ger px3sp ins
-"<Ш>"
-	"*Ш"
-"<.>"
-	"." sent
-
+"<Ш.>"
+	"Ш." abbr
 "<Уәлиханов>"
 	"Уәлиханов" np cog m nom
 ;	"Уәлиханов" np cog m nom
@@ -7512,7 +6898,7 @@ px2sg nom SELECT:982
 	"мен" cnjcoo
 ;	"мен" post
 "<Жетісуға>"
-	"*Жетісуға"
+	"Жетісу" np top dat
 "<,>"
 	"," cm
 "<қырғыз>"
@@ -7537,7 +6923,7 @@ px2sg nom SELECT:982
 ;	"сапар" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<ғалым>"
 ;	"ғалым" n attr SELECT:408
 ;	"ғалым" n nom
@@ -7582,7 +6968,7 @@ px2sg nom SELECT:982
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Алатау>"
 	"Алатау" np top attr SELECT:408
 ;	"Алатау" np top nom
@@ -7642,8 +7028,8 @@ px2sg nom SELECT:982
 "<.>"
 	"." sent
 
-"<Кырғыз>"
-	"*Кырғыз"
+"<Қырғыз>"
+	"қырғыз" n nom
 "<халқының>"
 	"халық" n px3sp gen
 "<энциклопедиялық>"
@@ -7702,7 +7088,7 @@ px2sg nom SELECT:982
 ;	"жыл" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<атақты>"
 ;	"атақты" adj subst nom
 	"атақты" adj
@@ -7718,7 +7104,7 @@ px2sg nom SELECT:982
 ;	"атақ" n
 ;		"лы" post REMOVE:371
 "<Қашғария>"
-	"*Қашғария"
+	"Қашғария" np top nom
 "<сапарына>"
 	"сапар" n px3sp dat
 "<барып>"
@@ -7731,7 +7117,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Шоқанға>"
-	"*Шоқанға"
+	"Шоқан" np ant m dat
 "<дейін>"
 ;	"де" v tv opt p1 sg
 ;	"дейін" n nom
@@ -7815,15 +7201,12 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"ғалым" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
-"<Р>"
-	"*Р"
-"<.>"
-	"." sent
-
+"<Р.>"
+	"Р."
 "<Шлагингвейттің>"
-	"*Шлагингвейттің"
+	"Шлагингвейт" np cog mf gen
 "<еуропалықтар>"
-	"*еуропалықтар"
+	"еуропалық" adj subst pl nom
 "<үшін>"
 ;	"үш" num subst px3sp acc
 ;	"үш" n px3sp acc
@@ -7890,7 +7273,7 @@ px2sg nom SELECT:982
 ;	"ол" prn dem nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<қатыгездікпен>"
-	"*қатыгездікпен"
+	"қатыгездік" n ins
 "<өлім>"
 ;	"өлі" adj subst px1sg nom
 ;	"өлім" n nom
@@ -7911,15 +7294,11 @@ px2sg nom SELECT:982
 ;	"душар бол" v iv gpr_past subst nom
 	"душар бол" v iv past p3 sg
 ;	"душар бол" v iv past p3 pl REMOVE:642
-"<->"
-	"-" guio
-"<ды>"
-	"*ды"
 "<.>"
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<аса>"
 	"аса" adv SELECT:676
 ;	"аса" adj
@@ -7992,7 +7371,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<Қашғария>"
-	"*Қашғария"
+	"Қашғария" np top nom
 "<өлкесінің>"
 	"өлке" n px3sp gen
 "<тарихы>"
@@ -8145,23 +7524,14 @@ px2sg nom SELECT:982
 "<«>"
 	"«" lquot
 "<Алтышардың>"
-	"*Алтышардың"
+	"Алтышар" np top gen
 "<немесе>"
 	"немесе" cnjcoo
 "<Қытайдың>"
 	"Қытай" np top gen SELECT:320
 ;	"қытай" n gen SELECT:320
-"<Нан>"
-	"нан" n nom
-;	"нан" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"нан" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"нан" n attr REMOVE:397
-"<->"
-	"-" guio
-"<JIy>"
-	"*JIy"
+"<Нанкин>"
+	"Нанкин" np top nom
 "<провинциясының>"
 	"провинция" n px3sp gen
 "<(>"
@@ -8494,7 +7864,7 @@ px2sg nom SELECT:982
 ;	"әскери" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<шені>"
-	"*шені"
+	"шен" n px3sp nom
 "<де>"
 ;	"да" cnjcoo
 	"да" postadv
@@ -8530,7 +7900,7 @@ px2sg nom SELECT:982
 "<II>"
 	"II" num ord
 "<Александрдің>"
-	"*Александрдің"
+	"Александр" np ant m gen
 "<өзі>"
 	"өз" prn ref px3sp nom
 ;	"өз" prn ref px3sp nom
@@ -8561,7 +7931,7 @@ px2sg nom SELECT:982
 ;	"кез" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<патшаға>"
 	"патша" n dat
 "<орыс>"
@@ -8691,7 +8061,7 @@ px2sg nom SELECT:982
 "<)>"
 	")" rpar
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Уәлиханов>"
 	"Уәлиханов" np cog m nom
 ;	"Уәлиханов" np cog m nom
@@ -8765,7 +8135,7 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ресейлік" n attr REMOVE:397
 "<шығыстанушылар>"
-	"*шығыстанушылар"
+	"шығыстанушы" n pl nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -8811,7 +8181,7 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"нағыз" n attr REMOVE:397
 "<піріне>"
-	"*піріне"
+	"пір" n px3sp dat
 "<айналды>"
 	"айнал" v iv ifi p3 sg
 ;	"айнал" v iv ifi p3 pl REMOVE:642
@@ -8819,7 +8189,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<Қазақстан>"
 	"Қазақстан" np top nom
 ;	"Қазақстан" np top nom
@@ -8885,12 +8255,8 @@ px2sg nom SELECT:982
 ;	"айналыс" v iv prc_perf REMOVE:542
 "<,>"
 	"," cm
-"<қажымай>"
-	"*қажымай"
-"<->"
-	"-" guio
-"<талмай>"
-	"*талмай"
+"<қажымай-талмай>"
+	"қажымай-талмай" adv
 "<еңбек>"
 	"еңбек" n nom
 ;	"еңбек" n nom
@@ -9067,7 +8433,7 @@ px2sg nom SELECT:982
 ;	"жылы" adj advl SELECT:699
 ;	"жылы" adj subst nom SELECT:699
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<генерал>"
 ;	"генерал" n nom
 	"генерал" n attr
@@ -9181,7 +8547,7 @@ px2sg nom SELECT:982
 ;	"шектен тыс" adj
 ;		"е" cop aor p3 sg REMOVE:229
 "<қатыгездік>"
-	"*қатыгездік"
+	"қатыгездік" n nom
 "<жасауы>"
 ;	"жасау" n px3sp nom SELECT:417
 ;	"жасау" n px3sp nom
@@ -9252,9 +8618,9 @@ px2sg nom SELECT:982
 ;	"жыл" n pl loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<Қашғарияға>"
-	"*Қашғарияға"
+	"Қашғария" np top dat
 "<сапары>"
 	"сапар" n px3sp nom
 ;	"сапар" n px3sp nom
@@ -9262,7 +8628,7 @@ px2sg nom SELECT:982
 ;	"сапар" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ғалымдық>"
-	"*ғалымдық"
+	"ғалымдық" adj
 "<,>"
 	"," cm
 "<ағартушылық>"
@@ -9295,7 +8661,7 @@ px2sg nom SELECT:982
 ;	"жаңа" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<белеске>"
-	"*белеске"
+	"белес" n dat
 "<көтерілуіне>"
 	"көтер" v tv pass ger px3sp dat
 ;	"көтеріл" v iv ger px3sp dat
@@ -9316,7 +8682,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Қашғария>"
-	"*Қашғария"
+	"Қашғария" np top nom
 "<ол>"
 ;	"ол" prn pers p3 sg nom
 	"ол" det dem
@@ -9385,7 +8751,7 @@ px2sg nom SELECT:982
 ;	"рет" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Қашғарияға>"
-	"*Қашғарияға"
+	"Қашғария" np top dat
 "<құпия>"
 	"құпия" adj
 ;	"құпия" n nom
@@ -9411,7 +8777,7 @@ px2sg nom SELECT:982
 ;	"бар" v iv past p3 sg
 ;	"бар" v iv past p3 pl REMOVE:642
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<,>"
 	"," cm
 "<өлкенің>"
@@ -9482,7 +8848,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Қашқарияға>"
-	"*Қашқарияға"
+	"Қашқария" np top dat
 "<сапарынан>"
 	"сапар" n px3sp abl
 ;	"сапар" n px3sp abl
@@ -9494,7 +8860,7 @@ px2sg nom SELECT:982
 "<«>"
 	"«" lquot
 "<Алтышаһардың>"
-	"*Алтышаһардың"
+	"Алтышаһар" np top gen
 "<,>"
 	"," cm
 "<яғни>"
@@ -9502,15 +8868,8 @@ px2sg nom SELECT:982
 "<Қытайдың>"
 	"Қытай" np top gen SELECT:320
 ;	"қытай" n gen SELECT:320
-"<Нан>"
-	"нан" n nom
-;	"нан" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"нан" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"нан" n attr REMOVE:397
-"<лу>"
-	"*лу"
+"<Нан лу>"
+	"Нан лу" np top nom
 "<уәлаятының>"
 	"уәлаят" n px3sp gen
 "<шығыстағы>"
@@ -9734,7 +9093,7 @@ px2sg nom SELECT:982
 "<..>"
 	".." sent
 "<Қашғарияға>"
-	"*Қашғарияға"
+	"Қашғария" np top dat
 "<сапарынан>"
 	"сапар" n px3sp abl
 ;	"сапар" n px3sp abl
@@ -9909,7 +9268,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<Сырымбетке>"
-	"*Сырымбетке"
+	"Сырымбет" np ant dat
 "<оралады>"
 	"ора" v tv pass aor p3 sg
 ;	"ора" v tv pass aor p3 pl REMOVE:642
@@ -9999,9 +9358,9 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"сайла" v tv ger loc SELECT:417
 "<Атбасар>"
-	"*Атбасар"
+	"Атбасар" np top nom
 "<округының>"
-	"*округының"
+	"округ" n px3sp gen
 "<аға>"
 	"аға" n attr SELECT:408
 ;	"аға" n nom
@@ -10108,7 +9467,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Сондағы>"
-	"*Сондағы"
+	"сондағы" adj
 "<ең>"
 	"ең" adv
 "<алдымен>"
@@ -10132,7 +9491,7 @@ px2sg nom SELECT:982
 	"арқылы" post
 ;	"арқылы" adv REMOVE:359
 "<жерлестеріме>"
-	"*жерлестеріме"
+	"жерлес" n pl px1sg dat
 "<оқыған>"
 	"оқы" v iv gpr_past
 ;	"оқы" v tv gpr_past
@@ -10252,7 +9611,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<қарсыласынан>"
 	"қарсылас" n px3sp abl
 ;	"қарсылас" adj subst px3sp abl
@@ -10475,7 +9834,7 @@ px2sg nom SELECT:982
 ;	"аға" n attr REMOVE:397
 ;	"ақ" v iv prc_impf REMOVE:542
 "<сұлтандыққа>"
-	"*сұлтандыққа"
+	"сұлтандық" n dat
 "<бекітпей>"
 	"бекіт" v tv neg prc_impf
 ;	"бекіт" v tv neg prc_perf
@@ -10520,7 +9879,7 @@ px2sg nom SELECT:982
 ;	"ай" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<полковник>"
 ;	"полковник" n nom
 	"полковник" n attr
@@ -10534,7 +9893,7 @@ px2sg nom SELECT:982
 	"шақыру" n px3sp ins SELECT:417
 ;	"шақыр" v tv ger px3sp ins SELECT:417
 "<Әулиеата>"
-	"*Әулиеата"
+	"Әулиеата" np top nom
 "<жорығына>"
 	"жорық" n px3sp dat
 "<қосылады>"
@@ -10610,9 +9969,9 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"Ресей" np top attr REMOVE:397
 "<қарамағына>"
-	"*қарамағына"
+	"қарамағы" n dat
 "<бағындыру>"
-	"*бағындыру"
+	"бағындыр" v iv ger nom
 "<мақсатын>"
 	"мақсат" n px3sp acc
 "<көздеген>"
@@ -10674,7 +10033,7 @@ px2sg nom SELECT:982
 ;	"бейбіт" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<мәмілегерлік>"
-	"*мәмілегерлік"
+	"мәмілегерлік" adj
 "<келісімдер>"
 	"келісім" n pl nom
 ;	"келісім" adj subst pl nom
@@ -10729,7 +10088,7 @@ px2sg nom SELECT:982
 "<Черняевтің>"
 	"Черняев" np cog m gen
 "<Әулиеатаны>"
-	"*Әулиеатаны"
+	"Әулиеата" np top acc
 "<(>"
 	"(" lpar
 "<қазіргі>"
@@ -10771,8 +10130,8 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 pl REMOVE:229
 ;	"кез" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
-"<шәһар>"
-	"*шәһар"
+"<шаһар>"
+	"шаһар" n nom
 "<халқына>"
 	"халық" n px3sp dat
 "<жасаған>"
@@ -10782,7 +10141,7 @@ px2sg nom SELECT:982
 ;	"жаса" v tv past p3 sg
 ;	"жаса" v tv past p3 pl REMOVE:642
 "<жауыздығын>"
-	"*жауыздығын"
+	"жауыздық" n px3sp acc
 "<көргесін>"
 	"*көргесін"
 "<,>"
@@ -10867,7 +10226,7 @@ px2sg nom SELECT:982
 "<одан әрі>"
 	"одан әрі" post
 "<Тезек>"
-	"*Тезек"
+	"Тезек" np ant m nom
 "<төренің>"
 	"төре" n gen
 "<ауылында>"
@@ -10919,7 +10278,7 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"жазда" vaux imp p2 sg REMOVE:565
 "<Күреңбел>"
-	"*Күреңбел"
+	"Күреңбел" np top nom
 "<жайлауы>"
 	"жайлау" n px3sp nom SELECT:417
 ;	"жайлау" n px3sp nom SELECT:417
@@ -10944,16 +10303,16 @@ px2sg nom SELECT:982
 ;	"кез" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Алтынемел>"
-	"*Алтынемел"
+	"Алтынемел" np top nom
 "<асуының>"
 	"ас" v iv ger px3sp gen
 ;	"ас" v tv ger px3sp gen
 "<күнгейі>"
-	"*күнгейі"
+	"күнгей" n px3sp nom
 "<)>"
 	")" rpar
 "<тұрақтап>"
-	"*тұрақтап"
+	"тұрақта" v iv gna_perf
 "<қалады>"
 	"қал" v iv aor p3 sg
 ;	"қала" v tv ifi p3 sg
@@ -10972,7 +10331,7 @@ px2sg nom SELECT:982
 ;	"сол" prn dem loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<Тезектің>"
-	"*Тезектің"
+	"Тезек" np ant m gen
 "<немере>"
 	"немере" n attr SELECT:408
 ;	"немере" n nom
@@ -10987,7 +10346,7 @@ px2sg nom SELECT:982
 ;	"қарындас" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Айсарыға>"
-	"*Айсарыға"
+	"Айсары" np ant f dat
 "<үйленеді>"
 	"үйлен" v iv aor p3 sg
 ;	"үйлен" v iv aor p3 pl REMOVE:642
@@ -11042,11 +10401,11 @@ px2sg nom SELECT:982
 	"қайта" adv
 ;	"қайт" v iv prc_impf REMOVE:542
 "<қозып>"
-	"*қозып"
+	"қоз" v iv gna_perf
 "<,>"
 	"," cm
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<1865>"
 	"1865" num
 ;	"1865" num subst nom
@@ -11079,14 +10438,14 @@ px2sg nom SELECT:982
 ;	"сүйек" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Алтынемел>"
-	"*Алтынемел"
+	"Алтынемел" np top nom
 "<тауының>"
 ;	"тауы" n gen
 	"тау" n px3sp gen
 "<баурайындағы>"
-	"*баурайындағы"
+	"баурай" n px3sp loc subst nom
 "<Көшентоған>"
-	"*Көшентоған"
+	"Көшентоған" np top nom
 "<деген>"
 	"де" v tv gpr_past
 ;	"де" v tv ger_past nom
@@ -11120,9 +10479,9 @@ px2sg nom SELECT:982
 "<->"
 	"-" guio
 "<ағартушылары>"
-	"*ағартушылары"
+	"ағартушы" n pl px3sp nom
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -11131,7 +10490,7 @@ px2sg nom SELECT:982
 	"Абай" np ant m gen SELECT:320
 ;	"абай" adj subst gen SELECT:320
 "<дүниетанымы>"
-	"*дүниетанымы"
+	"дүниетаным" n px3sp nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -11297,7 +10656,7 @@ px2sg nom SELECT:982
 	"мен" cnjcoo
 ;	"мен" post
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<ауыз>"
 	"ауыз" n attr SELECT:408
 ;	"ауыз" n nom
@@ -11353,7 +10712,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<өшпес>"
-	"*өшпес"
+	"өшпес" adj
 "<тағлым>"
 	"*тағлым"
 "<алуынан да>"
@@ -11505,7 +10864,7 @@ px2sg nom SELECT:982
 ;	"тіл" n pl px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<қисса>"
-	"*қисса"
+	"қисса" n nom
 "<,>"
 	"," cm
 "<дастан>"
@@ -11564,8 +10923,8 @@ px2sg nom SELECT:982
 ;	"ор" v tv coop imp p2 sg REMOVE:599
 "<және>"
 	"және" cnjcoo
-"<Европа>"
-	"*Европа"
+"<Еуропа>"
+	"Еуропа" np top nom
 "<кітаптары>"
 	"кітап" n pl px3sp nom
 ;	"кітап" n pl px3sp nom
@@ -11619,7 +10978,7 @@ px2sg nom SELECT:982
 ;	"терең" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<таныстығынан>"
-	"*таныстығынан"
+	"таныстық" n px3sp abl
 "<да>"
 	"да" cnjcoo
 ;	"да" postadv
@@ -11633,7 +10992,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<халық>"
 ;	"халық" n attr SELECT:408
 ;	"халық" n nom
@@ -11713,8 +11072,8 @@ px2sg nom SELECT:982
 ;	"абай" adj SELECT:320
 ;	"абай" adj advl SELECT:320
 ;	"абай" adj subst nom SELECT:320
-"<көркемсөз>"
-	"*көркемсөз"
+"<көркем сөз>"
+	"көркем сөз" n nom
 "<байлығын>"
 	"байлық" n px3sp acc
 "<жамағатты>"
@@ -11722,7 +11081,7 @@ px2sg nom SELECT:982
 ;	"жамағат" n
 ;		"лы" post
 "<кәміл>"
-	"*кәміл"
+	"кәміл" adv
 "<адамдық>"
 ;	"адамдық" n nom
 	"адамдық" n attr
@@ -11734,7 +11093,7 @@ px2sg nom SELECT:982
 	"жол" n pl dat
 ;	"жолда" v tv gpr_fut subst dat
 "<баулып>"
-	"*баулып"
+	"баул" v tv gna_perf
 "<,>"
 	"," cm
 "<тәрбиелеудің>"
@@ -11744,7 +11103,7 @@ px2sg nom SELECT:982
 "<жақсылықтарды>"
 	"жақсылық" n pl acc
 "<өнеге>"
-	"*өнеге"
+	"өнеге" n nom
 "<етіп>"
 	"ет" v tv prc_perf
 ;	"ет" v tv gna_perf
@@ -11765,9 +11124,9 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<надандық>"
-	"*надандық"
+	"надандық" n nom
 "<атаулыны>"
-	"*атаулыны"
+	"атаулы" adj subst acc
 "<әшкерелеуің>"
 	"әшкереле" v tv ger px2sg nom
 "<құралы>"
@@ -11822,8 +11181,8 @@ px2sg nom SELECT:982
 ;	"көзде" v tv prc_perf REMOVE:542
 "<,>"
 	"," cm
-"<езінің>"
-	"*езінің"
+"<өзінің>"
+	"өз" prn ref px3sp gen
 "<шығармаларында>"
 	"шығарма" n pl px3sp loc
 ;	"шығарма" n pl px3sp loc
@@ -11879,17 +11238,8 @@ px2sg nom SELECT:982
 	"сөз" n pl acc
 "<,>"
 	"," cm
-"<мақал>"
-	"мақал" n nom
-;	"мақал" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"мақал" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"мақал" n attr REMOVE:397
-"<->"
-	"-" guio
-"<мәтелдерді>"
-	"*мәтелдерді"
+"<мақал-мәтелдерді>"
+	"мақал-мәтел" n pl acc
 "<,>"
 	"," cm
 "<тұрақты>"
@@ -11911,7 +11261,7 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"тұрақты" n attr REMOVE:397
 "<тіркестерді>"
-	"*тіркестерді"
+	"тіркес" n pl acc
 "<жаңғырта>"
 	"жаңғырт" v tv prc_impf
 "<пайдаланды>"
@@ -11948,7 +11298,7 @@ px2sg nom SELECT:982
 ;	"дәстүр" n
 ;		"лы" post REMOVE:371
 "<ұйқастар>"
-	"*ұйқастар"
+	"ұйқас" n pl nom
 "<мен>"
 ;	"мен" prn pers p1 sg nom
 	"мен" cnjcoo
@@ -11964,7 +11314,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<толғау>"
-	"*толғау"
+	"толғау" v tv ger nom
 "<,>"
 	"," cm
 "<жоқтау>"
@@ -12023,7 +11373,7 @@ px2sg nom SELECT:982
 ;	"фольклор" n px3sp loc subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<фабулаларға>"
-	"*фабулаларға"
+	"фабула" n pl dat
 "<сүйеніп>"
 	"сүйен" v iv gna_perf
 ;	"сүйен" v iv prc_perf REMOVE:542
@@ -12046,7 +11396,7 @@ px2sg nom SELECT:982
 "<«>"
 	"«" lquot
 "<Масғұт>"
-	"*Масғұт"
+	"Масғұт" np ant m nom
 "<»>"
 	"»" rquot
 "<,>"
@@ -12084,7 +11434,7 @@ px2sg nom SELECT:982
 "<келемді>"
 	"*келемді"
 "<туындылар>"
-	"*туындылар"
+	"туынды" n pl nom
 "<жаратуы да>"
 ;	"жарат" v tv ger px3sp nom
 ;		"да" cnjcoo
@@ -12093,7 +11443,7 @@ px2sg nom SELECT:982
 "<ақынның>"
 	"ақын" n gen
 "<жаһан>"
-	"*жаһан"
+	"жаһан" n nom
 "<халықтарының>"
 	"халық" n pl px3sp gen
 "<рухани>"
@@ -12163,11 +11513,11 @@ px2sg nom SELECT:982
 "<Ресейге>"
 	"Ресей" np top dat
 "<бағынышты>"
-	"*бағынышты"
+	"бағынышты" adj
 "<,>"
 	"," cm
 "<кіріптар>"
-	"*кіріптар"
+	"кіріптар" adj
 "<күн>"
 	"күн" n nom
 ;	"күн" n nom
@@ -12238,7 +11588,7 @@ px2sg nom SELECT:982
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"тақырып" n attr REMOVE:397
 "<кеңдігі>"
-	"*кеңдігі"
+	"кеңдік" n px3sp nom
 "<,>"
 	"," cm
 "<талдау>"
@@ -12313,7 +11663,7 @@ px2sg nom SELECT:982
 	"." sent
 
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<шығармаларын>"
 	"шығарма" n pl px3sp acc
 "<жинап>"
@@ -12321,7 +11671,7 @@ px2sg nom SELECT:982
 ;	"жина" v tv prc_perf REMOVE:542
 ;	"жинал" v iv prc_perf REMOVE:542
 "<бастыруда>"
-	"*бастыруда"
+	"бастыру" v tv ger loc
 "<орыс>"
 ;	"орыс" n attr SELECT:408
 ;	"орыс" n nom
@@ -12406,7 +11756,7 @@ px2sg nom SELECT:982
 ;	"шығар" v tv past p3 sg
 ;	"шығар" v tv past p3 pl REMOVE:642
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<шығармаларына>"
 	"шығарма" n pl px3sp dat
 "<жазған>"
@@ -12459,7 +11809,7 @@ px2sg nom SELECT:982
 ;	"Иванович" np pat m nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Веселовский>"
-	"*Веселовский"
+	"Веселовский" np cog m nom
 "<:>"
 	":" sent
 "<.>"
@@ -12514,7 +11864,7 @@ px2sg nom SELECT:982
 ;	"аз" n attr REMOVE:397
 ;	"аз" v iv imp p2 sg REMOVE:599
 "<ғұмырында>"
-	"*ғұмырында"
+	"ғұмыр" n px3sp loc
 "<адам>"
 ;	"адам" n attr SELECT:408
 ;	"адам" n nom
@@ -12541,7 +11891,7 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<гуманизмнің>"
-	"*гуманизмнің"
+	"гуманизм" n gen
 "<биік>"
 	"биік" adj
 ;	"биік" adj advl
@@ -12559,9 +11909,9 @@ px2sg nom SELECT:982
 "<,>"
 	"," cm
 "<ұлтжандылықтың>"
-	"*ұлтжандылықтың"
+	"ұлтжандылық" n gen
 "<жалтақсыз>"
-	"*жалтақсыз"
+	"жалтақсыз" adj
 "<үлгісін>"
 	"үлгі" n px3sp acc
 "<,>"
@@ -12608,7 +11958,7 @@ px2sg nom SELECT:982
 ;	"қал" v iv gpr_ppot nom
 ;	"қал" vaux gpr_ppot nom REMOVE:565
 "<өнегесін>"
-	"*өнегесін"
+	"өнеге" n px3sp acc
 "<барша>"
 	"барша" adj
 ;	"барша" adj subst nom
@@ -12652,7 +12002,7 @@ px2sg nom SELECT:982
 "<..>"
 	".." sent
 "<Шоқаннан>"
-	"*Шоқаннан"
+	"Шоқан" np ant m abl
 "<қалған>"
 ;	"қал" v iv past p3 sg
 	"қал" v iv gpr_past
@@ -12683,7 +12033,7 @@ px2sg nom SELECT:982
 ;	"өнер" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<туындылары>"
-	"*туындылары"
+	"туынды" n pl px3sp nom
 "<.>"
 	"." sent
 
@@ -12699,7 +12049,7 @@ px2sg nom SELECT:982
 ;	"олар" prn pers p3 pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<Шоқанның>"
-	"*Шоқанның"
+	"Шоқан" np ant m gen
 "<осы>"
 	"осы" det dem
 ;	"осы" prn dem nom
@@ -12735,7 +12085,7 @@ px2sg nom SELECT:982
 ;	"тұңғыш" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<профессионал>"
-	"*профессионал"
+	"профессионал" n attr
 "<суретшісі>"
 	"суретші" n px3sp nom
 ;	"суретші" n px3sp nom
@@ -12849,7 +12199,7 @@ px2sg nom SELECT:982
 "<..>"
 	".." sent
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<еңбектерінде>"
 	"еңбек" n pl px3sp loc
 ;	"еңбекте" v iv ger_fut px3sp loc
@@ -12909,7 +12259,8 @@ px2sg nom SELECT:982
 ;	"дерек" n pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<баршылық>"
-	"*баршылық"
+	"баршылық" adv
+		"е" cop aor p3 sg
 "<.>"
 	"." sent
 
@@ -13101,7 +12452,7 @@ px2sg nom SELECT:982
 ;	"зертте" v iv past p3 pl REMOVE:642
 ;	"зертте" v tv past p3 pl REMOVE:642
 "<шовинистік>"
-	"*шовинистік"
+	"шовинистік" adj
 "<рухтағы>"
 	"рух" n loc attr
 ;	"рух" n loc subst nom
@@ -13165,7 +12516,7 @@ px2sg nom SELECT:982
 "<мәдениетіне>"
 	"мәдениет" n px3sp dat
 "<қиянат>"
-	"*қиянат"
+	"қиянат" n nom
 "<жасалып>"
 	"жаса" v tv pass gna_perf
 ;	"жаса" v tv pass prc_perf REMOVE:542
@@ -13213,7 +12564,7 @@ px2sg nom SELECT:982
 ;	"екінші" adj subst nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<сорттағы>"
-	"*сорттағы"
+	"сорт" n loc attr
 "<халық>"
 	"халық" n nom
 ;	"халық" n nom
@@ -13259,7 +12610,7 @@ px2sg nom SELECT:982
 ;	"осы" prn dem sim nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<келеңсіз>"
-	"*келеңсіз"
+	"келеңсіз" adj
 "<көзқарасқа>"
 	"көзқарас" n dat
 "<қыр>"
@@ -13323,11 +12674,8 @@ px2sg nom SELECT:982
 	"-" guio
 "<намысын>"
 	"намыс" n px3sp acc
-"<қызғыштай>"
-	"*қызғыштай"
-"<қорғап>"
-	"қорға" v tv gna_perf
-;	"қорға" v tv prc_perf REMOVE:542
+"<қызғыштай қорғап>"
+	"қызғыштай қорға" v tv gna_perf
 "<,>"
 	"," cm
 "<қазақ>"
@@ -13516,7 +12864,7 @@ px2sg nom SELECT:982
 ;	"білім" n abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<кенжелеу>"
-	"*кенжелеу"
+	"кенжелеу" v iv ger nom
 "<қалса да>"
 	"қал" v iv gna_cond p3 sg
 		"да" postadv SELECT:851
@@ -13606,7 +12954,7 @@ px2sg nom SELECT:982
 "<жаңалыққа>"
 	"жаңалық" n dat
 "<бейім>"
-	"*бейім"
+	"бейім" adj
 "<халық>"
 	"халық" n nom
 ;	"халық" n nom
@@ -13758,7 +13106,7 @@ px2sg nom SELECT:982
 ;	"қара" v tv aor p3 pl REMOVE:642
 ;	"қарай" v iv ifi p3 pl REMOVE:642
 "<Шоқан>"
-	"*Шоқан"
+	"Шоқан" np ant m nom
 "<қазақ>"
 ;	"қазақ" n attr SELECT:408
 ;	"қазақ" n nom
@@ -13769,9 +13117,9 @@ px2sg nom SELECT:982
 "<ақындарының>"
 	"ақын" n pl px3sp gen
 "<төгілдіре>"
-	"*төгілдіре"
+	"төгілдір" v iv prc_impf
 "<жырлау>"
-	"*жырлау"
+	"жырлау" v tv ger nom
 "<қабілетін>"
 	"қабілет" n px3sp acc
 "<олардың>"
