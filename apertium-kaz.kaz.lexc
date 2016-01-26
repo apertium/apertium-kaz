@@ -1066,6 +1066,7 @@ LEXICON PRON-P3SG-CASES
 LEXICON PRON-PERS-INFL
 
 CASES-ETC ;
+ABESSIVE-POSTPOSITION ;
 
 LEXICON PRON-PERS
 
@@ -1407,7 +1408,7 @@ LEXICON N1
 
 LEXICON N1-Ә
 
-:%{ә%} N1 ;            ! generate front for {I} and back for {A} - куәні,
+:%{ә%} N1 ;            ! generate front for {I} and back for {A} - куәні, куәға
 :ә%{ъ%} N1 ;  ! Dir/LR ! analyse all back forms
 :ә N1 ;       ! Dir/LR ! analyse all front forms
 
@@ -5564,6 +5565,7 @@ XXI NUM-ROMAN ; ! ""
 кереует:кереует N1 ; ! "bed"
 кері% ағым:кері% ағым N1 ; ! ""
 керілдесушілік:керілдесушілік N1 ; ! ""
+кәр:кәр N1 ; ! "rage, fury"
 кәрілік:кәрілік N1 ; !
 кәріп%-қасер:кәріп%-қасер N1 ; ! "poor blind man"
 кәріп:кәріп N1 ; ! "Poor blind man"
@@ -5677,7 +5679,7 @@ XXI NUM-ROMAN ; ! ""
 кілт:кілт N1 ; ! "key"
 кілт% сөз:кілт% сөз N1 ; !
 кілтші:кілтші N1 ; ! ""
-кінә:кін N1 ; !-Ә ; ! "guilt"
+кінә:кін N1-Ә ; ! "guilt"
 кіріспеушілік:кіріспеушілік N1 ; ! ""
 кірпі:кірпі N1 ; ! ""
 кірпік:кірпік N1 ; ! "eyelash"
@@ -6105,7 +6107,7 @@ XXI NUM-ROMAN ; ! ""
 құдірет:құдірет N1 ; ! ""
 құдық:құдық N1 ; ! "well water"
 куәгер:куәгер N1 ; ! ""
-куә:ку N1 ; !-Ә ; ! "witness"
+куә:ку N1-Ә ; ! "witness"
 куәландырушы:куәландырушы N1 ; ! ""
 куәлік:куәлік N1 ; ! "certificate"
 құжат:құжат N1 ; ! "document"
@@ -6190,7 +6192,7 @@ XXI NUM-ROMAN ; ! ""
 құндыз:құндыз N1 ; ! ""
 құндылық:құндылық N1 ; ! ""
 күнәкар:күнәкар N1 ; ! ""
-күнә:күн N1 ; !-Ә ; ! "sin"
+күнә:күн N1-Ә ; ! "sin"
 күнжақты% тау:күнжақты% тау N1 ; ! ""
 күнжара:күнжара N1 ; ! ""
 күнжіт:күнжіт N1 ; ! ""
@@ -28173,6 +28175,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 кепілде:кепілде V-TV ; ! "ensure"
 кепілдік% бер:кепілдік% бер V-TV ; ! "ensure"
 кептір:кептір V-TV ; ! ""
+кер:кер V-TV ; ! "stretch"
 кері% қайтар:кері% қайтар V-TV ; !
 кері% сатып% ал:кері% сатып% ал V-TV ; !
 кес:кес V-TV ; ! "cut"
