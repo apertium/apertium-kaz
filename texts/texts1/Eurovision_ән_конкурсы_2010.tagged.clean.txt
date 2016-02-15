@@ -1,21 +1,11 @@
 "<Eurovision>"
 	"Eurovision" np al nom
 "<ән>"
-;	"ән" n attr SELECT:408
-;	"ән" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ән" n nom
-;		"е" cop aor p3 sg REMOVE:229
 	"ән" n nom SELECT:408
 "<конкурсы>"
 	"конкурс" n px3sp nom
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
 "<2010>"
 	"2010" num
-;	"2010" num subst nom
 "<.>"
 	"." sent
 
@@ -23,36 +13,18 @@
 	"Еуровидение" np al nom
 "<2010>"
 	"2010" num
-;	"2010" num subst nom
 "<ән>"
-;	"ән" n attr SELECT:408
-;	"ән" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ән" n nom
-;		"е" cop aor p3 sg REMOVE:229
 	"ән" n nom SELECT:408
 "<конкурсы>"
 	"конкурс" n px3sp nom
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
 "<Еуровидениенің>"
 	"Еуровидение" np al gen
 "<55-ші>"
 	"55" num ord
-;	"55" num ord subst nom
 "<конкурсы>"
 	"конкурс" n px3sp nom
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"конкурс" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
 "<болады>"
 	"бол" v iv aor p3 sg
-;	"бол" vaux aor p3 pl REMOVE:565
-;	"бол" vaux aor p3 sg REMOVE:565
-;	"бол" v iv aor p3 pl REMOVE:642
 "<.>"
 	"." sent
 
@@ -60,59 +32,26 @@
 	"Норвегия" np top gen
 "<елордасы>"
 	"елорда" n px3sp nom
-;	"елорда" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"елорда" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
 "<Осло>"
 	"Осло" np top attr SELECT:408
-;	"Осло" np top nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Осло" np top nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"Осло" np top nom SELECT:408
 "<қаласында>"
 	"қала" n px3sp loc
-;	"қала" n px3sp loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"қала" n px3sp loc
-;		"е" cop aor p3 sg REMOVE:229
 "<2010-шы>"
 	"2010" num ord
-;	"2010" num ord subst nom
 "<жылдың>"
 	"жыл" n gen
 "<25-ші>"
 	"25" num ord
-;	"25" num ord subst nom
 "<мамырдан>"
 	"мамыр" n abl
-;	"мамыр" n abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"мамыр" n abl
-;		"е" cop aor p3 sg REMOVE:229
 "<29-шы>"
 	"29" num ord
-;	"29" num ord subst nom
 "<мамырға>"
 	"мамыр" n dat
 "<дейін>"
 	"дейін" post SELECT:501
-;	"дейін" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"дейін" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"дейін" adv REMOVE:359
-;	"дейін" n attr REMOVE:397
-;	"де" v tv opt p1 sg SELECT:501
-;	"дейін" n nom SELECT:501
 "<өтеді>"
-;	"өт" v tv aor p3 sg
 	"өт" v iv aor p3 sg
-;	"өте" v tv ifi p3 sg
-;	"өт" v iv aor p3 pl REMOVE:642
-;	"өт" v tv aor p3 pl REMOVE:642
-;	"өте" v tv ifi p3 pl REMOVE:642
 "<.>"
 	"." sent
 
@@ -122,50 +61,18 @@
 	"ел" n acc
 "<2009-шы>"
 	"2009" num ord
-;	"2009" num ord subst nom
 "<Еуровидениеге>"
 	"Еуровидениеге" np ad dat
 "<Норвегиядан>"
 	"Норвегия" np top abl
-;	"Норвегия" np top abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"Норвегия" np top abl
-;		"е" cop aor p3 sg REMOVE:229
 "<қатысқан>"
-;	"қат" v iv coop gpr_past
 	"қатыс" v iv gpr_past
-;	"қат" v iv coop ger_past nom
-;	"қатыс" v iv ger_past nom
-;	"қатыс" v iv past p3 sg
-;	"қат" v iv coop past p3 sg
-;	"қат" v iv coop gpr_past subst nom
-;	"қатыс" v iv gpr_past subst nom
-;	"қат" v iv coop past p3 pl REMOVE:642
-;	"қатыс" v iv past p3 pl REMOVE:642
 "<былтырғы>"
 	"былтыр" adv attr
-;	"былтыр" adv subst nom
-;	"былтыр" adv subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"былтыр" adv subst nom
-;		"е" cop aor p3 sg REMOVE:229
 "<қатысушы>"
 	"қатысушы" n nom SELECT:417
-;	"қатысушы" n attr SELECT:417
-;	"қатысушы" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"қатысушы" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"қат" v iv coop gpr_pot SELECT:417
-;	"қатыс" v iv gpr_pot SELECT:417
-;	"қат" v iv coop gpr_pot subst nom SELECT:417
-;	"қатыс" v iv gpr_pot subst nom SELECT:417
 "<Александр>"
 	"Александр" np ant m nom
-;	"Александр" np ant m nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Александр" np ant m nom
-;		"е" cop aor p3 sg REMOVE:229
 "<Рыбак>"
 	"Рыбак" np cog mf nom
 "<әкелдi>"
@@ -175,28 +82,16 @@
 	
 "<Норвегия>"
 	"Норвегия" np top attr SELECT:408
-;	"Норвегия" np top nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Норвегия" np top nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"Норвегия" np top nom SELECT:408
 "<бюджетінен>"
 	"бюджет" n px3sp abl
-;	"бюджет" n px3sp abl
-;		"е" cop aor p3 pl REMOVE:229
-;	"бюджет" n px3sp abl
-;		"е" cop aor p3 sg REMOVE:229
 "<Еуровидениені>"
 	"Еуровидение" np al acc
 "<өткізу>"
 	"өткіз" v tv ger nom
 "<үшін>"
 	"үшін" post
-;	"үш" n px3sp acc
-;	"үш" num subst px3sp acc
 "<150>"
 	"150" num
-;	"150" num subst nom
 "<млн.>"
 	"млн." abbr
 "<норвеж>"
@@ -208,43 +103,14 @@
 € 
 "<17>"
 	"17" num
-;	"17" num subst nom
 "<млн.>"
 	"млн." abbr
 "<)>"
 	")" rpar
 "<бөлінген>"
 	"бөл" v tv pass gpr_past
-;	"бөлін" v tv gpr_past
-;	"бөлінген" adj
-;	"бөл" v tv pass ger_past nom
-;	"бөлін" v tv ger_past nom
-;	"бөлінген" adj advl
-;	"бөлін" v tv gpr_past subst nom
-;	"бөл" v tv pass past p3 sg
-;	"бөл" v tv pass gpr_past subst nom
-;	"бөлінген" adj subst nom
-;	"бөлін" v tv past p3 sg
-;	"бөлінген" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"бөлінген" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"бөлінген" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"бөлінген" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"бөл" v tv pass past p3 pl REMOVE:642
-;	"бөлін" v tv past p3 pl REMOVE:642
 "<болатын>"
-;	"болат" n px3sp acc
-;	"бол" v iv gpr_impf
 	"бол" v iv pih p3 sg
-;	"бол" v iv gpr_impf subst nom
-;	"бол" vaux gpr_impf REMOVE:565
-;	"бол" vaux pih p3 pl REMOVE:565
-;	"бол" vaux pih p3 sg REMOVE:565
-;	"бол" vaux gpr_impf subst nom REMOVE:565
-;	"бол" v iv pih p3 pl REMOVE:642
 "<.>"
 	"." sent
 	
@@ -259,57 +125,21 @@
 "<қаз.>"
 	"қаз." abbr
 "<Сәтті>"
-;	"сәтті" adj advl SELECT:438
-;	"сәтті" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"сәтті" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"сәтті" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"сәтті" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"сәт" n
-;		"лы" post REMOVE:371
-;	"Сәт" np ant m
-;		"лы" post REMOVE:371
 	"сәт" n acc SELECT:438
-;	"Сәт" np ant m acc SELECT:438
-;	"сәтті" adj SELECT:438
-;	"сәтті" adj subst nom SELECT:438
 "<бөліңіз>"
 	"бөл" v tv imp p2 frm sg
 "<(>"
 	"(" lpar
 "<Сәт>"
-;	"Сәт" np ant m nom SELECT:320
-;	"сәт" n nom
-;		"е" cop aor p3 pl REMOVE:232
-;	"сәт" n nom
-;		"е" cop aor p3 sg REMOVE:232
-;	"Сәт" np ant m nom
-;		"е" cop aor p3 pl REMOVE:232
-;	"Сәт" np ant m nom
-;		"е" cop aor p3 sg REMOVE:232
 	"сәт" n nom SELECT:320
-;	"сәт" n attr SELECT:320
 "<,>"
 	"," cm
 "<Мезет>"
 	"мезет" n nom
-;	"мезет" n nom
-;		"е" cop aor p3 pl REMOVE:232
-;	"мезет" n nom
-;		"е" cop aor p3 sg REMOVE:232
-;	"мезет" n attr REMOVE:397
 "<,>"
 	"," cm
 "<Момент>"
 	"момент" n nom
-;	"момент" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"момент" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"момент" n attr REMOVE:397
 "<)>"
 	")" rpar
 "<т.б.>"
@@ -320,7 +150,6 @@
 	"Еуровидение" np al nom
 "<2010>"
 	"2010" num
-;	"2010" num subst nom
 "<тақырыбының>"
 	"тақырып" n px3sp gen
 "<арт-дизайнын>"
@@ -329,16 +158,6 @@
 	"әлем" n dat
 "<танымал>"
 	"танымал" adj
-;	"танымал" adv
-;	"танымал" adj subst nom
-;	"танымал" adj
-;		"е" cop aor p3 pl REMOVE:229
-;	"танымал" adj
-;		"е" cop aor p3 sg REMOVE:229
-;	"танымал" adj subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"танымал" adj subst nom
-;		"е" cop aor p3 sg REMOVE:229
 "<норвеж>"
 	"норвеж" adj
 "<Госу>"
@@ -355,13 +174,8 @@
 	"дизайнерлік" adj
 "<фирмасы>"
 	"фирма" n px3sp nom
-;	"фирма" n px3sp nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"фирма" n px3sp nom
-;		"е" cop aor p3 sg REMOVE:229
 "<ойлап тапты>"
 	"ойлап тап" v tv ifi p3 sg
-;	"ойлап тап" v tv ifi p3 pl REMOVE:642
 "<.>"
 	"." sent
 	
@@ -369,65 +183,28 @@
 	"Еуровидение" np al nom
 "<2010>"
 	"2010" num
-;	"2010" num subst nom
 "<ән>"
-;	"ән" n attr SELECT:408
-;	"ән" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ән" n nom
-;		"е" cop aor p3 sg REMOVE:229
 	"ән" n nom SELECT:408
 "<конкурсында>"
 	"конкурс" n px3sp loc
-;	"конкурс" n px3sp loc
-;		"е" cop aor p3 pl REMOVE:229
-;	"конкурс" n px3sp loc
-;		"е" cop aor p3 sg REMOVE:229
 "<39>"
 	"39" num
-;	"39" num subst nom
 "<мемлекет>"
 	"мемлекет" n nom
-;	"мемлекет" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"мемлекет" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"мемлекет" n attr REMOVE:397
 "<қатысады>"
 	"қатыс" v iv aor p3 sg
-;	"қат" v iv coop aor p3 sg
-;	"қат" v iv coop aor p3 pl REMOVE:642
-;	"қатыс" v iv aor p3 pl REMOVE:642
 "<.>"
 	"." sent
 	
 "<Отыз>"
 	"отыз" num
-;	"отыз" num subst nom
-;	"отыз" num subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"отыз" num subst nom
-;		"е" cop aor p3 sg REMOVE:229
 "<төрт>"
 	"төрт" num
-;	"төрт" num subst nom
-;	"төрт" num subst nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"төрт" num subst nom
-;		"е" cop aor p3 sg REMOVE:229
 "<ел>"
 	"ел" n nom
-;	"ел" n attr
-;	"ел" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"ел" n nom
-;		"е" cop aor p3 sg REMOVE:229
 "<жартылай финалдарға>"
 	"жартылай финал" n pl dat
 "<қатысады>"
 	"қатыс" v iv aor p3 sg
-;	"қат" v iv coop aor p3 sg
-;	"қат" v iv coop aor p3 pl REMOVE:642
-;	"қатыс" v iv aor p3 pl REMOVE:642
 "<.>"
 	"." sent
