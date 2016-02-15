@@ -4639,10 +4639,10 @@
 	"ыдыра" v iv prc_impf
 "<бастаған>"
 ;	"баста" v tv past p3 sg
-	"баста" v tv gpr_past
+;	"баста" v tv gpr_past
 ;	"баста" v tv gpr_past subst nom
 ;	"баста" v tv ger_past nom
-;	"баста" vaux gpr_past REMOVE:565
+	"баста" vaux gpr_past REMOVE:565
 ;	"баста" vaux ger_past nom REMOVE:565
 ;	"баста" vaux past p3 pl REMOVE:565
 ;	"баста" vaux past p3 sg REMOVE:565
@@ -4833,9 +4833,9 @@
 "<әрекеттерін>"
 	"әрекет" n pl px3sp acc
 "<айнытпай>"
-	"айныт" v tv neg prc_impf
+;	"айныт" v tv neg prc_impf
 ;	"айныт" v tv neg prc_perf
-;	"айныт" v tv neg gna_perf
+	"айныт" v tv neg gna_perf
 "<танып>"
 ;	"таны" v tv gna_perf
 	"тан" v iv gna_perf
@@ -5556,16 +5556,16 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"жала" n attr REMOVE:397
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<тауып>"
 	"тап" v tv gna_perf
 ;	"тап" v tv prc_perf REMOVE:542
 "<,>"
 	"," cm
 "<қысқартып>"
-	"қысқарт" v tv prc_perf
-;	"қысқарт" v tv gna_perf
+;	"қысқарт" v tv prc_perf
+	"қысқарт" v tv gna_perf
 "<тастады>"
 	"таста" v tv ifi p3 sg
 ;	"таста" v tv ifi p3 pl REMOVE:642
@@ -6256,8 +6256,8 @@
 ;	"әсер" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<қойсақ>"
 	"қой" v tv gna_cond p1 pl
 ;	"қой" v tv prc_cond p1 pl REMOVE:542
@@ -6678,8 +6678,8 @@
 ;	"мүше" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<сайланды>"
@@ -7265,8 +7265,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"би" n attr REMOVE:397
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<сайланған>"
@@ -7895,9 +7895,9 @@
 ;	"бұлт" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ашылмай>"
-	"аш" v tv pass neg prc_impf
+;	"аш" v tv pass neg prc_impf
 ;	"аш" v tv pass neg prc_perf
-;	"аш" v tv pass neg gna_perf
+	"аш" v tv pass neg gna_perf
 "<қояды>"
 	"қой" v tv aor p3 sg
 ;	"қой" v tv aor p3 pl REMOVE:642
@@ -8796,8 +8796,7 @@
 "<қастандыққа>"
 	"қастандық" n dat
 "<әкеп>"
-;	"әкел" v tv prc_perf
-	"алып кел" v tv prc_perf
+	"алып кел" v tv gna_perf
 "<соқтырады>"
 	"соқтыр" v tv aor p3 sg
 ;	"соқтыр" v tv aor p3 pl REMOVE:642
@@ -10901,9 +10900,9 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"ақыл" n attr REMOVE:397
 "<сенбей>"
-	"сен" v tv neg prc_impf
+;	"сен" v tv neg prc_impf
 ;	"сен" v tv neg prc_perf
-;	"сен" v tv neg gna_perf
+	"сен" v tv neg gna_perf
 ;	"сенбе" v tv prc_impf
 "<сенбеңіз>"
 	"сен" v tv neg imp p2 frm sg
@@ -10936,8 +10935,8 @@
 "<»>"
 	"»" rquot
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<жазады>"
 	"жаз" v tv aor p3 sg
 ;	"жаз" v tv aor p3 pl REMOVE:642
@@ -11434,8 +11433,8 @@
 "<—>"
 	"—" guio
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<қайыра>"
 	"қайыр" v tv prc_impf
 "<түсінік>"
@@ -12770,8 +12769,8 @@
 "<ұрпаққа>"
 	"ұрпақ" n dat
 "<жазып>"
-	"жаз" v tv prc_perf
-;	"жаз" v tv gna_perf
+;	"жаз" v tv prc_perf
+	"жаз" v tv gna_perf
 "<қалдырса>"
 	"қалдыр" v tv gna_cond p3 sg
 ;	"қалдыр" v tv prc_cond p3 pl REMOVE:542
@@ -13043,8 +13042,8 @@
 "<ауыса>"
 	"ауыс" v iv prc_impf
 "<отырып>"
-	"отыр" vaux prc_perf SELECT:568
-;	"отыр" vaux gna_perf SELECT:568
+;	"отыр" vaux prc_perf SELECT:568
+	"отыр" vaux gna_perf SELECT:568
 ;	"отыр" v iv prc_perf SELECT:568
 ;	"отыр" v iv gna_perf SELECT:568
 "<жетті>"
@@ -14471,8 +14470,8 @@
 "<өлеңдерін>"
 	"өлең" n pl px3sp acc
 "<қосып>"
-	"қос" v tv prc_perf
-;	"қос" v tv gna_perf
+;	"қос" v tv prc_perf
+	"қос" v tv gna_perf
 "<санағанда>"
 	"сана" v tv ger_past loc
 ;	"сана" v tv gpr_past subst loc
@@ -14841,8 +14840,8 @@
 ;	"жақ" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<түсіндіреді>"
 	"түсіндір" v tv aor p3 sg
 ;	"түсіндір" v tv aor p3 pl REMOVE:642
@@ -15570,8 +15569,8 @@
 "<»>"
 	"»" rquot
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<саналды>"
 	"сана" v tv pass ifi p3 sg
 ;	"сана" v tv pass ifi p3 pl REMOVE:642
@@ -15992,8 +15991,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"азан" n attr REMOVE:397
 "<шақырып>"
-	"шақыр" v tv prc_perf
-;	"шақыр" v tv gna_perf
+;	"шақыр" v tv prc_perf
+	"шақыр" v tv gna_perf
 "<қойған>"
 	"қой" v tv gpr_past
 ;	"қой" v tv ger_past nom
@@ -16701,8 +16700,8 @@
 ;	"же" v tv gpr_fut subst nom SELECT:776
 ;	"же" v tv fut p3 sg SELECT:776
 "<аударылып>"
-	"аудар" v tv pass prc_perf SELECT:556
-;	"аудар" v tv pass gna_perf SELECT:556
+;	"аудар" v tv pass prc_perf SELECT:556
+	"аудар" v tv pass gna_perf SELECT:556
 "<келіп>"
 	"кел" v iv prc_perf SELECT:556
 ;	"кел" vaux gna_perf SELECT:556
@@ -16730,8 +16729,8 @@
 "<,>"
 	"," cm
 "<атап>"
-	"ата" v tv prc_perf
-;	"ата" v tv gna_perf
+;	"ата" v tv prc_perf
+	"ата" v tv gna_perf
 ;	"атап" n nom
 ;	"атап" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -16824,9 +16823,9 @@
 	"аудар" v tv pass prc_perf SELECT:556
 ;	"аудар" v tv pass gna_perf SELECT:556
 "<келгендердің>"
-;	"кел" vaux ger_past pl gen SELECT:568
+	"кел" vaux ger_past pl gen SELECT:568
 ;	"кел" vaux gpr_past subst pl gen SELECT:568
-	"кел" v iv ger_past pl gen 
+;	"кел" v iv ger_past pl gen
 ;	"кел" v iv gpr_past subst pl gen SELECT:568
 "<арасында>"
 	"ара" n px3sp loc
@@ -16978,8 +16977,8 @@
 	"." sent
 
 "<Атап>"
-	"ата" v tv prc_perf
-;	"ата" v tv gna_perf
+;	"ата" v tv prc_perf
+	"ата" v tv gna_perf
 ;	"атап" n nom
 ;	"атап" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -17172,8 +17171,8 @@
 ;	"кез" n px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<бастап>"
-	"баста" v tv prc_perf
-;	"баста" v tv gna_perf
+;	"баста" v tv prc_perf
+	"баста" v tv gna_perf
 ;	"баста" vaux prc_perf REMOVE:565
 ;	"баста" vaux gna_perf REMOVE:565
 "<таныла>"
@@ -18650,11 +18649,11 @@
 ;	"бол" vaux aor p3 sg REMOVE:565
 ;	"бол" v iv aor p3 pl REMOVE:642
 "<деп>"
-	"де" v tv prc_perf
-;	"де" v tv gna_perf
+;	"де" v tv prc_perf
+	"де" v tv gna_perf
 "<есептеді>"
-	"есепте" v tv ifi p3 sg
-;	"есепте" v tv ifi p3 pl REMOVE:642
+;	"есепте" v tv ifi p3 sg
+	"есепте" v tv ifi p3 pl REMOVE:642
 "<.>"
 	"." sent
 
@@ -18703,8 +18702,8 @@
 ;		"е" cop aor p3 sg REMOVE:229
 ;	"міндет" n attr REMOVE:397
 "<етіп>"
-	"ет" v tv prc_perf
-;	"ет" v tv gna_perf
+;	"ет" v tv prc_perf
+	"ет" v tv gna_perf
 ;	"ет" vaux prc_perf REMOVE:565
 ;	"ет" vaux gna_perf REMOVE:565
 "<қойды>"
@@ -18772,8 +18771,8 @@
 ;	"бол" vaux ger_impf px3sp acc REMOVE:565
 ;	"бол" vaux gpr_impf subst px3sp acc REMOVE:565
 "<қадап>"
-	"қада" v tv prc_perf
-;	"қада" v tv gna_perf
+;	"қада" v tv prc_perf
+	"қада" v tv gna_perf
 "<айтты>"
 	"айт" v tv ifi p3 sg
 ;	"айт" v tv ifi p3 pl REMOVE:642
@@ -18963,8 +18962,8 @@
 	"." sent
 
 "<Атап>"
-	"ата" v tv prc_perf
-;	"ата" v tv gna_perf
+;	"ата" v tv prc_perf
+	"ата" v tv gna_perf
 ;	"атап" n nom
 ;	"атап" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -19584,14 +19583,14 @@
 "<әнге>"
 	"ән" n dat
 "<қосып>"
-	"қос" v tv prc_perf
-;	"қос" v tv gna_perf
+;	"қос" v tv prc_perf
+	"қос" v tv gna_perf
 "<айтатынына>"
 	"айт" v tv ger_impf px3sp dat
 ;	"айт" v tv gpr_impf subst px3sp dat
 "<көз жеткізіп>"
-	"көз жеткіз" v tv prc_perf
-;	"көз жеткіз" v tv gna_perf
+;	"көз жеткіз" v tv prc_perf
+	"көз жеткіз" v tv gna_perf
 "<қайтқанын>"
 	"қайт" v iv ger_past px3sp acc
 ;	"қайт" v iv gpr_past subst px3sp acc
@@ -19809,8 +19808,8 @@
 ;	"жақта" v tv ger_fut px3sp acc
 ;	"жақта" v tv gpr_fut subst px3sp acc
 "<ашып>"
-	"аш" v tv prc_perf
-;	"аш" v tv gna_perf
+;	"аш" v tv prc_perf
+	"аш" v tv gna_perf
 "<көрсетті>"
 	"көрсет" v tv ifi p3 sg
 ;	"көрсет" v tv ifi p3 pl REMOVE:642
@@ -19851,8 +19850,8 @@
 ;	"тұрғын" adj subst pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ағылып>"
-	"ағыл" v iv prc_perf SELECT:556
-;	"ағыл" v iv gna_perf SELECT:556
+;	"ағыл" v iv prc_perf SELECT:556
+	"ағыл" v iv gna_perf SELECT:556
 "<келіп>"
 	"кел" v iv prc_perf SELECT:556
 ;	"кел" vaux gna_perf SELECT:556
@@ -19867,8 +19866,8 @@
 	"." sent
 
 "<Атап>"
-	"ата" v tv prc_perf
-;	"ата" v tv gna_perf
+;	"ата" v tv prc_perf
+	"ата" v tv gna_perf
 ;	"атап" n nom
 ;	"атап" n nom
 ;		"е" cop aor p3 pl REMOVE:229
@@ -20761,8 +20760,8 @@
 	"жас" n pl dat
 ;	"жас" adj subst pl dat
 "<таратып>"
-	"тарат" v tv prc_perf SELECT:556
-;	"тарат" v tv gna_perf SELECT:556
+;	"тарат" v tv prc_perf SELECT:556
+	"тарат" v tv gna_perf SELECT:556
 "<бере>"
 	"бер" v tv prc_impf
 ;	"бер" vaux prc_impf REMOVE:575
@@ -20889,12 +20888,12 @@
 	"ауыз" n dat
 "<таралып>"
 ;	"тара" v tv pass prc_perf SELECT:556
-	"тарал" v iv prc_perf SELECT:556
-;	"тара" v tv pass gna_perf SELECT:556
+;	"тарал" v iv prc_perf SELECT:556
+	"тара" v tv pass gna_perf SELECT:556
 ;	"тарал" v iv gna_perf SELECT:556
 "<кете>"
-	"кет" vaux prc_impf SELECT:568
-;	"кет" v iv prc_impf SELECT:568
+;	"кет" vaux prc_impf SELECT:568
+	"кет" v iv prc_impf SELECT:568
 "<барды>"
 	"бар" v iv ifi p3 sg
 ;	"бар" n acc REMOVE:293
@@ -20933,8 +20932,8 @@
 	"қол" n dat
 ;	"қол" adj subst dat
 "<көшіріп>"
-	"көшір" v tv prc_perf
-;	"көшір" v tv gna_perf
+;	"көшір" v tv prc_perf
+	"көшір" v tv gna_perf
 "<алынды>"
 	"ал" v tv pass ifi p3 sg
 ;	"ал" v tv pass ifi p3 pl REMOVE:642
@@ -22018,8 +22017,8 @@
 ;	"көлем" n px3sp loc
 ;		"е" cop aor p3 sg REMOVE:229
 "<аталып>"
-	"ата" v tv pass prc_perf
-;	"ата" v tv pass gna_perf
+;	"ата" v tv pass prc_perf
+	"ата" v tv pass gna_perf
 "<өтті>"
 ;	"өт" v tv ifi p3 sg
 	"өт" v iv ifi p3 sg
