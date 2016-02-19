@@ -7203,7 +7203,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 өндірісші:өндірісші N1 ; ! "" !Use/MT
 өндіруші:өндіруші N1 ; ! ""
 өнеге:өнеге N1 ; ! ""
-он% екі% елі% ішек:он% екі% елі% ішек N1 ; ! to bring it back after testing the tagger
+!он% екі% елі% ішек:он% екі% елі% ішек N1 ; ! to bring it back after testing the tagger
 он% екі% қырлы:он% екі% қырлы N1 ; !
 өнеркәсіп:өнеркәсіп N1 ; ! "industry"
 өнеркәсіпші:өнеркәсіпші N1 ; ! ""
@@ -24627,7 +24627,7 @@ Witness:Witness NP-AL ; ! ""
 аласа:аласа A1 ; ! "low"
 алуан:алуан A1 ; ! ""
 алыс:алыс A1 ; ! "far, distant"
-алып:алып A1 ; ! "enormous" !Use/MT
+!алып:алып A1 ; ! "enormous" !Use/MT ! FIXME: it is a noun, according to Stanford tests
 аман:аман A1 ; ! ""
 анағұрлым:анағұрлым A1 ; ! ""
 анық:анық A1 ; ! "clear;clearly"
@@ -27917,7 +27917,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 арлан:арлан V-IV ; ! "be ashamed"
 арманда:арманда V-IV ; ! 
 арна:арна V-TV ; ! "dedicate/предназначать,посвящать"
-арнал:арнал V-IV ; ! ""
+!арнал:арнал V-IV ; ! "" ! FIXME: this can be derived as passive of "арнау"
 арс% ет:арс% ет V-IV ; ! ""
 арсылда:арсылда V-IV ; ! "to bark"
 арсыздан:арсыздан V-IV ; ! ""
@@ -28589,7 +28589,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 зауықтан:зауықтан V-IV ; ! "to want"
 зек:зек V-TV ; ! ""
 зерделе:зерделе V-TV ; ! ""
-зертте:зертте V-IV ; ! "research"
+!зертте:зертте V-IV ; ! "research" ! FIXME: why would it be intransitive?
 зертте:зертте V-TV ; ! "research"
 зиян% келтір:зиян% келтір V-TV ; !
 зорла:зорла V-TV ; ! ""
@@ -29539,6 +29539,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 тауыс:тау%{y%}с V-TV ; ! "to end"
 тая:тая V-IV ; ! ""
 тебін:тебін V-IV ; ! ""
+тебірен:тебірен V-IV ; ! ""
 тегісте:тегісте V-TV ; ! ""
 тежел:тежел V-IV ; ! ""
 тежет:тежет V-TV ; ! ""
@@ -29640,6 +29641,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 түз:түз V-TV ; ! ""
 түйіртпектен:түйіртпектен V-IV ; ! "to clot"
 түйіс:түйіс V-IV ; ! "to ram each other (of sheep)"
+түйінде:түйінде V-TV ; ! ""
 түйре:түйре V-TV ; ! 
 түй:түй V-TV ; ! ""
 түкір:түкір V-TV ; ! "spit"
@@ -30686,7 +30688,7 @@ cүй:сүй V-TV ; ! "love"  ! Use/MT eng-kaz
 бағындыр:бағындыр V-TV ; ! ""
 баптан:баптан V-IV ; ! ""
 бастыр:бастыр V-IV ; ! ""
-бастырып:бастырып V-TV ; ! ""
+!бастырып:бастырып V-TV ; ! "" ! FIXME: this is prc_perf/gna_perf of "бастыру"
 баул:баул V-TV ; ! ""
 беріктен:беріктен V-IV ; ! ""
 буырқан:буырқан V-IV ; ! ""
