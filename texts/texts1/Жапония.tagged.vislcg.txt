@@ -3319,24 +3319,8 @@
 ;	"Азия" np top attr REMOVE:397
 "<құрлығынан>"
 	"құрлық" n px3sp abl
-"<топ>"
-	"топ" n nom
-;	"топ" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"топ" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"топ" n attr REMOVE:397
-;	"тол" v iv prc_perf REMOVE:542
-"<->"
-	"-" guio
-"<топ>"
-;	"тол" v iv prc_perf
-	"топ" n nom
-;	"топ" n nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"топ" n nom
-;		"е" cop aor p3 sg REMOVE:229
-;	"топ" n attr REMOVE:397
+"<топ-топ>"
+	"топ-топ" n nom
 "<болып>"
 	"бол" v iv gna_perf
 ;	"бол" vaux gna_perf
@@ -4802,8 +4786,8 @@
 "<сегун>"
 	"сегун" n nom
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<жарияланды>"
@@ -6259,13 +6243,13 @@
 ;	"соғыс" n px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<болып>"
-	"бол" v iv prc_perf
-;	"бол" v iv gna_perf
+;	"бол" v iv prc_perf
+	"бол" v iv gna_perf
 ;	"бол" vaux prc_perf REMOVE:565
 ;	"бол" vaux gna_perf REMOVE:565
 "<өтті>"
-	"өт" v tv ifi p3 sg
-;	"өт" v iv ifi p3 sg
+;	"өт" v tv ifi p3 sg
+	"өт" v iv ifi p3 sg
 ;	"өт" v iv ifi p3 pl REMOVE:642
 ;	"өт" v tv ifi p3 pl REMOVE:642
 "<.>"
@@ -7876,8 +7860,8 @@
 ;	"әскер" n pl px3sp abl
 ;		"е" cop aor p3 sg REMOVE:229
 "<жеңіліп>"
-;	"жең" v tv pass prc_perf SELECT:556
-	"жеңіл" v iv prc_perf SELECT:556
+	"жең" v tv pass prc_perf SELECT:556
+;	"жеңіл" v iv prc_perf SELECT:556
 ;	"жең" v tv pass gna_perf SELECT:556
 ;	"жеңіл" v iv gna_perf SELECT:556
 "<қалды>"
@@ -8178,10 +8162,7 @@
 ;	"бас" v tv prc_perf
 ;	"бас" v tv gna_perf
 "<кірді>"
-	"кір" v iv ifi p3 sg SELECT:265
-;	"кір" n acc SELECT:265
-;	"кір" adj subst acc SELECT:265
-;	"кір" v iv ifi p3 pl SELECT:265 REMOVE:642
+	"кір" vaux ifi p3 sg SELECT:265
 "<.>"
 	"." sent
 
@@ -8664,10 +8645,7 @@
 ;	"бас" v tv prc_perf
 ;	"бас" v tv gna_perf
 "<кірді>"
-	"кір" v iv ifi p3 sg SELECT:265
-;	"кір" n acc SELECT:265
-;	"кір" adj subst acc SELECT:265
-;	"кір" v iv ifi p3 pl SELECT:265 REMOVE:642
+	"кір" vaux ifi p3 sg SELECT:265
 "<.>"
 	"." sent
 
@@ -9956,11 +9934,11 @@
 ;	"роман" n pl nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<ығыстырып>"
-	"ығыстыр" v tv prc_perf
+	"ығыстыр" v tv gna_perf
 "<шығарды>"
-;	"шығар" v tv ifi p3 sg
+	"шығар" v tv ifi p3 sg
 ;	"шық" v iv gpr_fut subst acc
-	"шық" vaux gpr_fut subst acc REMOVE:565
+;	"шық" vaux gpr_fut subst acc REMOVE:565
 ;	"шығар" v tv ifi p3 pl REMOVE:642
 "<.>"
 	"." sent
@@ -14508,8 +14486,8 @@
 ;	"қатынас" n pl px3sp nom
 ;		"е" cop aor p3 sg REMOVE:229
 "<еселеп>"
-	"еселе" v tv prc_perf
-;	"еселе" v tv gna_perf
+;	"еселе" v tv prc_perf
+	"еселе" v tv gna_perf
 "<арта>"
 	"арт" v iv prc_impf
 "<түскен>"
@@ -15098,14 +15076,14 @@
 ;	"өт" v iv past p3 pl REMOVE:642
 ;	"өт" v tv past p3 pl REMOVE:642
 "<жөн>"
-	"жөн" adj
+;	"жөн" adj
 ;	"жөн" n nom
 ;	"жөн" adj subst nom
 ;		"е" cop aor p3 sg
 ;	"жөн" adj advl
 ;	"жөн" adj subst nom
-;	"жөн" n nom
-;		"е" cop aor p3 sg
+	"жөн" n nom
+		"е" cop aor p3 sg
 ;	"жөн" adj
 ;		"е" cop aor p3 sg
 ;	"жөн" n attr REMOVE:397
