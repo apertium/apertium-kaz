@@ -218,6 +218,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !                                      [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
        [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
   [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!                                         [ :FrontCns :и ]/[ :0 - %{ъ%}: ] _ ;
             except
                                                 [ :BackCns ]/[ %>: | :0 ] _ ;
                       [ .#. :Cns* :у [ :Cns - :FrontCns ]* ]/[ %>: | :0 ] _ ;
@@ -226,7 +227,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                             [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
                                   [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
  [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
-                                                                 :Vow %>: _ ;
+                                               [ :Vow - [ :и | :у ] ] %>: _ ;
                      [ %{ә%}:ә :Cns* :Cns ]/[ %  | :0 - [ Abstract:0 ] ]  _ ;
 
 "E Vowel Harmony"
@@ -281,7 +282,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %{A%}:я <=> [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
                   [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
         except
-                            [ :Vow - :и ] %>: _ ;
+                   [ :Vow - [ :и | :у ] ] %>: _ ;
+            [ :FrontCns :и ]/[ :0 - %{ъ%}:0 ] _ ;
 
 !"E front vowel harmony after и"
 !%{E%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
