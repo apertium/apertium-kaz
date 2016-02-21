@@ -22,7 +22,7 @@ Alphabet
 Sets
 
 Vow =      А Ә Е Ё І И О Ө У Ү Ұ Ы Э Ю Я
-           а ә е ё і и о ө у ү ұ ы э ю я 
+           а ә е ё і и о ө у ү ұ ы э ю я
            %{A%} %{I%} %{E%} %{y%}
            %{а%} %{э%} ;
 
@@ -35,7 +35,7 @@ HighVow =  І Ү Ы Ұ
 YotVow = Я я Е е Ё ё Ю ю ;
 
 VowRight = А Ә Е Ё І О Ө Ү Ұ Ы Э Я
-           а ә е ё і о ө ү ұ ы э я 
+           а ә е ё і о ө ү ұ ы э я
            %{A%} %{I%} %{E%} ;
 
 FrontVow = Ә Е І Ө Ү Э
@@ -52,19 +52,19 @@ VCdigraphs = У И Ю
 
 CVdigraphs = Е Ё Ю Я
              е ё ю я ;
-				 ! е is only CV after vowels; others only occur after vowels
+            ! е is only CV after vowels; others only occur after vowels
 
-Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ь Ъ 
-           б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ь ъ 
+Cns =      Б В Г Ғ Д Ж З Й К Қ Л М Н Ң П Р С Т Ф Х Һ Ц Ч Ш Щ Ь Ъ
+           б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ь ъ
            %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} ; ! %- ;
 
 CnsRight = Б В Г Ғ Д Ж З И Й К Қ Л М Н Ң П Р С Т У Ф Х Һ Ц Ч Ш Щ Ь Ъ Ю
            б в г ғ д ж з и й к қ л м н ң п р с т у ф х һ ц ч ш щ ь ъ ю
            %{D%} %{K%} %{G%} %{N%} %{L%} %{M%} %{S%} %{n%} ; ! %- ;
 
-AbstrCns = %{й%} %{л%} %{н%} %{з%} %{с%} ;  
+AbstrCns = %{й%} %{л%} %{н%} %{з%} %{с%} ;
 
-Abstract = %{а%} %{э%} %{й%} %{л%} %{н%} %{з%} %{с%} ;  
+Abstract = %{а%} %{э%} %{й%} %{л%} %{н%} %{з%} %{с%} ;
 
 HighSonCns = Й У Р И Ю
              й у р и ю ;
@@ -81,7 +81,7 @@ VoicedObstruents = Ғ З
 
 ! These are all voiceless when word-final, many only in borrowings
 VoicelessCns = Б В П Ф Д Т Ц Ж Ш Щ Ч С Г Х К Қ Һ
-               б в п ф д т ц ж ш щ ч с г х к қ һ 
+               б в п ф д т ц ж ш щ ч с г х к қ һ
                %{с%} ;
 
 AbstrVoicelessCns = %{с%} ;
@@ -94,7 +94,7 @@ FrontCns = К Г Ь
 BackCns  = Қ Ғ
            қ ғ ;
 
-Rules 
+Rules
 
 !!!! Desonorisation !!!!
 
@@ -293,13 +293,13 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!!!!!!!!!!   й vowel harmony  !!!!!!!!!!
 
 "Vowel harmony for archiphoneme {A} after й and и"
-%{A%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
+%{A%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ;
         where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я  я )
         LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ұ  ю  у )
                matched ;
 
 "Vowel harmony for archiphoneme {E} after й" ! should be just like {A}
-%{E%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ; 
+%{E%}:Vy <=> [ :LastVowel й: ]/[ %>: ] _ ;
         where Vy  in ( е  е  е  е  е  я  я  я  я  я  я  я  я )
         LastVowel in ( и  ү  е  э  ө  я  а  ё  о  ы  ұ  ю  у )
               matched ;
@@ -334,7 +334,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
              %{I%}: :Nasals %>: _ %{A%}: (%>:) %  ;  ! ""
 !    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
 
-!!!"Assimilation of G to 
+!!!"Assimilation of G to
 !!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
 !!!
 !!!%{G%}:ғ <=> [ ы:0 :у :Cns* ]/[ %>: ] _ ;
@@ -382,7 +382,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 ! "Dialectal deletion of л between low vowel and Iп"   ! Dir/LR
 ! л:0 <=> :LowVow _ %>: %{I%}: :п ;                    ! Dir/LR
-! 
+!
 ! "Dialectal deletion of I when л deletes before Iп"   ! Dir/LR
 ! %{I%}:0 <=> л:0 %>: _ :п ;                           ! Dir/LR
 
