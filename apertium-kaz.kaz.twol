@@ -358,7 +358,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !!!! Disappearing stuff !!!!
 
 "Deletion of {A} directly after vowel"
-%{A%}:0 <=> [ :Vow - :и ] %>: _ ;
+%{A%}:0 <=> [ :Vow - [ :и | :у ] ] %>: _ ;
 
 "Deletion of ы before у"
 ы:0 <=> _ :у/[ %>: | :0 ] ;
