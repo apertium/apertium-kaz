@@ -2005,6 +2005,7 @@ InterrogativePronouns ;
 әрқайсысы:әрқайсы PRON-QNT-POSS ; ! "each of"
 барлық:барлық PRON-QNT ; ! ""
 бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+түгелге:түгел PRON-QNT-POSS ; ! "almost"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 біреу:біреу PRON-QNT ; ! ""
 екеу:екеу PRON-QNT-POSS ; ! "both" !Use/MT
@@ -6047,7 +6048,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 қонжық:қонжық N1 ; ! "bear cub"
 көңілділік:көңілділік N1 ; ! ""
 көңіл:көң%{y%}л N1 ; ! "heart,will,desire" Dir/LR
-көңіл:көңіл N1 ; ! "heart,will,desire"
+көңіл:көңіл N1 ; ! "heart,will,desire,sentiment"
 көңілсіздік:көңілсіздік N1 ; ! ""
 көңілшектік:көңілшектік N1 ; ! ""
 конкатенация:конкатенация N1 ; ! ""
@@ -25103,6 +25104,7 @@ Witness:Witness NP-AL ; ! ""
 үрдіс:үрдіс A1 ; ! ""
 ұзақ:ұзақ A1 ; ! "long (as in time)"
 ұзын:ұзын A1 ; ! "high, tall"
+жалпақ:жалпақ A1 ; ! "flat"
 ұзынша:ұзынша A1 ; ! ""
 ұқсас:ұқсас A2 ; ! "similar" A2 not A1 because no advl usage
 ұлық:ұлық A1 ; ! "great"
@@ -27630,6 +27632,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қарқынды:қарқынды ADV ; !"Use/MT"
 тамаша:тамаша ADV ; !"Use/MT"
 жалпы:жалпы ADV ; !"Use/MT"
+түгелдей:түгелдей ADV ; !"Use/MT"
 орынына:орынына ADV ; !"Use/MT"
 халықаралық:халықаралық ADV ; !"Use/MT"
 жергілікті:жергілікті ADV ; !"Use/MT"
@@ -28790,6 +28793,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 жық:жық V-TV ; ! "knock over (passive = fall over)"
 жыла:жыла V-IV ; ! "cry,weep"
 жылжы:жылжы V-IV ; ! "move" !Use/MT
+мезі% бол:мезі% бол V-IV ; ! "apparently" !Use/MT
 жылжыт:жылжыт V-TV ; ! "to move" !Use/MT
 жылтыра:жылтыра V-IV ; ! "to shine" 
 жылтырат:жылтырат V-TV ; ! "to illuminate" (kaz tat) caus
@@ -28872,6 +28876,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 қадақта:қадақта V-TV ; ! "to weigh in pounds" (tat) trimm FIXME CHECK
 қадамда:қадамда V-IV ; ! "to pace off"
 қажет% бол:қажет% бол V-IV ; ! ""
+мәжбүр% бол:мәжбүр% бол V-IV ; ! ""
+мұқтаж% бол:мұқтаж% бол V-IV ; ! ""
 қамтамасыз% ету:қамтамасыз% ету V-IV ; ! ""
 тиіс% деп% болжау:тиіс% деп% болжау V-IV ; ! ""
 қаза% тап:қаза% тап V-IV ; ! ""
