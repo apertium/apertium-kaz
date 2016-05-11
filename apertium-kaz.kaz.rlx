@@ -99,7 +99,7 @@
 # Delimiters #
 # ========== #
 
-DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" ;
 SOFT-DELIMITERS = "<,>" ;
 
 SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
@@ -175,6 +175,8 @@ LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 # ==========================
 
 LIST Year = "жылғы" "жыл" ; 
+
+LIST Colon = ":" ;
 
 # Noun sets 
 # ==============
@@ -266,6 +268,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
  SELECT SUB:1 Cop IF
         (1 (lpar))
         (2* (rpar) BARRIER EOS)
+        (NOT -1 Colon) 
  ;
 
 
@@ -478,10 +481,10 @@ SELECT A IF (0 N + Dat)(1 N );
 
 # INPUT: ^заңды/заң<n><acc>/заңды<adj>/заң<n>+лы<post>$
 # INPUT: ^заңды/заң<n><acc>/заңды<adj>/заң<n>+лы<post>$
- REMOVE Sub:1 Post IF
- 	(0 N)
-	(0 A)
-;
+# REMOVE Sub:1 Post IF
+# 	(0 N)
+#	(0 A)
+#;
 
 
 # Determiners
