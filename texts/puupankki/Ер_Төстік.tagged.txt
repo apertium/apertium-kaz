@@ -3,7 +3,7 @@
 "<заманда>"
 	"заман" n loc @nmod #2->6
 "<Ерназар>"
-	"Ерназар" np ant m nom @obj #3->4
+	"Ерназар" np ant m nom @dobj #3->4
 "<деген>"
 	"де" v tv gpr_past @acl #4->5
 "<кісі>"
@@ -92,7 +92,7 @@
 "<ел>"
 	"ел" n nom @subj #7->12
 "<малын>"
-	"мал" n px3sp acc @obj #8->12
+	"мал" n px3sp acc @dobj #8->12
 "<алысқа>"
 	"алыс" adj subst dat @conj #9->11
 "<,>"
@@ -127,7 +127,7 @@
 "<қыстық>"
 	"қыстық" adj @amod #2->3
 "<азығын>"
-	"азық" n px3sp acc @obj #3->4
+	"азық" n px3sp acc @dobj #3->4
 "<алып>"
 	"ал" v tv gna_perf @advcl #4->10
 "<,>"
@@ -188,7 +188,7 @@
 "<жейтін>"
 	"же" v tv gpr_impf @acl #7->8
 "<тамақ>"
-	"тамақ" n nom @obj #8->9
+	"тамақ" n nom @dobj #8->9
 "<таппайды>"
 	"тап" v tv neg aor p3 sg @root #9->0
 "<.>"
@@ -228,7 +228,7 @@
 "<үйінің>"
 	"үй" n px3sp gen @nmod:poss #9->10
 "<түндігін>"
-	"түндік" n px3sp acc @obj #10->11
+	"түндік" n px3sp acc @dobj #10->11
 "<ашады>"
 	"аш" v tv aor p3 sg @root #11->0
 "<.>"
@@ -297,7 +297,7 @@
 "<отырған>"
 	"отыр" v iv gpr_past @acl #6->7
 "<тарғақты>"
-	"тарғақ" n acc @obj #7->9
+	"тарғақ" n acc @dobj #7->9
 "<садақпен>"
 	"садақ" n ins @nmod #8->9
 "<тартып>"
@@ -312,7 +312,7 @@
 "<тарғақтың>"
 	"тарғақ" n gen @nmod:poss #2->3
 "<қанатын>"
-	"қанат" n px3sp acc @obj #3->4
+	"қанат" n px3sp acc @dobj #3->4
 "<үзіп>"
 	"үз" v tv prc_perf @root #4->0
 "<кетеді>"
@@ -329,7 +329,7 @@
 "<бір>"
 	"бір" num @nummod #4->5
 "<қанатын>"
-	"қанат" n px3sp acc @obj #5->6
+	"қанат" n px3sp acc @dobj #5->6
 "<сабалап>"
 	"сабала" v tv gna_perf @advcl #6->8
 "<,>"
@@ -402,7 +402,7 @@
 "<бақайы>"
 	"бақай" n px3sp nom @subj #4->6
 "<өрмекті>"
-	"өрмек" n acc @obj #5->6
+	"өрмек" n acc @dobj #5->6
 "<іліп>"
 	"іл" v tv prc_perf @root #6->0
 "<кетеді>"
@@ -457,7 +457,7 @@
 "<!>"
 	"!" sent @punct
 "<Өрмегімді>"
-	"өрмек" n px1sg acc @obj
+	"өрмек" n px1sg acc @dobj
 "<үзіп>"
 	"үз" v tv prc_perf
 "<кеттің>"
@@ -503,7 +503,7 @@
 "<сегіз>"
 	"сегіз" num @nummod
 "<ағаңды>"
-	"аға" n px2sg acc @obj
+	"аға" n px2sg acc @dobj
 "<тауып алмайсың ба>"
 	"тауып ал" v tv neg aor p2 sg
 		"ма" qst @disc
@@ -616,8 +616,8 @@
 "<Төстікке>"
 	"Төстік" np ant m dat
 "<оны>"
-	"ол" prn dem acc @obj
-	"ол" prn pers p3 sg acc @obj
+	"ол" prn dem acc @dobj
+	"ол" prn pers p3 sg acc @dobj
 	"он" num subst px3sp nom
 "<айтпайды екен>"
 	"айт" v tv neg aor evid p3 sg
@@ -644,7 +644,7 @@
 "<ашулы>"
 	"ашулы" adj @amod #2->3
 "<түрін>"
-	"түр" n px3sp acc @obj #3->
+	"түр" n px3sp acc @dobj #3->
 "<көріп>"
 	"көр" v tv gna_perf
 ;	"көр" v tv prc_perf
@@ -689,7 +689,7 @@
 "<кемпірдің>"
 	"кемпір" n gen
 "<сөзін>"
-	"сөз" n px3sp acc @obj
+	"сөз" n px3sp acc @dobj
 "<түгелімен>"
 	"*түгелімен"
 "<шешесіне>"
@@ -795,7 +795,7 @@
 "<,>"
 	"," cm @punct
 "<Төстікті>"
-	"Төстік" np ant m acc @obj
+	"Төстік" np ant m acc @dobj
 "<нандырып>"
 	"*нандырып"
 "<қояды>"
@@ -827,7 +827,7 @@
 "<жалғыз>"
 	"жалғыз" adj @amod #11->12
 "<баласын>"
-	"бала" n px3sp acc @obj #12->
+	"бала" n px3sp acc @dobj #12->
 "<жұдырығымен>"
 	"жұдырық" n px3sp ins @nmod #13->
 "<қойып>"

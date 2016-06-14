@@ -3,7 +3,7 @@
 "<біреу>"
 	"біреу" prn ind nom @subj #2->4
 "<той>"
-	"той" n nom @obj #3->4
+	"той" n nom @dobj #3->4
 "<жасапты>"
 	"жаса" v tv ifi evid p3 sg @conj #4->13
 "<,>"
@@ -40,7 +40,7 @@
 	"." sent @punct #6->4
 
 "<Қожанасырды>"
-	"Қожанасыр" np ant m acc @obj #1->3
+	"Қожанасыр" np ant m acc @dobj #1->3
 "<ешкім>"
 	"ешкім" prn neg nom @subj #2->3
 "<елемепті>"
@@ -57,7 +57,7 @@
 "<,>"
 	"," cm @punct #4->6
 "<тамақ>"
-	"тамақ" n nom @obj #5->6
+	"тамақ" n nom @dobj #5->6
 "<іш>"
 	"іш" v tv imp p2 sg @ccomp #6->10
 "<»>"
@@ -89,7 +89,7 @@
 "<тәуір>"
 	"тәуір" adj @amod #9->10
 "<киімдерін>"
-	"киім" n pl px3sp acc @obj #10->11
+	"киім" n pl px3sp acc @dobj #10->11
 "<киіп>" 
 	"ки" v tv gna_perf @advcl #11->14
 "<,>"
@@ -110,7 +110,7 @@
 "<иесі>"
 	"ие" n px3sp nom @subj #4->25
 "<Қожанасырды>"
-	"Қожанасыр" np ant m acc @obj #5->6
+	"Қожанасыр" np ant m acc @dobj #5->6
 "<құрметтейді>"
 	"құрметте" v tv aor p3 sg @conj #6->25
 "<,>"
@@ -118,7 +118,7 @@
 "<төрден>"
 	"төр" n abl @nmod #8->10
 "<орын>"
-	"орын" n nom @obj #9->10
+	"орын" n nom @dobj #9->10
 "<береді>"
 	"бер" v tv aor p3 sg @conj #10->25
 "<,>"
@@ -157,7 +157,7 @@
 "<Қожа>"
 	"Қожа" np ant m nom @subj #1->3
 "<етті>"
-	"ет" n acc @obj #2->3
+	"ет" n acc @dobj #2->3
 "<жемей>" 
 	"же" v tv neg gna_perf @advcl #3->20
 "<,>"
@@ -167,7 +167,7 @@
 "<шапанының>"
 	"шапан" n px3sp gen @nmod:poss #6->7
 "<жеңін>"
-	"жең" n px3sp acc @obj #7->8
+	"жең" n px3sp acc @dobj #7->8
 "<малып>"
 	"мал" v tv gna_perf @advcl #8->20
 "<:>"
@@ -221,7 +221,7 @@
 "<Шапан>"
 	"шапан" n nom @subj #11->13
 "<ет>"
-	"ет" n nom @obj #12->13
+	"ет" n nom @dobj #12->13
 "<жейтін бе>"
 	"же" v tv gpr_impf @ccomp #13->18
 		"ма" qst @disc #14->13
@@ -247,13 +247,13 @@
 "<Сен>"
 	"сен" prn pers p2 sg nom @subj #5->7
 "<кісіні>"
-	"кісі" n acc @obj #6->7
+	"кісі" n acc @dobj #6->7
 "<сыйламайды екенсің>"
 	"сыйла" v tv neg aor evid p2 sg @parataxis #7->14
 "<,>"
 	"," cm @punct #8->14
 "<киімді>"
-	"киім" n acc @obj #9->10
+	"киім" n acc @dobj #9->10
 "<сыйлайды екенсің>"
 	"сыйла" v tv aor evid p2 sg @parataxis #10->14
 "<.>"
