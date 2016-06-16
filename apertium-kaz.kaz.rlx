@@ -340,7 +340,11 @@ SELECT N IF
 #
 # this rule fails several times when tested against puupankki corpus
 
+#INPUT: ^ластай/лас<n><sim>/лас<adj><subst><sim>/ласта<v><tv><prc_impf>$ ^аласың/ал<vaux><aor><p2><sg>/ал<v><tv><aor><p2><sg>/ала<adj>+е<cop><aor><p2><sg>/ала<adj><subst><nom>+е<cop><aor><p2><sg>$
+#OUTPUT:^ластай/ласта<v><tv><prc_impf>$ ^аласың/ал<vaux><aor><p2><sg>
 
+SELECT Participle IF (1 Vaux)
+; 
 
 
 # INPUT:  "жүз теңге" translated as "hundred coins", екі жүз адам "two handred people"
@@ -1338,3 +1342,5 @@ SELECT N IF (0 ("<Адамдар>"i))
 #су ішетін
 SELECT N IF (0 ("<су>"i))(1 V)
 ;      
+
+     
