@@ -1347,3 +1347,12 @@ SELECT N IF (0 ("<су>"i))(1 V)
 SELECT N IF (-1 (det dem) OR (prn dem)) (0 ("<су>"i))
 ;    
      
+
+
+#құрылғымен қауіпсіз.
+#INPUT: <қауіпсіз>"	"қауіп" n nom"е" cop aor p2 frm sg
+#	"қауіпсіз" adj  "е" cop aor p3 sg
+#OUTPUT: "қауіпсіз" adj  "е" cop aor p3 sg
+
+SELECT A IF (-1 N) (0 ("<қауіпсіз>"i))
+;  
