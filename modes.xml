@@ -71,13 +71,21 @@
     </pipeline>
   </mode>
 
-  <mode name="kaz-spell">
+  <mode name="kaz-spell" install="yes">
     <pipeline>
       <program name="hfst-ospell -S -n 10">
         <file name="kaz.zhfst"/>
       </program>
     </pipeline>
   </mode>
+
+	<mode name="kaz-tokenise">
+		<pipeline>
+			<program name="hfst-proc">
+				<file name=".deps/acceptor.default.hfst"/>
+			</program>
+		</pipeline>
+	</mode>
 
 
 
