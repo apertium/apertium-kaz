@@ -590,12 +590,12 @@ CASES-COMMON ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
 %<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 
-LEXICON CASES-WITHOUT-COPULAS
-
-CASES-COMMON ;
-%<nom%>: CLITICS-NO-COP ;
-%<abl%>:%>%{D%}%{A%}н CLITICS-NO-COP ;
-%<loc%>:%>%{D%}%{A%} CLITICS-NO-COP ;
+!! LEXICON CASES-WITHOUT-COPULAS
+!! 
+!! CASES-COMMON ;
+!! %<nom%>: CLITICS-NO-COP ;
+!! %<abl%>:%>%{D%}%{A%}н CLITICS-NO-COP ;
+!! %<loc%>:%>%{D%}%{A%} CLITICS-NO-COP ;
 
 LEXICON ATTR-SUBST
 
@@ -668,10 +668,10 @@ LI-POSTPOSITION ;
 !! i.e. change <adj><comp><subst> to <adj><subst><comp>
 !! and make use of ADJ-LEVELS class
 
-LEXICON COMPARATIVE
-
-%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;
-CLITICS-NO-COP ;
+!! LEXICON COMPARATIVE
+!! 
+!! %<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;
+!! CLITICS-NO-COP ;
 
 LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
@@ -820,12 +820,12 @@ LEXICON GER-ATTR/SUBST
 !%<subst%>: CASES ;
 !%<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
 
-LEXICON GER-ABE-ATTR/ADVL/SUBST
-
-!%<attr%>: CLITICS-NO-COP ;
-%<advl%>: CLITICS-NO-COP ;
-!%<subst%>: CASE-2 ;
-!%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
+!! LEXICON GER-ABE-ATTR/ADVL/SUBST
+!! 
+!! !%<attr%>: CLITICS-NO-COP ;
+!! %<advl%>: CLITICS-NO-COP ;
+!! !%<subst%>: CASE-2 ;
+!! !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
 
 LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
@@ -27507,7 +27507,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 лепір:лепір V-IV ; ! "to speak hastily" FIXME CHECK
 либералдан:либералдан V-IV ; ! "to become a liberal"
 лицензияла:лицензияла V-TV ; ! ""
-мәңгі% жаса:мәңгі% жаса V-V ; ! 
+!мәңгі% жаса:мәңгі% жаса V-V ; ! 
 мадақта:мадақта V-TV ; ! ""
 мазақта:мазақта V-TV ; ! 
 мазала:мазала V-TV ; ! "disturb" trouble
