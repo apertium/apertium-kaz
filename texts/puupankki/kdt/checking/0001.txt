@@ -4,10 +4,6 @@
 	"ар" n attr @amod #2->3
 "<жағында>"
 	"жақ" n px3sp loc @conj #3->7
-	"жақ" n px3sp loc @conj #3->7
-		"е" cop aor p3 pl @conj #3->7
-	"жақ" n px3sp loc @conj #3->7
-		"е" cop aor p3 sg @conj #3->7
 "<,>"
 	"," cm @punct #4->7
 "<Бұқтырманың>"
@@ -17,17 +13,14 @@
 "<жағында>"
 	"жақ" n px3sp loc @nmod #7->11
 "<әлемге>"
-	"әлем" n dat @iobj #8->9
+	"әлем" n dat @nmod #8->9
 "<аян>"
-	"аян" adj @acl:relcl #9->10
+	"аян" adj @amod #9->10
 "<Алтай>"
 	"Алтай" np top nom @nsubj #10->11
-	"Алтай" np ant m nom @nsubj #10->11
 "<бар>"
 	"бар" adj @root #11->0
-		"е" cop aor p3 sg @ROOT #11->0
-	"бар" adj @root #11->0
-		"е" cop aor p3 pl @ROOT #11->0
+		"е" cop aor p3 sg @cop #12->11
 "<.>"
-	"." sent @punct #12->11
+	"." sent @punct #13->11
 ¶
