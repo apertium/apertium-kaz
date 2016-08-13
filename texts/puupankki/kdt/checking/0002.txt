@@ -1,0 +1,32 @@
+"<Ажал>"
+	"ажал" n nom @nsubj #1->2
+"<түрткен>"
+	"түрт" v tv gpr_past @acl:relcl #2->3
+"<мал>"
+	"мал" n nom @nsubj #3->4
+"<болмаса>"
+	"бол" v iv neg gna_cond p3 sg @conj #4->9
+	"бол" v iv neg gna_cond p3 pl @conj #4->9
+"<,>"
+	"," cm @punct #5->9
+"<мал>"
+	"мал" n nom @dobj #6->7
+"<алдырған>"
+	"алдыр" v tv gpr_past @acl:relcl #7->8
+"<жан>"
+	"жан" n nom @nsubj #8->9
+"<болмаса>"
+	"бол" v iv neg gna_cond p3 pl @advcl #9->13
+	"бол" v iv neg gna_cond p3 sg @advcl #9->13
+"<,>"
+	"," cm @punct #10->9
+"<тереңге>"
+	"терең" NOUN @nmod #11->13
+	"терең" adj subst dat @nmod #11->13
+"<кім>"
+	"кім" prn itg nom @nsubj #12->13
+"<барған>"
+	"бар" v iv past p3 sg @root #13->0
+"<?>"
+	"?" sent @punct #14->13
+¶
