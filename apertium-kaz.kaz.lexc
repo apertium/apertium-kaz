@@ -1023,10 +1023,12 @@ LEXICON V-IV
 LEXICON Vinfl-AUX-IMPF
 
 %<vaux%>%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
+%<vaux%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
 
 LEXICON Vinfl-AUX-IMPF-NEG
 
-%<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; !USE MT /жатқан жоқ/
+%<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
+%<vaux%>%<neg%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
 
 LEXICON Vinfl-AUX
 
@@ -32437,9 +32439,13 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! ===============
 
 жат:жатыр Vinfl-AUX-IMPF ; ! 
+жат:жатқан% жоқ Vinfl-AUX-IMPF-NEG ; ! 
 жүр:жүр Vinfl-AUX-IMPF ; ! 
+жүр:жүрген% жоқ Vinfl-AUX-IMPF-NEG ; ! 
 отыр:отыр Vinfl-AUX-IMPF ; ! 
+отыр:отырған% жоқ Vinfl-AUX-IMPF-NEG ; ! 
 тұр:тұр Vinfl-AUX-IMPF ; ! 
+тұр:тұрған% жоқ Vinfl-AUX-IMPF-NEG ; ! 
 
 ал:ал Vinfl-AUX ; ! 
 баста:баста Vinfl-AUX ; !
@@ -32492,7 +32498,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! see above "жат:жатыр Vinfl-AUX-IMPF ; ! "
 көрін:көрін V-IV ; ! "appear"  ! Use/MT eng-kaz
 ! see above "көр:көрін V-TV-PASS ; ! "be seen""
-жатқан% жоқ:жатқан% жоқ Vinfl-AUX-IMPF-NEG ; ! "  ! Use/MT eng-kaz
+!жатқан% жоқ:жатқан% жоқ Vinfl-AUX-IMPF-NEG ; ! "  ! Use/MT eng-kaz
 ! not a verb?  should be dealt with via transfer
 сатып% ал:сатып% ал V-TV ; ! "buy"  ! Use/MT eng-kaz
 !емес:емес Vinfl-AUX-IMPF ; ! "  ! Use/MT eng-kaz
