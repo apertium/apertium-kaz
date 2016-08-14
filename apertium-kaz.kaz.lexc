@@ -200,6 +200,8 @@
 %<ger_impf%>  ! -{E}{T}{I}н
               !# "Ол бүгін кешкілік болатынын айтты";
 ! TODO cover -{E}{T}{I}нд{I}{K} form
+%<ger_obs%>   ! -{М}{А}{К}         ("obsolete": used only in archaic registers)
+              !# "Адам өлмек үшін туған"
 
 !! Transitivity
 %<tv%>        ! Transitive
@@ -930,8 +932,15 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<ger_fut%>:%>%{A%}р GER-POSSESSIVES ;  ! FIXME: check that e.g. no possession + accusative isn't valid (I think it is) -JNW
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
 
-%<ger_ppot%>:%>%{A%}р%>л%{I%}к GER-POSSESSIVES ;
+%<ger_ppot%>:%>%{A%}р%>л%{I%}%{K%} GER-POSSESSIVES ;
 %<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-POSSESSIVES ;
+
+%<ger_obs%>:%>%{M%}%{A%}%{K%} GER-INFL ;
+! FIXME <ger_obs>:
+! - does it have a negative form?  if regular, with -МА,
+!   put in the REGULAR_NEGATIVE category
+! - does it take possessive forms?  if not, change
+!   continuation lexicon to something other than GER-INFL
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
