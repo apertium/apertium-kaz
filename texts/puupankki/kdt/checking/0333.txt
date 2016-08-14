@@ -1,0 +1,36 @@
+"<Кейде>"
+	"кейде" adv @advmod #1->5
+"<жұрт>"
+	"жұрт" n nom @nsubj #2->5
+"<намаз>"
+	"намаз" n nom @dobj #3->5
+"<оқып>"
+	"оқы" v tv gna_perf @advcl #4->5
+"<жатса>"
+	"жат" v iv gna_cond p3 sg @advcl #5->14
+"<,>"
+	"," cm @punct #6->14
+"<дәрет>"
+	"дәрет" n nom @dobj #7->8
+"<алмастан>"
+	"ал" VERB @advcl #8->11
+	"ал" v tv neg ger_fut abl @advcl #8->11
+	"ал" v tv neg gpr_fut subst abl @advcl #8->11
+"<жалаң>"
+	"жалаң" ADJ @amod #9->10
+	"жала" n px2sg nom @amod #9->10
+"<аяқ>"
+	"аяқ" n nom @nmod #10->11
+"<барып>"
+	"бар" v iv gna_perf @advcl #11->14
+"<,>"
+	"," cm @punct #12->14
+"<қатарға>"
+	"қатар" n dat @nmod #13->14
+"<отыра>"
+	"отыр" v iv prc_impf @root #14->0
+"<кетеді>"
+	"кет" vaux aor p3 sg @aux #15->14
+"<.>"
+	"." sent @punct #16->14
+¶

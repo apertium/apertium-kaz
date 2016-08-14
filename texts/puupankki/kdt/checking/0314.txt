@@ -1,0 +1,32 @@
+"<">"
+	""" sent @punct #1->7
+"<Бұл>"
+	"бұл" det dem @det #2->3
+"<жауыздың>"
+	"жауыз" NOUN @nmod:poss #3->4
+	"жауыз" adj subst gen @nmod:poss #3->4
+"<көзінде>"
+	"көз" n px3sp loc @nmod #4->7
+"<не>"
+	"не" prn itg nom @amod #5->6
+"<сиқыр>"
+	"сиқыр" n nom @nsubj #6->7
+"<бар>"
+	"бар" adj @iobj #7->10
+	"бар" adj @ccomp #7->10
+		"е" cop aor p3 sg @cop #8->7
+"<?>"
+	"?" sent @punct #8->7
+"<">"
+	""" sent @punct #9->7
+"<деп>"
+	"де" v tv gna_perf @advcl #10->13
+"<ішінен>"
+	"іш" n px3sp abl @nmod #11->13
+"<таң>"
+	"таң" adv @advmod #12->13
+"<қалды>"
+	"қал" v iv ifi p3 sg @root #13->0
+"<.>"
+	"." sent @punct #14->13
+¶
