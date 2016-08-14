@@ -217,7 +217,9 @@
 %<emph%>      ! Emphasizing modal particle
               !# -шы/-ші
 %<mod_ass%>   ! Assertive modal particle
-              !# -ғой/-қой
+              !# ғой/қой
+%<mod_emo%>   ! Emotative modal particles
+              !# -ай, -ау
 %<mod%>       ! Other modal words (шығар, сияқты etc)
 
 %<unk%>       ! For foreign tokens
@@ -483,6 +485,11 @@ LEXICON CLIT-QST
 CLIT-QST-MA ;
 %+мекен%<qst%>:% %{M%}екен # ;
 
+LEXICON CLIT-MODEMO
+
+%+ау%<mod_emo%>:%-ау # ;
+%+ай%<mod_emo%>:%-ай # ;
+
 LEXICON CLIT-MODASS
 
 %+ғой%<mod_ass%>:% %{G%}ой # ;
@@ -507,11 +514,13 @@ LEXICON CLITICS-NO-COP
 
 CLIT-QST ;
 CLIT-MODASS ;
+CLIT-MODEMO ;
 CLIT-GHANA-ETC ;
 
 LEXICON CLITICS-NO-COP-NO-QST
 
 CLIT-MODASS ;
+CLIT-MODEMO ;
 CLIT-GHANA-ETC ;
 
 LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
