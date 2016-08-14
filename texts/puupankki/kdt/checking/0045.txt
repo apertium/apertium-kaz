@@ -1,0 +1,37 @@
+"<Көршінің>"
+	"көрші" n gen @nmod:poss #1->2
+"<қатыны>"
+	"қатын" n px3sp nom @conj #2->4
+"<мен>"
+	"мен" cnjcoo @cc #3->4
+"<қожаның>"
+	"қожа" n gen @nmod:poss #4->5
+"<өсегі>"
+	"өсек" n px3sp nom @nsubj #5->6
+"<білінген>"
+	"біл" v tv pass ger_past nom @advcl #6->11
+	"білін" v tv ger_past nom @advcl #6->11
+"<соң>"
+	"соң" post @case #7->6
+"<,>"
+	"," cm @punct #8->11
+"<әкеміз>"
+	"әке" n px1pl nom @nsubj #9->11
+"<шығарып>"
+	"шығар" v tv gna_perf @advcl #10->11
+"<жіберіп>"
+	"жібер" v tv gna_perf @advcl #11->16
+"<,>"
+	"," cm @punct #12->16
+"<содан>"
+	"сол" prn dem abl @nmod #13->16
+"<кейін>"
+	"кейін" post @case #14->13
+"<көзіміз>"
+	"көз" n px1pl nom @nsubj #15->16
+"<ашылды>"
+	"ашыл" v tv ifi p3 sg @root #16->0
+	"аш" v tv pass ifi p3 sg @root #16->0
+"<.>"
+	"." sent @punct #17->16
+¶

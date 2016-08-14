@@ -1,0 +1,46 @@
+"<Баяғыда>"
+	"баяғыда" adv @nmod #1->15
+"<,>"
+	"," cm @punct #2->1
+"<қазақ>"
+	"қазақ" n nom @nsubj #3->5
+"<орысқа>"
+	"орыс" n dat @iobj #4->5
+"<қарағанда>"
+	"қара" v tv ger_past loc @advcl #5->15
+"<,>"
+	"," cm @punct #6->15
+"<қатын>"
+	"қатын" n nom @amod-nmod #7->8
+"<патша>"
+	"патша" n nom @nsubj #8->15
+"<қазақтан>"
+	"қазақ" n abl @iobj #9->11
+"<солдат>"
+	"солдат" n nom @dobj #10->11
+"<алмаймын>"
+	"ал" v tv neg aor p1 sg @ccomp #11->12
+"<деп>"
+	"де" v tv gna_perf @conj #12->18
+"<,>"
+	"," cm @punct #13->12
+"<қолхат>"
+	"қолхат" n nom @dobj #14->15
+"<беріпті>"
+	"бер" v tv ifi evid p3 sg @ccomp #15->18
+"<->"
+	"-" guio @punct #16->15
+"<мыс>"
+	"мыс" n nom @advmod:adp #17->15
+"<деп>"
+	"де" v tv gna_perf @advcl #18->20
+"<,>"
+	"," cm @punct #19->18
+"<талшық>"
+	"талшық" NOUN @compound-etq #20->21
+	"талшық" n nom @x #20->21
+"<қылады>"
+	"қыл" v tv aor p3 sg @root #21->0
+"<.>"
+	"." sent @punct #22->21
+¶

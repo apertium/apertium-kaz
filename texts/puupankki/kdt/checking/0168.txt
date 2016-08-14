@@ -1,0 +1,22 @@
+"<Малына>"
+	"мал" n px3sp dat @conj #1->3
+"<,>"
+	"," cm @punct #2->3
+"<жанына>"
+	"жан" n px3sp dat @iobj #3->4
+"<ие>"
+	"ие" n nom @acl:relcl #4->8
+"<болып>"
+	"бол" v iv prc_perf @cop #5->4
+"<отырған>"
+	"отыр" vaux gpr_past @aux #6->4
+"<қай>"
+	"қай" det itg @det #7->8
+"<қазақ>"
+	"қазақ" n nom @nsubj #8->9
+"<бар>"
+	"бар" adj @root #9->0
+		"е" cop aor p3 sg @cop #10->9
+"<?>"
+	"?" sent @punct #11->9
+¶

@@ -1,0 +1,29 @@
+"<Төбелес>"
+	"төбелес" n nom @nsubj #1->2
+"<болса>"
+	"бол" v iv gna_cond p3 sg @advcl #2->4
+"<жасаққа>"
+	"жасақ" n dat @nmod #3->4
+"<шығамын>"
+	"шық" v iv aor p1 sg @conj #4->12
+	"шық" v tv aor p1 sg @conj #4->12
+"<,>"
+	"," cm @punct #5->12
+"<қыз>"
+	"қыз" n nom @nsubj #6->7
+"<қашқан>"
+	"қаш" v iv gpr_past @conj #7->10
+"<,>"
+	"," cm @punct #8->10
+"<қатын>"
+	"қатын" n nom @nsubj #9->10
+"<кеткен>"
+	"кет" v iv gpr_past @acl:relcl #10->11
+	"кет" v tv gpr_past @acl:relcl #10->11
+"<топтардан>"
+	"топ" n pl abl @nmod #11->12
+"<қалмаймын>"
+	"қал" v iv neg aor p1 sg @root #12->0
+"<.>"
+	"." sent @punct #13->12
+¶
