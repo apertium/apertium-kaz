@@ -1,0 +1,30 @@
+"<Ойнақы>"
+	"ойнақы" adj @amod #1->2
+"<көз>"
+	"көз" n nom @amod-nmod #2->3
+"<жігіт>"
+	"жігіт" n nom @nsubj #3->12
+"<">"
+	""" sent @punct #4->7
+"<сені>"
+	"сен" prn pers p2 sg acc @dobj #5->7
+"<кім>"
+	"кім" prn itg nom @nsubj #6->7
+"<шақырды>"
+	"шақыр" v tv ifi p3 sg @ccomp #7->9
+"<">"
+	""" sent @punct #8->7
+"<дегендей>"
+	"де" VERB @advcl #9->12
+	"де" v tv ger_past sim @advcl #9->12
+"<,>"
+	"," cm @punct #10->12
+"<жөнді>"
+	"жөнді" ADV @advmod #11->12
+	"жөн" n nom @advmod #11->12
+		"лы" post @advmod #11->12
+"<амандаспады>"
+	"амандас" v iv neg ifi p3 sg @root #12->0
+"<.>"
+	"." sent @punct #13->12
+¶

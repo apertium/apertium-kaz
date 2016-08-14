@@ -1,0 +1,61 @@
+"<Бекболаттың>"
+	"Бекболат" np ant m gen @nmod:poss #1->2
+"<сұраулары>"
+	"сұрау" n pl px3sp nom @nsubj #2->3
+"<көбейіп>"
+	"көбей" v iv gna_perf @conj #3->9
+"<,>"
+	"," cm @punct #4->9
+"<әңгіменің>"
+	"әңгіме" n gen @nmod:poss #5->6
+"<аяғы>"
+	"аяқ" n px3sp nom @nsubj #6->7
+"<созылып>"
+	"соз" v tv pass gna_perf @advcl #7->8
+	"созыл" v iv gna_perf @advcl #7->8
+"<жатқанын>"
+	"жат" v iv ger_past px3sp acc @ccomp #8->9
+"<сезіп>"
+	"сез" v tv gna_perf @advcl #9->25
+"<,>"
+	"," cm @punct #10->25
+"<ел>"
+	"ел" n nom @nmod:poss #11->12
+"<қазағы>"
+	"қазақ" n px3sp nom @nsubj #12->23
+"<">"
+	""" sent @punct #13->20
+"<бір>"
+	"бір" NUM @nmod-num #14->15
+	"бір" num @x #14->15
+	"бір" num subst nom @x #14->15
+"<айналып>"
+	"айнал" v iv gna_perf @advcl #15->16
+"<соғармын>"
+	"соқ" VERB @ccomp #16->23
+	"соқ" v iv fut p1 sg @ccomp #16->23
+	"соқ" v tv fut p1 sg @ccomp #16->23
+"<,>"
+	"," cm @punct #17->16
+"<—>"
+	"—" guio @punct #18->20
+"<шаруам>"
+	"шаруа" n px1sg nom @nsubj #19->20
+"<бар>"
+	"бар" adj @parataxis #20->16
+"<еді>"
+	"е" AUX @aux #21->20
+	"е" cop ifi p3 sg @cop #21->20
+"<">"
+	""" sent @punct #22->20
+"<деп>"
+	"де" v tv gna_perf @advcl #23->25
+"<,>"
+	"," cm @punct #24->25
+"<тұрып>"
+	"тұр" v iv prc_perf @root #25->0
+"<кетті>"
+	"кет" vaux ifi p3 sg @aux #26->25
+"<.>"
+	"." sent @punct #27->25
+¶
