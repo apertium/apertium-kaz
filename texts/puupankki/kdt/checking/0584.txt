@@ -1,0 +1,19 @@
+"<Біз>"
+	"біз" prn pers p1 pl nom @nsubj #1->4
+"<төңкеріс>"
+	"төңкеріс" n nom @nmod:poss #2->3
+"<жолына>"
+	"жол" n px3sp dat @nmod #3->4
+"<түсуіміз>"
+	"түс" VERB @root #4->0
+	"түс" v iv ger px1pl nom @root #4->0
+	"түс" v iv ger px1pl nom @csubj #4->5
+"<керек>"
+	"керек" adj @aux #5->4
+		"е" cop aor p3 sg @aux #5->4
+	"керек" adj @root #5->0
+		"е" cop aor p3 sg @cop #6->5
+"<...>"
+	"..." sent @punct #6->4
+	"..." sent @punct #7->4
+¶

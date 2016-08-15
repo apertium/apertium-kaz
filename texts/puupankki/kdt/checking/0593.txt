@@ -1,0 +1,42 @@
+"<Содан>"
+	"сол" prn dem abl @nmod #1->15
+"<кейін>"
+	"кейін" ADP @advmod:adp #2->1
+	"кейін" post @case #2->1
+"<:>"
+	":" sent @punct #3->1
+"<—>"
+	"—" guio @punct #4->15
+"<Бай>"
+	"бай" n nom @conj #5->9
+"<,>"
+	"," cm @punct #6->9
+"<кедей>"
+	"кедей" n nom @conj #7->9
+"<,>"
+	"," cm @punct #8->9
+"<тап>"
+	"тап" n nom @nmod:poss #9->10
+"<мәселесіне>"
+	"мәселе" n px3sp dat @iobj #10->15
+"<бізде>"
+	"біз" prn pers p1 pl loc @iobj #11->15
+"<осындай>"
+	"осындай" det ind @det #12->14
+	"осындай" det dem @det #12->14
+"<негізгі>"
+	"негізгі" adj @amod #13->14
+"<көзқарас>"
+	"көзқарас" n nom @nsubj #14->15
+"<болу>"
+	"бол" VERB @root #15->0
+	"бол" v iv ger nom @root #15->0
+	"бол" v iv ger nom @csubj #15->16
+"<керек>"
+	"керек" AUX @aux #16->15
+	"керек" adj @root #16->0
+		"е" cop aor p3 sg @root #16->15
+"<.>"
+	"." sent @punct #17->15
+	"." sent @punct #17->16
+¶

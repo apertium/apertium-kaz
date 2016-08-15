@@ -1,0 +1,29 @@
+"<Сөз>"
+	"сөз" n nom @nsubj #1->2
+"<көбейген>"
+	"көбей" v iv ger_past nom @advcl #2->5
+"<сайын>"
+	"сайын" ADP @advmod:adp #3->2
+	"сайын" post @case #3->2
+"<басы>"
+	"бас" n px3sp nom @nsubj #4->5
+"<қатып>"
+	"қат" v iv prc_perf @advcl #5->11
+"<бара>"
+	"бар" AUX @aux #6->5
+	"бар" v iv prc_impf @aux #6->5
+"<жатқан>"
+	"жат" AUX @aux #7->5
+	"жат" vaux ger_past nom @aux #7->5
+"<соң>"
+	"соң" ADP @advmod:adp #8->5
+	"соң" post @case #8->5
+"<,>"
+	"," cm @punct #9->11
+"<тысқа>"
+	"тыс" n dat @nmod #10->11
+"<жөнелді>"
+	"жөнел" v iv ifi p3 sg @root #11->0
+"<.>"
+	"." sent @punct #12->11
+¶

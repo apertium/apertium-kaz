@@ -1,0 +1,20 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<мәселелерді>"
+	"мәселе" n pl acc @dobj #2->5
+"<біз>"
+	"біз" prn pers p1 pl nom @nsubj #3->5
+"<тереңірек>"
+	"терең" adj comp advl @advmod #4->5
+"<қарауымыз>"
+	"қара" v tv ger px1pl nom @root #5->0
+	"қара" v tv ger px1pl nom @csubj #5->6
+"<керек>"
+	"керек" adj @aux #6->5
+		"е" cop aor p3 sg @aux #6->5
+	"керек" adj @root #6->0
+		"е" cop aor p3 sg @cop #7->6
+"<.>"
+	"." sent @punct #7->5
+	"." sent @punct #8->6
+¶
