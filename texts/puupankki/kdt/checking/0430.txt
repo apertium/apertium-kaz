@@ -1,0 +1,32 @@
+"<Бақша>"
+	"бақша" n nom @dobj #1->2
+"<күзететін>"
+	"күзет" v tv gpr_impf @acl:relcl #2->3
+"<шал>"
+	"шал" n nom @nsubj #3->7
+"<бұ>"
+	"бұл" prn dem nom @nsubj #4->5
+"<не>"
+	"не" prn itg nom @dobj #5->6
+"<деп>"
+	"де" v tv gna_perf @advcl #6->7
+"<жетіп>"
+	"жет" v iv gna_perf @advcl #7->8
+"<барса>"
+	"бар" v iv gna_cond p3 sg @advcl #8->13
+"<,>"
+	"," cm @punct #9->13
+"<екеуі>"
+	"екеу" num coll subst px3sp nom @nsubj #10->13
+"<екі>"
+	"екі" num @nummod #11->12
+"<жаққа>"
+	"жақ" n dat @nmod #12->13
+"<қаша>"
+	"қаш" v iv prc_impf @root #13->0
+"<жөнеледі>"
+	"жөнел" AUX @aux #14->13
+	"жөнел" v iv aor p3 sg @aux #14->13
+"<.>"
+	"." sent @punct #15->13
+¶

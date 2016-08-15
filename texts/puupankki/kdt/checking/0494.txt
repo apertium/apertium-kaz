@@ -1,0 +1,32 @@
+"<Алайда>"
+	"алайда" cnjadv @cc #1->12
+"<партияға>"
+	"партия" n dat @iobj #2->3
+"<кірген>"
+	"кір" v iv gpr_past @acl:relcl #3->4
+"<жолдастарымен>"
+	"жолдас" n pl px3sp ins @iobj #4->12
+"<пікірі>"
+	"пікір" n px3sp nom @conj #5->11
+"<,>"
+	"," cm @punct #6->11
+"<қызметі>"
+	"қызмет" n px3sp nom @conj #7->11
+"<,>"
+	"," cm @punct #8->11
+"<ымы>"
+	"ым" n px3sp nom @compound #9->11
+"<->"
+	"-" guio @punct #10->11
+"<жымы>"
+	"жым" n px3sp nom @nsubj #11->12
+"<бір>"
+	"бір" NUM @root #12->0
+	"бір" num @root #12->0
+	"бір" num subst nom @root #12->0
+"<еді>"
+	"е" AUX @aux #13->12
+	"е" cop ifi p3 sg @cop #13->12
+"<.>"
+	"." sent @punct #14->12
+¶

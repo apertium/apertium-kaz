@@ -1,0 +1,26 @@
+"<Бекболат>"
+	"Бекболат" np ant m nom @nsubj #1->11
+"<көр>"
+	"көр" n attr @compound #2->4
+"<->"
+	"-" guio @punct #3->4
+"<жерді>"
+	"жер" n acc @dobj #4->5
+"<айтысып>"
+	"айт" v tv coop prc_perf @advcl #5->11
+"<тұрып>"
+	"тұр" vaux gna_perf @aux #6->5
+"<,>"
+	"," cm @punct #7->11
+"<арғы>"
+	"арғы" adj @amod #8->9
+"<үйге>"
+	"үй" n dat @nmod #9->11
+"<қарай>"
+	"қарай" ADP @advmod:adp #10->9
+	"қарай" post @case #10->9
+"<жүрді>"
+	"жүр" v iv ifi p3 sg @root #11->0
+"<.>"
+	"." sent @punct #12->11
+¶

@@ -1,0 +1,45 @@
+"<Мойындағы>"
+	"мойын" n loc attr @amod #1->4
+"<бір>"
+	"бір" num @nummod #2->3
+"<ауыр>"
+	"ауыр" adj @amod #3->4
+"<міндетті>"
+	"міндет" n acc @dobj #4->5
+"<атқарғандай>"
+	"атқар" v tv ger_past sim @conj #5->12
+"<,>"
+	"," cm @punct #6->12
+"<өмірдің>"
+	"өмір" n gen @nmod:poss #7->9
+"<бір>"
+	"бір" num @nummod #8->9
+"<мақсаты>"
+	"мақсат" n px3sp nom @nsubj #9->12
+"<сол>"
+	"сол" det dem @det #10->11
+"<шылымда>"
+	"шылым" n loc @nmod #11->12
+"<тұрғандай>"
+	"тұр" v iv ger_past sim @advcl #12->14
+"<сонша>"
+	"сонша" ADV @advmod #13->14
+	"сол" prn dem qnt @advmod #13->14
+"<ықыласын>"
+	"ықылас" n px3sp acc @nsubj #14->18
+	"ықылас" n px3sp acc @dobj #14->15
+"<қойғаны>"
+	"қой" VERB @cop #15->14
+	"қой" v tv ger_past px3sp nom @cop #15->14
+	"қой" v tv ger_past px3sp nom @csubj #15->18
+"<Бекболатқа>"
+	"Бекболат" np ant m dat @iobj #16->18
+"<жат>"
+	"жат" ADV @advmod #17->18
+	"жат" adj advl @advmod #17->18
+"<көрінеді>"
+	"көр" v tv pass aor p3 sg @root #18->0
+	"көрін" v iv aor p3 sg @root #18->0
+"<.>"
+	"." sent @punct #19->18
+¶

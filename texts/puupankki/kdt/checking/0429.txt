@@ -1,0 +1,26 @@
+"<Алдыңғы>"
+	"алдыңғы" adj @amod #1->2
+"<жылы>"
+	"жыл" n px3sp nom @nmod #2->4
+"<Семейге>"
+	"Семей" np top dat @nmod #3->4
+"<барып>"
+	"бар" v iv gna_perf @advcl #4->5
+"<оқып>"
+	"оқы" v iv gna_perf @advcl #5->9
+	"оқы" v tv gna_perf @advcl #5->9
+"<,>"
+	"," cm @punct #6->9
+"<мұғалім>"
+	"мұғалім" n nom @nmod #7->9
+	"мұғалім" n nom @root #7->0
+"<боп>"
+	"бол" VERB @cop #8->7
+	"бол" v iv prc_perf @cop #8->7
+"<келген>"
+	"кел" v iv past p3 sg @root #9->0
+	"кел" v iv past p3 sg @aux #9->7
+"<.>"
+	"." sent @punct #10->9
+	"." sent @punct #10->7
+¶

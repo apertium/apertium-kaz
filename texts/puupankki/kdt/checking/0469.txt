@@ -1,0 +1,47 @@
+"<Ол>"
+	"ол" prn pers p3 sg nom @nsubj #1->8
+	"ол" prn dem nom @nsubj #1->8
+"<талай>"
+	"талай" adj @amod #2->3
+"<қызды>"
+	"қыз" n acc @dobj #3->4
+"<алып>"
+	"ал" VERB @conj #4->8
+	"ал" v tv prc_perf @conj #4->8
+	"ал" v tv gna_perf @advcl #4->5
+"<қашқан>"
+	"қаш" vaux past p3 sg @aux #5->4
+	"қаш" v iv past p3 sg @conj #5->8
+"<,>"
+	"," cm @punct #6->8
+"<талайды>"
+	"талай" adj subst acc @dobj #7->8
+"<тастаған>"
+	"таста" v tv past p3 sg @root #8->0
+"<,>"
+	"," cm @punct #9->8
+"<қатын>"
+	"қатын" n nom @dobj #10->11
+"<алу>"
+	"ал" v tv ger nom @conj #11->13
+"<,>"
+	"," cm @punct #12->13
+"<тастау>"
+	"таста" v tv ger nom @csubj #13->19
+"<оған>"
+	"ол" prn dem dat @iobj #14->19
+	"ол" prn pers p3 sg dat @iobj #14->19
+"<тымақ>"
+	"тымақ" n nom @dobj #15->16
+"<ауыстырып>"
+	"ауыстыр" v tv gna_perf @advcl #16->17
+"<кигенмен>"
+	"ки" v tv ger_past ins @ccomp #17->19
+"<бір>"
+	"бір" det ind @det #18->19
+"<есеп>"
+	"есеп" n nom @parataxis #19->8
+		"е" cop aor p3 sg @parataxis #20->19
+"<.>"
+	"." sent @punct #21->19
+¶

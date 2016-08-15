@@ -1,0 +1,17 @@
+"<Бір>"
+	"бір" num @compound #1->2
+"<миллион>"
+	"миллион" num @nummod #2->3
+"<пұт>"
+	"пұт" NOUN @amod-nmod #3->5
+	"пұт" n nom @x #3->5
+"<тас>"
+	"тас" NOUN @amod-nmod #4->5
+	"тас" n nom @x #4->5
+"<көмір>"
+	"көмір" n nom @nsubj #5->6
+"<тасылған>"
+	"тасы" v tv pass past p3 sg @root #6->0
+"<.>"
+	"." sent @punct #7->6
+¶
