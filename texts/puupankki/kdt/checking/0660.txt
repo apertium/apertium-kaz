@@ -1,0 +1,14 @@
+"<Тоғыздан>"
+	"тоғыз" NUM @nummod #1->2
+	"тоғыз" num subst nom @nsubj #1->2
+"<қаңғып>"
+	"қаңғы" v iv prc_perf @root #2->0
+"<барады>"
+	"бар" AUX @aux #3->2
+	"бар" v iv aor p3 sg @aux #3->2
+"<екен>"
+	"е" AUX @aux #4->2
+	"е" cop aor evid p3 sg @aux #4->2
+"<.>"
+	"." sent @punct #5->2
+¶

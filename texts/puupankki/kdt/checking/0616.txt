@@ -1,0 +1,28 @@
+"<Оразасын>"
+	"ораза" n px3sp acc @dobj #1->4
+"<өз>"
+	"өз" PRON @nmod:poss #2->3
+	"өз" det ref @nmod:poss #2->3
+"<үйінде>"
+	"үй" n px3sp loc @nmod #3->4
+"<ашқан>"
+	"аш" v tv gpr_past @conj #4->9
+"<,>"
+	"," cm @punct #5->9
+"<қысы>"
+	"қыс" n px3sp nom @compound #6->7
+	"қыс" n px3sp nom @nmod:poss #6->7
+"<жазы>"
+	"жаз" n px3sp nom @nmod #7->9
+"<үйде>"
+	"үй" n loc @nmod #8->9
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #9->10
+"<жан>"
+	"жан" n nom @root #10->0
+"<емес>"
+	"е" VERB @cop #11->10
+	"е" cop neg aor p3 sg @cop #11->10
+"<.>"
+	"." sent @punct #12->10
+¶

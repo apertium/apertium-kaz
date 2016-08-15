@@ -1,0 +1,50 @@
+"<Қашан>"
+	"қашан" PRON @nmod #1->3
+	"қашан" adv itg @advmod #1->3
+"<соны>"
+	"сол" prn dem acc @dobj #2->3
+"<істеп>"
+	"істе" VERB @conj #3->10
+	"істе" v iv gna_perf @conj #3->10
+	"істе" v tv gna_perf @conj #3->10
+"<,>"
+	"," cm @punct #4->10
+"<жауап>"
+	"жауап" n nom @dobj #5->6
+"<беріп>"
+	"бер" VERB @conj #6->10
+	"бер" v tv gna_perf @conj #6->10
+"<,>"
+	"," cm @punct #7->10
+"<айтысып>"
+	"айт" VERB @compound #8->10
+	"айт" v tv coop gna_perf @compound #8->10
+	"айтыс" v iv gna_perf @compound #8->10
+"<->"
+	"-" guio @punct #9->10
+"<тартысып>"
+	"тарт" v tv coop gna_perf @advcl #10->14
+	"тартыс" v iv gna_perf @advcl #10->14
+"<аман>"
+	"аман" adj @compound #11->13
+"<->"
+	"-" guio @punct #12->13
+"<есен>"
+	"есен" ADV @advmod #13->14
+	"есен" adj advl @advmod #13->14
+"<өткенше>"
+	"өт" VERB @advcl #14->18
+	"өт" v iv gna_until @advcl #14->18
+	"өт" v tv gna_until @advcl #14->18
+"<,>"
+	"," cm @punct #15->14
+"<көтіңе>"
+	"көт" n px2sg dat @nmod #16->18
+"<қыл>"
+	"қыл" NOUN @nsubj #17->18
+	"қыл" v tv imp p2 sg @nsubj #17->18
+"<батпайды>"
+	"бат" v iv neg aor p3 sg @root #18->0
+"<.>"
+	"." sent @punct #19->18
+¶

@@ -1,0 +1,25 @@
+"<Атқа>"
+	"ат" n dat @nmod #1->2
+"<мініп>"
+	"мін" v iv gna_perf @advcl #2->5
+"<,>"
+	"," cm @punct #3->5
+"<оңаша>"
+	"оңаша" adj advl @advmod #4->5
+"<шыққан>"
+	"шық" v iv ger_past nom @advcl #5->8
+	"шық" v tv ger_past nom @advcl #5->8
+"<соң>"
+	"соң" ADP @advmod:adp #6->5
+	"соң" post @case #6->5
+"<әңгіме>"
+	"әңгіме" n nom @dobj #7->8
+"<қозғауға>"
+	"қозға" VERB @root #8->0
+	"қозға" v tv ger dat @root #8->0
+"<айналды>"
+	"айнал" AUX @aux #9->8
+	"айнал" v iv ifi p3 sg @aux #9->8
+"<.>"
+	"." sent @punct #10->8
+¶

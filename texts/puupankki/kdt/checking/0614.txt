@@ -1,0 +1,20 @@
+"<—>"
+	"—" guio @punct #1->5
+"<Бүгін>"
+	"бүгін" adv @advmod #2->3
+"<шықпаған>"
+	"шық" v tv neg ger_past nom @ccomp #3->5
+	"шық" v iv neg ger_past nom @ccomp #3->5
+"<соң>"
+	"соң" post @case #4->3
+"<не>"
+	"не" prn itg nom @root #5->0
+	"не" prn itg nom @nsubj #5->6
+"<керек>"
+	"керек" AUX @aux #6->5
+	"керек" adj @root #6->0
+		"е" cop aor p3 sg @cop #7->6
+"<!>"
+	"!" sent @punct #7->5
+	"!" sent @punct #8->6
+¶

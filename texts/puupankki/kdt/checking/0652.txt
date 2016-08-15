@@ -1,0 +1,24 @@
+"<Қарындастарын>"
+	"қарындас" n pl px3sp acc @dobj #1->2
+"<алмай>"
+	"ал" v tv neg prc_impf @advcl #2->7
+	"ал" v tv neg prc_perf @advcl #2->7
+"<қойған>"
+	"қой" vaux ger_past nom @aux #3->2
+"<соң>"
+	"соң" ADP @advmod:adp #4->2
+	"соң" post @case #4->2
+"<,>"
+	"," cm @punct #5->7
+"<сөйтпей>"
+	"сөйт" v iv neg gna_perf @advcl #6->7
+"<қайтушы>"
+	"қайт" VERB @root #7->0
+	"қайт" v iv gpr_pot @root #7->0
+	"қайт" v iv gpr_pot subst nom @root #7->0
+"<еді>"
+	"е" AUX @aux #8->7
+	"е" cop ifi p3 sg @aux #8->7
+"<?>"
+	"?" sent @punct #9->7
+¶

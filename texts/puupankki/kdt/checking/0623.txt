@@ -1,0 +1,19 @@
+"<Есептеспеген>"
+	"есепте" v tv coop neg gpr_past @acl:relcl #1->2
+	"есептес" v iv neg gpr_past @acl:relcl #1->2
+"<досты>"
+	"дос" n acc @dobj #2->3
+"<көргеніміз>"
+	"көр" VERB @root #3->0
+	"көр" v tv gpr_past subst px1pl nom @root #3->0
+	"көр" v tv ger_past px1pl nom @root #3->0
+"<жоқ>"
+	"жоқ" AUX @neg #4->3
+	"жоқ" adj @root #4->0
+		"е" cop aor p3 pl @cop #5->4
+	"жоқ" adj @root #4->0
+		"е" cop aor p3 sg @cop #5->4
+"<.>"
+	"." sent @punct #5->3
+	"." sent @punct #6->4
+¶

@@ -1,0 +1,26 @@
+"<Бюрода>"
+	"бюро" n loc @nmod #1->9
+"<Иванов>"
+	"Иванов" np cog m nom @dobj #2->3
+	"Иванов" np cog m nom @ccomp #2->3
+"<дейтін>"
+	"де" v tv gpr_impf @acl:relcl #3->8
+"<арық>"
+	"арық" adj @goeswith #4->7
+	"арық" adj @amod #4->7
+"<,>"
+	"," cm @punct #5->7
+"<қу>"
+	"қу" adj @amod #6->7
+"<жақ>"
+	"жақ" NOUN @amod-nmod #7->8
+	"жақ" n nom @x #7->8
+"<орыс>"
+	"орыс" n nom @nsubj #8->9
+"<бар>"
+	"бар" adj @root #9->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #10->9
+"<.>"
+	"." sent @punct #11->9
+¶
