@@ -1,0 +1,31 @@
+"<Ақбала>"
+	"Ақбала" np ant f nom @nsubj #1->7
+"<губерния>"
+	"губерния" n nom @nmod:poss #2->3
+"<жұмысын>"
+	"жұмыс" n px3sp acc @dobj #3->7
+"<үш>"
+	"үш" num @nummod #4->5
+"<есе>"
+	"есе" ADV @advmod #5->6
+"<арттыра>"
+	"арт" VERB @advcl #6->7
+	"арттыр" v tv prc_impf @advcl #6->7
+	"арттыр" v tv gna_impf @advcl #6->7
+"<мақтап>"
+	"мақта" v tv gna_perf @advcl #7->10
+"<,>"
+	"," cm @punct #8->10
+"<өздері>"
+	"өз" prn ref px3pl nom @nsubj #9->10
+"<тындырып>"
+	"тындыр" v tv prc_perf @root #10->0
+"<жатқан>"
+	"жат" vaux past p3 sg @aux #11->10
+"<болды>"
+	"бол" AUX @aux #12->10
+	"бол" v iv ifi p3 sg @aux #12->10
+	"бол" vaux ifi p3 sg @aux #12->10
+"<.>"
+	"." sent @punct #13->10
+¶

@@ -1,0 +1,35 @@
+"<Өз>"
+	"өз" det ref @det #1->2
+"<ойын>"
+	"ой" n px3sp acc @conj #2->5
+"<,>"
+	"," cm @punct #3->5
+"<өз>"
+	"өз" det ref @det #4->5
+"<мақсатын>"
+	"мақсат" n px3sp acc @dobj #5->7
+"<жарыққа>"
+	"жарық" n dat @nmod #6->7
+"<шығару>"
+	"шығар" v tv ger nom @ccomp #7->13
+"<үшін>"
+	"үшін" post @case #8->7
+"<өмір>"
+	"өмір" n nom @nmod:poss #9->10
+"<иесі>"
+	"ие" n px3sp nom @nsubj #10->11
+"<өзі>"
+	"өз" prn ref px3sp nom @dobj #11->13
+"<болғанды>"
+	"бол" VERB @cop #12->11
+	"бол" v iv ger_past acc @cop #12->11
+"<қалаушы>"
+	"қала" VERB @root #13->0
+	"қала" v tv gpr_pot @root #13->0
+	"қала" v tv gpr_pot subst nom @root #13->0
+"<еді>"
+	"е" AUX @aux #14->13
+	"е" cop ifi p3 sg @aux #14->13
+"<.>"
+	"." sent @punct #15->13
+¶

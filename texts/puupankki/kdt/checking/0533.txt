@@ -1,0 +1,32 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<айтысты>"
+	"айтыс" n acc @dobj #2->3
+"<есітіп>"
+	"есіт" v tv prc_perf @acl:relcl #3->5
+"<отырған>"
+	"отыр" vaux gpr_past @aux #4->3
+"<Бекболаттың>"
+	"Бекболат" np ant m gen @nmod:poss #5->12
+"<кімдікі>"
+	"кім" prn itg gen subst nom @nsubj #6->7
+"<дұрыс>"
+	"дұрыс" adj @conj #7->10
+"<,>"
+	"," cm @punct #8->10
+"<кімдікі>"
+	"кім" prn itg gen subst nom @nsubj #9->10
+"<теріс>"
+	"теріс" adj @iobj #10->13
+	"теріс" adj @advcl #10->13
+"<екеніне>"
+	"е" cop ger_past px3sp dat @cop #11->10
+"<ақылы>"
+	"ақыл" n px3sp nom @nsubj #12->13
+"<жете>"
+	"жет" v iv prc_impf @root #13->0
+"<алмады>"
+	"ал" vaux neg ifi p3 sg @aux #14->13
+"<.>"
+	"." sent @punct #15->13
+¶

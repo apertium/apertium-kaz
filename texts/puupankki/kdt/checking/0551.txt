@@ -1,0 +1,31 @@
+"<Ол>"
+	"ол" prn pers p3 sg nom @nsubj #1->9
+	"ол" prn dem nom @nsubj #1->9
+"<съездің>"
+	"съезд" n gen @nmod:poss #2->3
+"<қаулысын>"
+	"қаулы" n px3sp acc @conj #3->7
+"<,>"
+	"," cm @punct #4->7
+"<жаңа>"
+	"жаңа" adv @advmod #5->6
+"<шыққан>"
+	"шық" v iv gpr_past @acl:relcl #6->7
+	"шық" v tv gpr_past @acl:relcl #6->7
+"<кітаптарды>"
+	"кітап" n pl acc @dobj #7->9
+"<көп>"
+	"көп" adv @advmod #8->9
+"<оқушы>"
+	"оқы" VERB @root #9->0
+	"оқы" v iv gpr_pot @root #9->0
+	"оқы" v tv gpr_pot @root #9->0
+	"оқушы" n nom @root #9->0
+	"оқы" v tv gpr_pot subst nom @root #9->0
+	"оқы" v iv gpr_pot subst nom @root #9->0
+"<еді>"
+	"е" AUX @aux #10->9
+	"е" cop ifi p3 sg @aux #10->9
+"<.>"
+	"." sent @punct #11->9
+¶

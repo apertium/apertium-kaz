@@ -1,0 +1,38 @@
+"<Алдында>"
+	"алд" n px3sp loc @nmod #1->2
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #2->3
+"<стақанды>"
+	"стақан" n acc @dobj #3->4
+"<ұсынып>"
+	"ұсын" v tv gna_perf @advcl #4->16
+"<:>"
+	":" sent @punct #5->4
+"<—>"
+	"—" guio @punct #6->11
+"<Бұ>"
+	"бұл" prn dem nom @amod #7->8
+"<жарықтықты>"
+	"жарықтық" n acc @dobj #8->10
+"<әуре>"
+	"әуре" NOUN @compound-etq #9->10
+	"әуре" n nom @x #9->10
+"<қылмай>"
+	"қыл" v tv neg gna_perf @advcl #10->11
+"<құйшы>"
+	"құй" v tv imp p2 sg @ccomp #11->16
+		"шы" emph @ccomp #11->16
+"<,>"
+	"," cm @punct #12->11
+"<қарағым>"
+	"қарағым" INTJ @vocative #13->11
+	"қара" v tv prc_vol p1 sg @vocative #13->11
+"<!>"
+	"!" sent @punct #14->11
+"<—>"
+	"—" guio @punct #15->16
+"<деді>"
+	"де" v tv ifi p3 sg @root #16->0
+"<.>"
+	"." sent @punct #17->16
+¶

@@ -1,0 +1,38 @@
+"<Мен>"
+	"мен" prn pers p1 sg nom @nsubj #1->5
+"<енді>"
+	"енді" adv @advmod #2->5
+"<өз>"
+	"өз" PRON @nmod:poss #3->4
+	"өз" det ref @nmod:poss #3->4
+"<пікірімді>"
+	"пікір" n px1sg acc @dobj #4->5
+"<айтайын>"
+	"айт" v tv opt p1 sg @ccomp #5->8
+"<,>"
+	"," cm @punct #6->5
+"<—>"
+	"—" guio @punct #7->8
+"<деп>"
+	"де" v tv gna_perf @advcl #8->11
+"<мұрнын>"
+	"мұрын" n px3sp acc @dobj #9->11
+"<орамалмен>"
+	"орамал" n ins @iobj #10->11
+"<сүртіп>"
+	"сүрт" v tv gna_perf @conj #11->14
+"<,>"
+	"," cm @punct #12->14
+"<төмен>"
+	"төмен" adv @advmod #13->14
+"<қарап>"
+	"қара" v tv prc_perf @advcl #14->17
+"<отырып>"
+	"отыр" vaux gna_perf @aux #15->14
+"<сөз>"
+	"сөз" n nom @dobj #16->17
+"<бастады>"
+	"баста" v tv ifi p3 sg @root #17->0
+"<.>"
+	"." sent @punct #18->17
+¶

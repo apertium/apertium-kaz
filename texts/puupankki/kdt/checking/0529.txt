@@ -1,0 +1,51 @@
+"<Айтпақшы>"
+	"айтпақшы" ij @discourse #1->11
+"<">"
+	""" sent @punct #2->3
+"<құдай>"
+	"Құдай" n nom @dobj #3->5
+	"Құдай" n nom @ccomp #3->5
+		"е" cop aor p3 sg @ccomp #3->5
+"<">"
+	""" sent @punct #4->3
+"<деген>"
+	"де" v tv gpr_past @acl:relcl #5->6
+"<сөзді>"
+	"сөз" n acc @dobj #6->8
+"<не>"
+	"не" PRON @compound-etq #7->8
+	"не" prn itg nom @x #7->8
+"<қылмаңыздаршы>"
+	"қыл" VERB @conj #8->11
+	"қыл" v tv neg imp p2 frm pl @conj #8->11
+		"шы" emph @conj #8->11
+"<,>"
+	"," cm @punct #9->11
+"<сөздің>"
+	"сөз" n gen @nmod:poss #10->11
+"<аялғысы>"
+	"аялғы" NOUN @ccomp #11->15
+	"ая" v tv pass prc_vol p3 pl @ccomp #11->15
+	"ая" v tv pass prc_vol p3 sg @ccomp #11->15
+"<ғой>"
+	"ғой" ADP @advmod:adp #12->11
+	"ғой" mod_ass @discourse #12->11
+"<...>"
+	"..." sent @punct #13->11
+"<—>"
+	"—" guio @punct #14->15
+"<деп>"
+	"де" v tv gna_perf @advcl #15->18
+"<тағы>"
+	"тағы" adv @advmod #16->18
+"<бір>"
+	"бір" NUM @nmod-num #17->18
+	"бір" num @x #17->18
+	"бір" num subst nom @x #17->18
+"<сасқалақтап>"
+	"сасқалақта" v iv prc_perf @root #18->0
+"<қалды>"
+	"қал" vaux ifi p3 sg @aux #19->18
+"<.>"
+	"." sent @punct #20->18
+¶
