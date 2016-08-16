@@ -1,0 +1,53 @@
+"<Бір>"
+	"бір" det ind @det #1->2
+"<күні>"
+	"күн" n px3sp nom @nmod #2->21
+"<Сәрсенбайдың>"
+	"Сәрсенбай" np ant m gen @nmod:poss #3->4
+"<үйіне>"
+	"үй" n px3sp dat @nmod #4->21
+"<ескі>"
+	"ескі" adj @amod #5->6
+"<жолмен>"
+	"жол" n ins @nmod #6->7
+"<оқыған>"
+	"оқы" v iv gpr_past @conj #7->15
+	"оқы" v tv gpr_past @conj #7->15
+"<,>"
+	"," cm @punct #8->15
+"<дүниеде>"
+	"дүние" n loc @nmod #9->12
+"<білмеген>"
+	"біл" v tv neg gpr_past @acl:relcl #10->11
+"<нәрселерім>"
+	"нәрсе" n pl px1sg nom @nsubj #11->12
+"<жоқ>"
+	"жоқ" adj @nmod #12->15
+	"жоқ" adj subst nom @nmod #12->15
+"<деп>"
+	"де" VERB @cop #13->12
+	"де" v tv prc_perf @cop #13->12
+	"де" v tv gna_perf @cop #13->12
+"<дұға>"
+	"дұға" NOUN @compound-etq #14->15
+	"дұға" n nom @x #14->15
+"<қылушы>"
+	"қыл" VERB @acl #15->19
+	"қыл" v tv gpr_pot @acl:relcl #15->19
+"<бір>"
+	"бір" det ind @det #16->19
+"<шала>"
+	"шала" ADJ @amod #17->19
+	"шал" v tv prc_impf @amod #17->19
+"<надан>"
+	"надан" NOUN @amod-nmod #18->19
+	"надан" n nom @x #18->19
+"<молда>"
+	"молда" n nom @nsubj #19->21
+"<келіп>"
+	"кел" v iv gna_perf @advcl #20->21
+"<қонды>"
+	"қон" v iv ifi p3 sg @root #21->0
+"<.>"
+	"." sent @punct #22->21
+¶

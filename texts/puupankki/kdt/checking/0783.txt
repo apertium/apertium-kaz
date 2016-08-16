@@ -1,0 +1,44 @@
+"<Таңдаушылар>"
+	"таңдаушы" NOUN @nsubj #1->7
+	"таңда" v iv gpr_pot subst pl nom @nsubj #1->7
+	"таңда" v tv gpr_pot subst pl nom @nsubj #1->7
+"<Сенат>"
+	"Сенат" PROPN @nmod:poss #2->3
+	"сенат" n nom @nmod:poss #2->3
+"<депутаттарын>"
+	"депутат" n pl px3sp acc @dobj #3->4
+"<сайлауға>"
+	"сайла" v tv ger dat @ccomp #4->7
+"<тең>"
+	"тең" adj @amod #5->6
+"<негіздерде>"
+	"негіз" n pl loc @nmod #6->7
+"<қатысады>"
+	"қатыс" v iv aor p3 sg @root #7->0
+	"қат" v iv coop aor p3 sg @root #7->0
+"<әрі>"
+	"әрі" SCONJ @mark #8->17
+	"әрі" adv @mark #8->17
+"<олардың>"
+	"ол" prn dem pl gen @nmod:poss #9->10
+	"олар" prn pers p3 pl gen @nmod:poss #9->10
+"<әрқайсысының>"
+	"әрқайсысы" prn qnt px3sp gen @nmod:poss #10->12
+"<Сенат>"
+	"Сенат" PROPN @nmod:poss #11->12
+	"сенат" n nom @nmod:poss #11->12
+"<депутатын>"
+	"депутат" n px3sp acc @dobj #12->13
+"<сайлаған>"
+	"сайла" v tv gpr_past @acl:relcl #13->14
+"<кезде>"
+	"кез" n loc @nmod #14->17
+"<бір>"
+	"бір" num @nummod #15->16
+"<дауысы>"
+	"дауыс" n px3sp nom @nsubj #16->17
+"<болады>"
+	"бол" v iv aor p3 sg @parataxis #17->7
+"<.>"
+	"." sent @punct #18->17
+¶

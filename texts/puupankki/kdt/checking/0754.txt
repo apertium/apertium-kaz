@@ -1,0 +1,51 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<хабарды>"
+	"хабар" n acc @dobj #2->3
+"<есіткеннен>"
+	"есіт" v tv ger_past abl @advcl #3->9
+"<соң>"
+	"соң" ADP @advmod:adp #4->3
+	"соң" post @x #4->3
+"<,>"
+	"," cm @punct #5->3
+"<Сәрсенбай>"
+	"Сәрсенбай" np ant m nom @nsubj #6->9
+"<үй>"
+	"үй" n nom @nmod:poss #7->8
+"<ішіне>"
+	"іш" n px3sp dat @nmod #8->9
+"<ақылдасып>"
+	"ақылдас" v iv prc_perf @advcl #9->22
+"<көріп>"
+	"көр" vaux prc_perf @aux #10->9
+	"көр" vaux gna_perf @aux #10->9
+"<еді>"
+	"е" AUX @aux #11->9
+	"е" cop ifi p3 sg @aux #11->9
+"<,>"
+	"," cm @punct #12->9
+"<үлкен>"
+	"үлкен" adj @amod #13->14
+"<қатыны>"
+	"қатын" n px3sp nom @nsubj #14->15
+"<ұнатып>"
+	"ұнат" v tv gna_perf @advcl #15->22
+"<,>"
+	"," cm @punct #16->15
+"<Жамалдың>"
+	"Жамал" np ant f gen @nmod:poss #17->18
+"<анасы>"
+	"ана" n px3sp nom @nsubj #18->22
+"<,>"
+	"," cm @punct #19->20
+"<Шолпан>"
+	"Шолпан" np al nom @appos #20->18
+	"Шолпан" np ant f nom @appos #20->18
+"<,>"
+	"," cm @punct #21->20
+"<ұнатпады>"
+	"ұнат" v tv neg ifi p3 sg @root #22->0
+"<.>"
+	"." sent @punct #23->22
+¶

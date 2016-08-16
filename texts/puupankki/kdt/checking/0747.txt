@@ -1,0 +1,38 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<мәжілістер>"
+	"мәжіліс" n pl nom @nsubj #2->5
+"<бір>"
+	"бір" num @nummod #3->4
+"<мәрте>"
+	"мәрте" n nom @nmod #4->5
+"<болмай>"
+	"бол" v iv neg gna_perf @advcl #5->10
+"<,>"
+	"," cm @punct #6->5
+"<бірнеше>"
+	"бірнеше" det qnt @det #7->8
+"<күндер>"
+	"күн" n pl nom @nmod #8->10
+"<ақылға>"
+	"ақыл" n dat @iobj #9->10
+"<салынып>"
+	"сал" v tv pass gna_perf @advcl #10->15
+"<,>"
+	"," cm @punct #11->10
+"<ақырында>"
+	"ақырында" adv @advmod #12->15
+"<Сәрсенбай>"
+	"Сәрсенбай" np ant m nom @nsubj #13->15
+"<билікке>"
+	"билік" n dat @iobj #14->15
+"<таласпақшы>"
+	"талас" VERB @root #15->0
+	"тала" v tv coop prc_fplan @root #15->0
+"<болды>"
+	"бол" AUX @aux #16->15
+	"бол" v iv ifi p3 sg @aux #16->15
+	"бол" vaux ifi p3 sg @aux #16->15
+"<.>"
+	"." sent @punct #17->15
+¶

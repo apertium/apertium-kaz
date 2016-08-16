@@ -1,0 +1,30 @@
+"<Енді>"
+	"енді" adv @advmod #1->11
+"<өлең>"
+	"өлең" n nom @dobj #2->3
+"<айтуға>"
+	"айт" VERB @acl #3->4
+	"айт" v tv ger dat @acl #3->4
+"<рет>"
+	"рет" n nom @nsubj #4->11
+"<әуелі>"
+	"әуелі" adv @advmod #5->11
+"<Ғалиға>"
+	"Ғали" np ant m dat @iobj #6->10
+"<,>"
+	"," cm @punct #7->6
+"<сонан>"
+	"сол" prn dem abl @nmod #8->11
+"<соң>"
+	"соң" ADP @advmod:adp #9->8
+	"соң" post @x #9->8
+"<Жамалға>"
+	"Жамал" np ant f dat @iobj #10->11
+"<келіп>"
+	"кел" v iv prc_perf @root #11->0
+"<еді>"
+	"е" AUX @aux #12->11
+	"е" cop ifi p3 sg @aux #12->11
+"<.>"
+	"." sent @punct #13->11
+¶

@@ -1,0 +1,35 @@
+"<Сол>"
+	"сол" det dem @det #1->2
+"<түннен>"
+	"түн" n abl @nmod #2->8
+"<былай>"
+	"былай" ADP @case #3->2
+	"бұл" prn dem adv @case #3->2
+"<Жамал>"
+	"Жамал" np ant f nom @nmod:poss #4->5
+"<хақында>"
+	"хақ" NOUN @nmod #5->8
+"<Шолпан>"
+	"Шолпан" np al nom @nsubj #6->8
+	"Шолпан" np ant f nom @nsubj #6->8
+"<Сәрсенбаймен>"
+	"Сәрсенбай" np ant m ins @iobj #7->8
+"<ешнәрсе>"
+	"ешнәрсе" prn neg nom @root #8->0
+"<сөйлеспейтін>"
+	"сөйлес" VERB @cop #9->8
+	"сөйле" v tv coop neg gpr_impf @cop #9->8
+	"сөйлес" v iv neg gpr_impf @cop #9->8
+	"сөйле" v tv coop neg pih p3 pl @cop #9->8
+	"сөйле" v tv coop neg pih p3 sg @cop #9->8
+	"сөйле" v tv coop neg gpr_impf subst nom @cop #9->8
+	"сөйлес" v iv neg pih p3 pl @cop #9->8
+	"сөйлес" v iv neg pih p3 sg @cop #9->8
+	"сөйлес" v iv neg gpr_impf subst nom @cop #9->8
+"<болды>"
+	"бол" AUX @aux #10->8
+	"бол" v iv ifi p3 sg @aux #10->8
+	"бол" vaux ifi p3 sg @aux #10->8
+"<.>"
+	"." sent @punct #11->8
+¶

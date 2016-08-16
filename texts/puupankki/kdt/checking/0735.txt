@@ -1,0 +1,37 @@
+"<Екінші>"
+	"екі" num ord @nummod #1->2
+"<күні>"
+	"күн" n px3sp nom @nmod #2->6
+"<мұғалімге>"
+	"мұғалім" n dat @iobj #3->6
+"<бір>"
+	"бір" det ind @det #4->5
+"<қос>"
+	"қос" n nom @dobj #5->6
+"<тігіп>"
+	"тік" v tv prc_perf @conj #6->12
+"<беріп>"
+	"бер" vaux gna_perf @aux #7->6
+"<,>"
+	"," cm @punct #8->6
+"<он>"
+	"он" num @nummod #9->11
+"<шақты>"
+	"шақ" n acc @advmod:adp #10->9
+	"шақ" n @advmod:adp #10->9
+		"лы" post @advmod-adp #10->9
+"<шәкірт>"
+	"шәкірт" n nom @nsubj #11->12
+"<жиналып>"
+	"жина" v tv pass gna_perf @advcl #12->15
+	"жинал" v iv gna_perf @advcl #12->15
+"<,>"
+	"," cm @punct #13->12
+"<оқу>"
+	"оқу" n nom @nsubj #14->15
+"<басталды>"
+	"бастал" v tv ifi p3 sg @root #15->0
+	"баста" v tv pass ifi p3 sg @root #15->0
+"<.>"
+	"." sent @punct #16->15
+¶

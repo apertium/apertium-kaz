@@ -1,0 +1,49 @@
+"<Бұрынғы>"
+	"бұрынғы" adj @amod #1->3
+"<оқымаған>"
+	"оқы" v iv neg gpr_past @acl:relcl #2->3
+	"оқы" v tv neg gpr_past @acl:relcl #2->3
+"<балалардың>"
+	"бала" n pl gen @nmod:poss #3->4
+	"балалар" n gen @nmod:poss #3->4
+"<ішінде>"
+	"іш" n px3sp loc @nmod #4->7
+"<ең>"
+	"ең" adv @advmod #5->6
+"<зейіндісі>"
+	"зейінді" adj subst px3sp nom @nsubj #6->7
+"<Жамал>"
+	"Жамал" np ant f nom @root #7->0
+"<болып>"
+	"бол" v iv prc_perf @cop #8->7
+"<шықты>"
+	"шық" vaux ifi p3 sg @aux #9->7
+"<(>"
+	"(" lpar @punct #10->18
+"<Жамал>"
+	"Жамал" np ant f nom @nsubj #11->18
+"<осы>"
+	"осы" det dem @det #12->13
+"<майда>"
+	"май" n loc @nmod #13->15
+"<тоғыз>"
+	"тоғыз" NUM @iobj #14->15
+	"тоғыз" num @iobj #14->15
+	"тоғыз" num subst nom @iobj #14->15
+"<толып>"
+	"тол" v iv gna_perf @advcl #15->18
+"<,>"
+	"," cm @punct #16->15
+"<онға>"
+	"он" NUM @iobj #17->18
+	"он" num subst dat @iobj #17->18
+"<қарап>"
+	"қара" v tv prc_perf @appos #18->7
+"<еді>"
+	"е" AUX @aux #19->18
+	"е" cop ifi p3 sg @aux #19->18
+"<)>"
+	")" rpar @punct #20->18
+"<.>"
+	"." sent @punct #21->7
+¶

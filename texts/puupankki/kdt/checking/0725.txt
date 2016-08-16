@@ -1,0 +1,20 @@
+"<Енді>"
+	"енді" adv @advmod #1->6
+"<мен>"
+	"мен" prn pers p1 sg nom @nsubj #2->6
+	"мен" prn pers p1 sg nom @advcl #2->6
+"<болсам>"
+	"бол" VERB @cop #3->2
+	"бол" v iv gna_cond p1 sg @cop #3->2
+"<қырықтың>"
+	"қырық" NUM @nmod:poss #4->5
+	"қырық" num subst gen @nmod:poss #4->5
+"<екеуіне>"
+	"екі" NUM @iobj #5->6
+	"екеу" prn qnt px3sp dat @iobj #5->6
+	"екеу" num coll subst px3sp dat @iobj #5->6
+"<келдім>"
+	"кел" v iv ifi p1 sg @root #6->0
+"<.>"
+	"." sent @punct #7->6
+¶

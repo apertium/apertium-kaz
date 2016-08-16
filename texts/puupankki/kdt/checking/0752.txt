@@ -1,0 +1,36 @@
+"<«>"
+	"«" lquot @punct #1->7
+"<Олай>"
+	"ол" prn dem adv @advmod #2->7
+	"олай" adv @advmod #2->7
+	"ол" prn dem adv @advcl #2->7
+	"олай" adv @advcl #2->7
+"<болса>"
+	"бол" VERB @cop #3->2
+	"бол" v iv gna_cond p3 pl @cop #3->2
+	"бол" v iv gna_cond p3 sg @cop #3->2
+"<,>"
+	"," cm @punct #4->2
+"<бұл>"
+	"бұл" prn dem nom @nsubj #5->7
+"<ескеретін>"
+	"ескер" v tv gpr_impf @acl:relcl #6->7
+"<жер>"
+	"жер" n nom @ccomp #7->10
+"<екен>"
+	"е" cop aor evid p3 sg @cop #8->7
+"<»>"
+	"»" rquot @punct #9->7
+"<деп>"
+	"де" v tv gna_perf @advcl #10->13
+"<Байжан>"
+	"Байжан" np ant m nom @nsubj #11->13
+"<ішінен>"
+	"іш" n px3sp abl @nmod #12->13
+"<ойлап>"
+	"ойла" v tv prc_perf @root #13->0
+"<қойды>"
+	"қой" vaux ifi p3 sg @aux #14->13
+"<.>"
+	"." sent @punct #15->13
+¶

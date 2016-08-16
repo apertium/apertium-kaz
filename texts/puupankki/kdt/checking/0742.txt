@@ -1,0 +1,31 @@
+"<Азырақ>"
+	"аз" adj comp advl @advmod #1->3
+"<дәреже>"
+	"дәреже" n nom @nsubj #2->3
+"<біткен>"
+	"біт" v iv gpr_past @acl:relcl #3->4
+"<кісі>"
+	"кісі" n nom @nsubj #4->12
+	"кіс" n px3sp nom @nsubj #4->12
+"<->"
+	"-" guio @punct #5->4
+"<бай>"
+	"бай" n attr @conj #6->8
+"<,>"
+	"," cm @punct #7->8
+"<қара>"
+	"қара" adj @amod #8->9
+"<кісіні>"
+	"кісі" n acc @dobj #9->11
+"<кісілікке>"
+	"кісілік" n dat @iobj #10->11
+"<алудан>"
+	"ал" v tv ger abl @ccomp #11->12
+"<кетіп>"
+	"кет" v tv prc_perf @root #12->0
+"<барады>"
+	"бар" AUX @aux #13->12
+	"бар" v iv aor p3 sg @aux #13->12
+"<.>"
+	"." sent @punct #14->12
+¶

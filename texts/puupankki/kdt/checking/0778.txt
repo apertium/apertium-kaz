@@ -1,0 +1,29 @@
+"<Республикадағы>"
+	"республика" n loc attr @amod #1->2
+"<сайлау>"
+	"сайлау" n nom @nsubj #2->12
+"<Республика>"
+	"Республика" PROPN @nmod:poss #3->4
+	"республика" n nom @nmod:poss #3->4
+"<азаматының>"
+	"азамат" n px3sp gen @nmod:poss #4->8
+"<сайлау>"
+	"сайла" v tv ger nom @conj #5->7
+"<және>"
+	"және" cnjcoo @cc #6->7
+"<сайлану>"
+	"сайла" VERB @acl #7->8
+	"сайла" v tv pass ger nom @acl #7->8
+"<құқығын>"
+	"құқық" n px3sp acc @dobj #8->11
+"<еркін>"
+	"еркін" adv @advmod #9->11
+"<жүзеге>"
+	"жүзе" n dat @iobj #10->11
+"<асыруына>"
+	"асыр" v tv ger px3sp dat @ccomp #11->12
+"<негізделеді>"
+	"негізде" v tv pass aor p3 sg @root #12->0
+"<.>"
+	"." sent @punct #13->12
+¶

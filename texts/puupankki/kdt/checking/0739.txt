@@ -1,0 +1,33 @@
+"<Ауылындағы>"
+	"ауыл" n px3sp loc attr @amod #1->2
+"<басқалары>"
+	"басқа" NOUN @nmod:poss #2->10
+	"басқа" adj subst pl px3sp nom @nmod:poss #2->10
+"<,>"
+	"," cm @punct #3->2
+"<әр>"
+	"әр" det qnt @det #4->5
+"<қайсысының>"
+	"қайсы" prn itg px3sp gen @nmod:poss #5->6
+"<дәулеті>"
+	"дәулет" n px3sp nom @nsubj #6->7
+"<шағын>"
+	"шағын" adj @amod #7->8
+"<болғандықтан>"
+	"бол" VERB @advcl #8->11
+	"бол" v iv ger_perf abl @advcl #8->11
+"<,>"
+	"," cm @punct #9->8
+"<шамасы>"
+	"шама" n px3sp nom @nsubj #10->11
+"<келмейтін>"
+	"келме" VERB @root #11->0
+	"кел" v iv neg gpr_impf subst nom @root #11->0
+	"кел" v iv neg gpr_impf @root #11->0
+"<болды>"
+	"бол" AUX @aux #12->11
+	"бол" v iv ifi p3 sg @aux #12->11
+	"бол" vaux ifi p3 sg @aux #12->11
+"<.>"
+	"." sent @punct #13->11
+¶

@@ -1,0 +1,43 @@
+"<Шешесі>"
+	"шеше" n px3sp nom @nsubj #1->17
+"<Жамалдың>"
+	"Жамал" np ant f gen @nsubj #2->16
+"<бір>"
+	"бір" det ind @det #3->4
+"<қағаз>"
+	"қағаз" n nom @dobj #4->5
+"<жазып>"
+	"жаз" v tv prc_perf @advcl #5->16
+"<отырып>"
+	"отыр" vaux gna_perf @aux #6->5
+"<,>"
+	"," cm @punct #7->16
+"<қасына>"
+	"қас" n px3sp dat @nmod #8->13
+"<бір>"
+	"бір" det ind @det #9->10
+"<хат>"
+	"хат" n nom @dobj #10->11
+"<танитын>"
+	"таны" v tv gpr_impf @acl:relcl #11->12
+"<кісі>"
+	"кісі" n nom @nsubj #12->13
+"<барса>"
+	"бар" v iv gna_cond p3 sg @advcl #13->16
+"<жасыра>"
+	"жасыр" v tv prc_impf @advcl #14->16
+"<қойып>"
+	"қой" vaux gna_perf @aux #15->14
+"<жүргенін>"
+	"жүр" v iv ger_past px3sp acc @ccomp #16->17
+"<көруші>"
+	"көр" VERB @root #17->0
+	"көр" v tv gpr_pot subst nom @root #17->0
+	"көр" v tv gpr_pot @root #17->0
+	"көруші" n nom @root #17->0
+"<еді>"
+	"е" AUX @aux #18->17
+	"е" cop ifi p3 sg @aux #18->17
+"<.>"
+	"." sent @punct #19->17
+¶

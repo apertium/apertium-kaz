@@ -1,0 +1,41 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<елде>"
+	"ел" n loc @nmod #2->5
+"<ойын>"
+	"ойын" n attr @compound #3->5
+"<->"
+	"-" guio @punct #4->5
+"<сауық>"
+	"сауық" n nom @advcl #5->17
+"<болғанда>"
+	"бол" VERB @cop #6->5
+	"бол" v iv ger_past loc @cop #6->5
+"<бір>"
+	"бір" num @nummod #7->8
+"<қыз>"
+	"қыз" n nom @conj #8->11
+"<,>"
+	"," cm @punct #9->11
+"<бір>"
+	"бір" num @nummod #10->11
+"<жігіттен>"
+	"жігіт" n abl @nmod #11->13
+"<қатар>"
+	"қатар" ADV @advmod #12->13
+"<отырғызатын>"
+	"отырғыз" v iv gpr_impf @acl:relcl #13->16
+	"отырғыз" v tv gpr_impf @acl:relcl #13->16
+"<әлі>"
+	"әлі" adv @advmod #14->15
+"<қалмаған>"
+	"қал" v iv neg gpr_past @acl:relcl #15->16
+"<әдет>"
+	"әдет" n nom @nsubj #16->17
+"<бар>"
+	"бар" adj @root #17->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #18->17
+"<.>"
+	"." sent @punct #19->17
+¶

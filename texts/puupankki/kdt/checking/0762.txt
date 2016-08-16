@@ -1,0 +1,33 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<хабарды>"
+	"хабар" n acc @dobj #2->3
+"<естігеннен>"
+	"есті" v tv ger_past abl @advcl #3->10
+"<кейін>"
+	"кейін" post @case #4->3
+"<Жамалдың>"
+	"Жамал" np ant f gen @nmod:poss #5->6
+"<қайғысы>"
+	"қайғы" n px3sp nom @nsubj #6->10
+"<бұрынғыдан>"
+	"бұрынғы" adj subst abl @iobj #7->10
+"<үш>"
+	"үш" NUM @nmod-num #8->10
+	"үш" num @nmod-num #8->10
+	"үш" n nom @nmod-num #8->10
+	"үш" num subst nom @nmod-num #8->10
+"<есе>"
+	"есе" ADV @advmod #9->10
+"<артты>"
+	"арт" v iv ifi p3 sg @ccomp #10->11
+"<деуге>"
+	"де" v tv ger dat @ccomp #11->12
+"<лайық>"
+	"лайық" ADV @root #12->0
+	"лайық" adj @root #12->0
+"<болды>"
+	"бол" v iv ifi p3 sg @cop #13->12
+"<.>"
+	"." sent @punct #14->12
+¶

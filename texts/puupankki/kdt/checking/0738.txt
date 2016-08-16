@@ -1,0 +1,56 @@
+"<Мұғалім>"
+	"мұғалім" n nom @nsubj #1->4
+"<Сәрсенбайдың>"
+	"Сәрсенбай" np ant m gen @nmod:poss #2->3
+"<үйінде>"
+	"үй" n px3sp loc @nmod #3->4
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #4->5
+"<уақытта>"
+	"уақыт" n loc @nmod #5->10
+"<Шолпан>"
+	"Шолпан" np al nom @nsubj #6->10
+	"Шолпан" np ant f nom @nsubj #6->10
+"<бір>"
+	"бір" num @nummod #7->9
+"<ұл>"
+	"ұл" n nom @amod-nmod #8->9
+"<перзент>"
+	"перзент" n nom @dobj #9->10
+"<тауып>"
+	"тап" v tv gna_perf @advcl #10->25
+"<,>"
+	"," cm @punct #11->10
+"<сол>"
+	"сол" det dem @det #12->19
+"<себепті>"
+	"себеп" n acc @advmod:adp #13->12
+	"себеп" n @advmod:adp #13->12
+		"лы" post @advmod-adp #13->12
+"<«>"
+	"«" lquot @punct #14->16
+"<аяғы>"
+	"аяқ" n px3sp nom @nsubj #15->16
+"<құтты>"
+	"құтты" adj @ccomp #16->19
+"<болды>"
+	"бол" v iv ifi p3 sg @cop #17->16
+"<»>"
+	"»" rquot @punct #18->16
+"<деп>"
+	"де" v tv gna_perf @advcl #19->25
+"<,>"
+	"," cm @punct #20->19
+"<мұғалімді>"
+	"мұғалім" n acc @dobj #21->25
+"<Сәрсенбай>"
+	"Сәрсенбай" np ant m nom @nsubj #22->25
+"<жақсы>"
+	"жақсы" adj @amod #23->24
+"<қаражатпен>"
+	"қаражат" n ins @nmod #24->25
+"<қайтарды>"
+	"қайтар" v tv ifi p3 sg @root #25->0
+"<.>"
+	"." sent @punct #26->25
+¶

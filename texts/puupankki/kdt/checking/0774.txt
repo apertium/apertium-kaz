@@ -1,0 +1,20 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<жігітті>"
+	"жігіт" n acc @dobj #2->5
+"<біздің>"
+	"біз" prn pers p1 pl gen @amod #3->4
+"<Жамал>"
+	"Жамал" np ant f nom @nsubj #4->5
+"<танымайтын>"
+	"таны" VERB @root #5->0
+	"таны" v tv neg gpr_impf @root #5->0
+	"таны" v tv neg pih p3 pl @root #5->0
+	"таны" v tv neg pih p3 sg @root #5->0
+	"таны" v tv neg gpr_impf subst nom @root #5->0
+"<еді>"
+	"е" AUX @aux #6->5
+	"е" cop ifi p3 sg @aux #6->5
+"<.>"
+	"." sent @punct #7->5
+¶

@@ -1,0 +1,31 @@
+"<Шолпан>"
+	"Шолпан" np al nom @nsubj #1->11
+	"Шолпан" np ant f nom @nsubj #1->11
+"<ашуланып>"
+	"ашулан" v iv gna_perf @advcl #2->11
+"<:>"
+	":" sent @punct #3->2
+"<->"
+	"-" guio @punct #4->7
+"<Сөйтіп>"
+	"сөйт" v iv prc_perf @advcl #5->7
+"<жүрмей>"
+	"жүр" AUX @aux #6->5
+	"жүр" vaux neg gna_perf @aux #6->5
+"<қайтсін>"
+	"қайт" VERB @ccomp #7->11
+	"қайт" v iv opt p3 pl @ccomp #7->11
+	"қайт" v iv opt p3 sg @ccomp #7->11
+	"қайт" v tv opt p3 pl @ccomp #7->11
+	"қайт" v tv opt p3 sg @ccomp #7->11
+"<?>"
+	"?" sent @punct #8->7
+"<!>"
+	"!" sent @punct #9->7
+"<->"
+	"-" guio @punct #10->11
+"<деді>"
+	"де" v tv ifi p3 sg @root #11->0
+"<.>"
+	"." sent @punct #12->11
+¶
