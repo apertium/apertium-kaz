@@ -1,0 +1,44 @@
+"<Бұл>"
+	"бұл" det dem @det #1->2
+"<құжат>"
+	"құжат" n nom @nsubj #2->7
+"<байқаушыны>"
+	"байқаушы" n acc @dobj #3->4
+"<жіберген>"
+	"жібер" v tv gpr_past @acl:relcl #4->5
+"<ұйымның>"
+	"ұйым" n gen @nmod:poss #5->6
+"<мөрімен>"
+	"мөр" n px3sp ins @nmod #6->7
+"<расталады>"
+	"раста" v tv pass aor p3 sg @root #7->0
+"<және>"
+	"және" SCONJ @mark #8->17
+	"және" cnjcoo @x #8->17
+"<ол>"
+	"ол" prn pers p3 sg nom @nsubj #9->17
+	"ол" prn dem nom @nsubj #9->17
+"<байқаушының>"
+	"байқаушы" n gen @nmod:poss #10->12
+"<жеке>"
+	"жеке" adj @amod #11->12
+"<басын>"
+	"бас" n px3sp acc @dobj #12->13
+"<куәландыратын>"
+	"куәландыр" v tv gpr_impf @acl:relcl #13->14
+"<құжатты>"
+	"құжат" n acc @dobj #14->15
+"<көрсеткен>"
+	"көрсет" v tv gpr_past @acl:relcl #15->16
+"<кезде>"
+	"кез" n loc @nmod #16->17
+"<жарамды>"
+	"жарамды" adj @parataxis #17->7
+"<болады>"
+	"бол" AUX @aux #18->17
+	"бол" v iv aor p3 sg @aux #18->17
+	"бол" v iv aor p3 sg @cop #18->17
+	"бол" vaux aor p3 sg @aux #18->17
+"<.>"
+	"." sent @punct #19->17
+¶

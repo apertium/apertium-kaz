@@ -1,0 +1,44 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #2->3
+"<қызметі>"
+	"қызмет" n px3sp nom @nsubj #3->20
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #4->5
+"<комиссиясын>"
+	"комиссия" n px3sp acc @dobj #5->6
+"<құратын>"
+	"құр" v tv gpr_impf @acl:relcl #6->7
+"<органның>"
+	"орган" n gen @nmod:poss #7->8
+"<шешімі>"
+	"шешім" n px3sp nom @conj #8->16
+"<бойынша>"
+	"бойынша" post @case #9->8
+"<немесе>"
+	"немесе" cnjcoo @cc #10->16
+"<жоғары>"
+	"жоғары" adv @advmod #11->12
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #12->13
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #13->14
+"<комиссиясы>"
+	"комиссия" n px3sp nom @nmod:poss #14->15
+"<өтінішінің>"
+	"өтініш" n px3sp gen @nmod:poss #15->16
+"<негізінде>"
+	"негіз" n px3sp loc @nmod #16->20
+"<сот>"
+	"сот" n nom @nmod:poss #17->18
+"<шешімімен>"
+	"шешім" n px3sp ins @nmod #18->20
+"<тоқтатылуы>"
+	"тоқтат" v tv pass ger px3sp nom @ccomp #19->20
+"<мүмкін>"
+	"мүмкін" adj @root #20->0
+		"е" cop aor p3 sg @cop #21->20
+"<.>"
+	"." sent @punct #22->20
+¶

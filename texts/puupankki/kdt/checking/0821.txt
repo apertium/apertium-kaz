@@ -1,0 +1,56 @@
+"<Шет>"
+	"шет" n attr @amod #1->2
+"<мемлекеттер>"
+	"мемлекет" n pl nom @conj #2->5
+"<мен>"
+	"мен" cnjcoo @cc #3->5
+"<халықаралық>"
+	"халықаралық" adj @amod #4->5
+"<ұйымдардың>"
+	"ұйым" n pl gen @nmod:poss #5->7
+"<аккредиттелген>"
+	"аккредитте" v tv pass gpr_past @acl:relcl #6->7
+"<байқаушыларына>"
+	"байқаушы" n pl px3sp dat @iobj #7->25
+"<олардың>"
+	"ол" prn dem pl gen @nmod:poss #8->10
+	"олар" prn pers p3 pl gen @nmod:poss #8->10
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #9->10
+"<науқанын>"
+	"науқан" n px3sp acc @dobj #10->11
+"<өткізу>"
+	"өт" VERB @acl-poss #11->12
+	"өткіз" v tv ger nom @acl-poss #11->12
+"<кезеңіндегі>"
+	"кезең" n px3sp loc attr @amod #12->13
+"<қызметі>"
+	"қызмет" n px3sp nom @iobj #13->15
+"<үшін>"
+	"үшін" post @case #14->13
+"<негіз>"
+	"негіз" n nom @conj #15->22
+"<болып>"
+	"бол" v iv prc_perf @cop #16->15
+"<табылатын>"
+	"тап" v tv pass gpr_impf @aux #17->15
+"<,>"
+	"," cm @punct #18->22
+"<Орталық>"
+	"орталық" adj @amod #19->20
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #20->21
+"<комиссиясы>"
+	"комиссия" n px3sp nom @nsubj #21->22
+"<белгілеген>"
+	"белгіле" v tv gpr_past @acl:relcl #22->23
+"<үлгідегі>"
+	"үлгі" n loc attr @amod #23->24
+"<куәлік>"
+	"куәлік" n nom @nsubj #24->25
+"<беріледі>"
+	"беріл" v tv aor p3 sg @root #25->0
+	"бер" v tv pass aor p3 sg @root #25->0
+"<.>"
+	"." sent @punct #26->25
+¶

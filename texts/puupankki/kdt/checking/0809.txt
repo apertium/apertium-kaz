@@ -1,0 +1,46 @@
+"<Құжаттар>"
+	"құжат" n pl nom @nsubj #1->20
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #2->3
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #3->4
+"<төрағасына>"
+	"төраға" n px3sp dat @conj #4->8
+"<не>"
+	"не" cnjcoo @cc #5->8
+"<оны>"
+	"ол" prn dem acc @dobj #6->7
+	"ол" prn pers p3 sg acc @dobj #6->7
+"<алмастыратын>"
+	"алмастыр" v tv gpr_impf @acl:relcl #7->8
+"<адамға>"
+	"адам" n dat @iobj #8->20
+"<байқаушы>"
+	"байқаушы" n nom @amod-nmod #9->11
+"<туралы>"
+	"туралы" post @case #10->9
+"<деректерді>"
+	"дерек" n pl acc @dobj #11->13
+"<есепке>"
+	"есеп" n dat @nmod #12->13
+"<алу>"
+	"ал" VERB @acl #13->14
+	"ал" v tv ger nom @acl #13->14
+"<журналына>"
+	"журнал" n px3sp dat @iobj #14->15
+"<енгізу>"
+	"енгіз" v tv ger nom @advcl #15->18
+"<арқылы>"
+	"арқылы" post @case #16->15
+"<оны>"
+	"ол" prn dem acc @dobj #17->20
+	"ол" prn pers p3 sg acc @dobj #17->20
+"<тіркеу>"
+	"тірке" v tv ger nom @ccomp #18->20
+"<үшін>"
+	"үшін" post @case #19->18
+"<көрсетіледі>"
+	"көрсет" v tv pass aor p3 sg @root #20->0
+"<.>"
+	"." sent @punct #21->20
+¶

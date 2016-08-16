@@ -1,0 +1,64 @@
+"<Жоғары>"
+	"жоғары" adv @advmod #1->2
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #2->4
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #3->4
+"<комиссиясы>"
+	"комиссия" n px3sp nom @nsubj #4->30
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #5->6
+"<комиссиясын>"
+	"комиссия" n px3sp acc @dobj #6->7
+"<құратын>"
+	"құр" v tv gpr_impf @acl:relcl #7->8
+"<орган>"
+	"орган" n nom @nsubj #8->22
+"<осы>"
+	"осы" det dem @det #9->11
+"<Конституциялық>"
+	"конституциялық" adj @amod #10->11
+"<заңның>"
+	"заң" n gen @nmod:poss #11->14
+"<10>"
+	"10" num @nummod #12->14
+"<->"
+	"-" guio @punct #13->14
+"<бабында>"
+	"бап" n px3sp loc @nmod #14->22
+"<белгіленген>"
+	"белгіле" v tv pass gpr_past @acl:relcl #15->16
+	"белгілен" v tv gpr_past @acl:relcl #15->16
+"<тәртіппен>"
+	"тәртіп" n ins @nmod #16->30
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #17->18
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #18->19
+"<мүшесін>"
+	"мүше" n px3sp acc @dobj #19->20
+"<сайлағанға>"
+	"сайла" v tv ger_past dat @advcl #20->22
+"<дейін>"
+	"дейін" post @case #21->20
+"<шығып>"
+	"шық" v tv prc_perf @acl:relcl #22->25
+"<қалған>"
+	"қал" vaux gpr_past @aux #23->22
+"<комиссия>"
+	"комиссия" n nom @nmod:poss #24->25
+"<мүшесінің>"
+	"мүше" n px3sp gen @nmod:poss #25->26
+"<орнына>"
+	"орын" n px3sp dat @nmod #26->30
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #27->28
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #28->29
+"<мүшесін>"
+	"мүше" n px3sp acc @dobj #29->30
+"<тағайындайды>"
+	"тағайында" v tv aor p3 sg @root #30->0
+"<.>"
+	"." sent @punct #31->30
+¶

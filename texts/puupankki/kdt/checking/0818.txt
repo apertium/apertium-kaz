@@ -1,0 +1,29 @@
+"<Шет>"
+	"шет" n nom @amod-nmod #1->2
+"<мемлекеттер>"
+	"мемлекет" n pl nom @conj #2->10
+"<мен>"
+	"мен" cnjcoo @cc #3->10
+"<халықаралық>"
+	"халықаралық" adj @amod #4->5
+"<ұйымдардың>"
+	"ұйым" n pl gen @nmod:poss #5->6
+"<байқаушылары>"
+	"байқаушы" n pl px3sp nom @amod-nmod #6->10
+	"байқаушы" n pl px3sp nom @acl:relcl #6->10
+"<болып>"
+	"бол" v iv prc_perf @cop #7->6
+"<табылмайтын>"
+	"тап" AUX @aux #8->6
+	"тап" v tv pass neg gpr_impf @aux #8->6
+"<жеке>"
+	"жеке" adj @amod #9->10
+"<тұлғалар>"
+	"тұлға" n pl nom @nsubj #10->12
+"<аккредиттеуге>"
+	"аккредитте" v tv ger dat @ccomp #11->12
+"<жатпайды>"
+	"жат" v iv neg aor p3 sg @root #12->0
+"<.>"
+	"." sent @punct #13->12
+¶

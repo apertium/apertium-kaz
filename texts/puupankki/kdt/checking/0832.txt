@@ -1,0 +1,42 @@
+"<Егер>"
+	"егер" CONJ @cc #1->12
+	"егер" cnjsub @cc #1->12
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #2->3
+"<комиссияларының>"
+	"комиссия" n pl px3sp gen @nmod:poss #3->4
+"<отырыстарына>"
+	"отырыс" n pl px3sp dat @nmod #4->12
+"<комиссия>"
+	"комиссия" n nom @nmod:poss #5->6
+"<мүшелері>"
+	"мүше" n pl px3sp nom @nmod:poss #6->8
+"<жалпы>"
+	"жалпы" adj @amod #7->8
+"<санының>"
+	"сан" n px3sp gen @nmod:poss #8->11
+"<кемінде>"
+	"кем" NOUN @amod-nmod #9->11
+	"кем" adj subst px3sp loc @x #9->11
+"<үштен>"
+	"үш" NUM @conj #10->11
+	"үш" num subst abl @conj #10->11
+"<екісі>"
+	"екі" num subst px3sp nom @nsubj #11->12
+"<қатысса>"
+	"қат" v iv coop gna_cond p3 sg @advcl #12->15
+	"қатыс" v iv gna_cond p3 sg @advcl #12->15
+"<,>"
+	"," cm @punct #13->15
+"<олар>"
+	"ол" prn dem pl nom @nsubj #14->15
+	"олар" prn pers p3 pl nom @nsubj #14->15
+"<заңды>"
+	"заңды" adj @root #15->0
+"<болады>"
+	"бол" AUX @aux #16->15
+	"бол" v iv aor p3 pl @aux #16->15
+	"бол" v iv aor p3 pl @cop #16->15
+"<.>"
+	"." sent @punct #17->15
+¶

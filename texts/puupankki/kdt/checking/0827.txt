@@ -1,0 +1,52 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссияларының>"
+	"комиссия" n pl px3sp gen @nmod:poss #2->7
+"<мемлекеттік>"
+	"мемлекеттік" adj @nmod:poss #3->4
+	"мемлекеттік" adj advl @nmod:poss #3->4
+	"мемлекеттік" adj subst nom @nmod:poss #3->4
+"<қызметшілер>"
+	"қызметші" n pl nom @amod-nmod #4->7
+	"қызметші" n pl nom @x #4->7
+"<болып>"
+	"бол" v iv prc_perf @cop #5->4
+"<табылатын>"
+	"тап" AUX @aux #6->4
+	"тап" v tv pass gpr_impf @aux #6->4
+"<мүшелерінің>"
+	"мүше" n pl px3sp gen @nmod:poss #7->20
+"<сайлауды>"
+	"сайлау" n acc @dobj #8->11
+"<әзірлеу>"
+	"әзірле" VERB @conj #9->11
+	"әзірле" v tv ger nom @conj #9->11
+"<мен>"
+	"мен" cnjcoo @cc #10->11
+"<өткізу>"
+	"өт" VERB @acl-poss #11->12
+	"өткіз" v tv ger nom @x #11->12
+"<кезеңінде>"
+	"кезең" n px3sp loc @nmod #12->21
+"<өздерінің>"
+	"өз" prn ref px3pl gen @nmod:poss #13->16
+"<негізгі>"
+	"негізгі" adj @amod #14->15
+"<жұмыс>"
+	"жұмыс" n nom @nmod:poss #15->16
+"<орны>"
+	"орын" n px3sp nom @nmod #16->21
+"<бойынша>"
+	"бойынша" post @case #17->16
+"<орташа>"
+	"орташа" adj @amod #18->20
+"<айлық>"
+	"айлық" n nom @amod-nmod #19->20
+"<жалақысы>"
+	"жалақы" n px3sp nom @nsubj #20->21
+"<сақталады>"
+	"сақтал" v iv aor p3 sg @root #21->0
+	"сақта" v tv pass aor p3 sg @root #21->0
+"<.>"
+	"." sent @punct #22->21
+¶

@@ -1,0 +1,105 @@
+"<Егер>"
+	"егер" SCONJ @mark #1->9
+	"егер" cnjsub @mark #1->9
+"<осы>"
+	"осы" det dem @det #2->4
+"<Конституциялық>"
+	"конституциялық" adj @amod #3->4
+"<заңда>"
+	"заң" n loc @nmod #4->9
+"<шағым>"
+	"шағым" n nom @dobj #5->6
+"<жасаудың>"
+	"жаса" VERB @acl-poss #6->8
+	"жаса" v tv ger gen @x #6->8
+"<өзге>"
+	"өзге" adj @amod #7->8
+"<мерзімдері>"
+	"мерзім" n pl px3sp nom @nsubj #8->9
+"<белгіленбесе>"
+	"белгіле" v tv pass neg gna_cond p3 pl @advcl #9->47
+	"белгіле" v tv pass neg gna_cond p3 sg @advcl #9->47
+	"белгілен" v tv neg gna_cond p3 pl @advcl #9->47
+	"белгілен" v tv neg gna_cond p3 sg @advcl #9->47
+"<,>"
+	"," cm @punct #10->47
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #11->12
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #12->13
+"<шешімдеріне>"
+	"шешім" n pl px3sp dat @conj #13->17
+"<және>"
+	"және" cnjcoo @cc #14->17
+"<іс>"
+	"іс" n attr @compound #15->17
+"<->"
+	"-" guio @punct #16->17
+"<әрекеттеріне>"
+	"әрекет" n pl px3sp dat @iobj #17->22
+"<(>"
+	"(" lpar @punct #18->19
+"<әрекетсіздігіне>"
+	"әрекетсіздік" n px3sp dat @appos #19->17
+"<)>"
+	")" rpar @punct #20->19
+"<шешім>"
+	"шешім" n nom @nsubj #21->22
+"<қабылданған>"
+	"қабылдан" v tv gpr_past @conj #22->30
+	"қабылда" v tv pass gpr_past @conj #22->30
+"<немесе>"
+	"немесе" cnjcoo @cc #23->30
+"<іс>"
+	"іс" n attr @compound #24->26
+"<->"
+	"-" guio @punct #25->26
+"<әрекет>"
+	"әрекет" n nom @nsubj #26->30
+"<(>"
+	"(" lpar @punct #27->28
+"<әрекетсіздік>"
+	"әрекетсіздік" n nom @appos #28->26
+"<)>"
+	")" rpar @punct #29->28
+"<жасалған>"
+	"жаса" v tv pass gpr_past @acl:relcl #30->31
+"<күннен>"
+	"күн" n abl @nmod #31->32
+"<бастап>"
+	"баста" v tv gna_perf @advcl #32->35
+"<он>"
+	"он" num @nummod #33->34
+"<күннің>"
+	"күн" n gen @nmod:poss #34->35
+"<ішінде>"
+	"іш" n px3sp loc @nmod #35->47
+"<жоғары>"
+	"жоғары" adv @advmod #36->37
+"<тұрған>"
+	"тұр" v iv gpr_past @acl:relcl #37->39
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #38->39
+"<комиссиясына>"
+	"комиссия" n px3sp dat @conj #39->44
+"<және>"
+	"және" cnjcoo @cc #40->44
+"<(>"
+	"(" lpar @punct #41->42
+"<немесе>"
+	"немесе" cnjcoo @cc #42->39
+"<)>"
+	")" rpar @punct #43->42
+"<сотқа>"
+	"сот" n dat @iobj #44->47
+"<шағым>"
+	"шақ" n px1sg nom @nsubj #45->47
+	"шағым" n nom @nsubj #45->47
+"<жасалуы>"
+	"жаса" v tv pass ger px3sp nom @ccomp #46->47
+"<мүмкін>"
+	"мүмкін" adj @root #47->0
+		"е" cop aor p3 sg @cop #48->47
+"<.>"
+	"." sent @punct #49->47
+¶

@@ -1,0 +1,65 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссияларының>"
+	"комиссия" n pl px3sp gen @nmod:poss #2->7
+"<өз>"
+	"өз" det ref @det #3->4
+"<құзыретінің>"
+	"құзырет" n px3sp gen @nmod:poss #4->5
+"<шегінде>"
+	"шек" n px3sp loc @nmod #5->6
+"<қабылдаған>"
+	"қабылда" v tv gpr_past @acl:relcl #6->7
+"<шешімдері>"
+	"шешім" n pl px3sp nom @nsubj #7->31
+"<тиісті>"
+	"тиісті" adj @amod #8->9
+"<аумақтағы>"
+	"аумақ" n loc attr @amod #9->12
+"<барлық>"
+	"барлық" det qnt @det #10->12
+"<мемлекеттік>"
+	"мемлекеттік" adj @amod #11->12
+"<органдардың>"
+	"орган" n pl gen @conj #12->28
+"<,>"
+	"," cm @punct #13->28
+"<ұйымдардың>"
+	"ұйым" n pl gen @conj #14->28
+"<,>"
+	"," cm @punct #15->28
+"<жергілікті>"
+	"жергілікті" adj @amod #16->21
+"<өзін>"
+	"өз" prn ref px3sp acc @compound #17->19
+"<->"
+	"-" guio @punct #18->19
+"<өзі>"
+	"өз" prn ref px3sp nom @dobj #19->20
+"<басқару>"
+	"басқар" VERB @acl #20->21
+	"басқар" v tv ger nom @acl #20->21
+"<органдарының>"
+	"орган" n pl px3sp gen @conj #21->28
+"<,>"
+	"," cm @punct #22->28
+"<сондай-ақ>"
+	"сондай" CONJ @cc #23->26
+	"сондай-ақ" cnjcoo @cc #23->26
+"<олардың>"
+	"ол" prn dem pl gen @nmod:poss #24->26
+	"олар" prn pers p3 pl gen @nmod:poss #24->26
+"<лауазымды>"
+	"лауазымды" adj @amod #25->26
+"<адамдарының>"
+	"адам" n pl px3sp gen @nsubj #26->27
+"<орындауы>"
+	"орында" v tv ger px3sp nom @ccomp #27->29
+"<үшін>"
+	"үшін" post @case #28->27
+"<міндетті>"
+	"міндетті" adj @root #29->0
+		"е" cop aor p3 sg @cop #30->29
+"<.>"
+	"." sent @punct #31->29
+¶

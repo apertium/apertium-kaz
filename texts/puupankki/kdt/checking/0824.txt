@@ -1,0 +1,41 @@
+"<Көрсетілген>"
+	"көрсет" v tv pass gpr_past @acl:relcl #1->2
+"<мерзімдер>"
+	"мерзім" n pl nom @nsubj #2->3
+"<өткеннен>"
+	"өт" v iv ger_past abl @advcl #3->18
+	"өт" v tv ger_past abl @advcl #3->18
+"<соң>"
+	"соң" post @case #4->3
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #5->6
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #6->7
+"<шешіміне>"
+	"шешім" n px3sp dat @conj #7->11
+"<және>"
+	"және" cnjcoo @cc #8->11
+"<іс>"
+	"іс" n attr @compound #9->11
+"<->"
+	"-" guio @punct #10->11
+"<әрекеттеріне>"
+	"әрекет" n pl px3sp dat @iobj #11->15
+"<(>"
+	"(" lpar @punct #12->13
+"<әрекетсіздігіне>"
+	"әрекетсіздік" n px3sp dat @appos #13->11
+"<)>"
+	")" rpar @punct #14->13
+"<берілген>"
+	"бер" v tv pass gpr_past @acl:relcl #15->16
+	"беріл" v tv gpr_past @acl:relcl #15->16
+"<өтініш>"
+	"өтініш" n nom @dobj #16->17
+"<қарауға>"
+	"қара" v tv ger dat @ccomp #17->18
+"<жатпайды>"
+	"жат" v iv neg aor p3 sg @root #18->0
+"<.>"
+	"." sent @punct #19->18
+¶

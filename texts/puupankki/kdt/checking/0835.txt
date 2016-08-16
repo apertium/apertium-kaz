@@ -1,0 +1,58 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссияларының>"
+	"комиссия" n pl px3sp gen @nmod:poss #2->3
+"<құрамында>"
+	"құрам" n px3sp loc @nmod #3->5
+"<өкілі>"
+	"өкіл" n px3sp nom @nsubj #4->5
+"<жоқ>"
+	"жоқ" adj @acl:relcl #5->7
+"<саяси>"
+	"саяси" adj @amod #6->7
+"<партиялар>"
+	"партия" n pl nom @nmod:poss #7->9
+"<сайлау>"
+	"сайлау" n nom @amod-nmod #8->9
+	"сайлау" n nom @x #8->9
+"<науқанын>"
+	"науқан" n px3sp acc @dobj #9->12
+"<даярлау>"
+	"даярла" VERB @conj #10->12
+	"даярла" v tv ger nom @conj #10->12
+"<және>"
+	"және" cnjcoo @cc #11->12
+"<өткізу>"
+	"өт" VERB @acl-poss #12->13
+	"өткіз" v tv ger nom @acl-poss #12->13
+"<кезеңіне>"
+	"кезең" n px3sp dat @iobj #13->18
+"<кеңесші>"
+	"кеңесші" n nom @nsubj #14->25
+"<дауыс>"
+	"дауыс" n nom @nmod:poss #15->16
+"<құқығын>"
+	"құқық" n px3sp acc @dobj #16->18
+"<бере>"
+	"бер" VERB @advcl #17->18
+	"бер" v tv prc_impf @advcl #17->18
+"<отырып>"
+	"отыр" v iv gna_perf @advcl #18->25
+"<өз>"
+	"өз" det ref @det #19->20
+"<өкілін>"
+	"өкіл" n px3sp acc @dobj #20->24
+"<тиісті>"
+	"тиісті" adj @amod #21->23
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #22->23
+"<комиссиясына>"
+	"комиссия" n px3sp dat @iobj #23->24
+"<жіберуге>"
+	"жібер" v tv ger dat @ccomp #24->25
+"<құқылы>"
+	"құқылы" adj @root #25->0
+		"е" cop aor p3 sg @cop #26->25
+"<.>"
+	"." sent @punct #27->25
+¶

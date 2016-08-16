@@ -1,0 +1,44 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссияларының>"
+	"комиссия" n pl px3sp gen @nmod:poss #2->4
+"<өзге>"
+	"өзге" adj @amod #3->4
+"<мүшелеріне>"
+	"мүше" n pl px3sp dat @iobj #4->8
+"<осы>"
+	"осы" det dem @det #5->6
+"<кезеңде>"
+	"кезең" n loc @nmod #6->9
+"<сайлау>"
+	"сайлау" n nom @dobj #7->8
+"<өткізуге>"
+	"өткіз" v tv ger dat @ccomp #8->9
+"<бөлінген>"
+	"бөл" v tv pass gpr_past @acl:relcl #9->10
+	"бөлін" v tv gpr_past @acl:relcl #9->10
+"<қаражат>"
+	"қаражат" n nom @nmod:poss #10->11
+"<есебінен>"
+	"есеп" n px3sp abl @iobj #11->19
+"<кемінде>"
+	"кем" NOUN @amod-nmod #12->15
+	"кем" adj subst px3sp loc @amod-nmod #12->15
+"<ең>"
+	"ең" adv @advmod #13->14
+"<төменгі>"
+	"төменгі" adj @amod #14->16
+"<үш>"
+	"үш" num @nummod #15->16
+"<жалақы>"
+	"жалақы" n nom @nmod:poss #16->17
+"<мөлшерінде>"
+	"мөлшер" n px3sp loc @nmod #17->19
+"<жалақы>"
+	"жалақы" n nom @nsubj #18->19
+"<белгіленеді>"
+	"белгілен" v tv aor p3 sg @root #19->0
+	"белгіле" v tv pass aor p3 sg @root #19->0
+"<.>"
+	"." sent @punct #20->19
+¶

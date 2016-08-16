@@ -1,0 +1,54 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #2->3
+"<төрағасы>"
+	"төраға" n px3sp nom @conj #3->7
+"<,>"
+	"," cm @punct #4->7
+"<оны>"
+	"ол" prn dem acc @dobj #5->6
+	"ол" prn pers p3 sg acc @dobj #5->6
+"<алмастыратын>"
+	"алмастыр" v tv gpr_impf @acl:relcl #6->7
+"<адам>"
+	"адам" n nom @nsubj #7->23
+"<сенім>"
+	"сенім" n nom @nsubj #8->9
+"<білдірілген>"
+	"білдір" v tv pass gpr_past @acl:relcl #9->10
+"<адамдардың>"
+	"адам" n pl gen @conj #10->12
+"<,>"
+	"," cm @punct #11->12
+"<байқаушылардың>"
+	"байқаушы" n pl gen @nmod:poss #12->13
+"<өтініштері>"
+	"өтініш" n pl px3sp nom @nmod #13->16
+"<бойынша>"
+	"бойынша" post @case #14->13
+"<дауыстарды>"
+	"дауыс" n pl acc @dobj #15->16
+"<санау>"
+	"сана" VERB @acl-poss #16->17
+	"сана" v tv ger nom @x #16->17
+"<хаттамасына>"
+	"хаттама" n px3sp dat @iobj #17->22
+"<олардың>"
+	"ол" prn dem pl gen @nmod:poss #18->20
+	"олар" prn pers p3 pl gen @nmod:poss #18->20
+"<жасаған>"
+	"жаса" v tv gpr_past @acl:relcl #19->20
+"<актілерін>"
+	"акт" n pl px3sp acc @dobj #20->22
+"<қоса>"
+	"қос" VERB @advcl #21->22
+	"қос" v tv gna_impf @advcl #21->22
+"<беруге>"
+	"бер" v tv ger dat @ccomp #22->23
+"<міндетті>"
+	"міндетті" adj @root #23->0
+		"е" cop aor p3 sg @cop #24->23
+"<.>"
+	"." sent @punct #25->23
+¶

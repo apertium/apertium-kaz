@@ -1,0 +1,35 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссиясының>"
+	"комиссия" n px3sp gen @nmod:poss #2->3
+"<құрамына>"
+	"құрам" n px3sp dat @iobj #3->4
+"<ұсынылған>"
+	"ұсын" v tv pass gpr_past @acl:relcl #4->5
+	"ұсыныл" v iv gpr_past @acl:relcl #4->5
+"<адамдар>"
+	"адам" n pl nom @nsubj #5->13
+"<оның>"
+	"ол" PRON @nmod:poss #6->7
+	"ол" prn dem gen @nmod:poss #6->7
+	"ол" prn pers p3 sg gen @nmod:poss #6->7
+"<жұмысына>"
+	"жұмыс" n px3sp dat @iobj #7->8
+"<қатысуға>"
+	"қат" v iv coop ger dat @ccomp #8->9
+	"қатыс" v iv ger dat @ccomp #8->9
+"<келісетіні>"
+	"кел" v iv coop gpr_impf subst px3sp nom @acl:relcl #9->11
+	"келіс" v iv gpr_impf subst px3sp nom @acl:relcl #9->11
+"<туралы>"
+	"туралы" post @case #10->9
+"<өтініштерін>"
+	"өтініш" n pl px3sp acc @dobj #11->13
+"<қоса>"
+	"қос" VERB @advcl #12->13
+	"қос" v tv gna_impf @advcl #12->13
+"<береді>"
+	"бер" v tv aor p3 sg @root #13->0
+"<.>"
+	"." sent @punct #14->13
+¶

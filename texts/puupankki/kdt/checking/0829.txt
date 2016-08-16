@@ -1,0 +1,73 @@
+"<Сайлау>"
+	"сайлау" n nom @nmod:poss #1->2
+"<комиссиялары>"
+	"комиссия" n pl px3sp nom @nmod:poss #2->3
+"<мүшелерінің>"
+	"мүше" n pl px3sp gen @conj #3->11
+"<,>"
+	"," cm @punct #4->11
+"<оның>"
+	"ол" PRON @nmod:poss #5->6
+	"ол" prn dem gen @nmod:poss #5->6
+	"ол" prn pers p3 sg gen @nmod:poss #5->6
+"<ішінде>"
+	"іш" n px3sp loc @nmod #6->11
+"<мемлекеттік>"
+	"мемлекеттік" adj @amod #7->8
+"<қызметшілер>"
+	"қызметші" n pl nom @acl:relcl #8->11
+"<болып>"
+	"бол" v iv prc_perf @cop #9->8
+"<табылатын>"
+	"тап" AUX @aux #10->8
+	"тап" v tv pass gpr_impf @aux #10->8
+"<мүшелерінің>"
+	"мүше" n pl px3sp gen @nmod:poss #11->13
+"<үстеме>"
+	"үстеме" adj @amod #12->13
+"<жұмысына>"
+	"жұмыс" n px3sp dat @conj #13->23
+"<,>"
+	"," cm @punct #14->23
+"<мереке>"
+	"мереке" n nom @conj #15->17
+"<және>"
+	"және" cnjcoo @cc #16->17
+"<демалыс>"
+	"демалыс" n nom @amod-nmod #17->18
+	"демалыс" n nom @x #17->18
+"<күндеріндегі>"
+	"күн" n pl px3sp loc attr @amod #18->19
+	"күнде" v tv ger_fut px3sp loc attr @amod #18->19
+"<жұмысына>"
+	"жұмыс" n px3sp dat @conj #19->23
+"<,>"
+	"," cm @punct #20->23
+"<түнгі>"
+	"түнгі" adj @amod #21->22
+"<уақыттағы>"
+	"уақыт" n loc attr @amod #22->23
+"<еңбегіне>"
+	"еңбек" n px3sp dat @iobj #23->25
+"<ақы>"
+	"ақы" n nom @dobj #24->25
+"<төлеу>"
+	"төле" v tv ger nom @csubj #25->32
+"<сайлау>"
+	"сайлау" n nom @dobj #26->27
+"<өткізуге>"
+	"өткіз" v tv ger dat @ccomp #27->28
+"<бөлінген>"
+	"бөл" v tv pass gpr_past @acl:relcl #28->29
+	"бөлін" v tv gpr_past @acl:relcl #28->29
+"<қаражаттың>"
+	"қаражат" n gen @nmod:poss #29->30
+"<есебінен>"
+	"есеп" n px3sp abl @nmod #30->32
+"<жүзеге>"
+	"жүзе" n dat @iobj #31->32
+"<асырылады>"
+	"асыр" v tv pass aor p3 sg @root #32->0
+"<.>"
+	"." sent @punct #33->32
+¶
