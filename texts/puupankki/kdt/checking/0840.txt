@@ -1,0 +1,42 @@
+"<Шет>"
+	"шет" n attr @amod #1->2
+"<мемлекеттердегі>"
+	"мемлекет" n pl loc attr @amod #2->5
+"<Қазақстан>"
+	"Қазақстан" np top nom @nmod:poss #3->4
+"<Республикасы>"
+	"Республика" PROPN @nmod:poss #4->5
+	"республика" n px3sp nom @nmod:poss #4->5
+"<өкілдіктерінің>"
+	"өкілдік" n pl px3sp gen @nmod:poss #5->6
+"<жанынан>"
+	"жан" n px3sp abl @nmod #6->11
+"<Республика>"
+	"Республика" PROPN @nmod:poss #7->10
+	"республика" n nom @nmod:poss #7->10
+"<Сыртқы>"
+	"сыртқы" adj @amod #8->9
+"<істер>"
+	"іс" n pl nom @nmod:poss #9->10
+"<министрлігі>"
+	"министрлік" n px3sp nom @nsubj #10->11
+"<орналасқан>"
+	"орналас" v iv gpr_past @acl:relcl #11->14
+"<аумақтағы>"
+	"аумақ" n loc attr @amod #12->14
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #13->14
+"<округіне>"
+	"округ" n px3sp dat @iobj #14->15
+"<қарайтын>"
+	"қара" v tv gpr_impf @acl:relcl #15->17
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #16->17
+"<учаскелері>"
+	"учаске" n pl px3sp nom @nsubj #17->18
+"<құрылады>"
+	"құр" v tv pass aor p3 pl @root #18->0
+	"құрыл" v tv aor p3 pl @root #18->0
+"<.>"
+	"." sent @punct #19->18
+¶

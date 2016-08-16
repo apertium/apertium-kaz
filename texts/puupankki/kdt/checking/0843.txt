@@ -1,0 +1,55 @@
+"<Әрбір>"
+	"әрбір" det qnt @det #1->3
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #2->3
+"<учаскесі>"
+	"учаске" n px3sp nom @nmod #3->10
+"<бойынша>"
+	"бойынша" post @case #4->3
+"<сайлаушылардың>"
+	"сайлаушы" n pl gen @nmod:poss #5->6
+"<тізіміне>"
+	"тізім" n px3sp dat @iobj #6->10
+"<тиісті>"
+	"тиісті" adj @amod #7->8
+"<әкім>"
+	"әкім" n nom @nsubj #8->10
+"<қол>"
+	"қол" n nom @dobj #9->10
+"<қояды>"
+	"қой" v tv aor p3 sg @root #10->0
+"<және>"
+	"және" SCONJ @mark #11->24
+	"және" cnjcoo @cc #11->24
+"<ол>"
+	"ол" prn pers p3 sg nom @nsubj #12->24
+	"ол" prn dem nom @nsubj #12->24
+"<дауыс>"
+	"дауыс" n nom @dobj #13->14
+"<беру>"
+	"бер" v tv ger nom @csubj #14->15
+"<басталардан>"
+	"баста" VERB @advcl #15->17
+	"баста" v tv pass gpr_fut subst abl @advcl #15->17
+	"бастал" v tv gpr_fut subst abl @advcl #15->17
+"<жиырма>"
+	"жиырма" num @nummod #16->17
+"<күн>"
+	"күн" n nom @nmod #17->24
+"<бұрын>"
+	"бұрын" post @case #18->17
+"<тиісті>"
+	"тиісті" adj @amod #19->21
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #20->21
+"<комиссиясына>"
+	"комиссия" n px3sp dat @iobj #21->24
+"<акт>"
+	"акт" n nom @nmod #22->24
+"<бойынша>"
+	"бойынша" post @case #23->22
+"<тапсырылады>"
+	"тапсыр" v tv pass aor p3 sg @parataxis #24->10
+"<.>"
+	"." sent @punct #25->24
+¶
