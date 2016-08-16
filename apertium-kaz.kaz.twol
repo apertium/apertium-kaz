@@ -389,7 +389,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! %{I%}:0 <=> л:0 %>: _ :п ;                           ! Dir/LR
 
 "Dialectal deletion of л between low vowel and Iп"
-л:0 <=> :LowVow _ %>: %{o%}:0 ;
+!л:0 <=> :LowVow _ %>: %{o%}:0 ;
+л:0 <=> .#. (:Cns) :Vow _ %>: %{o%}:0 ;
 
 "Dialectal deletion of I when л deletes before Iп"
 %{I%}:0 <=> %{o%}:0 _ ;
