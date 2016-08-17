@@ -1,0 +1,46 @@
+"<Нақтылы>"
+	"нақтылы" adj @amod #1->3
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #2->3
+"<учаскесінде>"
+	"учаске" n px3sp loc @nmod #3->7
+"<азаматты>"
+	"азамат" n acc @dobj #4->7
+"<сайлаушылар>"
+	"сайлаушы" n pl nom @nmod:poss #5->6
+"<тізіміне>"
+	"тізім" n px3sp dat @iobj #6->7
+"<енгізу>"
+	"енгіз" v tv ger nom @ccomp #7->19
+"<үшін>"
+	"үшін" post @case #8->7
+"<оның>"
+	"ол" PRON @nmod:poss #9->15
+	"ол" prn dem gen @nmod:poss #9->15
+	"ол" prn pers p3 sg gen @nmod:poss #9->15
+"<осы>"
+	"осы" det dem @det #10->12
+"<сайлау>"
+	"сайлау" n nom @nmod:poss #11->12
+"<учаскесінің>"
+	"учаске" n px3sp gen @nmod:poss #12->13
+"<аумағында>"
+	"аумақ" n px3sp loc @nmod #13->17
+"<тұрғылықты>"
+	"тұрғылықты" adj @amod #14->15
+"<жері>"
+	"жер" n px3sp nom @nmod #15->17
+"<бойынша>"
+	"бойынша" post @case #16->15
+"<тіркелу>"
+	"тірке" VERB @acl-poss #17->18
+	"тірке" v tv pass ger nom @acl-poss #17->18
+"<фактісі>"
+	"факт" n px3sp nom @nsubj #18->19
+"<негіз>"
+	"негіз" n nom @root #19->0
+"<болады>"
+	"бол" v iv aor p3 sg @cop #20->19
+"<.>"
+	"." sent @punct #21->19
+¶

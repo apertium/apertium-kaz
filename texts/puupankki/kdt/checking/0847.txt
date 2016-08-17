@@ -1,0 +1,21 @@
+"<Сенат>"
+	"Сенат" PROPN @nmod:poss #1->2
+	"сенат" n nom @nmod:poss #1->2
+"<депутаттарын>"
+	"депутат" n pl px3sp acc @dobj #2->3
+"<сайлау>"
+	"сайла" VERB @acl-poss #3->4
+	"сайла" v tv ger nom @acl-poss #3->4
+"<кезінде>"
+	"кез" n px3sp loc @nmod #4->7
+"<таңдаушылардың>"
+	"таңдаушы" NOUN @nmod:poss #5->6
+	"таңда" v iv gpr_pot subst pl gen @nmod:poss #5->6
+	"таңда" v tv gpr_pot subst pl gen @nmod:poss #5->6
+"<тізімдері>"
+	"тізім" n pl px3sp nom @nsubj #6->7
+"<жасалады>"
+	"жаса" v tv pass aor p3 pl @root #7->0
+"<.>"
+	"." sent @punct #8->7
+¶

@@ -1,0 +1,32 @@
+"<Дауыстарды>"
+	"дауыс" n pl acc @dobj #1->2
+"<санау>"
+	"сана" v tv ger nom @csubj #2->3
+"<басталғаннан>"
+	"баста" v tv pass ger_past abl @advcl #3->11
+	"бастал" v tv ger_past abl @advcl #3->11
+"<кейін>"
+	"кейін" post @case #4->3
+"<сайлаушылар>"
+	"сайлаушы" n pl nom @nmod:poss #5->9
+"<(>"
+	"(" lpar @punct #6->7
+"<таңдаушылар>"
+	"таңдаушы" NOUN @appos #7->5
+	"таңда" v iv gpr_pot subst pl nom @appos #7->5
+	"таңда" v tv gpr_pot subst pl nom @appos #7->5
+"<)>"
+	")" rpar @punct #8->7
+"<тізімдеріне>"
+	"тізім" n pl px3sp dat @iobj #9->11
+"<өзгерістер>"
+	"өзгеріс" n pl nom @dobj #10->11
+"<енгізуге>"
+	"енгіз" v tv ger dat @ccomp #11->13
+"<тыйым>"
+	"тыйым" n nom @nsubj #12->13
+"<салынады>"
+	"сал" v tv pass aor p3 sg @root #13->0
+"<.>"
+	"." sent @punct #14->13
+¶
