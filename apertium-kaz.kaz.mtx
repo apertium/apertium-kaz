@@ -1,0 +1,287 @@
+<?xml version="1.0" ?>
+<!DOCTYPE metatag [
+  <!ENTITY commondefns SYSTEM "commondefns.mtx">
+]>
+<!--
+Feature templates copied from the spaCy part of speech tagger. From here:
+https://spacy.io/blog/part-of-speech-pos-tagger-in-python#features-and-pre-processing
+-->
+<metatag>
+  <defns>
+<def-macro as="flattags_0">
+  <join>
+    <for-each as="wordoid">
+      <ex-wordoids>
+        <tokaddr />
+      </ex-wordoids>
+      <join>
+        <ex-tags>
+          <var name="wordoid" />
+        </ex-tags>
+      </join>
+    </for-each>
+  </join>
+</def-macro>
+<def-macro as="flattags_m1">
+  <join>
+    <for-each as="wordoid">
+      <ex-wordoids>
+        <add>
+          <tokaddr />
+          <int val="-1" />
+        </add>
+      </ex-wordoids>
+      <join>
+        <ex-tags>
+          <var name="wordoid" />
+        </ex-tags>
+      </join>
+    </for-each>
+  </join>
+</def-macro>
+<def-macro as="flattags_m2">
+  <join>
+    <for-each as="wordoid">
+      <ex-wordoids>
+        <add>
+          <tokaddr />
+          <int val="-2" />
+        </add>
+      </ex-wordoids>
+      <join>
+        <ex-tags>
+          <var name="wordoid" />
+        </ex-tags>
+      </join>
+    </for-each>
+  </join>
+</def-macro>
+<def-macro as="surf_0_s3">
+  <slice start="-3">
+    <ex-surf>
+      <tokaddr />
+    </ex-surf>
+  </slice>
+</def-macro>
+<def-macro as="surf_0">
+  <ex-surf>
+    <tokaddr />
+  </ex-surf>
+</def-macro>
+<def-macro as="surf_m1">
+  <ex-surf>
+    <add>
+      <tokaddr />
+      <int val="-1" />
+    </add>
+  </ex-surf>
+</def-macro>
+<def-macro as="surf_m1_s3">
+  <slice start="-3">
+    <ex-surf>
+      <add>
+        <tokaddr />
+        <int val="-1" />
+      </add>
+    </ex-surf>
+  </slice>
+</def-macro>
+<def-macro as="surf_m2">
+  <ex-surf>
+    <add>
+      <tokaddr />
+      <int val="-1" />
+    </add>
+  </ex-surf>
+</def-macro>
+<def-macro as="surf_p1">
+  <ex-surf>
+    <add>
+      <tokaddr />
+      <int val="1" />
+    </add>
+  </ex-surf>
+</def-macro>
+<def-macro as="surf_p1_s3">
+  <slice start="-3">
+    <ex-surf>
+      <add>
+        <tokaddr />
+        <int val="1" />
+      </add>
+    </ex-surf>
+  </slice>
+</def-macro>
+<def-macro as="surf_p2">
+  <ex-surf>
+    <add>
+      <tokaddr />
+      <int val="2" />
+    </add>
+  </ex-surf>
+</def-macro>
+<def-macro as="lemma_0">
+  <ex-lemma>
+    <ex-wordoid>
+      <wrdaddr />
+    </ex-wordoid>
+  </ex-lemma>
+</def-macro>
+<def-macro as="suffix_1_0">
+  <slice start="-1">
+    <ex-lemma>
+      <ex-wordoid>
+        <wrdaddr />
+      </ex-wordoid>
+    </ex-lemma>
+  </slice>
+</def-macro>
+<def-macro as="suffix_3_0">
+  <slice start="-3">
+    <ex-lemma>
+      <ex-wordoid>
+        <wrdaddr />
+      </ex-wordoid>
+    </ex-lemma>
+  </slice>
+</def-macro>
+
+  </defns>
+  <global-pred>
+    <eq>
+      <wrdidx />
+      <int val="0" />
+    </eq>
+  </global-pred>
+  <feats>
+    <!-- add('bias') # This acts sort of like a prior -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+    </feat>
+    <!-- add('i suffix', word[-3:]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="suffix_3_0"></macro>
+      </out>
+    </feat>
+    <!-- add('i pref1', word[0]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="suffix_1_0"></macro>
+      </out>
+    </feat>
+    <!-- add('i-1 tag', prev) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="flattags_m1"></macro>
+      </out>
+    </feat>
+    <!-- add('i-2 tag', prev2) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="flattags_m2"></macro>
+      </out>
+    </feat>
+    <!-- add('i-1 tag+i-2 tag', prev, prev2) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="flattags_m1"></macro>
+      </out>
+      <out>
+        <macro name="flattags_m2"></macro>
+      </out>
+    </feat>
+    <!-- add('i word', context[i]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_0"></macro>
+      </out>
+    </feat>
+    <!-- add('i-1 tag+i word', prev, context[i]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="flattags_m1"></macro>
+      </out>
+      <out>
+        <macro name="surf_0"></macro>
+      </out>
+    </feat>
+    <!-- add('i-1 word', context[i-1]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_m1"></macro>
+      </out>
+    </feat>
+    <!-- add('i-1 suffix', context[i-1][-3:]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_m1_s3"></macro>
+      </out>
+    </feat>
+    <!-- add('i-2 word', context[i-2]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_m2"></macro>
+      </out>
+    </feat>
+    <!-- add('i+1 word', context[i+1]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_p1"></macro>
+      </out>
+    </feat>
+    <!-- add('i+1 suffix', context[i+1][-3:]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_p1_s3"></macro>
+      </out>
+    </feat>
+    <!-- add('i+2 word', context[i+2]) -->
+    <feat>
+      <out>
+        <macro name="flattags_0"></macro>
+      </out>
+      <out>
+        <macro name="surf_p2"></macro>
+      </out>
+    </feat>
+  </feats>
+</metatag>
