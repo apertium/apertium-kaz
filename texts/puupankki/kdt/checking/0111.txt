@@ -1,12 +1,10 @@
 "<Ақтар>"
-	"ақ" NOUN @nsubj #1->2
 	"ақ" adj subst pl nom @nsubj #1->2
 "<қашып>"
-	"қаш" v iv gna_perf @conj #2->5
+	"қаш" v iv gna_perf @advcl #2->10
 "<,>"
-	"," cm @punct #3->5
+	"," cm @punct #3->2
 "<қызылдар>"
-	"қызыл" NOUN @nsubj #4->5
 	"қызыл" adj subst pl nom @nsubj #4->5
 "<келіп>"
 	"кел" v iv gna_perf @advcl #5->10
@@ -19,7 +17,7 @@
 "<қалаға>"
 	"қала" n dat @nmod #9->10
 "<орнады>"
-	"орна" v iv ifi p3 sg @root #10->0
+	"орна" v iv ifi p3 pl @root #10->0
 "<.>"
 	"." sent @punct #11->10
 ¶

@@ -1,5 +1,5 @@
 "<Байдың>"
-	"бай" n gen @nmod:poss #1->2
+	"бай" n gen @nmod:poss #1->7
 "<малын>"
 	"мал" n px3sp acc @conj #2->7
 "<,>"
@@ -21,19 +21,19 @@
 "<деген>"
 	"де" v tv gpr_past @acl:relcl #11->12
 "<лақаптар>"
-	"лақап" n pl nom @nsubj #12->13
+	"лақап" adj subst pl nom @nsubj #12->13
 "<шыққан>"
 	"шық" v tv ger_past nom @advcl #13->21
 "<соң>"
-	"соң" post @advmod:adp #14->13
+	"соң" post @case #14->13
 "<,>"
-	"," cm @punct #15->13
+	"," cm @punct #15->21
 "<жатсам>"
-	"жат" v iv gna_cond p1 sg @conj #16->19
+	"жат" v iv gna_cond p1 sg @remnant #16->19
 "<ұйқым>"
-	"ұйқы" n px1sg nom @conj #17->20
+	"ұйқы" n px1sg nom @remnant #17->20
 "<,>"
-	"," cm @punct #18->20
+	"," cm @punct #18->21
 "<тұрсам>"
 	"тұр" v iv gna_cond p1 sg @advcl #19->21
 "<күлкім>"

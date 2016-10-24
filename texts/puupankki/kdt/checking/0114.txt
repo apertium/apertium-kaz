@@ -1,14 +1,11 @@
 "<Менен>"
-	"мен" prn pers p1 sg abl @iobj #1->3
+	"мен" prn pers p1 sg abl @nmod #1->3
 "<жұрт>"
-	"жұрт" n nom @nsubj #2->3
+	"жұрт" n nom @nsubj #2->4
 "<сескенейін>"
-	"сескен" v iv opt p1 sg @root #3->0
 	"сескен" v iv opt p1 sg @ccomp #3->4
 "<деді>"
-	"де" v tv ifi p3 sg @aux #4->3
 	"де" v tv ifi p3 sg @root #4->0
 "<.>"
-	"." sent @punct #5->3
 	"." sent @punct #5->4
 ¶
