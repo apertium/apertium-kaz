@@ -1,16 +1,14 @@
 "<Адам>"
-	"адам" n nom @nsubj #1->5
+	"адам" n nom @nsubj #1->6
 "<лажсыз>"
-	"лажсыз" ADV @advmod #2->5
-	"лажсыз" adj advl @advmod #2->5
-	"лаж" n nom @advmod #2->5
-		"сыз" post @case #2->5
+	"лаж" n nom @nmod #2->4
+		"сыз" post @case #3->2
 "<елінің>"
-	"ел" n px3sp gen @nmod:poss #3->4
+	"ел" n px3sp gen @nmod:poss #4->5
 "<тілегіне>"
-	"тілек" n px3sp dat @iobj #4->5
+	"тілек" n px3sp dat @nmod #5->6
 "<бағынады>"
-	"бағын" v iv aor p3 sg @root #5->0
+	"бағын" v iv aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct #6->5
+	"." sent @punct #7->6
 ¶

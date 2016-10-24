@@ -9,22 +9,19 @@
 "<қару>"
 	"қару" n nom @dobj #5->6
 "<берсе>"
-	"бер" v tv gna_cond p3 sg @advcl #6->15
+	"бер" v tv gna_cond p3 sg @advcl #6->10
 "<,>"
-	"," cm @punct #7->15
+	"," cm @punct #7->12
 "<орыс>"
 	"орыс" n nom @nmod:poss #8->9
 "<жұртына>"
-	"жұрт" n px3sp dat @iobj #9->10
+	"жұрт" n px3sp dat @nmod #9->10
 "<жау>"
-	"жау" NOUN @nmod #10->12
-	"жау" n nom @nmod #10->12
+	"жау" n nom @ccomp #10->15
 "<болып>"
-	"бол" VERB @cop #11->10
 	"бол" v iv prc_perf @cop #11->10
-	"бол" v iv gna_perf @cop #11->10
 "<кетпесіне>"
-	"кет" v tv neg ger_fut px3sp dat @ccomp #12->15
+	"кет" vaux neg ger_fut px3sp dat @aux #12->10
 "<кімнің>"
 	"кім" prn itg gen @nmod:poss #13->14
 "<көзі>"
@@ -32,5 +29,5 @@
 "<жетеді>"
 	"жет" v iv aor p3 sg @parataxis #15->2
 "<?>"
-	"?" sent @punct #16->15
+	"?" sent @punct #16->2
 ¶

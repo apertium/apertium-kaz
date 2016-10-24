@@ -1,7 +1,7 @@
 "<Өліп>"
 	"өл" v iv prc_perf @ccomp #1->4
 "<бара>"
-	"бар" v iv prc_impf @aux #2->1
+	"бар" vaux prc_impf @aux #2->1
 "<жатырмын>"
 	"жат" vaux pres p1 sg @aux #3->1
 "<десең>"
@@ -11,9 +11,9 @@
 "<қойға>"
 	"қой" n dat @nmod #6->9
 "<бір>"
-	"бір" num @nummod #7->8
+	"бір" det ind @det #7->8
 "<тайын>"
-	"тай" n px3sp acc @dobj #8->9
+	"тай" n px3sp acc @dobj:caus #8->9
 "<мінгізбейді>"
 	"мінгіз" v tv neg aor p3 sg @root #9->0
 "<.>"

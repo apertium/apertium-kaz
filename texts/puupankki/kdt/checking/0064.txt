@@ -1,22 +1,17 @@
 "<Онда>"
-	"Онда" SCONJ @mark #1->4
-	"ол" prn dem loc @mark #1->4
-	"ол" prn pers p3 sg loc @mark #1->4
-	"он" num subst loc @mark #1->4
-	"онда" adv @mark #1->4
-	"онда" cnjsub @mark #1->4
+	"онда" adv @advmod #1->4
 "<ұлы>"
 	"ұлы" adj @amod #2->3
 "<Ресей>"
 	"Ресей" np top nom @nsubj #3->4
 "<кемиді>"
-	"кемі" v tv aor p3 sg @root #4->0
+	"кемі" v iv aor p3 sg @root #4->0
 "<,>"
 	"," cm @punct #5->4
 "<жері>"
 	"жер" n px3sp nom @conj #6->8
 "<,>"
-	"," cm @punct #7->8
+	"," cm @punct #7->9
 "<елі>"
 	"ел" n px3sp nom @nsubj #8->9
 "<азайып>"
@@ -24,5 +19,5 @@
 "<қалады>"
 	"қал" vaux aor p3 sg @aux #10->9
 "<.>"
-	"." sent @punct #11->9
+	"." sent @punct #11->4
 ¶

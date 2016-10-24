@@ -1,9 +1,9 @@
 "<Қазақ>"
-	"қазақ" n nom @nsubj #1->4
+	"қазақ" n attr @compound #1->2
 "<солдаттан>"
-	"солдат" n abl @iobj #2->4
+	"солдат" n abl @nmod #2->4
 "<өлгенше>"
-	"өлгенше" ADV @advmod #3->4
+	"өл" v iv gna_until @advcl #3->4
 "<қорқады>"
 	"қорық" v iv aor p3 sg @root #4->0
 "<.>"

@@ -1,6 +1,5 @@
 "<Ертіс>"
 	"Ертіс" np top nom @nsubj #1->2
-	"Ертіс" np ant m nom @nsubj #1->2
 "<ағып>"
 	"ақ" v iv gna_perf @advcl #2->11
 "<,>"
@@ -14,11 +13,9 @@
 "<,>"
 	"," cm @punct #7->8
 "<Семей>"
-	"Семей" PROPN @amod-nmod #8->10
-	"Семей" np top nom @x #8->10
+	"Семей" np top nom @nmod #8->10
 "<сияқты>"
-	"сияқты" ADP @advmod:adp #9->8
-	"сияқты" post @x #9->8
+	"сияқты" post @case #9->8
 "<қалаларды>"
 	"қала" n pl acc @dobj #10->11
 "<көрдім>"

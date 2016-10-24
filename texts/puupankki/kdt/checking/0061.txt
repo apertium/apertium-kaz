@@ -5,7 +5,7 @@
 "<қара>"
 	"қара" adj @amod #3->4
 "<жұмысқа>"
-	"жұмыс" n dat @nmod #4->6
+	"жұмыс" n dat @nmod #4->5
 "<алам>"
 	"ал" v tv aor p1 sg @ccomp #5->6
 "<дегенде>"
@@ -13,9 +13,7 @@
 "<,>"
 	"," cm @punct #7->13
 "<қандай>"
-	"қандай" PRON @nmod #8->13
 	"қандай" prn itg sim @nmod #8->13
-	"қандай" prn itg sim nom @nmod #8->13
 "<қорқып>"
 	"қорық" v iv prc_perf @conj #9->13
 "<,>"
@@ -26,7 +24,6 @@
 	"," cm @punct #12->13
 "<қиратылып>"
 	"қират" v tv pass prc_perf @root #13->0
-	"қиратыл" v tv prc_perf @root #13->0
 "<қалды>"
 	"қал" vaux ifi p3 sg @aux #14->13
 "<.>"
