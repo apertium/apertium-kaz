@@ -1,12 +1,9 @@
 "<Жамандығынан>"
-	"жамандық" n px3sp abl @iobj #1->3
+	"жамандық" n px3sp abl @nmod #1->2
 "<мұндай>"
-	"мұндай" det dem @det #2->3
-"<болған>"
-	"бол" v iv gpr_past @acl:relcl #3->4
-"<жоқ>"
-	"жоқ" adj @root #4->0
-		"е" cop aor p3 sg @cop #5->4
+	"бұл" prn dem sim nom @root #2->0
+"<болған жоқ>"
+	"бол" v iv neg ifi p3 sg @cop #3->2
 "<.>"
-	"." sent @punct #6->4
+	"." sent @punct #4->2
 ¶

@@ -3,20 +3,19 @@
 "<->"
 	"-" guio @punct #2->3
 "<санда>"
-	"сан" adv @advmod #3->9
+	"сан" adv @advmod #3->8
 "<қара>"
 	"қара" adj @amod #4->5
 "<мұрт>"
-	"мұрт" n nom @nsubj #5->9
+	"мұрт" n nom @nsubj #5->8
 "<оған>"
-	"ол" prn dem dat @iobj #6->9
-	"ол" prn pers p3 sg dat @iobj #6->9
+	"ол" prn pers p3 sg dat @nmod #6->8
 "<сөз>"
-	"сөз" n nom @dobj #7->9
+	"сөз" n nom @dobj #7->8
 "<үйретіп>"
-	"үйрет" v tv gna_perf @advcl #8->9
+	"үйрет" v tv gna_perf @root #8->0
 "<тұрды>"
-	"тұр" v iv ifi p3 sg @root #9->0
+	"тұр" vaux ifi p3 sg @aux #9->8
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #10->8
 ¶

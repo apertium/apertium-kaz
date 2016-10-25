@@ -1,11 +1,12 @@
 "<Үлкен>"
 	"үлкен" adj @amod #1->2
 "<төре>"
-	"төре" n nom @dobj #2->3
+	"төре" n nom @ccomp #2->4
+		"е" cop aor p3 sg @cop #3->2
 "<деп>"
-	"де" v tv gna_perf @advcl #3->4
+	"де" v tv gna_perf @advcl #4->5
 "<мақтайды>"
-	"мақта" v tv aor p3 sg @root #4->0
+	"мақта" v tv aor p3 sg @root #5->0
 "<.>"
-	"." sent @punct #5->4
+	"." sent @punct #6->5
 ¶
