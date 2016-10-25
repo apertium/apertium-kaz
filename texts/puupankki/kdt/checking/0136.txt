@@ -1,13 +1,12 @@
 "<Анау>"
 	"анау" det dem @det #1->2
 "<жігіттен>"
-	"жігіт" n abl @iobj #2->7
+	"жігіт" n abl @nmod #2->7
 "<сені>"
-	"сен" prn pers p2 sg acc @dobj #3->7
+	"сен" prn pers p2 sg acc @dobj #3->5
 "<маған>"
-	"мен" prn pers p1 sg dat @iobj #4->5
+	"мен" prn pers p1 sg dat @nmod #4->5
 "<бер>"
-	"бер" VERB @ccomp #5->6
 	"бер" v tv imp p2 sg @ccomp #5->6
 "<деп>"
 	"де" v tv gna_perf @advcl #6->7
