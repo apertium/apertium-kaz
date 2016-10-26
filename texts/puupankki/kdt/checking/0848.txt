@@ -9,15 +9,13 @@
 "<сайлаушылар>"
 	"сайлаушы" n pl nom @nmod:poss #5->6
 "<тізіміне>"
-	"тізім" n px3sp dat @iobj #6->7
+	"тізім" n px3sp dat @nmod #6->7
 "<енгізу>"
-	"енгіз" v tv ger nom @ccomp #7->19
+	"енгіз" v tv ger nom @advcl #7->19
 "<үшін>"
 	"үшін" post @case #8->7
 "<оның>"
-	"ол" PRON @nmod:poss #9->15
-	"ол" prn dem gen @nmod:poss #9->15
-	"ол" prn pers p3 sg gen @nmod:poss #9->15
+	"ол" prn dem gen @nmod:poss #9->18
 "<осы>"
 	"осы" det dem @det #10->12
 "<сайлау>"
@@ -33,8 +31,7 @@
 "<бойынша>"
 	"бойынша" post @case #16->15
 "<тіркелу>"
-	"тірке" VERB @acl-poss #17->18
-	"тірке" v tv pass ger nom @acl-poss #17->18
+	"тірке" v tv pass ger nom @acl:poss #17->18
 "<фактісі>"
 	"факт" n px3sp nom @nsubj #18->19
 "<негіз>"

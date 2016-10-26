@@ -3,7 +3,7 @@
 "<тұрғылықты>"
 	"тұрғылықты" adj @amod #2->3
 "<жері>"
-	"жер" n px3sp nom @amod-nmod #3->5
+	"жер" n px3sp nom @nmod #3->5
 "<бойынша>"
 	"бойынша" post @case #4->3
 "<тізімін>"
@@ -13,19 +13,19 @@
 "<жергілікті>"
 	"жергілікті" adj @amod #7->9
 "<атқарушы>"
-	"атқарушы" n nom @amod-nmod #8->9
+	"атқар" v tv gpr_pot @acl:relcl #8->9
 "<орган>"
 	"орган" n nom @nsubj #9->19
 "<халықты>"
 	"халық" n acc @dobj #10->12
 "<есепке>"
-	"есеп" n dat @iobj #11->12
+	"есеп" n dat @nmod #11->12
 "<алуды>"
 	"ал" v tv ger acc @ccomp #12->14
 "<жүзеге>"
-	"жүзе" n dat @iobj #13->14
+	"жүзе" n dat @nmod #13->14
 "<асыратын>"
-	"асыр" v tv gpr_impf @acl:relcl #14->15
+	"ас" v iv caus gpr_impf @acl:relcl #14->15
 "<органдар>"
 	"орган" n pl nom @nsubj #15->16
 "<ұсынған>"
