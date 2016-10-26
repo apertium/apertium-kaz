@@ -3,12 +3,10 @@
 "<бір>"
 	"бір" det ind @det #2->3
 "<дүниеге>"
-	"дүние" n dat @iobj #3->4
+	"дүние" n dat @nmod #3->4
 "<кіргендей>"
-	"кір" VERB @root #4->0
 	"кір" v iv ger_past sim @root #4->0
 "<болады>"
-	"бол" AUX @aux #5->4
 	"бол" v iv aor p3 sg @cop #5->4
 "<...>"
 	"..." sent @punct #6->4

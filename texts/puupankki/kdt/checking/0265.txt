@@ -1,20 +1,17 @@
 "<Асумен>"
-	"асу" NOUN @iobj #1->2
-	"ас" v iv ger ins @iobj #1->2
-	"ас" v tv ger ins @iobj #1->2
+	"асу" n ins @nmod #1->2
 "<асып>"
-	"ас" v iv gna_perf @advcl #2->5
-	"ас" v tv gna_perf @advcl #2->5
+	"ас" v iv gna_perf @advcl #2->4
 "<елге>"
-	"ел" n dat @nmod #3->5
+	"ел" n dat @nmod #3->4
 "<бара>"
-	"бар" v iv gna_impf @advcl #4->5
+	"бар" v iv prc_impf @conj #4->14
 "<жатқан>"
-	"жат" v iv gpr_past @conj #5->15
+	"жат" vaux gpr_past @aux #5->4
 "<,>"
-	"," cm @punct #6->15
+	"," cm @punct #6->14
 "<елден>"
-	"ел" n abl @nmod #7->15
+	"ел" n abl @nmod #7->13
 "<мал>"
 	"мал" n nom @conj #8->12
 "<,>"
@@ -26,11 +23,11 @@
 "<түлік>"
 	"түлік" n nom @dobj #12->13
 "<алып>"
-	"ал" v tv gna_perf @advcl #13->15
+	"ал" v tv gna_perf @advcl #13->14
 "<келе>"
-	"кел" vaux gna_impf @aux #14->13
+	"кел" v iv prc_impf @acl:relcl #14->16
 "<жатқан>"
-	"жат" v iv gpr_past @acl:relcl #15->16
+	"жат" v iv gpr_past @aux #15->14
 "<орыстарды>"
 	"орыс" n pl acc @dobj #16->18
 "<талай>"

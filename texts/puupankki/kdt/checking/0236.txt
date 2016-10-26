@@ -13,23 +13,21 @@
 "<екі>"
 	"екі" num @nummod #7->8
 "<иығынан>"
-	"иық" n px3sp abl @iobj #8->9
+	"иық" n px3sp abl @nmod #8->9
 "<басып>"
 	"бас" v iv prc_perf @root #9->0
-	"бас" v tv prc_perf @root #9->0
 "<қалды>"
 	"қал" vaux ifi p3 sg @aux #10->9
 "<,>"
 	"," cm @punct #11->9
 "<бес>"
-	"бес" num @compound #12->14
+	"бес" num @conj #12->14
 "<->"
 	"-" guio @punct #13->14
 "<алты>"
 	"алты" num @nummod #14->15
 "<адымдай>"
-	"адымдай" ADJ @amod #15->16
-	"адым" n sim @amod #15->16
+	"адым" n sim @nmod #15->17
 "<жерге>"
 	"жер" n dat @nmod #16->17
 "<барып>"

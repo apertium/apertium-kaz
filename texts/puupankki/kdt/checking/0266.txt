@@ -1,12 +1,11 @@
 "<Оларға>"
-	"ол" prn dem pl dat @iobj #1->3
-	"олар" prn pers p3 pl dat @iobj #1->3
+	"олар" prn pers p3 pl dat @nmod #1->3
 "<көзі>"
 	"көз" n px3sp nom @nsubj #2->3
 "<түскенде>"
 	"түс" v iv ger_past loc @advcl #3->16
 "<күйінген>"
-	"күйінген" adj @conj #4->12
+	"күйін" v iv gpr_past @conj #4->12
 "<,>"
 	"," cm @punct #5->12
 "<өкінген>"
@@ -18,21 +17,19 @@
 "<,>"
 	"," cm @punct #9->12
 "<әйтеуір>"
-	"әйтеуір" adv @advmod #10->16
+	"әйтеуір" adv @advmod #10->12
 "<өзегін>"
 	"өзек" n px3sp acc @dobj #11->12
 "<өртеген>"
 	"өрте" v tv gpr_past @acl:relcl #12->15
 "<бір>"
-	"бір" det ind @det #13->14
+	"бір" det ind @det #13->15
 "<жаман>"
 	"жаман" adj @amod #14->15
 "<сезім>"
 	"сезім" n nom @nsubj #15->16
-"<пайда>"
-	"пайда" n nom @root #16->0
-"<болды>"
-	"бол" v iv ifi p3 sg @cop #17->16
+"<пайда болды>"
+	"пайда бол" v iv ifi p3 sg @root #16->0
 "<.>"
-	"." sent @punct #18->16
+	"." sent @punct #17->16
 ¶

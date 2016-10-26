@@ -1,23 +1,17 @@
 "<Жалын>"
 	"жалын" n nom @nsubj #1->3
 "<қалай>"
-	"қалай" PRON @nmod #2->3
 	"қалай" adv itg @advmod #2->3
 "<шықты>"
-	"шық" v tv ifi p3 sg @advcl #3->8
-	"шық" v iv ifi p3 sg @advcl #3->8
-	"шық" v tv ifi p3 sg @conj #3->8
-	"шық" v iv ifi p3 sg @conj #3->8
+	"шық" v iv ifi p3 sg @parataxis #3->8
 "<,>"
 	"," cm @punct #4->8
 "<солай>"
 	"сол" prn dem adv @advmod #5->8
-	"солай" adv @advmod #5->8
 "<қасқырлардың>"
 	"қасқыр" n pl gen @nmod:poss #6->7
 "<қарасы>"
-	"қара" NOUN @nsubj #7->8
-	"қара" adj subst px3sp nom @nsubj #7->8
+	"қара" n px3sp nom @nsubj #7->8
 "<өше>"
 	"өш" v tv prc_impf @root #8->0
 "<берді>"
