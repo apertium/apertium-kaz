@@ -5,11 +5,11 @@
 "<қазақ>"
 	"қазақ" n nom @nsubj #3->5
 "<орысқа>"
-	"орыс" n dat @iobj #4->5
+	"орыс" n dat @nmod #4->5
 "<қарағанда>"
 	"қара" v tv ger_past loc @advcl #5->15
 "<,>"
-	"," cm @punct #6->15
+	"," cm @punct #6->5
 "<қатын>"
 	"қатын" n attr @compound #7->8
 "<патша>"
@@ -21,26 +21,22 @@
 "<алмаймын>"
 	"ал" v tv neg aor p1 sg @ccomp #11->12
 "<деп>"
-	"де" v tv gna_perf @conj #12->18
+	"де" v tv gna_perf @advcl #12->15
 "<,>"
 	"," cm @punct #13->12
 "<қолхат>"
 	"қолхат" n nom @dobj #14->15
-"<беріпті>"
-	"бер" v tv ifi evid p3 sg @ccomp #15->18
-"<->"
-	"-" guio @punct #16->15
-"<мыс>"
-	"мыс" n nom @advmod:adp #17->15
+"<беріпті-мыс>"
+	"бер" v tv ifi evid p3 sg @ccomp #15->17
+		"-мыс" postadv @advmod #16->15
 "<деп>"
-	"де" v tv gna_perf @advcl #18->20
+	"де" v tv gna_perf @advcl #17->20
 "<,>"
-	"," cm @punct #19->18
+	"," cm @punct #18->17
 "<талшық>"
-	"талшық" NOUN @compound-etq #20->21
-	"талшық" n nom @x #20->21
+	"талшық" n nom @dobj #19->20
 "<қылады>"
-	"қыл" v tv aor p3 sg @root #21->0
+	"қыл" v tv aor p3 sg @root #20->0
 "<.>"
-	"." sent @punct #22->21
+	"." sent @punct #21->20
 ¶

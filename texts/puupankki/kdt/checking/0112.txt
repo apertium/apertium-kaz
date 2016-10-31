@@ -13,7 +13,7 @@
 "<жерін>"
 	"жер" n px3sp acc @dobj #7->10
 "<кедейге>"
-	"кедей" n dat @iobj #8->10
+	"кедей" n dat @nmod #8->10
 "<тартып>"
 	"тарт" v tv gna_perf @advcl #9->10
 "<әпереді>"
@@ -27,13 +27,13 @@
 "<соң>"
 	"соң" post @case #14->13
 "<,>"
-	"," cm @punct #15->21
+	"," cm @punct #15->13
 "<жатсам>"
 	"жат" v iv gna_cond p1 sg @remnant #16->19
 "<ұйқым>"
 	"ұйқы" n px1sg nom @remnant #17->20
 "<,>"
-	"," cm @punct #18->21
+	"," cm @punct #18->20
 "<тұрсам>"
 	"тұр" v iv gna_cond p1 sg @advcl #19->21
 "<күлкім>"

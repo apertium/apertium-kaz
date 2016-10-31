@@ -1,11 +1,11 @@
 "<Елге>"
 	"ел" n dat @nmod #1->2
 "<келген>"
-	"кел" v iv ger_past nom @advcl #2->29
+	"кел" v iv ger_past nom @advcl #2->30
 "<соң>"
 	"соң" post @case #3->2
 "<ауыл>"
-	"ауыл" n attr @compound #4->6
+	"ауыл" n nom @goeswith #4->6
 "<->"
 	"-" guio @punct #5->6
 "<ауылдан>"
@@ -19,7 +19,7 @@
 "<,>"
 	"," cm @punct #10->17
 "<төсек>"
-	"төсек" n nom @compound #11->13
+	"төсек" n nom @goeswith #11->13
 "<->"
 	"-" guio @punct #12->13
 "<орын>"
@@ -27,7 +27,7 @@
 "<,>"
 	"," cm @punct #14->17
 "<ыдыс>"
-	"ыдыс" n nom @compound #15->17
+	"ыдыс" n nom @goeswith #15->17
 "<->"
 	"-" guio @punct #16->17
 "<сайман>"
@@ -41,21 +41,22 @@
 "<адамына>"
 	"адам" n px3sp dat @nmod #21->22
 "<жолығып>"
-	"жолық" v iv gna_perf @advcl #22->29
+	"жолық" v iv gna_perf @advcl #22->30
 "<,>"
-	"," cm @punct #23->28
+	"," cm @punct #23->22
 "<іш>"
 	"іш" n attr @compound #24->25
 "<пікірім>"
-	"пікір" n px1sg nom @nmod:poss #25->26
+	"пікір" n px1sg nom @nsubj #25->26
 "<ішімде>"
-	"іш" n px1sg loc @nmod #26->29
+	"іш" n px1sg loc @advcl #26->30
+		"е" cop aor p3 sg @cop #27->26
 "<соларға>"
-	"сол" prn dem pl dat @nmod #27->29
+	"сол" prn dem pl dat @nmod #28->29
 "<кісі>"
-	"кісі" n nom @xcomp #28->29
+	"кісі" n nom @xcomp #29->30
 "<болдым>"
-	"бол" v iv ifi p1 sg @root #29->0
+	"бол" v iv ifi p1 sg @root #30->0
 "<.>"
-	"." sent @punct #30->29
+	"." sent @punct #31->30
 ¶

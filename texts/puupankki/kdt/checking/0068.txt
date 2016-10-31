@@ -1,24 +1,23 @@
 "<Орыстан>"
-	"орыс" n abl @iobj #1->2
+	"орыс" n abl @nmod #1->2
 "<жақын>"
-	"жақын" adj @amod #2->8
+	"жақын" adj @acl:relcl #2->9
+		"е" cop aor p3 sg @cop #3->2
 "<арқа>"
-	"арқа" n attr @compound #3->4
+	"арқа" n nom @dobj #4->5
 "<күзеу>"
-	"күзеу" NOUN @compound-etq #4->5
-	"күзеу" n nom @x #4->5
+	"күзе" v tv ger nom @ccomp #5->6
 "<қыларлық>"
-	"қыл" VERB @acl:relcl #5->8
-	"қыл" v tv gpr_ppot nom @acl:relcl #5->8
+	"қыл" v tv gpr_ppot nom @acl:relcl #6->9
 "<қазаққа>"
-	"қазақ" n dat @iobj #6->9
+	"қазақ" n dat @nmod #7->9
 "<күшті>"
-	"күшті" adj @amod #7->8
+	"күшті" adj @amod #8->9
 "<жұрт>"
-	"жұрт" n nom @nsubj #8->9
+	"жұрт" n nom @nsubj #9->10
 "<жоқ>"
-	"жоқ" adj @root #9->0
-		"е" cop aor p3 sg @cop #10->9
+	"жоқ" adj @root #10->0
+		"е" cop aor p3 sg @cop #11->10
 "<.>"
-	"." sent @punct #11->9
+	"." sent @punct #12->10
 ¶

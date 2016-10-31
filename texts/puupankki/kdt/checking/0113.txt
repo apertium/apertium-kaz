@@ -1,21 +1,23 @@
 "<Біреу>"
-	"біреу" prn ind nom @nsubj #1->4
+	"біреу" prn ind nom @nsubj #1->5
 "<қазақ>"
-	"қазақ" n nom @dobj #2->4
+	"қазақ" n nom @nsubj #2->3
 "<жақсы>"
-	"жақсы" adj @xcomp #3->4
+	"жақсы" adj @ccomp #3->5
+		"е" cop aor p3 sg @cop #4->3
 "<деді>"
-	"де" v tv ifi p3 sg @parataxis #4->9
+	"де" v tv ifi p3 sg @root #5->0
 "<,>"
-	"," cm @punct #5->4
+	"," cm @punct #6->5
 "<біреу>"
-	"біреу" prn ind nom @nsubj #6->9
+	"біреу" prn ind nom @nsubj #7->11
 "<орыс>"
-	"орыс" n nom @dobj #7->9
+	"орыс" n nom @nsubj #8->9
 "<жақсы>"
-	"жақсы" adj @xcomp #8->9
+	"жақсы" adj @ccomp #9->11
+		"е" cop aor p3 sg @cop #10->9
 "<деді>"
-	"де" v tv ifi p3 sg @root #9->0
+	"де" v tv ifi p3 sg @parataxis #11->5
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #12->11
 ¶

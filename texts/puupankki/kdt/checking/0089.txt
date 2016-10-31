@@ -6,11 +6,11 @@
 "<,>"
 	"," cm @punct #3->2
 "<бүрсеңдеп>"
-	"бүрсеңде" v iv gna_perf @advcl #4->5
+	"бүрсеңде" v iv gna_perf @advcl #4->7
 "<жүріп>"
-	"жүр" v iv gna_perf @advcl #5->7
+	"жүр" vaux gna_perf @aux #5->4
 "<қозы>"
-	"қозы" n nom @nsubj #6->7
+	"қозы" n nom @dobj #6->7
 "<ағытып>"
 	"ағыт" v tv gna_perf @conj #7->15
 "<,>"
@@ -18,9 +18,9 @@
 "<бір>"
 	"бір" num @nummod #9->10
 "<тостаған>"
-	"тостаған" n nom @amod-nmod #10->11
+	"тостаған" n nom @dobj #10->11
 "<іркіт>"
-	"іркіт" n nom @dobj #11->12
+	"іркіт" n nom @nmod:poss #11->10
 "<ішіп>"
 	"іш" v tv gna_perf @conj #12->15
 "<,>"

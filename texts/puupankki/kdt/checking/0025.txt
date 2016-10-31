@@ -1,9 +1,9 @@
 "<Бала>"
-	"бала" n nom @nsubj #1->14
+	"бала" n nom @nsubj #1->2
 "<қамаған>"
 	"қама" v tv gpr_past @acl:relcl #2->3
 "<лаққа>"
-	"лақ" n dat @iobj #3->4
+	"лақ" n dat @nmod #3->4
 "<ұқсап>"
 	"ұқса" v iv gna_perf @conj #4->8
 "<,>"
@@ -15,7 +15,7 @@
 "<жүгіріп>"
 	"жүгір" v iv gna_perf @advcl #8->14
 "<,>"
-	"," cm @punct #9->14
+	"," cm @punct #9->8
 "<өкпесін>"
 	"өкпе" n px3sp acc @dobj #10->11
 "<соққан>"
@@ -23,7 +23,7 @@
 "<торғайдай>"
 	"торғай" n sim @nmod #12->14
 "<торға>"
-	"тор" n dat @iobj #13->14
+	"тор" n dat @nmod #13->14
 "<ілінді>"
 	"іл" v tv pass ifi p3 sg @root #14->0
 "<.>"
