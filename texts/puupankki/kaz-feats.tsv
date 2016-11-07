@@ -3,6 +3,7 @@ _	_	acc	_	_	Case=Acc
 _	_	al	_	_	_
 _	_	ant	_	_	_
 _	_	aor	_	_	Tense=Aor
+_	_	loc|attr	_	_	Case=Loc
 _	_	attr	_	_	Case=Nom
 _	_	cog	_	_	_
 _	num	coll	_	NUM	NumType=Coll
@@ -63,7 +64,7 @@ _	_	pres	_	_	Tense=Prs
 _	_	px1pl	_	_	Number[psor]=Plur|Person[psor]=1
 _	_	px2pl	_	_	Number[psor]=Plur|Person[psor]=2
 _	_	px3pl	_	_	Number[psor]=Plur|Person[psor]=3
-_	_	px3sp	_	_	Number[psor]=Sing,Plur|Person[psor]=3
+_	_	px3sp	_	_	Number[psor]=Plur,Sing|Person[psor]=3
 _	_	px1sg	_	_	Number[psor]=Sing|Person[psor]=1
 _	_	px2sg	_	_	Number[psor]=Sing|Person[psor]=2
 _	_	px3sg	_	_	Number[psor]=Sing|Person[psor]=3
@@ -81,7 +82,7 @@ _	adj	_	_	ADJ	_
 _	adv	_	_	ADV	_
 _	cm	_	_	PUNCT	_
 _	cnjadv	_	_	SCONJ	_
-_	cnjcoo	_	_	CCONJ	_
+_	cnjcoo	_	_	CONJ	_
 _	cnjsub	_	_	SCONJ	_
 _	cop	_	_	AUX	_
 _	det	_	_	DET	_
@@ -92,6 +93,7 @@ _	lpar	_	_	PUNCT	_
 _	lquot	_	_	PUNCT	_
 _	mod	_	_	PART	_
 _	mod_ass	_	_	PART	_
+_	mod_emo	_	_	PART	_
 _	n	_	_	NOUN	_
 _	np	_	_	PROPN	_
 _	num	_	_	NUM	_
