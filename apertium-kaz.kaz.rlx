@@ -1279,6 +1279,10 @@ REMOVE Num + Subst IF
       (0C Num) 
       (1C Num LINK 1 N) ;
 
+"<барды>" SELECT V IF
+                   (-1 Dat) ;
+
+
 # this rule didn't work for 'қазба' in:
 # Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
 #REMOVE N + Attr IF
