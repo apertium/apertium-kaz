@@ -7,13 +7,13 @@
 "<деп>"
 	"де" v tv gna_perf @advcl #4->5
 "<айырмайды>"
-	"айыр" v tv neg aor p3 sg @root #5->0
+	"айыр" v tv neg aor p3 sg @parataxis #5->18
 "<,>"
 	"," cm @punct #6->5
 "<бала>"
 	"бала" n nom @nsubj #7->8
 "<біткенді>"
-	"біт" v iv ger_past acc @ccomp #8->12
+	"біт" v iv ger_past acc @advcl #8->12
 "<">"
 	""" sent @punct #9->10
 "<балақайым>"
@@ -21,19 +21,19 @@
 "<">"
 	""" sent @punct #11->10
 "<дейді>"
-	"де" v tv aor p3 sg @parataxis #12->5
+	"де" v tv aor p3 sg @parataxis #12->18
 "<,>"
 	"," cm @punct #13->12
 "<кісіге>"
 	"кісі" n dat @iobj #14->18
 "<өмірі>"
-	"өмірі" ADV @advmod #15->18
+	"өмірі" n px3sp nom @nmod #15->18
 "<қатты>"
 	"қатты" adj @amod #16->17
 "<сөз>"
 	"сөз" n nom @dobj #17->18
 "<айтпайды>"
-	"айт" v tv neg aor p3 sg @parataxis #18->12
+	"айт" v tv neg aor p3 sg @root #18->0
 "<.>"
 	"." sent @punct #19->18
 ¶

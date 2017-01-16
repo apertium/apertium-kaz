@@ -1,13 +1,11 @@
 "<Мейлі>"
-	"мейлі" ADV @advmod #1->4
-	"мейлі" ij @advmod #1->4
+	"мейлі" ij @discourse #1->4
 "<жаңа>"
 	"жаңа" adv @advmod #2->3
 "<түскен>"
 	"түс" v iv gpr_past @acl:relcl #3->4
 "<келіншек>"
-	"келіншек" n nom @nmod #4->12
-	"келіншек" n nom @conj #4->8
+	"келіншек" n nom @parataxis #4->12
 "<болсын>"
 	"бол" v iv opt p3 sg @cop #5->4
 "<,>"
@@ -15,7 +13,7 @@
 "<қатын>"
 	"қатын" n nom @nsubj #7->8
 "<біткенді>"
-	"біт" v iv ger_past acc @ccomp #8->12
+	"біт" v iv ger_past acc @advcl #8->12
 "<">"
 	""" sent @punct #9->10
 "<шеше>"
