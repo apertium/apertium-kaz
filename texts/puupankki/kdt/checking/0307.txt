@@ -1,19 +1,15 @@
 "<Елсіз>"
-	"елсіз" ADJ @amod #1->2
-	"ел" n @amod #1->2
-		"сыз" post @amod #1->2
+	"ел" n @nmod #1->3
+		"сыз" post @case #2->1
 "<дала>"
-	"дала" n nom @nsubj #2->5
+	"дала" n nom @nsubj #3->7
 "<емсіз>"
-	"емсіз" ADJ @amod #3->4
-	"ем" n @amod #3->4
-		"сыз" post @amod #3->4
+	"ем" n @nmod #4->6
+		"сыз" post @case #5->4
 "<жарадай>"
-	"жарадай" ADV @advmod #4->5
-	"жара" n sim @advmod #4->5
+	"жара" n sim @nmod #6->7
 "<көрінеді>"
-	"көр" v tv pass aor p3 sg @root #5->0
-	"көрін" v iv aor p3 sg @root #5->0
+	"көр" v tv pass aor p3 sg @root #7->0
 "<.>"
-	"." sent @punct #6->5
+	"." sent @punct #8->7
 ¶

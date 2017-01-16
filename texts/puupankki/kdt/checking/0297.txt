@@ -1,14 +1,13 @@
 "<Қара>"
 	"қара" adj @amod #1->2
 "<шаттан>"
-	"шат" NOUN @nmod #2->4
 	"шат" n abl @nmod #2->4
 "<қашып>"
-	"қаш" v iv gna_perf @advcl #3->4
+	"қаш" v iv gna_perf @csubj #3->8
 "<келе>"
-	"кел" v iv prc_impf @csubj #4->8
+	"кел" vaux prc_impf @aux #4->3
 "<жатқаны>"
-	"жат" vaux ger_past px3sp nom @aux #5->4
+	"жат" vaux ger_past px3sp nom @aux #5->3
 "<лезде>"
 	"лезде" adv @advmod #6->8
 "<есіне>"

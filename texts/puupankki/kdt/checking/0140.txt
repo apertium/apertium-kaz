@@ -13,10 +13,11 @@
 "<даладағы>"
 	"дала" n loc attr @amod #7->8
 "<қазақтікі>"
-	"қазақ" n gen subst nom @nmod:poss #8->9
+	"қазақ" n gen subst nom @nmod:poss #8->10
+		"кі" post nom @case #9->8
 "<қызсың>"
-	"қыз" n nom @root #9->0
-		"е" cop aor p2 sg @cop #10->9
+	"қыз" n nom @root #10->0
+		"е" cop aor p2 sg @cop #11->10
 "<.>"
-	"." sent @punct #11->9
+	"." sent @punct #11->10
 ¶

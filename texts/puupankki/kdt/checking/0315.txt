@@ -1,13 +1,13 @@
 "<Торғайды>"
-	"торғай" n acc @dobj #1->5
+	"торғай" n acc @dobj #1->4
 "<ажалдан>"
-	"ажал" n abl @iobj #2->5
+	"ажал" n abl @nmod #2->4
 "<аман>"
-	"аман" adj advl @advmod #3->5
+	"аман" adj advl @advmod #3->4
 "<алып>"
-	"ал" v tv gna_perf @advcl #4->5
+	"ал" v tv gna_perf @advcl #4->6
 "<қалғанына>"
-	"қал" v iv ger_past px3sp dat @ccomp #5->6
+	"қал" vaux ger_past px3sp dat @aux #5->4
 "<қуанды>"
 	"қуан" v iv ifi p3 sg @root #6->0
 "<.>"

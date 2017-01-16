@@ -1,18 +1,15 @@
 "<Жарты>"
 	"жарты" n attr @nsubj #1->2
 "<шақырымдай>"
-	"шақырымдай" ADJ @amod #2->3
 	"шақырым" n sim @amod #2->3
 "<жерде>"
 	"жер" n loc @nmod #3->6
 "<бір>"
 	"бір" det ind @det #4->5
 "<дөңес>"
-	"дөңес" NOUN @nsubj #5->6
-	"дөңес" adj subst nom @nsubj #5->6
+	"дөңес" n nom @nsubj #5->6
 "<көрінеді>"
 	"көр" v tv pass aor p3 sg @root #6->0
-	"көрін" v iv aor p3 sg @root #6->0
 "<.>"
 	"." sent @punct #7->6
 ¶
