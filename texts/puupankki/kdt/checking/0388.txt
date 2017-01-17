@@ -1,19 +1,17 @@
 "<Онымен>"
-	"ол" PRON @iobj #1->2
-	"ол" prn dem ins @iobj #1->2
-	"ол" prn pers p3 sg ins @iobj #1->2
+	"ол" prn pers p3 sg ins @nmod #1->2
 "<таласқандай>"
 	"тала" v tv coop gpr_past subst sim @acl:relcl #2->8
 "<мұның>"
 	"бұл" prn dem gen @nmod:poss #3->8
 "<не>"
-	"не" prn itg nom @amod #4->5
+	"не" det itg nom @det #4->5
 "<айбыны>"
 	"айбын" n px3sp nom @conj #5->8
 "<,>"
 	"," cm @punct #6->8
 "<не>"
-	"не" prn itg nom @amod #7->8
+	"не" det itg nom @det #7->8
 "<күші>"
 	"күш" n px3sp nom @nsubj #8->9
 "<бар>"

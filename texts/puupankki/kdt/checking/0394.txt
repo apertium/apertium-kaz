@@ -11,10 +11,9 @@
 "<аяғы>"
 	"аяқ" n px3sp nom @nsubj #6->7
 "<созылып>"
-	"соз" v tv pass gna_perf @advcl #7->8
-	"созыл" v iv gna_perf @advcl #7->8
+	"соз" v tv pass gna_perf @ccomp #7->9
 "<жатқанын>"
-	"жат" v iv ger_past px3sp acc @ccomp #8->9
+	"жат" vaux ger_past px3sp acc @aux #8->7
 "<сезіп>"
 	"сез" v tv gna_perf @advcl #9->25
 "<,>"
@@ -26,15 +25,11 @@
 "<">"
 	""" sent @punct #13->20
 "<бір>"
-	"бір" NUM @nmod-num #14->15
-	"бір" num @x #14->15
-	"бір" num subst nom @x #14->15
+	"бір" num advl @advmod #14->15
 "<айналып>"
 	"айнал" v iv gna_perf @advcl #15->16
 "<соғармын>"
-	"соқ" VERB @ccomp #16->23
-	"соқ" v iv fut p1 sg @ccomp #16->23
-	"соқ" v tv fut p1 sg @ccomp #16->23
+	"соқ" v iv fut p1 sg @parataxis #16->20
 "<,>"
 	"," cm @punct #17->16
 "<—>"
@@ -42,9 +37,8 @@
 "<шаруам>"
 	"шаруа" n px1sg nom @nsubj #19->20
 "<бар>"
-	"бар" adj @parataxis #20->16
+	"бар" adj @ccomp #20->23
 "<еді>"
-	"е" AUX @aux #21->20
 	"е" cop ifi p3 sg @cop #21->20
 "<">"
 	""" sent @punct #22->20

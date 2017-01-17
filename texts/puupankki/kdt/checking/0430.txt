@@ -3,30 +3,30 @@
 "<күзететін>"
 	"күзет" v tv gpr_impf @acl:relcl #2->3
 "<шал>"
-	"шал" n nom @nsubj #3->7
+	"шал" n nom @nsubj #3->9
 "<бұ>"
 	"бұл" prn dem nom @nsubj #4->5
 "<не>"
-	"не" prn itg nom @dobj #5->6
+	"не" prn itg nom @ccomp #5->7
+		"е" cop aor p3 sg @cop #6->5
 "<деп>"
-	"де" v tv gna_perf @advcl #6->7
+	"де" v tv gna_perf @advcl #7->9
 "<жетіп>"
-	"жет" v iv gna_perf @advcl #7->8
+	"жет" v iv gna_perf @advcl #8->9
 "<барса>"
-	"бар" v iv gna_cond p3 sg @advcl #8->13
+	"бар" v iv gna_cond p3 sg @advcl #9->15
 "<,>"
-	"," cm @punct #9->13
+	"," cm @punct #10->15
 "<екеуі>"
-	"екеу" num coll subst px3sp nom @nsubj #10->13
+	"екеу" num coll subst px3sp nom @nsubj #11->15
 "<екі>"
-	"екі" num @nummod #11->12
+	"екі" num @nummod #12->13
 "<жаққа>"
-	"жақ" n dat @nmod #12->13
+	"жақ" n dat @nmod #13->15
 "<қаша>"
-	"қаш" v iv prc_impf @root #13->0
+	"қаш" v iv gna_impf @advcl #14->15
 "<жөнеледі>"
-	"жөнел" AUX @aux #14->13
-	"жөнел" v iv aor p3 sg @aux #14->13
+	"жөнел" v iv aor p3 sg @root #15->0
 "<.>"
-	"." sent @punct #15->13
+	"." sent @punct #16->15
 ¶

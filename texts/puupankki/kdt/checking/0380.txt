@@ -3,13 +3,11 @@
 "<,>"
 	"," cm @punct #2->3
 "<міне>"
-	"міне" PRON @amod #3->8
-	"міне" adv @amod #3->8
+	"міне" adv @discourse #3->8
 "<,>"
 	"," cm @punct #4->3
 "<құдайдың>"
 	"құдай" n gen @nmod:poss #5->7
-	"Құдай" n gen @nmod:poss #5->7
 "<жарық>"
 	"жарық" adj @amod #6->7
 "<күнін>"
@@ -20,7 +18,6 @@
 	"," cm @punct #9->8
 "<жазылдым>"
 	"жаз" v tv pass ifi p1 sg @parataxis #10->8
-	"жазыл" v iv ifi p1 sg @parataxis #10->8
 "<.>"
 	"." sent @punct #11->10
 ¶

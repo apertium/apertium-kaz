@@ -7,11 +7,8 @@
 "<ойын>"
 	"ой" n px3sp acc @dobj #4->6
 "<неге>"
-	"неге" PRON @nmod #5->6
-	"не" prn itg dat @nmod #5->6
-	"неге" adv itg @nmod #5->6
+	"неге" adv itg @advmod #5->6
 "<білдірсін>"
-	"біл" VERB @root #6->0
 	"білдір" v tv opt p3 sg @root #6->0
 "<?>"
 	"?" sent @punct #7->6

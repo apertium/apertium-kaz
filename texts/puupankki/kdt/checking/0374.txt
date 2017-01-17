@@ -1,11 +1,11 @@
 "<Менде>"
-	"мен" prn pers p1 sg loc @iobj #1->5
+	"мен" prn pers p1 sg loc @nmod:own #1->5
 "<не>"
-	"не" prn itg nom @amod #2->3
+	"не" det itg @det #2->3
 "<сын>"
-	"сын" n nom @ccomp #3->5
+	"сын" n nom @nsubj #3->4
 "<қалды>"
-	"қал" v iv ifi p3 sg @cop #4->3
+	"қал" v iv ifi p3 sg @ccomp #4->5
 "<дейсің>"
 	"де" v tv aor p2 sg @root #5->0
 "<?>"

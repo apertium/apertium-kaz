@@ -1,6 +1,4 @@
 "<Оның>"
-	"ол" PRON @nmod:poss #1->3
-	"ол" prn dem gen @nmod:poss #1->3
 	"ол" prn pers p3 sg gen @nmod:poss #1->3
 "<оң>"
 	"оң" adj @amod #2->3
@@ -21,14 +19,11 @@
 "<үйге>"
 	"үй" n dat @nmod #10->12
 "<таман>"
-	"таман" ADP @advmod:adp #11->10
-	"таман" post @x #11->10
+	"таман" post @case #11->10
 "<кетіп>"
-	"кет" v tv prc_perf @root #12->0
 	"кет" v iv prc_perf @root #12->0
 "<барады>"
-	"бар" AUX @aux #13->12
-	"бар" v iv aor p3 sg @aux #13->12
+	"бар" vaux aor p3 sg @aux #13->12
 "<.>"
 	"." sent @punct #14->12
 ¶
