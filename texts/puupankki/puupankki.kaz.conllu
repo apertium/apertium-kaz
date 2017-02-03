@@ -1,3 +1,11 @@
+# sent_id = wikipedia-news.tagged.txt:40:1609
+# text = 5 полиция қызметкері жарақаттанған.
+1	5	5	NUM	num	_	3	nummod	_	5|num
+2	полиция	полиция	NOUN	n	Case=Nom	3	nmod:poss	_	полиция|n|nom
+3	қызметкері	қызметкер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	қызметкер|n|px3sp|nom
+4	жарақаттанған	жарақаттан	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	жарақаттан|v|tv|past|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
 # sent_id = kdt.tagged.txt:1:0
 # text = Өскеменнің ар жағында, Бұқтырманың оң жағында әлемге аян Алтай бар.
 1	Өскеменнің	Өскемен	PROPN	np	Case=Gen	3	nmod:poss	_	Өскемен|np|top|gen
