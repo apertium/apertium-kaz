@@ -1482,6 +1482,776 @@
 5	?	?	PUNCT	sent	_	3	punct	_	?|sent
 
 # sent_id = kdt.tagged.txt:134:2183
+# text = Қара шаттан қашып келе жатқаны лезде есіне түсе қалды.
+1	Қара	қара	ADJ	adj	_	2	amod	_	қара|adj
+2	шаттан	шат	NOUN	n	Case=Abl	4	nmod	_	шат|n|abl
+3	қашып	қаш	VERB	v	Aspect=Perf|VerbForm=Trans	8	csubj	_	қаш|v|iv|gnaperf
+4	келе	кел	AUX	vaux	Aspect=Impf|VerbForm=Coverb	3	aux	_	кел|vaux|prcimpf
+5	жатқаны	жат	AUX	vaux	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	3	aux	_	жат|vaux|gerpast|px3sp|nom
+6	лезде	лезде	ADV	adv	_	8	advmod	_	лезде|adv
+7	есіне	ес	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod	_	ес|n|px3sp|dat
+8	түсе	түс	VERB	v	Aspect=Impf|VerbForm=Coverb	0	root	_	түс|v|iv|prcimpf
+9	қалды	қал	AUX	vaux	Number=Sing|Person=3|Tense=Past	8	aux	_	қал|vaux|ifi|p3|sg
+10	.	.	PUNCT	sent	_	8	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:135:2204
+# text = Ағыны бұжырланып жатыр.
+1	Ағыны	ағын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	ағын|n|px3sp|nom
+2	бұжырланып	бұжырла	VERB	v	Aspect=Perf|VerbForm=Coverb|Voice=Pass	0	root	_	бұжырла|v|tv|pass|prcperf
+3	жатыр	жат	AUX	vaux	Number=Sing|Person=3|Tense=Prs	2	aux	_	жат|vaux|pres|p3|sg
+4	.	.	PUNCT	sent	_	2	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:136:2213
+# text = Күн еңкейіп, түс қаңғып кетіпті.
+1	Күн	күн	NOUN	n	Case=Nom	2	nsubj	_	күн|n|nom
+2	еңкейіп	еңкей	VERB	v	Aspect=Perf|VerbForm=Coverb	5	conj	_	еңкей|v|iv|prcperf
+3	,	,	PUNCT	cm	_	5	punct	_	,|cm
+4	түс	түс	NOUN	n	Case=Nom	5	nsubj	_	түс|n|nom
+5	қаңғып	қаңғы	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	қаңғы|v|iv|prcperf
+6	кетіпті	кет	AUX	vaux	Evidentiality=Fh|Number=Sing|Person=3|Tense=Past	5	aux	_	кет|vaux|ifi|evid|p3|sg
+7	.	.	PUNCT	sent	_	5	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:137:2228
+# text = Әлі жүріп келеді, әлі жүріп келеді.
+1	Әлі	әлі	ADV	adv	_	2	advmod	_	әлі|adv
+2	жүріп	жүр	VERB	v	Aspect=Perf|VerbForm=Coverb	6	parataxis	_	жүр|v|iv|prcperf
+3	келеді	кел	AUX	vaux	Number=Sing|Person=3|Tense=Aor	2	aux	_	кел|vaux|aor|p3|sg
+4	,	,	PUNCT	cm	_	2	punct	_	,|cm
+5	әлі	әлі	ADV	adv	_	6	advmod	_	әлі|adv
+6	жүріп	жүр	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	жүр|v|iv|prcperf
+7	келеді	кел	AUX	vaux	Number=Sing|Person=3|Tense=Aor	6	aux	_	кел|vaux|aor|p3|sg
+8	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:138:2245
+# text = Өткел жоқ.
+1	Өткел	өткел	NOUN	n	Case=Nom	2	nsubj	_	өткел|n|nom
+2-3	жоқ	_	_	_	_	_	_	_	_
+2	жоқ	жоқ	ADJ	adj	_	0	root	_	жоқ|adj
+3		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|p3|sg
+4	.	.	PUNCT	sent	_	2	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:139:2253
+# text = Жарты шақырымдай жерде бір дөңес көрінеді.
+1	Жарты	жарты	NOUN	n	Case=Nom	2	nsubj	_	жарты|n|attr
+2	шақырымдай	шақырым	NOUN	n	_	3	amod	_	шақырым|n|sim
+3	жерде	жер	NOUN	n	Case=Loc	6	nmod	_	жер|n|loc
+4	бір	бір	DET	det	PronType=Ind	5	det	_	бір|det|ind
+5	дөңес	дөңес	NOUN	n	Case=Nom	6	nsubj	_	дөңес|n|nom
+6	көрінеді	көр	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	көр|v|tv|pass|aor|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:140:2268
+# text = Соған шығып ел көздемек.
+1	Соған	сол	PRON	prn	Case=Dat|PronType=Dem	2	nmod	_	сол|prn|dem|dat
+2	шығып	шық	VERB	v	Aspect=Perf|VerbForm=Trans	4	advcl	_	шық|v|iv|gnaperf
+3	ел	ел	NOUN	n	Case=Nom	4	dobj	_	ел|n|nom
+4	көздемек	көзде	VERB	v	Number=Sing|Person=3	0	root	_	көзде|v|tv|futplan|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:141:2279
+# text = Елсіз дала емсіз жарадай көрінеді.
+1-2	Елсіз	_	_	_	_	_	_	_	_
+1	ел	ел	NOUN	n	_	3	nmod	_	ел|n
+2	сз	сыз	ADP	post	_	1	case	_	сыз|post
+3	дала	дала	NOUN	n	Case=Nom	7	nsubj	_	дала|n|nom
+4-5	емсіз	_	_	_	_	_	_	_	_
+4	ем	ем	NOUN	n	_	6	nmod	_	ем|n
+5	сз	сыз	ADP	post	_	4	case	_	сыз|post
+6	жарадай	жара	NOUN	n	_	7	nmod	_	жара|n|sim
+7	көрінеді	көр	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	көр|v|tv|pass|aor|p3|sg
+8	.	.	PUNCT	sent	_	7	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:142:2294
+# text = Ай, қу дала !
+1	Ай	ай	INTJ	ij	_	4	discourse	_	ай|ij
+2	,	,	PUNCT	cm	_	4	punct	_	,|cm
+3	қу	қу	ADJ	adj	_	4	amod	_	қу|adj
+4-5	дала	_	_	_	_	_	_	_	_
+4	дала	дала	NOUN	n	Case=Nom	0	root	_	дала|n|nom
+5		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	4	cop	_	е|cop|aor|p3|sg
+6	!	!	PUNCT	sent	_	4	punct	_	!|sent
+
+# sent_id = kdt.tagged.txt:143:2306
+# text = Бір мезгілде әлгі торғай жансыз тастай ағып түсті топ етіп.
+1	Бір	бір	DET	det	PronType=Ind	2	det	_	бір|det|ind
+2	мезгілде	мезгіл	NOUN	n	Case=Loc	8	nmod	_	мезгіл|n|loc
+3	әлгі	әлгі	DET	det	PronType=Dem	4	det	_	әлгі|det|dem
+4	торғай	торғай	NOUN	n	Case=Nom	8	nsubj	_	торғай|n|nom
+5	жансыз	жансыз	ADJ	adj	_	6	amod	_	жансыз|adj
+6	тастай	тас	NOUN	n	_	7	nmod	_	тас|n|sim
+7	ағып	ақ	VERB	v	Aspect=Perf|VerbForm=Trans	8	advcl	_	ақ|v|iv|gnaperf
+8	түсті	түс	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	түс|v|iv|ifi|p3|sg
+9	топ	топ	NOUN	n	Case=Nom	10	dobj	_	топ|n|nom
+10	етіп	ет	VERB	v	Aspect=Perf|VerbForm=Trans	8	advcl	_	ет|v|tv|gnaperf
+11	.	.	PUNCT	sent	_	8	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:144:2329
+# text = Ол торғайдың түскен жері қалың шөп.
+1	Ол	ол	DET	det	PronType=Dem	2	det	_	ол|det|dem
+2	торғайдың	торғай	NOUN	n	Case=Gen	4	nmod:poss	_	торғай|n|gen
+3	түскен	түс	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	түс|v|iv|gprpast
+4	жері	жер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	жер|n|px3sp|nom
+5	қалың	қалың	ADJ	adj	_	6	amod	_	қалың|adj
+6-7	шөп	_	_	_	_	_	_	_	_
+6	шөп	шөп	NOUN	n	Case=Nom	0	root	_	шөп|n|nom
+7		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	6	cop	_	е|cop|aor|p3|sg
+8	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:145:2345
+# text = Торғайды ажалдан аман алып қалғанына қуанды.
+1	Торғайды	торғай	NOUN	n	Case=Acc	4	dobj	_	торғай|n|acc
+2	ажалдан	ажал	NOUN	n	Case=Abl	4	nmod	_	ажал|n|abl
+3	аман	аман	ADJ	adj	_	4	advmod	_	аман|adj|advl
+4	алып	ал	VERB	v	Aspect=Perf|VerbForm=Trans	6	advcl	_	ал|v|tv|gnaperf
+5	қалғанына	қал	AUX	vaux	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	4	aux	_	қал|vaux|gerpast|px3sp|dat
+6	қуанды	қуан	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	қуан|v|iv|ifi|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:146:2360
+# text = Жыланды өлтіргеніне ерленді.
+1	Жыланды	жылан	NOUN	n	Case=Acc	2	dobj	_	жылан|n|acc
+2	өлтіргеніне	өлтір	VERB	v	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	3	advcl	_	өлтір|v|tv|gerpast|px3sp|dat
+3	ерленді	ерле	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	ерле|v|tv|pass|ifi|p3|sg
+4	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:147:2369
+# text = Әрі ырым көрді.
+1	Әрі	әрі	SCONJ	cnjadv	_	3	cc	_	әрі|cnjadv
+2	ырым	ырым	NOUN	n	Case=Nom	3	dobj	_	ырым|n|nom
+3	көрді	көр	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	көр|v|tv|ifi|p3|sg
+4	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:148:2378
+# text = Бір жапырақ етім бар.
+1	Бір	бір	DET	det	PronType=Ind	2	det	_	бір|det|ind
+2	жапырақ	жапырақ	NOUN	n	Case=Nom	3	det	_	жапырақ|n|nom
+3	етім	ет	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	4	nsubj	_	ет|n|px1sg|nom
+4-5	бар	_	_	_	_	_	_	_	_
+4	бар	бар	ADJ	adj	_	0	root	_	бар|adj
+5		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	4	cop	_	е|cop|aor|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:149:2390
+# text = Ол дүние жинамайды.
+1	Ол	ол	PRON	prn	Case=Nom|PronType=Dem	3	nsubj	_	ол|prn|dem|nom
+2	дүние	дүние	NOUN	n	Case=Nom	3	dobj	_	дүние|n|nom
+3	жинамайды	жина	VERB	v	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	0	root	_	жина|v|tv|neg|aor|p3|sg
+4	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:150:2399
+# text = Үлкенді " әке ", " аға " деп тұрады.
+1	Үлкенді	үлкен	NOUN	n	Case=Acc	9	nmod	_	үлкен|n|acc
+2	"	"	PUNCT	sent	_	3	punct	_	"|sent
+3	әке	әке	NOUN	n	Case=Nom	7	conj	_	әке|n|nom
+4	"	"	PUNCT	sent	_	3	punct	_	"|sent
+5	,	,	PUNCT	cm	_	7	punct	_	,|cm
+6	"	"	PUNCT	sent	_	7	punct	_	"|sent
+7	аға	аға	NOUN	n	Case=Nom	9	dobj	_	аға|n|nom
+8	"	"	PUNCT	sent	_	7	punct	_	"|sent
+9	деп	де	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	де|v|tv|prcperf
+10	тұрады	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Aor	9	aux	_	тұр|vaux|aor|p3|sg
+11	.	.	PUNCT	sent	_	9	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:151:2422
+# text = Мейлі жаңа түскен келіншек болсын, қатын біткенді " шеше " дейді.
+1	Мейлі	мейлі	INTJ	ij	_	4	discourse	_	мейлі|ij
+2	жаңа	жаңа	ADV	adv	_	3	advmod	_	жаңа|adv
+3	түскен	түс	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	түс|v|iv|gprpast
+4	келіншек	келіншек	NOUN	n	Case=Nom	12	parataxis	_	келіншек|n|nom
+5	болсын	бол	VERB	v	Mood=Opt|Number=Sing|Person=3	4	cop	_	бол|v|iv|opt|p3|sg
+6	,	,	PUNCT	cm	_	12	punct	_	,|cm
+7	қатын	қатын	NOUN	n	Case=Nom	8	nsubj	_	қатын|n|nom
+8	біткенді	біт	VERB	v	Case=Acc|Tense=Past|VerbForm=Ger	12	advcl	_	біт|v|iv|gerpast|acc
+9	"	"	PUNCT	sent	_	10	punct	_	"|sent
+10	шеше	шеше	NOUN	n	Case=Nom	12	dobj	_	шеше|n|nom
+11	"	"	PUNCT	sent	_	10	punct	_	"|sent
+12	дейді	де	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	де|v|tv|aor|p3|sg
+13	.	.	PUNCT	sent	_	12	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:152:2449
+# text = Еркек, әйел деп айырмайды, бала біткенді " балақайым " дейді, кісіге өмірі қатты сөз айтпайды.
+1	Еркек	еркек	NOUN	n	Case=Nom	3	conj	_	еркек|n|nom
+2	,	,	PUNCT	cm	_	3	punct	_	,|cm
+3	әйел	әйел	NOUN	n	Case=Nom	4	dobj	_	әйел|n|nom
+4	деп	де	VERB	v	Aspect=Perf|VerbForm=Trans	5	advcl	_	де|v|tv|gnaperf
+5	айырмайды	айыр	VERB	v	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	18	parataxis	_	айыр|v|tv|neg|aor|p3|sg
+6	,	,	PUNCT	cm	_	5	punct	_	,|cm
+7	бала	бала	NOUN	n	Case=Nom	8	nsubj	_	бала|n|nom
+8	біткенді	біт	VERB	v	Case=Acc|Tense=Past|VerbForm=Ger	12	advcl	_	біт|v|iv|gerpast|acc
+9	"	"	PUNCT	sent	_	10	punct	_	"|sent
+10	балақайым	балақай	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	12	dobj	_	балақай|n|px1sg|nom
+11	"	"	PUNCT	sent	_	10	punct	_	"|sent
+12	дейді	де	VERB	v	Number=Sing|Person=3|Tense=Aor	18	parataxis	_	де|v|tv|aor|p3|sg
+13	,	,	PUNCT	cm	_	12	punct	_	,|cm
+14	кісіге	кісі	NOUN	n	Case=Dat	18	iobj	_	кісі|n|dat
+15	өмірі	өмірі	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod	_	өмірі|n|px3sp|nom
+16	қатты	қатты	ADJ	adj	_	17	amod	_	қатты|adj
+17	сөз	сөз	NOUN	n	Case=Nom	18	dobj	_	сөз|n|nom
+18	айтпайды	айт	VERB	v	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	0	root	_	айт|v|tv|neg|aor|p3|sg
+19	.	.	PUNCT	sent	_	18	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:153:2488
+# text = Ит біткен шулап артында жүреді.
+1	Ит	ит	NOUN	n	Case=Nom	2	nsubj	_	ит|n|nom
+2	біткен	біт	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	5	csubj	_	біт|v|iv|gerpast|nom
+3	шулап	шула	VERB	v	Aspect=Perf|VerbForm=Trans	5	advcl	_	шула|v|iv|gnaperf
+4	артында	арт	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	арт|n|px3sp|loc
+5	жүреді	жүр	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	жүр|v|iv|aor|p3|sg
+6	.	.	PUNCT	sent	_	5	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:154:2501
+# text = Бар мақтанатыны — жүйріктігі.
+1	Бар	бар	ADJ	adj	Case=Nom	2	nsubj	_	бар|adj|subst|nom
+2	мақтанатыны	мақтан	VERB	v	Aspect=Impf|Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	4	csubj	_	мақтан|v|iv|gerimpf|px3sp|nom
+3	—	—	PART	guio	_	4	punct	_	—|guio
+4-5	жүйріктігі	_	_	_	_	_	_	_	_
+4	жүйрікті	жүйріктік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	жүйріктік|n|px3sp|nom
+5		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	4	cop	_	е|cop|aor|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:155:2513
+# text = Бірінен қалдым деп айтпайды.
+1	Бірінен	бір	PRON	prn	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ind	2	nmod	_	бір|prn|ind|px3sp|abl
+2	қалдым	қал	VERB	v	Number=Sing|Person=1|Tense=Past	3	ccomp	_	қал|v|iv|ifi|p1|sg
+3	деп	де	VERB	v	Aspect=Perf|VerbForm=Trans	4	advcl	_	де|v|tv|gnaperf
+4	айтпайды	айт	VERB	v	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	0	root	_	айт|v|tv|neg|aor|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:156:2524
+# text = Кейде жұрт намаз оқып жатса, дәрет алмастан жалаң аяқ барып, қатарға отыра кетеді.
+1	Кейде	кейде	ADV	adv	_	4	advmod	_	кейде|adv
+2	жұрт	жұрт	NOUN	n	Case=Nom	4	nsubj	_	жұрт|n|nom
+3	намаз	намаз	NOUN	n	Case=Nom	4	dobj	_	намаз|n|nom
+4	оқып	оқы	VERB	v	Aspect=Perf|VerbForm=Trans	14	advcl	_	оқы|v|tv|gnaperf
+5	жатса	жат	AUX	vaux	Mood=Cond|Number=Sing|Person=3|VerbForm=Trans	4	vaux	_	жат|vaux|gnacond|p3|sg
+6	,	,	PUNCT	cm	_	14	punct	_	,|cm
+7	дәрет	дәрет	NOUN	n	Case=Nom	8	dobj	_	дәрет|n|nom
+8	алмастан	ал	VERB	v	Case=Abl|Polarity=Neg	11	advcl	_	ал|v|tv|neg|gerfut|abl
+9	жалаң	жалаң	ADJ	adj	_	10	amod	_	жалаң|adj
+10	аяқ	аяқ	NOUN	n	Case=Nom	11	nmod	_	аяқ|n|nom
+11	барып	бар	VERB	v	Aspect=Perf|VerbForm=Trans	14	advcl	_	бар|v|iv|gnaperf
+12	,	,	PUNCT	cm	_	14	punct	_	,|cm
+13	қатарға	қатар	NOUN	n	Case=Dat	14	nmod	_	қатар|n|dat
+14	отыра	отыр	VERB	v	Aspect=Impf|VerbForm=Coverb	0	root	_	отыр|v|iv|prcimpf
+15	кетеді	кет	AUX	vaux	Number=Sing|Person=3|Tense=Aor	14	aux	_	кет|vaux|aor|p3|sg
+16	.	.	PUNCT	sent	_	14	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:157:2557
+# text = Бірталай жер жүрді.
+1	Бірталай	бірталай	DET	det	PronType=Qnt	2	det	_	бірталай|det|qnt
+2	жер	жер	NOUN	n	Case=Nom	3	nmod	_	жер|n|nom
+3	жүрді	жүр	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	жүр|v|iv|ifi|p3|sg
+4	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:158:2566
+# text = Әлден уақытта жүруге мұршасы келмей, дымы құрып отыра кетті.
+1	Әлден	әл	ADV	adv	_	8	advmod	_	әл|adv
+2	уақытта	уақыт	NOUN	n	Case=Loc	5	nmod	_	уақыт|n|loc
+3	жүруге	жүр	VERB	v	Case=Dat|VerbForm=Ger	5	advcl	_	жүр|v|iv|ger|dat
+4	мұршасы	мұрша	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	мұрша|n|px3sp|nom
+5	келмей	кел	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Trans	8	advcl	_	кел|v|iv|neg|gnaperf
+6	,	,	PUNCT	cm	_	8	punct	_	,|cm
+7	дымы	дым	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	дым|n|px3sp|nom
+8	құрып	құры	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	құры|v|iv|prcperf
+9	отыра	отыр	AUX	vaux	Aspect=Impf|VerbForm=Coverb	8	aux	_	отыр|vaux|prcimpf
+10	кетті	кет	AUX	vaux	Number=Sing|Person=3|Tense=Past	8	aux	_	кет|vaux|ifi|p3|sg
+11	.	.	PUNCT	sent	_	8	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:159:2589
+# text = Үлкен еркектің мойнына дардай басымен мінуді ұят көрді.
+1	Үлкен	үлкен	ADJ	adj	_	2	amod	_	үлкен|adj
+2	еркектің	еркек	NOUN	n	Case=Gen	3	nmod:poss	_	еркек|n|gen
+3	мойнына	мойын	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	мойын|n|px3sp|dat
+4	дардай	дардай	ADJ	adj	_	5	amod	_	дардай|adj
+5	басымен	бас	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	бас|n|px3sp|ins
+6	мінуді	мін	VERB	v	Case=Acc|VerbForm=Ger	8	ccomp	_	мін|v|iv|ger|acc
+7	ұят	ұят	NOUN	n	Case=Nom	8	compound:lvc	_	ұят|n|nom
+8	көрді	көр	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	көр|v|iv|ifi|p3|sg
+9	.	.	PUNCT	sent	_	8	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:160:2608
+# text = Кейбір қоралардың қасында қарауытқан мал көрінеді.
+1	Кейбір	кейбір	DET	det	PronType=Ind	2	det	_	кейбір|det|ind
+2	қоралардың	қора	NOUN	n	Case=Gen|Number=Plur	3	nmod:poss	_	қора|n|pl|gen
+3	қасында	қас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	қас|n|px3sp|loc
+4	қарауытқан	қарауыт	VERB	v	Tense=Past|VerbForm=Part	5	acl:relcl	_	қарауыт|v|iv|gprpast
+5	мал	мал	NOUN	n	Case=Nom	6	nsubj	_	мал|n|nom
+6	көрінеді	көр	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	көр|v|tv|pass|aor|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:161:2623
+# text = Оның оң жағындағы кішірек қорадан бір көлеңке қараңдап сол үйге таман кетіп барады.
+1	Оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	ол|prn|pers|p3|sg|gen
+2	оң	оң	ADJ	adj	_	3	amod	_	оң|adj
+3	жағындағы	жақ	NOUN	n	Case=Loc|Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	amod	_	жақ|n|px3sp|loc|attr
+4	кішірек	кіші	ADJ	adj	Degree=Cmp	5	amod	_	кіші|adj|comp
+5	қорадан	қора	NOUN	n	Case=Abl	12	nmod	_	қора|n|abl
+6	бір	бір	DET	det	PronType=Ind	7	det	_	бір|det|ind
+7	көлеңке	көлеңке	NOUN	n	Case=Nom	12	nsubj	_	көлеңке|n|nom
+8	қараңдап	қараңда	VERB	v	Aspect=Perf|VerbForm=Trans	12	advcl	_	қараңда|v|iv|gnaperf
+9	сол	сол	DET	det	PronType=Dem	10	det	_	сол|det|dem
+10	үйге	үй	NOUN	n	Case=Dat	12	nmod	_	үй|n|dat
+11	таман	таман	ADP	post	_	10	case	_	таман|post
+12	кетіп	кет	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	кет|v|iv|prcperf
+13	барады	бар	AUX	vaux	Number=Sing|Person=3|Tense=Aor	12	aux	_	бар|vaux|aor|p3|sg
+14	.	.	PUNCT	sent	_	12	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:162:2652
+# text = " Не бетіммен барам " деген ой келді.
+1	"	"	PUNCT	sent	_	4	punct	_	"|sent
+2	Не	не	CONJ	cnjcoo	_	4	cc	_	не|cnjcoo
+3	бетіммен	бет	NOUN	n	Case=Ins|Number[psor]=Sing|Person[psor]=1	4	nmod	_	бет|n|px1sg|ins
+4	барам	бар	VERB	v	Number=Sing|Person=1|Tense=Aor	6	ccomp	_	бар|v|iv|aor|p1|sg
+5	"	"	PUNCT	sent	_	4	punct	_	"|sent
+6	деген	де	VERB	v	Tense=Past|VerbForm=Part	7	acl:relcl	_	де|v|tv|gprpast
+7	ой	ой	NOUN	n	Case=Nom	8	nsubj	_	ой|n|nom
+8	келді	кел	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	кел|v|iv|ifi|p3|sg
+9	.	.	PUNCT	sent	_	8	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:163:2671
+# text = Және осы күйсіз қалпында тәуір үйге бас сұғуға қорланды.
+1	Және	және	CONJ	cnjcoo	_	9	cc	_	және|cnjcoo
+2	осы	осы	DET	det	PronType=Dem	4	det	_	осы|det|dem
+3	күйсіз	күйсіз	ADJ	adj	_	4	amod	_	күйсіз|adj
+4	қалпында	қалып	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod	_	қалып|n|px3sp|loc
+5	тәуір	тәуір	ADJ	adj	_	6	amod	_	тәуір|adj
+6	үйге	үй	NOUN	n	Case=Dat	8	nmod	_	үй|n|dat
+7	бас	бас	NOUN	n	Case=Nom	8	compound:lvc	_	бас|n|nom
+8	сұғуға	сұқ	VERB	v	Case=Dat|VerbForm=Ger	9	advcl	_	сұқ|v|tv|ger|dat
+9	қорланды	қорла	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	қорла|v|tv|pass|ifi|p3|sg
+10	.	.	PUNCT	sent	_	9	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:164:2692
+# text = Үй іші тастай қараңғы.
+1	Үй	үй	NOUN	n	Case=Nom	2	nmod:poss	_	үй|n|nom
+2	іші	іш	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	іш|n|px3sp|nom
+3	тастай	тас	NOUN	n	_	4	nmod	_	тас|n|sim
+4-5	қараңғы	_	_	_	_	_	_	_	_
+4	қараңғы	қараңғы	ADJ	adj	_	0	root	_	қараңғы|adj
+5		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	4	cop	_	е|cop|aor|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:165:2704
+# text = Үйдің іші сасық.
+1	Үйдің	үй	NOUN	n	Case=Gen	2	nmod:poss	_	үй|n|gen
+2	іші	іш	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	іш|n|px3sp|nom
+3-4	сасық	_	_	_	_	_	_	_	_
+3	сасық	сасық	ADJ	adj	_	0	root	_	сасық|adj
+4		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	3	cop	_	е|cop|aor|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:166:2714
+# text = Неміз кетіп барады ?
+1	Неміз	не	PRON	prn	Case=Nom|Number[psor]=Plur|Person[psor]=1|PronType=Itg	2	nsubj	_	не|prn|itg|px1pl|nom
+2	кетіп	кет	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	кет|v|iv|prcperf
+3	барады	бар	AUX	vaux	Number=Sing|Person=3|Tense=Aor	2	aux	_	бар|vaux|aor|p3|sg
+4	?	?	PUNCT	sent	_	2	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:167:2723
+# text = Е, сол.
+1	Е	е	INTJ	ij	_	3	discourse	_	е|ij
+2	,	,	PUNCT	cm	_	3	punct	_	,|cm
+3-4	сол	_	_	_	_	_	_	_	_
+3	сол	сол	PRON	prn	Case=Nom|PronType=Dem	0	root	_	сол|prn|dem|nom
+4		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	3	cop	_	е|cop|aor|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:168:2733
+# text = Киімі қандай екен ?
+1	Киімі	киім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	киім|n|px3sp|nom
+2	қандай	қандай	ADJ	adj	PronType=Itg	0	root	_	қандай|adj|itg|sim
+3	екен	е	AUX	cop	Evidentiality=Fh|Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|evid|p3|sg
+4	?	?	PUNCT	sent	_	2	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:169:2742
+# text = Қызды біреуге беріп жіберуге кім даяр тұр ?
+1	Қызды	қыз	NOUN	n	Case=Acc	3	dobj	_	қыз|n|acc
+2	біреуге	біреу	PRON	prn	Case=Dat|PronType=Ind	3	nmod	_	біреу|prn|ind|dat
+3	беріп	бер	VERB	v	Aspect=Perf|VerbForm=Coverb	6	advcl	_	бер|v|tv|prcperf
+4	жіберуге	жібер	VERB	v	Case=Dat|VerbForm=Ger	3	aux	_	жібер|v|tv|ger|dat
+5	кім	кім	PRON	prn	Case=Nom|PronType=Itg	6	nsubj	_	кім|prn|itg|nom
+6	даяр	даяр	ADJ	adj	_	0	root	_	даяр|adj
+7	тұр	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Prs	6	cop	_	тұр|vaux|pres|p3|sg
+8	?	?	PUNCT	sent	_	6	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:170:2759
+# text = Ол тағы білінбей қалмайды.
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	ол|prn|pers|p3|sg|nom
+2	тағы	тағы	ADV	adv	_	3	advmod	_	тағы|adv
+3	білінбей	біл	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Coverb|Voice=Pass	0	root	_	біл|v|tv|pass|neg|prcperf
+4	қалмайды	қал	AUX	vaux	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	3	aux	_	қал|vaux|neg|aor|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:171:2770
+# text = Шірік ит !
+1	Шірік	шірік	ADJ	adj	_	2	amod	_	шірік|adj
+2	ит	ит	NOUN	n	Case=Nom	0	root	_	ит|n|nom
+3	!	!	PUNCT	sent	_	2	punct	_	!|sent
+
+# sent_id = kdt.tagged.txt:172:2777
+# text = Ауыл кісілері тысқа шықты.
+1	Ауыл	ауыл	NOUN	n	Case=Nom	2	nmod:poss	_	ауыл|n|nom
+2	кісілері	кісі	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	кісі|n|pl|px3sp|nom
+3	тысқа	тыс	NOUN	n	Case=Dat	4	nmod	_	тыс|n|dat
+4	шықты	шық	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	шық|v|iv|ifi|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:173:2788
+# text = Бір безер ит еді.
+1	Бір	бір	DET	det	PronType=Ind	3	det	_	бір|det|ind
+2	безер	безер	ADJ	adj	_	3	amod	_	безер|adj
+3	ит	ит	NOUN	n	Case=Nom	0	root	_	ит|n|nom
+4	еді	е	AUX	cop	Number=Sing|Person=3|Tense=Past	3	cop	_	е|cop|ifi|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:174:2799
+# text = Ақтардың тұтылғанын сонда білді ...
+1	Ақтардың	ақ	ADJ	adj	Case=Gen|Number=Plur	2	nsubj	_	ақ|adj|subst|pl|gen
+2	тұтылғанын	тұт	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger|Voice=Pass	4	ccomp	_	тұт|v|tv|pass|gerpast|px3sp|acc
+3	сонда	сонда	ADV	adv	_	4	advmod	_	сонда|adv
+4	білді	біл	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	біл|v|tv|ifi|p3|sg
+5	...	...	PUNCT	sent	_	4	punct	_	...|sent
+
+# sent_id = kdt.tagged.txt:175:2810
+# text = " Кәпірді " құшақтаған арам қолымды қайтіп әкемнің адал дастарқанына апарып, қайтіп бір табақтан ас ішермін ?
+1	"	"	PUNCT	sent	_	2	punct	_	"|sent
+2	Кәпірді	кәпір	NOUN	n	Case=Acc	4	dobj	_	кәпір|n|acc
+3	"	"	PUNCT	sent	_	2	punct	_	"|sent
+4	құшақтаған	құшақта	VERB	v	Tense=Past|VerbForm=Part	6	acl:relcl	_	құшақта|v|tv|gprpast
+5	арам	арам	ADJ	adj	_	6	amod	_	арам|adj
+6	қолымды	қол	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	11	dobj	_	қол|n|px1sg|acc
+7	қайтіп	қайт	VERB	v	Aspect=Perf|VerbForm=Trans	11	advcl	_	қайт|v|tv|gnaperf
+8	әкемнің	әке	NOUN	n	Case=Gen|Number[psor]=Sing|Person[psor]=1	10	nmod:poss	_	әке|n|px1sg|gen
+9	адал	адал	ADJ	adj	_	10	amod	_	адал|adj
+10	дастарқанына	дастарқан	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	дастарқан|n|px3sp|dat
+11	апарып	апар	VERB	v	Aspect=Perf|VerbForm=Trans	17	advcl	_	апар|v|tv|gnaperf
+12	,	,	PUNCT	cm	_	17	punct	_	,|cm
+13	қайтіп	қайт	VERB	v	Aspect=Perf|VerbForm=Trans	17	advcl	_	қайт|v|tv|gnaperf
+14	бір	бір	NUM	num	_	15	nummod	_	бір|num
+15	табақтан	табақ	NOUN	n	Case=Abl	17	nmod	_	табақ|n|abl
+16	ас	ас	NOUN	n	Case=Nom	17	dobj	_	ас|n|nom
+17	ішермін	іш	VERB	v	Number=Sing|Person=1|Tense=Fut	0	root	_	іш|v|tv|fut|p1|sg
+18	?	?	PUNCT	sent	_	17	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:176:2847
+# text = Менің күйеуім ше ?
+1	Менің	мен	PRON	prn	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nmod:poss	_	мен|prn|pers|p1|sg|gen
+2	күйеуім	күйеу	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	0	root	_	күйеу|n|px1sg|nom
+3	ше	ше	PART	qst	_	2	discourse	_	ше|qst
+4	?	?	PUNCT	sent	_	2	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:177:2856
+# text = Менде не сын қалды дейсің ?
+1	Менде	мен	PRON	prn	Case=Loc|Number=Sing|Person=1|PronType=Prs	5	nmod:own	_	мен|prn|pers|p1|sg|loc
+2	не	не	DET	det	PronType=Itg	3	det	_	не|det|itg
+3	сын	сын	NOUN	n	Case=Nom	4	nsubj	_	сын|n|nom
+4	қалды	қал	VERB	v	Number=Sing|Person=3|Tense=Past	5	ccomp	_	қал|v|iv|ifi|p3|sg
+5	дейсің	де	VERB	v	Number=Sing|Person=2|Tense=Aor	0	root	_	де|v|tv|aor|p2|sg
+6	?	?	PUNCT	sent	_	5	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:178:2869
+# text = Мыналарды көргенде өзі жазылған соң, Бекболат: " ауру қалай жазылмасын ? " — деп ойлады.
+1	Мыналарды	мына	PRON	prn	Case=Acc|Number=Plur|PronType=Dem	2	dobj	_	мына|prn|dem|pl|acc
+2	көргенде	көр	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	4	advcl	_	көр|v|tv|gerpast|loc
+3	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	4	nsubj	_	өз|prn|ref|px3sp|nom
+4	жазылған	жаз	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger|Voice=Pass	17	advcl	_	жаз|v|tv|pass|gerpast|nom
+5	соң	соң	ADP	post	_	4	case	_	соң|post
+6	,	,	PUNCT	cm	_	17	punct	_	,|cm
+7	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Msc	17	nsubj	_	Бекболат|np|ant|m|nom
+8	:	:	PUNCT	sent	_	7	punct	_	:|sent
+9	"	"	PUNCT	sent	_	12	punct	_	"|sent
+10	ауру	ауру	NOUN	n	Case=Nom	12	nsubj	_	ауру|n|nom
+11	қалай	қалай	ADV	adv	PronType=Itg	12	advmod	_	қалай|adv|itg
+12	жазылмасын	жаз	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Voice=Pass	16	ccomp	_	жаз|v|tv|pass|neg|gerfut|px3sp|acc
+13	?	?	PUNCT	sent	_	12	punct	_	?|sent
+14	"	"	PUNCT	sent	_	12	punct	_	"|sent
+15	—	—	PART	guio	_	16	punct	_	—|guio
+16	деп	де	VERB	v	Aspect=Perf|VerbForm=Trans	17	advcl	_	де|v|tv|gnaperf
+17	ойлады	ойла	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	ойла|v|tv|ifi|p3|sg
+18	.	.	PUNCT	sent	_	17	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:179:2906
+# text = Бекболат сыртқы есікті ашып тысқа шықты.
+1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Msc	6	nsubj	_	Бекболат|np|ant|m|nom
+2	сыртқы	сыртқы	ADJ	adj	_	3	amod	_	сыртқы|adj
+3	есікті	есік	NOUN	n	Case=Acc	4	dobj	_	есік|n|acc
+4	ашып	аш	VERB	v	Aspect=Perf|VerbForm=Trans	6	advcl	_	аш|v|tv|gnaperf
+5	тысқа	тыс	NOUN	n	Case=Dat	6	nmod	_	тыс|n|dat
+6	шықты	шық	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	шық|v|tv|ifi|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:180:2921
+# text = Еліне тезірек қайтқысы келді.
+1	Еліне	ел	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod	_	ел|n|px3sp|dat
+2	тезірек	тезірек	ADV	adv	_	3	advmod	_	тезірек|adv
+3	қайтқысы	қайт	VERB	v	Mood=Vol|Number=Sing|Person=3|VerbForm=Coverb	0	root	_	қайт|v|iv|prcvol|p3|sg
+4	келді	кел	AUX	vaux	Number=Sing|Person=3|Tense=Past	3	aux	_	кел|vaux|ifi|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:181:2932
+# text = Мен, міне, құдайдың жарық күнін көрдім, жазылдым.
+1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	мен|prn|pers|p1|sg|nom
+2	,	,	PUNCT	cm	_	3	punct	_	,|cm
+3	міне	міне	ADV	adv	_	8	discourse	_	міне|adv
+4	,	,	PUNCT	cm	_	3	punct	_	,|cm
+5	құдайдың	құдай	NOUN	n	Case=Gen	7	nmod:poss	_	құдай|n|gen
+6	жарық	жарық	ADJ	adj	_	7	amod	_	жарық|adj
+7	күнін	күн	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	dobj	_	күн|n|px3sp|acc
+8	көрдім	көр	VERB	v	Number=Sing|Person=1|Tense=Past	0	root	_	көр|v|tv|ifi|p1|sg
+9	,	,	PUNCT	cm	_	8	punct	_	,|cm
+10	жазылдым	жаз	VERB	v	Number=Sing|Person=1|Tense=Past|Voice=Pass	8	parataxis	_	жаз|v|tv|pass|ifi|p1|sg
+11	.	.	PUNCT	sent	_	10	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:182:2955
+# text = Ол осы күнде не күйде екен ?
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	ол|prn|pers|p3|sg|nom
+2	осы	осы	DET	det	PronType=Dem	3	det	_	осы|det|dem
+3	күнде	күн	NOUN	n	Case=Loc	5	nmod	_	күн|n|loc
+4	не	не	DET	det	PronType=Itg	5	det	_	не|det|itg
+5	күйде	күй	NOUN	n	Case=Loc	0	root	_	күй|n|loc
+6	екен	е	AUX	cop	Evidentiality=Fh|Number=Sing|Person=3|Tense=Aor	5	cop	_	е|cop|aor|evid|p3|sg
+7	?	?	PUNCT	sent	_	5	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:183:2970
+# text = Әлде орыстар өлтіріп тастады ?
+1	Әлде	әлде	CONJ	cnjcoo	_	3	cc	_	әлде|cnjcoo
+2	орыстар	орыс	NOUN	n	Case=Nom|Number=Plur	3	nsubj	_	орыс|n|pl|nom
+3	өлтіріп	өлтір	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	өлтір|v|tv|prcperf
+4	тастады	таста	AUX	vaux	Number=Plur|Person=3|Tense=Past	3	aux	_	таста|vaux|ifi|p3|pl
+5	?	?	PUNCT	sent	_	3	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:184:2981
+# text = Әлдебір сары орыспен құшақтасып отыр ?
+1	Әлдебір	әлдебір	DET	det	PronType=Ind	3	det	_	әлдебір|det|ind
+2	сары	сары	ADJ	adj	_	3	amod	_	сары|adj
+3	орыспен	орыс	NOUN	n	Case=Ins	4	nmod	_	орыс|n|ins
+4	құшақтасып	құшақта	VERB	v	Aspect=Perf|VerbForm=Coverb|Voice=Coop	0	root	_	құшақта|v|tv|coop|prcperf
+5	отыр	отыр	AUX	vaux	Number=Sing|Person=3|Tense=Prs	4	aux	_	отыр|vaux|pres|p3|sg
+6	?	?	PUNCT	sent	_	4	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:185:2994
+# text = Сол кім екен ?..
+1	Сол	сол	PRON	prn	Case=Nom|PronType=Dem	2	nsubj	_	сол|prn|dem|nom
+2	кім	кім	PRON	prn	Case=Nom|PronType=Itg	0	root	_	кім|prn|itg|nom
+3	екен	е	AUX	cop	Evidentiality=Fh|Number=Sing|Person=3|Tense=Aor	2	cop	_	е|cop|aor|evid|p3|sg
+4	?	?	PUNCT	sent	_	2	punct	_	?|sent
+5	.	.	PUNCT	sent	_	2	punct	_	.|sent
+6	.	.	PUNCT	sent	_	2	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:186:3007
+# text = Бекболат амандасты.
+1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Msc	2	nsubj	_	Бекболат|np|ant|m|nom
+2	амандасты	амандас	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	амандас|v|iv|ifi|p3|sg
+3	.	.	PUNCT	sent	_	2	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:187:3014
+# text = Онымен таласқандай мұның не айбыны, не күші бар ?
+1	Онымен	ол	PRON	prn	Case=Ins|Number=Sing|Person=3|PronType=Prs	2	nmod	_	ол|prn|pers|p3|sg|ins
+2	таласқандай	тала	VERB	v	Tense=Past|VerbForm=Part|Voice=Coop	8	acl:relcl	_	тала|v|tv|coop|gprpast|subst|sim
+3	мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	8	nmod:poss	_	бұл|prn|dem|gen
+4	не	не	DET	det	Case=Nom|PronType=Itg	5	det	_	не|det|itg|nom
+5	айбыны	айбын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	conj	_	айбын|n|px3sp|nom
+6	,	,	PUNCT	cm	_	8	punct	_	,|cm
+7	не	не	DET	det	Case=Nom|PronType=Itg	8	det	_	не|det|itg|nom
+8	күші	күш	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	күш|n|px3sp|nom
+9-10	бар	_	_	_	_	_	_	_	_
+9	бар	бар	ADJ	adj	_	0	root	_	бар|adj
+10		е	AUX	cop	Number=Plur|Person=3|Tense=Aor	9	cop	_	е|cop|aor|p3|pl
+11	?	?	PUNCT	sent	_	9	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:188:3036
+# text = Бірақ Бекболат бұл ойын неге білдірсін ?
+1	Бірақ	бірақ	CONJ	cnjcoo	_	6	cc	_	бірақ|cnjcoo
+2	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Msc	6	nsubj	_	Бекболат|np|ant|m|nom
+3	бұл	бұл	DET	det	PronType=Dem	4	det	_	бұл|det|dem
+4	ойын	ой	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	dobj	_	ой|n|px3sp|acc
+5	неге	неге	ADV	adv	PronType=Itg	6	advmod	_	неге|adv|itg
+6	білдірсін	білдір	VERB	v	Mood=Opt|Number=Sing|Person=3	0	root	_	білдір|v|tv|opt|p3|sg
+7	?	?	PUNCT	sent	_	6	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:189:3051
+# text = Бірін қалдырмай ұстап әкелді.
+1	Бірін	бір	NUM	num	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	dobj	_	бір|num|subst|px3sp|acc
+2	қалдырмай	қалдыр	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Trans	4	advcl	_	қалдыр|v|tv|neg|gnaperf
+3	ұстап	ұста	VERB	v	Aspect=Perf|VerbForm=Trans	4	advcl	_	ұста|v|tv|gnaperf
+4	әкелді	әкел	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	әкел|v|tv|ifi|p3|sg
+5	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:190:3062
+# text = Оны естімедім.
+1	Оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	dobj	_	ол|prn|pers|p3|sg|acc
+2	естімедім	есті	VERB	v	Number=Sing|Person=1|Polarity=Neg|Tense=Past	0	root	_	есті|v|tv|neg|ifi|p1|sg
+3	.	.	PUNCT	sent	_	2	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:191:3069
+# text = Бекболаттың сұраулары көбейіп, әңгіменің аяғы созылып жатқанын сезіп, ел қазағы " бір айналып соғармын, — шаруам бар еді " деп, тұрып кетті.
+1	Бекболаттың	Бекболат	PROPN	np	Case=Gen|Gender=Msc	2	nmod:poss	_	Бекболат|np|ant|m|gen
+2	сұраулары	сұрау	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	сұрау|n|pl|px3sp|nom
+3	көбейіп	көбей	VERB	v	Aspect=Perf|VerbForm=Trans	9	conj	_	көбей|v|iv|gnaperf
+4	,	,	PUNCT	cm	_	9	punct	_	,|cm
+5	әңгіменің	әңгіме	NOUN	n	Case=Gen	6	nmod:poss	_	әңгіме|n|gen
+6	аяғы	аяқ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	аяқ|n|px3sp|nom
+7	созылып	соз	VERB	v	Aspect=Perf|VerbForm=Trans|Voice=Pass	9	ccomp	_	соз|v|tv|pass|gnaperf
+8	жатқанын	жат	AUX	vaux	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	7	aux	_	жат|vaux|gerpast|px3sp|acc
+9	сезіп	сез	VERB	v	Aspect=Perf|VerbForm=Trans	25	advcl	_	сез|v|tv|gnaperf
+10	,	,	PUNCT	cm	_	25	punct	_	,|cm
+11	ел	ел	NOUN	n	Case=Nom	12	nmod:poss	_	ел|n|nom
+12	қазағы	қазақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	23	nsubj	_	қазақ|n|px3sp|nom
+13	"	"	PUNCT	sent	_	20	punct	_	"|sent
+14	бір	бір	NUM	num	_	15	advmod	_	бір|num|advl
+15	айналып	айнал	VERB	v	Aspect=Perf|VerbForm=Trans	16	advcl	_	айнал|v|iv|gnaperf
+16	соғармын	соқ	VERB	v	Number=Sing|Person=1|Tense=Fut	20	parataxis	_	соқ|v|iv|fut|p1|sg
+17	,	,	PUNCT	cm	_	16	punct	_	,|cm
+18	—	—	PART	guio	_	20	punct	_	—|guio
+19	шаруам	шаруа	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	20	nsubj	_	шаруа|n|px1sg|nom
+20	бар	бар	ADJ	adj	_	23	ccomp	_	бар|adj
+21	еді	е	AUX	cop	Number=Sing|Person=3|Tense=Past	20	cop	_	е|cop|ifi|p3|sg
+22	"	"	PUNCT	sent	_	20	punct	_	"|sent
+23	деп	де	VERB	v	Aspect=Perf|VerbForm=Trans	25	advcl	_	де|v|tv|gnaperf
+24	,	,	PUNCT	cm	_	25	punct	_	,|cm
+25	тұрып	тұр	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	тұр|v|iv|prcperf
+26	кетті	кет	AUX	vaux	Number=Sing|Person=3|Tense=Past	25	aux	_	кет|vaux|ifi|p3|sg
+27	.	.	PUNCT	sent	_	25	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:192:3124
+# text = Ақтардың өзін кеше кешке әкелді.
+1	Ақтардың	ақ	ADJ	adj	Case=Gen|Number=Plur	2	nmod:poss	_	ақ|adj|subst|pl|gen
+2	өзін	өз	PRON	prn	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	5	dobj	_	өз|prn|ref|px3sp|acc
+3	кеше	кеше	ADV	adv	_	4	advmod	_	кеше|adv
+4	кешке	кеш	NOUN	n	Case=Dat	5	nmod	_	кеш|n|dat
+5	әкелді	әкел	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	әкел|v|tv|ifi|p3|sg
+6	.	.	PUNCT	sent	_	5	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:193:3137
+# text = Бірақ оның енді не керегі бар ? — деді.
+1	Бірақ	бірақ	CONJ	cnjcoo	_	6	cc	_	бірақ|cnjcoo
+2	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	ол|prn|pers|p3|sg|gen
+3	енді	енді	ADV	adv	_	6	advmod	_	енді|adv
+4	не	не	DET	det	PronType=Itg	5	det	_	не|det|itg
+5	керегі	керек	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	керек|n|px3sp|nom
+6-7	бар	_	_	_	_	_	_	_	_
+6	бар	бар	ADJ	adj	_	10	ccomp	_	бар|adj
+7		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	6	cop	_	е|cop|aor|p3|sg
+8	?	?	PUNCT	sent	_	6	punct	_	?|sent
+9	—	—	PART	guio	_	10	punct	_	—|guio
+10	деді	де	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	де|v|tv|ifi|p3|sg
+11	.	.	PUNCT	sent	_	10	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:194:3159
+# text = Бүгін, ертең-ақ біліп беремін.
+1	Бүгін	бүгін	ADV	adv	_	3	conj	_	бүгін|adv
+2	,	,	PUNCT	cm	_	3	punct	_	,|cm
+3-4	ертең-ақ	_	_	_	_	_	_	_	_
+3	ертең	ертең	ADV	adv	_	5	advmod	_	ертең|adv
+4	-ақ	-ақ	ADV	postadv	_	3	advmod	_	-ақ|postadv
+5	біліп	біл	VERB	v	Aspect=Perf|VerbForm=Coverb	0	root	_	біл|v|tv|prcperf
+6	беремін	бер	AUX	vaux	Number=Sing|Person=1|Tense=Aor	5	aux	_	бер|vaux|aor|p1|sg
+7	.	.	PUNCT	sent	_	5	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:195:3173
+# text = Бұл алмаса, оны кім алады ?
+1	Бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	2	nsubj	_	бұл|prn|dem|nom
+2	алмаса	ал	VERB	v	Mood=Cond|Number=Sing|Person=3|Polarity=Neg|VerbForm=Trans	6	advcl	_	ал|v|tv|neg|gnacond|p3|sg
+3	,	,	PUNCT	cm	_	6	punct	_	,|cm
+4	оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	ол|prn|pers|p3|sg|acc
+5	кім	кім	PRON	prn	Case=Nom|PronType=Itg	6	nsubj	_	кім|prn|itg|nom
+6	алады	ал	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	ал|v|tv|aor|p3|sg
+7	?	?	PUNCT	sent	_	6	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:196:3188
+# text = Онысы қандай болып шығады ?
+1	Онысы	ол	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Dem	4	nsubj	_	ол|prn|dem|px3sp|nom
+2	қандай	қандай	PRON	prn	PronType=Itg	4	advcl	_	қандай|prn|itg|sim
+3	болып	бол	VERB	v	Aspect=Perf|VerbForm=Trans	2	cop	_	бол|v|iv|gnaperf
+4	шығады	шық	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	шық|v|iv|aor|p3|sg
+5	?	?	PUNCT	sent	_	4	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:197:3199
+# text = Ол үміті болмайды.
+1	Ол	ол	DET	det	PronType=Dem	2	det	_	ол|det|dem
+2	үміті	үміт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	үміт|n|px3sp|nom
+3	болмайды	бол	VERB	v	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	0	root	_	бол|v|iv|neg|aor|p3|sg
+4	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:198:3208
+# text = — О не ?
+1	—	—	PART	guio	_	3	punct	_	—|guio
+2	О	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	ол|prn|pers|p3|sg|nom
+3-4	не	_	_	_	_	_	_	_	_
+3	не	не	PRON	prn	Case=Nom|PronType=Itg	0	root	_	не|prn|itg|nom
+4	е	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	3	cop	_	е|cop|aor|p3|sg
+5	?	?	PUNCT	sent	_	3	punct	_	?|sent
+
+# sent_id = kdt.tagged.txt:199:3218
+# text = — Бәрібір, ішіне су құйылған.
+1	—	—	PART	guio	_	6	punct	_	—|guio
+2	Бәрібір	бәрібір	ADV	adv	_	6	advmod	_	бәрібір|adv
+3	,	,	PUNCT	cm	_	2	punct	_	,|cm
+4	ішіне	іш	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	іш|n|px3sp|dat
+5	су	су	NOUN	n	Case=Nom	6	nsubj	_	су|n|nom
+6	құйылған	құй	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	құй|v|tv|pass|past|p3|sg
+7	.	.	PUNCT	sent	_	6	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:200:3233
+# text = — Мені жауып отыра алмайды.
+1	—	—	PART	guio	_	4	punct	_	—|guio
+2	Мені	мен	PRON	prn	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	dobj	_	мен|prn|pers|p1|sg|acc
+3	жауып	жап	VERB	v	Aspect=Perf|VerbForm=Trans	4	advcl	_	жап|v|tv|gnaperf
+4	отыра	отыр	VERB	v	Aspect=Impf|VerbForm=Coverb	0	root	_	отыр|v|iv|prcimpf
+5	алмайды	ал	AUX	vaux	Number=Sing|Person=3|Polarity=Neg|Tense=Aor	4	aux	_	ал|vaux|neg|aor|p3|sg
+6	.	.	PUNCT	sent	_	4	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:201:3246
+# text = Өзі шала қазақ.
+1	Өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	3	nsubj	_	өз|prn|ref|px3sp|nom
+2	шала	шала	ADV	adv	_	3	advmod	_	шала|adv
+3-4	қазақ	_	_	_	_	_	_	_	_
+3	қазақ	қазақ	ADJ	adj	_	0	root	_	қазақ|adj
+4		е	AUX	cop	Number=Sing|Person=3|Tense=Aor	3	cop	_	е|cop|aor|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:202:3256
+# text = Соның қатыны қазақ болатын.
+1	Соның	сол	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	_	сол|prn|dem|gen
+2	қатыны	қатын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	қатын|n|px3sp|nom
+3	қазақ	қазақ	ADJ	adj	_	0	root	_	қазақ|adj
+4	болатын	бол	VERB	v	Number=Sing|Person=3|Tense=Past	3	cop	_	бол|v|iv|pih|p3|sg
+5	.	.	PUNCT	sent	_	3	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:203:3267
+# text = Алдыңғы жылы Семейге барып оқып, мұғалім боп келген.
+1	Алдыңғы	алдыңғы	ADJ	adj	_	2	amod	_	алдыңғы|adj
+2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	advmod	_	жыл|n|px3sp|nom
+3	Семейге	Семей	PROPN	np	Case=Dat	4	nmod	_	Семей|np|top|dat
+4	барып	бар	VERB	v	Aspect=Perf|VerbForm=Trans	5	advcl	_	бар|v|iv|gnaperf
+5	оқып	оқы	VERB	v	Aspect=Perf|VerbForm=Trans	9	advcl	_	оқы|v|iv|gnaperf
+6	,	,	PUNCT	cm	_	9	punct	_	,|cm
+7	мұғалім	мұғалім	NOUN	n	Case=Nom	8	xcomp	_	мұғалім|n|nom
+8	боп	бол	VERB	v	Aspect=Perf|VerbForm=Trans	9	advcl	_	бол|v|iv|gnaperf
+9	келген	кел	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	кел|v|iv|past|p3|sg
+10	.	.	PUNCT	sent	_	9	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:204:3288
+# text = Бақша күзететін шал бұ не деп жетіп барса, екеуі екі жаққа қаша жөнеледі.
+1	Бақша	бақша	NOUN	n	Case=Nom	2	dobj	_	бақша|n|nom
+2	күзететін	күзет	VERB	v	Aspect=Impf|VerbForm=Part	3	acl:relcl	_	күзет|v|tv|gprimpf
+3	шал	шал	NOUN	n	Case=Nom	9	nsubj	_	шал|n|nom
+4	бұ	бұл	PRON	prn	Case=Nom|PronType=Dem	5	nsubj	_	бұл|prn|dem|nom
+5-6	не	_	_	_	_	_	_	_	_
+5	не	не	PRON	prn	Case=Nom|PronType=Itg	7	ccomp	_	не|prn|itg|nom
+6	е	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	5	cop	_	е|cop|aor|p3|sg
+7	деп	де	VERB	v	Aspect=Perf|VerbForm=Trans	9	advcl	_	де|v|tv|gnaperf
+8	жетіп	жет	VERB	v	Aspect=Perf|VerbForm=Trans	9	advcl	_	жет|v|iv|gnaperf
+9	барса	бар	VERB	v	Mood=Cond|Number=Sing|Person=3|VerbForm=Trans	15	advcl	_	бар|v|iv|gnacond|p3|sg
+10	,	,	PUNCT	cm	_	15	punct	_	,|cm
+11	екеуі	екеу	NUM	num	Case=Nom|NumType=Coll|Number[psor]=Plur,Sing|Person[psor]=3	15	nsubj	_	екеу|num|coll|subst|px3sp|nom
+12	екі	екі	NUM	num	_	13	nummod	_	екі|num
+13	жаққа	жақ	NOUN	n	Case=Dat	15	nmod	_	жақ|n|dat
+14	қаша	қаш	VERB	v	Aspect=Impf|VerbForm=Trans	15	advcl	_	қаш|v|iv|gnaimpf
+15	жөнеледі	жөнел	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	жөнел|v|iv|aor|p3|sg
+16	.	.	PUNCT	sent	_	15	punct	_	.|sent
+
+# sent_id = kdt.tagged.txt:205:3320
 # text = Дауыстарды санау басталғаннан кейін сайлаушылар ( таңдаушылар ) тізімдеріне өзгерістер енгізуге тыйым салынады.
 1	Дауыстарды	дауыс	NOUN	n	Case=Acc|Number=Plur	2	dobj	_	дауыс|n|pl|acc
 2	санау	сана	VERB	v	Case=Nom|VerbForm=Ger	3	csubj	_	сана|v|tv|ger|nom
@@ -1498,7 +2268,7 @@
 13	салынады	сал	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	сал|v|tv|pass|aor|p3|sg
 14	.	.	PUNCT	sent	_	13	punct	_	.|sent
 
-# sent_id = kdt.tagged.txt:135:2212
+# sent_id = kdt.tagged.txt:206:3349
 # text = Сенат депутаттарын сайлау кезінде таңдаушылардың тізімдері жасалады.
 1	Сенат	сенат	NOUN	n	Case=Nom	2	nmod:poss	_	сенат|n|nom
 2	депутаттарын	депутат	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	dobj	_	депутат|n|pl|px3sp|acc
@@ -1509,7 +2279,7 @@
 7	жасалады	жаса	VERB	v	Number=Plur|Person=3|Tense=Aor|Voice=Pass	0	root	_	жаса|v|tv|pass|aor|p3|pl
 8	.	.	PUNCT	sent	_	7	punct	_	.|sent
 
-# sent_id = kdt.tagged.txt:136:2229
+# sent_id = kdt.tagged.txt:207:3366
 # text = Нақтылы сайлау учаскесінде азаматты сайлаушылар тізіміне енгізу үшін оның осы сайлау учаскесінің аумағында тұрғылықты жері бойынша тіркелу фактісі негіз болады.
 1	Нақтылы	нақтылы	ADJ	adj	_	3	amod	_	нақтылы|adj
 2	сайлау	сайлау	NOUN	n	Case=Nom	3	nmod:poss	_	сайлау|n|nom
@@ -1533,7 +2303,7 @@
 20	болады	бол	VERB	v	Number=Sing|Person=3|Tense=Aor	19	cop	_	бол|v|iv|aor|p3|sg
 21	.	.	PUNCT	sent	_	19	punct	_	.|sent
 
-# sent_id = kdt.tagged.txt:137:2272
+# sent_id = kdt.tagged.txt:208:3409
 # text = Сайлаушылар тізімі әліпби тәртібімен немесе өзге тәртіппен жасалады.
 1	Сайлаушылар	сайлаушы	NOUN	n	Case=Nom|Number=Plur	2	nmod:poss	_	сайлаушы|n|pl|nom
 2	тізімі	тізім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	тізім|n|px3sp|nom
@@ -1545,7 +2315,7 @@
 8	жасалады	жаса	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	жаса|v|tv|pass|aor|p3|sg
 9	.	.	PUNCT	sent	_	8	punct	_	.|sent
 
-# sent_id = kdt.tagged.txt:138:2291
+# sent_id = kdt.tagged.txt:209:3428
 # text = Сайлаушылардың тұрғылықты жері бойынша тізімін тиісті жергілікті атқарушы орган халықты есепке алуды жүзеге асыратын органдар ұсынған мәліметтердің негізінде жасайды.
 1	Сайлаушылардың	сайлаушы	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	сайлаушы|n|pl|gen
 2	тұрғылықты	тұрғылықты	ADJ	adj	_	3	amod	_	тұрғылықты|adj
