@@ -1,10 +1,9 @@
 "<Бұ>"
-	"бұл" prn dem nom @det #1->2
+	"бұл" det dem @det #1->3
 "<қыз>"
-	"қыз" NOUN @amod-nmod #2->3
-	"қыз" n nom @x #2->3
+	"қыз" n attr @amod #2->3
 "<кәпірге>"
-	"кәпір" n dat @iobj #3->5
+	"кәпір" n dat @nmod #3->5
 "<дауа>"
 	"дауа" n nom @nsubj #4->5
 "<жоқ>"
