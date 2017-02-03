@@ -237,9 +237,9 @@
 	"." sent @punct #19->18
 
 "<Сонда>"
-	"сонда" cnjadv @cc #1->21
+	"сонда" cnjadv @cc #1->10
 "<Қожа>"
-	"Қожа" np ant m nom @nsubj #2->21
+	"Қожа" np ant m nom @nsubj #2->10
 "<:>"
 	":" sent @punct #3->2
 "<->"
@@ -249,34 +249,35 @@
 "<кісіні>"
 	"кісі" n acc @obj #6->7
 "<сыйламайды екенсің>"
-	"сыйла" v tv neg aor evid p2 sg @parataxis #7->14
+	"сыйла" v tv neg aor evid p2 sg @parataxis #7->10
 "<,>"
-	"," cm @punct #8->14
+	"," cm @punct #8->10
 "<киімді>"
 	"киім" n acc @obj #9->10
 "<сыйлайды екенсің>"
-	"сыйла" v tv aor evid p2 sg @parataxis #10->14
+	"сыйла" v tv aor evid p2 sg @root #10->0
 "<.>"
 	"." sent @punct #11->10
+
 "<Сондықтан>"
-	"сондықтан" cnjadv @cc #12->21
+	"сондықтан" cnjadv @cc #1->10 
 "<шапаныма>"
-	"шапан" n px1sg dat @nmod #13->14
+	"шапан" n px1sg dat @nmod #2->3 
 "<жегізіп>"
-	"жегіз" v tv prc_perf @ccomp #14->19
+	"жегіз" v tv prc_perf @ccomp #3->8 
 "<отырғаным>"
-	"отыр" vaux ger_past px1sg nom @aux #15->14
-		"е" cop aor p3 sg @cop #16->14
+	"отыр" vaux ger_past px1sg nom @aux #4->3 
+		"е" cop aor p3 sg @cop #5->3 
 "<!>"
-	"!" sent @punct #17->14
+	"!" sent @punct #6->3 
 "<->"
-	"-" guio @punct #18->14
+	"-" guio @punct #7->3 
 "<деп>"
-	"де" v tv gna_perf @advcl #19->21
+	"де" v tv gna_perf @advcl #8->10 
 "<,>"
-	"," cm @punct #20->19
+	"," cm @punct #9->8 
 "<жауап береді>"
-	"жауап бер" v iv aor p3 sg @root #21->0
+	"жауап бер" v iv aor p3 sg @root #10->0 
 "<.>"
-	"." sent @punct #22->21
+	"." sent @punct #11->10
 
