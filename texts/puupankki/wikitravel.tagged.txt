@@ -1,5 +1,5 @@
 "<Қалыңыз>"
-	"қал" n px2sg frm nom @subj #1->2
+	"қал" n px2sg frm nom @nsubj #1->2
 "<қалай>"
 	"қалай" adv itg @root #2->0
 		"е" cop aor p3 sg @cop #3->2
@@ -7,7 +7,7 @@
 	"?" sent @punct #3->2
 
 "<Рақмет>"
-	"рақмет" ij @disc #1->3
+	"рақмет" ij @discourse #1->3
 "<,>"
 	"," cm @punct #2->1
 "<жақсы>"
@@ -19,7 +19,7 @@
 "<Сіздің>"
 	"сіз" prn pers p2 sg frm gen @nmod:poss #1->2
 "<атыңыз>"
-	"ат" n px2sg frm nom @subj #2->3
+	"ат" n px2sg frm nom @nsubj #2->3
 "<кім>"
 	"кім" prn itg nom @root #3->0
 		"е" cop aor p3 sg @cop #4->3
@@ -37,7 +37,7 @@
 	"." sent @punct #5->3
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->5
+	"мен" prn pers p1 sg nom @nsubj #1->5
 "<Қазақ>"
 	"қазақ" n nom @nmod:poss #2->3
 "<тілінде>"
@@ -52,12 +52,12 @@
 	"." sent @punct #7->5
 
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom @subj #1->3
+	"сіз" prn pers p2 sg frm nom @nsubj #1->3
 "<орысша>"
 	"орысша" adv @advmod #2->3
 "<сөйлейсіз бе>"
 	"сөйле" v tv aor p2 frm sg @root #3->0
-		"ма" qst @disc #4->3
+		"ма" qst @discourse #4->3
 "<?>"
 	"?" sent @punct #5->3
 
@@ -70,23 +70,23 @@
 "<сөйлейтін>"
 	"сөйле" v tv gpr_impf @acl #4->5
 "<адам>"
-	"адам" n nom @subj #5->6
+	"адам" n nom @nsubj #5->6
 "<бар ма>"
 	"бар" adj @root #6->0
 		"е" cop aor p3 sg @cop #7->6
-			"ма" qst @disc #8->6
+			"ма" qst @discourse #8->6
 "<?>"
 	"?" sent @punct #9->6
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->2
+	"мен" prn pers p1 sg nom @nsubj #1->2
 "<түсінбеймін>"
 	"түсін" v tv neg aor p1 sg @root #2->0
 "<.>"
 	"." sent @punct #3->2
 
 "<Дәретхана>"
-	"дәретхана" n nom @subj #1->2
+	"дәретхана" n nom @nsubj #1->2
 "<қайда>"
 	"қайда" adv itg @root #2->0
 "<екен>"
@@ -95,16 +95,16 @@
 	"?" sent @punct #4->2
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->3
+	"мен" prn pers p1 sg nom @nsubj #1->3
 "<полицияны>"
-	"полиция" n acc @dobj #2->3
+	"полиция" n acc @obj #2->3
 "<шақырамын>"
 	"шақыр" v tv aor p1 sg @root #3->0
 "<.>"
 	"." sent @punct #4->3
 
 "<Ұрыны>"
-	"ұры" n acc @dobj #1->2
+	"ұры" n acc @obj #1->2
 "<ұстаңдар>"
 	"ұста" v tv imp p2 pl @root #2->0
 "<.>"
@@ -113,7 +113,7 @@
 "<Маған>"
 	"мен" prn pers p1 sg dat @nmod #1->3
 "<көмек>"
-	"көмек" n nom @subj #2->3
+	"көмек" n nom @nsubj #2->3
 "<керек>"
 	"керек" adj @root #3->0
 		"е" cop aor p3 sg @cop #4->3
@@ -121,7 +121,7 @@
 	"." sent @punct #5->3
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->2
+	"мен" prn pers p1 sg nom @nsubj #1->2
 "<адасып>"
 	"адас" v iv prc_perf @root #2->0
 "<кеттім>"
@@ -130,9 +130,9 @@
 	"." sent @punct #4->2
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->3
+	"мен" prn pers p1 sg nom @nsubj #1->3
 "<сөмкемді>"
-	"сөмке" n px1sg acc @dobj #2->3
+	"сөмке" n px1sg acc @obj #2->3
 "<жоғалтып>"
 	"жоғалт" v tv prc_perf @root #3->0
 "<алдым>"
@@ -141,9 +141,9 @@
 	"." sent @punct #5->3
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->3
+	"мен" prn pers p1 sg nom @nsubj #1->3
 "<әмиянімді>"
-	"әмиян" n px1sg acc @dobj #2->3
+	"әмиян" n px1sg acc @obj #2->3
 "<жоғалтып>"
 	"жоғалт" v tv prc_perf @root #3->0
 "<алдым>"
@@ -152,7 +152,7 @@
 	"." sent @punct #5->3
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->2
+	"мен" prn pers p1 sg nom @nsubj #1->2
 "<ауырып>"
 	"ауыр" v iv prc_perf @root #2->0
 "<тұрмын>"
@@ -161,7 +161,7 @@
 	"." sent @punct #4->2
 
 "<Мен>"
-	"мен" prn pers p1 sg nom @subj #1->2
+	"мен" prn pers p1 sg nom @nsubj #1->2
 "<жаралымын>"
 	"жаралы" adj @root #2->0
 		"е" cop aor p1 sg @cop #3->2
@@ -171,7 +171,7 @@
 "<Маған>"
 	"мен" prn pers p1 sg dat @nmod #1->3
 "<дәрігер>"
-	"дәрігер" n nom @subj #2->3
+	"дәрігер" n nom @nsubj #2->3
 "<керек>"
 	"керек" adj @root #3->0
 		"е" cop aor p3 sg @cop #4->3
@@ -184,16 +184,16 @@
 	"қоңырау шал" v tv ger dat @ccomp #2->3
 "<бола ма>"
 	"бол" v iv aor p3 sg @root #3->0
-		"ма" qst @disc #4->3
+		"ма" qst @discourse #4->3
 "<?>"  
 	"?" sent @punct #5->3
 
 "<Астанаға>"
 	"Астана" np top dat @nmod #1->2
 "<билет>"
-	"билет" n nom @dobj #2->4
+	"билет" n nom @obj #2->4
 "<қанша>"
-	"қанша" prn itg nom @subj #3->4
+	"қанша" prn itg nom @nsubj #3->4
 "<тұрады>"
 	"тұр" v iv aor p3 sg @root #4->0
 "<?>"
@@ -204,7 +204,7 @@
 "<бір>"
 	"бір" num @nummod #2->3
 "<билет>"
-	"билет" n nom @dobj #3->4
+	"билет" n nom @obj #3->4
 "<беріңіз>"
 	"бер" v tv imp p2 frm sg @root #4->0
 "<.>"
@@ -213,7 +213,7 @@
 "<Мына>"
 	"мына" det dem @det #1->2
 "<пойыз>"
-	"пойыз" n nom @subj #2->4
+	"пойыз" n nom @nsubj #2->4
 "<қайда>"
 	"қайда" adv itg @advmod #3->4
 "<барады>"
@@ -226,7 +226,7 @@
 "<баратын>"
 	"бар" v iv gpr_impf @acl #2->3
 "<пойыз>"
-	"пойыз" n nom @subj #3->4
+	"пойыз" n nom @nsubj #3->4
 "<қайда>"
 	"қайда" adv itg @root #4->0
 		"е" cop aor p3 sg @cop #5->4
@@ -236,17 +236,17 @@
 "<Мына>"
 	"мына" det dem @det #1->2
 "<автобус>"
-	"автобус" n nom @subj #2->4
+	"автобус" n nom @nsubj #2->4
 "<Астанаға>"
 	"Астана" np top dat @nmod #3->4
 "<тоқтай ма>"
 	"тоқта" v iv aor p3 sg @root #4->0
-		"ма" qst @disc #5->4
+		"ма" qst @discourse #5->4
 "<?>"
 	"?" sent @punct #6->4
 
 "<Пойыз>"
-	"пойыз" n nom @subj #1->4
+	"пойыз" n nom @nsubj #1->4
 "<Астанаға>"
 	"Астана" np top dat @nmod #2->1
 "<қашан>"
@@ -259,7 +259,7 @@
 "<Мына>"
 	"мына" det dem @det #1->2
 "<пойыз>"
-	"пойыз" n nom @subj #2->5
+	"пойыз" n nom @nsubj #2->5
 "<Астанаға>"
 	"Астана" np top dat @nmod #3->5
 "<қашан>"
@@ -270,16 +270,16 @@
 	"?" sent @punct #6->5
 
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom @subj #1->4
+	"сіз" prn pers p2 sg frm nom @nsubj #1->4
 "<кітапхананы>"
-	"кітапхана" n acc @dobj #2->4
+	"кітапхана" n acc @obj #2->4
 "<картадан>"
 	"карта" n abl @nmod #3->4
 "<көрсете>"
 	"көрсет" v tv prc_impf @root #4->0
 "<аласыз ба>"
 	"ал" vaux aor p2 frm sg @aux #5->4
-		"ма" qst @disc #6->4
+		"ма" qst @discourse #6->4
 "<?>"
 	"?" sent @punct #7->4
 
@@ -288,11 +288,11 @@
 "<бос>"
 	"бос" adj @amod #2->3
 "<бөлмелер>"
-	"бөлме" n pl nom @subj #3->4
+	"бөлме" n pl nom @nsubj #3->4
 "<бар ма>"
 	"бар" adj @root #4->0
 		"е" cop aor p3 sg @cop #5->4
-			"ма" qst @disc #6->4
+			"ма" qst @discourse #6->4
 "<?>"
 	"?" sent @punct #7->4
 
@@ -301,9 +301,9 @@
 "<адамға>"
 	"адам" n dat @nmod #2->5
 "<бөлме>"
-	"бөлме" n nom @dobj #3->5
+	"бөлме" n nom @obj #3->5
 "<қанша>"
-	"қанша" prn itg nom @subj #4->5
+	"қанша" prn itg nom @nsubj #4->5
 "<тұрады>"
 	"тұр" v iv aor p3 sg @root #5->0
 "<?>"
@@ -314,13 +314,13 @@
 "<бөлмеде>"
 	"бөлме" n loc @nmod #2->5
 "<төсек>"
-	"төсек" n attr @cmpnd #3->4
+	"төсек" n attr @compound #3->4
 "<жайма>"
-	"жайма" n nom @subj #4->5
+	"жайма" n nom @nsubj #4->5
 "<бар ма>"
 	"бар" adj @root #5->0
 		"е" cop aor p3 sg @cop #6->5
-			"ма" qst @disc #7->5
+			"ма" qst @discourse #7->5
 "<?>"
 	"?" sent @punct #8->5
 
@@ -329,80 +329,82 @@
 "<алдымен>"
 	"алдымен" adv @advmod #2->4
 "<бөлмені>"
-	"бөлме" n acc @dobj #3->4
+	"бөлме" n acc @obj #3->4
 "<қарап>"
 	"қара" v tv prc_perf @csubj #4->6
 "<шығуға>"
 	"шық" vaux ger dat @aux #5->4
 "<бола ма>"
 	"бол" v iv aor p3 sg @root #6->0 
-		"ма" qst @disc #7->6
+		"ма" qst @discourse #7->6
 "<?>"
 	"?" sent @punct #8->6
 
 "<Сізде>"
 	"сіз" prn pers p2 sg frm loc @nmod #1->4
 "<бірдеме>"
-	"бірдеме" prn ind nom @subj #2->4
+	"бірдеме" prn ind nom @nsubj #2->4
 "<тазалау>"
 	"таза" adj comp @amod #3->2
 "<бар ма>"
 	"бар" adj @root #4->0
 		"е" cop aor p3 sg @cop #5->4
-			"ма" qst @disc #6->4
+			"ма" qst @discourse #6->4
 "<?>"
 	"?" sent @punct #7->4
 
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom @subj #1->4
+	"сіз" prn pers p2 sg frm nom @nsubj #1->5
 "<басқа>"
 	"басқа" det ind @det #2->3
-"<қонақ үйді>"
-	"қонақ үй" n acc @dobj #3->4
+"<қонақ>"
+	"қонақ" n attr @compound #3->4
+"<үйді>"
+	"үй" n acc @obj #4->5
 "<ұсына>"
-	"ұсын" v tv prc_impf @root #4->0
+	"ұсын" v tv prc_impf @root #5->0
 "<аласыз ба>"
-	"ал" vaux aor p2 frm sg @aux #5->4
-		"ма" qst @disc #6->4
+	"ал" vaux aor p2 frm sg @aux #6->5
+		"ма" qst @discourse #7->5
 "<?>" 
-	"?" sent @punct #7->4
+	"?" sent @punct #8->5
 
 "<Сізде>"
 	"сіз" prn pers p2 sg frm loc @nmod #1->3
 "<сейф>"
-	"сейф" n nom @subj #2->3
+	"сейф" n nom @nsubj #2->3
 "<бар ма>"
 	"бар" adj @root #3->0
 		"е" cop aor p3 sg @cop #4->3
-			"ма" qst @disc #5->3
+			"ма" qst @discourse #5->3
 "<?>"
 	"?" sent @punct #6->3
 
 "<Таңғы ас>"
-	"таңғы ас" n nom @subj #1->2
+	"таңғы ас" n nom @nsubj #1->2
 "<енгізілген бе>"
 	"енгіз" v tv pass past p3 sg @root #2->0
-		"ма" qst @disc #3->2
+		"ма" qst @discourse #3->2
 "<?>"
 	"?" sent @punct #4->2
 
 "<Өтінемін>"
-	"өтін" v tv aor p1 sg @disc #1->5
+	"өтін" v tv aor p1 sg @discourse #1->5
 "<,>"
 	"," cm @punct #2->1
 "<менің>"
 	"мен" prn pers p1 sg gen @nmod:poss #3->4
 "<бөлмемді>"
-	"бөлме" n px1sg acc @dobj #4->5
+	"бөлме" n px1sg acc @obj #4->5
 "<жинаңыз>"
 	"жина" v tv imp p2 frm sg @root #5->0
 "<.>"
 	"." sent @punct #6->5
 
 "<Мынау>"
-	"мынау" prn dem nom @dobj #1->3
+	"мынау" prn dem nom @obj #1->3
 "<қанша>"
-	"қанша" prn itg nom @subj #2->3
+	"қанша" prn itg nom @nsubj #2->3
 "<тұрады>"
 	"тұр" v iv aor p3 sg @root #3->0
 "<?>"
@@ -413,7 +415,7 @@
 "<қымбат қой>"
 	"қымбат" adj @root #2->0
 		"е" cop aor p3 sg @cop #3->2
-			"ғой" mod_ass @disc #4->2
+			"ғой" mod_ass @discourse #4->2
 "<!>"
 	"!" sent @punct #5->2
 

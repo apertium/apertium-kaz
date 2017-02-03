@@ -1,9 +1,9 @@
 "<Баяғыда>"
 	"баяғыда" adv @advmod #1->4
 "<біреу>"
-	"біреу" prn ind nom @subj #2->4
+	"біреу" prn ind nom @nsubj #2->4
 "<той>"
-	"той" n nom @dobj #3->4
+	"той" n nom @obj #3->4
 "<жасапты>"
 	"жаса" v tv ifi evid p3 sg @conj #4->13
 "<,>"
@@ -13,13 +13,13 @@
 "<көп>"
 	"көп" det qnt @det #7->8
 "<кісі>"
-	"кісі" n nom @subj #8->9
+	"кісі" n nom @nsubj #8->9
 "<жиналыпты>"
 	"жина" v tv pass ifi evid p3 sg @conj #9->13
 "<,>"
 	"," cm @punct #10->13
 "<Қожа да>"
-	"Қожа" np ant m nom @subj #11->13
+	"Қожа" np ant m nom @nsubj #11->13
 		"да" postadv @advmod #12->11
 "<келіпті>"
 	"кел" v iv ifi evid p3 sg @root #13->0
@@ -31,7 +31,7 @@
 "<үстіндегі>"
 	"үст" n px3sp loc attr @amod #2->3
 "<киімі>"
-	"киім" n px3sp nom @subj #3->4
+	"киім" n px3sp nom @nsubj #3->4
 "<жаман>"
 	"жаман" adj @root #4->0
 "<екен>" 
@@ -40,9 +40,9 @@
 	"." sent @punct #6->4
 
 "<Қожанасырды>"
-	"Қожанасыр" np ant m acc @dobj #1->3
+	"Қожанасыр" np ant m acc @obj #1->3
 "<ешкім>"
-	"ешкім" prn neg nom @subj #2->3
+	"ешкім" prn neg nom @nsubj #2->3
 "<елемепті>"
 	"еле" v tv neg ifi evid p3 sg @root #3->0
 "<.>"
@@ -57,7 +57,7 @@
 "<,>"
 	"," cm @punct #4->6
 "<тамақ>"
-	"тамақ" n nom @dobj #5->6
+	"тамақ" n nom @obj #5->6
 "<іш>"
 	"іш" v tv imp p2 sg @ccomp #6->10
 "<»>"
@@ -72,7 +72,7 @@
 	"." sent @punct #11->10
 
 "<Қожа>"
-	"Қожа" np ant m nom @subj #1->3
+	"Қожа" np ant m nom @nsubj #1->3
 "<үйден>"
 	"үй" n abl @nmod #2->3
 "<шығып>"
@@ -89,7 +89,7 @@
 "<тәуір>"
 	"тәуір" adj @amod #9->10
 "<киімдерін>"
-	"киім" n pl px3sp acc @dobj #10->11
+	"киім" n pl px3sp acc @obj #10->11
 "<киіп>" 
 	"ки" v tv gna_perf @advcl #11->14
 "<,>"
@@ -108,9 +108,9 @@
 "<үй>"
 	"үй" n nom @nmod:poss #3->4
 "<иесі>"
-	"ие" n px3sp nom @subj #4->25
+	"ие" n px3sp nom @nsubj #4->25
 "<Қожанасырды>"
-	"Қожанасыр" np ant m acc @dobj #5->6
+	"Қожанасыр" np ant m acc @obj #5->6
 "<құрметтейді>"
 	"құрметте" v tv aor p3 sg @conj #6->25
 "<,>"
@@ -118,13 +118,13 @@
 "<төрден>"
 	"төр" n abl @nmod #8->10
 "<орын>"
-	"орын" n nom @dobj #9->10
+	"орын" n nom @obj #9->10
 "<береді>"
 	"бер" v tv aor p3 sg @conj #10->25
 "<,>"
 	"," cm @punct #11->25
 "<ет>"
-	"ет" n nom @subj #12->13
+	"ет" n nom @nsubj #12->13
 "<келгенде>"
 	"кел" v iv ger_past loc @advcl #13->25
 "<:>"
@@ -132,7 +132,7 @@
 "<->"
 	"-" guio @punct #15->13
 "<Қожеке>"
-	"Қожеке" np ant m nom @voc #16->20
+	"Қожеке" np ant m nom @vocative #16->20
 "<,>"
 	"," cm @punct #17->16
 "<алыңыз>"
@@ -155,9 +155,9 @@
 	"." sent @punct #26->25
 
 "<Қожа>"
-	"Қожа" np ant m nom @subj #1->3
+	"Қожа" np ant m nom @nsubj #1->3
 "<етті>"
-	"ет" n acc @dobj #2->3
+	"ет" n acc @obj #2->3
 "<жемей>" 
 	"же" v tv neg gna_perf @advcl #3->20
 "<,>"
@@ -167,7 +167,7 @@
 "<шапанының>"
 	"шапан" n px3sp gen @nmod:poss #6->7
 "<жеңін>"
-	"жең" n px3sp acc @dobj #7->8
+	"жең" n px3sp acc @obj #7->8
 "<малып>"
 	"мал" v tv gna_perf @advcl #8->20
 "<:>"
@@ -179,7 +179,7 @@
 "<,>"
 	"," cm @punct #12->15
 "<шапаным>"
-	"шапан" n px1sg nom @voc #13->15
+	"шапан" n px1sg nom @vocative #13->15
 "<,>"
 	"," cm @punct #14->13
 "<же>"
@@ -202,15 +202,15 @@
 "<Үй>"
 	"үй" n nom @nmod:poss #1->2
 "<иесі>"
-	"ие" n px3sp nom @subj #2->18
+	"ие" n px3sp nom @nsubj #2->18
 "<:>"
 	":" sent @punct #3->2
 "<->"
 	"-" guio @punct #4->2
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen @subj #5->8
+	"сіз" prn pers p2 sg frm gen @nsubj #5->8
 "<бұ>"
-	"бұл" prn dem nom @subj #6->7
+	"бұл" prn dem nom @nsubj #6->7
 "<не>"
 	"не" prn itg nom @parataxis #7->13
 "<қылғаныңыз>"
@@ -219,12 +219,12 @@
 "<?>"
 	"?" sent @punct #10->7
 "<Шапан>"
-	"шапан" n nom @subj #11->13
+	"шапан" n nom @nsubj #11->13
 "<ет>"
-	"ет" n nom @dobj #12->13
+	"ет" n nom @obj #12->13
 "<жейтін бе>"
 	"же" v tv gpr_impf @ccomp #13->18
-		"ма" qst @disc #14->13
+		"ма" qst @discourse #14->13
 "<еді>" 
 	"е" cop ifi p3 sg @cop #15->13
 "<?>"
@@ -239,21 +239,21 @@
 "<Сонда>"
 	"сонда" cnjadv @cc #1->21
 "<Қожа>"
-	"Қожа" np ant m nom @subj #2->21
+	"Қожа" np ant m nom @nsubj #2->21
 "<:>"
 	":" sent @punct #3->2
 "<->"
 	"-" guio @punct #4->2
 "<Сен>"
-	"сен" prn pers p2 sg nom @subj #5->7
+	"сен" prn pers p2 sg nom @nsubj #5->7
 "<кісіні>"
-	"кісі" n acc @dobj #6->7
+	"кісі" n acc @obj #6->7
 "<сыйламайды екенсің>"
 	"сыйла" v tv neg aor evid p2 sg @parataxis #7->14
 "<,>"
 	"," cm @punct #8->14
 "<киімді>"
-	"киім" n acc @dobj #9->10
+	"киім" n acc @obj #9->10
 "<сыйлайды екенсің>"
 	"сыйла" v tv aor evid p2 sg @parataxis #10->14
 "<.>"

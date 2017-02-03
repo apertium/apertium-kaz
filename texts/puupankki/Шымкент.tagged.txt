@@ -1,5 +1,5 @@
 "<Шымкент>"
-	"Шымкент" np top nom @subj #1->
+	"Шымкент" np top nom @nsubj #1->
 "<—>"
 	"—" guio @punct #2->
 "<Қазақстандағы>"
@@ -22,7 +22,7 @@
 	"." sent @punct #12->10
 
 "<Тұрғыны>"
-	"тұрғын" n px3sp nom @subj #1->4
+	"тұрғын" n px3sp nom @nsubj #1->4
 "<шамамен>"
 	"шама" n ins @nmod #2->4
 "<683,273>"
@@ -50,7 +50,7 @@
 "<салыстырғанда>"
 	"салыстыр" v tv ger_past loc @advcl #4->8
 "<тұрғыны>"
-	"тұрғын" n px3sp nom @subj #5->8
+	"тұрғын" n px3sp nom @nsubj #5->8
 "<жөнінен>"
 	"жөн" n px3sp abl @nmod #6->8
 "<3-ші>"
@@ -80,7 +80,7 @@
 "<,>"
 	"," cm @punct #3->1
 "<Шымкент>"
-	"Шымкент" np top nom @subj #4->15
+	"Шымкент" np top nom @nsubj #4->15
 "<Қазақстанның>"
 	"Қазақстан" np top gen @nmod:poss #5->12
 "<негізгі>"
@@ -164,7 +164,7 @@
 "<Сонымен қатар>"
 	"сонымен қатар" adv @x #1->9
 "<Шымкенттің>"
-	"Шымкент" np top gen @subj #2->6
+	"Шымкент" np top gen @nsubj #2->6
 "<бұдан да>"
 	"бұл" prn dem abl @x #3->
 		"да" postadv @advmod #4->3
@@ -513,14 +513,14 @@
 "<,>"
 	"," cm @punct #4->1
 "<қала>"
-	"қала" n nom @subj #5->12
+	"қала" n nom @nsubj #5->12
 "<ескі>"
 	"ескі" adj @amod #6->7
 "<заманнан-ақ>"
 	"заман" n abl @nmod #7->12
 		"-ақ" postadv @advmod #8->7
 "<адамдардың>"
-	"адам" n pl gen @subj #9->10
+	"адам" n pl gen @nsubj #9->10
 "<өмір сүруіне>"
 	"өмір сүр" v iv ger px3sp dat @advcl #10->12
 "<қолайлы>"
@@ -543,7 +543,7 @@
 "<археологиялық>"
 	"археологиялық" adj @amod #5->7
 "<қазба>"
-	"қазба" n attr @cmpnd #6->7
+	"қазба" n attr @compound #6->7
 "<жұмыстары>"
 	"жұмыс" n pl px3sp nom @nmod:poss #7->8
 "<кезінде>"
@@ -553,7 +553,7 @@
 "<мәдениет>"
 	"мәдениет" n nom @nmod:poss #10->11
 "<мұралары>"
-	"мұра" n pl px3sp nom @subj #11->12
+	"мұра" n pl px3sp nom @nsubj #11->12
 "<дәлел>"
 	"дәлел" n nom @root #12->0
 "<бола>"
@@ -610,7 +610,7 @@
 "<жылы>"
 	"жыл" n px3sp nom @nmod #2->
 "<Қазақстанның>"
-	"Қазақстан" np top gen @subj #3->6
+	"Қазақстан" np top gen @nsubj #3->6
 "<Ресей>"
 	"Ресей" np top nom @nmod:poss #4->5
 "<империясына>"
@@ -632,7 +632,7 @@
 "<Черняевтің>"
 	"Черняев" np cog m gen @nmod:poss #13->14
 "<есімі>"
-	"есім" n px3sp nom @subj #14->15
+	"есім" n px3sp nom @nsubj #14->15
 "<берілді>"
 	"бер" v tv pass ifi p3 sg @x #15->
 "<,>"
@@ -644,7 +644,7 @@
 "<жылы>"
 	"жыл" n px3sp nom @nmod #19->
 "<қала>"
-	"қала" n attr @cmpnd #20->21
+	"қала" n attr @compound #20->21
 "<Шымкент>"
 	"Шымкент" np top nom @x #21->
 "<атауына>"
@@ -668,7 +668,7 @@
 "<жаңа>"
 	"жаңа" adj @amod #5->6
 "<кезеңі>"
-	"кезең" n px3sp nom @subj #6->7
+	"кезең" n px3sp nom @nsubj #6->7
 "<басталды>"
 	"баста" v tv pass ifi p3 sg @root #7->0 
 "<.>"
@@ -677,7 +677,7 @@
 "<Қала>"
 	"қала" n nom @nmod:poss #1->2
 "<халқы>"
-	"халық" n px3sp nom @subj #2->9
+	"халық" n px3sp nom @nsubj #2->9
 "<елдегі>"
 	"ел" n loc attr @amod #3->5
 "<үлкен>"
@@ -689,7 +689,7 @@
 "<жаңа>"
 	"жаңа" adj @amod #7->8
 "<жетістіктерге>"
-	"жетістік" n pl dat @dobj #8->9
+	"жетістік" n pl dat @obj #8->9
 "<жете>"
 	"жет" v iv prc_impf @root #9->0
 "<бастады>"
@@ -704,7 +704,7 @@
 "<өндіріс>"
 	"өндіріс" n nom @nmod:poss #3->4
 "<орындары>"
-	"орын" n pl px3sp nom @subj #4->5
+	"орын" n pl px3sp nom @nsubj #4->5
 "<салынып>"
 	"сал" v tv pass gna_perf @advcl #5->14
 "<,>"
@@ -722,7 +722,7 @@
 "<мәдениет>"
 	"мәдениет" n nom @nmod:poss #12->13
 "<ошақтары>"
-	"ошақ" n pl px3sp nom @subj #13->14
+	"ошақ" n pl px3sp nom @nsubj #13->14
 "<ашылды>"
 	"аш" v tv pass ifi p3 pl @root #14->0
 "<.>"
@@ -731,11 +731,11 @@
 "<Қала>"
 	"қала" n nom @nmod:poss #1->2
 "<келбеті>"
-	"келбет" n px3sp nom @subj #2->13
+	"келбет" n px3sp nom @nsubj #2->13
 "<жаңа>"
 	"жаңа" adj @amod #3->5
 "<тұрғын>"
-	"тұрғын" n attr @cmpnd #4->5
+	"тұрғын" n attr @compound #4->5
 "<үйлер>"
 	"үй" n pl nom @conj #5->11
 "<,>"
@@ -766,7 +766,7 @@
 "<қорғасын>"
 	"қорғасын" n nom @nmod:poss #4->5
 "<зауыты>"
-	"зауыт" n px3sp nom @subj #5->6
+	"зауыт" n px3sp nom @nsubj #5->6
 "<салынды>"
 	"сал" v tv pass ifi p3 sg @root #6->0
 "<.>"
@@ -779,7 +779,7 @@
 "<өндіріс>"
 	"өндіріс" n nom @nmod:poss #3->4
 "<орны>"
-	"орын" n px3sp nom @subj #4->9
+	"орын" n px3sp nom @nsubj #4->9
 "<КСРО-дағы>"
 	"КСРО" np top loc attr @amod #5->7
 "<өндірілетін>"
@@ -787,7 +787,7 @@
 "<қорғасынның>"
 	"қорғасын" n gen @nmod:poss #7->8
 "<70%-ін>"
-	"70" num percent px3sp acc @dobj #8->9
+	"70" num percent px3sp acc @obj #8->9
 "<беріп>"
 	"бер" v tv prc_perf @root #9->0
 "<отырды>"
@@ -810,7 +810,7 @@
 "<айна>"
 	"айна" n nom @nmod:poss #7->8
 "<фабрикалары>"
-	"фабрика" n pl px3sp nom @subj #8->9
+	"фабрика" n pl px3sp nom @nsubj #8->9
 "<іске қосылды>"
 	"іске қос" v tv pass ifi p3 pl @root #9->0
 "<.>"
@@ -825,19 +825,19 @@
 "<авиациясының>"
 	"авиация" n px3sp gen @nmod:poss #4->5
 "<базасы>"
-	"база" n px3sp nom @subj #5->6
+	"база" n px3sp nom @nsubj #5->6
 "<құрылып>"
 	"құр" v tv pass gna_perf @advcl #6->12
 "<,>"
 	"," cm @punct #7->6
 "<бұл>"
-	"бұл" prn dem nom @subj #8->12
+	"бұл" prn dem nom @nsubj #8->12
 "<Шымкент>"
 	"Шымкент" np top nom @nmod:poss #9->10
 "<әуежайының>"
 	"әуежай" n px3sp gen @nmod:poss #10->11
 "<негізін>"
-	"негіз" n px3sp acc @dobj #11->12
+	"негіз" n px3sp acc @obj #11->12
 "<қалады>"
 	"қала" v tv ifi p3 sg @root #12->0
 "<.>"
