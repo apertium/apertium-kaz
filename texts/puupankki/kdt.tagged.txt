@@ -1093,7 +1093,7 @@
 	"көр" v tv ger_past px3sp nom @csubj #4->5
 "<рас>"
 	"рас" n nom @root #5->0
-		"е" cop aor p3 sg @root #6->5
+		"е" cop aor p3 sg @cop #6->5
 "<.>"
 	"." sent @punct #7->5
 
@@ -1447,7 +1447,7 @@
 "<кісі>"
 	"кісі" n nom @xcomp #5->6
 "<болды>"
-	"бол" v iv ifi p3 sg @cop #6->0
+	"бол" v iv ifi p3 sg @root #6->0
 "<.>"
 	"." sent @punct #7->6
 
