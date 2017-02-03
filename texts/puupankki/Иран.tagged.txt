@@ -558,7 +558,7 @@
 	"." sent @punct #40->38
 
 "<Солтүстік-батысын>"
-	"солтүстік-батыс" adj subst px3sp acc @remnant #1->12
+	"солтүстік-батыс" adj subst px3sp acc @orphan #1->6
 "<Оңтүстік>"
 	"оңтүстік" adj @amod #2->3
 "<Каспий>"
@@ -568,21 +568,21 @@
 "<Кура-Аракс>"
 	"Кура-Аракс" np top nom @nmod:poss #5->6
 "<ойпаттары>"
-	"ойпат" n pl px3sp nom @remnant #6->15
+	"ойпат" n pl px3sp nom @conj #6->16
 "<,>"
-	"," cm @punct #7->15
+	"," cm @punct #7->6
 "<солтүстік-шығысын>"
-	"солтүстік-шығыс" adj subst px3sp acc @remnant #8->12
+	"солтүстік-шығыс" adj subst px3sp acc @orphan #8->10
 "<Горган>"
 	"Горган" np top nom @nmod:poss #9->10
 "<жазығы>"
-	"жазық" n px3sp nom @remnant #10->15
+	"жазық" n px3sp nom @conj #10->16
 "<,>"
-	"," cm @punct #11->15
+	"," cm @punct #11->10
 "<оңтүстігін>"
 	"оңтүстік" adj subst px3sp acc @obj #12->16
 "<—>"
-	"—" guio @punct #13->12
+	"—" guio @punct #13->16
 "<Гермезир>"
 	"Гермезир" np top nom @nmod:poss #14->15
 "<шөлі>"
@@ -2332,9 +2332,9 @@
 "<Елдің>"
 	"ел" n gen @nmod:poss #1->2
 "<солтүстігіне>"
-	"солтүстік" n px3sp dat @remnant #2->5
+	"солтүстік" n px3sp dat @orphan #2->3
 "<Ресей>"
-	"Ресей" np top nom @remnant #3->6
+	"Ресей" np top nom @conj #3->8
 "<,>"
 	"," cm @punct #4->3
 "<оңтүстігіне>"
@@ -3339,9 +3339,9 @@
 "<Мемлекеттік>"
 	"мемлекеттік" adj @amod #1->2
 "<кірістің>"
-	"кіріс" n gen @remnant #2->7
+	"кіріс" n gen @orphan #2->3
 "<1>"
-	"1" num @remnant #3->8
+	"1" num @conj #3->12
 "</>"
 	"/" sym @punct #4->3
 "<3>"

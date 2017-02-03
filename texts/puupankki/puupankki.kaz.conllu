@@ -23,6 +23,27 @@
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = wikipedia-news.tagged.txt:2:18
+# text = Қазақстанда жергілікті полиция қызметі өз жұмысын бастады.
+1	Қазақстанда	Қазақстан	PROPN	np	Case=Loc	7	obl	_	_
+2	жергілікті	жергілікті	ADJ	adj	_	3	amod	_	_
+3	полиция	полиция	NOUN	n	Case=Nom	4	nmod:poss	_	_
+4	қызметі	қызмет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+5	өз	өз	DET	det	PronType=Ref	6	det	_	_
+6	жұмысын	жұмыс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	obj	_	_
+7	бастады	баста	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:3:35
+# text = Қазақстан Еуразиялық Экономикалық Одаққа төрағалығын бастады.
+1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	6	nsubj	_	_
+2	Еуразиялық	еуразиялық	ADJ	adj	_	4	amod	_	_
+3	Экономикалық	экономикалық	ADJ	adj	_	4	amod	_	_
+4	Одаққа	одақ	NOUN	n	Case=Dat	6	obl	_	_
+5	төрағалығын	төрағалық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
+6	бастады	баста	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:4:50
 # text = 5 полиция қызметкері жарақаттанған.
 1	5	5	NUM	num	_	3	nummod	_	_
 2	полиция	полиция	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -2281,6 +2302,152 @@
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = kdt.tagged.txt:205:3320
+# text = Бұ қыз кәпірге дауа жоқ ...
+1	Бұ	бұл	DET	det	PronType=Dem	3	det	_	_
+2	қыз	қыз	NOUN	n	Case=Nom	3	amod	_	_
+3	кәпірге	кәпір	NOUN	n	Case=Dat	5	nmod	_	_
+4	дауа	дауа	NOUN	n	Case=Nom	5	nsubj	_	_
+5-6	жоқ	_	_	_	_	_	_	_	_
+5	жоқ	жоқ	ADJ	adj	_	0	root	_	_
+6	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	5	cop	_	_
+7	...	...	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = kdt.tagged.txt:206:3334
+# text = Бекболат жымиып: — Ал, ал, — дей берді.
+1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Masc	10	nsubj	_	_
+2	жымиып	жыми	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
+3	:	:	PUNCT	sent	_	2	punct	_	_
+4	—	—	PUNCT	guio	_	7	punct	_	_
+5	Ал	ал	INTJ	ij	_	7	conj	_	_
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	ал	ал	INTJ	ij	_	10	ccomp	_	_
+8	,	,	PUNCT	cm	_	7	punct	_	_
+9	—	—	PUNCT	guio	_	10	punct	_	_
+10	дей	де	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
+11	берді	бер	AUX	vaux	Number=Sing|Person=3|Tense=Past	10	aux	_	_
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = kdt.tagged.txt:207:3359
+# text = — Қыз аман-есен үйіне келіпті, — деді.
+1	—	—	PUNCT	guio	_	8	punct	_	_
+2	Қыз	қыз	NOUN	n	Case=Nom	5	nsubj	_	_
+3	аман-есен	аман-есен	ADV	adv	_	5	advmod	_	_
+4	үйіне	үй	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	_
+5	келіпті	кел	VERB	v	Evident=Fh|Number=Sing|Person=3|Tense=Past	8	ccomp	_	_
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	—	—	PUNCT	guio	_	8	punct	_	_
+8	деді	де	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
+# sent_id = kdt.tagged.txt:208:3378
+# text = Бекболат шошып кетті.
+1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Masc	2	nsubj	_	_
+2	шошып	шошы	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
+3	кетті	кет	AUX	vaux	Number=Sing|Person=3|Tense=Past	2	aux	_	_
+4	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = kdt.tagged.txt:209:3387
+# text = Танытатын жерге әлдеқашан жіберілген.
+1	Танытатын	таны	VERB	v	Aspect=Imp|VerbForm=Part	2	acl:relcl	_	_
+2	жерге	жер	NOUN	n	Case=Dat	4	nmod	_	_
+3	әлдеқашан	әлдеқашан	ADV	adv	_	4	advmod	_	_
+4	жіберілген	жібер	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = kdt.tagged.txt:210:3398
+# text = Бекболат амалсыз тыңдады.
+1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
+2	амалсыз	амалсыз	ADV	adv	_	3	advmod	_	_
+3	тыңдады	тыңда	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:211:3407
+# text = — Біз қайдан білейік?
+1	—	—	PUNCT	guio	_	4	punct	_	_
+2	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
+3	қайдан	қайдан	ADV	adv	PronType=Int	4	advmod	_	_
+4	білейік	біл	VERB	v	Mood=Opt|Number=Plur|Person=1	0	root	_	_
+5	?	?	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = kdt.tagged.txt:212:3418
+# text = — Мен білмеймін.
+1	—	—	PUNCT	guio	_	3	punct	_	_
+2	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	білмеймін	біл	VERB	v	Number=Sing|Person=1|Polarity=Neg|Tense=Aor	0	root	_	_
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:213:3427
+# text = Осы істен қорыққаннан нашар ауылдар өздері шақырып семіз малын сойып беретін.
+1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
+2	істен	іс	NOUN	n	Case=Abl	3	iobj	_	_
+3	қорыққаннан	қорық	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	10	advcl	_	_
+4	нашар	нашар	ADJ	adj	_	5	amod	_	_
+5	ауылдар	ауыл	NOUN	n	Case=Nom|Number=Plur	7	dobj	_	_
+6	өздері	өз	PRON	prn	Case=Nom|Number[psor]=Plur|Person[psor]=3|PronType=Ref	7	nsubj	_	_
+7	шақырып	шақыр	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
+8	семіз	семіз	ADJ	adj	_	9	amod	_	_
+9	малын	мал	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	10	dobj	_	_
+10	сойып	сой	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
+11	беретін	бер	AUX	vaux	Number=Plur|Person=3|Tense=Past	10	aux	_	_
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = kdt.tagged.txt:214:3452
+# text = 52 жыл болды.
+1	52	52	NUM	num	_	2	nummod	_	_
+2	жыл	жыл	NOUN	n	Case=Nom	0	root	_	_
+3	болды	бол	VERB	v	Number=Sing|Person=3|Tense=Past	2	cop	_	_
+4	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = kdt.tagged.txt:215:3461
+# text = Бір миллион пұт тас көмір тасылған.
+1	Бір	бір	NUM	num	_	2	compound	_	_
+2	миллион	миллион	NUM	num	_	5	nummod	_	_
+3	пұт	пұт	NOUN	n	Case=Nom	2	clf	_	_
+4	тас	тас	NOUN	n	Case=Nom	5	compound	_	_
+5	көмір	көмір	NOUN	n	Case=Nom	6	nsubj	_	_
+6	тасылған	тасы	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = kdt.tagged.txt:216:3476
+# text = Оларды шығарам деп көп ақшасын алды.
+1	Оларды	олар	PRON	prn	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	dobj	_	_
+2	шығарам	шығар	VERB	v	Number=Sing|Person=1|Tense=Aor	3	ccomp	_	_
+3	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
+4	көп	көп	ADJ	adj	_	5	amod	_	_
+5	ақшасын	ақша	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	dobj	_	_
+6	алды	ал	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = kdt.tagged.txt:217:3491
+# text = — Жоқ, оны артынан сөйлесерміз ...
+1	—	—	PUNCT	guio	_	6	punct	_	_
+2	Жоқ	жоқ	INTJ	ij	_	6	discourse	_	_
+3	,	,	PUNCT	cm	_	6	punct	_	_
+4	оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	_
+5	артынан	арт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+6	сөйлесерміз	сөйле	VERB	v	Number=Plur|Person=1|Tense=Fut|Voice=Coop	0	root	_	_
+7	...	...	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = kdt.tagged.txt:218:3506
+# text = Бір пулемет, қанша ат-арба, қанша киім, қанша ақша — баршаларын олжа қылған.
+1	Бір	бір	NUM	num	_	2	nummod	_	_
+2	пулемет	пулемет	NOUN	n	Case=Nom	11	conj	_	_
+3	,	,	PUNCT	cm	_	11	punct	_	_
+4	қанша	қанша	DET	det	PronType=Qnt	5	det	_	_
+5	ат-арба	ат-арба	NOUN	n	Case=Nom	11	conj	_	_
+6	,	,	PUNCT	cm	_	11	punct	_	_
+7	қанша	қанша	DET	det	PronType=Qnt	10	det	_	_
+8	киім	киім	NOUN	n	Case=Nom	11	conj	_	_
+9	,	,	PUNCT	cm	_	11	punct	_	_
+10	қанша	қанша	DET	det	PronType=Qnt	11	det	_	_
+11	ақша	ақша	NOUN	n	Case=Nom	13	appos	_	_
+12	—	—	PUNCT	guio	_	15	punct	_	_
+13	баршаларын	барша	ADJ	adj	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	15	dobj	_	_
+14	олжа	олжа	NOUN	n	Case=Nom	15	compound	_	_
+15	қылған	қыл	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+16	.	.	PUNCT	sent	_	15	punct	_	_
+
+# sent_id = kdt.tagged.txt:219:3539
 # text = Дауыстарды санау басталғаннан кейін сайлаушылар ( таңдаушылар ) тізімдеріне өзгерістер енгізуге тыйым салынады.
 1	Дауыстарды	дауыс	NOUN	n	Case=Acc|Number=Plur	2	obj	_	_
 2	санау	сана	VERB	v	Case=Nom|VerbForm=Ger	3	csubj	_	_
@@ -2297,7 +2464,7 @@
 13	салынады	сал	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = kdt.tagged.txt:206:3349
+# sent_id = kdt.tagged.txt:220:3568
 # text = Сенат депутаттарын сайлау кезінде таңдаушылардың тізімдері жасалады.
 1	Сенат	сенат	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	депутаттарын	депутат	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	obj	_	_
@@ -2308,7 +2475,7 @@
 7	жасалады	жаса	VERB	v	Number=Plur|Person=3|Tense=Aor|Voice=Pass	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = kdt.tagged.txt:207:3366
+# sent_id = kdt.tagged.txt:221:3585
 # text = Нақтылы сайлау учаскесінде азаматты сайлаушылар тізіміне енгізу үшін оның осы сайлау учаскесінің аумағында тұрғылықты жері бойынша тіркелу фактісі негіз болады.
 1	Нақтылы	нақтылы	ADJ	adj	_	3	amod	_	_
 2	сайлау	сайлау	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -2332,7 +2499,7 @@
 20	болады	бол	VERB	v	Number=Sing|Person=3|Tense=Aor	19	cop	_	_
 21	.	.	PUNCT	sent	_	19	punct	_	_
 
-# sent_id = kdt.tagged.txt:208:3409
+# sent_id = kdt.tagged.txt:222:3628
 # text = Сайлаушылар тізімі әліпби тәртібімен немесе өзге тәртіппен жасалады.
 1	Сайлаушылар	сайлаушы	NOUN	n	Case=Nom|Number=Plur	2	nmod:poss	_	_
 2	тізімі	тізім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
@@ -2344,7 +2511,7 @@
 8	жасалады	жаса	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = kdt.tagged.txt:209:3428
+# sent_id = kdt.tagged.txt:223:3647
 # text = Сайлаушылардың тұрғылықты жері бойынша тізімін тиісті жергілікті атқарушы орган халықты есепке алуды жүзеге асыратын органдар ұсынған мәліметтердің негізінде жасайды.
 1	Сайлаушылардың	сайлаушы	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
 2	тұрғылықты	тұрғылықты	ADJ	adj	_	3	amod	_	_
@@ -4461,19 +4628,19 @@
 
 # sent_id = Иран.tagged.txt:19:560
 # text = Солтүстік-батысын Оңтүстік Каспий және Кура-Аракс ойпаттары, солтүстік-шығысын Горган жазығы, оңтүстігін — Гермезир шөлі алып жатыр.
-1	Солтүстік-батысын	солтүстік-батыс	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	remnant	_	_
+1	Солтүстік-батысын	солтүстік-батыс	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	orphan	_	_
 2	Оңтүстік	оңтүстік	ADJ	adj	_	3	amod	_	_
 3	Каспий	Каспий	PROPN	np	Case=Nom	5	conj	_	_
 4	және	және	CCONJ	cnjcoo	_	5	cc	_	_
 5	Кура-Аракс	Кура-Аракс	PROPN	np	Case=Nom	6	nmod:poss	_	_
-6	ойпаттары	ойпат	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	15	remnant	_	_
-7	,	,	PUNCT	cm	_	15	punct	_	_
-8	солтүстік-шығысын	солтүстік-шығыс	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	remnant	_	_
+6	ойпаттары	ойпат	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	16	conj	_	_
+7	,	,	PUNCT	cm	_	6	punct	_	_
+8	солтүстік-шығысын	солтүстік-шығыс	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	10	orphan	_	_
 9	Горган	Горган	PROPN	np	Case=Nom	10	nmod:poss	_	_
-10	жазығы	жазық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	remnant	_	_
-11	,	,	PUNCT	cm	_	15	punct	_	_
+10	жазығы	жазық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	conj	_	_
+11	,	,	PUNCT	cm	_	10	punct	_	_
 12	оңтүстігін	оңтүстік	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	16	obj	_	_
-13	—	—	PUNCT	guio	_	12	punct	_	_
+13	—	—	PUNCT	guio	_	16	punct	_	_
 14	Гермезир	Гермезир	PROPN	np	Case=Nom	15	nmod:poss	_	_
 15	шөлі	шөл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nsubj	_	_
 16	алып	ал	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
@@ -5130,8 +5297,8 @@
 # sent_id = Иран.tagged.txt:56:1687
 # text = Елдің солтүстігіне Ресей, оңтүстігіне Ұлыбритания қожалық ете бастады.
 1	Елдің	ел	NOUN	n	Case=Gen	2	nmod:poss	_	_
-2	солтүстігіне	солтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	5	remnant	_	_
-3	Ресей	Ресей	PROPN	np	Case=Nom	6	remnant	_	_
+2	солтүстігіне	солтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	orphan	_	_
+3	Ресей	Ресей	PROPN	np	Case=Nom	8	conj	_	_
 4	,	,	PUNCT	cm	_	3	punct	_	_
 5	оңтүстігіне	оңтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod	_	_
 6	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	8	nsubj	_	_
@@ -5559,8 +5726,8 @@
 # sent_id = Иран.tagged.txt:82:2412
 # text = Мемлекеттік кірістің 1 / 3 және экспорттың 90%-ына жуығы осы салалардан алынады.
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
-2	кірістің	кіріс	NOUN	n	Case=Gen	7	remnant	_	_
-3	1	1	NUM	num	_	8	remnant	_	_
+2	кірістің	кіріс	NOUN	n	Case=Gen	3	orphan	_	_
+3	1	1	NUM	num	_	12	conj	_	_
 4	/	/	SYM	sym	_	3	punct	_	_
 5	3	3	NUM	num	_	3	nmod	_	_
 6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
