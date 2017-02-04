@@ -44,6 +44,43 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = wikipedia-news.tagged.txt:4:50
+# text = Футболдан Еуропа чемпионатының финалдық матчында Португалия құрамасы Франция командасын жеңіп Еуропа чемпионы атанды.
+1	Футболдан	футбол	NOUN	n	Case=Abl	3	nmod	_	_
+2	Еуропа	Еуропа	PROPN	np	Case=Nom	3	nmod:poss	_	_
+3	чемпионатының	чемпионат	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
+4	финалдық	финалдық	ADJ	adj	_	5	amod	_	_
+5	матчында	матч	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+6	Португалия	Португалия	PROPN	np	Case=Nom	7	nmod:poss	_	_
+7	құрамасы	құрама	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
+8	Франция	Франция	PROPN	np	Case=Nom	9	nmod:poss	_	_
+9	командасын	команда	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	10	obj	_	_
+10	жеңіп	жең	VERB	v	Aspect=Perf|VerbForm=Conv	13	advcl	_	_
+11	Еуропа	Еуропа	PROPN	np	Case=Nom	12	nmod:poss	_	_
+12	чемпионы	чемпион	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
+13	атанды	атан	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+14	.	.	PUNCT	sent	_	13	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:5:79
+# text = Алматы қаласында лаңкестік әрекет орын алып, 5 полиция қызметкері мен 1 бейбіт тұрғын қаза тапты.
+1	Алматы	Алматы	PROPN	np	Case=Nom	2	nmod:poss	_	_
+2	қаласында	қала	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
+3	лаңкестік	лаңкестік	NOUN	n	Case=Nom	4	compound	_	_
+4	әрекет	әрекет	NOUN	n	Case=Nom	6	nsubj	_	_
+5	орын	орын	NOUN	n	Case=Nom	6	compound:lvc	_	_
+6	алып	ал	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	_
+7	,	,	PUNCT	cm	_	6	punct	_	_
+8	5	5	NUM	num	_	10	nummod	_	_
+9	полиция	полиция	NOUN	n	Case=Nom	10	nmod:poss	_	_
+10	қызметкері	қызметкер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	conj	_	_
+11	мен	мен	CCONJ	cnjcoo	_	14	cc	_	_
+12	1	1	NUM	num	_	14	nummod	_	_
+13	бейбіт	бейбіт	ADJ	adj	_	14	amod	_	_
+14	тұрғын	тұрғын	NOUN	n	Case=Nom	16	nsubj	_	_
+15	қаза	қаза	X	x	_	16	dep	_	_
+16	тапты	тап	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
+17	.	.	PUNCT	sent	_	16	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:6:114
 # text = 5 полиция қызметкері жарақаттанған.
 1	5	5	NUM	num	_	3	nummod	_	_
 2	полиция	полиция	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -428,7 +465,7 @@
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = kdt.tagged.txt:34:556
-# text = Ақтар қашып, қызылдар келіп, қала - қалаға орнады.
+# text = Ақтар қашып, қызылдар келіп, қала-қалаға орнады.
 1	Ақтар	ақ	ADJ	adj	Case=Nom|Number=Plur	2	nsubj	_	_
 2	қашып	қаш	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -458,8 +495,8 @@
 13	шыққан	шық	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	21	advcl	_	_
 14	соң	соң	ADP	post	_	13	case	_	_
 15	,	,	PUNCT	cm	_	13	punct	_	_
-16	жатсам	жат	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	19	remnant	_	_
-17	ұйқым	ұйқы	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	20	remnant	_	_
+16	жатсам	жат	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	17	orphan	_	_
+17	ұйқым	ұйқы	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	21	conj	_	_
 18	,	,	PUNCT	cm	_	20	punct	_	_
 19	тұрсам	тұр	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	21	advcl	_	_
 20	күлкім	күлкі	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	21	nsubj	_	_
@@ -492,7 +529,7 @@
 5	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = kdt.tagged.txt:38:658
-# text = Елге келген соң ауыл - ауылдан мал, киіз, төсек - орын, ыдыс - сайман алып жүрген ақтардың адамына жолығып, іш пікірім ішімде соларға кісі болдым.
+# text = Елге келген соң ауыл-ауылдан мал, киіз, төсек-орын, ыдыс-сайман алып жүрген ақтардың адамына жолығып, іш пікірім ішімде соларға кісі болдым.
 1	Елге	ел	NOUN	n	Case=Dat	2	nmod	_	_
 2	келген	кел	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	30	advcl	_	_
 3	соң	соң	ADP	post	_	2	case	_	_
@@ -538,7 +575,7 @@
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:40:737
-# text = Өмірі байдан, күштіден қорлық - зорлық көріп келдім.
+# text = Өмірі байдан, күштіден қорлық-зорлық көріп келдім.
 1	Өмірі	өмірі	ADV	adv	_	8	advmod	_	_
 2	байдан	бай	NOUN	n	Case=Abl	4	conj	_	_
 3	,	,	PUNCT	cm	_	4	punct	_	_
@@ -757,7 +794,7 @@
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = kdt.tagged.txt:63:1048
-# text = Анда - санда қара мұрт оған сөз үйретіп тұрды.
+# text = Анда-санда қара мұрт оған сөз үйретіп тұрды.
 1	Анда	анда	ADV	adv	_	3	goeswith	_	_
 2	-	-	PUNCT	guio	_	3	punct	_	_
 3	санда	сан	ADV	adv	_	8	advmod	_	_
@@ -1220,7 +1257,7 @@
 4	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = kdt.tagged.txt:105:1716
-# text = " Осылай тұр! " дегендей екі иығынан басып қалды, бес - алты адымдай жерге барып тұра қалды.
+# text = "Осылай тұр!" дегендей екі иығынан басып қалды, бес-алты адымдай жерге барып тұра қалды.
 1	"	"	PUNCT	sent	_	3	punct	_	_
 2	Осылай	осы	PRON	prn	PronType=Dem	3	advmod	_	_
 3	тұр	тұр	VERB	v	Mood=Imp|Number=Sing|Person=2	6	ccomp	_	_
@@ -1270,7 +1307,7 @@
 8	?	?	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:109:1796
-# text = Сен бұл жолдан аман - есен қайтарсың, еліңе аман барарсың ... — деді.
+# text = Сен бұл жолдан аман-есен қайтарсың, еліңе аман барарсың ... — деді.
 1	Сен	сен	PRON	prn	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	_
 2	бұл	бұл	DET	det	PronType=Dem	3	det	_	_
 3	жолдан	жол	NOUN	n	Case=Abl	7	nmod	_	_
@@ -1395,7 +1432,7 @@
 10	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = kdt.tagged.txt:122:1978
-# text = Асумен асып елге бара жатқан, елден мал, азық - түлік алып келе жатқан орыстарды талай көрген.
+# text = Асумен асып елге бара жатқан, елден мал, азық-түлік алып келе жатқан орыстарды талай көрген.
 1	Асумен	асу	NOUN	n	Case=Ins	2	nmod	_	_
 2	асып	ас	VERB	v	Aspect=Perf|VerbForm=Conv	4	advcl	_	_
 3	елге	ел	NOUN	n	Case=Dat	4	nmod	_	_
@@ -1492,7 +1529,7 @@
 9	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:130:2132
-# text = " Оны біз білмейміз-ау! " деген ойлар келді.
+# text = "Оны біз білмейміз-ау!" деген ойлар келді.
 1	"	"	PUNCT	sent	_	4	punct	_	_
 2	Оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
 3	біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
@@ -1689,7 +1726,7 @@
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
 # sent_id = kdt.tagged.txt:150:2399
-# text = Үлкенді " әке ", " аға " деп тұрады.
+# text = Үлкенді "әке ", "аға" деп тұрады.
 1	Үлкенді	үлкен	NOUN	n	Case=Acc	9	nmod	_	_
 2	"	"	PUNCT	sent	_	3	punct	_	_
 3	әке	әке	NOUN	n	Case=Nom	7	conj	_	_
@@ -1703,7 +1740,7 @@
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = kdt.tagged.txt:151:2422
-# text = Мейлі жаңа түскен келіншек болсын, қатын біткенді " шеше " дейді.
+# text = Мейлі жаңа түскен келіншек болсын, қатын біткенді "шеше" дейді.
 1	Мейлі	мейлі	INTJ	ij	_	4	discourse	_	_
 2	жаңа	жаңа	ADV	adv	_	3	advmod	_	_
 3	түскен	түс	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
@@ -1719,7 +1756,7 @@
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = kdt.tagged.txt:152:2449
-# text = Еркек, әйел деп айырмайды, бала біткенді " балақайым " дейді, кісіге өмірі қатты сөз айтпайды.
+# text = Еркек, әйел деп айырмайды, бала біткенді "балақайым" дейді, кісіге өмірі қатты сөз айтпайды.
 1	Еркек	еркек	NOUN	n	Case=Nom	3	conj	_	_
 2	,	,	PUNCT	cm	_	3	punct	_	_
 3	әйел	әйел	NOUN	n	Case=Nom	4	obj	_	_
@@ -1847,7 +1884,7 @@
 14	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = kdt.tagged.txt:162:2652
-# text = " Не бетіммен барам " деген ой келді.
+# text = "Не бетіммен барам" деген ой келді.
 1	"	"	PUNCT	sent	_	4	punct	_	_
 2	Не	не	CCONJ	cnjcoo	_	4	cc	_	_
 3	бетіммен	бет	NOUN	n	Case=Ins|Number[psor]=Sing|Person[psor]=1	4	nmod	_	_
@@ -1963,7 +2000,7 @@
 5	...	...	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = kdt.tagged.txt:175:2810
-# text = " Кәпірді " құшақтаған арам қолымды қайтіп әкемнің адал дастарқанына апарып, қайтіп бір табақтан ас ішермін?
+# text = "Кәпірді" құшақтаған арам қолымды қайтіп әкемнің адал дастарқанына апарып, қайтіп бір табақтан ас ішермін?
 1	"	"	PUNCT	sent	_	2	punct	_	_
 2	Кәпірді	кәпір	NOUN	n	Case=Acc	4	obj	_	_
 3	"	"	PUNCT	sent	_	2	punct	_	_
@@ -2000,7 +2037,7 @@
 6	?	?	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = kdt.tagged.txt:178:2869
-# text = Мыналарды көргенде өзі жазылған соң, Бекболат: " ауру қалай жазылмасын? " — деп ойлады.
+# text = Мыналарды көргенде өзі жазылған соң, Бекболат: "ауру қалай жазылмасын?" — деп ойлады.
 1	Мыналарды	мына	PRON	prn	Case=Acc|Number=Plur|PronType=Dem	2	obj	_	_
 2	көргенде	көр	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	4	advcl	_	_
 3	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	4	nsubj	_	_
@@ -2134,7 +2171,7 @@
 3	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = kdt.tagged.txt:191:3069
-# text = Бекболаттың сұраулары көбейіп, әңгіменің аяғы созылып жатқанын сезіп, ел қазағы " бір айналып соғармын, — шаруам бар еді " деп, тұрып кетті.
+# text = Бекболаттың сұраулары көбейіп, әңгіменің аяғы созылып жатқанын сезіп, ел қазағы "бір айналып соғармын, — шаруам бар еді" деп, тұрып кетті.
 1	Бекболаттың	Бекболат	PROPN	np	Case=Gen|Gender=Masc	2	nmod:poss	_	_
 2	сұраулары	сұрау	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
 3	көбейіп	көбей	VERB	v	Aspect=Perf|VerbForm=Conv	9	conj	_	_
@@ -2382,11 +2419,11 @@
 2	істен	іс	NOUN	n	Case=Abl	3	iobj	_	_
 3	қорыққаннан	қорық	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	10	advcl	_	_
 4	нашар	нашар	ADJ	adj	_	5	amod	_	_
-5	ауылдар	ауыл	NOUN	n	Case=Nom|Number=Plur	7	dobj	_	_
+5	ауылдар	ауыл	NOUN	n	Case=Nom|Number=Plur	7	obj	_	_
 6	өздері	өз	PRON	prn	Case=Nom|Number[psor]=Plur|Person[psor]=3|PronType=Ref	7	nsubj	_	_
 7	шақырып	шақыр	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
 8	семіз	семіз	ADJ	adj	_	9	amod	_	_
-9	малын	мал	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	10	dobj	_	_
+9	малын	мал	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	10	obj	_	_
 10	сойып	сой	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 11	беретін	бер	AUX	vaux	Number=Plur|Person=3|Tense=Past	10	aux	_	_
 12	.	.	PUNCT	sent	_	10	punct	_	_
@@ -2410,11 +2447,11 @@
 
 # sent_id = kdt.tagged.txt:216:3476
 # text = Оларды шығарам деп көп ақшасын алды.
-1	Оларды	олар	PRON	prn	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	dobj	_	_
+1	Оларды	олар	PRON	prn	Case=Acc|Number=Plur|Person=3|PronType=Prs	2	obj	_	_
 2	шығарам	шығар	VERB	v	Number=Sing|Person=1|Tense=Aor	3	ccomp	_	_
 3	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
 4	көп	көп	ADJ	adj	_	5	amod	_	_
-5	ақшасын	ақша	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	dobj	_	_
+5	ақшасын	ақша	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	алды	ал	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
@@ -2423,7 +2460,7 @@
 1	—	—	PUNCT	guio	_	6	punct	_	_
 2	Жоқ	жоқ	INTJ	ij	_	6	discourse	_	_
 3	,	,	PUNCT	cm	_	6	punct	_	_
-4	оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	dobj	_	_
+4	оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
 5	артынан	арт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
 6	сөйлесерміз	сөйле	VERB	v	Number=Plur|Person=1|Tense=Fut|Voice=Coop	0	root	_	_
 7	...	...	PUNCT	sent	_	6	punct	_	_
@@ -2442,13 +2479,13 @@
 10	қанша	қанша	DET	det	PronType=Qnt	11	det	_	_
 11	ақша	ақша	NOUN	n	Case=Nom	13	appos	_	_
 12	—	—	PUNCT	guio	_	15	punct	_	_
-13	баршаларын	барша	ADJ	adj	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	15	dobj	_	_
+13	баршаларын	барша	ADJ	adj	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	15	obj	_	_
 14	олжа	олжа	NOUN	n	Case=Nom	15	compound	_	_
 15	қылған	қыл	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = kdt.tagged.txt:219:3539
-# text = Дауыстарды санау басталғаннан кейін сайлаушылар ( таңдаушылар ) тізімдеріне өзгерістер енгізуге тыйым салынады.
+# text = Дауыстарды санау басталғаннан кейін сайлаушылар (таңдаушылар) тізімдеріне өзгерістер енгізуге тыйым салынады.
 1	Дауыстарды	дауыс	NOUN	n	Case=Acc|Number=Plur	2	obj	_	_
 2	санау	сана	VERB	v	Case=Nom|VerbForm=Ger	3	csubj	_	_
 3	басталғаннан	баста	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger|Voice=Pass	11	advcl	_	_
@@ -3608,7 +3645,7 @@
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:10:246
-# text = Сен оның тілін білсең, көкірек - көзің ашылады.
+# text = Сен оның тілін білсең, көкірек-көзің ашылады.
 1	Сен	сен	PRON	prn	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
 2	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
 3	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
@@ -4145,7 +4182,7 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:6:168
-# text = Енді 2018 жылдың чемпионатын өткізу құқығына қатысатын кандидаттар додасына, соңғы екі чемпионатты ( КАФ және КОНМЕБОЛ ) өткізген елдерден басқа, барлық конфедерациялардан елдер сынға түседі.
+# text = Енді 2018 жылдың чемпионатын өткізу құқығына қатысатын кандидаттар додасына, соңғы екі чемпионатты (КАФ және КОНМЕБОЛ) өткізген елдерден басқа, барлық конфедерациялардан елдер сынға түседі.
 1	Енді	енді	ADV	adv	_	27	advmod	_	_
 2	2018	2018	NUM	num	_	3	amod	_	_
 3	жылдың	жыл	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -4176,7 +4213,7 @@
 28	.	.	PUNCT	sent	_	27	punct	_	_
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:7:225
-# text = Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды ( Мексика, Италия, Франция және Германиядан кейін ).
+# text = Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды (Мексика, Италия, Франция және Германиядан кейін).
 1	Бразилия	Бразилия	PROPN	np	Case=Nom	9	nsubj	_	_
 2	өз	өз	DET	det	PronType=Ref	3	det	_	_
 3	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
@@ -4214,7 +4251,7 @@
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:9:291
-# text = ӘЧ - 2014 іріктеу айналымы 2011 жылдың маусым айында басталып, 2013 жылдың қараша айында аяқталды.
+# text = ӘЧ-2014 іріктеу айналымы 2011 жылдың маусым айында басталып, 2013 жылдың қараша айында аяқталды.
 1	ӘЧ	ӘЧ	PROPN	np	Case=Nom	5	nmod:poss	_	_
 2	-	-	PUNCT	guio	_	1	punct	_	_
 3	2014	2014	NUM	num	_	1	compound	_	_
@@ -4277,7 +4314,7 @@
 9	:	:	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = Иран.tagged.txt:1:0
-# text = Иран ( 1935 жылға дейін Парсы елі ), Иран Ислам Республикасы — Азияның оңтүстік-батыс бөлігінде орналасқан мемлекет.
+# text = Иран (1935 жылға дейін Парсы елі), Иран Ислам Республикасы — Азияның оңтүстік-батыс бөлігінде орналасқан мемлекет.
 1	Иран	Иран	PROPN	np	Case=Nom	18	nsubj	_	_
 2	(	(	PUNCT	lpar	_	7	punct	_	_
 3	1935	1935	NUM	num	_	4	amod	_	_
@@ -4312,7 +4349,7 @@
 7	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = Иран.tagged.txt:3:53
-# text = Халқы 65,2 млн. адам ( 1999 ).
+# text = Халқы 65,2 млн. адам (1999).
 1	Халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	65,2	65,2	NUM	num	_	3	nummod	_	_
 3	млн.	млн.	NOUN	abbr	_	4	nummod	_	_
@@ -4325,7 +4362,7 @@
 9	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = Иран.tagged.txt:4:71
-# text = Халқының ұлттық құрамы: парсылар ( 51% ), әзірбайжандар ( 27% ), күрдтер ( 5% ), арабтар, түрікмендер, белуджилер, армяндар, еврейлер, т.б.
+# text = Халқының ұлттық құрамы: парсылар (51%), әзірбайжандар (27%), күрдтер (5%), арабтар, түрікмендер, белуджилер, армяндар, еврейлер, т.б.
 1	Халқының	халық	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 2	ұлттық	ұлттық	ADJ	adj	_	3	amod	_	_
 3	құрамы	құрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	30	nsubj	_	_
@@ -4370,7 +4407,7 @@
 5	.	.	PUNCT	sent	_	3	punct	_	_
 
 # sent_id = Иран.tagged.txt:6:144
-# text = Астанасы — Тегеран қаласы ( айналасын қосқанда 12 миллионнан астам ).
+# text = Астанасы — Тегеран қаласы (айналасын қосқанда 12 миллионнан астам).
 1	Астанасы	астана	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
 3	Тегеран	Тегеран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -4387,7 +4424,7 @@
 13	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = Иран.tagged.txt:7:170
-# text = Одан басқа Мешхед ( 1,5 млн. ), Исфаһан ( 1 млн. ), Тебриз ( 852 мың ), Шираз ( 800 мың ) сияқты ірі қалалар бар.
+# text = Одан басқа Мешхед (1,5 млн.), Исфаһан (1 млн.), Тебриз (852 мың), Шираз (800 мың) сияқты ірі қалалар бар.
 1	Одан	ол	PRON	prn	Case=Abl|PronType=Dem	29	nmod	_	_
 2	басқа	басқа	ADP	post	_	1	case	_	_
 3	Мешхед	Мешхед	PROPN	np	Case=Nom	21	conj	_	_
@@ -4472,7 +4509,7 @@
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:12:300
-# text = Президент ( 1997 жылдан бастап Сейд Мохаммед Хатами ) 4 жылға сайланады және Министр Кабинетін басқарады.
+# text = Президент (1997 жылдан бастап Сейд Мохаммед Хатами) 4 жылға сайланады және Министр Кабинетін басқарады.
 1	Президент	президент	NOUN	n	Case=Nom	16	nsubj	_	_
 2	(	(	PUNCT	lpar	_	8	punct	_	_
 3	1997	1997	NUM	num	_	4	amod	_	_
@@ -4492,7 +4529,7 @@
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = Иран.tagged.txt:13:335
-# text = Жоғарғы заң шығарушы орган — бір палаталы парламент — Ислам кеңесі жиналысы ( меджлис ) 4 жыл сайын сайланып отыратын 290 депутаттан тұрады.
+# text = Жоғарғы заң шығарушы орган — бір палаталы парламент — Ислам кеңесі жиналысы (меджлис) 4 жыл сайын сайланып отыратын 290 депутаттан тұрады.
 1	Жоғарғы	жоғары	ADV	adv	Case=Nom	4	amod	_	_
 2	заң	заң	NOUN	n	Case=Nom	3	obj	_	_
 3	шығарушы	шығар	VERB	v	Mood=Pot|VerbForm=Part	4	acl	_	_
@@ -4540,7 +4577,7 @@
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
 # sent_id = Иран.tagged.txt:15:415
-# text = Ұлттық мейрамы 11 ақпан — Революция күні ( 1979 ).
+# text = Ұлттық мейрамы 11 ақпан — Революция күні (1979).
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	мейрамы	мейрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 3	11	11	NUM	num	_	4	nummod	_	_
@@ -4583,7 +4620,7 @@
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = Иран.tagged.txt:18:480
-# text = Шет жақтарында Солтүстік Иран ( Эльбурс ), Оңтүстік Иран ( Загрос, Мекран ), Шығыс Иран ( Серхед, Пеленган, Боран, Келат ) таулары, ортасында Кухруд жотасы, Деште-Кевир, Деште-Лух шөлдері орналасқан.
+# text = Шет жақтарында Солтүстік Иран (Эльбурс), Оңтүстік Иран (Загрос, Мекран), Шығыс Иран (Серхед, Пеленган, Боран, Келат) таулары, ортасында Кухруд жотасы, Деште-Кевир, Деште-Лух шөлдері орналасқан.
 1	Шет	шет	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	жақтарында	жақ	NOUN	n	Case=Loc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	30	remnant	_	_
 3	Солтүстік	солтүстік	ADJ	adj	_	4	amod	_	_
@@ -4694,14 +4731,14 @@
 # text = Иран жерінде сүтқоректілердің 100-ге тарта, құстардың 400-ге жуық, бауырымен жорғалаушылардың 80-ге жуық түрі бар.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	nmod	_	_
-3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	12	remnant	_	_
-4	100-ге	100	NUM	num	Case=Dat	13	remnant	_	_
+3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	16	conj	_	_
+4	100-ге	100	NUM	num	Case=Dat	3	orphan	_	_
 5	тарта	тарта	ADP	post	_	4	case	_	_
-6	,	,	PUNCT	cm	_	4	punct	_	_
-7	құстардың	құс	NOUN	n	Case=Gen|Number=Plur	12	remnant	_	_
-8	400-ге	400	NUM	num	Case=Dat	13	remnant	_	_
+6	,	,	PUNCT	cm	_	3	punct	_	_
+7	құстардың	құс	NOUN	n	Case=Gen|Number=Plur	16	conj	_	_
+8	400-ге	400	NUM	num	Case=Dat	7	orphan	_	_
 9	жуық	жуық	ADP	post	_	8	case	_	_
-10	,	,	PUNCT	cm	_	8	punct	_	_
+10	,	,	PUNCT	cm	_	7	punct	_	_
 11	бауырымен	бауырымен	X	x	_	12	dep	_	_
 12	жорғалаушылардың	жорғалаушы	NOUN	n	Case=Gen|Number=Plur	15	nmod:poss	_	_
 13	80-ге	80	NUM	num	Case=Dat	15	nummod	_	_
@@ -4726,7 +4763,7 @@
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Иран.tagged.txt:26:711
-# text = Б.з.б. 3 - мыңжылдықта қазіргі Иранның оңтүстік-батысында алғашқы мемлекеттер құрыла бастады.
+# text = Б.з.б. 3-мыңжылдықта қазіргі Иранның оңтүстік-батысында алғашқы мемлекеттер құрыла бастады.
 1	Б.з.б.	б.з.б.	NOUN	abbr	_	4	compound	_	_
 2	3	3	NUM	num	_	4	amod	_	_
 3	-	-	PUNCT	guio	_	4	punct	_	_
@@ -4741,7 +4778,7 @@
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:27:736
-# text = Б.з.б. 2 - мыңжылдықта бұл аймаққа Орталық Азиядан арий тайпалары келіп қоныстанды.
+# text = Б.з.б. 2-мыңжылдықта бұл аймаққа Орталық Азиядан арий тайпалары келіп қоныстанды.
 1	Б.з.б.	б.з.б.	NOUN	abbr	_	4	compound	_	_
 2	2	2	NUM	num	_	4	amod	_	_
 3	-	-	PUNCT	guio	_	4	punct	_	_
@@ -4846,7 +4883,7 @@
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = Иран.tagged.txt:34:911
-# text = Бірақ Сасани әулеті мемлекеті арабтардың шабуылынан құлап, 7 ғасырдың 2 - жартысында Иран Араб халифаты құрамына қосылды.
+# text = Бірақ Сасани әулеті мемлекеті арабтардың шабуылынан құлап, 7 ғасырдың 2-жартысында Иран Араб халифаты құрамына қосылды.
 1	Бірақ	бірақ	CCONJ	cnjcoo	_	18	cc	_	_
 2	Сасани	Сасани	PROPN	np	Case=Nom	3	nmod:poss	_	_
 3	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
@@ -4971,7 +5008,7 @@
 27	.	.	PUNCT	sent	_	26	punct	_	_
 
 # sent_id = Иран.tagged.txt:40:1125
-# text = 11 ғасырда Иранға түрік - оғыздар ( салжұқ ) басып кіре бастады.
+# text = 11 ғасырда Иранға түрік-оғыздар (салжұқ) басып кіре бастады.
 1	11	11	NUM	num	_	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	11	nmod	_	_
 3	Иранға	Иран	PROPN	np	Case=Dat	11	nmod	_	_
@@ -5064,7 +5101,7 @@
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = Иран.tagged.txt:45:1283
-# text = 14 ғасырдың 30 - жылдары ильхандар мемлекеті бірнеше иелікке бөлініп кетті де, 1380 — 93 ж. Иранды Әмір Темір әскерлері басып алды.
+# text = 14 ғасырдың 30-жылдары ильхандар мемлекеті бірнеше иелікке бөлініп кетті де, 1380 — 93 ж. Иранды Әмір Темір әскерлері басып алды.
 1	14	14	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	30	30	NUM	num	_	5	amod	_	_
@@ -5112,7 +5149,7 @@
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = Иран.tagged.txt:47:1366
-# text = 16 ғасырда Кіші Азиядан шыққан түркі тайпалары ( қызылбастар ) Иранға басып кіріп, 1501 — 1610 ж. елді толығымен бағындырып, Сефеви әулеті мемлекетін құрды.
+# text = 16 ғасырда Кіші Азиядан шыққан түркі тайпалары (қызылбастар) Иранға басып кіріп, 1501 — 1610 ж. елді толығымен бағындырып, Сефеви әулеті мемлекетін құрды.
 1	16	16	NUM	num	_	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	26	nmod	_	_
 3	Кіші	кіші	ADJ	adj	_	4	amod	_	_
@@ -5158,7 +5195,7 @@
 13	.	.	PUNCT	sent	_	11	punct	_	_
 
 # sent_id = Иран.tagged.txt:49:1448
-# text = Ұсақ халықтар ( ауғандар, түрікмендер, Әзірбайжандар, күрдтер, армян, грузиндер ) орталықтың езгісіне қарсы жиі-жиі көтеріліс жасап тұрды.
+# text = Ұсақ халықтар (ауғандар, түрікмендер, Әзірбайжандар, күрдтер, армян, грузиндер) орталықтың езгісіне қарсы жиі-жиі көтеріліс жасап тұрды.
 1	Ұсақ	ұсақ	ADJ	adj	_	2	amod	_	_
 2	халықтар	халық	NOUN	n	Case=Nom|Number=Plur	20	nsubj	_	_
 3	(	(	PUNCT	lpar	_	14	punct	_	_
@@ -5184,7 +5221,7 @@
 23	.	.	PUNCT	sent	_	21	punct	_	_
 
 # sent_id = Иран.tagged.txt:50:1495
-# text = Әсіресе, 18 ғасырдың 2 - жартысында елдегі үстемдік үшін екі әулеттің ( Зенд және Каджар ) арасындағы үздіксіз соғыс халықты әбден қалжыратты.
+# text = Әсіресе, 18 ғасырдың 2-жартысында елдегі үстемдік үшін екі әулеттің (Зенд және Каджар) арасындағы үздіксіз соғыс халықты әбден қалжыратты.
 1	Әсіресе	әсіресе	ADV	adv	_	23	advmod	_	_
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	18	18	NUM	num	_	4	amod	_	_
@@ -5222,7 +5259,7 @@
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = Иран.tagged.txt:52:1561
-# text = Осы кезден елдің ішкі істеріне еуропалық мемлекеттер ( Англия, Франция ) араласа бастады.
+# text = Осы кезден елдің ішкі істеріне еуропалық мемлекеттер (Англия, Франция) араласа бастады.
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	кезден	кез	NOUN	n	Case=Abl	13	nmod	_	_
 3	елдің	ел	NOUN	n	Case=Gen	5	nmod:poss	_	_
@@ -5240,7 +5277,7 @@
 15	.	.	PUNCT	sent	_	13	punct	_	_
 
 # sent_id = Иран.tagged.txt:53:1592
-# text = 19 ғасырдың басында болған орыс - иран соғысынан кейін елде шетелдіктердің билігі күшейіп кетті.
+# text = 19 ғасырдың басында болған орыс-иран соғысынан кейін елде шетелдіктердің билігі күшейіп кетті.
 1	19	19	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	басында	бас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
@@ -5273,7 +5310,7 @@
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:55:1648
-# text = 1901 ж. ағылшындар Иран мұнайын шығаруға рұқсат алып, 1909 ж. бірлескен ағылшын - парсы мұнай компаниясы құрылды.
+# text = 1901 ж. ағылшындар Иран мұнайын шығаруға рұқсат алып, 1909 ж. бірлескен ағылшын-парсы мұнай компаниясы құрылды.
 1	1901	1901	NUM	num	_	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	8	nmod	_	_
 3	ағылшындар	ағылшын	NOUN	n	Case=Nom|Number=Plur	8	nsubj	_	_
@@ -5368,7 +5405,7 @@
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Иран.tagged.txt:61:1808
-# text = Жаңа үкімет халықтың қысымымен 1919 ж. ағылшын - парсы шартын жойылды деп жариялады.
+# text = Жаңа үкімет халықтың қысымымен 1919 ж. ағылшын-парсы шартын жойылды деп жариялады.
 1	Жаңа	жаңа	ADJ	adj	_	2	amod	_	_
 2	үкімет	үкімет	NOUN	n	Case=Nom	13	nsubj	_	_
 3	халықтың	халық	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -5682,7 +5719,7 @@
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Иран.tagged.txt:80:2341
-# text = 1980 – 1990 ж. болған Иран — Ирак соғысы ел экономикасына өте ауыр ( 700 млрд. АҚШ долларынан астам ) зардаптар әкелді.
+# text = 1980 – 1990 ж. болған Иран — Ирак соғысы ел экономикасына өте ауыр (700 млрд. АҚШ долларынан астам) зардаптар әкелді.
 1	1980	1980	NUM	num	_	3	compound	_	_
 2	–	–	PUNCT	guio	_	3	punct	_	_
 3	1990	1990	NUM	num	_	4	amod	_	_
@@ -5826,7 +5863,7 @@
 17	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Иран.tagged.txt:89:2575
-# text = Елдегі басты проблеманың бірі — жұмыссыздық ( 3,5 млн. адам ).
+# text = Елдегі басты проблеманың бірі — жұмыссыздық (3,5 млн. адам).
 1	Елдегі	ел	NOUN	n	Case=Loc	3	amod	_	_
 2	басты	басты	ADJ	adj	_	3	amod	_	_
 3	проблеманың	проблема	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -5864,7 +5901,7 @@
 18	.	.	PUNCT	sent	_	17	punct	_	_
 
 # sent_id = Иран.tagged.txt:91:2638
-# text = Шеттен — азық-түлік өнімдері ( 30% ), машина, құрал-жабдықтар, кейбір өнеркәсіп шикізаттары әкелінеді.
+# text = Шеттен — азық-түлік өнімдері (30%), машина, құрал-жабдықтар, кейбір өнеркәсіп шикізаттары әкелінеді.
 1	Шеттен	шет	NOUN	n	Case=Abl	16	nmod	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
 3	азық-түлік	азық-түлік	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -5913,7 +5950,7 @@
 26	.	.	PUNCT	sent	_	25	punct	_	_
 
 # sent_id = Иран.tagged.txt:93:2726
-# text = Қазақстан Президенті Нұрсұлтан Назарбаев екі рет ( 1992; 1996 ) Иранда болып қайтты.
+# text = Қазақстан Президенті Нұрсұлтан Назарбаев екі рет (1992; 1996) Иранда болып қайтты.
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	Президенті	президент	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
 3	Нұрсұлтан	Нұрсұлтан	PROPN	np	Case=Nom|Gender=Masc	4	flat:name	_	_
@@ -5945,7 +5982,7 @@
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:95:2780
-# text = Иран әдебиетінің классикалық дәуірін ( 7 — 16 ғасырлар ) парсы не парсы - тәжік әдебиеті деп атанды.
+# text = Иран әдебиетінің классикалық дәуірін (7 — 16 ғасырлар) парсы не парсы-тәжік әдебиеті деп атанды.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әдебиетінің	әдебиет	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 3	классикалық	классикалық	ADJ	adj	_	4	amod	_	_
@@ -5967,7 +6004,7 @@
 19	.	.	PUNCT	sent	_	18	punct	_	_
 
 # sent_id = Иран.tagged.txt:96:2819
-# text = Иран революциясы ( 1905 — 11 ) және азаматтық қозғалыс ( 1918 — 21 ) кезінде А. Фарахани, М. Кермани, М. Т. Бехар, т.б. ақындар демократиялық идеяның жыршысы болды.
+# text = Иран революциясы (1905 — 11) және азаматтық қозғалыс (1918 — 21) кезінде А. Фарахани, М. Кермани, М. Т. Бехар, т.б. ақындар демократиялық идеяның жыршысы болды.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	революциясы	революция	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	conj	_	_
 3	(	(	PUNCT	lpar	_	6	punct	_	_
@@ -6044,7 +6081,7 @@
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:99:2955
-# text = Сасани әулеті дәуірінде ( 3 — 7 ғасырлар ) қалаларды қорған ішіне жүйелі жоба бойынша салу қанат жайды ( мыс., Нишапур қаласы шахмат жүйесімен салынған ).
+# text = Сасани әулеті дәуірінде (3 — 7 ғасырлар) қалаларды қорған ішіне жүйелі жоба бойынша салу қанат жайды (мыс., Нишапур қаласы шахмат жүйесімен салынған).
 1	Сасани	Сасани	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	дәуірінде	дәуір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod	_	_
@@ -6139,7 +6176,7 @@
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:104:3120
-# text = 16 — 17 ғасырларда пайда болған Тебриз, Шираз, Исфаһан ( Риза Аббаси, т.б. ) мектептері миниатюра өнерін жоғары дәрежеге көтерді.
+# text = 16 — 17 ғасырларда пайда болған Тебриз, Шираз, Исфаһан (Риза Аббаси, т.б.) мектептері миниатюра өнерін жоғары дәрежеге көтерді.
 1	16	16	NUM	num	_	3	conj	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	17	17	NUM	num	_	4	amod	_	_
@@ -6232,7 +6269,7 @@
 12	.	.	PUNCT	sent	_	11	punct	_	_
 
 # sent_id = Иран.tagged.txt:110:3273
-# text = 9 ғасырдан бастап сарай өнері дамып, халық арасында мутребтердің ( әнші-бишілер ) даңқы жойылды.
+# text = 9 ғасырдан бастап сарай өнері дамып, халық арасында мутребтердің (әнші-бишілер) даңқы жойылды.
 1	9	9	NUM	num	_	2	amod	_	_
 2	ғасырдан	ғасыр	NOUN	n	Case=Abl	3	nmod	_	_
 3	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
@@ -6251,7 +6288,7 @@
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Иран.tagged.txt:111:3306
-# text = 19 ғасырдың 2 - жартысынан Иран музыкасына еуропалық музыка мәдениеті әсер етті.
+# text = 19 ғасырдың 2-жартысынан Иран музыкасына еуропалық музыка мәдениеті әсер етті.
 1	19	19	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	2	2	NUM	num	_	5	amod	_	_
@@ -6302,7 +6339,7 @@
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = Иран.tagged.txt:115:3388
-# text = 20 ғасырдың 30 - жылдарына дейін кезбе актерлер — масқарапаздар өнер көрсетіп келді.
+# text = 20 ғасырдың 30-жылдарына дейін кезбе актерлер — масқарапаздар өнер көрсетіп келді.
 1	20	20	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	30	30	NUM	num	_	5	amod	_	_
@@ -6319,6 +6356,28 @@
 14	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = Иран.tagged.txt:116:3417
+# text = 1911 — 12 ж. еуропалық театрлар тәжірибелерін пайдалана отырып Ұлттық театр, 1917 ж. Иранның комедия театры ашылды.
+1	1911	1911	NUM	num	_	3	compound	_	_
+2	—	—	PUNCT	guio	_	3	punct	_	_
+3	12	12	NUM	num	_	4	amod	_	_
+4	ж.	ж.	NOUN	abbr	_	11	obl	_	_
+5	еуропалық	еуропалық	ADJ	adj	_	6	amod	_	_
+6	театрлар	театр	NOUN	n	Case=Nom|Number=Plur	7	nmod:poss	_	_
+7	тәжірибелерін	тәжірибе	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
+8	пайдалана	пайдалан	VERB	v	Aspect=Imp|VerbForm=Cov	11	orphan	_	_
+9	отырып	отыр	AUX	vaux	Aspect=Perf|VerbForm=Conv	8	aux	_	_
+10	Ұлттық	ұлттық	ADJ	adj	_	11	amod	_	_
+11	театр	театр	NOUN	n	Case=Nom	18	conj	_	_
+12	,	,	PUNCT	cm	_	18	punct	_	_
+13	1917	1917	NUM	num	_	14	amod	_	_
+14	ж.	ж.	NOUN	abbr	_	18	obl	_	_
+15	Иранның	Иран	PROPN	np	Case=Gen	17	nmod:poss	_	_
+16	комедия	комедия	NOUN	n	Case=Nom	17	nmod:poss	_	_
+17	театры	театр	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	18	nsubj	_	_
+18	ашылды	аш	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+19	.	.	PUNCT	sent	_	18	punct	_	_
+
+# sent_id = Иран.tagged.txt:117:3456
 # text = Бұл театрларды құруда актер Сейед Әли Нәсірдің еңбегі зор.
 1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
 2	театрларды	театр	NOUN	n	Case=Acc|Number=Plur	3	obj	_	_
@@ -6333,7 +6392,7 @@
 10	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	9	cop	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Иран.tagged.txt:117:3439
+# sent_id = Иран.tagged.txt:118:3478
 # text = 1929 жылдан бастап әйел актерлер көріне бастады.
 1	1929	1929	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	nmod	_	_
@@ -6344,7 +6403,7 @@
 7	бастады	баста	AUX	vaux	Number=Sing|Person=3|Tense=Past	6	aux	_	_
 8	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = Иран.tagged.txt:118:3456
+# sent_id = Иран.tagged.txt:119:3495
 # text = 1930 — 40 ж. театр репертуарларынан өңделген Батыс Еуропа драмалары мен мелодрамалар орын алды.
 1	1930	1930	NUM	num	_	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
@@ -6362,7 +6421,7 @@
 14	алды	ал	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Иран.tagged.txt:119:3487
+# sent_id = Иран.tagged.txt:120:3526
 # text = 1940 жылдан Иран театры дағдарысқа ұшырады, 1960 жылдардың басында қайта өрлеу жолына түсті.
 1	1940	1940	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	6	nmod	_	_
@@ -6380,7 +6439,7 @@
 14	түсті	түс	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Иран.tagged.txt:120:3518
+# sent_id = Иран.tagged.txt:121:3557
 # text = 1963 ж. Тегеранда кәсіби актерлер дайындайтын драм. студия ашылды.
 1	1963	1963	NUM	num	_	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	9	nmod	_	_
@@ -6393,7 +6452,7 @@
 9	ашылды	аш	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Иран.tagged.txt:121:3539
+# sent_id = Иран.tagged.txt:122:3578
 # text = 1968 жылдан бастап Ширазда театр фестивалы өткізіліп тұрды.
 1	1968	1968	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	nmod	_	_
@@ -6404,6 +6463,38 @@
 7	өткізіліп	өткіз	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	0	root	_	_
 8	тұрды	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Past	7	aux	_	_
 9	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = Иран.tagged.txt:123:3597
+# text = 20 ғасырдың 40-жылдарына дейін, көбінесе, шетелдік фильмдер көрсетіліп келді.
+1	20	20	NUM	num	_	2	amod	_	_
+2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
+3	40	40	NUM	num	_	5	compound	_	_
+4	-	-	PUNCT	guio	_	5	punct	_	_
+5	жылдарына	жыл	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
+6	дейін	дейін	ADP	post	_	5	case	_	_
+7	,	,	PUNCT	cm	_	5	punct	_	_
+8	көбінесе	көбінесе	ADV	adv	_	12	advmod	_	_
+9	,	,	PUNCT	cm	_	12	punct	_	_
+10	шетелдік	шетелдік	ADJ	adj	_	11	amod	_	_
+11	фильмдер	фильм	NOUN	n	Case=Nom|Number=Plur	12	nsubj	_	_
+12	көрсетіліп	көрсет	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	0	root	_	_
+13	келді	кел	AUX	vaux	Number=Plur|Person=3|Tense=Past	12	aux	_	_
+14	.	.	PUNCT	sent	_	12	punct	_	_
+
+# sent_id = Иран.tagged.txt:124:3626
+# text = Тегеранда 1955 жылдан халықаралық, 1970 жылдан ұлттық кинофестивальдер өткізіліп тұрады.
+1	Тегеранда	Тегеран	PROPN	np	Case=Loc	10	nmod	_	_
+2	1955	1955	NUM	num	_	3	amod	_	_
+3	жылдан	жыл	NOUN	n	Case=Abl	4	nmod	_	_
+4	халықаралық	халықаралық	ADJ	adj	_	8	conj	_	_
+5	,	,	PUNCT	cm	_	4	punct	_	_
+6	1970	1970	NUM	num	_	7	amod	_	_
+7	жылдан	жыл	NOUN	n	Case=Abl	8	nmod	_	_
+8	ұлттық	ұлттық	ADJ	adj	_	9	amod	_	_
+9	кинофестивальдер	кинофестиваль	NOUN	n	Case=Nom|Number=Plur	10	nsubj	_	_
+10	өткізіліп	өткіз	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	0	root	_	_
+11	тұрады	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Aor	10	aux	_	_
+12	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:1:0
 # text = Абонемент бөлімі кітаптар мен журналдарды үйге тегін береді.
@@ -6560,7 +6651,7 @@
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:14:239
-# text = Жауыңнан бұрын қимылда - жеріңе жамандық келмейді.
+# text = Жауыңнан бұрын қимылда-жеріңе жамандық келмейді.
 1	Жауыңнан	жау	NOUN	n	Case=Abl|Number[psor]=Sing|Person[psor]=2	3	nmod	_	_
 2	бұрын	бұрын	ADP	post	_	1	case	_	_
 3	қимылда	қимылда	VERB	v	Mood=Imp|Number=Sing|Person=2	7	parataxis	_	_
@@ -6624,7 +6715,7 @@
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:20:337
-# text = Ислам діні - адамға ауырлық жүктемейді.
+# text = Ислам діні-адамға ауырлық жүктемейді.
 1	Ислам	Ислам	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	діні	дін	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 3	-	-	PUNCT	guio	_	2	punct	_	_
@@ -6634,7 +6725,7 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:21:352
-# text = Кафедра « Менеджмент » мамандық бойынша бакалавр дайындайды.
+# text = Кафедра «Менеджмент» мамандық бойынша бакалавр дайындайды.
 1	Кафедра	кафедра	NOUN	n	Case=Nom	8	nsubj	_	_
 2	«	«	PUNCT	lquot	_	3	punct	_	_
 3	Менеджмент	менеджмент	NOUN	n	Case=Nom	1	appos	_	_
@@ -6695,7 +6786,7 @@
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:26:446
-# text = КСРО Мемлекеттік сыйлығына ( 1952 ) ие болды.
+# text = КСРО Мемлекеттік сыйлығына (1952) ие болды.
 1	КСРО	КСРО	PROPN	np	Case=Nom	3	nmod	_	_
 2	Мемлекеттік	мемлекеттік	ADJ	adj	_	3	amod	_	_
 3	сыйлығына	сыйлық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
@@ -6914,7 +7005,7 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:48:771
-# text = Саратов экономикалық институтын « Халық шаруашылығын жоспарлау » мамандығы бойынша бітірген.
+# text = Саратов экономикалық институтын «Халық шаруашылығын жоспарлау» мамандығы бойынша бітірген.
 1	Саратов	Саратов	PROPN	np	Case=Nom	3	nmod:poss	_	_
 2	экономикалық	экономикалық	ADJ	adj	_	3	amod	_	_
 3	институтын	институт	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	11	obj	_	_
@@ -6942,7 +7033,7 @@
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:50:817
-# text = Сергей Михайлович Бобров 1920 - 1994 жылдары Атырау облысында өмір сүрген.
+# text = Сергей Михайлович Бобров 1920-1994 жылдары Атырау облысында өмір сүрген.
 1	Сергей	Сергей	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 2	Михайлович	Михайлович	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 3	Бобров	Бобров	PROPN	np	Case=Nom|Gender=Masc	11	nsubj	_	_
@@ -7162,7 +7253,7 @@
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:70:1148
-# text = Циклдық жұмыссыздық - өндірістің құлдырауынан туындайды.
+# text = Циклдық жұмыссыздық-өндірістің құлдырауынан туындайды.
 1	Циклдық	циклдық	ADJ	adj	_	2	amod	_	_
 2	жұмыссыздық	жұмыссыздық	NOUN	n	Case=Nom	6	nsubj	_	_
 3	-	-	PUNCT	guio	_	2	punct	_	_
@@ -7247,7 +7338,7 @@
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
 # sent_id = Өлген_қазан.tagged.txt:4:49
-# text = « Төрге шық, тамақ іш », - демепті.
+# text = «Төрге шық, тамақ іш», - демепті.
 1	«	«	PUNCT	lquot	_	6	punct	_	_
 2	Төрге	төр	NOUN	n	Case=Dat	3	nmod	_	_
 3	шық	шық	VERB	v	Mood=Imp|Number=Sing|Person=2	6	conj	_	_
@@ -7670,7 +7761,7 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = story.tagged.txt:24:399
-# text = Ол " Азамат қай жерге кетті? Оны көрдіңдер ме? " деп іздеп жатыр.
+# text = Ол "Азамат қай жерге кетті? Оны көрдіңдер ме?" деп іздеп жатыр.
 1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
 2	"	"	PUNCT	sent	_	9	punct	_	_
 3	Азамат	Азамат	PROPN	np	Case=Nom|Gender=Masc	6	nsubj	_	_
@@ -7699,7 +7790,7 @@
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = story.tagged.txt:26:444
-# text = Күшіктен " Азаматты көрдің бе? " деп сұрайды.
+# text = Күшіктен "Азаматты көрдің бе?" деп сұрайды.
 1	Күшіктен	күшік	NOUN	n	Case=Abl	9	nmod	_	_
 2	"	"	PUNCT	sent	_	4	punct	_	_
 3	Азаматты	Азамат	PROPN	np	Case=Acc|Gender=Masc	4	obj	_	_
@@ -7774,7 +7865,7 @@
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = story.tagged.txt:32:561
-# text = " Азамат қайда, айтшы! " деп сұрайды.
+# text = "Азамат қайда, айтшы!" деп сұрайды.
 1	"	"	PUNCT	sent	_	5	punct	_	_
 2	Азамат	Азамат	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
 3-4	қайда	_	_	_	_	_	_	_	_
@@ -7791,7 +7882,7 @@
 12	.	.	PUNCT	sent	_	11	punct	_	_
 
 # sent_id = story.tagged.txt:33:584
-# text = " Жоқ, Айгүл, айта алмаймын " деп анасы жауап береді.
+# text = "Жоқ, Айгүл, айта алмаймын" деп анасы жауап береді.
 1	"	"	PUNCT	sent	_	6	punct	_	_
 2	Жоқ	жоқ	INTJ	ij	_	6	discourse	_	_
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -7975,7 +8066,7 @@
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = story.tagged.txt:48:855
-# text = " Сені таптым! " деп күледі.
+# text = "Сені таптым!" деп күледі.
 1	"	"	PUNCT	sent	_	3	punct	_	_
 2	Сені	сен	PRON	prn	Case=Acc|Number=Sing|Person=2|PronType=Prs	3	obj	_	_
 3	таптым	тап	VERB	v	Number=Sing|Person=1|Tense=Past	6	ccomp	_	_
@@ -8008,7 +8099,24 @@
 18	!	!	PUNCT	sent	_	17	punct	_	_
 
 # sent_id = Шымкент.tagged.txt:1:0
-# text = Тұрғыны шамамен 683,273 адам ( 2014 жыл ).
+# text = Шымкент — Қазақстандағы қала, Оңтүстік Қазақстан облысының орталығы.
+1	Шымкент	Шымкент	PROPN	np	Case=Nom	10	nsubj	_	_
+2	—	—	PUNCT	guio	_	10	punct	_	_
+3	Қазақстандағы	Қазақстан	PROPN	np	Case=Loc	4	amod	_	_
+4-5	қала	_	_	_	_	_	_	_	_
+4	қала	қала	NOUN	n	Case=Nom	0	root	_	_
+5	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	4	cop	_	_
+6	,	,	PUNCT	cm	_	4	punct	_	_
+7	Оңтүстік	оңтүстік	ADJ	adj	_	8	amod	_	_
+8	Қазақстан	Қазақстан	PROPN	np	Case=Nom	9	nmod:poss	_	_
+9	облысының	облыс	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod:poss	_	_
+10-11	орталығы	_	_	_	_	_	_	_	_
+10	орталы	орталық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	parataxis	_	_
+11	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	10	cop	_	_
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = Шымкент.tagged.txt:2:22
+# text = Тұрғыны шамамен 683,273 адам (2014 жыл).
 1	Тұрғыны	тұрғын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	шамамен	шама	NOUN	n	Case=Ins	4	nmod	_	_
 3	683,273	683,273	NUM	num	_	4	nummod	_	_
@@ -8021,8 +8129,8 @@
 9	)	)	PUNCT	rpar	_	8	punct	_	_
 10	.	.	PUNCT	sent	_	4	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:2:19
-# text = Қазақстанның басқа қалаларымен салыстырғанда тұрғыны жөнінен 3-ші орында ( Алматы мен Астанадан кейін ).
+# sent_id = Шымкент.tagged.txt:3:42
+# text = Қазақстанның басқа қалаларымен салыстырғанда тұрғыны жөнінен 3-ші орында (Алматы мен Астанадан кейін).
 1	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	3	nmod:poss	_	_
 2	басқа	басқа	ADJ	adj	_	3	amod	_	_
 3	қалаларымен	қала	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
@@ -8041,7 +8149,7 @@
 15	)	)	PUNCT	rpar	_	13	punct	_	_
 16	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:3:51
+# sent_id = Шымкент.tagged.txt:4:74
 # text = Осымен қатар, Шымкент Қазақстанның негізгі өнеркәсіп, сауда және мәдени орталықтарының бірі болып табылады.
 1	Осымен	осы	PRON	prn	Case=Ins|PronType=Dem	15	nmod	_	_
 2	қатар	қатар	ADP	post	_	1	case	_	_
@@ -8060,7 +8168,7 @@
 15	табылады	тап	VERB	v	Number=Sing|Person=3|Tense=Aor|Voice=Pass	0	root	_	_
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:4:84
+# sent_id = Шымкент.tagged.txt:5:107
 # text = Қандай болғанда да, қала ескі заманнан-ақ адамдардың өмір сүруіне қолайлы мекен болған.
 1	Қандай	қандай	PRON	prn	PronType=Int	13	advcl	_	_
 2-3	болғанда да	_	_	_	_	_	_	_	_
@@ -8080,7 +8188,7 @@
 14	болған	бол	VERB	v	Number=Sing|Person=3|Tense=Past	13	cop	_	_
 15	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:5:113
+# sent_id = Шымкент.tagged.txt:6:136
 # text = Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
 1	Оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
 2	ежелгі	ежел	ADV	adv	Case=Nom	3	amod	_	_
@@ -8098,7 +8206,7 @@
 14	алады	ал	AUX	vaux	Number=Sing|Person=3|Tense=Aor	13	aux	_	_
 15	.	.	PUNCT	sent	_	12	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:6:144
+# sent_id = Шымкент.tagged.txt:7:167
 # text = XX ғасырда қала тарихының жаңа кезеңі басталды.
 1	XX	XX	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	nmod	_	_
@@ -8109,7 +8217,7 @@
 7	басталды	баста	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:7:161
+# sent_id = Шымкент.tagged.txt:8:184
 # text = Қала халқы елдегі үлкен өзгерістер нәтижесінде жаңа жетістіктерге жете бастады.
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
@@ -8123,7 +8231,7 @@
 10	бастады	баста	AUX	vaux	Number=Sing|Person=3|Tense=Past	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:8:184
+# sent_id = Шымкент.tagged.txt:9:207
 # text = Қалада жаңа өндіріс орындары салынып, оқу орындары мен ғылыми, мәдениет ошақтары ашылды.
 1	Қалада	қала	NOUN	n	Case=Loc	14	nmod	_	_
 2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
@@ -8141,7 +8249,7 @@
 14	ашылды	аш	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:9:215
+# sent_id = Шымкент.tagged.txt:10:238
 # text = Қала келбеті жаңа тұрғын үйлер, гүлзар, көшелері, саябақтарымен ажарлана түсті.
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	келбеті	келбет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
@@ -8158,7 +8266,7 @@
 13	түсті	түс	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:10:244
+# sent_id = Шымкент.tagged.txt:11:267
 # text = 30-шы жылдары Шымкентте қорғасын зауыты салынды.
 1	30-шы	30	NUM	num	NumType=Ord	2	amod	_	_
 2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
@@ -8168,7 +8276,7 @@
 6	салынды	сал	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:11:259
+# sent_id = Шымкент.tagged.txt:12:282
 # text = Бұл алып өндіріс орны КСРО-дағы өндірілетін қорғасынның 70%-ін беріп отырды.
 1	Бұл	бұл	DET	det	PronType=Dem	4	det	_	_
 2	алып	алып	ADJ	adj	_	4	amod	_	_
@@ -8182,7 +8290,7 @@
 10	отырды	отыр	AUX	vaux	Number=Sing|Person=3|Tense=Past	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:12:282
+# sent_id = Шымкент.tagged.txt:13:305
 # text = Қалада май комбинаты, шұлық және айна фабрикалары іске қосылды.
 1	Қалада	қала	NOUN	n	Case=Loc	10	nmod	_	_
 2	май	май	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -8196,7 +8304,7 @@
 10	қосылды	қос	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:13:305
+# sent_id = Шымкент.tagged.txt:14:328
 # text = 1932 жылы ауылшаруашылық авиациясының базасы құрылып, бұл Шымкент әуежайының негізін қалады.
 1	1932	1932	NUM	num	_	2	amod	_	_
 2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod	_	_

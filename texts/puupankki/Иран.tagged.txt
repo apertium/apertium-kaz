@@ -979,21 +979,21 @@
 "<жерінде>"
 	"жер" n px3sp loc @nmod #2->15
 "<сүтқоректілердің>"
-	"сүтқоректі" n pl gen @remnant #3->11
+	"сүтқоректі" n pl gen @conj #3->15
 "<100-ге>"
-	"100" num subst dat @remnant #4->12
+	"100" num subst dat @orphan #4->3
 "<тарта>"
 	"тарта" post @case #5->4
 "<,>"
-	"," cm @punct #6->4
+	"," cm @punct #6->3
 "<құстардың>"
-	"құс" n pl gen @remnant #7->11
+	"құс" n pl gen @conj #7->15
 "<400-ге>"
-	"400" num subst dat @remnant #8->12
+	"400" num subst dat @orphan #8->7
 "<жуық>"
 	"жуық" post @case #9->8
 "<,>"
-	"," cm @punct #10->8
+	"," cm @punct #10->7
 "<бауырымен жорғалаушылардың>"
 	"бауырымен жорғалаушы" n pl gen @nmod:poss #11->14
 "<80-ге>"
@@ -6300,33 +6300,33 @@
 "<12>"
 	"12" num @amod #3->4
 "<ж.>"
-	"ж." abbr @nmod #4->
+	"ж." abbr @obl #4->11
 "<еуропалық>"
 	"еуропалық" adj @amod #5->6
 "<театрлар>"
-	"театр" n pl nom @x #6->7
+	"театр" n pl nom @nmod:poss #6->7
 "<тәжірибелерін>"
 	"тәжірибе" n pl px3sp acc @obj #7->8
 "<пайдалана>"
-	"пайдалан" v tv prc_impf @x #8->
+	"пайдалан" v tv prc_impf @orphan #8->11
 "<отырып>"
 	"отыр" vaux gna_perf @aux #9->8
 "<Ұлттық>"
 	"ұлттық" adj @amod #10->11
 "<театр>"
-	"театр" n nom @x #11->
+	"театр" n nom @conj #11->18
 "<,>"
-	"," cm @punct #12->
+	"," cm @punct #12->18
 "<1917>"
-	"1917" num @amod #13->
+	"1917" num @amod #13->14
 "<ж.>"
-	"ж." abbr @nmod #14->
+	"ж." abbr @obl #14->18
 "<Иранның>"
-	"Иран" np top gen @nmod:poss #15->
+	"Иран" np top gen @nmod:poss #15->17
 "<комедия>"
-	"комедия" n nom @nmod:poss #16->
+	"комедия" n nom @nmod:poss #16->17
 "<театры>"
-	"театр" n px3sp nom @nsubj #17->
+	"театр" n px3sp nom @nsubj #17->18
 "<ашылды>"
 	"аш" v tv pass ifi p3 sg @root #18->0
 "<.>"
@@ -6755,35 +6755,33 @@
 	"." sent @punct
 
 "<20>"
-	"20" num
+	"20" num @amod #1->2
 "<ғасырдың>"
-	"ғасыр" n gen
+	"ғасыр" n gen @nmod:poss #2->5
 "<40>"
-	"40" num
-;	"40" num subst nom
+	"40" num @compound #3->5
 "<->"
-	"-" guio
+	"-" guio @punct #4->5
 "<жылдарына>"
-	"жыл" n pl px3sp dat
+	"жыл" n pl px3sp dat @obl #5->12
 "<дейін>"
-	"дейін" post @case
+	"дейін" post @case #6->5
 "<,>"
-	"," cm @punct
+	"," cm @punct #7->5
 "<көбінесе>"
-	"көбінесе" adv
+	"көбінесе" adv @advmod #8->12
 "<,>"
-	"," cm @punct
+	"," cm @punct #9->12
 "<шетелдік>"
-	"шетелдік" adj
+	"шетелдік" adj @amod #10->11
 "<фильмдер>"
-	"фильм" n pl nom
+	"фильм" n pl nom @nsubj #11->12
 "<көрсетіліп>"
-	"көрсет" v tv pass prc_perf 
+	"көрсет" v tv pass prc_perf @root #12->0
 "<келді>"
-	"кел" vaux ifi p3 sg 
-;	"кел" vaux ifi p3 pl  
+	"кел" vaux ifi p3 pl @aux #13->12
 "<.>"
-	"." sent @punct
+	"." sent @punct #14->12
 
 "<1946>"
 	"1946" num
@@ -6869,15 +6867,15 @@
 "<1955>"
 	"1955" num @amod #2->3
 "<жылдан>"
-	"жыл" n abl @nmod #3->
-"<халықар.>"
-	"*халықар." unk @x #4->
+	"жыл" n abl @nmod #3->4
+"<халықаралық>"
+	"халықаралық" adj @conj #4->8
 "<,>"
-	"," cm @punct #5->
+	"," cm @punct #5->4
 "<1970>"
 	"1970" num @amod #6->7
 "<жылдан>"
-	"жыл" n abl @nmod #7->10
+	"жыл" n abl @nmod #7->8
 "<ұлттық>"
 	"ұлттық" adj @amod #8->9
 "<кинофестивальдер>"

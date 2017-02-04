@@ -1,22 +1,22 @@
 "<Шымкент>"
-	"Шымкент" np top nom @nsubj #1->
+	"Шымкент" np top nom @nsubj #1->10
 "<—>"
-	"—" guio @punct #2->
+	"—" guio @punct #2->10
 "<Қазақстандағы>"
-	"Қазақстан" np top loc attr @amod #3->
+	"Қазақстан" np top loc attr @amod #3->4
 "<қала>"
-	"қала" n nom @x #4->
+	"қала" n nom @root #4->0
 		"е" cop aor p3 sg @cop #5->4
 "<,>"
 	"," cm @punct #6->4
 "<Оңтүстік>"
 	"оңтүстік" adj @amod #7->8
 "<Қазақстан>"
-	"Қазақстан" np top nom @x #8->
+	"Қазақстан" np top nom @nmod:poss #8->9
 "<облысының>"
-	"облыс" n px3sp gen @nmod:poss #9->
+	"облыс" n px3sp gen @nmod:poss #9->10
 "<орталығы>"
-	"орталық" n px3sp nom @ROOT #
+	"орталық" n px3sp nom @parataxis #10->4
 		"е" cop aor p3 sg @cop #11->10
 "<.>"
 	"." sent @punct #12->10

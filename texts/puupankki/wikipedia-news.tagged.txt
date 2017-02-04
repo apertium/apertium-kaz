@@ -1506,90 +1506,66 @@
 	"." sent
 
 "<Футболдан>"
-	"футбол" n abl
+	"футбол" n abl @nmod #1->3
 "<Еуропа>"
-	"Еуропа" np top nom
-	"Еуропа" np top attr
-	"еуропа" np top nom
-	"еуропа" np top attr
+	"Еуропа" np top nom @nmod:poss #2->3 
 "<чемпионатының>"
-	"чемпионат" n px3sp gen
+	"чемпионат" n px3sp gen @nmod:poss #3->5
 "<финалдық>"
-	"финалдық" adj
+	"финалдық" adj @amod #4->5
 "<матчында>"
-	"матч" n px3sp loc
+	"матч" n px3sp loc @obl #5->10
 "<Португалия>"
-	"Португалия" np top nom
-	"Португалия" np top attr
+	"Португалия" np top nom @nmod:poss #6->7
 "<құрамасы>"
-	"құрама" n px3sp nom
+	"құрама" n px3sp nom @nsubj #7->10
 "<Франция>"
-	"Франция" np top nom
-	"Франция" np top attr
+	"Франция" np top nom @nmod:poss #8->9
 "<командасын>"
-	"команда" n px3sp acc
+	"команда" n px3sp acc @obj #9->10
 "<жеңіп>"
-	"жең" v tv gna_perf
+	"жең" v tv gna_perf @advcl #10->13
 "<Еуропа>"
-	"Еуропа" np top nom
-	"Еуропа" np top attr
-	"еуропа" np top nom
-	"еуропа" np top attr
+	"Еуропа" np top nom @nmod:poss #11->12
 "<чемпионы>"
-	"чемпион" n px3sp nom
+	"чемпион" n px3sp nom @nsubj #12->13
 "<атанды>"
-	"атан" v iv ifi p3 sg
+	"атан" v iv ifi p3 sg @root #13->0
 "<.>"
-	"." sent
+	"." sent @punct #14->13
 
 "<Алматы>"
-	"Алматы" np top nom
-	"Алматы" np top attr
+	"Алматы" np top nom @nmod:poss #1->2
 "<қаласында>"
-	"қала" n px3sp loc
+	"қала" n px3sp loc @obl #2->15
 "<лаңкестік>"
-	"лаңкестік" n nom
-	"лаңкестік" n attr
+	"лаңкестік" n attr @compound #3->4
 "<әрекет>"
-	"әрекет" n nom
-	"әрекет" n attr
+	"әрекет" n nom @nsubj #4->6
 "<орын>"
-	"орын" n nom
-	"орын" n attr
+	"орын" n nom @compound:lvc #5->6
 "<алып>"
-	"алып" n nom
-		"е" cop aor p3 sg
-	"алып" adj advl
-	"алып" adj
-		"е" cop aor p3 sg
-	"ал" v iv gna_perf
-	"алып" adj
-	"алып" n nom
+	"ал" v iv gna_perf @advcl #6->15
 "<,>"
-	"," cm
+	"," cm @punct #7->6
 "<5>"
-	"5" num
+	"5" num @nummod #8->10
 "<полиция>"
-	"полиция" n nom
-	"полиция" n attr
+	"полиция" n nom @nmod:poss #9->10
 "<қызметкері>"
-	"қызметкер" n px3sp nom
+	"қызметкер" n px3sp nom @conj #10->14
 "<мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
-	"мен" post
+	"мен" cnjcoo @cc #11->14
 "<1>"
-	"1" num
+	"1" num @nummod #12->14
 "<бейбіт>"
-	"бейбіт" adj
-	"бейбіт" adj advl
+	"бейбіт" adj @amod #13->14
 "<тұрғын>"
-	"тұрғын" adj
-	"тұрғын" n nom
+	"тұрғын" n nom @nsubj #14->15
 "<қаза тапты>"
-	"қаза тап" v iv ifi p3 sg
+	"қаза тап" v iv ifi p3 pl @root #15->0
 "<.>"
-	"." sent
+	"." sent @punct #16->15
 
 "<5>"
 	"5" num @nummod #1->3

@@ -611,9 +611,9 @@
 "<,>"
 	"," cm @punct #15->13
 "<жатсам>"
-	"жат" v iv gna_cond p1 sg @remnant #16->19
+	"жат" v iv gna_cond p1 sg @orphan #16->17
 "<ұйқым>"
-	"ұйқы" n px1sg nom @remnant #17->20
+	"ұйқы" n px1sg nom @conj #17->21
 "<,>"
 	"," cm @punct #18->20
 "<тұрсам>"
@@ -3435,7 +3435,7 @@
 "<нашар>"
 	"нашар" adj @amod #4->5
 "<ауылдар>"
-	"ауыл" n pl nom @dobj #5->7
+	"ауыл" n pl nom @obj #5->7
 "<өздері>"
 	"өз" prn ref px3pl nom @nsubj #6->7
 "<шақырып>"
@@ -3443,7 +3443,7 @@
 "<семіз>"
 	"семіз" adj @amod #8->9
 "<малын>"
-	"мал" n px3sp acc @dobj #9->10
+	"мал" n px3sp acc @obj #9->10
 "<сойып>"
 	"сой" v tv prc_perf @root #10->0
 "<беретін>"
@@ -3476,7 +3476,7 @@
 	"." sent @punct #7->6
 
 "<Оларды>"
-	"олар" prn pers p3 pl acc @dobj #1->2
+	"олар" prn pers p3 pl acc @obj #1->2
 "<шығарам>"
 	"шығар" v tv aor p1 sg @ccomp #2->3
 "<деп>"
@@ -3484,7 +3484,7 @@
 "<көп>"
 	"көп" adj @amod #4->5
 "<ақшасын>"
-	"ақша" n px3sp acc @dobj #5->6
+	"ақша" n px3sp acc @obj #5->6
 "<алды>"
 	"ал" v tv ifi p3 sg @root #6->0
 "<.>"
@@ -3497,7 +3497,7 @@
 "<,>"
 	"," cm @punct #3->6
 "<оны>"
-	"ол" prn pers p3 sg acc @dobj #4->6
+	"ол" prn pers p3 sg acc @obj #4->6
 "<артынан>"
 	"арт" n px3sp abl @nmod #5->6
 "<сөйлесерміз>"
@@ -3530,7 +3530,7 @@
 "<—>"
 	"—" guio @punct #12->15
 "<баршаларын>"
-	"барша" adj subst pl px3sp acc @dobj #13->15
+	"барша" adj subst pl px3sp acc @obj #13->15
 "<олжа>"
 	"олжа" n nom @compound #14->15
 "<қылған>"
