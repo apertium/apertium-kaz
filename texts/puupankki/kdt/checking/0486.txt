@@ -1,15 +1,10 @@
-"<Тап>"
-	"тап" ADV @advmod #1->3
-	"тап" adv @advmod #1->3
-"<->"
-	"-" guio @punct #2->3
-"<таза>"
-	"таза" adj @amod #3->5
+"<Тап-таза>"
+	"таза" adj sup @amod #1->2
 "<екі>"
-	"екі" num @nummod #4->5
+	"екі" num @nummod #2->3
 "<бөлме>"
-	"бөлме" n nom @root #5->0
-		"е" cop aor p3 sg @cop #6->5
+	"бөлме" n nom @root #3->0
+		"е" cop aor p3 sg @cop #4->3
 "<.>"
-	"." sent @punct #7->5
+	"." sent @punct #5->3
 ¶
