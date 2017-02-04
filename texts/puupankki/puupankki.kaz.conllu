@@ -8169,6 +8169,36 @@
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Шымкент.tagged.txt:5:107
+# text = Бірқатар-ғалымдардың пікірлері бойынша, бұл жерде үлкен қорым болған, егер бұл расталса, онда қаланың пайда болған мерзімі қайта қаралуы мүмкін.
+1	Бірқатар	бірқатар	DET	det	PronType=Qnt	5	det	_	_
+2	-	-	PUNCT	guio	_	4	punct	_	_
+3	ғалымдардың	ғалым	NOUN	n	Case=Gen|Number=Plur	5	nmod	_	_
+4	пікірлері	пікір	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+5	бойынша	бойынша	ADP	post	_	5	case	_	_
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	бұл	бұл	DET	det	PronType=Dem	9	det	_	_
+8	жерде	жер	NOUN	n	Case=Loc	11	obl	_	_
+9	үлкен	үлкен	ADJ	adj	_	11	amod	_	_
+10	қорым	қор	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	25	conj	_	_
+11	болған	бол	VERB	v	Number=Sing|Person=3|Tense=Past	11	cop	_	_
+12	,	,	PUNCT	cm	_	11	punct	_	_
+13	егер	егер	SCONJ	cnjsub	_	16	mark	_	_
+14	бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	16	nsubj	_	_
+15	расталса	раста	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv|Voice=Pass	25	advcl	_	_
+16	,	,	PUNCT	cm	_	24	punct	_	_
+17	онда	ол	PRON	prn	Case=Loc|PronType=Dem	24	obl	_	_
+18	қаланың	қала	NOUN	n	Case=Gen	22	nmod:poss	_	_
+19	пайда	пайда	X	x	_	21	dep	_	_
+20	болған	бол	VERB	v	Tense=Past|VerbForm=Part	22	acl:relcl	_	_
+21	мерзімі	мерзім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	24	nsubj	_	_
+22	қайта	қайта	ADV	adv	_	24	advmod	_	_
+23	қаралуы	қара	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	25	csubj	_	_
+24-25	мүмкін	_	_	_	_	_	_	_	_
+24	мүмкін	мүмкін	ADJ	adj	_	0	root	_	_
+25	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	25	cop	_	_
+26	.	.	PUNCT	sent	_	25	punct	_	_
+
+# sent_id = Шымкент.tagged.txt:6:159
 # text = Қандай болғанда да, қала ескі заманнан-ақ адамдардың өмір сүруіне қолайлы мекен болған.
 1	Қандай	қандай	PRON	prn	PronType=Int	13	advcl	_	_
 2-3	болғанда да	_	_	_	_	_	_	_	_
@@ -8188,7 +8218,7 @@
 14	болған	бол	VERB	v	Number=Sing|Person=3|Tense=Past	13	cop	_	_
 15	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:6:136
+# sent_id = Шымкент.tagged.txt:7:188
 # text = Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
 1	Оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
 2	ежелгі	ежел	ADV	adv	Case=Nom	3	amod	_	_
@@ -8206,7 +8236,7 @@
 14	алады	ал	AUX	vaux	Number=Sing|Person=3|Tense=Aor	13	aux	_	_
 15	.	.	PUNCT	sent	_	12	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:7:167
+# sent_id = Шымкент.tagged.txt:8:219
 # text = 1914 жылы Қазақстанның Ресей империясына қосылуының 50 жылдығына орай қалаға орыс генералы Черняевтің есімі берілді, бірақ 1921 жылы қала Шымкент атауына қайта ие болды.
 1	1914	1914	NUM	num	_	2	amod	_	_
 2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
@@ -8235,7 +8265,7 @@
 25	болды	бол	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 26	.	.	PUNCT	sent	_	25	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:8:220
+# sent_id = Шымкент.tagged.txt:9:272
 # text = XX ғасырда қала тарихының жаңа кезеңі басталды.
 1	XX	XX	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	nmod	_	_
@@ -8246,7 +8276,7 @@
 7	басталды	баста	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:9:237
+# sent_id = Шымкент.tagged.txt:10:289
 # text = Қала халқы елдегі үлкен өзгерістер нәтижесінде жаңа жетістіктерге жете бастады.
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
@@ -8260,7 +8290,7 @@
 10	бастады	баста	AUX	vaux	Number=Sing|Person=3|Tense=Past	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:10:260
+# sent_id = Шымкент.tagged.txt:11:312
 # text = Қалада жаңа өндіріс орындары салынып, оқу орындары мен ғылыми, мәдениет ошақтары ашылды.
 1	Қалада	қала	NOUN	n	Case=Loc	14	nmod	_	_
 2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
@@ -8278,7 +8308,7 @@
 14	ашылды	аш	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:11:291
+# sent_id = Шымкент.tagged.txt:12:343
 # text = Қала келбеті жаңа тұрғын үйлер, гүлзар, көшелері, саябақтарымен ажарлана түсті.
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	келбеті	келбет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
@@ -8295,7 +8325,7 @@
 13	түсті	түс	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:12:320
+# sent_id = Шымкент.tagged.txt:13:372
 # text = 30-шы жылдары Шымкентте қорғасын зауыты салынды.
 1	30-шы	30	NUM	num	NumType=Ord	2	amod	_	_
 2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
@@ -8305,7 +8335,7 @@
 6	салынды	сал	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:13:335
+# sent_id = Шымкент.tagged.txt:14:387
 # text = Бұл алып өндіріс орны КСРО-дағы өндірілетін қорғасынның 70%-ін беріп отырды.
 1	Бұл	бұл	DET	det	PronType=Dem	4	det	_	_
 2	алып	алып	ADJ	adj	_	4	amod	_	_
@@ -8319,7 +8349,7 @@
 10	отырды	отыр	AUX	vaux	Number=Sing|Person=3|Tense=Past	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:14:358
+# sent_id = Шымкент.tagged.txt:15:410
 # text = Қалада май комбинаты, шұлық және айна фабрикалары іске қосылды.
 1	Қалада	қала	NOUN	n	Case=Loc	10	nmod	_	_
 2	май	май	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -8333,7 +8363,7 @@
 10	қосылды	қос	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Шымкент.tagged.txt:15:381
+# sent_id = Шымкент.tagged.txt:16:433
 # text = 1932 жылы ауылшаруашылық авиациясының базасы құрылып, бұл Шымкент әуежайының негізін қалады.
 1	1932	1932	NUM	num	_	2	amod	_	_
 2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod	_	_

@@ -331,63 +331,56 @@
 	"." sent @punct
 
 "<Бірқатар>"
-	"бірқатар" det qnt @det #1->
+	"бірқатар" det qnt @det #1->5
 "<археолог>"
-	"археолог" n nom
-;	"археолог" n attr 
+;	"археолог" n attr @compound #2->4
 "<->"
-	"-" guio @punct
+	"-" guio @punct #3->4
 "<ғалымдардың>"
-	"ғалым" n pl gen @nmod
+	"ғалым" n pl gen @nmod #4->5
 "<пікірлері>"
-	"пікір" n pl px3sp nom 
+	"пікір" n pl px3sp nom @obl #5->11
 "<бойынша>"
-	"бойынша" post @case
+	"бойынша" post @case #6->5
 "<,>"
-	"," cm @punct
+	"," cm @punct #7->5
 "<бұл>"
-	"бұл" det dem @det
+	"бұл" det dem @det #8->9
 "<жерде>"
-	"жер" n loc 
+	"жер" n loc @obl #9->11
 "<үлкен>"
-	"үлкен" adj @amod
+	"үлкен" adj @amod #10->11
 "<қорым>"
-	"қор" n px1sg nom 
-;	"қор" adj subst px1sg nom 
+	"қор" n px1sg nom @conj #11->24
 "<болған>"
-	"бол" v iv past p3 sg
-	"бол" v iv ger_past nom
-;	"бол" v iv past p3 pl 
+	"бол" v iv past p3 sg @cop #12->11
 "<,>"
-	"," cm @punct
+	"," cm @punct #13->11
 "<егер>"
-	"егер" cnjsub @mark
+	"егер" cnjsub @mark #14->16
 "<бұл>"
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #15->16
 "<расталса>"
-	"раста" v tv pass gna_cond p3 sg
+	"раста" v tv pass gna_cond p3 sg @advcl #16->24
 "<,>"
-	"," cm @punct
+	"," cm @punct #17->23
 "<онда>"
-	"он" num subst loc 
-;	"ол" prn dem loc 
-;	"ол" prn pers p3 sg loc 
-;	"онда" cnjsub 
+	"ол" prn dem loc @obl #18->23
 "<қаланың>"
-	"қала" n gen
+	"қала" n gen @nmod:poss #19->21
 "<пайда болған>"
-	"пайда бол" v iv gpr_past
+	"пайда бол" v iv gpr_past @acl:relcl #20->21
 "<мерзімі>"
-	"мерзім" n px3sp nom
+	"мерзім" n px3sp nom @nsubj #21->23
 "<қайта>"
-	"қайта" adv 
+	"қайта" adv @advmod #22->23
 "<қаралуы>"
-	"қара" v tv pass ger px3sp nom
+	"қара" v tv pass ger px3sp nom @csubj #23->24
 "<мүмкін>"
-	"мүмкін" adj
-		"е" cop aor p3 sg
+	"мүмкін" adj @root #24->0
+		"е" cop aor p3 sg @cop #25->24
 "<.>"
-	"." sent @punct
+	"." sent @punct #26->24
 
 "<Біздің>"
 	"біз" prn pers p1 pl gen @nmod:poss #1->2
@@ -567,11 +560,10 @@
 	"тау етек" n px3sp loc
 "<өзен>"
 	"өзен" n nom 
-;	"өзен" n attr 
 "<бойындағы>"
 	"бой" n px3sp loc attr
 "<алқаптарда>"
-	"*алқап" n pl loc
+	"алқап" n pl loc
 "<егіншілік>"
 	"егіншілік" n nom
 ;	"егіншілік" n attr 
@@ -582,8 +574,6 @@
 	"жүзімдік" n nom
 	"жүзімдік" n nom
 		"е" cop aor p3 sg
-;	"жүзімдік" n nom
-;		"е" cop aor p3 pl 
 "<,>"
 	"," cm @punct
 "<ал>"
