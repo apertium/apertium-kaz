@@ -1,14 +1,11 @@
 "<Мұнша>"
-	"мұнша" ADV @advmod #1->2
-	"бұл" prn dem qnt @advmod #1->2
+	"бұл" prn dem qnt @det #1->2
 "<аспаптар>"
 	"аспап" n pl nom @nsubj #2->4
 "<қайдан>"
-	"қайдан" PRON @nmod #3->4
-	"қай" prn ind abl @nmod #3->4
-	"қайдан" adv itg @nmod #3->4
+	"қайдан" adv itg @advmod #3->4
 "<келген>"
-	"кел" v iv past p3 sg @root #4->0
+	"кел" v iv past p3 pl @root #4->0
 "<?>"
 	"?" sent @punct #5->4
 ¶
