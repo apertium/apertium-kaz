@@ -33,81 +33,69 @@
 	"." sent @punct #7->6
 
 "<Өзбекстанда>"
-	"Өзбекстан" np top loc @obl
+	"Өзбекстан" np top loc @obl #1->11
 "<79>"
-	"79" num @x
+	"79" num @amod #2->3
 "<жасына>"
-	"жас" n px3sp dat
+	"жас" n px3sp dat @obl #3->4
 "<қараған>"
-	"қара" v iv gpr_past @acl:relcl
+	"қара" v iv gpr_past @acl:relcl #4->5
 "<шағында>"
-	"шақ" n px3sp loc
+	"шақ" n px3sp loc @obl #5->11
 "<мемлекет>"
-	"мемлекет" n nom
+	"мемлекет" n nom @nmod:poss #6->7
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @nsubj #7->11
 "<Ислам>"
-	"Ислам" np ant m nom @flat:name
+	"Ислам" np ant m nom @flat:name #8->9
 "<Каримов>"
-	"Каримов" np cog m nom
+	"Каримов" np cog m nom @appos #9->7
 "<дүниеден>"
-	"дүние" n abl @obl
+	"дүние" n abl @obl #10->11
 "<озды>"
-	"оз" v iv ifi p3 sg @root
+	"оз" v iv ifi p3 sg @root #11->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->11
 
 "<Тәжікстан>"
-	"Тәжікстан" np top nom
+	"Тәжікстан" np top nom @nmod:poss #1->2
 "<парламентінің>"
-	"парламент" n px3sp gen
+	"парламент" n px3sp gen @nmod:poss #2->4
 "<төменгі>"
-	"төмен" adv attr
-	"төменгі" adj
-	"төмен" adv subst nom
-	"төменгі" adj subst nom
+	"төменгі" adj @amod #3->4
 "<палатасы>"
-	"палата" n px3sp nom
+	"палата" n px3sp nom @x #4->
 "<Конституцияға>"
-	"конституция" n dat
+	"конституция" n dat @x #5->
 "<республика>"
-	"республика" n nom
-	"республика" n attr
-"<басшысы>"
-	"басшы" n px3sp nom
+	"республика" n nom @nmod:poss #6->
+"<басшысы>" 
+	"басшы" n px3sp nom @x #7->
 "<Эмомали>"
-	"Эмомали" np ant m nom
+	"Эмомали" np ant m nom @flat:name #8->9
 "<Рахмонның>"
-	"Рахмон" np cog mf gen
+	"Рахмон" np cog mf gen @appos #9->
 "<шек>"
-	"шек" n nom
+	"шек" n nom @x #10->
 "<қойылмайтын>"
-	"қой" v tv pass neg gpr_impf
-	"қойыл" v tv neg gpr_impf
-	"қойыл" v tv neg pih p3 sg
-	"қой" v tv pass neg pih p3 sg
-	"қой" v tv pass neg gpr_impf subst nom
-	"қойыл" v tv neg gpr_impf subst nom
+	"қой" v tv pass neg gpr_impf @acl:relcl #11->12
 "<мөлшерде>"
-	"мөлшер" n loc
+	"мөлшер" n loc @obl #12->
 "<сайлауға>"
-	"сайла" v tv ger dat
-	"сайлау" n dat
+	"сайла" v tv ger dat @x #13->
 "<түсуіне>"
-	"түс" v iv ger px3sp dat
+	"түс" v iv ger px3sp dat @x #14->
 "<мүмкіндік беретін>"
-	"мүмкіндік бер" v iv gpr_impf
-	"мүмкіндік бер" v iv gpr_impf subst nom
-	"мүмкіндік бер" v iv pih p3 sg
+	"мүмкіндік бер" v iv gpr_impf @x #15->
 "<түзетуді>"
-	"түзет" v tv ger acc
+	"түзет" v tv ger acc 
 	"түзету" n acc
 "<бекітіп>"
-	"бекіт" v tv prc_perf
+	"бекіт" v tv prc_perf @root #17->0
 "<берді>"
-	"бер" vaux ifi p3 sg
+	"бер" vaux ifi p3 sg @aux #18->17
 "<.>"
-	"." sent
+	"." sent @punct #19->17
 
 "<Қазақстанда>"
 	"Қазақстан" np top loc @obl #1->7
@@ -142,44 +130,35 @@
 	"." sent @punct #7->6
 
 "<Қазақстан>"
-	"Қазақстан" np top nom
+	"Қазақстан" np top nom @nmod:poss #1->3
 "<Ұлттық>"
-	"ұлттық" adj
-	"ұлттық" adv
+	"ұлттық" adj @amod #2->3
 "<банкі>"
-	"банк" n px3sp nom
+	"банк" n px3sp nom @x #3->
 "<банктер>"
 	"банк" n pl nom
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<айырбастау>"
 	"айырбаста" v tv ger nom
 "<пункттері>"
 	"пункт" n pl px3sp nom
 "<арқылы>"
-	"арқылы" post
+	"арқылы" post @case
 "<жүргізілетін>"
-	"жүргіз" v tv pass gpr_impf
-	"жүргізіл" v tv gpr_impf
-	"жүргізіл" v tv pih p3 sg
-	"жүргіз" v tv pass pih p3 sg
-	"жүргіз" v tv pass gpr_impf subst nom
-	"жүргізіл" v tv gpr_impf subst nom
+	"жүргіз" v tv pass gpr_impf @acl:relcl
 "<операциялар>"
 	"операция" n pl nom
 "<бойынша>"
-	"бойынша" post
+	"бойынша" post @case
 "<шетел>"
-	"шетел" n nom
-	"шетел" n attr
+	"шетел" n nom @nmod:poss
 "<валютасын>"
-	"валюта" n px3sp acc
+	"валюта" n px3sp acc @obj
 "<теңгеге>"
 	"теңге" n dat
 "<сатып алу>"
 	"сатып ал" v tv ger nom
-	"сатып алу" n nom
-	"сатып алу" n attr
 "<бағамының>"
 	"бағам" n px3sp gen
 "<сату>"
@@ -197,9 +176,9 @@
 	"шекте" v tv ger_fut px3sp acc
 	"шекте" v tv gpr_fut subst px3sp acc
 "<белгіледі>"
-	"белгіле" v tv ifi p3 sg
+	"белгіле" v tv ifi p3 sg @root
 "<.>"
-	"." sent
+	"." sent @punct
 
 "<Голливудтық>"
 	"*Голливудтық"
@@ -249,90 +228,78 @@
 	"." sent
 
 "<8>"
-	"8" num
+	"8" num @amod #1->2
 "<қаңтар>"
-	"қаңтар" n nom
-	"қаңтар" v tv imp p2 sg
+	"қаңтар" n nom @obl #2->16
 "<—>"
-	"—" guio
+	"—" guio @punct #3->16
 "<Қазақстандық>"
-	"қазақстандық" adj
+	"қазақстандық" adj @amod #4->5
 "<сиқыршы>"
-	"сиқыршы" n nom
-	"сиқыршы" n attr
+	"сиқыршы" n nom @nsubj #5->12
 "<Руслан>"
-	"Руслан" np ant m nom
+	"Руслан" np ant m nom @flat:name #6->7
 "<Иванченков>"
-	"*Иванченков"
+	"Иванченков" np cog m nom @appos #7->5
 "<бес>"
-	"бес" num
-"<сағат>"
-	"сағат" n nom
-	"сағат" n attr
+	"бес" num @nummod #8->9
+"<сағат>" 
+	"сағат" n nom @obl #9->12
 "<бойы>"
-	"бойы" post
-	"бойы" n nom
-	"бой" n px3sp nom
+	"бойы" post @case #10->9
 "<үздіксіз>"
-	"үздіксіз" adj advl
-	"үздіксіз" adj
+	"үздіксіз" adj @amod #10->11
 "<сиқыр>"
-	"сиқыр" n nom
+	"сиқыр" n nom @obj #11->12
 "<көрсетіп>"
-	"көрсет" v tv gna_perf
+	"көрсет" v tv gna_perf @advcl #12->16
 "<Гиннестің>"
-	"*Гиннестің"
+	"Гиннес" np al gen @nmod:poss #13->15
 "<рекордтар>"
-	"рекорд" n pl nom
+	"рекорд" n pl nom @nmod:poss #14->15
 "<кітабына>"
-	"кітап" n px3sp dat
+	"кітап" n px3sp dat @obl #15->16
 "<енді>"
-	"ен" v iv ifi p3 sg
+	"ен" v iv ifi p3 sg @root #16->0
 "<.>"
-	"." sent
+	"." sent @punct #17->16
 
 "<13>"
-	"13" num
+	"13" num @amod #1->2
 "<қаңтар>"
-	"қаңтар" n nom
-	"қаңтар" v tv imp p2 sg
+	"қаңтар" n nom @obl #2->18
 "<—>"
-	"—" guio
+	"—" guio @punct #3->
 "<Қазақстанда>"
-	"Қазақстан" np top loc
+	"Қазақстан" np top loc @obl #4->18
 "<«>"
-	"«" lquot
+	"«" lquot @punct #5->6
 "<Б>"
-	"*Б"
+	"Б" n nom @nmod:poss #6->8
 "<»>"
-	"»" rquot
+	"»" rquot @punct #7->6
 "<корпусының>"
-	"корпус" n px3sp gen
+	"корпус" n px3sp gen @x #8->9
 "<қызметкерлері>"
-	"қызметкер" n pl px3sp nom
+	"қызметкер" n pl px3sp nom @nsubj #9->18
 "<бір>"
-	"бір" num
-	"бір" det ind
-	"бір" num subst nom
+	"бір" num @nummod #10->11
 "<орында>"
-	"орын" n loc
+	"орын" n loc @obl #12->18
 "<6>"
-	"6" num
+	"6" num @nummod #13->14
 "<жылдан>"
-	"жыл" n abl
+	"жыл" n abl @obl #14->18
 "<артық>"
-	"артық" post
-	"артық" adj
-	"артық" adj subst nom
-	"артық" adj advl
+	"артық" post @case #15->14
 "<отырмайтындығы>"
 	"*отырмайтындығы"
 "<мәлім>"
-	"мәлім" adj
+	"мәлім" adj @compound:lvc #17->18
 "<етілді>"
-	"ет" v tv pass ifi p3 sg
+	"ет" v tv pass ifi p3 pl @root #18->0
 "<.>"
-	"." sent
+	"." sent @punct #19->18
 
 "<13>"
 	"13" num

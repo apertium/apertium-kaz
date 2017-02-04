@@ -35,6 +35,21 @@
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = wikipedia-news.tagged.txt:2:18
+# text = Өзбекстанда 79 жасына қараған шағында мемлекет басшысы Ислам Каримов дүниеден озды.
+1	Өзбекстанда	Өзбекстан	PROPN	np	Case=Loc	11	obl	_	_
+2	79	79	NUM	num	_	3	amod	_	_
+3	жасына	жас	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
+4	қараған	қара	VERB	v	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+5	шағында	шақ	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+6	мемлекет	мемлекет	NOUN	n	Case=Nom	7	nmod:poss	_	_
+7	басшысы	басшы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
+8	Ислам	Ислам	PROPN	np	Case=Nom|Gender=Masc	9	flat:name	_	_
+9	Каримов	Каримов	PROPN	np	Case=Nom|Gender=Masc	7	appos	_	_
+10	дүниеден	дүние	NOUN	n	Case=Abl	11	obl	_	_
+11	озды	оз	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+12	.	.	PUNCT	sent	_	11	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:3:43
 # text = Қазақстанда жергілікті полиция қызметі өз жұмысын бастады.
 1	Қазақстанда	Қазақстан	PROPN	np	Case=Loc	7	obl	_	_
 2	жергілікті	жергілікті	ADJ	adj	_	3	amod	_	_
@@ -45,7 +60,7 @@
 7	бастады	баста	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:3:35
+# sent_id = wikipedia-news.tagged.txt:4:60
 # text = Қазақстан Еуразиялық Экономикалық Одаққа төрағалығын бастады.
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	6	nsubj	_	_
 2	Еуразиялық	еуразиялық	ADJ	adj	_	4	amod	_	_
@@ -55,7 +70,27 @@
 6	бастады	баста	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:4:50
+# sent_id = wikipedia-news.tagged.txt:5:75
+# text = 8 қаңтар — Қазақстандық сиқыршы Руслан Иванченков бес сағат үздіксіз сиқыр көрсетіп Гиннестің рекордтар кітабына енді.
+1	8	8	NUM	num	_	2	amod	_	_
+2	қаңтар	қаңтар	NOUN	n	Case=Nom	16	obl	_	_
+3	—	—	PUNCT	guio	_	16	punct	_	_
+4	Қазақстандық	қазақстандық	ADJ	adj	_	5	amod	_	_
+5	сиқыршы	сиқыршы	NOUN	n	Case=Nom	12	nsubj	_	_
+6	Руслан	Руслан	PROPN	np	Case=Nom|Gender=Masc	7	flat:name	_	_
+7	Иванченков	Иванченков	PROPN	np	Case=Nom|Gender=Masc	5	appos	_	_
+8	бес	бес	NUM	num	_	9	nummod	_	_
+9	сағат	сағат	NOUN	n	Case=Nom	12	obl	_	_
+10	үздіксіз	үздіксіз	ADJ	adj	_	11	amod	_	_
+11	сиқыр	сиқыр	NOUN	n	Case=Nom	12	obj	_	_
+12	көрсетіп	көрсет	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	_
+13	Гиннестің	Гиннес	PROPN	np	Case=Gen	15	nmod:poss	_	_
+14	рекордтар	рекорд	NOUN	n	Case=Nom|Number=Plur	15	nmod:poss	_	_
+15	кітабына	кітап	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
+16	енді	ен	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+17	.	.	PUNCT	sent	_	16	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:6:110
 # text = Футболдан Еуропа чемпионатының финалдық матчында Португалия құрамасы Франция командасын жеңіп Еуропа чемпионы атанды.
 1	Футболдан	футбол	NOUN	n	Case=Abl	3	nmod	_	_
 2	Еуропа	Еуропа	PROPN	np	Case=Nom	3	nmod:poss	_	_
@@ -72,7 +107,7 @@
 13	атанды	атан	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:5:79
+# sent_id = wikipedia-news.tagged.txt:7:139
 # text = Алматы қаласында лаңкестік әрекет орын алып, 5 полиция қызметкері мен 1 бейбіт тұрғын қаза тапты.
 1	Алматы	Алматы	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	қаласында	қала	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
@@ -92,7 +127,7 @@
 16	тапты	тап	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:6:114
+# sent_id = wikipedia-news.tagged.txt:8:174
 # text = 5 полиция қызметкері жарақаттанған.
 1	5	5	NUM	num	_	3	nummod	_	_
 2	полиция	полиция	NOUN	n	Case=Nom	3	nmod:poss	_	_
