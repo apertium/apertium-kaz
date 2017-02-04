@@ -608,7 +608,7 @@
 "<1914>"
 	"1914" num @amod #1->2
 "<жылы>"
-	"жыл" n px3sp nom @nmod #2->
+	"жыл" n px3sp nom @nmod #2->6
 "<Қазақстанның>"
 	"Қазақстан" np top gen @nsubj #3->6
 "<Ресей>"
@@ -616,25 +616,25 @@
 "<империясына>"
 	"империя" n px3sp dat @nmod #5->6
 "<қосылуының>"
-	"қос" v tv pass ger px3sp gen @x #6->
+	"қос" v tv pass ger px3sp gen @acl #6->8
 "<50>"
 	"50" num @amod #7->8
 "<жылдығына>"
-	"жылдық" adj subst px3sp dat @x #8->
+	"жылдық" adj subst px3sp dat @obl #8->15
 "<орай>"
-	"орай" post
+	"орай" post @case #9->8
 "<қалаға>"
-	"қала" n dat @x #10->
+	"қала" n dat @obl #10->15
 "<орыс>"
 	"орыс" n nom @nmod:poss #11->12
 "<генералы>"
-	"генерал" n px3sp nom @x #12->
+	"генерал" n px3sp nom @appos #12->13
 "<Черняевтің>"
 	"Черняев" np cog m gen @nmod:poss #13->14
 "<есімі>"
 	"есім" n px3sp nom @nsubj #14->15
 "<берілді>"
-	"бер" v tv pass ifi p3 sg @x #15->
+	"бер" v tv pass ifi p3 sg @conj #15->24
 "<,>"
 	"," cm @punct #16->24
 "<бірақ>"
@@ -642,18 +642,17 @@
 "<1921>"
 	"1921" num @amod #18->19
 "<жылы>"
-	"жыл" n px3sp nom @nmod #19->
+	"жыл" n px3sp nom @nmod #19->24
 "<қала>"
 	"қала" n attr @compound #20->21
 "<Шымкент>"
-	"Шымкент" np top nom @x #21->
+	"Шымкент" np top nom @nsubj #21->24
 "<атауына>"
-	"атау" n px3sp dat 
-;	"ата" v tv ger px3sp dat 
+	"атау" n px3sp dat @obl #22->24
 "<қайта>"
 	"қайта" adv @advmod #23->24
 "<ие болды>"
-	"ие бол" v iv ifi p3 sg @ROOT #24->
+	"ие бол" v iv ifi p3 sg @root #24->0
 "<.>"
 	"." sent @punct #25->24
 
