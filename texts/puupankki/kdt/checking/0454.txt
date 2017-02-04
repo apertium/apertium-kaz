@@ -3,17 +3,17 @@
 "<алғанын>"
 	"ал" v tv ger_past px3sp acc @ccomp #2->3
 "<білмеймін>"
-	"біл" v tv neg aor p1 sg @root #3->0
+	"біл" v tv neg aor p1 sg @parataxis #3->17
 "<,>"
 	"," cm @punct #4->3
 "<бір>"
 	"бір" num @nummod #5->6
 "<кісі>"
-	"кісі" n nom @dobj #6->8
+	"кісі" n nom @dobj #6->7
 "<қосып>"
-	"қос" v tv gna_perf @advcl #7->8
+	"қос" v tv gna_perf @conj #7->15
 "<берейік>"
-	"бер" v tv opt p1 pl @parataxis #8->3
+	"бер" v tv opt p1 pl @aux #8->7
 "<,>"
 	"," cm @punct #9->8
 "<өздерің>"
@@ -21,21 +21,17 @@
 "<кісі>"
 	"кісі" n nom @dobj #11->12
 "<жібер>"
-	"жібер" v tv imp p2 sg @parataxis #12->8
+	"жібер" v tv imp p2 sg @conj #12->15
 "<,>"
 	"," cm @punct #13->12
 "<солар>"
 	"сол" prn dem pl nom @nsubj #14->15
 "<жисын>"
-	"жи" VERB @advcl #15->17
-	"жи" v tv opt p3 pl @advcl #15->17
 	"жи" v tv opt p3 pl @ccomp #15->16
 "<деп>"
-	"де" AUX @aux #16->15
-	"де" v tv gna_perf @aux #16->15
 	"де" v tv gna_perf @advcl #16->17
 "<сұранған>"
-	"сұран" v iv past p3 sg @parataxis #17->12
+	"сұран" v iv past p3 sg @root #17->0
 "<.>"
 	"." sent @punct #18->17
 ¶
