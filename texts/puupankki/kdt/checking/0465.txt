@@ -1,15 +1,15 @@
 "<Бекболат>"
 	"Бекболат" np ant m nom @nsubj #1->8
 "<Жылтырға>"
-	"Жылтыр" np ant f dat @iobj #2->3
+	"Жылтыр" np ant f dat @dobj #2->3
 "<жолыққаннан>"
-	"жолық" v iv ger_past abl @ccomp #3->4
+	"жолық" v iv ger_past abl @advcl #3->8
 "<бері>"
-	"бері" adv @advmod #4->8
+	"бері" post @case #4->3
 "<бұл>"
 	"бұл" det dem @det #5->6
 "<әңгімелерге>"
-	"әңгіме" n pl dat @iobj #6->8
+	"әңгіме" n pl dat @nmod #6->8
 "<әбден>"
 	"әбден" adv @advmod #7->8
 "<қанған>"

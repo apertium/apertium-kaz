@@ -3,7 +3,7 @@
 "<.>"
 	"." sent @punct #2->1
 "<Мұнан>"
-	"бұл" prn dem abl @det #3->7
+	"бұл" prn dem abl @nmod #3->7
 "<кейін>"
 	"кейін" post @case #4->3
 "<елге>"
@@ -11,7 +11,6 @@
 "<сайлаушы>"
 	"сайлаушы" n nom @nsubj #6->7
 "<шықты>"
-	"шық" v tv ifi p3 sg @parataxis #7->1
 	"шық" v iv ifi p3 sg @parataxis #7->1
 "<.>"
 	"." sent @punct #8->7
