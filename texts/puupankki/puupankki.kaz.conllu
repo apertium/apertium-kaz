@@ -1,3 +1,15 @@
+# sent_id = Махамбет_Өтемісұлы.tagged.txt:1:0
+# text = 1939 ж. Қ. Жұмалиев Махамбет өлеңдерінің жинағын шығарды.
+1	1939	1939	NUM	num	_	2	amod	_	_
+2	ж.	ж.	NOUN	abbr	_	8	obl	_	_
+3	Қ.	Қ.	NOUN	abbr	_	4	flat:name	_	_
+4	Жұмалиев	Жұмалиев	PROPN	np	Case=Nom|Gender=Masc	5	flat:name	_	_
+5	Махамбет	Махамбет	PROPN	np	Case=Nom|Gender=Masc	8	nsubj	_	_
+6	өлеңдерінің	өлең	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
+7	жинағын	жинақ	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
+8	шығарды	шығар	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
 # sent_id = әртүрлі.tagged.txt:1:0
 # text = Қой, қазақ бұлармен не ғып соғыса алсын?
 1	Қой	қой	VERB	v	Mood=Imp|Number=Sing|Person=2	0	root	_	_

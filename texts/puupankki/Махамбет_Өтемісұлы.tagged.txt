@@ -1115,6 +1115,7 @@
 ;	"сипатта" v tv pass aor p3 pl REMOVE:642
 "<..>"
 	".." sent
+
 "<Махамбет>"
 	"Махамбет" np ant m nom
 ;	"Махамбет" np ant m nom
@@ -1399,6 +1400,7 @@
 ;	"оқы" v tv past p3 pl REMOVE:642
 "<..>"
 	".." sent
+
 "<Махамбет>"
 	"Махамбет" np ant m nom
 ;	"Махамбет" np ant m nom
@@ -3507,34 +3509,23 @@
 	"." sent
 
 "<1939>"
-	"1939" num
-;	"1939" num subst nom
+	"1939" num @amod #1->2
 "<ж.>"
-	"ж." abbr
-"<Қ>"
-	"*Қ"
-"<.>"
-	"." sent
-
+	"ж." abbr @obl #2->8
+"<Қ.>"
+	"Қ." abbr @flat:name #3->4
 "<Жұмалиев>"
-	"*Жұмалиев"
+	"Жұмалиев" np cog m nom @flat:name #4->5
 "<Махамбет>"
-	"Махамбет" np ant m nom
-;	"Махамбет" np ant m nom
-;		"е" cop aor p3 pl REMOVE:229
-;	"Махамбет" np ant m nom
-;		"е" cop aor p3 sg REMOVE:229
+	"Махамбет" np ant m nom @nsubj #5->8
 "<өлеңдерінің>"
-	"өлең" n pl px3sp gen
+	"өлең" n pl px3sp gen @nmod:poss #6->7
 "<жинағын>"
-	"жинақ" n px3sp acc
+	"жинақ" n px3sp acc @obj #7->8
 "<шығарды>"
-	"шығар" v tv ifi p3 sg
-;	"шық" v iv gpr_fut subst acc
-;	"шық" vaux gpr_fut subst acc REMOVE:565
-;	"шығар" v tv ifi p3 pl REMOVE:642
+	"шығар" v tv ifi p3 sg @root #8->0
 "<.>"
-	"." sent
+	"." sent @punct #9->8
 
 "<Ақынның>"
 	"ақын" n gen
