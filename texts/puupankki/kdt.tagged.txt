@@ -3538,6 +3538,283 @@
 "<.>"
 	"." sent @punct #16->15
 
+"<Кім>"
+	"кім" prn itg nom @nsubj #1->2
+"<алғанын>"
+	"ал" v tv ger_past px3sp acc @ccomp #2->3
+"<білмеймін>"
+	"біл" v tv neg aor p1 sg @parataxis #3->17
+"<,>"
+	"," cm @punct #4->3
+"<бір>"
+	"бір" num @nummod #5->6
+"<кісі>"
+	"кісі" n nom @obj #6->7
+"<қосып>"
+	"қос" v tv gna_perf @conj #7->15
+"<берейік>"
+	"бер" v tv opt p1 pl @aux #8->7
+"<,>"
+	"," cm @punct #9->7
+"<өздерің>"
+	"өз" prn ref px2pl nom @nsubj #10->12
+"<кісі>"
+	"кісі" n nom @obj #11->12
+"<жібер>"
+	"жібер" v tv imp p2 sg @conj #12->15
+"<,>"
+	"," cm @punct #13->12
+"<солар>"
+	"сол" prn dem pl nom @nsubj #14->15
+"<жисын>"
+	"жи" v tv opt p3 pl @ccomp #15->16
+"<деп>"
+	"де" v tv gna_perf @advcl #16->17
+"<сұранған>"
+	"сұран" v iv past p3 sg @root #17->0
+"<.>"
+	"." sent @punct #18->17
+
+"<—>"
+	"—" guio @punct #1->2
+"<Рас>"
+	"рас" ij @root #2->0
+"<.>"
+	"." sent @punct #3->2
+
+"<Сол>"
+	"сол" det dem @det #1->2
+"<аттар>"
+	"ат" n pl nom @nmod:poss #2->3
+"<баршасы>"
+	"барша" adj subst px3sp nom @nsubj #3->4
+"<кетті>"
+	"кет" v iv ifi p3 sg @root #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<—>"
+	"—" guio @punct #1->4
+"<Бұған>"
+	"бұл" prn dem dat @nmod #2->4
+"<не>"
+	"не" prn itg nom @obj #3->4
+"<айтасың>"
+	"айт" v tv aor p2 sg @root #4->0
+"<?>"
+	"?" sent @punct #5->4
+
+"<12>"
+	"12" num @root #1->0
+"<.>"
+	"." sent @punct #2->1
+"<Мұнан>"
+	"бұл" prn dem abl @nmod #3->7
+"<кейін>"
+	"кейін" post @case #4->3
+"<елге>"
+	"ел" n dat @nmod #5->7
+"<сайлаушы>"
+	"сайлаушы" n nom @nsubj #6->7
+"<шықты>"
+	"шық" v iv ifi p3 sg @parataxis #7->1
+"<.>"
+	"." sent @punct #8->7
+
+"<—>"
+	"—" guio @punct #1->4
+"<Біз>"
+	"біз" prn pers p1 pl nom @nsubj #2->4
+"<қайдан>"
+	"қайдан" adv itg @nmod #3->4
+"<білейік>"
+	"біл" v tv opt p1 pl @root #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<Ретін>"
+	"рет" n px3sp acc @obj #1->2
+"<табамыз>"
+	"тап" v tv aor p1 pl @ccomp #2->5
+"<,>"
+	"," cm @punct #3->2
+"<—>"
+	"—" guio @punct #4->5
+"<деді>"
+	"де" v tv ifi p3 sg @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Бекболат>"
+	"Бекболат" np ant m nom @nsubj #1->8
+"<Жылтырға>"
+	"Жылтыр" np ant f dat @obj #2->3
+"<жолыққаннан>"
+	"жолық" v iv ger_past abl @advcl #3->8
+"<бері>"
+	"бері" post @case #4->3
+"<бұл>"
+	"бұл" det dem @det #5->6
+"<әңгімелерге>"
+	"әңгіме" n pl dat @nmod #6->8
+"<әбден>"
+	"әбден" adv @advmod #7->8
+"<қанған>"
+	"қан" v iv past p3 sg @root #8->0
+"<.>"
+	"." sent @punct #9->8
+
+"<Жылтыр>"
+	"Жылтыр" np ant f nom @nsubj #1->10
+"<:>"
+	":" sent @punct #2->1
+"<—>"
+	"—" guio @punct #3->7
+"<Е>"
+	"е" ij @discourse #4->7
+"<,>"
+	"," cm @punct #5->4
+"<әбден>"
+	"әбден" adv @advmod #6->7
+"<болады>"
+	"бол" v iv aor p3 sg @ccomp #7->10
+"<,>"
+	"," cm @punct #8->7
+"<—>"
+	"—" guio @punct #9->10
+"<деді>"
+	"де" v tv ifi p3 sg @root #10->0
+"<.>"
+	"." sent @punct #11->10
+
+"<(>"
+	"(" lpar @punct #1->8
+"<Әлдеқашан>"
+	"әлдеқашан" adv @advmod #2->3
+"<жіберіліп>"
+	"жібер" v tv pass prc_perf @acl:relcl #3->5
+"<қойған>"
+	"қой" vaux gpr_past @aux #4->3
+"<арыз>"
+	"арыз" n nom @advcl #5->8
+"<екенімен>"
+	"е" cop ger_past px3sp ins @cop #6->5
+"<жұмысы>"
+	"жұмыс" n px3sp nom @nsubj #7->8
+"<жоқ>"
+	"жоқ" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
+"<)>"
+	")" rpar @punct #10->8
+"<.>"
+	"." sent @punct #11->8
+
+"<—>"
+	"—" guio @punct #1->6
+"<Е>"
+	"е" ij @discourse #2->6
+"<,>"
+	"," cm @punct #3->2
+"<ол>"
+	"ол" det dem @det #4->5
+"<арасы>"
+	"ара" n px3sp nom @nsubj #5->6
+"<оңай>"
+	"оңай" adj @root #6->0
+		"е" cop aor p3 sg @cop #7->6
+"<.>"
+	"." sent @punct #8->6
+
+"<Ол>"
+	"ол" prn pers p3 sg nom @nsubj #1->8
+"<талай>"
+	"талай" adj @amod #2->3
+"<қызды>"
+	"қыз" n acc @obj #3->4
+"<алып>"
+	"ал" v tv gna_perf @advcl #4->5
+"<қашқан>"
+	"қаш" v iv past p3 sg @conj #5->8
+"<,>"
+	"," cm @punct #6->8
+"<талайды>"
+	"талай" adj subst acc @obj #7->8
+"<тастаған>"
+	"таста" v tv past p3 sg @root #8->0
+"<,>"
+	"," cm @punct #9->8
+"<қатын>"
+	"қатын" n nom @obj #10->11
+"<алу>"
+	"ал" v tv ger nom @conj #11->13
+"<,>"
+	"," cm @punct #12->13
+"<тастау>"
+	"таста" v tv ger nom @csubj #13->19
+"<оған>"
+	"ол" prn pers p3 sg dat @nmod #14->19
+"<тымақ>"
+	"тымақ" n nom @obj #15->17
+"<ауыстырып>"
+	"ауыстыр" v tv gna_perf @advcl #16->17
+"<кигенмен>"
+	"ки" v tv ger_past ins @advcl #17->19
+"<бір>"
+	"бір" det ind @det #18->19
+"<есеп>"
+	"есеп" n nom @parataxis #19->8
+		"е" cop aor p3 sg @cop #20->19
+"<.>"
+	"." sent @punct #21->19
+
+"<—>"
+	"—" guio @punct #1->4
+"<Мені>"
+	"мен" prn pers p1 sg acc @obj #2->4
+"<қашан>"
+	"қашан" adv itg @advmod #3->4
+"<шығарасыз>"
+	"шығар" v tv aor p2 frm sg @ccomp #4->7
+"<?>"
+	"?" sent @punct #5->4
+"<—>"
+	"—" guio @punct #6->7
+"<деп>"
+	"де" v tv gna_perf @advcl #7->9
+"<тағы>"
+	"тағы" adv @advmod #8->9
+"<сұрады>"
+	"сұра" v tv ifi p3 sg @root #9->0
+"<.>"
+	"." sent @punct #10->9
+
+"<Аурухананың>"
+	"аурухана" n gen @nmod:poss #1->2
+"<киімдерін>"
+	"киім" n pl px3sp acc @obj #2->3
+"<тастап>"
+	"таста" v tv gna_perf @advcl #3->7
+"<,>"
+	"," cm @punct #4->7
+"<өз>"
+	"өз" det ref @det #5->6
+"<киімін>"
+	"киім" n px3sp acc @obj #6->7
+"<киген>"
+	"ки" v tv ger_past nom @advcl #7->10
+"<соң>"
+	"соң" post @case #8->7
+"<,>"
+	"," cm @punct #9->10
+"<адам>"
+	"адам" n nom @xcomp #10->11
+"<сияқтанып>"
+	"сияқтан" v iv prc_perf @root #11->0
+"<қалды>"
+	"қал" vaux ifi p3 sg @aux #12->11
+"<.>"
+	"." sent @punct #13->10
+
 "<Дауыстарды>"
 	"дауыс" n pl acc @obj #1->2
 "<санау>"
