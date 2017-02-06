@@ -6634,6 +6634,21 @@
 19	.	.	PUNCT	sent	_	18	punct	_	_
 
 # sent_id = Иран.tagged.txt:104:3074
+# text = Иран әдебиетінің гүлденген кезі — 13 — 14 ғасырлар.
+1	Иран	Иран	PROPN	np	Case=Nom	2	nmod	_	_
+2	әдебиетінің	әдебиет	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
+3	гүлденген	гүлден	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
+4	кезі	кез	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
+5	—	—	PUNCT	guio	_	9	punct	_	_
+6	13	13	NUM	num	_	9	nmod	_	_
+7	—	—	PUNCT	guio	_	9	punct	_	_
+8	14	14	NUM	num	_	9	amod	_	_
+9-10	ғасырлар	_	_	_	_	_	_	_	_
+9	ғасыр	ғасыр	NOUN	n	Case=Nom|Number=Plur	10	root	_	_
+10	_	е	AUX	cop	Number=Plur|Person=3|Tense=Aor	9	cop	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = Иран.tagged.txt:105:3096
 # text = Иран революциясы (1905 — 11) және азаматтық қозғалыс (1918 — 21) кезінде А. Фарахани, М. Кермани, М. Т. Бехар, т.б. ақындар демократиялық идеяның жыршысы болды.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	революциясы	революция	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	conj	_	_
@@ -6669,7 +6684,7 @@
 32	болды	бол	VERB	v	Number=Sing|Person=3|Tense=Past	31	cop	_	_
 33	.	.	PUNCT	sent	_	31	punct	_	_
 
-# sent_id = Иран.tagged.txt:105:3141
+# sent_id = Иран.tagged.txt:106:3163
 # text = Хұзыстан, Курдстан жартастарындағы рельефтер, Сұзыдан табылған, асыл металдан жасалған көркем заттар Иран өнерінің өз заманында жоғары дәрежеде болғанын дәлелдейді.
 1	Хұзыстан	Хұзыстан	PROPN	np	Case=Nom	3	conj	_	_
 2	,	,	PUNCT	cm	_	3	punct	_	_
@@ -6695,7 +6710,7 @@
 22	дәлелдейді	дәлелде	VERB	v	Number=Plur|Person=3|Tense=Aor	0	root	_	_
 23	.	.	PUNCT	sent	_	22	punct	_	_
 
-# sent_id = Иран.tagged.txt:106:3188
+# sent_id = Иран.tagged.txt:107:3210
 # text = Иран жерінде сақтар тарихына қатысты мәдени ескерткіштер де мол сақталған.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
@@ -6710,7 +6725,7 @@
 10	сақталған	сақта	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Иран.tagged.txt:107:3210
+# sent_id = Иран.tagged.txt:108:3232
 # text = Сасани әулеті дәуірінде (3 — 7 ғасырлар) қалаларды қорған ішіне жүйелі жоба бойынша салу қанат жайды (мыс., Нишапур қаласы шахмат жүйесімен салынған).
 1	Сасани	Сасани	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
@@ -6741,7 +6756,7 @@
 27	)	)	PUNCT	rpar	_	26	punct	_	_
 28	.	.	PUNCT	sent	_	18	punct	_	_
 
-# sent_id = Иран.tagged.txt:108:3267
+# sent_id = Иран.tagged.txt:109:3289
 # text = Мүсін жасау, жартастарға рельеф қашау елеулі орын алды.
 1	Мүсін	мүсін	NOUN	n	Case=Nom	2	obj	_	_
 2	жасау	жаса	VERB	v	Case=Nom|VerbForm=Ger	6	conj	_	_
@@ -6754,7 +6769,7 @@
 9	алды	ал	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Иран.tagged.txt:109:3288
+# sent_id = Иран.tagged.txt:110:3310
 # text = Алтын, күміс, қола және әйнектен әр түрлі бұйымдар жасау, жүн және жібек мата тоқу өркен жайды.
 1	Алтын	алтын	ADJ	adj	_	7	conj	_	_
 2	,	,	PUNCT	cm	_	7	punct	_	_
@@ -6777,7 +6792,7 @@
 19	жайды	жай	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 20	.	.	PUNCT	sent	_	19	punct	_	_
 
-# sent_id = Иран.tagged.txt:110:3329
+# sent_id = Иран.tagged.txt:111:3351
 # text = 14 ғасырдан кейін қолжазба көркемдеу, қабырғаға сурет салу дамыды.
 1	14	14	NUM	num	_	2	amod	_	_
 2	ғасырдан	ғасыр	NOUN	n	Case=Abl	10	nmod	_	_
@@ -6791,7 +6806,7 @@
 10	дамыды	дамы	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Иран.tagged.txt:111:3352
+# sent_id = Иран.tagged.txt:112:3374
 # text = 15 ғасырда Иран миниатюрасының өркендеуіне Герат мектебі үлкен әсер етті.
 1	15	15	NUM	num	_	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	9	nmod	_	_
@@ -6805,7 +6820,7 @@
 10	етті	ет	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Иран.tagged.txt:112:3375
+# sent_id = Иран.tagged.txt:113:3397
 # text = 16 — 17 ғасырларда пайда болған Тебриз, Шираз, Исфаһан (Риза Аббаси, т.б.) мектептері миниатюра өнерін жоғары дәрежеге көтерді.
 1	16	16	NUM	num	_	3	conj	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
@@ -6832,7 +6847,31 @@
 23	көтерді	көтер	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 24	.	.	PUNCT	sent	_	23	punct	_	_
 
-# sent_id = Иран.tagged.txt:113:3424
+# sent_id = Иран.tagged.txt:114:3446
+# text = 18 — 19 ғасырларда еуропалық өнердің ықпалымен сулы және майлы бояумен орындалған алғашқы туындылар өмірге келді.
+1	18	18	NUM	num	_	4	nmod	_	_
+2	—	—	PUNCT	guio	_	3	punct	_	_
+3	19	19	NUM	num	_	4	amod	_	_
+4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	14	obl	_	_
+5	еуропалық	еуропалық	ADJ	adj	_	6	amod	_	_
+6	өнердің	өнер	NOUN	n	Case=Gen	7	nmod:poss	_	_
+7	ықпалымен	ықпал	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	13	x	_	_
+8-9	сулы	_	_	_	_	_	_	_	_
+8	су	су	NOUN	n	_	11	conj	_	_
+9	лы	лы	ADP	post	_	8	case	_	_
+10	және	және	CCONJ	cnjcoo	_	11	cc	_	_
+11-12	майлы	_	_	_	_	_	_	_	_
+11	май	май	NOUN	n	_	13	obl	_	_
+12	лы	лы	ADP	post	_	11	case	_	_
+13	бояумен	боя	VERB	v	Case=Ins|VerbForm=Ger	14	advcl	_	_
+14	орындалған	орында	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	16	acl:relcl	_	_
+15	алғашқы	алғашқы	ADJ	adj	_	16	amod	_	_
+16	туындылар	туынды	ADJ	adj	Case=Nom|Number=Plur	18	x	_	_
+17	өмірге	өмір	NOUN	n	Case=Dat	18	obl	_	_
+18	келді	кел	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
+19	.	.	PUNCT	sent	_	18	punct	_	_
+
+# sent_id = Иран.tagged.txt:115:3483
 # text = 20 ғасырда жаңа типті архитектуралық құрылыстар салына бастады.
 1	20	20	NUM	num	_	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	nmod	_	_
@@ -6844,7 +6883,23 @@
 8	бастады	баста	AUX	vaux	Number=Plur|Person=3|Tense=Past	7	aux	_	_
 9	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Иран.tagged.txt:114:3443
+# sent_id = Иран.tagged.txt:116:3502
+# text = Иранның жаңа архитектуралық мұралары қазіргі стиль мен ұлттық үлгідегі сәулет өнерін ұштастырған.
+1	Иранның	Иран	PROPN	np	Case=Gen	4	nmod:poss	_	_
+2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
+3	архитектуралық	архитектуралық	ADJ	adj	_	4	amod	_	_
+4	мұралары	мұра	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
+5	қазіргі	қазіргі	ADJ	adj	_	6	amod	_	_
+6	стиль	стиль	NOUN	n	Case=Nom	8	conj	_	_
+7	мен	мен	CCONJ	cnjcoo	_	8	cc	_	_
+8	ұлттық	ұлттық	ADJ	adj	_	9	amod	_	_
+9	үлгідегі	үлгі	NOUN	n	Case=Loc	10	amod	_	_
+10	сәулет	сәулет	NOUN	n	Case=Nom	12	nmod:poss	_	_
+11	өнерін	өнер	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	obj	_	_
+12	ұштастырған	ұштастыр	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
+13	.	.	PUNCT	sent	_	12	punct	_	_
+
+# sent_id = Иран.tagged.txt:117:3529
 # text = 20 ғасырдың басынан мүсін, графика, кескіндеме жанры дамып келеді.
 1	20	20	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
@@ -6859,7 +6914,7 @@
 11	келеді	кел	AUX	vaux	Number=Sing|Person=3|Tense=Aor	10	aux	_	_
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Иран.tagged.txt:115:3468
+# sent_id = Иран.tagged.txt:118:3554
 # text = Сән және қосалқы өнердің дәстүрлі түрлері сақталған.
 1	Сән	сән	NOUN	n	Case=Nom	3	conj	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
@@ -6870,7 +6925,7 @@
 7	сақталған	сақта	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Иран.tagged.txt:116:3485
+# sent_id = Иран.tagged.txt:119:3571
 # text = Кәсіби және халық музыкасының ғасырлық дәстүрі бар.
 1	Кәсіби	кәсіби	ADJ	adj	_	3	conj	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
@@ -6883,7 +6938,23 @@
 8	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	7	cop	_	_
 9	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Иран.tagged.txt:117:3503
+# sent_id = Иран.tagged.txt:120:3589
+# text = Иран музыкасы, негізінен, монодиялық (бір дауысты) түрде кездеседі.
+1	Иран	Иран	PROPN	np	Case=Nom	1	nmod:poss	_	_
+2	музыкасы	музыка	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
+3	,	,	PUNCT	cm	_	2	punct	_	_
+4	негізінен	негізінен	ADV	adv	_	12	advmod	_	_
+5	,	,	PUNCT	cm	_	4	punct	_	_
+6	монодиялық	монодиялық	ADJ	adj	_	11	amod	_	_
+7	(	(	PUNCT	lpar	_	9	punct	_	_
+8	бір	бір	NUM	num	_	9	nummod	_	_
+9	дауысты	дауысты	ADJ	adj	Case=Nom	6	appos	_	_
+10	)	)	PUNCT	rpar	_	9	punct	_	_
+11	түрде	түр	NOUN	n	Case=Loc	12	obl	_	_
+12	кездеседі	кездес	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	_
+13	.	.	PUNCT	sent	_	12	punct	_	_
+
+# sent_id = Иран.tagged.txt:121:3616
 # text = Арабтар жаулап алғаннан кейін Иран музыкасына мұсылмандық араб мәдениетінің ықпалы тиді.
 1	Арабтар	араб	NOUN	n	Case=Nom|Number=Plur	2	nsubj	_	_
 2	жаулап	жаула	VERB	v	Aspect=Perf|VerbForm=Cov	11	advcl	_	_
@@ -6898,7 +6969,7 @@
 11	тиді	ти	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 12	.	.	PUNCT	sent	_	11	punct	_	_
 
-# sent_id = Иран.tagged.txt:118:3528
+# sent_id = Иран.tagged.txt:122:3641
 # text = 9 ғасырдан бастап сарай өнері дамып, халық арасында мутребтердің (әнші-бишілер) даңқы жойылды.
 1	9	9	NUM	num	_	2	amod	_	_
 2	ғасырдан	ғасыр	NOUN	n	Case=Abl	3	nmod	_	_
@@ -6917,7 +6988,7 @@
 15	жойылды	жой	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
-# sent_id = Иран.tagged.txt:119:3561
+# sent_id = Иран.tagged.txt:123:3674
 # text = 19 ғасырдың 2-жартысынан Иран музыкасына еуропалық музыка мәдениеті әсер етті.
 1	19	19	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
@@ -6933,7 +7004,18 @@
 12	етті	ет	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
-# sent_id = Иран.tagged.txt:120:3588
+# sent_id = Иран.tagged.txt:124:3701
+# text = Театр өнерінің халықтық салт-дәстүрлерде жатыр.
+1	Театр	театр	NOUN	n	Case=Nom	2	nmod:poss	_	_
+2	өнерінің	өнер	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
+3	халықтық	халықтық	ADJ	adj	_	5	amod	_	_
+4	салт	салт	NOUN	n	Case=Nom	6	compound	_	_
+5	-	-	PUNCT	guio	_	7	punct	_	_
+6	дәстүрлерде	дәстүр	NOUN	n	Case=Loc|Number=Plur	8	obl	_	_
+7	жатыр	жат	AUX	vaux	Number=Sing|Person=3|Tense=Pres	0	root	_	_
+8	.	.	PUNCT	sent	_	8	punct	_	_
+
+# sent_id = Иран.tagged.txt:125:3718
 # text = Ежелгі базигер театры жайлы деректер сақталған.
 1	Ежелгі	ежелгі	ADJ	adj	_	3	amod	_	_
 2	базигер	базигер	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -6943,7 +7025,7 @@
 6	сақталған	сақта	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = Иран.tagged.txt:121:3603
+# sent_id = Иран.tagged.txt:126:3733
 # text = Пантомима, көлеңке және қуыршақ театрлары болған.
 1	Пантомима	пантомима	NOUN	n	Case=Nom	5	conj	_	_
 2	,	,	PUNCT	cm	_	5	punct	_	_
@@ -6954,7 +7036,7 @@
 7	болған	бол	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Иран.tagged.txt:122:3620
+# sent_id = Иран.tagged.txt:127:3750
 # text = 10 ғасырда пайда болған мистерия діни ғұрып шахсей-вахсейдің құрамына енді.
 1	10	10	NUM	num	_	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	4	nmod	_	_
@@ -6968,7 +7050,23 @@
 10	енді	ен	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = Иран.tagged.txt:123:3643
+# sent_id = Иран.tagged.txt:128:3773
+# text = 17 — 18 ғасырларда ол трагедиялық мистерия түрлерінің бірі — тазийенің негізін.
+1	17	17	NUM	num	_	3	nmod	_	_
+2	—	—	PUNCT	guio	_	4	punct	_	_
+3	18	18	NUM	num	_	4	amod	_	_
+4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	13	obl	_	_
+5	ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+6	трагедиялық	трагедиялық	ADJ	adj	_	7	amod	_	_
+7	мистерия	мистерия	NOUN	n	Case=Nom	8	nmod:poss	_	_
+8	түрлерінің	түр	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
+9	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	conj	_	_
+10	—	—	PUNCT	guio	_	12	punct	_	_
+11	тазийенің	тазийе	NOUN	n	Case=Gen	12	nmod:poss	_	_
+12	негізін	негіз	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	13	obj	_	_
+13	.	.	PUNCT	sent	_	13	punct	_	_
+
+# sent_id = Иран.tagged.txt:129:3800
 # text = 20 ғасырдың 30-жылдарына дейін кезбе актерлер — масқарапаздар өнер көрсетіп келді.
 1	20	20	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
@@ -6985,7 +7083,7 @@
 13	келді	кел	AUX	vaux	Number=Plur|Person=3|Tense=Past	12	aux	_	_
 14	.	.	PUNCT	sent	_	12	punct	_	_
 
-# sent_id = Иран.tagged.txt:124:3672
+# sent_id = Иран.tagged.txt:130:3829
 # text = 1911 — 12 ж. еуропалық театрлар тәжірибелерін пайдалана отырып Ұлттық театр, 1917 ж. Иранның комедия театры ашылды.
 1	1911	1911	NUM	num	_	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
@@ -7007,7 +7105,7 @@
 18	ашылды	аш	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 19	.	.	PUNCT	sent	_	18	punct	_	_
 
-# sent_id = Иран.tagged.txt:125:3711
+# sent_id = Иран.tagged.txt:131:3868
 # text = Бұл театрларды құруда актер Сейед Әли Нәсірдің еңбегі зор.
 1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
 2	театрларды	театр	NOUN	n	Case=Acc|Number=Plur	3	obj	_	_
@@ -7022,7 +7120,7 @@
 10	_	е	AUX	cop	Number=Sing|Person=3|Tense=Aor	9	cop	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Иран.tagged.txt:126:3733
+# sent_id = Иран.tagged.txt:132:3890
 # text = 1929 жылдан бастап әйел актерлер көріне бастады.
 1	1929	1929	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	nmod	_	_
@@ -7033,7 +7131,7 @@
 7	бастады	баста	AUX	vaux	Number=Sing|Person=3|Tense=Past	6	aux	_	_
 8	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = Иран.tagged.txt:127:3750
+# sent_id = Иран.tagged.txt:133:3907
 # text = 1930 — 40 ж. театр репертуарларынан өңделген Батыс Еуропа драмалары мен мелодрамалар орын алды.
 1	1930	1930	NUM	num	_	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
@@ -7051,7 +7149,7 @@
 14	алды	ал	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Иран.tagged.txt:128:3781
+# sent_id = Иран.tagged.txt:134:3938
 # text = 1940 жылдан Иран театры дағдарысқа ұшырады, 1960 жылдардың басында қайта өрлеу жолына түсті.
 1	1940	1940	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	6	nmod	_	_
@@ -7069,7 +7167,7 @@
 14	түсті	түс	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
-# sent_id = Иран.tagged.txt:129:3812
+# sent_id = Иран.tagged.txt:135:3969
 # text = 1963 ж. Тегеранда кәсіби актерлер дайындайтын драм. студия ашылды.
 1	1963	1963	NUM	num	_	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	9	nmod	_	_
@@ -7082,7 +7180,7 @@
 9	ашылды	аш	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
-# sent_id = Иран.tagged.txt:130:3833
+# sent_id = Иран.tagged.txt:136:3990
 # text = 1968 жылдан бастап Ширазда театр фестивалы өткізіліп тұрды.
 1	1968	1968	NUM	num	_	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	nmod	_	_
@@ -7094,7 +7192,7 @@
 8	тұрды	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Past	7	aux	_	_
 9	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = Иран.tagged.txt:131:3852
+# sent_id = Иран.tagged.txt:137:4009
 # text = 20 ғасырдың 40-жылдарына дейін, көбінесе, шетелдік фильмдер көрсетіліп келді.
 1	20	20	NUM	num	_	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
@@ -7111,7 +7209,42 @@
 13	келді	кел	AUX	vaux	Number=Plur|Person=3|Tense=Past	12	aux	_	_
 14	.	.	PUNCT	sent	_	12	punct	_	_
 
-# sent_id = Иран.tagged.txt:132:3881
+# sent_id = Иран.tagged.txt:138:4038
+# text = 1946 ж. Тегеранда “Митра-фильм” киностудиясы құрылды.
+1	1946	1946	NUM	num	_	2	amod	_	_
+2	ж.	ж.	NOUN	abbr	_	10	obl	_	_
+3	Тегеранда	Тегеран	PROPN	np	Case=Loc	10	obl	_	_
+4	“	“	PUNCT	lquot	_	7	punct	_	_
+5	Митра	митра	NOUN	n	Case=Nom	7	flat	_	_
+6	-	-	PUNCT	guio	_	7	punct	_	_
+7	фильм	фильм	NOUN	n	Case=Nom	9	flat	_	_
+8	”	”	PUNCT	rquot	_	7	punct	_	_
+9	киностудиясы	киностудия	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
+10	құрылды	құр	VERB	v	Number=Sing|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+11	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = Иран.tagged.txt:139:4061
+# text = 1960 — 1970 ж. музыкалық комедияларға, шағын драмаларға, мифтік және тарихи сюжеттерге құрылған фильмдер қойылды.
+1	1960	1960	NUM	num	_	4	nmod	_	_
+2	—	—	PUNCT	guio	_	4	punct	_	_
+3	1970	1970	NUM	num	_	4	amod	_	_
+4	ж.	ж.	NOUN	abbr	_	17	obl	_	_
+5	музыкалық	музыкалық	ADJ	adj	_	6	amod	_	_
+6	комедияларға	комедия	NOUN	n	Case=Dat|Number=Plur	13	conj	_	_
+7	,	,	PUNCT	cm	_	13	punct	_	_
+8	шағын	шағын	ADJ	adj	_	9	amod	_	_
+9	драмаларға	драма	NOUN	n	Case=Dat|Number=Plur	13	conj	_	_
+10	,	,	PUNCT	cm	_	13	punct	_	_
+11	мифтік	мифтік	ADJ	adj	_	13	conj	_	_
+12	және	және	CCONJ	cnjcoo	_	13	cc	_	_
+13	тарихи	тарихи	ADJ	adj	_	14	amod	_	_
+14	сюжеттерге	сюжет	NOUN	n	Case=Dat|Number=Plur	15	obl	_	_
+15	құрылған	құр	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	16	acl:relcl	_	_
+16	фильмдер	фильм	NOUN	n	Case=Nom|Number=Plur	17	nsubj	_	_
+17	қойылды	қой	VERB	v	Number=Plur|Person=3|Tense=Past|Voice=Pass	0	root	_	_
+18	.	.	PUNCT	sent	_	17	punct	_	_
+
+# sent_id = Иран.tagged.txt:140:4098
 # text = Тегеранда 1955 жылдан халықаралық, 1970 жылдан ұлттық кинофестивальдер өткізіліп тұрады.
 1	Тегеранда	Тегеран	PROPN	np	Case=Loc	10	nmod	_	_
 2	1955	1955	NUM	num	_	3	amod	_	_
@@ -7125,6 +7258,33 @@
 10	өткізіліп	өткіз	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	0	root	_	_
 11	тұрады	тұр	AUX	vaux	Number=Sing|Person=3|Tense=Aor	10	aux	_	_
 12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = Иран.tagged.txt:141:4123
+# text = Иран кинематографиясының дамуына реж. И. Кушан, М. Мисагие, Мохтасем, М. Мохсени, С. Ясеми, Ш. Рафия елеулі үлес қосты.
+1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
+2	кинематографиясының	кинематография	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
+3	дамуына	даму	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	24	obl	_	_
+4	реж.	реж.	_	_	_	24	nsubj	_	_
+5	И.	И.	NOUN	abbr	_	7	flat:name	_	_
+6	Кушан	Кушан	PROPN	np	Case=Nom	21	conj	_	_
+7	,	,	PUNCT	cm	_	21	punct	_	_
+8	М.	М.	NOUN	abbr	_	10	flat:name	_	_
+9	Мисагие	Мисагие	PROPN	np	Case=Nom	21	conj	_	_
+10	,	,	PUNCT	cm	_	21	punct	_	_
+11	Мохтасем	Мохтасем	PROPN	np	Case=Nom	21	conj	_	_
+12	,	,	PUNCT	cm	_	21	punct	_	_
+13	М.	М.	NOUN	abbr	_	15	flat:name	_	_
+14	Мохсени	Мохсени	PROPN	np	Case=Nom	21	conj	_	_
+15	,	,	PUNCT	cm	_	21	punct	_	_
+16	С.	С.	NOUN	abbr	_	18	flat:name	_	_
+17	Ясеми	Ясеми	PROPN	np	Case=Nom	21	conj	_	_
+18	,	,	PUNCT	cm	_	21	punct	_	_
+19	Ш.	Ш.	NOUN	abbr	_	21	flat:name	_	_
+20	Рафия	Рафия	PROPN	np	Case=Nom	5	appos	_	_
+21	елеулі	елеулі	ADJ	adj	_	23	amod	_	_
+22	үлес	үлес	NOUN	n	Case=Nom	24	obj	_	_
+23	қосты	қос	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
+24	.	.	PUNCT	sent	_	24	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:1:0
 # text = Абонемент бөлімі кітаптар мен журналдарды үйге тегін береді.
