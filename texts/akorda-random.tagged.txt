@@ -71,34 +71,23 @@
 
 # - Көші-қон мәселелерін реттеу Қазақстан үшін маңызды болып саналады .	“ Regulation of migration issues is important for Kazakhstan .	
 "<->"
-	"-" guio
-	"х" guio
+	"-" guio @punct #1->8
 "<Көші-қон>"
-	"көші-қон" n nom
-	"көші-қон" n attr
+	"көші-қон" n nom @nmod:poss #2->3
 "<мәселелерін>"
-	"мәселе" n pl px3sp acc
+	"мәселе" n pl px3sp acc @obj #3->4
 "<реттеу>"
-	"ретте" v tv ger nom
-	"реттеу" n nom
-	"реттеу" n attr
+	"ретте" v tv ger nom @csubj #4->8
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @obl #5->8
 "<үшін>"
-	"үшін" post
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #6->5
 "<маңызды>"
-	"маңыз" n acc
-	"маңызды" adj
-	"маңыз" n
-		"лы" post
-	"маңызды" adj subst nom
+	"маңыз" n acc @obj #7->8
 "<болып саналады>"
-	"болып санал" v tv aor p3 sg
+	"болып санал" v tv aor p3 sg @root #8->0
 "<.>"
-	"." sent
+	"." sent @punct #9->8
 
 # қазіргі кезде қаланың ішкі өңірлік өнімі 20 есе өсті .	these days , the city ’ s internatl regional product has increased by 20 times .	
 "<Қазіргі>"

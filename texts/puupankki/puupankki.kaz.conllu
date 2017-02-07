@@ -31,6 +31,19 @@
 8	қолдайды	қолда	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
+# sent_id = akorda-random.tagged.txt:4:50
+# text = - Көші-қон мәселелерін реттеу Қазақстан үшін маңызды болып саналады.
+1	-	-	PUNCT	guio	_	9	punct	_	_
+2	Көші-қон	көші-қон	NOUN	n	Case=Nom	3	nmod:poss	_	_
+3	мәселелерін	мәселе	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
+4	реттеу	ретте	VERB	v	Case=Nom|VerbForm=Ger	9	csubj	_	_
+5	Қазақстан	Қазақстан	PROPN	np	Case=Nom	9	obl	_	_
+6	үшін	үшін	ADP	post	_	5	case	_	_
+7	маңызды	маңыз	NOUN	n	Case=Acc	9	obj	_	_
+8	болып	болып	X	x	_	9	dep	_	_
+9	саналады	санал	VERB	v	Number=Sing|Person=3|Tense=Aor	0	root	_	_
+10	.	.	PUNCT	sent	_	9	punct	_	_
+
 # sent_id = Махамбет_Өтемісұлы.tagged.txt:1:0
 # text = 1939 ж. Қ. Жұмалиев Махамбет өлеңдерінің жинағын шығарды.
 1	1939	1939	NUM	num	_	2	amod	_	_
