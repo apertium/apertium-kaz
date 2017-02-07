@@ -91,6 +91,45 @@
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = wikipedia-news.tagged.txt:6:110
+# text = Белгілі ғалым, академик Қаныш Сәтбаевтың үлкен қызы, медицина ғылымдарының докторы, профессор Қаниса Қанышқызы Сәтбаева қайтыс болды.
+1	Белгілі	белгілі	ADJ	adj	_	2	amod	_	_
+2	ғалым	ғалым	NOUN	n	Case=Nom	19	nsubj	_	_
+3	,	,	PUNCT	cm	_	2	punct	_	_
+4	академик	академик	NOUN	n	Case=Nom	6	flat:name	_	_
+5	Қаныш	Қаныш	PROPN	np	Case=Nom|Gender=Masc	6	flat:name	_	_
+6	Сәтбаевтың	Сәтбаев	PROPN	np	Case=Gen|Gender=Masc	8	nmod:poss	_	_
+7	үлкен	үлкен	ADJ	adj	_	8	amod	_	_
+8	қызы	қыз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	appos	_	_
+9	,	,	PUNCT	cm	_	8	punct	_	_
+10	медицина	медицина	NOUN	n	Case=Nom	11	nmod:poss	_	_
+11	ғылымдарының	ғылым	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod:poss	_	_
+12	докторы	доктор	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	appos	_	_
+13	,	,	PUNCT	cm	_	12	punct	_	_
+14	профессор	профессор	NOUN	n	Case=Nom	17	flat:name	_	_
+15	Қаниса	Қаниса	PROPN	np	Case=Nom|Gender=Fem	17	flat:name	_	_
+16	Қанышқызы	Қанышқызы	PROPN	np	Case=Nom|Gender=Fem	17	flat:name	_	_
+17	Сәтбаева	Сәтбаев	PROPN	np	Case=Nom|Gender=Fem	2	appos	_	_
+18	қайтыс	қайтыс	X	x	_	19	dep	_	_
+19	болды	бол	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+20	.	.	PUNCT	sent	_	19	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:7:151
+# text = Қазақстанның денсаулық сақтау министрі қызметін атқарған Салидат Қайырбекова ауыр сырқаттан көз жұмды.
+1	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	4	nmod:poss	_	_
+2	денсаулық	денсаулық	NOUN	n	Case=Nom	4	compound	_	_
+3	сақтау	сақтау	NOUN	n	Case=Nom	4	compound	_	_
+4	министрі	министр	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+5	қызметін	қызмет	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
+6	атқарған	атқар	VERB	v	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
+7	Салидат	Салидат	PROPN	np	Case=Nom|Gender=Fem	8	flat:name	_	_
+8	Қайырбекова	Қайырбеков	PROPN	np	Case=Nom|Gender=Fem	12	nsubj	_	_
+9	ауыр	ауыр	ADJ	adj	_	10	amod	_	_
+10	сырқаттан	сырқат	NOUN	n	Case=Abl	12	obl	_	_
+11	көз	көз	NOUN	n	Case=Nom	12	obj	_	_
+12	жұмды	жұм	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
+13	.	.	PUNCT	sent	_	12	punct	_	_
+
+# sent_id = wikipedia-news.tagged.txt:8:178
 # text = Футболдан Еуропа чемпионатының финалдық матчында Португалия құрамасы Франция командасын жеңіп Еуропа чемпионы атанды.
 1	Футболдан	футбол	NOUN	n	Case=Abl	3	nmod	_	_
 2	Еуропа	Еуропа	PROPN	np	Case=Nom	3	nmod:poss	_	_
@@ -107,7 +146,7 @@
 13	атанды	атан	VERB	v	Number=Sing|Person=3|Tense=Past	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:7:139
+# sent_id = wikipedia-news.tagged.txt:9:207
 # text = Алматы қаласында лаңкестік әрекет орын алып, 5 полиция қызметкері мен 1 бейбіт тұрғын қаза тапты.
 1	Алматы	Алматы	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	қаласында	қала	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
@@ -127,7 +166,7 @@
 16	тапты	тап	VERB	v	Number=Plur|Person=3|Tense=Past	0	root	_	_
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
-# sent_id = wikipedia-news.tagged.txt:8:174
+# sent_id = wikipedia-news.tagged.txt:10:242
 # text = 5 полиция қызметкері жарақаттанған.
 1	5	5	NUM	num	_	3	nummod	_	_
 2	полиция	полиция	NOUN	n	Case=Nom	3	nmod:poss	_	_

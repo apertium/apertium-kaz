@@ -1136,62 +1136,43 @@
 	"." sent
 
 "<Белгілі>"
-	"белгілі" adj
-	"белгілі" adv
-	"белгі" n
-		"лы" post
-	"белгілі" n nom
-	"белгілі" n attr
+	"белгілі" adj @amod #1->2
 "<ғалым>"
-	"ғалым" n nom
-	"ғалым" n nom
-		"е" cop aor p3 sg
+	"ғалым" n nom @nsubj #2->18
 "<,>"
-	"," cm
+	"," cm @punct #3->2
 "<академик>"
-	"академик" n nom
-"<Қаныш>"
-	"*Қаныш"
+	"академик" n nom @flat:name #4->6
+"<Қаныш>" 
+	"Қаныш" np ant m nom @flat:name #5->6
 "<Сәтбаевтың>"
-	"Сәтбаев" np cog m gen
+	"Сәтбаев" np cog m gen @nmod:poss #6->8
 "<үлкен>"
-	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" n attr
-	"үлкен" adj advl
+	"үлкен" adj @amod #7->8
 "<қызы>"
-	"қызы" n nom
-	"қыз" n px3sp nom
-		"е" cop aor p3 sg
-	"қыз" n px3sp nom
-	"қызы" n nom
-		"е" cop aor p3 sg
+	"қыз" n px3sp nom @appos #8->2
 "<,>"
-	"," cm
+	"," cm @punct #9->8
 "<медицина>"
-	"медицина" n nom
-	"медицина" n attr
+	"медицина" n nom @nmod:poss #10->11
 "<ғылымдарының>"
-	"ғылым" n pl px3sp gen
+	"ғылым" n pl px3sp gen @nmod:poss #11->12
 "<докторы>"
-	"доктор" n px3sp nom
-	"доктор" n px3sp nom
-		"е" cop aor p3 sg
+	"доктор" n px3sp nom @appos #12->8
 "<,>"
-	"," cm
+	"," cm @punct #13->12
 "<профессор>"
-	"профессор" n nom
+	"профессор" n nom @flat:name #14->17
 "<Қаниса>"
-	"*Қаниса"
+	"Қаниса" np ant f nom @flat:name #15->17
 "<Қанышқызы>"
-	"*Қанышқызы"
+	"Қанышқызы" np ant f nom @flat:name #16->17
 "<Сәтбаева>"
-	"Сәтбаев" np cog f nom
+	"Сәтбаев" np cog f nom @appos #17->2
 "<қайтыс болды>"
-	"қайтыс бол" v tv ifi p3 sg
-	"қайтыс бол" v iv ifi p3 sg
+	"қайтыс бол" v iv ifi p3 sg @root #18->0
 "<.>"
-	"." sent
+	"." sent @punct #19->18
 
 "<Лондонда>"
 	"Лондон" np top loc
@@ -1391,39 +1372,31 @@
 	"." sent
 
 "<Қазақстанның>"
-	"Қазақстан" np top gen
+	"Қазақстан" np top gen @nmod:poss #1->4
 "<денсаулық>"
-	"денсаулық" n nom
-	"денсаулық" n attr
-"<сақтау>"
-	"сақта" v tv ger nom
-	"сақтау" n nom
-	"сақтау" n attr
+	"денсаулық" n attr @compound #2->4
+"<сақтау>" 
+	"сақтау" n attr @compound #3->4
 "<министрі>"
-	"министр" n px3sp nom
+	"министр" n px3sp nom @nsubj #4->6
 "<қызметін>"
-	"қызмет" n px3sp acc
+	"қызмет" n px3sp acc @obj #5->6
 "<атқарған>"
-	"атқар" v tv gpr_past
-	"атқар" v tv ger_past nom
-	"атқар" v tv gpr_past subst nom
-	"атқар" v tv past p3 sg
+	"атқар" v tv gpr_past @acl:relcl #6->7
 "<Салидат>"
-	"*Салидат"
+	"Салидат" np ant f nom @flat:name #7->8
 "<Қайырбекова>"
-	"Қайырбеков" np cog f nom
+	"Қайырбеков" np cog f nom @nsubj #8->12
 "<ауыр>"
-	"ауыр" adj
-	"ауыр" n nom
-	"ауыр" n attr
+	"ауыр" adj @amod #9->10
 "<сырқаттан>"
-	"сырқат" n abl
+	"сырқат" n abl @obl #10->12
 "<көз>"
-	"көз" n nom
+	"көз" n nom @obj #11->12
 "<жұмды>"
-	"жұм" v tv ifi p3 sg
+	"жұм" v tv ifi p3 sg @root #12->0
 "<.>"
-	"." sent
+	"." sent @punct #13->12
 
 "<Танымал>"
 	"танымал" adj
