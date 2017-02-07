@@ -944,7 +944,7 @@
 
 "<Шектес>"
 	"шектес" adj @amod #1->2
-"<теңіздері>"'
+"<теңіздері>"
 	"теңіз" n pl px3sp nom @nsubj #2->4
 "<балыққа>"
 	"балық" n dat @obl #3->4
@@ -3054,7 +3054,7 @@
 "<партияларға>"
 	"партия" n pl dat @obj #2->3
 "<тыйым салынды>"
-	"тыйым сал" v tv pass ifi p3 sg @parataxis #3->30
+	"тыйым сал" v tv pass ifi p3 sg @parataxis #3->28
 "<,>"
 	"," cm @punct #4->3
 "<шаһ>"
@@ -3695,7 +3695,7 @@
 "<Сол>"
 	"сол" det dem @det #1->2
 "<кезегінде>"
-	"кезек" n px3sp loc @obl #1->18
+	"кезек" n px3sp loc @obl #2->18
 "<Иран>"
 	"Иран" np top nom @nmod:poss #3->4
 "<басшылары да>"
@@ -4373,7 +4373,7 @@
 "<14>"
 	"14" num @amod #8->9
 "<ғасырлар>"
-	"ғасыр" n pl nom @root #9->10
+	"ғасыр" n pl nom @root #9->0
 		"е" cop aor p3 pl @cop #10->9
 "<.>"
 	"." sent @punct #11->9
@@ -5358,7 +5358,7 @@
 "<өнердің>"
 	"өнер" n gen @nmod:poss #6->7
 "<ықпалымен>"
-	"ықпал" n px3sp ins @x #7->13
+	"ықпал" n px3sp ins @obl #7->13
 "<сулы>"
 	"су" n @conj #8->11
 		"лы" post @case #9->8
@@ -5374,7 +5374,7 @@
 "<алғашқы>"
 	"алғашқы" adj @amod #15->16
 "<туындылар>"
-	"туынды" adj subst pl nom @x #16->18
+	"туынды" adj subst pl nom @nsubj #16->18
 "<өмірге>"
 	"өмір" n dat @obl #17->18
 "<келді>"
@@ -5489,7 +5489,7 @@
 	"." sent @punct #9->7
 
 "<Иран>"
-	"Иран" np top nom @nmod:poss #1->1
+	"Иран" np top nom @nmod:poss #1->2
 "<музыкасы>"
 	"музыка" n px3sp nom @nsubj #2->12
 "<,>"
@@ -5941,9 +5941,9 @@
 "<негізі>"
 	"негіз" n px3sp nom @nsubj #3->8
 "<халықтық>"
-	"халықтық" adj @amod #3->5
+	"халықтық" adj @amod #4->6
 "<салт>"
-	"салт" n attr @compound #4->6
+	"салт" n attr @compound #5->6
 "<->" 
 	"-" guio @punct #6->7
 "<дәстүрлерде>"
@@ -6031,7 +6031,7 @@
 "<негізін>"
 	"негіз" n px3sp acc @obj #12->13
 "<қалады>"
-;	"қала" v tv ifi p3 pl @root #13->0
+	"қала" v tv ifi p3 pl @root #13->0
 "<.>"
 	"." sent @punct #14->13
 
@@ -6510,7 +6510,7 @@
 "<(>"
 	"(" lpar @punct
 "<реж.>"
-	"реж."
+	"реж." n
 "<А.>"
 	"А." abbr
 "<Х.>"
@@ -6644,47 +6644,47 @@
 "<кинематографиясының>"
 	"кинематография" n px3sp gen @nmod:poss #2->3
 "<дамуына>"
-	"даму" n px3sp dat @obl #4->24
+	"даму" n px3sp dat @obl #3->24
 "<реж.>"
-	"реж." @nsubj #5->24
+	"реж." abbr @nsubj #4->24
 "<И.>"
-	"И." abbr @flat:name #6->7
+	"И." abbr @flat:name #5->6
 "<Кушан>"
-	"Кушан" np cog mf nom @conj #7->21
+	"Кушан" np cog mf nom @conj #6->20
 "<,>"
-	"," cm @punct #8->21
+	"," cm @punct #7->20
 "<М.>"
-	"М." abbr @flat:name #9->10
+	"М." abbr @flat:name #8->9
 "<Мисагие>"
-	"Мисагие" np cog mf nom @conj #10->21
+	"Мисагие" np cog mf nom @conj #9->20
 "<,>"
-	"," cm @punct #11->21
+	"," cm @punct #10->20
 "<Мохтасем>"
-	"Мохтасем" np cog mf nom @conj #12->21
+	"Мохтасем" np cog mf nom @conj #11->20
 "<,>"
-	"," cm @punct #13->21
+	"," cm @punct #12->20
 "<М.>"
-	"М." abbr @flat:name #14->15
+	"М." abbr @flat:name #13->14
 "<Мохсени>"
-	"Мохсени" np cog mf nom @conj #15->21
+	"Мохсени" np cog mf nom @conj #14->20
 "<,>"
-	"," cm @punct #16->21
+	"," cm @punct #15->20
 "<С.>"
-	"С." abbr @flat:name #17->18
+	"С." abbr @flat:name #16->17
 "<Ясеми>"
-	"Ясеми" np cog mf nom @conj #18->21
+	"Ясеми" np cog mf nom @conj #17->20
 "<,>"
-	"," cm @punct #19->21
+	"," cm @punct #18->20
 "<Ш.>"
-	"Ш." abbr @flat:name #20->21
+	"Ш." abbr @flat:name #19->20
 "<Рафия>"
-	"Рафия" np cog mf nom @appos #21->5
+	"Рафия" np cog mf nom @appos #20->4
 "<елеулі>"
-	"елеулі" adj @amod #22->23
+	"елеулі" adj @amod #21->22
 "<үлес>"
-	"үлес" n nom @obj #23->24
+	"үлес" n nom @obj #22->23
 "<қосты>"
-	"қос" v tv ifi p3 pl @root #24->0
+	"қос" v tv ifi p3 pl @root #23->0
 "<.>"
-	"." sent @punct #25->24
+	"." sent @punct #24->23
 
