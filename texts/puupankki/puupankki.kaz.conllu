@@ -1055,7 +1055,7 @@
 
 # sent_id = kdt.tagged.txt:21:360
 # text = Қазақта жер көп.
-1	Қазақта	қазақ	NOUN	n	Case=Loc	3	nmod:own	_	_
+1	Қазақта	қазақ	NOUN	n	Case=Loc	3	obl:own	_	_
 2	жер	жер	NOUN	n	Case=Nom	3	nsubj	_	_
 3-4	көп	_	_	_	_	_	_	_	_
 3	көп	көп	ADJ	adj	_	0	root	_	_
@@ -1623,7 +1623,7 @@
 2	болмаса	бол	VERB	v	Mood=Cnd|Number=Sing|Person=3|Polarity=Neg|VerbForm=Conv	1	cop	_	_
 3	,	,	PUNCT	cm	_	8	punct	_	_
 4	бұ	бұл	DET	det	PronType=Dem	5	det	_	_
-5	қызда	қыз	NOUN	n	Case=Loc	8	nmod:own	_	_
+5	қызда	қыз	NOUN	n	Case=Loc	8	obl:own	_	_
 6	не	не	DET	det	PronType=Int	7	det	_	_
 7	жазық	жазық	NOUN	n	Case=Nom	8	nsubj	_	_
 8	бар	бар	ADJ	adj	_	0	root	_	_
@@ -2753,7 +2753,7 @@
 
 # sent_id = kdt.tagged.txt:177:2856
 # text = Менде не сын қалды дейсің?
-1	Менде	мен	PRON	prn	Case=Loc|Number=Sing|Person=1|PronType=Prs	5	nmod:own	_	_
+1	Менде	мен	PRON	prn	Case=Loc|Number=Sing|Person=1|PronType=Prs	5	obl:own	_	_
 2	не	не	DET	det	PronType=Int	3	det	_	_
 3	сын	сын	NOUN	n	Case=Nom	4	nsubj	_	_
 4	қалды	қал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	ccomp	_	_

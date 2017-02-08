@@ -360,7 +360,7 @@
 	"." sent @punct #11->4
 
 "<Қазақта>"
-	"қазақ" n loc @nmod:own #1->3
+	"қазақ" n loc @obl:own #1->3
 "<жер>"
 	"жер" n nom @nsubj #2->3
 "<көп>"
@@ -1201,7 +1201,7 @@
 "<бұ>"
 	"бұл" det dem @det #4->5
 "<қызда>"
-	"қыз" n loc @nmod:own #5->8
+	"қыз" n loc @obl:own #5->8
 "<не>"
 	"не" det itg @det #6->7
 "<жазық>"
@@ -2856,7 +2856,7 @@
 	"?" sent @punct #4->2
 
 "<Менде>"
-	"мен" prn pers p1 sg loc @nmod:own #1->5
+	"мен" prn pers p1 sg loc @obl:own #1->5
 "<не>"
 	"не" det itg @det #2->3
 "<сын>"
