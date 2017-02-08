@@ -1,0 +1,184 @@
+"<Сегіз>"
+	"сегіз" num
+"<жыл>"
+	"жыл" n nom
+	"жыл" n attr
+"<бал>"
+	"бал" n nom
+"<алысып>"
+	"ал" v iv coop prc_perf
+	"алыс" v iv prc_perf
+"<тұрған>"
+	"тұр" vaux past p3 sg
+	"тұр" vaux ger_past nom
+"<,>"
+	"," cm
+"<еш>"
+	"еш" adv
+"<шай>"
+	"шай" n nom
+	"шай" n nom
+		"е" cop aor p3 sg
+	"шай" v tv imp p2 sg
+"<деспеген>"
+	"де" v tv coop neg gpr_past
+	"де" v tv coop neg gpr_past subst nom
+"<жан>"
+	"жан" n nom
+	"жан" n attr
+"<жары>"
+	"жар" n px3sp nom
+"<Сәрсенбайдың>"
+	"Сәрсенбай" np ant m gen
+"<көзіне>"
+	"көз" n px3sp dat
+"<шөп>"
+	"шөп" n nom
+"<салу>"
+	"сал" v tv ger nom
+"<үшін>"
+	"үшін" post
+	"үш" n px3sp acc
+	"үш" num subst px3sp acc
+"<Әзімбайды>"
+	"Әзімбай" np ant m acc
+"<күтеді>"
+	"күт" v tv aor p3 sg
+"<.>"
+	"." sent
+
+"<Не>"
+	"не" prn itg nom @x #1->
+"<үшін>"
+	"үшін" post @case #2->
+	"үш" n px3sp acc @obj #2->
+	"үш" num subst px3sp acc @obj #2->
+"<?>"
+	"?" sent @punct #3->
+
+"<Бала>"
+	"бала" n nom @x #1->
+	"бала" n attr @x #1->
+"<үшін>"
+	"үшін" post @case #2->
+	"үш" n px3sp acc @obj #2->
+	"үш" num subst px3sp acc @obj #2->
+"<!>"
+	"!" sent @punct #3->
+
+"<Жасаған-ау>"
+	"жаса" v tv ger_past nom
+		"ау" mod_emo
+	"жаса" v tv past p3 sg
+		"ау" mod_emo
+"<,>"
+	"," cm
+"<өзің>"
+	"өз" prn ref px2sg nom
+"<кеше>"
+	"кеше" adv
+"<гөр>"
+	"*гөр"
+"<,>"
+	"," cm
+"<кеше>"
+	"кеше" adv
+"<гөр>"
+	"*гөр"
+"<...>"
+	"..." sent
+
+"<Аяқ>"
+	"аяқ" n nom
+	"аяқ" n attr
+"<даусы>"
+	"дауыс" n px3sp nom
+		"е" cop aor p3 sg
+"<...>"
+	"..." sent
+
+"<Есікті>"
+	"есік" n acc
+	"Есік" np top acc
+	"есік" n
+		"лы" post
+	"Есік" np top
+		"лы" post
+"<ашып>"
+	"аш" v tv gna_perf
+"<,>"
+	"," cm
+"<үйге>"
+	"үй" n dat
+"<кірді>"
+	"кір" v iv ifi p3 sg
+"<...>"
+	"..." sent
+
+"<Әзімбай>"
+	"Әзімбай" np ant m nom @x #1->
+"<тура>"
+	"тура" adj @x #2->
+	"тура" adv @advmod #2->
+	"тура" adj advl @advmod #2->
+	"тура" adj subst nom @advmod #2->
+"<төсек>"
+	"төсек" n nom @x #3->
+	"төсек" n attr @x #3->
+"<ағашқа>"
+	"ағаш" n dat @x #4->
+"<келе>"
+	"кел" v iv prc_impf @x #5->
+"<жатыр>"
+	"жатыр" vaux imp p2 sg @aux #6->
+	"жат" vaux pres p3 sg @aux #6->
+"<...>"
+	"..." sent @punct #7->
+
+"<Шолпанда>"
+	"Шолпан" np al loc
+	"Шолпан" np ant f loc
+"<үн>"
+	"үн" n nom
+"<жоқ>"
+	"жоқ" adj subst nom
+		"е" cop aor p3 sg
+	"жоқ" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent
+
+"<Мойнына>"
+	"мойын" n px3sp dat @x #1->
+"<құрық>"
+	"*құрық" @x #2->
+"<түскен>"
+	"түс" v iv gpr_past @x #3->
+	"түс" v iv gpr_past subst nom @x #3->
+"<құландай>"
+	"құлан" n sim @x #4->
+"<денесі>"
+	"дене" n px3sp nom @x #5->
+"<дір>"
+	"*дір" @x #6->
+"<->"
+	"-" guio @punct #7->
+	"х" guio @punct #7->
+"<дір>"
+	"*дір" @x #8->
+"<етеді>"
+	"ет" v tv aor p3 sg @x #9->
+"<.>"
+	"." sent @punct #10->
+
+"<Жүрегі>"
+	"жүрек" n px3sp nom @x #1->
+"<дәл>"
+	"дәл" adv @advmod #2->
+"<аузында>"
+	"ауыз" n px3sp loc @x #3->
+"<тұр>"
+	"тұр" v iv imp p2 sg @x #4->
+"<.>"
+	"." sent @punct #5->
+

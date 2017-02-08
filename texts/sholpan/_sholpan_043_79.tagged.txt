@@ -1,0 +1,261 @@
+"<Махаббат>"
+	"махаббат" n nom @x #1->
+	"махаббат" n attr @x #1->
+"<жібі>"
+	"жіп" n px3sp nom @x #2->
+"<үзілді>"
+	"үзіл" v tv ifi p3 sg @x #3->
+	"үз" v tv pass ifi p3 sg @x #3->
+"<.>"
+	"." sent @punct #4->
+
+"<Өмір>"
+	"өмір" n nom @x #1->
+	"Өмір" np ant m nom @x #1->
+"<бұзылды>"
+	"бұзыл" v tv ifi p3 sg @x #2->
+	"бұз" v tv pass ifi p3 sg @x #2->
+"<.>"
+	"." sent @punct #3->
+
+"<Бәріне>"
+	"бәрі" prn qnt px3sp dat @x #1->
+"<лағынет>"
+	"лағынет" n nom @x #2->
+"<жаусын>"
+	"жау" v iv opt p3 sg @x #3->
+"<!>"
+	"!" sent @punct #4->
+
+"<Өмірді>"
+	"өмір" n acc @obj #1->
+	"Өмір" np ant m acc @obj #1->
+"<улаған>"
+	"улаған" adj @x #2->
+	"улаған" adj advl @advmod #2->
+"<сол>"
+	"сол" det dem @det #3->
+"<іштегі>"
+	"іш" n loc attr @amod #4->
+	"іш" n loc subst nom @amod #4->
+"<балаға>"
+	"бала" n dat @x #5->
+"<лағынет>"
+	"лағынет" n nom @x #6->
+"<жаусын>"
+	"жау" v iv opt p3 sg @x #7->
+"<!>"
+	"!" sent @punct #8->
+"<..>"
+	".." sent @punct #9->
+
+"<Талай>"
+	"талай" adj advl
+	"талай" adj
+"<түндерде>"
+	"түн" n pl loc
+"<мынау>"
+	"мынау" det dem
+	"мынау" prn dem nom
+"<түйінді>"
+	"түйін" n acc
+	"түйінді" adj
+	"түйін" n
+		"лы" post
+	"түйінді" adj advl
+	"түйінді" adj subst nom
+"<шешу>"
+	"шеш" v tv ger nom
+"<үшін>"
+	"үшін" post
+	"үш" n px3sp acc
+	"үш" num subst px3sp acc
+"<қасіретпен>"
+	"қасірет" n ins
+"<сарғайған>"
+	"сарғай" v tv gpr_past
+	"сарғай" v tv ger_past nom
+	"сарғай" v tv gpr_past subst nom
+	"сарғай" v tv past p3 sg
+"<Шолпан>"
+	"Шолпан" np al nom
+	"Шолпан" np ant f nom
+"<талай>"
+	"талай" adj advl
+	"талай" adj
+"<ой>"
+	"ой" ij
+	"ой" n nom
+	"ой" n attr
+"<теңізіне>"
+	"теңіз" n px3sp dat
+"<кірсе де>"
+	"кір" v iv gna_cond p3 sg
+		"да" postadv
+"<,>"
+	"," cm
+"<ой>"
+	"ой" ij
+	"ой" n nom
+	"ой" n attr
+"<түбіне>"
+	"түп" n px3sp dat
+"<жете>"
+	"жет" v iv prc_impf
+"<алмады>"
+	"ал" vaux neg ifi p3 sg
+"<.>"
+	"." sent
+
+"<Мынау>"
+	"мынау" det dem
+	"мынау" prn dem nom
+"<жанды>"
+	"жан" n acc
+	"жанды" adj
+	"жан" n
+		"лы" post
+	"жанды" adj advl
+	"жанды" adj subst nom
+"<жеген>"
+	"же" v tv gpr_past
+	"же" v tv ger_past nom
+	"же" v tv gpr_past subst nom
+	"же" v tv past p3 sg
+"<жұмбаққа>"
+	"жұм" v tv ger_obs dat
+	"жұмбақ" n dat
+"<«>"
+	"«" lquot
+"<ортасында>"
+	"орта" n px3sp loc
+"<екі>"
+	"екі" num
+"<оттың>"
+	"от" n gen
+	"отты" adj subst px2sg nom
+"<–>"
+	"–" guio
+"<мені>"
+	"мен" prn pers p1 sg acc
+"<,>"
+	"," cm
+"<Тәңірім>"
+	"тәңір" n px1sg nom
+	"Тәңір" n px1sg nom
+"<,>"
+	"," cm
+"<қор>"
+	"қор" adj
+	"қор" n nom
+"<еттің>"
+	"ет" v tv ifi p2 sg
+"<»>"
+	"»" rquot
+"<деп>"
+	"де" v tv gna_perf
+"<зарлаудан>"
+	"*зарлаудан"
+"<басқа>"
+	"басқа" adj
+	"басқа" adj advl
+"<жауап>"
+	"жауап" adj advl
+"<таба>"
+	"таб" v tv prc_impf
+	"тап" v tv prc_impf
+"<алмады>"
+	"ал" vaux neg ifi p3 sg
+"<.>"
+	"." sent
+
+"<Сәрсенбаймен>"
+	"Сәрсенбай" np ant m ins @x #1->
+"<екі>"
+	"екі" num @x #2->
+"<ара>"
+	"ара" adj @x #3->
+	"ара" n nom @x #3->
+	"ара" adj advl @advmod #3->
+"<шиеленіскеннен>"
+	"шиелен" v iv coop ger_past abl @x #4->
+	"шиеленіс" v tv ger_past abl @x #4->
+	"шиелен" v iv coop gpr_past subst abl @x #4->
+	"шиеленіс" v tv gpr_past subst abl @x #4->
+	"шиеленіскен" adj subst abl @x #4->
+"<шиеленісе>"
+	"шиелен" v iv coop prc_impf @x #5->
+	"шиеленіс" v tv prc_impf @x #5->
+"<берді>"
+	"бер" vaux ifi p3 sg @aux #6->
+"<.>"
+	"." sent @punct #7->
+
+"<Екі>"
+	"екі" num @x #1->
+"<жанның>"
+	"жан" n gen @x #2->
+"<арасы>"
+	"ара" n px3sp nom @x #3->
+"<алыстағаннан>"
+	"алыста" v iv ger_past abl @x #4->
+	"алыста" v iv gpr_past subst abl @x #4->
+"<алыстай>"
+	"алыста" v iv prc_impf @x #5->
+"<берді>"
+	"бер" vaux ifi p3 sg @aux #6->
+"<.>"
+	"." sent @punct #7->
+
+"<Бірақ>"
+	"бірақ" cnjcoo
+"<дүниеде>"
+	"дүние" n loc
+"<адам>"
+	"адам" n nom
+"<таппаған>"
+	"тап" v tv neg gpr_past
+	"тап" v tv neg ger_past nom
+	"тап" v tv neg gpr_past subst nom
+	"тап" v tv neg past p3 sg
+"<жұмбақты>"
+	"жұмбақты" adj
+	"жұмбақ" n
+		"лы" post
+"<заман>"
+	"заман" n nom
+"<таппақ>"
+	"тап" v tv fut_plan p3 sg
+"<.>"
+	"." sent
+
+"<Адам>"
+	"Ада" np ant f px1sg nom
+	"адам" n nom
+	"Адам" np ant m nom
+"<құрығынан>"
+	"*құрығынан"
+"<құтылғанмен>"
+	"құтыл" v iv ger_past ins
+"<,>"
+	"," cm
+"<заман>"
+	"заман" n nom
+"<құрығынан>"
+	"*құрығынан"
+"<құтылып>"
+	"құтыл" v iv prc_perf
+"<кететін>"
+	"кет" vaux gpr_impf
+	"кет" vaux gpr_impf subst nom
+	"кет" vaux pih p3 sg
+"<еш нәрсе>"
+	"ешнәрсе" prn neg nom
+"<жоқ>"
+	"жоқ" adj subst nom
+		"е" cop aor p3 sg
+	"жоқ" adj
+		"е" cop aor p3 sg
+"<.>"
+	"." sent
+

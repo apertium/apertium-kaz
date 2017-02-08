@@ -1,0 +1,264 @@
+"<Сәрсенбай>"
+	"Сәрсенбай" np ant m nom @x #1->
+"<бүгін>"
+	"бүгін" adv @advmod #2->
+	"бүгін" n nom @advmod #2->
+"<қонаға>"
+	"*қонаға" @x #3->
+"<қалаға>"
+	"қала" n dat @x #4->
+"<шығады>"
+	"шығ" v tv aor p3 sg @x #5->
+	"шық" v tv aor p3 sg @x #5->
+	"шық" v iv aor p3 sg @x #5->
+"<.>"
+	"." sent @punct #6->
+
+"<Әйтеуір>"
+	"әйтеуір" adv
+"<істейтін>"
+	"істе" v iv gpr_impf
+	"істе" v iv pih p3 sg
+	"істе" v iv gpr_impf subst nom
+"<болған>"
+	"бол" v iv past p3 sg
+	"бол" v iv gpr_past
+	"бол" v iv gpr_past subst nom
+	"бол" v iv ger_past nom
+"<соң>"
+	"соң" n nom
+		"е" cop aor p3 sg
+	"соң" adj
+		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<ұзаққа>"
+	"ұзақ" adj subst dat
+"<созып>"
+	"соз" v tv gna_perf
+"<,>"
+	"," cm
+"<умен>"
+	"у" n ins
+"<құр>"
+	"құр" adj
+	"құр" n nom
+	"құр" adj advl
+"<улана>"
+	"*улана"
+"<беруде>"
+	"бер" v tv ger loc
+"<не>"
+	"не" cnjcoo
+	"не" prn itg nom
+"<қасиет>"
+	"қасиет" n nom
+		"е" cop aor p3 sg
+"<?>"
+	"?" sent
+
+"<Жарайды>"
+	"жарайды" ij
+"<,>"
+	"," cm
+"<соза>"
+	"соз" v tv prc_impf
+"<беруде>"
+	"бер" vaux ger loc
+"<қасиет>"
+	"қасиет" n nom
+"<жоқ>"
+	"жоқ" ij
+	"жоқ" adj
+	"жоқ" adv
+	"жоқ" adj subst nom
+	"жоқ" adj subst nom
+		"е" cop aor p3 sg
+	"жоқ" adj
+		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<бірақ>"
+	"бірақ" cnjcoo
+"<лайық>"
+	"лайық" adj
+"<кім>"
+	"кім" det itg
+	"кім" prn itg nom
+"<бар>"
+	"бар" adj
+	"бар" n nom
+	"бар" adj subst nom
+		"е" cop aor p3 sg
+	"бар" adj
+		"е" cop aor p3 sg
+	"бар" adj subst nom
+	"бар" v iv imp p2 sg
+	"бар" n nom
+		"е" cop aor p3 sg
+"<?>"
+	"?" sent
+
+"<Болашақ>"
+	"болашақ" n nom
+	"болашақ" n attr
+"<балаға>"
+	"бала" n dat
+"<ата>"
+	"ата" n nom
+"<болуға>"
+	"бол" v iv ger dat
+"<лайық>"
+	"лайық" adj
+"<кім>"
+	"кім" det itg
+	"кім" prn itg nom
+"<бар>"
+	"бар" adj
+	"бар" n nom
+	"бар" adj subst nom
+		"е" cop aor p3 sg
+	"бар" adj
+		"е" cop aor p3 sg
+	"бар" adj subst nom
+	"бар" v iv imp p2 sg
+	"бар" n nom
+		"е" cop aor p3 sg
+"<?>"
+	"?" sent
+
+"<Жылқышы>"
+	"жылқышы" n nom @x #1->
+"<Адамқұл>"
+	"*Адамқұл" @x #2->
+"<...>"
+	"..." sent @punct #3->
+
+"<Дұрыс>"
+	"дұрыс" ij @x #1->
+"<,>"
+	"," cm @punct #2->
+"<құлмен>"
+	"құл" n ins @x #3->
+"<жүрсе>"
+	"жүр" v iv gna_cond p3 sg @x #4->
+"<,>"
+	"," cm @punct #5->
+"<сыр>"
+	"сыр" n nom @x #6->
+	"сыр" n attr @x #6->
+"<шетке>"
+	"шет" n dat @x #7->
+"<паш>"
+	"*паш" @x #8->
+"<болмас>"
+	"бол" v iv neg gpr_fut subst nom @x #9->
+	"бол" v iv neg gpr_fut @x #9->
+	"бол" v iv neg fut p3 sg @x #9->
+"<еді>"
+	"е" cop ifi p3 sg @cop #10->
+"<,>"
+	"," cm @punct #11->
+"<жабулы>"
+	"*жабулы" @x #12->
+"<қазан>"
+	"қазан" n nom @x #13->
+"<жабулы>"
+	"*жабулы" @x #14->
+"<күйінше>"
+	"*күйінше" @x #15->
+"<қалар>"
+	"қал" v iv gpr_fut subst nom @x #16->
+	"қал" v iv gpr_fut @x #16->
+	"қала" v tv gpr_fut @x #16->
+	"қал" v iv fut p3 sg @x #16->
+	"қала" v tv fut p3 sg @x #16->
+	"қала" v tv gpr_fut subst nom @x #16->
+"<еді>"
+	"е" cop ifi p3 sg @cop #17->
+"<.>"
+	"." sent @punct #18->
+
+"<Бірақ>"
+	"бірақ" cnjcoo @cc #1->
+"<...>"
+	"..." sent @punct #2->
+"<Адамқұлдан>"
+	"*Адамқұлдан" @x #3->
+"<қандай>"
+	"қан" n sim @x #4->
+	"қандай" prn itg sim @x #4->
+	"қандай" prn itg sim nom @x #4->
+"<бала>"
+	"бала" n nom @x #5->
+"<тумақ>"
+	"ту" v tv fut_plan p3 sg @x #6->
+	"ту" v iv fut_plan p3 sg @x #6->
+"<?>"
+	"?" sent @punct #7->
+
+"<Күңнен>"
+	"күң" n abl
+"<күң>"
+	"күң" n nom
+	"күң" n nom
+		"е" cop aor p3 sg
+"<,>"
+	"," cm
+"<құлдан>"
+	"құл" n abl
+"<құл>"
+	"құл" n nom
+"<тумақ емес пе>"
+	"ту" v tv neg fut_plan p3 sg
+		"ма" qst
+	"ту" v iv neg fut_plan p3 sg
+		"ма" qst
+"<?>"
+	"?" sent
+
+"<Болса>"
+	"бол" v iv gna_cond p3 sg @x #1->
+"<,>"
+	"," cm @punct #2->
+"<бала>"
+	"бала" n nom @x #3->
+	"бала" n attr @x #3->
+"<құл>"
+	"құл" n nom @x #4->
+"<болмасын>"
+	"бол" v iv neg opt p3 sg @x #5->
+	"бол" v iv neg ger_fut px3sp acc @x #5->
+"<,>"
+	"," cm @punct #6->
+"<ұл>"
+	"ұл" n nom @x #7->
+"<болсын>"
+	"бол" v iv opt p3 sg @x #8->
+"<.>"
+	"." sent @punct #9->
+
+"<Бала>"
+	"бала" n nom @x #1->
+"<болса>"
+	"бол" v iv gna_cond p3 sg @x #2->
+"<,>"
+	"," cm @punct #3->
+"<мүт>"
+	"*мүт" @x #4->
+"<болсын>"
+	"бол" v iv opt p3 sg @x #5->
+"<,>"
+	"," cm @punct #6->
+"<мүт>"
+	"*мүт" @x #7->
+"<болмаса>"
+	"болмаса" cnjcoo @cc #8->
+	"бол" v iv neg gna_cond p3 sg @cc #8->
+"<,>"
+	"," cm @punct #9->
+"<жоқ болсын>"
+	"жоқ бол" v tv opt p3 sg @x #10->
+"<.>"
+	"." sent @punct #11->
+
