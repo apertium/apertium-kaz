@@ -2301,7 +2301,7 @@
 "<біз>"
 	"біз" prn pers p1 pl nom @nsubj #4->8
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom @nmod:flat #5->6
+	"Нұрсұлтан" np ant m nom @flat:name #5->6
 "<Әбішұлының>"
 	"Әбішұлы" np cog m gen @nsubj #6->7
 "<қолдауын>"
@@ -11074,19 +11074,19 @@
 "<Серік>"
 	"Серік" np ant m nom @flat:name #2->3
 "<Ақылбай>"
-	"Ақылбай" np cog mf nom @nsubj #4->9
+	"Ақылбай" np cog mf nom @nsubj #3->8
 "<қылмысқа>"
-	"қылмыс" n dat @obl #5->8
+	"қылмыс" n dat @obl #4->8
 "<қарсы>"
-	"қарсы" post @case #6->5
+	"қарсы" post @case #5->4
 "<күрес>"
-	"күрес" n nom @nmod:poss #7->8
+	"күрес" n nom @nmod:poss #6->7
 "<тақырыбын>"
-	"тақырып" n px3sp acc @obj #8->9
+	"тақырып" n px3sp acc @obj #7->8
 "<қозғады>"
-	"қозға" v tv ifi p3 sg @root #9->0
+	"қозға" v tv ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #9->8
 
 # - Мені Қазақстанда жүзеге асырылған ілгері істер таңдандырды .	-I am impressed with the progress Kazakhstan has made .	
 "<->"

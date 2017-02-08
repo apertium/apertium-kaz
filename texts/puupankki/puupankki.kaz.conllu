@@ -666,7 +666,7 @@
 2	мәселеде	мәселе	NOUN	n	Case=Loc	8	obl	_	_
 3	де	да	ADV	postadv	_	2	advmod	_	_
 4	біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	8	nsubj	_	_
-5	Нұрсұлтан	Нұрсұлтан	PROPN	np	Case=Nom|Gender=Masc	6	nmod:flat	_	_
+5	Нұрсұлтан	Нұрсұлтан	PROPN	np	Case=Nom|Gender=Masc	6	flat:name	_	_
 6	Әбішұлының	Әбішұлы	PROPN	np	Case=Gen|Gender=Masc	7	nsubj	_	_
 7	қолдауын	қолда	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	8	ccomp	_	_
 8	сезінеміз	сезін	VERB	v	Mood=Ind|Number=Plur|Person=1|Tense=Aor|VerbForm=Fin	0	root	_	_
@@ -752,13 +752,13 @@
 # text = Сенатор Серік Ақылбай қылмысқа қарсы күрес тақырыбын қозғады.
 1	Сенатор	сенатор	NOUN	n	Case=Nom	3	flat:name	_	_
 2	Серік	Серік	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
-3	Ақылбай	Ақылбай	PROPN	np	Case=Nom	9	nsubj	_	_
+3	Ақылбай	Ақылбай	PROPN	np	Case=Nom	8	nsubj	_	_
 4	қылмысқа	қылмыс	NOUN	n	Case=Dat	8	obl	_	_
-5	қарсы	қарсы	ADP	post	_	5	case	_	_
-6	күрес	күрес	NOUN	n	Case=Nom	8	nmod:poss	_	_
-7	тақырыбын	тақырып	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
+5	қарсы	қарсы	ADP	post	_	4	case	_	_
+6	күрес	күрес	NOUN	n	Case=Nom	7	nmod:poss	_	_
+7	тақырыбын	тақырып	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 8	қозғады	қозға	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-9	.	.	PUNCT	sent	_	9	punct	_	_
+9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:67:1151
 # text = Республика өте зор әлеуетке ие болатын.
