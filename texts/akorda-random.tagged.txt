@@ -2294,49 +2294,40 @@
 
 # бұл мәселеде де біз Нұрсұлтан Әбішұлының қолдауын сезінеміз .	in this respect we also feel the support of President Nursultan Abishevich Nazarbayev .	
 "<Бұл>"
-	"бұл" det dem
-	"бұл" prn dem nom
+	"бұл" det dem @det #1->2
 "<мәселеде де>"
-	"мәселе" n loc
-		"да" cnjcoo
-	"мәселе" n loc
-		"да" postadv
+	"мәселе" n loc @obl #2->8
+		"да" postadv @advmod #3->2
 "<біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #4->8
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom
+	"Нұрсұлтан" np ant m nom @nmod:flat #5->6
 "<Әбішұлының>"
-	"Әбішұлы" np cog m gen
+	"Әбішұлы" np cog m gen @nsubj #6->7
 "<қолдауын>"
-	"қолда" v tv ger px3sp acc
+	"қолда" v tv ger px3sp acc @ccomp #7->8
 "<сезінеміз>"
-	"сезін" v tv aor p1 pl
-"<.>"
-	"." sent
+	"сезін" v tv aor p1 pl @root #8->0
+"<.>" 
+	"." sent @punct #9->8
 
 # ол стратегиялық әріптестікке және өзара сенімге құрылған .	it is based on strategic partnership and mutual trust .	
 "<Ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem
-	"ол" prn dem nom
+	"ол" prn dem nom @nsubj #1->7
 "<стратегиялық>"
-	"стратегиялық" adj
+	"стратегиялық" adj @amod #2->3
 "<әріптестікке>"
-	"әріптестік" n dat
+	"әріптестік" n dat @conj #3->6
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc #4->6
 "<өзара>"
-	"өзара" adj
-	"өзара" adv
-	"өзара" adj advl
-	"өзара" adj subst nom
+	"өзара" adj @amod #5->6
 "<сенімге>"
-	"сенім" n dat
+	"сенім" n dat @obl #6->7
 "<құрылған>"
-	"құрыл" v tv past p3 sg
-	"құр" v tv pass past p3 sg
+	"құр" v tv pass past p3 sg @root #7->0
 "<.>"
-	"." sent
+	"." sent @punct #8->7
 
 # Австрия Қазақстанның басты сауда серіктестері арасында жетінші орын алады .	Austria ranks seventh among all trade partners of Kazakhstan .	
 "<Австрия>"
