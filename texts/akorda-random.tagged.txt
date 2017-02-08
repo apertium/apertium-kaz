@@ -2190,7 +2190,6 @@
 	"айыпта" v tv ger nom
 	"айыптау" n nom
 "<айтылмады>"
-	"айтыл" v tv neg ifi p3 sg
 	"айт" v tv pass neg ifi p3 sg
 "<.>"
 	"." sent
@@ -2207,24 +2206,21 @@
 
 # - Президент Пирамиданы маған резиденция терезесінен көрсетті .	-the President showed me this Pyramid from a window of the residency .	
 "<->"
-	"-" guio
-	"х" guio
+	"-" guio @punct #1->7
 "<Президент>"
-	"президент" n nom
-	"президент" n attr
+	"президент" n nom @nsubj #2->7
 "<Пирамиданы>"
-	"пирамида" n acc
+	"пирамида" n acc @obj #3->7
 "<маған>"
-	"мен" prn pers p1 sg dat
+	"мен" prn pers p1 sg dat @obl #4->7
 "<резиденция>"
-	"резиденция" n nom
-	"резиденция" n attr
+	"резиденция" n nom @nmod:poss #5->6
 "<терезесінен>"
-	"терезе" n px3sp abl
+	"терезе" n px3sp abl @obl #6->7
 "<көрсетті>"
-	"көрсет" v tv ifi p3 sg
+	"көрсет" v tv ifi p3 sg @root #7->0
 "<.>"
-	"." sent
+	"." sent @punct #8->7
 
 # Санаулы сәттерден кейін біз жаңа 2012 жылға қадам басамыз .	the 2012 New Year greeting of the Head of state Nursultan Nazarbayev .	
 "<Санаулы>"
@@ -2259,31 +2255,23 @@
 
 # бұл халықаралық қоғамдастық үшін жақсы жағынан үлгі болады .	this will be a good example for the international community .	
 "<Бұл>"
-	"бұл" det dem
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->7
 "<халықаралық>"
-	"халықаралық" adj
-	"халықаралық" adv
+	"халықаралық" adj @amod #2->3
 "<қоғамдастық>"
-	"қоғамдастық" n nom
-	"қоғамдастық" n attr
+	"қоғамдастық" n nom @obl #3->7
 "<үшін>"
-	"үшін" post
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #4->3
 "<жақсы>"
-	"жақсы" adj
-	"жақсы" adv
-	"жақсы" adj advl
-	"жақсы" adj subst nom
+	"жақсы" adj @amod #5->6
 "<жағынан>"
-	"жақ" n px3sp abl
+	"жақ" n px3sp abl @obl #6->7
 "<үлгі>"
-	"үлгі" n nom
+	"үлгі" n nom @root #7->0
 "<болады>"
-	"бол" v iv aor p3 sg
+	"бол" v iv aor p3 sg @cop #8->7
 "<.>"
-	"." sent
+	"." sent @punct #9->7
 
 # перспективалы ұлттық кластерлерді қалыптастыратын жол картасы	Roadmap of development prospective national clusters	
 "<Перспективалы>"
