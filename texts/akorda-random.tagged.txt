@@ -10744,80 +10744,20 @@
 
 # Қазақстан – уран өндіруде әлемдік көшбасшы .	Kazakhstan is the world leader in uranium production .	
 "<Қазақстан>"
-	"Қазақстан" np top nom
+	"Қазақстан" np top nom @nsubj #1->6
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #2->6
 "<уран>"
-	"уран" n nom
+	"уран" n nom @obj #3->4
 "<өндіруде>"
-	"өндір" v tv ger loc
+	"өндір" v tv ger loc @advcl #4->6
 "<әлемдік>"
-	"әлемдік" adj
+	"әлемдік" adj @amod #5->6
 "<көшбасшы>"
-	"көшбасшы" n nom
-		"е" cop aor p3 sg
+	"көшбасшы" n nom @root #6->0
+		"е" cop aor p3 sg @cop #7->6
 "<.>"
-	"." sent @punct
-
-# Өтер жылға өкпе жоқ . келер жылдан үміт көп . алда бізді ауқымды істер күтіп тұр .	the world enters the second decade of the twenty first century .	
-"<Өтер>"
-	"өт" v iv gpr_fut
-	"өт" v tv gpr_fut
-	"өте" v tv gpr_fut
-	"өте" v tv gpr_fut subst nom
-	"өт" v iv fut p3 sg
-	"өт" v iv gpr_fut subst nom
-	"өте" v tv fut p3 sg
-	"өт" v tv fut p3 sg
-	"өт" v tv gpr_fut subst nom
-"<жылға>"
-	"жыл" n dat
-	"жылға" n nom
-	"жылға" n attr
-"<өкпе>"
-	"өкпе" n nom
-"<жоқ>"
-	"жоқ" adj subst nom
-		"е" cop aor p3 sg
-	"жоқ" adj
-		"е" cop aor p3 sg
-"<.>"
-	"." sent @punct
-"<келер>"
-	"кел" v iv gpr_fut subst nom
-	"кел" v iv gpr_fut
-	"кел" v iv fut p3 sg
-"<жылдан>"
-	"жыл" n abl
-"<үміт>"
-	"үміт" n nom
-"<көп>"
-	"көп" adj
-		"е" cop aor p3 sg
-"<.>"
-	"." sent @punct
-"<алда>"
-	"алд" n loc
-	"алда" adv
-"<бізді>"
-	"біз" prn pers p1 pl acc
-"<ауқымды>"
-	"ауқым" n acc
-	"ауқымды" adj
-	"ауқым" n
-		"лы" post @case
-	"ауқымды" adj subst nom
-"<істер>"
-	"істе" v iv gpr_fut
-	"істе" v tv gpr_fut
-	"істе" v tv gpr_fut subst nom
-	"істе" v tv fut p3 sg
-	"істе" v iv fut p3 sg
-	"істе" v iv gpr_fut subst nom
-"<күтіп тұр>"
-	"күтіп тұр" v tv imp p2 sg
-"<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
 # -Қазақстан халқы Украинаға тұрақтылық пен игілік тілейді .	the people of Kazakhstan wish Ukraine stability and prosperity .	
 "<->"
