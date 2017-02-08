@@ -260,24 +260,19 @@
 "<.>"
 	"." sent
 
-# кірпіш өндіруге жергілікті шикізат пайдаланылады .	local raw materials are used to produce the bricks .	
 "<Кірпіш>"
-	"кірпіш" n nom
+	"кірпіш" n nom @obj #1->2
 "<өндіруге>"
-	"өндір" v tv ger dat
+	"өндір" v tv ger dat @advcl #2->5
 "<жергілікті>"
-	"жергілікті" adj
-	"жергілікті" adv
-	"жергілікті" n nom
-	"жергілікті" n attr
+	"жергілікті" adj @amod #3->4
 "<шикізат>"
-	"шикізат" n nom
+	"шикізат" n nom @nsubj #4->5
 "<пайдаланылады>"
-	"пайдалан" v tv pass aor p3 sg
+	"пайдалан" v tv pass aor p3 sg @root #5->0
 "<.>"
-	"." sent
+	"." sent @punct #6->5
 
-# - Бас прокуратураның және Бас прокурордың жұмысын қолдаймын .	“ I support the work of the Prosecutor General and its office .	
 "<->"
 	"-" guio @punct #1->8
 "<Бас>"
@@ -300,9 +295,7 @@
 # Президент бүгінде Астана бүкіл еліміздің игілігі болып табылатынын атап өтті .	the President said Astana is the wealth of the country .	
 "<Президент>"
 	"президент" n nom
-	"президент" n attr
 "<бүгінде>"
-	"бүгін" n loc
 	"бүгінде" adv
 "<Астана>"
 	"Астана" np top nom
@@ -317,28 +310,21 @@
 "<табылатынын>"
 	"таб" v tv pass ger_impf px3sp acc
 	"тап" v tv pass ger_impf px3sp acc
-	"табыл" v iv ger_impf px3sp acc
-	"таб" v tv pass gpr_impf subst px3sp acc
-	"тап" v tv pass gpr_impf subst px3sp acc
-	"табыл" v iv gpr_impf subst px3sp acc
 "<атап өтті>"
 	"атап өт" v tv ifi p3 sg
 "<.>"
 	"." sent
 
-# қалыптасу кезеңі табысты аяқталды .	the formation of our nation has been successfully completed .	
 "<Қалыптасу>"
-	"қалыпта" v tv coop ger nom
-	"қалыптас" v iv ger nom
+	"қалыпта" v tv coop ger nom @acl #1->2
 "<кезеңі>"
-	"кезең" n px3sp nom
+	"кезең" n px3sp nom @nsubj #2->4
 "<табысты>"
-	"табысты" adj advl
+	"табысты" adj advl @advmod #3->4
 "<аяқталды>"
-	"аяқтал" v tv ifi p3 sg
-	"аяқта" v tv pass ifi p3 sg
+	"аяқта" v tv pass ifi p3 sg @root #4->0
 "<.>"
-	"." sent
+	"." sent @punct #5->4
 
 # ол үшін төмендегідей шаралар қажет :	Firstly , Kazakhstan is a modern state .	
 "<Ол>"
@@ -410,24 +396,20 @@
 "<.>"
 	"." sent
 
-# өзінің базалық өлшемі бойынша ол орындалды .	sixth challenge is the exhaustion of natural resources	
 "<Өзінің>"
-	"өз" prn ref px3sp gen
+	"өз" prn ref px3sp gen @nmod:poss #1->3
 "<базалық>"
-	"базалық" adj
+	"базалық" adj @amod #2->3
 "<өлшемі>"
-	"өлшем" n px3sp nom
+	"өлшем" n px3sp nom @obl #3->6
 "<бойынша>"
-	"бойынша" post
+	"бойынша" post @case #4->3
 "<ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem
-	"ол" prn dem nom
+	"ол" prn pers p3 sg nom @nsubj #5->6
 "<орындалды>"
-	"орындал" v iv ifi p3 sg
-	"орында" v tv pass ifi p3 sg
+	"орында" v tv pass ifi p3 sg @root #6->0
 "<.>"
-	"." sent
+	"." sent @punct #7->6
 
 # қазір 1 млрд. АҚШ долларына дейінгі қаражаты бар бірлескен қор құрылып жатыр .	a joint fund of nearly US $ 1 billion is under establishment .	
 "<Қазір>"
@@ -575,16 +557,12 @@
 	"біз" prn pers p1 pl gen
 "<өңір>"
 	"өңір" n nom
-	"өңір" n attr
 "<үшін>"
 	"үшін" post
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
 "<–>"
 	"–" guio
 "<бұл>"
 	"бұл" det dem
-	"бұл" prn dem nom
 "<стратегиялық>"
 	"стратегиялық" adj
 "<жол>"
@@ -593,61 +571,43 @@
 "<.>"
 	"." sent
 
-# - XXI ғасырда біздің Конституциямызды жаңаша оқу қажет .	“ The XXI century requires a new reading of the Constitution .	
 "<->"
-	"-" guio
-	"х" guio
+	"-" guio @punct #1->8
 "<XXI>"
-	"XXI" num ord
+	"XXI" num ord @amod #2->3
 "<ғасырда>"
-	"ғасыр" n loc
+	"ғасыр" n loc @obl #3->8
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #4->5
 "<Конституциямызды>"
-	"конституция" n px1pl acc
+	"конституция" n px1pl acc @obj #5->7
 "<жаңаша>"
-	"жаңаша" adv
-	"жаңаша" n nom
-	"жаңаша" n attr
+	"жаңаша" adv @advmod #6->7
 "<оқу>"
-	"оқу" adj
-	"оқы" v iv ger nom
-	"оқы" v tv ger nom
-	"оқу" n nom
-	"оқу" n attr
-	"оқу" adj advl
+	"оқы" v tv ger nom @csubj #7->8
 "<қажет>"
-	"қажет" adj
-	"қажет" n nom
-	"қажет" n nom
-		"е" cop aor p3 sg
-	"қажет" adj advl
-	"қажет" adj
-		"е" cop aor p3 sg
-	"қажет" v tv imp p2 sg
+	"қажет" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent
+	"." sent @punct #10->8
 
-# - Бұл менің сіздердің елордаларыңызға үшінші сапарым .	- That is my third visit to your capital .	
 "<->"
-	"-" guio
-	"х" guio
+	"-" guio @punct #1->7
 "<Бұл>"
-	"бұл" det dem
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #2->7
 "<менің>"
-	"мен" prn pers p1 sg gen
+	"мен" prn pers p1 sg gen @nmod:poss #3->7
 "<сіздердің>"
-	"сіздер" prn pers p2 pl frm gen
+	"сіздер" prn pers p2 pl frm gen @nmod:poss #4->5
 "<елордаларыңызға>"
-	"елорда" n pl px2sg frm dat
+	"елорда" n pl px2sg frm dat @obl #5->7
 "<үшінші>"
-	"үш" num ord
+	"үш" num ord @amod #6->7
 "<сапарым>"
-	"сапар" n px1sg nom
-		"е" cop aor p3 sg
+	"сапар" n px1sg nom @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent
+	"." sent @punct #9->7
 
 # конкурсқа қатысуға 296 кәсіпорын ниет білдірген .	296 enterprises made applications to participate in this annual competition .	
 "<Конкурсқа>"

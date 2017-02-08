@@ -80,6 +80,15 @@
 6	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:8:120
+# text = Кірпіш өндіруге жергілікті шикізат пайдаланылады.
+1	Кірпіш	кірпіш	NOUN	n	Case=Nom	2	obj	_	_
+2	өндіруге	өндір	VERB	v	Case=Dat|VerbForm=Ger	5	advcl	_	_
+3	жергілікті	жергілікті	ADJ	adj	_	4	amod	_	_
+4	шикізат	шикізат	NOUN	n	Case=Nom	5	nsubj	_	_
+5	пайдаланылады	пайдалан	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	.	.	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:9:133
 # text = - Бас прокуратураның және Бас прокурордың жұмысын қолдаймын.
 1	-	-	PUNCT	guio	_	8	punct	_	_
 2	Бас	бас	NOUN	n	Case=Nom	3	compound	_	_
@@ -90,6 +99,51 @@
 7	жұмысын	жұмыс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 8	қолдаймын	қолда	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:10:152
+# text = Қалыптасу кезеңі табысты аяқталды.
+1	Қалыптасу	қалыпта	VERB	v	Case=Nom|VerbForm=Ger|Voice=Coop	2	acl	_	_
+2	кезеңі	кезең	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
+3	табысты	табысты	ADJ	adj	_	4	advmod	_	_
+4	аяқталды	аяқта	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:11:163
+# text = Өзінің базалық өлшемі бойынша ол орындалды.
+1	Өзінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	3	nmod:poss	_	_
+2	базалық	базалық	ADJ	adj	_	3	amod	_	_
+3	өлшемі	өлшем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+4	бойынша	бойынша	ADP	post	_	3	case	_	_
+5	ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	орындалды	орында	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:12:178
+# text = - XXI ғасырда біздің Конституциямызды жаңаша оқу қажет.
+1	-	-	PUNCT	guio	_	8	punct	_	_
+2	XXI	XXI	NUM	num	NumType=Ord	3	amod	_	_
+3	ғасырда	ғасыр	NOUN	n	Case=Loc	8	obl	_	_
+4	біздің	біз	PRON	prn	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	Конституциямызды	конституция	NOUN	n	Case=Acc|Number[psor]=Plur|Person[psor]=1	7	obj	_	_
+6	жаңаша	жаңаша	ADV	adv	_	7	advmod	_	_
+7	оқу	оқы	VERB	v	Case=Nom|VerbForm=Ger	8	csubj	_	_
+8-9	қажет	_	_	_	_	_	_	_	_
+8	қажет	қажет	ADJ	adj	_	0	root	_	_
+9	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	8	cop	_	_
+10	.	.	PUNCT	sent	_	8	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:13:198
+# text = - Бұл менің сіздердің елордаларыңызға үшінші сапарым.
+1	-	-	PUNCT	guio	_	7	punct	_	_
+2	Бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	7	nsubj	_	_
+3	менің	мен	PRON	prn	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	nmod:poss	_	_
+4	сіздердің	сіздер	PRON	prn	Case=Gen|Number=Plur|Person=2|Polite=Form|PronType=Prs	5	nmod:poss	_	_
+5	елордаларыңызға	елорда	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Sing|Person[psor]=2|Polite=Form	7	obl	_	_
+6	үшінші	үш	NUM	num	NumType=Ord	7	amod	_	_
+7-8	сапарым	_	_	_	_	_	_	_	_
+7	сапар	сапар	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	0	root	_	_
+8	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	7	cop	_	_
+9	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = Махамбет_Өтемісұлы.tagged.txt:1:0
 # text = 1939 ж. Қ. Жұмалиев Махамбет өлеңдерінің жинағын шығарды.
