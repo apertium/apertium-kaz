@@ -44,6 +44,53 @@
 9	саналады	санал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
+# sent_id = akorda-random.tagged.txt:5:71
+# text = Жобаны 5 кезеңге бөліп, 12 жылда жүзеге асыру жоспарланып отыр.
+1	Жобаны	жоба	NOUN	n	Case=Acc	9	obj	_	_
+2	5	5	NUM	num	_	3	nummod	_	_
+3	кезеңге	кезең	NOUN	n	Case=Dat	4	obl	_	_
+4	бөліп	бөл	VERB	v	Aspect=Perf|VerbForm=Conv	9	advcl	_	_
+5	,	,	PUNCT	cm	_	4	punct	_	_
+6	12	12	NUM	num	_	7	amod	_	_
+7	жылда	жыл	NOUN	n	Case=Loc	9	obl	_	_
+8	жүзеге	жүзеге	X	x	_	9	dep	_	_
+9	асыру	асыр	VERB	v	Case=Nom|VerbForm=Ger	10	csubj	_	_
+10	жоспарланып	жоспарла	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	0	root	_	_
+11	отыр	отыр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux	_	_
+12	.	.	PUNCT	sent	_	10	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:6:96
+# text = Бұл өте тиімді келісімшарт.
+1	Бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	4	nsubj	_	_
+2	өте	өте	ADV	adv	_	3	advmod	_	_
+3	тиімді	тиімді	ADJ	adj	_	4	amod	_	_
+4-5	келісімшарт	_	_	_	_	_	_	_	_
+4	келісімшарт	келісімшарт	NOUN	n	Case=Nom	0	root	_	_
+5	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	cop	_	_
+6	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:7:108
+# text = Әлемде мұндай тәжірибе бар.
+1	Әлемде	әлем	NOUN	n	Case=Loc	4	obl	_	_
+2	мұндай	мұндай	DET	det	PronType=Dem	3	det	_	_
+3	тәжірибе	тәжірибе	NOUN	n	Case=Nom	4	nsubj	_	_
+4-5	бар	_	_	_	_	_	_	_	_
+4	бар	бар	ADJ	adj	_	0	root	_	_
+5	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	cop	_	_
+6	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:8:120
+# text = - Бас прокуратураның және Бас прокурордың жұмысын қолдаймын.
+1	-	-	PUNCT	guio	_	8	punct	_	_
+2	Бас	бас	NOUN	n	Case=Nom	3	compound	_	_
+3	прокуратураның	прокуратура	NOUN	n	Case=Gen	6	conj	_	_
+4	және	және	CCONJ	cnjcoo	_	6	cc	_	_
+5	Бас	бас	NOUN	n	Case=Nom	6	compound	_	_
+6	прокурордың	прокурор	NOUN	n	Case=Gen	7	nmod:poss	_	_
+7	жұмысын	жұмыс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
+8	қолдаймын	қолда	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	0	root	_	_
+9	.	.	PUNCT	sent	_	8	punct	_	_
+
 # sent_id = Махамбет_Өтемісұлы.tagged.txt:1:0
 # text = 1939 ж. Қ. Жұмалиев Махамбет өлеңдерінің жинағын шығарды.
 1	1939	1939	NUM	num	_	2	amod	_	_

@@ -146,73 +146,52 @@
 "<.>"
 	"." sent
 
-# № 782	# 782	№ 
-"<782>"
-	"782" num
-
-# жобаны 5 кезеңге бөліп , 12 жылда жүзеге асыру жоспарланып отыр .	the project will be implemented in five stages taking 12 years .	
 "<Жобаны>"
-	"жоба" n acc
+	"жоба" n acc @obj #1->8
 "<5>"
-	"5" num
+	"5" num @nummod #2->3
 "<кезеңге>"
-	"кезең" n dat
+	"кезең" n dat @obl #3->4
 "<бөліп>"
-	"бөл" v tv gna_perf
+	"бөл" v tv gna_perf @advcl #4->8
 "<,>"
-	"," cm
+	"," cm @punct #5->4
 "<12>"
-	"12" num
+	"12" num @amod #6->7
 "<жылда>"
-	"жыл" n loc
+	"жыл" n loc @obl #7->8
 "<жүзеге асыру>"
-	"жүзеге асыр" v tv ger nom
-	"жүзеге асыру" n nom
+	"жүзеге асыр" v tv ger nom @csubj #8->9
 "<жоспарланып>"
-	"жоспарла" v tv pass prc_perf
-	"жоспарлан" v iv prc_perf
+	"жоспарла" v tv pass prc_perf @root #9->0
 "<отыр>"
-	"отыр" vaux pres p3 sg
+	"отыр" vaux pres p3 sg @aux #10->9
 "<.>"
-	"." sent
+	"." sent @punct #11->9
 
-# бұл өте тиімді келісімшарт .	this is a very profitable contract .	
 "<Бұл>"
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->4
 "<өте>"
-	"өте" adv
+	"өте" adv @advmod #2->3
 "<тиімді>"
-	"тиімді" adj
-	"тиімді" adv
-	"тиімді" adj subst nom
+	"тиімді" adj @amod #3->4
 "<келісімшарт>"
-	"келісімшарт" n nom
-		"е" cop aor p3 sg
+	"келісімшарт" n nom @root #4->0
+		"е" cop aor p3 sg @cop #5->4
 "<.>"
-	"." sent
+	"." sent @punct #6->4
 
-# әлемде мұндай тәжірибе бар .	this is the way it works around the world .	
 "<Әлемде>"
-	"әлем" n loc
+	"әлем" n loc @obl #1->4
 "<мұндай>"
-	"бұл" prn dem sim nom
-	"мұндай" det dem
+	"мұндай" det dem @det #2->3
 "<тәжірибе>"
-	"тәжірибе" n nom
-	"тәжірибе" n attr
+	"тәжірибе" n nom @nsubj #3->4
 "<бар>"
-	"бар" adj
-	"бар" n nom
-	"бар" adj subst nom
-		"е" cop aor p3 sg
-	"бар" adj
-		"е" cop aor p3 sg
-	"бар" adj subst nom
-	"бар" v iv imp p2 sg
-	"бар" n nom
-		"е" cop aor p3 sg
+	"бар" adj @root #4->0
+		"е" cop aor p3 sg @cop #5->4
 "<.>"
-	"." sent
+	"." sent @punct #6->4
 
 # есірткі бизнесі де Орталық Азия аймағы үшін қауіп болып отыр .	narcotic business remains a serious threat for the Central Asia region .	
 "<Есірткі>"
@@ -300,24 +279,23 @@
 
 # - Бас прокуратураның және Бас прокурордың жұмысын қолдаймын .	“ I support the work of the Prosecutor General and its office .	
 "<->"
-	"-" guio
-	"х" guio
+	"-" guio @punct #1->8
 "<Бас>"
-	"Бас" np ant m nom
+	"бас" n attr @compound #2->3
 "<прокуратураның>"
-	"прокуратура" n gen
+	"прокуратура" n gen @conj #3->6
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc #4->6
 "<Бас>"
-	"Бас" np ant m nom
+	"бас" n attr @compound #5->6
 "<прокурордың>"
-	"прокурор" n gen
+	"прокурор" n gen @nmod:poss #6->7
 "<жұмысын>"
-	"жұмыс" n px3sp acc
+	"жұмыс" n px3sp acc @obj #7->8
 "<қолдаймын>"
-	"қолда" v tv aor p1 sg
-"<.>"
-	"." sent
+	"қолда" v tv aor p1 sg @root #8->0
+"<.>" 
+	"." sent @punct #9->8
 
 # Президент бүгінде Астана бүкіл еліміздің игілігі болып табылатынын атап өтті .	the President said Astana is the wealth of the country .	
 "<Президент>"
