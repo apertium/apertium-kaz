@@ -101,8 +101,8 @@
 "<жаман>"
 	"жаман" adj @x #4->
 	"жаман" adv @advmod #4->
-	"жаман" n nom @advmod #4->
-	"жаман" n attr @advmod #4->
+	"жаман" n nom @x #4->
+	"жаман" n attr @x #4->
 	"жаман" adj advl @advmod #4->
 "<күпісін>"
 	"күпі" n px3sp acc @obj #5->
@@ -160,7 +160,7 @@
 "<ішкі>"
 	"ішкі" adj @x #15->
 	"ішкі" adv @advmod #15->
-	"ішкі" adj subst nom @advmod #15->
+	"ішкі" adj subst nom @x #15->
 "<киімінен>"
 	"киім" n px3sp abl @x #16->
 "<тізесі>"

@@ -69,7 +69,7 @@
 "<үшін>"
 	"үшін" post @case #2->
 	"үш" n px3sp acc @obj #2->
-	"үш" num subst px3sp acc @obj #2->
+	"үш" num subst px3sp acc @x #2->
 "<?>"
 	"?" sent @punct #3->
 
@@ -124,7 +124,7 @@
 "<үшін>"
 	"үшін" post @case #4->
 	"үш" n px3sp acc @obj #4->
-	"үш" num subst px3sp acc @obj #4->
+	"үш" num subst px3sp acc @x #4->
 "<!>"
 	"!" sent @punct #5->
 
@@ -146,7 +146,7 @@
 "<ол>"
 	"ол" prn pers p3 sg nom @x #2->
 	"ол" det dem @det #2->
-	"ол" prn dem nom @det #2->
+	"ол" prn dem nom @x #2->
 "<аузына>"
 	"ауыз" n px3sp dat @x #3->
 "<тас>"
@@ -197,7 +197,7 @@
 "<үшін>"
 	"үшін" post @case #3->
 	"үш" n px3sp acc @obj #3->
-	"үш" num subst px3sp acc @obj #3->
+	"үш" num subst px3sp acc @x #3->
 "<күнә>"
 	"күнә" n nom @x #4->
 "<қылғанын>"
@@ -210,7 +210,7 @@
 "<үшін>"
 	"үшін" post @case #8->
 	"үш" n px3sp acc @obj #8->
-	"үш" num subst px3sp acc @obj #8->
+	"үш" num subst px3sp acc @x #8->
 "<ойнас>"
 	"ойна" v tv coop imp p2 sg @x #9->
 "<қылғанын>"

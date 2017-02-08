@@ -2,8 +2,8 @@
 	"сол" adj @x #1->
 	"сол" det dem @det #1->
 	"сол" adj advl @advmod #1->
-	"сол" prn dem nom @advmod #1->
-	"сол" adj subst nom @advmod #1->
+	"сол" prn dem nom @x #1->
+	"сол" adj subst nom @x #1->
 "<кездерде>"
 	"кез" n pl loc @x #2->
 "<оның>"
@@ -33,9 +33,9 @@
 	"жан" n px3sp abl @x #1->
 "<жақын>"
 	"жақын" post @case #2->
-	"жақын" adj @case #2->
+	"жақын" adj @x #2->
 	"жақын" adj advl @advmod #2->
-	"жақын" n nom @advmod #2->
+	"жақын" n nom @x #2->
 "<көрген>"
 	"көр" v tv past p3 sg @x #3->
 	"көр" v tv gpr_past @x #3->
@@ -87,7 +87,7 @@
 "<үшін>"
 	"үшін" post @case #2->
 	"үш" n px3sp acc @obj #2->
-	"үш" num subst px3sp acc @obj #2->
+	"үш" num subst px3sp acc @x #2->
 "<дүниеден>"
 	"дүние" n abl @x #3->
 "<безіп>"
@@ -127,7 +127,7 @@
 "<үшін>"
 	"үшін" post @case #19->
 	"үш" n px3sp acc @obj #19->
-	"үш" num subst px3sp acc @obj #19->
+	"үш" num subst px3sp acc @x #19->
 "<жан-тәнімен>"
 	"жан-тәнімен" adv @advmod #20->
 "<беріліп>"
@@ -165,7 +165,7 @@
 "<шын>"
 	"шын" adj @x #35->
 	"шын" adv @advmod #35->
-	"шын" n nom @advmod #35->
+	"шын" n nom @x #35->
 	"шын" adj advl @advmod #35->
 "<->"
 	"-" guio @punct #36->
@@ -271,7 +271,7 @@
 "<Ол>"
 	"ол" prn pers p3 sg nom @x #1->
 	"ол" det dem @det #1->
-	"ол" prn dem nom @det #1->
+	"ол" prn dem nom @x #1->
 "<неге>"
 	"не" prn itg dat @x #2->
 	"неге" adv itg @advmod #2->
@@ -352,7 +352,7 @@
 "<ол>"
 	"ол" prn pers p3 sg nom @x #3->
 	"ол" det dem @det #3->
-	"ол" prn dem nom @det #3->
+	"ол" prn dem nom @x #3->
 "<неге>"
 	"не" prn itg dat @x #4->
 	"неге" adv itg @advmod #4->

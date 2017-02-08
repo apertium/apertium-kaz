@@ -120,7 +120,7 @@
 	"ауыл" n nom @x #4->
 "<мынау>"
 	"мынау" det dem @det #5->
-	"мынау" prn dem nom @det #5->
+	"мынау" prn dem nom @x #5->
 "<ойбайды>"
 	"*ойбайды" @x #6->
 "<естіген>"
@@ -130,10 +130,10 @@
 	"есті" v tv past p3 sg @x #7->
 "<соң>"
 	"соң" post @case #8->
-	"соң" adj @case #8->
+	"соң" adj @x #8->
 	"соң" adv @advmod #8->
-	"соң" n nom @advmod #8->
-	"соң" n attr @advmod #8->
+	"соң" n nom @x #8->
+	"соң" n attr @x #8->
 	"соң" adj advl @advmod #8->
 "<үйлерінен>"
 	"үй" n pl px3sp abl @x #9->

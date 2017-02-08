@@ -29,7 +29,7 @@
 
 "<Өмірді>"
 	"өмір" n acc @obj #1->
-	"Өмір" np ant m acc @obj #1->
+	"Өмір" np ant m acc @x #1->
 "<улаған>"
 	"улаған" adj @x #2->
 	"улаған" adj advl @advmod #2->
@@ -37,7 +37,7 @@
 	"сол" det dem @det #3->
 "<іштегі>"
 	"іш" n loc attr @amod #4->
-	"іш" n loc subst nom @amod #4->
+	"іш" n loc subst nom @x #4->
 "<балаға>"
 	"бала" n dat @x #5->
 "<лағынет>"

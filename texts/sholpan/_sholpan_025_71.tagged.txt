@@ -120,12 +120,12 @@
 	"жақсы" adj @x #1->
 	"жақсы" adv @advmod #1->
 	"жақсы" adj advl @advmod #1->
-	"жақсы" adj subst nom @advmod #1->
+	"жақсы" adj subst nom @x #1->
 "<ағаң>"
 	"аға" n px2sg nom @x #2->
 "<бүгін>"
 	"бүгін" adv @advmod #3->
-	"бүгін" n nom @advmod #3->
+	"бүгін" n nom @x #3->
 "<қонаға>"
 	"*қонаға" @x #4->
 "<қалаға>"
@@ -143,7 +143,7 @@
 "<бір>"
 	"бір" num @x #2->
 	"бір" det ind @det #2->
-	"бір" num subst nom @det #2->
+	"бір" num subst nom @x #2->
 "<көйлегінің>"
 	"көйлек" n px3sp gen @x #3->
 "<жеңін>"
@@ -247,7 +247,7 @@
 "<бір>"
 	"бір" num @x #2->
 	"бір" det ind @det #2->
-	"бір" num subst nom @det #2->
+	"бір" num subst nom @x #2->
 "<елжіреуді>"
 	"елжіре" v tv ger acc @x #3->
 "<,>"
@@ -259,9 +259,9 @@
 	"біл" v tv neg gpr_impf @x #6->
 	"білмейтін" adj @x #6->
 	"білмейтін" adj advl @advmod #6->
-	"білмейтін" adj subst nom @advmod #6->
-	"біл" v tv neg pih p3 sg @advmod #6->
-	"біл" v tv neg gpr_impf subst nom @advmod #6->
+	"білмейтін" adj subst nom @x #6->
+	"біл" v tv neg pih p3 sg @x #6->
+	"біл" v tv neg gpr_impf subst nom @x #6->
 "<тас>"
 	"тас" n nom @x #7->
 "<екен>"

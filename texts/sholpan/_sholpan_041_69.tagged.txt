@@ -20,8 +20,8 @@
 	"сол" adj @x #1->
 	"сол" det dem @det #1->
 	"сол" adj advl @advmod #1->
-	"сол" prn dem nom @advmod #1->
-	"сол" adj subst nom @advmod #1->
+	"сол" prn dem nom @x #1->
+	"сол" adj subst nom @x #1->
 "<Сәрсенбай>"
 	"Сәрсенбай" np ant m nom @x #2->
 "<Шолпанға>"
@@ -150,8 +150,8 @@
 	"жыл" n attr @x #2->
 "<бойы>"
 	"бойы" post @case #3->
-	"бойы" n nom @case #3->
-	"бой" n px3sp nom @case #3->
+	"бойы" n nom @x #3->
+	"бой" n px3sp nom @x #3->
 "<«>"
 	"«" lquot @punct #4->
 "<сен>"

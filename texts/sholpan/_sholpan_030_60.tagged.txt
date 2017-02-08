@@ -185,10 +185,10 @@
 "<Ол>"
 	"ол" prn pers p3 sg nom @x #1->
 	"ол" det dem @det #1->
-	"ол" prn dem nom @det #1->
+	"ол" prn dem nom @x #1->
 "<кім>"
 	"кім" det itg @det #2->
-	"кім" prn itg nom @det #2->
+	"кім" prn itg nom @x #2->
 "<үшін>"
 	"үшін" post @case #3->
 "<жуынған>"
@@ -231,9 +231,9 @@
 	"?" sent
 
 "<Әзімбайды>"
-	"Әзімбай" np ant m acc @obj #1->2
+	"Әзімбай" np ant m acc @x #1->
 "<күтеді>"
-	"күт" v tv aor p3 sg @root #2->0
+	"күт" v tv aor p3 sg @x #2->
 "<.>"
-	"." sent @punct #3->2
+	"." sent @punct #3->
 

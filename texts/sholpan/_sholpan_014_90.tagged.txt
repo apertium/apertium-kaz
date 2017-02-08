@@ -85,7 +85,7 @@
 	"бар" n nom @x #5->
 	"бар" n attr @x #5->
 	"бар" det qnt @det #5->
-	"бар" adj subst nom @det #5->
+	"бар" adj subst nom @x #5->
 "<денесінен>"
 	"дене" n px3sp abl @x #6->
 "<көбігі>"
@@ -231,9 +231,9 @@
 	"қайт" v iv neg gpr_impf @x #2->
 	"қайтпайтын" adj @x #2->
 	"қайтпайтын" adj advl @advmod #2->
-	"қайтпайтын" adj subst nom @advmod #2->
-	"қайт" v iv neg pih p3 sg @advmod #2->
-	"қайт" v iv neg gpr_impf subst nom @advmod #2->
+	"қайтпайтын" adj subst nom @x #2->
+	"қайт" v iv neg pih p3 sg @x #2->
+	"қайт" v iv neg gpr_impf subst nom @x #2->
 "<қасарған>"
 	"*қасарған" @x #3->
 "<тәкаппар>"

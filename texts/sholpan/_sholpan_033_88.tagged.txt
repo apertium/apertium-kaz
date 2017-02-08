@@ -31,10 +31,10 @@
 "<үшін>"
 	"үшін" post @case #11->
 	"үш" n px3sp acc @obj #11->
-	"үш" num subst px3sp acc @obj #11->
+	"үш" num subst px3sp acc @x #11->
 "<бүгін>"
 	"бүгін" adv @advmod #12->
-	"бүгін" n nom @advmod #12->
+	"бүгін" n nom @x #12->
 "<жібігенін>"
 	"жібі" v iv ger_past px3sp acc @x #13->
 	"жібі" v iv gpr_past subst px3sp acc @x #13->
@@ -140,7 +140,7 @@
 "<Бір>"
 	"бір" num @x #1->
 	"бір" det ind @det #1->
-	"бір" num subst nom @det #1->
+	"бір" num subst nom @x #1->
 "<ауыз>"
 	"ауыз" n nom @x #2->
 	"ауыз" n attr @x #2->
@@ -238,7 +238,7 @@
 	"мөлдір" adj @x #17->
 	"мөлдір" adv @advmod #17->
 	"мөлдір" adj advl @advmod #17->
-	"мөлдір" adj subst nom @advmod #17->
+	"мөлдір" adj subst nom @x #17->
 "<жас>"
 	"жас" adv @advmod #18->
 "<сорғалап>"

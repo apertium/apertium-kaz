@@ -10,7 +10,7 @@
 	"жақсы" adj @x #1->
 	"жақсы" adv @advmod #1->
 	"жақсы" adj advl @advmod #1->
-	"жақсы" adj subst nom @advmod #1->
+	"жақсы" adj subst nom @x #1->
 "<ағаң>"
 	"аға" n px2sg nom @x #2->
 "<болмаса>"
@@ -103,7 +103,7 @@
 	"қара" v iv prc_impf @x #7->
 "<жүре>"
 	"жүр" vaux prc_impf @aux #8->
-	"жүр" v iv prc_impf @aux #8->
+	"жүр" v iv prc_impf @x #8->
 "<бергенде>"
 	"бер" vaux ger_past loc @aux #9->
 "<,>"
@@ -179,7 +179,7 @@
 	"қыстау" n attr @x #7->
 "<желкесіндегі>"
 	"желке" n px3sp loc attr @amod #8->
-	"желке" n px3sp loc subst nom @amod #8->
+	"желке" n px3sp loc subst nom @x #8->
 "<шілікке>"
 	"*шілікке" @x #9->
 "<қарай>"

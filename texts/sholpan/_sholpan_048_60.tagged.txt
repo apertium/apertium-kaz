@@ -115,7 +115,7 @@
 
 "<Мынау>"
 	"мынау" det dem @det #1->
-	"мынау" prn dem nom @det #1->
+	"мынау" prn dem nom @x #1->
 "<сөз>"
 	"сөз" n nom @x #2->
 	"сөз" n attr @x #2->
@@ -129,8 +129,8 @@
 "<бетер>"
 	"бет" v iv gpr_fut @x #6->
 	"бетер" post @case #6->
-	"бет" v iv gpr_fut subst nom @case #6->
-	"бет" v iv fut p3 sg @case #6->
+	"бет" v iv gpr_fut subst nom @x #6->
+	"бет" v iv fut p3 sg @x #6->
 "<құтыртты>"
 	"*құтыртты" @x #7->
 "<.>"

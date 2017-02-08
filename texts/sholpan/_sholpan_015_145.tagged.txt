@@ -276,7 +276,7 @@
 	"бірінші" adj @x #16->
 	"бір" num ord subst nom @x #16->
 	"бірінші" adj advl @advmod #16->
-	"бірінші" adj subst nom @advmod #16->
+	"бірінші" adj subst nom @x #16->
 "<рет>"
 	"рет" n nom @x #17->
 "<көретін>"
@@ -291,8 +291,8 @@
 "<жас>"
 	"жас" adj @x #21->
 	"жас" adv @advmod #21->
-	"жас" n nom @advmod #21->
-	"жас" n attr @advmod #21->
+	"жас" n nom @x #21->
+	"жас" n attr @x #21->
 "<қыздай>"
 	"қыз" n sim @x #22->
 "<дірілдеп>"
@@ -308,9 +308,9 @@
 	"жан" v iv gpr_impf @x #27->
 	"жанатын" adj @x #27->
 	"жанатын" adj advl @advmod #27->
-	"жанатын" adj subst nom @advmod #27->
-	"жан" v iv pih p3 sg @advmod #27->
-	"жан" v iv gpr_impf subst nom @advmod #27->
+	"жанатын" adj subst nom @x #27->
+	"жан" v iv pih p3 sg @x #27->
+	"жан" v iv gpr_impf subst nom @x #27->
 "<болды>"
 	"бол" v iv ifi p3 sg @x #28->
 "<.>"
@@ -327,7 +327,7 @@
 "<бір>"
 	"бір" num @x #5->
 	"бір" det ind @det #5->
-	"бір" num subst nom @det #5->
+	"бір" num subst nom @x #5->
 "<біріне>"
 	"бір" num subst px3sp dat @x #6->
 "<қабыстырғандай>"
@@ -477,7 +477,7 @@
 	"Сәрсенбай" np ant m gen @x #1->
 "<мынау>"
 	"мынау" det dem @det #2->
-	"мынау" prn dem nom @det #2->
+	"мынау" prn dem nom @x #2->
 "<күлкісі>"
 	"күлкі" n px3sp nom @x #3->
 "<Шолпанның>"
@@ -498,7 +498,7 @@
 	"себ" v iv pih p3 sg @x #8->
 	"себ" v iv gpr_impf subst nom @x #8->
 	"себет" n px3sp acc @obj #8->
-	"сеп" v tv pih p3 sg @obj #8->
+	"сеп" v tv pih p3 sg @x #8->
 "<еді>"
 	"е" cop ifi p3 sg @cop #9->
 "<.>"

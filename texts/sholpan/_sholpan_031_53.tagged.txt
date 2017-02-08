@@ -52,7 +52,7 @@
 "<үшін>"
 	"үшін" post @case #2->
 	"үш" n px3sp acc @obj #2->
-	"үш" num subst px3sp acc @obj #2->
+	"үш" num subst px3sp acc @x #2->
 "<?>"
 	"?" sent @punct #3->
 
@@ -62,7 +62,7 @@
 "<үшін>"
 	"үшін" post @case #2->
 	"үш" n px3sp acc @obj #2->
-	"үш" num subst px3sp acc @obj #2->
+	"үш" num subst px3sp acc @x #2->
 "<!>"
 	"!" sent @punct #3->
 
@@ -121,7 +121,7 @@
 	"тура" adj @x #2->
 	"тура" adv @advmod #2->
 	"тура" adj advl @advmod #2->
-	"тура" adj subst nom @advmod #2->
+	"тура" adj subst nom @x #2->
 "<төсек>"
 	"төсек" n nom @x #3->
 	"төсек" n attr @x #3->

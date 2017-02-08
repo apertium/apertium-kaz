@@ -113,7 +113,7 @@
 	"қой" n attr @x #1->
 "<әлі>"
 	"әлі" adv @advmod #2->
-	"әл" n px3sp nom @advmod #2->
+	"әл" n px3sp nom @x #2->
 "<өрістен>"
 	"өріс" n abl @x #3->
 "<келген жоқ>"
@@ -123,7 +123,7 @@
 
 "<Үйшіктегі>"
 	"үйшік" n loc attr @amod #1->
-	"үйшік" n loc subst nom @amod #1->
+	"үйшік" n loc subst nom @x #1->
 "<қарны>"
 	"қарын" n px3sp nom @x #2->
 "<ашқан>"
@@ -216,7 +216,7 @@
 "<ол>"
 	"ол" prn pers p3 sg nom @x #3->
 	"ол" det dem @det #3->
-	"ол" prn dem nom @det #3->
+	"ол" prn dem nom @x #3->
 "<тігіп>"
 	"тіг" v iv prc_perf @x #4->
 	"тік" v iv prc_perf @x #4->
@@ -265,7 +265,7 @@
 "<Бір>"
 	"бір" num @x #1->
 	"бір" det ind @det #1->
-	"бір" num subst nom @det #1->
+	"бір" num subst nom @x #1->
 "<ай>"
 	"ай" n nom @x #2->
 "<болады>"
@@ -296,7 +296,7 @@
 "<үшін>"
 	"үшін" post @case #3->
 	"үш" n px3sp acc @obj #3->
-	"үш" num subst px3sp acc @obj #3->
+	"үш" num subst px3sp acc @x #3->
 "<ізгі>"
 	"ізгі" adj @x #4->
 	"ізгі" adj advl @advmod #4->
@@ -312,14 +312,14 @@
 "<бір>"
 	"бір" num @x #8->
 	"бір" det ind @det #8->
-	"бір" num subst nom @det #8->
+	"бір" num subst nom @x #8->
 "<бала>"
 	"бала" n nom @x #9->
 	"бала" n attr @x #9->
 "<үшін>"
 	"үшін" post @case #10->
 	"үш" n px3sp acc @obj #10->
-	"үш" num subst px3sp acc @obj #10->
+	"үш" num subst px3sp acc @x #10->
 "<жан>"
 	"жан" n nom @x #11->
 	"жан" n attr @x #11->
@@ -334,7 +334,7 @@
 "<ол>"
 	"ол" prn pers p3 sg nom @x #16->
 	"ол" det dem @det #16->
-	"ол" prn dem nom @det #16->
+	"ол" prn dem nom @x #16->
 "<ойын>"
 	"ойын" n nom @x #17->
 	"ой" n px3sp acc @obj #17->
