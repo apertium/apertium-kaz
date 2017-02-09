@@ -2427,52 +2427,37 @@
 
 # міне , сонда ғана ол тұрақты болады .	this is the only condition of the country &apos;s stability .	
 "<Міне>"
-	"міне" ij
+	"міне" ij @discourse #1->6
 "<,>"
-	"," cm @punct
+	"," cm @punct #2->6
 "<сонда ғана>"
-	"сол" prn dem loc
-		"ғана" postadv
-	"сонда" cnjadv
-		"ғана" postadv
+	"сол" prn dem loc @obl #3->6
+		"ғана" postadv @advmod #4->3
 "<ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem @det
-	"ол" prn dem nom
+	"ол" prn dem nom @nsubj #5->6
 "<тұрақты>"
-	"тұрақты" adj advl
-	"тұрақты" adj
-	"тұрақты" adv
-	"тұрақ" n
-		"лы" post @case
-	"тұрақты" n nom
+	"тұрақты" adj @root #6->0
 "<болады>"
-	"бол" v iv aor p3 sg
+	"бол" v iv aor p3 sg @cop #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
 # Сізге тағы да « қош келдіңіз » деймін .	I would like to welcome you again .	
 "<Сізге>"
-	"сіз" prn pers p2 sg frm dat
+	"сіз" prn pers p2 sg frm dat @obl #1->7
 "<тағы да>"
-	"тағы" adv
-		"да" cnjcoo
-	"тағы" adv
-		"да" postadv
-	"тақ" n px3sp nom
-		"да" cnjcoo
-	"тақ" n px3sp nom
-		"да" postadv
+	"тағы" adv @advmod #2->7
+		"да" postadv @advmod #3->7
 "<«>"
-	"«" lquot @punct
+	"«" lquot @punct #4->5
 "<қош келдіңіз>"
-	"қош келдіңіз" ij
+	"қош келдіңіз" ij @ccomp #5->7
 "<»>"
-	"»" rquot @punct
+	"»" rquot @punct #6->5
 "<деймін>"
-	"де" v tv aor p1 sg
+	"де" v tv aor p1 sg @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # әр нысан , әр салынған ғимарат бірегей болуы керек .	each object , each block must be unique .	
 "<Әр>"
