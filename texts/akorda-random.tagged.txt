@@ -30,7 +30,7 @@
 "<.>"
 	"." sent @punct #9->7
 
-# біздің елде сізге ерекше құрметпен қарайды .	we have the greatest respect for you .	
+# біздің елде сізге ерекше құрметпен қарайды .	we have the greatest respect for you .
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<елде>"
@@ -88,7 +88,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# қазіргі кезде қаланың ішкі өңірлік өнімі 20 есе өсті .	these days , the city ’ s internatl regional product has increased by 20 times .	
+# қазіргі кезде қаланың ішкі өңірлік өнімі 20 есе өсті .	these days , the city ’ s internatl regional product has increased by 20 times .
 "<Қазіргі>"
 	"қазір" adv attr
 	"қазіргі" adj
@@ -199,9 +199,9 @@
 "<.>"
 	"." sent @punct #11->8
 
-# ал қазіргі кезде Бірыңғай экономикалық кеңістік құру бойынша жұмыс істеудеміз .	now we are working to create a Common Economic Space .	
+# ал қазіргі кезде Бірыңғай экономикалық кеңістік құру бойынша жұмыс істеудеміз .	now we are working to create a Common Economic Space .
 "<Ал>"
-	"ал" cnjcoo
+	"ал" cnjcoo @cc
 "<қазіргі>"
 	"қазір" adv attr
 	"қазіргі" adj
@@ -298,7 +298,7 @@
 "<.>"
 	"." sent @punct #5->4
 
-# ол үшін төмендегідей шаралар қажет :	Firstly , Kazakhstan is a modern state .	
+# ол үшін төмендегідей шаралар қажет :	Firstly , Kazakhstan is a modern state .
 "<Ол>"
 	"ол" prn pers p3 sg nom
 	"ол" det dem @det
@@ -318,7 +318,7 @@
 "<:>"
 	":" sent @punct
 
-# Астанада барлық қажетті жабдықтармен жабдықталған ірі медициналық орталықтар бар .	large medical centers were built in Astana .	
+# Астанада барлық қажетті жабдықтармен жабдықталған ірі медициналық орталықтар бар .	large medical centers were built in Astana .
 "<Астанада>"
 	"Астана" np top loc
 "<барлық>"
@@ -368,7 +368,7 @@
 "<.>"
 	"." sent @punct #7->6
 
-# қазір 1 млрд. АҚШ долларына дейінгі қаражаты бар бірлескен қор құрылып жатыр .	a joint fund of nearly US $ 1 billion is under establishment .	
+# қазір 1 млрд. АҚШ долларына дейінгі қаражаты бар бірлескен қор құрылып жатыр .	a joint fund of nearly US $ 1 billion is under establishment .
 "<Қазір>"
 	"қазір" adv
 "<1>"
@@ -396,7 +396,7 @@
 "<.>"
 	"." sent @punct
 
-# халықтың үміті мен Сіздің сеніміңізді ақтай алғаныма қуаныштымын .	“ I was honored to present my motherland Kazakhstan at the Games .	
+# халықтың үміті мен Сіздің сеніміңізді ақтай алғаныма қуаныштымын .	“ I was honored to present my motherland Kazakhstan at the Games .
 "<Халықтың>"
 	"халық" n gen
 	"Халық" np ant m gen
@@ -404,7 +404,7 @@
 	"үміт" n px3sp nom
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<Сіздің>"
 	"сіз" prn pers p2 sg frm gen
@@ -439,7 +439,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# бұл Қазақстанның бәсекеге қабілетті әлеуеті бар салалар .	in these realms Kazakhstan possesses a competitive potential .	
+# бұл Қазақстанның бәсекеге қабілетті әлеуеті бар салалар .	in these realms Kazakhstan possesses a competitive potential .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -480,7 +480,7 @@
 "<.>"
 	"." sent @punct #7->5
 
-# біздің өңір үшін – бұл стратегиялық жол .	this is our strategic way .	
+# біздің өңір үшін – бұл стратегиялық жол .	this is our strategic way .
 "<Біздің>"
 	"біз" prn pers p1 pl gen @nmod:poss #1->
 "<өңір>"
@@ -537,7 +537,7 @@
 "<.>"
 	"." sent @punct #9->7
 
-# конкурсқа қатысуға 296 кәсіпорын ниет білдірген .	296 enterprises made applications to participate in this annual competition .	
+# конкурсқа қатысуға 296 кәсіпорын ниет білдірген .	296 enterprises made applications to participate in this annual competition .
 "<Конкурсқа>"
 	"конкурс" n dat
 "<қатысуға>"
@@ -556,7 +556,7 @@
 "<.>"
 	"." sent @punct
 
-# жобаның 1-кезеңінің ( кеме жасау зауыты ) аяқталуы – 2006 жылдың тамыз айы .	the first train of the plant was finished in August 2006 .	
+# жобаның 1-кезеңінің ( кеме жасау зауыты ) аяқталуы – 2006 жылдың тамыз айы .	the first train of the plant was finished in August 2006 .
 "<Жобаның>"
 	"жоба" n gen
 "<1>"
@@ -617,7 +617,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# бізде әлемдегі үздік үлгілерді осында әкелудің бірегей мүмкіндігі бар .	and we have got a unique chance to bring all unique things to here .	
+# бізде әлемдегі үздік үлгілерді осында әкелудің бірегей мүмкіндігі бар .	and we have got a unique chance to bring all unique things to here .
 "<Бізде>"
 	"біз" prn pers p1 pl loc @obl:own #1->9
 "<әлемдегі>"
@@ -659,7 +659,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# Мемлекет басшысы Нұрсұлтан Назарбаевтың Қостанай облысына жұмыс сапары жалғасуда .	President Nursultan Nazarbayev Continues Trip to Kostanay Region	
+# Мемлекет басшысы Нұрсұлтан Назарбаевтың Қостанай облысына жұмыс сапары жалғасуда .	President Nursultan Nazarbayev Continues Trip to Kostanay Region
 "<Мемлекет>"
 	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
@@ -714,7 +714,7 @@
 "<.>"
 	"." sent @punct #9->7
 
-# осының бәрі терең құрметке лайық .	all these deserve profound respect .	
+# осының бәрі терең құрметке лайық .	all these deserve profound respect .
 "<Осының>"
 	"осы" prn dem gen @nmod:poss #1->2
 "<бәрі>"
@@ -746,7 +746,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# Алматы облысы – еліміздің халық тығыз топтасқан өңірлерінің бірі .	Almaty region is one of the most densely populated regions of the country .	
+# Алматы облысы – еліміздің халық тығыз топтасқан өңірлерінің бірі .	Almaty region is one of the most densely populated regions of the country .
 "<Алматы>"
 	"Алматы" np top nom @nmod:poss #1->2
 "<облысы>"
@@ -833,7 +833,7 @@
 "<!>"
 	"!" sent @punct #7->6
 
-# бюджетке ақшаның түсуі көбейгені рас .	nobody is making a secret of that .	
+# бюджетке ақшаның түсуі көбейгені рас .	nobody is making a secret of that .
 "<Бюджетке>"
 	"бюджет" n dat
 "<ақшаның>"
@@ -848,7 +848,7 @@
 "<.>"
 	"." sent @punct
 
-# Астана елімізге қайырлы да құтты қала болды , - деді Мемлекет басшысы .	there are thousands of new residents , new families and destinies .	
+# Астана елімізге қайырлы да құтты қала болды , - деді Мемлекет басшысы .	there are thousands of new residents , new families and destinies .
 "<Астана>"
 	"Астана" np top nom 
 "<елімізге>"
@@ -875,7 +875,7 @@
 "<.>"
 	"." sent @punct
 
-# содан кейін Мемлекет басшысының жұмыс сапары Теміртау қаласында жалғасты .	after that , Nursultan Nazarbayev arrived in Temirtau .	
+# содан кейін Мемлекет басшысының жұмыс сапары Теміртау қаласында жалғасты .	after that , Nursultan Nazarbayev arrived in Temirtau .
 "<Содан кейін>"
 	"содан кейін" cnjadv
 "<Мемлекет>"
@@ -895,7 +895,7 @@
 "<.>"
 	"." sent @punct
 
-# тек сыртқы кредиттеуге үміт арту ақылдылық емес .	to rely only on external lending is not reasonable .	
+# тек сыртқы кредиттеуге үміт арту ақылдылық емес .	to rely only on external lending is not reasonable .
 "<Тек>"
 	"тек" adv
 "<сыртқы>"
@@ -934,7 +934,7 @@
 "<.>" 
 	"." sent @punct #10->9
 
-# ал Алматыда мұндай кластер – « Алатау » ақпараттық технологиялар паркі .	in Almaty there is an “ Alatau ” Information Technology Park .	
+# ал Алматыда мұндай кластер – « Алатау » ақпараттық технологиялар паркі .	in Almaty there is an “ Alatau ” Information Technology Park .
 "<Ал>"
 	"ал" cnjcoo @cc #1->11
 "<Алматыда>" 
@@ -961,7 +961,7 @@
 "<.>"
 	"." sent @punct #13->11
 
-# енді біз тарихымызға басқа қырынан келуге тиіспіз .	the key part of the monument is an image of mother .	
+# енді біз тарихымызға басқа қырынан келуге тиіспіз .	the key part of the monument is an image of mother .
 "<Енді>"
 	"ен" n acc
 	"енді" adv
@@ -986,7 +986,7 @@
 "<.>"
 	"." sent @punct
 
-# жұмыстың ерекшелігі - алынған нәтижелердің инновациялық бағыты .	this work was presented by the scientific – industrial center Phytochemistry .	
+# жұмыстың ерекшелігі - алынған нәтижелердің инновациялық бағыты .	this work was presented by the scientific – industrial center Phytochemistry .
 "<Жұмыстың>"
 	"жұмыс" n gen
 "<ерекшелігі>"
@@ -1038,7 +1038,7 @@
 "<.>"
 	"." sent @punct #5->4
 
-# өмір өзгерді . жағдай өзгерді .	we could improve the demographic situation , the birth rate increased .	
+# өмір өзгерді . жағдай өзгерді .	we could improve the demographic situation , the birth rate increased .
 "<Өмір>"
 	"өмір" n nom
 	"Өмір" np ant m nom
@@ -1125,7 +1125,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# – Біз жаттығулар барысын мұқият бақылап отырдық .	much work had been done by the CSTO armed forces .	
+# – Біз жаттығулар барысын мұқият бақылап отырдық .	much work had been done by the CSTO armed forces .
 "<–>"
 	"–" guio @punct
 "<Біз>"
@@ -1146,7 +1146,7 @@
 "<.>"
 	"." sent @punct
 
-# кешендегі 46 пәтердің барлығы тұрмыстық техникамен жабдықталған .	all 46 apartments of the complex are equipped with built-in household appliances .	
+# кешендегі 46 пәтердің барлығы тұрмыстық техникамен жабдықталған .	all 46 apartments of the complex are equipped with built-in household appliances .
 "<Кешендегі>"
 	"кешен" n loc attr @amod #1->3
 "<46>"
@@ -1164,7 +1164,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# – Бізге жұмыс форматын елеулі түрде қайта қарау керек .	“ We have to cardinally reconsider the format of our interaction .	
+# – Бізге жұмыс форматын елеулі түрде қайта қарау керек .	“ We have to cardinally reconsider the format of our interaction .
 "<–>"
 	"–" guio @punct #1->8
 "<Бізге>"
@@ -1185,7 +1185,7 @@
 "<.>"
 	"." sent @punct #10->8
 
-# біз осы дәстүрді қастерлеп сақтаймыз және нығайтамыз .	we cherish and strengthen this tradition .	
+# біз осы дәстүрді қастерлеп сақтаймыз және нығайтамыз .	we cherish and strengthen this tradition .
 "<Біз>"
 	"біз" prn pers p1 pl nom @nsubj #1->7
 "<осы>"
@@ -1203,7 +1203,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# саммит жұмысының қорытындысында « Стамбұл Декларациясы » қабылданды .	following the summit , the parties adopted the Istanbul Declaration .	
+# саммит жұмысының қорытындысында « Стамбұл Декларациясы » қабылданды .	following the summit , the parties adopted the Istanbul Declaration .
 "<Саммит>"
 	"саммит" n nom @nmod:poss #1->2
 "<жұмысының>"
@@ -1223,7 +1223,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# заңдардың мәтіндері баспасөзде жарияланады .	the laws will be published in the press .	
+# заңдардың мәтіндері баспасөзде жарияланады .	the laws will be published in the press .
 "<Заңдардың>"
 	"заң" n pl gen @nmod:poss #1->2
 "<мәтіндері>"
@@ -1235,7 +1235,7 @@
 "<.>"
 	"." sent @punct #5->4
 
-# осы Жарлық қол қойылған күннен бастап қолданысқа енгізіледі .	the present Decree will come into effect from the date of signing .	
+# осы Жарлық қол қойылған күннен бастап қолданысқа енгізіледі .	the present Decree will come into effect from the date of signing .
 "<Осы>"
 	"осы" det dem @det #1->2
 "<Жарлық>"
@@ -1253,7 +1253,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# бұл ұсыныс біздің көршілеріміз тарапынан қолдау тауып отыр .	it is supported by our neighbors .	
+# бұл ұсыныс біздің көршілеріміз тарапынан қолдау тауып отыр .	it is supported by our neighbors .
 "<Бұл>"
 	"бұл" det dem @det
 "<ұсыныс>"
@@ -1293,7 +1293,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# бұл Стратегия сіздерге арналған .	this strategy is for you .	
+# бұл Стратегия сіздерге арналған .	this strategy is for you .
 "<Бұл>"
 	"бұл" det dem @det #1->2
 "<Стратегия>"
@@ -1305,7 +1305,7 @@
 "<.>" 
 	"." sent @punct #5->4
 
-# инвестициялық саладағы ынтымақтастық табысты дамуда .	the cooperation is successfully developing in investment sphere .	
+# инвестициялық саладағы ынтымақтастық табысты дамуда .	the cooperation is successfully developing in investment sphere .
 "<Инвестициялық>"
 	"инвестициялық" adj
 "<саладағы>"
@@ -1328,11 +1328,11 @@
 "<.>"
 	"." sent @punct
 
-# компания сондай-ақ жүк вагондарын жинау жөніндегі өндірісті жолға қою ниетінде .	the company also intends to organize manufacturing of cargo wagons .	
+# компания сондай-ақ жүк вагондарын жинау жөніндегі өндірісті жолға қою ниетінде .	the company also intends to organize manufacturing of cargo wagons .
 "<Компания>"
 	"компания" n nom
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 "<жүк>"
 	"жүк" n nom
 	"жүк" n attr
@@ -1384,7 +1384,7 @@
 "<.>"
 	"." sent @punct #10->9
 
-# бүгінде оған барлық жағдай жасалған .	for this we created all necessary environments .	
+# бүгінде оған барлық жағдай жасалған .	for this we created all necessary environments .
 "<Бүгінде>"
 	"бүгінде" adv @advmod #1->5
 "<оған>"
@@ -1398,7 +1398,7 @@
 "<.>"
 	"." sent @punct #6->5
 
-# соның өзінде , біз бұл жаман көрсеткіш емес деп санаймыз .	nevertheless , we believe that it is a good indicator .	
+# соның өзінде , біз бұл жаман көрсеткіш емес деп санаймыз .	nevertheless , we believe that it is a good indicator .
 "<Соның>"
 	"сол" prn dem gen @nmod:poss #1->2
 "<өзінде>"
@@ -1422,7 +1422,7 @@
 "<.>"
 	"." sent @punct #11->10
 
-# нысанның жалпы құны 8,6 миллиард теңге .	the cost of the project totaled more than KZT 8.6 billion .	
+# нысанның жалпы құны 8,6 миллиард теңге .	the cost of the project totaled more than KZT 8.6 billion .
 "<Нысанның>"
 	"нысан" n gen @nmod:poss #1->3
 "<жалпы>"
@@ -1439,7 +1439,7 @@
 "<.>"
 	"." sent @punct #8->6
 
-# – Бұл – халықтың ұлы мерекесі , күн мен түннің теңелуінің белгісі .	it is a great holiday , a symbol of equinox .	
+# – Бұл – халықтың ұлы мерекесі , күн мен түннің теңелуінің белгісі .	it is a great holiday , a symbol of equinox .
 "<–>"
 	"–" guio @punct
 "<Бұл>"
@@ -1460,7 +1460,7 @@
 "<күн>"
 	"күн" n nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<түннің>"
 	"түн" n gen
 "<теңелуінің>"
@@ -1471,7 +1471,7 @@
 "<.>"
 	"." sent @punct
 
-# 2007 жылы өзара сауда айналымының көлемі 531 миллион АҚШ долларын құраған .	its volume was equal to 531 million US dollars in 2007 .	
+# 2007 жылы өзара сауда айналымының көлемі 531 миллион АҚШ долларын құраған .	its volume was equal to 531 million US dollars in 2007 .
 "<2007>"
 	"2007" num @amod #1->2
 "<жылы>"
@@ -1497,7 +1497,7 @@
 "<.>"
 	"." sent @punct #12->11
 
-# - Біздің компания да осы процеске белсене қатысқысы келеді .	our company also would like to participate actively in this development .	
+# - Біздің компания да осы процеске белсене қатысқысы келеді .	our company also would like to participate actively in this development .
 "<->"
 	"-" guio @punct #1->8
 "<Біздің>"
@@ -1540,7 +1540,7 @@
 "<.>"
 	"." sent @punct #10->9
 
-# « Үмітсіз » кредиттердің үлесі – 7,2 пайызға дейін арта түскен .	the share of so called ‘ bad ’ loans increased and reached 7.2 % .	
+# « Үмітсіз » кредиттердің үлесі – 7,2 пайызға дейін арта түскен .	the share of so called ‘ bad ’ loans increased and reached 7.2 % .
 "<«>"
 	"«" lquot @punct #1->2
 "<Үмітсіз>"
@@ -1566,7 +1566,7 @@
 "<.>"
 	"." sent @punct #12->10
 
-# бұл барлық әкімдер мен ауыл шаруашылығы тауар өндірушілерінің міндеті .	this is an issue that concerns both Akims and local vendors .	
+# бұл барлық әкімдер мен ауыл шаруашылығы тауар өндірушілерінің міндеті .	this is an issue that concerns both Akims and local vendors .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -1580,7 +1580,7 @@
 "<әкімдер>"
 	"әкім" n pl nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<ауыл шаруашылығы>"
 	"ауыл шаруашылық" n px3sp nom
 "<тауар>"
@@ -1595,7 +1595,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл - біздің үлкен жетістігіміз .	that is our great achievement .	
+# бұл - біздің үлкен жетістігіміз .	that is our great achievement .
 "<Бұл>"
 	"бұл" prn dem nom @nsubj #1->5
 "<->"
@@ -1610,7 +1610,7 @@
 "<.>"
 	"." sent @punct #7->5
 
-# оны түсіндіре білу керек .	it is necessary to be able to explain this to the people .	
+# оны түсіндіре білу керек .	it is necessary to be able to explain this to the people .
 "<Оны>"
 	"ол" prn dem acc @obj #1->2
 "<түсіндіре>"
@@ -1623,7 +1623,7 @@
 "<.>"
 	"." sent @punct #6->4
 
-# кездесу кезінде екіжақты ынтымақтастықтың мәселесі талқыланды .	the issues on bilateral cooperation were discussed at the meeting .	
+# кездесу кезінде екіжақты ынтымақтастықтың мәселесі талқыланды .	the issues on bilateral cooperation were discussed at the meeting .
 "<Кездесу>"
 	"кездесу" n nom @nmod:poss #1->2
 "<кезінде>"
@@ -1639,7 +1639,7 @@
 "<.>"
 	"." sent @punct #7->6
 
-# сондықтан жұртшылық алаңдарлықтай ешқандай себеп жоқ .	that is why the people have no reasons for concern .	
+# сондықтан жұртшылық алаңдарлықтай ешқандай себеп жоқ .	that is why the people have no reasons for concern .
 "<Сондықтан>"
 	"сондықтан" cnjadv @cc
 "<жұртшылық>"
@@ -1656,7 +1656,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы екі заңға қол қойды .	President Nazarbayev signed a number of Laws of the Republic of Kazakhstan .	
+# Мемлекет басшысы екі заңға қол қойды .	President Nazarbayev signed a number of Laws of the Republic of Kazakhstan .
 "<Мемлекет>"
 	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
@@ -1670,7 +1670,7 @@
 "<.>"
 	"." sent @punct #6->5
 
-# макроэкономикалық көрсеткіштер жаман емес , - деді Г.Марченко.	the main macroeconomic indicators are not bad , ” Grigory Marchenko highlighted .	
+# макроэкономикалық көрсеткіштер жаман емес , - деді Г.Марченко.	the main macroeconomic indicators are not bad , ” Grigory Marchenko highlighted .
 "<Макроэкономикалық>"
 	"макроэкономикалық" adj @amod #1->2
 "<көрсеткіштер>"
@@ -1692,7 +1692,7 @@
 "<.>"
 	"." sent @punct #10->7
 
-# 1 . әлеуметтік саясаттың жаңа принциптері	new principles of social policy – social guarantees and personal responsibility	
+# 1 . әлеуметтік саясаттың жаңа принциптері	new principles of social policy – social guarantees and personal responsibility
 "<1>"
 	"1" num
 "<.>"
@@ -1710,7 +1710,7 @@
 "<принциптері>"
 	"принцип" n pl px3sp nom
 
-# мен таң қалып отырмын .	I am impressed .	
+# мен таң қалып отырмын .	I am impressed .
 "<Мен>"
 	"мен" prn pers p1 sg nom @nsubj #1->2
 "<таң қалып>"
@@ -1720,7 +1720,7 @@
 "<.>"
 	"." sent @punct #4->2
 
-# одан кейін еліміздің Президенті дала асханасынан дәм татты .	the President then had a lunch in the field kitchen .	
+# одан кейін еліміздің Президенті дала асханасынан дәм татты .	the President then had a lunch in the field kitchen .
 "<Одан>"
 	"ол" prn dem abl @obl #1->8
 "<кейін>"
@@ -1740,7 +1740,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# оң серпін ағымдағы жылы да сақталып отыр .	such good dynamics is keeping this year as well .	
+# оң серпін ағымдағы жылы да сақталып отыр .	such good dynamics is keeping this year as well .
 "<Оң>"
 	"оң" adj @amod #1->2
 "<серпін>"
@@ -1757,7 +1757,7 @@
 "<.>"
 	"." sent @punct #8->6
 
-# сіздерді ұлық мереке – Құрбан айт мейрамымен шын жүректен құттықтаймын !	I cordially congratulate you on Kurban Ait holiday .	
+# сіздерді ұлық мереке – Құрбан айт мейрамымен шын жүректен құттықтаймын !	I cordially congratulate you on Kurban Ait holiday .
 "<Сіздерді>"
 	"сіздер" prn pers p2 pl frm acc @obj #1->9
 "<ұлық>"
@@ -1779,7 +1779,7 @@
 "<!>"
 	"!" sent @punct #10->9
 
-# жылдың басында дағдарысқа қарсы бағдарлама бекітілді .	in the beginning of the year the anti-crisis program has been adopted .	
+# жылдың басында дағдарысқа қарсы бағдарлама бекітілді .	in the beginning of the year the anti-crisis program has been adopted .
 "<Жылдың>"
 	"жыл" n gen @nmod:poss #1->2
 "<басында>"
@@ -1795,7 +1795,7 @@
 "<.>"
 	"." sent @punct #7->6
 
-# – Қазір біз іске асыра алмайтындай жоба жоқ .	- There is no such a project that we could not implement .	
+# – Қазір біз іске асыра алмайтындай жоба жоқ .	- There is no such a project that we could not implement .
 "<–>"
 	"–" guio @punct #1->7
 "<Қазір>"
@@ -1814,7 +1814,7 @@
 "<.>"
 	"." sent @punct #9->7
 
-# қымбатты ханымдар !	2050 – is not merely a symbolic date .	
+# қымбатты ханымдар !	2050 – is not merely a symbolic date .
 "<Қымбатты>"
 	"Қымбат" np ant f
 		"лы" post @case
@@ -1833,7 +1833,7 @@
 "<!>"
 	"!" sent @punct
 
-# кәсіпкерлердің қырық пайызға жуығы әйелдер .	also almost 40 percents of entrepreneurs are women .	
+# кәсіпкерлердің қырық пайызға жуығы әйелдер .	also almost 40 percents of entrepreneurs are women .
 "<Кәсіпкерлердің>"
 	"кәсіпкер" n pl gen
 "<қырық>"
@@ -1850,7 +1850,7 @@
 "<.>"
 	"." sent @punct
 
-# соның ішінде , олардың үшеуі Мемлекеттік Думаға екі мәртеден сайланды .	moreover , three of them were elected to the State Duma twice .	
+# соның ішінде , олардың үшеуі Мемлекеттік Думаға екі мәртеден сайланды .	moreover , three of them were elected to the State Duma twice .
 "<Соның>"
 	"сол" prn dem gen @nmod:poss #1->2
 "<ішінде>"
@@ -1874,7 +1874,7 @@
 "<.>"
 	"." sent @punct #11->10
 
-# Ресей Федерациясының Президенті Владимир Путинмен телефон арқылы сөйлесу	Telephone conversation with Russian President Vladimir Putin	
+# Ресей Федерациясының Президенті Владимир Путинмен телефон арқылы сөйлесу	Telephone conversation with Russian President Vladimir Putin
 "<Ресей>"
 	"Ресей" np top nom
 	"Ресей" np top attr
@@ -1894,7 +1894,7 @@
 	"сөйле" v tv coop ger nom
 	"сөйлес" v iv ger nom
 
-# сіздердің бұған қосатын үлестеріңіздің маңызы орасан .	and your participation in this process is of great important .	
+# сіздердің бұған қосатын үлестеріңіздің маңызы орасан .	and your participation in this process is of great important .
 "<Сіздердің>"
 	"сіздер" prn pers p2 pl frm gen
 "<бұған>"
@@ -1912,7 +1912,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуына байланысты :	by the presidential orders due to the transfer to another job :	
+# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуына байланысты :	by the presidential orders due to the transfer to another job :
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -1936,7 +1936,7 @@
 "<:>"
 	":" sent @punct
 
-# қымбатты отандастар !	dear compatriots !	
+# қымбатты отандастар !	dear compatriots !
 "<Қымбатты>"
 	"қымбатты" adj @amod #1->2
 "<отандастар>"
@@ -1944,7 +1944,7 @@
 "<!>"
 	"!" sent @punct #3->2
 
-# жоғары Мәртебелім ,	Excellency ,	
+# жоғары Мәртебелім ,	Excellency ,
 "<Жоғары>"
 	"жоғары" adj
 	"жоғары" adv
@@ -1957,7 +1957,7 @@
 "<,>"
 	"," cm @punct
 
-# « Палестина туралы мәселе » ,	economic Growth and Sustainable Development	
+# « Палестина туралы мәселе » ,	economic Growth and Sustainable Development
 "<«>"
 	"«" lquot @punct
 "<Палестина>"
@@ -1973,7 +1973,7 @@
 "<,>"
 	"," cm @punct
 
-# содан кейін Мемлекет басшысы « Шапағат » коммуналдық базарында болды .	the head of state then visited a Shapagat new communal market .	
+# содан кейін Мемлекет басшысы « Шапағат » коммуналдық базарында болды .	the head of state then visited a Shapagat new communal market .
 "<Содан кейін>"
 	"содан кейін" cnjadv @cc #1->9
 "<Мемлекет>"
@@ -1995,7 +1995,7 @@
 "<.>"
 	"." sent @punct #10->9
 
-# Қазақстан халқын абыроймен алға бастап , тағы да тарихи тамаша жеңістерге жетіңіз .	Muzafar Alimbayev , a national writer of Kazakhstan :	
+# Қазақстан халқын абыроймен алға бастап , тағы да тарихи тамаша жеңістерге жетіңіз .	Muzafar Alimbayev , a national writer of Kazakhstan :
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -2011,11 +2011,11 @@
 	"," cm @punct
 "<тағы да>"
 	"тағы" adv
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"тағы" adv
 		"да" postadv
 	"тақ" n px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"тақ" n px3sp nom
 		"да" postadv
 "<тарихи>"
@@ -2037,7 +2037,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы Нұрсұлтан Назарбаев қысқа мерзімді демалысқа шықты .	the Head of state Nursultan Nazarbayev is on short-term leave .	
+# Мемлекет басшысы Нұрсұлтан Назарбаев қысқа мерзімді демалысқа шықты .	the Head of state Nursultan Nazarbayev is on short-term leave .
 "<Мемлекет>"
 	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
@@ -2057,7 +2057,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# Дик Чейнидің аузынан Астананың атына ешқандай айыптау айтылмады .	no similar accusations were made by Cheney against Astana .	
+# Дик Чейнидің аузынан Астананың атына ешқандай айыптау айтылмады .	no similar accusations were made by Cheney against Astana .
 "<Дик>"
 	"Дик" np ant m nom @flat:name #1->2
 "<Чейнидің>"
@@ -2077,7 +2077,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# 2011 жылғы 14 желтоқсан	December 14 , 2011	
+# 2011 жылғы 14 желтоқсан	December 14 , 2011
 "<2011>"
 	"2011" num
 "<жылғы>"
@@ -2087,7 +2087,7 @@
 "<желтоқсан>"
 	"желтоқсан" n nom
 
-# - Президент Пирамиданы маған резиденция терезесінен көрсетті .	-the President showed me this Pyramid from a window of the residency .	
+# - Президент Пирамиданы маған резиденция терезесінен көрсетті .	-the President showed me this Pyramid from a window of the residency .
 "<->"
 	"-" guio @punct #1->7
 "<Президент>"
@@ -2105,7 +2105,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# Санаулы сәттерден кейін біз жаңа 2012 жылға қадам басамыз .	the 2012 New Year greeting of the Head of state Nursultan Nazarbayev .	
+# Санаулы сәттерден кейін біз жаңа 2012 жылға қадам басамыз .	the 2012 New Year greeting of the Head of state Nursultan Nazarbayev .
 "<Санаулы>"
 	"санаулы" adj
 	"санау" n
@@ -2136,7 +2136,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл халықаралық қоғамдастық үшін жақсы жағынан үлгі болады .	this will be a good example for the international community .	
+# бұл халықаралық қоғамдастық үшін жақсы жағынан үлгі болады .	this will be a good example for the international community .
 "<Бұл>"
 	"бұл" prn dem nom @nsubj #1->7
 "<халықаралық>"
@@ -2156,7 +2156,7 @@
 "<.>"
 	"." sent @punct #9->7
 
-# перспективалы ұлттық кластерлерді қалыптастыратын жол картасы	Roadmap of development prospective national clusters	
+# перспективалы ұлттық кластерлерді қалыптастыратын жол картасы	Roadmap of development prospective national clusters
 "<Перспективалы>"
 	"перспектива" n
 		"лы" post @case
@@ -2175,7 +2175,7 @@
 "<картасы>"
 	"карта" n px3sp nom
 
-# бұл мәселеде де біз Нұрсұлтан Әбішұлының қолдауын сезінеміз .	in this respect we also feel the support of President Nursultan Abishevich Nazarbayev .	
+# бұл мәселеде де біз Нұрсұлтан Әбішұлының қолдауын сезінеміз .	in this respect we also feel the support of President Nursultan Abishevich Nazarbayev .
 "<Бұл>"
 	"бұл" det dem @det #1->2
 "<мәселеде де>"
@@ -2194,7 +2194,7 @@
 "<.>" 
 	"." sent @punct #9->8
 
-# ол стратегиялық әріптестікке және өзара сенімге құрылған .	it is based on strategic partnership and mutual trust .	
+# ол стратегиялық әріптестікке және өзара сенімге құрылған .	it is based on strategic partnership and mutual trust .
 "<Ол>"
 	"ол" prn dem nom @nsubj #1->7
 "<стратегиялық>"
@@ -2212,7 +2212,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# Австрия Қазақстанның басты сауда серіктестері арасында жетінші орын алады .	Austria ranks seventh among all trade partners of Kazakhstan .	
+# Австрия Қазақстанның басты сауда серіктестері арасында жетінші орын алады .	Austria ranks seventh among all trade partners of Kazakhstan .
 "<Австрия>"
 	"Австрия" np top nom @nsubj #1->9
 "<Қазақстанның>"
@@ -2234,7 +2234,7 @@
 "<.>"
 	"." sent @punct #10->9
 
-# олардың арасында Қытай , Түркия , Корея , Жапония бар .	the main foreign partners of Kazakhstan have been the members of WTO or going to join .	
+# олардың арасында Қытай , Түркия , Корея , Жапония бар .	the main foreign partners of Kazakhstan have been the members of WTO or going to join .
 "<Олардың>"
 	"олар" prn pers p3 pl gen @nmod:poss #1->2
 "<арасында>"
@@ -2259,7 +2259,7 @@
 "<.>"
 	"." sent @punct #12->10
 
-# - Біз Қазақстанның табыстары мен жетістіктерін жіті бақылап отырмыз .	- We observe on the successes and achievements of Kazakhstan .	
+# - Біз Қазақстанның табыстары мен жетістіктерін жіті бақылап отырмыз .	- We observe on the successes and achievements of Kazakhstan .
 "<->"
 	"-" guio @punct #1->8
 "<Біз>"
@@ -2281,7 +2281,7 @@
 "<.>"
 	"." sent @punct #10->8
 
-# « Мен Алматы маңындағы осы тамаша жерге келгендеріңіз үшін ризашылығымды білдіремін .	“ I welcome you to this beautiful place near Almaty .	
+# « Мен Алматы маңындағы осы тамаша жерге келгендеріңіз үшін ризашылығымды білдіремін .	“ I welcome you to this beautiful place near Almaty .
 "<«>"
 	"«" lquot @punct #1->11
 "<Мен>"
@@ -2307,7 +2307,7 @@
 "<.>"
 	"." sent @punct #12->11
 
-# халықаралық күн тәртібіндегі өзекті мәселелер де талқыланды .	the topical issues of the international agenda were touched upon as well .	
+# халықаралық күн тәртібіндегі өзекті мәселелер де талқыланды .	the topical issues of the international agenda were touched upon as well .
 "<Халықаралық>"
 	"халықаралық" adj @amod #1->2
 "<күн>"
@@ -2324,7 +2324,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# еліміздің қорғаныс қабілеті жоғары болуы үшін қолдан келгенді жасау қажет .	we must improve the defense ability of the country .	
+# еліміздің қорғаныс қабілеті жоғары болуы үшін қолдан келгенді жасау қажет .	we must improve the defense ability of the country .
 "<Еліміздің>"
 	"ел" n px1pl gen
 "<қорғаныс>"
@@ -2362,7 +2362,7 @@
 "<.>"
 	"." sent @punct
 
-# еліміздегі орташа жас – 35 .	the average age of our country is 35 years .	
+# еліміздегі орташа жас – 35 .	the average age of our country is 35 years .
 "<Еліміздегі>"
 	"ел" n px1pl loc attr @amod #1->3
 "<орташа>"
@@ -2377,7 +2377,7 @@
 "<.>"
 	"." sent @punct #7->5
 
-# - Қазақстан өзінің Грузиямен байланысында нақты экономикалық мүдделерді көздейді .	Kazakhstan has in Georgia specific economic interest .	
+# - Қазақстан өзінің Грузиямен байланысында нақты экономикалық мүдделерді көздейді .	Kazakhstan has in Georgia specific economic interest .
 "<->"
 	"-" guio @punct #1->9
 "<Қазақстан>"
@@ -2399,7 +2399,7 @@
 "<.>" 
 	"." sent @punct #10->9
 
-# 1995 жылдан бері аталған компания екі миллиард долларға жуық инвестиция салды .	from 1995 the company has invested about two billion dollars .	
+# 1995 жылдан бері аталған компания екі миллиард долларға жуық инвестиция салды .	from 1995 the company has invested about two billion dollars .
 "<1995>"
 	"1995" num @amod #1->2
 "<жылдан>"
@@ -2425,7 +2425,7 @@
 "<.>"
 	"." sent @punct #12->11
 
-# міне , сонда ғана ол тұрақты болады .	this is the only condition of the country &apos;s stability .	
+# міне , сонда ғана ол тұрақты болады .	this is the only condition of the country &apos;s stability .
 "<Міне>"
 	"міне" ij @discourse #1->6
 "<,>"
@@ -2442,7 +2442,7 @@
 "<.>"
 	"." sent @punct #8->6
 
-# Сізге тағы да « қош келдіңіз » деймін .	I would like to welcome you again .	
+# Сізге тағы да « қош келдіңіз » деймін .	I would like to welcome you again .
 "<Сізге>"
 	"сіз" prn pers p2 sg frm dat @obl #1->7
 "<тағы да>"
@@ -2459,50 +2459,38 @@
 "<.>"
 	"." sent @punct #8->7
 
-# әр нысан , әр салынған ғимарат бірегей болуы керек .	each object , each block must be unique .	
+# әр нысан , әр салынған ғимарат бірегей болуы керек .	each object , each block must be unique .
 "<Әр>"
-	"әр" det qnt
-	"әр" prn ind nom
+	"әр" det qnt @det #1->2
 "<нысан>"
-	"нысан" n nom
-		"е" cop aor p3 sg @cop
+	"нысан" n nom @appos #2->6
 "<,>"
-	"," cm @punct
+	"," cm @punct #3->6
 "<әр>"
-	"әр" det qnt
-	"әр" prn ind nom
+	"әр" det qnt @det #4->6
 "<салынған>"
-	"сал" v tv pass gpr_past
-	"салын" v tv gpr_past
-	"сал" v tv pass gpr_past subst nom
-	"салын" v tv gpr_past subst nom
+	"сал" v tv pass gpr_past @acl:relcl #5->6
 "<ғимарат>"
-	"ғимарат" n nom
+	"ғимарат" n nom @nsubj #6->7
 "<бірегей>"
-	"бірегей" adj
-	"бірегей" adv
-	"бірегей" adj advl
-	"бірегей" adj subst nom
+	"бірегей" adj @csubj #7->9
 "<болуы>"
-	"бол" v iv ger px3sp nom
+	"бол" v iv ger px3sp nom @cop #8->7
 "<керек>"
-	"керек" adj
-		"е" cop aor p3 sg @cop
+	"керек" adj @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
-# Қазақстан Каспий теңізінің айдынындағы ахуалды сенімді бақылауда ұстайды .	Kazakhstan safely controls the situation in its Caspian water area .	
+# Қазақстан Каспий теңізінің айдынындағы ахуалды сенімді бақылауда ұстайды .	Kazakhstan safely controls the situation in its Caspian water area .
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nsubj #1->
 "<Каспий>"
-	"Каспий" np top nom
-	"Каспий" np top attr
+	"Каспий" np top nom @nmod:poss #2->3
 "<теңізінің>"
-	"теңіз" n px3sp gen
+	"теңіз" n px3sp gen @nmod:poss #3->4
 "<айдынындағы>"
-	"айдын" n px3sp loc attr @amod
-	"айдын" n px3sp loc subst nom
+	"айдын" n px3sp loc attr @amod #4->
 "<ахуалды>"
 	"ахуал" n acc
 	"ахуал" n
@@ -2518,14 +2506,14 @@
 	"бақыла" v tv ger loc
 	"бақылау" n loc
 "<ұстайды>"
-	"ұста" v tv aor p3 sg
+	"ұста" v tv aor p3 sg @root
 "<.>"
 	"." sent @punct
 
-# сондықтан да мұнда біз бәрін мұқият зерттеп , ақылға салып көруіміз керек .	there are not details in this work .	
+# сондықтан да мұнда біз бәрін мұқият зерттеп , ақылға салып көруіміз керек .	there are not details in this work .
 "<Сондықтан да>"
 	"сондықтан" cnjadv
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"сондықтан" cnjadv
 		"да" postadv
 "<мұнда>"
@@ -2551,39 +2539,29 @@
 "<.>"
 	"." sent @punct
 
-# мен Саммитке әзірлік жөніндегі барлық мәселені шешеміз деп сенемін .	I am convinced that we shall solve all questions on preparation to the Summit .	
+# мен Саммитке әзірлік жөніндегі барлық мәселені шешеміз деп сенемін .	I am convinced that we shall solve all questions on preparation to the Summit .
 "<Мен>"
-	"мен" prn pers p1 sg nom
+	"мен" prn pers p1 sg nom @nsubj #1->9
 "<Саммитке>"
-	"саммит" n dat
+	"саммит" n dat @obl #2->7
 "<әзірлік>"
-	"әзірлік" n nom
-	"әзірлік" n attr
+	"әзірлік" n nom @nmod:poss #3->4
 "<жөніндегі>"
-	"жөн" n px3sp loc attr @amod
-	"жөн" n px3sp loc subst nom
+	"жөн" n px3sp loc attr @amod #4->6
 "<барлық>"
-	"барлық" adj
-	"барлық" adv
-	"барлық" det qnt
-	"барлық" adj advl
-	"барлық" prn qnt nom
-	"барлық" adj subst nom
+	"барлық" adj @amod #5->6
 "<мәселені>"
-	"мәселе" n acc
+	"мәселе" n acc @obj #6->7
 "<шешеміз>"
-	"шеш" v tv aor p1 pl
-	"шеше" n nom
-		"е" cop aor p1 pl
-	"шеше" n px1pl nom
+	"шеш" v tv aor p1 pl @ccomp #7->8
 "<деп>"
-	"де" v tv gna_perf
+	"де" v tv gna_perf @advcl #8->9
 "<сенемін>"
-	"сен" v tv aor p1 sg
+	"сен" v tv aor p1 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
-# мүгедектер бірлестіктері қызметінің құқықтық базасын жетілдірген жөн .	the legal framework for associations of disabled persons should be improved .	
+# мүгедектер бірлестіктері қызметінің құқықтық базасын жетілдірген жөн .	the legal framework for associations of disabled persons should be improved .
 "<Мүгедектер>"
 	"мүгедек" n pl nom
 "<бірлестіктері>"
@@ -2609,7 +2587,7 @@
 "<.>"
 	"." sent @punct
 
-# - агроөнеркәсіптік кешенді дамыту ;	- promotion of agro-industrial complex ;	
+# - агроөнеркәсіптік кешенді дамыту ;	- promotion of agro-industrial complex ;
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -2624,33 +2602,29 @@
 "<;>"
 	";" sent @punct
 
-# тек биылғы жылдың өзінде Астанада шетелдердің 12 елшілігі ашылды .	the embassies of the 12 foreign countries opened their work in the capital .	
+# тек биылғы жылдың өзінде Астанада шетелдердің 12 елшілігі ашылды .	the embassies of the 12 foreign countries opened their work in the capital .
 "<Тек>"
-	"тек" cnjcoo
-	"тек" adv
-	"тек" n nom
+	"тек" adv @advmod #1->2
 "<биылғы>"
-	"биыл" adv attr
-	"биыл" adv subst nom
+	"биыл" adv attr @amod #2->3
 "<жылдың>"
-	"жыл" n gen
+	"жыл" n gen @nmod:poss #3->4
 "<өзінде>"
-	"өз" prn ref px3sp loc
+	"өз" prn ref px3sp loc @obl #4->10
 "<Астанада>"
-	"Астана" np top loc
+	"Астана" np top loc @obl #5->10
 "<шетелдердің>"
-	"шетел" n pl gen
+	"шетел" n pl gen @nmod:poss #6->8
 "<12>"
-	"12" num
+	"12" num @nummod #7->8
 "<елшілігі>"
-	"елшілік" n px3sp nom
+	"елшілік" n px3sp nom @nsubj #8->9
 "<ашылды>"
-	"ашыл" v tv ifi p3 sg
-	"аш" v tv pass ifi p3 sg
+	"аш" v tv pass ifi p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
-# Орталық Азияда ішкі кикілжіңдер сақталуда .	internal conflict potential is preserved in Central Asia .	
+# Орталық Азияда ішкі кикілжіңдер сақталуда .	internal conflict potential is preserved in Central Asia .
 "<Орталық>"
 	"орталық" adj
 	"орталық" n nom
@@ -2673,7 +2647,7 @@
 "<.>"
 	"." sent @punct
 
-# Иран Ислам Республикасының Президенті	President of the Islamic Republic of Iran	
+# Иран Ислам Республикасының Президенті	President of the Islamic Republic of Iran
 "<Иран>"
 	"иран" n nom
 	"иран" n attr
@@ -2687,61 +2661,46 @@
 "<Президенті>"
 	"президент" n px3sp nom
 
-# жыл сайын , ай сайын жаңа ғимараттар іске қосылып жатыр .	the road traffic is intensive in Astana as in any large city .	
+# жыл сайын , ай сайын жаңа ғимараттар іске қосылып жатыр .	the road traffic is intensive in Astana as in any large city .
 "<Жыл сайын>"
-	"жыл сайын" adv
-"<,>"
-	"," cm @punct
-"<ай сайын>"
-	"ай сайын" adv
+	"жыл сайын" adv @compound #1->3
+"<,>" 
+	"," cm @punct #2->3
+"<ай сайын>" 
+	"ай сайын" adv @advmod #3->6
 "<жаңа>"
-	"жаңа" adj
-	"жаңа" adv
-	"жаңа" adj advl
-	"жаңа" adj subst nom
+	"жаңа" adj @amod #4->5
 "<ғимараттар>"
-	"ғимарат" n pl nom
+	"ғимарат" n pl nom @nsubj #5->6
 "<іске қосылып>"
-	"іске қос" v tv pass prc_perf
+	"іске қос" v tv pass prc_perf @root #6->0
 "<жатыр>"
-	"жатыр" vaux imp p2 sg
-	"жат" vaux pres p3 sg
+	"жат" vaux pres p3 pl @aux #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
-# № 766	# 766	№ 
-"<766>"
-	"766" num
-
-# барлық құқық қорғау жүйесі жұмысының сапасын арттыру қажет .	it is necessary to increase the quality of the entire law enforcement system .	
+# барлық құқық қорғау жүйесі жұмысының сапасын арттыру қажет .	it is necessary to increase the quality of the entire law enforcement system .
 "<Барлық>"
-	"Барлық" np top nom
-	"Барлық" np top attr
+	"барлық" adj @amod #1->2
 "<құқық>"
-	"құқық" n nom
+	"құқық" n nom @obj #2->3
 "<қорғау>"
-	"қорға" v tv ger nom
+	"қорға" v tv ger nom @acl #3->4
 "<жүйесі>"
-	"жүйе" n px3sp nom
+	"жүйе" n px3sp nom @nmod:poss #4->5
 "<жұмысының>"
-	"жұмыс" n px3sp gen
+	"жұмыс" n px3sp gen @nmod:poss #5->6
 "<сапасын>"
-	"сапа" n px3sp acc
+	"сапа" n px3sp acc @obj #6->7
 "<арттыру>"
-	"арттыр" v tv ger nom
+	"арттыр" v tv ger nom @csubj #7->8
 "<қажет>"
-	"қажет" adj
-	"қажет" n nom
-	"қажет" n nom
-		"е" cop aor p3 sg @cop
-	"қажет" adj advl
-	"қажет" adj
-		"е" cop aor p3 sg @cop
-	"қажет" v tv imp p2 sg
+	"қажет" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
-# біз екіжақты қарым-қатынастарды дамытуға мүдделіміз .	we are interested in the development of bilateral relations .	
+# біз екіжақты қарым-қатынастарды дамытуға мүдделіміз .	we are interested in the development of bilateral relations .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<екіжақты>"
@@ -2757,197 +2716,153 @@
 "<.>"
 	"." sent @punct
 
-# екі мемлекет арасында еңсерілмейтін ешқандай қайшылық жоқ .	there are no insuperable contradictions between our countries .	
+# екі мемлекет арасында еңсерілмейтін ешқандай қайшылық жоқ .	there are no insuperable contradictions between our countries .
 "<Екі>"
-	"екі" num
+	"екі" num @nummod #1->2
 "<мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #2->3
 "<арасында>"
-	"ара" n px3sp loc
+	"ара" n px3sp loc @obl #3->4
 "<еңсерілмейтін>"
-	"еңсер" v tv pass neg gpr_impf
-	"еңсер" v tv pass neg gpr_impf subst nom
-	"еңсер" v tv pass neg pih p3 sg
+	"еңсер" v tv pass neg gpr_impf @acl:relcl #4->6
 "<ешқандай>"
-	"ешқандай" det neg
+	"ешқандай" det neg @det #5->6
 "<қайшылық>"
-	"қайшылық" n nom
+	"қайшылық" n nom @nsubj #6->7
 "<жоқ>"
-	"жоқ" adj subst nom
-		"е" cop aor p3 sg @cop
-	"жоқ" adj
-		"е" cop aor p3 sg @cop
+	"жоқ" adj @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
-# жобаны жүзеге асыру мерзімі – 4 жыл .	the term of implementation is 4 years .	
+# жобаны жүзеге асыру мерзімі – 4 жыл .	the term of implementation is 4 years .
 "<Жобаны>"
-	"жоба" n acc
+	"жоба" n acc @obj #1->2
 "<жүзеге асыру>"
-	"жүзеге асыр" v tv ger nom
-	"жүзеге асыру" n nom
-	"жүзеге асыру" n attr
+	"жүзеге асыр" v tv ger nom @acl #2->3
 "<мерзімі>"
-	"мерзім" n px3sp nom
+	"мерзім" n px3sp nom @nsubj #3->6
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #4->6
 "<4>"
-	"4" num
-"<жыл>"
-	"жыл" n nom
-		"е" cop aor p3 sg @cop
+	"4" num @nummod #5->6
+"<жыл>" 
+	"жыл" n nom @root #6->0
+		"е" cop aor p3 sg @cop #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
-# жоба құрылысының басталуы 2008 жылдың көктеміне жоспарланып отыр .	it is planned to start its implementation early 2008 .	
+# жоба құрылысының басталуы 2008 жылдың көктеміне жоспарланып отыр .	it is planned to start its implementation early 2008 .
 "<Жоба>"
-	"жоба" n nom
-	"жоба" n attr
+	"жоба" n nom @nmod:poss #1->2
 "<құрылысының>"
-	"құрылыс" n px3sp gen
+	"құрылыс" n px3sp gen @nsubj #2->3
 "<басталуы>"
-	"баста" v tv pass ger px3sp nom
-	"бастал" v tv ger px3sp nom
+	"баста" v tv pass ger px3sp nom @csubj #3->7
 "<2008>"
-	"2008" num
+	"2008" num @amod #4->5
 "<жылдың>"
-	"жыл" n gen
+	"жыл" n gen @nmod:poss #5->6
 "<көктеміне>"
-	"көктем" n px3sp dat
+	"көктем" n px3sp dat @obl #6->7
 "<жоспарланып>"
-	"жоспарла" v tv pass prc_perf
-	"жоспарлан" v iv prc_perf
+	"жоспарла" v tv pass prc_perf @root #7->0
 "<отыр>"
-	"отыр" vaux pres p3 sg
+	"отыр" vaux pres p3 sg @aux #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
-# дамуымыз жедел , келешегіміз кемел болсын !	May the development be rapid and the future be prosperous !	
+# дамуымыз жедел , келешегіміз кемел болсын !	May the development be rapid and the future be prosperous !
 "<Дамуымыз>"
-	"дамы" v iv ger px1pl nom
-	"даму" n px1pl nom
+	"даму" n px1pl nom @nsubj #1->2
 "<жедел>"
-	"жедел" adj
-	"жедел" adj
-		"е" cop aor p3 sg @cop
+	"жедел" adj @conj #2->5
 "<,>"
-	"," cm @punct
+	"," cm @punct #3->5
 "<келешегіміз>"
-	"келешек" n px1pl nom
+	"келешек" n px1pl nom @nsubj #4->5
 "<кемел>"
-	"кемел" n nom
+	"кемел" n nom @root #5->0
 "<болсын>"
-	"бол" v iv opt p3 sg
+	"бол" v iv opt p3 sg @cop #6->5
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #7->5
 
-# Жарлықтың мәтіні баспасөзде жарияланады .	the text of the Law will be published in the press .	
+# Жарлықтың мәтіні баспасөзде жарияланады .	the text of the Law will be published in the press .
 "<Жарлықтың>"
-	"жарлық" n gen
+	"жарлық" n gen @nmod:poss #1->2
 "<мәтіні>"
-	"мәтін" n px3sp nom
+	"мәтін" n px3sp nom @nsubj #2->4
 "<баспасөзде>"
-	"баспасөз" n loc
+	"баспасөз" n loc @obl #3->4
 "<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-"<.>"
-	"." sent @punct
+	"жарияла" v tv pass aor p3 sg @root #4->0
+"<.>" 
+	"." sent @punct #5->4
 
-# осы орайда Сіздің сапарыңыз аса мәнді әрі маңызды болып отыр .	in this sense Your visit is very important and significant .	
+# осы орайда Сіздің сапарыңыз аса мәнді әрі маңызды болып отыр .	in this sense Your visit is very important and significant .
 "<Осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #1->2
 "<орайда>"
-	"орай" n loc
+	"орай" n loc @obl #2->8
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen
+	"сіз" prn pers p2 sg frm gen @nmod:poss #3->4
 "<сапарыңыз>"
-	"сапар" n px2sg frm nom
+	"сапар" n px2sg frm nom @nsubj #4->8
 "<аса>"
-	"аса" adv
+	"аса" adv @advmod #5->8
 "<мәнді>"
-	"мәнді" adj subst nom
-	"мәнді" adj
-	"мән" n
-		"лы" post @case
-	"мәнді" adj advl
+	"мәнді" adj @conj #6->8
 "<әрі>"
-	"әрі" cnjcoo
-"<маңызды>"
-	"маңызды" adj subst nom
-	"маңызды" adj
-	"маңыз" n
-		"лы" post @case
+	"әрі" cnjcoo @cc #7->8
+"<маңызды>" 
+	"маңызды" adj @root #8->0
 "<болып>"
-	"бол" v iv prc_perf
+	"бол" v iv prc_perf @cop #9->8
 "<отыр>"
-	"отыр" vaux pres p3 sg
+	"отыр" vaux pres p3 sg @aux #10->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->8
 
-# мұны бір компанияның атқаруы қиын .	it is difficult to one company to do it .	
+# мұны бір компанияның атқаруы қиын .	it is difficult to one company to do it .
 "<Мұны>"
-	"бұл" prn dem acc
+	"бұл" prn dem acc @obj #1->4
 "<бір>"
-	"бір" num
-	"бір" det ind
-	"бір" num subst nom
+	"бір" num @nummod #2->3
 "<компанияның>"
-	"компания" n gen
+	"компания" n gen @nsubj #3->4
 "<атқаруы>"
-	"атқар" v tv ger px3sp nom
+	"атқар" v tv ger px3sp nom @csubj #4->5
 "<қиын>"
-	"қиын" adj
-		"е" cop aor p3 sg @cop
+	"қиын" adj @root #5->0
+		"е" cop aor p3 sg @cop #6->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->5
 
-# Президент Кеңсесі	Chancellery of the President ;	
-"<Президент>"
-	"президент" n nom
-	"президент" n attr
-"<Кеңсесі>"
-	"кеңсе" n px3sp nom
-
-# - Жаңа тұжырымдама толыққанды және дер кезінде енгізілуі қажет .	- It is necessary to introduce the new Concept in time .	
+# - Жаңа тұжырымдама толыққанды және дер кезінде енгізілуі қажет .	- It is necessary to introduce the new Concept in time .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->9
 "<Жаңа>"
-	"жаңа" adj
-	"жаңа" adv
-	"жаңа" adj advl
-	"жаңа" adj subst nom
+	"жаңа" adj @amod #2->3
 "<тұжырымдама>"
-	"тұжырымдама" n nom
+	"тұжырымдама" n nom @nsubj #3->8
 "<толыққанды>"
-	"толыққанды" adj
+	"толыққанды" adj @conj #4->6
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc #5->6
 "<дер>"
-	"де" v tv gpr_fut
-	"дер" adv
-	"де" v tv gpr_fut subst nom
-	"де" v tv fut p3 sg
+	"де" v tv gpr_fut @acl:relcl #6->7
 "<кезінде>"
-	"кез" n px3sp loc
+	"кез" n px3sp loc @obl #7->8
 "<енгізілуі>"
-	"енгіз" v tv pass ger px3sp nom
-	"енгізіл" v tv ger px3sp nom
+	"енгіз" v tv pass ger px3sp nom @csubj #8->9
 "<қажет>"
-	"қажет" adj
-	"қажет" n nom
-	"қажет" n nom
-		"е" cop aor p3 sg @cop
-	"қажет" adj advl
-	"қажет" adj
-		"е" cop aor p3 sg @cop
-	"қажет" v tv imp p2 sg
+	"қажет" adj @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
-# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуларына байланысты :	by the presidential orders due to the transfer to another work :	
+# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуларына байланысты :	by the presidential orders due to the transfer to another work :
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -2971,35 +2886,22 @@
 "<:>"
 	":" sent @punct
 
-# осының барлығы бізді жігерлендіре түседі .	we find all of this very encouraging .	
+# осының барлығы бізді жігерлендіре түседі .	we find all of this very encouraging .
 "<Осының>"
-	"осы" prn dem gen
+	"осы" prn dem gen @nmod:poss
 "<барлығы>"
-	"барлық" prn qnt px3sp nom
-	"барлық" adj subst px3sp nom
+	"барлық" prn qnt px3sp nom 
 "<бізді>"
-	"біз" prn pers p1 pl acc
+	"біз" prn pers p1 pl acc 
 "<жігерлендіре>"
-	"жігерлендір" v tv prc_impf
+	"жігерлендір" v tv prc_impf @root
 "<түседі>"
-	"түс" v iv aor p3 sg
+	"түс" vaux aor p3 sg @aux
 "<.>"
 	"." sent @punct
 
-# заңның мәтіні баспасөзде жарияланады .	the text of the Law is published in press .	
-"<Заңның>"
-	"За" np ant m px2sg gen
-	"заң" n gen
-"<мәтіні>"
-	"мәтін" n px3sp nom
-"<баспасөзде>"
-	"баспасөз" n loc
-"<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-"<.>"
-	"." sent @punct
 
-# Қазақстан өз жетістіктерімен мақтануға тиіс .	Michail Kalashnikov , an Russian chief gun ’ s designer :	
+# Қазақстан өз жетістіктерімен мақтануға тиіс .	Michail Kalashnikov , an Russian chief gun ’ s designer :
 "<Қазақстан>"
 	"Қазақстан" np top nom
 "<өз>"
@@ -3020,49 +2922,37 @@
 "<.>"
 	"." sent @punct
 
-# Астананың халқы үш есе көбейді .	Astana ’ s population has been tripled .	
+# Астананың халқы үш есе көбейді .	Astana ’ s population has been tripled .
 "<Астананың>"
-	"астана" n gen
-	"Астана" np top gen
+	"Астана" np top gen @nmod:poss #1->2
 "<халқы>"
-	"халық" n px3sp nom
+	"халық" n px3sp nom @nsubj #2->5
 "<үш>"
-	"үш" num
+	"үш" num @nummod #3->4
 "<есе>"
-	"есе" n nom
+	"есе" n nom @obl #4->5
 "<көбейді>"
-	"көбей" v iv ifi p3 sg
+	"көбей" v iv ifi p3 sg @root #5->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->5
 
-# Қазақстандағы ЮНЕСКО тұрақты даму жобасымен айналысады .	UNESCO implements a project for sustainable development in Kazakhstan .	
+# Қазақстандағы ЮНЕСКО тұрақты даму жобасымен айналысады .	UNESCO implements a project for sustainable development in Kazakhstan .
 "<Қазақстандағы>"
 	"Қазақстан" np top loc attr @amod
-	"Қазақстан" np top loc subst nom
 "<ЮНЕСКО>"
-	"ЮНЕСКО" abbr
+	"ЮНЕСКО" abbr 
 "<тұрақты>"
-	"тұрақ" n acc
-	"тұрақты" adj
-	"тұрақты" adv
-	"тұрақ" n
-		"лы" post @case
-	"тұрақты" n nom
-	"тұрақты" n attr
-	"тұрақты" adj advl
+	"тұрақ" n acc @obj
 "<даму>"
-	"дамы" v iv ger nom
-	"даму" n nom
-	"даму" n attr
+	"даму" n nom @nmod:poss
 "<жобасымен>"
-	"жоба" n px3sp ins
+	"жоба" n px3sp ins @obl
 "<айналысады>"
-	"айналыс" v iv aor p3 sg
-	"айнал" v iv coop aor p3 sg
+	"айнал" v iv coop aor p3 sg @root
 "<.>"
 	"." sent @punct
 
-# өтіп бара жатқан жылға зор алғысымызды айтамыз , – деді Қазақстан Президенті .	we thank outgoing year , ” the President highlighted .	
+# өтіп бара жатқан жылға зор алғысымызды айтамыз , – деді Қазақстан Президенті .	we thank outgoing year , ” the President highlighted .
 "<Өтіп>"
 	"өт" v iv prc_perf
 	"өт" v iv gna_perf
@@ -3100,7 +2990,7 @@
 "<.>"
 	"." sent @punct
 
-# Сұрақтарыңызды мына мекен-жайға жолдауыңызды сұраймыз .	Requisites for questions : 010000 , Astana , u / b 001 .	
+# Сұрақтарыңызды мына мекен-жайға жолдауыңызды сұраймыз .	Requisites for questions : 010000 , Astana , u / b 001 .
 "<Сұрақтарыңызды>"
 	"сұрақ" n pl px2sg frm acc
 "<мына мекен>"
@@ -3119,7 +3009,7 @@
 "<.>"
 	"." sent @punct
 
-# Астана , Ақорда	Astana , Akorda	
+# Астана , Ақорда	Astana , Akorda
 "<Астана>"
 	"астана" n nom
 	"Астана" np top nom
@@ -3129,7 +3019,7 @@
 	"Ақорда" np top nom
 	"Ақорда" np top attr
 
-# Қазақстан РЕСПУБЛИКАСЫ ПРЕЗИДЕНТІНІҢ ЖАРЛЫҒЫ	Kazakhstan made a great contribution to the peace keeping by that act .	
+# Қазақстан РЕСПУБЛИКАСЫ ПРЕЗИДЕНТІНІҢ ЖАРЛЫҒЫ	Kazakhstan made a great contribution to the peace keeping by that act .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -3140,33 +3030,29 @@
 "<ЖАРЛЫҒЫ>"
 	"жарлық" n px3sp nom
 
-# бүгін Ақордада Мемлекет басшысы Нұрсұлтан Назарбаевтың төрағалығымен кеңес өтті .	today at Akorda President Nursultan Nazarbayev Holds a Meeting	
+# бүгін Ақордада Мемлекет басшысы Нұрсұлтан Назарбаевтың төрағалығымен кеңес өтті .	today at Akorda President Nursultan Nazarbayev Holds a Meeting
 "<Бүгін>"
-	"бүгін" adv
-	"бүгін" n nom
-	"бүгін" n attr
+	"бүгін" adv @advmod #1->
 "<Ақордада>"
-	"Ақорда" np top loc
+	"Ақорда" np top loc @obl #2->
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #3->4
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom
+	"Нұрсұлтан" np ant m nom @flat:name
 "<Назарбаевтың>"
-	"Назарбаев" np cog m gen
+	"Назарбаев" np cog m gen @
 "<төрағалығымен>"
-	"төрағалық" n px3sp ins
+	"төрағалық" n px3sp ins @obl
 "<кеңес>"
-	"кеңес" n nom
+	"кеңес" n nom @obj
 "<өтті>"
-	"өт" v tv ifi p3 sg
-	"өт" v iv ifi p3 sg
+	"өт" v tv ifi p3 sg @root
 "<.>"
 	"." sent @punct
 
-# ауыл шаруашылығы өнімдерін қайта өңдеу саласы елеулі дамуда .	significant progress has been made in processing agricultural production .	
+# ауыл шаруашылығы өнімдерін қайта өңдеу саласы елеулі дамуда .	significant progress has been made in processing agricultural production .
 "<Ауыл шаруашылығы>"
 	"ауыл шаруашылық" n px3sp nom
 "<өнімдерін>"
@@ -3188,36 +3074,25 @@
 "<.>"
 	"." sent @punct
 
-# барлық министрлер Президент идеясымен келісті .	the foreign ministers agreed with the President .	
+# барлық министрлер Президент идеясымен келісті .	the foreign ministers agreed with the President .
 "<Барлық>"
-	"барлық" adj
-	"барлық" adv
-	"барлық" det qnt
-	"барлық" adj advl
-	"Барлық" np top nom
-	"Барлық" np top attr
-	"барлық" prn qnt nom
-	"барлық" adj subst nom
+	"барлық" adj @amod #1->2
 "<министрлер>"
-	"министр" n pl nom
+	"министр" n pl nom @nsubj #2->5
 "<Президент>"
-	"президент" n nom
-	"президент" n attr
+	"президент" n nom @nmod:poss #3->4
 "<идеясымен>"
-	"идея" n px3sp ins
+	"идея" n px3sp ins @obl #4->5
 "<келісті>"
-	"келіс" v iv ifi p3 sg
-	"кел" v iv coop ifi p3 sg
+	"кел" v iv coop ifi p3 sg @root #5->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->5
 
-# - Бұл білім ордасы – Астанадағы үздік мектептердің бірі .	- This school is one of the best in Astana .	
+# - Бұл білім ордасы – Астанадағы үздік мектептердің бірі .	- This school is one of the best in Astana .
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<Бұл>"
 	"бұл" det dem @det
-	"бұл" prn dem nom
 "<білім>"
 	"білім" n nom
 	"білім" n attr
@@ -3227,11 +3102,8 @@
 	"–" guio @punct
 "<Астанадағы>"
 	"Астана" np top loc attr @amod
-	"Астана" np top loc subst nom
 "<үздік>"
-	"үздік" adj subst nom
 	"үздік" adj
-	"үздік" adv
 "<мектептердің>"
 	"мектеп" n pl gen
 "<бірі>"
@@ -3240,21 +3112,17 @@
 "<.>"
 	"." sent @punct
 
-# осы кезең ішінде әлемдік ішкі жалпы өнім 11 есе өсті .	during the same period the world ’ s GDP has increased 11 fold .	
+# осы кезең ішінде әлемдік ішкі жалпы өнім 11 есе өсті .	during the same period the world ’ s GDP has increased 11 fold .
 "<Осы>"
 	"осы" det dem @det
-	"осы" prn dem nom
 "<кезең>"
 	"кезең" n nom
-	"кезең" n attr
 "<ішінде>"
 	"іш" n px3sp loc
 "<әлемдік>"
 	"әлемдік" adj
 "<ішкі>"
 	"ішкі" adj
-	"ішкі" adv
-	"ішкі" adj subst nom
 "<жалпы>"
 	"жалпы" adj
 	"жалпы" adv
@@ -3273,68 +3141,52 @@
 "<.>"
 	"." sent @punct
 
-# біз үлгілі дамудың өзіндік моделін қалыптастырдық .	we have created our own successful model of development .	
+# біз үлгілі дамудың өзіндік моделін қалыптастырдық .	we have created our own successful model of development .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #1->6
 "<үлгілі>"
-	"үлгілі" adj
-	"үлгі" n
-		"лы" post @case
-	"үлгілі" adj advl
-	"үлгілі" adj subst nom
+	"үлгілі" adj @amod #2->3
 "<дамудың>"
-	"дамы" v iv ger gen
-	"даму" n gen
+	"даму" n gen @nmod:poss #3->5
 "<өзіндік>"
-	"өзіндік" adj
+	"өзіндік" adj @amod #4->5
 "<моделін>"
-	"модель" n px3sp acc
+	"модель" n px3sp acc @obj #5->6
 "<қалыптастырдық>"
-	"қалыптастыр" v tv ifi p1 pl
+	"қалыптастыр" v tv ifi p1 pl @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
-# осы сектор субъектілерінің банкроттығының айқын тетіктерін енгізген жөн .	we need clear bankruptcy procedures for such enterprises .	
+# осы сектор субъектілерінің банкроттығының айқын тетіктерін енгізген жөн .	we need clear bankruptcy procedures for such enterprises .
 "<Осы>"
 	"осы" det dem @det
-	"осы" prn dem nom
 "<сектор>"
 	"сектор" n nom
-	"сектор" n attr
 "<субъектілерінің>"
 	"субъект" n pl px3sp gen
 "<банкроттығының>"
 	"банкроттық" n px3sp gen
 "<айқын>"
 	"айқын" adj
-	"айқын" adv
-	"айқын" adj advl
-	"айқын" adj subst nom
 "<тетіктерін>"
 	"тетік" n pl px3sp acc
 "<енгізген>"
 	"енгіз" v tv gpr_past
 	"енгіз" v tv ger_past nom
 	"енгіз" v tv gpr_past subst nom
-	"енгіз" v tv past p3 sg
 "<жөн>"
-	"жөн" n nom
-		"е" cop aor p3 sg @cop
 	"жөн" adj
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
 
-# -Біз елеулі табыстарға қол жеткіздік .	we achieved enormous success .	
+# -Біз елеулі табыстарға қол жеткіздік .	we achieved enormous success .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct 
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<елеулі>"
 	"елеулі" adj
-	"елеулі" adv
-	"елеулі" adj subst nom
 "<табыстарға>"
 	"табыс" n pl dat
 	"табыста" v iv gpr_fut subst dat
@@ -3346,7 +3198,7 @@
 "<.>"
 	"." sent @punct
 
-# ол кезге қарай капитал жинақтап , атыңды танытуға болады ” .	it is possible to earn political capital and reputation by that time . ”	
+# ол кезге қарай капитал жинақтап , атыңды танытуға болады ” .	it is possible to earn political capital and reputation by that time . ”
 "<Ол>"
 	"ол" prn pers p3 sg nom
 	"ол" det dem @det
@@ -3372,36 +3224,28 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан Республикасы туризмді дамытуда үлкен әлеуетке ие .	the Republic of Kazakhstan has an enormous potential for developing tourism .	
+# Қазақстан Республикасы туризмді дамытуда үлкен әлеуетке ие .	the Republic of Kazakhstan has an enormous potential for developing tourism .
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nmod:poss #1->2
 "<Республикасы>"
-	"республика" n px3sp nom
+	"республика" n px3sp nom @nsubj #2->7
 "<туризмді>"
-	"туризм" n acc
-	"туризм" n
-		"лы" post @case
+	"туризм" n acc @obj #3->4
 "<дамытуда>"
-	"дамыт" v tv ger loc
+	"дамыт" v tv ger loc @advcl #4->7
 "<үлкен>"
-	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" n attr
-	"үлкен" adj advl
+	"үлкен" adj @amod #5->6
 "<әлеуетке>"
-	"әлеует" n dat
+	"әлеует" n dat @obl #6->7
 "<ие>"
-	"ие" n nom
-		"е" cop aor p3 sg @cop
+	"ие" n nom @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
-# бір құрам 940 адамға арналған .	the metro continues to build .	
+# бір құрам 940 адамға арналған .	the metro continues to build .
 "<Бір>"
 	"бір" num
-	"бір" det ind
-	"бір" num subst nom
 "<құрам>"
 	"құр" v tv aor p1 sg
 	"кұр" v iv aor p1 sg
@@ -3415,10 +3259,9 @@
 "<.>"
 	"." sent @punct
 
-# - Сізді Гонконгте құшақ жая қарсы алу біз үшін үлкен құрмет .	- It is a great honor for us to welcome You to Hong Kong .	
+# - Сізді Гонконгте құшақ жая қарсы алу біз үшін үлкен құрмет .	- It is a great honor for us to welcome You to Hong Kong .
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<Сізді>"
 	"сіз" prn pers p2 sg frm acc
 "<Гонконгте>"
@@ -3439,51 +3282,41 @@
 	"біз" prn pers p1 pl nom
 "<үшін>"
 	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
 "<үлкен>"
 	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" n attr
-	"үлкен" adj advl
 "<құрмет>"
 	"құрмет" n nom
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
 
-# мен үшін Астана – басты мәселе болып табылады .	Astana is a very important issue for me .	
+# мен үшін Астана – басты мәселе болып табылады .	Astana is a very important issue for me .
 "<Мен>"
-	"мен" prn pers p1 sg nom
+	"мен" prn pers p1 sg nom @obl #1->8
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #2->1
 "<Астана>"
-	"Астана" np top nom
+	"Астана" np top nom @nsubj #3->6
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #4->6
 "<басты>"
-	"басты" adj subst nom
-	"басты" adj
-	"бас" n
-		"лы" post @case
+	"басты" adj @amod #5->6
 "<мәселе>"
-	"мәселе" n nom
+	"мәселе" n nom @advcl #6->8
 "<болып>"
-	"бол" v iv gna_perf
+	"бол" v iv gna_perf @cop #7->6
 "<табылады>"
-	"тап" v tv pass aor p3 sg
-	"таб" v tv pass aor p3 sg
-	"табыл" v iv aor p3 sg
+	"тап" v tv pass aor p3 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
-# бұл жолғы форумның тақырыбы – « Дағдарыстан кейінгі басқару » деп аталды .	the theme of the current forum is “ Asia : managing Beyond Crisis ” .	
-"<Бұл жолғы>"
-	"бұл жолғы" adv
+# бұл жолғы форумның тақырыбы – « Дағдарыстан кейінгі басқару » деп аталды .	the theme of the current forum is “ Asia : managing Beyond Crisis ” .
+"<Бұл>"
+	"бұл" det dem @det
+"<жолғы>"
+	"жолғы" adj @amod
 "<форумның>"
-	"форум" n gen
+	"форум" n gen @nmod:poss
 "<тақырыбы>"
 	"тақырып" n px3sp nom
 "<–>"
@@ -3491,15 +3324,11 @@
 "<«>"
 	"«" lquot @punct
 "<Дағдарыстан>"
-	"дағдарыс" n abl
+	"дағдарыс" n abl @nmod
 "<кейінгі>"
-	"кейін" adv attr
-	"кейінгі" adj
-	"кейін" adv subst nom
-	"кейінгі" adj subst nom
+	"кейінгі" adj @amod
 "<басқару>"
-	"басқар" v tv ger nom
-	"басқару" n nom
+	"басқару" n nom @
 "<»>"
 	"»" rquot @punct
 "<деп аталды>"
@@ -3507,18 +3336,7 @@
 "<.>"
 	"." sent @punct
 
-# заңның мәтіні баспасөзде жарияланады	the text of the law will be published in the press .	
-"<Заңның>"
-	"За" np ant m px2sg gen
-	"заң" n gen
-"<мәтіні>"
-	"мәтін" n px3sp nom
-"<баспасөзде>"
-	"баспасөз" n loc
-"<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-
-# заң шығарушылық қызметтегі негізгі бағыт әлеуметтік жаңғырту екені атап өтілді .	all countries in the world support their producers .	
+# заң шығарушылық қызметтегі негізгі бағыт әлеуметтік жаңғырту екені атап өтілді .	all countries in the world support their producers .
 "<Заң>"
 	"За" np ant m px2sg nom
 "<шығарушылық>"
@@ -3545,54 +3363,43 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан бизнесі соңғы уақытта Арменияға жіті назар аудара бастады .	Kazakhstan ’ s business has started to look at Armenia .	
+# Қазақстан бизнесі соңғы уақытта Арменияға жіті назар аудара бастады .	Kazakhstan ’ s business has started to look at Armenia .
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nmod:poss #1->2
 "<бизнесі>"
-	"бизнес" n px3sp nom
+	"бизнес" n px3sp nom @nsubj #2->7
 "<соңғы>"
-	"соң" adv attr
-	"соңғы" adj
-	"соң" adv subst nom
-	"соңғы" n nom
-	"соңғы" n attr
-	"соңғы" adj advl
+	"соңғы" adj @amod #3->4
 "<уақытта>"
-	"уақыт" n loc
+	"уақыт" n loc @obl #4->7
 "<Арменияға>"
-	"Армения" np top dat
+	"Армения" np top dat @obl #5->7
 "<жіті>"
-	"жіті" adj advl
+	"жіті" adj advl @advmod #6->7
 "<назар аудара>"
-	"назар аудар" v tv prc_impf
+	"назар аудар" v tv prc_impf @root #7->0
 "<бастады>"
-	"баста" vaux ifi p3 sg
+	"баста" vaux ifi p3 sg @aux #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
-# бұл елдің тағдырымен бірге өсіп келе жатқан халықтық басылым .	formation of this publication is closely related to the fate of our people .	
+# бұл елдің тағдырымен бірге өсіп келе жатқан халықтық басылым .	formation of this publication is closely related to the fate of our people .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" det dem @det #1->
 "<елдің>"
-	"ел" n gen
+	"ел" n gen @nmod:poss
 "<тағдырымен>"
-	"тағдыр" n px3sp ins
+	"тағдыр" n px3sp ins @obl
 "<бірге>"
-	"бірге" adv
+	"бірге" adv @advmod
 "<өсіп>"
-	"өс" v iv prc_perf
+	"өс" v iv prc_perf @acl:relcl
 "<келе>"
-	"кел" vaux prc_impf
-	"кел" v iv prc_impf
+	"кел" vaux prc_impf @aux
 "<жатқан>"
-	"жат" vaux gpr_past
-	"жат" vaux ger_past nom
-	"жат" vaux gpr_past subst nom
-	"жат" vaux past p3 sg
+	"жат" vaux gpr_past @aux
 "<халықтық>"
-	"халықтық" adj
+	"халықтық" adj 
 	"халықтық" n nom
 	"халықтық" n attr
 "<басылым>"
@@ -3601,30 +3408,25 @@
 "<.>"
 	"." sent @punct
 
-# біз келесі жылы Алматыда метро ашамыз .	the following year we will open subway in Almaty .	
+# біз келесі жылы Алматыда метро ашамыз .	the following year we will open subway in Almaty .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #1->6
 "<келесі>"
-	"келесі" adj
+	"келесі" adj @amod #2->3
 "<жылы>"
-	"жыл" n px3sp nom
+	"жыл" n px3sp nom @obl #3->6
 "<Алматыда>"
-	"Алматы" np top loc
+	"Алматы" np top loc @obl #4->6
 "<метро>"
-	"метро" n nom
-	"метро" n attr
+	"метро" n nom @obj #5->6
 "<ашамыз>"
-	"аш" v tv aor p1 pl
-	"аша" n nom
-		"е" cop aor p1 pl
-	"аша" n px1pl nom
+	"аш" v tv aor p1 pl @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
-# екіжақты қарым-қатынастарды дамыту саласында көптеген жұмыстар атқарылды .	we could do much work in the area of developing bilateral ties .	
+# екіжақты қарым-қатынастарды дамыту саласында көптеген жұмыстар атқарылды .	we could do much work in the area of developing bilateral ties .
 "<Екіжақты>"
 	"екіжақты" adj
-	"екіжақты" adj advl
 "<қарым-қатынастарды>"
 	"қарым-қатынас" n pl acc
 "<дамыту>"
@@ -3646,106 +3448,85 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан – табиғи ресурстар мен таланттарға аса бай ел .	there are many talented people and a plenty of natural resources in Kazakhstan .	
+# Қазақстан – табиғи ресурстар мен таланттарға аса бай ел .	there are many talented people and a plenty of natural resources in Kazakhstan .
 "<Қазақстан>"
-	"Қазақстан" np top nom
+	"Қазақстан" np top nom @nsubj #1->9
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #2->
 "<табиғи>"
-	"табиғи" adj
-	"табиғи" adv
-	"табиғи" adj advl
-	"табиғи" adj subst nom
+	"табиғи" adj @amod #3->4
 "<ресурстар>"
-	"ресурс" n pl nom
+	"ресурс" n pl nom @conj #4->6
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc #5->6
 "<таланттарға>"
-	"талант" n pl dat
+	"талант" n pl dat @obl #6->9
 "<аса>"
-	"аса" adv
+	"аса" adv @advmod #7->8
 "<бай>"
-	"бай" adj
-	"бай" n nom
-	"бай" n attr
-	"бай" adj advl
+	"бай" adj @amod  #8->9
 "<ел>"
-	"ел" n nom
-		"е" cop aor p3 sg @cop
+	"ел" n nom @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
-# мен осында болғаныма қуаныштымын .	first of all , we discussed issues of bilateral collaboration during the narrowed negotiations .	
+# мен осында болғаныма қуаныштымын .	first of all , we discussed issues of bilateral collaboration during the narrowed negotiations .
 "<Мен>"
-	"мен" prn pers p1 sg nom
+	"мен" prn pers p1 sg nom @nsubj #1->4
 "<осында>"
-	"осы" prn dem loc
-	"осында" adv
+	"осы" prn dem loc @advcl #2->4
 "<болғаныма>"
-	"бол" v iv gpr_past subst px1sg dat
-	"бол" v iv ger_past px1sg dat
+	"бол" v iv ger_past px1sg dat @cop #3->2
 "<қуаныштымын>"
-	"қуанышты" adj
-		"е" cop aor p1 sg
+	"қуанышты" adj @root #4->0
+		"е" cop aor p1 sg @cop #5->4
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->4
 
-# Сіз Қазақстанда да , бүкіл әлемде де лайықты беделге ие болдыңыз .	you have had a deserved authority both at home and abroad .	
+# Сіз Қазақстанда да , бүкіл әлемде де лайықты беделге ие болдыңыз .	you have had a deserved authority both at home and abroad .
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom
+	"сіз" prn pers p2 sg frm nom @nsubj #1->10
 "<Қазақстанда да>"
-	"Қазақстан" np top loc
-		"да" cnjcoo
-	"Қазақстан" np top loc
-		"да" postadv
-	"Қазақстан" np top loc
-		"е" cop aor p3 sg @cop
-			"да" cnjcoo
-	"Қазақстан" np top loc
-		"е" cop aor p3 sg @cop
-			"да" postadv
+	"Қазақстан" np top loc @conj #2->6
+		"да" cnjcoo @cc #3->2
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->6
 "<бүкіл>"
-	"бүкіл" det qnt
+	"бүкіл" det qnt @det #5->6
 "<әлемде де>"
-	"әлем" n loc
-		"да" cnjcoo
-	"әлем" n loc
-		"да" postadv
+	"әлем" n loc @obl #6->10
+		"да" cnjcoo @cc #7->6
 "<лайықты>"
-	"лайықты" adj
+	"лайықты" adj @amod #8->9
 "<беделге>"
-	"бедел" n dat
+	"бедел" n dat @obl #9->10
 "<ие болдыңыз>"
-	"ие бол" v iv ifi p2 frm sg
+	"ие бол" v iv ifi p2 frm sg @root #10->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->10
 
-# “ Сізді егемен Қазақстанның Президенті болып сайлануыңызбен құттықтаймын .	Eskender Khasangaliyev , national actor of the Republic of Kazakhstan :	
+# “ Сізді егемен Қазақстанның Президенті болып сайлануыңызбен құттықтаймын .	Eskender Khasangaliyev , national actor of the Republic of Kazakhstan :
 "<“>"
-	"“" lquot @punct
-
+	"“" lquot @punct #1->8
 "<Сізді>"
-	"сіз" prn pers p2 sg frm acc
+	"сіз" prn pers p2 sg frm acc @obj #2->8
 "<егемен>"
-	"егемен" adj
-	"егемен" adj advl
+	"егемен" adj @amod #3->5
 "<Қазақстанның>"
-	"Қазақстан" np top gen
+	"Қазақстан" np top gen @nmod:poss #4->5
 "<Президенті>"
-	"президент" n px3sp nom
+	"президент" n px3sp nom @advcl #5->7
 "<болып>"
-	"бол" v iv gna_perf
+	"бол" v iv gna_perf @cop #6->5
 "<сайлануыңызбен>"
-	"сайла" v tv pass ger px2sg frm ins
-	"сайлан" v iv ger px2sg frm ins
+	"сайла" v tv pass ger px2sg frm ins @advcl #7->8
 "<құттықтаймын>"
-	"құттықта" v tv aor p1 sg
+	"құттықта" v tv aor p1 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
-# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуына байланысты :	by the presidential orders due to their transfer to another job :	
+# Мемлекет басшысының Өкімдерімен басқа жұмысқа ауысуына байланысты :	by the presidential orders due to their transfer to another job :
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -3769,7 +3550,7 @@
 "<:>"
 	":" sent @punct
 
-# бүгінгі таңда адамзаттың болашағы қандай болатыны бізге байланысты .	today the future of mankind depends on us .	
+# бүгінгі таңда адамзаттың болашағы қандай болатыны бізге байланысты .	today the future of mankind depends on us .
 "<Бүгінгі>"
 	"бүгін" adv attr
 	"бүгін" adv subst nom
@@ -3803,34 +3584,29 @@
 "<.>"
 	"." sent @punct
 
-# қысқа мерзімде Сіздің елдеріңіз тамаша нәтижелерге қол жеткізді .	in a short time span your country has achieved impressive results .	
+# қысқа мерзімде Сіздің елдеріңіз тамаша нәтижелерге қол жеткізді .	in a short time span your country has achieved impressive results .
 "<Қысқа>"
-	"қысқа" adj
-	"қысқа" adj advl
+	"қысқа" adj @amod #1->2
 "<мерзімде>"
-	"мерзім" n loc
+	"мерзім" n loc @obl #2->8
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen
+	"сіз" prn pers p2 sg frm gen @nmod:poss #3->4
 "<елдеріңіз>"
-	"ел" n pl px2sg frm nom
+	"ел" n pl px2sg frm nom @nsubj #4->8
 "<тамаша>"
-	"тамаша" adj
-	"тамаша" adv
-	"тамаша" adj advl
-	"тамаша" adj subst nom
+	"тамаша" adj @amod #5->6 
 "<нәтижелерге>"
-	"нәтиже" n pl dat
+	"нәтиже" n pl dat @obl #6->8
 "<қол>"
-	"қол" adj
-	"қол" n nom
+	"қол" n nom @obj #7->8
 "<жеткізді>"
-	"жеткіз" v tv ifi p3 sg
+	"жеткіз" v tv ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
-# және бұл жерде демократиялық желеуді алға тартудың реті келмейді .	and no one will succeed to mask behind democratic rhetoric .	
+# және бұл жерде демократиялық желеуді алға тартудың реті келмейді .	and no one will succeed to mask behind democratic rhetoric .
 "<Және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -3853,7 +3629,7 @@
 "<.>"
 	"." sent @punct
 
-# - Сізді жарқын жеңісіңізбен шын жүректен құттықтаймын ! -делінген жеделхатта .	- I sincerely congratulate you on glorious victory !	
+# - Сізді жарқын жеңісіңізбен шын жүректен құттықтаймын ! -делінген жеделхатта .	- I sincerely congratulate you on glorious victory !
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -3882,7 +3658,7 @@
 "<.>"
 	"." sent @punct
 
-# – Халықтың әлеуметтік жағдайы ешқандай да нашарламайды .	“ We will keep the social situation of our people unaffected .	
+# – Халықтың әлеуметтік жағдайы ешқандай да нашарламайды .	“ We will keep the social situation of our people unaffected .
 "<–>"
 	"–" guio @punct
 "<Халықтың>"
@@ -3901,39 +3677,29 @@
 "<.>"
 	"." sent @punct
 
-# – Сіздің Съездің табысты өткізілуімен құттықтағым келеді .	“ I would like to congratulate you on the successful conduction of the Congress .	
+# – Сіздің Съездің табысты өткізілуімен құттықтағым келеді .	“ I would like to congratulate you on the successful conduction of the Congress .
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #1->6
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen
+	"сіз" prn pers p2 sg frm gen @nmod:poss #2->3
 "<Съездің>"
-	"съез" n gen
-	"съезд" n gen
-	"съезд" n px2sg nom
+	"съезд" n px2sg nom @nsubj #3->5
 "<табысты>"
-	"табыс" n acc
-	"табысты" adj
-	"табыс" n
-		"лы" post @case
-	"табысты" adj advl
-	"табысты" adj subst nom
+	"табыс" n acc @obj #4->6
 "<өткізілуімен>"
-	"өткіз" v tv pass ger px3sp ins
+	"өткіз" v tv pass ger px3sp ins @advcl #5->6
 "<құттықтағым>"
-	"құттықта" v tv prc_vol p1 sg
+	"құттықта" v tv prc_vol p1 sg @root #6->0
 "<келеді>"
-	"кел" vaux aor p3 sg
+	"кел" vaux aor p3 sg @aux #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
-# - Мен Қазақстан секілді керемет елде қызмет етуді көптен бері армандағанмын .	I had dreams of working in such wonderful country for a long time .	
+# - Мен Қазақстан секілді керемет елде қызмет етуді көптен бері армандағанмын .	I had dreams of working in such wonderful country for a long time .
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<Мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
-	"мен" post @case
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -3962,20 +3728,7 @@
 "<.>"
 	"." sent @punct
 
-# заңдардың мәтіндері баспасөзде жарияланады .	the texts of the law will be published in the press .	
-"<Заңдардың>"
-	"За" np ant m px2pl gen
-	"заң" n pl gen
-"<мәтіндері>"
-	"мәтін" n pl px3sp nom
-"<баспасөзде>"
-	"баспасөз" n loc
-"<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-"<.>"
-	"." sent @punct
-
-# Қазақстан басшысы мұнда менің әкем Президент болып тұрған кезде болған .	and I welcome you back .	
+# Қазақстан басшысы мұнда менің әкем Президент болып тұрған кезде болған .	and I welcome you back .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -4001,29 +3754,27 @@
 "<.>"
 	"." sent @punct
 
-# жалақы көлемі жоғарылады .	we have raised salaries .	
+# жалақы көлемі жоғарылады .	we have raised salaries .
 "<Жалақы>"
-	"жалақы" n nom
-	"жалақы" n attr
+	"жалақы" n nom @nmod:poss #1->2
 "<көлемі>"
-	"көлем" n px3sp nom
+	"көлем" n px3sp nom @obj #2->3
 "<жоғарылады>"
-	"жоғарыла" v iv ifi p3 sg
+	"жоғарыла" v iv ifi p3 sg @root #3->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #4->3
 
-# – Сіздер “ Нұр Отан ” партиясы ұсынғандар болып табыласыздар .	“ You are representing the Nur Otan Party .	
+# – Сіздер “ Нұр Отан ” партиясы ұсынғандар болып табыласыздар .	“ You are representing the Nur Otan Party .
 "<–>"
 	"–" guio @punct
 "<Сіздер>"
-	"сіздер" prn pers p2 pl frm nom
+	"сіздер" prn pers p2 pl frm nom @nsubj
 "<“>"
 	"“" lquot @punct
 "<Нұр>"
-	"Нұр" np ant m nom
+	"Нұр" np al nom
 "<Отан>"
-	"отан" n nom
-	"Отан" np ant m nom
+	"Отан" np al nom
 "<”>"
 	"”" rquot @punct
 "<партиясы>"
@@ -4040,46 +3791,32 @@
 "<.>"
 	"." sent @punct
 
-# мектеп түлектері қазақ , орыс және ағылшын тілдерін білуге тиіс .	high school graduates should speak Kazakh , Russian and English .	
+# мектеп түлектері қазақ , орыс және ағылшын тілдерін білуге тиіс .	high school graduates should speak Kazakh , Russian and English .
 "<Мектеп>"
-	"мектеп" n nom
-	"мектеп" n attr
+	"мектеп" n nom @nmod:poss #1->2
 "<түлектері>"
-	"түлек" n pl px3sp nom
+	"түлек" n pl px3sp nom @nsubj #2->10
 "<қазақ>"
-	"қазақ" n nom
-	"қазақ" n nom
-		"е" cop aor p3 sg @cop
+	"қазақ" n nom @conj #3->7
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->5
 "<орыс>"
-	"орыс" n nom
+	"орыс" n nom @conj #5->7
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc #6->7
 "<ағылшын>"
-	"ағылшын" adj
-	"ағылшын" n nom
-	"ағылшын" n attr
-	"ағылшын" adj advl
-	"Ағылшын" n nom
-	"Ағылшын" n attr
+	"ағылшын" n nom @nmod:poss #7->8
 "<тілдерін>"
-	"тіл" n pl px3sp acc
+	"тіл" n pl px3sp acc @obj #8->9
 "<білуге>"
-	"біл" v tv ger dat
+	"біл" v tv ger dat @advcl #9->10
 "<тиіс>"
-	"тиіс" adj
-	"тиіс" adj subst nom
-	"ти" v iv coop imp p2 sg
-	"тиіс" v tv imp p2 sg
-	"тиіс" adj subst nom
-		"е" cop aor p3 sg @cop
-	"тиіс" adj
-		"е" cop aor p3 sg @cop
+	"тиіс" adj @root #10->0
+		"е" cop aor p3 sg @cop #11->10
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->10
 
-# бұл мемлекеттердің қатары жыл өткен сайын толығуда .	the number of such countries has been growing every year .	
+# бұл мемлекеттердің қатары жыл өткен сайын толығуда .	the number of such countries has been growing every year .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -4113,7 +3850,7 @@
 "<.>"
 	"." sent @punct
 
-# Эстония Республикасының Президенті	President of the Republic of Estonia	
+# Эстония Республикасының Президенті	President of the Republic of Estonia
 "<Эстония>"
 	"Эстония" np top nom
 	"Эстония" np top attr
@@ -4122,7 +3859,7 @@
 "<Президенті>"
 	"президент" n px3sp nom
 
-# Ұлттық қауіпсіздік комитетінің төрағасы Нұртай Әбіқаевпен кездесу	meeting with Chairman of the National Security Committee Nurtai Abykayev	
+# Ұлттық қауіпсіздік комитетінің төрағасы Нұртай Әбіқаевпен кездесу	meeting with Chairman of the National Security Committee Nurtai Abykayev
 "<Ұлттық>"
 	"ұлттық" adj
 	"ұлттық" adv
@@ -4141,56 +3878,44 @@
 	"кездес" v iv ger nom
 	"кездесу" n nom
 
-# - Біз көрші мемлекеттерміз , біздің ортақ нәрсеміз көп .	-We are neighboring states , we have many common things .	
+# - Біз көрші мемлекеттерміз , біздің ортақ нәрсеміз көп .	-We are neighboring states , we have many common things .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
-"<Біз>"
-	"біз" prn pers p1 pl nom
+	"-" guio @punct #1->10
+"<Біз>" 
+	"біз" prn pers p1 pl nom @nsubj #2->4
 "<көрші>"
-	"көрші" n nom
-	"көрші" n attr
+	"көрші" n attr @compound #3->4
 "<мемлекеттерміз>"
-	"мемлекет" n pl nom
-		"е" cop aor p1 pl
+	"мемлекет" n pl nom @parataxis #4->10
+		"е" cop aor p1 pl @cop #5->4
 "<,>"
-	"," cm @punct
+	"," cm @punct #6->10
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #7->9
 "<ортақ>"
-	"ортақ" adj
+	"ортақ" adj @amod #8->9
 "<нәрсеміз>"
-	"нәрсе" n px1pl nom
-	"нәрсе" prn itg px1pl nom
+	"нәрсе" n px1pl nom @nsubj #9->10
 "<көп>"
-	"көп" adj
-		"е" cop aor p3 sg @cop
+	"көп" adj @root #10->0
+		"е" cop aor p3 sg @cop #11->10
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->10
 
-# - Экономикадан бастау қажет .	“ It is necessary to start with economy , ” the Head of State noted .	
+# - Экономикадан бастау қажет .	“ It is necessary to start with economy , ” the Head of State noted .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->4
 "<Экономикадан>"
-	"экономика" n abl
+	"экономика" n abl @obl #2->3
 "<бастау>"
-	"бастау" n attr
-	"баста" v tv ger nom
-	"бастау" n nom
+	"баста" v tv ger nom @csubj #3->4
 "<қажет>"
-	"қажет" adj
-	"қажет" n nom
-	"қажет" n nom
-		"е" cop aor p3 sg @cop
-	"қажет" adj advl
-	"қажет" adj
-		"е" cop aor p3 sg @cop
-	"қажет" v tv imp p2 sg
+	"қажет" adj @root #4->0
+		"е" cop aor p3 sg @cop #5->4
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->4
 
-# Үшіншіден , мемлекеттік активтерді басқару жүйесін жаңғырту .	we must learn to live in co-existence of cultures and religions .	
+# Үшіншіден , мемлекеттік активтерді басқару жүйесін жаңғырту .	we must learn to live in co-existence of cultures and religions .
 "<Үшіншіден>"
 	"үш" num ord subst abl
 	"үшінші" n abl
@@ -4198,13 +3923,10 @@
 	"," cm @punct
 "<мемлекеттік>"
 	"мемлекеттік" adj
-	"мемлекеттік" adj advl
 "<активтерді>"
 	"актив" n pl acc
 "<басқару>"
 	"басқар" v tv ger nom
-	"басқару" n nom
-	"басқару" n attr
 "<жүйесін>"
 	"жүйе" n px3sp acc
 "<жаңғырту>"
@@ -4212,14 +3934,14 @@
 "<.>"
 	"." sent @punct
 
-# бұл тұрақтылық пен бейбітшілікті сақтау үшін басты шарт .	this is a main condition for keeping peace and stability .	
+# бұл тұрақтылық пен бейбітшілікті сақтау үшін басты шарт .	this is a main condition for keeping peace and stability .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
 "<тұрақтылық>"
 	"тұрақтылық" n nom
 "<пен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<бейбітшілікті>"
 	"бейбітшілік" n acc
 	"бейбітшілік" n
@@ -4243,7 +3965,7 @@
 "<.>"
 	"." sent @punct
 
-# өкінішке орай , олар бұл мәселені шешуге қабілетсіз болып шықты .	unfortunately , they proved unable to resolve the issue .	
+# өкінішке орай , олар бұл мәселені шешуге қабілетсіз болып шықты .	unfortunately , they proved unable to resolve the issue .
 "<Өкінішке>"
 	"өкініш" n dat
 "<орай>"
@@ -4276,11 +3998,13 @@
 "<.>"
 	"." sent @punct
 
-# банктік қызмет көрсету мәдениеті айтарлықтай өсті » , деп атап өтті .	culture of the bank service is developed significantly ” .	
+# банктік қызмет көрсету мәдениеті айтарлықтай өсті » , деп атап өтті .	culture of the bank service is developed significantly ” .
 "<Банктік>"
-	"банктік" adj
-"<қызмет көрсету>"
-	"қызмет көрсет" v tv ger nom
+	"банктік" adj @amod
+"<қызмет>"
+	"қызмет" n nom @obj
+"<көрсету>"
+	"көрсет" v tv ger nom
 "<мәдениеті>"
 	"мәдениет" n px3sp nom
 "<айтарлықтай>"
@@ -4301,7 +4025,7 @@
 "<.>"
 	"." sent @punct
 
-# - Алматының күннен-күнге көркеюін көру өте қуанышты .	we are delighted to see how Almaty is smartening up .	
+# - Алматының күннен-күнге көркеюін көру өте қуанышты .	we are delighted to see how Almaty is smartening up .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -4328,71 +4052,48 @@
 "<.>"
 	"." sent @punct
 
-# бұл арада бізге :	III .	
-"<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
-"<арада>"
-	"ара" n loc
-	"арада" adv
-"<бізге>"
-	"біз" prn pers p1 pl dat
-"<:>"
-	":" sent @punct
-
-# осы мақсатта Астана қаласына 107 миллиард теңге қаржы бөлінді .	KZT 107 billion was allocated to Astana .	
+# осы мақсатта Астана қаласына 107 миллиард теңге қаржы бөлінді .	KZT 107 billion was allocated to Astana .
 "<Осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #1->2
 "<мақсатта>"
-	"мақсат" n loc
+	"мақсат" n loc @obl #2->9
 "<Астана>"
-	"Астана" np top nom
-	"Астана" np top attr
+	"Астана" np top nom @nmod:poss #3->4
 "<қаласына>"
-	"қала" n px3sp dat
+	"қала" n px3sp dat @obl #4->9
 "<107>"
-	"107" num
+	"107" num @compound #5->6
 "<миллиард>"
-	"миллиард" num
+	"миллиард" num @nummod #6->7
 "<теңге>"
-	"тең" adj subst dat
+	"теңге" n nom @nsubj #7->9
 "<қаржы>"
-	"қаржы" n nom
+	"қаржы" n nom @compound:lvc #8->9
 "<бөлінді>"
-	"бөлін" v tv ifi p3 sg
-	"бөл" v tv pass ifi p3 sg
+	"бөл" v tv pass ifi p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
-# - Жастар бірігулері тиіс .	- The youth should unite .	
+# - Жастар бірігулері тиіс .	- The youth should unite .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->4
 "<Жастар>"
-	"Жас" np ant m pl nom
+	"жас" n pl nom @nsubj #2->3
 "<бірігулері>"
-	"бірік" v iv ger pl px3sp nom
-	"бірігу" n pl px3sp nom
+	"бірік" v iv ger pl px3sp nom @csubj #3->4
 "<тиіс>"
-	"тиіс" adj
-	"тиіс" adj subst nom
-	"ти" v iv coop imp p2 sg
-	"тиіс" v tv imp p2 sg
-	"тиіс" adj subst nom
-		"е" cop aor p3 sg @cop
-	"тиіс" adj
-		"е" cop aor p3 sg @cop
+	"тиіс" adj @root #4->0
+		"е" cop aor p3 sg @cop #5->4
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->4
 
-# - Мен үшін сіздің елде болу үлкен мәртебе .	it is a great honor for me to visit your country .	
+# - Мен үшін сіздің елде болу үлкен мәртебе .	it is a great honor for me to visit your country .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
 "<Мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<үшін>"
 	"үшін" post @case
@@ -4415,36 +4116,30 @@
 "<.>"
 	"." sent @punct
 
-# және осы жолы да Сіз үлкен өкілетті делегацияны бастап келдіңіз .	and this time you arrived with a large representative delegation .	
+# және осы жолы да Сіз үлкен өкілетті делегацияны бастап келдіңіз .	and this time you arrived with a large representative delegation .
 "<Және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc #1->9
 "<осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #2->3
 "<жолы да>"
-	"жол" n px3sp nom
-		"да" cnjcoo
-	"жол" n px3sp nom
-		"да" postadv
+	"жол" n px3sp nom @obl #3->9
+		"да" postadv @advmod #4->3
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom
+	"сіз" prn pers p2 sg frm nom @nsubj #5->9
 "<үлкен>"
-	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" adj advl
+	"үлкен" adj @amod #6->8
 "<өкілетті>"
-	"өкілетті" adj
-	"өкілетті" adj advl
-"<делегацияны>"
-	"делегация" n acc
+	"өкілетті" adj @amod #7->8
+"<делегацияны>" 
+	"делегация" n acc @obj #8->9
 "<бастап>"
-	"баста" v tv prc_perf
+	"баста" v tv prc_perf @root #9->0
 "<келдіңіз>"
-	"кел" vaux ifi p2 frm sg
+	"кел" vaux ifi p2 frm sg @aux #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
-# Қазақстан Дағдарысқа қарсы дүниежүзілік конференция ұйымдастырды .	Kazakhstan organised the World Anti-Crisis Conference .	
+# Қазақстан Дағдарысқа қарсы дүниежүзілік конференция ұйымдастырды .	Kazakhstan organised the World Anti-Crisis Conference .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -4465,54 +4160,46 @@
 "<.>"
 	"." sent @punct
 
-# үшінші қабатта Астана қаласы тарихының мұражайын орналастыру жоспарланып отыр .	the museum of the city of Astana will be on the third floor .	
+# үшінші қабатта Астана қаласы тарихының мұражайын орналастыру жоспарланып отыр .	the museum of the city of Astana will be on the third floor .
 "<Үшінші>"
-	"үш" num ord
+	"үш" num ord @amod #1->2
 "<қабатта>"
-	"қабат" n loc
+	"қабат" n loc @obl #2->8
 "<Астана>"
-	"Астана" np top nom
-	"Астана" np top attr
+	"Астана" np top nom @nmod:poss #3->4
 "<қаласы>"
-	"қала" n px3sp nom
+	"қала" n px3sp nom @nmod:poss #4->5
 "<тарихының>"
-	"тарих" n px3sp gen
-"<мұражайын>"
-	"мұражай" n px3sp acc
+	"тарих" n px3sp gen @nmod:poss #5->6
+"<мұражайын>" 
+	"мұражай" n px3sp acc @obj #6->7
 "<орналастыру>"
-	"орналастыр" v tv ger nom
-	"орналастыру" n nom
+	"орналастыр" v tv ger nom @csubj #7->8
 "<жоспарланып>"
-	"жоспарла" v tv pass prc_perf
-	"жоспарлан" v iv prc_perf
+	"жоспарла" v tv pass prc_perf @root #8->0
 "<отыр>"
-	"отыр" vaux pres p3 sg
+	"отыр" vaux pres p3 sg @aux #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
-# бесінші басым міндет – жастармен жұмыс .	the fifth priority task is work with young people .	
+# бесінші басым міндет – жастармен жұмыс .	the fifth priority task is work with young people .
 "<Бесінші>"
-	"бес" num ord
+	"бес" num ord @amod #1->3
 "<басым>"
-	"басым" adj
-	"бас" n px1sg nom
+	"басым" adj @amod #2->3
 "<міндет>"
-	"міндет" n nom
+	"міндет" n nom @nsubj #3->6
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #4->6
 "<жастармен>"
-	"жас" n pl ins
-	"жаста" v tv gpr_fut subst ins
-	"жастар" n ins
+	"жас" n pl ins @nmod #5->6
 "<жұмыс>"
-	"жұмыс" n nom
-	"жұмыс" n nom
-		"е" cop aor p3 sg @cop
-	"жұм" v tv coop imp p2 sg
+	"жұмыс" n nom @root #6->0
+		"е" cop aor p3 sg @cop #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
-# бұл қарқынды алдағы уақытта да сақтау керек .	we have to keep these rates .	
+# бұл қарқынды алдағы уақытта да сақтау керек .	we have to keep these rates .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -4526,7 +4213,7 @@
 	"алд" n loc subst nom
 "<уақытта да>"
 	"уақыт" n loc
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"уақыт" n loc
 		"да" postadv
 "<сақтау>"
@@ -4538,7 +4225,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент саябақ жоспарымен және оның айналасымен танысты .	there is also a parking zone accommodating one thousand cars .	
+# Президент саябақ жоспарымен және оның айналасымен танысты .	there is also a parking zone accommodating one thousand cars .
 "<Президент>"
 	"президент" n nom
 	"президент" n attr
@@ -4548,7 +4235,7 @@
 "<жоспарымен>"
 	"жоспар" n px3sp ins
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<оның>"
 	"ол" prn dem gen
 	"ол" prn pers p3 sg gen
@@ -4562,7 +4249,7 @@
 "<.>"
 	"." sent @punct
 
-# – Жоспарлы тексеріс жүргізу тәжірибесі тоқтатылатын болады .	“ The practice of scheduled inspections will be cancelled .	
+# – Жоспарлы тексеріс жүргізу тәжірибесі тоқтатылатын болады .	“ The practice of scheduled inspections will be cancelled .
 "<–>"
 	"–" guio @punct
 "<Жоспарлы>"
@@ -4586,7 +4273,7 @@
 "<.>"
 	"." sent @punct
 
-# біз осыны жете түсінуге тиіспіз .	where are we going ?	
+# біз осыны жете түсінуге тиіспіз .	where are we going ?
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<осыны>"
@@ -4601,63 +4288,50 @@
 "<.>"
 	"." sent @punct
 
-# бұл денсаулық үшін , ерте диагностика үшін пайдалы .	this isgood for health , for the early diagnosis .	
+# бұл денсаулық үшін , ерте диагностика үшін пайдалы .	this isgood for health , for the early diagnosis .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->8
 "<денсаулық>"
-	"денсаулық" n nom
-	"денсаулық" n attr
+	"денсаулық" n nom @conj #2->8
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #3->2
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->8
 "<ерте>"
-	"ерте" adj subst nom
-	"ерте" adj
-	"ерте" adv
-	"ерте" adj advl
+	"ерте" adj @amod #5->6
 "<диагностика>"
-	"диагностика" n nom
-	"диагностика" n attr
+	"диагностика" n nom @obl #6->8
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #7->6
 "<пайдалы>"
-	"пайдалы" adj
-		"е" cop aor p3 sg @cop
+	"пайдалы" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
-# - Барлық аталған мәселелер бойынша Президент нақты тапсырмалар берді .	- The President gave specific instructions on all the issues discussed .	
+# - Барлық аталған мәселелер бойынша Президент нақты тапсырмалар берді .	- The President gave specific instructions on all the issues discussed .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
-"<Барлық>"
-	"Барлық" np top nom
+	"-" guio @punct #1->9
+"<Барлық>" 
+	"барлық" adj @amod #2->4
 "<аталған>"
-	"ата" v tv pass gpr_past
-	"ата" v tv pass gpr_past subst nom
+	"ата" v tv pass gpr_past @acl:relcl #3->4
 "<мәселелер>"
-	"мәселе" n pl nom
+	"мәселе" n pl nom @obl #4->9
 "<бойынша>"
-	"бойынша" post @case
+	"бойынша" post @case #5->4
 "<Президент>"
-	"президент" n nom
+	"президент" n nom @nsubj #6->9
 "<нақты>"
-	"нақты" adj
-	"нақты" adj advl
+	"нақты" adj @amod #7->8
 "<тапсырмалар>"
-	"тапсырма" n pl nom
+	"тапсырма" n pl nom @obj #8->9
 "<берді>"
-	"бер" v tv ifi p3 sg
+	"бер" v tv ifi p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
-# Қазақстан Өзбекстанмен тығыз байланыс орнатуға ұмтылады .	Kazakhstan is open and tends to have very close ties with Uzbekistan .	
+# Қазақстан Өзбекстанмен тығыз байланыс орнатуға ұмтылады .	Kazakhstan is open and tends to have very close ties with Uzbekistan .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -4677,10 +4351,9 @@
 "<.>"
 	"." sent @punct
 
-# - « Шеврон » көптеген жылдар бойы Қазақстанның әріптесі болғанын мақтан тұтады .	- Chevron is proud to be Kazakhstan ’ s partner for many years .	
+# - « Шеврон » көптеген жылдар бойы Қазақстанның әріптесі болғанын мақтан тұтады .	- Chevron is proud to be Kazakhstan ’ s partner for many years .
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<«>"
 	"«" lquot @punct
 "<Шеврон>"
@@ -4693,9 +4366,6 @@
 	"жыл" n pl nom
 "<бойы>"
 	"бойы" post @case
-	"бойы" n nom
-	"бойы" n attr
-	"бой" n px3sp nom
 "<Қазақстанның>"
 	"Қазақстан" np top gen
 "<әріптесі>"
@@ -4710,7 +4380,7 @@
 "<.>"
 	"." sent @punct
 
-# алайда сауда қатынастарына қажетті жақсы алғышарттар бар .	but we have got good preconditions for its development .	
+# алайда сауда қатынастарына қажетті жақсы алғышарттар бар .	but we have got good preconditions for its development .
 "<Алайда>"
 	"Алай" np top loc
 	"Алай" np ant m loc
@@ -4751,23 +4421,23 @@
 "<.>"
 	"." sent @punct
 
-# барша еліміз біздің атлеттерімізге жанкүйер болды .	the whole country was supporting our athletes .	
+# барша еліміз біздің атлеттерімізге жанкүйер болды .	the whole country was supporting our athletes .
 "<Барша>"
-	"барша" adj
+	"барша" adj @amod #1->2
 "<еліміз>"
-	"ел" n px1pl nom
+	"ел" n px1pl nom @nsubj #2->5
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #3->4
 "<атлеттерімізге>"
-	"атлет" n pl px1pl dat
+	"атлет" n pl px1pl dat @obl #4->5
 "<жанкүйер>"
-	"жанкүйер" n nom
+	"жанкүйер" n nom @root #5->0
 "<болды>"
-	"бол" v iv ifi p3 sg
+	"бол" v iv ifi p3 sg @cop #6->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->5
 
-# осында әр келген сайын таң қаламын .	I astonish every time I come here .	
+# осында әр келген сайын таң қаламын .	I astonish every time I come here .
 "<Осында>"
 	"осы" prn dem loc
 	"осында" adv
@@ -4782,58 +4452,47 @@
 "<сайын>"
 	"сайын" post @case
 "<таң қаламын>"
-	"таң қал" v iv aor p1 sg
+	"таң қал" v iv aor p1 sg @root
 "<.>"
 	"." sent @punct
 
-# елде тұрақтылық бар .	stability is the key factor of Kazakhstan &apos;s today &apos;s life .	
+# елде тұрақтылық бар .	stability is the key factor of Kazakhstan &apos;s today &apos;s life .
 "<Елде>"
-	"ел" n loc
+	"ел" n loc @obl #1->3
 "<тұрақтылық>"
-	"тұрақтылық" n nom
-	"тұрақтылық" n attr
+	"тұрақтылық" n nom @nsubj #2->3
 "<бар>"
-	"бар" adj
-	"бар" n nom
-	"бар" adj subst nom
-		"е" cop aor p3 sg @cop
-	"бар" adj
-		"е" cop aor p3 sg @cop
-	"бар" adj subst nom
-	"бар" v iv imp p2 sg
-	"бар" n nom
-		"е" cop aor p3 sg @cop
+	"бар" adj @root #3->0
+		"е" cop aor p3 sg @cop  #4->3
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->3
 
-# бұл біздің заңдарымызға қарама-қайшы .	it will be contrary to law .	
+# бұл біздің заңдарымызға қарама-қайшы .	it will be contrary to law .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->4
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #2->3
 "<заңдарымызға>"
-	"заң" n pl px1pl dat
+	"заң" n pl px1pl dat @obl #3->4
 "<қарама-қайшы>"
-	"қарама-қайшы" adj
-		"е" cop aor p3 sg @cop
+	"қарама-қайшы" adj @root #4->0
+		"е" cop aor p3 sg @cop  #5->4
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->4
 
-# АҚШ-пен стратегиялық әріптестік кеңейтілмек .	the strategic partnership with the US will be expanded .	
+# АҚШ-пен стратегиялық әріптестік кеңейтілмек .	the strategic partnership with the US will be expanded .
 "<АҚШ-пен>"
-	"АҚШ" np top ins
+	"АҚШ" np top ins @nmod #1->3
 "<стратегиялық>"
-	"стратегиялық" adj
+	"стратегиялық" adj @amod #2->3
 "<әріптестік>"
-	"әріптестік" n nom
+	"әріптестік" n nom @nsubj #3->4
 "<кеңейтілмек>"
-	"кеңейтіл" v iv fut_plan p3 sg
-	"кеңейт" v tv pass fut_plan p3 sg
+	"кеңейт" v tv pass fut_plan p3 sg @root #4->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 
-# - Құрметті Президент мырза , мен Сізді Қытайда көргеніме қуаныштымын .	“ Distinguished Mister President , I am glad to see you in China .	
+# - Құрметті Президент мырза , мен Сізді Қытайда көргеніме қуаныштымын .	“ Distinguished Mister President , I am glad to see you in China .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -4850,7 +4509,7 @@
 	"," cm @punct
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<Сізді>"
 	"сіз" prn pers p2 sg frm acc
@@ -4865,7 +4524,7 @@
 "<.>"
 	"." sent @punct
 
-# Сізге алдағы жылдары да табыстар тілеймін .	I wish you all success in the years ahead .	
+# Сізге алдағы жылдары да табыстар тілеймін .	I wish you all success in the years ahead .
 "<Сізге>"
 	"сіз" prn pers p2 sg frm dat
 "<алдағы>"
@@ -4873,7 +4532,7 @@
 	"алд" n loc subst nom
 "<жылдары да>"
 	"жыл" n pl px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"жыл" n pl px3sp nom
 		"да" postadv
 "<табыстар>"
@@ -4885,7 +4544,7 @@
 "<.>"
 	"." sent @punct
 
-# -Қазақстан Орталық Азиядағы көшбасшы ел болып табылады .	- Kazakhstan is a leading state in Central Asia .	
+# -Қазақстан Орталық Азиядағы көшбасшы ел болып табылады .	- Kazakhstan is a leading state in Central Asia .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -4914,7 +4573,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл , сөз жоқ , үлкен жетістік .	there is a geopolitical aspect to this issue .	
+# бұл , сөз жоқ , үлкен жетістік .	there is a geopolitical aspect to this issue .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -4949,7 +4608,7 @@
 "<.>"
 	"." sent @punct
 
-# осы уақыт аралығында мұнда көп нәрсе өзгерді .	much has been changed since that time .	
+# осы уақыт аралығында мұнда көп нәрсе өзгерді .	much has been changed since that time .
 "<Осы>"
 	"осы" prn dem nom
 "<уақыт аралығында>"
@@ -4970,67 +4629,56 @@
 "<.>"
 	"." sent @punct
 
-# Сербия мен Қазақстан арасында шешілмеген мәселе жоқ .	there are no problem issues in relations between Kazakhstan and Serbia .	
+# Сербия мен Қазақстан арасында шешілмеген мәселе жоқ .	there are no problem issues in relations between Kazakhstan and Serbia .
 "<Сербия>"
-	"Сербия" np top nom
+	"Сербия" np top nom @conj #1->3
 "<мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
-	"мен" post @case
+	"мен" cnjcoo @cc #2->3
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nmod:poss #3->4
 "<арасында>"
-	"ара" n px3sp loc
+	"ара" n px3sp loc @obl #4->5
 "<шешілмеген>"
-	"шеш" v tv pass neg gpr_past
-	"шешіл" v tv neg gpr_past
-	"шеш" v tv pass neg gpr_past subst nom
-	"шешіл" v tv neg gpr_past subst nom
+	"шеш" v tv pass neg gpr_past @acl:relcl #5->6
 "<мәселе>"
-	"мәселе" n nom
+	"мәселе" n nom @nsubj #6->7
 "<жоқ>"
-	"жоқ" adj subst nom
-		"е" cop aor p3 sg @cop
-	"жоқ" adj
-		"е" cop aor p3 sg @cop
+	"жоқ" adj @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
-# Сіздің ұйым ерекше өркениетті миссияны жүзеге асырады .	your organization carries out a special mission of civilization .	
+# Сіздің ұйым ерекше өркениетті миссияны жүзеге асырады .	your organization carries out a special mission of civilization .
 "<Сіздің>"
-	"сіз" prn pers p2 sg frm gen
+	"сіз" prn pers p2 sg frm gen @nmod:poss #1->2
 "<ұйым>"
-	"ұйым" n nom
+	"ұйым" n nom @nsubj #2->6
 "<ерекше>"
-	"ерекше" adj
-	"ерекше" adv
-	"ерекше" adj advl
-	"ерекше" adj subst nom
+	"ерекше" adj @amod #3->5
 "<өркениетті>"
-	"өркениет" n
-		"лы" post @case
-	"өркениетті" adj
+	"өркениетті" adj @amod #4->5
 "<миссияны>"
-	"миссия" n acc
+	"миссия" n acc @obj #5->6
 "<жүзеге асырады>"
-	"жүзеге асыр" v tv aor p3 sg
+	"жүзеге асыр" v tv aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
-# біз кестеге сай жұмыс жасаймыз .	the work is done on schedule .	
+# біз кестеге сай жұмыс жасаймыз .	the work is done on schedule .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #1->5
 "<кестеге>"
-	"кесте" n dat
+	"кесте" n dat @obl #2->5
 "<сай>"
-	"сай" adj
-"<жұмыс жасаймыз>"
-	"жұмыс жаса" v iv aor p1 pl
+	"сай" adj @amod #3->4
+"<жұмыс>"
+	"жұмыс" n nom @obj #4->5
+"<жасаймыз>"
+	"жаса" v iv aor p1 pl @root #5->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->5
 
-# қазір біз жаңа Алатау ауданын аштық .	- I urge to stop infill construction of the city especially its historical district .	
+# қазір біз жаңа Алатау ауданын аштық .	- I urge to stop infill construction of the city especially its historical district .
 "<Қазір>"
 	"қазір" adv
 	"қазір" n nom
@@ -5056,7 +4704,7 @@
 "<.>"
 	"." sent @punct
 
-# енді олардың қатарына Қазақстан қосылды .	Kazakhstan has joined them .	
+# енді олардың қатарына Қазақстан қосылды .	Kazakhstan has joined them .
 "<Енді>"
 	"ен" n acc
 	"енді" adv
@@ -5080,63 +4728,54 @@
 "<.>"
 	"." sent @punct
 
-# бүгін Мемлекет басшысы Нұрсұлтан Назарбаев « Шеврон » компаниясының басшылығын қабылдады .	today President Nursultan Nazarbayev Receives Chevron CEO	
+# бүгін Мемлекет басшысы Нұрсұлтан Назарбаев « Шеврон » компаниясының басшылығын қабылдады .	today President Nursultan Nazarbayev Receives Chevron CEO
 "<Бүгін>"
-	"бүгін" adv
-	"бүгін" n nom
-	"бүгін" n attr
+	"бүгін" adv @advmod #1->11
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #2->3
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @appos #3->5
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom
+	"Нұрсұлтан" np ant m nom @flat:name #4->5
 "<Назарбаев>"
-	"Назарбаев" np cog m nom
+	"Назарбаев" np cog m nom @nsubj #5->11
 "<«>"
-	"«" lquot @punct
+	"«" lquot @punct #6->7
 "<Шеврон>"
-	"Шеврон" np org nom
+	"Шеврон" np org nom @nmod:poss #7->9
 "<»>"
-	"»" rquot @punct
+	"»" rquot @punct #8->7
 "<компаниясының>"
-	"компания" n px3sp gen
+	"компания" n px3sp gen @nmod:poss #9->10
 "<басшылығын>"
-	"басшылық" n px3sp acc
+	"басшылық" n px3sp acc @obj #10->11
 "<қабылдады>"
-	"қабылда" v tv ifi p3 sg
+	"қабылда" v tv ifi p3 sg @root #11->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->11
 
-# бұл өзге мемлекеттер мен діни ұйымдар үшін пайдалы .	it is useful for other countries and religious organizations too .	
+# бұл өзге мемлекеттер мен діни ұйымдар үшін пайдалы .	it is useful for other countries and religious organizations too .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->8
 "<өзге>"
-	"өзге" adj
-	"өзге" adj advl
+	"өзге" adj @amod #2->3
 "<мемлекеттер>"
-	"мемлекет" n pl nom
+	"мемлекет" n pl nom @conj #3->6
 "<мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
-	"мен" post @case
+	"мен" cnjcoo @cc #4->6
 "<діни>"
-	"діни" adj
+	"діни" adj @amod #5->6
 "<ұйымдар>"
-	"ұйым" n pl nom
+	"ұйым" n pl nom @obl #6->8
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #7->6
 "<пайдалы>"
-	"пайдалы" adj
-		"е" cop aor p3 sg @cop
+	"пайдалы" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
-# мұның 359 мың 829 шаршы метрін тұрғын-жай алаңдары құрайды .	these are the rates our capital is built at .	
+# мұның 359 мың 829 шаршы метрін тұрғын-жай алаңдары құрайды .	these are the rates our capital is built at .
 "<Мұның>"
 	"бұл" prn dem gen
 "<359>"
@@ -5175,7 +4814,7 @@
 "<.>"
 	"." sent @punct
 
-# « Қазақ халқы елімізде тұратын басқа халықтардың басын біріктіруі керек .	akimat allotted KZT 29 mln for the good deed .	
+# « Қазақ халқы елімізде тұратын басқа халықтардың басын біріктіруі керек .	akimat allotted KZT 29 mln for the good deed .
 "<«>"
 	"«" lquot @punct
 "<Қазақ>"
@@ -5209,30 +4848,27 @@
 "<.>"
 	"." sent @punct
 
-# жарыс « Дәулет » ұлттық теннис орталығында өтті .	the tournament took place at the Daulet National Tennis Center .	
+# жарыс « Дәулет » ұлттық теннис орталығында өтті .	the tournament took place at the Daulet National Tennis Center .
 "<Жарыс>"
-	"жарыс" n nom
+	"жарыс" n nom @nsubj #1->8
 "<«>"
-	"«" lquot @punct
+	"«" lquot @punct #2->3
 "<Дәулет>"
-	"Дәулет" np ant m nom
+	"Дәулет" np al nom @flat:name #3->7
 "<»>"
-	"»" rquot @punct
+	"»" rquot @punct #4->3
 "<ұлттық>"
-	"ұлттық" adj
-	"ұлттық" adv
+	"ұлттық" adj @amod #5->6
 "<теннис>"
-	"теннис" n nom
-	"теннис" n attr
+	"теннис" n nom @nmod:poss #6->7
 "<орталығында>"
-	"орталық" n px3sp loc
+	"орталық" n px3sp loc @obl #7->8
 "<өтті>"
-	"өт" v tv ifi p3 sg
-	"өт" v iv ifi p3 sg
+	"өт" v iv ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
-# содан кейін Италия Үкіметінің басшысы Астананың көрікті жерлерімен танысты .	Italian Prime Minister made a tour of Astana .	
+# содан кейін Италия Үкіметінің басшысы Астананың көрікті жерлерімен танысты .	Italian Prime Minister made a tour of Astana .
 "<Содан кейін>"
 	"содан кейін" post @case
 "<Италия>"
@@ -5260,7 +4896,7 @@
 "<.>"
 	"." sent @punct
 
-# мына жерден қараңыз .	I consider the last fact to be very important .	
+# мына жерден қараңыз .	I consider the last fact to be very important .
 "<Мына>"
 	"мына" ij
 	"мына" det dem @det
@@ -5275,7 +4911,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент Үкіметтің алдына бірқатар нақты міндеттер қойды .	President set a number of concrete tasks for the Government .	
+# Президент Үкіметтің алдына бірқатар нақты міндеттер қойды .	President set a number of concrete tasks for the Government .
 "<Президент>"
 	"президент" n nom
 	"президент" n attr
@@ -5297,7 +4933,7 @@
 "<.>"
 	"." sent @punct
 
-# біз әлеуметтік бағдарланған қоғамның негіздерін қаладық .	we have laid the foundation of a social-oriented society .	
+# біз әлеуметтік бағдарланған қоғамның негіздерін қаладық .	we have laid the foundation of a social-oriented society .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<әлеуметтік>"
@@ -5316,7 +4952,7 @@
 "<.>"
 	"." sent @punct
 
-# 1600-ден астам сырттан бақылаушылар келіп отыр .	they have equal access to media .	
+# 1600-ден астам сырттан бақылаушылар келіп отыр .	they have equal access to media .
 "<1600-ден>"
 	"1600" num subst abl
 "<астам>"
@@ -5339,7 +4975,7 @@
 "<.>"
 	"." sent @punct
 
-# мен олай деп санамаймын .	I do not agree with this statement .	
+# мен олай деп санамаймын .	I do not agree with this statement .
 "<Мен>"
 	"мен" prn pers p1 sg nom
 "<олай>"
@@ -5354,7 +4990,7 @@
 "<.>"
 	"." sent @punct
 
-# салтанатты ашылу рәсіміне Мемлекет басшысы Нұрсұлтан Назарбаев қатысты .	President Nursultan Nazarbayev participated in the opening ceremony .	
+# салтанатты ашылу рәсіміне Мемлекет басшысы Нұрсұлтан Назарбаев қатысты .	President Nursultan Nazarbayev participated in the opening ceremony .
 "<Салтанатты>"
 	"салтанат" n acc
 	"Салтанат" np ant f acc
@@ -5393,7 +5029,7 @@
 "<.>"
 	"." sent @punct
 
-# ГАЗЕТА.RU	Gazeta.ru	
+# ГАЗЕТА.RU	Gazeta.ru
 "<ГАЗЕТА>"
 	"газета" n nom
 		"е" cop aor p3 sg @cop
@@ -5402,7 +5038,7 @@
 "<RU>"
 	"Ru" np unk
 
-# - Біздің елдеріміз арасында ешқашан ешқандай да қайшылықтар болған емес .	“ There have not been any contradictions between our countries .	
+# - Біздің елдеріміз арасында ешқашан ешқандай да қайшылықтар болған емес .	“ There have not been any contradictions between our countries .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -5417,7 +5053,7 @@
 "<ешқандай>"
 	"ешқандай" det neg
 "<да>"
-	"да" cnjcoo
+	"да" cnjcoo @cc
 	"да" postadv
 	"да" adv
 "<қайшылықтар>"
@@ -5427,7 +5063,7 @@
 "<.>"
 	"." sent @punct
 
-# - Парламенттің ең басты міндеті – заң шығару жұмысы .	- The main purpose of the parliament is legislative work .	
+# - Парламенттің ең басты міндеті – заң шығару жұмысы .	- The main purpose of the parliament is legislative work .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -5452,7 +5088,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстанның « Достық-Адрия » мұнай өткізу құбырына қатысуға мүмкіндігі бар .	Kazakhstan also could take part in the project “ Druzba-Adria ” .	
+# Қазақстанның « Достық-Адрия » мұнай өткізу құбырына қатысуға мүмкіндігі бар .	Kazakhstan also could take part in the project “ Druzba-Adria ” .
 "<Қазақстанның>"
 	"Қазақстан" np top gen
 "<«>"
@@ -5486,14 +5122,14 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы сондай-ақ университеттің кітапханасында болды .	the President also visited the Nazarbayev University Library .	
+# Мемлекет басшысы сондай-ақ университеттің кітапханасында болды .	the President also visited the Nazarbayev University Library .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
 "<басшысы>"
 	"басшы" n px3sp nom
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 "<университеттің>"
 	"университет" n gen
 "<кітапханасында>"
@@ -5503,7 +5139,7 @@
 "<.>"
 	"." sent @punct
 
-# үшінші басым бағыт партияның өңірлердегі белсенді жұмысы болуы тиіс .	third , it is active work of the party in regions .	
+# үшінші басым бағыт партияның өңірлердегі белсенді жұмысы болуы тиіс .	third , it is active work of the party in regions .
 "<Үшінші>"
 	"үш" num ord
 "<басым>"
@@ -5536,7 +5172,7 @@
 "<.>"
 	"." sent @punct
 
-# қадірлі жамағат !	dear Kazakhstanis !	
+# қадірлі жамағат !	dear Kazakhstanis !
 "<Қадірлі>"
 	"қадірлі" adj
 	"қадір" n
@@ -5549,7 +5185,7 @@
 "<!>"
 	"!" sent @punct
 
-# қазіргі сенім мен достық қатынастар жалғасын табады .	so , the existing relationships of trust and friendship will be continued .	
+# қазіргі сенім мен достық қатынастар жалғасын табады .	so , the existing relationships of trust and friendship will be continued .
 "<Қазіргі>"
 	"қазір" adv attr
 	"қазіргі" adj
@@ -5559,7 +5195,7 @@
 "<сенім>"
 	"сенім" n nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<достық>"
 	"достық" n nom
 	"достық" n attr
@@ -5574,13 +5210,13 @@
 "<.>"
 	"." sent @punct
 
-# - Мен үшін Қазақстан да өз Отаным .	“ Kazakhstan is also my Motherland .	
+# - Мен үшін Қазақстан да өз Отаным .	“ Kazakhstan is also my Motherland .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
 "<Мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<үшін>"
 	"үшін" post @case
@@ -5588,7 +5224,7 @@
 	"үш" num subst px3sp acc
 "<Қазақстан да>"
 	"Қазақстан" np top nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"Қазақстан" np top nom
 		"да" postadv
 "<өз>"
@@ -5601,7 +5237,7 @@
 "<.>"
 	"." sent @punct
 
-# - Құрметті Дмитрий Анатольевич , жоғары деңгейдегі біздің кездесуіміз өте табысты өтуде .	- We are now working in the Customs Union .	
+# - Құрметті Дмитрий Анатольевич , жоғары деңгейдегі біздің кездесуіміз өте табысты өтуде .	- We are now working in the Customs Union .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -5642,7 +5278,7 @@
 "<.>"
 	"." sent @punct
 
-# біз олардың қайғыларын бөлісеміз .	we share their grief .	
+# біз олардың қайғыларын бөлісеміз .	we share their grief .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<олардың>"
@@ -5656,7 +5292,7 @@
 "<.>"
 	"." sent @punct
 
-# олар үшін Қазақстан кедергісіз аймаққа айналуға тиіс .	Kazakhstan must become a barrier-free zone for them .	
+# олар үшін Қазақстан кедергісіз аймаққа айналуға тиіс .	Kazakhstan must become a barrier-free zone for them .
 "<Олар>"
 	"ол" prn dem pl nom
 	"олар" prn pers p3 pl nom
@@ -5687,7 +5323,7 @@
 "<.>"
 	"." sent @punct
 
-# осының бәрі Сіздің басшылығыңызбен халық пен елдің игілігі үшін жасалуда .	and that is under Your governance for the love of nation and the country .	
+# осының бәрі Сіздің басшылығыңызбен халық пен елдің игілігі үшін жасалуда .	and that is under Your governance for the love of nation and the country .
 "<Осының>"
 	"осы" prn dem gen
 "<бәрі>"
@@ -5699,7 +5335,7 @@
 "<халық>"
 	"халық" n nom
 "<пен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<елдің>"
 	"ел" n gen
 "<игілігі>"
@@ -5714,7 +5350,7 @@
 "<.>"
 	"." sent @punct
 
-# құрылыс алаңының жалпы көлемі – 400 мың шаршы метрге таяу .	“ This year , 400 billion tenges will be spent on Astana ’ s development .	
+# құрылыс алаңының жалпы көлемі – 400 мың шаршы метрге таяу .	“ This year , 400 billion tenges will be spent on Astana ’ s development .
 "<Құрылыс>"
 	"құрылыс" n nom
 	"құрылыс" n attr
@@ -5747,7 +5383,7 @@
 "<.>"
 	"." sent @punct
 
-# 8 . Ұлтқа үндеу	fellow citizens !	
+# 8 . Ұлтқа үндеу	fellow citizens !
 "<8>"
 	"8" num
 "<.>"
@@ -5758,16 +5394,16 @@
 	"үнде" v iv ger nom
 	"үндеу" n nom
 
-# мен біздің тарапымызды да қабылданған шешім қанағаттандыруы тиіс деп ойлаймын .	I think the Kazakhstani side must be satisfied with this decision .	
+# мен біздің тарапымызды да қабылданған шешім қанағаттандыруы тиіс деп ойлаймын .	I think the Kazakhstani side must be satisfied with this decision .
 "<Мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<біздің>"
 	"біз" prn pers p1 pl gen
 "<тарапымызды да>"
 	"тарап" n px1pl acc
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"тарап" n px1pl acc
 		"да" postadv
 "<қабылданған>"
@@ -5795,7 +5431,7 @@
 "<.>"
 	"." sent @punct
 
-# бірлескен мәлімдеме мәтіні	joint Statement	
+# бірлескен мәлімдеме мәтіні	joint Statement
 "<Бірлескен>"
 	"бірлес" v iv gpr_past
 	"бірлес" v iv gpr_past subst nom
@@ -5805,10 +5441,10 @@
 "<мәтіні>"
 	"мәтін" n px3sp nom
 
-# мен Малайзияның әр азаматына осы кітапты оқып шығуды ұсынғым келеді .	I would like to recommend the book for reading to every citizen of Malaysia .	
+# мен Малайзияның әр азаматына осы кітапты оқып шығуды ұсынғым келеді .	I would like to recommend the book for reading to every citizen of Malaysia .
 "<Мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<Малайзияның>"
 	"Малайзия" np top gen
@@ -5836,7 +5472,7 @@
 "<.>"
 	"." sent @punct
 
-# нәтижесінде ішкі саяси жағдай бақылаудан шығып кетті .	as a result , the political situation got out of control .	
+# нәтижесінде ішкі саяси жағдай бақылаудан шығып кетті .	as a result , the political situation got out of control .
 "<Нәтижесінде>"
 	"нәтиже" n px3sp loc
 "<ішкі>"
@@ -5857,14 +5493,14 @@
 "<.>"
 	"." sent @punct
 
-# жетінші .	seventh .	
+# жетінші .	seventh .
 "<Жетінші>"
 	"жеті" num ord subst nom
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
 
-# онда 238 дәрігер мен 260 медбике жұмыс істейді деп жоспарлануда .	registration office is equipped with system of electronic turn management .	
+# онда 238 дәрігер мен 260 медбике жұмыс істейді деп жоспарлануда .	registration office is equipped with system of electronic turn management .
 "<Онда>"
 	"ол" prn dem loc
 	"ол" prn pers p3 sg loc
@@ -5877,7 +5513,7 @@
 	"дәрігер" n nom
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<260>"
 	"260" num
@@ -5894,7 +5530,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл біздің еліміздің салтанаты !	this is a triumph of the whole country !	
+# бұл біздің еліміздің салтанаты !	this is a triumph of the whole country !
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -5908,7 +5544,7 @@
 "<!>"
 	"!" sent @punct
 
-# бүкіл әлем осымен айналысады .	the countries around the world tackle these issues .	
+# бүкіл әлем осымен айналысады .	the countries around the world tackle these issues .
 "<Бүкіл>"
 	"бүкіл" det qnt
 "<әлем>"
@@ -5921,7 +5557,7 @@
 "<.>"
 	"." sent @punct
 
-# - Сіз өзіңіздің дана саясатыңыздың арқасында өз еліңіз үшін бәрін жасап келесіз .	“ Much work has been done in the country due to your wise policy .	
+# - Сіз өзіңіздің дана саясатыңыздың арқасында өз еліңіз үшін бәрін жасап келесіз .	“ Much work has been done in the country due to your wise policy .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -5953,7 +5589,7 @@
 "<.>"
 	"." sent @punct
 
-# мен мұнда қырықтан астам рет болдым .	I have visited Kazakhstan more than 40 times .	
+# мен мұнда қырықтан астам рет болдым .	I have visited Kazakhstan more than 40 times .
 "<Мен>"
 	"мен" prn pers p1 sg nom
 "<мұнда>"
@@ -5972,7 +5608,7 @@
 "<.>"
 	"." sent @punct
 
-# заңдардың мәтіндері баспасөзде жарияланады .	the texts of the Laws are published in the press .	
+# заңдардың мәтіндері баспасөзде жарияланады .	the texts of the Laws are published in the press .
 "<Заңдардың>"
 	"За" np ant m px2pl gen
 	"заң" n pl gen
@@ -5985,7 +5621,7 @@
 "<.>"
 	"." sent @punct
 
-# ол біздің стратегиялық ұстанымымыз , - атап өтті Нұрсұлтан Назарбаев .	it is our strategic position , ” Nursultan Nazarbayev highlighted .	
+# ол біздің стратегиялық ұстанымымыз , - атап өтті Нұрсұлтан Назарбаев .	it is our strategic position , ” Nursultan Nazarbayev highlighted .
 "<Ол>"
 	"ол" prn pers p3 sg nom
 	"ол" det dem @det
@@ -6012,7 +5648,7 @@
 "<.>"
 	"." sent @punct
 
-# Астана , 2014 жылғы 17 қаңтар	Astana , January 17 , 2014	
+# Астана , 2014 жылғы 17 қаңтар	Astana , January 17 , 2014
 "<Астана>"
 	"астана" n nom
 	"Астана" np top nom
@@ -6027,7 +5663,7 @@
 "<қаңтар>"
 	"қаңтар" n nom
 
-# – Менің сапарымның нәтижелері көп үміт күтерліктей болды .	- The outcomes of my visit were high-potential .	
+# – Менің сапарымның нәтижелері көп үміт күтерліктей болды .	- The outcomes of my visit were high-potential .
 "<–>"
 	"–" guio @punct
 "<Менің>"
@@ -6051,7 +5687,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгінде Астанада 700-ден астам шетел компаниялары жұмыс істеуде .	more than 700 foreign companies work in Astana .	
+# бүгінде Астанада 700-ден астам шетел компаниялары жұмыс істеуде .	more than 700 foreign companies work in Astana .
 "<Бүгінде>"
 	"бүгін" n loc
 	"бүгінде" adv
@@ -6075,7 +5711,7 @@
 "<.>"
 	"." sent @punct
 
-# бас жоспар – бұл қаланың конституциясы .	the general plan is the city ’ s constitution .	
+# бас жоспар – бұл қаланың конституциясы .	the general plan is the city ’ s constitution .
 "<Бас>"
 	"бас" n nom
 	"бас" n attr
@@ -6095,14 +5731,14 @@
 "<.>"
 	"." sent @punct
 
-# Президент ғылым мен білімнің ықпалдастығына ерекше назар аударды .	the President put an emphasis on the integration of science and education .	
+# Президент ғылым мен білімнің ықпалдастығына ерекше назар аударды .	the President put an emphasis on the integration of science and education .
 "<Президент>"
 	"президент" n nom
 	"президент" n attr
 "<ғылым>"
 	"ғылым" n nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<білімнің>"
 	"білім" n gen
 "<ықпалдастығына>"
@@ -6115,7 +5751,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы Нұрсұлтан Назарбаев « Мәскеу » жаңа бизнес орталығында болды .	President Nursultan Nazarbayev Surveys Moscow New Business Center	
+# Мемлекет басшысы Нұрсұлтан Назарбаев « Мәскеу » жаңа бизнес орталығында болды .	President Nursultan Nazarbayev Surveys Moscow New Business Center
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -6146,7 +5782,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл үшін біз :	yet we cannot rest on our laurels .	
+# бұл үшін біз :	yet we cannot rest on our laurels .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -6159,7 +5795,7 @@
 "<:>"
 	":" sent @punct
 
-# жаңа кәсіпорындардың жұмыс істеуі үшін жаңа мамандар қажет .	new personnel will be needed to work at these ventures .	
+# жаңа кәсіпорындардың жұмыс істеуі үшін жаңа мамандар қажет .	new personnel will be needed to work at these ventures .
 "<Жаңа>"
 	"жаңа" adj
 	"жаңа" adv
@@ -6193,11 +5829,11 @@
 "<.>"
 	"." sent @punct
 
-# біз сондай-ақ жұмысты бірлесіп бастауға келістік .	we decided to start joint working .	
+# біз сондай-ақ жұмысты бірлесіп бастауға келістік .	we decided to start joint working .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 	"сол" prn dem sim nom
 		"-ақ" postadv
 "<жұмысты>"
@@ -6214,17 +5850,17 @@
 "<.>"
 	"." sent @punct
 
-# ғасыр ортасы да таяп қалды .	the middle of the century is already not too distant .	
+# ғасыр ортасы да таяп қалды .	the middle of the century is already not too distant .
 "<Ғасыр>"
 	"ғасыр" n nom
 	"ғасыр" n attr
 "<ортасы да>"
 	"ортасы" n nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"ортасы" n nom
 		"да" postadv
 	"орта" n px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"орта" n px3sp nom
 		"да" postadv
 "<таяп>"
@@ -6234,7 +5870,7 @@
 "<.>"
 	"." sent @punct
 
-# ол біздің азаматтарымыз үшін нақты нәтижелер әкелетіні маңызды .	more importantly , it brings tangible results to our citizens .	
+# ол біздің азаматтарымыз үшін нақты нәтижелер әкелетіні маңызды .	more importantly , it brings tangible results to our citizens .
 "<Ол>"
 	"ол" prn pers p3 sg nom
 	"ол" det dem @det
@@ -6261,7 +5897,7 @@
 "<.>"
 	"." sent @punct
 
-# біз еліміз Тәуелсіздігінің 15-жылдығының қарсаңында тұрмыз .	let ’ s the words of this oathbe the daily program for your actions .	
+# біз еліміз Тәуелсіздігінің 15-жылдығының қарсаңында тұрмыз .	let ’ s the words of this oathbe the daily program for your actions .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<еліміз>"
@@ -6282,7 +5918,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін әлемдегі барша христиандардың мерекесі .	today is a holiday of all Christians in the world .	
+# бүгін әлемдегі барша христиандардың мерекесі .	today is a holiday of all Christians in the world .
 "<Бүгін>"
 	"бүгін" adv
 	"бүгін" n nom
@@ -6300,7 +5936,7 @@
 "<.>"
 	"." sent @punct
 
-# екінші павильонда төрт қабатты қонақ үй кешені орын тепкен .	the auditorium for about 2000 people is set in the first building .	
+# екінші павильонда төрт қабатты қонақ үй кешені орын тепкен .	the auditorium for about 2000 people is set in the first building .
 "<Екінші>"
 	"екі" num ord
 "<павильонда>"
@@ -6323,7 +5959,7 @@
 "<.>"
 	"." sent @punct
 
-# біздің әңгімелесуіміз нәтижелі болды .	we have had a very constructive conversation .	
+# біздің әңгімелесуіміз нәтижелі болды .	we have had a very constructive conversation .
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<әңгімелесуіміз>"
@@ -6340,13 +5976,13 @@
 "<.>"
 	"." sent @punct
 
-# шынайы құрметпен және терең достық сезіммен ,	with respect and deep sense of friendship ,	
+# шынайы құрметпен және терең достық сезіммен ,	with respect and deep sense of friendship ,
 "<Шынайы>"
 	"шынайы" adj
 "<құрметпен>"
 	"құрмет" n ins
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<терең>"
 	"терең" adj
 	"терең" adv
@@ -6360,7 +5996,7 @@
 "<,>"
 	"," cm @punct
 
-# бұл 2008 жылмен салыстырғанда , бір жарым есе артық .	which is 1,5 times more , than in 2008 .	
+# бұл 2008 жылмен салыстырғанда , бір жарым есе артық .	which is 1,5 times more , than in 2008 .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -6388,7 +6024,7 @@
 "<.>"
 	"." sent @punct
 
-# Ел-жұрттарыңыздың сіздерге артар сенімі үлкен , үміті зор .	and your talents will be strongly required here .	
+# Ел-жұрттарыңыздың сіздерге артар сенімі үлкен , үміті зор .	and your talents will be strongly required here .
 "<Ел-жұрттарыңыздың>"
 	"ел-жұрт" n pl px2sg frm gen
 "<сіздерге>"
@@ -6419,7 +6055,7 @@
 "<.>"
 	"." sent @punct
 
-# осы орайда , патриотизм табысқа жетелеуші қасиеттердің бірі болып табылады .	patriotism is a significant component of success .	
+# осы орайда , патриотизм табысқа жетелеуші қасиеттердің бірі болып табылады .	patriotism is a significant component of success .
 "<Осы>"
 	"осы" det dem @det
 	"осы" prn dem nom
@@ -6450,7 +6086,7 @@
 "<.>"
 	"." sent @punct
 
-# жедел жәрдем ауруханасы 2010 жылғы желтоқсанда салынған .	the Emergency First Aid Hospital was constructed in December 2010 .	
+# жедел жәрдем ауруханасы 2010 жылғы желтоқсанда салынған .	the Emergency First Aid Hospital was constructed in December 2010 .
 "<Жедел>"
 	"жедел" adj
 "<жәрдем>"
@@ -6483,7 +6119,7 @@
 "<.>"
 	"." sent @punct
 
-# біздің барлығымыз оны еңсеріп шығатынымызға сенімдімін .	I am convinced that we all will overcome it .	
+# біздің барлығымыз оны еңсеріп шығатынымызға сенімдімін .	I am convinced that we all will overcome it .
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<барлығымыз>"
@@ -6504,9 +6140,9 @@
 "<.>"
 	"." sent @punct
 
-# бірақ бетбұрысты кезеңдер алыс емес .	Bu the changes are inevitable .	
+# бірақ бетбұрысты кезеңдер алыс емес .	Bu the changes are inevitable .
 "<Бірақ>"
-	"бірақ" cnjcoo
+	"бірақ" cnjcoo @cc
 "<бетбұрысты>"
 	"бетбұрыс" n acc
 	"бетбұрыс" n
@@ -6521,7 +6157,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент бізді барлық бағыт бойынша қолдады .	President Nazarbayev supports us in all the directions .	
+# Президент бізді барлық бағыт бойынша қолдады .	President Nazarbayev supports us in all the directions .
 "<Президент>"
 	"президент" n nom
 "<бізді>"
@@ -6542,7 +6178,7 @@
 "<.>"
 	"." sent @punct
 
-# құрылыстың аумағы 488 шаршы метрді құрайды .	the square of the building is 488 square meters .	
+# құрылыстың аумағы 488 шаршы метрді құрайды .	the square of the building is 488 square meters .
 "<Құрылыстың>"
 	"құрылыс" n gen
 "<аумағы>"
@@ -6561,7 +6197,7 @@
 "<.>"
 	"." sent @punct
 
-# Учаскедегі пайдалану жылдамдығы 350 км / сағат .	presently , the railway line attains operating speed of 350 kilometers per hour .	
+# Учаскедегі пайдалану жылдамдығы 350 км / сағат .	presently , the railway line attains operating speed of 350 kilometers per hour .
 "<Учаскедегі>"
 	"учаске" n loc attr @amod
 	"учаске" n loc subst nom
@@ -6585,7 +6221,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент сөзінің мәтінін мына жерден қараңыз .	the author of the project is a young architect Rinat Abenov from Astana .	
+# Президент сөзінің мәтінін мына жерден қараңыз .	the author of the project is a young architect Rinat Abenov from Astana .
 "<Президент>"
 	"президент" n nom
 	"президент" n attr
@@ -6607,7 +6243,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін Елбасы Нұрсұлтан Назарбаев бірқатар жұмыс кездесулерін өткізді .	today , President Nursultan Nazarbayev Holds a Number of Working Meetings	
+# бүгін Елбасы Нұрсұлтан Назарбаев бірқатар жұмыс кездесулерін өткізді .	today , President Nursultan Nazarbayev Holds a Number of Working Meetings
 "<Бүгін>"
 	"бүгін" adv
 	"бүгін" n nom
@@ -6632,7 +6268,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы Алматы қаласының бірқатар нысандарын аралап көрді	the Head of the state visited a number of objects in Almaty .	
+# Мемлекет басшысы Алматы қаласының бірқатар нысандарын аралап көрді	the Head of the state visited a number of objects in Almaty .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -6653,7 +6289,7 @@
 "<көрді>"
 	"көр" vaux ifi p3 sg
 
-# Ұлттық қор активтерін тиімді басқару жағдайы да талқыланды .	we discussed efficiency of National Fund ’ s assets management .	
+# Ұлттық қор активтерін тиімді басқару жағдайы да талқыланды .	we discussed efficiency of National Fund ’ s assets management .
 "<Ұлттық>"
 	"ұлттық" adj
 	"ұлттық" adv
@@ -6673,7 +6309,7 @@
 	"басқару" n attr
 "<жағдайы да>"
 	"жағдай" n px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"жағдай" n px3sp nom
 		"да" postadv
 "<талқыланды>"
@@ -6681,7 +6317,7 @@
 "<.>"
 	"." sent @punct
 
-# журналистермен өткен брифингте М. Шаймиев былай деді :	M.Shaimiyev at the briefing said :	
+# журналистермен өткен брифингте М. Шаймиев былай деді :	M.Shaimiyev at the briefing said :
 "<Журналистермен>"
 	"журналист" n pl ins
 "<өткен>"
@@ -6706,7 +6342,7 @@
 "<:>"
 	":" sent @punct
 
-# ( 7 ) КӘСІБИ МЕМЛЕКЕТ .	( 7 ) PROFESSIONAL STATE .	
+# ( 7 ) КӘСІБИ МЕМЛЕКЕТ .	( 7 ) PROFESSIONAL STATE .
 "<(>"
 	"(" lpar
 "<7>"
@@ -6723,7 +6359,7 @@
 "<.>"
 	"." sent @punct
 
-# Ақтау теңіз сауда портының негізі 1963 жылдың қазан айында қаланған .	Aktau international seaport was founded in October 1963 .	
+# Ақтау теңіз сауда портының негізі 1963 жылдың қазан айында қаланған .	Aktau international seaport was founded in October 1963 .
 "<Ақтау>"
 	"ақта" v tv ger nom
 	"ақтау" n nom
@@ -6758,7 +6394,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстанның сыртқы саясаты үшін биылғы жылдың маңызды мәні бар .	the year of 2012 is of great significance for the foreign policy of Kazakhstan .	
+# Қазақстанның сыртқы саясаты үшін биылғы жылдың маңызды мәні бар .	the year of 2012 is of great significance for the foreign policy of Kazakhstan .
 "<Қазақстанның>"
 	"Қазақстан" np top gen
 "<сыртқы>"
@@ -6789,7 +6425,7 @@
 "<.>"
 	"." sent @punct
 
-# мерекелеріңізбен , қымбатты отандастар !	happy Holiday to you , dear compatriots !	
+# мерекелеріңізбен , қымбатты отандастар !	happy Holiday to you , dear compatriots !
 "<Мерекелеріңізбен>"
 	"Мереке" np ant m pl px2sg frm ins
 	"мереке" n pl px2sg frm ins
@@ -6812,7 +6448,7 @@
 "<!>"
 	"!" sent @punct
 
-# Классиканы оқыңыздар , фильмдерді көріңіздер .	• exploit the benefits of international divisions of labor .	
+# Классиканы оқыңыздар , фильмдерді көріңіздер .	• exploit the benefits of international divisions of labor .
 "<Классиканы>"
 	"классика" n acc
 "<оқыңыздар>"
@@ -6837,7 +6473,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл біздің елімізге көрсетілген жоғары сенімнің дәлелі , - делінген хатта .	this is a deserved mandate to our country , ” the letter says .	
+# бұл біздің елімізге көрсетілген жоғары сенімнің дәлелі , - делінген хатта .	this is a deserved mandate to our country , ” the letter says .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -6881,7 +6517,7 @@
 "<.>"
 	"." sent @punct
 
-# әлемде бізді осы қасиеттеріміз үшін бағалайды .	we are recognized in the world because of this .	
+# әлемде бізді осы қасиеттеріміз үшін бағалайды .	we are recognized in the world because of this .
 "<Әлемде>"
 	"әлем" n loc
 "<бізді>"
@@ -6900,7 +6536,7 @@
 "<.>"
 	"." sent @punct
 
-# 3.4 . мемлекеттік және сыртқы қарызды басқару саясаты	8.1 Development of farming and SME in agricultural processing and trade	
+# 3.4 . мемлекеттік және сыртқы қарызды басқару саясаты	8.1 Development of farming and SME in agricultural processing and trade
 "<3.4>"
 	"3.4" num
 "<.>"
@@ -6909,7 +6545,7 @@
 	"мемлекеттік" adj
 	"мемлекеттік" adj advl
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<сыртқы>"
 	"сыртқы" adj
 "<қарызды>"
@@ -6923,7 +6559,7 @@
 "<саясаты>"
 	"саясат" n px3sp nom
 
-# бірінші кезектегі нысандар 2006 жылдың тамызында пайдаланылуға берілді .	the objects of the first turn put into operation in August 2006 .	
+# бірінші кезектегі нысандар 2006 жылдың тамызында пайдаланылуға берілді .	the objects of the first turn put into operation in August 2006 .
 "<Бірінші>"
 	"бір" num ord
 	"бірінші" adj
@@ -6949,7 +6585,7 @@
 "<.>"
 	"." sent @punct
 
-# Кедейлік деңгейін одан әрі төмендетіп , жұмыссыздықтың өсуін тежеген жөн .	we must continue reducing poverty and tackling unemployment .	
+# Кедейлік деңгейін одан әрі төмендетіп , жұмыссыздықтың өсуін тежеген жөн .	we must continue reducing poverty and tackling unemployment .
 "<Кедейлік>"
 	"кедейлік" n nom
 	"кедейлік" n attr
@@ -6979,7 +6615,7 @@
 "<.>"
 	"." sent @punct
 
-# заң мәтіні баспасөзде жарияланады .	the text of the law will be published in the press .	
+# заң мәтіні баспасөзде жарияланады .	the text of the law will be published in the press .
 "<Заң>"
 	"заң" n attr
 	"заң" n nom
@@ -6992,7 +6628,7 @@
 "<.>"
 	"." sent @punct
 
-# Кешенде күніне 300-350 адам спорттың әр түрі бойынша жаттыға алады .	the daily capacity of the complex is nearly 300-350 guests .	
+# Кешенде күніне 300-350 адам спорттың әр түрі бойынша жаттыға алады .	the daily capacity of the complex is nearly 300-350 guests .
 "<Кешенде>"
 	"кешен" n loc
 "<күніне>"
@@ -7023,13 +6659,13 @@
 "<.>"
 	"." sent @punct
 
-# қоғамдық тұрақтылық пен келісімді қамтамасыз еткен күшті әлеуметтік саясат	strong Social Policy to Ensure Social Stability and Harmony	
+# қоғамдық тұрақтылық пен келісімді қамтамасыз еткен күшті әлеуметтік саясат	strong Social Policy to Ensure Social Stability and Harmony
 "<Қоғамдық>"
 	"қоғамдық" adj
 "<тұрақтылық>"
 	"тұрақтылық" n nom
 "<пен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<келісімді>"
 	"келіс" n px1sg acc
 	"келісім" n acc
@@ -7057,7 +6693,7 @@
 "<саясат>"
 	"саясат" n nom
 
-# бұл мені үлкен әсерге бөледі .	it really impressed me .	
+# бұл мені үлкен әсерге бөледі .	it really impressed me .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -7076,7 +6712,7 @@
 "<.>"
 	"." sent @punct
 
-# тараптар шекара бойы ынтымақтастығы мәселелерін талқылады .	the parties also discussed issues on cooperation with neighboring countries .	
+# тараптар шекара бойы ынтымақтастығы мәселелерін талқылады .	the parties also discussed issues on cooperation with neighboring countries .
 "<Тараптар>"
 	"тарап" n pl nom
 "<шекара>"
@@ -7095,7 +6731,7 @@
 "<.>"
 	"." sent @punct
 
-# біз өзіміздің қазақстандық әріптестерімізбен жұмыс атқаруға дайынбыз .	we are ready to work together with our Kazakhstani partners .	
+# біз өзіміздің қазақстандық әріптестерімізбен жұмыс атқаруға дайынбыз .	we are ready to work together with our Kazakhstani partners .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<өзіміздің>"
@@ -7114,7 +6750,7 @@
 "<.>"
 	"." sent @punct
 
-# – Бүгінде жеріміздің байлығы барша халыққа тиесілі және соған қызмет етеді .	“ Today , the wealth of our land belongs to and serves the people .	
+# – Бүгінде жеріміздің байлығы барша халыққа тиесілі және соған қызмет етеді .	“ Today , the wealth of our land belongs to and serves the people .
 "<–>"
 	"–" guio @punct
 "<Бүгінде>"
@@ -7131,7 +6767,7 @@
 "<тиесілі>"
 	"тиесілі" adj
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<соған>"
 	"сол" prn dem dat
 "<қызмет етеді>"
@@ -7139,7 +6775,7 @@
 "<.>"
 	"." sent @punct
 
-# осы Қаулыға сүйене отырып , бүгінгі күн Астана күні деп жарияланды .	we were building the capital for only 8 years .	
+# осы Қаулыға сүйене отырып , бүгінгі күн Астана күні деп жарияланды .	we were building the capital for only 8 years .
 "<Осы>"
 	"осы" det dem @det
 	"осы" prn dem nom
@@ -7171,13 +6807,13 @@
 "<.>"
 	"." sent @punct
 
-# 3 .	3 .	
+# 3 .	3 .
 "<3>"
 	"3" num
 "<.>"
 	"." sent @punct
 
-# бүгінгі кездесуге қатысушылардың көпшілігі Астанаға бірінші рет келіп отырған жоқ .	many of participants have been in Astana already .	
+# бүгінгі кездесуге қатысушылардың көпшілігі Астанаға бірінші рет келіп отырған жоқ .	many of participants have been in Astana already .
 "<Бүгінгі>"
 	"бүгін" adv attr
 	"бүгін" adv subst nom
@@ -7208,7 +6844,7 @@
 "<.>"
 	"." sent @punct
 
-# жаңа халықаралық әуежай , спорт кешендері , мектептер салынады .	a new international airport , sport complexes , schools will be built up there .	
+# жаңа халықаралық әуежай , спорт кешендері , мектептер салынады .	a new international airport , sport complexes , schools will be built up there .
 "<Жаңа>"
 	"жаңа" adj
 	"жаңа" adv
@@ -7242,7 +6878,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы министрлікке бірқатар нақты тапсырмалар жүктеді .	the Head of the State gave a number of concrete instructions to the Ministry	
+# Мемлекет басшысы министрлікке бірқатар нақты тапсырмалар жүктеді .	the Head of the State gave a number of concrete instructions to the Ministry
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -7263,7 +6899,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл бағдарламалар бойынша 96 мың адам жұмыспен қамтылатын болады .	96 thousand people will start working according to these programs .	
+# бұл бағдарламалар бойынша 96 мың адам жұмыспен қамтылатын болады .	96 thousand people will start working according to these programs .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -7292,7 +6928,7 @@
 "<.>"
 	"." sent @punct
 
-# біз мұндай үйлерді барлық жерде салатын боламыз .	we build such homes through the country .	
+# біз мұндай үйлерді барлық жерде салатын боламыз .	we build such homes through the country .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<мұндай>"
@@ -7311,7 +6947,7 @@
 "<.>"
 	"." sent @punct
 
-# саған табыстар және алда үлкен жеңістер тілеймін .	I wish you success and big victories in future .	
+# саған табыстар және алда үлкен жеңістер тілеймін .	I wish you success and big victories in future .
 "<Саған>"
 	"сен" prn pers p2 sg dat
 "<табыстар>"
@@ -7319,7 +6955,7 @@
 	"табыста" v iv fut p3 sg
 	"табыста" v iv gpr_fut subst nom
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<алда>"
 	"алд" n loc
 	"алда" adv
@@ -7335,7 +6971,7 @@
 "<.>"
 	"." sent @punct
 
-# әлем қарқынды түрде өзгеруде және болып жатқан өзгерістердің жылдамдығы адамды таң қалдырады .	the world is changing at a fascinating pace .	
+# әлем қарқынды түрде өзгеруде және болып жатқан өзгерістердің жылдамдығы адамды таң қалдырады .	the world is changing at a fascinating pace .
 "<Әлем>"
 	"әлем" n nom
 	"әлем" n attr
@@ -7349,7 +6985,7 @@
 "<өзгеруде>"
 	"өзгер" v iv ger loc
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<болып>"
 	"бол" v iv prc_perf
 "<жатқан>"
@@ -7368,7 +7004,7 @@
 "<.>"
 	"." sent @punct
 
-# осылайша , Кедендік одақтың құқықтық базасы 13 құжатты қамтиды .	thus , the legal base of the Customs Union comprises 13 documents .	
+# осылайша , Кедендік одақтың құқықтық базасы 13 құжатты қамтиды .	thus , the legal base of the Customs Union comprises 13 documents .
 "<Осылайша>"
 	"осылайша" adv
 "<,>"
@@ -7394,7 +7030,7 @@
 "<.>"
 	"." sent @punct
 
-# кездесу кезінде Қазақстанда 14376 соғысқа қатысушы тұратыны атап өтілді .	it was highlighted at the meeting that 14,376 veterans live in Kazakhstan .	
+# кездесу кезінде Қазақстанда 14376 соғысқа қатысушы тұратыны атап өтілді .	it was highlighted at the meeting that 14,376 veterans live in Kazakhstan .
 "<Кездесу>"
 	"кездес" v iv ger nom
 	"кездесу" n nom
@@ -7422,7 +7058,7 @@
 "<.>"
 	"." sent @punct
 
-# баршаларыңызға зор денсаулық , елімізге еңбек ету , қызмет ету жолында табысты болыңыздар деп тілеймін .	it is very important for military men .	
+# баршаларыңызға зор денсаулық , елімізге еңбек ету , қызмет ету жолында табысты болыңыздар деп тілеймін .	it is very important for military men .
 "<Баршаларыңызға>"
 	"барша" adj subst pl px2sg frm dat
 "<зор>"
@@ -7460,11 +7096,11 @@
 "<.>"
 	"." sent @punct
 
-# шағын және кеңейтілген құрамда келіссөздер жүргізілді .	the talks were held in the narrow and expanded format .	
+# шағын және кеңейтілген құрамда келіссөздер жүргізілді .	the talks were held in the narrow and expanded format .
 "<Шағын>"
 	"шағын" adj
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<кеңейтілген>"
 	"кеңейт" v tv pass gpr_past
 	"кеңейтіл" v iv gpr_past
@@ -7481,7 +7117,7 @@
 "<.>"
 	"." sent @punct
 
-# - Мемлекеттік Ту – кез келген мемлекеттік басты рәмізі .	“ The State Flag is a main symbol of any state that gathers people around .	
+# - Мемлекеттік Ту – кез келген мемлекеттік басты рәмізі .	“ The State Flag is a main symbol of any state that gathers people around .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -7513,7 +7149,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгінгі шығындар бірнеше жыл бұрынғыға қарағанда біршама төмен болады .	the expenses will be much less than several years ago .	
+# бүгінгі шығындар бірнеше жыл бұрынғыға қарағанда біршама төмен болады .	the expenses will be much less than several years ago .
 "<Бүгінгі>"
 	"бүгін" adv attr
 	"бүгін" adv subst nom
@@ -7542,7 +7178,7 @@
 "<.>"
 	"." sent @punct
 
-# әзірше өзара сауда-саттық деңгейі төмен .	“ The mutual trade has not been developed enough yet .	
+# әзірше өзара сауда-саттық деңгейі төмен .	“ The mutual trade has not been developed enough yet .
 "<Әзірше>"
 	"әзірше" adv
 "<өзара>"
@@ -7561,7 +7197,7 @@
 "<.>"
 	"." sent @punct
 
-# жобаның құны 32,2 миллиард теңгені құрайды .	the cost of the project is 32.2 billion tenges .	
+# жобаның құны 32,2 миллиард теңгені құрайды .	the cost of the project is 32.2 billion tenges .
 "<Жобаның>"
 	"жоба" n gen
 "<құны>"
@@ -7577,7 +7213,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл тұрғыдан келгенде , Қазақстан елден ерек екенін айтқым келеді .	I must say that Kazakhstan is exceptionally prominent in this context .	
+# бұл тұрғыдан келгенде , Қазақстан елден ерек екенін айтқым келеді .	I must say that Kazakhstan is exceptionally prominent in this context .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -7603,7 +7239,7 @@
 "<.>"
 	"." sent @punct
 
-# 2 . біз қайда бара жатырмыз ?	its root cause is social inequality .	
+# 2 . біз қайда бара жатырмыз ?	its root cause is social inequality .
 "<2>"
 	"2" num
 "<.>"
@@ -7619,7 +7255,7 @@
 "<?>"
 	"?" sent @punct
 
-# құрметті отандастарым !	dear compatriots !	
+# құрметті отандастарым !	dear compatriots !
 "<Құрметті>"
 	"құрметті" adj advl
 	"құрметті" adj subst nom
@@ -7636,7 +7272,7 @@
 "<!>"
 	"!" sent @punct
 
-# біздің Отанымыз – Қазақстан Республикасы нығайып , дами берсін !	May our Motherland , the Republic of Kazakhstan be strengthened and advance !	
+# біздің Отанымыз – Қазақстан Республикасы нығайып , дами берсін !	May our Motherland , the Republic of Kazakhstan be strengthened and advance !
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<Отанымыз>"
@@ -7660,7 +7296,7 @@
 "<!>"
 	"!" sent @punct
 
-# ұзындығы 3600 метрді құрайтын ұшыру-қондыру алаңы жаңартылған .	the runway of 3 600 meters has been also developed .	
+# ұзындығы 3600 метрді құрайтын ұшыру-қондыру алаңы жаңартылған .	the runway of 3 600 meters has been also developed .
 "<Ұзындығы>"
 	"ұзындық" n px3sp nom
 "<3600>"
@@ -7686,7 +7322,7 @@
 "<.>"
 	"." sent @punct
 
-# мұның жарқын дәлелі – жұмыс берушілердің бағасы .	and the evaluation of employers is the most convincing demonstration of this .	
+# мұның жарқын дәлелі – жұмыс берушілердің бағасы .	and the evaluation of employers is the most convincing demonstration of this .
 "<Мұның>"
 	"бұл" prn dem gen
 "<жарқын>"
@@ -7704,7 +7340,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан спортшылары Олимпиаданың жеті алтынын жеңіп алды .	Kazakhstani sportsmen won seven gold medals .	
+# Қазақстан спортшылары Олимпиаданың жеті алтынын жеңіп алды .	Kazakhstani sportsmen won seven gold medals .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -7723,7 +7359,7 @@
 "<.>"
 	"." sent @punct
 
-# кінәлі адамдар заң бойынша жазаға тартылатын болады .	the perpetrators will be brought to justice under the full force of law .	
+# кінәлі адамдар заң бойынша жазаға тартылатын болады .	the perpetrators will be brought to justice under the full force of law .
 "<Кінәлі>"
 	"кінәлі" adj
 	"кінә" n
@@ -7749,9 +7385,9 @@
 "<.>"
 	"." sent @punct
 
-# сондай-ақ сіздер қазір Алматыда өңірлік қаржы орталығын құрып отырсыздар .	and now you are working on establishing a financial center in Almaty .	
+# сондай-ақ сіздер қазір Алматыда өңірлік қаржы орталығын құрып отырсыздар .	and now you are working on establishing a financial center in Almaty .
 "<Сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 "<сіздер>"
 	"сіздер" prn pers p2 pl frm nom
 "<қазір>"
@@ -7776,14 +7412,14 @@
 "<.>"
 	"." sent @punct
 
-# алтыншы .	sixth .	
+# алтыншы .	sixth .
 "<Алтыншы>"
 	"алты" num ord subst nom
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
 
-# - Біз бұл оқиғаны ерекше қуанышпен қарсы алдық .	“ We were pleased to know this .	
+# - Біз бұл оқиғаны ерекше қуанышпен қарсы алдық .	“ We were pleased to know this .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -7808,7 +7444,7 @@
 "<.>"
 	"." sent @punct
 
-# мұндай орталықтар әлемнің көп қалаларында салынуда .	similar centers are being built in many cities around the world .	
+# мұндай орталықтар әлемнің көп қалаларында салынуда .	similar centers are being built in many cities around the world .
 "<Мұндай>"
 	"бұл" prn dem sim nom
 	"мұндай" det dem @det
@@ -7830,7 +7466,7 @@
 "<.>"
 	"." sent @punct
 
-# біздің мақсатымыз – әлемнің жетекші 30 елінің қатарына кіру .	our aim is to enter the club of the world ’ s top 30 economies .	
+# біздің мақсатымыз – әлемнің жетекші 30 елінің қатарына кіру .	our aim is to enter the club of the world ’ s top 30 economies .
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<мақсатымыз>"
@@ -7857,7 +7493,7 @@
 "<.>"
 	"." sent @punct
 
-# сондықтан Бәсекелестікті қорғау жөніндегі арнаулы агенттік құрылады .	therefore , we are establishing a special Agency for fair competition . ”	
+# сондықтан Бәсекелестікті қорғау жөніндегі арнаулы агенттік құрылады .	therefore , we are establishing a special Agency for fair competition . ”
 "<Сондықтан>"
 	"сондықтан" cnjadv
 "<Бәсекелестікті>"
@@ -7882,7 +7518,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін бұл 9200 АҚШ долларына жетті .	today that figure amounts to $ 9,200 USD .	
+# бүгін бұл 9200 АҚШ долларына жетті .	today that figure amounts to $ 9,200 USD .
 "<Бүгін>"
 	"бүгін" adv
 	"бүгін" n nom
@@ -7901,7 +7537,7 @@
 "<.>"
 	"." sent @punct
 
-# – Бұл ғылыми мекеме жаңа энергия көздерін зерттеумен айналысатын болады .	“ This scientific institution will study sources of new energy .	
+# – Бұл ғылыми мекеме жаңа энергия көздерін зерттеумен айналысатын болады .	“ This scientific institution will study sources of new energy .
 "<–>"
 	"–" guio @punct
 "<Бұл>"
@@ -7941,7 +7577,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан алдағы уақытта да тікелей инвестициялар үшін ашық .	Kazakhstan hereinafter would be open for the direct investments .	
+# Қазақстан алдағы уақытта да тікелей инвестициялар үшін ашық .	Kazakhstan hereinafter would be open for the direct investments .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -7950,7 +7586,7 @@
 	"алд" n loc subst nom
 "<уақытта да>"
 	"уақыт" n loc
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"уақыт" n loc
 		"да" postadv
 "<тікелей>"
@@ -7976,7 +7612,7 @@
 "<.>"
 	"." sent @punct
 
-# - Біз екіжақты ынтымақтастықты дамытуға үлкен маңыз береміз .	“ We attach great importance to the development of bilateral cooperation .	
+# - Біз екіжақты ынтымақтастықты дамытуға үлкен маңыз береміз .	“ We attach great importance to the development of bilateral cooperation .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -8003,7 +7639,7 @@
 "<.>"
 	"." sent @punct
 
-# мұнда балық өнімдерінің 100-ден аса түрлері бар .	assortment of fish production consists of more than 100 items .	
+# мұнда балық өнімдерінің 100-ден аса түрлері бар .	assortment of fish production consists of more than 100 items .
 "<Мұнда>"
 	"бұл" prn dem loc
 "<балық>"
@@ -8028,7 +7664,7 @@
 "<.>"
 	"." sent @punct
 
-# ғимараттың биіктігі 77 метр , алаңы-22,5 шаршы метр .	the height of the building is 77 meters , the square is 25.5 thousands of square meters .	
+# ғимараттың биіктігі 77 метр , алаңы-22,5 шаршы метр .	the height of the building is 77 meters , the square is 25.5 thousands of square meters .
 "<Ғимараттың>"
 	"ғимарат" n gen
 "<биіктігі>"
@@ -8059,11 +7695,11 @@
 "<.>"
 	"." sent @punct
 
-# инвестиция мен бизнес алдындағы тосқауылды алып тастау керек .	obstacles need to be eliminated to investments and businesses .	
+# инвестиция мен бизнес алдындағы тосқауылды алып тастау керек .	obstacles need to be eliminated to investments and businesses .
 "<Инвестиция>"
 	"инвестиция" n nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<бизнес>"
 	"бизнес" n nom
 	"бизнес" n attr
@@ -8081,7 +7717,7 @@
 "<.>"
 	"." sent @punct
 
-# қоғамды болашақ даму стратегиясына топтастыру қажет .	Kazakhstan is acknowledged worldwide .	
+# қоғамды болашақ даму стратегиясына топтастыру қажет .	Kazakhstan is acknowledged worldwide .
 "<Қоғамды>"
 	"қоғам" n acc
 	"қоғам" n
@@ -8111,7 +7747,7 @@
 "<.>"
 	"." sent @punct
 
-# биыл біз жобалаудың барлық мәселесін аяқтап , құрылыс жұмыстарын бастауға тиіспіз .	this year , we have to complete designing and start construction .	
+# биыл біз жобалаудың барлық мәселесін аяқтап , құрылыс жұмыстарын бастауға тиіспіз .	this year , we have to complete designing and start construction .
 "<Биыл>"
 	"биыл" adv
 	"биыл" n nom
@@ -8149,7 +7785,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл жобаға 200 миллион доллар инвестиция салынады деп жоспарланып отыр .	some 200 million dollars will be invested in this project .	
+# бұл жобаға 200 миллион доллар инвестиция салынады деп жоспарланып отыр .	some 200 million dollars will be invested in this project .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -8178,7 +7814,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет өзінің барлық сыртқы да , ішкі де міндеттемелерін орындайтын болады .	the state will discharge its obligations both internal and abroad . ”	
+# Мемлекет өзінің барлық сыртқы да , ішкі де міндеттемелерін орындайтын болады .	the state will discharge its obligations both internal and abroad . ”
 "<Мемлекет>"
 	"мемлекет" n nom
 "<өзінің>"
@@ -8192,12 +7828,12 @@
 	"барлық" adj subst nom
 "<сыртқы да>"
 	"сыртқы" adj
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"сыртқы" adj
 		"да" postadv
 	"сыртқы" adj
 		"е" cop aor p3 sg @cop
-			"да" cnjcoo
+			"да" cnjcoo @cc
 	"сыртқы" adj
 		"е" cop aor p3 sg @cop
 			"да" postadv
@@ -8205,15 +7841,15 @@
 	"," cm @punct
 "<ішкі де>"
 	"ішкі" adj
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"ішкі" adj
 		"да" postadv
 	"ішкі" adv
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"ішкі" adv
 		"да" postadv
 	"ішкі" adj subst nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"ішкі" adj subst nom
 		"да" postadv
 "<міндеттемелерін>"
@@ -8227,7 +7863,7 @@
 "<.>"
 	"." sent @punct
 
-# православие христиандарының ізгі мерекесі – Рождество келіп отыр .	the good holiday of Russian Orthodox believers , Christmas is coming .	
+# православие христиандарының ізгі мерекесі – Рождество келіп отыр .	the good holiday of Russian Orthodox believers , Christmas is coming .
 "<Православие>"
 	"православие" n nom
 	"православие" n attr
@@ -8250,7 +7886,7 @@
 "<.>"
 	"." sent @punct
 
-# жемқорлыққа қарсы кезең-кезеңді жұмыс жүргізілуде .	there is a systematic fight against corruption .	
+# жемқорлыққа қарсы кезең-кезеңді жұмыс жүргізілуде .	there is a systematic fight against corruption .
 "<Жемқорлыққа>"
 	"жемқорлық" n dat
 "<қарсы>"
@@ -8277,7 +7913,7 @@
 "<.>"
 	"." sent @punct
 
-# Алладан олардың жанын жәннатта етуін сұраймыз .	and today we honor the war veterans .	
+# Алладан олардың жанын жәннатта етуін сұраймыз .	and today we honor the war veterans .
 "<Алладан>"
 	"Алла" n abl
 "<олардың>"
@@ -8294,7 +7930,7 @@
 "<.>"
 	"." sent @punct
 
-# екінші .	second .	
+# екінші .	second .
 "<Екінші>"
 	"екі" num ord subst nom
 		"е" cop aor p3 sg @cop
@@ -8305,7 +7941,7 @@
 "<.>"
 	"." sent @punct
 
-# жаңа зауыт жоғары технологиялы неміс қондырғыларымен жабдықталған .	the new plant is equipped with high-technological equipment from Germany .	
+# жаңа зауыт жоғары технологиялы неміс қондырғыларымен жабдықталған .	the new plant is equipped with high-technological equipment from Germany .
 "<Жаңа>"
 	"жаңа" adj
 	"жаңа" adv
@@ -8331,7 +7967,7 @@
 "<.>"
 	"." sent @punct
 
-# біз энергетиканың дәстүрлі түрлерін дамытатын боламыз .	we are going to develop the traditional energy sector .	
+# біз энергетиканың дәстүрлі түрлерін дамытатын боламыз .	we are going to develop the traditional energy sector .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<энергетиканың>"
@@ -8353,7 +7989,7 @@
 "<.>"
 	"." sent @punct
 
-# тиісті мемлекеттік бағдарлама асыра орындалып келеді .	the correspondent state program is being over fulfilled .	
+# тиісті мемлекеттік бағдарлама асыра орындалып келеді .	the correspondent state program is being over fulfilled .
 "<Тиісті>"
 	"тиісті" adj
 "<мемлекеттік>"
@@ -8371,7 +8007,7 @@
 "<.>"
 	"." sent @punct
 
-# былтырғы жылы біздің елдеріміз үшін аса маңызды жоба жүзеге асырыла бастады .	last year , we initiated very important to our countries projects .	
+# былтырғы жылы біздің елдеріміз үшін аса маңызды жоба жүзеге асырыла бастады .	last year , we initiated very important to our countries projects .
 "<Былтырғы>"
 	"былтыр" adv attr
 	"былтыр" adv subst nom
@@ -8405,7 +8041,7 @@
 "<.>"
 	"." sent @punct
 
-# олар бірнеше мәселеге қатысты болып отыр .	they concern several issues .	
+# олар бірнеше мәселеге қатысты болып отыр .	they concern several issues .
 "<Олар>"
 	"ол" prn dem pl nom
 	"олар" prn pers p3 pl nom
@@ -8425,7 +8061,7 @@
 "<.>"
 	"." sent @punct
 
-# жоғары Мәртебелім ,	“ Your Excellency ,	
+# жоғары Мәртебелім ,	“ Your Excellency ,
 "<Жоғары>"
 	"жоғары" adj
 	"жоғары" adv
@@ -8438,7 +8074,7 @@
 "<,>"
 	"," cm @punct
 
-# халықаралық қауымдастық сайлауға зор ықылас танытып отыр .	the international community is showing great interest in the election .	
+# халықаралық қауымдастық сайлауға зор ықылас танытып отыр .	the international community is showing great interest in the election .
 "<Халықаралық>"
 	"халықаралық" adj
 	"халықаралық" adv
@@ -8461,7 +8097,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы Парламент Мәжілісінің фракциясы жетекшілерімен кездесті	meeting with leaders of parliamentary fractions of the Majilis of Parliament	
+# Мемлекет басшысы Парламент Мәжілісінің фракциясы жетекшілерімен кездесті	meeting with leaders of parliamentary fractions of the Majilis of Parliament
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -8479,7 +8115,7 @@
 "<кездесті>"
 	"кездес" v iv ifi p3 sg
 
-# 2005 жылдан бері өнеркәсіптік өндіріс көлемі екі есеге артқан .	since 2005 the production output has increased twofold .	
+# 2005 жылдан бері өнеркәсіптік өндіріс көлемі екі есеге артқан .	since 2005 the production output has increased twofold .
 "<2005>"
 	"2005" num
 "<жылдан>"
@@ -8500,7 +8136,7 @@
 "<.>"
 	"." sent @punct
 
-# мені бұл кездесу байыта түсті .	this meeting is very valuable for me .	
+# мені бұл кездесу байыта түсті .	this meeting is very valuable for me .
 "<Мені>"
 	"мен" prn pers p1 sg acc
 "<бұл>"
@@ -8516,7 +8152,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент жапон инвесторларын Қазақстанға инвестиция салуға шақырды .	the President called Japanese entrepreneurs to invest in Kazakhstan .	
+# Президент жапон инвесторларын Қазақстанға инвестиция салуға шақырды .	the President called Japanese entrepreneurs to invest in Kazakhstan .
 "<Президент>"
 	"президент" n nom
 	"президент" n attr
@@ -8536,7 +8172,7 @@
 "<.>"
 	"." sent @punct
 
-# - Біз 2050 жылға дейінгі даму бағдарламасын қабылдадық .	“ We have adopted our development program throughout the year 2050 .	
+# - Біз 2050 жылға дейінгі даму бағдарламасын қабылдадық .	“ We have adopted our development program throughout the year 2050 .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -8564,7 +8200,7 @@
 "<.>"
 	"." sent @punct
 
-# оның жалпы ауданы – 42 мың шаршы метр .	its total area is 42 square meters .	
+# оның жалпы ауданы – 42 мың шаршы метр .	its total area is 42 square meters .
 "<Оның>"
 	"ол" prn dem gen
 	"ол" prn pers p3 sg gen
@@ -8594,7 +8230,7 @@
 "<.>"
 	"." sent @punct
 
-# мен Үкіметтің осы айда тиімді жұмыс атқарғанын білемін .	I know the Government has been intensively working this month .	
+# мен Үкіметтің осы айда тиімді жұмыс атқарғанын білемін .	I know the Government has been intensively working this month .
 "<Мен>"
 	"мен" prn pers p1 sg nom
 "<Үкіметтің>"
@@ -8618,7 +8254,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысының сөйлеген сөзін мына жерден қараңыз .	financial institutes of EurAsEC and CIS countries could invest in those projects .	
+# Мемлекет басшысының сөйлеген сөзін мына жерден қараңыз .	financial institutes of EurAsEC and CIS countries could invest in those projects .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -8642,7 +8278,7 @@
 "<.>"
 	"." sent @punct
 
-# бұған қоса бұл ТМД елдерінде өткен ең демократиялық сайлау .	moreover , it is the most democratic elections of CIS states .	
+# бұған қоса бұл ТМД елдерінде өткен ең демократиялық сайлау .	moreover , it is the most democratic elections of CIS states .
 "<Бұған>"
 	"бұл" prn dem dat
 "<қоса>"
@@ -8677,7 +8313,7 @@
 "<.>"
 	"." sent @punct
 
-# - қаржы секторын тұрақтандыру ;	- financial sector stabilization ;	
+# - қаржы секторын тұрақтандыру ;	- financial sector stabilization ;
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -8692,7 +8328,7 @@
 "<;>"
 	";" sent @punct
 
-# саған жаңа жарқын жеңістер тілеймін , - делінген құттықтау жеделхатында .	I wish you new brilliant victories &quot; .	
+# саған жаңа жарқын жеңістер тілеймін , - делінген құттықтау жеделхатында .	I wish you new brilliant victories &quot; .
 "<Саған>"
 	"сен" prn pers p2 sg dat
 "<жаңа>"
@@ -8727,7 +8363,7 @@
 "<.>"
 	"." sent @punct
 
-# кездесу тәжік тарапының өтініші бойынша өтті .	the Kazakhstani leader invited the President of Turkmenistan to visit our country .	
+# кездесу тәжік тарапының өтініші бойынша өтті .	the Kazakhstani leader invited the President of Turkmenistan to visit our country .
 "<Кездесу>"
 	"кездес" v iv ger nom
 	"кездесу" n nom
@@ -8747,7 +8383,7 @@
 "<.>"
 	"." sent @punct
 
-# дұрыс түсінілетініне сенімдімін .	I hope to be understood .	
+# дұрыс түсінілетініне сенімдімін .	I hope to be understood .
 "<Дұрыс>"
 	"дұрыс" ij
 	"дұрыс" adj
@@ -8764,11 +8400,11 @@
 "<.>"
 	"." sent @punct
 
-# нашақорлықпен және есірткі бизнесімен күресте табысты жұмыс атқарылды .	we have got some successes in fight against drug dealing and drug addiction .	
+# нашақорлықпен және есірткі бизнесімен күресте табысты жұмыс атқарылды .	we have got some successes in fight against drug dealing and drug addiction .
 "<Нашақорлықпен>"
 	"нашақорлық" n ins
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<есірткі>"
 	"есірткі" n nom
 	"есірткі" n attr
@@ -8789,7 +8425,7 @@
 "<.>"
 	"." sent @punct
 
-# жобаның жалпы құны 115 миллиард теңге .	the total cost of the project accounted for 115 billion KZ Tenge .	
+# жобаның жалпы құны 115 миллиард теңге .	the total cost of the project accounted for 115 billion KZ Tenge .
 "<Жобаның>"
 	"жоба" n gen
 "<жалпы>"
@@ -8810,7 +8446,7 @@
 "<.>"
 	"." sent @punct
 
-# - құрылымды заңнамалық қалыптасқан нормаға сәйкестендіру ;	- Shaping its structure according determined legislative norms ;	
+# - құрылымды заңнамалық қалыптасқан нормаға сәйкестендіру ;	- Shaping its structure according determined legislative norms ;
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -8834,7 +8470,7 @@
 "<;>"
 	";" sent @punct
 
-# 2030 стратегиясы 1997 жылы ашық құжат ретінде жасалды .	Kazakhstan has a number of advantages in this regard .	
+# 2030 стратегиясы 1997 жылы ашық құжат ретінде жасалды .	Kazakhstan has a number of advantages in this regard .
 "<2030>"
 	"2030" num
 "<стратегиясы>"
@@ -8861,7 +8497,7 @@
 "<.>"
 	"." sent @punct
 
-# Бағдардың қашықтығы 4,3 мыңнан астам шақырымды құрайды .	the total length of the route made up more than 4,300 kilometers .	
+# Бағдардың қашықтығы 4,3 мыңнан астам шақырымды құрайды .	the total length of the route made up more than 4,300 kilometers .
 "<Бағдардың>"
 	"бағдар" n gen
 "<қашықтығы>"
@@ -8885,11 +8521,11 @@
 "<.>"
 	"." sent @punct
 
-# Парламентте мен сөз сөйлегеннен кейін абдырау мен абыржу болды .	after my speech in Parliament in 1997 there was some confusion and bewilderment .	
+# Парламентте мен сөз сөйлегеннен кейін абдырау мен абыржу болды .	after my speech in Parliament in 1997 there was some confusion and bewilderment .
 "<Парламентте>"
 	"парламент" n loc
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<сөз>"
 	"сөз" n nom
 "<сөйлегеннен>"
@@ -8901,7 +8537,7 @@
 	"абдыра" v iv ger nom
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<абыржу>"
 	"абырж" v iv ger nom
@@ -8912,7 +8548,7 @@
 "<.>"
 	"." sent @punct
 
-# біздің құқық қорғау органдары неге бұларды ұстамайды ?	and who get this ? is there any control at local level ?	
+# біздің құқық қорғау органдары неге бұларды ұстамайды ?	and who get this ? is there any control at local level ?
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<құқық>"
@@ -8931,7 +8567,7 @@
 "<?>"
 	"?" sent @punct
 
-# бесінші сын-қатер – жаһандық энергетикалық қауіпсіздік .	global water resources are also under great pressure .	
+# бесінші сын-қатер – жаһандық энергетикалық қауіпсіздік .	global water resources are also under great pressure .
 "<Бесінші>"
 	"бес" num ord
 "<сын>"
@@ -8954,7 +8590,7 @@
 "<.>"
 	"." sent @punct
 
-# біз бүгін оны өндіріп те жатырмыз .	we produce it on an industrial scale now .	
+# біз бүгін оны өндіріп те жатырмыз .	we produce it on an industrial scale now .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<бүгін>"
@@ -8966,7 +8602,7 @@
 	"он" num subst px3sp nom
 "<өндіріп те>"
 	"өндір" v tv prc_perf
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"өндір" v tv prc_perf
 		"да" postadv
 "<жатырмыз>"
@@ -8974,7 +8610,7 @@
 "<.>"
 	"." sent @punct
 
-# ендігі ұрпақ – Мәңгілік Қазақтың Перзенті .	the next generation is the children of the Great Kazakh people .	
+# ендігі ұрпақ – Мәңгілік Қазақтың Перзенті .	the next generation is the children of the Great Kazakh people .
 "<Ендігі>"
 	"енді" adv attr
 	"енді" adv subst nom
@@ -8996,9 +8632,9 @@
 "<.>"
 	"." sent @punct
 
-# сондай-ақ Қазақстан Иранға астық жеткізіп тұруға мүдделі .	Kazakhstan is also interested in grain export to Iran .	
+# сондай-ақ Қазақстан Иранға астық жеткізіп тұруға мүдделі .	Kazakhstan is also interested in grain export to Iran .
 "<Сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -9018,7 +8654,7 @@
 "<.>"
 	"." sent @punct
 
-# әңгімелесуші тараптар әлемдегі саяси және экономикалық ахуалды талқылады .	the sides discussed world political and economic situation .	
+# әңгімелесуші тараптар әлемдегі саяси және экономикалық ахуалды талқылады .	the sides discussed world political and economic situation .
 "<Әңгімелесуші>"
 	"әңгімеле" v iv coop gpr_pot
 	"әңгімелес" v tv gpr_pot
@@ -9033,7 +8669,7 @@
 	"саяси" adj
 	"саяси" adv
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<экономикалық>"
 	"экономикалық" adj
 "<ахуалды>"
@@ -9045,10 +8681,10 @@
 "<.>"
 	"." sent @punct
 
-# бәрі де болған жәйтті айыптайды .	all are now discussing what happened .	
+# бәрі де болған жәйтті айыптайды .	all are now discussing what happened .
 "<Бәрі де>"
 	"бәрі" prn qnt px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"бәрі" prn qnt px3sp nom
 		"да" postadv
 "<болған>"
@@ -9063,7 +8699,7 @@
 "<.>"
 	"." sent @punct
 
-# жабдықтар осы жылдың наурызында іске қосылады .	this facility will be launched in March of the current year .	
+# жабдықтар осы жылдың наурызында іске қосылады .	this facility will be launched in March of the current year .
 "<Жабдықтар>"
 	"жабдықта" v tv gpr_fut
 	"жабдықта" v tv fut p3 sg
@@ -9080,7 +8716,7 @@
 "<.>"
 	"." sent @punct
 
-# біз аса маңызды кездесу өткіздік .	we &apos;ve just had a very important and interesting discussion .	
+# біз аса маңызды кездесу өткіздік .	we &apos;ve just had a very important and interesting discussion .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<аса>"
@@ -9095,13 +8731,13 @@
 "<.>"
 	"." sent @punct
 
-# Алқапта саңырауқұлақтар мен жеміс-жидектер өсіп жатыр .	they can pick up mushrooms and berries in the woods .	
+# Алқапта саңырауқұлақтар мен жеміс-жидектер өсіп жатыр .	they can pick up mushrooms and berries in the woods .
 "<Алқапта>"
 	"алқап" n loc
 "<саңырауқұлақтар>"
 	"саңырауқұлақ" n pl nom
 "<мен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 "<жеміс>"
 	"жеміс" n nom
 "<->"
@@ -9117,7 +8753,7 @@
 "<.>"
 	"." sent @punct
 
-# статистика агенттігінің төрағасы Әлихан Смайыловпен кездесу	meeting with Chairman of the Agency for Statistics Alikhan Smailov	
+# статистика агенттігінің төрағасы Әлихан Смайыловпен кездесу	meeting with Chairman of the Agency for Statistics Alikhan Smailov
 "<Статистика>"
 	"статистика" n nom
 	"статистика" n attr
@@ -9133,7 +8769,7 @@
 	"кездес" v iv ger nom
 	"кездесу" n nom
 
-# бұл дамудың жоғары деңгейін және елді жақсы басқарудың куәсі .	this verifies a high level of development and a good governance of the country .	
+# бұл дамудың жоғары деңгейін және елді жақсы басқарудың куәсі .	this verifies a high level of development and a good governance of the country .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -9148,7 +8784,7 @@
 "<деңгейін>"
 	"деңгей" n px3sp acc
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<елді>"
 	"ел" n acc
 	"ел" n
@@ -9167,7 +8803,7 @@
 "<.>"
 	"." sent @punct
 
-# азық-түлікке деген қажеттілік арта береді .	the global demand for food will increase .	
+# азық-түлікке деген қажеттілік арта береді .	the global demand for food will increase .
 "<Азық-түлікке>"
 	"азық-түлік" n dat
 "<деген>"
@@ -9182,7 +8818,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет кәсіпкерлікті қаржылық қолдау шараларын жүзеге асыруда .	the State takes measures on financial support for entrepreneurs .	
+# Мемлекет кәсіпкерлікті қаржылық қолдау шараларын жүзеге асыруда .	the State takes measures on financial support for entrepreneurs .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -9204,7 +8840,7 @@
 "<.>"
 	"." sent @punct
 
-# атқарылған жұмыстың нәтижесі көзге бірден түседі .	the results of this work are evident .	
+# атқарылған жұмыстың нәтижесі көзге бірден түседі .	the results of this work are evident .
 "<Атқарылған>"
 	"атқар" v tv pass gpr_past
 	"атқар" v tv pass gpr_past subst nom
@@ -9221,7 +8857,7 @@
 "<.>"
 	"." sent @punct
 
-# саябақтың негізі 2006 жылы қаланды .	the park was founded in March 2006 .	
+# саябақтың негізі 2006 жылы қаланды .	the park was founded in March 2006 .
 "<Саябақтың>"
 	"саябақ" n gen
 "<негізі>"
@@ -9238,7 +8874,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін Президент « Қазақмыс » корпорациясының мыс ерітетін зауытында болды .	today , the President visited brass works of the KazakhMys Corporation .	
+# бүгін Президент « Қазақмыс » корпорациясының мыс ерітетін зауытында болды .	today , the President visited brass works of the KazakhMys Corporation .
 "<Бүгін>"
 	"бүгін" adv
 	"бүгін" n nom
@@ -9266,7 +8902,7 @@
 "<.>"
 	"." sent @punct
 
-# өзгеріске байланысты көбінесе қаржыны сонда салу керек .	therefore a bigger part of incomes must be saved in this fund .	
+# өзгеріске байланысты көбінесе қаржыны сонда салу керек .	therefore a bigger part of incomes must be saved in this fund .
 "<Өзгеріске>"
 	"өзгеріс" n dat
 "<байланысты>"
@@ -9290,7 +8926,7 @@
 "<.>"
 	"." sent @punct
 
-# Мәңгілік Ел – жалпы қазақстандық ортақ шаңырағымыздың ұлттық идеясы .	Mangilik Yel is the national idea of our shared Kazakh home .	
+# Мәңгілік Ел – жалпы қазақстандық ортақ шаңырағымыздың ұлттық идеясы .	Mangilik Yel is the national idea of our shared Kazakh home .
 "<Мәңгілік>"
 	"мәңгілік" adj
 	"мәңгілік" n nom
@@ -9319,7 +8955,7 @@
 "<.>"
 	"." sent @punct
 
-# осы уақыт ішінде біз үлкен табыстарға қол жеткіздік .	nevertheless for this time we have made a great progress .	
+# осы уақыт ішінде біз үлкен табыстарға қол жеткіздік .	nevertheless for this time we have made a great progress .
 "<Осы>"
 	"осы" det dem @det
 	"осы" prn dem nom
@@ -9346,7 +8982,7 @@
 "<.>"
 	"." sent @punct
 
-# біз әрдайым қарым-қатынасымыздың серпінін қанағаттанарлық сезіммен айқындаймыз .	we always with pleasure observe the dynamic of our relations .	
+# біз әрдайым қарым-қатынасымыздың серпінін қанағаттанарлық сезіммен айқындаймыз .	we always with pleasure observe the dynamic of our relations .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<әрдайым>"
@@ -9367,7 +9003,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстан Ұйымның белсенді мүшесі болып табылады .	Kazakhstan is an active member of the Organization .	
+# Қазақстан Ұйымның белсенді мүшесі болып табылады .	Kazakhstan is an active member of the Organization .
 "<Қазақстан>"
 	"Қазақстан" np top nom
 	"Қазақстан" np top attr
@@ -9387,7 +9023,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет жыл сайын 2 миллиард 300 миллион теңгеден астам қаржы бөледі .	every year , the Government allocates more than KZT 2 billion 300 million .	
+# Мемлекет жыл сайын 2 миллиард 300 миллион теңгеден астам қаржы бөледі .	every year , the Government allocates more than KZT 2 billion 300 million .
 "<Мемлекет>"
 	"мемлекет" n nom
 "<жыл сайын>"
@@ -9415,7 +9051,7 @@
 "<.>"
 	"." sent @punct
 
-# бізді жеке достығымыз бен тығыз іскерлік қатынастар байланыстырады .	there are personal friendship and working ties that unite us .	
+# бізді жеке достығымыз бен тығыз іскерлік қатынастар байланыстырады .	there are personal friendship and working ties that unite us .
 "<Бізді>"
 	"біз" prn pers p1 pl acc
 "<жеке>"
@@ -9426,7 +9062,7 @@
 "<достығымыз>"
 	"достық" n px1pl nom
 "<бен>"
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<тығыз>"
 	"тығыз" adj
@@ -9440,7 +9076,7 @@
 "<.>"
 	"." sent @punct
 
-# саған табыстар және жаңа жеңістер тілеймін , - делінген құттықтау жеделхатында .	I wish you good luck and new victories ” .	
+# саған табыстар және жаңа жеңістер тілеймін , - делінген құттықтау жеделхатында .	I wish you good luck and new victories ” .
 "<Саған>"
 	"сен" prn pers p2 sg dat
 "<табыстар>"
@@ -9448,7 +9084,7 @@
 	"табыста" v iv fut p3 sg
 	"табыста" v iv gpr_fut subst nom
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<жаңа>"
 	"жаңа" adj
 	"жаңа" adv
@@ -9478,7 +9114,7 @@
 "<.>"
 	"." sent @punct
 
-# біз елде тұрақтылық болғанда ғана оның дами алатынына сенеміз .	we believe that a country can develop only if it is stable .	
+# біз елде тұрақтылық болғанда ғана оның дами алатынына сенеміз .	we believe that a country can develop only if it is stable .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<елде>"
@@ -9504,7 +9140,7 @@
 "<.>"
 	"." sent @punct
 
-# оны түсіндіру Үкіметтің , осы отырған баршаларыңыздың міндеттеріңіз .	it is a duty of the Government and all of you to explain these issues .	
+# оны түсіндіру Үкіметтің , осы отырған баршаларыңыздың міндеттеріңіз .	it is a duty of the Government and all of you to explain these issues .
 "<Оны>"
 	"ол" prn dem acc
 	"ол" prn pers p3 sg acc
@@ -9538,10 +9174,10 @@
 "<.>"
 	"." sent @punct
 
-# сондықтан да жаңа елордада біз жаңа мәдениет ошақтарын құруға тырыстық .	therefore we tried to create new centers of culture in the new capital .	
+# сондықтан да жаңа елордада біз жаңа мәдениет ошақтарын құруға тырыстық .	therefore we tried to create new centers of culture in the new capital .
 "<Сондықтан да>"
 	"сондықтан" cnjadv
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"сондықтан" cnjadv
 		"да" postadv
 "<жаңа>"
@@ -9576,7 +9212,7 @@
 "<779>"
 	"779" num
 
-# « Қазақстан-2050 » Стратегиясы	Strategy “ Kazakhstan-2050 ”	
+# « Қазақстан-2050 » Стратегиясы	Strategy “ Kazakhstan-2050 ”
 "<«>"
 	"«" lquot @punct
 "<Қазақстан>"
@@ -9591,7 +9227,7 @@
 "<Стратегиясы>"
 	"стратегия" n px3sp nom
 
-# - Соңғы 30 жылда Малайзия аса жылдам дамыды .	- Malaysia has been rapidly developing in the last 30 years .	
+# - Соңғы 30 жылда Малайзия аса жылдам дамыды .	- Malaysia has been rapidly developing in the last 30 years .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -9615,7 +9251,7 @@
 "<.>"
 	"." sent @punct
 
-# екі мемлекет басшылары шағын және кеңейтілген құрамда келіссөздер жүргізді .	the Presidents then held tete-a-tete and extended discussions .	
+# екі мемлекет басшылары шағын және кеңейтілген құрамда келіссөздер жүргізді .	the Presidents then held tete-a-tete and extended discussions .
 "<Екі>"
 	"екі" num
 "<мемлекет>"
@@ -9626,7 +9262,7 @@
 "<шағын>"
 	"шағын" adj
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<кеңейтілген>"
 	"кеңейт" v tv pass gpr_past
 	"кеңейтіл" v iv gpr_past
@@ -9642,7 +9278,7 @@
 "<.>"
 	"." sent @punct
 
-# азаматтық қоғам дамуда , тәуелсіз БАҚ жұмыс істеуде .	independent media outlets work in the country .	
+# азаматтық қоғам дамуда , тәуелсіз БАҚ жұмыс істеуде .	independent media outlets work in the country .
 "<Азаматтық>"
 	"азаматтық" adj
 	"азаматтық" n nom
@@ -9670,14 +9306,14 @@
 "<.>"
 	"." sent @punct
 
-# нақ мұндайды мен әлемнің ешбір жерінен көрген емеспін .	I have not seen anything like this before .	
+# нақ мұндайды мен әлемнің ешбір жерінен көрген емеспін .	I have not seen anything like this before .
 "<Нақ>"
 	"нақ" adv
 "<мұндайды>"
 	"бұл" prn dem sim acc
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<әлемнің>"
 	"әлем" n gen
@@ -9691,7 +9327,7 @@
 "<.>"
 	"." sent @punct
 
-# біз бірқатар экономикалық ынтымақтастық мәселелері бойынша келісімге келдік .	we have agreed on several issues of economic cooperation .	
+# біз бірқатар экономикалық ынтымақтастық мәселелері бойынша келісімге келдік .	we have agreed on several issues of economic cooperation .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<бірқатар>"
@@ -9714,7 +9350,7 @@
 "<.>"
 	"." sent @punct
 
-# Сіз Қытай-Қазақстан қарым-қатынастарын дамыту үшін өте көп жұмыстар жасадыңыз .	you have done much for the development of bilateral cooperation .	
+# Сіз Қытай-Қазақстан қарым-қатынастарын дамыту үшін өте көп жұмыстар жасадыңыз .	you have done much for the development of bilateral cooperation .
 "<Сіз>"
 	"сіз" prn pers p2 sg frm nom
 "<Қытай>"
@@ -9747,7 +9383,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысы кешке қатысушыларды келе жатқан Жаңа 2010 жылмен құттықтады .	the head of state congratulated all attendees on the coming New Year .	
+# Мемлекет басшысы кешке қатысушыларды келе жатқан Жаңа 2010 жылмен құттықтады .	the head of state congratulated all attendees on the coming New Year .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -9780,7 +9416,7 @@
 "<.>"
 	"." sent @punct
 
-# 2008-2009 жылдардағы жаһандық дағдарыс осыны айғақтады .	our resilience through the 2008-2009 global financial crisis has proved that .	
+# 2008-2009 жылдардағы жаһандық дағдарыс осыны айғақтады .	our resilience through the 2008-2009 global financial crisis has proved that .
 "<2008>"
 	"2008" num
 "<->"
@@ -9802,7 +9438,7 @@
 "<.>"
 	"." sent @punct
 
-# ҚМЭБИ түлектері жоғары бәсекеге қабілеттілікке ие .	KIMEP graduates are very competitive .	
+# ҚМЭБИ түлектері жоғары бәсекеге қабілеттілікке ие .	KIMEP graduates are very competitive .
 "<ҚМЭБИ>"
 	"ҚМЭБИ" np org nom
 	"ҚМЭБИ" np org attr
@@ -9821,7 +9457,7 @@
 "<.>"
 	"." sent @punct
 
-# өйткені осының бәрі үлкен істің бастамасы ғана .	the Head of State also noted the importance of developing patronage of art in the country .	
+# өйткені осының бәрі үлкен істің бастамасы ғана .	the Head of State also noted the importance of developing patronage of art in the country .
 "<Өйткені>"
 	"өйткені" cnjsub
 	"өйт" v iv ger_past px3sp nom
@@ -9847,7 +9483,7 @@
 "<.>"
 	"." sent @punct
 
-# саяси жүйеде реформалар табысты жүргізілді , азаматтық қоғам институттары дамуда .	civil society institutes are succefully developed .	
+# саяси жүйеде реформалар табысты жүргізілді , азаматтық қоғам институттары дамуда .	civil society institutes are succefully developed .
 "<Саяси>"
 	"саяси" adj
 	"саяси" adv
@@ -9882,7 +9518,7 @@
 "<.>"
 	"." sent @punct
 
-# Қазақстанды өзіміздің досымыз ретінде сезіну бізді зор қуанышқа бөлейді .	it is very pleasant for us that Kazakhstan is our friend .	
+# Қазақстанды өзіміздің досымыз ретінде сезіну бізді зор қуанышқа бөлейді .	it is very pleasant for us that Kazakhstan is our friend .
 "<Қазақстанды>"
 	"Қазақстан" np top acc
 	"Қазақстан" np top
@@ -9910,7 +9546,7 @@
 "<.>"
 	"." sent @punct
 
-# өзара тауар айналымының деңгейі 53 миллиард долларға жетті .	the bilateral trade reached US $ 53 billion .	
+# өзара тауар айналымының деңгейі 53 миллиард долларға жетті .	the bilateral trade reached US $ 53 billion .
 "<Өзара>"
 	"өзара" adj
 	"өзара" adv
@@ -9931,7 +9567,7 @@
 "<.>"
 	"." sent @punct
 
-# біз Қазақстанға күллі әлем үшін жасаған жұмыстары үшін алғыс айтамыз .	we are thankful to Kazakhstan for that it has done for the world .	
+# біз Қазақстанға күллі әлем үшін жасаған жұмыстары үшін алғыс айтамыз .	we are thankful to Kazakhstan for that it has done for the world .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<Қазақстанға>"
@@ -9963,13 +9599,13 @@
 "<.>"
 	"." sent @punct
 
-# Нұрсұлтан Назарбаев сондай-ақ облыстың Қан құю орталығында болды .	the President also visited the regional blood Centre .	
+# Нұрсұлтан Назарбаев сондай-ақ облыстың Қан құю орталығында болды .	the President also visited the regional blood Centre .
 "<Нұрсұлтан>"
 	"Нұрсұлтан" np ant m nom
 "<Назарбаев>"
 	"Назарбаев" np cog m nom
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 	"сол" prn dem sim nom
 		"-ақ" postadv
 "<облыстың>"
@@ -9988,7 +9624,7 @@
 "<.>"
 	"." sent @punct
 
-# аталған мәселеге қатысты Сыртқы істер министрі М.Тәжин баяндама жасады .	Minister of foreign affairs Marat Tazhin delivered a speech on this matter .	
+# аталған мәселеге қатысты Сыртқы істер министрі М.Тәжин баяндама жасады .	Minister of foreign affairs Marat Tazhin delivered a speech on this matter .
 "<Аталған>"
 	"ата" v tv pass gpr_past
 	"ата" v tv pass gpr_past subst nom
@@ -10021,7 +9657,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл іс айыптау қорытындысымен прокуратураға жіберілді .	the case has been submitted to public prosecution with an accusative conclusion .	
+# бұл іс айыптау қорытындысымен прокуратураға жіберілді .	the case has been submitted to public prosecution with an accusative conclusion .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -10042,7 +9678,7 @@
 "<.>"
 	"." sent @punct
 
-# көптеген нысандардың әлемде баламасы жоқ .	the most of facilities are unique in the world .	
+# көптеген нысандардың әлемде баламасы жоқ .	the most of facilities are unique in the world .
 "<Көптеген>"
 	"көпте" v tv gpr_past
 	"көпте" v tv ger_past nom
@@ -10065,9 +9701,9 @@
 "<.>"
 	"." sent @punct
 
-# сондай-ақ жаттығу залы мен қысқы бақ бар .	there is also a gym and a “ winter garden ” in the building .	
+# сондай-ақ жаттығу залы мен қысқы бақ бар .	there is also a gym and a “ winter garden ” in the building .
 "<Сондай-ақ>"
-	"сондай-ақ" cnjcoo
+	"сондай-ақ" cnjcoo @cc
 "<жаттығу>"
 	"жаттық" v iv ger nom
 	"жаттығу" n nom
@@ -10076,7 +9712,7 @@
 	"зал" n px3sp nom
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 "<қысқы>"
 	"қысқы" adj
@@ -10098,7 +9734,7 @@
 "<.>"
 	"." sent @punct
 
-# төртінші – экспортқа бағдарлау .	the forth task is connected with export orientation .	
+# төртінші – экспортқа бағдарлау .	the forth task is connected with export orientation .
 "<Төртінші>"
 	"төрт" num ord
 "<–>"
@@ -10113,7 +9749,7 @@
 "<.>"
 	"." sent @punct
 
-# жаппай тәртіпсіздік фактілері бойынша қылмыстық іс қозғалды .	criminal cases were initiated in relation to all the cases of violations of the law .	
+# жаппай тәртіпсіздік фактілері бойынша қылмыстық іс қозғалды .	criminal cases were initiated in relation to all the cases of violations of the law .
 "<Жаппай>"
 	"жаппай" adv
 	"жаппай" adj advl
@@ -10136,7 +9772,7 @@
 "<.>"
 	"." sent @punct
 
-# біз Қазақстанның біздің Ұйымға қатысты саясатын жоғары бағалаймыз .	we highly appreciate the policy of Kazakhstan regarding our Organization .	
+# біз Қазақстанның біздің Ұйымға қатысты саясатын жоғары бағалаймыз .	we highly appreciate the policy of Kazakhstan regarding our Organization .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<Қазақстанның>"
@@ -10160,7 +9796,7 @@
 "<.>"
 	"." sent @punct
 
-# сіздерді Рождество жарқын мейрамымен шын жүректен құттықтаймын !	I extend my heartfelt congratulations on Christmas Day !	
+# сіздерді Рождество жарқын мейрамымен шын жүректен құттықтаймын !	I extend my heartfelt congratulations on Christmas Day !
 "<Сіздерді>"
 	"сіздер" prn pers p2 pl frm acc
 "<Рождество>"
@@ -10177,7 +9813,7 @@
 "<!>"
 	"!" sent @punct
 
-# жалпы аумағы 32 мың шаршы метрді алып жатыр .	the total area is equal to 32 thousand of square meters .	
+# жалпы аумағы 32 мың шаршы метрді алып жатыр .	the total area is equal to 32 thousand of square meters .
 "<Жалпы>"
 	"жалпы" adj
 	"жалпы" adv
@@ -10205,7 +9841,7 @@
 "<.>"
 	"." sent @punct
 
-# Юрий Лужков жаңа туындының қолжазбасымен танысып шығыпты .	new capital of the country is to symbolize changes .	
+# Юрий Лужков жаңа туындының қолжазбасымен танысып шығыпты .	new capital of the country is to symbolize changes .
 "<Юрий>"
 	"Юрий" np ant m nom
 "<Лужков>"
@@ -10228,7 +9864,7 @@
 "<.>"
 	"." sent @punct
 
-# осылайша біз шикізаттық қажеттіліктен құтылатын боламыз .	by doing this we eliminate the feedstock dependence .	
+# осылайша біз шикізаттық қажеттіліктен құтылатын боламыз .	by doing this we eliminate the feedstock dependence .
 "<Осылайша>"
 	"осылайша" adv
 "<біз>"
@@ -10246,7 +9882,7 @@
 "<.>"
 	"." sent @punct
 
-# Жарлықтың мәтінін мына жерден қараңыз .	Protocol service of the President .	
+# Жарлықтың мәтінін мына жерден қараңыз .	Protocol service of the President .
 "<Жарлықтың>"
 	"жарлық" n gen
 "<мәтінін>"
@@ -10265,7 +9901,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін Мемлекет басшысы Назарбаев Университетінде болды .	today the Head of state Visits the Nazarbayev University	
+# бүгін Мемлекет басшысы Назарбаев Университетінде болды .	today the Head of state Visits the Nazarbayev University
 "<Бүгін>"
 	"бүгін" adv
 	"бүгін" n nom
@@ -10284,7 +9920,7 @@
 "<.>"
 	"." sent @punct
 
-# 156 мектеп жөндеуден өтті .	156 schools have been repaired as well .	
+# 156 мектеп жөндеуден өтті .	156 schools have been repaired as well .
 "<156>"
 	"156" num
 "<мектеп>"
@@ -10299,7 +9935,7 @@
 "<.>"
 	"." sent @punct
 
-# - Бұл менің Қазақстанға алғашқы сапарым .	-This is my first visit to Kazakhstan .	
+# - Бұл менің Қазақстанға алғашқы сапарым .	-This is my first visit to Kazakhstan .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -10323,7 +9959,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл біздің заңдарымызда нақты көрсетілген .	this is secured by our legislation .	
+# бұл біздің заңдарымызда нақты көрсетілген .	this is secured by our legislation .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -10353,12 +9989,12 @@
 "<.>"
 	"." sent @punct
 
-# мемлекеттің елордасы да серпінді дамуда .	the state ’ s capital is also rapidly developing .	
+# мемлекеттің елордасы да серпінді дамуда .	the state ’ s capital is also rapidly developing .
 "<Мемлекеттің>"
 	"мемлекет" n gen
 "<елордасы да>"
 	"елорда" n px3sp nom
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"елорда" n px3sp nom
 		"да" postadv
 "<серпінді>"
@@ -10376,7 +10012,7 @@
 "<.>"
 	"." sent @punct
 
-# үшінші - өндіруші сектордың тиімділігін арттыру .	the third task is to increase the effectiveness of the extracting sector .	
+# үшінші - өндіруші сектордың тиімділігін арттыру .	the third task is to increase the effectiveness of the extracting sector .
 "<Үшінші>"
 	"үш" num ord
 	"үш" num ord subst nom
@@ -10398,7 +10034,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл – біздің шексіз сүйетін ұлы туындымыз !	it is our great creation that we wholeheartedly love !	
+# бұл – біздің шексіз сүйетін ұлы туындымыз !	it is our great creation that we wholeheartedly love !
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -10424,7 +10060,7 @@
 "<!>"
 	"!" sent @punct
 
-# Мемлекет басшысының Жарлықтарымен :	by the decrees of the head of state :	
+# Мемлекет басшысының Жарлықтарымен :	by the decrees of the head of state :
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -10435,7 +10071,7 @@
 "<:>"
 	":" sent @punct
 
-# елімізде тыныштық арқылы тұрақтылық , татулық арқылы тұтастық салтанат құрды .	“ We have succeeded in turning our country into a cradle of peace .	
+# елімізде тыныштық арқылы тұрақтылық , татулық арқылы тұтастық салтанат құрды .	“ We have succeeded in turning our country into a cradle of peace .
 "<Елімізде>"
 	"ел" n px1pl loc
 "<тыныштық>"
@@ -10463,7 +10099,7 @@
 "<.>"
 	"." sent @punct
 
-# Сіз – жастар үшін өнегесіз !	let me admit you that from the beginning I never doubt in your victory on election .	
+# Сіз – жастар үшін өнегесіз !	let me admit you that from the beginning I never doubt in your victory on election .
 "<Сіз>"
 	"сіз" prn pers p2 sg frm nom
 "<–>"
@@ -10486,7 +10122,7 @@
 "<!>"
 	"!" sent @punct
 
-# осы мақсатқа қажетті қаражат бөлінді .	all necessary funds had been allocated for these purposes .	
+# осы мақсатқа қажетті қаражат бөлінді .	all necessary funds had been allocated for these purposes .
 "<Осы>"
 	"осы" det dem @det
 	"осы" prn dem nom
@@ -10508,7 +10144,7 @@
 "<.>"
 	"." sent @punct
 
-# әрқашан аспанымыз ашық болсын .	let the sky of our country will always be peaceful .	
+# әрқашан аспанымыз ашық болсын .	let the sky of our country will always be peaceful .
 "<Әрқашан>"
 	"әрқашан" adv
 "<аспанымыз>"
@@ -10523,7 +10159,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысының Малайзия Корольдігіне мемлекеттік сапары жалғасуда .	state visit of the Head of the State to the Kingdom of Malaysia continues .	
+# Мемлекет басшысының Малайзия Корольдігіне мемлекеттік сапары жалғасуда .	state visit of the Head of the State to the Kingdom of Malaysia continues .
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -10548,20 +10184,20 @@
 "<.>"
 	"." sent @punct
 
-# стратегиялық талдау және ізденістер орталығы	center for strategic development and analysis ;	
+# стратегиялық талдау және ізденістер орталығы	center for strategic development and analysis ;
 "<Стратегиялық>"
 	"стратегиялық" adj
 "<талдау>"
 	"талда" v tv ger nom
 	"талдау" n nom
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<ізденістер>"
 	"ізденіс" n pl nom
 "<орталығы>"
 	"орталық" n px3sp nom
 
-# Қазақстан – уран өндіруде әлемдік көшбасшы .	Kazakhstan is the world leader in uranium production .	
+# Қазақстан – уран өндіруде әлемдік көшбасшы .	Kazakhstan is the world leader in uranium production .
 "<Қазақстан>"
 	"Қазақстан" np top nom @nsubj #1->6
 "<–>"
@@ -10578,7 +10214,7 @@
 "<.>"
 	"." sent @punct #8->6
 
-# -Қазақстан халқы Украинаға тұрақтылық пен игілік тілейді .	the people of Kazakhstan wish Ukraine stability and prosperity .	
+# -Қазақстан халқы Украинаға тұрақтылық пен игілік тілейді .	the people of Kazakhstan wish Ukraine stability and prosperity .
 "<->"
 	"-" guio @punct #1->8
 "<Қазақстан>"
@@ -10598,7 +10234,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# тарих өлшемімен алсақ , 14 жыл дегеніміз уақыттың небәрі аз ғана бөлігі .	from historical point of view it is a short period of time .	
+# тарих өлшемімен алсақ , 14 жыл дегеніміз уақыттың небәрі аз ғана бөлігі .	from historical point of view it is a short period of time .
 "<Тарих>"
 	"тарих" n nom
 "<өлшемімен>"
@@ -10630,7 +10266,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл мәселе барлық аймақтардың әкімдеріне де қатысты .	this task concerns governors of all regions of Kazakhstan as well .	
+# бұл мәселе барлық аймақтардың әкімдеріне де қатысты .	this task concerns governors of all regions of Kazakhstan as well .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -10647,7 +10283,7 @@
 	"аймақ" n pl gen
 "<әкімдеріне де>"
 	"әкім" n pl px3sp dat
-		"да" cnjcoo
+		"да" cnjcoo @cc
 	"әкім" n pl px3sp dat
 		"да" postadv
 "<қатысты>"
@@ -10662,7 +10298,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл өте үлкен және маңызды жетістік деп ойлаймын .	this is a very important event for our country ’ s reputation .	
+# бұл өте үлкен және маңызды жетістік деп ойлаймын .	this is a very important event for our country ’ s reputation .
 "<Бұл>"
 	"бұл" prn dem nom
 "<өте>"
@@ -10672,7 +10308,7 @@
 	"үлкен" n nom
 	"үлкен" adj advl
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<маңызды>"
 	"маңыз" n acc
 	"маңызды" adj
@@ -10694,7 +10330,7 @@
 "<.>"
 	"." sent @punct
 
-# Президент су ресурстарын сақтау мәселелеріне айрықша назар аударды .	the President drew attention to issues of preserving water resources .	
+# Президент су ресурстарын сақтау мәселелеріне айрықша назар аударды .	the President drew attention to issues of preserving water resources .
 "<Президент>"
 	"президент" n nom @nsubj #1->7
 "<су>" 
@@ -10712,7 +10348,7 @@
 "<.>"
 	"." sent @punct #8->7
 
-# - Қашаған жобасы бойынша ортақ мәмілеге келгенімізге қуаныштымын .	” I am glad we come to an agreement on Kashagan project .	
+# - Қашаған жобасы бойынша ортақ мәмілеге келгенімізге қуаныштымын .	” I am glad we come to an agreement on Kashagan project .
 "<->"
 	"-" guio @punct
 	"х" guio @punct
@@ -10736,7 +10372,7 @@
 "<.>"
 	"." sent @punct
 
-# - Біз Сіздің елді Орталық Азиядағы басым серіктес ретінде қарастырамыз .	“ We consider your country as a priority partner in Central Asia .	
+# - Біз Сіздің елді Орталық Азиядағы басым серіктес ретінде қарастырамыз .	“ We consider your country as a priority partner in Central Asia .
 "<->"
 	"-" guio @punct
 "<Біз>"
@@ -10760,7 +10396,7 @@
 "<.>"
 	"." sent @punct
 
-# ұлы Абай « Адамның ұлылығы ұстазынан » , деген екен .	as the great Abai said , “ the best a man has is given him by his teacher ” .	
+# ұлы Абай « Адамның ұлылығы ұстазынан » , деген екен .	as the great Abai said , “ the best a man has is given him by his teacher ” .
 "<Ұлы>"
 	"ұлы" adj @amod #1->2
 "<Абай>"
@@ -10783,7 +10419,7 @@
 "<.>"
 	"." sent @punct #11->10
 
-# Қазақстандағы Украина жылы да шараларға толы және мазмұнды болмақ .	Ukraine ’ s Year in Kazakhstan will be very intensive and vivid .	
+# Қазақстандағы Украина жылы да шараларға толы және мазмұнды болмақ .	Ukraine ’ s Year in Kazakhstan will be very intensive and vivid .
 "<Қазақстандағы>"
 	"Қазақстан" np top loc attr @amod
 "<Украина>"
@@ -10796,7 +10432,7 @@
 "<толы>"
 	"толы" adj
 "<және>"
-	"және" cnjcoo
+	"және" cnjcoo @cc
 "<мазмұнды>"
 	"мазмұнды" adj
 "<болмақ>"
@@ -10804,7 +10440,7 @@
 "<.>"
 	"." sent @punct
 
-# бүгін солардың бірқатары Нұрсұлтан Әбішұлы Назарбаевпен кездесуге келді .	today , some of those men came to the meeting with Nursultan Nazarbayev .	
+# бүгін солардың бірқатары Нұрсұлтан Әбішұлы Назарбаевпен кездесуге келді .	today , some of those men came to the meeting with Nursultan Nazarbayev .
 "<Бүгін>"
 	"бүгін" adv
 "<солардың>"
@@ -10826,7 +10462,7 @@
 "<.>"
 	"." sent @punct
 
-# Мемлекет басшысының алдағы Парламент Мәжілісі мен	Address of the Head of State	
+# Мемлекет басшысының алдағы Парламент Мәжілісі мен	Address of the Head of State
 "<Мемлекет>"
 	"мемлекет" n nom
 	"мемлекет" n attr
@@ -10842,10 +10478,10 @@
 	"мәжіліс" n px3sp nom
 "<мен>"
 	"мен" prn pers p1 sg nom
-	"мен" cnjcoo
+	"мен" cnjcoo @cc
 	"мен" post @case
 
-# мұнда бірқатар ірі инвестициялық жобалар жүзеге асырылуда .	the large investment projects are successfully realized here .	
+# мұнда бірқатар ірі инвестициялық жобалар жүзеге асырылуда .	the large investment projects are successfully realized here .
 "<Мұнда>"
 	"бұл" prn dem loc
 "<бірқатар>"
@@ -10866,7 +10502,7 @@
 "<.>"
 	"." sent @punct
 
-# православие - Қазақстанда ең көп тараған конфессияның бірі .	the Christianity is one of the large confessions in Kazakhstan .	
+# православие - Қазақстанда ең көп тараған конфессияның бірі .	the Christianity is one of the large confessions in Kazakhstan .
 "<Православие>"
 	"православие" n nom @nsubj #1->8
 "<->"
@@ -10887,7 +10523,7 @@
 "<.>" 
 	"." sent @punct #10->8
 
-# сенатор Серік Ақылбай қылмысқа қарсы күрес тақырыбын қозғады .	Senator Serik Akylbay touched the problem of fight against crime .	
+# сенатор Серік Ақылбай қылмысқа қарсы күрес тақырыбын қозғады .	Senator Serik Akylbay touched the problem of fight against crime .
 "<Сенатор>"
 	"сенатор" n nom @flat:name #1->3
 "<Серік>"
@@ -10907,7 +10543,7 @@
 "<.>"
 	"." sent @punct #9->8
 
-# - Мені Қазақстанда жүзеге асырылған ілгері істер таңдандырды .	-I am impressed with the progress Kazakhstan has made .	
+# - Мені Қазақстанда жүзеге асырылған ілгері істер таңдандырды .	-I am impressed with the progress Kazakhstan has made .
 "<->"
 	"-" guio @punct
 "<Мені>"
@@ -10934,7 +10570,7 @@
 "<.>"
 	"." sent @punct
 
-# республика өте зор әлеуетке ие болатын .	the country had a very big potential .	
+# республика өте зор әлеуетке ие болатын .	the country had a very big potential .
 "<Республика>"
 	"республика" n nom @nsubj #1->5
 "<өте>"
@@ -10948,7 +10584,7 @@
 "<.>"
 	"." sent @punct #6->5
  
-# біздің еліміздің экономикасы артқан сайын халықтың да тұрмысы жақсара бермек .	the greater our economy grows , the better the life of our people is .	
+# біздің еліміздің экономикасы артқан сайын халықтың да тұрмысы жақсара бермек .	the greater our economy grows , the better the life of our people is .
 "<Біздің>"
 	"біз" prn pers p1 pl gen
 "<еліміздің>"
@@ -10975,7 +10611,7 @@
 "<.>"
 	"." sent @punct
 
-# бұл ретте сыртқы қарыздың өсуіне байланысты проблема бар .	at the same time , there is a problem connected to the growth of external debts .	
+# бұл ретте сыртқы қарыздың өсуіне байланысты проблема бар .	at the same time , there is a problem connected to the growth of external debts .
 "<Бұл>"
 	"бұл" det dem @det
 	"бұл" prn dem nom
@@ -11011,7 +10647,7 @@
 "<.>"
 	"." sent @punct
 
-# біз референдум өткізу бастамасын қолдау туралы шешім қабылдадық .	and we should organize it at high level ” , the President highlighted .	
+# біз референдум өткізу бастамасын қолдау туралы шешім қабылдадық .	and we should organize it at high level ” , the President highlighted .
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<референдум>"
@@ -11033,7 +10669,7 @@
 "<.>"
 	"." sent @punct
 
-# - Астана қаласы қарқынды дамып келеді .	-the city of Astana is dynamically developing .	
+# - Астана қаласы қарқынды дамып келеді .	-the city of Astana is dynamically developing .
 "<->"
 	"-" guio @punct #1->5
 "<Астана>"
@@ -11049,7 +10685,7 @@
 "<.>"
 	"." sent @punct #7->5
 
-# заңның мәтіні баспасөзде жарияланады .	the text of the law will be published in the press .	
+# заңның мәтіні баспасөзде жарияланады .	the text of the law will be published in the press .
 "<Заңның>"
 	"заң" n gen @nmod:poss #1->2
 "<мәтіні>"
