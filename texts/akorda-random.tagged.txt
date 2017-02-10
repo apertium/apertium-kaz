@@ -855,7 +855,7 @@
 	"ел" n px1pl dat
 "<қайырлы да>"
 	"қайырлы" adj
-		"да" postadv
+		"да" postadv @advmod
 "<құтты>"
 	"құтты" adj advl
 "<қала>"
@@ -2013,11 +2013,11 @@
 	"тағы" adv
 		"да" cnjcoo @cc
 	"тағы" adv
-		"да" postadv
+		"да" postadv @advmod
 	"тақ" n px3sp nom
 		"да" cnjcoo @cc
 	"тақ" n px3sp nom
-		"да" postadv
+		"да" postadv @advmod
 "<тарихи>"
 	"тарихи" adj
 	"тарихи" adv
@@ -2515,7 +2515,7 @@
 	"сондықтан" cnjadv
 		"да" cnjcoo @cc
 	"сондықтан" cnjadv
-		"да" postadv
+		"да" postadv @advmod
 "<мұнда>"
 	"бұл" prn dem loc
 "<біз>"
@@ -4215,7 +4215,7 @@
 	"уақыт" n loc
 		"да" cnjcoo @cc
 	"уақыт" n loc
-		"да" postadv
+		"да" postadv @advmod
 "<сақтау>"
 	"сақта" v tv ger nom
 	"сақтау" n nom
@@ -4534,7 +4534,7 @@
 	"жыл" n pl px3sp nom
 		"да" cnjcoo @cc
 	"жыл" n pl px3sp nom
-		"да" postadv
+		"да" postadv @advmod
 "<табыстар>"
 	"табыста" v iv gpr_fut
 	"табыста" v iv fut p3 sg
@@ -4782,15 +4782,10 @@
 	"359" num
 "<мың>"
 	"мың" num
-	"мың" n nom
-	"мың" num subst nom
 "<829>"
 	"829" num
 "<шаршы>"
 	"шаршы" adj
-	"шаршы" n nom
-	"шаршы" n attr
-	"шаршы" adj advl
 "<метрін>"
 	"метр" n px3sp acc
 "<тұрғын>"
@@ -4798,7 +4793,6 @@
 	"тұрғын" n nom
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<жай>"
 	"жай" adj
 	"жай" adv
@@ -4818,10 +4812,7 @@
 "<«>"
 	"«" lquot @punct
 "<Қазақ>"
-	"қазақ" adj
-	"қазақ" adj advl
 	"қазақ" n nom
-	"қазақ" n attr
 "<халқы>"
 	"халық" n px3sp nom
 "<елімізде>"
@@ -5066,54 +5057,48 @@
 
 # Қазақстанның « Достық-Адрия » мұнай өткізу құбырына қатысуға мүмкіндігі бар .	Kazakhstan also could take part in the project “ Druzba-Adria ” .
 "<Қазақстанның>"
-	"Қазақстан" np top gen
+	"Қазақстан" np top gen @nmod:poss
 "<«>"
 	"«" lquot @punct
 "<Достық>"
-	"Достық" np top nom
+	"Достық" np top nom @flat:name
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<Адрия>"
-	"Адрия" np ant f nom
+	"Адрия" np al nom @compound
 "<»>"
 	"»" rquot @punct
 "<мұнай>"
-	"мұнай" n nom
+	"мұнай" n nom @
 "<өткізу>"
 	"өткіз" v tv ger nom
 "<құбырына>"
 	"құбыр" n px3sp dat
 "<қатысуға>"
 	"қат" v iv coop ger dat
-	"қатыс" v iv ger dat
-	"қатысу" n dat
 "<мүмкіндігі>"
-	"мүмкіндік" n px3sp nom
+	"мүмкіндік" n px3sp nom @nsubj
 "<бар>"
-	"бар" adj subst nom
-		"е" cop aor p3 sg @cop
-	"бар" adj
+	"бар" adj @root
 		"е" cop aor p3 sg @cop
 "<.>"
 	"." sent @punct
 
 # Мемлекет басшысы сондай-ақ университеттің кітапханасында болды .	the President also visited the Nazarbayev University Library .
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @nsubj #2->5
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo @cc
+	"сондай-ақ" adv @advmod #3->5
 "<университеттің>"
-	"университет" n gen
+	"университет" n gen @nmod:poss #4->5
 "<кітапханасында>"
-	"кітапхана" n px3sp loc
+	"кітапхана" n px3sp loc @root #5->0
 "<болды>"
-	"бол" v iv ifi p3 sg
+	"бол" v iv ifi p3 sg @cop #6->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->5
 
 # үшінші басым бағыт партияның өңірлердегі белсенді жұмысы болуы тиіс .	third , it is active work of the party in regions .
 "<Үшінші>"
@@ -5150,16 +5135,11 @@
 
 # қадірлі жамағат !	dear Kazakhstanis !
 "<Қадірлі>"
-	"қадірлі" adj
-	"қадір" n
-		"лы" post @case
-	"қадірлі" adj advl
-	"қадірлі" adj subst nom
+	"қадірлі" adj @amod #1->2
 "<жамағат>"
-	"жамағат" n nom
-		"е" cop aor p3 sg @cop
+	"жамағат" n nom @root #2->0
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #3->2
 
 # қазіргі сенім мен достық қатынастар жалғасын табады .	so , the existing relationships of trust and friendship will be continued .
 "<Қазіргі>"
@@ -5188,30 +5168,21 @@
 
 # - Мен үшін Қазақстан да өз Отаным .	“ Kazakhstan is also my Motherland .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->7
 "<Мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo @cc
-	"мен" post @case
+	"мен" prn pers p1 sg nom @obl #2->7
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #3->2
 "<Қазақстан да>"
-	"Қазақстан" np top nom
-		"да" cnjcoo @cc
-	"Қазақстан" np top nom
-		"да" postadv
+	"Қазақстан" np top nom @nsubj #4->7
+		"да" postadv @advmod #5->7
 "<өз>"
-	"өз" det ref
+	"өз" det ref @det #6->7
 "<Отаным>"
-	"Отан" np ant m px1sg nom
-		"е" cop aor p3 sg @cop
-	"отан" n px1sg nom
-		"е" cop aor p3 sg @cop
+	"отан" n px1sg nom @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
 # - Құрметті Дмитрий Анатольевич , жоғары деңгейдегі біздің кездесуіміз өте табысты өтуде .	- We are now working in the Customs Union .
 "<->"
@@ -5256,48 +5227,35 @@
 
 # біз олардың қайғыларын бөлісеміз .	we share their grief .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #1->4
 "<олардың>"
-	"ол" prn dem pl gen
-	"олар" prn pers p3 pl gen
+	"олар" prn pers p3 pl gen @nmod:poss #2->3
 "<қайғыларын>"
-	"қайғы" n pl px3sp acc
+	"қайғы" n pl px3sp acc @obj #3->4
 "<бөлісеміз>"
-	"бөл" v tv coop aor p1 pl
-	"бөліс" v tv aor p1 pl
+	"бөл" v tv coop aor p1 pl @root #4->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 
 # олар үшін Қазақстан кедергісіз аймаққа айналуға тиіс .	Kazakhstan must become a barrier-free zone for them .
 "<Олар>"
-	"ол" prn dem pl nom
-	"олар" prn pers p3 pl nom
+	"олар" prn pers p3 pl nom @obl #1->7
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #2->1
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nsubj #3->8
 "<кедергісіз>"
-	"кедергі" n
-		"сыз" post @case
+	"кедергі" n @nmod #4->6
+		"сыз" post @case #5->4
 "<аймаққа>"
-	"аймақ" n dat
+	"аймақ" n dat @obl #6->7
 "<айналуға>"
-	"айнал" v iv ger dat
-	"айналу" n dat
+	"айнал" v iv ger dat @advcl #7->8
 "<тиіс>"
-	"тиіс" adj
-	"тиіс" adj subst nom
-	"ти" v iv coop imp p2 sg
-	"тиіс" v tv imp p2 sg
-	"тиіс" adj subst nom
-		"е" cop aor p3 sg @cop
-	"тиіс" adj
-		"е" cop aor p3 sg @cop
+	"тиіс" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
 # осының бәрі Сіздің басшылығыңызбен халық пен елдің игілігі үшін жасалуда .	and that is under Your governance for the love of nation and the country .
 "<Осының>"
@@ -5372,40 +5330,27 @@
 
 # мен біздің тарапымызды да қабылданған шешім қанағаттандыруы тиіс деп ойлаймын .	I think the Kazakhstani side must be satisfied with this decision .
 "<Мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo @cc
-	"мен" post @case
+	"мен" prn pers p1 sg nom @nsubj #1->11
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nsubj #2->7
 "<тарапымызды да>"
-	"тарап" n px1pl acc
-		"да" cnjcoo @cc
-	"тарап" n px1pl acc
-		"да" postadv
+	"тарап" n px1pl acc @obj #3->5
+		"да" postadv @advmod #4->5
 "<қабылданған>"
-	"қабылдан" v tv gpr_past
-	"қабылда" v tv pass gpr_past
-	"қабылдан" v tv gpr_past subst nom
-	"қабылда" v tv pass gpr_past subst nom
+	"қабылда" v tv pass gpr_past @acl:relcl #5->6
 "<шешім>"
-	"шешім" n nom
+	"шешім" n nom @obj #6->7
 "<қанағаттандыруы>"
-	"қанағаттандыр" v tv ger px3sp nom
+	"қанағаттандыр" v tv ger px3sp nom @csubj #7->8
 "<тиіс>"
-	"тиіс" adj
-	"тиіс" adj subst nom
-	"ти" v iv coop imp p2 sg
-	"тиіс" v tv imp p2 sg
-	"тиіс" adj subst nom
-		"е" cop aor p3 sg @cop
-	"тиіс" adj
-		"е" cop aor p3 sg @cop
+	"тиіс" adj @ccomp #8->10
+		"е" cop aor p3 sg @cop #9->8
 "<деп>"
-	"де" v tv gna_perf
+	"де" v tv gna_perf @advcl #10->11
 "<ойлаймын>"
-	"ойла" v tv aor p1 sg
+	"ойла" v tv aor p1 sg @root #11->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->11
 
 # бірлескен мәлімдеме мәтіні	joint Statement
 "<Бірлескен>"
@@ -5419,62 +5364,43 @@
 
 # мен Малайзияның әр азаматына осы кітапты оқып шығуды ұсынғым келеді .	I would like to recommend the book for reading to every citizen of Malaysia .
 "<Мен>"
-	"мен" prn pers p1 sg nom
-	"мен" cnjcoo @cc
-	"мен" post @case
+	"мен" prn pers p1 sg nom @nsubj #1->9
 "<Малайзияның>"
-	"Малайзия" np top gen
+	"Малайзия" np top gen @nmod:poss #2->4
 "<әр>"
-	"әр" det qnt
-	"әр" prn ind nom
+	"әр" det qnt @det #3->4
 "<азаматына>"
-	"азамат" n px3sp dat
+	"азамат" n px3sp dat @obl #4->7
 "<осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #5->6
 "<кітапты>"
-	"кітап" n acc
-	"кітап" n
-		"лы" post @case
+	"кітап" n acc @obj #6->7
 "<оқып>"
-	"оқы" v iv prc_perf
-	"оқы" v tv prc_perf
+	"оқы" v tv prc_perf @ccomp #7->9
 "<шығуды>"
-	"шық" vaux ger acc
+	"шық" vaux ger acc @aux #8->7
 "<ұсынғым>"
-	"ұсын" v tv prc_vol p1 sg
+	"ұсын" v tv prc_vol p1 sg @root #9->0
 "<келеді>"
-	"кел" vaux aor p3 sg
+	"кел" vaux aor p3 sg @aux #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
 # нәтижесінде ішкі саяси жағдай бақылаудан шығып кетті .	as a result , the political situation got out of control .
 "<Нәтижесінде>"
-	"нәтиже" n px3sp loc
+	"нәтиже" n px3sp loc @obl #1->6
 "<ішкі>"
-	"ішкі" adj
-	"ішкі" adv
-	"ішкі" adj subst nom
+	"ішкі" adj @amod #2->4
 "<саяси>"
-	"саяси" adj
-	"саяси" adv
+	"саяси" adj @amod #3->4
 "<жағдай>"
-	"жағдай" n nom
-	"жағдай" n attr
+	"жағдай" n nom @nsubj #4->6
 "<бақылаудан>"
-	"бақыла" v tv ger abl
-	"бақылау" n abl
+	"бақыла" v tv ger abl @advcl #5->6
 "<шығып кетті>"
-	"шығып кет" v tv ifi p3 sg
+	"шығып кет" v tv ifi p3 sg @root #6->0
 "<.>"
-	"." sent @punct
-
-# жетінші .	seventh .
-"<Жетінші>"
-	"жеті" num ord subst nom
-		"е" cop aor p3 sg @cop
-"<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # онда 238 дәрігер мен 260 медбике жұмыс істейді деп жоспарлануда .	registration office is equipped with system of electronic turn management .
 "<Онда>"
@@ -5508,62 +5434,56 @@
 
 # бұл біздің еліміздің салтанаты !	this is a triumph of the whole country !
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->4
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #2->3
 "<еліміздің>"
-	"ел" n px1pl gen
+	"ел" n px1pl gen @nmod:poss #3->4
 "<салтанаты>"
-	"салтанат" n px3sp nom
-		"е" cop aor p3 sg @cop
+	"салтанат" n px3sp nom @root #4->0
+		"е" cop aor p3 sg @cop #5->4
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #6->4
 
 # бүкіл әлем осымен айналысады .	the countries around the world tackle these issues .
 "<Бүкіл>"
-	"бүкіл" det qnt
+	"бүкіл" det qnt @det #1->2
 "<әлем>"
-	"әлем" n nom
+	"әлем" n nom @nsubj #2->4
 "<осымен>"
-	"осы" prn dem ins
+	"осы" prn dem ins @obl #3->4
 "<айналысады>"
-	"айналыс" v iv aor p3 sg
-	"айнал" v iv coop aor p3 sg
+	"айнал" v iv coop aor p3 sg @root #4->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 
 # - Сіз өзіңіздің дана саясатыңыздың арқасында өз еліңіз үшін бәрін жасап келесіз .	“ Much work has been done in the country due to your wise policy .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->11
 "<Сіз>"
-	"сіз" prn pers p2 sg frm nom
+	"сіз" prn pers p2 sg frm nom @nsubj #2->11
 "<өзіңіздің>"
-	"өз" prn ref px2sg frm gen
+	"өз" prn ref px2sg frm gen @nmod:poss #3->5
 "<дана>"
-	"дана" adj
-	"дана" n nom
-	"дана" n attr
-	"дана" adj advl
+	"дана" adj @amod #4->5
 "<саясатыңыздың>"
-	"саясат" n px2sg frm gen
+	"саясат" n px2sg frm gen @nmod:poss #5->6
 "<арқасында>"
-	"арқа" n px3sp loc
+	"арқа" n px3sp loc @obl #6->11
 "<өз>"
-	"өз" det ref
+	"өз" det ref @det #7->8
 "<еліңіз>"
-	"ел" n px2sg frm nom
+	"ел" n px2sg frm nom @obl #8->11
 "<үшін>"
-	"үшін" post @case
+	"үшін" post @case #9->8
 "<бәрін>"
-	"бәрі" prn qnt px3sp acc
+	"бәрі" prn qnt px3sp acc @obj #10->11
 "<жасап>"
-	"жаса" v tv prc_perf
+	"жаса" v tv prc_perf @root #11->0
 "<келесіз>"
-	"кел" vaux aor p2 frm sg
+	"кел" vaux aor p2 frm sg @aux #12->11
 "<.>"
-	"." sent @punct
+	"." sent @punct #13->11
 
 # мен мұнда қырықтан астам рет болдым .	I have visited Kazakhstan more than 40 times .
 "<Мен>"
@@ -5584,45 +5504,28 @@
 "<.>"
 	"." sent @punct
 
-# заңдардың мәтіндері баспасөзде жарияланады .	the texts of the Laws are published in the press .
-"<Заңдардың>"
-	"За" np ant m px2pl gen
-	"заң" n pl gen
-"<мәтіндері>"
-	"мәтін" n pl px3sp nom
-"<баспасөзде>"
-	"баспасөз" n loc
-"<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-"<.>"
-	"." sent @punct
-
 # ол біздің стратегиялық ұстанымымыз , - атап өтті Нұрсұлтан Назарбаев .	it is our strategic position , ” Nursultan Nazarbayev highlighted .
 "<Ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem @det
-	"ол" prn dem nom
+	"ол" prn dem nom @nsubj #1->4
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #2->4
 "<стратегиялық>"
-	"стратегиялық" adj
+	"стратегиялық" adj @amod #3->4
 "<ұстанымымыз>"
-	"ұстаным" n px1pl nom
-		"е" cop aor p3 sg @cop
+	"ұстаным" n px1pl nom @ccomp #4->8
+		"е" cop aor p3 sg @cop #5->4
 "<,>"
-	"," cm @punct
+	"," cm @punct #6->4
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #7->8
 "<атап өтті>"
-	"атап өт" v tv ifi p3 sg
+	"атап өт" v tv ifi p3 sg @root #8->0
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom
+	"Нұрсұлтан" np ant m nom @flat:name #9->10
 "<Назарбаев>"
-	"Назарбаев" np cog m nom
-		"е" cop aor p3 sg @cop
+	"Назарбаев" np cog m nom @nsubj #10->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->8
 
 # Астана , 2014 жылғы 17 қаңтар	Astana , January 17 , 2014
 "<Астана>"
@@ -5665,20 +5568,15 @@
 
 # бүгінде Астанада 700-ден астам шетел компаниялары жұмыс істеуде .	more than 700 foreign companies work in Astana .
 "<Бүгінде>"
-	"бүгін" n loc
-	"бүгінде" adv
+	"бүгінде" adv @advmod
 "<Астанада>"
 	"Астана" np top loc
 "<700-ден>"
 	"700" num subst abl
 "<астам>"
 	"астам" adj
-	"астам" adv
-	"астам" adj advl
-	"астам" adj subst nom
 "<шетел>"
 	"шетел" n nom
-	"шетел" n attr
 "<компаниялары>"
 	"компания" n pl px3sp nom
 "<жұмыс істеуде>"
@@ -5709,54 +5607,47 @@
 
 # Президент ғылым мен білімнің ықпалдастығына ерекше назар аударды .	the President put an emphasis on the integration of science and education .
 "<Президент>"
-	"президент" n nom
-	"президент" n attr
+	"президент" n nom @nsubj #1->7
 "<ғылым>"
-	"ғылым" n nom
+	"ғылым" n nom @conj #2->4
 "<мен>"
-	"мен" cnjcoo @cc
+	"мен" cnjcoo @cc #3->4
 "<білімнің>"
-	"білім" n gen
+	"білім" n gen @nmod:poss #4->5
 "<ықпалдастығына>"
-	"ықпалдастық" n px3sp dat
+	"ықпалдастық" n px3sp dat @obl #5->7
 "<ерекше>"
-	"ерекше" adv
-	"ерекше" adj advl
+	"ерекше" adv @advmod #6->7
 "<назар аударды>"
-	"назар аудар" v tv ifi p3 sg
+	"назар аудар" v tv ifi p3 sg @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # Мемлекет басшысы Нұрсұлтан Назарбаев « Мәскеу » жаңа бизнес орталығында болды .	President Nursultan Nazarbayev Surveys Moscow New Business Center
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @appos #2->4
 "<Нұрсұлтан>"
-	"Нұрсұлтан" np ant m nom
+	"Нұрсұлтан" np ant m nom @flat:name #3->4
 "<Назарбаев>"
-	"Назарбаев" np cog m nom
+	"Назарбаев" np cog m nom @nsubj #4->10
 "<«>"
-	"«" lquot @punct
+	"«" lquot @punct #5->6
 "<Мәскеу>"
-	"Мәскеу" np top nom
+	"Мәскеу" np top nom @appos #6->9
 "<»>"
-	"»" rquot @punct
+	"»" rquot @punct #7->6
 "<жаңа>"
-	"жаңа" adj
-	"жаңа" adv
-	"жаңа" adj advl
-	"жаңа" adj subst nom
+	"жаңа" adj @amod #8->9
 "<бизнес>"
-	"бизнес" n nom
-	"бизнес" n attr
+	"бизнес" n nom @nmod:poss #9->10
 "<орталығында>"
-	"орталық" n px3sp loc
+	"орталық" n px3sp loc @root #10->0
 "<болды>"
-	"бол" v iv ifi p3 sg
+	"бол" v iv ifi p3 sg @cop #11->10
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->10
 
 # бұл үшін біз :	yet we cannot rest on our laurels .
 "<Бұл>"
@@ -5809,9 +5700,8 @@
 "<Біз>"
 	"біз" prn pers p1 pl nom
 "<сондай-ақ>"
-	"сондай-ақ" cnjcoo @cc
 	"сол" prn dem sim nom
-		"-ақ" postadv
+		"-ақ" postadv @advmod
 "<жұмысты>"
 	"жұм" v tv coop ifi p3 sg
 	"жұмыс" n
@@ -5822,29 +5712,21 @@
 	"баста" vaux ger dat
 "<келістік>"
 	"кел" v iv coop ifi p1 pl
-	"келіс" v iv ifi p1 pl
 "<.>"
 	"." sent @punct
 
 # ғасыр ортасы да таяп қалды .	the middle of the century is already not too distant .
 "<Ғасыр>"
-	"ғасыр" n nom
-	"ғасыр" n attr
+	"ғасыр" n nom @nmod:poss #1->2
 "<ортасы да>"
-	"ортасы" n nom
-		"да" cnjcoo @cc
-	"ортасы" n nom
-		"да" postadv
-	"орта" n px3sp nom
-		"да" cnjcoo @cc
-	"орта" n px3sp nom
-		"да" postadv
+	"орта" n px3sp nom @nsubj #2->4
+		"да" postadv @advmod #3->4
 "<таяп>"
-	"тая" v iv prc_perf
+	"тая" v iv prc_perf @root #4->0
 "<қалды>"
-	"қал" vaux ifi p3 sg
+	"қал" vaux ifi p3 sg @aux #5->4
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->4
 
 # ол біздің азаматтарымыз үшін нақты нәтижелер әкелетіні маңызды .	more importantly , it brings tangible results to our citizens .
 "<Ол>"
@@ -5896,61 +5778,52 @@
 
 # бүгін әлемдегі барша христиандардың мерекесі .	today is a holiday of all Christians in the world .
 "<Бүгін>"
-	"бүгін" adv
-	"бүгін" n nom
-	"бүгін" n attr
+	"бүгін" adv @advmod #1->5
 "<әлемдегі>"
-	"әлем" n loc attr @amod
-	"әлем" n loc subst nom
+	"әлем" n loc attr @amod #2->5
 "<барша>"
-	"барша" adj
+	"барша" adj @amod #3->4
 "<христиандардың>"
-	"христиан" n pl gen
+	"христиан" n pl gen @nmod:poss #4->5
 "<мерекесі>"
-	"мереке" n px3sp nom
-		"е" cop aor p3 sg @cop
+	"мереке" n px3sp nom @root #5->0
+		"е" cop aor p3 sg @cop #6->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->5
 
 # екінші павильонда төрт қабатты қонақ үй кешені орын тепкен .	the auditorium for about 2000 people is set in the first building .
 "<Екінші>"
-	"екі" num ord
+	"екі" num ord @amod #1->2
 "<павильонда>"
-	"павильон" n loc
+	"павильон" n loc @obl #2->9
 "<төрт>"
-	"төрт" num
+	"төрт" num @nummod #3->4
 "<қабатты>"
-	"қабат" n acc
-	"қабат" n
-		"лы" post @case
-"<қонақ үй>"
-	"қонақ үй" n nom
-	"қонақ үй" n attr
+	"қабат" n acc @obj #4->9
+"<қонақ>"
+	"қонақ" n attr @compound #5->6
+"<үй>"
+	"үй" n nom @nmod:poss #6->7
 "<кешені>"
-	"кешен" n px3sp nom
+	"кешен" n px3sp nom @nsubj #7->9
 "<орын>"
-	"орын" n nom
+	"орын" n nom @compound:lvc #8->9
 "<тепкен>"
-	"теп" v tv past p3 sg
+	"теп" v tv past p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 # біздің әңгімелесуіміз нәтижелі болды .	we have had a very constructive conversation .
 "<Біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nsubj #1->2
 "<әңгімелесуіміз>"
-	"әңгімеле" v iv coop ger px1pl nom
-	"әңгімелес" v tv ger px1pl nom
+	"әңгімеле" v iv coop ger px1pl nom @csubj #2->3
 "<нәтижелі>"
-	"нәтижелі" adj
-	"нәтиже" n
-		"лы" post @case
-	"нәтижелі" adj advl
-	"нәтижелі" adj subst nom
+	"нәтижелі" adj @root #3->0
 "<болды>"
-	"бол" v iv ifi p3 sg
+	"бол" v iv ifi p3 sg @cop #4->3
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->3
 
 # шынайы құрметпен және терең достық сезіммен ,	with respect and deep sense of friendship ,
 "<Шынайы>"
@@ -6002,34 +5875,25 @@
 
 # Ел-жұрттарыңыздың сіздерге артар сенімі үлкен , үміті зор .	and your talents will be strongly required here .
 "<Ел-жұрттарыңыздың>"
-	"ел-жұрт" n pl px2sg frm gen
+	"ел-жұрт" n pl px2sg frm gen @nmod:poss #1->4
 "<сіздерге>"
-	"сіздер" prn pers p2 pl frm dat
+	"сіздер" prn pers p2 pl frm dat @obl #2->3
 "<артар>"
-	"арт" v iv gpr_fut
-	"арт" v iv gpr_fut subst nom
-	"арт" v iv fut p3 sg
+	"арт" v iv gpr_fut @acl:relcl #3->4
 "<сенімі>"
-	"сенім" n px3sp nom
+	"сенім" n px3sp nom @nsubj #4->5
 "<үлкен>"
-	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" n nom
-		"е" cop aor p3 sg @cop
-	"үлкен" adj advl
-	"үлкен" adj
-		"е" cop aor p3 sg @cop
+	"үлкен" adj @parataxis #5->9
+		"е" cop aor p3 sg @cop #6->5
 "<,>"
-	"," cm @punct
+	"," cm @punct #7->5
 "<үміті>"
-	"үміт" n px3sp nom
+	"үміт" n px3sp nom @nsubj #8->9
 "<зор>"
-	"зор" n nom
-		"е" cop aor p3 sg @cop
-	"зор" adj
-		"е" cop aor p3 sg @cop
+	"зор" adj @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
 # осы орайда , патриотизм табысқа жетелеуші қасиеттердің бірі болып табылады .	patriotism is a significant component of success .
 "<Осы>"
@@ -6127,7 +5991,6 @@
 	"кезең" n pl nom
 "<алыс>"
 	"алыс" adj
-	"алыс" adj advl
 "<емес>"
 	"е" cop neg aor p3 sg @cop
 "<.>"
@@ -6135,72 +5998,58 @@
 
 # Президент бізді барлық бағыт бойынша қолдады .	President Nazarbayev supports us in all the directions .
 "<Президент>"
-	"президент" n nom
+	"президент" n nom @nsubj #1->6
 "<бізді>"
-	"біз" prn pers p1 pl acc
+	"біз" prn pers p1 pl acc @obj #2->6
 "<барлық>"
-	"барлық" adj
-	"барлық" adv
-	"барлық" det qnt
-	"барлық" adj advl
-	"барлық" prn qnt nom
-	"барлық" adj subst nom
+	"барлық" adj @amod #3->4
 "<бағыт>"
-	"бағыт" n nom
+	"бағыт" n nom @obl #4->6
 "<бойынша>"
-	"бойынша" post @case
+	"бойынша" post @case #5->4
 "<қолдады>"
-	"қолда" v tv ifi p3 sg
+	"қолда" v tv ifi p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # құрылыстың аумағы 488 шаршы метрді құрайды .	the square of the building is 488 square meters .
 "<Құрылыстың>"
-	"құрылыс" n gen
+	"құрылыс" n gen @nmod:poss #1->2
 "<аумағы>"
-	"аумақ" n px3sp nom
+	"аумақ" n px3sp nom @nsubj #2->6
 "<488>"
-	"488" num
+	"488" num @nummod #3->5
 "<шаршы>"
-	"шаршы" adj
-	"шаршы" n nom
-	"шаршы" n attr
-	"шаршы" adj advl
+	"шаршы" adj @amod #4->5
 "<метрді>"
-	"метр" n acc
+	"метр" n acc @obj #5->6
 "<құрайды>"
-	"құра" v tv aor p3 sg
+	"құра" v tv aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # Учаскедегі пайдалану жылдамдығы 350 км / сағат .	presently , the railway line attains operating speed of 350 kilometers per hour .
 "<Учаскедегі>"
-	"учаске" n loc attr @amod
-	"учаске" n loc subst nom
+	"учаске" n loc attr @amod #1->2
 "<пайдалану>"
-	"пайдалан" v tv ger nom
-	"пайдалану" n nom
-	"пайдалану" n attr
+	"пайдалану" n nom @nmod:poss #2->3
 "<жылдамдығы>"
-	"жылдамдық" n px3sp nom
+	"жылдамдық" n px3sp nom @nsubj #3->4
 "<350>"
-	"350" num
+	"350" num @nummod #4->5
 "<км>"
-	"км" abbr
-	"км" n nom
-"<>"
-	""
-	"" sent @punct
+	"км" abbr @root #5->0
+"</>"
+	"/" sym @punct #6->7
 "<сағат>"
-	"сағат" n nom
-		"е" cop aor p3 sg @cop
+	"сағат" n nom @nmod #7->5
+		"е" cop aor p3 sg @cop #8->5
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->5
 
 # Президент сөзінің мәтінін мына жерден қараңыз .	the author of the project is a young architect Rinat Abenov from Astana .
 "<Президент>"
 	"президент" n nom
-	"президент" n attr
 "<сөзінің>"
 	"сөз" n px3sp gen
 "<мәтінін>"
@@ -6246,29 +6095,27 @@
 
 # Мемлекет басшысы Алматы қаласының бірқатар нысандарын аралап көрді	the Head of the state visited a number of objects in Almaty .
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @nsubj #2->7
 "<Алматы>"
-	"Алматы" np top nom
-	"Алматы" np top attr
+	"Алматы" np top nom @nmod:poss #3->4
 "<қаласының>"
-	"қала" n px3sp gen
+	"қала" n px3sp gen @nmod:poss #4->6
 "<бірқатар>"
-	"бірқатар" det qnt
-	"бірқатар" prn qnt nom
+	"бірқатар" det qnt @det #5->6
 "<нысандарын>"
-	"нысан" n pl px3sp acc
+	"нысан" n pl px3sp acc @obj #6->7
 "<аралап>"
-	"арала" v tv prc_perf
+	"арала" v tv prc_perf @root #7->0
 "<көрді>"
-	"көр" vaux ifi p3 sg
+	"көр" vaux ifi p3 sg @aux #8->7
+"<.>"
+	"." sent @punct #9->7
 
 # Ұлттық қор активтерін тиімді басқару жағдайы да талқыланды .	we discussed efficiency of National Fund ’ s assets management .
 "<Ұлттық>"
 	"ұлттық" adj
-	"ұлттық" adv
 "<қор>"
 	"қор" adj
 	"қор" n nom
@@ -6285,9 +6132,7 @@
 	"басқару" n attr
 "<жағдайы да>"
 	"жағдай" n px3sp nom
-		"да" cnjcoo @cc
-	"жағдай" n px3sp nom
-		"да" postadv
+		"да" postadv @advmod
 "<талқыланды>"
 	"талқыла" v tv pass ifi p3 sg
 "<.>"
@@ -6295,51 +6140,24 @@
 
 # журналистермен өткен брифингте М. Шаймиев былай деді :	M.Shaimiyev at the briefing said :
 "<Журналистермен>"
-	"журналист" n pl ins
+	"журналист" n pl ins @obl #1->2
 "<өткен>"
-	"өт" v iv gpr_past
-	"өт" v tv gpr_past
-	"өт" v iv gpr_past subst nom
-	"өт" v tv gpr_past subst nom
+	"өт" v iv gpr_past @acl:relcl #2->3
 "<брифингте>"
-	"брифинг" n loc
-"<М>"
-	"м" abbr
-"<.>"
-	"." sent @punct
+	"брифинг" n loc @obl #3->7
+"<М.>"
+	"М." abbr @flat:name #4->
 "<Шаймиев>"
-	"Шаймиев" np cog m nom
+	"Шаймиев" np cog m nom @nsubj #5->7
 "<былай>"
-	"бұл" prn dem adv
-	"бұл" prn dem adv
-		"е" cop aor p3 sg @cop
+	"бұл" prn dem adv @advmod #6->7
 "<деді>"
-	"де" v tv ifi p3 sg
+	"де" v tv ifi p3 sg @root #7->0
 "<:>"
-	":" sent @punct
-
-# ( 7 ) КӘСІБИ МЕМЛЕКЕТ .	( 7 ) PROFESSIONAL STATE .
-"<(>"
-	"(" lpar
-"<7>"
-	"7" num
-"<)>"
-	")" rpar
-"<КӘСІБИ>"
-	"кәсіби" adj
-	"кәсіби" adv
-	"кәсіби" adj subst nom
-"<МЕМЛЕКЕТ>"
-	"мемлекет" n nom
-		"е" cop aor p3 sg @cop
-"<.>"
-	"." sent @punct
+	":" sent @punct #8->7
 
 # Ақтау теңіз сауда портының негізі 1963 жылдың қазан айында қаланған .	Aktau international seaport was founded in October 1963 .
 "<Ақтау>"
-	"ақта" v tv ger nom
-	"ақтау" n nom
-	"ақтау" n attr
 	"Ақтау" np top nom
 	"Ақтау" np top attr
 "<теңіз>"
@@ -6354,18 +6172,15 @@
 "<негізі>"
 	"негізі" adv
 	"негіз" n px3sp nom
-
 "<1963>"
 	"1963" num
 "<жылдың>"
 	"жыл" n gen
 "<қазан>"
 	"қазан" n nom
-	"қазан" n attr
 "<айында>"
 	"ай" n px3sp loc
 "<қаланған>"
-	"қалан" v iv past p3 sg
 	"қала" v tv pass past p3 sg
 "<.>"
 	"." sent @punct
@@ -7564,7 +7379,7 @@
 	"уақыт" n loc
 		"да" cnjcoo @cc
 	"уақыт" n loc
-		"да" postadv
+		"да" postadv @advmod
 "<тікелей>"
 	"тікелей" adj advl
 "<инвестициялар>"
@@ -7806,28 +7621,28 @@
 	"сыртқы" adj
 		"да" cnjcoo @cc
 	"сыртқы" adj
-		"да" postadv
+		"да" postadv @advmod
 	"сыртқы" adj
 		"е" cop aor p3 sg @cop
 			"да" cnjcoo @cc
 	"сыртқы" adj
 		"е" cop aor p3 sg @cop
-			"да" postadv
+			"да" postadv @advmod
 "<,>"
 	"," cm @punct
 "<ішкі де>"
 	"ішкі" adj
 		"да" cnjcoo @cc
 	"ішкі" adj
-		"да" postadv
+		"да" postadv @advmod
 	"ішкі" adv
 		"да" cnjcoo @cc
 	"ішкі" adv
-		"да" postadv
+		"да" postadv @advmod
 	"ішкі" adj subst nom
 		"да" cnjcoo @cc
 	"ішкі" adj subst nom
-		"да" postadv
+		"да" postadv @advmod
 "<міндеттемелерін>"
 	"міндеттеме" n pl px3sp acc
 "<орындайтын>"
@@ -8580,7 +8395,7 @@
 	"өндір" v tv prc_perf
 		"да" cnjcoo @cc
 	"өндір" v tv prc_perf
-		"да" postadv
+		"да" postadv @advmod
 "<жатырмыз>"
 	"жат" vaux pres p1 pl
 "<.>"
@@ -8662,7 +8477,7 @@
 	"бәрі" prn qnt px3sp nom
 		"да" cnjcoo @cc
 	"бәрі" prn qnt px3sp nom
-		"да" postadv
+		"да" postadv @advmod
 "<болған>"
 	"бол" v iv gpr_past
 	"бол" v iv gpr_past subst nom
@@ -9099,9 +8914,9 @@
 	"тұрақтылық" n nom
 "<болғанда ғана>"
 	"бол" v iv gpr_past subst loc
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"бол" v iv ger_past loc
-		"ғана" postadv
+		"ғана" postadv @advmod
 "<оның>"
 	"ол" prn dem gen
 	"ол" prn pers p3 sg gen
@@ -9155,7 +8970,7 @@
 	"сондықтан" cnjadv
 		"да" cnjcoo @cc
 	"сондықтан" cnjadv
-		"да" postadv
+		"да" postadv @advmod
 "<жаңа>"
 	"жаңа" adj
 	"жаңа" adv
@@ -9448,14 +9263,14 @@
 	"іс" v iv ifi p2 sg
 "<бастамасы ғана>"
 	"бастама" n px3sp nom
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"баста" v tv neg gpr_fut subst px3sp nom
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"баста" v tv neg ger_fut px3sp nom
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"бастама" n px3sp nom
 		"е" cop aor p3 sg @cop
-			"ғана" postadv
+			"ғана" postadv @advmod
 "<.>"
 	"." sent @punct
 
@@ -9583,7 +9398,7 @@
 "<сондай-ақ>"
 	"сондай-ақ" cnjcoo @cc
 	"сол" prn dem sim nom
-		"-ақ" postadv
+		"-ақ" postadv @advmod
 "<облыстың>"
 	"облыс" n gen
 "<Қан>"
@@ -9972,7 +9787,7 @@
 	"елорда" n px3sp nom
 		"да" cnjcoo @cc
 	"елорда" n px3sp nom
-		"да" postadv
+		"да" postadv @advmod
 "<серпінді>"
 	"серпін" n acc
 	"серпінді" adj
@@ -10231,11 +10046,11 @@
 	"небәрі" adv
 "<аз ғана>"
 	"аз" adj
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"аз" n nom
-		"ғана" postadv
+		"ғана" postadv @advmod
 	"аз" adj advl
-		"ғана" postadv
+		"ғана" postadv @advmod
 "<бөлігі>"
 	"бөлік" n px3sp nom
 		"е" cop aor p3 sg @cop
@@ -10261,7 +10076,7 @@
 	"әкім" n pl px3sp dat
 		"да" cnjcoo @cc
 	"әкім" n pl px3sp dat
-		"да" postadv
+		"да" postadv @advmod
 "<қатысты>"
 	"қатысты" adj
 		"е" cop aor p3 sg @cop
@@ -10402,7 +10217,7 @@
 	"Украина" np top nom
 "<жылы да>"
 	"жылы" adj
-		"да" postadv
+		"да" postadv @advmod
 "<шараларға>"
 	"шара" n pl dat
 "<толы>"
@@ -10577,7 +10392,7 @@
 	"сай" adj subst px3sp acc
 "<халықтың да>"
 	"халық" n gen
-		"да" postadv
+		"да" postadv @advmod
 "<тұрмысы>"
 	"тұрмыс" n px3sp nom
 "<жақсара>"
