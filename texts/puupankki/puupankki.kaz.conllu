@@ -1895,6 +1895,90 @@
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:160:2822
+# text = Біз өзіміздің қазақстандық әріптестерімізбен жұмыс атқаруға дайынбыз.
+1	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_
+2	өзіміздің	өз	PRON	prn	Case=Gen|Number[psor]=Plur|Person[psor]=1|PronType=Ref	4	nmod:poss	_	_
+3	қазақстандық	қазақстандық	ADJ	adj	_	4	amod	_	_
+4	әріптестерімізбен	әріптес	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur|Person[psor]=1	6	obl	_	_
+5	жұмыс	жұмыс	NOUN	n	Case=Nom	6	obj	_	_
+6	атқаруға	атқар	VERB	v	Case=Dat|VerbForm=Ger	7	advcl	_	_
+7-8	дайынбыз	_	_	_	_	_	_	_	_
+7	дайын	дайын	ADJ	adj	_	0	root	_	_
+8	_	е	AUX	cop	Mood=Ind|Number=Plur|Person=1|Tense=Aor|VerbForm=Fin	7	cop	_	_
+9	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:161:2840
+# text = Жаңа халықаралық әуежай, спорт кешендері, мектептер салынады.
+1	Жаңа	жаңа	ADJ	adj	_	3	amod	_	_
+2	халықаралық	халықаралық	ADJ	adj	_	3	amod	_	_
+3	әуежай	әуежай	NOUN	n	Case=Nom	8	conj	_	_
+4	,	,	PUNCT	cm	_	8	punct	_	_
+5	спорт	спорт	NOUN	n	Case=Nom	6	nmod:poss	_	_
+6	кешендері	кешен	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	8	conj	_	_
+7	,	,	PUNCT	cm	_	8	punct	_	_
+8	мектептер	мектеп	NOUN	n	Case=Nom|Number=Plur	9	nsubj	_	_
+9	салынады	сал	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
+10	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:162:2861
+# text = Мемлекет басшысы министрлікке бірқатар нақты тапсырмалар жүктеді.
+1	Мемлекет	мемлекет	NOUN	n	Case=Nom	2	nmod:poss	_	_
+2	басшысы	басшы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+3	министрлікке	министрлік	NOUN	n	Case=Dat	7	obl	_	_
+4	бірқатар	бірқатар	DET	det	PronType=Qnt	6	det	_	_
+5	нақты	нақты	ADJ	adj	_	6	amod	_	_
+6	тапсырмалар	тапсырма	NOUN	n	Case=Nom|Number=Plur	7	obj	_	_
+7	жүктеді	жүкте	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+8	.	.	PUNCT	sent	_	7	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:163:2878
+# text = Осылайша, Кедендік одақтың құқықтық базасы 13 құжатты қамтиды.
+1	Осылайша	осылайша	ADV	adv	_	9	advmod	_	_
+2	,	,	PUNCT	cm	_	9	punct	_	_
+3	Кедендік	кедендік	ADJ	adj	_	4	amod	_	_
+4	одақтың	одақ	NOUN	n	Case=Gen	6	nmod:poss	_	_
+5	құқықтық	құқықтық	ADJ	adj	_	6	amod	_	_
+6	базасы	база	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
+7	13	13	NUM	num	_	8	nummod	_	_
+8	құжатты	құжат	NOUN	n	Case=Acc	9	obj	_	_
+9	қамтиды	қамты	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+10	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:164:2899
+# text = Шағын және кеңейтілген құрамда келіссөздер жүргізілді.
+1	Шағын	шағын	ADJ	adj	_	3	conj	_	_
+2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
+3	кеңейтілген	кеңейт	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+4	құрамда	құрам	NOUN	n	Case=Loc	6	obl	_	_
+5	келіссөздер	келіссөз	NOUN	n	Case=Nom|Number=Plur	6	nsubj	_	_
+6	жүргізілді	жүргіз	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:165:2914
+# text = Жобаның құны 32,2 миллиард теңгені құрайды.
+1	Жобаның	жоба	NOUN	n	Case=Gen	2	nmod:poss	_	_
+2	құны	құн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+3	32,2	32,2	NUM	num	_	4	compound	_	_
+4	миллиард	миллиард	NUM	num	_	5	nummod	_	_
+5	теңгені	теңге	NOUN	n	Case=Acc	6	obj	_	_
+6	құрайды	құра	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:166:2929
+# text = Бұл тұрғыдан келгенде, Қазақстан елден ерек екенін айтқым келеді.
+1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
+2	тұрғыдан	тұрғы	NOUN	n	Case=Abl	3	obl	_	_
+3	келгенде	кел	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	9	advcl	_	_
+4	,	,	PUNCT	cm	_	3	punct	_	_
+5	Қазақстан	Қазақстан	PROPN	np	Case=Nom	7	nsubj	_	_
+6	елден	ел	NOUN	n	Case=Abl	7	obl	_	_
+7	ерек	ерек	NOUN	n	Case=Nom	9	ccomp	_	_
+8	екенін	е	AUX	cop	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	7	cop	_	_
+9	айтқым	айт	VERB	v	Mood=Vol|Number=Sing|Person=1|VerbForm=Cov	0	root	_	_
+10	келеді	кел	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	9	aux	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
+
+# sent_id = akorda-random.tagged.txt:167:2952
 # text = Қазақстан – уран өндіруде әлемдік көшбасшы.
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	6	nsubj	_	_
 2	–	–	PUNCT	guio	_	6	punct	_	_
@@ -1906,7 +1990,7 @@
 7	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	6	cop	_	_
 8	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:161:2838
+# sent_id = akorda-random.tagged.txt:168:2968
 # text = - Қазақстан халқы Украинаға тұрақтылық пен игілік тілейді.
 1	-	-	PUNCT	guio	_	8	punct	_	_
 2	Қазақстан	Қазақстан	PROPN	np	Case=Nom	3	nmod:poss	_	_
@@ -1918,7 +2002,7 @@
 8	тілейді	тіле	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:162:2857
+# sent_id = akorda-random.tagged.txt:169:2987
 # text = Президент су ресурстарын сақтау мәселелеріне айрықша назар аударды.
 1	Президент	президент	NOUN	n	Case=Nom	8	nsubj	_	_
 2	су	су	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -1930,7 +2014,7 @@
 8	аударды	аудар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:163:2876
+# sent_id = akorda-random.tagged.txt:170:3006
 # text = Ұлы Абай «Адамның ұлылығы ұстазынан », деген екен.
 1	Ұлы	ұлы	ADJ	adj	_	2	amod	_	_
 2	Абай	Абай	PROPN	np	Case=Nom|Gender=Masc	10	nsubj	_	_
@@ -1945,7 +2029,7 @@
 10	деген екен	де	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:164:2898
+# sent_id = akorda-random.tagged.txt:171:3028
 # text = Православие-Қазақстанда ең көп тараған конфессияның бірі.
 1	Православие	православие	NOUN	n	Case=Nom	8	nsubj	_	_
 2	-	-	PUNCT	guio	_	8	punct	_	_
@@ -1959,7 +2043,7 @@
 9	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	8	cop	_	_
 10	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:165:2918
+# sent_id = akorda-random.tagged.txt:172:3048
 # text = Сенатор Серік Ақылбай қылмысқа қарсы күрес тақырыбын қозғады.
 1	Сенатор	сенатор	NOUN	n	Case=Nom	3	flat:name	_	_
 2	Серік	Серік	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
@@ -1971,7 +2055,7 @@
 8	қозғады	қозға	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:166:2937
+# sent_id = akorda-random.tagged.txt:173:3067
 # text = Республика өте зор әлеуетке ие болатын.
 1	Республика	республика	NOUN	n	Case=Nom	6	nsubj	_	_
 2	өте	өте	ADV	adv	_	3	advmod	_	_
@@ -1981,7 +2065,7 @@
 6	болатын	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:167:2952
+# sent_id = akorda-random.tagged.txt:174:3082
 # text = - Астана қаласы қарқынды дамып келеді.
 1	-	-	PUNCT	guio	_	5	punct	_	_
 2	Астана	Астана	PROPN	np	Case=Nom	3	nmod:poss	_	_
@@ -1991,7 +2075,7 @@
 6	келеді	кел	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	5	aux	_	_
 7	.	.	PUNCT	sent	_	5	punct	_	_
 
-# sent_id = akorda-random.tagged.txt:168:2967
+# sent_id = akorda-random.tagged.txt:175:3097
 # text = Заңның мәтіні баспасөзде жарияланады.
 1	Заңның	заң	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	мәтіні	мәтін	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_

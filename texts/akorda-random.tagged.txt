@@ -6461,14 +6461,11 @@
 
 # тараптар шекара бойы ынтымақтастығы мәселелерін талқылады .	the parties also discussed issues on cooperation with neighboring countries .
 "<Тараптар>"
-	"тарап" n pl nom
+	"тарап" n pl nom @nsubj
 "<шекара>"
 	"шекара" n nom
-	"шекара" n attr
 "<бойы>"
 	"бойы" post @case
-	"бойы" n nom
-	"бойы" n attr
 "<ынтымақтастығы>"
 	"ынтымақтастық" n px3sp nom
 "<мәселелерін>"
@@ -6480,33 +6477,32 @@
 
 # біз өзіміздің қазақстандық әріптестерімізбен жұмыс атқаруға дайынбыз .	we are ready to work together with our Kazakhstani partners .
 "<Біз>"
-	"біз" prn pers p1 pl nom @nsubj
+	"біз" prn pers p1 pl nom @nsubj #1->7
 "<өзіміздің>"
-	"өз" prn ref px1pl gen @nmod:poss
+	"өз" prn ref px1pl gen @nmod:poss #2->4
 "<қазақстандық>"
-	"қазақстандық" adj @amod
+	"қазақстандық" adj @amod #3->4
 "<әріптестерімізбен>"
-	"әріптес" n pl px1pl ins @obl
+	"әріптес" n pl px1pl ins @obl #4->6
 "<жұмыс>"
-	"жұмыс" n nom @obj
+	"жұмыс" n nom @obj #5->6
 "<атқаруға>"
-	"атқар" v tv ger dat @advcl
+	"атқар" v tv ger dat @advcl #6->7
 "<дайынбыз>"
-	"дайын" adj @root
-		"е" cop aor p1 pl @cop
+	"дайын" adj @root  #7->0
+		"е" cop aor p1 pl @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
 # – Бүгінде жеріміздің байлығы барша халыққа тиесілі және соған қызмет етеді .	“ Today , the wealth of our land belongs to and serves the people .
 "<–>"
 	"–" guio @punct
 "<Бүгінде>"
-	"бүгін" n loc
-	"бүгінде" adv
+	"бүгінде" adv @advmod
 "<жеріміздің>"
-	"жер" n px1pl gen
+	"жер" n px1pl gen @nmod:poss
 "<байлығы>"
-	"байлық" n px3sp nom
+	"байлық" n px3sp nom 
 "<барша>"
 	"барша" adj
 "<халыққа>"
@@ -6554,16 +6550,9 @@
 "<.>"
 	"." sent @punct
 
-# 3 .	3 .
-"<3>"
-	"3" num
-"<.>"
-	"." sent @punct
-
 # бүгінгі кездесуге қатысушылардың көпшілігі Астанаға бірінші рет келіп отырған жоқ .	many of participants have been in Astana already .
 "<Бүгінгі>"
 	"бүгін" adv attr
-	"бүгін" adv subst nom
 "<кездесуге>"
 	"кездес" v iv ger dat
 	"кездесу" n dat
@@ -6577,79 +6566,58 @@
 	"Астана" np top dat
 "<бірінші>"
 	"бір" num ord
-	"бірінші" adj
-	"бір" num ord subst nom
-	"бірінші" adj advl
-	"бірінші" adj subst nom
 "<рет>"
 	"рет" n nom
 "<келіп>"
 	"кел" v iv prc_perf
 "<отырған жоқ>"
 	"отыр" vaux neg pres p3 sg
-	"отыр" vaux neg ifi p3 sg
 "<.>"
 	"." sent @punct
 
 # жаңа халықаралық әуежай , спорт кешендері , мектептер салынады .	a new international airport , sport complexes , schools will be built up there .
 "<Жаңа>"
-	"жаңа" adj
-	"жаңа" adv
-	"жаңа" adj advl
-	"жаңа" adj subst nom
+	"жаңа" adj @amod #1->3
 "<халықаралық>"
-	"халықаралық" adj
-	"халықаралық" adv
+	"халықаралық" adj @amod #2->3
 "<әуежай>"
-	"әуежай" n nom
-	"әуежай" n nom
-		"е" cop aor p3 sg @cop
+	"әуежай" n nom @conj #3->8
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->8
 "<спорт>"
-	"спорт" n nom
-	"спорт" n attr
+	"спорт" n nom @nmod:poss #5->6
 "<кешендері>"
-	"кешен" n pl px3sp nom
-	"кешен" n pl px3sp nom
-		"е" cop aor p3 pl
-	"кешен" n pl px3sp nom
-		"е" cop aor p3 sg @cop
+	"кешен" n pl px3sp nom @conj #6->8
 "<,>"
-	"," cm @punct
+	"," cm @punct #7->8
 "<мектептер>"
-	"мектеп" n pl nom
+	"мектеп" n pl nom @nsubj #8->9
 "<салынады>"
-	"салын" v tv aor p3 sg
-	"сал" v tv pass aor p3 sg
+	"сал" v tv pass aor p3 pl @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 # Мемлекет басшысы министрлікке бірқатар нақты тапсырмалар жүктеді .	the Head of the State gave a number of concrete instructions to the Ministry
 "<Мемлекет>"
-	"мемлекет" n nom
-	"мемлекет" n attr
+	"мемлекет" n nom @nmod:poss #1->2
 "<басшысы>"
-	"басшы" n px3sp nom
+	"басшы" n px3sp nom @nsubj #2->7
 "<министрлікке>"
-	"министрлік" n dat
+	"министрлік" n dat @obl #3->7
 "<бірқатар>"
-	"бірқатар" det qnt
-	"бірқатар" prn qnt nom
+	"бірқатар" det qnt @det #4->6
 "<нақты>"
-	"нақты" adj
-	"нақты" adj advl
+	"нақты" adj @amod #5->6
 "<тапсырмалар>"
-	"тапсырма" n pl nom
+	"тапсырма" n pl nom @obj #6->7
 "<жүктеді>"
-	"жүкте" v tv ifi p3 sg
+	"жүкте" v tv ifi p3 sg @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # бұл бағдарламалар бойынша 96 мың адам жұмыспен қамтылатын болады .	96 thousand people will start working according to these programs .
 "<Бұл>"
 	"бұл" det dem @det
-	"бұл" prn dem nom
 "<бағдарламалар>"
 	"бағдарлама" n pl nom
 "<бойынша>"
@@ -6683,8 +6651,10 @@
 	"мұндай" det dem @det
 "<үйлерді>"
 	"үй" n pl acc
-"<барлық жерде>"
-	"барлық жерде" adv
+"<барлық>"
+	"барлық" det qnt
+"<жерде>"
+	"жер" n loc
 "<салатын>"
 	"сал" v tv gpr_impf subst nom
 	"сал" v tv gpr_impf
@@ -6753,29 +6723,25 @@
 
 # осылайша , Кедендік одақтың құқықтық базасы 13 құжатты қамтиды .	thus , the legal base of the Customs Union comprises 13 documents .
 "<Осылайша>"
-	"осылайша" adv
+	"осылайша" adv @advmod #1->9
 "<,>"
-	"," cm @punct
+	"," cm @punct #2->9
 "<Кедендік>"
-	"кедендік" adj
+	"кедендік" adj @amod #3->4
 "<одақтың>"
-	"одақ" n gen
+	"одақ" n gen @nmod:poss #4->6
 "<құқықтық>"
-	"құқықтық" adj
-	"құқықтық" n nom
-	"құқықтық" n attr
+	"құқықтық" adj @amod #5->6
 "<базасы>"
-	"база" n px3sp nom
+	"база" n px3sp nom @nsubj #6->9
 "<13>"
-	"13" num
+	"13" num @nummod #7->8
 "<құжатты>"
-	"құжат" n acc
-	"құжат" n
-		"лы" post @case
+	"құжат" n acc @obj #8->9
 "<қамтиды>"
-	"қамты" v tv aor p3 sg
+	"қамты" v tv aor p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 # кездесу кезінде Қазақстанда 14376 соғысқа қатысушы тұратыны атап өтілді .	it was highlighted at the meeting that 14,376 veterans live in Kazakhstan .
 "<Кездесу>"
@@ -6845,24 +6811,19 @@
 
 # шағын және кеңейтілген құрамда келіссөздер жүргізілді .	the talks were held in the narrow and expanded format .
 "<Шағын>"
-	"шағын" adj
+	"шағын" adj @conj #1->3
 "<және>"
-	"және" cnjcoo @cc
+	"және" cnjcoo @cc #2->3
 "<кеңейтілген>"
-	"кеңейт" v tv pass gpr_past
-	"кеңейтіл" v iv gpr_past
-	"кеңейт" v tv pass gpr_past subst nom
-	"кеңейтіл" v iv gpr_past subst nom
+	"кеңейт" v tv pass gpr_past @acl:relcl #3->4
 "<құрамда>"
-	"құрам" n loc
+	"құрам" n loc @obl #4->6
 "<келіссөздер>"
-	"келіссөз" n pl nom
-	"келіссөздер" n nom
+	"келіссөз" n pl nom @nsubj #5->6
 "<жүргізілді>"
-	"жүргізіл" v tv ifi p3 sg
-	"жүргіз" v tv pass ifi p3 sg
+	"жүргіз" v tv pass ifi p3 pl @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # - Мемлекеттік Ту – кез келген мемлекеттік басты рәмізі .	“ The State Flag is a main symbol of any state that gathers people around .
 "<->"
@@ -6946,45 +6907,43 @@
 
 # жобаның құны 32,2 миллиард теңгені құрайды .	the cost of the project is 32.2 billion tenges .
 "<Жобаның>"
-	"жоба" n gen
+	"жоба" n gen @nmod:poss #1->2
 "<құны>"
-	"құн" n px3sp nom
+	"құн" n px3sp nom @nsubj #2->6
 "<32,2>"
-	"32,2" num
+	"32,2" num @compound #3->4
 "<миллиард>"
-	"миллиард" num
+	"миллиард" num @nummod #4->5
 "<теңгені>"
-	"теңге" n acc
+	"теңге" n acc @obj #5->6
 "<құрайды>"
-	"құра" v tv aor p3 sg
+	"құра" v tv aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # бұл тұрғыдан келгенде , Қазақстан елден ерек екенін айтқым келеді .	I must say that Kazakhstan is exceptionally prominent in this context .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" det dem @det #1->2
 "<тұрғыдан>"
-	"тұрғы" n abl
+	"тұрғы" n abl @obl #2->3
 "<келгенде>"
-	"кел" v iv ger_past loc
+	"кел" v iv ger_past loc @advcl #3->9
 "<,>"
-	"," cm @punct
+	"," cm @punct #4->3
 "<Қазақстан>"
-	"Қазақстан" np top nom
-	"Қазақстан" np top attr
+	"Қазақстан" np top nom @nsubj #5->7
 "<елден>"
-	"ел" n abl
+	"ел" n abl @obl #6->7
 "<ерек>"
-	"ерек" n nom
+	"ерек" n nom @ccomp #7->9
 "<екенін>"
-	"е" cop ger_past px3sp acc
+	"е" cop ger_past px3sp acc @cop #8->7
 "<айтқым>"
-	"айт" v tv prc_vol p1 sg
+	"айт" v tv prc_vol p1 sg @root #9->0
 "<келеді>"
-	"кел" vaux aor p3 sg
+	"кел" vaux aor p3 sg @aux #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
 # 2 . біз қайда бара жатырмыз ?	its root cause is social inequality .
 "<2>"
