@@ -6158,32 +6158,27 @@
 
 # Ақтау теңіз сауда портының негізі 1963 жылдың қазан айында қаланған .	Aktau international seaport was founded in October 1963 .
 "<Ақтау>"
-	"Ақтау" np top nom
-	"Ақтау" np top attr
+	"Ақтау" np top attr @compound #1->2
 "<теңіз>"
-	"теңіз" n nom
-	"теңіз" n attr
+	"теңіз" n nom @nmod:poss #2->4
 "<сауда>"
-	"сау" n loc
-	"сауда" n attr
-	"сауда" n nom
+	"сауда" n attr @compound #3->4
 "<портының>"
-	"порт" n px3sp gen
+	"порт" n px3sp gen @nmod:poss #4->5
 "<негізі>"
-	"негізі" adv
-	"негіз" n px3sp nom
+	"негіз" n px3sp nom @nsubj #5->10
 "<1963>"
-	"1963" num
+	"1963" num @amod #6->7
 "<жылдың>"
-	"жыл" n gen
+	"жыл" n gen @nmod:poss #7->9
 "<қазан>"
-	"қазан" n nom
+	"қазан" n attr @compound #8->9
 "<айында>"
-	"ай" n px3sp loc
+	"ай" n px3sp loc @obl #9->10
 "<қаланған>"
-	"қала" v tv pass past p3 sg
+	"қала" v tv pass past p3 sg @root #10->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->10
 
 # Қазақстанның сыртқы саясаты үшін биылғы жылдың маңызды мәні бар .	the year of 2012 is of great significance for the foreign policy of Kazakhstan .
 "<Қазақстанның>"
@@ -6218,26 +6213,15 @@
 
 # мерекелеріңізбен , қымбатты отандастар !	happy Holiday to you , dear compatriots !
 "<Мерекелеріңізбен>"
-	"Мереке" np ant m pl px2sg frm ins
-	"мереке" n pl px2sg frm ins
-	"мерекеле" v tv ger_fut px2sg frm ins
+	"мереке" n pl px2sg frm ins @parataxis #1->4
 "<,>"
-	"," cm @punct
+	"," cm @punct #2->4
 "<қымбатты>"
-	"қымбатты" adj advl
-	"қымбатты" adj subst nom
-	"қымбатты" adj
-	"қымбат" n
-		"лы" post @case
-	"қымбат" adj subst
-		"лы" post @case
+	"қымбатты" adj @amod #3->4
 "<отандастар>"
-	"отандас" n pl nom
-		"е" cop aor p3 pl
-	"отандас" n pl nom
-		"е" cop aor p3 sg @cop
+	"отандас" n pl nom @root #4->0
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #5->4
 
 # Классиканы оқыңыздар , фильмдерді көріңіздер .	• exploit the benefits of international divisions of labor .
 "<Классиканы>"
@@ -6310,22 +6294,19 @@
 
 # әлемде бізді осы қасиеттеріміз үшін бағалайды .	we are recognized in the world because of this .
 "<Әлемде>"
-	"әлем" n loc
+	"әлем" n loc @obl #1->6
 "<бізді>"
-	"біз" prn pers p1 pl acc
+	"біз" prn pers p1 pl acc @obj #2->6
 "<осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #3->4
 "<қасиеттеріміз>"
-	"қасиет" n pl px1pl nom
+	"қасиет" n pl px1pl nom @obl #4->6
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #5->4
 "<бағалайды>"
-	"бағала" v tv aor p3 sg
+	"бағала" v tv aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # 3.4 . мемлекеттік және сыртқы қарызды басқару саясаты	8.1 Development of farming and SME in agricultural processing and trade
 "<3.4>"
@@ -6352,29 +6333,23 @@
 
 # бірінші кезектегі нысандар 2006 жылдың тамызында пайдаланылуға берілді .	the objects of the first turn put into operation in August 2006 .
 "<Бірінші>"
-	"бір" num ord
-	"бірінші" adj
-	"бір" num ord subst nom
-	"бірінші" adj advl
-	"бірінші" adj subst nom
+	"бір" num ord @amod #1->3
 "<кезектегі>"
-	"кезек" n loc attr @amod
-	"кезек" n loc subst nom
+	"кезек" n loc attr @amod #2->3
 "<нысандар>"
-	"нысан" n pl nom
+	"нысан" n pl nom @nsubj #3->8
 "<2006>"
-	"2006" num
+	"2006" num @amod #4->5
 "<жылдың>"
-	"жыл" n gen
+	"жыл" n gen @nmod:poss #5->6
 "<тамызында>"
-	"тамыз" n px3sp loc
+	"тамыз" n px3sp loc @obl #6->7
 "<пайдаланылуға>"
-	"пайдалан" v tv pass ger dat
+	"пайдалан" v tv pass ger dat @advcl #7->8
 "<берілді>"
-	"беріл" v tv ifi p3 sg
-	"бер" v tv pass ifi p3 sg
+	"бер" v tv pass ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
 # Кедейлік деңгейін одан әрі төмендетіп , жұмыссыздықтың өсуін тежеген жөн .	we must continue reducing poverty and tackling unemployment .
 "<Кедейлік>"
@@ -6406,19 +6381,6 @@
 "<.>"
 	"." sent @punct
 
-# заң мәтіні баспасөзде жарияланады .	the text of the law will be published in the press .
-"<Заң>"
-	"заң" n attr
-	"заң" n nom
-"<мәтіні>"
-	"мәтін" n px3sp nom
-"<баспасөзде>"
-	"баспасөз" n loc
-"<жарияланады>"
-	"жарияла" v tv pass aor p3 sg
-"<.>"
-	"." sent @punct
-
 # Кешенде күніне 300-350 адам спорттың әр түрі бойынша жаттыға алады .	the daily capacity of the complex is nearly 300-350 guests .
 "<Кешенде>"
 	"кешен" n loc
@@ -6428,7 +6390,6 @@
 	"300" num
 "<->"
 	"-" guio @punct
-	"х" guio @punct
 "<350>"
 	"350" num
 "<адам>"
@@ -6438,7 +6399,6 @@
 	"спорт" n gen
 "<әр>"
 	"әр" det qnt
-	"әр" prn ind nom
 "<түрі>"
 	"түр" n px3sp nom
 "<бойынша>"
@@ -6486,17 +6446,13 @@
 
 # бұл мені үлкен әсерге бөледі .	it really impressed me .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj
 "<мені>"
-	"мен" prn pers p1 sg acc
+	"мен" prn pers p1 sg acc @obj
 "<үлкен>"
-	"үлкен" adj
-	"үлкен" n nom
-	"үлкен" n attr
-	"үлкен" adj advl
+	"үлкен" adj @amod
 "<әсерге>"
-	"әсер" n dat
+	"әсер" n dat @obl
 "<бөледі>"
 	"бөле" v tv ifi p3 sg
 	"бөл" v tv aor p3 sg
@@ -6524,20 +6480,20 @@
 
 # біз өзіміздің қазақстандық әріптестерімізбен жұмыс атқаруға дайынбыз .	we are ready to work together with our Kazakhstani partners .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj
 "<өзіміздің>"
-	"өз" prn ref px1pl gen
+	"өз" prn ref px1pl gen @nmod:poss
 "<қазақстандық>"
-	"қазақстандық" adj
+	"қазақстандық" adj @amod
 "<әріптестерімізбен>"
-	"әріптес" n pl px1pl ins
+	"әріптес" n pl px1pl ins @obl
 "<жұмыс>"
-	"жұмыс" n nom
+	"жұмыс" n nom @obj
 "<атқаруға>"
-	"атқар" v tv ger dat
+	"атқар" v tv ger dat @advcl
 "<дайынбыз>"
-	"дайын" adj
-		"е" cop aor p1 pl
+	"дайын" adj @root
+		"е" cop aor p1 pl @cop
 "<.>"
 	"." sent @punct
 
