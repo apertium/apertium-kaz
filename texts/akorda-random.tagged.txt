@@ -4935,31 +4935,25 @@
 
 # біз әлеуметтік бағдарланған қоғамның негіздерін қаладық .	we have laid the foundation of a social-oriented society .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj #1->6
 "<әлеуметтік>"
-	"әлеуметтік" adv
+	"әлеуметтік" adv @advmod #2->3
 "<бағдарланған>"
-	"бағдарла" v tv pass gpr_past
-	"бағдарла" v tv pass gpr_past subst nom
+	"бағдарла" v tv pass gpr_past @acl:relcl #3->4
 "<қоғамның>"
-	"қоғам" n gen
+	"қоғам" n gen @nsubj #4->5
 "<негіздерін>"
-	"негіз" n pl px3sp acc
-	"негізде" v tv ger_fut px3sp acc
-	"негізде" v tv gpr_fut subst px3sp acc
+	"негізде" v tv ger_fut px3sp acc @ccomp #5->6
 "<қаладық>"
-	"қала" v tv ifi p1 pl
+	"қала" v tv ifi p1 pl @root #6->
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # 1600-ден астам сырттан бақылаушылар келіп отыр .	they have equal access to media .
 "<1600-ден>"
 	"1600" num subst abl
 "<астам>"
 	"астам" adj
-	"астам" adv
-	"астам" adj advl
-	"астам" adj subst nom
 "<сырттан>"
 	"сырт" n abl
 	"сырттан" adj
@@ -4977,18 +4971,15 @@
 
 # мен олай деп санамаймын .	I do not agree with this statement .
 "<Мен>"
-	"мен" prn pers p1 sg nom
+	"мен" prn pers p1 sg nom @nsubj #1->4
 "<олай>"
-	"ол" prn dem adv
-	"олай" adv
-	"ол" prn dem adv
-		"е" cop aor p3 sg @cop
+	"ол" prn dem adv @advmod #2->3
 "<деп>"
-	"де" v tv gna_perf
+	"де" v tv gna_perf @advcl #3->4
 "<санамаймын>"
-	"сана" v tv neg aor p1 sg
+	"сана" v tv neg aor p1 sg @root #4->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 
 # салтанатты ашылу рәсіміне Мемлекет басшысы Нұрсұлтан Назарбаев қатысты .	President Nursultan Nazarbayev participated in the opening ceremony .
 "<Салтанатты>"
@@ -5029,64 +5020,49 @@
 "<.>"
 	"." sent @punct
 
-# ГАЗЕТА.RU	Gazeta.ru
-"<ГАЗЕТА>"
-	"газета" n nom
-		"е" cop aor p3 sg @cop
-"<.>"
-	"." sent @punct
-"<RU>"
-	"Ru" np unk
-
 # - Біздің елдеріміз арасында ешқашан ешқандай да қайшылықтар болған емес .	“ There have not been any contradictions between our countries .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->8
 "<Біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #2->3
 "<елдеріміз>"
-	"ел" n pl px1pl nom
+	"ел" n pl px1pl nom @nmod:poss #3->4
 "<арасында>"
-	"ара" n px3sp loc
+	"ара" n px3sp loc @obl #4->8
 "<ешқашан>"
-	"ешқашан" adv
-"<ешқандай>"
-	"ешқандай" det neg
-"<да>"
-	"да" cnjcoo @cc
-	"да" postadv
-	"да" adv
-"<қайшылықтар>"
-	"қайшылық" n pl nom
+	"ешқашан" adv @advmod #5->8
+"<ешқандай да>"
+	"ешқандай" det neg @det #6->8
+		"да" postadv @advmod #7->8
+"<қайшылықтар>" 
+	"қайшылық" n pl nom @root #8->0
 "<болған емес>"
-	"бол" v iv neg past p3 sg
+	"бол" v iv neg past p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct  #10->8
 
 # - Парламенттің ең басты міндеті – заң шығару жұмысы .	- The main purpose of the parliament is legislative work .
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->9
 "<Парламенттің>"
-	"парламент" n gen
-"<ең басты>"
-	"ең басты" adv
+	"парламент" n gen @nmod:poss #2->5
+"<ең>"
+	"ең" adv @advmod #3->4
+"<басты>"
+	"басты" adj @amod #4->5
 "<міндеті>"
-	"міндет" n px3sp nom
+	"міндет" n px3sp nom @nsubj #5->9
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #6->9
 "<заң>"
-	"заң" n nom
-	"заң" n attr
+	"заң" n nom @obj #7->8
 "<шығару>"
-	"шығар" v tv ger nom
-	"шығару" n nom
-	"шығару" n attr
+	"шығар" v tv ger nom @acl #8->9
 "<жұмысы>"
-	"жұмыс" n px3sp nom
-		"е" cop aor p3 sg @cop
+	"жұмыс" n px3sp nom @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
 # Қазақстанның « Достық-Адрия » мұнай өткізу құбырына қатысуға мүмкіндігі бар .	Kazakhstan also could take part in the project “ Druzba-Adria ” .
 "<Қазақстанның>"
