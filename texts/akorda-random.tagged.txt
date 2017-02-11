@@ -9594,40 +9594,29 @@
 
 # осы мақсатқа қажетті қаражат бөлінді .	all necessary funds had been allocated for these purposes .
 "<Осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #1->2
 "<мақсатқа>"
-	"мақсат" n dat
+	"мақсат" n dat @obl #2->5
 "<қажетті>"
-	"қажетті" adj advl
-	"қажетті" adj subst nom
-	"қажетті" adj
-	"қажет" n
-		"лы" post @case
-	"қажет" adj subst
-		"лы" post @case
+	"қажетті" adj @amod #3->4
 "<қаражат>"
-	"қаражат" n nom
+	"қаражат" n nom @nsubj #4->5
 "<бөлінді>"
-	"бөлін" v tv ifi p3 sg
-	"бөл" v tv pass ifi p3 sg
+	"бөл" v tv pass ifi p3 sg @root #5->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #6->5
 
 # әрқашан аспанымыз ашық болсын .	let the sky of our country will always be peaceful .
 "<Әрқашан>"
-	"әрқашан" adv
+	"әрқашан" adv @advmod #1->3
 "<аспанымыз>"
-	"аспан" n px1pl nom
+	"аспан" n px1pl nom @nsubj #2->3
 "<ашық>"
-	"ашық" adj
-	"ашық" adv
-	"ашық" n nom
-	"ашық" adj advl
+	"ашық" adj @root #3->0
 "<болсын>"
-	"бол" v iv opt p3 sg
+	"бол" v iv opt p3 sg @cop #4->3
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->3
 
 # Мемлекет басшысының Малайзия Корольдігіне мемлекеттік сапары жалғасуда .	state visit of the Head of the State to the Kingdom of Malaysia continues .
 "<Мемлекет>"
