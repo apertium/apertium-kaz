@@ -3739,30 +3739,29 @@
 
 # банктік қызмет көрсету мәдениеті айтарлықтай өсті » , деп атап өтті .	culture of the bank service is developed significantly ” .
 "<Банктік>"
-	"банктік" adj @amod
+	"банктік" adj @amod #1->2
 "<қызмет>"
-	"қызмет" n nom @obj
+	"қызмет" n nom @obj #2->3
 "<көрсету>"
-	"көрсет" v tv ger nom
+	"көрсет" v tv ger nom @acl #3->4
 "<мәдениеті>"
-	"мәдениет" n px3sp nom
+	"мәдениет" n px3sp nom @nsubj #4->6
 "<айтарлықтай>"
-	"айт" v tv gpr_ppot sim
-	"айтарлықтай" adj
+	"айт" v tv gpr_ppot sim @advcl #5->6
 "<өсті>"
-	"өст" v tv ifi p3 sg
-	"өс" v iv ifi p3 sg
+	"өст" v tv ifi p3 sg @ccomp #6->9
 "<»>"
-	"»" rquot @punct
+	"»" rquot @punct #7->6
 "<,>"
-	"," cm @punct
-"<деп атап>"
-	"деп ата" v tv gna_perf
+	"," cm @punct #8->6
+"<деп>"
+	"де" v tv gna_perf @advcl #9->10
+"<атап>"
+	"ата" v tv gna_perf @advcl #10->11
 "<өтті>"
-	"өт" v tv ifi p3 sg
-	"өт" v iv ifi p3 sg
+	"өт" v tv ifi p3 sg @root #11->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #12->11
 
 # - Алматының күннен-күнге көркеюін көру өте қуанышты .	we are delighted to see how Almaty is smartening up .
 "<->"

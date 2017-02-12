@@ -4651,6 +4651,58 @@
 "<.>"
 	"." sent @punct #10->9
 
+"<Әзір>"
+	"әзір" adv @advmod #1->3
+"<түсін>"
+	"түс" n px3sp acc @obj #2->3
+"<ашпай>"
+	"аш" v tv neg prc_impf @root #3->0
+"<тұра>"
+	"тұр" vaux prc_impf @aux #4->3
+"<тұрайық>"
+	"тұр" vaux opt p1 pl @aux #5->3
+"<.>"
+	"." sent @punct #6->3
+
+"<Бұл>"
+	"бұл" det dem @nsubj #1->6
+"<өзі>"
+	"өз" prn ref px3sp nom @nmod #2->6
+"<бір>"
+	"бір" det ind @det #3->5
+"<атақты>"
+	"атақты" adj @amod #4->5
+"<болыстың>"
+	"болыс" n gen @nmod:poss #5->6
+"<баласы>"
+	"бала" n px3sp nom @root #6->0
+		"е" cop aor p3 sg @cop #7->6
+"<.>"
+	"." sent @punct #8->6
+
+"<Қаза>"
+	"қаз" v tv prc_impf @advcl #1->9
+"<берсек>"
+	"бер" vaux gna_cond p1 pl @aux #2->1
+"<,>"
+	"," cm @punct #3->9
+"<түпкі>"
+	"түпкі" n nom @nmod:poss #4->5
+"<ойы>"
+	"ой" n px3sp nom @nsubj #5->9
+"<—>"
+	"—" guio @punct #6->9
+"<бір>"
+	"бір" det ind @det #7->9
+"<үлкен>"
+	"үлкен" adj @amod #8->9
+"<орын>"
+	"орын" n nom @root #9->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #10->9
+"<.>"
+	"." sent @punct #11->9
+
 "<Дауыстарды>"
 	"дауыс" n pl acc @obj #1->2
 "<санау>"
