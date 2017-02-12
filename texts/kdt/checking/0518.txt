@@ -1,29 +1,23 @@
 "<Арақ>"
 	"арақ" n nom @nsubj #1->2
 "<ішілген>"
-	"іш" v tv pass ger_past nom @advcl #2->9
+	"іш" v tv pass ger_past nom @advcl #2->10
 "<сайын>"
-	"сайын" ADP @advmod:adp #3->2
-	"сайын" post @x #3->2
+	"сайын" post @case #3->2
 "<,>"
 	"," cm @punct #4->9
 "<күлкі>"
 	"күлкі" n nom @nsubj #5->6
 "<көбейіп>"
-	"көбей" v iv gna_perf @advcl #6->9
+	"көбей" v iv gna_perf @advcl #6->10
 "<,>"
 	"," cm @punct #7->9
 "<мәжіліс>"
 	"мәжіліс" n nom @nsubj #8->9
 "<қызуға>"
-	"қыз" VERB @root #9->0
-	"қыз" v iv ger dat @root #9->0
 	"қыз" v iv ger dat @advcl #9->10
 "<айналды>"
-	"айнал" AUX @aux #10->9
-	"айнал" v iv ifi p3 sg @aux #10->9
 	"айнал" v iv ifi p3 sg @root #10->0
 "<.>"
-	"." sent @punct #11->9
 	"." sent @punct #11->10
 ¶

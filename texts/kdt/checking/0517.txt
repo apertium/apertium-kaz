@@ -1,19 +1,19 @@
 "<Бір>"
 	"бір" num @nummod #1->2
 "<бөтелке>"
-	"бөтелке" n nom @amod-nmod #2->3
+	"бөтелке" n nom @clf #2->3
 "<спирт>"
 	"спирт" n nom @nsubj #3->7
 "<бір>"
-	"бір" num @nummod #4->5
+	"бір" num @nummod #4->6
 "<жарым>"
-	"жарым" adj @amod #5->6
+	"жарым" adj @compound #5->5
 "<бөтелке>"
-	"бөтелке" n nom @amod-nmod #6->7
+	"бөтелке" n nom @clf #6->7
 "<арақ>"
-	"арақ" n nom @root #7->0
+	"арақ" n nom @xcomp #7->8
 "<болды>"
-	"бол" v iv ifi p3 sg @cop #8->7
+	"бол" v iv ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct #9->7
+	"." sent @punct #9->8
 ¶

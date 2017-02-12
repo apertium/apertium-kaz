@@ -7,11 +7,9 @@
 "<үш>"
 	"үш" num @nummod #4->5
 "<есе>"
-	"есе" ADV @advmod #5->6
+	"есе" n nom @advmod #5->6
 "<арттыра>"
-	"арт" VERB @advcl #6->7
-	"арттыр" v tv prc_impf @advcl #6->7
-	"арттыр" v tv gna_impf @advcl #6->7
+	"арт" v iv caus gna_impf @advcl #6->7
 "<мақтап>"
 	"мақта" v tv gna_perf @advcl #7->10
 "<,>"
@@ -19,12 +17,10 @@
 "<өздері>"
 	"өз" prn ref px3pl nom @nsubj #9->10
 "<тындырып>"
-	"тындыр" v tv prc_perf @root #10->0
+	"тын" v tv caus prc_perf @root #10->0
 "<жатқан>"
 	"жат" vaux past p3 sg @aux #11->10
 "<болды>"
-	"бол" AUX @aux #12->10
-	"бол" v iv ifi p3 sg @aux #12->10
 	"бол" vaux ifi p3 sg @aux #12->10
 "<.>"
 	"." sent @punct #13->10
