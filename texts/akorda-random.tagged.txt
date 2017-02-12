@@ -3694,63 +3694,48 @@
 
 # бұл тұрақтылық пен бейбітшілікті сақтау үшін басты шарт .	this is a main condition for keeping peace and stability .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->8
 "<тұрақтылық>"
-	"тұрақтылық" n nom
+	"тұрақтылық" n nom @conj #2->4
 "<пен>"
-	"мен" cnjcoo @cc
+	"мен" cnjcoo @cc #3->4
 "<бейбітшілікті>"
-	"бейбітшілік" n acc
-	"бейбітшілік" n
-		"лы" post @case
+	"бейбітшілік" n acc @obj #4->5
 "<сақтау>"
-	"сақта" v tv ger nom
-	"сақтау" n nom
-	"сақтау" n attr
+	"сақта" v tv ger nom @advcl #5->8
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #6->5
 "<басты>"
-	"басты" adj subst nom
-	"басты" adj
-	"бас" n
-		"лы" post @case
+	"басты" adj @amod #7->8
 "<шарт>"
-	"шарт" n nom
-		"е" cop aor p3 sg @cop
+	"шарт" n nom @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
 # өкінішке орай , олар бұл мәселені шешуге қабілетсіз болып шықты .	unfortunately , they proved unable to resolve the issue .
 "<Өкінішке>"
-	"өкініш" n dat
+	"өкініш" n dat @obl #1->8
 "<орай>"
-	"орай" n nom
-		"е" cop aor p3 sg @cop
-	"орай" post @case
-	"орай" n nom
+	"орай" post @case #2->1
 "<,>"
-	"," cm @punct
+	"," cm @punct #3->1
 "<олар>"
-	"ол" prn dem pl nom
-	"олар" prn pers p3 pl nom
+	"олар" prn pers p3 pl nom @nsubj #4->8
 "<бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" det dem @det #5->6
 "<мәселені>"
-	"мәселе" n acc
+	"мәселе" n acc @obj #6->7
 "<шешуге>"
-	"шеш" v tv ger dat
+	"шеш" v tv ger dat @advcl #7->8
 "<қабілетсіз>"
-	"қабілетсіз" adj subst nom
+	"қабілетсіз" adj @root #8->0
 "<болып>"
-	"бол" v iv prc_perf @cop
+	"бол" v iv prc_perf @cop #9->8
 "<шықты>"
-	"шық" vaux ifi p3 sg @aux
+	"шық" vaux ifi p3 sg @aux #10->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->8
 
 # банктік қызмет көрсету мәдениеті айтарлықтай өсті » , деп атап өтті .	culture of the bank service is developed significantly ” .
 "<Банктік>"

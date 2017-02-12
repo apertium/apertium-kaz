@@ -4590,6 +4590,67 @@
 "<.>"
 	"." sent @punct #17->15
 
+"<Одан>"
+	"ол" prn pers p3 sg abl @nmod #1->2
+"<өзгесін>"
+	"өзге" adj subst px3sp acc @obj #2->5
+"<артық>"
+	"артық" adj advl @advmod #3->4
+"<керек>"
+	"керек" adj @xcomp #4->5
+"<қылмады>"
+	"қыл" v tv neg ifi p3 sg @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Бұл>"
+	"бұл" prn dem nom @nsubj #1->3
+"<қалай>"
+	"қалай" adv itg @advmod #2->3
+"<болды>"
+	"бол" v iv ifi p3 sg @root #3->0
+"<?>"
+	"?" sent @punct #4->3
+
+"<Бұлардың>"
+	"бұл" prn dem pl gen @nmod:poss #1->6
+"<бір>"
+	"бір" num @nummod #2->3
+"<ауыз>"
+	"ауыз" n nom @acl:relcl #3->6
+"<бола>"
+	"бол" v iv prc_impf @cop #4->3
+"<алмаған>"
+	"ал" vaux neg gpr_past @aux #5->3
+"<себебі>"
+	"себеп" n px3sp nom @nsubj #6->7
+"<не>"
+	"не" prn itg nom @root #7->0
+		"е" cop aor p3 sg @cop #8->7
+"<?>"
+	"?" sent @punct #9->7
+
+"<Неліктен>"
+	"нелік" prn itg abl @nmod #1->5
+"<оның>"
+	"ол" prn pers p3 sg gen @nsubj #2->5
+"<сұлу>"
+	"сұлу" adj @amod #3->4
+"<қызға>"
+	"қыз" n dat @nmod #4->5
+"<құмар>"
+	"құмар" adj @ccomp #5->9
+"<боп>"
+	"бол" v iv prc_perf @cop #6->5
+"<жүргенін>"
+	"жүр" vaux ger_past px3sp acc @aux #7->5
+"<кейін>"
+	"кейін" adv @advmod #8->9
+"<естірсіз>"
+	"есті" v tv fut p2 frm sg @root #9->0
+"<.>"
+	"." sent @punct #10->9
+
 "<Дауыстарды>"
 	"дауыс" n pl acc @obj #1->2
 "<санау>"
