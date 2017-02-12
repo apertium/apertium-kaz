@@ -1813,8 +1813,6 @@
 	"бұл" prn dem dat
 "<қосатын>"
 	"қос" v tv gpr_impf
-	"қос" v tv gpr_impf subst nom
-	"қос" v tv pih p3 sg
 "<үлестеріңіздің>"
 	"үлес" n pl px2sg frm gen
 "<маңызы>"
@@ -2358,30 +2356,23 @@
 
 # Қазақстан Каспий теңізінің айдынындағы ахуалды сенімді бақылауда ұстайды .	Kazakhstan safely controls the situation in its Caspian water area .
 "<Қазақстан>"
-	"Қазақстан" np top nom @nsubj #1->
+	"Қазақстан" np top nom @nsubj #1->8
 "<Каспий>"
 	"Каспий" np top nom @nmod:poss #2->3
 "<теңізінің>"
 	"теңіз" n px3sp gen @nmod:poss #3->4
 "<айдынындағы>"
-	"айдын" n px3sp loc attr @amod #4->
+	"айдын" n px3sp loc attr @amod #4->5
 "<ахуалды>"
-	"ахуал" n acc
-	"ахуал" n
-		"лы" post @case
+	"ахуал" n acc @obj #5->7
 "<сенімді>"
-	"сенім" n acc
-	"сенімді" adj
-	"сенім" n
-		"лы" post @case
-	"сенімді" adj advl
-	"сенімді" adj subst nom
+	"сенімді" adj @amod #6->7
 "<бақылауда>"
-	"бақыла" v tv ger loc
+	"бақыла" n loc @obl #7->8
 "<ұстайды>"
-	"ұста" v tv aor p3 sg @root
-"<.>"
-	"." sent @punct
+	"ұста" v tv aor p3 sg @root #8->0
+"<.>" 
+	"." sent @punct #9->8
 
 # сондықтан да мұнда біз бәрін мұқият зерттеп , ақылға салып көруіміз керек .	there are not details in this work .
 "<Сондықтан да>"
@@ -2781,19 +2772,19 @@
 
 # Қазақстандағы ЮНЕСКО тұрақты даму жобасымен айналысады .	UNESCO implements a project for sustainable development in Kazakhstan .
 "<Қазақстандағы>"
-	"Қазақстан" np top loc attr @amod 
+	"Қазақстан" np top loc attr @amod #1->4
 "<ЮНЕСКО>"
-	"ЮНЕСКО" abbr @compound
+	"ЮНЕСКО" abbr @compound #2->4
 "<тұрақты>"
-	"тұрақ" n acc @obj
+	"тұрақ" adj @amod #3->4
 "<даму>"
-	"даму" n nom @nmod:poss
+	"даму" n nom @nmod:poss #4->5
 "<жобасымен>"
-	"жоба" n px3sp ins @obl
+	"жоба" n px3sp ins @obl #5->6
 "<айналысады>"
-	"айнал" v iv coop aor p3 sg @root
+	"айнал" v iv coop aor p3 sg @root #6->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #7->6
 
 # өтіп бара жатқан жылға зор алғысымызды айтамыз , – деді Қазақстан Президенті .	we thank outgoing year , ” the President highlighted .
 "<Өтіп>"
@@ -2825,20 +2816,21 @@
 
 # Сұрақтарыңызды мына мекен-жайға жолдауыңызды сұраймыз .	Requisites for questions : 010000 , Astana , u / b 001 .
 "<Сұрақтарыңызды>"
-	"сұрақ" n pl px2sg frm acc
-"<мына мекен>"
-	"мына" prn dem nom
-		"мекен" qst
+	"сұрақ" n pl px2sg frm acc @obj #1->6
+"<мына>"
+	"мына" det dem @det #2->5
+"<мекен>"
+	"мекен" n attr @compound #3->5
 "<->"
-	"-" guio @punct
+	"-" guio @punct #4->5
 "<жайға>"
-	"жай" adj subst dat
+	"жай" adj subst dat @obl #5->6
 "<жолдауыңызды>"
-	"жолда" v tv ger px2sg frm acc
+	"жолда" v tv ger px2sg frm acc @ccomp #6->7
 "<сұраймыз>"
-	"сұра" v tv aor p1 pl
+	"сұра" v tv aor p1 pl @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # Астана , Ақорда	Astana , Akorda
 "<Астана>"
