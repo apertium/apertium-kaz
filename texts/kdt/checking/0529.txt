@@ -3,9 +3,7 @@
 "<">"
 	""" sent @punct #2->3
 "<құдай>"
-	"Құдай" n nom @dobj #3->5
 	"Құдай" n nom @ccomp #3->5
-		"е" cop aor p3 sg @ccomp #3->5
 "<">"
 	""" sent @punct #4->3
 "<деген>"
@@ -28,7 +26,6 @@
 	"ая" v tv pass prc_vol p3 pl @ccomp #11->15
 	"ая" v tv pass prc_vol p3 sg @ccomp #11->15
 "<ғой>"
-	"ғой" ADP @advmod:adp #12->11
 	"ғой" mod_ass @discourse #12->11
 "<...>"
 	"..." sent @punct #13->11
@@ -37,11 +34,9 @@
 "<деп>"
 	"де" v tv gna_perf @advcl #15->18
 "<тағы>"
-	"тағы" adv @advmod #16->18
+	"тағы" adv @advmod #16->17
 "<бір>"
-	"бір" NUM @nmod-num #17->18
-	"бір" num @x #17->18
-	"бір" num subst nom @x #17->18
+	"бір" num @advmod #17->18
 "<сасқалақтап>"
 	"сасқалақта" v iv prc_perf @root #18->0
 "<қалды>"

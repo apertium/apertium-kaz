@@ -1,9 +1,9 @@
 "<—>"
 	"—" guio @punct #1->4
 "<Бұл>"
-	"бұл" det dem @det #2->4
+	"бұл" prn dem nom @nsubj #2->4
 "<шатақ>"
-	"шатақ" adj @amod #3->4
+	"шатақ" n attr @compound #3->4
 "<жұмыс>"
 	"жұмыс" n nom @root #4->0
 		"е" cop aor p3 sg @cop #5->4

@@ -1,7 +1,6 @@
 "<Елді>"
 	"ел" n acc @dobj #1->2
 "<жеумен>"
-	"же" VERB @conj #2->9
 	"же" v tv ger ins @conj #2->9
 "<,>"
 	"," cm @punct #3->9
@@ -10,19 +9,17 @@
 "<қанын>"
 	"қан" n px3sp acc @dobj #5->6
 "<сорумен>"
-	"сор" VERB @conj #6->9
 	"сор" v tv ger ins @conj #6->9
 "<,>"
 	"," cm @punct #7->9
 "<солардың>"
-	"сол" PRON @nmod:poss #8->9
 	"сол" prn dem pl gen @nmod:poss #8->9
 "<еңбегімен>"
-	"еңбек" n px3sp ins @nmod #9->10
+	"еңбек" n px3sp ins @nmod #9->11
 "<бай>"
-	"бай" adj @root #10->0
+	"бай" adj @xcomp #10->11
 "<болады>"
-	"бол" v iv aor p3 sg @cop #11->10
+	"бол" v iv aor p3 sg @root #11->0
 "<.>"
-	"." sent @punct #12->10
+	"." sent @punct #12->11
 ¶

@@ -1,21 +1,18 @@
 "<Жастарды>"
 	"жас" n pl acc @dobj #1->2
-	"жастар" n acc @dobj #1->2
 "<мадақтай>"
 	"мадақта" v tv gna_impf @conj #2->7
 "<,>"
 	"," cm @punct #3->7
 "<бірлікке>"
-	"бірлік" n dat @iobj #4->5
+	"бірлік" n dat @nmod #4->5
 "<шақыра>"
 	"шақыр" v tv gna_impf @conj #5->7
 "<,>"
 	"," cm @punct #6->7
 "<дәнекер>"
-	"дәнекер" n nom @nmod #7->9
 	"дәнекер" n nom @advcl #7->9
 "<бола>"
-	"бол" VERB @cop #8->7
 	"бол" v iv gna_impf @cop #8->7
 "<сөйледі>"
 	"сөйле" v tv ifi p3 sg @root #9->0
