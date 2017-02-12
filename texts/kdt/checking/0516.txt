@@ -5,13 +5,13 @@
 "<стақанды>"
 	"стақан" n acc @dobj #3->4
 "<ұсынып>"
-	"ұсын" v tv gna_perf @advcl #4->16
+	"ұсын" v tv gna_perf @advcl #4->17
 "<:>"
 	":" sent @punct #5->4
 "<—>"
 	"—" guio @punct #6->11
 "<Бұ>"
-	"бұл" prn dem nom @amod #7->8
+	"бұл" det dem @det #7->8
 "<жарықтықты>"
 	"жарықтық" n acc @dobj #8->10
 "<әуре>"
@@ -20,19 +20,18 @@
 "<қылмай>"
 	"қыл" v tv neg gna_perf @advcl #10->11
 "<құйшы>"
-	"құй" v tv imp p2 sg @ccomp #11->16
-		"шы" emph @ccomp #11->16
+	"құй" v tv imp p2 sg @ccomp #11->17
+		"шы" emph @x #12->11
 "<,>"
-	"," cm @punct #12->11
+	"," cm @punct #13->11
 "<қарағым>"
-	"қарағым" INTJ @vocative #13->11
-	"қара" v tv prc_vol p1 sg @vocative #13->11
+	"қарақ" n px1sg nom @vocative #14->11
 "<!>"
-	"!" sent @punct #14->11
+	"!" sent @punct #15->11
 "<—>"
-	"—" guio @punct #15->16
+	"—" guio @punct #16->17
 "<деді>"
-	"де" v tv ifi p3 sg @root #16->0
+	"де" v tv ifi p3 sg @root #17->0
 "<.>"
-	"." sent @punct #17->16
+	"." sent @punct #18->17
 ¶
