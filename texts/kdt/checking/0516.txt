@@ -15,13 +15,12 @@
 "<жарықтықты>"
 	"жарықтық" n acc @dobj #8->10
 "<әуре>"
-	"әуре" NOUN @compound-etq #9->10
-	"әуре" n nom @x #9->10
+	"әуре" n nom @compound:lvc #9->10
 "<қылмай>"
 	"қыл" v tv neg gna_perf @advcl #10->11
 "<құйшы>"
 	"құй" v tv imp p2 sg @ccomp #11->17
-		"шы" emph @x #12->11
+		"шы" emph @advmod #12->11
 "<,>"
 	"," cm @punct #13->11
 "<қарағым>"
