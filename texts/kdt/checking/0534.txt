@@ -1,17 +1,11 @@
 "<Одан>"
-	"ол" prn dem abl @iobj #1->2
-	"ол" prn pers p3 sg abl @iobj #1->2
+	"ол" prn pers p3 sg abl @nmod #1->2
 "<өзгесін>"
 	"өзге" adj subst px3sp acc @dobj #2->5
 "<артық>"
-	"артық" adj @nmod #3->5
-	"артық" adj advl @nmod #3->5
-	"артық" adj subst nom @nmod #3->5
+	"артық" adj advl @advmod #3->4
 "<керек>"
-	"керек" adj @compound-etq #4->5
-	"керек" adj advl @compound-etq #4->5
-	"керек" adj subst nom @compound-etq #4->5
-	"керек" adj @x #4->5
+	"керек" adj @xcomp #4->5
 "<қылмады>"
 	"қыл" v tv neg ifi p3 sg @root #5->0
 "<.>"
