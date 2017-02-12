@@ -3146,23 +3146,25 @@
 "<Заң>"
 	"заң" n nom @obj #1->2
 "<шығарушылық>"
-	"шығар" v tv ger_abs nom @x #2->
+	"шығар" v tv ger_abs attr @acl #2->3  
 "<қызметтегі>"
 	"қызмет" n loc attr @amod #3->5
 "<негізгі>"
 	"негізгі" adj @amod #4->5
 "<бағыт>"
-	"бағыт" n nom @x #5->
+	"бағыт" n nom @nsubj #5->10
 "<әлеуметтік>"
-	"әлеуметтік" adv @advmod #6->7
+	"әлеуметтік" adj @amod #6->7
 "<жаңғырту>"
-	"жаңғырт" v tv ger nom @x #7->
+	"жаңғырт" v tv ger nom @xcomp #7->9 
 "<екені>"
-	"е" cop ger_past px3sp nom @csubj #8->9
-"<атап өтілді>"
-	"атап өт" v tv pass ifi p3 sg @root #9->0
+	"е" cop ger_past px3sp nom @cop #8->7
+"<атап>"
+	"ата" v tv gna_perf @advcl #9->10
+"<өтілді>"
+	"өт" v tv pass ifi p3 sg @root #10->0
 "<.>"
-	"." sent @punct #10->9
+	"." sent @punct #11->10
 
 # Қазақстан бизнесі соңғы уақытта Арменияға жіті назар аудара бастады .	Kazakhstan ’ s business has started to look at Armenia .
 "<Қазақстан>"
