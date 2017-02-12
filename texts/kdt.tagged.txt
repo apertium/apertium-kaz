@@ -4183,6 +4183,120 @@
 "<?>"
 	"?" sent @punct #7->6
 
+"<Олар>"
+	"олар" prn pers p3 pl nom @nsubj #1->3
+"<немен>"
+	"не" prn itg ins @nmod #2->3
+"<шұғылданады>"
+	"шұғылдан" v iv aor p3 sg @root #3->0
+"<?>"
+	"?" sent @punct #4->3
+
+"<Қандай>"
+	"қандай" prn itg sim @amod #1->2
+"<кітап>"
+	"кітап" n nom @obj #2->3
+"<оқиды>"
+	"оқы" v tv aor p3 sg @root #3->0
+"<?>"
+	"?" sent @punct #4->3
+
+"<Орыстармен>"
+	"орыс" n pl ins @nmod:poss #1->2
+"<арасы>"
+	"ара" n px3sp nom @nsubj #2->3
+"<қандай>"
+	"қандай" prn itg sim nom @root #3->0
+		"е" cop aor p3 sg @cop #4->3
+"<?>"
+	"?" sent @punct #5->3
+
+"<Соңынан>"
+	"соң" n px3sp abl @nmod #1->3
+"<қарбыз>"
+	"қарбыз" n nom @nsubj #2->3
+"<сойылды>"
+	"сой" v tv pass ifi p3 sg @root #3->0
+"<.>"
+	"." sent @punct #4->3
+
+"<Тамақ>"
+	"тамақ" n nom @nsubj #1->2
+"<мол>"
+	"мол" adj @root #2->0
+"<болды>"
+	"бол" v iv ifi p3 sg @cop #3->2
+"<.>"
+	"." sent @punct #4->2
+
+"<Алдымен>"
+	"алдымен" adv @advmod #1->5
+"<ортаға>"
+	"орта" n dat @nmod #2->5
+"<туралған>"
+	"тура" v tv pass gpr_past @acl:relcl #3->4
+"<ет>"
+	"ет" n nom @nsubj #4->5
+"<қойылды>"
+	"қой" v tv pass ifi p3 sg @root #5->0
+"<.>"
+	"." sent @punct #6->5
+
+"<Оның>"
+	"ол" prn dem gen @nmod:poss #1->2
+"<артынан>"
+	"арт" n px3sp abl @nmod #2->4
+"<кеспе>"
+	"кеспе" n nom @nsubj #3->4
+"<келді>"
+	"кел" v iv ifi p3 sg @root #4->0
+"<.>"
+	"." sent @punct #5->4
+
+"<—>"
+	"—" guio @punct #1->2
+"<Ештеңе>"
+	"ештеңе" prn neg nom @root #2->0
+"<емес>"
+	"е" cop neg aor p3 sg @cop #3->2
+"<...>"
+	"..." sent @punct #4->2
+
+"<—>"
+	"—" guio @punct #1->5
+"<Кішкене>"
+	"кішкене" adj @amod #2->5
+"<">"
+	""" sent @punct #3->5
+"<боз>"
+	"боз" adj @amod #4->5
+"<жорға>"
+	"жорға" n nom @ccomp #5->10
+"<">"
+	""" sent @punct #6->5
+"<еді>"
+	"е" cop ifi p3 sg @cop #7->5
+"<,>"
+	"," cm @punct #8->5
+"<—>"
+	"—" guio @punct #9->10
+"<деп>"
+	"де" v tv gna_perf @advcl #10->16
+"<Төлеген>"
+	"Төлеген" np ant m nom @nsubj #11->16
+"<сыпайы>"
+	"сыпайы" adj @amod #12->13
+"<қонағына>"
+	"қонақ" n px3sp dat @nmod #13->14
+"<қарап>"
+	"қара" v tv gna_perf @advcl #14->16
+"<,>"
+	"," cm @punct #15->14
+"<жымиды>"
+	"жыми" v iv ifi p3 sg @root #16->0
+"<.>"
+	"." sent @punct #17->16
+
 "<Дауыстарды>"
 	"дауыс" n pl acc @obj #1->2
 "<санау>"

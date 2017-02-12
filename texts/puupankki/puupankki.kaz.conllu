@@ -5654,6 +5654,87 @@
 7	?	?	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = kdt.tagged.txt:253:4184
+# text = Олар немен шұғылданады?
+1	Олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	немен	не	PRON	prn	Case=Ins|PronType=Int	3	nmod	_	_
+3	шұғылданады	шұғылдан	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+4	?	?	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:254:4193
+# text = Қандай кітап оқиды?
+1	Қандай	қандай	PRON	prn	PronType=Int	2	amod	_	_
+2	кітап	кітап	NOUN	n	Case=Nom	3	obj	_	_
+3	оқиды	оқы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+4	?	?	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:255:4202
+# text = Орыстармен арасы қандай?
+1	Орыстармен	орыс	NOUN	n	Case=Ins|Number=Plur	2	nmod:poss	_	_
+2	арасы	ара	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
+3-4	қандай	_	_	_	_	_	_	_	_
+3	қандай	қандай	PRON	prn	Case=Nom|PronType=Int	0	root	_	_
+4	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	3	cop	_	_
+5	?	?	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:256:4212
+# text = Соңынан қарбыз сойылды.
+1	Соңынан	соң	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod	_	_
+2	қарбыз	қарбыз	NOUN	n	Case=Nom	3	nsubj	_	_
+3	сойылды	сой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	.	.	PUNCT	sent	_	3	punct	_	_
+
+# sent_id = kdt.tagged.txt:257:4221
+# text = Тамақ мол болды.
+1	Тамақ	тамақ	NOUN	n	Case=Nom	2	nsubj	_	_
+2	мол	мол	ADJ	adj	_	0	root	_	_
+3	болды	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	cop	_	_
+4	.	.	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = kdt.tagged.txt:258:4230
+# text = Алдымен ортаға туралған ет қойылды.
+1	Алдымен	алдымен	ADV	adv	_	5	advmod	_	_
+2	ортаға	орта	NOUN	n	Case=Dat	5	nmod	_	_
+3	туралған	тура	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+4	ет	ет	NOUN	n	Case=Nom	5	nsubj	_	_
+5	қойылды	қой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	.	.	PUNCT	sent	_	5	punct	_	_
+
+# sent_id = kdt.tagged.txt:259:4243
+# text = Оның артынан кеспе келді.
+1	Оның	ол	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	_	_
+2	артынан	арт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
+3	кеспе	кеспе	NOUN	n	Case=Nom	4	nsubj	_	_
+4	келді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+5	.	.	PUNCT	sent	_	4	punct	_	_
+
+# sent_id = kdt.tagged.txt:260:4254
+# text = — Ештеңе емес...
+1	—	—	PUNCT	guio	_	2	punct	_	_
+2	Ештеңе	ештеңе	PRON	prn	Case=Nom|Polarity=Neg	0	root	_	_
+3	емес	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	2	cop	_	_
+4	...	...	PUNCT	sent	_	2	punct	_	_
+
+# sent_id = kdt.tagged.txt:261:4263
+# text = — Кішкене "боз жорға" еді, — деп Төлеген сыпайы қонағына қарап, жымиды.
+1	—	—	PUNCT	guio	_	5	punct	_	_
+2	Кішкене	кішкене	ADJ	adj	_	5	amod	_	_
+3	"	"	PUNCT	sent	_	5	punct	_	_
+4	боз	боз	ADJ	adj	_	5	amod	_	_
+5	жорға	жорға	NOUN	n	Case=Nom	10	ccomp	_	_
+6	"	"	PUNCT	sent	_	5	punct	_	_
+7	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	cop	_	_
+8	,	,	PUNCT	cm	_	5	punct	_	_
+9	—	—	PUNCT	guio	_	10	punct	_	_
+10	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	_
+11	Төлеген	Төлеген	PROPN	np	Case=Nom|Gender=Masc	16	nsubj	_	_
+12	сыпайы	сыпайы	ADJ	adj	_	13	amod	_	_
+13	қонағына	қонақ	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	14	nmod	_	_
+14	қарап	қара	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	_
+15	,	,	PUNCT	cm	_	14	punct	_	_
+16	жымиды	жыми	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+17	.	.	PUNCT	sent	_	16	punct	_	_
+
+# sent_id = kdt.tagged.txt:262:4298
 # text = Дауыстарды санау басталғаннан кейін сайлаушылар (таңдаушылар) тізімдеріне өзгерістер енгізуге тыйым салынады.
 1	Дауыстарды	дауыс	NOUN	n	Case=Acc|Number=Plur	2	obj	_	_
 2	санау	сана	VERB	v	Case=Nom|VerbForm=Ger	3	csubj	_	_
@@ -5670,7 +5751,7 @@
 13	салынады	сал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
 14	.	.	PUNCT	sent	_	13	punct	_	_
 
-# sent_id = kdt.tagged.txt:254:4213
+# sent_id = kdt.tagged.txt:263:4327
 # text = Сенат депутаттарын сайлау кезінде таңдаушылардың тізімдері жасалады.
 1	Сенат	сенат	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	депутаттарын	депутат	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	obj	_	_
@@ -5681,7 +5762,7 @@
 7	жасалады	жаса	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
-# sent_id = kdt.tagged.txt:255:4230
+# sent_id = kdt.tagged.txt:264:4344
 # text = Нақтылы сайлау учаскесінде азаматты сайлаушылар тізіміне енгізу үшін оның осы сайлау учаскесінің аумағында тұрғылықты жері бойынша тіркелу фактісі негіз болады.
 1	Нақтылы	нақтылы	ADJ	adj	_	3	amod	_	_
 2	сайлау	сайлау	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -5705,7 +5786,7 @@
 20	болады	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	19	cop	_	_
 21	.	.	PUNCT	sent	_	19	punct	_	_
 
-# sent_id = kdt.tagged.txt:256:4273
+# sent_id = kdt.tagged.txt:265:4387
 # text = Сайлаушылар тізімі әліпби тәртібімен немесе өзге тәртіппен жасалады.
 1	Сайлаушылар	сайлаушы	NOUN	n	Case=Nom|Number=Plur	2	nmod:poss	_	_
 2	тізімі	тізім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
@@ -5717,7 +5798,7 @@
 8	жасалады	жаса	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
 
-# sent_id = kdt.tagged.txt:257:4292
+# sent_id = kdt.tagged.txt:266:4406
 # text = Сайлаушылардың тұрғылықты жері бойынша тізімін тиісті жергілікті атқарушы орган халықты есепке алуды жүзеге асыратын органдар ұсынған мәліметтердің негізінде жасайды.
 1	Сайлаушылардың	сайлаушы	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
 2	тұрғылықты	тұрғылықты	ADJ	adj	_	3	amod	_	_
