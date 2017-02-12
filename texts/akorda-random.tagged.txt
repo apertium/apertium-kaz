@@ -942,23 +942,22 @@
 
 # жұмыстың ерекшелігі - алынған нәтижелердің инновациялық бағыты .	this work was presented by the scientific – industrial center Phytochemistry .
 "<Жұмыстың>"
-	"жұмыс" n gen
+	"жұмыс" n gen @nmod:poss #1->2
 "<ерекшелігі>"
-	"ерекшелік" n px3sp nom
+	"ерекшелік" n px3sp nom @nsubj #2->7
 "<->"
-	"-" guio @punct
+	"-" guio @punct #3->7
 "<алынған>"
-	"алын" v tv gpr_past
-	"алын" v tv gpr_past subst nom
+	"алын" v tv gpr_past @acl:relcl #4->5
 "<нәтижелердің>"
-	"нәтиже" n pl gen
+	"нәтиже" n pl gen @nmod:poss #5->7
 "<инновациялық>"
-	"инновациялық" adj
+	"инновациялық" adj @amod #6->7
 "<бағыты>"
-	"бағыт" n px3sp nom
-		"е" cop aor p3 sg @cop
+	"бағыт" n px3sp nom @root #7->0
+		"е" cop aor p3 sg @cop #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
 "<Кореяның>"
 	"Корея" np top gen @nmod:poss #1->4
@@ -3127,33 +3126,35 @@
 
 # бұл жолғы форумның тақырыбы – « Дағдарыстан кейінгі басқару » деп аталды .	the theme of the current forum is “ Asia : managing Beyond Crisis ” .
 "<Бұл>"
-	"бұл" det dem @det
+	"бұл" det dem @det #1->3
 "<жолғы>"
-	"жолғы" adj @amod
+	"жолғы" adj @amod #2->3
 "<форумның>"
-	"форум" n gen @nmod:poss
+	"форум" n gen @nmod:poss #3->4
 "<тақырыбы>"
-	"тақырып" n px3sp nom
+	"тақырып" n px3sp nom @nsubj #4->12
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #5->4
 "<«>"
-	"«" lquot @punct
+	"«" lquot @punct #6->9
 "<Дағдарыстан>"
-	"дағдарыс" n abl @nmod
+	"дағдарыс" n abl @nmod #7->9
 "<кейінгі>"
-	"кейінгі" adj @amod
+	"кейінгі" post attr @case #8->7
 "<басқару>"
-	"басқару" n nom @
+	"басқару" n nom @obj #9->11
 "<»>"
-	"»" rquot @punct
-"<деп аталды>"
-	"деп ата" v tv pass ifi p3 sg
+	"»" rquot @punct #10->9
+"<деп>"
+	"де" v tv gna_perf @advcl #11->12
+"<аталды>"
+	"ата" v tv pass ifi p3 sg @root #12->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #13->12
 
 # заң шығарушылық қызметтегі негізгі бағыт әлеуметтік жаңғырту екені атап өтілді .	all countries in the world support their producers .
 "<Заң>"
-	"заң" n nom 
+	"заң" n nom @obj
 "<шығарушылық>"
 	"шығар" v tv ger_abs nom
 "<қызметтегі>"
@@ -3166,7 +3167,7 @@
 	"әлеуметтік" adj
 	"әлеуметтік" adv
 "<жаңғырту>"
-	"жаңғырт" v tv ger nom
+	"жаңғырт" v tv ger nom 
 "<екені>"
 	"е" cop ger_past px3sp nom @csubj
 "<атап өтілді>"
@@ -3237,7 +3238,7 @@
 "<Екіжақты>"
 	"екіжақты" adj @amod
 "<қарым-қатынастарды>"
-	"қарым-қатынас" n pl acc
+	"қарым-қатынас" n pl acc @obj
 "<дамыту>"
 	"дамыт" v tv ger nom
 "<саласында>"
@@ -3369,11 +3370,8 @@
 "<болашағы>"
 	"болашақ" n px3sp nom
 "<қандай>"
-	"қан" n sim
 	"қандай" prn itg sim
-	"қандай" prn itg sim nom
 "<болатыны>"
-	"бол" v iv gpr_impf subst px3sp nom
 	"бол" v iv ger_impf px3sp nom
 "<бізге>"
 	"біз" prn pers p1 pl dat
@@ -3412,74 +3410,68 @@
 
 # және бұл жерде демократиялық желеуді алға тартудың реті келмейді .	and no one will succeed to mask behind democratic rhetoric .
 "<Және>"
-	"және" cnjcoo @cc
+	"және" cnjcoo @cc #1->9
 "<бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" det dem @det #2->3
 "<жерде>"
-	"жер" n loc
+	"жер" n loc @obl #3->7
 "<демократиялық>"
-	"демократиялық" adj
+	"демократиялық" adj @amod #4->5
 "<желеуді>"
-	"желеу" n acc
+	"желеу" n acc @obj #5->7
 "<алға>"
-	"алд" n dat
-	"алға" adv
+	"алға" adv @advmod #6->7
 "<тартудың>"
-	"тарт" v tv ger gen
-	"тарту" n gen
+	"тарт" v tv ger gen @acl #7->8
 "<реті>"
-	"рет" n px3sp nom
+	"рет" n px3sp nom @nsubj #8->9
 "<келмейді>"
-	"кел" v iv neg aor p3 sg
+	"кел" v iv neg aor p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 # - Сізді жарқын жеңісіңізбен шын жүректен құттықтаймын ! -делінген жеделхатта .	- I sincerely congratulate you on glorious victory !
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #1->11
 "<Сізді>"
-	"сіз" prn pers p2 sg frm acc
+	"сіз" prn pers p2 sg frm acc @obj #2->7
 "<жарқын>"
-	"жарқын" adj
-	"жарқын" adj advl
+	"жарқын" adj @amod #3->4
 "<жеңісіңізбен>"
-	"жеңіс" n px2sg frm ins
-"<шын жүректен>"
-	"шын жүректен" adv
+	"жеңіс" n px2sg frm ins @obl #4->7
+"<шын>"
+	"шын" adj @amod #5->6
+"<жүректен>"
+	"жүрек" n abl @obl #6->7
 "<құттықтаймын>"
-	"құттықта" v tv aor p1 sg
+	"құттықта" v tv aor p1 sg @ccomp #7->10
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #8->7
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #9->10
 "<делінген>"
-	"де" v tv pass gpr_past
-	"де" v tv pass gpr_past subst nom
+        "де" v tv pass past @root #10->0
 "<жеделхатта>"
-	"жеделхат" n loc
-		"е" cop aor p3 sg @cop
+	"жеделхат" n loc @root #11->10
 "<.>"
-	"." sent @punct
+	"." sent @punct #13->11
 
 # – Халықтың әлеуметтік жағдайы ешқандай да нашарламайды .	“ We will keep the social situation of our people unaffected .
 "<–>"
-	"–" guio @punct
+	"–" guio @punct #1->7
 "<Халықтың>"
-	"халық" n gen @nmod:poss
+	"халық" n gen @nmod:poss #2->4
 "<әлеуметтік>"
-	"әлеуметтік" adj @amod
+	"әлеуметтік" adj @amod #3->4
 "<жағдайы>"
-	"жағдай" n px3sp nom @nsubj
+	"жағдай" n px3sp nom @nsubj #4->7
 "<ешқандай да>"
-	"ешқандай" det neg 
-		"да" postadv
+	"ешқандай" prn neg sim @advmod #5->7
+		"да" postadv @advmod #6->5
 "<нашарламайды>"
-	"нашарла" v iv neg aor p3 sg
+	"нашарла" v iv neg aor p3 sg @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # – Сіздің Съездің табысты өткізілуімен құттықтағым келеді .	“ I would like to congratulate you on the successful conduction of the Congress .
 "<–>"
@@ -3506,7 +3498,6 @@
 	"мен" prn pers p1 sg nom
 "<Қазақстан>"
 	"Қазақстан" np top nom
-	"Қазақстан" np top attr
 "<секілді>"
 	"секіл" n acc
 	"секілді" post @case
@@ -3785,10 +3776,6 @@
 	"шеш" v tv ger dat
 "<қабілетсіз>"
 	"қабілетсіз" adj subst nom
-	"қабілетсіз" adj
-	"қабілет" n
-		"сыз" post @case
-	"қабілетсіз" adj advl
 "<болып>"
 	"бол" v iv prc_perf @cop
 "<шықты>"
@@ -5457,9 +5444,9 @@
 "<,>"
 	"," cm @punct #5->9
 "<бір>"
-	"бір" num @nummod #6->7
+	"бір" num @compound #6->7
 "<жарым>"
-	"жарым" n attr @compound #7->8
+	"жарым" n attr @nummod #7->8
 "<есе>"
 	"есе" n nom @nsubj #8->9
 "<артық>"
