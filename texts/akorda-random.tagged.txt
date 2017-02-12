@@ -355,20 +355,20 @@
 "<АҚШ>"
 	"АҚШ" np top nom @nmod:poss #4->5
 "<долларына>"
-	"доллар" n px3sp dat @obl #5->
+	"доллар" n px3sp dat @nmod #5->7
 "<дейінгі>"
-	"дейінгі" adj @amod #6->7
+	"дейін" post attr @case #6->7
 "<қаражаты>"
-	"қаражат" n px3sp nom @x #7->
+	"қаражат" n px3sp nom @nsubj #7->8
 "<бар>"
-	"бар" adj @amod #8->
+	"бар" adj @acl #8->10
 "<бірлескен>"
 	"бірлес" v iv gpr_past @acl:relcl #9->10
 "<қор>"
 	"қор" n nom @nsubj #10->11
 "<құрылып>" 
 	"құр" v tv pass prc_perf @root #11->0
-"<жатыр>"  
+"<жатыр>"  
 	"жат" vaux pres p3 sg @aux #12->11
 "<.>"
 	"." sent @punct #13->11
@@ -5357,7 +5357,7 @@
 
 # біз сондай-ақ жұмысты бірлесіп бастауға келістік .	we decided to start joint working .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nsubj
 "<сондай-ақ>"
 	"сол" prn dem sim nom
 		"-ақ" postadv @advmod
@@ -5366,11 +5366,11 @@
 	"жұмыс" n
 		"лы" post @case
 "<бірлесіп>"
-	"бірлес" v iv prc_perf
+	"бірлес" v iv prc_perf 
 "<бастауға>"
 	"баста" vaux ger dat
 "<келістік>"
-	"кел" v iv coop ifi p1 pl
+	"кел" v iv coop ifi p1 pl @root
 "<.>"
 	"." sent @punct
 
@@ -5389,51 +5389,44 @@
 
 # ол біздің азаматтарымыз үшін нақты нәтижелер әкелетіні маңызды .	more importantly , it brings tangible results to our citizens .
 "<Ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem @det
-	"ол" prn dem nom
+	"ол" prn dem nom @nsubj #1->7
 "<біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss #2->3
 "<азаматтарымыз>"
-	"азамат" n pl px1pl nom
+	"азамат" n pl px1pl nom @obl #3->7
 "<үшін>"
-	"үшін" post @case
-	"үш" n px3sp acc
-	"үш" num subst px3sp acc
+	"үшін" post @case #4->3
 "<нақты>"
-	"нақты" adj
-	"нақты" adj advl
+	"нақты" adj @amod #5->6
 "<нәтижелер>"
-	"нәтиже" n pl nom
+	"нәтиже" n pl nom @obj #6->7
 "<әкелетіні>"
-	"әкел" v tv ger_impf px3sp nom
-	"әкел" v tv gpr_impf subst px3sp nom
+	"әкел" v tv ger_impf px3sp nom @csubj #7->8
 "<маңызды>"
-	"маңызды" adj
-		"е" cop aor p3 sg @cop
+	"маңызды" adj @root #8->0
+		"е" cop aor p3 sg @cop #9->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->8
 
 # біз еліміз Тәуелсіздігінің 15-жылдығының қарсаңында тұрмыз .	let ’ s the words of this oathbe the daily program for your actions .
 "<Біз>"
-	"біз" prn pers p1 pl nom
+	"біз" prn pers p1 pl nom @nmod:poss #1->2
 "<еліміз>"
-	"ел" n px1pl nom
+	"ел" n px1pl nom @nsubj #2->7
 "<Тәуелсіздігінің>"
-	"тәуелсіздік" n px3sp gen
+	"тәуелсіздік" n px3sp gen @nmod:poss #3->6
 "<15>"
-	"15" num
+	"15" num @compound #4->6
 "<->"
-	"-" guio @punct
-	"х" guio @punct
+	"-" guio @punct #5->6
 "<жылдығының>"
-	"жылдық" adj subst px3sp gen
+	"жылдық" adj subst px3sp gen @nmod:poss #6->7
 "<қарсаңында>"
-	"қарсаң" n px3sp loc
+	"қарсаң" n px3sp loc @root #7->0
 "<тұрмыз>"
-	"тұр" vaux pres p1 pl
+	"тұр" vaux pres p1 pl @aux #8->7
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->7
 
 # бүгін әлемдегі барша христиандардың мерекесі .	today is a holiday of all Christians in the world .
 "<Бүгін>"
@@ -5506,31 +5499,26 @@
 
 # бұл 2008 жылмен салыстырғанда , бір жарым есе артық .	which is 1,5 times more , than in 2008 .
 "<Бұл>"
-	"бұл" det dem @det
-	"бұл" prn dem nom
+	"бұл" prn dem nom @nsubj #1->4
 "<2008>"
-	"2008" num
+	"2008" num @amod #2->4
 "<жылмен>"
-	"жыл" n ins
+	"жыл" n ins @obl #3->4
 "<салыстырғанда>"
-	"салыстыр" v tv ger_past loc
-	"салыстырғанда" adv
+	"салыстыр" v tv ger_past loc @advcl #4->9
 "<,>"
-	"," cm @punct
+	"," cm @punct #5->9
 "<бір>"
-	"бір" num
-	"бір" det ind
-	"бір" num subst nom
+	"бір" num @nummod #6->7
 "<жарым>"
-	"жарым" adj
-	"жар" n px1sg nom
+	"жарым" n attr @compound #7->8
 "<есе>"
-	"есе" n nom
+	"есе" n nom @nsubj #8->9
 "<артық>"
-	"артық" adj
-		"е" cop aor p3 sg @cop
+	"артық" adj @root #9->0
+		"е" cop aor p3 sg @cop #10->9
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->9
 
 # Ел-жұрттарыңыздың сіздерге артар сенімі үлкен , үміті зор .	and your talents will be strongly required here .
 "<Ел-жұрттарыңыздың>"
@@ -5556,86 +5544,60 @@
 
 # осы орайда , патриотизм табысқа жетелеуші қасиеттердің бірі болып табылады .	patriotism is a significant component of success .
 "<Осы>"
-	"осы" det dem @det
-	"осы" prn dem nom
+	"осы" det dem @det #1->2
 "<орайда>"
-	"орай" n loc
-	"орай" n loc
-		"е" cop aor p3 sg @cop
+	"орай" n loc @obl #2->10
 "<,>"
-	"," cm @punct
+	"," cm @punct #3->8
 "<патриотизм>"
-	"патриотизм" n nom
-	"патриотизм" n attr
+	"патриотизм" n nom @obj #4->6
 "<табысқа>"
-	"табыс" n dat
+	"табыс" n dat @obl #5->6
 "<жетелеуші>"
-	"жетеле" v tv gpr_pot
-	"жетеле" v tv gpr_pot subst nom
+	"жетеле" v tv gpr_pot @acl:relcl #6->7
 "<қасиеттердің>"
-	"қасиет" n pl gen
+	"қасиет" n pl gen @nmod:poss #7->8
 "<бірі>"
-	"бір" num subst px3sp nom
+	"бір" num subst px3sp nom @advcl #8->10
 "<болып>"
-	"бол" v iv gna_perf
+	"бол" v iv gna_perf @cop #9->8
 "<табылады>"
-	"тап" v tv pass aor p3 sg
-	"таб" v tv pass aor p3 sg
-	"табыл" v iv aor p3 sg
+	"тап" v tv pass aor p3 sg @root #10->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->10
 
 # жедел жәрдем ауруханасы 2010 жылғы желтоқсанда салынған .	the Emergency First Aid Hospital was constructed in December 2010 .
 "<Жедел>"
-	"жедел" adj
+	"жедел" adj @amod #1->2
 "<жәрдем>"
-	"жәрдем" n nom
-	"жәрдем" n attr
+	"жәрдем" n nom @nmod:poss #2->3
 "<ауруханасы>"
-	"аурухана" n px3sp nom
+	"аурухана" n px3sp nom @nsubj #3->7
 "<2010>"
-	"2010" num
+	"2010" num @compound #4->5
 "<жылғы>"
-	"жылғы" adj
+	"жылғы" adj @amod #5->6
 "<желтоқсанда>"
-	"желтоқсан" n loc
+	"желтоқсан" n loc @obl #6->7
 "<салынған>"
-	"сал" v tv pass gpr_past
-	"салын" v tv gpr_past
-	"салынған" adj
-	"сал" v tv pass ger_past nom
-	"салын" v tv ger_past nom
-	"салынған" adj advl
-	"салынған" adj
-		"е" cop aor p3 sg @cop
-	"сал" v tv pass past p3 sg
-	"сал" v tv pass gpr_past subst nom
-	"салынған" adj subst nom
-		"е" cop aor p3 sg @cop
-	"салын" v tv past p3 sg
-	"салын" v tv gpr_past subst nom
-	"салынған" adj subst nom
+	"сал" v tv pass past p3 sg @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # біздің барлығымыз оны еңсеріп шығатынымызға сенімдімін .	I am convinced that we all will overcome it .
 "<Біздің>"
-	"біз" prn pers p1 pl gen
+	"біз" prn pers p1 pl gen @nmod:poss
 "<барлығымыз>"
-	"барлық" prn qnt px1pl nom
-	"барлық" adj subst px1pl nom
+	"барлық" prn qnt px1pl nom @nsubj
 "<оны>"
-	"ол" prn dem acc
-	"ол" prn pers p3 sg acc
-	"он" num subst px3sp nom
+	"ол" prn dem acc @obj
 "<еңсеріп>"
-	"еңсер" v tv prc_perf
+	"еңсер" v tv prc_perf @advcl
 "<шығатынымызға>"
-	"шық" vaux ger_impf px1pl dat
-	"шық" vaux gpr_impf subst px1pl dat
+	"шық" vaux ger_impf px1pl dat @aux
 "<сенімдімін>"
-	"сенімді" adj
-		"е" cop aor p1 sg
+	"сенімді" adj @root
+		"е" cop aor p1 sg @cop
 "<.>"
 	"." sent @punct
 
