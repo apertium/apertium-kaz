@@ -3012,29 +3012,27 @@
 
 # ол кезге қарай капитал жинақтап , атыңды танытуға болады ” .	it is possible to earn political capital and reputation by that time . ”
 "<Ол>"
-	"ол" prn pers p3 sg nom
-	"ол" det dem @det
-	"ол" prn dem nom
+	"ол" prn pers p3 sg nom @nsubj #1->5
 "<кезге>"
-	"кез" n dat
+	"кез" n dat @obl #2->5
 "<қарай>"
-	"қарай" post @case
+	"қарай" post @case #3->2
 "<капитал>"
-	"капитал" n nom
+	"капитал" n nom @obj #4->5
 "<жинақтап>"
-	"жинақта" v tv gna_perf
+	"жинақта" v tv gna_perf @advcl #5->8
 "<,>"
-	"," cm @punct
+	"," cm @punct #6->5
 "<атыңды>"
-	"ат" n px2sg acc
+	"ат" n px2sg acc @obj #7->8
 "<танытуға>"
-	"таныт" v tv ger dat
+	"таныт" v tv ger dat @root #8->0
 "<болады>"
-	"бол" v iv aor p3 sg
+	"бол" v iv aor p3 sg @cop #9->8
 "<”>"
-	"”" rquot @punct
+	"”" rquot @punct #10->8
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->8
 
 # Қазақстан Республикасы туризмді дамытуда үлкен әлеуетке ие .	the Republic of Kazakhstan has an enormous potential for developing tourism .
 "<Қазақстан>"
@@ -3146,26 +3144,25 @@
 
 # заң шығарушылық қызметтегі негізгі бағыт әлеуметтік жаңғырту екені атап өтілді .	all countries in the world support their producers .
 "<Заң>"
-	"заң" n nom @obj
+	"заң" n nom @obj #1->2
 "<шығарушылық>"
-	"шығар" v tv ger_abs nom
+	"шығар" v tv ger_abs nom @x #2->
 "<қызметтегі>"
-	"қызмет" n loc attr @amod
+	"қызмет" n loc attr @amod #3->5
 "<негізгі>"
-	"негізгі" adj @amod
+	"негізгі" adj @amod #4->5
 "<бағыт>"
-	"бағыт" n nom
+	"бағыт" n nom @x #5->
 "<әлеуметтік>"
-	"әлеуметтік" adj
-	"әлеуметтік" adv
+	"әлеуметтік" adv @advmod #6->7
 "<жаңғырту>"
-	"жаңғырт" v tv ger nom 
+	"жаңғырт" v tv ger nom @x #7->
 "<екені>"
-	"е" cop ger_past px3sp nom @csubj
+	"е" cop ger_past px3sp nom @csubj #8->9
 "<атап өтілді>"
-	"атап өт" v tv pass ifi p3 sg @root
+	"атап өт" v tv pass ifi p3 sg @root #9->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #10->9
 
 # Қазақстан бизнесі соңғы уақытта Арменияға жіті назар аудара бастады .	Kazakhstan ’ s business has started to look at Armenia .
 "<Қазақстан>"
@@ -3228,33 +3225,27 @@
 
 # екіжақты қарым-қатынастарды дамыту саласында көптеген жұмыстар атқарылды .	we could do much work in the area of developing bilateral ties .
 "<Екіжақты>"
-	"екіжақты" adj @amod
+	"екіжақты" adj @amod #1->2
 "<қарым-қатынастарды>"
-	"қарым-қатынас" n pl acc @obj
+	"қарым-қатынас" n pl acc @obj #2->3
 "<дамыту>"
-	"дамыт" v tv ger nom
+	"дамыт" v tv ger nom @acl #3->4
 "<саласында>"
-	"сала" n px3sp loc @obl
+	"сала" n px3sp loc @obl #4->5
 "<көптеген>"
-	"көпте" v tv gpr_past
-	"көпте" v tv ger_past nom
-	"көптеген" det qnt
-	"көпте" v tv gpr_past subst nom
-	"көпте" v tv past p3 sg
+	"көпте" v tv gpr_past @acl:relcl #5->6
 "<жұмыстар>"
-	"жұмыста" v tv gpr_fut
-	"жұмыста" v tv fut p3 sg
-	"жұмыста" v tv gpr_fut subst nom
+	"жұмыс" n pl nom @nsubj #6->7
 "<атқарылды>"
-	"атқар" v tv pass ifi p3 sg
+	"атқар" v tv pass ifi p3 pl @root #7->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->7
 
 # Қазақстан – табиғи ресурстар мен таланттарға аса бай ел .	there are many talented people and a plenty of natural resources in Kazakhstan .
 "<Қазақстан>"
 	"Қазақстан" np top nom @nsubj #1->9
 "<–>"
-	"–" guio @punct #2->
+	"–" guio @punct #2->9
 "<табиғи>"
 	"табиғи" adj @amod #3->4
 "<ресурстар>"
@@ -3354,31 +3345,23 @@
 
 # бүгінгі таңда адамзаттың болашағы қандай болатыны бізге байланысты .	today the future of mankind depends on us .
 "<Бүгінгі>"
-	"бүгін" adv attr @amod
+	"бүгін" adv attr @amod #1->2
 "<таңда>"
-	"таң" n loc @obl
+	"таң" n loc @obl #2->8
 "<адамзаттың>"
-	"адамзат" n gen @nmod:poss
+	"адамзат" n gen @nmod:poss #3->4
 "<болашағы>"
-	"болашақ" n px3sp nom
+	"болашақ" n px3sp nom @nsubj #4->6
 "<қандай>"
-	"қандай" prn itg sim
+	"қандай" prn itg sim @csubj #5->8
 "<болатыны>"
-	"бол" v iv ger_impf px3sp nom
+	"бол" v iv ger_impf px3sp nom @cop #6->5
 "<бізге>"
-	"біз" prn pers p1 pl dat
+	"біз" prn pers p1 pl dat @obl #7->8
 "<байланысты>"
-	"байланысты" post @case
-	"байланысты" adj
-	"байланыс" n
-		"лы" post @case
-	"байланысты" adj
-		"е" cop aor p3 sg @cop
-	"байлан" v tv coop ifi p3 sg
-	"байланысты" adj subst nom
-	"байланыс" v iv ifi p3 sg
+	"байлан" v tv coop ifi p3 sg @root #8->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 
 # қысқа мерзімде Сіздің елдеріңіз тамаша нәтижелерге қол жеткізді .	in a short time span your country has achieved impressive results .
 "<Қысқа>"
@@ -3485,35 +3468,27 @@
 
 # - Мен Қазақстан секілді керемет елде қызмет етуді көптен бері армандағанмын .	I had dreams of working in such wonderful country for a long time .
 "<->"
-	"-" guio @punct
+	"-" guio @punct #1->10
 "<Мен>"
-	"мен" prn pers p1 sg nom
+	"мен" prn pers p1 sg nom @nsubj #2->10
 "<Қазақстан>"
-	"Қазақстан" np top nom
+	"Қазақстан" np top nom @nsubj #3->7
 "<секілді>"
-	"секіл" n acc
-	"секілді" post @case
-	"секілді" adv
-	"секіл" n
-		"лы" post @case
+	"секілді" adv @advmod #4->7
 "<керемет>"
-	"керемет" adj
-	"керемет" adv
-	"керемет" n nom
-	"керемет" n attr
-	"керемет" adj advl
+	"керемет" adj @amod #5->6
 "<елде>"
-	"ел" n loc
+	"ел" n loc @obl #6->7
 "<қызмет етуді>"
-	"қызмет ет" v tv ger acc
+	"қызмет ет" v tv ger acc @ccomp #7->10
 "<көптен>"
-	"көп" adj subst abl
+	"көп" adj subst abl @obl #8->10
 "<бері>"
-	"бері" adv @advmod
+	"бері" adv @advmod #9->10
 "<армандағанмын>"
-	"арманда" v iv past p1 sg @root
+	"арманда" v tv past p1 sg @root #10->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #11->10
 
 # Қазақстан басшысы мұнда менің әкем Президент болып тұрған кезде болған .	and I welcome you back .
 "<Қазақстан>"
