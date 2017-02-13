@@ -1,0 +1,33 @@
+"<«>"
+	"«" lquot @punct #1->8
+"<Балалы>"
+	"бала" n @advcl #2->8
+		"лы" post @case #3->2
+"<болсам>"
+	"бол" v iv gna_cond p1 sg @cop #4->2
+"<,>"
+	"," cm @punct #5->2
+"<әдемі>"
+	"әдемі" adj @amod #6->7
+"<өмірім>"
+	"өмір" n px1sg nom @nsubj #7->8
+"<бұзылады-ау>"
+	"бұз" v tv pass aor p3 sg @ccomp #8->13
+		"ау" mod_emo @discourse #9->8
+"<»>"
+	"»" rquot @punct #10->8
+"<,>"
+	"," cm @punct #11->8
+"<–>"
+	"–" guio @punct #12->8
+"<деп>"
+	"де" v tv gna_perf @advcl #13->14
+"<ойлайтын>"
+	"ойла" v tv gpr_impf @root #14->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #15->14
+"<Шолпан>"
+	"Шолпан" np ant f nom @nsubj #16->14
+"<...>"
+	"..." sent @punct #17->14
+¶
