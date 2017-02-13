@@ -1,0 +1,40 @@
+"<Ғашық>"
+	"ғашық" adj @amod #1->2
+"<адамға>"
+	"адам" n dat @obl #2->10
+"<Құранның>"
+	"Құран" np al gen @nmod:poss #3->4
+"<аяты>"
+	"аят" n px3sp nom @nsubj #4->5
+"<қасиетті>"
+	"қасиетті" adj @conj #5->10
+"<емес>"
+	"е" cop neg aor p3 sg @cop #6->5
+"<,>"
+	"," cm @punct #7->5
+"<жарының>"
+	"жар" n px3sp gen @nmod:poss #8->9
+"<сөзі>"
+	"сөз" n px3sp nom @nsubj #9->10
+"<қасиетті>"
+	"қасиетті" adj @root #10->0
+		"е" cop aor p3 sg @cop #11->10
+"<,>"
+	"," cm @punct #12->10
+"<жарынан>"
+	"жар" n px3sp abl @nmod #13->15
+"<басқа>"
+	"басқа" post @case #14->13
+"<адамның>"
+	"адам" n gen @nmod:poss #15->16
+"<сөзін>"
+	"сөз" n px3sp acc @obj #16->18
+"<не>"
+	"не" prn itg nom @xcomp #17->18
+"<қылсын>"
+	"қыл" v tv opt p3 sg @parataxis #18->10
+"<Шолпан>"
+	"Шолпан" np ant f nom @nsubj #19->18
+"<!>"
+	"!" sent @punct #20->18
+¶
