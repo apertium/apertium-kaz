@@ -331,7 +331,7 @@
 # sent_id = akorda-random.tagged.txt:18:294
 # text = Қазір 1 млрд. АҚШ долларына дейінгі қаражаты бар бірлескен қор құрылып жатыр.
 1	Қазір	қазір	ADV	adv	_	11	advmod	_	_
-2	1	1	NUM	num	_	3	compound	_	_
+2	1	1	NUM	num	NumType=Card	3	compound	_	_
 3	млрд.	млрд.	NOUN	abbr	_	5	nummod	_	_
 4	АҚШ	АҚШ	PROPN	np	Case=Nom	5	nmod:poss	_	_
 5	долларына	доллар	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
@@ -540,7 +540,7 @@
 # text = Мұнай өндіру 20 миллион тоннаға дейін ұлғайды.
 1	Мұнай	мұнай	NOUN	n	Case=Nom	2	obj	_	_
 2	өндіру	өндір	VERB	v	Case=Nom|VerbForm=Ger	7	csubj	_	_
-3	20	20	NUM	num	_	4	compound	_	_
+3	20	20	NUM	num	NumType=Card	4	compound	_	_
 4	миллион	миллион	NUM	num	NumType=Card	5	nummod	_	_
 5	тоннаға	тонна	NOUN	n	Case=Dat	7	obl	_	_
 6	дейін	дейін	ADP	post	_	5	case	_	_
@@ -558,7 +558,7 @@
 7	топтасқан	топта	VERB	v	Tense=Past|VerbForm=Part|Voice=Coop	8	acl:relcl	_	_
 8	өңірлерінің	өңір	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
 9-10	бірі	_	_	_	_	_	_	_	_
-9	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+9	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card|Person[psor]=3	0	root	_	_
 10	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	9	cop	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
@@ -576,7 +576,7 @@
 # text = Жобаның құны 2,3 миллиард теңгені құрайды.
 1	Жобаның	жоба	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	құны	құн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-3	2,3	2,3	NUM	num	_	4	compound	_	_
+3	2,3	2,3	NUM	num	NumType=Card	4	compound	_	_
 4	миллиард	миллиард	NUM	num	NumType=Card	5	nummod	_	_
 5	теңгені	теңге	NOUN	n	Case=Acc	6	obj	_	_
 6	құрайды	құра	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
@@ -692,7 +692,7 @@
 3	салған	сал	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 4	инвестициясының	инвестиция	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
-6	2	2	NUM	num	_	7	compound	_	_
+6	2	2	NUM	num	NumType=Card	7	compound	_	_
 7	миллиард	миллиард	NUM	num	NumType=Card	8	nummod	_	_
 8	доллардан	доллар	NOUN	n	Case=Abl	10	obl	_	_
 9	асып	асып	X	x	_	10	dep	_	_
@@ -724,7 +724,7 @@
 1	Зейнетақы	зейнетақы	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	жинақтарының	жинақ	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
-4	2,2	2,2	NUM	num	_	5	compound	_	_
+4	2,2	2,2	NUM	num	NumType=Card	5	compound	_	_
 5	трлн.	трлн.	NOUN	abbr	_	6	nummod	_	_
 6	теңгеге	теңге	NOUN	n	Case=Dat	7	obl	_	_
 7	артты	арт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -945,7 +945,7 @@
 1	Нысанның	нысан	NOUN	n	Case=Gen	3	nmod:poss	_	_
 2	жалпы	жалпы	ADJ	adj	_	3	amod	_	_
 3	құны	құн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-4	8,6	8,6	NUM	num	_	5	compound	_	_
+4	8,6	8,6	NUM	num	NumType=Card	5	compound	_	_
 5	миллиард	миллиард	NUM	num	NumType=Card	6	nummod	_	_
 6-7	теңге	_	_	_	_	_	_	_	_
 6	теңге	теңге	NOUN	n	Case=Nom	0	root	_	_
@@ -980,7 +980,7 @@
 4	сауда	сауда	NOUN	n	Case=Nom	5	nmod:poss	_	_
 5	айналымының	айналым	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
 6	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
-7	531	531	NUM	num	_	8	compound	_	_
+7	531	531	NUM	num	NumType=Card	8	compound	_	_
 8	миллион	миллион	NOUN	n	Case=Nom	10	nummod	_	_
 9	АҚШ	АҚШ	PROPN	np	Case=Nom	10	nmod:poss	_	_
 10	долларын	доллар	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	11	obj	_	_
@@ -1247,7 +1247,7 @@
 10	тамаша	тамаша	ADJ	adj	_	11	amod	_	_
 11	жеңістерге	жеңіс	NOUN	n	Case=Dat|Number=Plur	12	obl	_	_
 12-13	жетіңіз	_	_	_	_	_	_	_	_
-12	жеті	жеті	NUM	num	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form	0	root	_	_
+12	жеті	жеті	NUM	num	Case=Nom|Number[psor]=Sing|NumType=Card|Person[psor]=2|Polite=Form	0	root	_	_
 13	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	12	cop	_	_
 14	.	.	PUNCT	sent	_	12	punct	_	_
 
@@ -1427,7 +1427,7 @@
 3	жас	жас	NOUN	n	Case=Nom	5	nsubj	_	_
 4	–	–	PUNCT	guio	_	5	punct	_	_
 5-6	35	_	_	_	_	_	_	_	_
-5	35	35	NUM	num	_	0	root	_	_
+5	35	35	NUM	num	NumType=Card	0	root	_	_
 6	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	5	cop	_	_
 7	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -1451,7 +1451,7 @@
 3	бері	бері	ADP	post	_	2	case	_	_
 4	аталған	ата	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
 5	компания	компания	NOUN	n	Case=Nom	11	nsubj	_	_
-6	екі	екі	NUM	num	_	7	compound	_	_
+6	екі	екі	NUM	num	NumType=Card	7	compound	_	_
 7	миллиард	миллиард	NUM	num	NumType=Card	8	nummod	_	_
 8	долларға	доллар	NOUN	n	Case=Dat	11	obl	_	_
 9	жуық	жуық	ADP	post	_	8	case	_	_
@@ -1561,8 +1561,8 @@
 1	Тек	тек	ADV	adv	_	2	advmod	_	_
 2	биылғы	биыл	ADV	adv	Case=Nom	3	amod	_	_
 3	жылдың	жыл	NOUN	n	Case=Gen	4	nmod:poss	_	_
-4	өзінде	өз	PRON	prn	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	10	obl	_	_
-5	Астанада	Астана	PROPN	np	Case=Loc	10	obl	_	_
+4	өзінде	өз	PRON	prn	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	9	obl	_	_
+5	Астанада	Астана	PROPN	np	Case=Loc	9	obl	_	_
 6	шетелдердің	шетел	NOUN	n	Case=Gen|Number=Plur	8	nmod:poss	_	_
 7	12	12	NUM	num	NumType=Card	8	nummod	_	_
 8	елшілігі	елшілік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
@@ -1829,7 +1829,7 @@
 8	үздік	үздік	ADJ	adj	_	9	amod	_	_
 9	мектептердің	мектеп	NOUN	n	Case=Gen|Number=Plur	10	nmod:poss	_	_
 10-11	бірі	_	_	_	_	_	_	_	_
-10	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+10	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card|Person[psor]=3	0	root	_	_
 11	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	10	cop	_	_
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -2302,7 +2302,7 @@
 2	мақсатта	мақсат	NOUN	n	Case=Loc	9	obl	_	_
 3	Астана	Астана	PROPN	np	Case=Nom	4	nmod:poss	_	_
 4	қаласына	қала	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
-5	107	107	NUM	num	_	6	compound	_	_
+5	107	107	NUM	num	NumType=Card	6	compound	_	_
 6	миллиард	миллиард	NUM	num	NumType=Card	7	nummod	_	_
 7	теңге	теңге	NOUN	n	Case=Nom	9	nsubj	_	_
 8	қаржы	қаржы	NOUN	n	Case=Nom	9	compound:lvc	_	_
@@ -2879,7 +2879,7 @@
 # text = Мен мұнда қырықтан астам рет болдым.
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	5	obl	_	_
-3	қырықтан	қырық	NUM	num	Case=Abl	5	nmod	_	_
+3	қырықтан	қырық	NUM	num	Case=Abl|NumType=Card,Ord	5	nmod	_	_
 4	астам	астам	ADJ	adj	_	5	amod	_	_
 5	рет	рет	NOUN	n	Case=Nom	0	root	_	_
 6	болдым	бол	AUX	v	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	5	cop	_	_
@@ -2983,7 +2983,7 @@
 1	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nmod:poss	_	_
 2	еліміз	ел	NOUN	n	Case=Nom|Number[psor]=Plur|Person[psor]=1	7	nsubj	_	_
 3	Тәуелсіздігінің	тәуелсіздік	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
-4	15	15	NUM	num	_	6	compound	_	_
+4	15	15	NUM	num	NumType=Card	6	compound	_	_
 5	-	-	PUNCT	guio	_	6	punct	_	_
 6	жылдығының	жылдық	ADJ	adj	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
 7	қарсаңында	қарсаң	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
@@ -3029,7 +3029,7 @@
 3	жылмен	жыл	NOUN	n	Case=Ins	4	obl	_	_
 4	салыстырғанда	салыстыр	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	9	advcl	_	_
 5	,	,	PUNCT	cm	_	9	punct	_	_
-6	бір	бір	NUM	num	_	7	compound	_	_
+6	бір	бір	NUM	num	NumType=Card	7	compound	_	_
 7	жарым	жарым	NOUN	n	Case=Nom	8	nummod	_	_
 8	есе	есе	NOUN	n	Case=Nom	9	nsubj	_	_
 9-10	артық	_	_	_	_	_	_	_	_
@@ -3062,7 +3062,7 @@
 5	табысқа	табыс	NOUN	n	Case=Dat	6	obl	_	_
 6	жетелеуші	жетеле	VERB	v	Mood=Pot|VerbForm=Part	7	acl:relcl	_	_
 7	қасиеттердің	қасиет	NOUN	n	Case=Gen|Number=Plur	8	nmod:poss	_	_
-8	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	advcl	_	_
+8	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	10	advcl	_	_
 9	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	8	cop	_	_
 10	табылады	тап	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
 11	.	.	PUNCT	sent	_	10	punct	_	_
@@ -3072,7 +3072,7 @@
 1	Жедел	жедел	ADJ	adj	_	2	amod	_	_
 2	жәрдем	жәрдем	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	ауруханасы	аурухана	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
-4	2010	2010	NUM	num	_	5	compound	_	_
+4	2010	2010	NUM	num	NumType=Card	5	compound	_	_
 5	жылғы	жылғы	ADJ	adj	_	6	amod	_	_
 6	желтоқсанда	желтоқсан	NOUN	n	Case=Loc	7	obl	_	_
 7	салынған	сал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -3231,7 +3231,7 @@
 # text = Жобаның құны 32,2 миллиард теңгені құрайды.
 1	Жобаның	жоба	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	құны	құн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-3	32,2	32,2	NUM	num	_	4	compound	_	_
+3	32,2	32,2	NUM	num	NumType=Card	4	compound	_	_
 4	миллиард	миллиард	NUM	num	NumType=Card	5	nummod	_	_
 5	теңгені	теңге	NOUN	n	Case=Acc	6	obj	_	_
 6	құрайды	құра	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
@@ -3359,7 +3359,7 @@
 1	Жобаның	жоба	NOUN	n	Case=Gen	3	nmod:poss	_	_
 2	жалпы	жалпы	ADJ	adj	_	3	amod	_	_
 3	құны	құн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-4	115	115	NUM	num	_	5	compound	_	_
+4	115	115	NUM	num	NumType=Card	5	compound	_	_
 5	миллиард	миллиард	NUM	num	NumType=Card	6	nummod	_	_
 6-7	теңге	_	_	_	_	_	_	_	_
 6	теңге	теңге	NOUN	n	Case=Nom	0	root	_	_
@@ -3368,7 +3368,7 @@
 
 # sent_id = akorda-random.tagged.txt:265:4826
 # text = 2030 стратегиясы 1997 жылы ашық құжат ретінде жасалды.
-1	2030	2030	NUM	num	Case=Nom	2	nmod:poss	_	_
+1	2030	2030	NUM	num	Case=Nom|NumType=Card,Ord	2	nmod:poss	_	_
 2	стратегиясы	стратегия	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 3	1997	1997	NUM	num	NumType=Ord	4	amod	_	_
 4	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
@@ -3383,7 +3383,7 @@
 1	Бағдардың	бағдар	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	қашықтығы	қашықтық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 3	4,3	4,3	NUM	num	NumType=Card	4	nummod	_	_
-4	мыңнан	мың	NUM	num	Case=Abl	6	nmod	_	_
+4	мыңнан	мың	NUM	num	Case=Abl|NumType=Card,Ord	6	nmod	_	_
 5	астам	астам	ADJ	adj	_	6	amod	_	_
 6	шақырымды	шақырым	NOUN	n	Case=Acc	7	obj	_	_
 7	құрайды	құра	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
@@ -3565,9 +3565,9 @@
 1	Мемлекет	мемлекет	NOUN	n	Case=Nom	11	nsubj	_	_
 2	жыл	жыл	NOUN	n	Case=Nom	11	obl	_	_
 3	сайын	сайын	ADP	post	_	2	case	_	_
-4	2	2	NUM	num	_	5	compound	_	_
-5	миллиард	миллиард	NUM	num	_	6	compound	_	_
-6	300	300	NUM	num	_	7	compound	_	_
+4	2	2	NUM	num	NumType=Card	5	compound	_	_
+5	миллиард	миллиард	NUM	num	NumType=Card	6	compound	_	_
+6	300	300	NUM	num	NumType=Card	7	compound	_	_
 7	миллион	миллион	NUM	num	NumType=Card	8	nummod	_	_
 8	теңгеден	теңге	NOUN	n	Case=Abl	10	nmod	_	_
 9	астам	астам	ADJ	adj	_	10	amod	_	_
@@ -3666,7 +3666,7 @@
 
 # sent_id = akorda-random.tagged.txt:290:5276
 # text = 2008-2009 жылдардағы жаһандық дағдарыс осыны айғақтады.
-1	2008	2008	NUM	num	_	4	nmod	_	_
+1	2008	2008	NUM	num	NumType=Card,Ord	4	nmod	_	_
 2	-	-	PUNCT	guio	_	3	punct	_	_
 3	2009	2009	NUM	num	NumType=Ord	4	amod	_	_
 4	жылдардағы	жыл	NOUN	n	Case=Loc|Number=Plur	6	amod	_	_
@@ -3695,7 +3695,7 @@
 2	тауар	тауар	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	айналымының	айналым	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 4	деңгейі	деңгей	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
-5	53	53	NUM	num	_	6	compound	_	_
+5	53	53	NUM	num	NumType=Card	6	compound	_	_
 6	миллиард	миллиард	NUM	num	NumType=Card	7	nummod	_	_
 7	долларға	доллар	NOUN	n	Case=Dat	8	obl	_	_
 8	жетті	жет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -3915,7 +3915,7 @@
 6	тараған	тара	VERB	v	Tense=Past|VerbForm=Part	7	acl:relcl	_	_
 7	конфессияның	конфессия	NOUN	n	Case=Gen	8	nmod:poss	_	_
 8-9	бірі	_	_	_	_	_	_	_	_
-8	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+8	бір	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card|Person[psor]=3	0	root	_	_
 9	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	8	cop	_	_
 10	.	.	PUNCT	sent	_	8	punct	_	_
 
@@ -4425,9 +4425,9 @@
 
 # sent_id = kdt.tagged.txt:24:402
 # text = Бірінен болмаса бірінен өлуіміз хақ.
-1	Бірінен	бір	NUM	num	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	5	advcl	_	_
+1	Бірінен	бір	NUM	num	Case=Abl|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	5	advcl	_	_
 2	болмаса	бол	AUX	v	Mood=Cnd|Number=Sing|Person=3|Polarity=Neg|VerbForm=Conv	1	cop	_	_
-3	бірінен	бір	NUM	num	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
+3	бірінен	бір	NUM	num	Case=Abl|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	4	nmod	_	_
 4	өлуіміз	өл	VERB	v	Case=Nom|Number[psor]=Plur|Person[psor]=1|VerbForm=Ger	5	csubj	_	_
 5-6	хақ	_	_	_	_	_	_	_	_
 5	хақ	хақ	NOUN	n	Case=Nom	0	root	_	_
@@ -4445,7 +4445,7 @@
 # text = Жасым 35-те.
 1	Жасым	жас	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
 2-3	35-те	_	_	_	_	_	_	_	_
-2	35	35	NUM	num	Case=Loc	0	root	_	_
+2	35	35	NUM	num	Case=Loc|NumType=Card	0	root	_	_
 3	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	2	cop	_	_
 4	.	.	PUNCT	sent	_	2	punct	_	_
 
@@ -5214,7 +5214,7 @@
 # text = Сол шапқыншының бірі осы екен.
 1	Сол	сол	DET	det	PronType=Dem	2	det	_	_
 2	шапқыншының	шапқыншы	NOUN	n	Case=Gen	3	nmod:poss	_	_
-3	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
+3	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	4	nsubj	_	_
 4	осы	осы	PRON	prn	Case=Nom|PronType=Dem	0	root	_	_
 5	екен	е	AUX	cop	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	cop	_	_
 6	.	.	PUNCT	sent	_	4	punct	_	_
@@ -5280,7 +5280,7 @@
 3	оңдап	оңда	VERB	v	Aspect=Perf|VerbForm=Conv	7	advcl	_	_
 4	елдің	ел	NOUN	n	Case=Gen	5	nmod:poss	_	_
 5	көзі	көз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
-6	бір	бір	NUM	num	_	7	advmod	_	_
+6	бір	бір	NUM	num	NumType=Card,Ord	7	advmod	_	_
 7	ашылды	аш	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
 8	...	...	PUNCT	sent	_	7	punct	_	_
 
@@ -5333,7 +5333,7 @@
 9	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 10	қалды	қал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
 11	,	,	PUNCT	cm	_	9	punct	_	_
-12	бес	бес	NUM	num	_	14	conj	_	_
+12	бес	бес	NUM	num	NumType=Card,Ord	14	conj	_	_
 13	-	-	PUNCT	guio	_	14	punct	_	_
 14	алты	алты	NUM	num	NumType=Card	15	nummod	_	_
 15	адымдай	адым	NOUN	n	_	17	nmod	_	_
@@ -6222,7 +6222,7 @@
 
 # sent_id = kdt.tagged.txt:189:3051
 # text = Бірін қалдырмай ұстап әкелді.
-1	Бірін	бір	NUM	num	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
+1	Бірін	бір	NUM	num	Case=Acc|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	4	obj	_	_
 2	қалдырмай	қалдыр	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	4	advcl	_	_
 3	ұстап	ұста	VERB	v	Aspect=Perf|VerbForm=Conv	4	advcl	_	_
 4	әкелді	әкел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -6249,7 +6249,7 @@
 11	ел	ел	NOUN	n	Case=Nom	12	nmod:poss	_	_
 12	қазағы	қазақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	23	nsubj	_	_
 13	"	"	PUNCT	sent	_	20	punct	_	_
-14	бір	бір	NUM	num	_	15	advmod	_	_
+14	бір	бір	NUM	num	NumType=Card,Ord	15	advmod	_	_
 15	айналып	айнал	VERB	v	Aspect=Perf|VerbForm=Conv	16	advcl	_	_
 16	соғармын	соқ	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Fut|VerbForm=Fin	20	parataxis	_	_
 17	,	,	PUNCT	cm	_	16	punct	_	_
@@ -6501,7 +6501,7 @@
 
 # sent_id = kdt.tagged.txt:215:3461
 # text = Бір миллион пұт тас көмір тасылған.
-1	Бір	бір	NUM	num	_	2	compound	_	_
+1	Бір	бір	NUM	num	NumType=Card	2	compound	_	_
 2	миллион	миллион	NUM	num	NumType=Card	5	nummod	_	_
 3	пұт	пұт	NOUN	n	Case=Nom	2	clf	_	_
 4	тас	тас	NOUN	n	Case=Nom	5	compound	_	_
@@ -6593,7 +6593,7 @@
 
 # sent_id = kdt.tagged.txt:223:3605
 # text = 12. Мұнан кейін елге сайлаушы шықты.
-1	12	12	NUM	num	_	0	root	_	_
+1	12	12	NUM	num	NumType=Card	0	root	_	_
 2	.	.	PUNCT	sent	_	1	punct	_	_
 3	Мұнан	бұл	PRON	prn	Case=Abl|PronType=Dem	7	nmod	_	_
 4	кейін	кейін	ADP	post	_	3	case	_	_
@@ -6736,7 +6736,7 @@
 # sent_id = kdt.tagged.txt:234:3825
 # text = Бекболат екі-үш көшені айналып, салған бойымен Төлегеннің пәтеріне келді.
 1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Masc	12	nsubj	_	_
-2	екі	екі	NUM	num	_	4	compound	_	_
+2	екі	екі	NUM	num	NumType=Card	4	compound	_	_
 3	-	-	PUNCT	guio	_	4	punct	_	_
 4	үш	үш	NUM	num	NumType=Card	5	nummod	_	_
 5	көшені	көше	NOUN	n	Case=Acc	6	obj	_	_
@@ -6841,7 +6841,7 @@
 
 # sent_id = kdt.tagged.txt:244:3978
 # text = Алайда партияға кірген жолдастарымен пікірі, қызметі, ымы-жымы бір еді.
-1	Алайда	алайда	SCONJ	cnjadv	_	12	cc	_	_
+1	Алайда	алайда	SCONJ	cnjadv	_	10	cc	_	_
 2	партияға	партия	NOUN	n	Case=Dat	3	iobj	_	_
 3	кірген	кір	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 4	жолдастарымен	жолдас	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
@@ -6850,7 +6850,7 @@
 7	қызметі	қызмет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	conj	_	_
 8	,	,	PUNCT	cm	_	11	punct	_	_
 9	ымы-жымы	ымы-жымы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
-10	бір	бір	NUM	num	Case=Nom	0	root	_	_
+10	бір	бір	NUM	num	Case=Nom|NumType=Card	0	root	_	_
 11	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	cop	_	_
 12	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -6906,7 +6906,7 @@
 2	келген	кел	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 3	төрт	төрт	NUM	num	NumType=Card	4	nummod	_	_
 4	жігіттің	жігіт	NOUN	n	Case=Gen	5	nmod:poss	_	_
-5	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
+5	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	14	nsubj	_	_
 6	қошқар	қошқар	NOUN	n	Case=Nom	7	acl	_	_
 7	туған	ту	VERB	v	Tense=Past|VerbForm=Part	8	acl:relcl	_	_
 8	қозыдай	қозы	NOUN	n	_	9	advmod	_	_
@@ -7532,7 +7532,7 @@
 41	бостандықтарға	бостандық	NOUN	n	Case=Dat|Number=Plur	42	nmod	_	_
 42	алаланбай	алала	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv|Voice=Pass	47	advcl	_	_
 43	,	,	PUNCT	cm	_	42	punct	_	_
-44	бірдей	бір	NUM	num	_	47	advmod	_	_
+44	бірдей	бір	NUM	num	NumType=Card,Ord	47	advmod	_	_
 45	тең	тең	ADJ	adj	_	47	advmod	_	_
 46	ие	ие	X	x	_	47	dep	_	_
 47	болуы	бол	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	48	csubj	_	_
@@ -7706,7 +7706,7 @@
 10	арқылы	арқылы	ADP	post	_	9	case	_	_
 11	алаланбай	алала	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv|Voice=Pass	15	advcl	_	_
 12	,	,	PUNCT	cm	_	11	punct	_	_
-13	бірдей	бір	NUM	num	_	16	advmod	_	_
+13	бірдей	бір	NUM	num	NumType=Card,Ord	16	advmod	_	_
 14	тең	тең	ADJ	adj	_	15	advmod	_	_
 15	қорғалуға	қорға	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	16	advcl	_	_
 16-17	құқылы	_	_	_	_	_	_	_	_
@@ -8541,7 +8541,7 @@
 10	дінін	дін	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	11	conj	_	_
 11	адамшылығын	адамшылық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	15	obj	_	_
 12	жаурыннан	жаурын	NOUN	n	Case=Abl	14	nmod	_	_
-13	бір	бір	NUM	num	_	14	advmod	_	_
+13	бір	бір	NUM	num	NumType=Card,Ord	14	advmod	_	_
 14	қаққанға	қақ	VERB	v	Case=Dat|Tense=Past|VerbForm=Ger	15	advcl	_	_
 15	сатады	сат	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
 16	.	.	PUNCT	sent	_	15	punct	_	_
@@ -8585,7 +8585,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:16:397
 # text = Ләкин осы күнде орыс ғылымын баласына үйреткен жандар соның қаруымен тағы қазақты аңдысам екен дейді.
-1	Ләкин	ләкин	CCONJ	cnjcoo	_	15	cc	_	_
+1	Ләкин	ләкин	CCONJ	cnjcoo	_	14	cc	_	_
 2	осы	осы	DET	det	PronType=Dem	3	det	_	_
 3	күнде	күн	NOUN	n	Case=Loc	7	nmod	_	_
 4	орыс	орыс	NOUN	n	Case=Nom	5	nmod:poss	_	_
@@ -8927,7 +8927,7 @@
 1	Футболдан	футбол	NOUN	n	Case=Abl	3	nmod	_	_
 2	әлем	әлем	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	appos	_	_
-4	2014	2014	NUM	num	_	3	compound	_	_
+4	2014	2014	NUM	num	NumType=Card	3	compound	_	_
 5	—	—	PUNCT	guio	_	4	punct	_	_
 6	ФИФА-ның	ФИФА	PROPN	np	Case=Gen	10	nmod:poss	_	_
 7	20-шы	20	NUM	num	NumType=Ord	10	amod	_	_
@@ -9095,7 +9095,7 @@
 # text = ӘЧ-2014 іріктеу айналымы 2011 жылдың маусым айында басталып, 2013 жылдың қараша айында аяқталды.
 1	ӘЧ	ӘЧ	PROPN	np	Case=Nom	5	nmod:poss	_	_
 2	-	-	PUNCT	guio	_	1	punct	_	_
-3	2014	2014	NUM	num	_	1	compound	_	_
+3	2014	2014	NUM	num	NumType=Card	1	compound	_	_
 4	іріктеу	ірікте	VERB	v	Case=Nom|VerbForm=Ger	5	acl	_	_
 5	айналымы	айналым	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nsubj	_	_
 6	2011	2011	NUM	num	NumType=Ord	7	amod	_	_
@@ -9137,7 +9137,7 @@
 9	командалар	команда	NOUN	n	Case=Nom|Number=Plur	12	nmod	_	_
 10	1	1	NUM	num	NumType=Ord	13	amod	_	_
 11	/	/	SYM	sym	_	12	case	_	_
-12	8	8	NUM	num	_	10	compound	_	_
+12	8	8	NUM	num	NumType=Card	10	compound	_	_
 13	финалға	финал	NOUN	n	Case=Dat	14	nmod	_	_
 14	шығады	шық	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
 15	.	.	PUNCT	sent	_	14	punct	_	_
@@ -9198,7 +9198,7 @@
 4	адам	адам	NOUN	n	Case=Nom	0	root	_	_
 5	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	cop	_	_
 6	(	(	PUNCT	lpar	_	7	punct	_	_
-7	1999	1999	NUM	num	_	4	appos	_	_
+7	1999	1999	NUM	num	NumType=Card,Ord	4	appos	_	_
 8	)	)	PUNCT	rpar	_	7	punct	_	_
 9	.	.	PUNCT	sent	_	4	punct	_	_
 
@@ -9210,17 +9210,17 @@
 4	:	:	PUNCT	sent	_	3	punct	_	_
 5	парсылар	парсы	NOUN	n	Case=Nom|Number=Plur	30	conj	_	_
 6	(	(	PUNCT	lpar	_	7	punct	_	_
-7	51%	51	NUM	num	Case=Nom	5	appos	_	_
+7	51%	51	NUM	num	Case=Nom|NumType=Card,Ord	5	appos	_	_
 8	)	)	PUNCT	rpar	_	7	punct	_	_
 9	,	,	PUNCT	cm	_	30	punct	_	_
 10	әзірбайжандар	әзірбайжан	NOUN	n	Case=Nom|Number=Plur	30	conj	_	_
 11	(	(	PUNCT	lpar	_	12	punct	_	_
-12	27%	27	NUM	num	Case=Nom	10	appos	_	_
+12	27%	27	NUM	num	Case=Nom|NumType=Card,Ord	10	appos	_	_
 13	)	)	PUNCT	rpar	_	12	punct	_	_
 14	,	,	PUNCT	cm	_	30	punct	_	_
 15	күрдтер	күрд	NOUN	n	Case=Nom|Number=Plur	30	conj	_	_
 16	(	(	PUNCT	lpar	_	17	punct	_	_
-17	5%	5	NUM	num	Case=Nom	15	appos	_	_
+17	5%	5	NUM	num	Case=Nom|NumType=Card,Ord	15	appos	_	_
 18	)	)	PUNCT	rpar	_	17	punct	_	_
 19	,	,	PUNCT	cm	_	30	punct	_	_
 20	арабтар	араб	NOUN	n	Case=Nom|Number=Plur	30	conj	_	_
@@ -9243,7 +9243,7 @@
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
 3-4	58,3%	_	_	_	_	_	_	_	_
-3	58,3	58,3	NUM	num	Case=Nom	0	root	_	_
+3	58,3	58,3	NUM	num	Case=Nom|NumType=Card	0	root	_	_
 4	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	3	cop	_	_
 5	.	.	PUNCT	sent	_	3	punct	_	_
 
@@ -9259,7 +9259,7 @@
 7	айналасын	айнала	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 8	қосқанда	қос	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	10	advcl	_	_
 9	12	12	NUM	num	NumType=Card	10	nummod	_	_
-10	миллионнан	миллион	NUM	num	Case=Abl	4	appos	_	_
+10	миллионнан	миллион	NUM	num	Case=Abl|NumType=Card,Ord	4	appos	_	_
 11	астам	астам	ADP	post	_	10	case	_	_
 12	)	)	PUNCT	rpar	_	10	punct	_	_
 13	.	.	PUNCT	sent	_	4	punct	_	_
@@ -9271,25 +9271,25 @@
 3	Мешхед	Мешхед	PROPN	np	Case=Nom	21	conj	_	_
 4	(	(	PUNCT	lpar	_	6	punct	_	_
 5	1,5	1,5	NUM	num	NumType=Card	6	nummod	_	_
-6	млн.	млн.	NUM	num	_	3	appos	_	_
+6	млн.	млн.	NUM	num	NumType=Card,Ord	3	appos	_	_
 7	)	)	PUNCT	rpar	_	6	punct	_	_
 8	,	,	PUNCT	cm	_	21	punct	_	_
 9	Исфаһан	Исфаһан	PROPN	np	Case=Nom	21	conj	_	_
 10	(	(	PUNCT	lpar	_	12	punct	_	_
 11	1	1	NUM	num	NumType=Card	12	nummod	_	_
-12	млн.	млн.	NUM	num	_	9	appos	_	_
+12	млн.	млн.	NUM	num	NumType=Card,Ord	9	appos	_	_
 13	)	)	PUNCT	rpar	_	12	punct	_	_
 14	,	,	PUNCT	cm	_	21	punct	_	_
 15	Тебриз	Тебриз	PROPN	np	Case=Nom	21	conj	_	_
 16	(	(	PUNCT	lpar	_	18	punct	_	_
 17	852	852	NUM	num	NumType=Card	18	nummod	_	_
-18	мың	мың	NUM	num	_	15	appos	_	_
+18	мың	мың	NUM	num	NumType=Card,Ord	15	appos	_	_
 19	)	)	PUNCT	rpar	_	18	punct	_	_
 20	,	,	PUNCT	cm	_	21	punct	_	_
 21	Шираз	Шираз	PROPN	np	Case=Nom	28	nmod	_	_
 22	(	(	PUNCT	lpar	_	24	punct	_	_
 23	800	800	NUM	num	NumType=Card	24	nummod	_	_
-24	мың	мың	NUM	num	_	21	appos	_	_
+24	мың	мың	NUM	num	NumType=Card,Ord	21	appos	_	_
 25	)	)	PUNCT	rpar	_	24	punct	_	_
 26	сияқты	сияқты	ADP	post	_	21	case	_	_
 27	ірі	ірі	ADJ	adj	_	28	amod	_	_
@@ -9429,7 +9429,7 @@
 7	Революция	революция	NOUN	n	Case=Nom	8	nmod:poss	_	_
 8	күні	күн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	appos	_	_
 9	(	(	PUNCT	lpar	_	10	punct	_	_
-10	1979	1979	NUM	num	_	4	appos	_	_
+10	1979	1979	NUM	num	NumType=Card,Ord	4	appos	_	_
 11	)	)	PUNCT	rpar	_	10	punct	_	_
 12	.	.	PUNCT	sent	_	4	punct	_	_
 
@@ -9554,18 +9554,18 @@
 1	Қаңтардағы	қаңтар	NOUN	n	Case=Loc	3	amod	_	_
 2	орташа	орташа	ADJ	adj	_	3	amod	_	_
 3	температура	температура	NOUN	n	Case=Nom	5	nsubj	_	_
-4	2°С-тан	2°С	NUM	num	Case=Abl	5	obl	_	_
-5	19,4°С-қа	19,4°С	NUM	num	Case=Dat	13	conj	_	_
+4	2°С-тан	2°С	NUM	num	Case=Abl|NumType=Card,Ord	5	obl	_	_
+5	19,4°С-қа	19,4°С	NUM	num	Case=Dat|NumType=Card,Ord	13	conj	_	_
 6-7	дейін	_	_	_	_	_	_	_	_
 6	дейін	дейін	ADP	post	_	5	case	_	_
 7	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	5	cop	_	_
 8	,	,	PUNCT	cm	_	5	punct	_	_
 9	шілде	шілде	NOUN	n	Case=Nom	10	nmod:poss	_	_
 10	айында	ай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod	_	_
-11	29,4	29,4	NUM	num	_	13	obl	_	_
+11	29,4	29,4	NUM	num	NumType=Card,Ord	13	obl	_	_
 12	—	—	PUNCT	guio	_	13	punct	_	_
 13-14	32,5°С	_	_	_	_	_	_	_	_
-13	32,5°	32,5°С	NUM	num	_	0	root	_	_
+13	32,5°	32,5°С	NUM	num	NumType=Card	0	root	_	_
 14	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	13	cop	_	_
 15	.	.	PUNCT	sent	_	13	punct	_	_
 
@@ -9592,7 +9592,7 @@
 7	,	,	PUNCT	cm	_	5	punct	_	_
 8	Систан	Систан	PROPN	np	Case=Nom	9	nmod:poss	_	_
 9	ойысында	ойыс	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	obl	_	_
-10	50	50	NUM	num	_	13	obl	_	_
+10	50	50	NUM	num	NumType=Card,Ord	13	obl	_	_
 11	—	—	PUNCT	guio	_	13	punct	_	_
 12	60	60	NUM	num	NumType=Card	13	nummod	_	_
 13-14	мм	_	_	_	_	_	_	_	_
@@ -9624,11 +9624,11 @@
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	nmod	_	_
 3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	16	conj	_	_
-4	100-ге	100	NUM	num	Case=Dat	3	orphan	_	_
+4	100-ге	100	NUM	num	Case=Dat|NumType=Card,Ord	3	orphan	_	_
 5	тарта	тарта	ADP	post	_	4	case	_	_
 6	,	,	PUNCT	cm	_	3	punct	_	_
 7	құстардың	құс	NOUN	n	Case=Gen|Number=Plur	16	conj	_	_
-8	400-ге	400	NUM	num	Case=Dat	7	orphan	_	_
+8	400-ге	400	NUM	num	Case=Dat|NumType=Card,Ord	7	orphan	_	_
 9	жуық	жуық	ADP	post	_	8	case	_	_
 10	,	,	PUNCT	cm	_	7	punct	_	_
 11	бауырымен	бауырымен	X	x	_	12	dep	_	_
@@ -9847,7 +9847,7 @@
 
 # sent_id = Иран.tagged.txt:41:1102
 # text = 9 — 10 ғасырларда елде Араб халифатына шартты түрде ғана тәуелді болған әмірліктер құрылды.
-1	9	9	NUM	num	_	3	conj	_	_
+1	9	9	NUM	num	NumType=Card,Ord	3	conj	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	10	10	NUM	num	NumType=Ord	4	amod	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	14	nmod	_	_
@@ -9882,7 +9882,7 @@
 # text = Сондай әмірліктердің бірі Самани әулеті биліктен кеткеннен кейін Шығыс Иран Ауғанстанмен және Орта Азияның бір бөлігімен бірге түркі текті Ғазнауи әулеті билеген мемлекеттің құрамына кірді.
 1	Сондай	сондай	DET	det	PronType=Ind	2	det	_	_
 2	әмірліктердің	әмірлік	NOUN	n	Case=Gen|Number=Plur	3	nmod:poss	_	_
-3	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+3	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	7	nsubj	_	_
 4	Самани	Самани	PROPN	np	Case=Nom	5	nmod:poss	_	_
 5	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	appos	_	_
 6	биліктен	билік	NOUN	n	Case=Abl	7	nmod	_	_
@@ -9978,7 +9978,7 @@
 
 # sent_id = Иран.tagged.txt:47:1325
 # text = 1220 — 56 ж. Иранды Шыңғыс хан әулеті жаулап алды.
-1	1220	1220	NUM	num	_	3	conj	_	_
+1	1220	1220	NUM	num	NumType=Card,Ord	3	conj	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	56	56	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	9	nmod	_	_
@@ -10018,7 +10018,7 @@
 11	кетті	кет	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 12	де	да	CCONJ	cnjcoo	_	22	cc	_	_
 13	,	,	PUNCT	cm	_	22	punct	_	_
-14	1380	1380	NUM	num	_	17	conj	_	_
+14	1380	1380	NUM	num	NumType=Card,Ord	17	conj	_	_
 15	—	—	PUNCT	guio	_	17	punct	_	_
 16	93	93	NUM	num	NumType=Ord	17	amod	_	_
 17	ж.	ж.	NOUN	abbr	_	22	nmod	_	_
@@ -10066,7 +10066,7 @@
 12	басып	бас	VERB	v	Aspect=Perf|VerbForm=Conv	13	advcl	_	_
 13	кіріп	кір	VERB	v	Aspect=Perf|VerbForm=Conv	26	advcl	_	_
 14	,	,	PUNCT	cm	_	13	punct	_	_
-15	1501	1501	NUM	num	_	17	conj	_	_
+15	1501	1501	NUM	num	NumType=Card,Ord	17	conj	_	_
 16	—	—	PUNCT	guio	_	17	punct	_	_
 17	1610	1610	NUM	num	NumType=Ord	18	amod	_	_
 18	ж.	ж.	NOUN	abbr	_	21	nmod	_	_
@@ -10082,7 +10082,7 @@
 
 # sent_id = Иран.tagged.txt:52:1505
 # text = 17 — 18 ғасырларда Иранның экономикасы құлдырап, халықтың жағдайы нашарлап кетті.
-1	17	17	NUM	num	_	3	compound	_	_
+1	17	17	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	18	18	NUM	num	NumType=Ord	4	amod	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	7	nmod	_	_
@@ -10248,7 +10248,7 @@
 
 # sent_id = Иран.tagged.txt:61:1792
 # text = 1905 — 11 ж. елде шетелдіктерге қарсы ұлт-азаттық қозғалысы болып өтті.
-1	1905	1905	NUM	num	_	3	compound	_	_
+1	1905	1905	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	11	11	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	10	nmod	_	_
@@ -10391,7 +10391,7 @@
 # text = Алайда, 1929 — 33 ж. болған дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады.
 1	Алайда	алайда	SCONJ	cnjadv	_	14	advmod	_	_
 2	,	,	PUNCT	cm	_	1	punct	_	_
-3	1929	1929	NUM	num	_	5	compound	_	_
+3	1929	1929	NUM	num	NumType=Card	5	compound	_	_
 4	—	—	PUNCT	guio	_	5	punct	_	_
 5	33	33	NUM	num	NumType=Ord	6	amod	_	_
 6	ж.	ж.	NOUN	abbr	_	7	nmod	_	_
@@ -10583,7 +10583,7 @@
 9	құндылықтардың	құндылық	NOUN	n	Case=Gen|Number=Plur	11	nsubj	_	_
 10	аяққа	аяқ	NOUN	n	Case=Dat	11	nmod	_	_
 11	басылуы	бас	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	24	csubj	_	_
-12	1978	1978	NUM	num	_	14	compound	_	_
+12	1978	1978	NUM	num	NumType=Card	14	compound	_	_
 13	—	—	PUNCT	guio	_	14	punct	_	_
 14	79	79	NUM	num	NumType=Ord	15	amod	_	_
 15	ж.	ж.	NOUN	abbr	_	24	nmod	_	_
@@ -10677,7 +10677,7 @@
 
 # sent_id = Иран.tagged.txt:86:2525
 # text = 1980 – 1990 ж. болған Иран — Ирак соғысы ел экономикасына өте ауыр (700 млрд. АҚШ долларынан астам) зардаптар әкелді.
-1	1980	1980	NUM	num	_	3	compound	_	_
+1	1980	1980	NUM	num	NumType=Card	3	compound	_	_
 2	–	–	PUNCT	guio	_	3	punct	_	_
 3	1990	1990	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	5	nmod	_	_
@@ -10691,7 +10691,7 @@
 12	өте	өте	ADV	adv	_	13	advmod	_	_
 13	ауыр	ауыр	ADJ	adj	_	21	amod	_	_
 14	(	(	PUNCT	lpar	_	18	punct	_	_
-15	700	700	NUM	num	_	16	compound	_	_
+15	700	700	NUM	num	NumType=Card	16	compound	_	_
 16	млрд.	млрд.	NOUN	abbr	_	17	nummod	_	_
 17	АҚШ	АҚШ	PROPN	np	Case=Nom	18	nmod:poss	_	_
 18	долларынан	доллар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	13	appos	_	_
@@ -10721,12 +10721,12 @@
 # text = Мемлекеттік кірістің 1 / 3 және экспорттың 90%-ына жуығы осы салалардан алынады.
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
 2	кірістің	кіріс	NOUN	n	Case=Gen	3	orphan	_	_
-3	1	1	NUM	num	_	12	conj	_	_
+3	1	1	NUM	num	NumType=Card,Ord	12	conj	_	_
 4	/	/	SYM	sym	_	5	case	_	_
-5	3	3	NUM	num	_	3	nmod	_	_
+5	3	3	NUM	num	NumType=Card,Ord	3	nmod	_	_
 6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
 7	экспорттың	экспорт	NOUN	n	Case=Gen	8	nmod:poss	_	_
-8	90%-ына	90	NUM	num	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+8	90%-ына	90	NUM	num	Case=Dat|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	9	nmod	_	_
 9	жуығы	жуық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
 11	салалардан	сала	NOUN	n	Case=Abl|Number=Plur	12	nmod	_	_
@@ -10762,7 +10762,7 @@
 1	Өнеркәсіпке	өнеркәсіп	NOUN	n	Case=Dat	7	nmod	_	_
 2	қажетті	қажетті	ADJ	adj	_	3	amod	_	_
 3	құрал-саймандар	құрал-саймандар	NOUN	n	Case=Nom	7	nsubj	_	_
-4	90%-ға	90	NUM	num	Case=Dat	7	nmod	_	_
+4	90%-ға	90	NUM	num	Case=Dat|NumType=Card,Ord	7	nmod	_	_
 5	дейін	дейін	ADP	post	_	4	case	_	_
 6	шеттен	шет	NOUN	n	Case=Abl	7	nmod	_	_
 7	әкелінеді	алып кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -10789,12 +10789,12 @@
 # text = Ұлттық байлықтың 36%-ы өнеркәсіптен, 22%-ы ауыл шаруашылығынан, қалғаны қызмет көрсету секторынан тұрады.
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	байлықтың	байлық	NOUN	n	Case=Gen	3	nmod:poss	_	_
-3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
+3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	4	nsubj	_	_
 4-5	өнеркәсіптен	_	_	_	_	_	_	_	_
 4	өнеркәсіп	өнеркәсіп	NOUN	n	Case=Abl	16	conj	_	_
 5	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	cop	_	_
 6	,	,	PUNCT	cm	_	4	punct	_	_
-7	22%-ы	22	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
+7	22%-ы	22	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	9	nsubj	_	_
 8	ауыл	ауыл	X	x	_	9	dep	_	_
 9-10	шаруашылығынан	_	_	_	_	_	_	_	_
 9	шаруашылы	шаруашылық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	16	conj	_	_
@@ -10813,7 +10813,7 @@
 2	экспортынан	экспорт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
 3	жыл	жыл	X	x	_	4	dep	_	_
 4	сайын	сайын	ADV	adv	_	9	advmod	_	_
-5	16,3	16,3	NUM	num	_	6	compound	_	_
+5	16,3	16,3	NUM	num	NumType=Card	6	compound	_	_
 6	млрд.	млрд.	NOUN	abbr	_	7	nummod	_	_
 7	АҚШ	АҚШ	PROPN	np	Case=Nom	8	nmod:poss	_	_
 8	доллары	доллар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
@@ -10824,7 +10824,7 @@
 # text = Ұлттық табыс 75 млрд. АҚШ доллар көлемінде, жан басына шаққанда — 1250 долл. шамасында.
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	табыс	табыс	NOUN	n	Case=Nom	15	nsubj	_	_
-3	75	75	NUM	num	_	4	compound	_	_
+3	75	75	NUM	num	NumType=Card	4	compound	_	_
 4	млрд.	млрд.	NOUN	abbr	_	6	nummod	_	_
 5	АҚШ	АҚШ	PROPN	np	Case=Nom	6	compound	_	_
 6	доллар	доллар	NOUN	n	Case=Nom	7	nmod:poss	_	_
@@ -10846,13 +10846,13 @@
 1	Елдегі	ел	NOUN	n	Case=Loc	3	amod	_	_
 2	басты	басты	ADJ	adj	_	3	amod	_	_
 3	проблеманың	проблема	NOUN	n	Case=Gen	4	nmod:poss	_	_
-4	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+4	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	6	nsubj	_	_
 5	—	—	PUNCT	guio	_	6	punct	_	_
 6-7	жұмыссыздық	_	_	_	_	_	_	_	_
 6	жұмыссыздық	жұмыссыздық	NOUN	n	Case=Nom	0	root	_	_
 7	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	6	cop	_	_
 8	(	(	PUNCT	lpar	_	10	punct	_	_
-9	3,5	3,5	NUM	num	_	10	compound	_	_
+9	3,5	3,5	NUM	num	NumType=Card	10	compound	_	_
 10	млн.	млн.	NOUN	abbr	_	11	nummod	_	_
 11	адам	адам	NOUN	n	Case=Nom	6	parataxis	_	_
 12	)	)	PUNCT	rpar	_	11	punct	_	_
@@ -10886,7 +10886,7 @@
 3	азық-түлік	азық-түлік	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	өнімдері	өнім	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	15	conj	_	_
 5	(	(	PUNCT	lpar	_	6	punct	_	_
-6	30%	30	NUM	num	Case=Nom	4	appos	_	_
+6	30%	30	NUM	num	Case=Nom|NumType=Card,Ord	4	appos	_	_
 7	)	)	PUNCT	rpar	_	6	punct	_	_
 8	,	,	PUNCT	cm	_	15	punct	_	_
 9	машина	машина	NOUN	n	Case=Nom	15	conj	_	_
@@ -10937,9 +10937,9 @@
 5	екі	екі	NUM	num	NumType=Card	6	nummod	_	_
 6	рет	рет	NOUN	n	Case=Nom	13	nmod	_	_
 7	(	(	PUNCT	lpar	_	10	punct	_	_
-8	1992	1992	NUM	num	_	10	conj	_	_
+8	1992	1992	NUM	num	NumType=Card,Ord	10	conj	_	_
 9	;	;	PUNCT	sent	_	10	punct	_	_
-10	1996	1996	NUM	num	_	6	appos	_	_
+10	1996	1996	NUM	num	NumType=Card,Ord	6	appos	_	_
 11	)	)	PUNCT	rpar	_	10	punct	_	_
 12	Иранда	Иран	PROPN	np	Case=Loc	13	nmod	_	_
 13	болып	бол	VERB	v	Aspect=Perf|VerbForm=Cov	14	advcl	_	_
@@ -10991,7 +10991,7 @@
 3	классикалық	классикалық	ADJ	adj	_	4	amod	_	_
 4	дәуірін	дәуір	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	18	obj	_	_
 5	(	(	PUNCT	lpar	_	9	punct	_	_
-6	7	7	NUM	num	_	8	conj	_	_
+6	7	7	NUM	num	NumType=Card,Ord	8	conj	_	_
 7	—	—	PUNCT	guio	_	8	punct	_	_
 8	16	16	NUM	num	NumType=Ord	9	amod	_	_
 9	ғасырлар	ғасыр	NOUN	n	Case=Nom|Number=Plur	4	appos	_	_
@@ -11013,7 +11013,7 @@
 3	гүлденген	гүлден	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
 4	кезі	кез	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 5	—	—	PUNCT	guio	_	9	punct	_	_
-6	13	13	NUM	num	_	9	nmod	_	_
+6	13	13	NUM	num	NumType=Card,Ord	9	nmod	_	_
 7	—	—	PUNCT	guio	_	9	punct	_	_
 8	14	14	NUM	num	NumType=Ord	9	amod	_	_
 9-10	ғасырлар	_	_	_	_	_	_	_	_
@@ -11026,7 +11026,7 @@
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	революциясы	революция	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	conj	_	_
 3	(	(	PUNCT	lpar	_	6	punct	_	_
-4	1905	1905	NUM	num	_	6	compound	_	_
+4	1905	1905	NUM	num	NumType=Card	6	compound	_	_
 5	—	—	PUNCT	guio	_	6	punct	_	_
 6	11	11	NUM	num	NumType=Ord	2	amod	_	_
 7	)	)	PUNCT	rpar	_	6	punct	_	_
@@ -11034,7 +11034,7 @@
 9	азаматтық	азаматтық	ADJ	adj	_	10	amod	_	_
 10	қозғалыс	қозғалыс	NOUN	n	Case=Nom	16	nmod:poss	_	_
 11	(	(	PUNCT	lpar	_	14	punct	_	_
-12	1918	1918	NUM	num	_	14	conj	_	_
+12	1918	1918	NUM	num	NumType=Card,Ord	14	conj	_	_
 13	—	—	PUNCT	guio	_	14	punct	_	_
 14	21	21	NUM	num	NumType=Ord	10	amod	_	_
 15	)	)	PUNCT	rpar	_	14	punct	_	_
@@ -11104,7 +11104,7 @@
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	дәуірінде	дәуір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod	_	_
 4	(	(	PUNCT	lpar	_	8	punct	_	_
-5	3	3	NUM	num	_	7	conj	_	_
+5	3	3	NUM	num	NumType=Card,Ord	7	conj	_	_
 6	—	—	PUNCT	guio	_	7	punct	_	_
 7	7	7	NUM	num	NumType=Ord	8	amod	_	_
 8	ғасырлар	ғасыр	NOUN	n	Case=Nom|Number=Plur	3	appos	_	_
@@ -11195,7 +11195,7 @@
 
 # sent_id = Иран.tagged.txt:113:3399
 # text = 16 — 17 ғасырларда пайда болған Тебриз, Шираз, Исфаһан (Риза Аббаси, т.б.) мектептері миниатюра өнерін жоғары дәрежеге көтерді.
-1	16	16	NUM	num	_	3	conj	_	_
+1	16	16	NUM	num	NumType=Card,Ord	3	conj	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	17	17	NUM	num	NumType=Ord	4	amod	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	6	nmod	_	_
@@ -11222,7 +11222,7 @@
 
 # sent_id = Иран.tagged.txt:114:3448
 # text = 18 — 19 ғасырларда еуропалық өнердің ықпалымен сулы және майлы бояумен орындалған алғашқы туындылар өмірге келді.
-1	18	18	NUM	num	_	4	nmod	_	_
+1	18	18	NUM	num	NumType=Card,Ord	4	nmod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	19	19	NUM	num	NumType=Ord	4	amod	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	14	obl	_	_
@@ -11382,8 +11382,8 @@
 1	Театр	театр	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	өнерінің	өнер	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
-4	халықтық	халықтық	ADJ	adj	_	6	amod	_	_
-5	салт	салт	NOUN	n	Case=Nom	6	compound	_	_
+4	халықтық	халықтық	ADJ	adj	_	7	amod	_	_
+5	салт	салт	NOUN	n	Case=Nom	7	compound	_	_
 6	-	-	PUNCT	guio	_	7	punct	_	_
 7	дәстүрлерде	дәстүр	NOUN	n	Case=Loc|Number=Plur	8	obl	_	_
 8	жатыр	жат	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -11426,7 +11426,7 @@
 
 # sent_id = Иран.tagged.txt:128:3777
 # text = 17 — 18 ғасырларда ол трагедиялық мистерия түрлерінің бірі — тазийенің негізін қалады.
-1	17	17	NUM	num	_	3	nmod	_	_
+1	17	17	NUM	num	NumType=Card,Ord	3	nmod	_	_
 2	—	—	PUNCT	guio	_	4	punct	_	_
 3	18	18	NUM	num	NumType=Ord	4	amod	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	13	obl	_	_
@@ -11434,7 +11434,7 @@
 6	трагедиялық	трагедиялық	ADJ	adj	_	7	amod	_	_
 7	мистерия	мистерия	NOUN	n	Case=Nom	8	nmod:poss	_	_
 8	түрлерінің	түр	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
-9	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	conj	_	_
+9	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	12	conj	_	_
 10	—	—	PUNCT	guio	_	12	punct	_	_
 11	тазийенің	тазийе	NOUN	n	Case=Gen	12	nmod:poss	_	_
 12	негізін	негіз	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	13	obj	_	_
@@ -11460,7 +11460,7 @@
 
 # sent_id = Иран.tagged.txt:130:3835
 # text = 1911 — 12 ж. еуропалық театрлар тәжірибелерін пайдалана отырып Ұлттық театр, 1917 ж. Иранның комедия театры ашылды.
-1	1911	1911	NUM	num	_	3	compound	_	_
+1	1911	1911	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	12	12	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	11	obl	_	_
@@ -11508,7 +11508,7 @@
 
 # sent_id = Иран.tagged.txt:133:3913
 # text = 1930 — 40 ж. театр репертуарларынан өңделген Батыс Еуропа драмалары мен мелодрамалар орын алды.
-1	1930	1930	NUM	num	_	3	compound	_	_
+1	1930	1930	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	40	40	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	7	nmod	_	_
@@ -11571,7 +11571,7 @@
 # text = 20 ғасырдың 40-жылдарына дейін, көбінесе, шетелдік фильмдер көрсетіліп келді.
 1	20	20	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
-3	40	40	NUM	num	_	5	compound	_	_
+3	40	40	NUM	num	NumType=Card	5	compound	_	_
 4	-	-	PUNCT	guio	_	5	punct	_	_
 5	жылдарына	жыл	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
 6	дейін	дейін	ADP	post	_	5	case	_	_
@@ -11600,7 +11600,7 @@
 
 # sent_id = Иран.tagged.txt:139:4067
 # text = 1960 — 1970 ж. музыкалық комедияларға, шағын драмаларға, мифтік және тарихи сюжеттерге құрылған фильмдер қойылды.
-1	1960	1960	NUM	num	_	4	nmod	_	_
+1	1960	1960	NUM	num	NumType=Card,Ord	4	nmod	_	_
 2	—	—	PUNCT	guio	_	4	punct	_	_
 3	1970	1970	NUM	num	NumType=Ord	4	amod	_	_
 4	ж.	ж.	NOUN	abbr	_	17	obl	_	_
@@ -11638,8 +11638,8 @@
 # text = Иран кинематографиясының дамуына реж. И. Кушан, М. Мисагие, Мохтасем, М. Мохсени, С. Ясеми, Ш. Рафия елеулі үлес қосты.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	кинематографиясының	кинематография	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
-3	дамуына	даму	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	24	obl	_	_
-4	реж.	реж.	NOUN	abbr	_	24	nsubj	_	_
+3	дамуына	даму	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	23	obl	_	_
+4	реж.	реж.	NOUN	abbr	_	23	nsubj	_	_
 5	И.	И.	NOUN	abbr	_	6	flat:name	_	_
 6	Кушан	Кушан	PROPN	np	Case=Nom	20	conj	_	_
 7	,	,	PUNCT	cm	_	20	punct	_	_
@@ -11956,7 +11956,7 @@
 2	Мемлекеттік	мемлекеттік	ADJ	adj	_	3	amod	_	_
 3	сыйлығына	сыйлық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 4	(	(	PUNCT	lpar	_	5	punct	_	_
-5	1952	1952	NUM	num	_	3	parataxis	_	_
+5	1952	1952	NUM	num	NumType=Card,Ord	3	parataxis	_	_
 6	)	)	PUNCT	rpar	_	5	punct	_	_
 7	ие	ие	X	x	_	8	dep	_	_
 8	болды	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
@@ -12086,7 +12086,7 @@
 # sent_id = wikipedia.tagged.txt:39:644
 # text = Он екі елі ішек төрт бөлікке бөлінген.
 1	Он	он	X	x	_	2	dep	_	_
-2	екі	екі	NUM	num	_	3	compound	_	_
+2	екі	екі	NUM	num	NumType=Card	3	compound	_	_
 3	елі	ел	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	compound	_	_
 4	ішек	ішек	NOUN	n	Case=Nom	7	nsubj	_	_
 5	төрт	төрт	NUM	num	NumType=Card	6	nummod	_	_
@@ -12202,7 +12202,7 @@
 1	Сергей	Сергей	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 2	Михайлович	Михайлович	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 3	Бобров	Бобров	PROPN	np	Case=Nom|Gender=Masc	11	nsubj	_	_
-4	1920	1920	NUM	num	_	6	conj	_	_
+4	1920	1920	NUM	num	NumType=Card,Ord	6	conj	_	_
 5	-	-	PUNCT	guio	_	6	punct	_	_
 6	1994	1994	NUM	num	NumType=Ord	7	amod	_	_
 7	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	_
@@ -13031,7 +13031,7 @@
 
 # sent_id = story.tagged.txt:32:561
 # text = "Азамат қайда, айтшы!" деп сұрайды.
-1	"	"	PUNCT	sent	_	5	punct	_	_
+1	"	"	PUNCT	sent	_	6	punct	_	_
 2	Азамат	Азамат	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
 3-4	қайда	_	_	_	_	_	_	_	_
 3	қайда	қайда	ADV	adv	PronType=Int	6	ccomp	_	_
@@ -13328,7 +13328,7 @@
 10	және	және	CCONJ	cnjcoo	_	11	cc	_	_
 11	мәдени	мәдени	ADJ	adj	_	12	amod	_	_
 12	орталықтарының	орталық	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod:poss	_	_
-13	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	advcl	_	_
+13	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	15	advcl	_	_
 14	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	13	cop	_	_
 15	табылады	тап	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
 16	.	.	PUNCT	sent	_	15	punct	_	_
@@ -13510,7 +13510,7 @@
 5	КСРО-дағы	КСРО	PROPN	np	Case=Loc	7	amod	_	_
 6	өндірілетін	өндір	VERB	v	Aspect=Imp|VerbForm=Part|Voice=Pass	7	acl	_	_
 7	қорғасынның	қорғасын	NOUN	n	Case=Gen	8	nmod:poss	_	_
-8	70%-ін	70	NUM	num	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
+8	70%-ін	70	NUM	num	Case=Acc|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	9	obj	_	_
 9	беріп	бер	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 10	отырды	отыр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
@@ -13650,9 +13650,9 @@
 # text = Ерназардың сегіз ұлы сол кеткеннен хабарсыз кетеді, айлар өтеді, келмейді.
 1	Ерназардың	Ерназар	PROPN	np	Case=Gen|Gender=Masc	3	nmod:poss	_	_
 2	сегіз	сегіз	NUM	num	NumType=Card	3	nummod	_	_
-3	ұлы	ұл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
+3	ұлы	ұл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
 4	сол	сол	DET	det	PronType=Dem	5	det	_	_
-5	кеткеннен	кет	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	12	advcl	_	_
+5	кеткеннен	кет	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	13	advcl	_	_
 6-7	хабарсыз	_	_	_	_	_	_	_	_
 6	хабар	хабар	NOUN	n	_	8	nmod	_	_
 7	сыз	сыз	ADP	post	_	6	case	_	_
