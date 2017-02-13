@@ -1,0 +1,49 @@
+"<Мал>"
+	"мал" n nom @nmod:poss #1->2
+"<орнына>"
+	"орын" n px3sp dat @obl #2->3
+"<сатылып>"
+	"сат" v tv pass gna_perf @conj #3->9
+"<,>"
+	"," cm @punct #4->3
+"<жаны>"
+	"жан" n px3sp nom @nsubj #5->6
+"<сүймеген>"
+	"сүй" v tv neg gpr_past @acl:relcl #6->7
+"<жанға>"
+	"жан" n dat @obl #7->8
+"<жар>"
+	"жар" n nom @acl:relcl #8->12
+"<болатын>"
+	"бол" v iv gpr_impf @cop #9->8
+"<қазақтың>"
+	"қазақ" n gen @nmod:poss #10->12
+"<сансыз>"
+	"сансыз" adj @amod #11->12
+"<қыздарының>"
+	"қыз" n pl px3sp gen @nmod:poss #12->13
+"<ішінен>"
+	"іш" n px3sp abl @obl #13->17
+"<әлдеқалай>"
+	"әлдеқалай" adv @advmod #14->17
+"<өзінің>"
+	"өз" prn ref px3sp gen @nsubj #15->16
+"<сүйгеніне>"
+	"сүй" v tv ger_past px3sp dat @ccomp #16->17
+"<тиген>"
+	"ти" v iv gpr_past @acl:relcl #17->18
+"<Шолпан>"
+	"Шолпан" np ant f nom @nsubj #18->23
+"<шынында>"
+	"шынында" adv @advmod #19->23
+"<бастапқы>"
+	"бастапқы" adj @amod #20->21
+"<жылы>"
+	"жыл" n px3sp nom @obl #21->23
+"<бала>"
+	"бала" n nom @obj #22->23
+"<керек қылмады>"
+	"керек қыл" v iv neg ifi p3 sg @root #23->0
+"<.>"
+	"." sent @punct #24->23
+¶

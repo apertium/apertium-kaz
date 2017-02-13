@@ -1,0 +1,64 @@
+"<Ақ>"
+	"ақ" adj @amod #1->2
+"<отаудың>"
+	"отау" n gen @nmod:poss #2->3
+"<ішінде>"
+	"іш" n px3sp loc @obl #3->5
+"<оңаша>"
+	"оңаша" adj advl @advcl #4->5
+"<жатса>"
+	"жат" v iv gna_cond p3 sg @conj #5->11
+"<да>"
+	"да" cnjcoo @cc #6->11
+"<,>"
+	"," cm @punct #7->5
+"<яки>"
+	"яки" cnjcoo @cc #8->11
+"<күйеуін>"
+	"күйеу" n px3sp acc @obj #9->10
+"<құшақтап>"
+	"құшақта" v tv gna_perf @advcl #10->11
+"<жатса>"
+	"жат" v iv gna_cond p3 sg @advcl #11->30
+"<да>"
+	"да" postadv @cc #12->11
+"<,>"
+	"," cm @punct #13->11
+"<ол>"
+	"ол" prn pers p3 sg nom @nsubj #14->30
+"<ылғи>"
+	"ылғи" adv @advmod #15->30
+"<ішінен>"
+	"іш" n px3sp abl @nmod #16->30
+"<:>"
+	":" sent @punct #17->16
+"<«>"
+	"«" lquot @punct #18->23
+"<Жасаған-ау>"
+	"жасаған" n nom @vocative #19->23
+		"ау" mod_emo @discourse #20->19
+"<,>"
+	"," cm @punct #21->19
+"<бала>"
+	"бала" n nom @obj #22->23
+"<бере>"
+	"бер" v tv prc_impf @ccomp #23->29
+"<көрме>"
+	"көр" vaux neg imp p2 sg @aux #24->23
+"<?>"
+	"?" sent @punct #25->23
+"<!>"
+	"!" sent @punct #26->23
+"<»>"
+	"»" rquot @punct #27->23
+"<–>"
+	"–" guio @punct #28->23
+"<деп>"
+	"де" v tv gna_perf @advcl #29->30
+"<тілейтін>"
+	"тіле" v tv gpr_impf @root #30->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #31->30
+"<.>"
+	"." sent @punct #32->30
+¶
