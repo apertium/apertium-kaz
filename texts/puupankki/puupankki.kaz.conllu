@@ -132,6 +132,42 @@
 11	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
 12	...	...	PUNCT	sent	_	9	punct	_	_
 
+# sent_id = sholpan.tagged.txt:6:223
+# text = Қиюласып қосылған екі жанның арасына жат бір үшінші жан түскен соң, екеуінің де жалынды, екпінді махаббаты бүлінер, бәсеңдер, суынар деп қорқушы еді Шолпан.
+1	Қиюласып	қиюла	VERB	v	Aspect=Perf|VerbForm=Conv|Voice=Coop	2	advcl	_	_
+2	қосылған	қос	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+3	екі	екі	NUM	num	NumType=Card	4	nummod	_	_
+4	жанның	жан	NOUN	n	Case=Gen	5	nmod:poss	_	_
+5	арасына	ара	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+6	жат	жат	ADJ	adj	_	9	amod	_	_
+7	бір	бір	DET	det	PronType=Ind	9	det	_	_
+8	үшінші	үш	NUM	num	NumType=Ord	9	amod	_	_
+9	жан	жан	NOUN	n	Case=Nom	10	nsubj	_	_
+10	түскен	түс	VERB	v	Tense=Past|VerbForm=Part	25	advcl	_	_
+11	соң	соң	ADP	post	_	10	case	_	_
+12	,	,	PUNCT	cm	_	10	punct	_	_
+13-14	екеуінің де	_	_	_	_	_	_	_	_
+13	екеуінің	екеу	NUM	num	Case=Gen|Number[psor]=Plur,Sing|NumType=Coll|Person[psor]=3	20	nmod:poss	_	_
+14	де	да	ADV	postadv	_	13	advmod	_	_
+15-16	жалынды	_	_	_	_	_	_	_	_
+15	жалын	жалын	NOUN	n	_	18	conj	_	_
+16	лы	лы	ADP	post	_	15	case	_	_
+17	,	,	PUNCT	cm	_	18	cc	_	_
+18-19	екпінді	_	_	_	_	_	_	_	_
+18	екпін	екпін	NOUN	n	_	20	nmod	_	_
+19	_	лы	ADP	post	_	18	case	_	_
+20	махаббаты	махаббат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nsubj	_	_
+21	бүлінер	бүлін	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	conj	_	_
+22	,	,	PUNCT	cm	_	25	punct	_	_
+23	бәсеңдер	бәсеңде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	25	conj	_	_
+24	,	,	PUNCT	cm	_	25	punct	_	_
+25	суынар	суынар	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	26	ccomp	_	_
+26	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	27	advcl	_	_
+27	қорқушы	қорық	VERB	v	Mood=Pot|VerbForm=Part	0	root	_	_
+28	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	cop	_	_
+29	Шолпан	Шолпан	PROPN	np	Case=Nom|Gender=Fem	27	nsubj	_	_
+30	.	.	PUNCT	sent	_	27	punct	_	_
+
 # sent_id = akorda-random.tagged.txt:1:0
 # text = Қазақстан осы өңірдегі бейбітшілікті қолдайды.
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	5	nsubj	_	_
