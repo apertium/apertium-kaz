@@ -510,7 +510,7 @@
 2	бұл	бұл	DET	det	PronType=Dem	3	det	_	_
 3	көрсеткіш	көрсеткіш	NOUN	n	Case=Nom	4	nsubj	_	_
 4	өсе	өс	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
-5	бермек	бер	AUX	vaux	Number=Sing|Person=3	4	aux	_	_
+5	бермек	бер	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=FutPlan|VerbForm=Fin	4	aux	_	_
 6	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:32:573
@@ -2483,7 +2483,7 @@
 1	АҚШ-пен	АҚШ	PROPN	np	Case=Ins	3	nmod	_	_
 2	стратегиялық	стратегиялық	ADJ	adj	_	3	amod	_	_
 3	әріптестік	әріптестік	NOUN	n	Case=Nom	4	nsubj	_	_
-4	кеңейтілмек	кеңейт	VERB	v	Number=Sing|Person=3|Voice=Pass	0	root	_	_
+4	кеңейтілмек	кеңейт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=FutPlan|VerbForm=Fin|Voice=Pass	0	root	_	_
 5	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:193:3516
@@ -3890,7 +3890,7 @@
 6	толы	толы	ADJ	adj	_	8	conj	_	_
 7	және	және	CCONJ	cnjcoo	_	8	cc	_	_
 8	мазмұнды	мазмұнды	ADJ	adj	_	0	root	_	_
-9	болмақ	бол	AUX	v	Number=Sing|Person=3	8	cop	_	_
+9	болмақ	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=FutPlan|VerbForm=Fin	8	cop	_	_
 10	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:310:5619
@@ -3953,7 +3953,7 @@
 7	да	да	ADV	postadv	_	6	advmod	_	_
 8	тұрмысы	тұрмыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 9	жақсара	жақсар	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
-10	бермек	бер	AUX	vaux	Number=Sing|Person=3	9	aux	_	_
+10	бермек	бер	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=FutPlan|VerbForm=Fin	9	aux	_	_
 11	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:315:5714
@@ -4373,7 +4373,7 @@
 9	жұртына	жұрт	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
 10	жау	жау	NOUN	n	Case=Nom	15	ccomp	_	_
 11	болып	бол	AUX	v	Aspect=Perf|VerbForm=Cov	10	cop	_	_
-12	кетпесіне	кет	AUX	vaux	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg	10	aux	_	_
+12	кетпесіне	кет	AUX	vaux	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Tense=Fut|VerbForm=Ger	10	aux	_	_
 13	кімнің	кім	PRON	prn	Case=Gen|PronType=Int	14	nmod:poss	_	_
 14	көзі	көз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	nsubj	_	_
 15	жетеді	жет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	2	parataxis	_	_
@@ -5365,7 +5365,7 @@
 2	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	4	nmod	_	_
 3	тағы	тағы	ADV	adv	_	4	advmod	_	_
 4	керек	керек	ADJ	adj	_	7	ccomp	_	_
-5	болмасымды	бол	AUX	v	Case=Acc|Number[psor]=Sing|Person[psor]=1|Polarity=Neg	4	cop	_	_
+5	болмасымды	бол	AUX	v	Case=Acc|Number[psor]=Sing|Person[psor]=1|Polarity=Neg|Tense=Fut|VerbForm=Ger	4	cop	_	_
 6	қайдан	қайдан	ADV	adv	PronType=Int	7	advmod	_	_
 7	білесің	біл	VERB	v	Mood=Ind|Number=Sing|Person=2|Tense=Aor|VerbForm=Fin	0	root	_	_
 8	?	?	PUNCT	sent	_	7	punct	_	_
@@ -5696,7 +5696,7 @@
 1	Соған	сол	PRON	prn	Case=Dat|PronType=Dem	2	nmod	_	_
 2	шығып	шық	VERB	v	Aspect=Perf|VerbForm=Conv	4	advcl	_	_
 3	ел	ел	NOUN	n	Case=Nom	4	obj	_	_
-4	көздемек	көзде	VERB	v	Number=Sing|Person=3	0	root	_	_
+4	көздемек	көзде	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=FutPlan|VerbForm=Fin	0	root	_	_
 5	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = kdt.tagged.txt:141:2279
@@ -5877,7 +5877,7 @@
 5	жатса	жат	AUX	vaux	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	4	aux	_	_
 6	,	,	PUNCT	cm	_	14	punct	_	_
 7	дәрет	дәрет	NOUN	n	Case=Nom	8	obj	_	_
-8	алмастан	ал	VERB	v	Case=Abl|Polarity=Neg	11	advcl	_	_
+8	алмастан	ал	VERB	v	Case=Abl|Polarity=Neg|Tense=Fut|VerbForm=Ger	11	advcl	_	_
 9	жалаң	жалаң	ADJ	adj	_	10	amod	_	_
 10	аяқ	аяқ	NOUN	n	Case=Nom	11	nmod	_	_
 11	барып	бар	VERB	v	Aspect=Perf|VerbForm=Conv	14	advcl	_	_
@@ -6113,7 +6113,7 @@
 9	"	"	PUNCT	sent	_	12	punct	_	_
 10	ауру	ауру	NOUN	n	Case=Nom	12	nsubj	_	_
 11	қалай	қалай	ADV	adv	PronType=Int	12	advmod	_	_
-12	жазылмасын	жаз	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Voice=Pass	16	ccomp	_	_
+12	жазылмасын	жаз	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Tense=Fut|VerbForm=Ger|Voice=Pass	16	ccomp	_	_
 13	?	?	PUNCT	sent	_	12	punct	_	_
 14	"	"	PUNCT	sent	_	12	punct	_	_
 15	—	—	PUNCT	guio	_	16	punct	_	_
@@ -8466,7 +8466,7 @@
 10	оқуын	оқу	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	conj	_	_
 11	,	,	PUNCT	cm	_	12	punct	_	_
 12	ғылымын	ғылым	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	13	obj	_	_
-13	білмек	біл	VERB	v	Case=Nom|VerbForm=Ger	14	csubj	_	_
+13	білмек	біл	VERB	v	Case=Nom|Tense=FutPlan|VerbForm=Ger	14	csubj	_	_
 14-15	керек	_	_	_	_	_	_	_	_
 14	керек	керек	ADJ	adj	_	0	root	_	_
 15	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	14	cop	_	_

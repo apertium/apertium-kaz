@@ -19,9 +19,11 @@ _	_	evid	_	_	_	Evident=Fh	_
 _	_	f	_	_	_	Gender=Fem	_
 _	_	frm	_	_	_	Polite=Form	_
 _	_	fut	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Fut	_
+_	_	fut_plan	_	_	_	VerbForm=Fin|Mood=Ind|Tense=FutPlan	_
 _	_	gen	_	_	_	Case=Gen	_
 _	_	ger_abs	_	_	_	VerbForm=Ger	_
-_	_	ger_fplan	_	_	_	VerbForm=Ger	_
+_	_	ger_fplan	_	_	_	VerbForm=Ger|Tense=FutPlan	_
+_	_	ger_fut	_	_	_	VerbForm=Ger|Tense=Fut	_
 _	_	ger	_	_	_	VerbForm=Ger	_
 _	_	ger_impf	_	_	_	VerbForm=Ger|Aspect=Imp	_
 _	_	ger_past	_	_	_	VerbForm=Ger|Tense=Past	_
