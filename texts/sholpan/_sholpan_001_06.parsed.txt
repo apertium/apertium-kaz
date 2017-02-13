@@ -1,0 +1,58 @@
+"<Қиюласып>"
+	"қиюла" v tv coop gna_perf @advcl #1->2
+"<қосылған>"
+	"қос" v tv pass gpr_past @acl:relcl #2->4
+"<екі>"
+	"екі" num @nummod #3->4
+"<жанның>"
+	"жан" n gen @nmod:poss #4->5
+"<арасына>"
+	"ара" n px3sp dat @obl #5->10
+"<жат>"
+	"жат" adj @amod #6->9
+"<бір>"
+	"бір" det ind @det #7->9
+"<үшінші>"
+	"үш" num ord @amod #8->9
+"<жан>"
+	"жан" n nom @nsubj #9->10
+"<түскен>"
+	"түс" v iv gpr_past @advcl #10->25
+"<соң>"
+	"соң" post @case #11->10
+"<,>"
+	"," cm @punct #12->10
+"<екеуінің де>"
+	"екеу" num coll subst px3sp gen @nmod:poss #13->20
+		"да" postadv @advmod #14->13
+"<жалынды>"
+	"жалын" n @conj #15->18
+		"лы" post @case #16->15
+"<,>"
+	"," cm @cc #17->18
+"<екпінді>"
+	"екпін" n @nmod #18->20
+		"лы" post @case #19->18
+"<махаббаты>"
+	"махаббат" n px3sp nom @nsubj #20->25
+"<бүлінер>"
+	"бүлін" v iv fut p3 sg @conj #21->25
+"<,>"
+	"," cm @punct #22->25
+"<бәсеңдер>"
+	"бәсеңде" v tv fut p3 sg @conj #23->25
+"<,>"
+	"," cm @punct #24->25
+"<суынар>"
+	"суынар" v iv fut p3 sg @ccomp #25->26
+"<деп>"
+	"де" v tv gna_perf @advcl #26->27
+"<қорқушы>"
+	"қорық" v iv gpr_pot @root #27->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #28->27
+"<Шолпан>"
+	"Шолпан" np ant f nom @nsubj #29->27
+"<.>"
+	"." sent @punct #30->27
+¶
