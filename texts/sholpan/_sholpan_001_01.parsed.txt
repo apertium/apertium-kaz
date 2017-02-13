@@ -1,0 +1,51 @@
+"<Шолпан>"
+	"Шолпан" np ant f nom @nsubj #1->25
+"<Сәрсенбайға>"
+	"Сәрсенбай" np ant m dat @obl #2->3
+"<шыққан>"
+	"шық" v iv gpr_past @acl:relcl #3->4
+"<жылы>"
+	"жыл" n px3sp nom @obl #4->25
+"<өзіндей>"
+	"өз" prn ref px3sp sim @nmod #5->7
+"<жас>"
+	"жас" adj @amod #6->7
+"<келіншектермен>"
+	"келіншек" n pl ins @obl #7->9
+"<аулақта>"
+	"аулақ" adj subst loc @obl #8->9
+"<кеңескенде>"
+	"кеңес" v iv ger_past loc @advcl #9->25
+"<:>"
+	":" sent @punct #10->9
+"<«>"
+	"«" lquot @punct #11->16
+"<Баласыз>"
+	"бала" n @nmod #12->14
+		"сыз" post @case #13->12
+"<өмірдің>"
+	"өмір" n gen @nmod:poss #14->15
+"<қызығы>"
+	"қызық" adj subst px3sp nom @nsubj #15->16
+"<жоқ қой>"
+	"жоқ" adj @ccomp #16->22
+		"е" cop aor p3 sg @cop #17->16
+			"ғой" mod_ass @discourse #18->16
+"<»>"
+	"»" rquot @punct #19->16
+"<,>"
+	"," cm @punct #20->16
+"<–>"
+	"–" guio @punct #21->16
+"<деп>"
+	"де" v tv gna_perf @advcl #22->25
+"<аузымен ғана>"
+	"ауыз" n px3sp ins @obl #23->25
+		"ғана" postadv @advmod #24->23
+"<айтушы>"
+	"айт" v tv gpr_pot @root #25->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #26->25
+"<.>"
+	"." sent @punct #27->25
+¶
