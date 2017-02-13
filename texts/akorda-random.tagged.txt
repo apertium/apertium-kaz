@@ -807,7 +807,7 @@
 
 # Астана елімізге қайырлы да құтты қала болды , - деді Мемлекет басшысы .	there are thousands of new residents , new families and destinies .
 "<Астана>"
-	"Астана" np top nom @nsubj #1->7
+	"Астана" np top nom @nmod:poss #1->2
 "<елімізге>"
 	"ел" n px1pl dat @nmod #2->7
 "<қайырлы да>"
@@ -1509,9 +1509,9 @@
 "<ауыл>"
 	"ауыл" n nom @nmod:poss #5->6
 "<шаруашылығы>"
-	"шаруашылық" n px3sp nom @nsubj #6->9
+	"шаруашылық" n px3sp nom @nmod:poss #6->8
 "<тауар>"
-	"тауар" n nom @nmod:poss #7->8
+	"тауар" n attr @compound #7->8
 "<өндірушілерінің>"
 	"өндіруші" n pl px3sp gen @nmod:poss #8->9
 "<міндеті>"

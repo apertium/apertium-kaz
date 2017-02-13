@@ -617,7 +617,7 @@
 
 # sent_id = akorda-random.tagged.txt:41:723
 # text = Астана елімізге қайырлы да құтты қала болды, - деді Мемлекет басшысы.
-1	Астана	Астана	PROPN	np	Case=Nom	7	nsubj	_	_
+1	Астана	Астана	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	елімізге	ел	NOUN	n	Case=Dat|Number[psor]=Plur|Person[psor]=1	7	nmod	_	_
 3-4	қайырлы да	_	_	_	_	_	_	_	_
 3	қайырлы	қайырлы	ADJ	adj	_	5	conj	_	_
@@ -1037,8 +1037,8 @@
 3	әкімдер	әкім	NOUN	n	Case=Nom|Number=Plur	6	conj	_	_
 4	мен	мен	CCONJ	cnjcoo	_	6	cc	_	_
 5	ауыл	ауыл	NOUN	n	Case=Nom	6	nmod:poss	_	_
-6	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
-7	тауар	тауар	NOUN	n	Case=Nom	8	nmod:poss	_	_
+6	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod:poss	_	_
+7	тауар	тауар	NOUN	n	Case=Nom	8	compound	_	_
 8	өндірушілерінің	өндіруші	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
 9-10	міндеті	_	_	_	_	_	_	_	_
 9	міндет	міндет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
@@ -4081,7 +4081,7 @@
 9	,	,	PUNCT	cm	_	8	punct	_	_
 10	медицина	медицина	NOUN	n	Case=Nom	11	nmod:poss	_	_
 11	ғылымдарының	ғылым	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod:poss	_	_
-12	докторы	доктор	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	appos	_	_
+12	докторы	доктор	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	appos	_	_
 13	,	,	PUNCT	cm	_	12	punct	_	_
 14	профессор	профессор	NOUN	n	Case=Nom	17	flat:name	_	_
 15	Қаниса	Қаниса	PROPN	np	Case=Nom|Gender=Fem	17	flat:name	_	_
@@ -9386,7 +9386,7 @@
 12	кеңесі	кеңес	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod:poss	_	_
 13	жиналысы	жиналыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	appos	_	_
 14	(	(	PUNCT	lpar	_	15	punct	_	_
-15	меджлис	меджлис	NOUN	n	Case=Nom	13	appos	_	_
+15	меджлис	меджлис	NOUN	n	Case=Nom	4	appos	_	_
 16	)	)	PUNCT	rpar	_	15	punct	_	_
 17	4	4	NUM	num	NumType=Card	18	nummod	_	_
 18	жыл	жыл	NOUN	n	Case=Nom	20	nmod	_	_
@@ -10320,7 +10320,7 @@
 7	ханның	хан	NOUN	n	Case=Gen	8	nmod:poss	_	_
 8	басшылығымен	басшылық	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	_
 9	мемлекеттік	мемлекеттік	ADJ	adj	_	10	amod	_	_
-10	төңкеріс	төңкеріс	NOUN	n	Case=Nom	11	nsubj	_	_
+10	төңкеріс	төңкеріс	NOUN	n	Case=Nom	11	obj	_	_
 11	ұйымдастырып	ұйымдастыр	VERB	v	Aspect=Perf|VerbForm=Conv	15	advcl	_	_
 12	,	,	PUNCT	cm	_	11	punct	_	_
 13	жаңа	жаңа	ADJ	adj	_	14	amod	_	_
