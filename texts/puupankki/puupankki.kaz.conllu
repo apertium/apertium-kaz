@@ -5501,7 +5501,7 @@
 # sent_id = kdt.tagged.txt:134:2183
 # text = Қара шаттан қашып келе жатқаны лезде есіне түсе қалды.
 1	Қара	қара	ADJ	adj	_	2	amod	_	_
-2	шаттан	шат	NOUN	n	Case=Abl	4	nmod	_	_
+2	шаттан	шат	NOUN	n	Case=Abl	3	nmod	_	_
 3	қашып	қаш	VERB	v	Aspect=Perf|VerbForm=Conv	8	csubj	_	_
 4	келе	кел	AUX	vaux	Aspect=Imp|VerbForm=Cov	3	aux	_	_
 5	жатқаны	жат	AUX	vaux	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	3	aux	_	_
@@ -8520,7 +8520,7 @@
 9-10	алмай да	_	_	_	_	_	_	_	_
 9	алмай	ал	AUX	vaux	Aspect=Perf|Polarity=Neg|VerbForm=Cov	8	aux	_	_
 10	да	да	ADV	postadv	_	8	advmod	_	_
-11	тұр	тұр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux	_	_
+11	тұр	тұр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	_
 12	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:20:516
@@ -8766,7 +8766,7 @@
 5	қазақ	қазақ	NOUN	n	Case=Nom	23	advcl	_	_
 6	болып	бол	VERB	v	Aspect=Perf|VerbForm=Cov	5	cop	_	_
 7	қалған	қал	AUX	vaux	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	_
-8	соң	соң	ADP	post	_	7	case	_	_
+8	соң	соң	ADP	post	_	5	case	_	_
 9	,	,	PUNCT	cm	_	23	punct	_	_
 10	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	12	nmod	_	_
 11	рақат	рақат	NOUN	n	Case=Nom	12	obj	_	_
@@ -11198,7 +11198,7 @@
 1	Арабтар	араб	NOUN	n	Case=Nom|Number=Plur	2	nsubj	_	_
 2	жаулап	жаула	VERB	v	Aspect=Perf|VerbForm=Cov	11	advcl	_	_
 3	алғаннан	ал	AUX	vaux	Case=Abl|Tense=Past|VerbForm=Ger	2	aux	_	_
-4	кейін	кейін	ADP	post	_	3	case	_	_
+4	кейін	кейін	ADP	post	_	2	case	_	_
 5	Иран	Иран	PROPN	np	Case=Nom	6	nmod:poss	_	_
 6	музыкасына	музыка	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	11	obj	_	_
 7	мұсылмандық	мұсылмандық	ADJ	adj	_	9	amod	_	_
@@ -12786,7 +12786,7 @@
 1	Айгүл	Айгүл	PROPN	np	Case=Nom|Gender=Fem	6	nsubj	_	_
 2	санап	сана	VERB	v	Aspect=Perf|VerbForm=Cov	6	advcl	_	_
 3	біткеннен	біт	AUX	vaux	Case=Abl|Tense=Past|VerbForm=Ger	2	aux	_	_
-4	кейін	кейін	ADP	post	_	3	case	_	_
+4	кейін	кейін	ADP	post	_	2	case	_	_
 5	айналасына	айнала	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	қарады	қара	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 7	.	.	PUNCT	sent	_	6	punct	_	_
@@ -13661,7 +13661,7 @@
 # text = Қуып келе жатқан Төстік те өрмектен секіреді.
 1	Қуып	қу	VERB	v	Aspect=Perf|VerbForm=Cov	4	acl	_	_
 2	келе	кел	AUX	vaux	Aspect=Imp|VerbForm=Cov	1	aux	_	_
-3	жатқан	жат	AUX	vaux	Tense=Past|VerbForm=Part	2	aux	_	_
+3	жатқан	жат	AUX	vaux	Tense=Past|VerbForm=Part	1	aux	_	_
 4-5	Төстік те	_	_	_	_	_	_	_	_
 4	Төстік	Төстік	PROPN	np	Case=Nom|Gender=Masc	7	nsubj	_	_
 5	те	да	ADV	postadv	_	4	advmod	_	_
