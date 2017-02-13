@@ -168,6 +168,51 @@
 29	Шолпан	Шолпан	PROPN	np	Case=Nom|Gender=Fem	27	nsubj	_	_
 30	.	.	PUNCT	sent	_	27	punct	_	_
 
+# sent_id = sholpan.tagged.txt:7:281
+# text = Ғашық адамға Құранның аяты қасиетті емес, жарының сөзі қасиетті, жарынан басқа адамның сөзін не қылсын Шолпан!
+1	Ғашық	ғашық	ADJ	adj	_	2	amod	_	_
+2	адамға	адам	NOUN	n	Case=Dat	10	obl	_	_
+3	Құранның	Құран	PROPN	np	Case=Gen	4	nmod:poss	_	_
+4	аяты	аят	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
+5	қасиетті	қасиетті	ADJ	adj	_	10	conj	_	_
+6	емес	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	5	cop	_	_
+7	,	,	PUNCT	cm	_	5	punct	_	_
+8	жарының	жар	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
+9	сөзі	сөз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
+10-11	қасиетті	_	_	_	_	_	_	_	_
+10	қасиетті	қасиетті	ADJ	adj	_	0	root	_	_
+11	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	10	cop	_	_
+12	,	,	PUNCT	cm	_	10	punct	_	_
+13	жарынан	жар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	15	nmod	_	_
+14	басқа	басқа	ADP	post	_	13	case	_	_
+15	адамның	адам	NOUN	n	Case=Gen	16	nmod:poss	_	_
+16	сөзін	сөз	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	18	obj	_	_
+17	не	не	PRON	prn	Case=Nom|PronType=Int	18	xcomp	_	_
+18	қылсын	қыл	VERB	v	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	10	parataxis	_	_
+19	Шолпан	Шолпан	PROPN	np	Case=Nom|Gender=Fem	18	nsubj	_	_
+20	!	!	PUNCT	sent	_	18	punct	_	_
+
+# sent_id = sholpan.tagged.txt:8:321
+# text = Бес жылдың ішінде үш баласы бар еді: екеуі ұл, біреуі қыз.
+1	Бес	бес	NUM	num	NumType=Card	2	nummod	_	_
+2	жылдың	жыл	NOUN	n	Case=Gen	3	nmod:poss	_	_
+3	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+4	үш	үш	NUM	num	NumType=Card	5	nummod	_	_
+5	баласы	бала	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+6	бар	бар	ADJ	adj	_	0	root	_	_
+7	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	cop	_	_
+8	:	:	PUNCT	sent	_	6	punct	_	_
+9	екеуі	екеу	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Coll|Person[psor]=3	10	nsubj	_	_
+10-11	ұл	_	_	_	_	_	_	_	_
+10	ұл	ұл	NOUN	n	Case=Nom	6	parataxis	_	_
+11	_	е	AUX	cop	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	10	cop	_	_
+12	,	,	PUNCT	cm	_	10	punct	_	_
+13	біреуі	біреу	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Coll|Person[psor]=3	14	nsubj	_	_
+14-15	қыз	_	_	_	_	_	_	_	_
+14	қыз	қыз	NOUN	n	Case=Nom	6	parataxis	_	_
+15	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	14	cop	_	_
+16	.	.	PUNCT	sent	_	14	punct	_	_
+
 # sent_id = akorda-random.tagged.txt:1:0
 # text = Қазақстан осы өңірдегі бейбітшілікті қолдайды.
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	5	nsubj	_	_
