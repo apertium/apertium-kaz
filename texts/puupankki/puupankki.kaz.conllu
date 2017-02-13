@@ -500,8 +500,8 @@
 
 # sent_id = akorda-random.tagged.txt:42:749
 # text = Содан кейін Мемлекет басшысының жұмыс сапары Теміртау қаласында жалғасты.
-1	Содан	сол	PRON	prn	Case=Abl|PronType=Dem	2	obl	_	_
-2	кейін	кейін	ADP	post	_	9	case	_	_
+1	Содан	сол	PRON	prn	Case=Abl|PronType=Dem	9	obl	_	_
+2	кейін	кейін	ADP	post	_	1	case	_	_
 3	Мемлекет	мемлекет	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	басшысының	басшы	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
 5	жұмыс	жұмыс	NOUN	n	Case=Nom	6	compound	_	_
@@ -946,7 +946,7 @@
 # text = Сондықтан жұртшылық алаңдарлықтай ешқандай себеп жоқ.
 1	Сондықтан	сондықтан	SCONJ	cnjadv	_	6	cc	_	_
 2	жұртшылық	жұртшылық	NOUN	n	Case=Nom	3	nsubj	_	_
-3	алаңдарлықтай	алаңда	VERB	v	_	5	amod	_	_
+3	алаңдарлықтай	алаңда	VERB	v	Mood=Pot|Tense=Past|VerbForm=Part	5	acl	_	_
 4	ешқандай	ешқандай	DET	det	Polarity=Neg	5	det	_	_
 5	себеп	себеп	NOUN	n	Case=Nom	6	nsubj	_	_
 6-7	жоқ	_	_	_	_	_	_	_	_
@@ -2138,7 +2138,7 @@
 2	қызмет	қызмет	NOUN	n	Case=Nom	3	obj	_	_
 3	көрсету	көрсет	VERB	v	Case=Nom|VerbForm=Ger	4	acl	_	_
 4	мәдениеті	мәдениет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-5	айтарлықтай	айт	VERB	v	_	6	advcl	_	_
+5	айтарлықтай	айт	VERB	v	Mood=Pot|Tense=Past|VerbForm=Part	6	advcl	_	_
 6	өсті	өст	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	ccomp	_	_
 7	»	»	PUNCT	rquot	_	6	punct	_	_
 8	,	,	PUNCT	cm	_	6	punct	_	_
@@ -5641,7 +5641,7 @@
 # sent_id = kdt.tagged.txt:148:2378
 # text = Бір жапырақ етім бар.
 1	Бір	бір	DET	det	PronType=Ind	2	det	_	_
-2	жапырақ	жапырақ	NOUN	n	Case=Nom	3	det	_	_
+2	жапырақ	жапырақ	NOUN	n	Case=Nom	3	nummod	_	_
 3	етім	ет	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	4	nsubj	_	_
 4-5	бар	_	_	_	_	_	_	_	_
 4	бар	бар	ADJ	adj	_	0	root	_	_
@@ -6940,12 +6940,12 @@
 
 # sent_id = kdt.tagged.txt:263:4334
 # text = Бір бөтелке спирт бір жарым бөтелке арақ болды.
-1	Бір	бір	NUM	num	_	2	nummod	_	_
-2	бөтелке	бөтелке	NOUN	n	Case=Nom	3	clf	_	_
+1	Бір	бір	NUM	num	_	3	nummod	_	_
+2	бөтелке	бөтелке	NOUN	n	Case=Nom	1	clf	_	_
 3	спирт	спирт	NOUN	n	Case=Nom	7	nsubj	_	_
-4	бір	бір	NUM	num	_	6	nummod	_	_
+4	бір	бір	NUM	num	_	7	nummod	_	_
 5	жарым	жарым	ADJ	adj	_	6	compound	_	_
-6	бөтелке	бөтелке	NOUN	n	Case=Nom	7	clf	_	_
+6	бөтелке	бөтелке	NOUN	n	Case=Nom	4	clf	_	_
 7	арақ	арақ	NOUN	n	Case=Nom	8	xcomp	_	_
 8	болды	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_

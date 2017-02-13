@@ -835,9 +835,9 @@
 
 # содан кейін Мемлекет басшысының жұмыс сапары Теміртау қаласында жалғасты .	after that , Nursultan Nazarbayev arrived in Temirtau .
 "<Содан>"
-	"сол" prn dem abl @obl #1->2
+	"сол" prn dem abl @obl #1->9
 "<кейін>"
-	"кейін" post @case #2->9
+	"кейін" post @case #2->1
 "<Мемлекет>"
 	"мемлекет" n nom @nmod:poss #3->4
 "<басшысының>"
@@ -1570,7 +1570,7 @@
 "<жұртшылық>"
 	"жұртшылық" n nom @nsubj #2->3
 "<алаңдарлықтай>"
-	"алаңда" v iv gpr_ppot sim @amod #3->5
+	"алаңда" v iv gpr_ppot sim @acl #3->5
 "<ешқандай>"
 	"ешқандай" det neg @det #4->5
 "<себеп>"
