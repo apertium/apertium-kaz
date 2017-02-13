@@ -1081,7 +1081,7 @@
 1	Сондықтан	сондықтан	SCONJ	cnjadv	_	6	cc	_	_
 2	жұртшылық	жұртшылық	NOUN	n	Case=Nom	3	nsubj	_	_
 3	алаңдарлықтай	алаңда	VERB	v	Mood=Pot|Tense=Past|VerbForm=Part	5	acl	_	_
-4	ешқандай	ешқандай	DET	det	Polarity=Neg	5	det	_	_
+4	ешқандай	ешқандай	DET	det	PronType=Neg	5	det	_	_
 5	себеп	себеп	NOUN	n	Case=Nom	6	nsubj	_	_
 6-7	жоқ	_	_	_	_	_	_	_	_
 6	жоқ	жоқ	ADJ	adj	_	0	root	_	_
@@ -1270,7 +1270,7 @@
 3	аузынан	ауыз	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
 4	Астананың	Астана	PROPN	np	Case=Gen	5	nmod:poss	_	_
 5	атына	ат	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
-6	ешқандай	ешқандай	DET	det	Polarity=Neg	7	det	_	_
+6	ешқандай	ешқандай	DET	det	PronType=Neg	7	det	_	_
 7	айыптау	айыптау	NOUN	n	Case=Nom	8	nsubj	_	_
 8	айтылмады	айт	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
 9	.	.	PUNCT	sent	_	8	punct	_	_
@@ -1632,7 +1632,7 @@
 2	мемлекет	мемлекет	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	арасында	ара	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	еңсерілмейтін	еңсер	VERB	v	Aspect=Imp|Polarity=Neg|VerbForm=Part|Voice=Pass	6	acl:relcl	_	_
-5	ешқандай	ешқандай	DET	det	Polarity=Neg	6	det	_	_
+5	ешқандай	ешқандай	DET	det	PronType=Neg	6	det	_	_
 6	қайшылық	қайшылық	NOUN	n	Case=Nom	7	nsubj	_	_
 7-8	жоқ	_	_	_	_	_	_	_	_
 7	жоқ	жоқ	ADJ	adj	_	0	root	_	_
@@ -2084,7 +2084,7 @@
 1	Бүгінгі	бүгін	ADV	adv	Case=Nom	2	amod	_	_
 2	таңда	таң	NOUN	n	Case=Loc	8	obl	_	_
 3	адамзаттың	адамзат	NOUN	n	Case=Gen	4	nmod:poss	_	_
-4	болашағы	болашақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
+4	болашағы	болашақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 5	қандай	қандай	PRON	prn	PronType=Int	8	csubj	_	_
 6	болатыны	бол	AUX	v	Aspect=Imp|Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	5	cop	_	_
 7	бізге	біз	PRON	prn	Case=Dat|Number=Plur|Person=1|PronType=Prs	8	obl	_	_
@@ -2123,7 +2123,7 @@
 3	әлеуметтік	әлеуметтік	ADJ	adj	_	4	amod	_	_
 4	жағдайы	жағдай	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 5-6	ешқандай да	_	_	_	_	_	_	_	_
-5	ешқандай	ешқандай	PRON	prn	Polarity=Neg	7	advmod	_	_
+5	ешқандай	ешқандай	PRON	prn	PronType=Neg	7	advmod	_	_
 6	да	да	ADV	postadv	_	5	advmod	_	_
 7	нашарламайды	нашарла	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
@@ -2681,7 +2681,7 @@
 4	арасында	ара	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
 5	ешқашан	ешқашан	ADV	adv	_	8	advmod	_	_
 6-7	ешқандай да	_	_	_	_	_	_	_	_
-6	ешқандай	ешқандай	DET	det	Polarity=Neg	8	det	_	_
+6	ешқандай	ешқандай	DET	det	PronType=Neg	8	det	_	_
 7	да	да	ADV	postadv	_	8	advmod	_	_
 8	қайшылықтар	қайшылық	NOUN	n	Case=Nom|Number=Plur	0	root	_	_
 9	болған емес	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	8	cop	_	_
@@ -3647,7 +3647,7 @@
 2	мұндайды	бұл	PRON	prn	Case=Acc|PronType=Dem	7	obj	_	_
 3	мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
 4	әлемнің	әлем	NOUN	n	Case=Gen	6	nmod:poss	_	_
-5	ешбір	ешбір	DET	det	Polarity=Neg	6	det	_	_
+5	ешбір	ешбір	DET	det	PronType=Neg	6	det	_	_
 6	жерінен	жер	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	көрген емеспін	көр	VERB	v	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past|VerbForm=Fin	0	root	_	_
 8	.	.	PUNCT	sent	_	7	punct	_	_
@@ -4779,7 +4779,7 @@
 # sent_id = kdt.tagged.txt:53:942
 # text = Саған ешкім тимейді.
 1	Саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	3	obj	_	_
-2	ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	3	nsubj	_	_
+2	ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	3	nsubj	_	_
 3	тимейді	ти	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
@@ -4809,7 +4809,7 @@
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	төре	төре	NOUN	n	Case=Nom	5	nsubj	_	_
 3	сені	сен	PRON	prn	Case=Acc|Number=Sing|Person=2|PronType=Prs	5	obj	_	_
-4	ешкімге	ешкім	PRON	prn	Case=Dat|Polarity=Neg	5	nmod	_	_
+4	ешкімге	ешкім	PRON	prn	Case=Dat|PronType=Neg	5	nmod	_	_
 5	бермейді	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	_
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -7026,7 +7026,7 @@
 # sent_id = kdt.tagged.txt:260:4254
 # text = — Ештеңе емес...
 1	—	—	PUNCT	guio	_	2	punct	_	_
-2	Ештеңе	ештеңе	PRON	prn	Case=Nom|Polarity=Neg	0	root	_	_
+2	Ештеңе	ештеңе	PRON	prn	Case=Nom|PronType=Neg	0	root	_	_
 3	емес	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	2	cop	_	_
 4	...	...	PUNCT	sent	_	2	punct	_	_
 
@@ -7547,7 +7547,7 @@
 2	қатар	қатар	ADV	adv	_	50	advmod	_	_
 3	,	,	PUNCT	cm	_	2	punct	_	_
 4-5	ешкім де	_	_	_	_	_	_	_	_
-4	ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	49	nsubj	_	_
+4	ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	49	nsubj	_	_
 5	де	да	ADV	postadv	_	4	advmod	_	_
 6	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	7	nsubj	_	_
 7	тұратын	тұр	VERB	v	Aspect=Imp|VerbForm=Part	8	acl	_	_
@@ -7623,7 +7623,7 @@
 # sent_id = udhr.tagged.txt:6:291
 # text = Ешкім де құлдықта немесе кіріптарлықта ұсталуы тиіс емес.
 1-2	Ешкім де	_	_	_	_	_	_	_	_
-1	Ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	6	nsubj	_	_
+1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	6	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	құлдықта	құлдық	NOUN	n	Case=Loc	5	conj	_	_
 4	немесе	немесе	CCONJ	cnjcoo	_	5	cc	_	_
@@ -7653,7 +7653,7 @@
 # sent_id = udhr.tagged.txt:8:335
 # text = Ешкім де азапталуға немесе қадір-қасиетін қорлайтындай адамшылыққа жатпайтын қатыгездік жолмен жәбірленуге, немесе жазалануға тиіс емес.
 1-2	Ешкім де	_	_	_	_	_	_	_	_
-1	Ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	15	nsubj	_	_
+1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	15	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	азапталуға	азапта	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	14	conj	_	_
 4	немесе	немесе	CCONJ	cnjcoo	_	14	cc	_	_
@@ -7738,7 +7738,7 @@
 # sent_id = udhr.tagged.txt:12:464
 # text = Ешкім де негізсіз тұтқындалуға, қамауда ұсталуға немесе қуғынға ұшыратылуға тиіс емес.
 1-2	Ешкім де	_	_	_	_	_	_	_	_
-1	Ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	11	nsubj	_	_
+1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	11	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3-4	негізсіз	_	_	_	_	_	_	_	_
 3	негіз	негіз	NOUN	n	_	5	nmod	_	_
@@ -7757,7 +7757,7 @@
 # sent_id = udhr.tagged.txt:13:491
 # text = Ешкім де жасаған әрекеті немесе әрекетсіздігі негізінде, егер ол әрекеті ұлттық заңдар мен халықаралық құқық бойынша қылмыс болып саналмаса, жауапқа тартылмайды.
 1-2	Ешкім де	_	_	_	_	_	_	_	_
-1	Ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	23	nsubj	_	_
+1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	23	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	жасаған	жаса	VERB	v	Tense=Past|VerbForm=Part	6	acl	_	_
 4	әрекеті	әрекет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
@@ -7796,7 +7796,7 @@
 # sent_id = udhr.tagged.txt:15:553
 # text = Ешкімді де азаматтығынан немесе азаматтығын өзгерту құқығынан еріксіз айыруға болмайды.
 1-2	Ешкімді де	_	_	_	_	_	_	_	_
-1	Ешкімді	ешкім	PRON	prn	Case=Acc|Polarity=Neg	9	obj	_	_
+1	Ешкімді	ешкім	PRON	prn	Case=Acc|PronType=Neg	9	obj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	азаматтығынан	азаматтық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	7	conj	_	_
 4	немесе	немесе	CCONJ	cnjcoo	_	7	cc	_	_
@@ -7851,7 +7851,7 @@
 # sent_id = udhr.tagged.txt:18:639
 # text = Ешкім де өз мүлкінен еріксіз айрылмауға тиіс.
 1-2	Ешкім де	_	_	_	_	_	_	_	_
-1	Ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	7	nsubj	_	_
+1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	7	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	өз	өз	DET	det	PronType=Ref	4	det	_	_
 4	мүлкінен	мүлік	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
@@ -7881,7 +7881,7 @@
 # sent_id = udhr.tagged.txt:20:680
 # text = Ешкімді де белгілі бір ассоциацияға зорлықпен кіргізуге болмайды.
 1-2	Ешкімді де	_	_	_	_	_	_	_	_
-1	Ешкімді	ешкім	PRON	prn	Case=Acc|Polarity=Neg	7	obj	_	_
+1	Ешкімді	ешкім	PRON	prn	Case=Acc|PronType=Neg	7	obj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	белгілі	белгілі	ADJ	adj	_	5	amod	_	_
 4	бір	бір	DET	det	PronType=Ind	5	det	_	_
@@ -7939,7 +7939,7 @@
 # text = Бастауыш білім баршаға міндетті болуы тиіс.
 1	Бастауыш	бастауыш	ADJ	adj	_	2	amod	_	_
 2	білім	білім	NOUN	n	Case=Nom	4	nsubj	_	_
-3	баршаға	барша	PRON	prn	Case=Dat|Definite=Def	4	nmod	_	_
+3	баршаға	барша	PRON	prn	Case=Dat|PronType=Tot	4	nmod	_	_
 4	міндетті	міндетті	ADJ	adj	_	6	nsubj	_	_
 5	болуы	бол	AUX	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	4	cop	_	_
 6-7	тиіс	_	_	_	_	_	_	_	_
@@ -8356,7 +8356,7 @@
 5	ар-әл-арб	Дар-әл-Харб	PROPN	np	Case=Nom	20	conj	_	_
 6	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	5	cop	_	_
 7	,	,	PUNCT	cm	_	20	punct	_	_
-8	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	20	nmod	_	_
+8	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	19	nmod	_	_
 9	әуел	әуел	ADJ	adj	_	12	advmod	_	_
 10	мал	мал	NOUN	n	Case=Nom	11	obj	_	_
 11	табу	тап	VERB	v	Case=Nom|VerbForm=Ger	12	csubj	_	_
@@ -8780,7 +8780,7 @@
 13	оқығанменен	оқы	VERB	v	Case=Ins|Tense=Past|VerbForm=Ger	14	advcl	_	_
 14	не	не	PRON	prn	Case=Nom|PronType=Int	0	root	_	_
 15	бола	бол	AUX	v	Aspect=Imp|VerbForm=Cov	14	cop	_	_
-16	қойсын	қой	AUX	vaux	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	15	aux	_	_
+16	қойсын	қой	AUX	vaux	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	14	aux	_	_
 17	?	?	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:27:718
@@ -12498,7 +12498,7 @@
 # sent_id = Өлген_қазан.tagged.txt:3:40
 # text = Қожанасырды ешкім елемепті.
 1	Қожанасырды	Қожанасыр	PROPN	np	Case=Acc|Gender=Masc	3	obj	_	_
-2	ешкім	ешкім	PRON	prn	Case=Nom|Polarity=Neg	3	nsubj	_	_
+2	ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	3	nsubj	_	_
 3	елемепті	еле	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	0	root	_	_
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
@@ -12878,7 +12878,7 @@
 # sent_id = story.tagged.txt:19:327
 # text = Ол еш нәрсені көріп тұрған жоқ, ол санап жатыр.
 1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-2	еш нәрсені	ешнәрсе	PRON	prn	Case=Acc|Polarity=Neg	3	obj	_	_
+2	еш нәрсені	ешнәрсе	PRON	prn	Case=Acc|PronType=Neg	3	obj	_	_
 3	көріп	көр	VERB	v	Aspect=Perf|VerbForm=Cov	7	parataxis	_	_
 4	тұрған жоқ	тұр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	3	aux	_	_
 5	,	,	PUNCT	cm	_	3	punct	_	_
@@ -13399,7 +13399,7 @@
 11	мұралары	мұра	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 12	дәлел	дәлел	NOUN	n	Case=Nom	0	root	_	_
 13	бола	бол	AUX	v	Aspect=Imp|VerbForm=Cov	12	cop	_	_
-14	алады	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	13	aux	_	_
+14	алады	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	12	aux	_	_
 15	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = Шымкент.tagged.txt:8:221
