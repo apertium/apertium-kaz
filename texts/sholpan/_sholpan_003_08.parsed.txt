@@ -1,0 +1,31 @@
+"<Бес>"
+	"бес" num @nummod #1->2
+"<жылдың>"
+	"жыл" n gen @nmod:poss #2->3
+"<ішінде>"
+	"іш" n px3sp loc @obl #3->6
+"<үш>"
+	"үш" num @nummod #4->5
+"<баласы>"
+	"бала" n px3sp nom @nsubj #5->6
+"<бар>"
+	"бар" adj @root #6->0
+"<еді>"
+	"е" cop ifi p3 sg @cop #7->6
+"<:>"
+	":" sent @punct #8->6
+"<екеуі>"
+	"екеу" num coll subst px3sp nom @nsubj #9->10
+"<ұл>"
+	"ұл" n nom @parataxis #10->6
+		"е" cop aor p3 pl @cop #11->10
+"<,>"
+	"," cm @punct #12->10
+"<біреуі>"
+	"біреу" num coll subst px3sp nom @nsubj #13->14
+"<қыз>"
+	"қыз" n nom @parataxis #14->6
+		"е" cop aor p3 sg @cop #15->14
+"<.>"
+	"." sent @punct #16->14
+
