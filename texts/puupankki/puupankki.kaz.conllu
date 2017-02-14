@@ -152,7 +152,7 @@
 15-16	жалынды	_	_	_	_	_	_	_	_
 15	жалын	жалын	NOUN	n	_	18	conj	_	_
 16	лы	лы	ADP	post	_	15	case	_	_
-17	,	,	PUNCT	cm	_	18	cc	_	_
+17	,	,	PUNCT	cm	_	18	punct	_	_
 18-19	екпінді	_	_	_	_	_	_	_	_
 18	екпін	екпін	NOUN	n	_	20	nmod	_	_
 19	_	лы	ADP	post	_	18	case	_	_
@@ -212,6 +212,212 @@
 14	қыз	қыз	NOUN	n	Case=Nom	6	parataxis	_	_
 15	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	14	cop	_	_
 16	.	.	PUNCT	sent	_	14	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:1:0
+# text = II Елизавета ханшайым Виндзор әулетінен шыққан.
+1	II	II	NUM	num	NumType=Ord	3	flat:name	_	_
+2	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	3	flat:name	_	_
+3	ханшайым	ханшайым	NOUN	n	Case=Nom	6	nsubj	_	_
+4	Виндзор	Виндзор	PROPN	np	Case=Nom	5	nmod:poss	_	_
+5	әулетінен	әулет	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+6	шыққан	шық	VERB	v	Tense=Past|VerbForm=Part	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:2:14
+# text = Таққа 1952 жылдың 6 ақпанында, яғни 25 жасында, әкесі — VI Георгтың өлімінен кейін отырды.
+1	Таққа	тақ	NOUN	n	Case=Dat	17	obl	_	_
+2	1952	1952	NUM	num	NumType=Ord	3	amod	_	_
+3	жылдың	жыл	NOUN	n	Case=Gen	5	nmod:poss	_	_
+4	6	6	NUM	num	NumType=Ord	5	amod	_	_
+5	ақпанында	ақпан	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
+6	,	,	PUNCT	cm	_	9	punct	_	_
+7	яғни	яғни	SCONJ	cnjsub	_	9	cc	_	_
+8	25	25	NUM	num	NumType=Card	9	nummod	_	_
+9	жасында	жас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	appos	_	_
+10	,	,	PUNCT	cm	_	9	punct	_	_
+11	әкесі	әке	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	15	nmod:poss	_	_
+12	—	—	PUNCT	guio	_	14	punct	_	_
+13	VI	VI	NUM	num	NumType=Ord	14	flat:name	_	_
+14	Георгтың	Георг	PROPN	np	Case=Gen|Gender=Masc	11	appos	_	_
+15	өлімінен	өлім	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
+16	кейін	кейін	ADP	post	_	15	case	_	_
+17	отырды	отыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+18	.	.	PUNCT	sent	_	17	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:3:51
+# text = II Елизавета — жасы бойынша Ұлыбритания тарихындағы ең жасы үлкен британ (ағылшын) монархы.
+1	II	II	NUM	num	NumType=Ord	2	flat:name	_	_
+2	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	16	nsubj	_	_
+3	—	—	PUNCT	guio	_	2	punct	_	_
+4	жасы	жас	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+5	бойынша	бойынша	ADP	post	_	4	case	_	_
+6	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	7	nmod:poss	_	_
+7	тарихындағы	тарих	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
+8	ең	ең	ADV	adv	_	10	advmod	_	_
+9	жасы	жас	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
+10-11	үлкен	_	_	_	_	_	_	_	_
+10	үлкен	үлкен	ADJ	adj	_	16	acl:relcl	_	_
+11	е	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	10	cop	_	_
+12	британ	британ	ADJ	adj	_	16	amod	_	_
+13	(	(	PUNCT	lpar	_	14	punct	_	_
+14	ағылшын	ағылшын	ADJ	adj	_	12	appos	_	_
+15	)	)	PUNCT	rpar	_	14	punct	_	_
+16-17	монархы	_	_	_	_	_	_	_	_
+16	монарх	монарх	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+17	_	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	16	cop	_	_
+18	.	.	PUNCT	sent	_	16	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:4:86
+# text = 2015 жылдың 24 қаңтарындағы Сауд Арабиясының патшасы — Абдулла ибн Абдул Азиз ас-Саудтың өлімінен кейін билік басындағы ең кәрі монарх болып саналады.
+1	2015	2015	NUM	num	NumType=Ord	2	amod	_	_
+2	жылдың	жыл	NOUN	n	Case=Gen	4	nmod:poss	_	_
+3	24	24	NUM	num	NumType=Ord	4	amod	_	_
+4	қаңтарындағы	қаңтар	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	14	nmod	_	_
+5	Сауд	Сауд	PROPN	np	Case=Nom	6	flat:name	_	_
+6	Арабиясының	Арабия	PROPN	np	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
+7	патшасы	патша	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nmod:poss	_	_
+8	—	—	PUNCT	guio	_	13	punct	_	_
+9	Абдулла	Абдулла	PROPN	np	Case=Nom|Gender=Masc	13	flat:name	_	_
+10	ибн	ибн	X	x	_	13	flat:name	_	_
+11	Абдул	Абдул	PROPN	np	Case=Nom|Gender=Masc	13	flat:name	_	_
+12	Азиз	Азиз	PROPN	np	Case=Nom|Gender=Masc	13	flat:name	_	_
+13	ас-Саудтың	ас-Сауд	PROPN	np	Case=Gen|Gender=Masc	7	appos	_	_
+14	өлімінен	өлім	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	22	obl	_	_
+15	кейін	кейін	ADP	post	_	14	case	_	_
+16	билік	билік	NOUN	n	Case=Nom	17	nmod:poss	_	_
+17	басындағы	бас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	20	obl	_	_
+18	ең	ең	ADV	adv	_	19	advmod	_	_
+19	кәрі	кәрі	ADJ	adj	_	20	amod	_	_
+20	монарх	монарх	NOUN	n	Case=Nom	22	xcomp	_	_
+21	болып	болып	X	x	_	22	dep	_	_
+22	саналады	санал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+23	.	.	PUNCT	sent	_	22	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:5:133
+# text = Елизавета ханшайым Александра Мария Лондонның Мейфэр ауданында, Брютон-стриттегі № 17-үйде, яғни Стратмор графының резиденциясында дүниеге келген.
+1	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	4	flat:name	_	_
+2	ханшайым	ханшайым	NOUN	n	Case=Nom	4	flat:name	_	_
+3	Александра	Александра	PROPN	np	Case=Nom|Gender=Fem	4	flat:name	_	_
+4	Мария	Мария	PROPN	np	Case=Nom|Gender=Fem	20	nsubj	_	_
+5	Лондонның	Лондон	PROPN	np	Case=Gen	7	nmod:poss	_	_
+6	Мейфэр	Мейфэр	PROPN	np	Case=Nom	7	flat:name	_	_
+7	ауданында	аудан	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	conj	_	_
+8	,	,	PUNCT	cm	_	13	punct	_	_
+9	Брютон-стриттегі	Брютон-стрит	NOUN	n	Case=Loc	13	nmod	_	_
+10	№	№	NOUN	n	Case=Nom	13	nmod	_	_
+11	17	17	NUM	num	NumType=Ord	10	amod	_	_
+12	-	-	PUNCT	guio	_	11	punct	_	_
+13	үйде	үй	NOUN	n	Case=Loc	20	obl	_	_
+14	,	,	PUNCT	cm	_	18	punct	_	_
+15	яғни	яғни	SCONJ	cnjsub	_	18	cc	_	_
+16	Стратмор	Стратмор	NOUN	n	Case=Nom	17	flat:name	_	_
+17	графының	граф	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod:poss	_	_
+18	резиденциясында	резиденция	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	appos	_	_
+19	дүниеге	дүниеге	X	x	_	20	dep	_	_
+20	келген	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+21	.	.	PUNCT	sent	_	20	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:6:176
+# text = Қазіргі таңда аудан қайта тұрғызылғандықтан, үйді бұзған, алайда оның орнында мемориалдық тақта қойылған.
+1	Қазіргі	қазіргі	ADJ	adj	_	2	amod	_	_
+2	таңда	таң	NOUN	n	Case=Loc	5	obl	_	_
+3	аудан	аудан	NOUN	n	Case=Nom	5	nsubj	_	_
+4	қайта	қайта	ADV	adv	_	5	advmod	_	_
+5	тұрғызылғандықтан	тұрғыз	VERB	v	Case=Abl|VerbForm=Ger|Voice=Pass	8	advcl	_	_
+6	,	,	PUNCT	cm	_	5	punct	_	_
+7	үйді	үй	NOUN	n	Case=Acc	8	obj	_	_
+8	бұзған	бұз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	conj	_	_
+9	,	,	PUNCT	cm	_	8	punct	_	_
+10	алайда	алайда	SCONJ	cnjadv	_	15	cc	_	_
+11	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	орнында	орын	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	15	obl	_	_
+13	мемориалдық	мемориалдық	ADJ	adj	_	14	amod	_	_
+14	тақта	тақта	NOUN	n	Case=Nom	15	nsubj	_	_
+15	қойылған	қой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+16	.	.	PUNCT	sent	_	15	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:7:209
+# text = Өзінің атын анасының (Елизавета), апасының (Мария) және арғы әжесінің (Александра) құрметіне алған.
+1	Өзінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	2	nmod:poss	_	_
+2	атын	ат	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	19	obj	_	_
+3	анасының	ана	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	14	conj	_	_
+4	(	(	PUNCT	lpar	_	5	punct	_	_
+5	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	3	appos	_	_
+6	)	)	PUNCT	rpar	_	5	punct	_	_
+7	,	,	PUNCT	cm	_	14	punct	_	_
+8	апасының	апа	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	14	conj	_	_
+9	(	(	PUNCT	lpar	_	10	punct	_	_
+10	Мария	Мария	PROPN	np	Case=Nom|Gender=Fem	8	appos	_	_
+11	)	)	PUNCT	rpar	_	10	punct	_	_
+12	және	және	CCONJ	cnjcoo	_	14	cc	_	_
+13	арғы	арғы	ADJ	adj	_	14	amod	_	_
+14	әжесінің	әже	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	18	nmod:poss	_	_
+15	(	(	PUNCT	lpar	_	16	punct	_	_
+16	Александра	Александра	PROPN	np	Case=Nom|Gender=Fem	14	appos	_	_
+17	)	)	PUNCT	rpar	_	16	punct	_	_
+18	құрметіне	құрмет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	19	obl	_	_
+19	алған	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+20	.	.	PUNCT	sent	_	19	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:8:250
+# text = Туған күнінен бастап Елизавета ханшайым Йорктің герцогиниясы атанып, ағасы-Эдуард Уэльс ханзадасы (келешек Ұлыбритания королі — VIII Эдуард) мен әкесінен кейін үшінші мұрагер болды.
+1	Туған	ту	VERB	v	Tense=Past|VerbForm=Part	2	acl:relcl	_	_
+2	күнінен	күн	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	3	obl	_	_
+3	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	_	_
+4	Елизавета	Елизавета	PROPN	np	Case=Nom|Gender=Fem	5	flat:name	_	_
+5	ханшайым	ханшайым	NOUN	n	Case=Nom	18	nsubj	_	_
+6	Йорктің	Йорк	PROPN	np	Case=Gen	7	nmod:poss	_	_
+7	герцогиниясы	герцогиния	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	xcomp	_	_
+8	атанып	атан	VERB	v	Aspect=Perf|VerbForm=Conv	27	conj	_	_
+9	,	,	PUNCT	cm	_	8	punct	_	_
+10	ағасы	аға	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	24	conj	_	_
+11	-	-	PUNCT	cm	_	14	punct	_	_
+12	Эдуард	Эдуард	PROPN	np	Case=Nom|Gender=Masc	14	flat:name	_	_
+13	Уэльс	Уэльс	PROPN	np	Case=Nom	14	nmod:poss	_	_
+14	ханзадасы	ханзада	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	appos	_	_
+15	(	(	PUNCT	lpar	_	18	punct	_	_
+16	келешек	келешек	NOUN	n	Case=Nom	18	amod	_	_
+17	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	18	nmod:poss	_	_
+18	королі	король	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	appos	_	_
+19	—	—	PUNCT	guio	_	21	punct	_	_
+20	VIII	VIII	NUM	num	NumType=Ord	21	flat:name	_	_
+21	Эдуард	Эдуард	NOUN	n	Case=Nom|Gender=Masc	10	appos	_	_
+22	)	)	PUNCT	rpar	_	18	punct	_	_
+23	мен	мен	CCONJ	cnjcoo	_	24	cc	_	_
+24	әкесінен	әке	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	27	obl	_	_
+25	кейін	кейін	ADP	post	_	24	case	_	_
+26	үшінші	үш	NUM	num	NumType=Ord	27	amod	_	_
+27	мұрагер	мұрагер	NOUN	n	Case=Nom	0	root	_	_
+28	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	27	cop	_	_
+29	.	.	PUNCT	sent	_	27	punct	_	_
+
+# sent_id = Elizabeth-II.tagged.txt:9:309
+# text = Эдуард ханзада айтарлықтай жас, әрі жанұя құрып, балалы болуға тиіс болғандықтан, бастапқы кезде Елизавета таққа отыратын үміткер ретінде қарастырылмады.
+1	Эдуард	Эдуард	NOUN	n	Case=Nom|Gender=Masc	2	flat:name	_	_
+2	ханзада	ханзада	NOUN	n	Case=Nom	13	nsubj	_	_
+3	айтарлықтай	айт	VERB	v	Mood=Pot|Tense=Past|VerbForm=Part	4	advcl	_	_
+4	жас	жас	ADJ	adj	_	13	conj	_	_
+5	,	,	PUNCT	cm	_	13	punct	_	_
+6	әрі	әрі	CCONJ	cnjcoo	_	13	cc	_	_
+7	жанұя	жанұя	NOUN	n	Case=Nom	8	obj	_	_
+8	құрып	құр	VERB	v	Aspect=Perf|VerbForm=Conv	10	conj	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
+10-11	балалы	_	_	_	_	_	_	_	_
+10	бала	бала	NOUN	n	_	13	advcl	_	_
+11	лы	лы	ADP	post	_	10	case	_	_
+12	болуға	болуға	AUX	v	Case=Dat|VerbForm=Ger	10	cop	_	_
+13	тиіс	тиіс	ADJ	adj	_	23	advcl	_	_
+14	болғандықтан	бол	AUX	v	Case=Abl|VerbForm=Ger	13	cop	_	_
+15	,	,	PUNCT	cm	_	13	punct	_	_
+16	бастапқы	бастапқы	ADJ	adj	_	17	amod	_	_
+17	кезде	кез	NOUN	n	Case=Loc	23	obl	_	_
+18	Елизавета	Елизавета	NOUN	n	Case=Nom|Gender=Fem	23	nsubj	_	_
+19	таққа	тақ	NOUN	n	Case=Dat	20	obl	_	_
+20	отыратын	отыр	VERB	v	Aspect=Imp|VerbForm=Part	21	acl:relcl	_	_
+21	үміткер	үміткер	NOUN	n	Case=Nom	23	obl	_	_
+22	ретінде	ретінде	ADP	post	_	21	case	_	_
+23	қарастырылмады	қарастыр	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+24	.	.	PUNCT	sent	_	23	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:1:0
 # text = Қазақстан осы өңірдегі бейбітшілікті қолдайды.
