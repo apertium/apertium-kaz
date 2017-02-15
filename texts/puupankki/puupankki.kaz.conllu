@@ -8485,8 +8485,8 @@
 19	13	13	NUM	num	NumType=Ord	20	amod	_	_
 20	шілде	шілде	NOUN	n	Case=Nom	17	conj	_	_
 21	күндері	күн	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	22	nmod:poss	_	_
-22	аралығында	аралық	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	24	nmod	_	_
-23	Бразилияда	Бразилия	PROPN	np	Case=Loc	24	nmod	_	_
+22	аралығында	аралық	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	24	obl	_	_
+23	Бразилияда	Бразилия	PROPN	np	Case=Loc	24	obl	_	_
 24	өтті	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 25	.	.	PUNCT	sent	_	24	punct	_	_
 
@@ -8500,7 +8500,7 @@
 6	финалы	финал	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
 7	Рио-де-Жанейродағы	Рио-де-Жанейро	PROPN	np	Case=Loc	8	amod	_	_
 8	Маракана	Маракана	PROPN	np	Case=Nom	9	nmod:poss	_	_
-9	стадионында	стадион	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	_
+9	стадионында	стадион	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
 10	орын	орын	NOUN	n	Case=Nom	11	compound:lvc	_	_
 11	алды	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	3	conj	_	SpaceAfter=No
 12	.	.	PUNCT	sent	_	11	punct	_	_
@@ -8508,18 +8508,18 @@
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:3:75
 # text = Әлем чемпионаттары үшін құрлықтарды ротациялау қағидасына байланысты, 2014 жылдың чемпионаты Оңтүстік Америкада өту керек болды және Бразилия сол чемпионатты өткізуге ниет білдірген жалғыз ғана ел еді.
 1	Әлем	әлем	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	чемпионаттары	чемпионат	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	_
+2	чемпионаттары	чемпионат	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	үшін	үшін	ADP	post	_	2	case	_	_
 4	құрлықтарды	құрлық	NOUN	n	Case=Acc|Number=Plur	5	obj	_	_
 5	ротациялау	ротацияла	VERB	v	Case=Nom|VerbForm=Ger	6	acl	_	_
-6	қағидасына	қағида	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	14	nmod	_	_
+6	қағидасына	қағида	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	14	obl	_	_
 7	байланысты	байланысты	ADP	post	_	6	case	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	7	punct	_	_
 9	2014	2014	NUM	num	NumType=Ord	10	amod	_	_
 10	жылдың	жыл	NOUN	n	Case=Gen	11	nmod:poss	_	_
 11	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
 12	Оңтүстік	Оңтүстік	X	x	_	13	dep	_	_
-13	Америкада	Америка	PROPN	np	Case=Loc	14	nmod	_	_
+13	Америкада	Америка	PROPN	np	Case=Loc	14	obl	_	_
 14	өту	өт	VERB	v	Case=Nom|VerbForm=Ger	15	csubj	_	_
 15	керек	керек	ADJ	adj	_	0	root	_	_
 16	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	15	cop	_	_
@@ -8544,7 +8544,7 @@
 3	америкалық	америкалық	ADJ	adj	_	4	amod	_	_
 4	елдер	ел	NOUN	n	Case=Nom|Number=Plur	9	nsubj	_	_
 5	2003	2003	NUM	num	NumType=Ord	6	amod	_	_
-6	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+6	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 7	Бразилия	Бразилия	PROPN	np	Case=Nom	8	nmod:poss	_	_
 8	үміткерлігін	үміткерлік	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
 9	қолдаған	қолда	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -8567,10 +8567,10 @@
 3	жылдың	жыл	NOUN	n	Case=Gen	4	nmod:poss	_	_
 4	чемпионатын	чемпионат	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	obj	_	_
 5	өткізу	өткіз	VERB	v	Case=Nom|VerbForm=Ger	6	acl	_	_
-6	құқығына	құқық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+6	құқығына	құқық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	қатысатын	қатыс	VERB	v	Aspect=Imp|VerbForm=Part	8	acl	_	_
 8	кандидаттар	кандидат	NOUN	n	Case=Nom|Number=Plur	9	nmod:poss	_	_
-9	додасына	дода	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	27	nmod	_	SpaceAfter=No
+9	додасына	дода	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	27	obl	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	9	punct	_	_
 11	соңғы	соң	ADV	adv	Case=Nom	13	amod	_	_
 12	екі	екі	NUM	num	NumType=Card	13	nummod	_	_
@@ -8587,7 +8587,7 @@
 23	барлық	барлық	DET	det	PronType=Qnt	25	det	_	_
 24	конфедерациялардан	конфедерация	NOUN	n	Case=Abl|Number=Plur	25	nmod	_	_
 25	елдер	ел	NOUN	n	Case=Nom|Number=Plur	27	nsubj	_	_
-26	сынға	сын	NOUN	n	Case=Dat	27	nmod	_	_
+26	сынға	сын	NOUN	n	Case=Dat	27	obl	_	_
 27	түседі	түс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 28	.	.	PUNCT	sent	_	27	punct	_	_
 
@@ -8595,16 +8595,16 @@
 # text = Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды (Мексика, Италия, Франция және Германиядан кейін).
 1	Бразилия	Бразилия	PROPN	np	Case=Nom	9	nsubj	_	_
 2	өз	өз	DET	det	PronType=Ref	3	det	_	_
-3	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+3	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 4	чемпионатты	чемпионат	NOUN	n	Case=Acc	7	obj	_	_
 5	екі	екі	NUM	num	NumType=Card	6	nummod	_	_
-6	рет	рет	NOUN	n	Case=Nom	7	nmod	_	_
+6	рет	рет	NOUN	n	Case=Nom	7	obl	_	_
 7	өткізген	өткіз	VERB	v	Tense=Past|VerbForm=Part	9	acl	_	_
 8	бесінші	бес	NUM	num	NumType=Ord	9	amod	_	_
 9	ел	ел	NOUN	n	Case=Nom	0	root	_	_
 10	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
 11	(	(	PUNCT	lpar	_	18	punct	_	SpaceAfter=No
-12	Мексика	Мексика	PROPN	np	Case=Nom	9	nmod	_	SpaceAfter=No
+12	Мексика	Мексика	PROPN	np	Case=Nom	9	obl	_	SpaceAfter=No
 13	,	,	PUNCT	cm	_	18	punct	_	_
 14	Италия	Италия	PROPN	np	Case=Nom	12	conj	_	SpaceAfter=No
 15	,	,	PUNCT	cm	_	18	punct	_	_
@@ -8617,14 +8617,14 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:8:267
 # text = Осыған дейін Бразилияда футболдан әлем чемпионаты 1950 жылы өткен болатын.
-1	Осыған	осы	PRON	prn	Case=Dat|PronType=Dem	9	nmod	_	_
+1	Осыған	осы	PRON	prn	Case=Dat|PronType=Dem	9	obl	_	_
 2	дейін	дейін	ADP	post	_	1	case	_	_
-3	Бразилияда	Бразилия	PROPN	np	Case=Loc	9	nmod	_	_
+3	Бразилияда	Бразилия	PROPN	np	Case=Loc	9	obl	_	_
 4	футболдан	футбол	NOUN	n	Case=Abl	6	nmod	_	_
 5	әлем	әлем	NOUN	n	Case=Nom	6	nmod:poss	_	_
 6	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 7	1950	1950	NUM	num	NumType=Ord	8	amod	_	_
-8	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+8	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 9	өткен	өт	VERB	v	Tense=Past|VerbForm=Part	0	root	_	_
 10	болатын	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	9	punct	_	_
@@ -8639,13 +8639,13 @@
 6	2011	2011	NUM	num	NumType=Ord	7	amod	_	_
 7	жылдың	жыл	NOUN	n	Case=Gen	9	nmod:poss	_	_
 8	маусым	маусым	NOUN	n	Case=Nom	9	nmod:poss	_	_
-9	айында	ай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
+9	айында	ай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 10	басталып	баста	VERB	v	Aspect=Perf|VerbForm=Conv|Voice=Pass	16	advcl	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	10	punct	_	_
 12	2013	2013	NUM	num	NumType=Ord	13	amod	_	_
 13	жылдың	жыл	NOUN	n	Case=Gen	15	nmod:poss	_	_
 14	қараша	қараша	NOUN	n	Case=Nom	15	nmod:poss	_	_
-15	айында	ай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	nmod	_	_
+15	айында	ай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
 16	аяқталды	аяқта	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
@@ -8653,10 +8653,10 @@
 # text = Бразилия қабылдаушы ел ретінде автоматты түрде чемпионат қатысушысы болды.
 1	Бразилия	Бразилия	PROPN	np	Case=Nom	8	nsubj	_	_
 2	қабылдаушы	қабылда	VERB	v	Mood=Pot|VerbForm=Part	3	acl	_	_
-3	ел	ел	NOUN	n	Case=Nom	8	nmod	_	_
+3	ел	ел	NOUN	n	Case=Nom	8	obl	_	_
 4	ретінде	ретінде	ADP	post	_	3	case	_	_
 5	автоматты	автоматты	ADJ	adj	_	6	amod	_	_
-6	түрде	түр	NOUN	n	Case=Loc	8	nmod	_	_
+6	түрде	түр	NOUN	n	Case=Loc	8	obl	_	_
 7	чемпионат	чемпионат	NOUN	n	Case=Nom	8	nmod:poss	_	_
 8	қатысушысы	қатысушы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
 9	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	cop	_	SpaceAfter=No
@@ -8676,7 +8676,7 @@
 10	1	1	NUM	num	NumType=Ord	4	conj	_	_
 11	/	/	SYM	sym	_	12	case	_	_
 12	8	8	NUM	num	NumType=Card	10	compound	_	_
-13	финалға	финал	NOUN	n	Case=Dat	14	nmod	_	_
+13	финалға	финал	NOUN	n	Case=Dat	14	obl	_	_
 14	шығады	шық	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
@@ -8684,10 +8684,10 @@
 # text = Командалардың турнирлік кестедегі орны келесі көрсеткіштер бойынша анықталады:
 1	Командалардың	команда	NOUN	n	Case=Gen|Number=Plur	4	nmod:poss	_	_
 2	турнирлік	турнирлік	ADJ	adj	_	3	amod	_	_
-3	кестедегі	кесте	NOUN	n	Case=Loc	4	nmod	_	_
+3	кестедегі	кесте	NOUN	n	Case=Loc	4	amod	_	_
 4	орны	орын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 5	келесі	келесі	ADJ	adj	_	6	amod	_	_
-6	көрсеткіштер	көрсеткіш	NOUN	n	Case=Nom|Number=Plur	8	nmod	_	_
+6	көрсеткіштер	көрсеткіш	NOUN	n	Case=Nom|Number=Plur	8	obl	_	_
 7	бойынша	бойынша	ADP	post	_	6	case	_	_
 8	анықталады	анықта	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 9	:	:	PUNCT	sent	_	8	punct	_	_
