@@ -32,7 +32,7 @@
 	"." sent @punct #18->16
 
 "<Аның>"
-	"ол" prn pers p3 sg gen @nmod:poss #1->5
+	"ол" prn pers p3 sg gen @obl #1->5
 "<үшін>"
 	"үшін" post @case #2->1
 "<бұл>"
@@ -40,12 +40,12 @@
 "<жер>"
 	"жер" n nom @nsubj #4->5
 "<Дар-әл-Харб>"
-	"Дар-әл-Харб" np top nom @conj #5->20
+	"Дар-әл-Харб" np top nom @conj #5->19
 		"е" cop aor p3 sg @cop #6->5
 "<,>"
-	"," cm @punct #7->20
+	"," cm @punct #7->19
 "<мұнда>"
-	"бұл" prn dem loc @nmod #8->19
+	"бұл" prn dem loc @obl #8->19
 "<әуел>"
 	"әуел" adj advl @advmod #9->12
 "<мал>"

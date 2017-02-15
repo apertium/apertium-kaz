@@ -7910,25 +7910,25 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:2:31
 # text = Аның үшін бұл жер Дар-әл-Харб, мұнда әуел мал табу керек, онан соң ғараб, парсы керек.
-1	Аның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+1	Аның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
 2	үшін	үшін	ADP	post	_	1	case	_	_
 3	бұл	бұл	DET	det	PronType=Dem	4	det	_	_
 4	жер	жер	NOUN	n	Case=Nom	5	nsubj	_	_
-5	Дар-әл-Харб	Дар-әл-Харб	PROPN	np	Case=Nom	18	punct	_	SpaceAfter=No
-6	,	,	PUNCT	cm	_	19	punct	_	_
-7	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	18	nmod	_	_
+5	Дар-әл-Харб	Дар-әл-Харб	PROPN	np	Case=Nom	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	cm	_	18	punct	_	_
+7	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	18	obl	_	_
 8	әуел	әуел	ADJ	adj	_	11	advmod	_	_
 9	мал	мал	NOUN	n	Case=Nom	10	obj	_	_
 10	табу	тап	VERB	v	Case=Nom|VerbForm=Ger	11	csubj	_	_
-11	керек	керек	ADJ	adj	_	0	root	_	SpaceAfter=No
+11	керек	керек	ADJ	adj	_	5	conj	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	18	punct	_	_
 13	онан	ол	PRON	prn	Case=Abl|PronType=Dem	18	advmod	_	_
 14	соң	соң	ADP	post	_	13	case	_	_
 15	ғараб	ғараб	NOUN	n	Case=Nom	18	nsubj	_	SpaceAfter=No
 16	,	,	PUNCT	cm	_	17	punct	_	_
 17	парсы	парсы	NOUN	n	Case=Nom	15	conj	_	_
-18	керек	керек	ADJ	adj	_	11	conj	_	SpaceAfter=No
-19	.	.	PUNCT	sent	_	5	conj	_	_
+18	керек	керек	ADJ	adj	_	5	conj	_	SpaceAfter=No
+19	.	.	PUNCT	sent	_	18	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:3:70
 # text = Қарны аш кісінің көңіліне ақыл, бойында ар, ғылымға құмарлық қайдан тұрсын?
