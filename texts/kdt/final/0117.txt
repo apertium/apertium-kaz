@@ -5,7 +5,7 @@
 "<соң>"
 	"соң" post @case #3->2
 "<ауыл>"
-	"ауыл" n nom @goeswith #4->6
+	"ауыл" n attr @compound #4->6
 "<->"
 	"-" guio @punct #5->6
 "<ауылдан>"
@@ -19,7 +19,7 @@
 "<,>"
 	"," cm @punct #10->17
 "<төсек>"
-	"төсек" n nom @goeswith #11->13
+	"төсек" n attr @compound #11->13
 "<->"
 	"-" guio @punct #12->13
 "<орын>"
@@ -27,7 +27,7 @@
 "<,>"
 	"," cm @punct #14->17
 "<ыдыс>"
-	"ыдыс" n nom @goeswith #15->17
+	"ыдыс" n attr @compound #15->17
 "<->"
 	"-" guio @punct #16->17
 "<сайман>"
