@@ -557,43 +557,38 @@
 	"." sent @punct #15->12
 
 "<Тау етегінде>"
-	"тау етек" n px3sp loc
+	"тау етек" n px3sp loc @obl #1->16
 "<өзен>"
-	"өзен" n nom 
+	"өзен" n nom @nsubj #2->7
 "<бойындағы>"
-	"бой" n px3sp loc attr
+	"бой" n px3sp loc attr @amod #3->4
 "<алқаптарда>"
-	"алқап" n pl loc
+	"алқап" n pl loc @obl #4->7
 "<егіншілік>"
-	"егіншілік" n nom
-;	"егіншілік" n attr 
+	"егіншілік" n nom @conj #5->7
 "<пен>"
-	"мен" cnjcoo
-	"мен" post
+	"мен" cnjcoo @cc #6->7
 "<жүзімдік>"
-	"жүзімдік" n nom
-	"жүзімдік" n nom
-		"е" cop aor p3 sg
+	"жүзімдік" n nom @parataxis #7->16
+		"е" cop aor p3 sg @cop #8->7
 "<,>"
-	"," cm @punct
+	"," cm @punct #9->16
 "<ал>"
-	"ал" cnjcoo @cc
+	"ал" cnjcoo @cc #10->16
 "<көгалды>"
-	"*көгалды"
+	"көгалды" adj @amod #11->15
 "<таулы>"
-	"таулы" adj
-	"таулы" adj subst nom
-;	"тау" n
-;		"лы" post 
+	"таулы" adj @amod #12->15
 "<жайылымдарда>"
-	"*жайылым" n pl loc 
+	"жайылым" n pl loc @compound #13->15
 "<->"
-	"-" guio @punct
+	"-" guio @punct #14->15
 "<мал шаруашылығы>"
-	"мал шаруашылық" n px3sp nom
+	"мал шаруашылық" n px3sp nom @nsubj #15->16
 "<дамыған>"
-	"дамы" v iv past p3 sg @ROOT #
+	"дамы" v iv past p3 sg @root #16->0
 "<.>"
+	"." sent @punct #17->16
 
 "<1914>"
 	"1914" num @amod #1->2

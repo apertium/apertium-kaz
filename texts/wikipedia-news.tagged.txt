@@ -438,43 +438,35 @@
 "<болып>"
 	"бол" v iv gna_perf
 "<белгіленді>"
-	"белгілен" v tv ifi p3 sg
 	"белгіле" v tv pass ifi p3 sg
 "<.>"
 	"." sent
 
 "<УЕФА>"
-	"УЕФА" abbr
+	"УЕФА" abbr @nsubj #1->11
 "<1996>"
-	"1996" num
+	"1996" num @amod #2->3
 "<жылдан>"
-	"жыл" n abl
+	"жыл" n abl @obl #3->11
 "<бергі>"
-	"бері" adv attr
-	"бері" adv subst nom
+	"бері" adv attr @amod #4->6
 "<футзал>"
-	"*футзал"
+	"футзал" n nom @nmod:poss #5->6
 "<тарихында>"
-	"тарих" n px3sp loc
+	"тарих" n px3sp loc @obl #6->11
 "<медаль>"
-	"медаль" n nom
+	"медаль" n nom @obj #7->8
 "<алған>"
-	"ал" v iv past p3 sg
-	"ал" v iv gpr_past
-	"ал" v iv gpr_past subst nom
-	"ал" v iv ger_past nom
+	"ал" v iv gpr_past @acl:relcl #8->11
 "<алғашқы>"
-	"алғашқы" n nom
-	"алғашқы" adj
-	"алғашқы" adv
-	"алғаш" adv subst nom
+	"алғашқы" adj @amod #9->11
 "<дебютант>"
-	"*дебютант"
+	"дебютант" n attr @compound #10->11
 "<ел>"
-	"ел" n nom
-		"е" cop aor p3 sg
+	"ел" n nom @root #11->0
+		"е" cop aor p3 sg @cop #12->11
 "<.>"
-	"." sent
+	"." sent @punct #13->11
 
 "<Анкарада>"
 	"Анкара" np top loc

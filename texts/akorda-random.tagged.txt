@@ -857,21 +857,21 @@
 
 # тек сыртқы кредиттеуге үміт арту ақылдылық емес .	to rely only on external lending is not reasonable .
 "<Тек>" 
-	"тек" adv @advmod
+	"тек" adv @advmod #1->6
 "<сыртқы>"
-	"сыртқы" adj
+	"сыртқы" adj @amod #2->4
 "<кредиттеуге>"
-	"кредитте" v tv ger dat
+	"кредитте" v tv ger dat @acl #3->4
 "<үміт>"
-	"үміт" n nom
+	"үміт" n nom @nsubj #4->5
 "<арту>"
-	"арт" v iv ger nom
+	"арт" v iv ger nom @csubj #5->6
 "<ақылдылық>"
-	"ақылдылық" n nom @root
+	"ақылдылық" n nom @root #6->0
 "<емес>"
-	"е" cop neg aor p3 sg @cop
+	"е" cop neg aor p3 sg @cop #7->6
 "<.>"
-	"." sent @punct
+	"." sent @punct #8->6
 
 "<->"
 	"-" guio @punct #1->9
