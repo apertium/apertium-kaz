@@ -2641,9 +2641,9 @@
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	5	obl	_	_
 3	қырықтан	қырық	NUM	num	Case=Abl|NumType=Card,Ord	5	nmod	_	_
-4	астам	астам	ADJ	adj	_	5	amod	_	_
+4	астам	астам	ADP	post	_	3	case	_	_
 5	рет	рет	NOUN	n	Case=Nom	0	root	_	_
-6	болдым	бол	AUX	v	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	5	cop	_	SpaceAfter=No
+6	болдым	бол	AUX	v	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	cop	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:226:4050
@@ -7941,7 +7941,7 @@
 7	бойында	бой	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	orphan	_	_
 8	ар	ар	NOUN	n	Case=Nom	5	conj	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	8	punct	_	_
-10	ғылымға	ғылым	NOUN	n	Case=Dat	13	nmod	_	_
+10	ғылымға	ғылым	NOUN	n	Case=Dat	13	obl	_	_
 11	құмарлық	құмарлық	NOUN	n	Case=Nom	13	nsubj	_	_
 12	қайдан	қайдан	ADV	adv	PronType=Int	13	advmod	_	_
 13	тұрсын	тұр	VERB	v	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	5	conj	_	SpaceAfter=No
@@ -7973,10 +7973,10 @@
 2	үйренейін	үйрен	VERB	v	Mood=Opt|Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	6	punct	_	_
 4	не	не	CCONJ	cnjcoo	_	6	cc	_	_
-5	балама	бала	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	6	nmod	_	_
+5	балама	бала	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	6	obl	_	_
 6	үйретейін	үйрет	VERB	v	Mood=Opt|Number=Sing|Person=1|VerbForm=Fin	2	conj	_	_
 7	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
-8	ойына	ой	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
+8	ойына	ой	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 9	жақсы	жақсы	ADJ	adj	_	10	advmod	_	_
 10	түседі	түс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
@@ -8004,17 +8004,17 @@
 15	да	да	CCONJ	cnjcoo	_	14	cc	_	_
 16	—	—	PUNCT	guio	_	14	punct	_	_
 17	бәрі	бәрі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	14	appos	_	_
-18	орыста	орыс	NOUN	n	Case=Loc	19	nmod	_	_
+18	орыста	орыс	NOUN	n	Case=Loc	19	obl	_	_
 19	тұр	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 20	.	.	PUNCT	sent	_	19	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:8:189
 # text = Зарарынан қашық болуға, пайдасына ортақ болуға тілін, оқуын, ғылымын білмек керек.
-1	Зарарынан	зарар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	2	nmod	_	_
+1	Зарарынан	зарар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	2	obl	_	_
 2	қашық	қашық	ADJ	adj	_	13	advcl	_	_
 3	болуға	бол	AUX	v	Case=Dat|VerbForm=Ger	2	cop	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	7	punct	_	_
-5	пайдасына	пайда	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+5	пайдасына	пайда	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	ортақ	ортақ	ADJ	adj	_	2	conj	_	_
 7	болуға	бол	AUX	v	Case=Dat|VerbForm=Ger	6	cop	_	_
 8	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	13	obj	_	SpaceAfter=No
@@ -8059,9 +8059,9 @@
 3	өнерін	өнер	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
 4	білген	біл	VERB	v	Tense=Past|VerbForm=Part	2	conj	_	_
 5	кісі	кісі	NOUN	n	Case=Nom	9	nsubj	_	_
-6	соныменен	сол	PRON	prn	Case=Ins|PronType=Dem	9	nmod	_	_
+6	соныменен	сол	PRON	prn	Case=Ins|PronType=Dem	9	obl	_	_
 7	бірдейлік	бірдейлік	NOUN	n	Case=Nom	8	nmod:poss	_	_
-8	дағуасына	дағуа	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+8	дағуасына	дағуа	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 9	кіреді	кір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	13	punct	_	_
 11	аса	аса	ADJ	adj	_	12	advmod	_	_
@@ -8081,7 +8081,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:13:303
 # text = Жорғалықпенен көңілін алсам екен деген надан әке-шешесін, ағайын-жұртын, дінін адамшылығын жаурыннан бір қаққанға сатады.
-1	Жорғалықпенен	жорғалық	NOUN	n	Case=Ins	3	nmod	_	_
+1	Жорғалықпенен	жорғалық	NOUN	n	Case=Ins	3	obl	_	_
 2	көңілін	көңіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	3	obj	_	_
 3	алсам екен	ал	VERB	v	Mood=Vol|Number=Sing|Person=1|VerbForm=Fin	5	ccomp	_	_
 4	деген	де	VERB	v	Tense=Past|VerbForm=Part	11	acl	_	_
@@ -8092,7 +8092,7 @@
 9	,	,	PUNCT	cm	_	11	punct	_	_
 10	дінін	дін	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
 11	адамшылығын	адамшылық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
-12	жаурыннан	жаурын	NOUN	n	Case=Abl	14	nmod	_	_
+12	жаурыннан	жаурын	NOUN	n	Case=Abl	14	obl	_	_
 13	бір	бір	NUM	num	NumType=Card,Ord	14	advmod	_	_
 14	қаққанға	қақ	VERB	v	Case=Dat|Tense=Past|VerbForm=Ger	15	advcl	_	_
 15	сатады	сат	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -8135,14 +8135,14 @@
 # text = Ләкин осы күнде орыс ғылымын баласына үйреткен жандар соның қаруымен тағы қазақты аңдысам екен дейді.
 1	Ләкин	ләкин	CCONJ	cnjcoo	_	14	cc	_	_
 2	осы	осы	DET	det	PronType=Dem	3	det	_	_
-3	күнде	күн	NOUN	n	Case=Loc	7	nmod	_	_
+3	күнде	күн	NOUN	n	Case=Loc	7	obl	_	_
 4	орыс	орыс	NOUN	n	Case=Nom	5	nmod:poss	_	_
 5	ғылымын	ғылым	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	obj	_	_
-6	баласына	бала	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+6	баласына	бала	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	үйреткен	үйрет	VERB	v	Tense=Past|VerbForm=Part	8	acl	_	_
 8	жандар	жан	NOUN	n	Case=Nom|Number=Plur	14	nsubj	_	_
 9	соның	сол	PRON	prn	Case=Gen|PronType=Dem	10	nsubj	_	_
-10	қаруымен	қары	VERB	v	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	13	nmod	_	_
+10	қаруымен	қары	VERB	v	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	13	obl	_	_
 11	тағы	тағы	ADV	postadv	_	10	advmod	_	_
 12	қазақты	қазақ	NOUN	n	Case=Acc	13	obj	_	_
 13	аңдысам екен	аңды	VERB	v	Mood=Vol|Number=Sing|Person=1|VerbForm=Fin	14	ccomp	_	_
@@ -8177,7 +8177,7 @@
 13	біліп	біл	VERB	v	Aspect=Perf|VerbForm=Conv	19	advcl	_	SpaceAfter=No
 14	,	,	PUNCT	cm	_	13	punct	_	_
 15	жұрт	жұрт	NOUN	n	Case=Nom	16	nmod:poss	_	_
-16	қатарына	қатар	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	17	nmod	_	_
+16	қатарына	қатар	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
 17	қосылудың	қос	VERB	v	Case=Gen|VerbForm=Ger|Voice=Pass	18	acl	_	_
 18	қамын	қам	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	19	obj	_	_
 19	жейік	же	VERB	v	Mood=Opt|Number=Plur|Person=1|VerbForm=Fin	20	ccomp	_	_
@@ -8190,9 +8190,9 @@
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:19:483
 # text = Қазірде орыстан оқыған балалардан артық жақсы кісі шыға алмай да тұр.
 1	Қазірде	қазірде	ADV	adv	_	8	advmod	_	_
-2	орыстан	орыс	NOUN	n	Case=Abl	3	nmod	_	_
+2	орыстан	орыс	NOUN	n	Case=Abl	3	obl	_	_
 3	оқыған	оқы	VERB	v	Tense=Past|VerbForm=Part	4	acl	_	_
-4	балалардан	бала	NOUN	n	Case=Abl|Number=Plur	8	nmod	_	_
+4	балалардан	бала	NOUN	n	Case=Abl|Number=Plur	8	obl	_	_
 5	артық	артық	ADV	adv	_	6	advmod	_	_
 6	жақсы	жақсы	ADJ	adj	_	7	amod	_	_
 7	кісі	кісі	NOUN	n	Case=Nom	8	nsubj	_	_
@@ -8211,7 +8211,7 @@
 4	,	,	PUNCT	cm	_	5	punct	_	_
 5	ағайын-туғаны	ағайын-туған	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	_
 6	бір	бір	NUM	num	NumType=Card	7	nummod	_	_
-7	жағынан	жақ	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod	_	_
+7	жағынан	жақ	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
 8	бұзып	бұз	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 9	жатыр	жат	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	8	punct	_	_
@@ -8258,7 +8258,7 @@
 8	қайта	қайта	ADV	adv	_	12	advmod	_	_
 9	кедейдің	кедей	NOUN	n	Case=Gen	10	nmod:poss	_	_
 10	баласын	бала	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	obj	_	_
-11	орысқа	орыс	NOUN	n	Case=Dat	12	nmod	_	_
+11	орысқа	орыс	NOUN	n	Case=Dat	12	obl	_	_
 12	қорлап	қорла	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 13	берді	бер	AUX	vaux	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	SpaceAfter=No
 14	.	.	PUNCT	sent	_	12	punct	_	_
@@ -8266,7 +8266,7 @@
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:24:601
 # text = Олар осыдан артық қайда барсын?
 1	Олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
-2	осыдан	осы	PRON	prn	Case=Abl|PronType=Dem	5	nmod	_	_
+2	осыдан	осы	PRON	prn	Case=Abl|PronType=Dem	5	obl	_	_
 3	артық	артық	ADP	post	_	2	case	_	_
 4	қайда	қайда	ADV	adv	PronType=Int	5	advmod	_	_
 5	барсын	бар	VERB	v	Mood=Opt|Number=Plur|Person=3|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -8279,23 +8279,23 @@
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	кейбір	кейбір	DET	det	PronType=Ind	4	det	_	_
 4	қазақтар	қазақ	NOUN	n	Case=Nom|Number=Plur	6	nsubj	_	_
-5	ағайынымен	ағайын	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+5	ағайынымен	ағайын	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	араздасқанда	араздас	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	28	advcl	_	SpaceAfter=No
 7	:	:	PUNCT	sent	_	6	punct	_	_
 8	“	“	PUNCT	lquot	_	23	punct	_	SpaceAfter=No
 9	Сенің	сен	PRON	prn	Case=Gen|Number=Sing|Person=2|PronType=Prs	11	nmod:poss	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
-11	зорлығыңа	зорлық	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=2	12	nmod	_	_
+11	зорлығыңа	зорлық	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=2	12	obl	_	_
 12	көнгенше	көн	VERB	v	VerbForm=Conv	23	advcl	_	SpaceAfter=No
 13	,	,	PUNCT	cm	_	12	punct	_	_
 14	баламды	бала	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	16	obj	_	_
-15	солдатқа	солдат	NOUN	n	Case=Dat	16	nmod	_	_
+15	солдатқа	солдат	NOUN	n	Case=Dat	16	obl	_	_
 16	беріп	бер	VERB	v	Aspect=Perf|VerbForm=Conv	23	advcl	_	SpaceAfter=No
 17	,	,	PUNCT	cm	_	16	punct	_	_
 18	басыма	бас	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	19	orphan	_	_
 19	шаш	шаш	NOUN	n	Case=Nom	28	ccomp	_	SpaceAfter=No
 20	,	,	PUNCT	cm	_	19	punct	_	_
-21	аузыма	ауыз	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	23	nmod	_	_
+21	аузыма	ауыз	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	23	obl	_	_
 22	мұрт	мұрт	NOUN	n	Case=Nom	23	obj	_	_
 23	қойып	қой	VERB	v	Aspect=Perf|VerbForm=Cov	19	conj	_	_
 24-25	кетпесем бе	_	_	_	_	_	_	_	SpaceAfter=No
@@ -8313,10 +8313,10 @@
 2	жаман	жаман	ADJ	adj	_	3	amod	_	_
 3	сөзді	сөз	NOUN	n	Case=Acc	10	obj	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
-5	Құдайдан	Құдай	NOUN	n	Case=Abl	6	nmod	_	_
+5	Құдайдан	Құдай	NOUN	n	Case=Abl	6	obl	_	_
 6	қорықпай	қорық	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	10	advcl	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	6	punct	_	_
-8	пендеден	пенде	NOUN	n	Case=Abl	9	nmod	_	_
+8	пендеден	пенде	NOUN	n	Case=Abl	9	obl	_	_
 9	ұялмай	ұял	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	10	advcl	_	_
 10	айтқан	айт	VERB	v	Tense=Past|VerbForm=Part	11	acl	_	_
 11	қазақтардың	қазақ	NOUN	n	Case=Gen|Number=Plur	12	nmod:poss	_	_
@@ -8333,7 +8333,7 @@
 2	да	да	SCONJ	cnjadv	_	12	cc	_	_
 3	өзге	өзге	ADJ	adj	_	5	amod	_	_
 4	қазақ	қазақ	NOUN	n	Case=Nom	5	nmod:poss	_	_
-5	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+5	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 6	артық	артық	ADJ	adj	_	7	advmod	_	_
 7	үйренгені	үйрен	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	8	csubj	_	_
 8	немене	немене	PRON	prn	Case=Nom|PronType=Int	0	root	_	SpaceAfter=No
@@ -8365,7 +8365,7 @@
 # text = Әкесі ел ақшасыменен оқығанға әрең оқытады, өз малын не қылып шығарсын?
 1	Әкесі	әке	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 2	ел	ел	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	ақшасыменен	ақша	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
+3	ақшасыменен	ақша	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	оқығанға	оқы	VERB	v	Case=Dat|Tense=Past|VerbForm=Ger	6	advcl	_	_
 5	әрең	әрең	ADV	adv	_	6	advmod	_	_
 6	оқытады	оқыт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -8382,7 +8382,7 @@
 1	Турасын	тура	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	2	obj	_	_
 2	ойлағанда	ойла	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	17	advcl	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
-4	балаңа	бала	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=2	6	nmod	_	_
+4	балаңа	бала	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=2	6	obl	_	_
 5	қатын	қатын	NOUN	n	Case=Nom	6	obj	_	_
 6	әперме	әпер	VERB	v	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin	17	parataxis	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	17	punct	_	_
@@ -8414,10 +8414,10 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:32:847
 # text = Құдайдан қорық, пендеден ұял, балаң бала болсын десең — оқыт, мал аяма!
-1	Құдайдан	Құдай	NOUN	n	Case=Abl	2	nmod	_	_
+1	Құдайдан	Құдай	NOUN	n	Case=Abl	2	obl	_	_
 2	қорық	қорық	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	15	punct	_	_
-4	пендеден	пенде	NOUN	n	Case=Abl	5	nmod	_	_
+4	пендеден	пенде	NOUN	n	Case=Abl	5	obl	_	_
 5	ұял	ұял	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	15	punct	_	_
 7	балаң	бала	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2	8	nsubj	_	_
@@ -8442,7 +8442,7 @@
 7	қалған	қал	AUX	vaux	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	_
 8	соң	соң	ADP	post	_	5	case	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	23	punct	_	_
-10	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	12	nmod	_	_
+10	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	12	obl	_	_
 11	рақат	рақат	NOUN	n	Case=Nom	12	obj	_	_
 12-13	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
 12	көрсет	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
@@ -8455,7 +8455,7 @@
 18	ме	ма	PART	qst	_	17	discourse	_	_
 19	,	,	PUNCT	cm	_	23	punct	_	_
 20	яки	яки	CCONJ	cnjcoo	_	23	cc	_	_
-21	жұртқа	жұрт	NOUN	n	Case=Dat	23	nmod	_	_
+21	жұртқа	жұрт	NOUN	n	Case=Dat	23	obl	_	_
 22	рақат	рақат	NOUN	n	Case=Nom	23	obj	_	_
 23-24	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
 23	көрсет	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
