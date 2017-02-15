@@ -12716,12 +12716,12 @@
 # sent_id = Шымкент.tagged.txt:2:20
 # text = Тұрғыны шамамен 683,273 адам (2014 жыл).
 1	Тұрғыны	тұрғын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
-2	шамамен	шама	NOUN	n	Case=Ins	4	nmod	_	_
+2	шамамен	шама	NOUN	n	Case=Ins	4	obl	_	_
 3	683,273	683,273	NUM	num	NumType=Card	4	nummod	_	_
 4	адам	адам	NOUN	n	Case=Nom	0	root	_	_
 5	(	(	PUNCT	lpar	_	7	punct	_	SpaceAfter=No
 6	2014	2014	NUM	num	NumType=Ord	7	amod	_	_
-7	жыл	жыл	NOUN	n	Case=Nom	4	nmod	_	SpaceAfter=No
+7	жыл	жыл	NOUN	n	Case=Nom	4	appos	_	SpaceAfter=No
 8	)	)	PUNCT	rpar	_	7	punct	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	4	punct	_	_
 
@@ -12729,14 +12729,14 @@
 # text = Қазақстанның басқа қалаларымен салыстырғанда тұрғыны жөнінен 3-ші орында (Алматы мен Астанадан кейін).
 1	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	3	nmod:poss	_	_
 2	басқа	басқа	ADJ	adj	_	3	amod	_	_
-3	қалаларымен	қала	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
+3	қалаларымен	қала	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	салыстырғанда	салыстыр	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	8	advcl	_	_
 5	тұрғыны	тұрғын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
-6	жөнінен	жөн	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod	_	_
+6	жөнінен	жөн	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
 7	3-ші	3	NUM	num	NumType=Ord	8	amod	_	_
 8	орында	орын	NOUN	n	Case=Loc	0	root	_	_
 9	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
-10	Алматы	Алматы	PROPN	np	Case=Nom	8	nmod	_	_
+10	Алматы	Алматы	PROPN	np	Case=Nom	8	appos	_	_
 11	мен	мен	CCONJ	cnjcoo	_	12	cc	_	_
 12	Астанадан	Астана	PROPN	np	Case=Abl	10	conj	_	_
 13	кейін	кейін	ADP	post	_	12	case	_	SpaceAfter=No
@@ -12745,7 +12745,7 @@
 
 # sent_id = Шымкент.tagged.txt:4:70
 # text = Осымен қатар, Шымкент Қазақстанның негізгі өнеркәсіп, сауда және мәдени орталықтарының бірі болып табылады.
-1	Осымен	осы	PRON	prn	Case=Ins|PronType=Dem	15	nmod	_	_
+1	Осымен	осы	PRON	prn	Case=Ins|PronType=Dem	15	obl	_	_
 2	қатар	қатар	ADP	post	_	1	case	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	1	punct	_	_
 4	Шымкент	Шымкент	PROPN	np	Case=Nom	15	nsubj	_	_
@@ -12767,7 +12767,7 @@
 1	Бірқатар	бірқатар	DET	det	PronType=Qnt	5	det	_	_
 2	археолог	археолог	NOUN	n	Case=Nom	4	compound	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	4	punct	_	SpaceAfter=No
-4	ғалымдардың	ғалым	NOUN	n	Case=Gen|Number=Plur	5	nmod	_	_
+4	ғалымдардың	ғалым	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
 5	пікірлері	пікір	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
 6	бойынша	бойынша	ADP	post	_	5	case	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	5	punct	_	_
@@ -12801,7 +12801,7 @@
 5	қала	қала	NOUN	n	Case=Nom	13	nsubj	_	_
 6	ескі	ескі	ADJ	adj	_	7	amod	_	_
 7-8	заманнан-ақ	_	_	_	_	_	_	_	_
-7	заман	заман	NOUN	n	Case=Abl	13	nmod	_	_
+7	заман	заман	NOUN	n	Case=Abl	13	obl	_	_
 8	-ақ	-ақ	ADV	postadv	_	7	advmod	_	_
 9	адамдардың	адам	NOUN	n	Case=Gen|Number=Plur	11	nsubj	_	_
 10	өмір	өмір	X	x	_	11	dep	_	_
@@ -12813,14 +12813,14 @@
 
 # sent_id = Шымкент.tagged.txt:7:185
 # text = Оған ежелгі қоныстарға жүргізілген археологиялық қазба жұмыстары кезінде табылған мәдениет мұралары дәлел бола алады.
-1	Оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	12	nmod	_	_
+1	Оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	12	obl	_	_
 2	ежелгі	ежел	ADV	adv	Case=Nom	3	amod	_	_
-3	қоныстарға	қоныс	NOUN	n	Case=Dat|Number=Plur	4	nmod	_	_
+3	қоныстарға	қоныс	NOUN	n	Case=Dat|Number=Plur	4	obl	_	_
 4	жүргізілген	жүргіз	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	7	acl	_	_
 5	археологиялық	археологиялық	ADJ	adj	_	7	amod	_	_
 6	қазба	қазба	NOUN	n	Case=Nom	7	compound	_	_
 7	жұмыстары	жұмыс	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod:poss	_	_
-8	кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+8	кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 9	табылған	тап	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	11	acl	_	_
 10	мәдениет	мәдениет	NOUN	n	Case=Nom	11	nmod:poss	_	_
 11	мұралары	мұра	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
@@ -12853,10 +12853,10 @@
 # sent_id = Шымкент.tagged.txt:9:253
 # text = 1914 жылы Қазақстанның Ресей империясына қосылуының 50 жылдығына орай қалаға орыс генералы Черняевтің есімі берілді, бірақ 1921 жылы қала Шымкент атауына қайта ие болды.
 1	1914	1914	NUM	num	NumType=Ord	2	amod	_	_
-2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 3	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	6	nsubj	_	_
 4	Ресей	Ресей	PROPN	np	Case=Nom	5	nmod:poss	_	_
-5	империясына	империя	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+5	империясына	империя	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	қосылуының	қос	VERB	v	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	8	acl	_	_
 7	50	50	NUM	num	NumType=Ord	8	amod	_	_
 8	жылдығына	жылдық	ADJ	adj	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	15	obl	_	_
@@ -12870,7 +12870,7 @@
 16	,	,	PUNCT	cm	_	25	punct	_	_
 17	бірақ	бірақ	CCONJ	cnjcoo	_	25	cc	_	_
 18	1921	1921	NUM	num	NumType=Ord	19	amod	_	_
-19	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nmod	_	_
+19	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
 20	қала	қала	NOUN	n	Case=Nom	21	compound	_	_
 21	Шымкент	Шымкент	PROPN	np	Case=Nom	25	nsubj	_	_
 22	атауына	атау	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
@@ -12882,7 +12882,7 @@
 # sent_id = Шымкент.tagged.txt:10:306
 # text = XX ғасырда қала тарихының жаңа кезеңі басталды.
 1	XX	XX	NUM	num	NumType=Ord	2	amod	_	_
-2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	nmod	_	_
+2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	obl	_	_
 3	қала	қала	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	тарихының	тарих	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
 5	жаңа	жаңа	ADJ	adj	_	6	amod	_	_
@@ -12897,7 +12897,7 @@
 3	елдегі	ел	NOUN	n	Case=Loc	5	amod	_	_
 4	үлкен	үлкен	ADJ	adj	_	5	amod	_	_
 5	өзгерістер	өзгеріс	NOUN	n	Case=Nom|Number=Plur	6	nmod:poss	_	_
-6	нәтижесінде	нәтиже	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+6	нәтижесінде	нәтиже	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 7	жаңа	жаңа	ADJ	adj	_	8	amod	_	_
 8	жетістіктерге	жетістік	NOUN	n	Case=Dat|Number=Plur	9	obj	_	_
 9	жете	жет	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
@@ -12906,7 +12906,7 @@
 
 # sent_id = Шымкент.tagged.txt:12:346
 # text = Қалада жаңа өндіріс орындары салынып, оқу орындары мен ғылыми, мәдениет ошақтары ашылды.
-1	Қалада	қала	NOUN	n	Case=Loc	14	nmod	_	_
+1	Қалада	қала	NOUN	n	Case=Loc	14	obl	_	_
 2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
 3	өндіріс	өндіріс	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	орындары	орын	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
@@ -12928,7 +12928,7 @@
 2	келбеті	келбет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
 3	жаңа	жаңа	ADJ	adj	_	5	amod	_	_
 4	тұрғын	тұрғын	NOUN	n	Case=Nom	5	compound	_	_
-5	үйлер	үй	NOUN	n	Case=Nom|Number=Plur	12	nmod	_	SpaceAfter=No
+5	үйлер	үй	NOUN	n	Case=Nom|Number=Plur	12	obl	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	11	punct	_	_
 7	гүлзар	гүлзар	NOUN	n	Case=Nom	5	conj	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	11	punct	_	_
@@ -12942,8 +12942,8 @@
 # sent_id = Шымкент.tagged.txt:14:406
 # text = 30-шы жылдары Шымкентте қорғасын зауыты салынды.
 1	30-шы	30	NUM	num	NumType=Ord	2	amod	_	_
-2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
-3	Шымкентте	Шымкент	PROPN	np	Case=Loc	6	nmod	_	_
+2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
+3	Шымкентте	Шымкент	PROPN	np	Case=Loc	6	obl	_	_
 4	қорғасын	қорғасын	NOUN	n	Case=Nom	5	nmod:poss	_	_
 5	зауыты	зауыт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 6	салынды	сал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
@@ -12965,7 +12965,7 @@
 
 # sent_id = Шымкент.tagged.txt:16:444
 # text = Қалада май комбинаты, шұлық және айна фабрикалары іске қосылды.
-1	Қалада	қала	NOUN	n	Case=Loc	10	nmod	_	_
+1	Қалада	қала	NOUN	n	Case=Loc	10	obl	_	_
 2	май	май	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	комбинаты	комбинат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod:poss	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	7	punct	_	_
@@ -12980,7 +12980,7 @@
 # sent_id = Шымкент.tagged.txt:17:467
 # text = 1932 жылы ауылшаруашылық авиациясының базасы құрылып, бұл Шымкент әуежайының негізін қалады.
 1	1932	1932	NUM	num	NumType=Ord	2	amod	_	_
-2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod	_	_
+2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
 3	ауылшаруашылық	ауылшаруашылық	ADJ	adj	_	4	amod	_	_
 4	авиациясының	авиация	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	базасы	база	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
