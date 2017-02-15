@@ -2638,13 +2638,13 @@
 
 # sent_id = akorda-random.tagged.txt:225:4035
 # text = Мен мұнда қырықтан астам рет болдым.
-1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
-2	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	5	obl	_	_
+1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	0	root	_	_
 3	қырықтан	қырық	NUM	num	Case=Abl|NumType=Card,Ord	5	nmod	_	_
 4	астам	астам	ADP	post	_	3	case	_	_
-5	рет	рет	NOUN	n	Case=Nom	0	root	_	_
+5	рет	рет	NOUN	n	Case=Nom	2	obl	_	_
 6	болдым	бол	AUX	v	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	cop	_	SpaceAfter=No
-7	.	.	PUNCT	sent	_	5	punct	_	_
+7	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:226:4050
 # text = Ол біздің стратегиялық ұстанымымыз, - атап өтті Нұрсұлтан Назарбаев.
@@ -7070,13 +7070,13 @@
 8	құқықтары	құқық	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
 9	тең	тең	ADJ	adj	_	4	conj	_	_
 10	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	9	cop	_	_
-11	дүниеге	дүние	NOUN	n	Case=Dat	12	nmod	_	_
+11	дүниеге	дүние	NOUN	n	Case=Dat	12	obl	_	_
 12	келеді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = udhr.tagged.txt:2:26
 # text = Адамдарға ақыл-парасат, ар-ождан берілген, сондықтан олар бір-бірімен туыстық, бауырмалдық қарым-қатынас жасаулары тиіс.
-1	Адамдарға	адам	NOUN	n	Case=Dat|Number=Plur	5	nmod	_	_
+1	Адамдарға	адам	NOUN	n	Case=Dat|Number=Plur	5	obl	_	_
 2	ақыл-парасат	ақыл-парасат	NOUN	n	Case=Nom	5	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	4	punct	_	_
 4	ар-ождан	ар-ождан	NOUN	n	Case=Nom	2	conj	_	_
@@ -7084,7 +7084,7 @@
 6	,	,	PUNCT	cm	_	5	punct	_	_
 7	сондықтан	сондықтан	SCONJ	cnjadv	_	15	cc	_	_
 8	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
-9	бір-бірімен	бір-бір	PRON	prn	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Rcp	14	nmod	_	_
+9	бір-бірімен	бір-бір	PRON	prn	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Rcp	14	obl	_	_
 10	туыстық	туыстық	ADJ	adj	_	13	amod	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	12	punct	_	_
 12	бауырмалдық	бауырмалдық	ADJ	adj	_	10	conj	_	_
@@ -7098,7 +7098,7 @@
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	47	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
-4	нәсіліне	нәсіл	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	47	nmod	_	SpaceAfter=No
+4	нәсіліне	нәсіл	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	47	obl	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	33	punct	_	_
 6	түр-түсіне	түр-түс	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	33	punct	_	_
@@ -7132,10 +7132,10 @@
 33	жағдаяттарға	жағдаят	NOUN	n	Case=Dat|Number=Plur	4	conj	_	_
 34	қарамастан	қарамастан	ADP	post	_	33	case	_	_
 35	осы	осы	DET	det	PronType=Dem	36	det	_	_
-36	Декларацияда	декларация	NOUN	n	Case=Loc	37	nmod	_	_
+36	Декларацияда	декларация	NOUN	n	Case=Loc	37	obl	_	_
 37	жарияланған	жарияла	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	41	acl	_	_
 38	барлық	барлық	DET	det	PronType=Qnt	41	det	_	_
-39	құқықтар	құқық	NOUN	n	Case=Nom|Number=Plur	42	nmod	_	_
+39	құқықтар	құқық	NOUN	n	Case=Nom|Number=Plur	42	obl	_	_
 40	мен	мен	CCONJ	cnjcoo	_	41	cc	_	_
 41	бостандықтарға	бостандық	NOUN	n	Case=Dat|Number=Plur	39	conj	_	_
 42	алаланбай	алала	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv|Voice=Pass	47	advcl	_	SpaceAfter=No
@@ -7169,7 +7169,7 @@
 17	немесе	немесе	CCONJ	cnjcoo	_	18	cc	_	_
 18	халықаралық	халықаралық	ADJ	adj	_	13	conj	_	_
 19	мәртебесінің	мәртебе	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	20	nmod:poss	_	_
-20	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	49	nmod	_	_
+20	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	49	obl	_	_
 21	бойынша	бойынша	ADP	post	_	20	case	_	SpaceAfter=No
 22	,	,	PUNCT	cm	_	20	punct	_	_
 23-24	және де	_	_	_	_	_	_	_	_
@@ -7192,12 +7192,12 @@
 39	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	40	nmod:poss	_	_
 40	егемендігі	егемендік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	43	nsubj	_	_
 41	әртүрлі	әртүрлі	DET	det	PronType=Qnt	42	det	_	_
-42	нысанда	нысан	NOUN	n	Case=Loc	43	nmod	_	_
+42	нысанда	нысан	NOUN	n	Case=Loc	43	obl	_	_
 43	шектеулі	шектеулі	ADJ	adj	_	35	conj	_	_
 44	болған	бол	AUX	v	Tense=Past|VerbForm=Part	43	cop	_	_
 45	күннің	күн	NOUN	n	Case=Gen	46	nmod:poss	_	_
 46-47	өзінде де	_	_	_	_	_	_	_	SpaceAfter=No
-46	өзінде	өз	PRON	prn	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	49	nmod	_	_
+46	өзінде	өз	PRON	prn	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	49	obl	_	_
 47	де	да	ADV	postadv	_	46	advmod	_	_
 48	,	,	PUNCT	cm	_	46	punct	_	_
 49	алаланбауы	алала	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|VerbForm=Ger|Voice=Pass	50	csubj	_	_
@@ -7211,12 +7211,12 @@
 3	өмір	өмір	X	x	_	4	dep	_	_
 4	сүруге	сүр	VERB	v	Case=Dat|VerbForm=Ger	14	advcl	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	13	punct	_	_
-6	бостандықта	бостандық	NOUN	n	Case=Loc	7	nmod	_	_
+6	бостандықта	бостандық	NOUN	n	Case=Loc	7	obl	_	_
 7	болуға	бол	VERB	v	Case=Dat|VerbForm=Ger	4	conj	_	_
 8	және	және	CCONJ	cnjcoo	_	13	cc	_	_
 9	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
 10	жеке	жеке	ADJ	adj	_	11	amod	_	_
-11	басына	бас	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod	_	_
+11	басына	бас	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	13	obl	_	_
 12	қол	қол	NOUN	n	Case=Nom	13	nsubj	_	_
 13	сұғылмауына	сұқ	VERB	v	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|VerbForm=Ger|Voice=Pass	4	conj	_	_
 14	құқылы	құқылы	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -7227,7 +7227,7 @@
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	6	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
-3	құлдықта	құлдық	NOUN	n	Case=Loc	6	nmod	_	_
+3	құлдықта	құлдық	NOUN	n	Case=Loc	6	obl	_	_
 4	немесе	немесе	CCONJ	cnjcoo	_	5	cc	_	_
 5	кіріптарлықта	кіріптарлық	NOUN	n	Case=Loc	3	conj	_	_
 6	ұсталуы	ұста	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	7	csubj	_	_
@@ -7261,10 +7261,10 @@
 4	немесе	немесе	CCONJ	cnjcoo	_	14	cc	_	_
 5	қадір-қасиетін	қадір-қасиет	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	қорлайтындай	қорла	VERB	v	Aspect=Imp|VerbForm=Part	7	advcl	_	_
-7	адамшылыққа	адамшылық	NOUN	n	Case=Dat	8	nmod	_	_
+7	адамшылыққа	адамшылық	NOUN	n	Case=Dat	8	obl	_	_
 8	жатпайтын	жат	VERB	v	Aspect=Imp|Polarity=Neg|VerbForm=Part	10	acl	_	_
 9	қатыгездік	қатыгездік	NOUN	n	Case=Nom	10	compound	_	_
-10	жолмен	жол	NOUN	n	Case=Ins	11	nmod	_	_
+10	жолмен	жол	NOUN	n	Case=Ins	11	obl	_	_
 11	жәбірленуге	жәбірле	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	3	conj	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	14	punct	_	_
 13	немесе	немесе	CCONJ	cnjcoo	_	14	cc	_	_
@@ -7278,13 +7278,13 @@
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	12	nsubj	_	_
 3	қай	қай	DET	det	PronType=Int	4	det	_	_
-4	жерде	жер	NOUN	n	Case=Loc	5	nmod	_	_
+4	жерде	жер	NOUN	n	Case=Loc	5	obl	_	_
 5-6	жүрсе де	_	_	_	_	_	_	_	SpaceAfter=No
 5	жүрсе	жүр	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	2	advcl	_	_
 6	де	да	ADV	postadv	_	5	advmod	_	_
 7	,	,	PUNCT	cm	_	5	punct	_	_
 8	құқықтық	құқықтық	NOUN	n	Case=Nom	9	nmod:poss	_	_
-9	субъектісі	субъект	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	_
+9	субъектісі	субъект	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
 10	ретінде	ретінде	ADP	post	_	9	case	_	_
 11	танылуына	таны	VERB	v	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	12	advcl	_	_
 12	құқылы	құқылы	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -7293,14 +7293,14 @@
 # sent_id = udhr.tagged.txt:10:391
 # text = Заң алдында жұрттың бәрі тең және де заң арқылы алаланбай, бірдей тең қорғалуға құқылы.
 1	Заң	заң	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	алдында	алд	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	_
+2	алдында	алд	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	жұрттың	жұрт	NOUN	n	Case=Gen	4	nmod:poss	_	_
 4	бәрі	бәрі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	5	nsubj	_	_
 5	тең	тең	ADJ	adj	_	0	root	_	_
 6-7	және де	_	_	_	_	_	_	_	_
 6	және	және	CCONJ	cnjcoo	_	15	cc	_	_
 7	де	да	ADV	postadv	_	6	advmod	_	_
-8	заң	заң	NOUN	n	Case=Nom	10	nmod	_	_
+8	заң	заң	NOUN	n	Case=Nom	10	obl	_	_
 9	арқылы	арқылы	ADP	post	_	8	case	_	_
 10	алаланбай	алала	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv|Voice=Pass	14	advcl	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	10	punct	_	_
@@ -7318,7 +7318,7 @@
 4	Декларацияның	декларация	NOUN	n	Case=Gen	5	nmod:poss	_	_
 5	ережелерін	ереже	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	бұзатын	бұз	VERB	v	Aspect=Imp|VerbForm=Part	7	acl	_	_
-7	кемсітуден	кемсіту	NOUN	n	Case=Abl	14	nmod	_	_
+7	кемсітуден	кемсіту	NOUN	n	Case=Abl	14	obl	_	_
 8	және	және	CCONJ	cnjcoo	_	12	cc	_	_
 9	кемсітуге	кемсіту	NOUN	n	Case=Dat	10	nmod	_	_
 10	арандатушылықтың	арандатушылық	NOUN	n	Case=Gen	12	nmod:poss	_	_
@@ -7335,14 +7335,14 @@
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	11	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3-4	негізсіз	_	_	_	_	_	_	_	_
-3	негіз	негіз	NOUN	n	_	5	nmod	_	_
+3	негіз	негіз	NOUN	n	_	5	obl	_	_
 4	сз	сыз	ADP	post	_	3	case	_	_
 5	тұтқындалуға	тұтқында	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	12	advcl	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	11	punct	_	_
-7	қамауда	қама	NOUN	n	Case=Loc	8	nmod	_	_
+7	қамауда	қама	NOUN	n	Case=Loc	8	obl	_	_
 8	ұсталуға	ұста	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	5	conj	_	_
 9	немесе	немесе	CCONJ	cnjcoo	_	11	cc	_	_
-10	қуғынға	қуғын	NOUN	n	Case=Dat	11	nmod	_	_
+10	қуғынға	қуғын	NOUN	n	Case=Dat	11	obl	_	_
 11	ұшыратылуға	ұшыратыл	VERB	v	Case=Dat|VerbForm=Ger	5	conj	_	_
 12	тиіс	тиіс	ADJ	adj	_	0	root	_	_
 13	емес	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	12	cop	_	SpaceAfter=No
@@ -7357,7 +7357,7 @@
 4	әрекеті	әрекет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
 5	немесе	немесе	CCONJ	cnjcoo	_	6	cc	_	_
 6	әрекетсіздігі	әрекетсіздік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	_
-7	негізінде	негіз	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	23	nmod	_	SpaceAfter=No
+7	негізінде	негіз	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	23	obl	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	20	punct	_	_
 9	егер	егер	SCONJ	cnjsub	_	20	mark	_	_
 10	ол	ол	DET	det	PronType=Dem	11	det	_	_
@@ -7390,7 +7390,7 @@
 1-2	Ешкімді де	_	_	_	_	_	_	_	_
 1	Ешкімді	ешкім	PRON	prn	Case=Acc|PronType=Neg	9	obj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
-3	азаматтығынан	азаматтық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+3	азаматтығынан	азаматтық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 4	немесе	немесе	CCONJ	cnjcoo	_	7	cc	_	_
 5	азаматтығын	азаматтық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	өзгерту	өзгерт	VERB	v	Case=Nom|VerbForm=Ger	7	acl	_	_
@@ -7411,7 +7411,7 @@
 7	еркін	еркін	ADJ	adj	_	10	amod	_	_
 8	және	және	CCONJ	cnjcoo	_	9	cc	_	_
 9	толық	толық	ADJ	adj	_	7	conj	_	_
-10	келісімі	келісім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod	_	_
+10	келісімі	келісім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	obl	_	_
 11-12	бойынша ғана	_	_	_	_	_	_	_	_
 11	бойынша	бойынша	ADP	post	_	10	case	_	_
 12	ғана	ғана	ADV	postadv	_	10	advmod	_	_
@@ -7433,7 +7433,7 @@
 11	қоғам	қоғам	NOUN	n	Case=Nom	14	nmod:poss	_	_
 12	мен	мен	CCONJ	cnjcoo	_	13	cc	_	_
 13	мемлекет	мемлекет	NOUN	n	Case=Nom	11	conj	_	_
-14	тарапынан	тарап	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	15	nmod	_	_
+14	тарапынан	тарап	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	15	obl	_	_
 15	қорғалуға	қорға	VERB	v	Case=Dat|VerbForm=Ger|Voice=Pass	16	advcl	_	_
 16	құқылы	құқылы	ADJ	adj	_	8	conj	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	_
@@ -7471,8 +7471,8 @@
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	белгілі	белгілі	ADJ	adj	_	5	amod	_	_
 4	бір	бір	DET	det	PronType=Ind	5	det	_	_
-5	ассоциацияға	ассоциация	NOUN	n	Case=Dat	7	nmod	_	_
-6	зорлықпен	зорлық	NOUN	n	Case=Ins	7	nmod	_	_
+5	ассоциацияға	ассоциация	NOUN	n	Case=Dat	7	obl	_	_
+6	зорлықпен	зорлық	NOUN	n	Case=Ins	7	obl	_	_
 7	кіргізуге	кіргіз	VERB	v	Case=Dat|VerbForm=Ger	8	ccomp	_	_
 8	болмайды	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	8	punct	_	_
@@ -7514,7 +7514,7 @@
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адамның	адам	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	білім	білім	NOUN	n	Case=Nom	4	obj	_	_
-4	алуға	ал	VERB	v	Case=Dat|VerbForm=Ger	5	nmod	_	_
+4	алуға	ал	VERB	v	Case=Dat|VerbForm=Ger	5	acl	_	_
 5	құқығы	құқық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 6	бар	бар	ADJ	adj	_	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	_
@@ -7523,7 +7523,7 @@
 # text = Бастауыш білім баршаға міндетті болуы тиіс.
 1	Бастауыш	бастауыш	ADJ	adj	_	2	amod	_	_
 2	білім	білім	NOUN	n	Case=Nom	4	nsubj	_	_
-3	баршаға	барша	PRON	prn	Case=Dat|PronType=Tot	4	nmod	_	_
+3	баршаға	барша	PRON	prn	Case=Dat|PronType=Tot	4	obl	_	_
 4	міндетті	міндетті	ADJ	adj	_	6	nsubj	_	_
 5	болуы	бол	AUX	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	4	cop	_	_
 6	тиіс	тиіс	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -7534,7 +7534,7 @@
 1	Ата-аналардың	ата-ана	NOUN	n	Case=Gen|Number=Plur	9	nmod:poss	_	_
 2	өздерінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur|Person[psor]=3|PronType=Ref	4	nmod:poss	_	_
 3	жас	жас	ADJ	adj	_	4	amod	_	_
-4	балаларына	бала	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+4	балаларына	бала	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 5	білім	білім	NOUN	n	Case=Nom	6	obj	_	_
 6	беру	бер	VERB	v	Case=Nom|VerbForm=Ger	7	acl	_	_
 7	түрін	түр	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_

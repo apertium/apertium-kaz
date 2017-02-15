@@ -5048,19 +5048,19 @@
 
 # мен мұнда қырықтан астам рет болдым .	I have visited Kazakhstan more than 40 times .
 "<Мен>"
-	"мен" prn pers p1 sg nom @nsubj #1->5
+	"мен" prn pers p1 sg nom @nsubj #1->2
 "<мұнда>"
-	"бұл" prn dem loc @obl #2->5
+	"бұл" prn dem loc @root #2->0
 "<қырықтан>"
 	"қырық" num subst abl @nmod #3->5
 "<астам>"
 	"астам" post @case #4->3
 "<рет>"
-	"рет" n nom @root #5->0
+	"рет" n nom @obl #5->2
 "<болдым>"
 	"бол" v iv ifi p1 sg @cop #6->2
 "<.>"
-	"." sent @punct #7->5
+	"." sent @punct #7->2
 
 # ол біздің стратегиялық ұстанымымыз , - атап өтті Нұрсұлтан Назарбаев .	it is our strategic position , ” Nursultan Nazarbayev highlighted .
 "<Ол>"
