@@ -7583,7 +7583,7 @@
 
 # sent_id = wikitravel.tagged.txt:4:24
 # text = Сізбен танысқаныма қуаныштымын.
-1	Сізбен	сіз	PRON	prn	Case=Ins|Number=Sing|Person=2|Polite=Form|PronType=Prs	2	nmod	_	_
+1	Сізбен	сіз	PRON	prn	Case=Ins|Number=Sing|Person=2|Polite=Form|PronType=Prs	2	obl	_	_
 2	танысқаныма	таны	VERB	v	Case=Dat|Number[psor]=Sing|Person[psor]=1|Tense=Past|VerbForm=Ger|Voice=Coop	3	advcl	_	_
 3-4	қуаныштымын	_	_	_	_	_	_	_	SpaceAfter=No
 3	қуанышты	қуанышты	ADJ	adj	_	0	root	_	_
@@ -7594,7 +7594,7 @@
 # text = Мен Қазақ тілінде жақсы сөйлей алмаймын.
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	Қазақ	қазақ	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	_
+3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 4	жақсы	жақсы	ADJ	adj	_	5	advmod	_	_
 5	сөйлей	сөйле	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 6	алмаймын	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Aor|VerbForm=Fin	5	aux	_	SpaceAfter=No
@@ -7613,7 +7613,7 @@
 # text = Осында орыс тілінде сөйлейтін адам бар ма?
 1	Осында	осы	PRON	prn	Case=Loc|PronType=Dem	6	advmod	_	_
 2	орыс	орыс	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	_
+3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	сөйлейтін	сөйле	VERB	v	Aspect=Imp|VerbForm=Part	5	acl	_	_
 5	адам	адам	NOUN	n	Case=Nom	6	nsubj	_	_
 6-7	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -7649,7 +7649,7 @@
 
 # sent_id = wikitravel.tagged.txt:12:107
 # text = Маған көмек керек.
-1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	nmod	_	_
+1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
 2	көмек	көмек	NOUN	n	Case=Nom	3	nsubj	_	_
 3	керек	керек	ADJ	adj	_	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sent	_	3	punct	_	_
@@ -7694,14 +7694,14 @@
 
 # sent_id = wikitravel.tagged.txt:18:164
 # text = Маған дәрігер керек.
-1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	nmod	_	_
+1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
 2	дәрігер	дәрігер	NOUN	n	Case=Nom	3	nsubj	_	_
 3	керек	керек	ADJ	adj	_	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:19:173
 # text = Сізден қоңырау шалуға бола ма?
-1	Сізден	сіз	PRON	prn	Case=Abl|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	nmod	_	_
+1	Сізден	сіз	PRON	prn	Case=Abl|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	obl	_	_
 2	қоңырау	қоңырау	X	x	_	3	dep	_	_
 3	шалуға	шал	VERB	v	Case=Dat|VerbForm=Ger	4	ccomp	_	_
 4-5	бола ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -7735,8 +7735,8 @@
 
 # sent_id = wikitravel.tagged.txt:23:218
 # text = Астанаға баратын пойыз қайда?
-1	Астанаға	Астана	PROPN	np	Case=Dat	2	nmod	_	_
-2	баратын	бар	VERB	v	Aspect=Imp|VerbForm=Part	3	acl	_	_
+1	Астанаға	Астана	PROPN	np	Case=Dat	2	obl	_	_
+2	баратын	бар	VERB	v	Aspect=Imp|VerbForm=Part	3	acl:relcl	_	_
 3	пойыз	пойыз	NOUN	n	Case=Nom	4	nsubj	_	_
 4	қайда	қайда	ADV	adv	PronType=Int	0	root	_	SpaceAfter=No
 5	?	?	PUNCT	sent	_	4	punct	_	_
@@ -7745,7 +7745,7 @@
 # text = Мына автобус Астанаға тоқтай ма?
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	автобус	автобус	NOUN	n	Case=Nom	4	nsubj	_	_
-3	Астанаға	Астана	PROPN	np	Case=Dat	4	nmod	_	_
+3	Астанаға	Астана	PROPN	np	Case=Dat	4	obl	_	_
 4-5	тоқтай ма	_	_	_	_	_	_	_	SpaceAfter=No
 4	тоқтай	тоқта	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
 5	ма	ма	PART	qst	_	4	discourse	_	_
@@ -7763,7 +7763,7 @@
 # text = Мына пойыз Астанаға қашан жетеді?
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	пойыз	пойыз	NOUN	n	Case=Nom	5	nsubj	_	_
-3	Астанаға	Астана	PROPN	np	Case=Dat	5	nmod	_	_
+3	Астанаға	Астана	PROPN	np	Case=Dat	5	obl	_	_
 4	қашан	қашан	ADV	adv	PronType=Int	5	advmod	_	_
 5	жетеді	жет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 6	?	?	PUNCT	sent	_	5	punct	_	_
@@ -7772,7 +7772,7 @@
 # text = Сіз кітапхананы картадан көрсете аласыз ба?
 1	Сіз	сіз	PRON	prn	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	nsubj	_	_
 2	кітапхананы	кітапхана	NOUN	n	Case=Acc	4	obj	_	_
-3	картадан	карта	NOUN	n	Case=Abl	4	nmod	_	_
+3	картадан	карта	NOUN	n	Case=Abl	4	obl	_	_
 4	көрсете	көрсет	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 5-6	аласыз ба	_	_	_	_	_	_	_	SpaceAfter=No
 5	аласыз	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Aor|VerbForm=Fin	4	aux	_	_
@@ -7781,7 +7781,7 @@
 
 # sent_id = wikitravel.tagged.txt:28:279
 # text = Сізде бос бөлмелер бар ма?
-1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	nmod	_	_
+1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	obl:own	_	_
 2	бос	бос	ADJ	adj	_	3	amod	_	_
 3	бөлмелер	бөлме	NOUN	n	Case=Nom|Number=Plur	4	nsubj	_	_
 4-5	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -7792,7 +7792,7 @@
 # sent_id = wikitravel.tagged.txt:29:291
 # text = Екі адамға бөлме қанша тұрады?
 1	Екі	екі	NUM	num	NumType=Card	2	nummod	_	_
-2	адамға	адам	NOUN	n	Case=Dat	5	nmod	_	_
+2	адамға	адам	NOUN	n	Case=Dat	5	obl	_	_
 3	бөлме	бөлме	NOUN	n	Case=Nom	5	obj	_	_
 4	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	5	nsubj	_	_
 5	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -7801,7 +7801,7 @@
 # sent_id = wikitravel.tagged.txt:30:304
 # text = Осы бөлмеде төсек жайма бар ма?
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
-2	бөлмеде	бөлме	NOUN	n	Case=Loc	5	nmod	_	_
+2	бөлмеде	бөлме	NOUN	n	Case=Loc	5	obl	_	_
 3	төсек	төсек	NOUN	n	Case=Nom	4	compound	_	_
 4	жайма	жайма	NOUN	n	Case=Nom	5	nsubj	_	_
 5-6	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -7811,7 +7811,7 @@
 
 # sent_id = wikitravel.tagged.txt:31:318
 # text = Маған алдымен бөлмені қарап шығуға бола ма?
-1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	nmod	_	_
+1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
 2	алдымен	алдымен	ADV	adv	_	4	advmod	_	_
 3	бөлмені	бөлме	NOUN	n	Case=Acc	4	obj	_	_
 4	қарап	қара	VERB	v	Aspect=Perf|VerbForm=Cov	6	csubj	_	_
@@ -7823,7 +7823,7 @@
 
 # sent_id = wikitravel.tagged.txt:32:334
 # text = Сізде бірдеме тазалау бар ма?
-1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	nmod	_	_
+1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	obl:own	_	_
 2	бірдеме	бірдеме	PRON	prn	Case=Nom|PronType=Ind	4	nsubj	_	_
 3	тазалау	таза	ADJ	adj	Degree=Cmp	2	amod	_	_
 4-5	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -7845,7 +7845,7 @@
 
 # sent_id = wikitravel.tagged.txt:34:362
 # text = Сізде сейф бар ма?
-1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	nmod	_	_
+1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	obl:own	_	_
 2	сейф	сейф	NOUN	n	Case=Nom	3	nsubj	_	_
 3-4	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
 3	бар	бар	ADJ	adj	_	0	root	_	_

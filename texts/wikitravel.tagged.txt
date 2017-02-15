@@ -27,7 +27,7 @@
 	"?" sent @punct #5->3
 
 "<Сізбен>"
-	"сіз" prn pers p2 sg frm ins @nmod #1->2
+	"сіз" prn pers p2 sg frm ins @obl #1->2
 "<танысқаныма>"
 	"таны" v tv coop ger_past px1sg dat @advcl #2->3
 "<қуаныштымын>"
@@ -41,7 +41,7 @@
 "<Қазақ>"
 	"қазақ" n nom @nmod:poss #2->3
 "<тілінде>"
-	"тіл" n px3sp loc @nmod #3->5
+	"тіл" n px3sp loc @obl #3->5
 "<жақсы>"
 	"жақсы" adj advl @advmod #4->5
 "<сөйлей>"
@@ -66,7 +66,7 @@
 "<орыс>"
 	"орыс" n nom @nmod:poss #2->3
 "<тілінде>"
-	"тіл" n px3sp loc @nmod #3->4
+	"тіл" n px3sp loc @obl #3->4
 "<сөйлейтін>"
 	"сөйле" v tv gpr_impf @acl #4->5
 "<адам>"
@@ -111,7 +111,7 @@
 	"." sent @punct #3->2
 
 "<Маған>"
-	"мен" prn pers p1 sg dat @nmod #1->3
+	"мен" prn pers p1 sg dat @obl #1->3
 "<көмек>"
 	"көмек" n nom @nsubj #2->3
 "<керек>"
@@ -169,7 +169,7 @@
 	"." sent @punct #4->2
 
 "<Маған>"
-	"мен" prn pers p1 sg dat @nmod #1->3
+	"мен" prn pers p1 sg dat @obl #1->3
 "<дәрігер>"
 	"дәрігер" n nom @nsubj #2->3
 "<керек>"
@@ -179,7 +179,7 @@
 	"." sent @punct #5->3
 
 "<Сізден>"
-	"сіз" prn pers p2 sg frm abl @nmod #1->2
+	"сіз" prn pers p2 sg frm abl @obl #1->2
 "<қоңырау шалуға>"
 	"қоңырау шал" v tv ger dat @ccomp #2->3
 "<бола ма>"
@@ -222,9 +222,9 @@
 	"?" sent @punct #5->4
 
 "<Астанаға>"
-	"Астана" np top dat @nmod #1->2
+	"Астана" np top dat @obl #1->2
 "<баратын>"
-	"бар" v iv gpr_impf @acl #2->3
+	"бар" v iv gpr_impf @acl:relcl #2->3
 "<пойыз>"
 	"пойыз" n nom @nsubj #3->4
 "<қайда>"
@@ -238,7 +238,7 @@
 "<автобус>"
 	"автобус" n nom @nsubj #2->4
 "<Астанаға>"
-	"Астана" np top dat @nmod #3->4
+	"Астана" np top dat @obl #3->4
 "<тоқтай ма>"
 	"тоқта" v iv aor p3 sg @root #4->0
 		"ма" qst @discourse #5->4
@@ -261,7 +261,7 @@
 "<пойыз>"
 	"пойыз" n nom @nsubj #2->5
 "<Астанаға>"
-	"Астана" np top dat @nmod #3->5
+	"Астана" np top dat @obl #3->5
 "<қашан>"
 	"қашан" adv itg @advmod #4->5
 "<жетеді>"
@@ -274,7 +274,7 @@
 "<кітапхананы>"
 	"кітапхана" n acc @obj #2->4
 "<картадан>"
-	"карта" n abl @nmod #3->4
+	"карта" n abl @obl #3->4
 "<көрсете>"
 	"көрсет" v tv prc_impf @root #4->0
 "<аласыз ба>"
@@ -284,7 +284,7 @@
 	"?" sent @punct #7->4
 
 "<Сізде>"
-	"сіз" prn pers p2 sg frm loc @nmod #1->4
+	"сіз" prn pers p2 sg frm loc @obl:own #1->4
 "<бос>"
 	"бос" adj @amod #2->3
 "<бөлмелер>"
@@ -299,7 +299,7 @@
 "<Екі>"
 	"екі" num @nummod #1->2
 "<адамға>"
-	"адам" n dat @nmod #2->5
+	"адам" n dat @obl #2->5
 "<бөлме>"
 	"бөлме" n nom @obj #3->5
 "<қанша>"
@@ -312,7 +312,7 @@
 "<Осы>"
 	"осы" det dem @det #1->2
 "<бөлмеде>"
-	"бөлме" n loc @nmod #2->5
+	"бөлме" n loc @obl #2->5
 "<төсек>"
 	"төсек" n attr @compound #3->4
 "<жайма>"
@@ -325,7 +325,7 @@
 	"?" sent @punct #8->5
 
 "<Маған>"
-	"мен" prn pers p1 sg dat @nmod #1->6
+	"мен" prn pers p1 sg dat @obl #1->6
 "<алдымен>"
 	"алдымен" adv @advmod #2->4
 "<бөлмені>"
@@ -341,7 +341,7 @@
 	"?" sent @punct #8->6
 
 "<Сізде>"
-	"сіз" prn pers p2 sg frm loc @nmod #1->4
+	"сіз" prn pers p2 sg frm loc @obl:own #1->4
 "<бірдеме>"
 	"бірдеме" prn ind nom @nsubj #2->4
 "<тазалау>"
@@ -370,7 +370,7 @@
 	"?" sent @punct #8->5
 
 "<Сізде>"
-	"сіз" prn pers p2 sg frm loc @nmod #1->3
+	"сіз" prn pers p2 sg frm loc @obl:own #1->3
 "<сейф>"
 	"сейф" n nom @nsubj #2->3
 "<бар ма>"
