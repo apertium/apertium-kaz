@@ -3930,7 +3930,7 @@
 1	Бұларды	бұл	PRON	prn	Case=Acc|Number=Plur|PronType=Dem	2	obj	_	_
 2	қуам	қу	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	3	ccomp	_	_
 3	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	5	advcl	_	_
-4	оққа	оқ	NOUN	n	Case=Dat	5	nmod	_	_
+4	оққа	оқ	NOUN	n	Case=Dat	5	obl	_	_
 5	ұшқан	ұш	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	6	csubj	_	_
 6	кім	кім	PRON	prn	Case=Nom|PronType=Int	0	root	_	SpaceAfter=No
 7	?	?	PUNCT	sent	_	6	punct	_	_
@@ -3940,7 +3940,7 @@
 1	Қане	қане	INTJ	ij	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	осыны	осы	PRON	prn	Case=Acc|PronType=Dem	5	obj	_	_
-4	дауысқа	дауыс	NOUN	n	Case=Dat	5	nmod	_	_
+4	дауысқа	дауыс	NOUN	n	Case=Dat	5	obl	_	_
 5	саламын	сал	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -4094,7 +4094,7 @@
 6	берсе	бер	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	10	advcl	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	6	punct	_	_
 8	орыс	орыс	NOUN	n	Case=Nom	9	nmod:poss	_	_
-9	жұртына	жұрт	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
+9	жұртына	жұрт	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 10	жау	жау	NOUN	n	Case=Nom	15	ccomp	_	_
 11	болып	бол	AUX	v	Aspect=Perf|VerbForm=Cov	10	cop	_	_
 12	кетпесіне	кет	AUX	vaux	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Tense=Fut|VerbForm=Ger	10	aux	_	_
@@ -4601,7 +4601,7 @@
 # sent_id = kdt.tagged.txt:67:1086
 # text = Қара күшке, тағдырға не шара?
 1	Қара	қара	ADJ	adj	_	2	amod	_	_
-2	күшке	күш	NOUN	n	Case=Dat	6	nmod	_	SpaceAfter=No
+2	күшке	күш	NOUN	n	Case=Dat	6	obl	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	4	punct	_	_
 4	тағдырға	тағдыр	NOUN	n	Case=Dat	2	conj	_	_
 5	не	не	PRON	prn	Case=Nom|PronType=Int	6	nsubj	_	_
@@ -4610,14 +4610,14 @@
 
 # sent_id = kdt.tagged.txt:68:1101
 # text = Жамандығынан мұндай болған жоқ.
-1	Жамандығынан	жамандық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	2	nmod	_	_
+1	Жамандығынан	жамандық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	2	obl	_	_
 2	мұндай	бұл	PRON	prn	Case=Nom|PronType=Dem	0	root	_	_
 3	болған жоқ	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	2	cop	_	SpaceAfter=No
 4	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = kdt.tagged.txt:69:1110
 # text = Малына, жанына ие болып отырған қай қазақ бар?
-1	Малына	мал	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod	_	SpaceAfter=No
+1	Малына	мал	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	3	punct	_	_
 3	жанына	жан	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	1	conj	_	_
 4	ие	ие	NOUN	n	Case=Nom	8	acl:relcl	_	_
@@ -5807,7 +5807,7 @@
 # text = Ол осы күнде не күйде екен?
 1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
 2	осы	осы	DET	det	PronType=Dem	3	det	_	_
-3	күнде	күн	NOUN	n	Case=Loc	5	nmod	_	_
+3	күнде	күн	NOUN	n	Case=Loc	5	obl	_	_
 4	не	не	DET	det	PronType=Int	5	det	_	_
 5	күйде	күй	NOUN	n	Case=Loc	0	root	_	_
 6	екен	е	AUX	cop	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	5	cop	_	SpaceAfter=No
@@ -6321,7 +6321,7 @@
 11	алу	ал	VERB	v	Case=Nom|VerbForm=Ger	19	csubj	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	13	punct	_	_
 13	тастау	таста	VERB	v	Case=Nom|VerbForm=Ger	11	conj	_	_
-14	оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	19	nmod	_	_
+14	оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
 15	тымақ	тымақ	NOUN	n	Case=Nom	17	obj	_	_
 16	ауыстырып	ауыстыр	VERB	v	Aspect=Perf|VerbForm=Conv	17	advcl	_	_
 17	кигенмен	ки	VERB	v	Case=Ins|Tense=Past|VerbForm=Ger	19	advcl	_	_
@@ -6440,9 +6440,9 @@
 
 # sent_id = kdt.tagged.txt:241:3884
 # text = Ауыз бөлмеде ортада үлкен үстел.
-1	Ауыз	ауыз	NOUN	n	Case=Nom	2	amod	_	_
-2	бөлмеде	бөлме	NOUN	n	Case=Loc	5	nmod	_	_
-3	ортада	орта	NOUN	n	Case=Loc	5	nmod	_	_
+1	Ауыз	ауыз	NOUN	n	Case=Nom	2	compound	_	_
+2	бөлмеде	бөлме	NOUN	n	Case=Loc	5	obl	_	_
+3	ортада	орта	NOUN	n	Case=Loc	5	obl	_	_
 4	үлкен	үлкен	ADJ	adj	_	5	amod	_	_
 5	үстел	үстел	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
@@ -6470,7 +6470,7 @@
 1	Алайда	алайда	SCONJ	cnjadv	_	10	cc	_	_
 2	партияға	партия	NOUN	n	Case=Dat	3	iobj	_	_
 3	кірген	кір	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
-4	жолдастарымен	жолдас	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
+4	жолдастарымен	жолдас	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 5	пікірі	пікір	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	11	punct	_	_
 7	қызметі	қызмет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	SpaceAfter=No
@@ -6908,7 +6908,7 @@
 # sent_id = kdt.tagged.txt:281:4603
 # text = Бұл өзі бір атақты болыстың баласы.
 1	Бұл	бұл	DET	det	PronType=Dem	6	nsubj	_	_
-2	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	6	nmod	_	_
+2	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	1	appos	_	_
 3	бір	бір	DET	det	PronType=Ind	5	det	_	_
 4	атақты	атақты	ADJ	adj	_	5	amod	_	_
 5	болыстың	болыс	NOUN	n	Case=Gen	6	nmod:poss	_	_

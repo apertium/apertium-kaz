@@ -62,7 +62,7 @@
 "<деп>"
 	"де" v tv gna_perf @advcl #3->5
 "<оққа>"
-	"оқ" n dat @nmod #4->5
+	"оқ" n dat @obl #4->5
 "<ұшқан>"
 	"ұш" v iv ger_past nom @csubj #5->6
 "<кім>"
@@ -78,7 +78,7 @@
 "<осыны>"
 	"осы" prn dem acc @obj #3->5
 "<дауысқа>"
-	"дауыс" n dat @nmod #4->5
+	"дауыс" n dat @obl #4->5
 "<саламын>"
 	"сал" v tv aor p1 sg @root #5->0
 "<.>"
@@ -320,7 +320,7 @@
 "<орыс>"
 	"орыс" n nom @nmod:poss #8->9
 "<жұртына>"
-	"жұрт" n px3sp dat @nmod #9->10
+	"жұрт" n px3sp dat @obl #9->10
 "<жау>"
 	"жау" n nom @ccomp #10->15
 "<болып>"
@@ -1112,7 +1112,7 @@
 "<,>"
 	"," cm @punct #3->4
 "<тағдырға>"
-	"тағдыр" n dat @nmod #4->6
+	"тағдыр" n dat @obl #4->6
 "<не>"
 	"не" prn itg nom @nsubj #5->6
 "<шара>"
@@ -1122,7 +1122,7 @@
 	"?" sent @punct #8->6
 
 "<Жамандығынан>"
-	"жамандық" n px3sp abl @nmod #1->2
+	"жамандық" n px3sp abl @obl #1->2
 "<мұндай>"
 	"бұл" prn dem sim nom @root #2->0
 "<болған жоқ>"
@@ -1135,7 +1135,7 @@
 "<,>"
 	"," cm @punct #2->3
 "<жанына>"
-	"жан" n px3sp dat @nmod #3->4
+	"жан" n px3sp dat @obl #3->4
 "<ие>"
 	"ие" n nom @acl:relcl #4->8
 "<болып>"
@@ -2959,7 +2959,7 @@
 "<осы>"
 	"осы" det dem @det #2->3
 "<күнде>"
-	"күн" n loc @nmod #3->5
+	"күн" n loc @obl #3->5
 "<не>"
 	"не" det itg @det #4->5
 "<күйде>"
@@ -3752,7 +3752,7 @@
 "<тастау>"
 	"таста" v tv ger nom @csubj #13->19
 "<оған>"
-	"ол" prn pers p3 sg dat @nmod #14->19
+	"ол" prn pers p3 sg dat @obl #14->19
 "<тымақ>"
 	"тымақ" n nom @obj #15->17
 "<ауыстырып>"
@@ -3938,11 +3938,11 @@
 	"." sent @punct #5->3
 
 "<Ауыз>"
-	"ауыз" n nom @amod #1->2
+	"ауыз" n nom @compound #1->2
 "<бөлмеде>"
-	"бөлме" n loc @nmod #2->5
+	"бөлме" n loc @obl #2->5
 "<ортада>"
-	"орта" n loc @nmod #3->5
+	"орта" n loc @obl #3->5
 "<үлкен>"
 	"үлкен" adj @amod #4->5
 "<үстел>"
@@ -3984,7 +3984,7 @@
 "<кірген>"
 	"кір" v iv gpr_past @acl:relcl #3->4
 "<жолдастарымен>"
-	"жолдас" n pl px3sp ins @nmod #4->10
+	"жолдас" n pl px3sp ins @obl #4->10
 "<пікірі>"
 	"пікір" n px3sp nom @conj #5->9
 "<,>"
@@ -4667,7 +4667,7 @@
 "<Бұл>"
 	"бұл" det dem @nsubj #1->6
 "<өзі>"
-	"өз" prn ref px3sp nom @nmod #2->6
+	"өз" prn ref px3sp nom @appos #2->1
 "<бір>"
 	"бір" det ind @det #3->5
 "<атақты>"
