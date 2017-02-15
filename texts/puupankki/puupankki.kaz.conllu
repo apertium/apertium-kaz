@@ -11950,7 +11950,7 @@
 3	той	той	NOUN	n	Case=Nom	4	obj	_	_
 4	жасапты	жаса	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	13	punct	_	_
-6	тойға	той	NOUN	n	Case=Dat	9	nmod	_	_
+6	тойға	той	NOUN	n	Case=Dat	9	obl	_	_
 7	көп	көп	DET	det	PronType=Qnt	8	det	_	_
 8	кісі	кісі	NOUN	n	Case=Nom	9	nsubj	_	_
 9	жиналыпты	жина	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	4	conj	_	SpaceAfter=No
@@ -11980,7 +11980,7 @@
 # sent_id = Өлген_қазан.tagged.txt:4:49
 # text = «Төрге шық, тамақ іш», - демепті.
 1	«	«	PUNCT	lquot	_	6	punct	_	SpaceAfter=No
-2	Төрге	төр	NOUN	n	Case=Dat	3	nmod	_	_
+2	Төрге	төр	NOUN	n	Case=Dat	3	obl	_	_
 3	шық	шық	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	6	punct	_	_
 5	тамақ	тамақ	NOUN	n	Case=Nom	6	obj	_	_
@@ -11994,12 +11994,12 @@
 # sent_id = Өлген_қазан.tagged.txt:5:72
 # text = Қожа үйден шығып кетеді де үйіне барып, тәуір киімдерін киіп, қайта келеді.
 1	Қожа	Қожа	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
-2	үйден	үй	NOUN	n	Case=Abl	3	nmod	_	_
+2	үйден	үй	NOUN	n	Case=Abl	3	obl	_	_
 3	шығып	шық	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 4-5	кетеді де	_	_	_	_	_	_	_	_
 4	кетеді	кет	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	3	aux	_	_
 5	де	да	CCONJ	cnjcoo	_	14	cc	_	_
-6	үйіне	үй	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+6	үйіне	үй	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	барып	бар	VERB	v	Aspect=Perf|VerbForm=Conv	14	advcl	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	7	punct	_	_
 9	тәуір	тәуір	ADJ	adj	_	10	amod	_	_
@@ -12013,13 +12013,13 @@
 # sent_id = Өлген_қазан.tagged.txt:6:102
 # text = Бұл жолы үй иесі Қожанасырды құрметтейді, төрден орын береді, ет келгенде: - Қожеке, алыңыз, алыңыз! - деп, қошеметтейді.
 1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
-2	жолы	жол	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nmod	_	_
+2	жолы	жол	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
 3	үй	үй	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	иесі	ие	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nsubj	_	_
 5	Қожанасырды	Қожанасыр	PROPN	np	Case=Acc|Gender=Masc	6	obj	_	_
 6	құрметтейді	құрметте	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	25	punct	_	_
-8	төрден	төр	NOUN	n	Case=Abl	10	nmod	_	_
+8	төрден	төр	NOUN	n	Case=Abl	10	obl	_	_
 9	орын	орын	NOUN	n	Case=Nom	10	obj	_	_
 10	береді	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	6	conj	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	25	punct	_	_
@@ -12045,7 +12045,7 @@
 2	етті	ет	NOUN	n	Case=Acc	3	obj	_	_
 3	жемей	же	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	20	advcl	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
-5	табаққа	табақ	NOUN	n	Case=Dat	8	nmod	_	_
+5	табаққа	табақ	NOUN	n	Case=Dat	8	obl	_	_
 6	шапанының	шапан	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
 7	жеңін	жең	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 8	малып	мал	VERB	v	Aspect=Perf|VerbForm=Conv	20	advcl	_	SpaceAfter=No
@@ -12103,7 +12103,7 @@
 # sent_id = Өлген_қазан.tagged.txt:10:259
 # text = Сондықтан шапаныма жегізіп отырғаным! - деп, жауап береді.
 1	Сондықтан	сондықтан	SCONJ	cnjadv	_	10	cc	_	_
-2	шапаныма	шапан	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	3	nmod	_	_
+2	шапаныма	шапан	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=1	3	obl	_	_
 3	жегізіп	жегіз	VERB	v	Aspect=Perf|VerbForm=Cov	7	ccomp	_	_
 4	отырғаным	отыр	AUX	vaux	Case=Nom|Number[psor]=Sing|Person[psor]=1|Tense=Past|VerbForm=Ger	3	aux	_	SpaceAfter=No
 5	!	!	PUNCT	sent	_	3	punct	_	_
