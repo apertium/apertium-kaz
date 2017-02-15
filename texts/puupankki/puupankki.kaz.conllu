@@ -12996,7 +12996,7 @@
 # sent_id = Ер_Төстік.tagged.txt:1:0
 # text = Ерте заманда Ерназар деген кісі болыпты.
 1	Ерте	ерте	ADJ	adj	_	2	amod	_	_
-2	заманда	заман	NOUN	n	Case=Loc	6	nmod	_	_
+2	заманда	заман	NOUN	n	Case=Loc	6	obl	_	_
 3	Ерназар	Ерназар	PROPN	np	Case=Nom|Gender=Masc	4	obj	_	_
 4	деген	де	VERB	v	Tense=Past|VerbForm=Part	5	acl	_	_
 5	кісі	кісі	NOUN	n	Case=Nom	6	nsubj	_	_
@@ -13054,14 +13054,14 @@
 # sent_id = Ер_Төстік.tagged.txt:8:80
 # text = Бір жылы үлкен жұт болып, ел малын алысқа, отарға айдап кетіпті.
 1	Бір	бір	NUM	num	NumType=Card	2	nummod	_	_
-2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nmod	_	_
+2	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
 3	үлкен	үлкен	ADJ	adj	_	4	amod	_	_
 4	жұт	жұт	NOUN	n	Case=Nom	5	nsubj	_	_
 5	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	12	advcl	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	5	punct	_	_
 7	ел	ел	NOUN	n	Case=Nom	12	nsubj	_	_
 8	малын	мал	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	obj	_	_
-9	алысқа	алыс	ADJ	adj	Case=Dat	12	nmod	_	SpaceAfter=No
+9	алысқа	алыс	ADJ	adj	Case=Dat	12	obl	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
 11	отарға	отар	NOUN	n	Case=Dat	9	conj	_	_
 12	айдап	айда	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
@@ -13076,7 +13076,7 @@
 3	ұлы	ұл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 4	да	да	ADV	postadv	_	3	advmod	_	_
 5	соның	сол	PRON	prn	Case=Gen|PronType=Dem	6	nmod:poss	_	_
-6	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+6	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	кетіпті	кет	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
@@ -13090,7 +13090,7 @@
 6	кемпірі	кемпір	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 7	мен	мен	CCONJ	cnjcoo	_	8	cc	_	_
 8	Ерназар	Ерназар	PROPN	np	Case=Nom|Gender=Masc	6	conj	_	_
-9	үйінде	үй	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod	_	_
+9	үйінде	үй	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 10	қалыпты	қал	VERB	v	Evident=Fh|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -13102,7 +13102,7 @@
 4	сол	сол	DET	det	PronType=Dem	5	det	_	_
 5	кеткеннен	кет	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	13	advcl	_	_
 6-7	хабарсыз	_	_	_	_	_	_	_	_
-6	хабар	хабар	NOUN	n	_	8	nmod	_	_
+6	хабар	хабар	NOUN	n	_	8	obl	_	_
 7	сыз	сыз	ADP	post	_	6	case	_	_
 8	кетеді	кет	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	13	punct	_	_
@@ -13138,11 +13138,11 @@
 # sent_id = Ер_Төстік.tagged.txt:14:212
 # text = Бір күні кешке жақын кемпірі төсегінен тұрып, үйінің түндігін ашады.
 1	Бір	бір	NUM	num	NumType=Card	2	nummod	_	_
-2	күні	күн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod	_	_
-3	кешке	кеш	NOUN	n	Case=Dat	11	nmod	_	_
+2	күні	күн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
+3	кешке	кеш	NOUN	n	Case=Dat	11	obl	_	_
 4	жақын	жақын	ADP	post	_	3	case	_	_
 5	кемпірі	кемпір	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
-6	төсегінен	төсек	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
+6	төсегінен	төсек	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 7	тұрып	тұр	VERB	v	Aspect=Perf|VerbForm=Conv	11	advcl	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	7	punct	_	_
 9	үйінің	үй	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	10	nmod:poss	_	_
@@ -13157,17 +13157,17 @@
 3	келмей	кел	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Cov	5	acl	_	_
 4	жатқан	жат	AUX	vaux	Tense=Past|VerbForm=Part	3	aux	_	_
 5	шал	шал	NOUN	n	Case=Nom	7	nsubj	_	_
-6	шаңыраққа	шаңырақ	NOUN	n	Case=Dat	7	nmod	_	_
+6	шаңыраққа	шаңырақ	NOUN	n	Case=Dat	7	obl	_	_
 7	қараса	қара	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	17	advcl	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	7	punct	_	_
 9	шаңырақтың	шаңырақ	NOUN	n	Case=Gen	10	nmod:poss	_	_
-10	күлдіреуішінде	күлдіреуіш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	nmod	_	_
+10	күлдіреуішінде	күлдіреуіш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
 11	керулі	керулі	ADJ	adj	_	15	acl	_	_
 12	тұрған	тұр	AUX	v	Tense=Past|VerbForm=Part	11	cop	_	_
 13	кер	кер	ADJ	adj	_	14	amod	_	_
 14	биенің	бие	NOUN	n	Case=Gen	15	nmod:poss	_	_
 15	төстігі	төстік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
-16	көзіне	көз	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	17	nmod	_	_
+16	көзіне	көз	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
 17	түседі	түс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 18	.	.	PUNCT	sent	_	17	punct	_	_
 
@@ -13184,12 +13184,12 @@
 # text = Төстік бір күні ауылдың арасында отырған тарғақты садақпен тартып қалады.
 1	Төстік	Төстік	PROPN	np	Case=Nom|Gender=Masc	9	nsubj	_	_
 2	бір	бір	NUM	num	NumType=Card	3	nummod	_	_
-3	күні	күн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+3	күні	күн	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 4	ауылдың	ауыл	NOUN	n	Case=Gen	5	nmod:poss	_	_
-5	арасында	ара	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod	_	_
+5	арасында	ара	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	отырған	отыр	VERB	v	Tense=Past|VerbForm=Part	7	acl	_	_
 7	тарғақты	тарғақ	NOUN	n	Case=Acc	9	obj	_	_
-8	садақпен	садақ	NOUN	n	Case=Ins	9	nmod	_	_
+8	садақпен	садақ	NOUN	n	Case=Ins	9	obl	_	_
 9	тартып	тарт	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 10	қалады	қал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	9	aux	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	9	punct	_	_
@@ -13234,7 +13234,7 @@
 5	бір	бір	DET	det	PronType=Ind	6	det	_	_
 6	кемпірдің	кемпір	NOUN	n	Case=Gen	7	nmod:poss	_	_
 7	өрмегінің	өрмек	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod:poss	_	_
-8	үстінен	үст	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod	_	_
+8	үстінен	үст	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 9	қарғып	қарғы	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	_
 10	өтеді	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
@@ -13247,7 +13247,7 @@
 4-5	Төстік те	_	_	_	_	_	_	_	_
 4	Төстік	Төстік	PROPN	np	Case=Nom|Gender=Masc	7	nsubj	_	_
 5	те	да	ADV	postadv	_	4	advmod	_	_
-6	өрмектен	өрмек	NOUN	n	Case=Abl	7	nmod	_	_
+6	өрмектен	өрмек	NOUN	n	Case=Abl	7	obl	_	_
 7	секіреді	секір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
