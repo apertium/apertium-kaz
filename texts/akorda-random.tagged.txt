@@ -66,23 +66,25 @@
 	"." sent @punct #9->8
 
 "<->"
-	"-" guio @punct #1->8
+	"-" guio @punct #1->9
 "<Көші-қон>"
 	"көші-қон" n nom @nmod:poss #2->3
 "<мәселелерін>"
 	"мәселе" n pl px3sp acc @obj #3->4
 "<реттеу>"
-	"ретте" v tv ger nom @csubj #4->8
+	"ретте" v tv ger nom @csubj #4->9
 "<Қазақстан>"
-	"Қазақстан" np top nom @obl #5->8
+	"Қазақстан" np top nom @obl #5->9
 "<үшін>"
 	"үшін" post @case #6->5
 "<маңызды>"
-	"маңыз" n acc @obj #7->8
-"<болып саналады>"
-	"болып санал" v tv aor p3 sg @root #8->0
+	"маңыз" adj @advcl #7->9
+"<болып>"
+	"бол" v iv gna_perf @cop #8->7
+"<саналады>"
+	"санал" v tv aor p3 sg @root #9->0
 "<.>"
-	"." sent @punct #9->8
+	"." sent @punct #10->9
 
 # қазіргі кезде қаланың ішкі өңірлік өнімі 20 есе өсті .	these days , the city ’ s internatl regional product has increased by 20 times .
 "<Қазіргі>"
