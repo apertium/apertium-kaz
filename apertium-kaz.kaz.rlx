@@ -246,6 +246,15 @@ SET S-BOUNDARY = CS | Interr | EOS ;
 #
 
 
+
+#
+ "<кейін>" SELECT Post IF
+                (-1 Abl)
+;
+## 23. Айгүл санап біткеннен кейін айналасына қарады.
+
+
+
 # INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
 #        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
 # OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
@@ -270,6 +279,7 @@ SET S-BOUNDARY = CS | Interr | EOS ;
         (2* (rpar) BARRIER EOS)
         (NOT -1 Colon) 
  ;
+
 
 
 #
@@ -673,11 +683,7 @@ REMOVE SUB:1 P3 IF
 ##
 
 
-#
- "<кейін>" SELECT Post IF
-                (-1 Abl)
-;
-## 23. Айгүл санап біткеннен кейін айналасына қарады.
+
 
 
 
@@ -1351,7 +1357,9 @@ SELECT N IF (0 ("<су>"i))(1 V)
 SELECT N IF (-1 (det dem) OR (prn dem)) (0 ("<су>"i))
 ;    
      
-
+#менің үйім
+SELECT (n px1sg) IF (-1 (prn pers p1 sg gen))
+; 
 
 #құрылғымен қауіпсіз.
 #INPUT: <қауіпсіз>"	"қауіп" n nom"е" cop aor p2 frm sg
