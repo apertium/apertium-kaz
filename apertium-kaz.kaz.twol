@@ -403,9 +403,10 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Deletion of accusative {N} after {n}"
 %{N%}:0 <=> %{n%}: %>: _ %{I%}: .#. ;
             %{n%}: %>: _ %{I%}: %  ;
+            %{n%}: %>: _ %{I%}: %- ;
 
 "Deletion of {n} before genitive {N}s"
-%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. | %  ]  ;
+%{n%}:0 <=> _ %>: %{N%}: %{I%}: \[ .#. | %  | %- ]  ;
 
 !"Deletion of ablative-initial {D} after {n}"
 !%{D%}:0 <=> %{n%}: %>: _ %{A%}: :н ;
@@ -423,6 +424,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 "/n/ deletion in px3 nominative"
 %{n%}:0 <=> _ .#. ;
             _ %  ;  ! before a space
+            _ %- ;  ! before a dash
 
 "Deletion of {I} after {n}"
 %{I%}:0 <=> %{n%}:н/[ :0 | %>: ] _ ;
