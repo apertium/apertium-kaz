@@ -1646,6 +1646,7 @@ NUM-COMMON ;
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
+%<num%>%<ord%>:%>с%{I%}нш%{I%} # ;
 %<num%>%<ord%>%<subst%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-ITG ! This is a temporal solution
@@ -2151,7 +2152,7 @@ InterrogativePronouns ;
 он% тоғыз:он% тоғыз NUM ; ! "nineteen"
 
 жиырма:жиырма NUM-TWENTY ; ! "twenty"
-жиырма:жиырма NUM ; ! "twenty"
+жиырма:жиырма NUM ; ! "twenty" ! Dir/LR
 отыз:отыз NUM ; ! "thirty"
 қырық:қырық NUM ; ! "forty"
 елу:елу NUM ; ! "fifty"
@@ -3106,10 +3107,10 @@ XXI NUM-ROMAN ; ! ""
 аударыс:аударыс N1 ; ! ""
 аудит:аудит N1 ; ! ""
 аудитория:аудитория N1 ; ! "classroom"
-аузы% асқа% жарамау:аузы% асқа% жарамау N1 ; !""
+аузы% асқа% жарамау:аузы% асқа% жарамау N1 ; ! "" ! Use/MT 
 ауқат:ауқат N1 ; ! ""
 аула:аула N1 ; ! ""
-аулақтану:аулақтану N1 ; ! "separation" !Use/MT
+аулақтану:аулақтану N1 ; ! "separation" ! Use/MT
 аумақ:аумақ N1 ; ! ""
 аумақтық:аумақтық N1 ; !
 аумин:аумин N1 ; !
@@ -21516,7 +21517,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Қарлығаш:Қарлығаш NP-ANT-F ; ! "Qarlığash" (Kazakh)
 Қармыс:Қармыс NP-ANT-M ; ! "Qarmıs" (Arabic)
 Қаршыға:Қаршыға NP-ANT-M ; ! "Qarshığa"
-Қаршыға:Қаршыға NP-ANT-F ; ! "Qarshığa"  
+Қаршыға:Қаршыға NP-ANT-F ; ! "Qarshığa"
 Қасен:Қасен NP-ANT-M ; ! "Qasen"
 Қасиман:Қасиман NP-ANT-M ; ! "Qasıyman" (Arabic)
 Қасымали:Қасымали NP-ANT-M ; ! "Qasımalıy" (Arabic)
@@ -29793,7 +29794,7 @@ Witness:Witness NP-AL ; ! ""
 біржақты:біржақты A6 ; ! "" ! probably A6 not A1: no comp forms?
 біртүрлі:біртүрлі A6 ; ! "" ! probably A6 not A1: no comp forms?
 бірыңғай:бірыңғай A1 ; ! ""
-боз:боз A1 ; ! ""
+боз:боз A1 ; ! "light grey"
 бос:бос A1 ; ! "empty, free, hollow"
 бөтен:бөтен A3 ; ! "other" ! was A1 -FMT
 бүтін:бүтін A1 ; ! "whole"
@@ -34337,7 +34338,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қапталда:қапталда V-TV ; ! "to go"
 қарай:қарай V-IV ; ! ""
 қарайла:қарайла V-TV ; ! "to expect"
-қара:қара V-IV ; ! "look at"
+қара:қара V-TV ; ! "look at"
 қарала:қарала V-TV ; ! "to soil"
 қаралан:қаралан V-IV ; ! "to be slandered"
 қарамайла:қарамайла V-TV ; ! "to tar"
@@ -36284,7 +36285,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 ұйыт:ұйыт V-TV ; ! "sour,thicken"
 уқала:уқала V-TV ; ! "to rub with the palm"
 ұқса:ұқса V-IV ; ! "resemble"
-ұқсас% тап:ұқсас% тап V-TV ; !
+ұқсас% тап:ұқсас% тап V-TV ; ! Use/MT
 ұқ:ұқ V-TV ; ! ""
 ұқтыр:ұқтыр V-TV ; ! ""
 уландыр:уландыр V-TV ; !
@@ -36296,7 +36297,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 үміттен:үміттен V-IV ; ! ""
 ұмтыл:ұмтыл V-IV ; ! "move ahead"
 ұмыт:ұмыт V-TV ; ! "forget,mislay"
-ұнат:ұнат V-TV ; ! "enjoy" !Use/MT
+ұнат:ұнат V-TV ; ! "enjoy" ! Use/MT  CAUS
 ұна:ұна V-IV ; ! "be pleased with"
 үңгі:үңгі V-TV ; ! ""
 үндес:үндес V-IV ; ! "to give tongue to one another" FIXME collective
@@ -38554,7 +38555,7 @@ MGM:MGM ABBR ; !"Use/MT"
 
 
 %.%<sent%>:%. # ;
-#%.%.%<sent%>:%.%. # ;
+%.%.%<sent%>:%.%. # ;
 %.%.%.%<sent%>:%.%.%. # ;
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
