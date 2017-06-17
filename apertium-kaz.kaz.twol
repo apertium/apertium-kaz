@@ -102,7 +102,7 @@ Rules
 %{N%}:д <=> [ :HighSonCns | :Liquid | :Nasals | :VoicedObstruents ] [ %>: | %{☭%}:0 | т:0 | д:0 | с:0 | :ь ]* _ ;
                                         [ %{й%}: | %{л%}: | %{н%}: | %{з%}: ]/[ %-: | %%: | %>: ] _ ;
             except
-                    :Nasals/[ :0 - Abstract:0 ]  _ :Vow :Nasals ;
+                    :Nasals/[ [ :0 - Abstract:0 ] | %>: ]  _ :Vow :Nasals ;
                      %{n%}: %>: _ ;
 
 "L Desonorisation"
@@ -117,7 +117,7 @@ Rules
 
 !!!! Nasal harmony !!!!
 "D nasal harmony"
-%{D%}:н <=> :Nasals/[ :0 - Abstract:0 ] _ :Vow :Nasals ;
+%{D%}:н <=> :Nasals/[ [ :0 - Abstract:0 ] | %>: ] _ :Vow :Nasals ;
             %{n%}:0 %>: _ Vow :Nasals ;
             %{н%}:0 [ %-: | %>: ]* _ Vow :Nasals ;
 
@@ -189,8 +189,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                  [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
      [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
   [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-  [ :FrontVow :у/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] _ ;
-            :BackVow %{э%}:0/[ :CnsRight | :Cns | [ :0 - %{э%}:0 ] ] _ ;
+  [ :FrontVow :у/:Cns* ]/[ [ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] | %>: ] _ ;
+            :BackVow %{э%}:0/[ :CnsRight | :Cns | [ [ :0 - %{э%}:0 ] | %>: ] ] _ ;
 !                    ь:0 [ :0 - ь: ]* _ ;
 !                 FrontCns:0 [ :0 - FrontCns: ]* _ ;
                   ь:0 %{☭%}: %>: %{S%}: _ ;
@@ -283,7 +283,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                   [ :Cns :и %{ъ%}:0 ]/[ %>: ] _ ;
         except
                    [ :Vow - [ :и | :у ] ] %>: _ ;
-            [ :FrontCns :и ]/[ :0 - %{ъ%}:0 ] _ ;
+!            [ :FrontCns :и ]/[ :0 - %{ъ%}:0 ] _ ;
 
 !"E front vowel harmony after и"
 !%{E%}:е <=> [ [ :Cns - :BackCns ] :и ]/[ %>: ] _ ;
