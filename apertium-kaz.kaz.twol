@@ -373,7 +373,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 "Deletion of {S} after a consonant"
 !%{S%}:0 <=> [ :Cns | й: ]/[ %>: | :0 ] _ ;
-%{S%}:0 <=> :CnsRight/[ :0 - AbstrCns: ] _ ;
+%{S%}:0 <=> :CnsRight/[ [ :0 - AbstrCns: ] | %>: ] _ ;
             AbstrCns:/[ %>: | %-: ] _ ;
 
 "Deletion of {I} after vowels"
