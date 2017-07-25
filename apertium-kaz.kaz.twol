@@ -6,7 +6,10 @@ Alphabet
  %{K%}:к %{l%}:л %{L%}:л %{M%}:м %{N%}:н %{G%}:г %{D%}:д  ! Cns
  %{S%}:с %{n%}:н %{y%}:ы %{o%}:0 %{д%}:0 %{т%}:0 %{ъ%}:0  ! disappearing stuff
  %{A%}:а %{I%}:ы %{E%}:а ! Vow
- ° %% %, %. %- %>:0 %    ! punctuation and boundaries
+ ° %% %, %. %- %    ! punctuation and boundaries
+
+! %>:·
+ %>:0
 
  !!! These are needed for the phonology of numbers, alphabetisms, and acronyms
  !!! They trigger relevant phonology and disappear

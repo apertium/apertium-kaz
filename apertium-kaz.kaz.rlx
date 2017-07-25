@@ -135,12 +135,15 @@ LIST Post = post ;
 LIST Postadv = postadv ;
 LIST Cm = cm ;
 LIST Rquot = rquot ;
+LIST Excl = "!" ;
+
 
 # POS sub-categories
 # ==================
 
 LIST Pers = pers ;
 LIST Interr = itg ;
+LIST Dem = dem ; 
 
 # "Syntactic" tags
 # ================
@@ -170,6 +173,8 @@ LIST P2 = p2 ;
 LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
+
+LIST Imper = imp ;
 
 # Specific lexemes 
 # ==========================
@@ -1346,15 +1351,20 @@ SELECT Pron IF
 ;
 
 #Адамдар as people
-SELECT N IF (0 ("<Адамдар>"i))
+SELECT N IF (0 ("<адамдар>"i))
 ;  
+
+# 100 адам 
+SELECT N IF (-1 Num) (0 ("адам"))
+;  
+
 
 #су ішетін
 SELECT N IF (0 ("<су>"i))(1 V)
 ;      
 
 #бұл су
-SELECT N IF (-1 (det dem) OR (prn dem)) (0 ("<су>"i))
+SELECT N IF (-1 Dem) (0 ("<су>"i))
 ;    
      
 #менің үйім
@@ -1368,3 +1378,5 @@ SELECT (n px1sg) IF (-1 (prn pers p1 sg gen))
 
 SELECT A IF (-1 N) (0 ("<қауіпсіз>"i))
 ;  
+
+SELECT Imper IF (1* Excl) ; 
