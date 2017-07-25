@@ -145,6 +145,13 @@ LIST Pers = pers ;
 LIST Interr = itg ;
 LIST Dem = dem ; 
 
+LIST IV = iv ; 
+LIST TV = tv ;
+
+LIST Pass = pass ;
+LIST Caus = caus ;
+LIST Coop = coop ;
+
 # "Syntactic" tags
 # ================
 
@@ -1380,3 +1387,5 @@ SELECT A IF (-1 N) (0 ("<қауіпсіз>"i))
 ;  
 
 SELECT Imper IF (1* Excl) ; 
+
+REMOVE Coop IF (0 IV - Coop) ;
