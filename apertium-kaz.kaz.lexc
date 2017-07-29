@@ -952,7 +952,6 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Verbal adverbs
 %<gna_cond%>:%>с%{A%} V-PERS-S2 ;
-%<gna_impf%>:%>%{E%} CLIT-GHANA-ETC ;
 
 ! Verbal adjectives
 %<gpr_past%>:%>%{G%}%{A%}н V-ADJ ;
@@ -1068,7 +1067,7 @@ LEXICON PRON-P12SG-CASES
 %<gen%>%<subst%>:енікі%{n%} CASES ;
 %<loc%>:ендегі ATTR-SUBST ;
 %<sim%>:ендей CLITICS-NO-COP ;
-%<advl%>:еніңше CLITICS-NO-COP ;
+%<adv%>:еніңше CLITICS-NO-COP ;
 
 LEXICON PRON-P3SG-CASES
 
@@ -1083,7 +1082,7 @@ LEXICON PRON-P3SG-CASES
 %<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:ндағы ATTR-SUBST ;
 %<sim%>:ндай CLITICS-NO-COP ;
-%<advl%>:ныңша CLITICS-NO-COP ;
+%<adv%>:ныңша CLITICS-NO-COP ;
 
 
 LEXICON PRON-PERS-INFL
@@ -1099,18 +1098,18 @@ LEXICON PRON-PERS
 ол%<prn%>%<pers%>%<p3%>%<sg%>:о PRON-P3SG-CASES ;
 
 біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
-біз%<prn%>%<pers%>%<p1%>%<pl%>%<advl%>:біздіңше CLITICS-NO-COP ;
+біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше CLITICS-NO-COP ;
 
 сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
-сендер%<prn%>%<pers%>%<p2%>%<pl%>%<advl%>:сендерше CLITICS-NO-COP ;
+сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше CLITICS-NO-COP ;
 
 олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
-олар%<prn%>%<pers%>%<p3%>%<pl%>%<advl%>:оларша CLITICS-NO-COP ;
+олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша CLITICS-NO-COP ;
 
 сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<advl%>:сіздіңше CLITICS-NO-COP ;
+сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше CLITICS-NO-COP ;
 сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
-сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<advl%>:сіздерше CLITICS-NO-COP ;
+сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше CLITICS-NO-COP ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
@@ -1132,7 +1131,7 @@ LEXICON PRON-DEM-INFL
 %<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:ндагы ATTR-SUBST ;
 %<sim%>:ндай CASES ;  ! FIXME: should have <det>, etc.
-%<advl%>:лай CLITICS-INCL-COP ;
+%<adv%>:лай CLITICS-INCL-COP ;
 %<qnt%>:нша CLITICS-NO-COP ;         !
 
 %<pl%>:%>%{L%}%{A%}р CASES-ETC ;
@@ -1176,8 +1175,8 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASES ;
 бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASES ;
-бұл%<prn%>%<dem%>%<advl%>:былай CLITICS-INCL-COP ;
-бұл%<prn%>%<dem%>%<advl%>:бұлай CLITICS-INCL-COP ; ! Dir/LR
+бұл%<prn%>%<dem%>%<adv%>:былай CLITICS-INCL-COP ;
+бұл%<prn%>%<dem%>%<adv%>:бұлай CLITICS-INCL-COP ; ! Dir/LR
 бұл%<prn%>%<dem%>%<qnt%>:мұнша CLITICS-NO-COP ;
 бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASES ;
 
@@ -1196,7 +1195,7 @@ LEXICON PRON-DEM-MINA
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASES ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR-SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
-мына%<prn%>%<dem%>%<advl%>:мыналай CLITICS-INCL-COP ;
+мына%<prn%>%<dem%>%<adv%>:мыналай CLITICS-INCL-COP ;
 мына%<prn%>%<dem%>%<px3sp%>:мына%<prn%>%<dem%>%{S%}%{I%}%{n%} CASES ;
 
 мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
@@ -1357,7 +1356,7 @@ LEXICON PRON-RECIP
 LEXICON PRON-REF-ADV
 
 CASES-ETC ;
-%<advl%>:ше CLITICS-NO-COP ;
+%<adv%>:ше CLITICS-NO-COP ;
 
 LEXICON PRON-REF
 
@@ -29896,6 +29895,8 @@ Witness:Witness NP-AL ; ! ""
 өлі:өлі A3 ; ! ""
 !өлі:өлі A1 ; ! ""
 әуел:әуел A1 ; ! ""
+кеме% жүзетін:кеме% жүзетін A1 ; ! ""
+басты%-басты:басты%-басты A1 ; ! ""
 өмірлік:өмірлік A4 ; ! ""
 өнеркәсіптік:өнеркәсіптік A4 ; ! "" ! Use/MT
 өркениетті:өркениетті A4 ; ! ""
@@ -30539,6 +30540,8 @@ Witness:Witness NP-AL ; ! ""
 бақытты:бақытты A1 ; ! "happy"  ! Use/MT eng-kaz
 құрметті:құрметті A1 ; ! "dear"  ! Use/MT eng-kaz
 ағылшын:ағылшын A1 ; ! "englsih player"  ! Use/MT eng-kaz
+араб:араб A1 ; ! ""  ! Use/MT eng-kaz
+испан:испан A1 ; ! ""  ! Use/MT eng-kaz
 қазақ:Қазақ A1 ; ! "Kazakh" Use/MT eng-kaz
 қырғыз:Қырғыз A1 ; ! "Kyrgyz" Use/MT eng-kaz
 аномалды:аномалды A1 ; !Use/MT"
@@ -35320,6 +35323,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 жіп:жіп V-IV ; ! ""
 хабарла:хабарла V-IV ; ! ""
 лаула:лаула V-IV ; ! ""
+екен:екен V-IV ; ! ""
 
 күлтілде:күлтілде V-IV ; ! "to appear (of tumors)"
 құлшын:құлшын V-IV ; ! "to show readiness"
