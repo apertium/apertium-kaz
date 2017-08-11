@@ -520,6 +520,7 @@ SELECT A IF (0 N + Dat)(1 N );
 
 # FIXME removes determiner even when there is a noun 1 to the right
 #REMOVE Det IF
+#       (0 Det OR Pron)  # ADDED JNW 2017-08-11
 #       ((NEGATE 1 N OR Subst) OR (NEGATE 1 A LINK 1 N OR Subst))
 #;
 ## 44 . Ол енді ол дыбысты анығырақ ести бастады.
