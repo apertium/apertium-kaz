@@ -205,7 +205,7 @@ SET A1-Nom = A/Advl | A/Subst ;
 # Verb sets
 # =========
 
-LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt;
+LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt pih ;
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 SET V-NotGerund = V - Gerund ;
