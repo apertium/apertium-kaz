@@ -5,7 +5,7 @@ Alphabet
  %0 1 2 3 4 5 6 7 8 9
  %{K%}:к %{l%}:л %{L%}:л %{M%}:м %{N%}:н %{G%}:г %{D%}:д  ! Cns
  %{S%}:с %{n%}:н %{y%}:ы %{o%}:0 %{д%}:0 %{т%}:0 %{ъ%}:0  ! disappearing stuff
- %{A%}:а %{I%}:ы %{E%}:а ! Vow
+ %{A%}:а %{I%}:ы %{I%}:і %{I%}:ү %{I%}:ұ %{E%}:а ! Vow
  ° %% %, %. %- %    ! punctuation and boundaries
 
 ! %>:·
@@ -185,30 +185,30 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 
 !!!! Vowel Harmony !!!!
 
-"I Vowel Harmony"
-%{I%}:і <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-                 [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 | д:0 | с:0 ] _ ;
-                 [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
-     [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-  [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
-  [ :FrontVow :у/:Cns* ]/[ [ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] | %>: ] _ ;
-            :BackVow %{э%}:0/[ :CnsRight | :Cns | [ [ :0 - %{э%}:0 ] | %>: ] ] _ ;
-!                    ь:0 [ :0 - ь: ]* _ ;
-!                 FrontCns:0 [ :0 - FrontCns: ]* _ ;
-                  ь:0 %{☭%}: %>: %{S%}: _ ;
-            except
-                                                %{n%}:н/[ :0 | %>: ] _ ;
-                                 [ :BackCns ]/[ %>: | [ :0 - ь:0 ] ] _ ;
-      [ .#. :Cns* :у [ :Cns - :FrontCns ]* ]/[ %>: | [ :0  - ь:0 ] ] _ ;
-                        [ :BackVow :у [ :Cns - :FrontCns]* ]/[ %>: ] _ ;
-!                                                 [ й: ]/[ %>: | :0 ] _ ;
-                                                             %{o%}:0 _ ;
-                        [ ы:0 [ :и | :у ] [ :Cns - :FrontCns]* ]/%>: _ ;
-                             [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
- [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | ь:0 ] ] _ ;
-
-!ь:0 <=> _ %>: [ :Vow ]/[ :0 ] ;
+!!"I Vowel Harmony"
+!!%{I%}:і <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!!!            [ :FrontVow [ :Cns | :и | :у ]* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!!                 [ :и :Cns* :CnsRight %{☭%}:0 ]/[ %>: | т:0 | д:0 | с:0 ] _ ;
+!!                 [ %{э%}:0 [ :Cns | AbstrCns: ]* ]/[ %>: | %-: | %{S%}: ] _ ;
+!!     [ :FrontCns :Cns* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!!  [ .#. :Cns* :и [ :Cns | :ю ]* ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] ] _ ;
+!!  [ :FrontVow :у/:Cns* ]/[ [ :0 - [ Abstract:0 | %{☭%}:0 | %{ъ%}:0 ] ] | %>: ] _ ;
+!!            :BackVow %{э%}:0/[ :CnsRight | :Cns | [ [ :0 - %{э%}:0 ] | %>: ] ] _ ;
+!!!                    ь:0 [ :0 - ь: ]* _ ;
+!!!                 FrontCns:0 [ :0 - FrontCns: ]* _ ;
+!!                  ь:0 %{☭%}: %>: %{S%}: _ ;
+!!            except
+!!                                                %{n%}:н/[ :0 | %>: ] _ ;
+!!                                 [ :BackCns ]/[ %>: | [ :0 - ь:0 ] ] _ ;
+!!      [ .#. :Cns* :у [ :Cns - :FrontCns ]* ]/[ %>: | [ :0  - ь:0 ] ] _ ;
+!!                        [ :BackVow :у [ :Cns - :FrontCns]* ]/[ %>: ] _ ;
+!!!                                                 [ й: ]/[ %>: | :0 ] _ ;
+!!                                                             %{o%}:0 _ ;
+!!                        [ ы:0 [ :и | :у ] [ :Cns - :FrontCns]* ]/%>: _ ;
+!!                             [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
+!! [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | ь:0 ] ] _ ;
+!!
+!!!ь:0 <=> _ %>: [ :Vow ]/[ :0 ] ;
 
 "A Vowel Harmony"
 %{A%}:е <=> [ [ :FrontVow | :и ] :Cns* :CnsRight ]/[ %>: | [ :0 - [ Abstract:0 | %{ъ%}:0 ] ] | %  ] _ ;

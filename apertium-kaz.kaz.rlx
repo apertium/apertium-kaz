@@ -134,6 +134,7 @@ LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
 LIST Cm = cm ;
+LIST Adv = adv ;
 LIST Rquot = rquot ;
 LIST Excl = "!" ;
 
@@ -190,6 +191,8 @@ LIST Year = "жылғы" "жыл" ;
 
 LIST Colon = ":" ;
 
+LIST Qayda = "қайда" ;
+
 # Noun sets 
 # ==============
 
@@ -216,6 +219,8 @@ LIST VerbalAdjective = gpr_past gpr_fut gpr_pot gpr_impf ;
 LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
 LIST V-IV = (v iv) ;
 LIST V-TV = (v tv) ;
+
+LIST Err/Orth = err_orth ;
 
 # All possible word categories
 # ============================
@@ -249,10 +254,19 @@ SET NOT-ADV = WORDMARK - Adv ;
 
 SET S-BOUNDARY = CS | Interr | EOS ;
 
+# ======= #
+  SECTION # 
+# ======= #
+
+REMOVE SUB:1 Err/Orth ; 
+
+REMOVE Err/Orth ; 
+
 
 # ======= #
   SECTION # (COPULAS)
 # ======= #
+
 
 
 #
@@ -1396,3 +1410,5 @@ REMOVE Coop IF (0 IV - Coop) ;
 REMOVE N IF (-1 Dat) (0 Dat) (0C N OR V) ;
 
 SELECT Vaux IF (-1 Participle) ;
+
+SELECT Adv IF (0 Qayda) ;
