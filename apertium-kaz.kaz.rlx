@@ -772,7 +772,7 @@ REMOVE SUB:1 P3 IF
 # Rules for selecting imperative reading of these three (if any) must be placed
 # before this rule
  SELECT (vaux p3) IF
-        (-1 (prc_perf))
+        (-1 (prc_perf) OR (prc_plan) OR (prc_impf))
         (0 ("<жүр>") OR ("<тұр>") OR ("<отыр>"))
 ;
 ## 15. Олардың анасы мысығымен бірге үйде, ол терезеден Азамат пен Айгүлдің
