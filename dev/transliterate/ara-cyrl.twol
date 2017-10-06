@@ -47,6 +47,8 @@ Sets
 
 BackVow = ا ۇ و ;
 
+FrontCns = ك گ ;
+
 Cns = ب ت پ ج چ خ د ر ز ژ س ش ع ف ق ك گ ڭ ل م ن ھ ۋ ى ي ;
 
 CyrCns = б в г ғ д ж з й к қ л м н ң п р с т ф х һ ц ч ш щ ;
@@ -73,9 +75,11 @@ Vx:Vy <=> ء:0 Cns:* _ ;
           _ Cns:* [ FrontVow: ] ;
           [ FrontVow: ] Cns:* _ ;
           :CyrFrontVow Cns:* _ ;
+          _ FrontCns: ;
       except
 !          \[ ك: | گ: ] ي: _ ;
           :CyrBackVow [ ۋ: | ي: ]* _ ;
+          [ [ :CyrVow :CyrCns ] | [ :ю | :и ] ] :CyrCns* _ ;  ! термос
       where
           Vx in ( ا ۇ و ى )
           Vy in ( ә ү ө і )
@@ -85,10 +89,10 @@ Vx:Vy <=> ء:0 Cns:* _ ;
 Vx:Vy <=> ي: _ ;
       except
           :CyrFrontVow [ ۋ: | ي: ]* _ ;
-          ر: ا: ي: _ ن: ;
+!          ر: ا: ي: _ ن: ;  ! район
       where
-          Vx in ( ا و ۋ )
-          Vy in ( я ё ю )
+          Vx in ( ا ۋ )   !  و
+          Vy in ( я ю )   !  ё
       matched ;
 
 "й:0 for й letters"
