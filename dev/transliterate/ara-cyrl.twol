@@ -69,7 +69,7 @@ Rules
 
 "front some vow" 
 Vx:Vy <=> ء:0 Cns:* _ ;
-          [ ك: | گ: ] ( ۋ: | ي: ) _ ; ! ←
+          FrontCns: ( ۋ: | ي: ) _ ; ! ←
           _ ( Cns:* ) [ ك: | گ: ] ;
           ې: Cns:* _ ;
           _ Cns:* [ FrontVow: ] ;
@@ -79,11 +79,22 @@ Vx:Vy <=> ء:0 Cns:* _ ;
       except
 !          \[ ك: | گ: ] ي: _ ;
           :CyrBackVow [ ۋ: | ي: ]* _ ;
-          [ [ :CyrVow :CyrCns ] | [ :ю | :и ] ] :CyrCns* _ ;  ! термос
+!          [ [ [ :CyrVow :CyrCns ] | [ :ю | :и ] ] - FrontCns:] :CyrCns* _ \FrontCns: ;  ! термос, but солтүстік
       where
-          Vx in ( ا ۇ و ى )
-          Vy in ( ә ү ө і )
+          Vx in ( ا ۇ ى ) ! و 
+          Vy in ( ә ү і ) ! ө 
       matched ;
+
+"front o, but only in fist syllables"
+و:ө <=> ء:0 Cns:* _ ;
+         FrontCns: ( ۋ: | ي: ) _ ; ! ←
+         _ ( Cns:* ) [ ك: | گ: ] ;
+         ! ې: Cns:* _ ;
+         ! _ Cns:* [ FrontVow: ] ;
+         ! [ FrontVow: ] Cns:* _ ;
+         ! :CyrFrontVow Cns:* _ ;
+         ! _ FrontCns: ;
+
 
 "й letters"
 Vx:Vy <=> ي: _ ;
