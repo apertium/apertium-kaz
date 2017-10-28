@@ -1,0 +1,154 @@
+Multichar_Symbols 
+
+%<n%> 
+
+!%{İ%}
+%{й%}
+%{́ʼ%}
+%{☭%}
+
+LEXICON Root 
+
+Alpha ; 
+Punct ; 
+!Exceptions ;
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ;
+ # ;
+
+LEXICON Alpha
+
+б:б AlphaLoop "weight: 1.0" ; 
+в:в AlphaLoop "weight: 1.0" ; 
+г:г AlphaLoop "weight: 1.0" ; 
+д:д AlphaLoop "weight: 1.0" ; 
+ж:ж AlphaLoop "weight: 1.0" ; 
+з:з AlphaLoop "weight: 1.0" ; 
+й:й%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+к:к AlphaLoop "weight: 1.0" ; 
+л:л AlphaLoop "weight: 1.0" ; 
+м:м AlphaLoop "weight: 1.0" ; 
+н:н AlphaLoop "weight: 1.0" ; 
+п:п AlphaLoop "weight: 1.0" ; 
+р:р AlphaLoop "weight: 1.0" ; 
+с:с AlphaLoop "weight: 1.0" ; 
+т:т AlphaLoop "weight: 1.0" ; 
+ф:ф AlphaLoop "weight: 1.0" ; 
+х:х AlphaLoop "weight: 1.0" ; 
+ч:ч%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+ш:ш%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+ъ:ъ AlphaLoop "weight: 1.0" ; 
+ь:ь AlphaLoop "weight: 1.0" ; 
+
+һ:һ AlphaLoop "weight: 1.0" ; 
+ң:ң%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+қ:қ AlphaLoop "weight: 1.0" ; 
+ғ:ғ%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+
+и:и%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+у:у%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+а:а AlphaLoop "weight: 1.0" ; 
+э:э AlphaLoop "weight: 1.0" ; 
+ы:ы AlphaLoop "weight: 1.0" ; 
+о:о AlphaLoop "weight: 1.0" ; 
+ә:ә%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+і:і AlphaLoop "weight: 1.0" ; 
+ү:ү%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+ұ:ұ AlphaLoop "weight: 1.0" ; 
+ө:ө%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+ц:тс AlphaLoop "weight: 1.0" ;
+щ:ш%{́ʼ%}ш%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+ю:%{й%}%{ʼ%}ю%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+я:%{й%}%{ʼ%}я AlphaLoop "weight: 1.0" ; 
+е:%{й%}%{ʼ%}е AlphaLoop "weight: 1.0" ; 
+ё:%{й%}%{ʼ%}ё AlphaLoop "weight: 1.0" ; 
+
+Б:Б AlphaLoop "weight: 1.0" ; 
+В:В AlphaLoop "weight: 1.0" ; 
+Г:Г AlphaLoop "weight: 1.0" ; 
+Д:Д AlphaLoop "weight: 1.0" ; 
+Ж:Ж AlphaLoop "weight: 1.0" ; 
+З:З AlphaLoop "weight: 1.0" ; 
+Й:Й%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+К:К AlphaLoop "weight: 1.0" ; 
+Л:Л AlphaLoop "weight: 1.0" ; 
+М:М AlphaLoop "weight: 1.0" ; 
+Н:Н AlphaLoop "weight: 1.0" ; 
+П:П AlphaLoop "weight: 1.0" ; 
+Р:Р AlphaLoop "weight: 1.0" ; 
+С:С AlphaLoop "weight: 1.0" ; 
+Т:Т AlphaLoop "weight: 1.0" ; 
+Ф:Ф AlphaLoop "weight: 1.0" ; 
+Х:Х AlphaLoop "weight: 1.0" ; 
+Ч:Ч%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+Ш:Ш%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+Ъ:Ъ AlphaLoop "weight: 1.0" ; 
+Ь:Ь AlphaLoop "weight: 1.0" ; 
+
+Һ:Һ AlphaLoop "weight: 1.0" ; 
+Ң:Ң%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+Қ:Қ AlphaLoop "weight: 1.0" ; 
+Ғ:Ғ%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+
+И:И%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+У:У%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+А:А AlphaLoop "weight: 1.0" ; 
+Э:Э AlphaLoop "weight: 1.0" ; 
+Ы:Ы AlphaLoop "weight: 1.0" ; 
+О:О AlphaLoop "weight: 1.0" ; 
+Ә:Ә%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+І:І AlphaLoop "weight: 1.0" ; 
+Ү:Ү%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+Ұ:Ұ AlphaLoop "weight: 1.0" ; 
+Ө:Ө%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+Ц:Тс AlphaLoop "weight: 1.0" ;
+Щ:Ш%{́ʼ%}Ш%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+
+Ю:%{й%}%{ʼ%}Ю%{́ʼ%} AlphaLoop "weight: 1.0" ; 
+Я:%{й%}%{ʼ%}Я AlphaLoop "weight: 1.0" ; 
+Е:%{й%}%{ʼ%}Е AlphaLoop "weight: 1.0" ; 
+Ё:%{й%}%{ʼ%}Ё AlphaLoop "weight: 1.0" ; 
+
+
+
+!И:%{İ%} AlphaLoop "weight: 0.5" ; 
+
+LEXICON Exception
+
+:%{☭%} AlphaLoop "weight: 0.1" ; 
+
+LEXICON Exceptions 
+
+бульвар:бульвар Exception "weight: 0.1" ;
+пунктуация:пунктуатси%{й%}я Exception "weight: 0.1" ;
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 

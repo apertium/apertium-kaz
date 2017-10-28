@@ -1,0 +1,65 @@
+Alphabet 
+
+	а:a б:b в:v г:g д:d е:e ж:j з:z к:k қ:q л:l м:m н:n о:o п:p р:r с:s т:t ф:f х:h һ:h ъ:0 ы:y ь:0 э:e ұ:u
+	ё:o ю:y я:a е:e ! letters that ake iʼ
+	ә:a ғ:g ө:o ү:u и:i й:i ң:n у:y ч:c ш:s ! letters that take ʼ
+	щ:s ! shouldn't occur
+
+	А:A Б:B В:V Г:G Д:D Е:E Ж:J З:Z К:K Л:L М:M Н:N О:O П:P Р:R С:S Т:T Ф:F Х:H Һ:H Ъ:0 Ы:Y Ь:0 Э:E Ұ:U
+	Ё:O Ю:Y Я:A Е:E ! letters that ake iʼ
+	Ә:A Ғ:G Ө:O Ү:U И:I Й:I Ң:N У:Y Ч:C Ш:S ! letters that take ʼ
+	Щ:S ! shouldn't occur
+
+	a b c d e f g h i j k l m n o p q r s t u v w x y z ʼ
+	A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+   %{й%}:0 %{☭%}:0
+	%{́ʼ%}:ʼ ;
+
+
+
+Sets
+
+Cns = б в г д ж з й к л м н п р с т ф х ч ш щ
+	   Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ч Ш Щ ; 
+
+Vow = е ё я а э и о ы ұ ү і ә ө
+      Е Ё Я А Э И О Ы ұ ү і ә ө ;
+
+Yot = е ё я ю
+      Е Ё Я Ю ;
+
+KazYot = ё я ю
+         Ё Я Ю ;
+
+FrontVow = е э и
+           Е Э И ; ! non-first syllable only!
+
+BackVow = а у о ы
+          А У О Ы ; ! non-first syllable only!
+
+Unspec = б в д ж з л й м н п р с т ф х ц ч ш щ
+         Б В Д Ж З Л й М Н П Р С Т Ф Х Ц Ч Ш Щ ;
+
+Ambig = к г
+        К Г ;
+
+FrontAmbig = н л
+             Н Л ;
+
+Rules
+
+
+"Insert iʼ for yot letters: i"
+%{й%}:i <=> .#. _ %{ʼ%}: KazYot: ;
+            Vow:  _ %{ʼ%}: Yot: ;
+            Cns: [ ь:0 ] _ %{ʼ%}: Yot: ;
+            Ambig: [ ъ:0 ] _ %{ʼ%}: Yot: ;
+
+"Insert iʼ for yot letters: ʼ"
+%{ʼ%}:0 <=> _; 
+        except
+            .#. %{й%}: _ KazYot: ;
+            Vow: %{й%}: _ Yot: ;
+            Cns: [ ь:0 ] %{й%}: _ Yot: ;
+            Ambig: [ ъ:0 ] %{й%}: _ Yot: ;
+
