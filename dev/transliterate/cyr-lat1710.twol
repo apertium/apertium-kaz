@@ -55,6 +55,8 @@ Rules
             Cns: [ ь:0 ] _ %{ʼ%}: Yot: ;
             Ambig: [ ъ:0 ] _ %{ʼ%}: Yot: ;
 
+!@ Н:N а:a з:z а:a р:r б:b а:a {й}:i {ʼ}:ʼ е:e в:v
+
 !"Don't insert iʼ except for yot letters: ʼ"
 !%{ʼ%}:0 <=> _ ; 
 !        except
