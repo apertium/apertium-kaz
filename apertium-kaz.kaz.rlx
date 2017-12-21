@@ -130,6 +130,7 @@ LIST Det = det ;
 LIST CC = cnjcoo ;
 LIST CS = cnjsub ;
 LIST Interj = ij ;
+LIST Pres = pres ;
 LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
@@ -320,7 +321,7 @@ REMOVE Err/Orth ;
 
  SELECT SUB:1 Cop IF
         (1 EOS)
-        (NOT 0 V)
+        (NOT 0 V OR Vaux)
  ;
 
 # ======= #
@@ -1405,6 +1406,8 @@ SELECT A IF (-1 N) (0 ("<қауіпсіз>"i))
 
 SELECT Imper IF (1* Excl) ; 
 
+REMOVE Imper IF (NOT 1* Excl) (0C Imper OR Pres) ; 
+
 REMOVE Coop IF (0 IV - Coop) ;
 
 REMOVE N IF (-1 Dat) (0 Dat) (0C N OR V) ;
@@ -1412,3 +1415,4 @@ REMOVE N IF (-1 Dat) (0 Dat) (0C N OR V) ;
 SELECT Vaux IF (-1 Participle) ;
 
 SELECT Adv IF (0 Qayda) ;
+
