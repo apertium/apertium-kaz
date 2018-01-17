@@ -1,0 +1,43 @@
+
+Alphabet
+ А Ә Б В Г Ғ Д Е Ё Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ь Ы Ъ Э Ю Я
+ а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
+ %0 1 2 3 4 5 6 7 8 9
+ %{K%}:к %{K%}:қ %{K%}:г %{K%}:ғ
+ %{l%}:л %{l%}:н
+ %{L%}:л %{L%}:д %{L%}:т
+ %{M%}:м %{M%}:б %{M%}:п
+ %{N%}:н %{N%}:д %{N%}:т
+ %{G%}:г %{G%}:ғ %{G%}:қ %{G%}:ғ
+ %{D%}:д %{D%}:т
+ %{S%}:с %{S%}:0
+ %{n%}:н %{n%}:0
+ %{y%}:ы %{y%}:і %{y%}:0
+ %{A%}:а %{A%}:е
+ %{I%}:ы %{I%}:і
+ %{E%}:а %{E%}:е %{E%}:й
+ ° %% %, %. %- %>:0 %    ! punctuation and boundaries
+
+ !!! These are needed for the phonology of numbers, alphabetisms, and acronyms
+ !!! They trigger relevant phonology and disappear
+ %{а%}:0 %{э%}:0
+ %{й%}:0 %{л%}:0 %{н%}:0 %{з%}:0 %{с%}:0
+ %{д%}:0 %{д%}:д
+ %{т%}:0 %{т%}:т
+ %{o%}:0 %{ъ%}:0  ! disappearing stuff
+
+ ! Russian words:
+ %{☭%}:0
+
+ ! Obstacles on the road!!
+ %{❗%}:0 ;
+
+Sets
+
+BackCns  = Қ Ғ
+           қ ғ ;
+
+Rules
+
+"Arbitrary Rule"
+0:0 <=> _ ;
