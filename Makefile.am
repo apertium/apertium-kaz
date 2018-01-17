@@ -21,7 +21,7 @@ TARGETS_COMMON =			\
 @ap_include@
 
 ###############################################################################
-## Crimean Tatar transducer
+## Kazakh transducer
 ###############################################################################
 
 .deps/$(LANG1).err.hfst: $(BASENAME).err.twol .deps/.d
