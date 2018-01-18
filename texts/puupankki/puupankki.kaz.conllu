@@ -6285,6 +6285,8 @@
 
 # sent_id = kdt.tagged.txt:228:3639
 # text = (Әлдеқашан жіберіліп қойған арыз екенімен жұмысы жоқ).
+# text[en] = (The fact that it was a complaint sent a long time ago didn't bother him).
+# labels = checked_JNW
 1	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
 2	Әлдеқашан	әлдеқашан	ADV	adv	_	3	advmod	_	_
 3	жіберіліп	жібер	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Pass	5	acl:relcl	_	_
@@ -6331,6 +6333,8 @@
 
 # sent_id = kdt.tagged.txt:231:3716
 # text = — Мені қашан шығарасыз? — деп тағы сұрады.
+# text[en] = S/he asked again, "When will you kick me out?"
+# labels = checked_JNW fails_validation
 1	—	—	PUNCT	guio	_	4	punct	_	_
 2	Мені	мен	PRON	prn	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	_	_
 3	қашан	қашан	ADV	adv	PronType=Int	4	advmod	_	_
@@ -6344,6 +6348,8 @@
 
 # sent_id = kdt.tagged.txt:232:3737
 # text = Аурухананың киімдерін тастап, өз киімін киген соң, адам сияқтанып қалды.
+# text[en] = After getting rid of the hospital clothes and putting on his/her own clothes, s/he looked like a person [again].
+# labels = checked_JNW
 1	Аурухананың	аурухана	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	киімдерін	киім	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	obj	_	_
 3	тастап	таста	VERB	v	Aspect=Perf|VerbForm=Conv	7	advcl	_	SpaceAfter=No
@@ -13283,6 +13289,8 @@
 
 # sent_id = Лейнг_Рональд_Дэвис.txt:1
 # text = Лейнг Рональд Дэвис (1927-1989 жылдары) - шотландтық писхиатр және ортодоксалдық психиатрияны сынаушы.
+# text[en] Lang Ronald Davis (1927-1989) was a Scottish psychiatrist and a critic of orthodox psychiatry.
+# labels = checked_JNW
 1	Лейнг	Лейнг	np	_	cog|mf|nom	2	flat:name	_	_
 2	Рональд	Рональд	np	_	ant|m|nom	16	nsubj	_	_
 3	Дэвис	Дэвис	np	_	ant|m|nom	2	flat:name	_	_
