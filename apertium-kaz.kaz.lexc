@@ -334,6 +334,7 @@ LEXICON CASE-NONOM
 %<abl%>:%>%{D%}%{A%}н # ;
 %<loc%>:%>%{D%}%{A%} # ;
 %<ins%>:%>%{M%}ен CLITICS-NO-COP ;
+%<ins%>:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR  ! It should be analysed like this, but generated as мен/бен/пен
 
 LEXICON CASE-ETC-NONOM
 
@@ -596,6 +597,7 @@ LEXICON CASES-COMMON
 %<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
 %<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
 %<ins%>:%>%{M%}ен CLITICS-NO-COP ;
+%<ins%>:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR
 
 LEXICON CASES
 
@@ -1068,6 +1070,7 @@ LEXICON PRON-P12SG-CASES
 %<abl%>:енен CLITICS-NO-COP ;
 %<loc%>:енде CLITICS-NO-COP ;
 %<ins%>:енімен CLITICS-NO-COP ;
+%<ins%>:еніменен CLITICS-NO-COP ; ! Dir/LR
 %<gen%>%<subst%>:енікі%{n%} CASES ;
 %<loc%>:ендегі ATTR-SUBST ;
 %<sim%>:ендей CLITICS-NO-COP ;
@@ -1083,6 +1086,7 @@ LEXICON PRON-P3SG-CASES
 %<abl%>:дан CLITICS-NO-COP ;
 %<loc%>:нда CLITICS-NO-COP ;
 %<ins%>:нымен CLITICS-NO-COP ;
+%<ins%>:ныменен CLITICS-NO-COP ; ! Dir/LR
 %<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:ндағы ATTR-SUBST ;
 %<sim%>:ндай CLITICS-NO-COP ;
@@ -1170,7 +1174,9 @@ LEXICON PRON-DEM-BUL
 бұл%<prn%>%<dem%>%<loc%>:бұнда CLITICS-INCL-COP ;
 бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCL-COP ; ! Dir/LR
 бұл%<prn%>%<dem%>%<ins%>:бұнымен CLITICS-NO-COP ;
+бұл%<prn%>%<dem%>%<ins%>:бұныменен CLITICS-NO-COP ; ! Dir/LR
 бұл%<prn%>%<dem%>%<ins%>:мұнымен CLITICS-NO-COP ; ! Dir/LR
+бұл%<prn%>%<dem%>%<ins%>:мұныменен CLITICS-NO-COP ; ! Dir/LR
 бұл%<prn%>%<dem%>%<gen%>%<subst%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
 бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR-SUBST ;
 бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
@@ -1196,6 +1202,7 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<abl%>:мынадан CLITICS-INCL-COP ;
 мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCL-COP ;
 мына%<prn%>%<dem%>%<ins%>:мынамен CLITICS-NO-COP ;
+мына%<prn%>%<dem%>%<ins%>:мынаменен CLITICS-NO-COP ; ! Dir/LR
 !мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASES ;
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR-SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
@@ -1218,6 +1225,7 @@ LEXICON PRON-DEM-ANA
 %<abl%>:дан CLITICS-INCL-COP ;
 %<loc%>:да CLITICS-INCL-COP ;
 %<ins%>:мен CLITICS-NO-COP ;
+%<ins%>:менен CLITICS-NO-COP ; ! Dir/LR
 %<gen%>%<subst%>:нікі%{n%} CASES ;
 %<loc%>:дағы ATTR-SUBST ;
 %<sim%>:дай CASES ;
@@ -1237,16 +1245,19 @@ PRON-DEM-MINAU ;
 сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCL-COP ;
 сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
 сол%<prn%>%<dem%>%<ins%>:сонымен CLITICS-NO-COP ;
+сол%<prn%>%<dem%>%<ins%>:соныменен CLITICS-NO-COP ; ! Dir/LR
 сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASES ;
 
 ол%<prn%>%<dem%>%<nom%>:ол CLITICS-INCL-COP ;
 ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
 ол%<prn%>%<dem%>%<ins%>:онымен CLITICS-NO-COP ;
+ол%<prn%>%<dem%>%<ins%>:оныменен CLITICS-NO-COP ; ! Dir/LR
 ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASES ;
 
 осы%<prn%>%<dem%>%<nom%>:осы CLITICS-NO-COP ;
 осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
 осы%<prn%>%<dem%>%<ins%>:осымен CLITICS-NO-COP ;
+осы%<prn%>%<dem%>%<ins%>:осыменен CLITICS-NO-COP ; ! Dir/LR
 осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASES ;
 
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
@@ -1295,6 +1306,7 @@ LEXICON PRON-ITG-QAYSI-CASES
 %<abl%>:дан CLITICS-NO-COP ;
 %<loc%>:да CLITICS-NO-COP ;
 %<ins%>:мен CLITICS-NO-COP ;
+%<ins%>:менен CLITICS-NO-COP ; ! Dir/LR
 
 LEXICON PRON-ITG-QAYSI
 
