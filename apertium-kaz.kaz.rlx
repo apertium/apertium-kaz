@@ -134,6 +134,7 @@ LIST Pres = pres ;
 LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
+LIST FinalClitic = mod_ass mod_emo mod qst emph ;
 LIST Cm = cm ;
 LIST Adv = adv ;
 LIST Rquot = rquot ;
@@ -399,6 +400,12 @@ SELECT Num IF
 ;
 #
 # exceptions are added to handle e.g. 'мысығымен бірге үйде отыр', 'ол бір дыбысты естиді', 'үлкен бір ағаш'
+
+REMOVE SUB:1 FinalClitic IF
+	(NOT 1 EOS)
+;
+
+## Балықшы бұл ақшаға үй тұрғызды.
 
 
  SELECT FiniteVerb IF
