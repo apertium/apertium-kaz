@@ -134,6 +134,7 @@ LIST Pres = pres ;
 LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
+LIST FinalClitic = mod_ass mod_emo mod qst emph ;
 LIST Cm = cm ;
 LIST Adv = adv ;
 LIST Rquot = rquot ;
@@ -400,6 +401,12 @@ SELECT Num IF
 #
 # exceptions are added to handle e.g. 'мысығымен бірге үйде отыр', 'ол бір дыбысты естиді', 'үлкен бір ағаш'
 
+REMOVE SUB:1 FinalClitic IF
+	(NOT 1 EOS)
+;
+
+## Балықшы бұл ақшаға үй тұрғызды.
+
 
  SELECT FiniteVerb IF
       (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
@@ -528,6 +535,12 @@ SELECT A IF (0 N + Dat)(1 N );
 #;
 
 
+ SELECT (cnjcoo) OR (cnjadv) IF
+        (-1 BOS)
+        (0 ("әлде"))
+ ;
+
+
 # Determiners
 # ===========
 
@@ -611,6 +624,9 @@ REMOVE PersonalPossessives IF
 ## so: something possessed can only possess something else if it has gen case,
 ## so: px* with no gen cannot precede px3sp, so if that's one of the possible readings, you probably don't want it.
 ## 1929 ж. сырттай өлім жазасына кесілді.
+
+
+ "<қысым>" REMOVE PersonalPossessives ;
 
 
 # Adjectives
