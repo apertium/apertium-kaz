@@ -1,0 +1,26 @@
+See instead:
+- http://wiki.apertium.org/wiki/Apertium-kaz
+
+==Generator==
+
+<firespeaker> spectie: as long as you're poking at modes files, could you look into why kaz-gener isn't working?
+<spectie> it is working!!!
+<spectie> Flammie, no
+<spectie> you have to specify it
+<spectie> firespeaker, we've discussed this like 100 times :P
+<firespeaker> apertium-kaz$ echo "^көз<n><nom>$" | apertium -d . kaz-gener
+<firespeaker> have to specify it?
+<spectie> you need -f none
+<spectie> i've mentioned this before :P
+<firespeaker> oh
+<spectie> apertium script
+<firespeaker> what's that for?
+<spectie> runs everything through deformatters
+<firespeaker> I always forget what the magic bit is
+<spectie> $ echo "^көз<n><nom>$" | apertium-destxt 
+<spectie> \^көз\<n\>\<nom\>\$.[][
+<firespeaker> hmm
+<spectie> so it tries to generate that
+<spectie> if you don't put -f none
+<firespeaker> ahh
+<firespeaker> you never explained it like that before
