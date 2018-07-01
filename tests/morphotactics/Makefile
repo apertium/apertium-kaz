@@ -4,8 +4,14 @@
 
 LANGUAGE=kaz
 
-all: NP-LAT.txt.gz N1.txt.gz A1.txt.gz V-TV.txt.gz PRON.txt.gz PRON-REF.txt.gz
-
+all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
+	A1.txt.gz \
+	V-TV-IR.txt.gz \
+	ADV.txt.gz ADV-ITG.txt.gz \
+	NUM.txt.gz NUM-ROMAN.txt.gz NUM-ITG.txt.gz \
+	NUM.txt.gz POST.txt.gz CNJ.txt.gz \
+	PRN.txt.gz \
+	DET.txt.gz
 .deps/.d:
 	test -d .deps || mkdir .deps
 	touch $@
@@ -39,4 +45,4 @@ all: NP-LAT.txt.gz N1.txt.gz A1.txt.gz V-TV.txt.gz PRON.txt.gz PRON-REF.txt.gz
 	hfst-compose-intersect -1 .deps/$(LANGUAGE).automorf.hfst -2 $< -o $@
 
 %.txt.gz: .deps/%.hfst
-	hfst-fst2strings $< | gzip -c > $@
+	hfst-fst2strings -c 1 $< | gzip -c > $@
