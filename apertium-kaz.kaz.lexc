@@ -2228,36 +2228,10 @@ InterrogativePronouns ;
 алтау:алтау NUM-COLL ;
 жетеу:жетеу NUM-COLL ;
 
-
-C NUM-ROMAN ; ! ""
-D NUM-ROMAN ; ! ""
-DC NUM-ROMAN ; ! ""
-I NUM-ROMAN ; ! ""
-II NUM-ROMAN ; ! ""
-III NUM-ROMAN ; ! ""
-IV NUM-ROMAN ; ! ""
-V NUM-ROMAN ; ! ""
-VI NUM-ROMAN ; ! ""
-VII NUM-ROMAN ; ! ""
-VIII NUM-ROMAN ; ! ""
-IX NUM-ROMAN ; ! ""
-L NUM-ROMAN ; ! ""
-M NUM-ROMAN ; ! ""
-X NUM-ROMAN ; ! ""
-XI NUM-ROMAN ; ! ""
-XII NUM-ROMAN ; ! ""
-XIII NUM-ROMAN ; ! ""
-XIV NUM-ROMAN ; ! ""
-XV NUM-ROMAN ; ! ""
-XVI NUM-ROMAN ; ! ""
-XVII NUM-ROMAN ; ! ""
-XVIII NUM-ROMAN ; ! ""
-XIX NUM-ROMAN ; ! ""
-XX NUM-ROMAN ; ! ""
-XXI NUM-ROMAN ; ! ""
-
 неше:неше NUM-ITG ;
 қанша:қанша NUM-ITG ;
+
+<(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
 
 
 !=============!
@@ -7873,6 +7847,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 сәбіз:сәбіз N1 ; ! "carrots"
 сәжде:сәжде N1 ; ! ""
 сәйгүлік:сәйгүлік N1 ; !"Use/MT"
+сәл:сәл N1 ; ! "~ біраз"
 сәлем:сәлем N1 ; ! "peace,greeting"
 сәлемдеме:сәлемдеме N1 ; ! ""
 сәлемдесу:сәлемдесу N1 ; ! ""
@@ -33029,6 +33004,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қолма%-қолсыз:қолма%-қолсыз ADV ; ! "" ! Use/MT
 қып:қып ADV ; ! ""
 міне:міне ADV ; ! ""
+мінекі:мінекі ADV ; ! ""
 мүлдем:мүлдем ADV ; ! ""
 мүлде:мүлде ADV ; ! ""
 мүмкін% емес:мүмкін% емес ADV ; !"Use/MT" ! невозможно
@@ -33210,8 +33186,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 шексіз:шексіз ADV ; ! 
 шын% жүректен:шын% жүректен ADV ; ! 
 кілең:кілең ADV ; ! 
-
-
 
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
@@ -37517,6 +37491,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 ысыл:ысыл V-IV ; ! "to acquire a habit"
 ысыр:ысыр V-TV ; ! "to move"
 ышқын:ышқын V-IV ; ! "to be in an agonizing condition"
+сабақта:сабақта V-TV ; ! "go on (talking)"
+есіне:есіне V-TV ; ! "yawn"
 
 эвакуацияла:эвакуацияла V-TV ; ! "to evacuate"
 экстрадицияла:экстрадицияла V-TV ; ! ""
@@ -39355,6 +39331,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 мә:мә INTERJ ; ! "here you go / take"
 мейлі:мейлі INTERJ ; ! "okay/fine"
 міне:міне INTERJ ; ! "here is, вот"
+мінекі:мінекі INTERJ ; ! "here is, вот"
 мына:мына INTERJ ; ! "here is, вот"
 ойбай:ойбай INTERJ ; ! "" 
 қайырлы% таң:қайырлы% таң INTERJ ; ! "good morning"
