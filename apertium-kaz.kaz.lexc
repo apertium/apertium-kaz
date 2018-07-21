@@ -624,7 +624,11 @@ LEXICON ATTR-SUBST
 
 %<attr%>: # ;
 %<subst%>: CASES ;
+%<subst%>: POSSESSIVES ;
 %<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
+%<subst%>%<pl%>:%>%{L%}%{A%}р POSSESSIVES ;
+
+%<attr%>: GENERAL-POSSESSIVE-ETC ;
 
 LEXICON GENERAL-POSSESSIVE-ETC
 
@@ -40069,6 +40073,8 @@ LEXICON Common ! <- future
 ғайып:ғайып N1 ; ! ""
 сәл%-пәл:сәл%-пәл ADV ; ! ""
 мұңайыңқыра:мұңайыңқыра V-IV ; ! ""
+тамсан:тамсан V-IV ; ! ""
+маза:маза N1 ; ! ""
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
    ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы |
