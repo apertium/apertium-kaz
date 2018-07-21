@@ -81,6 +81,7 @@
               !# SIZ (not used after posessives and cases)
 %<reas%>      ! not used rigth now, just in case for
               !# LIKTAN
+%<equ%>       ! ш{A} 
 
 ! Levels of comparison of adjectives
 %<comp%>      ! Comparative
@@ -642,9 +643,12 @@ LEXICON GENERAL-POSSESSIVE-ETC
 
 %<gen%>%<subst%>:%>%{N%}ікі%{n%} CASES ;
 %<gen%>%<subst%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
-
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
-%<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;  ! Probably should be CLITICS-INCL-COP, same for all <sim> -JNW 2015-01-17
+%<sim%>:%>%{D%}%{A%}й CLITICS-INCL-COP ;
+%<sim%>:%>%{D%}%{A%}й POSSESSIVES ;
+%<sim%>:%>%{D%}%{A%}й CASES ;
+%<sim%>:%>%{D%}%{A%}й PLURAL ;
+%<equ%>:%>ч%{A%} CLITICS-INCL-COP ;
 
 LEXICON CASES-ETC
 
