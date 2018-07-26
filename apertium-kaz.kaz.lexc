@@ -945,7 +945,6 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<neg%>%<gna_perf%>:%>%{M%}%{A%}%>ст%{A%}н CLITICS-NO-COP ; ! Dir/LR
 
 %<gna_until%>:%>%{G%}%{A%}нш%{A%} CLITICS-NO-COP ;
-%<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
 
 ! Verbal Adjectives
 %<gpr_fut%>:%>%{A%}р V-ADJ ;
@@ -979,6 +978,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 ! Verbal adverbs
 %<gna_cond%>:%>с%{A%} V-PERS-S2 ;
 %<gna_impf%>:%>%{E%} CLIT-GHANA-ETC ;
+%<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
 
 ! Verbal adjectives
 %<gpr_past%>:%>%{G%}%{A%}н V-ADJ ;
@@ -40071,6 +40071,8 @@ LEXICON Parentheses
 
 LEXICON Common ! <- future
 
+азынақ:азынақ N1 ; !"draft"
+айқар:айқар V-TV ; !""
 аң%-таң:аң%-таң A2 ; !"amazedly"
 бақырай:бақырай V-IV ; ! ""
 боян:боян V-IV ; ! ""
