@@ -1,0 +1,42 @@
+
+modes/%.mode: modes.xml
+	apertium-validate-modes modes.xml
+	apertium-gen-modes modes.xml
+	modes=`xmllint --xpath '//mode[@install="yes"]/@name' modes.xml | sed 's/ *name="\([^"]*\)"/\1.mode /g'`; \
+		if test -n "$$modes"; then mv $$modes modes/; fi
+
+apertium_modesdir=$(prefix)/share/apertium/modes/
+install-modes:
+	mv modes modes.bak
+	apertium-gen-modes -f modes.xml $(prefix)/share/apertium/$(BASENAME)
+	rm -rf modes
+	mv modes.bak modes
+	test -d $(DESTDIR)$(apertium_modesdir) || mkdir $(DESTDIR)$(apertium_modesdir)
+	modes=`xmllint --xpath '//mode[@install="yes"]/@name' modes.xml | sed 's/ *name="\([^"]*\)"/\1.mode /g'`; \
+		if test -n "$$modes"; then \
+			$(INSTALL_DATA) $$modes $(DESTDIR)$(apertium_modesdir); \
+			rm $$modes; \
+		fi
+
+.deps/.d:
+	test -d .deps || mkdir .deps
+	touch $@
+
+.PRECIOUS: .deps/.d
+
+langs:
+	@fail=; 	if $(am__make_keepgoing); then 	  failcom='fail=yes'; 	else 	  failcom='exit 1'; 	fi; 	dot_seen=no; 	list='$(AP_SUBDIRS)'; 	for subdir in $$list; do 	  echo "Making $$subdir"; 	  ($(am__cd) $$subdir && $(MAKE) $(AM_MAKEFLAGS) all-am) 	  || eval $$failcom; 	done; 	$(MAKE) $(AM_MAKEFLAGS) all-am || exit 1; 	test -z "$$fail"
+.PHONY: langs
+
+
+.deps/%.autobil.prefixes: %.autobil.bin .deps/.d
+	lt-print $< | sed 's/ /@_SPACE_@/g' > .deps/$*.autobil.att
+	hfst-txt2fst -e ε <  .deps/$*.autobil.att > .deps/$*.autobil.hfst
+	hfst-project -p upper .deps/$*.autobil.hfst > .deps/$*.autobil.upper                                   # bidix
+	echo ' [ ? - %+ ]* ' | hfst-regexp2fst > .deps/$*.any-nonplus.hfst                                                        # [^+]*
+	hfst-concatenate -1 .deps/$*.autobil.upper -2 .deps/$*.any-nonplus.hfst -o .deps/$*.autobil.nonplussed    # bidix [^+]*
+	echo ' %+ ' | hfst-regexp2fst > .deps/$*.single-plus.hfst                                                                 # +
+	hfst-concatenate -1 .deps/$*.single-plus.hfst -2 .deps/$*.autobil.nonplussed -o .deps/$*.autobil.postplus # + bidix [^+]*
+	hfst-repeat -f0 -t3 -i .deps/$*.autobil.postplus -o .deps/$*.autobil.postplus.0,3                      # (+ bidix [^+]*){0,3} -- gives at most three +
+	hfst-concatenate -1 .deps/$*.autobil.nonplussed -2 .deps/$*.autobil.postplus.0,3 -o $@                 # bidix [^+]* (+ bidix [^+]*){0,3}
+
