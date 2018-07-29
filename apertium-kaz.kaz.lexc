@@ -1240,6 +1240,19 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
 мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
 
+!LEXICON PRON-DEM-ALGI
+!CHECK IT 
+әлгі%<prn%>%<dem%>%<nom%>:әлгі CLITICS-INCL-COP ;
+әлгі%<prn%>%<dem%>%<gen%>:әлгінің CLITICS-NO-COP ;
+әлгі%<prn%>%<dem%>%<dat%>:әлгіге CLITICS-NO-COP ;
+әлгі%<prn%>%<dem%>%<acc%>:әлгіні CLITICS-NO-COP ;
+әлгі%<prn%>%<dem%>%<abl%>:әлгіден CLITICS-INCL-COP ;
+әлгі%<prn%>%<dem%>%<loc%>:әлгіде CLITICS-INCL-COP ;
+әлгі%<prn%>%<dem%>%<ins%>:әлгімен CLITICS-NO-COP ;
+әлгі%<prn%>%<dem%>%<ins%>:әлгіменен CLITICS-NO-COP ;
+әлгі%<prn%>%<dem%>%<sim%>:әлгідей CASES ;
+
+
 LEXICON PRON-DEM-MINAU
 
 мынау%<prn%>%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
@@ -2081,6 +2094,7 @@ InterrogativePronouns ;
 қайда% болса% сонда:қайда% болса% сонда PRON-IND ; ! "anywhere" Use/MT
 кей:кей PRON-IND ; ! "some" FIXME CHECK determiner?
 кейбір:кейбір PRON-IND ; ! "some"
+қайбір:қайбір PRON-IND ; ! "some"
 қай:қай PRON-IND ; ! "which"
 әр:әр PRON-IND ; ! !"either" Use/MT 
 біреу:біреу PRON-IND ; ! !"someone" Use/MT
@@ -19461,6 +19475,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Акира:Акира NP-ANT-F ; !"Use/MT"
 Ақай:Ақай NP-ANT-M ; ! "Aqay" (Kazakh)
 Ақан:Ақан NP-ANT-M ; ! ""
+Ақәжетай:Ақәжетай NP-ANT-F ; ! ""
 Ақбай:Ақбай NP-ANT-M ; ! "Aqbay" (Kazakh)
 Ақбала:Ақбала NP-ANT-F ; ! "Aqbala" (Kazakh)
 Ақбатес:Ақбатес NP-ANT-F ; ! "Aqbates" (Russian)
@@ -20092,7 +20107,10 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Баянсұлу:Баянсұлу NP-ANT-F ; ! "Bayansulıw" (Kazakh)
 Баят:Баят NP-ANT-M ; ! "Bayat" (Arabic)
 Бәдинұр:Бәдинұр NP-ANT-F ; ! "Bädiynur" (Arabic)
-Бәзила:Бәзила NP-ANT-F ; ! "Bäziyla" 
+Бәзила:Бәзила NP-ANT-F ; ! "Bäziyla"
+Бәйтен:Бәйтен NP-ANT-F ; ! "Baiten" 
+Бәке:Бәке NP-ANT-M ; ! "Bake" ! "Need to check"
+Бәке:Бәкең NP-ANT-M ; ! "Bake" ! "Need to check"
 Бәкизат:Бәкизат NP-ANT-F ; ! "Bäkiyzat" (Persian)
 Бәкібала:Бәкібала NP-ANT-F ; ! "Bäkibala" (Kazakh)
 Бәкір:Бәкір NP-ANT-M ; ! "Bäkir" (Arabic)
@@ -20114,6 +20132,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Бейқан:Бейқан NP-ANT-M ; ! "Beyqan" (Arabic)
 Бейқұт:Бейқұт NP-ANT-M ; ! "Beyqut" 
 Бейсалы:Бейсалы NP-ANT-M ; ! "Beysalı" (Persian)
+Бейтен:Бейтен NP-ANT-F ; ! "Beiten" (Kazakh)
 Бекайдар:Бекайдар NP-ANT-M ; ! "Bekaydar" (Kazakh)
 Бекәділ:Бекәділ NP-ANT-M ; ! "Bekädil" (Arabic)
 Бекбай:Бекбай NP-ANT-M ; ! "Bekbay" (Kazakh)
@@ -21460,6 +21479,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Жәмилә:Жәмилә NP-ANT-F ; ! ""
 Жәмихан:Жәмихан NP-ANT-M ; ! "Jämiyxan" (Arabic)
 Жәміл:Жәміл NP-ANT-M ; ! "Jämil" (Arabic)
+Жәміш:Жәміш NP-ANT-M ; ! "Jamish (Kazakh)"
 Жәмшид:Жәмшид NP-ANT-M ; ! "Jämshiyd" (Arabic)
 Жәнібек:Жәнібек NP-ANT-M ; ! "Jänibek" (Kazakh)
 Жәния:Жәния NP-ANT-F ; ! ""
@@ -21597,6 +21617,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Зигмунд:Зигмунд NP-ANT-M ; !"Use/MT"
 Зейнегүл:Зейнегүл NP-ANT-F ; ! "Zeynegül" (Arabic)
 Зейнеп:Зейнеп NP-ANT-F ; ! "Zeynep" (Arabic)
+Зейнеш:Зейнеш NP-ANT-F ; ! "Zeynesh" (Kazakh)
 Зейнұр:Зейнұр NP-ANT-M ; ! "Zeynur" (Arabic)
 Земан:Земан NP-ANT-M ; ! "Zemfira" (Persian)
 Земфира:Земфира NP-ANT-F ; ! "Zemfira" (Persian)
@@ -21667,6 +21688,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Иман:Иман NP-ANT-M ; ! "İyman" (Arabic)
 Иманқұл:Иманқұл NP-ANT-M ; ! "İymanqul" (Arabic)
 Иммануил:Иммануил NP-ANT-M ; ! ""
+Именбай:Именбай NP-ANT-M ; ! "Imenbay"
 Инаят:Инаят NP-ANT-M ; ! "İynayat" 
 Инга:Инга NP-ANT-F ; ! "İynga" (Skandinavian)
 Индира:Индира NP-ANT-F ; ! "İyndıyra" 
@@ -21918,6 +21940,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Қайдос:Қайдос NP-ANT-M ; !
 Қайрат:Қайрат NP-ANT-M ; ! "Qayrat" (Arabic)
 Қайсар:Қайсар NP-ANT-M ; ! "Qaysar" (Arabic)
+Қайсен:Қайсен NP-ANT-M ; ! "Qaysen" (Kazakh)
 Қайым:Қайым NP-ANT-M ; ! "Qayım" (Arabic)
 Қайып:Қайып NP-ANT-M ; ! "Qayıp" (Arabic)
 Қайырбай:Қайырбай NP-ANT-M ; ! "Qayırbay" (Arabic)
@@ -22018,6 +22041,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Қошқарбай:Қошқарбай NP-ANT-M ; ! "Qoshqarbay" (Kazakh)
 Қуан:Қуан NP-ANT-M ; ! "Qıwan" (Kazakh)
 Қуат:Қуат NP-ANT-M ; ! "Qıwat" (Kazakh)
+Құбайжан:Құбайжан NP-ANT-M ; ! "Qubayjan" (Kazakh)
 Құбан:Құбан NP-ANT-M ; ! "Quban" (Persian)
 Құдайберген:Құдайберген NP-ANT-M ; ! "Qudaybergen" (Kazakh)
 Құдайберді:Құдайберді NP-ANT-M ; ! "Qudayberdi"
@@ -23500,6 +23524,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Шеңне:Шеңне NP-ANT-F ; ! "Shengne" (Tuvan)
 Уайыс:Уайыс NP-ANT-M ; ! "Wayıs" (Arabic)
 Уалкер:Уалкер NP-ANT-M ; !"Use/MT"
+Уақа:Уақа NP-ANT-M ; ! "Uaka (Kazakh)"
 Уаррен:Уаррен NP-ANT-M ; !"Use/MT"
 Уахап:Уахап NP-ANT-M ; ! "Waxap" (Arabic)
 Уахат:Уахат NP-ANT-M ; ! "Waxat" (Arabic)
@@ -30760,6 +30785,7 @@ Witness:Witness NP-AL ; ! ""
 тығыз:тығыз A1 ; ! ""
 тын:тын A1 ; ! ""
 тыныш:тыныш A1 ; ! ""
+тыныш:тиыш A1 ; ! "another form of quiet"
 уақ:уақ A1 ; ! "small"
 уақытша:уақытша A6 ; ! "for the time being" ! Probably A6, not A1 -JNW
 үлкен:үлкен A1 ; ! "big"
@@ -31847,6 +31873,7 @@ oномастикалық:oномастикалық A1 ; !"Use/MT"
 меланхолиялық:меланхолиялық A1 ; !"Use/MT"
 саудалық:саудалық A1 ; !"Use/MT"
 жай:жай A1 ; !"Use/MT"
+жай:жәй A1 ; ! ""
 метаболиялық:метаболиялық A1 ; !"Use/MT"
 метеорологиялық:метеорологиялық A1 ; !"Use/MT"
 метрикалық:метрикалық A1 ; !"Use/MT"
@@ -36929,7 +36956,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 айдап% әкел:айдап% әкел V-TV ; ! ""
 айып% тақ:айып% тақ V-TV ; ! ""
 айналып% өт:айналып% өт V-TV ; ! ""
-
 тентектік% істе:тентектік% істе V-IV ; ! ""
 көз% жібер:көз% жібер V-IV ; ! ""
 аралап% кел:аралап% кел V-IV ; ! ""
@@ -39340,6 +39366,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 өтінемін:өтінемін INTERJ ; ! ""
 ә:ә INTERJ ; ! ""
 әй:әй INTERJ ; ! ""
+әп:әп INTERJ ; ! ""
 әйе:әйе INTERJ ; ! "yes"
 әлбетте:әлбетте INTERJ ; ! "of course"
 әрине:әрине INTERJ ; ! "of course"
@@ -39358,12 +39385,14 @@ retroactive:retroactive A1 ; !"Use/MT"
 е:е INTERJ ; ! "" 
 ей:ей INTERJ ; ! ""
 жарайды:жарайды INTERJ ; ! "okay / it'll do"
+жә:жә INTERJ ; ! "in meaning of stop/enough"
 жоқ:жоқ INTERJ ; ! "no"
 жо%-жоқ:жо%-жоқ INTERJ ; ! "no"
 иә:иә INTERJ ; ! "yes"
 кәнеки:кәнеки INTERJ ; ! ""
 қанеки:қанеки INTERJ ; ! ""
 қане:қане INTERJ ; ! "where" ! interrog. interjection (question form of "вот")
+қане:кәне INTERJ ; ! ""
 қош:қош INTERJ ; ! ""
 Құдай%-ай:Құдай%-ай INTERJ ; ! ""
 мақұл:мақұл INTERJ ; ! "fine/okay"
@@ -39373,6 +39402,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 мінеки:мінеки INTERJ ; ! "here is, вот"
 мына:мына INTERJ ; ! "here is, вот"
 ойбай:ойбай INTERJ ; ! "" 
+оу:оу INTERJ ; ! "ou"
 қайырлы% таң:қайырлы% таң INTERJ ; ! "good morning"
 қайырлы% күн:қайырлы% күн INTERJ ; ! "good evening"
 қайырлы% түн:қайырлы% түн INTERJ ; ! "good night"
@@ -39384,8 +39414,11 @@ retroactive:retroactive A1 ; !"Use/MT"
 рақмет:рақмет INTERJ ; ! "thank you"
 сәлем:сәлем INTERJ ; ! ""
 түсінікті:түсінікті INTERJ ; ! "understood"
+тс:тс INTERJ ; ! "ts"
 уа:уа INTERJ ; ! ""
 шіркін:шіркін INTERJ ; !"USE/MT"
+ха:ха INTERJ ; ! "ha"
+
 
 ! Вводные слова
 ! =============
@@ -40180,6 +40213,116 @@ LEXICON Common ! <- future
 меншіктеу:меншіктеу N1 ; ! "privatization"
 қанағаттан:қанағаттан V-IV ; ! "get satisfied"
 құлыпта:құлыпта V-TV ; ! "lock"
+
+! "morphemes added at the process of corpus tagging"
+
+мең:мең N1 ; ! "mole"
+меңді:меңді A2 ; ! "with mole"
+аунақшып:аунақшып ADV ; ! "turning around" 
+қосақ:қосақ N1 ; ! "pair"
+дүние% сал:дүние% сал V-IV ; ! "pass away"
+ұйқысыра:ұйқысыра V-IV ; ! "speak in a dream"
+секемдік:секемдік N1 ; ! "doubt/suspicion"
+секем:секем N1 ; ! "doubt/suspicion"
+қисай:қисай V-IV ; ! "bend"
+селти:селти  V-IV ; ! "stick out"
+ауыз% үй:ауыз% үй N1 ; ! "entrance hall"
+жөткер:жөткер V-IV ; ! "cough"
+тұсіңкіре:түсіңкіре V-IV ; ! "go down a bit"
+өрекпіт:өрекпіт V-TV ; ! "get excited"
+өрекпі:өрекпі V-IV ; ! "get excited"
+қабақ% шыт:қабақ% шыт V-IV ; ! "get sad" ! "Need to check as noun "
+әрі%-сәрі:әрі%-сәрі A1 ; ! "unreliable (man) / difficult (situation)"
+қыдырт:қыдырт V-TV ; ! "accompany"
+сұңғақ:сұңғақ A1 ; ! "stately/noble"
+қалтарыс:қалтарыс N1 ; ! "turn/backalley"
+орағыт:орағыт V-TV ; ! "bypass"
+еліт:еліт V-TV ; ! "anesthetize"
+егіл%-тегіл:егіл%-тегіл ADV ; ! "abundantly"
+бәйек ADV ; ! "attentively"
+күпәйке:күпәйке N1 ; ! "sweatshirt"
+фуфайка:фуфайка N5 ; ! "sweatshirt"
+шыңылтыр:шыңылтыр A2 ; ! "dry (frost)"
+қалқи:қалқи V-IV ; ! "barely stand on one's feet"
+сүрлем:сүрлем N1 ; ! "silage"
+сүрлем:сүрлем A2 ; ! "silo"
+діңке:діңке N1 ; ! "strength"
+қиынды:қиынды N1 ; ! "cuttings/trimmings"
+бронь:бронь N5 ; ! ""
+қозғалақта:қозғалақта V-IV ; ! "move frequently"
+қымтан:қымтан V-IV ; ! "wrap up"
+қымта:қымта V-TV ; ! "wrap up"
+өбекте:өбекте V-IV ; ! "curry favor"
+қызын:қызын V-IV ; ! "inflame"
+қамзол:қамзол N1 ; ! "camisol"
+қамзол:кәмзәл N1 ; ! ""
+қамзол:кәмзол N1 ; ! ""
+сездір:сездір V-TV ; ! "feel"
+шалғай:шалғай N1 ; ! "on the outskirts"
+шалғай:шалғай A2 ; ! "remote"
+жүріс%-тұрыс:жүріс%-тұрыс N1 ; ! "behaviour"
+шолжаң:шолжаң A2 ; ! "cockered"
+шолжаң:шолжаң N1 ; ! "coddle"
+кезер:кезер V-IV ; ! "dry up"
+сарқыл:сарқыл V-IV ; ! "dry out/ run short"
+жеңеше:жеңеше N1 ; ! "elder borther's wife"
+жеңешетай:жеңешетай N1 ; ! ""
+еткіз:еткіз V-TV ; ! "enforce"
+тапжылмай:тапжылмай ADV ; ! "inoffensively"
+тапжылмай:табжылмай ADV ; ! ""
+пенсия:пенсия N5 ; ! "pension"
+қымбаттық:қымбаттық N1 ; ! "expensiveness"
+қаңырай:қаңырай V-IV ; ! "empty"
+қаннен%-қаперсіз:қаннен%-қаперсіз A1 ; ! "careless"
+талдырмаш:талдырмаш A2 ; ! "gentle"
+бұлтыңдат:бұлтыңдат V-TV ; ! "move"
+төрлет:төрлет V-IV ; ! "take a place of honour"
+төргі:төргі A2 ; ! "top"
+ұяла:ұяла V-TV ; ! "nest"
+жасар:жасар V-IV ; ! "get younger"
+туфли:туфли N5 ; ! "shoes"
+туфлилі:туфлилі A2 ; ! "with shoes"
+тұсау:тұсау N1 ; ! "fetters"
+тұсаулы:тұсаулы A2 ; ! "with fetters"
+бұраңдат:бұраңдат V-TV ; ! "squirm"
+жымыңда:жымыңда V-IV ; ! "smile"
+ояу:ояу A1 ; ! "awake"
+тыртыстыр:тыртыстыр V-TV ; ! "stretch"
+түймеле:түймеле V-TV ; ! "buttin up"
+селт% ет:селт% ет V-IV ; ! "wince"
+қобыра:қобыра V-IV ; ! "loach"
+ғафу:ғафу N1 ; ! "apology"
+ғафу% ет:ғафу% ет V-TV ; ! "apologize"
+шарық:шарық N1 ; ! "grindstone"
+шегіншекте:шегіншекте V-IV ; ! "back off"
+кібіртікте:кібіртікте V-IV ; ! "move slowly"
+үрк:үрк V-IV ; ! "get scared"
+серп:серп V-IV ; ! "flap"
+батти:батти V-IV ; ! "strike in the eye"
+баттит:баттит V-TV ; ! ""
+сұғанақ:сұғанақ A2 ; ! "sly"
+үстемден:үстемден V-IV ; ! "rise"
+мәлмитіп:мәлмитіп ADV ; ! "" !"Need to check the meaning"
+ырбит:ырбит V-TV ; ! "grimace"
+жалп% ет:жалп% ет V-IV ; ! "flop"
+пәленше:пәленше N1 ; ! "somebody"
+әсем:әсем A1 ; ! "beautiful"
+боксер:боксер N5 ; ! "boxer"
+боксер:боксёр N5 ; ! ""
+рюмка:рюмка N5 ; ! "glass"
+бұрқырат:бұрқырат V-TV ; ! "шаңды бұрқырату = pick up dust"
+сайқалдан:сайқалдан V-IV ; ! "become depraved"
+сайқал:сайқал N1 ; ! "whore"
+сайқал:сайқал A2 ; ! "dissolute"
+шештір:шештір V-TV ; ! "undress"
+ерегес:ерегес V-IV ; ! "altercate"
+жырық:жырық A2 ; ! "torn"
+таптыр:таптыр V-TV ; ! "find"
+жүгіргіште:жүгіргіште V-IV ; ! "run"
+жүгіргіш:жүгіргіш N1 ; ! "slider"
+
+
+
  
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
