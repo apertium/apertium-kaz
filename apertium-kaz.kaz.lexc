@@ -205,6 +205,8 @@
 %<abs%>       ! -LIK as e.g. seen in the -{E}{T}{I}нд{I}{K} form
 %<ger_obs%>   ! -{М}{А}{К}         ("obsolete": used only in archaic registers)
               !# "Адам өлмек үшін туған"
+%<ger2%>      ! - {I}c
+              ! "Ұйқыдан тұрысымен оқушылар жуынып, тамақтануға асханаға барады"
 
 !! Transitivity
 %<tv%>        ! Transitive
@@ -870,6 +872,8 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
 %<gen%>%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
+ 
+
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
@@ -970,6 +974,7 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 ! - does it take possessive forms?  if not, change
 !   continuation lexicon to something other than GER-INFL
 
+
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
@@ -993,6 +998,8 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}т%{I%}н GER-POSSESSIVES ;
 %<ger_impf%>%<abs%>:%>%{E%}т%{I%}н%>д%{I%}%{K%} GER-POSSESSIVES ;
+%<ger2%>:%>%{I%}c GER-INFL ; ! NEED AN ADDITIONAL CHECK ! "Ол үйге барысымен телефонның тұтқасына жармасты"
+
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
@@ -1003,7 +1010,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Optative/jussive forms
 %<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLITICS-NO-COP ;
-%<opt%>%<p1%>%<sg%>:%>%и%I%н CLITICS-NO-COP ; ! FOR CASES LIKE "тоқиын/оқиын"
+%<opt%>%<p1%>%<sg%>:%>%{E%}%{I}%н CLITICS-NO-COP ; ! FOR CASES LIKE "тоқиын/оқиын"
 !%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLITICS-NO-COP ;              ! FIXME check
 %<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
 %<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
@@ -1243,8 +1250,8 @@ LEXICON PRON-DEM-MINA
 мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
 мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
 
-!LEXICON PRON-DEM-ALGI
-!CHECK IT 
+LEXICON PRON-DEM-ALGI
+!NEED AN ADDITIONAL CHECK 
 әлгі%<prn%>%<dem%>%<nom%>:әлгі CLITICS-INCL-COP ;
 әлгі%<prn%>%<dem%>%<gen%>:әлгінің CLITICS-INCL-COP ;
 әлгі%<prn%>%<dem%>%<dat%>:әлгіге CLITICS-INCL-COP ;
@@ -1266,7 +1273,7 @@ LEXICON PRON-DEM-MINAU
 мынау%<prn%>%<dem%>%<px3sp%>%<loc%>:мынаусында CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<abl%>:мынаусынан  CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусымен CLITICS-NO-COP ;
-мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусыменен CLITICS-NO-COP ; 
+мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусыменен CLITICS-NO-COP ; ! Dir/LR 
 
 LEXICON PRON-DEM-ANA
 
@@ -1292,6 +1299,8 @@ LEXICON DemonstrativePronouns
 PRON-DEM-BUL ;
 PRON-DEM-MINA ;
 PRON-DEM-MINAU ;
+PRON-DEM-ALGI ;
+
 ана%<prn%>%<dem%>:ана PRON-DEM-ANA ;
 
 сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCL-COP ;
@@ -1299,6 +1308,8 @@ PRON-DEM-MINAU ;
 сол%<prn%>%<dem%>%<ins%>:сонымен CLITICS-NO-COP ;
 сол%<prn%>%<dem%>%<ins%>:соныменен CLITICS-NO-COP ; ! Dir/LR
 сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASES ;
+сол%<prn%>%<dem%>%<loc%>%<attr%>:сондағы CLITICS-INCL-COP ; ! NEED AN ADDITIONAL CHECK
+
 
 ол%<prn%>%<dem%>%<nom%>:ол CLITICS-INCL-COP ;
 ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
@@ -1849,6 +1860,7 @@ LEXICON PAREN
 ғой:%~ғой MOD-ASS ; ! "" Dir/RL
 ғой:ғой MOD-ASS ; ! "" Dir/LR
 ғой:қой MOD-ASS ; ! "" Dir/LR
+гөр:гөр MOD-ASS ; ! ""
 
 шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
                   !   ... more like <vaux><pres> than like a full verb -JNW
@@ -4451,10 +4463,10 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 ертең:ертең N1 ; ! "tomorrow"
 ертеңгілік:ертеңгілік N1 ; ! ""
 ерігіштік:ерігіштік N1 ; ! ""
-ерік:ерік N1 ; ! "will"
+ерік:ер%{y%}к N1 ; ! "will"
 еріксіздік:еріксіздік N1 ; ! ""
 еріктілік:еріктілік N1 ; !
-ерін:ерін N1 ; ! "lip"
+ерін:ер%{y%}н N1 ; ! "lip"
 еріншектік:еріншектік N1 ; ! ""
 еріткіш:еріткіш N1 ; ! ""
 ерітпе:ерітпе N1 ; ! ""
@@ -8811,7 +8823,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 шабыт:шабыт N1 ; ! ""
 шай% қасық:шай% қасық N1 ; !
 шай:шай N1 ; ! ""
-шай:шәй N1 ; ! ""
+шай:шәй%{Ъ%} N1 ; ! "" !Dir/LR
 шаймалау:шаймалау N1 ; !
 шайтан:шайтан N1 ; ! "devil"
 шайыр:шайыр N1 ; ! "chewing gum"
@@ -13596,6 +13608,7 @@ PSM:PSM N1 ; !"Use/MT"
 түлек:түлек N1 ; !"Use/MT"
 тұл:тұл N1 ; !"Use/MT"
 тұмау:тұмау N1 ; !"Use/MT"
+тұмау:тымау N1 ; !Dir/LR
 тұмсық:тұмсық N1 ; !"Use/MT"
 тұмсықша:тұмсықша N1 ; !"Use/MT"
 тұмшалау:тұмшалау N1 ; !"Use/MT"
@@ -14245,14 +14258,14 @@ PSM:PSM N1 ; !"Use/MT"
 ықыластылық:ықыластылық N1 ; !
 әділеттілік:әділеттілік N1 ; !
 иігілік:иігілік N1 ; !
-педагог:педагог N1 ; !
+педагог:педагог N5 ; !
 қарапайымдық:қарапайымдық N1 ; !
 қамқоршы:қамқоршы N1 ; !
 ішкиім:ішкиім N1 ; !
 пішім:пішім N1 ; !
 құлағдар:құлағдар N1 ; !
 жәйт:жәйт N1 ; !
-құлық:құлық N1 ; !
+құлық:құл%{y%}қ N1 ; !
 кетіс:кетіс N1 ; !
 
 
@@ -14271,7 +14284,7 @@ PSM:PSM N1 ; !"Use/MT"
 сомма:сомма N1 ; ! ""
 гидроберіліс:гидроберіліс N1 ; ! ""
 катюша:катюша N1 ; ! ""
-киноафиша:киноафиша N1 ; ! ""
+киноафиша:киноафиша N5 ; ! ""
 дүрмек:дүрмек N1 ; ! ""
 айырма:айырма N1 ; ! ""
 қырсықтық:қырсықтық N1 ; ! ""
@@ -39453,6 +39466,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 
 арс:арс IDEO ; ! ""
 жарқ:жарқ IDEO ; ! ""
+пыс:пыс IDEO ; ! ""
 
 !=====================!
  LEXICON Abbreviations
@@ -40220,7 +40234,7 @@ LEXICON Common ! <- future
 мелши:мелши V-IV ; ! "petrify"
 түрегеп:түрегеп  ADV ; ! "standing"
 қызарақта:қызарақта V-IV ; ! "blush"
-сиық:сиық N1 ; ! "exterior"
+сиық:си%{y%}қ N1 ; ! "exterior"
 құйттай:құйттай A1 ; ! "tiny"
 тақсыр:тақсыр N1 ; ! "Mr/Lord"
 жеңдір:жеңдір V-TV ; ! "succumb"
@@ -40287,7 +40301,7 @@ LEXICON Common ! <- future
 еткіз:еткіз V-TV ; ! "enforce"
 тапжылмай:тапжылмай ADV ; ! "inoffensively"
 тапжылмай:табжылмай ADV ; ! ""
-пенсия:пенсия N5 ; ! "pension"
+пенсия:пенсия%{ъ%} N5 ; ! "pension"
 қымбаттық:қымбаттық N1 ; ! "expensiveness"
 қаңырай:қаңырай V-IV ; ! "empty"
 қаннен%-қаперсіз:қаннен%-қаперсіз A1 ; ! "careless"
@@ -40395,8 +40409,19 @@ LEXICON Common ! <- future
 сый:сый V-IV ; ! "house/containt"
 сый:си V-IV ; ! ""
 оқып%-тоқы:оқып%-тоқы V-TV ; ! "learn"
-сондағы:сондағы A2 ; ! "that" ! CHECK
-қайт:қайт V-TV ; ! "what to do" ! CHECK
+қайт:қайт%{ь%} V-TV ; ! "what to do" 
+қуқылдан:қуқылдан V-IV ; ! "turn pale"
+сырыл:сырыл N1 ; ! "wheeze"
+сылдыр:сылдыр N1 ; ! "gurgling"
+ақсұңқар:ақсұңқар N1 ; ! "merlin"
+кіржіңде:кіржіңде V-IV ; ! "grudge"
+кіржіңдеу:кіржіңдеу N1 ; ! "dissatisfaction"
+қуыстан:қуыстан V-IV ; ! "feel guilty"
+құйындат:құйындат V-TV ; ! "whirl"
+қошта:қошта V-TV ; ! "approve"
+етжеңді:етжеңді A2 ; ! "obese"
+
+
  
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
@@ -40412,20 +40437,38 @@ LEXICON Common ! <- future
 
 !!! cases that need an additional consideration
 пенсия%<n%>%<dat%>:пенсияға # ;
+
+!as the fillowing doesn't work шай:шәй%{Ъ%} N1 ; ! ""
+
 шәй%<n%>%<dat%>:шәйға # ;
-шәй%<n%>%<gen%>:шәйдың # ;
+шәй%<n%>%<gen%>:шәйдың # ; !Dir/LR
+шәй%<n%>%<gen%>:шәйдің # ;  
 шәй%<n%>%<acc%>:шәйды # ;
 шәй%<n%>%<loc%>:шәйда # ;
 шәй%<n%>%<abl%>:шәйдан # ;
 шәй%<n%>%<ins%>:шәймен # ;
+
 дені% дұрыстау%<adj%>%<comp%>:дені% дұрыс # ;
+
+!cиық:си%{y%}қ N1 ; ! "exterior"
 сиық%<n%>%<px3sp%>%<nom%>:сиқы # ;
 сиық%<n%>%<px2sg%>%<nom%>:сиқың # ;
 сиық%<n%>%<px1sg%>%<nom%>:сиқым # ;
+
+!as the following does not work қайт:қайт%{ь%} V-TV ; ! "what to do"
 қайт%<v%>%<tv%>%<p1%>%<sg%>:қайтемін # ;
 қайт%<v%>%<tv%>%<p2%>%<sg%>:қайтесің # ;
 қайт%<v%>%<tv%>%<p3%>%<sg%>:қайтеді # ;
 қайт%<v%>%<tv%>%<p1%>%<pl%>:қайтеміз # ;
 қайт%<v%>%<tv%>%<p2%>%<pl%>:қайтесіңдер # ;
 қайт%<v%>%<tv%>%<p3%>%<pl%>:қайтеді # ;
+
+!!! cases that need an additional consideration
+сый%<v%>%<iv%>%<gpr_ppot%>%<sim%>:сиярлықтай # ;
+сый%<v%>%<iv%>%<gpr_ppot%>:сиярлық # ;
+сый%<v%>%<iv%>%<pih%>%<p3%>%<sg%>:сиятын # ;
+сый%<v%>%<iv%>%<pih%>%<p3%>%<pl%>:сиятын # ;
+сый%<v%>%<iv%>%<gpr_impf%>:сиятын # ;
+сый%<v%>%<iv%>%<neg%>%<gna_impf%>:симай # ;
+
 
