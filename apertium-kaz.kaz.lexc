@@ -1266,7 +1266,7 @@ LEXICON PRON-DEM-ALGI
 LEXICON PRON-DEM-MINAU
 
 мынау%<prn%>%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
-мынау%<prn%>%<dem%>%<px3sp%>%<nom%>:мынаусы CLITICS-INCL-COP ;
+!мынау%<prn%>%<dem%>%<px3sp%>%<nom%>:мынаусы CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<gen%>:мынаусының CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<dat%>:мынаусына CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<acc%>:мынаусын CLITICS-INCL-COP ;
@@ -1274,6 +1274,11 @@ LEXICON PRON-DEM-MINAU
 мынау%<prn%>%<dem%>%<px3sp%>%<abl%>:мынаусынан  CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусымен CLITICS-NO-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусыменен CLITICS-NO-COP ; ! Dir/LR 
+
+мынау%<prn%>%<dem%>%<px1sg%>:мынауым CLITICS-INCL-COP ;
+мынау%<prn%>%<dem%>%<px2sg%>:мынауың CLITICS-INCL-COP ;
+мынау%<prn%>%<dem%>%<px3sp%>:мынауы CLITICS-INCL-COP ;
+мынау%<prn%>%<dem%>%<px3sp%>:мынауcы CLITICS-INCL-COP ; ! Dir/LR
 
 LEXICON PRON-DEM-ANA
 
@@ -2114,6 +2119,7 @@ InterrogativePronouns ;
 басқа:басқа PRON-IND ; ! "other" ! to fix
 бірдеме:бірдеме PRON-IND ; ! "something"
 бірдеңе:бірдеңе PRON-IND ; ! "something"
+әлдене:әлдене PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 қайда% болса% сонда:қайда% болса% сонда PRON-IND ; ! "anywhere" Use/MT
 кей:кей PRON-IND ; ! "some" FIXME CHECK determiner?
@@ -33283,6 +33289,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! ============================================
 
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first/initial"
+әлгіде:әлгіде ADV-WITH-KI ; ! "recently > recent"
+әлгіде:әлгінде ADV-WITH-KI ; ! "recently > recent" ! Dir/LR
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
 биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
@@ -33301,6 +33309,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 кеш:кеш ADV-WITH-KI ; ! "evening/late"
 күндіз:күндіз ADV-WITH-KI ; ! "during the day"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
+мана:мана ADV-WITH-KI ; ! "recently > the last"
 соң:соң ADV-WITH-KI ; ! ""
 таңертең:таңертең ADV-WITH-KI ; ! "morning"
 төмен:төмен ADV-WITH-KI ; ! "lower"
@@ -39438,6 +39447,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қайырлы% түн:қайырлы% түн INTERJ ; ! "good night"
 қош% келдің:қош% келдің INTERJ ; ! "Welcome"
 қош% келдіңіз:қош% келдіңіз INTERJ ; ! "Welcome"
+құп:құп INTERJ ; ! "yes, sir!"
 ой:ой INTERJ ; ! "hey"
 өй:өй INTERJ ; ! ""
 өтінем:өтінем INTERJ ; ! "please"
@@ -40458,7 +40468,15 @@ LEXICON Common ! <- future
 құбылт:құбылт  V-TV ; ! "change/transform"
 қыстырулы:қыстырулы A2 ; ! "pinned"
 ісмерлік:ісмерлік N1 ; ! "mastery"
-
+әуре%-сарсаң:әуре%-сарсаң N1 ; ! "troubles"
+ұстат:ұстат V-TV ; ! "hold"
+жайнаңда:жайнаңда V-IV ; ! "shine/glisten"
+шошай:шошай V-IV ; ! "stick up"
+шошайт:шошайт V-TV ; ! "put upright"
+селбеу:селбеу N1 ; ! "help/assistance"
+құп:құп A2 ; ! "correct"
+кәнігі:кәнігі A2 ; ! "experienced/professional"
+дары:дар%{I%} V-TV ; ! "touch/concern" ! "NEED AN ADDITIONAL CHECK"
 
 
 
