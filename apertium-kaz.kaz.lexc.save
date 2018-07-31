@@ -872,8 +872,6 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
 %<gen%>%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
- 
-
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
@@ -974,6 +972,7 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 ! - does it take possessive forms?  if not, change
 !   continuation lexicon to something other than GER-INFL
 
+%<ger2%>:%>%{I%}c GER-INFL ; ! NEED AN ADDITIONAL CHECK ! "Ол үйге барысымен телефонның тұтқасына жармасты"
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -998,8 +997,6 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}т%{I%}н GER-POSSESSIVES ;
 %<ger_impf%>%<abs%>:%>%{E%}т%{I%}н%>д%{I%}%{K%} GER-POSSESSIVES ;
-%<ger2%>:%>%{I%}c GER-INFL ; ! NEED AN ADDITIONAL CHECK ! "Ол үйге барысымен телефонның тұтқасына жармасты"
-
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
@@ -8823,7 +8820,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 шабыт:шабыт N1 ; ! ""
 шай% қасық:шай% қасық N1 ; !
 шай:шай N1 ; ! ""
-шай:шәй%{Ъ%} N1 ; ! "" !Dir/LR
+шай:шәй N1 ; ! ""
 шаймалау:шаймалау N1 ; !
 шайтан:шайтан N1 ; ! "devil"
 шайыр:шайыр N1 ; ! "chewing gum"
@@ -12929,7 +12926,6 @@ PSM:PSM N1 ; !"Use/MT"
 радиохабар:радиохабар N1 ; !"Use/MT"
 разылық:разылық N1 ; !"Use/MT"
 рақат:рақат N1 ; ! ""
-рақат:рахат N1 ; ! "" ! Dir/LR
 рамка:рамка N1 ; ! " frame "  ! Use/MT eng-kaz
 ранчошы:ранчошы N1 ; !"Use/MT"
 рапа:рапа N1 ; !"Use/MT"
@@ -13609,7 +13605,6 @@ PSM:PSM N1 ; !"Use/MT"
 түлек:түлек N1 ; !"Use/MT"
 тұл:тұл N1 ; !"Use/MT"
 тұмау:тұмау N1 ; !"Use/MT"
-тұмау:тымау N1 ; !Dir/LR
 тұмсық:тұмсық N1 ; !"Use/MT"
 тұмсықша:тұмсықша N1 ; !"Use/MT"
 тұмшалау:тұмшалау N1 ; !"Use/MT"
@@ -14259,14 +14254,14 @@ PSM:PSM N1 ; !"Use/MT"
 ықыластылық:ықыластылық N1 ; !
 әділеттілік:әділеттілік N1 ; !
 иігілік:иігілік N1 ; !
-педагог:педагог N5 ; !
+педагог:педагог N1 ; !
 қарапайымдық:қарапайымдық N1 ; !
 қамқоршы:қамқоршы N1 ; !
 ішкиім:ішкиім N1 ; !
 пішім:пішім N1 ; !
 құлағдар:құлағдар N1 ; !
 жәйт:жәйт N1 ; !
-құлық:құл%{y%}қ N1 ; !
+құлық:құлық N1 ; !
 кетіс:кетіс N1 ; !
 
 
@@ -14285,7 +14280,7 @@ PSM:PSM N1 ; !"Use/MT"
 сомма:сомма N1 ; ! ""
 гидроберіліс:гидроберіліс N1 ; ! ""
 катюша:катюша N1 ; ! ""
-киноафиша:киноафиша N5 ; ! ""
+киноафиша:киноафиша N1 ; ! ""
 дүрмек:дүрмек N1 ; ! ""
 айырма:айырма N1 ; ! ""
 қырсықтық:қырсықтық N1 ; ! ""
@@ -39468,7 +39463,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 арс:арс IDEO ; ! ""
 жарқ:жарқ IDEO ; ! ""
 пыс:пыс IDEO ; ! ""
-лып:лып IDEO ; ! ""
 
 !=====================!
  LEXICON Abbreviations
@@ -40412,38 +40406,7 @@ LEXICON Common ! <- future
 сый:си V-IV ; ! ""
 оқып%-тоқы:оқып%-тоқы V-TV ; ! "learn"
 қайт:қайт%{ь%} V-TV ; ! "what to do" 
-қуқылдан:қуқылдан V-IV ; ! "turn pale"
-сырыл:сырыл N1 ; ! "wheeze"
-сылдыр:сылдыр N1 ; ! "gurgling"
-ақсұңқар:ақсұңқар N1 ; ! "merlin"
-кіржіңде:кіржіңде V-IV ; ! "grudge"
-кіржіңдеу:кіржіңдеу N1 ; ! "dissatisfaction"
-қуыстан:қуыстан V-IV ; ! "feel guilty"
-құйындат:құйындат V-TV ; ! "whirl"
-қошта:қошта V-TV ; ! "approve"
-етжеңді:етжеңді A2 ; ! "obese"
-алабұрт:алабұрт V-IV ; ! "worry/bother"
-алабұрту:алабұрту N1 ; ! "excitement"
-ентік:ентік V-IV ; ! "to be out of breath"
-етнігу:ентігу N1 ; ! "dyspnea"
-сендел:сендел V-IV ; ! "loaf"
-сенделу:сенделу N1 ; ! "idleness/idling"
-ығыс:ығыс V-IV ; ! "move away"
-ығысу:ығысу N1 ; ! "displacement"
-серп:серп V-TV ; ! "scatter/flap/recline"
-салқындық:салқындық N1 ; ! "cold"
-сұс:сұс N1 ; ! "appearance"
-рақаттан:рақаттан V-IV ; ! "luxuriate/enjoy"
-шүйір:шүйір V-TV ; ! "wrinkle"
-құндақ:құндақ N1 ; ! "diaper/box"
-шылдыр:шылдыр N1 ; ! "chime"
-нықта:нықта V-TV ; ! "сondense"
-апыл%-ғұпыл:апыл%-ғұпыл ADV ; ! "in a hurry"
-сом:сом N1 ; ! "som/currency"
-ірк:ірк V-TV ; ! "stop/restrain"
-қылт% ет:қылт% ет; V-IV ; ! "to whid"
-самарқау:самарқау A1 ; ! "sluggish" 
-
+ 
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
    ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы |
@@ -40458,23 +40421,19 @@ LEXICON Common ! <- future
 
 !!! cases that need an additional consideration
 пенсия%<n%>%<dat%>:пенсияға # ;
-
-!as the fillowing doesn't work шай:шәй%{Ъ%} N1 ; ! ""
-
 шәй%<n%>%<dat%>:шәйға # ;
-шәй%<n%>%<gen%>:шәйдың # ; !Dir/LR
-шәй%<n%>%<gen%>:шәйдің # ;  
+шәй%<n%>%<gen%>:шәйдың # ;
 шәй%<n%>%<acc%>:шәйды # ;
 шәй%<n%>%<loc%>:шәйда # ;
 шәй%<n%>%<abl%>:шәйдан # ;
 шәй%<n%>%<ins%>:шәймен # ;
-
 дені% дұрыстау%<adj%>%<comp%>:дені% дұрыс # ;
 
-!cиық:си%{y%}қ N1 ; ! "exterior"
-сиық%<n%>%<px3sp%>%<nom%>:сиқы # ;
-сиық%<n%>%<px2sg%>%<nom%>:сиқың # ;
-сиық%<n%>%<px1sg%>%<nom%>:сиқым # ;
+
+!!! as this does not work қайт:қайт%{ь%} V-TV ; ! "what to do"
+!сиық%<n%>%<px3sp%>%<nom%>:сиқы # ;
+!сиық%<n%>%<px2sg%>%<nom%>:сиқың # ;
+!сиық%<n%>%<px1sg%>%<nom%>:сиқым # ;
 
 !as the following does not work қайт:қайт%{ь%} V-TV ; ! "what to do"
 қайт%<v%>%<tv%>%<p1%>%<sg%>:қайтемін # ;
@@ -40483,13 +40442,4 @@ LEXICON Common ! <- future
 қайт%<v%>%<tv%>%<p1%>%<pl%>:қайтеміз # ;
 қайт%<v%>%<tv%>%<p2%>%<pl%>:қайтесіңдер # ;
 қайт%<v%>%<tv%>%<p3%>%<pl%>:қайтеді # ;
-
-!!! cases that need an additional consideration
-сый%<v%>%<iv%>%<gpr_ppot%>%<sim%>:сиярлықтай # ;
-сый%<v%>%<iv%>%<gpr_ppot%>:сиярлық # ;
-сый%<v%>%<iv%>%<pih%>%<p3%>%<sg%>:сиятын # ;
-сый%<v%>%<iv%>%<pih%>%<p3%>%<pl%>:сиятын # ;
-сый%<v%>%<iv%>%<gpr_impf%>:сиятын # ;
-сый%<v%>%<iv%>%<neg%>%<gna_impf%>:симай # ;
-
 
