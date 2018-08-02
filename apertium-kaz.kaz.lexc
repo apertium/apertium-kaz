@@ -1,4 +1,4 @@
--/!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -27208,7 +27208,7 @@ Witness:Witness NP-AL ; ! ""
 бес% жүз% жылғы:бес% жүз% жылғы A1 ; ! ""
 
 әккі:әккі A2 ; ! ""
-есен:есен A2 ; 
+есен:есен A1 ; ! ""
 түпкі:түпкі A1 ;
 ерке-шора:ерке-шора A2 ; ! ""
 тап-таза:тап-таза A4 ; ! ""
@@ -37440,7 +37440,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 үңіле% қара:үңіле% қара V-TV ; ! 
 ұнта:ұнта V-TV ; ! "break to small pieces"
 үрейлен:үрейлен V-IV ; ! ""
-үркі:үркі V-IV ; ! ""
+үркі:үр%{I%}к%{I%} V-IV ; ! "" ! "NEED AN ADDITIONAL CHECK"
 ұрла:ұрла V-TV ; ! "steal"
 үрле:үрле V-TV ; ! "blow"
 үр:үр V-IV ; ! "bark(dog)"
@@ -39481,6 +39481,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 лып:лып IDEO ; ! ""
 елп:елп IDEO ; ! ""
 жалп:жалп IDEO ; ! ""
+буылтық:буылтық IDEO ; ! ""
+жылт:жылт IDEO ; ! ""
 
 !=====================!
  LEXICON Abbreviations
@@ -40273,7 +40275,8 @@ LEXICON Common ! <- future
 селти:селти  V-IV ; ! "stick out"
 ауыз% үй:ауыз% үй N1 ; ! "entrance hall"
 жөткер:жөткер V-IV ; ! "cough"
-тұсіңкіре:түсіңкіре V-IV ; ! "go down a bit"
+жөткерін:жөткерін V-IV ; ! "cough"
+түсіңкіре:түсіңкіре V-IV ; ! "go down a bit"
 өрекпіт:өрекпіт V-TV ; ! "get excited"
 өрекпі:өрекпі V-IV ; ! "get excited"
 қабақ% шыт:қабақ% шыт V-IV ; ! "get sad" ! "Need to check as noun "
@@ -40300,7 +40303,7 @@ LEXICON Common ! <- future
 өбекте:өбекте V-IV ; ! "curry favor"
 қызын:қызын V-IV ; ! "inflame"
 қамзол:қамзол N1 ; ! "camisol"
-қамзол:кәмзәл N1 ; ! ""
+қамзол:кәмзөл N1 ; ! ""
 қамзол:кәмзол N1 ; ! ""
 сездір:сездір V-TV ; ! "feel"
 шалғай:шалғай N1 ; ! "on the outskirts"
@@ -40450,6 +40453,7 @@ LEXICON Common ! <- future
 құндақ:құндақ N1 ; ! "diaper/box"
 шылдыр:шылдыр N1 ; ! "chime"
 нықта:нықта V-TV ; ! "сondense"
+нықтан:нықтан V-IV ; ! ""
 апыл%-ғұпыл:апыл%-ғұпыл ADV ; ! "in a hurry"
 сом:сом N1 ; ! "som/currency"
 ірк:ірк V-TV ; ! "stop/restrain"
@@ -40477,7 +40481,36 @@ LEXICON Common ! <- future
 құп:құп A2 ; ! "correct"
 кәнігі:кәнігі A2 ; ! "experienced/professional"
 дары:дар%{I%} V-TV ; ! "touch/concern" ! "NEED AN ADDITIONAL CHECK"
-
+айналшықта:айналшықта V-TV ; ! "to linger"
+аңқаусы:аңқаус%{I%} V-IV ; ! "to pretend a simpleton" !"NEED AN ADDITIONAL CHECK"
+байы:байы V-IV ; ! "to get rich" !"NEED AN ADDITIONAL CHECK"
+бақыттылық:бақыттылық N1 ; ! "happiness/luck"
+бастығырыл:бастығырыл V-IV ; ! "moan in a dream"
+дауала:дауала V-IV ; ! "dare"
+лекіте:лекіте ADV ; ! ""
+сүрте%-мүрте:сүрте%-мүрте ADV ; ! ""
+опын:опын V-IV ; ! "to feel sorry/to regret"
+сығыраңдай:сығыраңдай A2 ; ! "" ! "NEED AN ADDITIONAL CHECK"
+тай:тай V-IV ; ! "to slip"
+тұқыл:тұқыл N1 ; ! "stub"
+шұқы:шұқы V-TV ; ! "picl" ! "NEED AN ADDITIONAL CHECK"
+адыра% қал:адыра% қал V-IV ; ! "disappear"
+адыра% қалғыр:адыра% қалғыр A2 ; ! ""
+бүркі:бүрк%{I%} V-TV ; ! "sprinkle" ! "NEED AN ADDITIONAL CHECK"
+жанқалта:жанқалта N1 ; ! "side pocket"
+жарықшақтан:жарықшақтан V-IV ; ! "to fission"
+жасы:жасы V-IV ; ! "to become limp" ! "NEED AN ADDITIONAL CHECK"
+жуы:жуы V-IV ; ! "to come/be close" ! "NEED AN ADDITIONAL CHECK"
+жымыр:жымыр V-TV ; ! "to pinch ears"
+танығысыз A1 ; ! "unrecognizable"
+шалқала:шалқала V-TV ; ! "to overturn"
+шырық:шыр%{y%}қ N1 ; ! "calmness"
+шырық:шырық V-IV ; ! "to get calm"
+шыт:шыт V-TV ; ! "to frown/қабақ шыту"
+қан%-сөл:қан%-сөл N1 ; ! ""
+түргіз:түргіз V-TV ; ! "to turn/wrap/roll up"
+тұрыс:тұрыс N1 ; ! "inactivity/stand"
+кербезсін:кербезсін V-IV ; ! " to show off"
 
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
