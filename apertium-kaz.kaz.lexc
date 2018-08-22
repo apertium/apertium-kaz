@@ -2086,10 +2086,9 @@ InterrogativePronouns ;
 біреу:біреу PRON-IND ; ! !"someone" Use/MT
 
 әрқайсысы:әрқайсы PRON-QNT-POSS ; ! "each of"
-қай%-қайсысы:қай%-қайсысы PRON-QNT-POSS ; ! "any of" !"each of"
+қай%-қайсысы:қай%-қайсысы PRON-QNT-POSS ; ! "any of; each of"
 барлық:барлық PRON-QNT ; ! ""
-бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
-түгелге:түгел PRON-QNT-POSS ; ! "almost"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+бәрі:бәр PRON-QNT-POSS ; ! "everyone"
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 біреу:біреу PRON-QNT ; ! ""
 екеу:екеу PRON-QNT-POSS ; ! "both" !Use/MT
@@ -2097,6 +2096,7 @@ InterrogativePronouns ;
 көбі:көп PRON-QNT-POSS  ; ! "most" !Use/MT
 бірқатар:бірқатар PRON-QNT ; ! 
 кейбіреу:кейбіреу PRON-QNT ; !
+түгел:түгел PRON-QNT ; ! "all"
 
 
 
@@ -2172,7 +2172,7 @@ InterrogativePronouns ;
 кей:кей DET-IND ; ! "some"
 кейбір:кейбір DET-IND ; ! "some"
 қайсыбір:қайсыбір DET-IND ; ! "some"
-қай-қайсы:қай-қайсы DET-IND ; ! "whoever"
+қай%-қайсы:қай%-қайсы DET-IND ; ! "whoever"
 әлденеше:әлденеше DET-IND ; ! ""
 бірер:бірер DET-IND ; ! ""
 сондай:сондай DET-IND ; ! "such" !Use/MT
