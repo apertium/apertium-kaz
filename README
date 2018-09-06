@@ -1,6 +1,6 @@
 Kazakh
 
-                            apertium-kaz
+APERTIUM-KAZ
 ===============================================================================
 
 This is an Apertium monolingual language package for Kazakh. What
@@ -50,13 +50,14 @@ Testing
 If you are in the source directory after running make, the following
 commands should work:
 
-$ echo "Сәлем!" | apertium -d . kaz-morph
-^Сәлем/сәлем<ij>/сәлем<n><nom>/сәлем<n><attr>/сәлем<n><nom>+е<cop><aor><p3><pl>/
-сәлем<n><nom>+е<cop><aor><p3><sg>$^!/!<sent>$^./.<sent>$
+    $ echo "Сәлем!" | apertium -d . kaz-morph
+    ^Сәлем/сәлем<ij>/сәлем<n><nom>/сәлем<n><attr>/
+    сәлем<n><nom>+е<cop><aor><p3><pl>/сәлем<n><nom>+е<cop><aor><p3><sg>$
+    ^!/!<sent>$^./.<sent>$
 
-$ echo "Оқу инемен құдық қазғандай." | apertium -d . kaz-tagger
-^Оқу/оқу<adj>$ ^инемен/ине<n><ins>$ ^құдық/құдық<n><nom>$
- ^қазғандай/қаз<v><tv><ger_past><sim>$^./.<sent>$^./.<sent>$ 
+    $ echo "Оқу инемен құдық қазғандай." | apertium -d . kaz-tagger
+    ^Оқу/оқу<adj>$ ^инемен/ине<n><ins>$ ^құдық/құдық<n><nom>$
+    ^қазғандай/қаз<v><tv><ger_past><sim>$^./.<sent>$^./.<sent>$ 
 
 
 Files and data
