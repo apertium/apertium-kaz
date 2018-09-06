@@ -1,6 +1,102 @@
-# Acknowledgements
+Kazakh
+
+                            apertium-kaz
+===============================================================================
+
+This is an Apertium monolingual language package for Kazakh. What
+you can use this language package for:
+
+* Morphological analysis of Kazakh
+* Morphological generation of Kazakh
+* Part-of-speech tagging of Kazakh
+
+Requirements
+===============================================================================
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.3.0)
+* apertium (>= 3.3.0)
+* vislcg3 (>= 0.9.9.10297)
+
+If this does not make any sense, we recommend you look at: www.apertium.org
+
+Compiling
+===============================================================================
+
+Given the requirements being installed, you should be able to just run:
+
+$ ./configure
+$ make
+
+You can use ./autogen.sh instead of ./configure if you're compiling
+from SVN.
+
+If you're doing development, you don't have to install the data, you
+can use it directly from this directory.
+
+If you are installing this language package as a prerequisite for an
+Apertium translation pair, then do (typically as root / with sudo):
+
+# make install
+
+You can give a --prefix to ./configure to install as a non-root user,
+but make sure to use the same prefix when installing the translation
+pair and any other language packages.
+
+Testing
+===============================================================================
+
+If you are in the source directory after running make, the following
+commands should work:
+
+$ echo "Сәлем!" | apertium -d . kaz-morph
+^Сәлем/сәлем<ij>/сәлем<n><nom>/сәлем<n><attr>/сәлем<n><nom>+е<cop><aor><p3><pl>/
+сәлем<n><nom>+е<cop><aor><p3><sg>$^!/!<sent>$^./.<sent>$
+
+$ echo "Оқу инемен құдық қазғандай." | apertium -d . kaz-tagger
+^Оқу/оқу<adj>$ ^инемен/ине<n><ins>$ ^құдық/құдық<n><nom>$
+ ^қазғандай/қаз<v><tv><ger_past><sim>$^./.<sent>$^./.<sent>$ 
+
+
+Files and data
+===============================================================================
+
+* apertium-kaz.kaz.lexc           - Monolingual dictionary
+* apertium-kaz.kaz.twol           - Morphophonological rules
+* apertium-kaz.kaz.err.twol       - 
+* apertium-kaz.kaz.guesser.twol   - 
+* kaz.prob                        - Tagger model
+* apertium-kaz.kaz.rlx            - Constraint Grammar disambiguation rules
+* apertium-kaz.post-kaz.dix       - Post-generator
+* apertium-kaz.kaz.mtx            - 
+* apertium-kaz.kaz.tsx            -
+* apertium-kaz.kaz.udx            - 
+* modes.xml                       - Translation modes
+
+For more information
+===============================================================================
+
+* http://wiki.apertium.org/wiki/Installation
+* http://wiki.apertium.org/wiki/apertium-kaz
+* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+
+Help and support
+===============================================================================
+
+If you need help using this language pair or data, you can contact:
+
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: #apertium on irc.freenode.net
+
+See also the file AUTHORS included in this distribution.
+
+Acknowledgements
+================
 
 If you use this in your work, please cite:
 
-* Washington, J. N., Salimzyanov, I., and Tyers, F. M. (2014) "Finite-state morphological transducers for three Kypchak languages". Proceedings of the 9th Conference on Language Resources and Evaluation, LREC2014.  http://www.lrec-conf.org/proceedings/lrec2014/summaries/1207.html
-
+* Washington, J. N., Salimzyanov, I., and Tyers, F. M. (2014) "Finite-state
+  morphological transducers for three Kypchak languages". Proceedings of the 9th
+  Conference on Language Resources and Evaluation, LREC2014.
+  http://www.lrec-conf.org/proceedings/lrec2014/summaries/1207.html
