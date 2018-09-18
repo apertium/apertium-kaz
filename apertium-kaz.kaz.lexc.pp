@@ -1,11 +1,26 @@
 #lang pollen
 
-◊(define n "_R_ZE")
-◊(define np "_R_ZEQ")
-◊(define v "_R_ET")
-◊(define vaux "_R_ETK")
+◊(define n "%<R_ZE%>")
+◊(define np "%<R_ZEQ%>")
+◊(define v "%<R_ET%>")
+◊(define vaux1 "%<R_ETK%>")
+◊(define vaux2 "%<R_ETP%>")
+◊(define vaux3 "%<R_ETPK%>")
+◊(define neg "%<R_ETB%>")
+◊(define adj "%<R_SE%>")
+◊(define prn "%<R_SIM%>")
+◊(define adv "%<R_US%>")
+◊(define cnj "%<R_ZHL%>")
+◊(define num "%<R_SN%>")
+◊(define part "%<R_SH%>")
+◊(define mod "%<R_MOD%>")
+◊(define prt "%<R_SH%>")
 ◊(define ij "%<R_OS%>")
-◊(define period "_R_NKT")
+◊(define sym "%<R_SYM%>")
+◊(define for "%<R_BOS%>")
+◊(define unk "%<R_X%>")
+
+◊(define period "%<R_NKT%>")
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
@@ -27,7 +42,9 @@
 %<prn%>       ! Pronoun                    ! Есімдік
 %<det%>       ! Determiner                 ! Детерминатив
 ◊|v|          ! Verb                       ! Етістік
-◊|vaux|       ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр)
+◊|vaux1|      ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр
+◊|vaux2|      ! Auxilary verb              ! жатыр, отыр, тұр, жүр
+◊|vaux3|      ! Auxilary verb              ! Көмекші етістік
 %<adv%>       ! Adverb                     ! Үстеу
 %<post%>      ! Postposition               ! Септеулік шылау
 %<postadv%>   ! Postadverb                 ! "Постүстеу" (*1)
@@ -618,7 +635,7 @@ LEXICON CASES-COMMON
 LEXICON CASES
 
 CASES-COMMON ;
-%<nom%>: CLITICS-INCL-COP ;
+CLITICS-INCL-COP ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
 %<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 
@@ -1063,17 +1080,17 @@ LEXICON V-IV
 
 LEXICON Vinfl-AUX-IMPF
 
-◊|vaux|%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
-◊|vaux|%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
+◊|vaux2|%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
+◊|vaux2|%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
 
 LEXICON Vinfl-AUX-IMPF-NEG
 
-◊|vaux|%<neg%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
-◊|vaux|%<neg%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
+◊|vaux2|%<neg%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
+◊|vaux2|%<neg%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
 
 LEXICON Vinfl-AUX
 
-◊|vaux|: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
+◊|vaux2|: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
@@ -38252,7 +38269,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 отыр:отыр Vinfl-AUX ; ! 
 сал:сал Vinfl-AUX ; !
 таста:таста Vinfl-AUX ; ! 
-сал◊|vaux|%<ger%>:салыш GER-INFL ; ! Dir/LR
+сал◊|vaux1|%<ger%>:салыш GER-INFL ; ! Dir/LR
 тұр:тұр Vinfl-AUX ; ! 
 шық:шық Vinfl-AUX ; !
 

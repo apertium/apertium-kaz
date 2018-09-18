@@ -11,14 +11,16 @@
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories = First-level tags
-_R_ZE          ! Noun                       ! Зат есім
-_R_ZEQ         ! Proper noun                ! Жалқы есім
+%<R_ZE%>          ! Noun                       ! Зат есім
+%<R_ZEQ%>         ! Proper noun                ! Жалқы есім
 %<adj%>       ! Adjective                  ! Сын есім
 %<num%>       ! Numeral                    ! Сан есім
 %<prn%>       ! Pronoun                    ! Есімдік
 %<det%>       ! Determiner                 ! Детерминатив
-_R_ET          ! Verb                       ! Етістік
-_R_ETK       ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр)
+%<R_ET%>          ! Verb                       ! Етістік
+%<R_ETK%>      ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр
+%<R_ETP%>      ! Auxilary verb              ! жатыр, отыр, тұр, жүр
+%<R_ETPK%>      ! Auxilary verb              ! Көмекші етістік
 %<adv%>       ! Adverb                     ! Үстеу
 %<post%>      ! Postposition               ! Септеулік шылау
 %<postadv%>   ! Postadverb                 ! "Постүстеу" (*1)
@@ -609,7 +611,7 @@ LEXICON CASES-COMMON
 LEXICON CASES
 
 CASES-COMMON ;
-%<nom%>: CLITICS-INCL-COP ;
+CLITICS-INCL-COP ;
 %<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
 %<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 
@@ -1031,40 +1033,40 @@ LEXICON V-DER
 
 LEXICON V-TV-NOPASS
 
-_R_ET%<tv%>: V-COMMON ;
-_R_ET%<tv%>: V-DER ;
+%<R_ET%>%<tv%>: V-COMMON ;
+%<R_ET%>%<tv%>: V-DER ;
 
 LEXICON V-TV-PASS
 
 ! e.g. көрін
-_R_ET%<tv%>%<pass%>: V-COMMON ;
+%<R_ET%>%<tv%>%<pass%>: V-COMMON ;
 
 LEXICON V-TV
 
-_R_ET%<tv%>: V-COMMON ;
-_R_ET%<tv%>: V-DER ;
-_R_ET%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
+%<R_ET%>%<tv%>: V-COMMON ;
+%<R_ET%>%<tv%>: V-DER ;
+%<R_ET%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-IV
 
-_R_ET%<iv%>: V-COMMON ;
-_R_ET%<iv%>: V-DER ;
+%<R_ET%>%<iv%>: V-COMMON ;
+%<R_ET%>%<iv%>: V-DER ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
 LEXICON Vinfl-AUX-IMPF
 
-_R_ETK%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
-_R_ETK%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
+%<R_ETP%>%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
+%<R_ETP%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
 
 LEXICON Vinfl-AUX-IMPF-NEG
 
-_R_ETK%<neg%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
-_R_ETK%<neg%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
+%<R_ETP%>%<neg%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
+%<R_ETP%>%<neg%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
 
 LEXICON Vinfl-AUX
 
-_R_ETK: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
+%<R_ETP%>: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
@@ -1460,16 +1462,16 @@ LEXICON DET-REF
 
 LEXICON N1-ABBR
 
-_R_ZE%<attr%>: # ;
-_R_ZE:%- POSSESSIVES ;
-_R_ZE:%- CASES-ETC ;
-_R_ZE: CASES-ETC ; ! Dir/LR
+%<R_ZE%>%<attr%>: # ;
+%<R_ZE%>:%- POSSESSIVES ;
+%<R_ZE%>:%- CASES-ETC ;
+%<R_ZE%>: CASES-ETC ; ! Dir/LR
 
 
 LEXICON N1
 
-_R_ZE%<attr%>: # ;
-_R_ZE: FULL-NOMINAL-INFLECTION ;
+%<R_ZE%>%<attr%>: # ;
+%<R_ZE%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON N1-Ә
 
@@ -1487,21 +1489,21 @@ POSSESSIVES ;       ! for stuff like "біздің ауа райымыз" and ev
 LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
-_R_ZE: N-COMPOUND-PX-COMMON ;
-_R_ZE%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
+%<R_ZE%>: N-COMPOUND-PX-COMMON ;
+%<R_ZE%>%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
                                                       !  FIXME CHECK: Is {S} needed here ?
 
 LEXICON N-COMPOUND-PX-PL
 ! for things like Олимпиада ойындары
 
-_R_ZE%<pl%>: N-COMPOUND-PX-COMMON ; ! FIXME: do we want these to get <pl>??
+%<R_ZE%>%<pl%>: N-COMPOUND-PX-COMMON ; ! FIXME: do we want these to get <pl>??
 
 
 LEXICON N3
 ! Singularia tantum
 
-_R_ZE%<attr%>: # ;
-_R_ZE: FULL-NOMINAL-INFLECTION ;
+%<R_ZE%>%<attr%>: # ;
+%<R_ZE%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON N5
 
@@ -1515,9 +1517,9 @@ N1 ;  ! Dir/LR     ! We want to analyse forms without %{і%}, since they're used
 
 LEXICON N-INFL-NKI
 
-_R_ZE:%{I%}н KI ; ! Dir/LR - common variant in both Kazakh and Kyrgyz
-_R_ZE:%{I%}ң KI ;
-_R_ZE: FULL-NOMINAL-INFLECTION ;
+%<R_ZE%>:%{I%}н KI ; ! Dir/LR - common variant in both Kazakh and Kyrgyz
+%<R_ZE%>:%{I%}ң KI ;
+%<R_ZE%>: FULL-NOMINAL-INFLECTION ;
 
 
 !LEXICON NAT
@@ -1539,64 +1541,64 @@ FULL-NOMINAL-INFLECTION ;
 
 LEXICON NP-TOP-RUS
 
-_R_ZEQ%<top%>:%{☭%} NP-COMMON ;
-_R_ZEQ%<top%>%<attr%>: # ;
+%<R_ZEQ%>%<top%>:%{☭%} NP-COMMON ;
+%<R_ZEQ%>%<top%>%<attr%>: # ;
 
 LEXICON NP-TOP
 
-_R_ZEQ%<top%>: NP-COMMON ;
-_R_ZEQ%<top%>%<attr%>: # ;
+%<R_ZEQ%>%<top%>: NP-COMMON ;
+%<R_ZEQ%>%<top%>%<attr%>: # ;
 
 !%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
 
 LEXICON NP-TOP-ASSR
 
-_R_ZEQ%<top%>%<attr%>: # ;
+%<R_ZEQ%>%<top%>%<attr%>: # ;
 
-_R_ZEQ%<top%>: NP-COMMON ; ! Dir/LR
-_R_ZEQ%<top%>:%- NP-COMMON ;
+%<R_ZEQ%>%<top%>: NP-COMMON ; ! Dir/LR
+%<R_ZEQ%>%<top%>:%- NP-COMMON ;
 
 LEXICON NP-TOP-COMPOUND
 
-_R_ZEQ%<top%>: N-COMPOUND-PX-COMMON ;
-_R_ZEQ%<top%>%<attr%>:%>%{s%}%{I%}%{n%} # ;
+%<R_ZEQ%>%<top%>: N-COMPOUND-PX-COMMON ;
+%<R_ZEQ%>%<top%>%<attr%>:%>%{s%}%{I%}%{n%} # ;
 
 LEXICON NP-TOP-ABBR
 
-_R_ZEQ%<top%>%<attr%>: # ;
-_R_ZEQ%<top%>%<nom%>: CLITICS-INCL-COP ;
-_R_ZEQ%<top%>:%- NP-COMMON ;
+%<R_ZEQ%>%<top%>%<attr%>: # ;
+%<R_ZEQ%>%<top%>%<nom%>: CLITICS-INCL-COP ;
+%<R_ZEQ%>%<top%>:%- NP-COMMON ;
 
-_R_ZEQ%<top%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+%<R_ZEQ%>%<top%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 
 LEXICON NP-ANT-M
 
-_R_ZEQ%<ant%>%<m%>: NP-COMMON ;
-_R_ZEQ%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<ant%>%<m%>: NP-COMMON ;
+%<R_ZEQ%>%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-ANT-F
 
-_R_ZEQ%<ant%>%<f%>: NP-COMMON ;
-_R_ZEQ%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<ant%>%<f%>: NP-COMMON ;
+%<R_ZEQ%>%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-M
 
-_R_ZEQ%<cog%>%<m%>: NP-COMMON ;
-_R_ZEQ%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>: NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-MF
 
 ! Dual-gender cognoms.
 ! Don't derive anything /I.S./
 
-_R_ZEQ%<cog%>%<mf%>: NP-COMMON ;
-_R_ZEQ%<cog%>%<mf%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<mf%>: NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<mf%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-OBIN-FEM
 
-_R_ZEQ%<cog%>%<f%>:а NP-COMMON ;
-_R_ZEQ%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<f%>:а NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
 
 
 LEXICON NP-COG-OB
@@ -1606,11 +1608,11 @@ LEXICON NP-COG-OB
 ! Also, even the ев ones are normally pronounced
 !    (and take harmony) as if they end in йыф/йып
 
-_R_ZEQ%<cog%>%<m%>:%{☭%} NP-COMMON ;                       ! Dir/LR
-_R_ZEQ%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;    ! Dir/LR
+%<R_ZEQ%>%<cog%>%<m%>:%{☭%} NP-COMMON ;                       ! Dir/LR
+%<R_ZEQ%>%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;    ! Dir/LR
 
-_R_ZEQ%<cog%>%<m%>:%{а%}%{с%} NP-COMMON ;
-_R_ZEQ%<cog%>%<m%>%<pl%>:%{а%}%{с%}%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>:%{а%}%{с%} NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>%<pl%>:%{а%}%{с%}%>%{L%}%{A%}р NP-COMMON ;
 
 NP-COG-OBIN-FEM ;
 
@@ -1620,8 +1622,8 @@ LEXICON NP-COG-IN
 ! For cognoms ending with -ов, -ев, -ин
 ! They derive feminine equivalets taking -а /I.S./
 
-_R_ZEQ%<cog%>%<m%>:%{☭%} NP-COMMON ;
-_R_ZEQ%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>:%{☭%} NP-COMMON ;
+%<R_ZEQ%>%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;
 
 NP-COG-OBIN-FEM ;
 
@@ -1635,49 +1637,49 @@ LEXICON NP-PAT-VICH
 ! For patronyms ending with -вич
 ! Their feminine equivalets end with -вна /I.S./
 
-_R_ZEQ%<pat%>%<m%>:вич%{☭%} NP-COMMON ;
+%<R_ZEQ%>%<pat%>%<m%>:вич%{☭%} NP-COMMON ;
 
-_R_ZEQ%<pat%>%<f%>:вна NP-COMMON ;
+%<R_ZEQ%>%<pat%>%<f%>:вна NP-COMMON ;
 
 ! WAS: (JNW 2015-01-17)
 !LEXICON NP-ORG
 !
-!_R_ZEQ%<org%>: CASES ;
+!%<R_ZEQ%>%<org%>: CASES ;
 
 LEXICON NP-ORG
 
-_R_ZEQ%<org%>%<nom%>: CLITICS-INCL-COP ;
-_R_ZEQ%<org%>: FULL-NOMINAL-INFLECTION-NONOM ;
-_R_ZEQ%<org%>%<attr%>: # ;
+%<R_ZEQ%>%<org%>%<nom%>: CLITICS-INCL-COP ;
+%<R_ZEQ%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ;
+%<R_ZEQ%>%<org%>%<attr%>: # ;
 
 LEXICON NP-ORG-LAT
 
-_R_ZEQ%<org%>%<nom%>: CLITICS-INCL-COP ;
-_R_ZEQ%<org%>: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
-_R_ZEQ%<org%>:%- FULL-NOMINAL-INFLECTION-NONOM ;
+%<R_ZEQ%>%<org%>%<nom%>: CLITICS-INCL-COP ;
+%<R_ZEQ%>%<org%>: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
+%<R_ZEQ%>%<org%>:%- FULL-NOMINAL-INFLECTION-NONOM ;
 ! This one doesn't work right because of twol:
-!_R_ZEQ%<org%>:%' FULL-NOMINAL-INFLECTION-NONOM-NONOM ; ! Dir/LR
-_R_ZEQ%<org%>%<attr%>: # ;
+!%<R_ZEQ%>%<org%>:%' FULL-NOMINAL-INFLECTION-NONOM-NONOM ; ! Dir/LR
+%<R_ZEQ%>%<org%>%<attr%>: # ;
 
 LEXICON NP-ORG-COMPOUND
 
-_R_ZEQ%<org%>: N-COMPOUND-PX-COMMON ;   ! COMMON because no plural
+%<R_ZEQ%>%<org%>: N-COMPOUND-PX-COMMON ;   ! COMMON because no plural
 
 LEXICON NP-ORG-ABBR             ! for abbreviations like FIFA
-_R_ZEQ%<org%>%<attr%>: # ;
-_R_ZEQ%<org%>%<nom%>: CLITICS-INCL-COP ;
-_R_ZEQ%<org%>:%- NP-COMMON ;
-_R_ZEQ%<org%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+%<R_ZEQ%>%<org%>%<attr%>: # ;
+%<R_ZEQ%>%<org%>%<nom%>: CLITICS-INCL-COP ;
+%<R_ZEQ%>%<org%>:%- NP-COMMON ;
+%<R_ZEQ%>%<org%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 LEXICON NP-AL
 
-_R_ZEQ%<al%>: CASES ;
+%<R_ZEQ%>%<al%>: CASES ;
 
 LEXICON NP-AL-ABBR              ! for abbreviations like ӘЧ - Әлем Чемпионаты
-_R_ZEQ%<al%>%<attr%>: # ;
-_R_ZEQ%<al%>%<nom%>: CLITICS-INCL-COP ;
-_R_ZEQ%<al%>:%- NP-COMMON ;
-_R_ZEQ%<al%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+%<R_ZEQ%>%<al%>%<attr%>: # ;
+%<R_ZEQ%>%<al%>%<nom%>: CLITICS-INCL-COP ;
+%<R_ZEQ%>%<al%>:%- NP-COMMON ;
+%<R_ZEQ%>%<al%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 
 LEXICON NUM-COMMON
@@ -35365,7 +35367,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 көпір:көпір V-IV ; ! "to foam"
 қопсыт:қопсыт V-TV ; ! "to turn inside out" (kaz tat) ! Der/Caus
 көпте:көпте V-TV ; ! "to do something jointly with others"
-!!!!көр_R_ET%<tv%>%<imp%>%<p2%>%<sg%>:гөр # ; ! "" Dir/LR
+!!!!көр%<R_ET%>%<tv%>%<imp%>%<p2%>%<sg%>:гөр # ; ! "" Dir/LR
 қораздан:қораздан V-IV ; ! "to be on one's high horse"
 қорапқа% сал:қорапқа% сал V-TV ; ! ""
 қорға:қорға V-TV ; ! "uphold"
@@ -35782,8 +35784,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 қызықсын:қызықсын V-IV ; ! "to get interested in"
 қызықтыр:қызықтыр V-TV ; ! "to cause interest; to make interested in" (kaz tat) ! Der/Caus
 қыл:қыл V-TV ; ! "do"
-қыл_R_ET%<tv%>%<prc_perf%>:ғып # ; ! "same as қып"
-қыл_R_ET%<tv%>%<gna_perf%>:ғып # ; ! "same as қып"
+қыл%<R_ET%>%<tv%>%<prc_perf%>:ғып # ; ! "same as қып"
+қыл%<R_ET%>%<tv%>%<gna_perf%>:ғып # ; ! "same as қып"
 қылқындыр:қылқындыр V-TV ; ! "do"
 қыраулан:қыраулан V-IV ; ! "to be covered with frost"
 қырқылда:қырқылда V-IV ; ! "to have a rattle in the tnroat"
@@ -38243,7 +38245,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 отыр:отыр Vinfl-AUX ; !
 сал:сал Vinfl-AUX ; !
 таста:таста Vinfl-AUX ; !
-сал_R_ETK%<ger%>:салыш GER-INFL ; ! Dir/LR
+сал%<R_ETK%>%<ger%>:салыш GER-INFL ; ! Dir/LR
 тұр:тұр Vinfl-AUX ; !
 шық:шық Vinfl-AUX ; !
 
@@ -39693,7 +39695,7 @@ MGM:MGM ABBR ; !"Use/MT"
 !===================!
 
 
-%._R_NKT:%. # ;
+%.%<R_NKT%>:%. # ;
 %.%.%.%<sent%>:%.%.%. # ;
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
@@ -39735,7 +39737,7 @@ LASTDIGIT-REST ; ! Use/Circ
 
 LEXICON NP-UNK
 
-_R_ZEQ%<unk%>: # ;
+%<R_ZEQ%>%<unk%>: # ;
 
 LEXICON GUESS-QUEUE
 
@@ -40158,7 +40160,7 @@ LEXICON Common ! <- future
 
 !!! twol and other `peculiar' cases
 
-полюс_R_ZE%<loc%>:полюсте # ;
-полюс_R_ZE%<loc%>%<attr%>:полюстегі # ;
+полюс%<R_ZE%>%<loc%>:полюсте # ;
+полюс%<R_ZE%>%<loc%>%<attr%>:полюстегі # ;
 ол%<prn%>%<dem%>%<px3sp%>%<dat%>:онысына # ;
-уақыт_R_ZE%<px3sp%>%<loc%>:уақытысында # ;
+уақыт%<R_ZE%>%<px3sp%>%<loc%>:уақытысында # ;
