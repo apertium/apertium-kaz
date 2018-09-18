@@ -1,0 +1,1 @@
+../../apertium-chv/tests/test.py

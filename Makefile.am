@@ -40,13 +40,13 @@ TARGETS_COMMON =			\
 	cat $< | grep -v -e 'Err/Orth' > $@
 
 .deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
-	hfst-lexc --Werror $< -o $@ -v
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
-	hfst-lexc --Werror $< -o $@ -v
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).EL.lexc.hfst: .deps/$(LANG1).EL.lexc
-	hfst-lexc --Werror $< -o $@ -v
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
