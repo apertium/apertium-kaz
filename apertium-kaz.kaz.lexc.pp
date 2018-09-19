@@ -14,13 +14,41 @@
 ◊(define num "%<R_SN%>")
 ◊(define part "%<R_SH%>")
 ◊(define mod "%<R_MOD%>")
-◊(define prt "%<R_SH%>")
 ◊(define ij "%<R_OS%>")
 ◊(define sym "%<R_SYM%>")
 ◊(define for "%<R_BOS%>")
 ◊(define unk "%<R_X%>")
 
 ◊(define period "%<R_NKT%>")
+◊(define cm "%<R_UTR%>")
+◊(define guio "%<R_DPH%>")
+◊(define lquot "%<R_ATRN%>")
+◊(define rquot "%<R_ZTRN%>")
+◊(define quot "%<R_TRN%>")
+◊(define cln "%<R_QNKT%>")
+◊(define qst "%<R_SUR%>")
+◊(define lpar "%<R_AZZ%>")
+◊(define rpar "%<R_ZZZ%>")
+◊(define exclm "%<R_LEP%>")
+◊(define semicln "%<R_UNKT%>")
+◊(define slh "%<R_SLH%>")
+◊(define aps "%<R_APS%>")
+◊(define bslh "%<R_BSLH%>")
+
+◊(define pl "%<N1%>")
+◊(define px1sg "%<S1%>")
+◊(define px2sg "%<S2%>")
+◊(define px3sp "%<S3%>")
+◊(define px2sg_frm "%<S4%>")
+◊(define px1pl "%<S5%>")
+◊(define px "%<S9%>")
+
+◊(define gen "%<C2%>")
+◊(define dat "%<C3%>")
+◊(define acc "%<C4%>")
+◊(define loc "%<C5%>")
+◊(define abl "%<C6%>")
+◊(define ins "%<C7%>")
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
@@ -37,15 +65,15 @@
 ! Part of speech categories = First-level tags
 ◊|n|          ! Noun                       ! Зат есім
 ◊|np|         ! Proper noun                ! Жалқы есім
-%<adj%>       ! Adjective                  ! Сын есім
-%<num%>       ! Numeral                    ! Сан есім
-%<prn%>       ! Pronoun                    ! Есімдік
+◊|adj|       ! Adjective                  ! Сын есім
+◊|num|       ! Numeral                    ! Сан есім
+◊|prn|       ! Pronoun                    ! Есімдік
 %<det%>       ! Determiner                 ! Детерминатив
 ◊|v|          ! Verb                       ! Етістік
 ◊|vaux1|      ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр
 ◊|vaux2|      ! Auxilary verb              ! жатыр, отыр, тұр, жүр
 ◊|vaux3|      ! Auxilary verb              ! Көмекші етістік
-%<adv%>       ! Adverb                     ! Үстеу
+◊|adv|       ! Adverb                     ! Үстеу
 %<post%>      ! Postposition               ! Септеулік шылау
 %<postadv%>   ! Postadverb                 ! "Постүстеу" (*1)
 %<cnjcoo%>    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
@@ -80,25 +108,25 @@
 
 ! Number
 %<sg%>        ! Singular ! Жекеше
-%<pl%>        ! Plural
+◊|pl|        ! Plural
 
 ! Possessives
-%<px1sg%>     ! First person singular
-%<px2sg%>     ! Second person singular
-%<px3sp%>     ! Third person singular/plural
-%<px1pl%>     ! First person plural
+◊|px1sg|     ! First person singular
+◊|px2sg|     ! Second person singular
+◊|px3sp|     ! Third person singular/plural
+◊|px1pl|     ! First person plural
 %<px2pl%>     ! Second person plural
 %<px3pl%>     ! Third person plural (for reflexive)
-!%<px%>        ! General possessive          !# -нікі  ! now gen.subst
+!◊|px|        ! General possessive          !# -нікі  ! now gen.subst
 
 ! Cases
 %<nom%>       ! Nominative
-%<gen%>       ! Genitive
-%<dat%>       ! Dative
-%<acc%>       ! Accusative
-%<abl%>       ! Ablative
-%<loc%>       ! Locative
-%<ins%>       ! Instrumental
+◊|gen|       ! Genitive
+◊|dat|       ! Dative
+◊|acc|       ! Accusative
+◊|abl|       ! Ablative
+◊|loc|       ! Locative
+◊|ins|       ! Instrumental
 
 !! some additional ~cases
 %<sim%>       ! Similative
@@ -253,7 +281,7 @@
               !# -ай, -ау
 %<mod%>       ! Other modal words (шығар, сияқты etc)
 
-%<unk%>       ! For foreign tokens
+◊|unk|       ! For foreign tokens
 
 %<err_orth%>  ! For orthographic errors
 
@@ -361,13 +389,13 @@ LEXICON CASE-NONOM
 ! only it does not include nominative
 !   1<num><nom> = 1, 1<num><acc> = 1-{N}{I}
 
-%<gen%>:%>%{N%}%{I%}ң CLITICS-NO-COP ;
-%<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
-%<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
-%<abl%>:%>%{D%}%{A%}н # ;
-%<loc%>:%>%{D%}%{A%} # ;
-%<ins%>:%>%{M%}ен CLITICS-NO-COP ;
-%<ins%>:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR  ! It should be analysed like this, but generated as мен/бен/пен
+◊|gen|:%>%{N%}%{I%}ң CLITICS-NO-COP ;
+◊|dat|:%>%{G%}%{A%} CLITICS-NO-COP ;
+◊|acc|:%>%{N%}%{I%} CLITICS-NO-COP ;
+◊|abl|:%>%{D%}%{A%}н # ;
+◊|loc|:%>%{D%}%{A%} # ;
+◊|ins|:%>%{M%}ен CLITICS-NO-COP ;
+◊|ins|:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR  ! It should be analysed like this, but generated as мен/бен/пен
 
 LEXICON CASE-ETC-NONOM
 
@@ -382,59 +410,59 @@ CASE-ETC-NONOM ;
 LEXICON SUBST-NONOM
 
 FULL-NOMINAL-INFLECTION-NONOM ;
-%<pl%>:%>%{L%}%{A%}р FULL-NOMINAL-INFLECTION-NONOM ;
+◊|pl|:%>%{L%}%{A%}р FULL-NOMINAL-INFLECTION-NONOM ;
 
 LEXICON SQRD
 ! This lexicon includes common ways of writing squared, cubed etc.
 
-²%<num%>:2 # ;  ! Dir/LR
-³%<num%>:3 # ;  ! Dir/LR
-²%<num%>:² # ;
-³%<num%>:³ # ;
-%<num%>: # ;
+²◊|num|:2 # ;  ! Dir/LR
+³◊|num|:3 # ;  ! Dir/LR
+²◊|num|:² # ;
+³◊|num|:³ # ;
+◊|num|: # ;
 
 LEXICON NUM-DIGIT
 
-%<num%>: # ;
-%<num%>%<subst%>%<nom%>: # ;
-%<num%>%<subst%>:%- SUBST-NONOM ;
-%<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
+◊|num|: # ;
+◊|num|%<subst%>%<nom%>: # ;
+◊|num|%<subst%>:%- SUBST-NONOM ;
+◊|num|%<subst%>: SUBST-NONOM ; ! Dir/LR
 
-%<num%>%<ord%>:%-%{I%}нш%{I%} # ;
-%<num%>%<ord%>%<subst%>%<nom%>:%-%{I%}нш%{I%} # ;
-%<num%>%<ord%>%<subst%>:%-%{I%}нш%{I%} SUBST-NONOM ;
-%<num%>%<ord%>:%-ш%{I%} # ; ! Dir/LR
-%<num%>%<ord%>%<subst%>%<nom%>:%-ш%{I%} # ; ! Dir/LR
-%<num%>%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
+◊|num|%<ord%>:%-%{I%}нш%{I%} # ;
+◊|num|%<ord%>%<subst%>%<nom%>:%-%{I%}нш%{I%} # ;
+◊|num|%<ord%>%<subst%>:%-%{I%}нш%{I%} SUBST-NONOM ;
+◊|num|%<ord%>:%-ш%{I%} # ; ! Dir/LR
+◊|num|%<ord%>%<subst%>%<nom%>:%-ш%{I%} # ; ! Dir/LR
+◊|num|%<ord%>%<subst%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
 
-%<num%>%<coll%>%<advl%>:%-%{A%}у # ;
-%<num%>%<coll%>%<subst%>%<nom%>:%-%{A%}у # ;
-%<num%>%<coll%>%<subst%>:%-%{A%}у SUBST-NONOM ;
+◊|num|%<coll%>%<advl%>:%-%{A%}у # ;
+◊|num|%<coll%>%<subst%>%<nom%>:%-%{A%}у # ;
+◊|num|%<coll%>%<subst%>:%-%{A%}у SUBST-NONOM ;
 
-%<num%>%<percent%>%<nom%>:%% # ;
+◊|num|%<percent%>%<nom%>:%% # ;
 
-%<num%>%<percent%>:%%%{а%}%{з%}%- SUBST-NONOM ;
-%<num%>%<percent%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
-%<num%>%<percent%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-%<num%>%<percent%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
+◊|num|%<percent%>:%%%{а%}%{з%}%- SUBST-NONOM ;
+◊|num|%<percent%>:%%%{а%}%{з%} SUBST-NONOM ; ! Dir/LR
+◊|num|%<percent%>:%%%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+◊|num|%<percent%>:%%%{э%}%{с%} SUBST-NONOM ; ! Dir/LR
 
-°С%<num%>:°С # ;
-°С%<num%>%<subst%>%<nom%>:°С # ;
-°С%<num%>%<subst%>:°С%{а%}%{с%}%- SUBST-NONOM ;
-°С%<num%>%<subst%>:°С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-°С%<num%>:ºС # ; ! Dir/LR
-°С%<num%>%<subst%>%<nom%>:ºС # ; ! Dir/LR
-°С%<num%>%<subst%>:ºС%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-°С%<num%>%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-°С%<num%>:С # ; ! Dir/LR
-°С%<num%>%<subst%>%<nom%>:С # ; ! Dir/LR
-°С%<num%>%<subst%>:С%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-°С%<num%>%<subst%>:С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С◊|num|:°С # ;
+°С◊|num|%<subst%>%<nom%>:°С # ;
+°С◊|num|%<subst%>:°С%{а%}%{с%}%- SUBST-NONOM ;
+°С◊|num|%<subst%>:°С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С◊|num|:ºС # ; ! Dir/LR
+°С◊|num|%<subst%>%<nom%>:ºС # ; ! Dir/LR
+°С◊|num|%<subst%>:ºС%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С◊|num|%<subst%>:ºС%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С◊|num|:С # ; ! Dir/LR
+°С◊|num|%<subst%>%<nom%>:С # ; ! Dir/LR
+°С◊|num|%<subst%>:С%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+°С◊|num|%<subst%>:С%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 
-С%<num%>:° # ; ! Dir/LR
-С%<num%>%<subst%>%<nom%>:° # ; ! Dir/LR
-С%<num%>%<subst%>:°%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
-С%<num%>%<subst%>:°%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+С◊|num|:° # ; ! Dir/LR
+С◊|num|%<subst%>%<nom%>:° # ; ! Dir/LR
+С◊|num|%<subst%>:°%{а%}%{с%}%- SUBST-NONOM ; ! Dir/LR
+С◊|num|%<subst%>:°%{э%}%{с%}%- SUBST-NONOM ; ! Dir/LR
 
 ! Measurement units
 
@@ -626,33 +654,33 @@ CLIT-COP ;
 
 LEXICON CASES-COMMON
 
-%<gen%>:%>%{N%}%{I%}ң CLITICS-NO-COP ;
-%<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
-%<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
-%<ins%>:%>%{M%}ен CLITICS-NO-COP ;
-%<ins%>:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR
+◊|gen|:%>%{N%}%{I%}ң CLITICS-NO-COP ;
+◊|dat|:%>%{G%}%{A%} CLITICS-NO-COP ;
+◊|acc|:%>%{N%}%{I%} CLITICS-NO-COP ;
+◊|ins|:%>%{M%}ен CLITICS-NO-COP ;
+◊|ins|:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR
 
 LEXICON CASES
 
 CASES-COMMON ;
 CLITICS-INCL-COP ;
-%<abl%>:%>%{D%}%{A%}н CLITICS-INCL-COP ;
-%<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
+◊|abl|:%>%{D%}%{A%}н CLITICS-INCL-COP ;
+◊|loc|:%>%{D%}%{A%} CLITICS-INCL-COP ;
 
 !! LEXICON CASES-WITHOUT-COPULAS
 !! 
 !! CASES-COMMON ;
 !! %<nom%>: CLITICS-NO-COP ;
-!! %<abl%>:%>%{D%}%{A%}н CLITICS-NO-COP ;
-!! %<loc%>:%>%{D%}%{A%} CLITICS-NO-COP ;
+!! ◊|abl|:%>%{D%}%{A%}н CLITICS-NO-COP ;
+!! ◊|loc|:%>%{D%}%{A%} CLITICS-NO-COP ;
 
 LEXICON ATTR-SUBST
 
 %<attr%>: # ;
 %<subst%>: CASES ;
 %<subst%>: POSSESSIVES ;
-%<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
-%<subst%>%<pl%>:%>%{L%}%{A%}р POSSESSIVES ;
+%<subst%>◊|pl|:%>%{L%}%{A%}р CASES ;
+%<subst%>◊|pl|:%>%{L%}%{A%}р POSSESSIVES ;
 
 %<attr%>: GENERAL-POSSESSIVE-ETC ;
 
@@ -668,12 +696,12 @@ LEXICON GENERAL-POSSESSIVE-ETC
 ! try нікілер?  -JNW
 
 !gen.subst part was:
-!%<px%>:%>%{N%}ікі%{n%} CASES ;
-!%<px%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
+!◊|px|:%>%{N%}ікі%{n%} CASES ;
+!◊|px|◊|pl|:%>%{N%}ікі%>л%{A%}р CASES ;
 
-%<gen%>%<subst%>:%>%{N%}ікі%{n%} CASES ;
-%<gen%>%<subst%>%<pl%>:%>%{N%}ікі%>л%{A%}р CASES ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
+◊|gen|%<subst%>:%>%{N%}ікі%{n%} CASES ;
+◊|gen|%<subst%>◊|pl|:%>%{N%}ікі%>л%{A%}р CASES ;
+◊|loc|:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-INCL-COP ;
 %<sim%>:%>%{D%}%{A%}й POSSESSIVES ;
 %<sim%>:%>%{D%}%{A%}й CASES ;
@@ -687,13 +715,13 @@ GENERAL-POSSESSIVE-ETC ;
 
 LEXICON POSSESSIVES
 
-%<px1sg%>:%>%{I%}м CASES-ETC ;
-%<px2sg%>:%>%{I%}ң CASES-ETC ;
-%<px3sp%>:%>%{S%}%{I%}%{n%} CASES-ETC ;
-%<px1pl%>:%>%{I%}м%{I%}з CASES-ETC ;
+◊|px1sg|:%>%{I%}м CASES-ETC ;
+◊|px2sg|:%>%{I%}ң CASES-ETC ;
+◊|px3sp|:%>%{S%}%{I%}%{n%} CASES-ETC ;
+◊|px1pl|:%>%{I%}м%{I%}з CASES-ETC ;
 %<px2pl%>:%>%{I%}ңд%{A%}р CASES-ETC ;
 
-%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
+◊|px2sg|%<frm%>:%>%{I%}ң%{I%}з CASES-ETC ;
 %<px2pl%>%<frm%>:%{I%}ң%{I%}зд%{A%}р CASES-ETC ;
 
 LEXICON ABESSIVE-POSTPOSITION
@@ -706,9 +734,9 @@ LEXICON LI-POSTPOSITION
 
 LEXICON PLURAL
 
-%<pl%>:%>%{L%}%{A%}р CASES-ETC ;
-%<pl%>:%>%{L%}%{A%}р POSSESSIVES ;
-%<pl%>:%>%{L%}%{A%}р ABESSIVE-POSTPOSITION ;
+◊|pl|:%>%{L%}%{A%}р CASES-ETC ;
+◊|pl|:%>%{L%}%{A%}р POSSESSIVES ;
+◊|pl|:%>%{L%}%{A%}р ABESSIVE-POSTPOSITION ;
 
 LEXICON FULL-NOMINAL-INFLECTION
 
@@ -733,37 +761,37 @@ LEXICON A1                ! adjectives that can be both substantivised and andve
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
 
-%<adj%>: CLITICS-INCL-COP ;                             !# жақсы адам
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# жақсырақ іс
-%<adj%>%<comp%>:%>%{L%}%{A%}у CLITICS-INCL-COP ;        !# жақсырақ іс Dir/LR
+◊|adj|: CLITICS-INCL-COP ;                             !# жақсы адам
+◊|adj|%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# жақсырақ іс
+◊|adj|%<comp%>:%>%{L%}%{A%}у CLITICS-INCL-COP ;        !# жақсырақ іс Dir/LR
 
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# жақсыны таптым
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# жақсырақты таптым
-%<adj%>%<comp%>%<subst%>:%>%{L%}%{A%}у FULL-NOMINAL-INFLECTION ;        !# жақсырақты таптым Dir/LR
-%<adj%>%<comp%>%<advl%>:%>%{L%}%{A%}у CLITICS-NO-COP ;                  !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді." Dir/LR
+◊|adj|%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# жақсыны таптым
+◊|adj|%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# жақсырақты таптым
+◊|adj|%<comp%>%<subst%>:%>%{L%}%{A%}у FULL-NOMINAL-INFLECTION ;        !# жақсырақты таптым Dir/LR
+◊|adj|%<comp%>%<advl%>:%>%{L%}%{A%}у CLITICS-NO-COP ;                  !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді." Dir/LR
 
-%<adj%>%<advl%>: CLITICS-NO-COP ;                               !# жақсы білемін
-%<adj%>%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+◊|adj|%<advl%>: CLITICS-NO-COP ;                               !# жақсы білемін
+◊|adj|%<comp%>%<advl%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
 LEXICON A2                 ! (derived/not fully lexicalised) adjectives without adverbial reading;
                            ! <adj> and <adj.subst> readings have comparison levels.
                            !# ескі
 
-%<adj%>: CLITICS-INCL-COP ;                             !# ескі дос
-%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# ескірек заманда
-%<adj%>%<comp%>:%>%{L%}%{A%}у CLITICS-INCL-COP ;        !# ескірек заманда Dir/LR
+◊|adj|: CLITICS-INCL-COP ;                             !# ескі дос
+◊|adj|%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# ескірек заманда
+◊|adj|%<comp%>:%>%{L%}%{A%}у CLITICS-INCL-COP ;        !# ескірек заманда Dir/LR
 
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
-%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
-%<adj%>%<comp%>%<subst%>:%>%{L%}%{A%}у FULL-NOMINAL-INFLECTION ;        !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр." Dir/LR
+◊|adj|%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
+◊|adj|%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
+◊|adj|%<comp%>%<subst%>:%>%{L%}%{A%}у FULL-NOMINAL-INFLECTION ;        !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр." Dir/LR
 
 LEXICON A3                 ! (derived/not fully lexicalised) adjectives without adverbial reading,
                            ! so-called "predicatives" (бар, жоқ);
                            ! no comparison levels at all.
                            !# көктемгі, басты, бар, жоқ
 
-%<adj%>: CLITICS-INCL-COP ;         !# көктемгі су тасқыны
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;           !# "...Самаранч ең бастыны түсінді..."
+◊|adj|: CLITICS-INCL-COP ;         !# көктемгі су тасқыны
+◊|adj|%<subst%>: FULL-NOMINAL-INFLECTION ;           !# "...Самаранч ең бастыны түсінді..."
                                     !# "Аты бардың заты бар."
 
 ! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
@@ -772,15 +800,15 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
 LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
                            !# ұлттық
 
-%<adj%>: CLITICS-INCL-COP ;   !# ұлттық тағам
+◊|adj|: CLITICS-INCL-COP ;   !# ұлттық тағам
 
 LEXICON A6                 ! (derived/not fully lexicalised) adjectives without comparative reading,
                            ! no comparison levels at all.
                            !# examples go here
 
-%<adj%>: CLITICS-INCL-COP ;                           !# example 1
-%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;           !# example 2
-%<adj%>%<advl%>: CLITICS-NO-COP ;                     !# example 3
+◊|adj|: CLITICS-INCL-COP ;                           !# example 1
+◊|adj|%<subst%>: FULL-NOMINAL-INFLECTION ;           !# example 2
+◊|adj|%<advl%>: CLITICS-NO-COP ;                     !# example 3
 
 LEXICON V-ADJ
 
@@ -797,11 +825,11 @@ LEXICON V-PERS-S1-NO3PERSON
 
 %<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
 %<p2%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
-%<p1%>%<pl%>:%>%{M%}%{I%}з CLITICS-NO-COP ;
-%<p2%>%<pl%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
+%<p1%>◊|pl|:%>%{M%}%{I%}з CLITICS-NO-COP ;
+%<p2%>◊|pl|:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
 
 %<p2%>%<frm%>%<sg%>:%>с%{I%}з CLITICS-NO-COP ;
-%<p2%>%<frm%>%<pl%>:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
+%<p2%>%<frm%>◊|pl|:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-S1
 
@@ -809,7 +837,7 @@ LEXICON V-PERS-S1
 
 V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>: CLITICS-NO-COP ;
-%<p3%>%<pl%>: CLITICS-NO-COP ;
+%<p3%>◊|pl|: CLITICS-NO-COP ;
 
 LEXICON V-PERS-S2
 
@@ -818,12 +846,12 @@ LEXICON V-PERS-S2
 %<p1%>%<sg%>:%>м CLITICS-NO-COP ;
 %<p2%>%<sg%>:%>ң CLITICS-NO-COP ;
 %<p3%>%<sg%>: CLITICS-NO-COP ;
-%<p1%>%<pl%>:%>%{K%} CLITICS-NO-COP ;
-%<p2%>%<pl%>:%>ңд%{A%}р CLITICS-NO-COP ;
-%<p3%>%<pl%>: CLITICS-NO-COP ;
+%<p1%>◊|pl|:%>%{K%} CLITICS-NO-COP ;
+%<p2%>◊|pl|:%>ңд%{A%}р CLITICS-NO-COP ;
+%<p3%>◊|pl|: CLITICS-NO-COP ;
 
 %<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLITICS-NO-COP ;
-%<p2%>%<frm%>%<pl%>:%>ң%{I%}зд%{A%}р CLITICS-NO-COP ;
+%<p2%>%<frm%>◊|pl|:%>ң%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-AOR
 
@@ -838,28 +866,28 @@ V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
 %<p3%>%<sg%>: CLIT-QST ;
 
-%<p3%>%<pl%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
-%<p3%>%<pl%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
-%<p3%>%<pl%>: CLIT-QST ;
+%<p3%>◊|pl|:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+%<p3%>◊|pl|:%>д%{I%} CLIT-QST ;              ! Dir/LR
+%<p3%>◊|pl|: CLIT-QST ;
 
 LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
 %<p3%>%<sg%>:%>т%{I%} CLITICS-NO-COP ;
-%<p3%>%<pl%>:%>т%{I%} CLITICS-NO-COP ;
+%<p3%>◊|pl|:%>т%{I%} CLITICS-NO-COP ;
 
 LEXICON VOL-ENDINGS
 
 %<p1%>%<sg%>:%>м CLIT-GHANA-ETC ;
 %<p2%>%<sg%>:%>ң CLIT-GHANA-ETC ;
 %<p3%>%<sg%>:%>с%{I%} CLIT-GHANA-ETC ;
-%<p1%>%<pl%>:%>м%{I%}з CLIT-GHANA-ETC ;
-%<p2%>%<pl%>:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
-%<p3%>%<pl%>:%>с%{I%} CLIT-GHANA-ETC ;
-%<p3%>%<pl%>:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
+%<p1%>◊|pl|:%>м%{I%}з CLIT-GHANA-ETC ;
+%<p2%>◊|pl|:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
+%<p3%>◊|pl|:%>с%{I%} CLIT-GHANA-ETC ;
+%<p3%>◊|pl|:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
 
 %<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLIT-GHANA-ETC ;
-%<p2%>%<frm%>%<pl%>:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
+%<p2%>%<frm%>◊|pl|:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
 
 !!!!!!!   G E R U N D S   I N F L E C T I O N
 
@@ -872,21 +900,21 @@ LEXICON GER-CASE-NO_COPULA
 
 CASES-COMMON ;
 %<nom%>: CLITICS-NO-COP ;
-%<abl%>:%>%{D%}%{A%}н CLITICS-NO-COP ;
-%<loc%>:%>%{D%}%{A%} CLITICS-NO-COP ;
+◊|abl|:%>%{D%}%{A%}н CLITICS-NO-COP ;
+◊|loc|:%>%{D%}%{A%} CLITICS-NO-COP ;
 
 LEXICON GER-ATTR/SUBST
 
 %<attr%>: CLITICS-NO-COP ;
 !%<subst%>: CASES ;
-!%<subst%>%<pl%>:%>%{L%}%{A%}р CASES ;
+!%<subst%>◊|pl|:%>%{L%}%{A%}р CASES ;
 
 !! LEXICON GER-ABE-ATTR/ADVL/SUBST
 !! 
 !! !%<attr%>: CLITICS-NO-COP ;
 !! %<advl%>: CLITICS-NO-COP ;
 !! !%<subst%>: CASE-2 ;
-!! !%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
+!! !%<subst%>◊|pl|:%>%{L%}%{A%}р CASE-2 ;
 
 LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
@@ -894,8 +922,8 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
-%<gen%>%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
+◊|gen|%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
+◊|loc|:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
 LEXICON GER-CASE-ETC
@@ -905,21 +933,21 @@ GER-GENERAL-POSSESSIVE-ETC ;
 
 LEXICON GER-POSSESSIVES
 
-%<px1sg%>:%>%{I%}м GER-CASE-ETC ;
-%<px2sg%>:%>%{I%}ң GER-CASE-ETC ;
-%<px3sp%>:%>%{S%}%{I%}%{n%} GER-CASE-ETC ;
-%<px1pl%>:%>%{I%}м%{I%}з GER-CASE-ETC ;
+◊|px1sg|:%>%{I%}м GER-CASE-ETC ;
+◊|px2sg|:%>%{I%}ң GER-CASE-ETC ;
+◊|px3sp|:%>%{S%}%{I%}%{n%} GER-CASE-ETC ;
+◊|px1pl|:%>%{I%}м%{I%}з GER-CASE-ETC ;
 %<px2pl%>:%>%{I%}ңд%{A%}р GER-CASE-ETC ;
 
-%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з GER-CASE-ETC ;
+◊|px2sg|%<frm%>:%>%{I%}ң%{I%}з GER-CASE-ETC ;
 %<px2pl%>%<frm%>:%>%{I%}ң%{I%}зд%{A%}р GER-CASE-ETC ;
 
 LEXICON GER-INFL
 
 GER-POSSESSIVES ;
 GER-CASE-ETC ;
-%<pl%>:%>%{L%}%{A%}р GER-POSSESSIVES ;
-%<pl%>:%>%{L%}%{A%}р GER-CASE-ETC ;
+◊|pl|:%>%{L%}%{A%}р GER-POSSESSIVES ;
+◊|pl|:%>%{L%}%{A%}р GER-CASE-ETC ;
 GER-ABE-ETC ;
 
 !!!!!!!   end of gerunds inflection lexicon
@@ -1021,21 +1049,21 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
-%<imp%>%<p2%>%<pl%>:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
+%<imp%>%<p2%>◊|pl|:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
 %<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-EMPH ;
 %<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
-%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>◊|pl|:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
 %<opt%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLITICS-NO-COP ;
 !%<opt%>%<p2%>%<sg%>:%>%{G%}%{I%}н CLITICS-NO-COP ;              ! FIXME check
 %<opt%>%<p3%>%<sg%>:%>с%{I%}н CLITICS-NO-COP ;
-%<opt%>%<p1%>%<pl%>:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
-!%<opt%>%<p2%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;         ! FIXME check
-%<opt%>%<p3%>%<pl%>:%>с%{I%}н CLITICS-NO-COP ;
+%<opt%>%<p1%>◊|pl|:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
+!%<opt%>%<p2%>◊|pl|:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;         ! FIXME check
+%<opt%>%<p3%>◊|pl|:%>с%{I%}н CLITICS-NO-COP ;
 
 !%<opt%>%<p2%>%<frm%>%<sg%>:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;  ! FIXME check
-!%<opt%>%<p2%>%<frm%>%<pl%>:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;  ! FIXME check
+!%<opt%>%<p2%>%<frm%>◊|pl|:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;  ! FIXME check
 
 LEXICON V-COMMON
 
@@ -1057,24 +1085,24 @@ LEXICON V-DER
 
 LEXICON V-TV-NOPASS
 
-◊|v|%<tv%>: V-COMMON ;
-◊|v|%<tv%>: V-DER ;
+◊|v|: V-COMMON ;
+◊|v|: V-DER ;
 
 LEXICON V-TV-PASS
 
 ! e.g. көрін
-◊|v|%<tv%>%<pass%>: V-COMMON ;
+◊|v|%<pass%>: V-COMMON ;
 
 LEXICON V-TV
 
-◊|v|%<tv%>: V-COMMON ;
-◊|v|%<tv%>: V-DER ;
-◊|v|%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
+◊|v|: V-COMMON ;
+◊|v|: V-DER ;
+◊|v|%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-IV
 
-◊|v|%<iv%>: V-COMMON ;
-◊|v|%<iv%>: V-DER ;
+◊|v|: V-COMMON ;
+◊|v|: V-DER ;
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
@@ -1114,15 +1142,15 @@ LEXICON Copula
 LEXICON PRON-P12SG-CASES
 
 %<nom%>:ен CLITICS-NO-COP ;
-%<gen%>:енің CLITICS-NO-COP ;
-%<dat%>:аған CLITICS-NO-COP ;
-%<acc%>:ені CLITICS-NO-COP ;
-%<abl%>:енен CLITICS-NO-COP ;
-%<loc%>:енде CLITICS-NO-COP ;
-%<ins%>:енімен CLITICS-NO-COP ;
-%<ins%>:еніменен CLITICS-NO-COP ; ! Dir/LR
-%<gen%>%<subst%>:енікі%{n%} CASES ;
-%<loc%>:ендегі ATTR-SUBST ;
+◊|gen|:енің CLITICS-NO-COP ;
+◊|dat|:аған CLITICS-NO-COP ;
+◊|acc|:ені CLITICS-NO-COP ;
+◊|abl|:енен CLITICS-NO-COP ;
+◊|loc|:енде CLITICS-NO-COP ;
+◊|ins|:енімен CLITICS-NO-COP ;
+◊|ins|:еніменен CLITICS-NO-COP ; ! Dir/LR
+◊|gen|%<subst%>:енікі%{n%} CASES ;
+◊|loc|:ендегі ATTR-SUBST ;
 %<sim%>:ендей CLITICS-NO-COP ;
 %<advl%>:еніңше CLITICS-NO-COP ;
 
@@ -1130,15 +1158,15 @@ LEXICON PRON-P3SG-CASES
 
 %<nom%>:л CLITICS-NO-COP ;
 %<nom%>: CLITICS-NO-COP ; ! Dir/LR
-%<gen%>:ның CLITICS-NO-COP ;
-%<dat%>:ған CLITICS-NO-COP ;
-%<acc%>:ны CLITICS-NO-COP ;
-%<abl%>:дан CLITICS-NO-COP ;
-%<loc%>:нда CLITICS-NO-COP ;
-%<ins%>:нымен CLITICS-NO-COP ;
-%<ins%>:ныменен CLITICS-NO-COP ; ! Dir/LR
-%<gen%>%<subst%>:нікі%{n%} CASES ;
-%<loc%>:ндағы ATTR-SUBST ;
+◊|gen|:ның CLITICS-NO-COP ;
+◊|dat|:ған CLITICS-NO-COP ;
+◊|acc|:ны CLITICS-NO-COP ;
+◊|abl|:дан CLITICS-NO-COP ;
+◊|loc|:нда CLITICS-NO-COP ;
+◊|ins|:нымен CLITICS-NO-COP ;
+◊|ins|:ныменен CLITICS-NO-COP ; ! Dir/LR
+◊|gen|%<subst%>:нікі%{n%} CASES ;
+◊|loc|:ндағы ATTR-SUBST ;
 %<sim%>:ндай CLITICS-NO-COP ;
 %<advl%>:ныңша CLITICS-NO-COP ;
 
@@ -1149,29 +1177,29 @@ CASES-ETC ;
 
 LEXICON PRON-PERS
 
-мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-P12SG-CASES ;
+мен◊|prn|%<pers%>%<p1%>%<sg%>:м PRON-P12SG-CASES ;
 
-сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-P12SG-CASES ;
+сен◊|prn|%<pers%>%<p2%>%<sg%>:с PRON-P12SG-CASES ;
 
-ол%<prn%>%<pers%>%<p3%>%<sg%>:о PRON-P3SG-CASES ;
+ол◊|prn|%<pers%>%<p3%>%<sg%>:о PRON-P3SG-CASES ;
 ! the following severely overgenerates.  Please don't uncomment it. -JNW 2018-06-28
-!ол%<prn%>%<pers%>%<p3%>%<sg%>:а PRON-P3SG-CASES ;
-ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>%+үшін:аның% үшін POST ; ! Dir/LR
+!ол◊|prn|%<pers%>%<p3%>%<sg%>:а PRON-P3SG-CASES ;
+ол◊|prn|%<pers%>%<p3%>%<sg%>%<nom%>%+үшін:аның% үшін POST ; ! Dir/LR
 
-біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
-біз%<prn%>%<pers%>%<p1%>%<pl%>:біз%>дер PRON-PERS-INFL ; ! Dir/LR
-біз%<prn%>%<pers%>%<p1%>%<pl%>%<advl%>:біздіңше CLITICS-NO-COP ;
+біз◊|prn|%<pers%>%<p1%>◊|pl|:біз PRON-PERS-INFL ;
+біз◊|prn|%<pers%>%<p1%>◊|pl|:біз%>дер PRON-PERS-INFL ; ! Dir/LR
+біз◊|prn|%<pers%>%<p1%>◊|pl|%<advl%>:біздіңше CLITICS-NO-COP ;
 
-сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
-сендер%<prn%>%<pers%>%<p2%>%<pl%>%<advl%>:сендерше CLITICS-NO-COP ;
+сендер◊|prn|%<pers%>%<p2%>◊|pl|:сендер PRON-PERS-INFL ;
+сендер◊|prn|%<pers%>%<p2%>◊|pl|%<advl%>:сендерше CLITICS-NO-COP ;
 
-олар%<prn%>%<pers%>%<p3%>%<pl%>:олар PRON-PERS-INFL ;
-олар%<prn%>%<pers%>%<p3%>%<pl%>%<advl%>:оларша CLITICS-NO-COP ;
+олар◊|prn|%<pers%>%<p3%>◊|pl|:олар PRON-PERS-INFL ;
+олар◊|prn|%<pers%>%<p3%>◊|pl|%<advl%>:оларша CLITICS-NO-COP ;
 
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<advl%>:сіздіңше CLITICS-NO-COP ;
-сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
-сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<advl%>:сіздерше CLITICS-NO-COP ;
+сіз◊|prn|%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
+сіз◊|prn|%<pers%>%<p2%>%<sg%>%<frm%>%<advl%>:сіздіңше CLITICS-NO-COP ;
+сіздер◊|prn|%<pers%>%<p2%>◊|pl|%<frm%>:сіздер PRON-PERS-INFL ;
+сіздер◊|prn|%<pers%>%<p2%>◊|pl|%<frm%>%<advl%>:сіздерше CLITICS-NO-COP ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
@@ -1184,24 +1212,24 @@ LEXICON PRON-PERS
 
 LEXICON PRON-DEM-INFL
 
-%<gen%>:ның CLITICS-NO-COP ;
-%<dat%>:ған CLITICS-NO-COP ;
-%<acc%>:ны CLITICS-NO-COP ;
-%<abl%>:дан CLITICS-INCL-COP ;
-%<abl%>:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
-%<loc%>:нда CLITICS-INCL-COP ;
-%<gen%>%<subst%>:нікі%{n%} CASES ;
-%<loc%>:ндагы ATTR-SUBST ;
+◊|gen|:ның CLITICS-NO-COP ;
+◊|dat|:ған CLITICS-NO-COP ;
+◊|acc|:ны CLITICS-NO-COP ;
+◊|abl|:дан CLITICS-INCL-COP ;
+◊|abl|:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
+◊|loc|:нда CLITICS-INCL-COP ;
+◊|gen|%<subst%>:нікі%{n%} CASES ;
+◊|loc|:ндагы ATTR-SUBST ;
 %<sim%>:ндай CASES ;  ! FIXME: should have <det>, etc.
 %<advl%>:лай CLITICS-INCL-COP ;
 %<qnt%>:нша CLITICS-NO-COP ;         !
 
-%<pl%>:%>%{L%}%{A%}р CASES-ETC ;
-%<pl%>%<px3sp%>:%>%{L%}%{A%}р%{I%}%{n%} CASES ;
+◊|pl|:%>%{L%}%{A%}р CASES-ETC ;
+◊|pl|◊|px3sp|:%>%{L%}%{A%}р%{I%}%{n%} CASES ;
 
 ! Commented out till these forms get implemented in tat.lexc too
 !%<TD%>:шалық CLITICS-NO-COP ;        ! "that much"  ! FIXME: check cont lex
-!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
+!%<reas%>◊|abl|:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
 
 ! FIXME: 1) link the below to PRON-DEM-INFL if possible
 !            (later, once we are certain about things)
@@ -1211,115 +1239,115 @@ LEXICON PRON-DEM-BUL
 ! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
 ! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
 !-----
-! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар FULL-NOMINAL-INFLECTION ;) FULL-NOMINAL-INFLECTION might lead to
+! <s>FIXME</s> (бұл◊|prn|%<dem%>◊|pl|:бұлар FULL-NOMINAL-INFLECTION ;) FULL-NOMINAL-INFLECTION might lead to
 ! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
-! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:монысы%{n%} CASES ;
+! on the other hand, with something like бу◊|prn|%<dem%>◊|px3sp|:монысы%{n%} CASES ;
 ! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
-бұл%<prn%>%<dem%>%<nom%>:бұл CLITICS-INCL-COP ;
-бұл%<prn%>%<dem%>%<nom%>:бұ CLITICS-INCL-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<gen%>:бұның CLITICS-NO-COP ;
-бұл%<prn%>%<dem%>%<gen%>:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<dat%>:бұған CLITICS-NO-COP ;
-бұл%<prn%>%<dem%>%<acc%>:бұны CLITICS-NO-COP ;
-бұл%<prn%>%<dem%>%<acc%>:мұны CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<abl%>:бұдан CLITICS-INCL-COP ;
-бұл%<prn%>%<dem%>%<abl%>:мұнан CLITICS-INCL-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<loc%>:бұнда CLITICS-INCL-COP ;
-бұл%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCL-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<ins%>:бұнымен CLITICS-NO-COP ;
-бұл%<prn%>%<dem%>%<ins%>:бұныменен CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<ins%>:мұнымен CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<ins%>:мұныменен CLITICS-NO-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<gen%>%<subst%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
-бұл%<prn%>%<dem%>%<loc%>:бұндағы ATTR-SUBST ;
-бұл%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>:мұндай CASES ;
-бұл%<prn%>%<dem%>%<sim%>:бұндай CASES ; ! Dir/LR
-бұл%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
-бұл%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASES ;
-бұл%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASES ;
-бұл%<prn%>%<dem%>%<advl%>:былай CLITICS-INCL-COP ;
-бұл%<prn%>%<dem%>%<advl%>:бұлай CLITICS-INCL-COP ; ! Dir/LR
-бұл%<prn%>%<dem%>%<qnt%>:мұнша CLITICS-NO-COP ;
-бұл%<prn%>%<dem%>%<px3sp%>:бұнысы%{n%} CASES ;
+бұл◊|prn|%<dem%>%<nom%>:бұл CLITICS-INCL-COP ;
+бұл◊|prn|%<dem%>%<nom%>:бұ CLITICS-INCL-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|gen|:бұның CLITICS-NO-COP ;
+бұл◊|prn|%<dem%>◊|gen|:мұның CLITICS-NO-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|dat|:бұған CLITICS-NO-COP ;
+бұл◊|prn|%<dem%>◊|acc|:бұны CLITICS-NO-COP ;
+бұл◊|prn|%<dem%>◊|acc|:мұны CLITICS-NO-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|abl|:бұдан CLITICS-INCL-COP ;
+бұл◊|prn|%<dem%>◊|abl|:мұнан CLITICS-INCL-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|loc|:бұнда CLITICS-INCL-COP ;
+бұл◊|prn|%<dem%>◊|loc|:мұнда CLITICS-INCL-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|ins|:бұнымен CLITICS-NO-COP ;
+бұл◊|prn|%<dem%>◊|ins|:бұныменен CLITICS-NO-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|ins|:мұнымен CLITICS-NO-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|ins|:мұныменен CLITICS-NO-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>◊|gen|%<subst%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
+бұл◊|prn|%<dem%>◊|loc|:бұндағы ATTR-SUBST ;
+бұл◊|prn|%<dem%>◊|loc|:мұндағы ATTR-SUBST ; ! Dir/LR
+бұл◊|prn|%<dem%>%<sim%>:мұндай CASES ;
+бұл◊|prn|%<dem%>%<sim%>:бұндай CASES ; ! Dir/LR
+бұл◊|prn|%<dem%>%<sim%>◊|px3sp|:мұндай%{I%}%{n%} CASES ;
+бұл◊|prn|%<dem%>%<sim%>◊|pl|:мұндайлар CASES ;
+бұл◊|prn|%<dem%>%<sim%>◊|pl|◊|px3sp|:мұндайлары%{n%} CASES ;
+бұл◊|prn|%<dem%>%<advl%>:былай CLITICS-INCL-COP ;
+бұл◊|prn|%<dem%>%<advl%>:бұлай CLITICS-INCL-COP ; ! Dir/LR
+бұл◊|prn|%<dem%>%<qnt%>:мұнша CLITICS-NO-COP ;
+бұл◊|prn|%<dem%>◊|px3sp|:бұнысы%{n%} CASES ;
 
-бұл%<prn%>%<dem%>%<pl%>:бұлар CASES-ETC ;
-бұл%<prn%>%<dem%>%<pl%>%<px3sp%>:бұлары%{n%} CASES ;
+бұл◊|prn|%<dem%>◊|pl|:бұлар CASES-ETC ;
+бұл◊|prn|%<dem%>◊|pl|◊|px3sp|:бұлары%{n%} CASES ;
 
 LEXICON PRON-DEM-MINA
 
-мына%<prn%>%<dem%>%<nom%>:мына CLITICS-INCL-COP ;
-мына%<prn%>%<dem%>%<gen%>:мынаның CLITICS-NO-COP ;
-мына%<prn%>%<dem%>%<dat%>:мынаған CLITICS-NO-COP ;
-мына%<prn%>%<dem%>%<acc%>:мынаны CLITICS-NO-COP ;
-мына%<prn%>%<dem%>%<abl%>:мынадан CLITICS-INCL-COP ;
-мына%<prn%>%<dem%>%<loc%>:мынада CLITICS-INCL-COP ;
-мына%<prn%>%<dem%>%<ins%>:мынамен CLITICS-NO-COP ;
-мына%<prn%>%<dem%>%<ins%>:мынаменен CLITICS-NO-COP ; ! Dir/LR
-!мына%<prn%>%<dem%>%<px%>:мынанікі%{n%} CASES ;
-!мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR-SUBST ;
-мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
-мына%<prn%>%<dem%>%<advl%>:мыналай CLITICS-INCL-COP ;
-мына%<prn%>%<dem%>%<px3sp%>:мына%<prn%>%<dem%>%{S%}%{I%}%{n%} CASES ;
+мына◊|prn|%<dem%>%<nom%>:мына CLITICS-INCL-COP ;
+мына◊|prn|%<dem%>◊|gen|:мынаның CLITICS-NO-COP ;
+мына◊|prn|%<dem%>◊|dat|:мынаған CLITICS-NO-COP ;
+мына◊|prn|%<dem%>◊|acc|:мынаны CLITICS-NO-COP ;
+мына◊|prn|%<dem%>◊|abl|:мынадан CLITICS-INCL-COP ;
+мына◊|prn|%<dem%>◊|loc|:мынада CLITICS-INCL-COP ;
+мына◊|prn|%<dem%>◊|ins|:мынамен CLITICS-NO-COP ;
+мына◊|prn|%<dem%>◊|ins|:мынаменен CLITICS-NO-COP ; ! Dir/LR
+!мына◊|prn|%<dem%>◊|px|:мынанікі%{n%} CASES ;
+!мына◊|prn|%<dem%>◊|loc|:мынадағы ATTR-SUBST ;
+мына◊|prn|%<dem%>%<sim%>:мынадай CASES ;
+мына◊|prn|%<dem%>%<advl%>:мыналай CLITICS-INCL-COP ;
+мына◊|prn|%<dem%>◊|px3sp|:мына◊|prn|%<dem%>%{S%}%{I%}%{n%} CASES ;
 
-мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
-мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
+мына◊|prn|%<dem%>◊|pl|:мыналар CASES-ETC ;
+мына◊|prn|%<dem%>◊|pl|◊|px3sp|:мыналары%{n%} CASES ;
 
 LEXICON PRON-DEM-MINAU
 
-мынау%<prn%>%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
+мынау◊|prn|%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
 
 LEXICON PRON-DEM-ANA
 
 %<nom%>: CLITICS-INCL-COP ;
-%<gen%>:ның CLITICS-NO-COP ;
-%<dat%>:ған CLITICS-NO-COP ;
-%<acc%>:ны CLITICS-NO-COP ;
-%<abl%>:дан CLITICS-INCL-COP ;
-%<loc%>:да CLITICS-INCL-COP ;
-%<ins%>:мен CLITICS-NO-COP ;
-%<ins%>:менен CLITICS-NO-COP ; ! Dir/LR
-%<gen%>%<subst%>:нікі%{n%} CASES ;
-%<loc%>:дағы ATTR-SUBST ;
+◊|gen|:ның CLITICS-NO-COP ;
+◊|dat|:ған CLITICS-NO-COP ;
+◊|acc|:ны CLITICS-NO-COP ;
+◊|abl|:дан CLITICS-INCL-COP ;
+◊|loc|:да CLITICS-INCL-COP ;
+◊|ins|:мен CLITICS-NO-COP ;
+◊|ins|:менен CLITICS-NO-COP ; ! Dir/LR
+◊|gen|%<subst%>:нікі%{n%} CASES ;
+◊|loc|:дағы ATTR-SUBST ;
 %<sim%>:дай CASES ;
-!%<adv%>:лай CLITICS-INCL-COP ;
-!%<px3sp%>:сы%{n%} CASES ;
+!◊|adv|:лай CLITICS-INCL-COP ;
+!◊|px3sp|:сы%{n%} CASES ;
 
-%<pl%>:лар CASES-ETC ;
-%<pl%>%<px3sp%>:лар%>%{S%}%{I%}%{n%} CASES ;
+◊|pl|:лар CASES-ETC ;
+◊|pl|◊|px3sp|:лар%>%{S%}%{I%}%{n%} CASES ;
 
 LEXICON DemonstrativePronouns
 
 PRON-DEM-BUL ;
 PRON-DEM-MINA ;
 PRON-DEM-MINAU ;
-ана%<prn%>%<dem%>:ана PRON-DEM-ANA ;
+ана◊|prn|%<dem%>:ана PRON-DEM-ANA ;
 
-сол%<prn%>%<dem%>%<nom%>:сол CLITICS-INCL-COP ;
-сол%<prn%>%<dem%>:со PRON-DEM-INFL ;
-сол%<prn%>%<dem%>%<ins%>:сонымен CLITICS-NO-COP ;
-сол%<prn%>%<dem%>%<ins%>:соныменен CLITICS-NO-COP ; ! Dir/LR
-сол%<prn%>%<dem%>%<px3sp%>:сонысы%{n%} CASES ;
+сол◊|prn|%<dem%>%<nom%>:сол CLITICS-INCL-COP ;
+сол◊|prn|%<dem%>:со PRON-DEM-INFL ;
+сол◊|prn|%<dem%>◊|ins|:сонымен CLITICS-NO-COP ;
+сол◊|prn|%<dem%>◊|ins|:соныменен CLITICS-NO-COP ; ! Dir/LR
+сол◊|prn|%<dem%>◊|px3sp|:сонысы%{n%} CASES ;
 
-ол%<prn%>%<dem%>%<nom%>:ол CLITICS-INCL-COP ;
-ол%<prn%>%<dem%>:о PRON-DEM-INFL ;
-ол%<prn%>%<dem%>%<ins%>:онымен CLITICS-NO-COP ;
-ол%<prn%>%<dem%>%<ins%>:оныменен CLITICS-NO-COP ; ! Dir/LR
-ол%<prn%>%<dem%>%<px3sp%>:онысы%{n%} CASES ;
+ол◊|prn|%<dem%>%<nom%>:ол CLITICS-INCL-COP ;
+ол◊|prn|%<dem%>:о PRON-DEM-INFL ;
+ол◊|prn|%<dem%>◊|ins|:онымен CLITICS-NO-COP ;
+ол◊|prn|%<dem%>◊|ins|:оныменен CLITICS-NO-COP ; ! Dir/LR
+ол◊|prn|%<dem%>◊|px3sp|:онысы%{n%} CASES ;
 
-осы%<prn%>%<dem%>%<nom%>:осы CLITICS-NO-COP ;
-осы%<prn%>%<dem%>:осы PRON-DEM-INFL ;
-осы%<prn%>%<dem%>%<ins%>:осымен CLITICS-NO-COP ;
-осы%<prn%>%<dem%>%<ins%>:осыменен CLITICS-NO-COP ; ! Dir/LR
-осы%<prn%>%<dem%>%<px3sp%>:осысы%{n%} CASES ;
+осы◊|prn|%<dem%>%<nom%>:осы CLITICS-NO-COP ;
+осы◊|prn|%<dem%>:осы PRON-DEM-INFL ;
+осы◊|prn|%<dem%>◊|ins|:осымен CLITICS-NO-COP ;
+осы◊|prn|%<dem%>◊|ins|:осыменен CLITICS-NO-COP ; ! Dir/LR
+осы◊|prn|%<dem%>◊|px3sp|:осысы%{n%} CASES ;
 
 ! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
 ! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
 ! productive derivation.
 
-!ол%<prn%>%<dem%>%<reas%>%<abl%>:ондықтан # ; ! "because of that"
-!сол%<prn%>%<dem%>%<reas%>%<abl%>:сондықтан # ; ! "because of that"
+!ол◊|prn|%<dem%>%<reas%>◊|abl|:ондықтан # ; ! "because of that"
+!сол◊|prn|%<dem%>%<reas%>◊|abl|:сондықтан # ; ! "because of that"
 
 
 !!!!!!!   I N T E R R O G A T I V E
@@ -1348,24 +1376,24 @@ PRON-DEM-MINAU ;
 
 LEXICON PRON-ITG-INFL
 
-%<prn%>%<itg%>: FULL-NOMINAL-INFLECTION ;
+◊|prn|%<itg%>: FULL-NOMINAL-INFLECTION ;
 
 
 LEXICON PRON-ITG-QAYSI-CASES
 
 %<nom%>: CLITICS-NO-COP ;
-%<gen%>:ның CLITICS-NO-COP ;
-%<dat%>:ған CLITICS-NO-COP ;
-%<acc%>:ны CLITICS-NO-COP ;
-%<abl%>:дан CLITICS-NO-COP ;
-%<loc%>:да CLITICS-NO-COP ;
-%<ins%>:мен CLITICS-NO-COP ;
-%<ins%>:менен CLITICS-NO-COP ; ! Dir/LR
+◊|gen|:ның CLITICS-NO-COP ;
+◊|dat|:ған CLITICS-NO-COP ;
+◊|acc|:ны CLITICS-NO-COP ;
+◊|abl|:дан CLITICS-NO-COP ;
+◊|loc|:да CLITICS-NO-COP ;
+◊|ins|:мен CLITICS-NO-COP ;
+◊|ins|:менен CLITICS-NO-COP ; ! Dir/LR
 
 LEXICON PRON-ITG-QAYSI
 
-%<prn%>%<itg%>: PRON-ITG-QAYSI-CASES ;
-%<prn%>%<itg%>: GER-POSSESSIVES ;
+◊|prn|%<itg%>: PRON-ITG-QAYSI-CASES ;
+◊|prn|%<itg%>: GER-POSSESSIVES ;
 
 LEXICON PRON-ITG-QANSHA
 
@@ -1373,20 +1401,20 @@ LEXICON PRON-ITG-QANSHA
 ! Currently қанша<prn><itg> is translated with ничә<num><itg><subst> and
 ! қанша<adv><itg> is going to be translated with "күпме" or "никадәр"
 
-%<prn%>%<itg%>: CASES ;
+◊|prn|%<itg%>: CASES ;
 
 LEXICON PRON-ITG-QANDAY
 
 ! Might be not complete (қандайларығыз? and possessive stuff in general)
 
-%<prn%>%<itg%>%<sim%>: CLITICS-NO-COP ;
+◊|prn|%<itg%>%<sim%>: CLITICS-NO-COP ;
 ! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
 ! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
 ! it shouldn't receive <nom> tag I think /IS/
-%<prn%>%<itg%>%<sim%>: CASES ;
-%<prn%>%<itg%>%<sim%>%<px3sp%>:ы%{n%} CASES ;
-%<prn%>%<itg%>%<sim%>%<pl%>:лар CASES ;
-%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:лары%{n%} CASES ;
+◊|prn|%<itg%>%<sim%>: CASES ;
+◊|prn|%<itg%>%<sim%>◊|px3sp|:ы%{n%} CASES ;
+◊|prn|%<itg%>%<sim%>◊|pl|:лар CASES ;
+◊|prn|%<itg%>%<sim%>◊|pl|◊|px3sp|:лары%{n%} CASES ;
 
 LEXICON InterrogativePronouns
 
@@ -1400,28 +1428,28 @@ LEXICON InterrogativePronouns
 
 LEXICON PRON-QNT-POSS
 
-%<prn%>%<qnt%>: GER-POSSESSIVES ;
+◊|prn|%<qnt%>: GER-POSSESSIVES ;
 
 LEXICON PRON-QNT
 
-%<prn%>%<qnt%>: GER-INFL ;
+◊|prn|%<qnt%>: GER-INFL ;
 
 LEXICON PRON-IND
 
-%<prn%>%<ind%>: CASES ;
+◊|prn|%<ind%>: CASES ;
 
 LEXICON PRON-IND-PL
 
-%<prn%>%<ind%>%<pl%>: CASES ;
+◊|prn|%<ind%>◊|pl|: CASES ;
 
 
 LEXICON PRNNEG
 
-%<prn%>%<neg%>: CASES ;
+◊|prn|%<neg%>: CASES ;
 
 LEXICON PRON-RECIP
 
-%<prn%>%<recip%>: GER-POSSESSIVES ;
+◊|prn|%<recip%>: GER-POSSESSIVES ;
 
 LEXICON PRON-REF-ADV
 
@@ -1445,15 +1473,14 @@ LEXICON PRON-REF
 ! FIXME DISCUSS Write full forms for the lower side and put only PRON-DEF in the
 ! Root Lexicon
 
-%<prn%>%<ref%>%<px1sg%>:%>%{I%}м PRON-REF-ADV ;
-%<prn%>%<ref%>%<px2sg%>:%>%{I%}ң PRON-REF-ADV ;
-%<prn%>%<ref%>%<px3sp%>:%>%{S%}%{I%}%{n%} PRON-REF-ADV ; ! FIXME <px3sg>?
-%<prn%>%<ref%>%<px1pl%>:%>%{I%}м%{I%}з PRON-REF-ADV ;
-%<prn%>%<ref%>%<px2pl%>:%>д%{A%}р%>%{I%}ң PRON-REF-ADV ;
-%<prn%>%<ref%>%<px3pl%>:%>д%{A%}р%>%{S%}%{I%}%{n%} PRON-REF-ADV ;
+◊|prn|%<ref%>◊|px1sg|:%>%{I%}м PRON-REF-ADV ;
+◊|prn|%<ref%>◊|px2sg|:%>%{I%}ң PRON-REF-ADV ;
+◊|prn|%<ref%>◊|px3sp|:%>%{S%}%{I%}%{n%} PRON-REF-ADV ; ! FIXME <px3sg>?
+◊|prn|%<ref%>◊|px1pl|:%>%{I%}м%{I%}з PRON-REF-ADV ;
+◊|prn|%<ref%>%<px2pl%>:%>д%{A%}р%>%{I%}ң PRON-REF-ADV ;
+◊|prn|%<ref%>%<px3pl%>:%>д%{A%}р%>%{S%}%{I%}%{n%} PRON-REF-ADV ;
 
-%<prn%>%<ref%>%<px2sg%>%<frm%>:%>%{I%}ң%{I%}з PRON-REF-ADV ;
-%<prn%>%<ref%>%<px2pl%>%<frm%>:%>д%{A%}р%>%{I%}ң%{I%}з PRON-REF-ADV ;
+◊|prn|%<ref%>◊|px2sg_frm|:%>%{I%}ң%{I%}з PRON-REF-ADV ;
 
 !!!!!!!!!!!!!!!!!!!!!!     DETERMINERS
 
@@ -1514,13 +1541,13 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 ◊|n|: N-COMPOUND-PX-COMMON ;
-◊|n|%<pl%>:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
+◊|n|◊|pl|:%>%{L%}%{A%}р%>%{S%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
                                                       !  FIXME CHECK: Is {S} needed here ?
 
 LEXICON N-COMPOUND-PX-PL
 ! for things like Олимпиада ойындары
 
-◊|n|%<pl%>: N-COMPOUND-PX-COMMON ; ! FIXME: do we want these to get <pl>??
+◊|n|◊|pl|: N-COMPOUND-PX-COMMON ; ! FIXME: do we want these to get <pl>??
 
 
 LEXICON N3
@@ -1565,64 +1592,60 @@ FULL-NOMINAL-INFLECTION ;
 
 LEXICON NP-TOP-RUS
 
-◊|np|%<top%>:%{☭%} NP-COMMON ;
-◊|np|%<top%>%<attr%>: # ;
+◊|np|:%{☭%} NP-COMMON ;
 
 LEXICON NP-TOP
 
-◊|np|%<top%>: NP-COMMON ;
-◊|np|%<top%>%<attr%>: # ;
+◊|np|: NP-COMMON ;
 
-!%<adj%>%<top%>:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
+!◊|adj|:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
 
 LEXICON NP-TOP-ASSR
 
-◊|np|%<top%>%<attr%>: # ;
+◊|np|: # ;
 
-◊|np|%<top%>: NP-COMMON ; ! Dir/LR
-◊|np|%<top%>:%- NP-COMMON ;
+◊|np|: NP-COMMON ; ! Dir/LR
+◊|np|:%- NP-COMMON ;
 
 LEXICON NP-TOP-COMPOUND
 
-◊|np|%<top%>: N-COMPOUND-PX-COMMON ;
-◊|np|%<top%>%<attr%>:%>%{s%}%{I%}%{n%} # ;
+◊|np|: N-COMPOUND-PX-COMMON ;
 
 LEXICON NP-TOP-ABBR
 
-◊|np|%<top%>%<attr%>: # ;
-◊|np|%<top%>%<nom%>: CLITICS-INCL-COP ;
-◊|np|%<top%>:%- NP-COMMON ;
+◊|np|: CLITICS-INCL-COP ;
+◊|np|:%- NP-COMMON ;
 
-◊|np|%<top%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+◊|np|: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 
 LEXICON NP-ANT-M
 
-◊|np|%<ant%>%<m%>: NP-COMMON ;
-◊|np|%<ant%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+◊|np|: NP-COMMON ;
+◊|np|◊|pl|:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-ANT-F
 
-◊|np|%<ant%>%<f%>: NP-COMMON ;
-◊|np|%<ant%>%<f%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+◊|np|: NP-COMMON ;
+◊|np|◊|pl|:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-M
 
-◊|np|%<cog%>%<m%>: NP-COMMON ;
-◊|np|%<cog%>%<m%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+◊|np|: NP-COMMON ;
+◊|np|:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-MF
 
 ! Dual-gender cognoms.
 ! Don't derive anything /I.S./
 
-◊|np|%<cog%>%<mf%>: NP-COMMON ;
-◊|np|%<cog%>%<mf%>%<pl%>:%>%{L%}%{A%}р NP-COMMON ;
+◊|np|: NP-COMMON ;
+◊|np|:%>%{L%}%{A%}р NP-COMMON ;
 
 LEXICON NP-COG-OBIN-FEM
 
-◊|np|%<cog%>%<f%>:а NP-COMMON ;
-◊|np|%<cog%>%<f%>%<pl%>:а%>%{L%}%{A%}р NP-COMMON ;
+◊|np|:а NP-COMMON ;
+◊|np|◊|pl|:а%>%{L%}%{A%}р NP-COMMON ;
 
 
 LEXICON NP-COG-OB
@@ -1632,11 +1655,11 @@ LEXICON NP-COG-OB
 ! Also, even the ев ones are normally pronounced
 !    (and take harmony) as if they end in йыф/йып
 
-◊|np|%<cog%>%<m%>:%{☭%} NP-COMMON ;                       ! Dir/LR
-◊|np|%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;    ! Dir/LR
+◊|np|:%{☭%} NP-COMMON ;                       ! Dir/LR
+◊|np|◊|pl|:%{☭%}%>%{L%}%{A%}р NP-COMMON ;    ! Dir/LR
 
-◊|np|%<cog%>%<m%>:%{а%}%{с%} NP-COMMON ;
-◊|np|%<cog%>%<m%>%<pl%>:%{а%}%{с%}%>%{L%}%{A%}р NP-COMMON ;
+◊|np|:%{а%}%{с%} NP-COMMON ;
+◊|np|◊|pl|:%{а%}%{с%}%>%{L%}%{A%}р NP-COMMON ;
 
 NP-COG-OBIN-FEM ;
 
@@ -1646,8 +1669,8 @@ LEXICON NP-COG-IN
 ! For cognoms ending with -ов, -ев, -ин
 ! They derive feminine equivalets taking -а /I.S./
 
-◊|np|%<cog%>%<m%>:%{☭%} NP-COMMON ;
-◊|np|%<cog%>%<m%>%<pl%>:%{☭%}%>%{L%}%{A%}р NP-COMMON ;
+◊|np|:%{☭%} NP-COMMON ;
+◊|np|◊|pl|:%{☭%}%>%{L%}%{A%}р NP-COMMON ;
 
 NP-COG-OBIN-FEM ;
 
@@ -1661,85 +1684,76 @@ LEXICON NP-PAT-VICH
 ! For patronyms ending with -вич
 ! Their feminine equivalets end with -вна /I.S./
 
-◊|np|%<pat%>%<m%>:вич%{☭%} NP-COMMON ;
+◊|np|:вич%{☭%} NP-COMMON ;
 
-◊|np|%<pat%>%<f%>:вна NP-COMMON ;
-
-! WAS: (JNW 2015-01-17)
-!LEXICON NP-ORG
-!
-!◊|np|%<org%>: CASES ; 
+◊|np|:вна NP-COMMON ;
 
 LEXICON NP-ORG
 
-◊|np|%<org%>%<nom%>: CLITICS-INCL-COP ;
-◊|np|%<org%>: FULL-NOMINAL-INFLECTION-NONOM ;
-◊|np|%<org%>%<attr%>: # ;
+◊|np|: CLITICS-INCL-COP ;
+◊|np|: FULL-NOMINAL-INFLECTION-NONOM ;
 
 LEXICON NP-ORG-LAT
 
-◊|np|%<org%>%<nom%>: CLITICS-INCL-COP ;
-◊|np|%<org%>: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
-◊|np|%<org%>:%- FULL-NOMINAL-INFLECTION-NONOM ;
+◊|np|: CLITICS-INCL-COP ;
+◊|np|: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
+◊|np|:%- FULL-NOMINAL-INFLECTION-NONOM ;
 ! This one doesn't work right because of twol:
 !◊|np|%<org%>:%' FULL-NOMINAL-INFLECTION-NONOM-NONOM ; ! Dir/LR
-◊|np|%<org%>%<attr%>: # ;
 
 LEXICON NP-ORG-COMPOUND 
 
-◊|np|%<org%>: N-COMPOUND-PX-COMMON ;   ! COMMON because no plural
+◊|np|: N-COMPOUND-PX-COMMON ;   ! COMMON because no plural
 
 LEXICON NP-ORG-ABBR             ! for abbreviations like FIFA
-◊|np|%<org%>%<attr%>: # ;
-◊|np|%<org%>%<nom%>: CLITICS-INCL-COP ;
-◊|np|%<org%>:%- NP-COMMON ;
-◊|np|%<org%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+◊|np|: CLITICS-INCL-COP ;
+◊|np|:%- NP-COMMON ;
+◊|np|: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 LEXICON NP-AL
 
-◊|np|%<al%>: CASES ;
+◊|np|: CASES ;
 
 LEXICON NP-AL-ABBR              ! for abbreviations like ӘЧ - Әлем Чемпионаты
-◊|np|%<al%>%<attr%>: # ;
-◊|np|%<al%>%<nom%>: CLITICS-INCL-COP ;
-◊|np|%<al%>:%- NP-COMMON ;
-◊|np|%<al%>: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+◊|np|: CLITICS-INCL-COP ;
+◊|np|:%- NP-COMMON ;
+◊|np|: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
 
 
 LEXICON NUM-COMMON
 
-%<num%>: # ;
-%<num%>%<subst%>: FULL-NOMINAL-INFLECTION ;
+◊|num|: # ;
+◊|num|%<subst%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM
 
 NUM-COMMON ;
-%<num%>%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
-%<num%>%<ord%>%<subst%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+◊|num|%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
+◊|num|%<ord%>%<subst%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 ! <ord> is "det" is base form, <ord><subst> is "prn" reading
 
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
-%<num%>%<ord%>:%>с%{I%}нш%{I%} # ;
-%<num%>%<ord%>%<subst%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+◊|num|%<ord%>:%>с%{I%}нш%{I%} # ;
+◊|num|%<ord%>%<subst%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-ITG ! This is a temporal solution
                 ! (could be integrated with the above)
 
-%<num%>%<itg%>: # ;
-%<num%>%<itg%>%<subst%>: FULL-NOMINAL-INFLECTION ;
-%<num%>%<itg%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+◊|num|%<itg%>: # ;
+◊|num|%<itg%>%<subst%>: FULL-NOMINAL-INFLECTION ;
+◊|num|%<itg%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-COLL
 
-%<num%>%<coll%>%<subst%>: FULL-NOMINAL-INFLECTION ;
-%<num%>%<coll%>%<advl%>: # ;
+◊|num|%<coll%>%<subst%>: FULL-NOMINAL-INFLECTION ;
+◊|num|%<coll%>%<advl%>: # ;
 
 LEXICON NUM-ROMAN
 
-%<num%>%<ord%>: # ;
+◊|num|%<ord%>: # ;
 
 LEXICON LTR
 
@@ -1747,7 +1761,7 @@ LEXICON LTR
 
 !LEXICON DIGITLEX
 !
-!%<num%>: # ;
+!◊|num|: # ;
 
 LEXICON POST
 
@@ -1766,22 +1780,22 @@ LEXICON KI
 
 LEXICON ADV
 
-%<adv%>: CLITICS-NO-COP ;
+◊|adv|: CLITICS-NO-COP ;
 
 LEXICON ADV-WITH-KI
 
 ADV ;
-%<adv%>: KI ;
-%<adv%>%<abl%>:%>%{D%}%{A%}н # ; ! FIXME: overgenerates a bit
+◊|adv|: KI ;
+◊|adv|◊|abl|:%>%{D%}%{A%}н # ; ! FIXME: overgenerates a bit
 
 LEXICON ADV-WITH-KI-I     ! Used for бері<adv>/бергі<adv><attr> 'right now' and similar
 
 :%{I%} ADV ;
-%<adv%>: KI ;
+◊|adv|: KI ;
 
 LEXICON ADV-ITG
 
-%<adv%>%<itg%>: CLITICS-INCL-COP ;
+◊|adv|%<itg%>: CLITICS-INCL-COP ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -39761,7 +39775,7 @@ LASTDIGIT-REST ; ! Use/Circ
 
 LEXICON NP-UNK 
 
-◊|np|%<unk%>: # ;
+◊|np|◊|unk|: # ;
 
 LEXICON GUESS-QUEUE
 
@@ -39795,7 +39809,7 @@ X:X GUESS-QUEUE ;
 Y:Y GUESS-QUEUE ; 
 Z:Z GUESS-QUEUE ; 
 
-қолайлы%<adj%>%+мекен:қолайлы% мекен N1 ;
+қолайлы◊|adj|%+мекен:қолайлы% мекен N1 ;
 
 ! word meanings for lexical selection experiments
 ! "tags" might be messed up
@@ -40184,7 +40198,7 @@ LEXICON Common ! <- future
 
 !!! twol and other `peculiar' cases
 
-полюс◊|n|%<loc%>:полюсте # ;
-полюс◊|n|%<loc%>%<attr%>:полюстегі # ;
-ол%<prn%>%<dem%>%<px3sp%>%<dat%>:онысына # ;
-уақыт◊|n|%<px3sp%>%<loc%>:уақытысында # ;
+полюс◊|n|◊|loc|:полюсте # ;
+полюс◊|n|◊|loc|%<attr%>:полюстегі # ;
+ол◊|prn|%<dem%>◊|px3sp|◊|dat|:онысына # ;
+уақыт◊|n|◊|px3sp|◊|loc|:уақытысында # ;
