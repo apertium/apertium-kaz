@@ -50,6 +50,15 @@
 ◊(define abl "%<C6%>")
 ◊(define ins "%<C7%>")
 
+◊(define p1_sg "%<P1%>")
+◊(define p2_sg "%<P2%>")
+◊(define p3_sg "%<P3%>")
+◊(define p1_pl "%<P4%>")
+◊(define p2_pl "%<P5%>")
+◊(define p3_pl "%<P6%>")
+◊(define p2_frm_sg "%<P7%>")
+◊(define p2_frm_pl "%<P8%>")
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -288,13 +297,13 @@
 ! Punctuation
 %<percent%>   ! Percent
 %<sent%>      ! Sentence marker
-%<guio%>      ! Hyphen
-%<cm%>        ! Comma
+◊|guio|      ! Hyphen
+◊|cm|        ! Comma
 %<apos%>      ! Apostrophe
-%<rquot%>     ! Quote marker (right hand side)
-%<lquot%>     ! Quote marker (left hand side)
-%<rpar%>      ! Parenthetical marker (right hand side)
-%<lpar%>      ! Parenthetical marker (left hand side)
+◊|rquot|     ! Quote marker (right hand side)
+◊|lquot|     ! Quote marker (left hand side)
+◊|rpar|      ! Parenthetical marker (right hand side)
+◊|lpar|      ! Parenthetical marker (left hand side)
 %<ltr%>       ! Letter
 
 ! Archiphonemes and escaped symbols
@@ -823,35 +832,35 @@ LEXICON V-PERS-S1-NO3PERSON
 ! Pointed to by: V-PERS-S1 and V-PERS-AOR
 ! Irregular p1.sg form is in V-PERS-AOR
 
-%<p1%>%<sg%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
-%<p2%>%<sg%>:%>с%{I%}ң CLITICS-NO-COP ;
-%<p1%>◊|pl|:%>%{M%}%{I%}з CLITICS-NO-COP ;
-%<p2%>◊|pl|:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
+◊|p1_sg|:%>%{M%}%{I%}н CLITICS-NO-COP ;
+◊|p2_sg|:%>с%{I%}ң CLITICS-NO-COP ;
+◊|p1_pl|:%>%{M%}%{I%}з CLITICS-NO-COP ;
+◊|p2_pl|:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
 
-%<p2%>%<frm%>%<sg%>:%>с%{I%}з CLITICS-NO-COP ;
-%<p2%>%<frm%>◊|pl|:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
+◊|p2_frm_sg|:%>с%{I%}з CLITICS-NO-COP ;
+◊|p2_frm_pl|:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-S1
 
 ! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>: CLITICS-NO-COP ;
-%<p3%>◊|pl|: CLITICS-NO-COP ;
+◊|p3_sg|: CLITICS-NO-COP ;
+◊|p3_pl|: CLITICS-NO-COP ;
 
 LEXICON V-PERS-S2
 
 ! Used for: -DI-<ifi>, -sA-<prc_cond>, -sA-<gna_cond>
 
-%<p1%>%<sg%>:%>м CLITICS-NO-COP ;
-%<p2%>%<sg%>:%>ң CLITICS-NO-COP ;
-%<p3%>%<sg%>: CLITICS-NO-COP ;
-%<p1%>◊|pl|:%>%{K%} CLITICS-NO-COP ;
-%<p2%>◊|pl|:%>ңд%{A%}р CLITICS-NO-COP ;
-%<p3%>◊|pl|: CLITICS-NO-COP ;
+◊|p1_sg|:%>м CLITICS-NO-COP ;
+◊|p2_sg|:%>ң CLITICS-NO-COP ;
+◊|p3_sg|: CLITICS-NO-COP ;
+◊|p1_pl|:%>%{K%} CLITICS-NO-COP ;
+◊|p2_pl|:%>ңд%{A%}р CLITICS-NO-COP ;
+◊|p3_pl|: CLITICS-NO-COP ;
 
-%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLITICS-NO-COP ;
-%<p2%>%<frm%>◊|pl|:%>ң%{I%}зд%{A%}р CLITICS-NO-COP ;
+◊|p2_frm_sg|:%>ң%{I%}з CLITICS-NO-COP ;
+◊|p2_frm_pl|:%>ң%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-AOR
 
@@ -860,34 +869,34 @@ LEXICON V-PERS-AOR
 
 V-PERS-S1-NO3PERSON ;
 
-%<p1%>%<sg%>:%>м CLITICS-NO-COP ;                ! Dir/LR
+◊|p1_sg|:%>м CLITICS-NO-COP ;                ! Dir/LR
 
-%<p3%>%<sg%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
-%<p3%>%<sg%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
-%<p3%>%<sg%>: CLIT-QST ;
+◊|p3_sg|:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+◊|p3_sg|:%>д%{I%} CLIT-QST ;              ! Dir/LR
+◊|p3_sg|: CLIT-QST ;
 
-%<p3%>◊|pl|:%>д%{I%} CLITICS-NO-COP-NO-QST ;
-%<p3%>◊|pl|:%>д%{I%} CLIT-QST ;              ! Dir/LR
-%<p3%>◊|pl|: CLIT-QST ;
+◊|p3_pl|:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+◊|p3_pl|:%>д%{I%} CLIT-QST ;              ! Dir/LR
+◊|p3_pl|: CLIT-QST ;
 
 LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
-%<p3%>%<sg%>:%>т%{I%} CLITICS-NO-COP ;
-%<p3%>◊|pl|:%>т%{I%} CLITICS-NO-COP ;
+◊|p3_sg|:%>т%{I%} CLITICS-NO-COP ;
+◊|p3_pl|:%>т%{I%} CLITICS-NO-COP ;
 
 LEXICON VOL-ENDINGS
 
-%<p1%>%<sg%>:%>м CLIT-GHANA-ETC ;
-%<p2%>%<sg%>:%>ң CLIT-GHANA-ETC ;
-%<p3%>%<sg%>:%>с%{I%} CLIT-GHANA-ETC ;
-%<p1%>◊|pl|:%>м%{I%}з CLIT-GHANA-ETC ;
-%<p2%>◊|pl|:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
-%<p3%>◊|pl|:%>с%{I%} CLIT-GHANA-ETC ;
-%<p3%>◊|pl|:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
+◊|p1_sg|:%>м CLIT-GHANA-ETC ;
+◊|p2_sg|:%>ң CLIT-GHANA-ETC ;
+◊|p3_sg|:%>с%{I%} CLIT-GHANA-ETC ;
+◊|p1_pl|:%>м%{I%}з CLIT-GHANA-ETC ;
+◊|p2_pl|:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
+◊|p3_pl|:%>с%{I%} CLIT-GHANA-ETC ;
+◊|p3_pl|:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
 
-%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLIT-GHANA-ETC ;
-%<p2%>%<frm%>◊|pl|:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
+◊|p2_frm_sg|:%>ң%{I%}з CLIT-GHANA-ETC ;
+◊|p2_frm_pl|:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
 
 !!!!!!!   G E R U N D S   I N F L E C T I O N
 
@@ -899,7 +908,7 @@ LEXICON VOL-ENDINGS
 LEXICON GER-CASE-NO_COPULA
 
 CASES-COMMON ;
-%<nom%>: CLITICS-NO-COP ;
+CLITICS-NO-COP ;
 ◊|abl|:%>%{D%}%{A%}н CLITICS-NO-COP ;
 ◊|loc|:%>%{D%}%{A%} CLITICS-NO-COP ;
 
@@ -39738,22 +39747,22 @@ MGM:MGM ABBR ; !"Use/MT"
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
-%-%<guio%>:%- # ;
-%х%<guio%>:%- # ;
-%—%<guio%>:%— # ;
-%–%<guio%>:%– # ;
-,%<cm%>:%, # ;
+%-◊|guio|:%- # ;
+%х◊|guio|:%- # ;
+%—◊|guio|:%— # ;
+%–◊|guio|:%– # ;
+,◊|cm|:%, # ;
 %?%<sent%>:%? # ;
 %'%<apos%>:%' # ;
 %"%<sent%>:%" # ;
-%«%<lquot%>:%« # ;
-%»%<rquot%>:%» # ;
-%”%<rquot%>:%” # ;
-%“%<lquot%>:%“ # ;
-%(%<lpar%>:%( # ;
-%]%<rpar%>:%] # ;
-%[%<lpar%>:%[ # ;
-%)%<rpar%>:%) # ;
+%«◊|lquot|:%« # ;
+%»◊|rquot|:%» # ;
+%”◊|rquot|:%” # ;
+%“◊|lquot|:%“ # ;
+%(◊|lpar|:%( # ;
+%]◊|rpar|:%] # ;
+%[◊|lpar|:%[ # ;
+%)◊|rpar|:%) # ;
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
 
