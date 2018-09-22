@@ -36,7 +36,7 @@
 ◊(tag vaux3 "R_ETPK")    ! Auxilary verb              ! Көмекші етістік
 ◊(tag adv "R_US")        ! Adverb                     ! Үстеу
 ◊(tag post "R_SH")       ! Postposition               ! Септеулік шылау
-◊(tag postadv "R_US")    ! Postadverb                 ! "Постүстеу" (*1)
+◊(tag postadv "R_ZHL")   ! Postadverb                 ! "Постүстеу" (*1)
 ◊(tag cnjcoo "R_ZHL")    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
 ◊(tag cnjsub "R_ZHL")    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулықc
 ◊(tag cnjadv "R_ZHL")    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
@@ -48,7 +48,7 @@
 ◊(tag part "%<R_SH%>")   ! Adposition / particle
 ◊(tag sym "%<R_SYM%>")   ! Symbol
 ◊(tag for "%<R_BOS%>")   ! Foreign word
-◊(tag unk "R_X")           ! For foreign tokens
+◊(tag unk "R_X")         ! For foreign tokens
 
 ! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
@@ -85,16 +85,16 @@
 ◊(tag bslh "R_BSLH")     ! Backslash
 
 ! Pronoun types
-◊(tag pers "pers")      ! Personal
-◊(tag recip "recip")    ! Reciprocal
+◊(tag pers "")      ! Personal
+◊(tag recip "")    ! Reciprocal
 
 !! Pronoun&Determiner types
-◊(tag dem "dem")       ! Demonstrative
-◊(tag ind "ind")       ! Indefinite
-◊(tag itg "itg")       ! Interrogative
-◊(tag qnt "qnt")       ! Quantifier
-◊(tag neg "neg")       ! Negative       !# ешкім
-◊(tag ref "ref")       ! Reflexive
+◊(tag dem "")       ! Demonstrative
+◊(tag ind "")       ! Indefinite
+◊(tag itg "")       ! Interrogative
+◊(tag qnt "")       ! Quantifier
+◊(tag neg "")       ! Negative       !# ешкім
+◊(tag ref "")       ! Reflexive
 
 ! Proper noun types
 ◊(tag top "top")    ! Toponym      ! Топоним
@@ -136,6 +136,7 @@
 ◊(tag acc "C4")       ! Accusative
 ◊(tag abl "C6")       ! Ablative
 ◊(tag loc "C5")       ! Locative
+◊(tag loc_attr "LATT")! Locative attributive DAGI
 ◊(tag ins "C7")       ! Instrumental
 
 !! some additional ~cases
@@ -774,6 +775,7 @@ LEXICON V-PERS-S1-NO3PERSON
 ◊|p2_sg|:%>с%{I%}ң CLITICS-NO-COP ;
 ◊|p1_pl|:%>%{M%}%{I%}з CLITICS-NO-COP ;
 ◊|p2_pl|:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
+CLITICS-NO-COP ;
 
 ◊|p2_frm_sg|:%>с%{I%}з CLITICS-NO-COP ;
 ◊|p2_frm_pl|:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
@@ -1037,6 +1039,7 @@ LEXICON V-TV
 ◊|v|: V-COMMON ;
 ◊|v|: V-DER ;
 ◊|v|◊|pass|:%>%{I%}%{l%} V-COMMON ;
+◊|v|◊|refl|:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-IV
 
@@ -1116,29 +1119,29 @@ CASES-ETC ;
 
 LEXICON PRON-PERS
 
-мен◊|prn|◊|pers|◊|p1|◊|sg|:м PRON-P12SG-CASES ;
+мен◊|prn|:м PRON-P12SG-CASES ;
 
-сен◊|prn|◊|pers|◊|p2|◊|sg|:с PRON-P12SG-CASES ;
+сен◊|prn|:с PRON-P12SG-CASES ;
 
-ол◊|prn|◊|pers|◊|p3|◊|sg|:о PRON-P3SG-CASES ;
+ол◊|prn|:о PRON-P3SG-CASES ;
 ! the following severely overgenerates.  Please don't uncomment it. -JNW 2018-06-28
 !ол◊|prn|◊|pers|◊|p3|◊|sg|:а PRON-P3SG-CASES ;
-ол◊|prn|◊|pers|◊|p3|◊|sg|◊|nom|%+үшін:аның% үшін POST ; ! Dir/LR
+ол◊|prn|%+үшін:аның% үшін POST ; ! Dir/LR
 
-біз◊|prn|◊|pers|◊|p1|◊|pl|:біз PRON-PERS-INFL ;
-біз◊|prn|◊|pers|◊|p1|◊|pl|:біз%>дер PRON-PERS-INFL ; ! Dir/LR
-біз◊|prn|◊|pers|◊|p1|◊|pl|◊|advl|:біздіңше CLITICS-NO-COP ;
+біз◊|prn|:біз PRON-PERS-INFL ;
+біз◊|prn|◊|p1|:біз%>дер PRON-PERS-INFL ; ! Dir/LR
+біз◊|prn|◊|gen|◊|equ|:біздіңше CLITICS-NO-COP ;
 
-сендер◊|prn|◊|pers|◊|p2|◊|pl|:сендер PRON-PERS-INFL ;
-сендер◊|prn|◊|pers|◊|p2|◊|pl|◊|advl|:сендерше CLITICS-NO-COP ;
+сен◊|prn|◊|pl|:сендер PRON-PERS-INFL ;
+сен◊|prn|◊|pl|◊|equ|:сендерше CLITICS-NO-COP ;
 
-олар◊|prn|◊|pers|◊|p3|◊|pl|:олар PRON-PERS-INFL ;
-олар◊|prn|◊|pers|◊|p3|◊|pl|◊|advl|:оларша CLITICS-NO-COP ;
+о◊|prn|◊|pl|:олар PRON-PERS-INFL ;
+о◊|prn|◊|pl|◊|equ|:оларша CLITICS-NO-COP ;
 
-сіз◊|prn|◊|pers|◊|p2|◊|sg|◊|frm|:сіз PRON-PERS-INFL ;
-сіз◊|prn|◊|pers|◊|p2|◊|sg|◊|frm|◊|advl|:сіздіңше CLITICS-NO-COP ;
-сіздер◊|prn|◊|pers|◊|p2|◊|pl|◊|frm|:сіздер PRON-PERS-INFL ;
-сіздер◊|prn|◊|pers|◊|p2|◊|pl|◊|frm|◊|advl|:сіздерше CLITICS-NO-COP ;
+сіз◊|prn|:сіз PRON-PERS-INFL ;
+сіз◊|prn|◊|gen|◊|equ|:сіздіңше CLITICS-NO-COP ;
+сіз◊|prn|◊|pl|:сіздер PRON-PERS-INFL ;
+сіз◊|prn|◊|pl|◊|equ|:сіздерше CLITICS-NO-COP ;
 
 !!!!!!!   D E M O N S T R A T I V E
 
@@ -1157,8 +1160,8 @@ LEXICON PRON-DEM-INFL
 ◊|abl|:дан CLITICS-INCL-COP ;
 ◊|abl|:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
 ◊|loc|:нда CLITICS-INCL-COP ;
-◊|gen|◊|subst|:нікі%{n%} CASES ;
-◊|loc|:ндагы ATTR-SUBST ;
+◊|px|:нікі%{n%} CASES ;
+◊|loc_attr|:ндагы CASES ;
 ◊|sim|:ндай CASES ;  ! FIXME: should have <det>, etc.
 ◊|advl|:лай CLITICS-INCL-COP ;
 ◊|qnt|:нша CLITICS-NO-COP ;         !
@@ -1198,9 +1201,9 @@ LEXICON PRON-DEM-BUL
 бұл◊|prn|◊|dem|◊|ins|:бұныменен CLITICS-NO-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|ins|:мұнымен CLITICS-NO-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|ins|:мұныменен CLITICS-NO-COP ; ! Dir/LR
-бұл◊|prn|◊|dem|◊|gen|◊|subst|:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
-бұл◊|prn|◊|dem|◊|loc|:бұндағы ATTR-SUBST ;
-бұл◊|prn|◊|dem|◊|loc|:мұндағы ATTR-SUBST ; ! Dir/LR
+бұл◊|prn|◊|dem|◊|px|◊|subst|:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
+бұл◊|prn|◊|dem|◊|loc_attr|:бұндағы CASES ;
+бұл◊|prn|◊|dem|◊|loc_attr|:мұндағы CASES ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|sim|:мұндай CASES ;
 бұл◊|prn|◊|dem|◊|sim|:бұндай CASES ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|sim|◊|px3sp|:мұндай%{I%}%{n%} CASES ;
@@ -1225,7 +1228,7 @@ LEXICON PRON-DEM-MINA
 мына◊|prn|◊|dem|◊|ins|:мынамен CLITICS-NO-COP ;
 мына◊|prn|◊|dem|◊|ins|:мынаменен CLITICS-NO-COP ; ! Dir/LR
 !мына◊|prn|◊|dem|◊|px|:мынанікі%{n%} CASES ;
-!мына◊|prn|◊|dem|◊|loc|:мынадағы ATTR-SUBST ;
+!мына◊|prn|◊|dem|◊|loc_attr|:мынадағы CASES ;
 мына◊|prn|◊|dem|◊|sim|:мынадай CASES ;
 мына◊|prn|◊|dem|◊|advl|:мыналай CLITICS-INCL-COP ;
 мына◊|prn|◊|dem|◊|px3sp|:мына◊|prn|◊|dem|%{S%}%{I%}%{n%} CASES ;
@@ -1248,7 +1251,7 @@ LEXICON PRON-DEM-ANA
 ◊|ins|:мен CLITICS-NO-COP ;
 ◊|ins|:менен CLITICS-NO-COP ; ! Dir/LR
 ◊|gen|◊|subst|:нікі%{n%} CASES ;
-◊|loc|:дағы ATTR-SUBST ;
+◊|loc_attr|:дағы CASES ;
 ◊|sim|:дай CASES ;
 !◊|adv|:лай CLITICS-INCL-COP ;
 !◊|px3sp|:сы%{n%} CASES ;
@@ -40145,7 +40148,11 @@ LEXICON Common ! <- future
 полюс◊|n|◊|loc|◊|attr|:полюстегі # ;
 ол◊|prn|◊|dem|◊|px3sp|◊|dat|:онысына # ;
 уақыт◊|n|◊|px3sp|◊|loc|:уақытысында # ;
+кубок◊|n|◊|dat|:кубокқа # ;
 
+!! from the nla's corpus
+
+премьер%-лига:премьер%-лига N1 ;
 a321:a321 NP ;
 airbus:airbus NP ;
 Airlines:Airlines NP ;
