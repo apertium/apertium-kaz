@@ -61,7 +61,7 @@
                            !# ғой/қой
 ◊(tag mod_emo "R_SH")      ! Emotative modal particles
                            !# -ай, -ау
-◊(tag mod "mod")           ! Other modal words (шығар, сияқты etc)
+◊(tag mod "R_MOD")         ! Other modal words (шығар, сияқты etc)
 
 ! Punctuation
 ◊(tag percent "percent") ! Percent
@@ -1076,7 +1076,7 @@ LEXICON Copula
 
 е◊|cop|◊|ifi|:е%>%{D%}%{I%} V-PERS-S2 ;
 
-е◊|cop|◊|neg|◊|aor|:емес V-PERS-S1 ;
+е◊|cop|◊|vneg|◊|aor|:емес V-PERS-S1 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -1744,7 +1744,9 @@ LEXICON ADV-ITG
 
 ◊|adv|◊|itg|: CLITICS-INCL-COP ;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          ``I N T E R F A C E''                          !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CC
 
@@ -32977,7 +32979,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 егжей:егжей ADV ; ! ""
 едәуір:едәуір ADV ; ! "largely" !Use/MT
 ежелде:ежелде ADV ; ! ""
-емес:емес ADV ; ! "not" Use/MT
 ендеше:ендеше ADV ; ! "~таким образом"
 ең:ең ADV ; ! "most"
 ең% ақырында:ең% ақырында ADV ; ! "eventually" !Use/MT
@@ -40152,6 +40153,13 @@ LEXICON Common ! <- future
 кубок◊|n|◊|dat|:кубокқа # ;
 
 !! from the nla's corpus
+
+бар◊|mod|:бар # ;
+керек◊|mod|:керек # ;
+жоқ◊|mod|:жоқ # ;
+қажет◊|mod|:қажет # ;
+тиіс◊|mod|:тиіс # ;
+мүмкін◊|mod|:мүмкін # ;
 
 премьер%-лига:премьер%-лига N1 ;
 a321:a321 NP ;

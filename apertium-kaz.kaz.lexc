@@ -48,7 +48,7 @@
                            !# ғой/қой
 %<R_SH%>      ! Emotative modal particles
                            !# -ай, -ау
-%<mod%>           ! Other modal words (шығар, сияқты etc)
+%<R_MOD%>         ! Other modal words (шығар, сияқты etc)
 
 ! Punctuation
 %<percent%> ! Percent
@@ -522,7 +522,7 @@ LEXICON CLIT-GHANA-ETC
 %+ғана%<R_SH%>:% %{G%}ана # ; ! ""
 %+да%<R_ZHL%>:% %{D%}%{A%} # ; ! ""
 %+да%<R_SH%>:% %{D%}%{A%} # ; ! ""
-%+шығар%<mod%>:% шығар # ; ! ""
+%+шығар%<R_MOD%>:% шығар # ; ! ""
 # ;
 
 LEXICON CLIT-COP
@@ -1063,7 +1063,7 @@ LEXICON Copula
 
 е%<R_ET%>%<T3%>:е%>%{D%}%{I%} V-PERS-S2 ;
 
-е%<R_ET%>%<T1%>:емес V-PERS-S1 ;
+е%<R_ET%>%<ET_ETB%>%<T1%>:емес V-PERS-S1 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -1757,7 +1757,7 @@ LEXICON MOD
 
 ! шығар, сияқты etc.
 
-%<mod%>: # ;
+%<R_MOD%>: # ;
 
 LEXICON INTERJ
 
@@ -32964,7 +32964,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 егжей:егжей ADV ; ! ""
 едәуір:едәуір ADV ; ! "largely" !Use/MT
 ежелде:ежелде ADV ; ! ""
-емес:емес ADV ; ! "not" Use/MT
 ендеше:ендеше ADV ; ! "~таким образом"
 ең:ең ADV ; ! "most"
 ең% ақырында:ең% ақырында ADV ; ! "eventually" !Use/MT
@@ -40139,6 +40138,13 @@ LEXICON Common ! <- future
 кубок%<R_ZE%>%<C3%>:кубокқа # ;
 
 !! from the nla's corpus
+
+бар%<R_MOD%>:бар # ;
+керек%<R_MOD%>:керек # ;
+жоқ%<R_MOD%>:жоқ # ;
+қажет%<R_MOD%>:қажет # ;
+тиіс%<R_MOD%>:тиіс # ;
+мүмкін%<R_MOD%>:мүмкін # ;
 
 премьер%-лига:премьер%-лига N1 ;
 a321:a321 NP ;
