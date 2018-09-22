@@ -4,9 +4,12 @@
 ◊(define END_TAG "%>")
 
 ◊(define-syntax-rule (tag id surf)
-   (begin
-     (define id (string-append BEGIN_TAG surf END_TAG))
-     id))
+  (begin
+    (define id
+      (if (string=? surf "")
+          ""
+          (string-append BEGIN_TAG surf END_TAG)))
+      id))
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
@@ -102,15 +105,15 @@
 ◊(tag al "al")      ! Other        ! Басқалар
 
 !! Gender of anthroponyms and cognoms
-◊(tag m "m")         ! Masculine
-◊(tag f "f")         ! Feminine
-◊(tag mf "mf")       ! Masculine/feminine !# basically cognoms without -ов/-ова,
+◊(tag m "")         ! Masculine
+◊(tag f "")         ! Feminine
+◊(tag mf "")        ! Masculine/feminine !# basically cognoms without -ов/-ова,
                                           ! -ин/-ина endings
 
 ! "Syntactic" tags. Attributive use of non-adjectives etc.
-◊(tag attr "attr")      ! Attributive
-◊(tag subst "subst")    ! Substantive
-◊(tag advl "advl")      ! Adverbial
+◊(tag attr "")      ! Attributive
+◊(tag subst "")     ! Substantive
+◊(tag advl "")      ! Adverbial
 
 ! Number
 ◊(tag sg "sg")        ! Singular ! Жекеше
@@ -127,7 +130,7 @@
 ◊(tag px "S9")        ! General possessive
 
 ! Cases
-◊(tag nom "nom")      ! Nominative
+◊(tag nom "")         ! Nominative
 ◊(tag gen "C2")       ! Genitive
 ◊(tag dat "C3")       ! Dative
 ◊(tag acc "C4")       ! Accusative
@@ -897,7 +900,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 ◊|fut_plan|:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 ◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
-◊|neg|◊|fut_plan|:%>%{M%}%{A%}%{K%}% емес V-PERS-S1 ;
+◊|vneg|◊|fut_plan|:%>%{M%}%{A%}%{K%}% емес V-PERS-S1 ;
 
 ◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
 ◊|vneg|◊|past|:%>%{G%}%{A%}н% емес V-PERS-S1 ;  ! more colloquial than regular negative
@@ -1004,14 +1007,14 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 LEXICON V-COMMON
 
 V-FINITE-REGULAR_NEGATIVE ;
-◊|neg|:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
-◊|neg|◊|gpr_past|:%>%{M%}%{A%}%>%{I%}п CLITICS-NO-COP ; !Ұзақ жол жүріп ұйықтамап едім... !Dir/LR
+◊|vneg|:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+◊|vneg|◊|gpr_past|:%>%{M%}%{A%}%>%{I%}п CLITICS-NO-COP ; !Ұзақ жол жүріп ұйықтамап едім... !Dir/LR
                                                           !TODO this is a hack, doesn't feel right
 
 V-FINITE-IRREGULAR_NEGATIVE ;
 
 V-NONFINITE-REGULAR_NEGATIVE ;
-◊|neg|:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
+◊|vneg|:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
 
 V-NONFINITE-IRREGULAR_NEGATIVE ;
 
