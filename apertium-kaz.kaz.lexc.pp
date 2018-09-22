@@ -504,8 +504,6 @@ LEXICON DIGITLEX
 ! CLITICS
 !==============================================================================!
 
-! First, let's list all the clitics we have
-
 LEXICON CLIT-EMPH
 
 %+шы◊|emph|:%>ш%{I%} # ;
@@ -542,8 +540,6 @@ LEXICON CLIT-COP
 
 %+е◊|cop|◊|aor|: V-PERS-S1 ;
 %+ма◊|qst|+е◊|cop|◊|aor|◊|evid|:% %{M%}екен V-PERS-S1 ;
-
-! Now, let's group them depending on what they can attach to
 
 LEXICON CLITICS-NO-COP
 
@@ -697,15 +693,6 @@ LI-POSTPOSITION ;
 
 !!!!!!!!!!!!!!!!!!!!!!     ADJECTIVE'S (ADJECTIVIAL) INFLECTION (ADJ-COMMON)
 
-! FIXME: this section might need some refactoring
-!! i.e. change <adj><comp><subst> to <adj><subst><comp>
-!! and make use of ADJ-LEVELS class
-
-!! LEXICON COMPARATIVE
-!! 
-!! ◊|comp|:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;
-!! CLITICS-NO-COP ;
-
 LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
                           ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
                           !# жақсы, тез
@@ -742,9 +729,6 @@ LEXICON A3                 ! (derived/not fully lexicalised) adjectives without 
 ◊|adj|: CLITICS-INCL-COP ;         !# көктемгі су тасқыны
 ◊|adj|◊|subst|: FULL-NOMINAL-INFLECTION ;           !# "...Самаранч ең бастыны түсінді..."
                                     !# "Аты бардың заты бар."
-
-! FIXME:NOTE:loc.attr/subst form of some of them seems to be pure overgeneration:
-! e.g. *язгыдагы
 
 LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
                            !# ұлттық
@@ -850,15 +834,6 @@ CLITICS-NO-COP ;
 LEXICON GER-ATTR/SUBST
 
 ◊|attr|: CLITICS-NO-COP ;
-!◊|subst|: CASES ;
-!◊|subst|◊|pl|:%>%{L%}%{A%}р CASES ;
-
-!! LEXICON GER-ABE-ATTR/ADVL/SUBST
-!! 
-!! !◊|attr|: CLITICS-NO-COP ;
-!! ◊|advl|: CLITICS-NO-COP ;
-!! !◊|subst|: CASE-2 ;
-!! !◊|subst|◊|pl|:%>%{L%}%{A%}р CASE-2 ;
 
 LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
@@ -911,7 +886,6 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 ◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;
 ◊|vneg|◊|ifi|:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;    ! more colloquial than regular negative
 
-
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 ◊|aor|:%>%{E%} V-PERS-AOR ;
@@ -959,11 +933,6 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 ◊|vneg|◊|ger_ppot|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-POSSESSIVES ;
 
 ◊|ger_obs|:%>%{M%}%{A%}%{K%} GER-INFL ;
-! FIXME <ger_obs>:
-! - does it have a negative form?  if regular, with -МА,
-!   put in the REGULAR_NEGATIVE category
-! - does it take possessive forms?  if not, change
-!   continuation lexicon to something other than GER-INFL
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -998,14 +967,9 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Optative/jussive forms
 ◊|opt|◊|p1|◊|sg|:%>%{A%}й%{I%}н CLITICS-NO-COP ;
-!◊|opt|◊|p2|◊|sg|:%>%{G%}%{I%}н CLITICS-NO-COP ;              ! FIXME check
 ◊|opt|◊|p3|◊|sg|:%>с%{I%}н CLITICS-NO-COP ;
 ◊|opt|◊|p1|◊|pl|:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
-!◊|opt|◊|p2|◊|pl|:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;         ! FIXME check
 ◊|opt|◊|p3|◊|pl|:%>с%{I%}н CLITICS-NO-COP ;
-
-!◊|opt|◊|p2|◊|frm|◊|sg|:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;  ! FIXME check
-!◊|opt|◊|p2|◊|frm|◊|pl|:%>%{G%}%{I%}л%{A%} CLITICS-NO-COP ;  ! FIXME check
 
 LEXICON V-COMMON
 
@@ -1146,13 +1110,6 @@ LEXICON PRON-PERS
 
 !!!!!!!   D E M O N S T R A T I V E
 
-! FIXME CHECK (CLITICS-INCL-COP vs CLIT) I can't imagine forms like "бумын, бусың" etc.
-! in Tatar, but not sure how it works in Kazakh /I.S./
-!-----
-! Good idea is to link prn.dem.sim forms alternatively to CLIT and CASE,
-! so that it's "adverbial reading" (e.g. "шундый каты кычкырды") doesn't
-! receive <nom> tag /IS/
-
 LEXICON PRON-DEM-INFL
 
 ◊|gen|:ның CLITICS-NO-COP ;
@@ -1170,22 +1127,7 @@ LEXICON PRON-DEM-INFL
 ◊|pl|:%>%{L%}%{A%}р CASES-ETC ;
 ◊|pl|◊|px3sp|:%>%{L%}%{A%}р%{I%}%{n%} CASES ;
 
-! Commented out till these forms get implemented in tat.lexc too
-!%<TD%>:шалық CLITICS-NO-COP ;        ! "that much"  ! FIXME: check cont lex
-!◊|reas|◊|abl|:ндықтан # ; ! "because of"  ! FIXME: not attested with осы?
-
-! FIXME: 1) link the below to PRON-DEM-INFL if possible
-!            (later, once we are certain about things)
-
 LEXICON PRON-DEM-BUL
-
-! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
-! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
-!-----
-! <s>FIXME</s> (бұл◊|prn|◊|dem|◊|pl|:бұлар FULL-NOMINAL-INFLECTION ;) FULL-NOMINAL-INFLECTION might lead to
-! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
-! on the other hand, with something like бу◊|prn|◊|dem|◊|px3sp|:монысы%{n%} CASES ;
-! we loose things like бу<prn><dem><pl><px>:боларныкы /I.S./
 
 бұл◊|prn|◊|dem|◊|nom|:бұл CLITICS-INCL-COP ;
 бұл◊|prn|◊|dem|◊|nom|:бұ CLITICS-INCL-COP ; ! Dir/LR
@@ -1228,8 +1170,8 @@ LEXICON PRON-DEM-MINA
 мына◊|prn|◊|dem|◊|loc|:мынада CLITICS-INCL-COP ;
 мына◊|prn|◊|dem|◊|ins|:мынамен CLITICS-NO-COP ;
 мына◊|prn|◊|dem|◊|ins|:мынаменен CLITICS-NO-COP ; ! Dir/LR
-!мына◊|prn|◊|dem|◊|px|:мынанікі%{n%} CASES ;
-!мына◊|prn|◊|dem|◊|loc_attr|:мынадағы CASES ;
+мына◊|prn|◊|dem|◊|px|:мынанікі%{n%} CASES ;
+мына◊|prn|◊|dem|◊|loc_attr|:мынадағы CASES ;
 мына◊|prn|◊|dem|◊|sim|:мынадай CASES ;
 мына◊|prn|◊|dem|◊|advl|:мыналай CLITICS-INCL-COP ;
 мына◊|prn|◊|dem|◊|px3sp|:мына◊|prn|◊|dem|%{S%}%{I%}%{n%} CASES ;
@@ -1254,8 +1196,6 @@ LEXICON PRON-DEM-ANA
 ◊|gen|◊|subst|:нікі%{n%} CASES ;
 ◊|loc_attr|:дағы CASES ;
 ◊|sim|:дай CASES ;
-!◊|adv|:лай CLITICS-INCL-COP ;
-!◊|px3sp|:сы%{n%} CASES ;
 
 ◊|pl|:лар CASES-ETC ;
 ◊|pl|◊|px3sp|:лар%>%{S%}%{I%}%{n%} CASES ;
@@ -1285,37 +1225,7 @@ PRON-DEM-MINAU ;
 осы◊|prn|◊|dem|◊|ins|:осыменен CLITICS-NO-COP ; ! Dir/LR
 осы◊|prn|◊|dem|◊|px3sp|:осысы%{n%} CASES ;
 
-! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
-! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
-! productive derivation.
-
-!ол◊|prn|◊|dem|◊|reas|◊|abl|:ондықтан # ; ! "because of that"
-!сол◊|prn|◊|dem|◊|reas|◊|abl|:сондықтан # ; ! "because of that"
-
-
 !!!!!!!   I N T E R R O G A T I V E
-
-! Some of the words listed in the grammars I have as interrogative pronouns
-! were placed in other root lexicons depending on what POS they substitute or
-! act like syntactically. So (as planned for today):
-! 1) "неше" is a <num><itg>;
-! 2) "қайда, қайдан, қашан, қалай, қалайша" are <adv><itg> (the first three
-! should link to a class containing location cases btw, as many current adverbs
-! do);
-! 3) "қанша" is added both as an interrogative pronoun and as an interrogative
-! adverb /IS/ and det.qnt /JNW/
-!
-! What already added as interrogative pronouns are: кім, ни, нәрсе
-! And to be added as interrogative pronouns are: қайсы, қандай, қанша.
-! I'd like to mark қандай as <sim> form (with қандай for the upper side though),
-! but wouldn't go too deeply into the structure of other two and not derive them
-! from "қай" (that's what they have most likely originated from) IS
-!
-! Of course, "қай", "қайсы" and all other pronouns which can be used as an
-! attribute were added as determiners linking to CLIT as well.
-! Good idea is to have an rlx rule selecting determiner reading when a word is
-! ambiguous between (prn X nom) and (det X) and there is noun to the right;
-! and selecting pronoun if there is a verb to the right.
 
 LEXICON PRON-ITG-INFL
 
@@ -1340,20 +1250,11 @@ LEXICON PRON-ITG-QAYSI
 
 LEXICON PRON-ITG-QANSHA
 
-! Might be not complete (қаншалар?)
-! Currently қанша<prn><itg> is translated with ничә<num><itg><subst> and
-! қанша<adv><itg> is going to be translated with "күпме" or "никадәр"
-
 ◊|prn|◊|itg|: CASES ;
 
 LEXICON PRON-ITG-QANDAY
 
-! Might be not complete (қандайларығыз? and possessive stuff in general)
-
 ◊|prn|◊|itg|◊|sim|: CLITICS-NO-COP ;
-! ^ FIXME Similative form of demonstrative pronouns should receive an alternati-
-! ve continuation with CLIT too. Consider e,g.: "Ең жақсы Интернет қандай?" Here
-! it shouldn't receive <nom> tag I think /IS/
 ◊|prn|◊|itg|◊|sim|: CASES ;
 ◊|prn|◊|itg|◊|sim|◊|px3sp|:ы%{n%} CASES ;
 ◊|prn|◊|itg|◊|sim|◊|pl|:лар CASES ;
@@ -1385,7 +1286,6 @@ LEXICON PRON-IND-PL
 
 ◊|prn|◊|ind|◊|pl|: CASES ;
 
-
 LEXICON PRNNEG
 
 ◊|prn|◊|neg|: CASES ;
@@ -1400,21 +1300,6 @@ CASES-ETC ;
 ◊|advl|:ше CLITICS-NO-COP ;
 
 LEXICON PRON-REF
-
-! FIXME JNW please have a look at this
-! Listing all forms here because of overgeneration with *өздерім,
-! *өздеріміз, *өзіңдер etc while linking to POSSESSIVES. This was the idea.
-! Now they are handled more like personal pronouns (the same tags in the same
-! order), so they should pass transfer without any trouble.
-!-----
-! A remaining problem with reflexive pronoun is that it takes personal copula
-! suffixes "selectively": e.g. prn.refl.px1sg would take only cop.px1sg
-! (prn.ref.px3sp seems to take all of them though).
-! A little bit of overgeneration won't hurt anyone :), but I think that odd
-! forms could be filtered out somehow later. Don't know how to do it./04Aug, IS/
-
-! FIXME DISCUSS Write full forms for the lower side and put only PRON-DEF in the
-! Root Lexicon
 
 ◊|prn|◊|ref|◊|px1sg|:%>%{I%}м PRON-REF-ADV ;
 ◊|prn|◊|ref|◊|px2sg|:%>%{I%}ң PRON-REF-ADV ;
@@ -1515,16 +1400,6 @@ LEXICON N-INFL-NKI
 ◊|n|:%{I%}ң KI ; 
 ◊|n|: FULL-NOMINAL-INFLECTION ;
 
-
-!LEXICON NAT
-! Nationalites
-
-!A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]" ! Consider <n.attr> reading for this 
-!N1 ;              ! a member of the nationality, e.g. "A Turk"
-!:%>ш%{A%} ADV ;   ! as / in the style of the nat., e.g. "à la Turk"
-!:%>ш%{A%} ADV ;   ! in the language of the nationality, e.g. "in Turkish" ! I guess ADJ was meant /I.S./
-!:%>ш%{A%} N1 ;    ! the language of the nationality, e.g. "Turkish"
-
 LEXICON ADV-LANG
 
 N1 ;
@@ -1545,8 +1420,6 @@ LEXICON NP-TOP
 
 ◊|np|: NP-COMMON ;
 
-!◊|adj|:%{L%}%{I%}%{K%} ADJ-COMMON ;  ! FIXME: do these tags make sense?
-
 LEXICON NP-TOP-ASSR
 
 ◊|np|: # ;
@@ -1563,7 +1436,7 @@ LEXICON NP-TOP-ABBR
 ◊|np|: CLITICS-INCL-COP ;
 ◊|np|:%- NP-COMMON ;
 
-◊|np|: NP-COMMON ;    ! Dir/LR   ! also allow like this to be parsed, but generate with -
+◊|np|: NP-COMMON ;    ! Dir/LR
 
 
 LEXICON NP-ANT-M
@@ -1584,7 +1457,7 @@ LEXICON NP-COG-M
 LEXICON NP-COG-MF
 
 ! Dual-gender cognoms.
-! Don't derive anything /I.S./
+! Don't derive anything
 
 ◊|np|: NP-COMMON ;
 ◊|np|:%>%{L%}%{A%}р NP-COMMON ;
@@ -1598,7 +1471,7 @@ LEXICON NP-COG-OBIN-FEM
 LEXICON NP-COG-OB
 
 ! For cognoms ending with -ов, -ев
-! They derive feminine equivalets taking -а /I.S./
+! They derive feminine equivalets taking -а.
 ! Also, even the ев ones are normally pronounced
 !    (and take harmony) as if they end in йыф/йып
 
@@ -1621,11 +1494,6 @@ LEXICON NP-COG-IN
 
 NP-COG-OBIN-FEM ;
 
-! LEXICON NPCOGFLEX
-
-! This isn't used at the moment,
-! but e.g. ?Polish cognoms ending with -ска would take this cont.class /I.S./ 
-
 LEXICON NP-PAT-VICH
 
 ! For patronyms ending with -вич
@@ -1645,8 +1513,6 @@ LEXICON NP-ORG-LAT
 ◊|np|: CLITICS-INCL-COP ;
 ◊|np|: FULL-NOMINAL-INFLECTION-NONOM ; ! Dir/LR
 ◊|np|:%- FULL-NOMINAL-INFLECTION-NONOM ;
-! This one doesn't work right because of twol:
-!◊|np|◊|org|:%' FULL-NOMINAL-INFLECTION-NONOM-NONOM ; ! Dir/LR
 
 LEXICON NP-ORG-COMPOUND 
 
@@ -1678,8 +1544,6 @@ NUM-COMMON ;
 ◊|num|◊|ord|:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
 ◊|num|◊|ord|◊|subst|:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
-! <ord> is "det" is base form, <ord><subst> is "prn" reading
-
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
@@ -1705,10 +1569,6 @@ LEXICON NUM-ROMAN
 LEXICON LTR
 
 ◊|ltr|: # ;
-
-!LEXICON DIGITLEX
-!
-!◊|num|: # ;
 
 LEXICON POST
 
@@ -1743,10 +1603,6 @@ LEXICON ADV-WITH-KI-I     ! Used for бері<adv>/бергі<adv><attr> 'right 
 LEXICON ADV-ITG
 
 ◊|adv|◊|itg|: CLITICS-INCL-COP ;
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                          ``I N T E R F A C E''                          !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON CC
 
