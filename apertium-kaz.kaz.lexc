@@ -23,7 +23,7 @@
 %<R_ETPK%>    ! Auxilary verb              ! Көмекші етістік
 %<R_US%>        ! Adverb                     ! Үстеу
 %<R_SH%>       ! Postposition               ! Септеулік шылау
-%<R_ZHL%>   ! Postadverb                 ! "Постүстеу" (*1)
+%<R_SH%>   ! Postadverb                 ! "Постүстеу" (*1)
 %<R_ZHL%>    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
 %<R_ZHL%>    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулықc
 %<R_ZHL%>    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
@@ -240,10 +240,10 @@
 %<P1%>          ! First person
 %<P2%>          ! Second person
 %<P3%>          ! Third person
-%<P4%>          ! First person
-%<P5%>          ! Second person
-%<P6%>          ! Third person
-%<P7%>      ! First person
+%<P5%>          ! First person
+%<P6%>          ! Second person
+%<P7%>          ! Third person
+%<P4%>      ! First person
 %<P8%>      ! Second person
 %<frm%>           ! Formal
 
@@ -517,10 +517,10 @@ LEXICON CLIT-MODASS
 
 LEXICON CLIT-GHANA-ETC
 
-%+%-ақ%<R_ZHL%>:%-ақ # ; ! ""
-%+ғана%<R_ZHL%>:% %{G%}ана # ; ! ""
+%+%-ақ%<R_SH%>:%-ақ # ; ! ""
+%+ғана%<R_SH%>:% %{G%}ана # ; ! ""
 %+да%<R_ZHL%>:% %{D%}%{A%} # ; ! ""
-%+да%<R_ZHL%>:% %{D%}%{A%} # ; ! ""
+%+да%<R_SH%>:% %{D%}%{A%} # ; ! ""
 %+шығар%<mod%>:% шығар # ; ! ""
 # ;
 
@@ -760,11 +760,11 @@ LEXICON V-PERS-S1-NO3PERSON
 
 %<P1%>:%>%{M%}%{I%}н CLITICS-NO-COP ;
 %<P2%>:%>с%{I%}ң CLITICS-NO-COP ;
-%<P4%>:%>%{M%}%{I%}з CLITICS-NO-COP ;
-%<P5%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
+%<P5%>:%>%{M%}%{I%}з CLITICS-NO-COP ;
+%<P6%>:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
 CLITICS-NO-COP ;
 
-%<P7%>:%>с%{I%}з CLITICS-NO-COP ;
+%<P4%>:%>с%{I%}з CLITICS-NO-COP ;
 %<P8%>:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-S1
@@ -779,10 +779,10 @@ LEXICON V-PERS-S2
 
 %<P1%>:%>м CLITICS-NO-COP ;
 %<P2%>:%>ң CLITICS-NO-COP ;
-%<P4%>:%>%{K%} CLITICS-NO-COP ;
-%<P5%>:%>ңд%{A%}р CLITICS-NO-COP ;
+%<P5%>:%>%{K%} CLITICS-NO-COP ;
+%<P6%>:%>ңд%{A%}р CLITICS-NO-COP ;
 CLITICS-NO-COP ;
-%<P7%>:%>ң%{I%}з CLITICS-NO-COP ;
+%<P4%>:%>ң%{I%}з CLITICS-NO-COP ;
 %<P8%>:%>ң%{I%}зд%{A%}р CLITICS-NO-COP ;
 
 LEXICON V-PERS-AOR
@@ -797,26 +797,26 @@ V-PERS-S1-NO3PERSON ;
 %<P3%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
 %<P3%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
 
-%<P6%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
-%<P6%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
+%<P7%>:%>д%{I%} CLITICS-NO-COP-NO-QST ;
+%<P7%>:%>д%{I%} CLIT-QST ;              ! Dir/LR
 
 LEXICON V-PERS-IFI_EVID
 
 V-PERS-S1-NO3PERSON ;
 %<P3%>:%>т%{I%} CLITICS-NO-COP ;
-%<P6%>:%>т%{I%} CLITICS-NO-COP ;
+%<P7%>:%>т%{I%} CLITICS-NO-COP ;
 
 LEXICON VOL-ENDINGS
 
 %<P1%>:%>м CLIT-GHANA-ETC ;
 %<P2%>:%>ң CLIT-GHANA-ETC ;
 %<P3%>:%>с%{I%} CLIT-GHANA-ETC ;
-%<P4%>:%>м%{I%}з CLIT-GHANA-ETC ;
-%<P5%>:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
-%<P6%>:%>с%{I%} CLIT-GHANA-ETC ;
-%<P6%>:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
+%<P5%>:%>м%{I%}з CLIT-GHANA-ETC ;
+%<P6%>:%>л%{A%}р%>%{I%}ң CLIT-GHANA-ETC ;
+%<P7%>:%>с%{I%} CLIT-GHANA-ETC ;
+%<P7%>:%>л%{A%}р%>%{I%} CLIT-GHANA-ETC ;             ! Dir/LR
 
-%<P7%>:%>ң%{I%}з CLIT-GHANA-ETC ;
+%<P4%>:%>ң%{I%}з CLIT-GHANA-ETC ;
 %<P8%>:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
 
 !!!!!!!   G E R U N D S   I N F L E C T I O N
@@ -1702,7 +1702,7 @@ LEXICON POST
 
 LEXICON POSTADV
 
-%<R_ZHL%>: # ;
+%<R_SH%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

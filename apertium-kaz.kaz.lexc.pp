@@ -36,7 +36,7 @@
 ◊(tag vaux3 "R_ETPK")    ! Auxilary verb              ! Көмекші етістік
 ◊(tag adv "R_US")        ! Adverb                     ! Үстеу
 ◊(tag post "R_SH")       ! Postposition               ! Септеулік шылау
-◊(tag postadv "R_ZHL")   ! Postadverb                 ! "Постүстеу" (*1)
+◊(tag postadv "R_SH")   ! Postadverb                 ! "Постүстеу" (*1)
 ◊(tag cnjcoo "R_ZHL")    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
 ◊(tag cnjsub "R_ZHL")    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулықc
 ◊(tag cnjadv "R_ZHL")    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
@@ -253,10 +253,10 @@
 ◊(tag p1_sg "P1")          ! First person
 ◊(tag p2_sg "P2")          ! Second person
 ◊(tag p3_sg "P3")          ! Third person
-◊(tag p1_pl "P4")          ! First person
-◊(tag p2_pl "P5")          ! Second person
-◊(tag p3_pl "P6")          ! Third person
-◊(tag p2_frm_sg "P7")      ! First person
+◊(tag p1_pl "P5")          ! First person
+◊(tag p2_pl "P6")          ! Second person
+◊(tag p3_pl "P7")          ! Third person
+◊(tag p2_frm_sg "P4")      ! First person
 ◊(tag p2_frm_pl "P8")      ! Second person
 ◊(tag frm "frm")           ! Formal
 
