@@ -133,6 +133,7 @@
 ◊(tag nom "")         ! Nominative
 ◊(tag gen "C2")       ! Genitive
 ◊(tag dat "C3")       ! Dative
+◊(tag prn_dat "C3SIM")! Dative -GAн
 ◊(tag acc "C4")       ! Accusative
 ◊(tag abl "C6")       ! Ablative
 ◊(tag loc "C5")       ! Locative
@@ -150,9 +151,9 @@
 ◊(tag comp "CMP")      ! Comparative
 
 ! Numeral types
-◊(tag ord "ord")       ! Ordinal
-◊(tag coll "coll")     ! Collective
-◊(tag dist "dist")     ! Distributive
+◊(tag ord "")       ! Ordinal
+◊(tag coll "")      ! Collective
+◊(tag dist "")      ! Distributive
 
 ! Verbal features
 
@@ -649,7 +650,7 @@ LEXICON GENERAL-POSSESSIVE-ETC
 
 ◊|gen|◊|subst|:%>%{N%}ікі%{n%} CASES ;
 ◊|gen|◊|subst|◊|pl|:%>%{N%}ікі%>л%{A%}р CASES ;
-◊|loc|:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
+◊|loc_attr|:%>%{D%}%{A%}%{G%}%{I%} CASES ;
 ◊|sim|:%>%{D%}%{A%}й CLITICS-INCL-COP ;
 ◊|sim|:%>%{D%}%{A%}й POSSESSIVES ;
 ◊|sim|:%>%{D%}%{A%}й CASES ;
@@ -866,7 +867,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
 ◊|gen|◊|subst|◊|nom|:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
-◊|loc|:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
+◊|loc_attr|:%>%{D%}%{A%}%{G%}%{I%} CASES ;
 ◊|sim|:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
 LEXICON GER-CASE-ETC
@@ -1085,14 +1086,14 @@ LEXICON PRON-P12SG-CASES
 
 ◊|nom|:ен CLITICS-NO-COP ;
 ◊|gen|:енің CLITICS-NO-COP ;
-◊|dat|:аған CLITICS-NO-COP ;
+◊|prn_dat|:аған CLITICS-NO-COP ;
 ◊|acc|:ені CLITICS-NO-COP ;
 ◊|abl|:енен CLITICS-NO-COP ;
 ◊|loc|:енде CLITICS-NO-COP ;
 ◊|ins|:енімен CLITICS-NO-COP ;
 ◊|ins|:еніменен CLITICS-NO-COP ; ! Dir/LR
 ◊|gen|◊|subst|:енікі%{n%} CASES ;
-◊|loc|:ендегі ATTR-SUBST ;
+◊|loc_attr|:ендегі CASES ;
 ◊|sim|:ендей CLITICS-NO-COP ;
 ◊|advl|:еніңше CLITICS-NO-COP ;
 
@@ -1101,7 +1102,7 @@ LEXICON PRON-P3SG-CASES
 ◊|nom|:л CLITICS-NO-COP ;
 ◊|nom|: CLITICS-NO-COP ; ! Dir/LR
 ◊|gen|:ның CLITICS-NO-COP ;
-◊|dat|:ған CLITICS-NO-COP ;
+◊|prn_dat|:ған CLITICS-NO-COP ;
 ◊|acc|:ны CLITICS-NO-COP ;
 ◊|abl|:дан CLITICS-NO-COP ;
 ◊|loc|:нда CLITICS-NO-COP ;
@@ -1155,7 +1156,7 @@ LEXICON PRON-PERS
 LEXICON PRON-DEM-INFL
 
 ◊|gen|:ның CLITICS-NO-COP ;
-◊|dat|:ған CLITICS-NO-COP ;
+◊|prn_dat|:ған CLITICS-NO-COP ;
 ◊|acc|:ны CLITICS-NO-COP ;
 ◊|abl|:дан CLITICS-INCL-COP ;
 ◊|abl|:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
@@ -1190,7 +1191,7 @@ LEXICON PRON-DEM-BUL
 бұл◊|prn|◊|dem|◊|nom|:бұ CLITICS-INCL-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|gen|:бұның CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|gen|:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл◊|prn|◊|dem|◊|dat|:бұған CLITICS-NO-COP ;
+бұл◊|prn_dat|◊|dem|◊|dat|:бұған CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|acc|:бұны CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|acc|:мұны CLITICS-NO-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|abl|:бұдан CLITICS-INCL-COP ;
@@ -1244,7 +1245,7 @@ LEXICON PRON-DEM-ANA
 
 ◊|nom|: CLITICS-INCL-COP ;
 ◊|gen|:ның CLITICS-NO-COP ;
-◊|dat|:ған CLITICS-NO-COP ;
+◊|prn_dat|:ған CLITICS-NO-COP ;
 ◊|acc|:ны CLITICS-NO-COP ;
 ◊|abl|:дан CLITICS-INCL-COP ;
 ◊|loc|:да CLITICS-INCL-COP ;
@@ -1325,7 +1326,7 @@ LEXICON PRON-ITG-QAYSI-CASES
 
 ◊|nom|: CLITICS-NO-COP ;
 ◊|gen|:ның CLITICS-NO-COP ;
-◊|dat|:ған CLITICS-NO-COP ;
+◊|prn_dat|:ған CLITICS-NO-COP ;
 ◊|acc|:ны CLITICS-NO-COP ;
 ◊|abl|:дан CLITICS-NO-COP ;
 ◊|loc|:да CLITICS-NO-COP ;

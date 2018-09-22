@@ -120,6 +120,7 @@
          ! Nominative
 %<C2%>       ! Genitive
 %<C3%>       ! Dative
+%<C3SIM%>! Dative -GAн
 %<C4%>       ! Accusative
 %<C6%>       ! Ablative
 %<C5%>       ! Locative
@@ -137,9 +138,9 @@
 %<CMP%>      ! Comparative
 
 ! Numeral types
-%<ord%>       ! Ordinal
-%<coll%>     ! Collective
-%<dist%>     ! Distributive
+       ! Ordinal
+      ! Collective
+      ! Distributive
 
 ! Verbal features
 
@@ -383,16 +384,16 @@ LEXICON NUM-DIGIT
 %<R_SN%>:%- SUBST-NONOM ;
 %<R_SN%>: SUBST-NONOM ; ! Dir/LR
 
-%<R_SN%>%<ord%>:%-%{I%}нш%{I%} # ;
-%<R_SN%>%<ord%>:%-%{I%}нш%{I%} # ;
-%<R_SN%>%<ord%>:%-%{I%}нш%{I%} SUBST-NONOM ;
-%<R_SN%>%<ord%>:%-ш%{I%} # ; ! Dir/LR
-%<R_SN%>%<ord%>:%-ш%{I%} # ; ! Dir/LR
-%<R_SN%>%<ord%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
+%<R_SN%>:%-%{I%}нш%{I%} # ;
+%<R_SN%>:%-%{I%}нш%{I%} # ;
+%<R_SN%>:%-%{I%}нш%{I%} SUBST-NONOM ;
+%<R_SN%>:%-ш%{I%} # ; ! Dir/LR
+%<R_SN%>:%-ш%{I%} # ; ! Dir/LR
+%<R_SN%>:%-ш%{I%} SUBST-NONOM ; ! Dir/LR
 
-%<R_SN%>%<coll%>:%-%{A%}у # ;
-%<R_SN%>%<coll%>:%-%{A%}у # ;
-%<R_SN%>%<coll%>:%-%{A%}у SUBST-NONOM ;
+%<R_SN%>:%-%{A%}у # ;
+%<R_SN%>:%-%{A%}у # ;
+%<R_SN%>:%-%{A%}у SUBST-NONOM ;
 
 %<R_SN%>%<percent%>:%% # ;
 
@@ -636,7 +637,7 @@ LEXICON GENERAL-POSSESSIVE-ETC
 
 %<C2%>:%>%{N%}ікі%{n%} CASES ;
 %<C2%>%<N1%>:%>%{N%}ікі%>л%{A%}р CASES ;
-%<C5%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
+%<LATT%>:%>%{D%}%{A%}%{G%}%{I%} CASES ;
 %<SML%>:%>%{D%}%{A%}й CLITICS-INCL-COP ;
 %<SML%>:%>%{D%}%{A%}й POSSESSIVES ;
 %<SML%>:%>%{D%}%{A%}й CASES ;
@@ -853,7 +854,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
 %<C2%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
-%<C5%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
+%<LATT%>:%>%{D%}%{A%}%{G%}%{I%} CASES ;
 %<SML%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
 LEXICON GER-CASE-ETC
@@ -1072,14 +1073,14 @@ LEXICON PRON-P12SG-CASES
 
 :ен CLITICS-NO-COP ;
 %<C2%>:енің CLITICS-NO-COP ;
-%<C3%>:аған CLITICS-NO-COP ;
+%<C3SIM%>:аған CLITICS-NO-COP ;
 %<C4%>:ені CLITICS-NO-COP ;
 %<C6%>:енен CLITICS-NO-COP ;
 %<C5%>:енде CLITICS-NO-COP ;
 %<C7%>:енімен CLITICS-NO-COP ;
 %<C7%>:еніменен CLITICS-NO-COP ; ! Dir/LR
 %<C2%>:енікі%{n%} CASES ;
-%<C5%>:ендегі ATTR-SUBST ;
+%<LATT%>:ендегі CASES ;
 %<SML%>:ендей CLITICS-NO-COP ;
 :еніңше CLITICS-NO-COP ;
 
@@ -1088,7 +1089,7 @@ LEXICON PRON-P3SG-CASES
 :л CLITICS-NO-COP ;
 : CLITICS-NO-COP ; ! Dir/LR
 %<C2%>:ның CLITICS-NO-COP ;
-%<C3%>:ған CLITICS-NO-COP ;
+%<C3SIM%>:ған CLITICS-NO-COP ;
 %<C4%>:ны CLITICS-NO-COP ;
 %<C6%>:дан CLITICS-NO-COP ;
 %<C5%>:нда CLITICS-NO-COP ;
@@ -1142,7 +1143,7 @@ LEXICON PRON-PERS
 LEXICON PRON-DEM-INFL
 
 %<C2%>:ның CLITICS-NO-COP ;
-%<C3%>:ған CLITICS-NO-COP ;
+%<C3SIM%>:ған CLITICS-NO-COP ;
 %<C4%>:ны CLITICS-NO-COP ;
 %<C6%>:дан CLITICS-INCL-COP ;
 %<C6%>:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
@@ -1177,7 +1178,7 @@ LEXICON PRON-DEM-BUL
 бұл%<R_SIM%>:бұ CLITICS-INCL-COP ; ! Dir/LR
 бұл%<R_SIM%>%<C2%>:бұның CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C2%>:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл%<R_SIM%>%<C3%>:бұған CLITICS-NO-COP ;
+бұл%<C3SIM%>%<C3%>:бұған CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C4%>:бұны CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C4%>:мұны CLITICS-NO-COP ; ! Dir/LR
 бұл%<R_SIM%>%<C6%>:бұдан CLITICS-INCL-COP ;
@@ -1231,7 +1232,7 @@ LEXICON PRON-DEM-ANA
 
 : CLITICS-INCL-COP ;
 %<C2%>:ның CLITICS-NO-COP ;
-%<C3%>:ған CLITICS-NO-COP ;
+%<C3SIM%>:ған CLITICS-NO-COP ;
 %<C4%>:ны CLITICS-NO-COP ;
 %<C6%>:дан CLITICS-INCL-COP ;
 %<C5%>:да CLITICS-INCL-COP ;
@@ -1312,7 +1313,7 @@ LEXICON PRON-ITG-QAYSI-CASES
 
 : CLITICS-NO-COP ;
 %<C2%>:ның CLITICS-NO-COP ;
-%<C3%>:ған CLITICS-NO-COP ;
+%<C3SIM%>:ған CLITICS-NO-COP ;
 %<C4%>:ны CLITICS-NO-COP ;
 %<C6%>:дан CLITICS-NO-COP ;
 %<C5%>:да CLITICS-NO-COP ;
@@ -1661,32 +1662,32 @@ LEXICON NUM-COMMON
 LEXICON NUM
 
 NUM-COMMON ;
-%<R_SN%>%<ord%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
-%<R_SN%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+%<R_SN%>:%>%{I%}нш%{I%} # ;             ! FIXME: base form, <det> reading
+%<R_SN%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 ! <ord> is "det" is base form, <ord><subst> is "prn" reading
 
 LEXICON NUM-TWENTY
 
 NUM-COMMON ;
-%<R_SN%>%<ord%>:%>с%{I%}нш%{I%} # ;
-%<R_SN%>%<ord%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+%<R_SN%>:%>с%{I%}нш%{I%} # ;
+%<R_SN%>:%>с%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-ITG ! This is a temporal solution
                 ! (could be integrated with the above)
 
 %<R_SN%>: # ;
 %<R_SN%>: FULL-NOMINAL-INFLECTION ;
-%<R_SN%>%<ord%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
+%<R_SN%>:%>%{I%}нш%{I%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON NUM-COLL
 
-%<R_SN%>%<coll%>: FULL-NOMINAL-INFLECTION ;
-%<R_SN%>%<coll%>: # ;
+%<R_SN%>: FULL-NOMINAL-INFLECTION ;
+%<R_SN%>: # ;
 
 LEXICON NUM-ROMAN
 
-%<R_SN%>%<ord%>: # ;
+%<R_SN%>: # ;
 
 LEXICON LTR
 
