@@ -1,7 +1,20 @@
 #lang pollen
 
+◊(require racket/list)
+
 ◊(define BEGIN_TAG "%<")
 ◊(define END_TAG "%>")
+
+◊(define EXAMPLE_ENTRY
+   '(ма (%~ма QST Dir/RL "" "")
+        (ма   QST Dir/LR "" "")))
+
+◊(define EXAMPLE_LEXICON
+   '((ма (%~ма QST Dir/RL "")
+         (ма QST Dir/LR ""))
+
+     (ғой (%~ғой QST Dir/RL "")
+          (қой QST Dir/LR ""))))
 
 ◊(define-syntax-rule (tag id surf)
   (begin
@@ -10,6 +23,28 @@
           ""
           (string-append BEGIN_TAG surf END_TAG)))
       id))
+
+◊(define (LEXICON l)
+   (apply string-append (flatten (for/list ([i (map e->string l)])
+                                   (for/list ([j i])
+                                     j)))))
+
+◊(define (e->string e)
+   (let ([lemma (car e)]
+         [rst (cdr e)])
+     (for/list ([right_par_mark_comm rst])
+       (let-values ([(r p m c) (apply values right_par_mark_comm)])
+         (string-append (symbol->string lemma)
+                        ":"
+                        (symbol->string r)
+                        " "
+                        (symbol->string p)
+                        " ; "
+                        "! "
+			(symbol->string m)
+			" "
+                        c
+                        "\n")))))
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
@@ -1650,9 +1685,12 @@ LEXICON PAREN
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+◊(LEXICON EXAMPLE_LEXICON)
+
 !======================!
  LEXICON ModalParticles
 !======================!
+
 
 ма:%~ма QST ; ! "" Dir/RL
 ма:ма QST ; ! "" Dir/LR
@@ -1683,12 +1721,8 @@ LEXICON PAREN
 !====================!
 
 
-! FIXME: Section is to be checked later for miscategorisations
-!        [although these miscategorisations shouldn't affect much the coverage of
-!        translator, since they are part of tat.lexc too :)] /I.S./
-
 ! Co-ordinating conjunctions
-!===========================
+! ==========================
 
 !! Соединительные
 

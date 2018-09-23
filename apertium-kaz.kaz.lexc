@@ -1637,9 +1637,16 @@ LEXICON PAREN
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+ма:%~ма QST ; ! Dir/RL 
+ма:ма QST ; ! Dir/LR 
+ғой:%~ғой QST ; ! Dir/RL 
+ғой:қой QST ; ! Dir/LR 
+
+
 !======================!
  LEXICON ModalParticles
 !======================!
+
 
 ма:%~ма QST ; ! "" Dir/RL
 ма:ма QST ; ! "" Dir/LR
@@ -1670,12 +1677,8 @@ LEXICON PAREN
 !====================!
 
 
-! FIXME: Section is to be checked later for miscategorisations
-!        [although these miscategorisations shouldn't affect much the coverage of
-!        translator, since they are part of tat.lexc too :)] /I.S./
-
 ! Co-ordinating conjunctions
-!===========================
+! ==========================
 
 !! Соединительные
 
