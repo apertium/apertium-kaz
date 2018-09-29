@@ -671,57 +671,6 @@ CLIT-COP ;
 ! It starts with the LEXICON FULL-NOMINAL-INFLECTION
 !==============================================================================!
 
-!-------------------------------------------------------------------------------
-! The following combinations are possible (examples in Tatar):
-!
-! stem(plural) > case                                     # әти<nom>, әтине<acc>
-!----
-! stem(plural) > possessives > case                       !# әтиемне<px1sg><acc>
-! stem(plural) > possessives > ныкы/дагы/дай(*1)
-                                               !# әтиемнеке,китабындагы,әтиемдәй
-! stem(plural) > possessives > ныкы > case
-! stem(plural) > possessives > дагы(plural(*2)) > case
-                                   !# Монда _эчеңдәгене_ тышка чыгарырга ярамый.
-! stem(plural) > possessives > дагы(plural) > possessives > case
-                     !# _Эчендәгесе_(*3) – тышында, диләр андый кешеләр турында.
-!----
-! stem(plural) > ныкы/дагы/дай                         !# әтинеке/әтидәге/әтидәй
-! stem(plural) > ныкы/дагы > case  !#Бу соңгы _еллардагының_ өчтән икесе чамасы.
-!-----
-! stem(plural) > сыз
-! stem > сыз(plural) > case
-! stem > сыз(plural) > possessives > case
-!----
-! *1. "ныкы" form in some Tatar grammars is called "predicative genitive".
-!     Indeed, when not substantivized, it is used as a predicate:
-!     "Бу яулык әнинеке." (vs "Әнинең яулыгы.)
-!
-!     Currently we don't mark it with a <subst> tag, but probably we should,
-!     since we let it continue with case tags.
-!
-!     An alternative to a [predicative general possessive <px>] vs
-!     [substantivized general possessive <px>subst>] opposition is to view it as
-!     an always substantivized thing and hence mark it with a <subst> tag
-!     (see e.g. http://wiki.apertium.org/wiki/Turkic_languages/Ki)
-!     At the end of sentences it will have attached copulas, which will indicate
-!     predicative use anyway.
-! *2. TODO: Does double plural in a word make sence? Ерак илләрдәгеләр looks ok,
-!     and occurs in the RFERL copus (though very rarely). Plural affix both
-!     before and after the the general possessive does not look ok.
-! *3. This doesn't work atm (it's recursive), but it doesn't seem to be very
-!     frequent also.
-!     Most likely it is restricted to px3sp.
-!-------------------------------------------------------------------------------
-
-!-------------------------------------------------------------------------------
-! A note on abessive SIZ:
-! It doesn't appear after possessives.
-! We don't let it take copula suffixes here. A counterexample could be e.g.
-! "жұмыс-сыз-бын", but that's only because "жұмыссыз" has lexicalized as an
-! adjective (try to grep "с[ыі]з[мбп][ыі]н" on a large corpora -- that's just a
-! few words which are rather  adjectives.
-!-------------------------------------------------------------------------------
-
 LEXICON CASES-COMMON
 
 %<C2%>:%>%{N%}%{I%}ң CLITICS-NO-COP ;
@@ -776,7 +725,7 @@ LEXICON POSSESSIVES
 
 LEXICON ABESSIVE-POSTPOSITION
 
-%+сыз%<R_SH%>:%>с%{I%}з CLITICS-NO-COP ;
+%<ABE%>:%>с%{I%}з CLITICS-INCL-COP ;
 
 LEXICON LI-POSTPOSITION
 
@@ -40108,6 +40057,9 @@ LEXICON Common ! <- future
 қажет%<R_MOD%>:қажет # ;
 тиіс%<R_MOD%>:тиіс # ;
 мүмкін%<R_MOD%>:мүмкін # ;
+осындай%<R_SIM%>:осындай FULL-NOMINAL-INFLECTION ;
+мұндай%<R_SIM%>:мұндай FULL-NOMINAL-INFLECTION ;
+мүндай%<R_SIM%>:қандай FULL-NOMINAL-INFLECTION ;
 
 премьер%-лига:премьер%-лига N1 ;
 a321:a321 NP ;
