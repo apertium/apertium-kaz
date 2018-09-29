@@ -1112,19 +1112,22 @@ LEXICON V-IV
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
-LEXICON Vinfl-AUX-IMPF
+LEXICON VAUX1
 
-%<R_ETK%>%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
-%<R_ETK%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатыр екенмін"
+%<R_ETK%>: V-COMMON ;
 
-LEXICON Vinfl-AUX-IMPF-NEG
+LEXICON VAUX2
 
-%<R_ETK%>%<pres%>: V-PERS-S1 ; ! /жатқан жоқ/
-%<R_ETK%>%<pres%>%<evid%>:% екен V-PERS-S1 ; ! e.g., "жатқан жоқ екенмін"
+%<R_ETP%>: V-PERS-S1 ;
 
-LEXICON Vinfl-AUX
+LEXICON VAUX3
 
-%<R_ETK%>: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
+%<R_ETPK%>: V-PERS-S1 ;
+
+LEXICON VAUX23
+
+VAUX2 ;
+VAUX3 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
@@ -38155,38 +38158,34 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! Auxiliary verbs
 ! ===============
 
-жат:жатыр Vinfl-AUX-IMPF ; !
-жат:жатқан% жоқ Vinfl-AUX-IMPF-NEG ; !
-жүр:жүр Vinfl-AUX-IMPF ; !
-жүр:жүрген% жоқ Vinfl-AUX-IMPF-NEG ; !
-отыр:отыр Vinfl-AUX-IMPF ; !
-отыр:отырған% жоқ Vinfl-AUX-IMPF-NEG ; !
-тұр:тұр Vinfl-AUX-IMPF ; !
-тұр:тұрған% жоқ Vinfl-AUX-IMPF-NEG ; !
+жатыр:жатыр VAUX23 ; !
+жүр:жүр VAUX23 ; !
+отыр:отыр VAUX23 ; !
+тұр:тұр VAUX23 ; !
 
-ал:ал Vinfl-AUX ; !
-баста:баста Vinfl-AUX ; !
-бер:бер Vinfl-AUX ; !
-біт:біт Vinfl-AUX ; !
-бітір:бітір Vinfl-AUX ; !
-бол:бол Vinfl-AUX ; !
-!де:де Vinfl-AUX ; !
-ет:ет Vinfl-AUX ; ! ""
-жазда:жазда Vinfl-AUX ; !
-жат:жат Vinfl-AUX ; !
-жібер:жібер Vinfl-AUX ; !
-жүр:жүр Vinfl-AUX ; !
-кел:кел Vinfl-AUX ; !
-кет:кет Vinfl-AUX ; !
-көр:көр Vinfl-AUX ; !
-қал:қал Vinfl-AUX ; !
-қой:қой Vinfl-AUX ; !
-отыр:отыр Vinfl-AUX ; !
-сал:сал Vinfl-AUX ; !
-таста:таста Vinfl-AUX ; !
+ал:ал VAUX1 ; !
+баста:баста VAUX1 ; !
+бер:бер VAUX1 ; !
+біт:біт VAUX1 ; !
+бітір:бітір VAUX1 ; !
+бол:бол VAUX1 ; !
+!де:де VAUX1 ; !
+ет:ет VAUX1 ; ! ""
+жазда:жазда VAUX1 ; !
+жат:жат VAUX1 ; !
+жібер:жібер VAUX1 ; !
+жүр:жүр VAUX1 ; !
+кел:кел VAUX1 ; !
+кет:кет VAUX1 ; !
+көр:көр VAUX1 ; !
+қал:қал VAUX1 ; !
+қой:қой VAUX1 ; !
+отыр:отыр VAUX1 ; !
+сал:сал VAUX1 ; !
+таста:таста VAUX1 ; !
 сал%<R_ETK%>%<ET_ETU%>:салыш GER-INFL ; ! Dir/LR
-тұр:тұр Vinfl-AUX ; !
-шық:шық Vinfl-AUX ; !
+тұр:тұр VAUX1 ; !
+шық:шық VAUX1 ; !
 
 !!!! eng-kaz stuff
 !!!!
@@ -38208,21 +38207,14 @@ retroactive:retroactive A1 ; !"Use/MT"
 көмектес:көмектес V-TV ; ! "help"  ! Use/MT eng-kaz
 идентификацияла:идентификацияла V-TV ; ! "identity"  ! Use/MT eng-kaz
 ірікте:ірікте V-TV ; ! "sort"  ! Use/MT eng-kaz
-керек:керек Vinfl-AUX-IMPF ; ! "  ! Use/MT eng-kaz
 жиіркендір:жиіркендір V-TV ; ! "disgust"  ! Use/MT eng-kaz
 біріктір:біріктір V-TV ; ! "join"  ! Use/MT eng-kaz
 жауап% бер:жауап% бер V-IV ; ! "reply"  ! Use/MT eng-kaz
 ! maybe should be treated with a transfer rule
 ұсақта:ұсақта V-TV ; ! "crush"  ! Use/MT eng-kaz
 ұсат:ұсат V-TV ; ! "" ! Use/MT
-жатыр:жатыр Vinfl-AUX ; ! "  ! Use/MT eng-kaz
-! see above "жат:жатыр Vinfl-AUX-IMPF ; ! "
 көрін:көрін V-IV ; ! "appear"  ! Use/MT eng-kaz
-! see above "көр:көрін V-TV-PASS ; ! "be seen""
-!жатқан% жоқ:жатқан% жоқ Vinfl-AUX-IMPF-NEG ; ! "  ! Use/MT eng-kaz
-! not a verb?  should be dealt with via transfer
 сатып% ал:сатып% ал V-TV ; ! "buy"  ! Use/MT eng-kaz
-!емес:емес Vinfl-AUX-IMPF ; ! "  ! Use/MT eng-kaz
 баспаға% шығар:баспаға% шығар V-TV ; ! "print"  ! Use/MT eng-kaz
 ! maybe should be treated with a transfer rule
 сыла:сыла V-TV ; ! "rub"  ! Use/MT eng-kaz
