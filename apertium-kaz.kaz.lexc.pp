@@ -50,11 +50,128 @@
 !!   M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K A Z A K H   !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-! See http://wiki.apertium.org/wiki/Turkic_lexicon
-
 !=================!
  Multichar_Symbols
 !=================!
+
+! BEGIN NLA TAGSET (PARTIAL)
+
+! === Tag set ===
+! The tag set employed in this release is a rather simple one, that gives up a
+! lot of grammatical nuance for the sake of clarity and easier (faster)
+! tagging. For example, no distinction is made between pronouns and
+! determiners, copulas are not acknowledged, time-aspect-mood continuum is
+! simplified to the extent possible, etc.
+!
+! = POS tags =
+
+◊(tag R_ZE "R_ZE")	! Noun, common
+◊(tag R_ZEQ "R_ZEQ")	! Noun, personal
+◊(tag R_ET "R_ET")	! Verb
+◊(tag R_ETK "R_ETK")	! Verb, auxiliary
+◊(tag R_ETP "R_ETP")	! Verb, special action* (жатыр, отыр, тұр, жүр)
+◊(tag R_ETPK "R_ETPK")	! Verb, special action, auxiliary
+◊(tag R_ETB "R_ETB")	! Verb, negative (жоқ, емес only, e.g. барған жоқ)
+◊(tag R_SE "R_SE")	! Adjective
+◊(tag R_SIM "R_SIM")	! Pronoun
+◊(tag R_US "R_US")	! Adverb
+◊(tag R_ZHL "R_ZHL")	! Conjunct (both coordinating and subordinating)
+◊(tag R_SN "R_SN")	! Numeral
+◊(tag R_SH "R_SH")	! Adposition / Particle
+◊(tag R_MOD "R_MOD")	! Modal word
+◊(tag R_OS "R_OS")	! Interjection
+◊(tag R_ELK "R_ELK")	! Imitative
+◊(tag R_SYM "R_SYM")	! Symbol (#, $, +, etc.)
+◊(tag R_BOS "R_BOS")	! Foreign word
+◊(tag R_X "R_X")	! Un-analyzed
+
+! * special action verbs (жатыр, отыр, тұр, жүр) are considered as a separate
+!  category, because only they can receive agreement markers being in a base
+!  form, i.e. жатыр/отыр/тұр/жүр + мын/мін/сың/сің... is possible, but же + мін
+!  (or any other verb and agreement marker) is impossible directly, there has to
+!  be something in between, e.g. же + й + мін, же + р + мін, же + ме + й + сің,
+!  etc.
+
+! = punctuation =
+
+◊(tag R_NKT "R_NKT") !.
+◊(tag R_UTR  "R_UTR") !,
+◊(tag R_DPH  "R_DPH") !-
+◊(tag R_ATRN  "R_ATRN") !«
+◊(tag R_ZTRN "R_ZTRN") !»"
+◊(tag R_TRN  "R_TRN") ! "
+◊(tag R_QNKT "R_QNKT") !:
+◊(tag R_SUR "R_SUR") !?
+◊(tag R_AZZ "R_AZZ") ! (
+◊(tag R_ZZZ  "R_ZZZ") !)
+◊(tag R_LEP "R_LEP") ! "
+◊(tag R_UNKT  "R_UNKT") ! ;
+◊(tag R_SLH "R_SLH") ! /
+◊(tag R_APS  "R_APS") ! '
+◊(tag R_BSLH  "R_BSLH") ! \
+
+! = non-transitional morphemes =
+
+◊(tag N1 "N1")	! plural
+◊(tag N1S "N1S")	! plural, after possessive, e.g. мама_R_ZE м_S1 дар_N1S
+◊(tag S1 "S1")	! possessive, first singular
+◊(tag S2 "S2")	! possessive, second singular
+◊(tag S3 "S3")	! possessive, third singular/plural
+◊(tag S4 "S4")	! possessive, second singular, formal
+◊(tag S5 "S5")	! possessive, first plural
+◊(tag S9 "S9")	! possessive, special (-ныкі, -дыкі, -тыкі)
+◊(tag S3SIM "S3SIM")	! possessive, third singular/plural, after pronouns
+◊(tag C2  "C2 ")	! genitive case (ілік септік)
+◊(tag C3 "C3")	! dative case (барыс септік)
+◊(tag C4 "C4")	! accusative case (табыс септік)
+◊(tag C5 "C5")	! locative case (жатыс септік)
+◊(tag C6 "C6")	! ablative case (шығыс септік)
+◊(tag C7 "C7")	! instrumental case (көмектес септік)
+◊(tag LATT "LATT")	! locative-attributive (-дағы, -дегі, -тағы, -тегі)
+◊(tag SML "SML")	! similative (-дай, -дей, -тай, -тей)
+◊(tag ABE "ABE")	! abessive (-сыз, -сіз)
+◊(tag EQU "EQU")	! equative (-ша, -ше, e.g. балаша)
+◊(tag CMP "CMP")	! comparative, (adjectives and adverbs)
+◊(tag V1 "V1")	! reflexive voice (өздік етіс)
+◊(tag V2 "V2")	! passive voice (ортақ етіс)
+◊(tag V3 "V3")	! cooperative voice (өздік етіс)
+◊(tag V4 "V4")	! causative voice (өзгелік етіс)
+◊(tag M2 "M2")	! imperative mood (бұйрық рай)
+◊(tag M3 "M3")	! desiderative mood (қалау рай)
+◊(tag M4 "M4")	! conditional mood (шартты рай)
+◊(tag T1 "T1")	! aorist (ауыспалы осы/келер шақ)
+◊(tag T2 "T2")	! future tense (болжамды/мақсатты келер шақ)
+◊(tag T3 "T3")	! past tense (жедел/бұрынғы өткен шақ)
+◊(tag T3E "T3E")	! past tense, modified after е_R_ET (e.g., е_R_ET т_T3E)
+◊(tag P1 "P1")	! agreement, 1st singular
+◊(tag P2 "P2")	! agreement, 2nd singular
+◊(tag P3 "P3")	! agreement, 3rd singular
+◊(tag P4 "P4")	! agreement, 2nd singular, formal
+◊(tag P5 "P5")	! agreement, 1st plural
+◊(tag P6 "P6")	! agreement, 2nd plural
+◊(tag P7 "P7")	! agreement, 3rd plural
+◊(tag P8 "P8")	! agreement, 2nd plural, formal
+
+! = transitional morphemes =
+
+◊(tag ET_KSE "ET_KSE")	! verbal adverb, participle (көсемше)
+◊(tag ET_ESM "ET_ESM")	! verbal adjective, noun (есімше)
+◊(tag ET_ETU "ET_ETU")	! gerund (тұйық етістік)
+◊(tag ET_ETB "ET_ETB")	! negated verb (болымсыз етістік
+◊(tag ETB_ESM "ETB_ESM")	! 
+
+! Transitional morphemes consist of two underline-separated parts («1_2») that
+! indicate the transition from one (pseudo-) POS to another. This concerns only
+! transitions between types of verbs. The four basic transitions are given above
+! and others are possible, e.g. a verb can be negated and then turned into a
+! gerund, which results in two transitions ET_ETB and ETB_ETU. There is a total
+! of 19 transitional morphemes, which are: ET_KSE, ET_ESM, ET_ETU, ET_ETB,
+! ETP_KSE, ETP_ESM, ETP_ETU, ETP_ETB, ETK_KSE, ETK_ESM, ETK_ETU, ETK_ETB,
+! ETPK_KSE, ETPK_ESM, ETPK_ETU, ETPK_ETB, ETB_KSE, ETB_ESM, ETB_ETU.
+
+! END NLA TAGSET (PARTIAL)
+
+! See http://wiki.apertium.org/wiki/Turkic_lexicon
 
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
@@ -913,10 +1030,8 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 ◊|fut_plan|:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 ◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
-◊|vneg|◊|fut_plan|:%>%{M%}%{A%}%{K%}% емес V-PERS-S1 ;
 
 ◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
-◊|vneg|◊|past|:%>%{G%}%{A%}н% емес V-PERS-S1 ;  ! more colloquial than regular negative
 
 ◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;
 ◊|vneg|◊|ifi|:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;    ! more colloquial than regular negative
@@ -928,11 +1043,8 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 ◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;        ! Dir/LR - see irregular forms above
 ◊|pih|:%>%{E%}т%{I%}н V-PERS-S1 ;
 
-◊|aor|◊|evid|:%>%{E%}д%{I%}% екен V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
-◊|past|◊|evid|:%>%{G%}%{A%}н% екен V-PERS-S1 ;   ! барған екенмін / бармаған екенмін
 ◊|ifi|◊|evid|:%>%{I%}п V-PERS-IFI_EVID ;         ! барыппын / бармаппын
 ◊|ifi|◊|evid|:%>%{o%}%{I%}п V-PERS-IFI_EVID ;    ! бопты   ! Dir/LR
-◊|vneg|◊|ifi|◊|evid|:%>%{G%}%{A%}н% жоқ% екен V-PERS-S1 ; ! барған жоқ екенмін
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
@@ -1066,16 +1178,11 @@ LEXICON Vinfl-AUX
 
 LEXICON Copula
 
-е◊|cop|◊|ger_past|:екен GER-POSSESSIVES ;
-е◊|cop|◊|ger_perf|:екен%>%{L%}%{I%}к GER-POSSESSIVES ;
-
-! This is an evidential aorist form, not past -JNW
-е◊|cop|◊|aor|◊|evid|:екен V-PERS-S1 ;
-е◊|cop|◊|neg|◊|aor|◊|evid|:емес% екен V-PERS-S1 ;
-
-е◊|cop|◊|ifi|:е%>%{D%}%{I%} V-PERS-S2 ;
-
-е◊|cop|◊|vneg|◊|aor|:емес V-PERS-S1 ;
+е◊|R_ET|◊|ET_ESM|:екен POSSESSIVES ;
+е◊|R_ET|◊|ET_ESM|:екен%>%{L%}%{I%}к POSSESSIVES ;
+е◊|R_ET|◊|ET_ESM|:екен V-PERS-S1 ;
+е◊|R_ET|◊|T3|:е%>%{D%}%{I%} V-PERS-S2 ;
+е◊|R_ET|◊|ET_ETB|◊|ETB_ESM|:емес V-PERS-S1 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
