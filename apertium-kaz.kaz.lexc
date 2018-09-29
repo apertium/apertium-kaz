@@ -760,8 +760,8 @@ LEXICON A1                ! adjectives that can be both substantivised and andve
 %<R_SE%>%<CMP%>:%>%{L%}%{A%}у FULL-NOMINAL-INFLECTION ;        !# жақсырақты таптым Dir/LR
 %<R_SE%>%<CMP%>:%>%{L%}%{A%}у CLITICS-NO-COP ;                  !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді." Dir/LR
 
-%<R_SE%>: CLITICS-NO-COP ;                               !# жақсы білемін
-%<R_SE%>%<CMP%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+%<R_US%>: CLITICS-NO-COP ;                               !# жақсы білемін
+%<R_US%>%<CMP%>:%>%{I%}р%{A%}%{K%} CLITICS-NO-COP ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
 
 LEXICON A2                 ! (derived/not fully lexicalised) adjectives without adverbial reading;
                            ! <adj> and <adj.subst> readings have comparison levels.
@@ -40057,9 +40057,9 @@ LEXICON Common ! <- future
 қажет%<R_MOD%>:қажет # ;
 тиіс%<R_MOD%>:тиіс # ;
 мүмкін%<R_MOD%>:мүмкін # ;
-осындай%<R_SIM%>:осындай FULL-NOMINAL-INFLECTION ;
-мұндай%<R_SIM%>:мұндай FULL-NOMINAL-INFLECTION ;
-мүндай%<R_SIM%>:қандай FULL-NOMINAL-INFLECTION ;
+осындай:осындай A1 ;
+мұндай:мұндай A1 ;
+қандай:қандай A1 ;
 
 премьер%-лига:премьер%-лига N1 ;
 a321:a321 NP ;
