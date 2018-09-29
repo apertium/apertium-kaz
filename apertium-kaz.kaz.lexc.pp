@@ -159,6 +159,7 @@
 ◊(tag ET_ETU "ET_ETU")	! gerund (тұйық етістік)
 ◊(tag ET_ETB "ET_ETB")	! negated verb (болымсыз етістік
 ◊(tag ETB_ESM "ETB_ESM")	! 
+◊(tag ETK_ESM "ETK_ESM")	! 
 
 ! Transitional morphemes consist of two underline-separated parts («1_2») that
 ! indicate the transition from one (pseudo-) POS to another. This concerns only
@@ -1161,6 +1162,7 @@ LEXICON V-IV
 LEXICON VAUX1
 
 ◊|vaux1|: V-COMMON ;
+◊|vaux1|◊|ETK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
 
 LEXICON VAUX2
 
@@ -1426,7 +1428,7 @@ LEXICON PRON-QNT
 
 LEXICON PRON-IND
 
-◊|prn|◊|ind|: CASES ;
+◊|prn|◊|ind|: FULL-NOMINAL-INFLECTION ;
 
 LEXICON PRON-IND-PL
 
