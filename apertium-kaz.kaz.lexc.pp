@@ -1032,9 +1032,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 ◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
 
 ◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
-
 ◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;
-◊|vneg|◊|ifi|:%>%{G%}%{A%}н% жоқ V-PERS-S1 ;    ! more colloquial than regular negative
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
@@ -1186,6 +1184,9 @@ LEXICON Copula
 е◊|R_ET|◊|ET_ESM|:екен V-PERS-S1 ;
 е◊|R_ET|◊|T3|:е%>%{D%}%{I%} V-PERS-S2 ;
 е◊|R_ET|◊|ET_ETB|◊|ETB_ESM|:емес V-PERS-S1 ;
+е◊|R_ET|◊|ET_ETB|◊|ETB_ESM|:емес V-PERS-S1 ;
+емес◊|R_ETB|:емес V-PERS-S1 ;
+жоқ◊|R_ETB|:жоқ V-PERS-S1 ;
 
 !!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
 
@@ -33085,7 +33086,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 дер:дер ADV ; ! ""
 жиі:жиі ADV ; ! "often" ! Why was this MT-only? -JNW
 жайдан%-жай:жайдан%-жай ADV ; ! "just" Use/MT
-жоқ:жоқ ADV ; ! "non" Use/MT
 екіталай:екіталай ADV ; ! ""
 ішінара:ішінара ADV ; ! ""
 !ішінде:ішінде ADV ; ! "in"     Use/MT ! should be n.px3sp.loc
@@ -38202,7 +38202,8 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! Auxiliary verbs
 ! ===============
 
-жатыр:жатыр VAUX23 ; ! 
+жат:жатыр VAUX2 ; ! 
+жатыр:жатыр VAUX3 ; ! 
 жүр:жүр VAUX23 ; ! 
 отыр:отыр VAUX23 ; ! 
 тұр:тұр VAUX23 ; ! 
