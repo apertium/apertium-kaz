@@ -54,7 +54,7 @@
  Multichar_Symbols
 !=================!
 
-! BEGIN NLA TAGSET (PARTIAL)
+! BEGIN NLA TAGSET
 
 ! === Tag set ===
 ! The tag set employed in this release is a rather simple one, that gives up a
@@ -154,13 +154,6 @@
 
 ! = transitional morphemes =
 
-◊(tag ET_KSE "ET_KSE")	! verbal adverb, participle (көсемше)
-◊(tag ET_ESM "ET_ESM")	! verbal adjective, noun (есімше)
-◊(tag ET_ETU "ET_ETU")	! gerund (тұйық етістік)
-◊(tag ET_ETB "ET_ETB")	! negated verb (болымсыз етістік
-◊(tag ETB_ESM "ETB_ESM")	! 
-◊(tag ETK_ESM "ETK_ESM")	! 
-
 ! Transitional morphemes consist of two underline-separated parts («1_2») that
 ! indicate the transition from one (pseudo-) POS to another. This concerns only
 ! transitions between types of verbs. The four basic transitions are given above
@@ -170,7 +163,30 @@
 ! ETP_KSE, ETP_ESM, ETP_ETU, ETP_ETB, ETK_KSE, ETK_ESM, ETK_ETU, ETK_ETB,
 ! ETPK_KSE, ETPK_ESM, ETPK_ETU, ETPK_ETB, ETB_KSE, ETB_ESM, ETB_ETU.
 
-! END NLA TAGSET (PARTIAL)
+◊(tag ET_KSE "ET_KSE")	! verbal adverb, participle (көсемше)
+◊(tag ET_ESM "ET_ESM")	! verbal adjective, noun (есімше)
+◊(tag ET_ETU "ET_ETU")	! gerund (тұйық етістік)
+◊(tag ET_ETB "ET_ETB")	! negated verb (болымсыз етістік)
+◊(tag ETP_KSE "ETP_KSE")	!
+◊(tag ETP_ESM "ETP_ESM")	!
+◊(tag ETP_ETU "ETP_ETU")	!
+◊(tag ETP_ETB "ETP_ETB")	!
+◊(tag ETK_KSE "ETK_KSE")	!
+◊(tag ETK_ESM "ETK_ESM")	!
+◊(tag ETK_ETU "ETK_ETU")	!
+◊(tag ETK_ETB "ETK_ETB")	!
+◊(tag ETPK_KSE "ETPK_KSE")	!
+◊(tag ETPK_ESM "ETPK_ESM")	!
+◊(tag ETPK_ETU "ETPK_ETU")	!
+◊(tag ETPK_ETB "ETPK_ETB")	!
+◊(tag ETB_KSE "ETB_KSE")	!
+◊(tag ETB_ESM "ETB_ESM")	!
+◊(tag ETB_ETU "ETB_ETU")	!
+
+
+! END NLA TAGSET
+
+! BEGIN APERTIUM TAGSET
 
 ! See http://wiki.apertium.org/wiki/Turkic_lexicon
 
@@ -184,9 +200,7 @@
 ◊(tag prn "R_SIM")       ! Pronoun                    ! Есімдік
 ◊(tag det "R_SIM")       ! Determiner                 ! Детерминатив
 ◊(tag v "R_ET")          ! Verb                       ! Етістік
-◊(tag vaux1 "R_ETK")     ! Auxilary verb              ! Көмекші етістік (except for жатыр, отыр, тұр, жүр)
-◊(tag vaux2 "R_ETP")     ! Auxilary verb              ! жатыр, отыр, тұр, жүр
-◊(tag vaux3 "R_ETPK")    ! Auxilary verb              ! Көмекші етістік
+◊(tag vaux "R_ETK")      ! Auxilary verb              ! Көмекші етістік
 ◊(tag adv "R_US")        ! Adverb                     ! Үстеу
 ◊(tag post "R_SH")       ! Postposition               ! Септеулік шылау
 ◊(tag postadv "R_SH")   ! Postadverb                 ! "Постүстеу" (*1)
@@ -418,6 +432,8 @@
 ◊(tag vneg "ET_ETB")       ! Negation
 
 ◊(tag err_orth "err_orth") ! For orthographic errors
+
+! END APERTIUM TAGSET
 
 ! Archiphonemes and escaped symbols
 
@@ -981,14 +997,11 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 ◊|fut_plan|:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 ◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
 
-◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
-◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;
-
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 ◊|aor|:%>%{E%} V-PERS-AOR ;
-◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;      ! Dir/LR - see irregular forms above
-◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;        ! Dir/LR - see irregular forms above
+◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
+◊|ifi|:%>%{D%}%{I%} V-PERS-S2 ;
 ◊|pih|:%>%{E%}т%{I%}н V-PERS-S1 ;
 
 ◊|ifi|◊|evid|:%>%{I%}п V-PERS-IFI_EVID ;         ! барыппын / бармаппын
@@ -1106,25 +1119,60 @@ LEXICON V-IV
 ◊|v|: V-COMMON ;
 ◊|v|: V-DER ;
 
-!!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
+LEXICON ◊(string-upcase R_ETK)
 
-LEXICON VAUX1
+◊|R_ETK|: V-COMMON ;
+◊|R_ETK|◊|ETK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
+◊|R_ETK|◊|ETK_ETU|:%>у FULL-NOMINAL-INFLECTION ;
+◊|R_ETK|◊|ETK_ETB|:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
 
-◊|vaux1|: V-COMMON ;
-◊|vaux1|◊|ETK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
+◊|R_ETK|◊|ETK_KSE|:%>%{I%}п CLITICS-NO-COP ;
+◊|R_ETK|◊|ETK_KSE|:%>%{o%}%{I%}п CLIT-GHANA-ETC ; ! Dir/LR (for things like боп, сап, кеп, қап, қып, etc.)
+◊|R_ETK|◊|ETK_ETB|◊|ETB_KSE|:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
+◊|R_ETK|◊|M3|:%>%{G%}%{I%} VOL-ENDINGS ;
+◊|R_ETK|◊|ETK_ESM|:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
+◊|R_ETK|◊|ETK_ESM|:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS-NO-COP ;           ! Dir/LR
+◊|R_ETK|◊|ETK_KSE|:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
+◊|R_ETK|◊|ETK_KSE|:%>%{M%}%{A%}%>й%{I%}нш%{A%} CLITICS-NO-COP ;       ! Dir/LR
+◊|R_ETK|◊|ETK_KSE|:%>%{G%}%{A%}нш%{A%} CLITICS-NO-COP ;
 
-LEXICON VAUX2
+! Verbal Adjectives
+!◊|gpr_fut|:%>%{A%}р V-ADJ ;
+!◊|vneg|◊|gpr_fut|:%>%{M%}%{A%}%>%с V-ADJ ;
 
-◊|vaux2|: V-PERS-S1 ;
+!◊|gpr_ppot|:%>%{A%}р%>л%{I%}%{K%} GER-INFL ;
+!◊|vneg|◊|gpr_ppot|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-INFL ;
 
-LEXICON VAUX3
+! Gerunds
+!◊|ger_fut|:%>%{A%}р GER-POSSESSIVES ;  ! FIXME: check that e.g. no possession + accusative isn't valid (I think it is) -JNW
+!◊|vneg|◊|ger_fut|:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
 
-◊|vaux3|: V-PERS-S1 ;
+!◊|ger_ppot|:%>%{A%}р%>л%{I%}%{K%} GER-POSSESSIVES ;
+!◊|vneg|◊|ger_ppot|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-POSSESSIVES ;
 
-LEXICON VAUX23
+!◊|ger_obs|:%>%{M%}%{A%}%{K%} GER-INFL ;
 
-VAUX2 ;
-VAUX3 ;
+LEXICON ◊(string-upcase R_ETP)
+
+◊|R_ETP|: V-PERS-S1 ;
+◊|R_ETP|◊|ETP_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
+◊|R_ETP|◊|ETP_ETU|:%>у FULL-NOMINAL-INFLECTION ;
+◊|R_ETP|◊|ETP_ETB|:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
+
+LEXICON ◊(string-upcase R_ETPK)
+
+◊|R_ETPK|: V-PERS-S1 ;
+◊|R_ETPK|◊|ETPK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
+◊|R_ETPK|◊|ETPK_ETU|:%>у FULL-NOMINAL-INFLECTION ;
+◊|R_ETPK|◊|ETPK_ETB|:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
+
+LEXICON ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK))
+
+◊(string-upcase R_ETP) ;
+◊(string-upcase R_ETPK) ;
 
 !!!!!!!!!!!!!!!!!!!!!!     copula
 
@@ -38153,35 +38201,35 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! Auxiliary verbs
 ! ===============
 
-жат:жатыр VAUX2 ; ! 
-жатыр:жатыр VAUX3 ; ! 
-жүр:жүр VAUX23 ; ! 
-отыр:отыр VAUX23 ; ! 
-тұр:тұр VAUX23 ; ! 
+жат:жатыр ◊(string-upcase R_ETP) ; ! 
+жатыр:жатыр ◊(string-upcase R_ETPK) ; ! 
+жүр:жүр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
+отыр:отыр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
+тұр:тұр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
 
-ал:ал VAUX1 ; ! 
-баста:баста VAUX1 ; !
-бер:бер VAUX1 ; !
-біт:біт VAUX1 ; !
-бітір:бітір VAUX1 ; !
-бол:бол VAUX1 ; !
-!де:де VAUX1 ; !
-ет:ет VAUX1 ; ! ""
-жазда:жазда VAUX1 ; !
-жат:жат VAUX1 ; !
-жібер:жібер VAUX1 ; ! 
-жүр:жүр VAUX1 ; ! 
-кел:кел VAUX1 ; !
-кет:кет VAUX1 ; ! 
-көр:көр VAUX1 ; !
-қал:қал VAUX1 ; !
-қой:қой VAUX1 ; !
-отыр:отыр VAUX1 ; ! 
-сал:сал VAUX1 ; !
-таста:таста VAUX1 ; ! 
-сал◊|vaux1|◊|ger|:салыш GER-INFL ; ! Dir/LR
-тұр:тұр VAUX1 ; ! 
-шық:шық VAUX1 ; !
+ал:ал ◊(string-upcase R_ETK) ; ! 
+баста:баста ◊(string-upcase R_ETK) ; !
+бер:бер ◊(string-upcase R_ETK) ; !
+біт:біт ◊(string-upcase R_ETK) ; !
+бітір:бітір ◊(string-upcase R_ETK) ; !
+бол:бол ◊(string-upcase R_ETK) ; !
+!де:де ◊(string-upcase R_ETK) ; !
+ет:ет ◊(string-upcase R_ETK) ; ! ""
+жазда:жазда ◊(string-upcase R_ETK) ; !
+жат:жат ◊(string-upcase R_ETK) ; !
+жібер:жібер ◊(string-upcase R_ETK) ; ! 
+жүр:жүр ◊(string-upcase R_ETK) ; ! 
+кел:кел ◊(string-upcase R_ETK) ; !
+кет:кет ◊(string-upcase R_ETK) ; ! 
+көр:көр ◊(string-upcase R_ETK) ; !
+қал:қал ◊(string-upcase R_ETK) ; !
+қой:қой ◊(string-upcase R_ETK) ; !
+отыр:отыр ◊(string-upcase R_ETK) ; ! 
+сал:сал ◊(string-upcase R_ETK) ; !
+таста:таста ◊(string-upcase R_ETK) ; ! 
+сал◊|R_ETK|◊|ger|:салыш GER-INFL ; ! Dir/LR
+тұр:тұр ◊(string-upcase R_ETK) ; ! 
+шық:шық ◊(string-upcase R_ETK) ; !
 
 !!!! eng-kaz stuff
 !!!!
