@@ -127,6 +127,7 @@
 ◊(tag C5 "C5")	! locative case (жатыс септік)
 ◊(tag C6 "C6")	! ablative case (шығыс септік)
 ◊(tag C7 "C7")	! instrumental case (көмектес септік)
+◊(tag C7SIM "C7SIM")	! instrumental case (көмектес септік), after pronouns
 ◊(tag LATT "LATT")	! locative-attributive (-дағы, -дегі, -тағы, -тегі)
 ◊(tag SML "SML")	! similative (-дай, -дей, -тай, -тей)
 ◊(tag ABE "ABE")	! abessive (-сыз, -сіз)
@@ -327,7 +328,7 @@
 !! Mood
 ◊(tag imp "M2")       ! Imperative
 ◊(tag opt "M3")       ! Optative/jussive
-◊(tag evid "evid")    ! Evidential, a.k.a. "indirect" / non-eyewitness / hearsay
+◊(tag evid "")    ! Evidential, a.k.a. "indirect" / non-eyewitness / hearsay
 
 !! Derivation
 ◊(tag caus "V4")      ! Causative
@@ -340,7 +341,6 @@
 ◊(tag aor "T1")       ! -{E}
 ◊(tag past "T3")      ! -{G}{A}н
 ◊(tag ifi "T3")       ! -{D}{I}
-◊(tag ifi_evid "T3")  ! -{I}пт{I}
 ◊(tag fut "T2")       ! -{I}р
 ◊(tag fut_plan "T2")  ! -{M}{A}{K}
 ◊(tag pih "T3")      ! -{E}тін       ! ~past imperfect ~"used to"
@@ -431,7 +431,7 @@
 ◊(tag reas "reas")       ! Reason
 ◊(tag vneg "ET_ETB")       ! Negation
 
-◊(tag err_orth "err_orth") ! For orthographic errors
+◊(tag err_orth "") ! For orthographic errors
 
 ! END APERTIUM TAGSET
 
@@ -871,14 +871,10 @@ LEXICON V-ADJ
 
 LEXICON V-PERS-S1-NO3PERSON
 
-! Pointed to by: V-PERS-S1 and V-PERS-AOR
-! Irregular p1.sg form is in V-PERS-AOR
-
 ◊|p1_sg|:%>%{M%}%{I%}н CLITICS-NO-COP ;
 ◊|p2_sg|:%>с%{I%}ң CLITICS-NO-COP ;
 ◊|p1_pl|:%>%{M%}%{I%}з CLITICS-NO-COP ;
 ◊|p2_pl|:%>с%{I%}ңд%{A%}р CLITICS-NO-COP ;
-CLITICS-NO-COP ;
 
 ◊|p2_frm_sg|:%>с%{I%}з CLITICS-NO-COP ;
 ◊|p2_frm_pl|:%>с%{I%}зд%{A%}р CLITICS-NO-COP ;
@@ -888,6 +884,7 @@ LEXICON V-PERS-S1
 ! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
 
 V-PERS-S1-NO3PERSON ;
+CLITICS-NO-COP ;
 
 LEXICON V-PERS-S2
 
@@ -989,22 +986,18 @@ GER-ABE-ETC ;
 
 !!!!!!!   end of gerunds inflection lexicon
 
-LEXICON V-FINITE-IRREGULAR-NEGATIVE-1
+LEXICON V-PERS-IRREGULAR-NEGATIVE-1
 
 ◊|fut|:%>%{A%}р V-PERS-S1 ;
 ◊|fut_plan|:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 ◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
+◊|prc_vol|:%>%{G%}%{I%} VOL-ENDINGS ;
 
-LEXICON V-FINITE-IRREGULAR-NEGATIVE-2
+LEXICON V-PERS-IRREGULAR-NEGATIVE-2
 
 ◊|fut|:%>%{M%}%{A%}с V-PERS-S1 ;
 
-LEXICON V-FINITE-IRREGULAR-NEGATIVE
-
-V-FINITE-IRREGULAR-NEGATIVE-1 ;
-◊|vneg|: V-FINITE-IRREGULAR-NEGATIVE-2 ;
-
-LEXICON V-FINITE-REGULAR-NEGATIVE
+LEXICON V-PERS-REGULAR-NEGATIVE
 
 ◊|aor|:%>%{E%} V-PERS-AOR ;
 ◊|past|:%>%{G%}%{A%}н V-PERS-S1 ;
@@ -1013,64 +1006,8 @@ LEXICON V-FINITE-REGULAR-NEGATIVE
 ◊|ifi|◊|evid|:%>%{I%}п V-PERS-IFI_EVID ;         ! барыппын / бармаппын
 ◊|ifi|◊|evid|:%>%{o%}%{I%}п V-PERS-IFI_EVID ;    ! бопты   ! Dir/LR
 
-LEXICON V-NONFINITE-IRREGULAR-NEGATIVE
-
-! Participles
-◊|prc_perf|:%>%{I%}п CLIT-GHANA-ETC ;
-◊|prc_perf|:%>%{o%}%{I%}п CLIT-GHANA-ETC ;            ! Dir/LR
-       ! for things like боп, сап, кеп, қап, қып, etc.
-◊|vneg|◊|prc_perf|:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
-◊|prc_vol|:%>%{G%}%{I%} VOL-ENDINGS ;
-◊|prc_fplan|:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
-◊|prc_fplan|:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS-NO-COP ;           ! Dir/LR
-◊|prc_plan|:%>%{G%}%{A%}л%{I%} CLIT-GHANA-ETC ;
-
-! Verbal adverbs
-◊|gna_perf|:%>%{I%}п CLITICS-NO-COP ;
-◊|vneg|◊|gna_perf|:%>%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
-◊|vneg|◊|gna_perf|:%>%{M%}%{A%}%>ст%{A%}н CLITICS-NO-COP ; ! Dir/LR
-◊|vneg|◊|gna_perf|:%>%{M%}%{A%}%>й%{I%}нш%{A%} CLITICS-NO-COP ;       ! Dir/LR
-◊|gna_until|:%>%{G%}%{A%}нш%{A%} CLITICS-NO-COP ;
-
-! Verbal Adjectives
-◊|gpr_fut|:%>%{A%}р V-ADJ ;
-◊|vneg|◊|gpr_fut|:%>%{M%}%{A%}%>%с V-ADJ ;
-
-◊|gpr_ppot|:%>%{A%}р%>л%{I%}%{K%} GER-INFL ;
-◊|vneg|◊|gpr_ppot|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-INFL ;
-
-! Gerunds
-◊|ger_fut|:%>%{A%}р GER-POSSESSIVES ;  ! FIXME: check that e.g. no possession + accusative isn't valid (I think it is) -JNW
-◊|vneg|◊|ger_fut|:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
-
-◊|ger_ppot|:%>%{A%}р%>л%{I%}%{K%} GER-POSSESSIVES ;
-◊|vneg|◊|ger_ppot|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-POSSESSIVES ;
-
-◊|ger_obs|:%>%{M%}%{A%}%{K%} GER-INFL ;
-
-LEXICON V-NONFINITE-REGULAR-NEGATIVE
-
-! Participles
-◊|prc_impf|:%>%{E%} CLIT-GHANA-ETC ;
-◊|prc_cond|:%>с%{A%} V-PERS-S2 ;
-
 ! Verbal adverbs
 ◊|gna_cond|:%>с%{A%} V-PERS-S2 ;
-◊|gna_impf|:%>%{E%} CLIT-GHANA-ETC ;
-◊|gna_after|:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
-
-! Verbal adjectives
-◊|gpr_past|:%>%{G%}%{A%}н V-ADJ ;
-◊|gpr_impf|:%>%{E%}т%{I%}н V-ADJ ;
-◊|gpr_pot|:%>у%>ш%{I%} V-ADJ ;
-
-! Gerunds
-◊|ger|:%>у GER-INFL ;
-◊|ger_past|:%>%{G%}%{A%}н GER-INFL ;
-◊|ger_perf|:%>%{G%}%{A%}н%>%{L%}%{I%}%{K%} GER-INFL ;
-◊|ger_abs|:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
-◊|ger_impf|:%>%{E%}т%{I%}н GER-POSSESSIVES ;
-◊|ger_impf|◊|abs|:%>%{E%}т%{I%}н%>д%{I%}%{K%} GER-POSSESSIVES ;
 
 ! Imperatives
 ◊|imp|◊|p2|◊|sg|: CLIT-EMPH ;
@@ -1085,23 +1022,70 @@ LEXICON V-NONFINITE-REGULAR-NEGATIVE
 ◊|opt|◊|p1|◊|pl|:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
 ◊|opt|◊|p3|◊|pl|:%>с%{I%}н CLITICS-NO-COP ;
 
+LEXICON V-PERS-REGULAR-NEGATIVE-2
+
+:%>%{M%}%{A%} V-PERS-REGULAR-NEGATIVE ;
+
+LEXICON V-ETU-SURFACE
+
+:%>у FULL-NOMINAL-INFLECTION ;
+
+LEXICON V-ESIMSHE-SURFACE
+
+:%>%{E%}т%{I%}н FULL-NOMINAL-INFLECTION ;                              
+:%>у%>ш%{I%} FULL-NOMINAL-INFLECTION ;     
+:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
+
+LEXICON V-ESIMSHE-NONEG-SURFACE
+
+:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
+:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS-NO-COP ;           ! Dir/LR
+:%>%{A%}р V-ADJ ;
+:%>%{A%}р%>л%{I%}%{K%} GER-INFL ;
+
+LEXICON V-ESIMSHE-NEG-SURFACE
+
+:%>%{M%}%{A%}%>%с V-ADJ ;
+:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-INFL ;
+
+LEXICON V-KOSIMSHE-SURFACE
+
+:%>%{E%} CLITICS-NO-COP ;
+:%>%{I%}п CLITICS-NO-COP ;
+:%>%{o%}%{I%}п CLITICS-NO-COP ; ! Dir/LR (for things like боп, сап, кеп, қап, қып, etc.)
+
+LEXICON V-KOSIMSHE-NONEG-SURFACE
+
+:%>%{M%}%{A%}%>й%{I%}нш%{A%} CLITICS-NO-COP ;       ! Dir/LR (sic!, according to the corpus)
+:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
+:%>%{G%}%{A%}нш%{A%} CLITICS-NO-COP ;
+
+LEXICON V-KOSIMSHE-NEG-SURFACE
+
+:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
+
 LEXICON V-COMMON
 
-V-FINITE-REGULAR-NEGATIVE ;
-◊|vneg|:%>%{M%}%{A%} V-FINITE-REGULAR-NEGATIVE ;
-◊|vneg|◊|gpr_past|:%>%{M%}%{A%}%>%{I%}п CLITICS-NO-COP ; !Ұзақ жол жүріп ұйықтамап едім... !Dir/LR
-                                                          !TODO this is a hack, doesn't feel right
-
-V-FINITE-IRREGULAR-NEGATIVE ;
-
-V-NONFINITE-REGULAR-NEGATIVE ;
-◊|vneg|:%>%{M%}%{A%} V-NONFINITE-REGULAR-NEGATIVE ;
-
-V-NONFINITE-IRREGULAR-NEGATIVE ;
+V-PERS-IRREGULAR-NEGATIVE-1 ;
+◊|vneg|: V-PERS-IRREGULAR-NEGATIVE-2 ;
+V-PERS-REGULAR-NEGATIVE ;
+◊|vneg|: V-PERS-REGULAR-NEGATIVE-2 ;
+◊|ET_ETU|: V-ETU-SURFACE ;
+◊|vneg|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
+◊|ET_ESM|: V-ESIMSHE-SURFACE ;
+◊|ET_ESM|: V-ESIMSHE-NONEG-SURFACE ;
+◊|vneg|◊|ETB_ESM|:%>%{M%}%{A%} V-ESIMSHE-SURFACE ;
+◊|vneg|◊|ETB_ESM|: V-ESIMSHE-NEG-SURFACE ;
+◊|ET_KSE|: V-KOSIMSHE-SURFACE ;
+◊|ET_KSE|: V-KOSIMSHE-NONEG-SURFACE ;
+◊|vneg|◊|ETB_KSE|:%>%{M%}%{A%} V-KOSIMSHE-SURFACE ;
+◊|vneg|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 LEXICON V-DER
 
 ◊|caus|:%>%{I%}с V-COMMON ;
+◊|pass|:%>%{I%}%{l%} V-COMMON ;
+◊|refl|:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON V-TV-NOPASS
 
@@ -1129,69 +1113,60 @@ LEXICON V-IV
 LEXICON ◊(string-upcase R_ETK)
 
 
-◊|R_ETK|: V-FINITE-REGULAR-NEGATIVE ;
-◊|R_ETK|◊|ETK_ETB|: V-FINITE-REGULAR-NEGATIVE ;
-
-◊|R_ETK|: V-FINITE-IRREGULAR-NEGATIVE-1 ;
-◊|R_ETK|◊|ETK_ETB|: V-FINITE-IRREGULAR-NEGATIVE-2 ;
-
-◊|R_ETK|◊|fut|:%>%{A%}р V-PERS-S1 ;
-◊|R_ETK|◊|ETK_ETB|◊|fut|:%>%{M%}%{A%}с V-PERS-S1 ;
-
-◊|R_ETK|◊|fut_plan|:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
-◊|R_ETK|◊|fut_plan|:%>%{M%}%{A%}%{K%}%>ш%{I%} V-PERS-S1 ; ! Dir/LR "...Менің қошақанымды қайда алып кетпекшісің?... (Экзюперидан)"
-
-◊|R_ETK|◊|M3|:%>%{G%}%{I%} VOL-ENDINGS ;
-
-
-◊|R_ETK|◊|ETK_ETU|:%>у FULL-NOMINAL-INFLECTION ;
-◊|R_ETK|◊|ETK_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
-
-◊|R_ETK|◊|ETK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
-◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|:%>%{M%}%{A%}%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
-
-◊|R_ETK|◊|ETK_ESM|:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
-◊|R_ETK|◊|ETK_ESM|:%>%{M%}%{A%}%{K%}ш%{I%} CLITICS-NO-COP ;           ! Dir/LR
-
-◊|R_ETK|◊|ETK_ESM|:%>%{A%}р V-ADJ ;
-◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|:%>%{M%}%{A%}%>%с V-ADJ ;
-
-◊|R_ETK|◊|ETK_ESM|:%>%{A%}р%>л%{I%}%{K%} GER-INFL ;
-◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|:%>%{M%}%{A%}%>ст%{I%}%{K%} GER-INFL ;
-
-◊|R_ETK|◊|ETK_KSE|:%>%{I%}п CLITICS-NO-COP ;
-◊|R_ETK|◊|ETK_KSE|:%>%{o%}%{I%}п CLIT-GHANA-ETC ; ! Dir/LR (for things like боп, сап, кеп, қап, қып, etc.)
-◊|R_ETK|◊|ETK_ETB|◊|ETB_KSE|:%>%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
-◊|R_ETK|◊|ETK_KSE|:%>%{M%}%{A%}%>й%{I%}нш%{A%} CLITICS-NO-COP ;       ! Dir/LR (sic!, according to the corpus)
-
-◊|R_ETK|◊|ETK_KSE|:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
-
-◊|R_ETK|◊|ETK_KSE|:%>%{G%}%{A%}нш%{A%} CLITICS-NO-COP ;
+◊|R_ETK|: V-PERS-IRREGULAR-NEGATIVE-1 ;
+◊|R_ETK|◊|ETK_ETB|: V-PERS-IRREGULAR-NEGATIVE-2 ;
+◊|R_ETK|: V-PERS-REGULAR-NEGATIVE ;
+◊|R_ETK|◊|ETK_ETB|: V-PERS-REGULAR-NEGATIVE-2 ;
+◊|ET_ETU|: V-ETU-SURFACE ;
+◊|vneg|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
+◊|R_ETK|◊|ETK_ESM|: V-ESIMSHE-SURFACE ;
+◊|R_ETK|◊|ETK_ESM|: V-ESIMSHE-NONEG-SURFACE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|:%>%{M%}%{A%} V-ESIMSHE-SURFACE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|: V-ESIMSHE-NEG-SURFACE ;
+◊|R_ETK|◊|ETK_KSE|: V-KOSIMSHE-SURFACE ;
+◊|R_ETK|◊|ETK_KSE|: V-KOSIMSHE-NONEG-SURFACE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_KSE|:%>%{M%}%{A%} V-KOSIMSHE-SURFACE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
 LEXICON ◊(string-upcase R_ETP)
 
-◊|R_ETP|: V-FINITE-REGULAR-NEGATIVE ;
-◊|R_ETP|◊|ETP_ETB|: V-FINITE-REGULAR-NEGATIVE ;
 
 ◊|R_ETP|: V-PERS-S1 ;
-◊|R_ETP|◊|ETP_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
-◊|R_ETP|◊|ETP_ETU|:%>у FULL-NOMINAL-INFLECTION ;
-◊|R_ETP|◊|ETP_ETB|:%>%{M%}%{A%} V-FINITE-REGULAR-NEGATIVE ;
-◊|R_ETP|◊|ETP_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
+◊|R_ETP|: V-PERS-IRREGULAR-NEGATIVE-1 ;
+◊|R_ETP|◊|ETP_ETB|: V-PERS-IRREGULAR-NEGATIVE-2 ;
+◊|R_ETP|: V-PERS-REGULAR-NEGATIVE ;
+◊|R_ETP|◊|ETP_ETB|: V-PERS-REGULAR-NEGATIVE-2 ;
+◊|R_ETP|◊|ETP_ETU|: V-ETU-SURFACE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
+◊|R_ETP|◊|ETP_ESM|: V-ESIMSHE-SURFACE ;
+◊|R_ETP|◊|ETP_ESM|: V-ESIMSHE-NONEG-SURFACE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_ESM|:%>%{M%}%{A%} V-ESIMSHE-SURFACE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_ESM|: V-ESIMSHE-NEG-SURFACE ;
+◊|R_ETP|◊|ETP_KSE|: V-KOSIMSHE-SURFACE ;
+◊|R_ETP|◊|ETP_KSE|: V-KOSIMSHE-NONEG-SURFACE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_KSE|:%>%{M%}%{A%} V-KOSIMSHE-SURFACE ;
+◊|R_ETP|◊|ETP_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
 LEXICON ◊(string-upcase R_ETPK)
 
 
-◊|R_ETPK|: V-FINITE-REGULAR-NEGATIVE ;
-◊|R_ETPK|◊|ETP_ETB|: V-FINITE-REGULAR-NEGATIVE ;
-
 ◊|R_ETPK|: V-PERS-S1 ;
-◊|R_ETPK|◊|ETPK_ESM|:%>%{G%}%{A%}н FULL-NOMINAL-INFLECTION ;
-◊|R_ETPK|◊|ETPK_ETU|:%>у FULL-NOMINAL-INFLECTION ;
-◊|R_ETPK|◊|ETPK_ETB|:%>%{M%}%{A%} V-FINITE-REGULAR-NEGATIVE ;
-◊|R_ETPK|◊|ETPK_ETB|◊|ETB_ETU|:%>%{M%}%{A%}%>у FULL-NOMINAL-INFLECTION ;
+◊|R_ETPK|: V-PERS-IRREGULAR-NEGATIVE-1 ;
+◊|R_ETPK|◊|ETPK_ETB|: V-PERS-IRREGULAR-NEGATIVE-2 ;
+◊|R_ETPK|: V-PERS-REGULAR-NEGATIVE ;
+◊|R_ETPK|◊|ETPK_ETB|: V-PERS-REGULAR-NEGATIVE-2 ;
+◊|R_ETPK|◊|ETPK_ETU|: V-ETU-SURFACE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
+◊|R_ETPK|◊|ETPK_ESM|: V-ESIMSHE-SURFACE ;
+◊|R_ETPK|◊|ETPK_ESM|: V-ESIMSHE-NONEG-SURFACE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_ESM|:%>%{M%}%{A%} V-ESIMSHE-SURFACE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_ESM|: V-ESIMSHE-NEG-SURFACE ;
+◊|R_ETPK|◊|ETPK_KSE|: V-KOSIMSHE-SURFACE ;
+◊|R_ETPK|◊|ETPK_KSE|: V-KOSIMSHE-NONEG-SURFACE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_KSE|:%>%{M%}%{A%} V-KOSIMSHE-SURFACE ;
+◊|R_ETPK|◊|ETPK_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
 LEXICON ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK))
@@ -1364,8 +1339,8 @@ LEXICON PRON-DEM-ANA
 ◊|acc|:ны CLITICS-NO-COP ;
 ◊|abl|:дан CLITICS-INCL-COP ;
 ◊|loc|:да CLITICS-INCL-COP ;
-◊|ins|:мен CLITICS-NO-COP ;
-◊|ins|:менен CLITICS-NO-COP ; ! Dir/LR
+◊|C7SIM|:мен CLITICS-NO-COP ;
+◊|C7SIM|:менен CLITICS-NO-COP ; ! Dir/LR
 ◊|gen|◊|subst|:нікі%{n%} CASES ;
 ◊|loc_attr|:дағы CASES ;
 ◊|sim|:дай CASES ;
@@ -1382,20 +1357,20 @@ PRON-DEM-MINAU ;
 
 сол◊|prn|◊|dem|◊|nom|:сол CLITICS-INCL-COP ;
 сол◊|prn|◊|dem|:со PRON-DEM-INFL ;
-сол◊|prn|◊|dem|◊|ins|:сонымен CLITICS-NO-COP ;
-сол◊|prn|◊|dem|◊|ins|:соныменен CLITICS-NO-COP ; ! Dir/LR
+сол◊|prn|◊|dem|◊|C7SIM|:сонымен CLITICS-NO-COP ;
+сол◊|prn|◊|dem|◊|C7SIM|:соныменен CLITICS-NO-COP ; ! Dir/LR
 сол◊|prn|◊|dem|◊|px3sp|:сонысы%{n%} CASES ;
 
 ол◊|prn|◊|dem|◊|nom|:ол CLITICS-INCL-COP ;
 ол◊|prn|◊|dem|:о PRON-DEM-INFL ;
-ол◊|prn|◊|dem|◊|ins|:онымен CLITICS-NO-COP ;
-ол◊|prn|◊|dem|◊|ins|:оныменен CLITICS-NO-COP ; ! Dir/LR
+ол◊|prn|◊|dem|◊|C7SIM|:онымен CLITICS-NO-COP ;
+ол◊|prn|◊|dem|◊|C7SIM|:оныменен CLITICS-NO-COP ; ! Dir/LR
 ол◊|prn|◊|dem|◊|px3sp|:онысы%{n%} CASES ;
 
 осы◊|prn|◊|dem|◊|nom|:осы CLITICS-NO-COP ;
 осы◊|prn|◊|dem|:осы PRON-DEM-INFL ;
-осы◊|prn|◊|dem|◊|ins|:осымен CLITICS-NO-COP ;
-осы◊|prn|◊|dem|◊|ins|:осыменен CLITICS-NO-COP ; ! Dir/LR
+осы◊|prn|◊|dem|◊|C7SIM|:осымен CLITICS-NO-COP ;
+осы◊|prn|◊|dem|◊|C7SIM|:осыменен CLITICS-NO-COP ; ! Dir/LR
 осы◊|prn|◊|dem|◊|px3sp|:осысы%{n%} CASES ;
 
 !!!!!!!   I N T E R R O G A T I V E
@@ -1425,19 +1400,11 @@ LEXICON PRON-ITG-QANSHA
 
 ◊|prn|◊|itg|: CASES ;
 
-LEXICON PRON-ITG-QANDAY
-
-◊|prn|◊|itg|◊|sim|: CLITICS-NO-COP ;
-◊|prn|◊|itg|◊|sim|: CASES ;
-◊|prn|◊|itg|◊|sim|◊|px3sp|:ы%{n%} CASES ;
-◊|prn|◊|itg|◊|sim|◊|pl|:лар CASES ;
-◊|prn|◊|itg|◊|sim|◊|pl|◊|px3sp|:лары%{n%} CASES ;
-
 LEXICON InterrogativePronouns
 
 қайсы:қайсы PRON-ITG-QAYSI ;
 қанша:қанша PRON-ITG-QANSHA ;
-қандай:қандай PRON-ITG-QANDAY ;
+қандай:қандай PRON-ITG-INFL ;
 нәрсе:нәрсе PRON-ITG-INFL ; ! "thing" ! Use/MT
 не:не PRON-ITG-INFL ; ! "what"
 немене:немене PRON-ITG-INFL ; ! "what"
@@ -2105,8 +2072,7 @@ InterrogativePronouns ;
 әрқайсысы:әрқайсы PRON-QNT-POSS ; ! "each of"
 қай%-қайсысы:қай%-қайсысы PRON-QNT-POSS ; ! "any of; each of"
 барлық:барлық PRON-QNT ; ! ""
-бәрі:бәр PRON-QNT-POSS ; ! "everyone"
-! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
+бәрі:бәрі PRON-QNT ; ! "everyone"
 біреу:біреу PRON-QNT ; ! ""
 екеу:екеу PRON-QNT-POSS ; ! "both" !Use/MT
 әркім:әркім PRON-QNT ; ! ""
@@ -2278,7 +2244,7 @@ InterrogativePronouns ;
 қанша:қанша NUM-ITG ;
 
 <(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
-
+<(m | d | c | l | x | v | i)+> NUM-ROMAN ; ! ""
 
 !=============!
  LEXICON Nouns
@@ -35970,7 +35936,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 отставкаға% кет:отставкаға% кет V-IV ; ! ""
 оттат:оттат V-TV ; ! "" 
 отырғыз:отырғыз V-TV ; ! 
-отыр:отыр V-IV ; ! "sit,board"
 оюла:оюла V-TV ; ! "to make a design"
 оян:оян V-IV ; ! "wake" (kaz tat) ! Der/Refl
 оят:оят V-TV ; ! "awake" (kaz tat) ! Der/Caus
@@ -38252,7 +38217,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 көр:көр ◊(string-upcase R_ETK) ; !
 қал:қал ◊(string-upcase R_ETK) ; !
 қой:қой ◊(string-upcase R_ETK) ; !
-отыр:отыр ◊(string-upcase R_ETK) ; ! 
 сал:сал ◊(string-upcase R_ETK) ; !
 таста:таста ◊(string-upcase R_ETK) ; ! 
 сал◊|R_ETK|◊|ger|:салыш GER-INFL ; ! Dir/LR
@@ -40179,7 +40143,6 @@ LEXICON Common ! <- future
 мүмкін◊|mod|:мүмкін # ;
 осындай:осындай A1 ;
 мұндай:мұндай A1 ;
-қандай:қандай A1 ;
 бірінші◊|num|:бірінші FULL-NOMINAL-INFLECTION ;
 екінші◊|num|:екінші FULL-NOMINAL-INFLECTION ;
 
