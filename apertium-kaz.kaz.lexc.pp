@@ -1010,11 +1010,11 @@ LEXICON V-PERS-REGULAR-NEGATIVE
 ◊|gna_cond|:%>с%{A%} V-PERS-S2 ;
 
 ! Imperatives
-◊|imp|◊|p2|◊|sg|: CLIT-EMPH ;
-◊|imp|◊|p2|◊|pl|:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
-◊|imp|◊|p2|◊|frm|◊|sg|:%>%{I%}ң%{I%}з CLIT-EMPH ;
-◊|imp|◊|p2|◊|frm|◊|sg|:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
-◊|imp|◊|p2|◊|frm|◊|pl|:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
+◊|imp|◊|p2_sg|: CLIT-EMPH ;
+◊|imp|◊|p2_pl|:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
+◊|imp|◊|p2_frm_sg|:%>%{I%}ң%{I%}з CLIT-EMPH ;
+◊|imp|◊|p2_frm_sg|:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
+◊|imp|◊|p2_frm_pl|:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
 ◊|opt|◊|p1|◊|sg|:%>%{A%}й%{I%}н CLITICS-NO-COP ;
@@ -1281,7 +1281,7 @@ LEXICON PRON-DEM-BUL
 бұл◊|prn|◊|dem|◊|nom|:бұ CLITICS-INCL-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|gen|:бұның CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|gen|:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл◊|prn_dat|◊|dem|◊|dat|:бұған CLITICS-NO-COP ;
+бұл◊|prn|◊|dem|◊|prn_dat|:бұған CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|acc|:бұны CLITICS-NO-COP ;
 бұл◊|prn|◊|dem|◊|acc|:мұны CLITICS-NO-COP ; ! Dir/LR
 бұл◊|prn|◊|dem|◊|abl|:бұдан CLITICS-INCL-COP ;
@@ -1764,11 +1764,9 @@ LEXICON MOD-ASS
 
 ◊|mod_ass|: # ;
 
-LEXICON MOD
+LEXICON ◊(string-upcase R_MOD)
 
-! шығар, сияқты etc.
-
-◊|mod|: # ;
+◊|R_MOD|: FULL-NOMINAL-INFLECTION ;
 
 LEXICON INTERJ
 
@@ -1786,11 +1784,11 @@ LEXICON PAREN
 
 ◊|paren|: # ; 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-◊(LEXICON EXAMPLE_LEXICON)
 
 !======================!
  LEXICON ModalParticles
@@ -1813,12 +1811,7 @@ LEXICON PAREN
 ғой:ғой MOD-ASS ; ! "" Dir/LR
 ғой:қой MOD-ASS ; ! "" Dir/LR
 
-шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
-                  !   ... more like <vaux><pres> than like a full verb -JNW
-                  ! requires some transfer rules as e.g. in the following:
-                  !# (kaz) Олар мүмкiн көп кiтап оқыған шығар.
-                  !# (tat) Алар бәлки күп китап укыганнардыр.
-                  !# (kir) Алар мүмкүн көп китеп окугандыр.
+шығар:шығар ◊(string-upcase R_MOD) ;
 
 
 !====================!
@@ -1900,7 +1893,7 @@ LEXICON PAREN
 пікірінше:пікірінше CA ; ! ""
 себебі:себебі CA ; ! ""
 сонда% да:сонда% да CA ; ! "nevertheless" Use/MT   = (tat) шулай да
-сонда:сонда CA ; ! "nevertheless"                  = (tat) шулай да
+сонда:сонда ADV ; ! "nevertheless"                  = (tat) шулай да
 сондықтан:сондықтан CA ; ! "that is why"
 сөздерінше:сөздерінше CA ; ! ""
 сөзінше:сөзінше CA ; ! ""
@@ -33020,7 +33013,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қолма%-қол:қолма%-қол ADV ; ! "" ! Use/MT
 қолма%-қолсыз:қолма%-қолсыз ADV ; ! "" ! Use/MT
 қып:қып ADV ; ! ""
-міне:міне ADV ; ! ""
+міне◊|R_SIM|:міне # ; ! ""
 мінеки:мінеки ADV ; ! ""
 мүлдем:мүлдем ADV ; ! ""
 мүлде:мүлде ADV ; ! ""
@@ -40076,6 +40069,7 @@ LEXICON Common ! <- future
 сахаралық:сахаралық N1 ; ! ""
 сезіндір:сезіндір V-TV ; ! ""
 сияқты:сияқты A1 ; ! ""
+сияқты:сияқты ◊(string-upcase R_MOD) ; ! ""
 сылдыра:сылдыра V-IV ; ! ""
 сытыл:сытыл V-IV ; ! ""
 сұрықсыз:сұрықсыз A1 ; ! ""

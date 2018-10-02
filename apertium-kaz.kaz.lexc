@@ -962,11 +962,11 @@ LEXICON V-PERS-REGULAR-NEGATIVE
 %<M4%>:%>с%{A%} V-PERS-S2 ;
 
 ! Imperatives
-%<M2%>%<p2%>%<sg%>: CLIT-EMPH ;
-%<M2%>%<p2%>%<N1%>:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
-%<M2%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң%{I%}з CLIT-EMPH ;
-%<M2%>%<p2%>%<frm%>%<sg%>:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
-%<M2%>%<p2%>%<frm%>%<N1%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
+%<M2%>%<P2%>: CLIT-EMPH ;
+%<M2%>%<P6%>:%>%{I%}ң%>д%{A%}р CLIT-EMPH ;
+%<M2%>%<P4%>:%>%{I%}ң%{I%}з CLIT-EMPH ;
+%<M2%>%<P4%>:%>%{I%}ң CLIT-EMPH ;                ! Dir/LR FIXME CHECK
+%<M2%>%<P8%>:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
 %<M3%>%<p1%>%<sg%>:%>%{A%}й%{I%}н CLITICS-NO-COP ;
@@ -1002,8 +1002,9 @@ LEXICON V-ESIMSHE-NEG-SURFACE
 
 LEXICON V-KOSIMSHE-SURFACE
 
+:%>%{E%} CLITICS-NO-COP ;
 :%>%{I%}п CLITICS-NO-COP ;
-:%>%{o%}%{I%}п CLIT-GHANA-ETC ; ! Dir/LR (for things like боп, сап, кеп, қап, қып, etc.)
+:%>%{o%}%{I%}п CLITICS-NO-COP ; ! Dir/LR (for things like боп, сап, кеп, қап, қып, etc.)
 
 LEXICON V-KOSIMSHE-NONEG-SURFACE
 
@@ -1232,7 +1233,7 @@ LEXICON PRON-DEM-BUL
 бұл%<R_SIM%>:бұ CLITICS-INCL-COP ; ! Dir/LR
 бұл%<R_SIM%>%<C2%>:бұның CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C2%>:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл%<C3SIM%>%<C3%>:бұған CLITICS-NO-COP ;
+бұл%<R_SIM%>%<C3SIM%>:бұған CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C4%>:бұны CLITICS-NO-COP ;
 бұл%<R_SIM%>%<C4%>:мұны CLITICS-NO-COP ; ! Dir/LR
 бұл%<R_SIM%>%<C6%>:бұдан CLITICS-INCL-COP ;
@@ -1715,11 +1716,9 @@ LEXICON MOD-ASS
 
 %<R_SH%>: # ;
 
-LEXICON MOD
+LEXICON %<R_MOD%>
 
-! шығар, сияқты etc.
-
-%<R_MOD%>: # ;
+%<R_MOD%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON INTERJ
 
@@ -1737,14 +1736,10 @@ LEXICON PAREN
 
 %<paren%>: # ;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                          L E X I C O N                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-ма:%~ма QST ; ! Dir/RL 
-ма:ма QST ; ! Dir/LR 
-ғой:%~ғой QST ; ! Dir/RL 
-ғой:қой QST ; ! Dir/LR 
 
 
 !======================!
@@ -1768,12 +1763,7 @@ LEXICON PAREN
 ғой:ғой MOD-ASS ; ! "" Dir/LR
 ғой:қой MOD-ASS ; ! "" Dir/LR
 
-шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
-                  !   ... more like <vaux><pres> than like a full verb -JNW
-                  ! requires some transfer rules as e.g. in the following:
-                  !# (kaz) Олар мүмкiн көп кiтап оқыған шығар.
-                  !# (tat) Алар бәлки күп китап укыганнардыр.
-                  !# (kir) Алар мүмкүн көп китеп окугандыр.
+шығар:шығар %<R_MOD%> ;
 
 
 !====================!
@@ -32975,7 +32965,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 қолма%-қол:қолма%-қол ADV ; ! "" ! Use/MT
 қолма%-қолсыз:қолма%-қолсыз ADV ; ! "" ! Use/MT
 қып:қып ADV ; ! ""
-міне:міне ADV ; ! ""
+міне%<R_SIM%>:міне # ; ! ""
 мінеки:мінеки ADV ; ! ""
 мүлдем:мүлдем ADV ; ! ""
 мүлде:мүлде ADV ; ! ""
@@ -40031,6 +40021,7 @@ LEXICON Common ! <- future
 сахаралық:сахаралық N1 ; ! ""
 сезіндір:сезіндір V-TV ; ! ""
 сияқты:сияқты A1 ; ! ""
+сияқты:сияқты %<R_MOD%> ; ! ""
 сылдыра:сылдыра V-IV ; ! ""
 сытыл:сытыл V-IV ; ! ""
 сұрықсыз:сұрықсыз A1 ; ! ""
