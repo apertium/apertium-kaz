@@ -6,7 +6,7 @@
 
 ◊;;; Constants
 
-
+◊(define TAGSET "nla")
 ◊(define BEGIN_TAG "%<")
 ◊(define END_TAG "%>")
 
@@ -22,23 +22,35 @@
           (қой QST Dir/LR ""))))
 
 
-◊;;; Functions
+◊;;; Functions & Macros
 
-
-◊(define (LEXICON l)
-   (apply string-append (flatten (for/list ([i (map e->string l)])
-                                   (for/list ([j i])
-                                     j)))))
 
 ◊(define-syntax-rule (tag id surf)
+  ;; (tag R_ZE "N") sets R_ZE to %<N%> and prints that
+  ;; (tag R_ZE (nla R_ZE leipzig NN apertium)) sets R_ZE to %<R_ZE%> if the TAGSET
+  ;;   constant is set to "nla", to %<NN%> if the TAGSET constant is set to "leipzig"
+  ;;   etc and prints that value
+  ;; (tag N R_ZE) sets the value of N to the value of R_ZE and prints it
   (begin
     (define id
       (cond
         [(string? (quote surf)) (if (string=? surf "")
                                     ""
-                                    (string-append BEGIN_TAG surf END_TAG))]
+                                    (format surf))]
+        [(list? (quote surf))
+         (format (hash-ref
+                  (apply hash (map symbol->string (quote surf)))
+                  TAGSET))]
         [else surf]))
     id))
+
+◊(define (format tag)
+  (string-append BEGIN_TAG tag END_TAG))
+
+◊(define (LEXICON l)
+   (apply string-append (flatten (for/list ([i (map e->string l)])
+                                   (for/list ([j i])
+                                     j)))))
 
 ◊(define (e->string e)
    (let ([lemma (car e)]
@@ -76,25 +88,25 @@
 !
 ! = POS tags =
 
-◊(tag R_ZE "NN")	! Noun, common
-◊(tag R_ZEQ "NNP")	! Noun, personal
-◊(tag R_ET "VB")	! Verb
-◊(tag R_ETK "AUX")	! Verb, auxiliary
-◊(tag R_ETP "VB")	! Verb, special action* (жатыр, отыр, тұр, жүр)
-◊(tag R_ETPK "AUX")	! Verb, special action, auxiliary
-◊(tag R_ETB "VBNEG")	! Verb, negative (жоқ, емес only, e.g. барған жоқ)
-◊(tag R_SE "ADJ")	! Adjective
-◊(tag R_SIM "PRO")	! Pronoun
-◊(tag R_US "ADV")	! Adverb
-◊(tag R_ZHL "CNJ")	! Conjunct (both coordinating and subordinating)
-◊(tag R_SN "NUM")	! Numeral
-◊(tag R_SH "ADP")	! Adposition / Particle
-◊(tag R_MOD "PUNCT")	! Modal word
-◊(tag R_OS "INTJ")	! Interjection
-◊(tag R_ELK "IDEO")	! Imitative
-◊(tag R_SYM "SYM")	! Symbol (#, $, +, etc.)
-◊(tag R_BOS "FORGN")	! Foreign word
-◊(tag R_X "UNK")	! Un-analyzed
+◊(tag R_ZE (nla R_ZE leipzig NN))	! Noun, common
+◊(tag R_ZEQ (nla R_ZEQ leipzig NNP))	! Noun, personal
+◊(tag R_ET (nla R_ET leipzig VB))	! Verb
+◊(tag R_ETK (nla R_ETK leipzig AUX))	! Verb, auxiliary
+◊(tag R_ETP (nla R_ETP leipzig VB))	! Verb, special action* (жатыр, отыр, тұр, жүр)
+◊(tag R_ETPK (nla R_ETPK leipzig AUX))	! Verb, special action, auxiliary
+◊(tag R_ETB (nla R_ETB leipzig VBNEG))	! Verb, negative (жоқ, емес only, e.g. барған жоқ)
+◊(tag R_SE (nla R_SE leipzig ADJ))	! Adjective
+◊(tag R_SIM (nla R_SIM leipzig PRO))	! Pronoun
+◊(tag R_US (nla R_US leipzig ADV))	! Adverb
+◊(tag R_ZHL (nla R_ZHL leipzig CNJ))	! Conjunct (both coordinating and subordinating)
+◊(tag R_SN (nla R_SN leipzig NUM))	! Numeral
+◊(tag R_SH (nla R_SH leipzig ADP))	! Adposition / Particle
+◊(tag R_MOD (nla R_MOD leipzig PUNCT))	! Modal word
+◊(tag R_OS (nla R_OS leipzig INTJ))	! Interjection
+◊(tag R_ELK (nla R_ELK leipzig IDEO))	! Imitative
+◊(tag R_SYM (nla R_SYM leipzig SYM))	! Symbol (#, $, +, etc.)
+◊(tag R_BOS (nla R_BOS leipzig FORGN))	! Foreign word
+◊(tag R_X (nla R_X leipzig UNK))	! Un-analyzed
 
 ! * special action verbs (жатыр, отыр, тұр, жүр) are considered as a separate
 !  category, because only they can receive agreement markers being in a base
@@ -105,65 +117,65 @@
 
 ! = punctuation =
 
-◊(tag R_NKT "PUNCT") !.
-◊(tag R_UTR  "PUNCT") !,
-◊(tag R_DPH  "PUNCT") !-
-◊(tag R_ATRN  "PUNCT") !«
-◊(tag R_ZTRN "PUNCT") !»"
-◊(tag R_TRN  "PUNCT") ! "
-◊(tag R_QNKT "PUNCT") !:
-◊(tag R_SUR "PUNCT") !?
-◊(tag R_AZZ "PUNCT") ! (
-◊(tag R_ZZZ  "PUNCT") !)
-◊(tag R_LEP "PUNCT") ! "
-◊(tag R_UNKT  "PUNCT") ! ;
-◊(tag R_SLH "PUNCT") ! /
-◊(tag R_APS  "PUNCT") ! '
-◊(tag R_BSLH  "PUNCT") ! \
+◊(tag R_NKT (nla R_NKT leipzig PUNCT)) !.
+◊(tag R_UTR  (nla R_UTR  leipzig PUNCT)) !,
+◊(tag R_DPH  (nla R_DPH  leipzig PUNCT)) !-
+◊(tag R_ATRN  (nla R_ATRN  leipzig PUNCT)) !«
+◊(tag R_ZTRN (nla R_ZTRN leipzig PUNCT)) !»"
+◊(tag R_TRN  (nla R_TRN  leipzig PUNCT)) ! "
+◊(tag R_QNKT (nla R_QNKT leipzig PUNCT)) !:
+◊(tag R_SUR (nla R_SUR leipzig PUNCT)) !?
+◊(tag R_AZZ (nla R_AZZ leipzig PUNCT)) ! (
+◊(tag R_ZZZ  (nla R_ZZZ  leipzig PUNCT)) !)
+◊(tag R_LEP (nla R_LEP leipzig PUNCT)) ! "
+◊(tag R_UNKT  (nla R_UNKT  leipzig PUNCT)) ! ;
+◊(tag R_SLH (nla R_SLH leipzig PUNCT)) ! /
+◊(tag R_APS  (nla R_APS  leipzig PUNCT)) ! '
+◊(tag R_BSLH  (nla R_BSLH  leipzig PUNCT)) ! \
 
 ! = non-transitional morphemes =
 
-◊(tag N1 "PL")	! plural
-◊(tag N1S "PL")	! plural, after possessive, e.g. мама_R_ZE м_S1 дар_N1S
-◊(tag S1 "POSS.1SG")	! possessive, first singular
-◊(tag S2 "POSS.2SG")	! possessive, second singular
-◊(tag S3 "POSS.3SP")	! possessive, third singular/plural
-◊(tag S4 "POSS.2SPF")	! possessive, second singular, formal
-◊(tag S5 "POSS.1PL")	! possessive, first plural
-◊(tag S9 "POSS")	! possessive, special (-ныкі, -дыкі, -тыкі)
-◊(tag S3SIM "POSS.3SP")	! possessive, third singular/plural, after pronouns
-◊(tag C2  "GEN")	! genitive case (ілік септік)
-◊(tag C3 "DAT")	! dative case (барыс септік)
-◊(tag C3SIM "DAT")	! dative case (барыс септік), after pronouns
-◊(tag C4 "ACC")	! accusative case (табыс септік)
-◊(tag C5 "LOC")	! locative case (жатыс септік)
-◊(tag C6 "ABL")	! ablative case (шығыс септік)
-◊(tag C7 "INSCOM")	! instrumental case (көмектес септік)
-◊(tag C7SIM "INSCOM")	! instrumental case (көмектес септік), after pronouns
-◊(tag LATT "LATT")	! locative-attributive (-дағы, -дегі, -тағы, -тегі)
-◊(tag SML "SML")	! similative (-дай, -дей, -тай, -тей)
-◊(tag ABE "ABE")	! abessive (-сыз, -сіз)
-◊(tag EQU "EQU")	! equative (-ша, -ше, e.g. балаша)
-◊(tag CMP "CMP")	! comparative, (adjectives and adverbs)
-◊(tag V1 "REFL")	! reflexive voice (өздік етіс)
-◊(tag V2 "PASS")	! passive voice (ортақ етіс)
-◊(tag V3 "RECP")	! cooperative voice (өздік етіс)
-◊(tag V4 "CAUS")	! causative voice (өзгелік етіс)
-◊(tag M2 "IMP")	! imperative mood (бұйрық рай)
-◊(tag M3 "DES")	! desiderative mood (қалау рай)
-◊(tag M4 "COND")	! conditional mood (шартты рай)
-◊(tag T1 "AOR")	! aorist (ауыспалы осы/келер шақ)
-◊(tag T2 "FUT")	! future tense (болжамды/мақсатты келер шақ)
-◊(tag T3 "PST")	! past tense (жедел/бұрынғы өткен шақ)
-◊(tag T3E "PST")	! past tense, modified after е_R_ET (e.g., е_R_ET т_T3E)
-◊(tag P1 "AGR.1SG")	! agreement, 1st singular
-◊(tag P2 "AGR.2SG")	! agreement, 2nd singular
-◊(tag P3 "AGR.3SP")	! agreement, 3rd singular
-◊(tag P4 "AGR.2SGF")	! agreement, 2nd singular, formal
-◊(tag P5 "AGR.1PL")	! agreement, 1st plural
-◊(tag P6 "AGR.2PL")	! agreement, 2nd plural
-◊(tag P7 "AGR.3SP")	! agreement, 3rd plural
-◊(tag P8 "AGR.2PLF")	! agreement, 2nd plural, formal
+◊(tag N1 (nla N1 leipzig PL))	! plural
+◊(tag N1S (nla N1S leipzig PL))	! plural, after possessive, e.g. мама_R_ZE м_S1 дар_N1S
+◊(tag S1 (nla S1 leipzig POSS.1SG))	! possessive, first singular
+◊(tag S2 (nla S2 leipzig POSS.2SG))	! possessive, second singular
+◊(tag S3 (nla S3 leipzig POSS.3SP))	! possessive, third singular/plural
+◊(tag S4 (nla S4 leipzig POSS.2SPF))	! possessive, second singular, formal
+◊(tag S5 (nla S5 leipzig POSS.1PL))	! possessive, first plural
+◊(tag S9 (nla S9 leipzig POSS))	! possessive, special (-ныкі, -дыкі, -тыкі)
+◊(tag S3SIM (nla S3SIM leipzig POSS.3SP))	! possessive, third singular/plural, after pronouns
+◊(tag C2  (nla C2  leipzig GEN))	! genitive case (ілік септік)
+◊(tag C3 (nla C3 leipzig DAT))	! dative case (барыс септік)
+◊(tag C3SIM (nla C3SIM leipzig DAT))	! dative case (барыс септік), after pronouns
+◊(tag C4 (nla C4 leipzig ACC))	! accusative case (табыс септік)
+◊(tag C5 (nla C5 leipzig LOC))	! locative case (жатыс септік)
+◊(tag C6 (nla C6 leipzig ABL))	! ablative case (шығыс септік)
+◊(tag C7 (nla C7 leipzig INSCOM))	! instrumental case (көмектес септік)
+◊(tag C7SIM (nla C7SIM leipzig INSCOM))	! instrumental case (көмектес септік), after pronouns
+◊(tag LATT (nla LATT leipzig LATT))	! locative-attributive (-дағы, -дегі, -тағы, -тегі)
+◊(tag SML (nla SML leipzig SML))	! similative (-дай, -дей, -тай, -тей)
+◊(tag ABE (nla ABE leipzig ABE))	! abessive (-сыз, -сіз)
+◊(tag EQU (nla EQU leipzig EQU))	! equative (-ша, -ше, e.g. балаша)
+◊(tag CMP (nla CMP leipzig CMP))	! comparative, (adjectives and adverbs)
+◊(tag V1 (nla V1 leipzig REFL))	! reflexive voice (өздік етіс)
+◊(tag V2 (nla V2 leipzig PASS))	! passive voice (ортақ етіс)
+◊(tag V3 (nla V3 leipzig RECP))	! cooperative voice (өздік етіс)
+◊(tag V4 (nla V4 leipzig CAUS))	! causative voice (өзгелік етіс)
+◊(tag M2 (nla M2 leipzig IMP))	! imperative mood (бұйрық рай)
+◊(tag M3 (nla M3 leipzig DES))	! desiderative mood (қалау рай)
+◊(tag M4 (nla M4 leipzig COND))	! conditional mood (шартты рай)
+◊(tag T1 (nla T1 leipzig AOR))	! aorist (ауыспалы осы/келер шақ)
+◊(tag T2 (nla T2 leipzig FUT))	! future tense (болжамды/мақсатты келер шақ)
+◊(tag T3 (nla T3 leipzig PST))	! past tense (жедел/бұрынғы өткен шақ)
+◊(tag T3E (nla T3E leipzig PST))	! past tense, modified after е_R_ET (e.g., е_R_ET т_T3E)
+◊(tag P1 (nla P1 leipzig AGR.1SG))	! agreement, 1st singular
+◊(tag P2 (nla P2 leipzig AGR.2SG))	! agreement, 2nd singular
+◊(tag P3 (nla P3 leipzig AGR.3SP))	! agreement, 3rd singular
+◊(tag P4 (nla P4 leipzig AGR.2SGF))	! agreement, 2nd singular, formal
+◊(tag P5 (nla P5 leipzig AGR.1PL))	! agreement, 1st plural
+◊(tag P6 (nla P6 leipzig AGR.2PL))	! agreement, 2nd plural
+◊(tag P7 (nla P7 leipzig AGR.3SP))	! agreement, 3rd plural
+◊(tag P8 (nla P8 leipzig AGR.2PLF))	! agreement, 2nd plural, formal
 
 ! = transitional morphemes =
 
@@ -176,25 +188,25 @@
 ! ETP_KSE, ETP_ESM, ETP_ETU, ETP_ETB, ETK_KSE, ETK_ESM, ETK_ETU, ETK_ETB,
 ! ETPK_KSE, ETPK_ESM, ETPK_ETU, ETPK_ETB, ETB_KSE, ETB_ESM, ETB_ETU.
 
-◊(tag ET_KSE "CVB")	! verbal adverb, participle (көсемше)
-◊(tag ET_ESM "PTCP")	! verbal adjective, noun (есімше)
-◊(tag ET_ETU "GER")	! gerund (тұйық етістік)
-◊(tag ET_ETB "NEG")	! negated verb (болымсыз етістік)
-◊(tag ETP_KSE "CVB")	!
-◊(tag ETP_ESM "PTCP")	!
-◊(tag ETP_ETU "GER")	!
-◊(tag ETP_ETB "NEG")	!
-◊(tag ETK_KSE "CVB")	!
-◊(tag ETK_ESM "PTCP")	!
-◊(tag ETK_ETU "GER")	!
-◊(tag ETK_ETB "NEG")	!
-◊(tag ETPK_KSE "CVB")	!
-◊(tag ETPK_ESM "PTCP")	!
-◊(tag ETPK_ETU "GER")	!
-◊(tag ETPK_ETB "NEG")	!
-◊(tag ETB_KSE "CVB")	!
-◊(tag ETB_ESM "PTCP")	!
-◊(tag ETB_ETU "GER")	!
+◊(tag ET_KSE (nla ET_KSE leipzig CVB))	! verbal adverb, participle (көсемше)
+◊(tag ET_ESM (nla ET_ESM leipzig PTCP))	! verbal adjective, noun (есімше)
+◊(tag ET_ETU (nla ET_ETU leipzig GER))	! gerund (тұйық етістік)
+◊(tag ET_ETB (nla ET_ETB leipzig NEG))	! negated verb (болымсыз етістік)
+◊(tag ETP_KSE (nla ETP_KSE leipzig CVB))	!
+◊(tag ETP_ESM (nla ETP_ESM leipzig PTCP))	!
+◊(tag ETP_ETU (nla ETP_ETU leipzig GER))	!
+◊(tag ETP_ETB (nla ETP_ETB leipzig NEG))	!
+◊(tag ETK_KSE (nla ETK_KSE leipzig CVB))	!
+◊(tag ETK_ESM (nla ETK_ESM leipzig PTCP))	!
+◊(tag ETK_ETU (nla ETK_ETU leipzig GER))	!
+◊(tag ETK_ETB (nla ETK_ETB leipzig NEG))	!
+◊(tag ETPK_KSE (nla ETPK_KSE leipzig CVB))	!
+◊(tag ETPK_ESM (nla ETPK_ESM leipzig PTCP))	!
+◊(tag ETPK_ETU (nla ETPK_ETU leipzig GER))	!
+◊(tag ETPK_ETB (nla ETPK_ETB leipzig NEG))	!
+◊(tag ETB_KSE (nla ETB_KSE leipzig CVB))	!
+◊(tag ETB_ESM (nla ETB_ESM leipzig PTCP))	!
+◊(tag ETB_ETU (nla ETB_ETU leipzig GER))	!
 
 ! END NLA TAGSET
 
@@ -1130,8 +1142,8 @@ LEXICON R_ETK
 ◊|R_ETK|◊|ETK_ETB|: V-PERS-IRREGULAR-NEGATIVE-2 ;
 ◊|R_ETK|: V-PERS-REGULAR-NEGATIVE ;
 ◊|R_ETK|◊|ETK_ETB|: V-PERS-REGULAR-NEGATIVE-2 ;
-◊|ET_ETU|: V-ETU-SURFACE ;
-◊|vneg|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
+◊|R_ETK|◊|ETK_ETU|: V-ETU-SURFACE ;
+◊|R_ETK|◊|ETK_ETB|◊|ETB_ETU|:%>%{M%}%{A%} V-ETU-SURFACE ;
 ◊|R_ETK|◊|ETK_ESM|: V-ESIMSHE-SURFACE ;
 ◊|R_ETK|◊|ETK_ESM|: V-ESIMSHE-NONEG-SURFACE ;
 ◊|R_ETK|◊|ETK_ETB|◊|ETB_ESM|:%>%{M%}%{A%} V-ESIMSHE-SURFACE ;
