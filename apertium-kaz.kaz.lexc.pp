@@ -2,6 +2,10 @@
 
 ◊(require racket/list)
 
+
+◊;;; Constants
+
+
 ◊(define BEGIN_TAG "%<")
 ◊(define END_TAG "%>")
 
@@ -16,18 +20,24 @@
      (ғой (%~ғой QST Dir/RL "")
           (қой QST Dir/LR ""))))
 
-◊(define-syntax-rule (tag id surf)
-  (begin
-    (define id
-      (if (string=? surf "")
-          ""
-          (string-append BEGIN_TAG surf END_TAG)))
-      id))
+
+◊;;; Functions
+
 
 ◊(define (LEXICON l)
    (apply string-append (flatten (for/list ([i (map e->string l)])
                                    (for/list ([j i])
                                      j)))))
+
+◊(define-syntax-rule (tag id surf)
+  (begin
+    (define id
+      (cond
+        [(string? (quote surf)) (if (string=? surf "")
+                                    ""
+                                    (string-append BEGIN_TAG surf END_TAG))]
+        [else surf]))
+    id))
 
 ◊(define (e->string e)
    (let ([lemma (car e)]
@@ -65,25 +75,25 @@
 !
 ! = POS tags =
 
-◊(tag R_ZE "R_ZE")	! Noun, common
-◊(tag R_ZEQ "R_ZEQ")	! Noun, personal
-◊(tag R_ET "R_ET")	! Verb
-◊(tag R_ETK "R_ETK")	! Verb, auxiliary
-◊(tag R_ETP "R_ETP")	! Verb, special action* (жатыр, отыр, тұр, жүр)
-◊(tag R_ETPK "R_ETPK")	! Verb, special action, auxiliary
-◊(tag R_ETB "R_ETB")	! Verb, negative (жоқ, емес only, e.g. барған жоқ)
-◊(tag R_SE "R_SE")	! Adjective
-◊(tag R_SIM "R_SIM")	! Pronoun
-◊(tag R_US "R_US")	! Adverb
-◊(tag R_ZHL "R_ZHL")	! Conjunct (both coordinating and subordinating)
-◊(tag R_SN "R_SN")	! Numeral
-◊(tag R_SH "R_SH")	! Adposition / Particle
-◊(tag R_MOD "R_MOD")	! Modal word
-◊(tag R_OS "R_OS")	! Interjection
-◊(tag R_ELK "R_ELK")	! Imitative
-◊(tag R_SYM "R_SYM")	! Symbol (#, $, +, etc.)
-◊(tag R_BOS "R_BOS")	! Foreign word
-◊(tag R_X "R_X")	! Un-analyzed
+◊(tag R_ZE "NN")	! Noun, common
+◊(tag R_ZEQ "NNP")	! Noun, personal
+◊(tag R_ET "VB")	! Verb
+◊(tag R_ETK "AUX")	! Verb, auxiliary
+◊(tag R_ETP "VB")	! Verb, special action* (жатыр, отыр, тұр, жүр)
+◊(tag R_ETPK "AUX")	! Verb, special action, auxiliary
+◊(tag R_ETB "VBNEG")	! Verb, negative (жоқ, емес only, e.g. барған жоқ)
+◊(tag R_SE "ADJ")	! Adjective
+◊(tag R_SIM "PRO")	! Pronoun
+◊(tag R_US "ADV")	! Adverb
+◊(tag R_ZHL "CNJ")	! Conjunct (both coordinating and subordinating)
+◊(tag R_SN "NUM")	! Numeral
+◊(tag R_SH "ADP")	! Adposition / Particle
+◊(tag R_MOD "PUNCT")	! Modal word
+◊(tag R_OS "INTJ")	! Interjection
+◊(tag R_ELK "IDEO")	! Imitative
+◊(tag R_SYM "SYM")	! Symbol (#, $, +, etc.)
+◊(tag R_BOS "FORGN")	! Foreign word
+◊(tag R_X "UNK")	! Un-analyzed
 
 ! * special action verbs (жатыр, отыр, тұр, жүр) are considered as a separate
 !  category, because only they can receive agreement markers being in a base
@@ -94,64 +104,64 @@
 
 ! = punctuation =
 
-◊(tag R_NKT "R_NKT") !.
-◊(tag R_UTR  "R_UTR") !,
-◊(tag R_DPH  "R_DPH") !-
-◊(tag R_ATRN  "R_ATRN") !«
-◊(tag R_ZTRN "R_ZTRN") !»"
-◊(tag R_TRN  "R_TRN") ! "
-◊(tag R_QNKT "R_QNKT") !:
-◊(tag R_SUR "R_SUR") !?
-◊(tag R_AZZ "R_AZZ") ! (
-◊(tag R_ZZZ  "R_ZZZ") !)
-◊(tag R_LEP "R_LEP") ! "
-◊(tag R_UNKT  "R_UNKT") ! ;
-◊(tag R_SLH "R_SLH") ! /
-◊(tag R_APS  "R_APS") ! '
-◊(tag R_BSLH  "R_BSLH") ! \
+◊(tag R_NKT "PUNCT") !.
+◊(tag R_UTR  "PUNCT") !,
+◊(tag R_DPH  "PUNCT") !-
+◊(tag R_ATRN  "PUNCT") !«
+◊(tag R_ZTRN "PUNCT") !»"
+◊(tag R_TRN  "PUNCT") ! "
+◊(tag R_QNKT "PUNCT") !:
+◊(tag R_SUR "PUNCT") !?
+◊(tag R_AZZ "PUNCT") ! (
+◊(tag R_ZZZ  "PUNCT") !)
+◊(tag R_LEP "PUNCT") ! "
+◊(tag R_UNKT  "PUNCT") ! ;
+◊(tag R_SLH "PUNCT") ! /
+◊(tag R_APS  "PUNCT") ! '
+◊(tag R_BSLH  "PUNCT") ! \
 
 ! = non-transitional morphemes =
 
-◊(tag N1 "N1")	! plural
-◊(tag N1S "N1S")	! plural, after possessive, e.g. мама_R_ZE м_S1 дар_N1S
-◊(tag S1 "S1")	! possessive, first singular
-◊(tag S2 "S2")	! possessive, second singular
-◊(tag S3 "S3")	! possessive, third singular/plural
-◊(tag S4 "S4")	! possessive, second singular, formal
-◊(tag S5 "S5")	! possessive, first plural
-◊(tag S9 "S9")	! possessive, special (-ныкі, -дыкі, -тыкі)
-◊(tag S3SIM "S3SIM")	! possessive, third singular/plural, after pronouns
-◊(tag C2  "C2 ")	! genitive case (ілік септік)
-◊(tag C3 "C3")	! dative case (барыс септік)
-◊(tag C4 "C4")	! accusative case (табыс септік)
-◊(tag C5 "C5")	! locative case (жатыс септік)
-◊(tag C6 "C6")	! ablative case (шығыс септік)
-◊(tag C7 "C7")	! instrumental case (көмектес септік)
-◊(tag C7SIM "C7SIM")	! instrumental case (көмектес септік), after pronouns
+◊(tag N1 "PL")	! plural
+◊(tag N1S "PL")	! plural, after possessive, e.g. мама_R_ZE м_S1 дар_N1S
+◊(tag S1 "POSS.1SG")	! possessive, first singular
+◊(tag S2 "POSS.2SG")	! possessive, second singular
+◊(tag S3 "POSS.3SP")	! possessive, third singular/plural
+◊(tag S4 "POSS.2SPF")	! possessive, second singular, formal
+◊(tag S5 "POSS.1PL")	! possessive, first plural
+◊(tag S9 "POSS")	! possessive, special (-ныкі, -дыкі, -тыкі)
+◊(tag S3SIM "POSS.3SP")	! possessive, third singular/plural, after pronouns
+◊(tag C2  "GEN")	! genitive case (ілік септік)
+◊(tag C3 "DAT")	! dative case (барыс септік)
+◊(tag C4 "ACC")	! accusative case (табыс септік)
+◊(tag C5 "LOC")	! locative case (жатыс септік)
+◊(tag C6 "ABL")	! ablative case (шығыс септік)
+◊(tag C7 "INSCOM")	! instrumental case (көмектес септік)
+◊(tag C7SIM "INSCOM")	! instrumental case (көмектес септік), after pronouns
 ◊(tag LATT "LATT")	! locative-attributive (-дағы, -дегі, -тағы, -тегі)
 ◊(tag SML "SML")	! similative (-дай, -дей, -тай, -тей)
 ◊(tag ABE "ABE")	! abessive (-сыз, -сіз)
 ◊(tag EQU "EQU")	! equative (-ша, -ше, e.g. балаша)
 ◊(tag CMP "CMP")	! comparative, (adjectives and adverbs)
-◊(tag V1 "V1")	! reflexive voice (өздік етіс)
-◊(tag V2 "V2")	! passive voice (ортақ етіс)
-◊(tag V3 "V3")	! cooperative voice (өздік етіс)
-◊(tag V4 "V4")	! causative voice (өзгелік етіс)
-◊(tag M2 "M2")	! imperative mood (бұйрық рай)
-◊(tag M3 "M3")	! desiderative mood (қалау рай)
-◊(tag M4 "M4")	! conditional mood (шартты рай)
-◊(tag T1 "T1")	! aorist (ауыспалы осы/келер шақ)
-◊(tag T2 "T2")	! future tense (болжамды/мақсатты келер шақ)
-◊(tag T3 "T3")	! past tense (жедел/бұрынғы өткен шақ)
-◊(tag T3E "T3E")	! past tense, modified after е_R_ET (e.g., е_R_ET т_T3E)
-◊(tag P1 "P1")	! agreement, 1st singular
-◊(tag P2 "P2")	! agreement, 2nd singular
-◊(tag P3 "P3")	! agreement, 3rd singular
-◊(tag P4 "P4")	! agreement, 2nd singular, formal
-◊(tag P5 "P5")	! agreement, 1st plural
-◊(tag P6 "P6")	! agreement, 2nd plural
-◊(tag P7 "P7")	! agreement, 3rd plural
-◊(tag P8 "P8")	! agreement, 2nd plural, formal
+◊(tag V1 "REFL")	! reflexive voice (өздік етіс)
+◊(tag V2 "PASS")	! passive voice (ортақ етіс)
+◊(tag V3 "RECP")	! cooperative voice (өздік етіс)
+◊(tag V4 "CAUS")	! causative voice (өзгелік етіс)
+◊(tag M2 "IMP")	! imperative mood (бұйрық рай)
+◊(tag M3 "DES")	! desiderative mood (қалау рай)
+◊(tag M4 "COND")	! conditional mood (шартты рай)
+◊(tag T1 "AOR")	! aorist (ауыспалы осы/келер шақ)
+◊(tag T2 "FUT")	! future tense (болжамды/мақсатты келер шақ)
+◊(tag T3 "PST")	! past tense (жедел/бұрынғы өткен шақ)
+◊(tag T3E "PST")	! past tense, modified after е_R_ET (e.g., е_R_ET т_T3E)
+◊(tag P1 "AGR.1SG")	! agreement, 1st singular
+◊(tag P2 "AGR.2SG")	! agreement, 2nd singular
+◊(tag P3 "AGR.3SP")	! agreement, 3rd singular
+◊(tag P4 "AGR.2SGF")	! agreement, 2nd singular, formal
+◊(tag P5 "AGR.1PL")	! agreement, 1st plural
+◊(tag P6 "AGR.2PL")	! agreement, 2nd plural
+◊(tag P7 "AGR.3SP")	! agreement, 3rd plural
+◊(tag P8 "AGR.2PLF")	! agreement, 2nd plural, formal
 
 ! = transitional morphemes =
 
@@ -164,26 +174,25 @@
 ! ETP_KSE, ETP_ESM, ETP_ETU, ETP_ETB, ETK_KSE, ETK_ESM, ETK_ETU, ETK_ETB,
 ! ETPK_KSE, ETPK_ESM, ETPK_ETU, ETPK_ETB, ETB_KSE, ETB_ESM, ETB_ETU.
 
-◊(tag ET_KSE "ET_KSE")	! verbal adverb, participle (көсемше)
-◊(tag ET_ESM "ET_ESM")	! verbal adjective, noun (есімше)
-◊(tag ET_ETU "ET_ETU")	! gerund (тұйық етістік)
-◊(tag ET_ETB "ET_ETB")	! negated verb (болымсыз етістік)
-◊(tag ETP_KSE "ETP_KSE")	!
-◊(tag ETP_ESM "ETP_ESM")	!
-◊(tag ETP_ETU "ETP_ETU")	!
-◊(tag ETP_ETB "ETP_ETB")	!
-◊(tag ETK_KSE "ETK_KSE")	!
-◊(tag ETK_ESM "ETK_ESM")	!
-◊(tag ETK_ETU "ETK_ETU")	!
-◊(tag ETK_ETB "ETK_ETB")	!
-◊(tag ETPK_KSE "ETPK_KSE")	!
-◊(tag ETPK_ESM "ETPK_ESM")	!
-◊(tag ETPK_ETU "ETPK_ETU")	!
-◊(tag ETPK_ETB "ETPK_ETB")	!
-◊(tag ETB_KSE "ETB_KSE")	!
-◊(tag ETB_ESM "ETB_ESM")	!
-◊(tag ETB_ETU "ETB_ETU")	!
-
+◊(tag ET_KSE "CVB")	! verbal adverb, participle (көсемше)
+◊(tag ET_ESM "PTCP")	! verbal adjective, noun (есімше)
+◊(tag ET_ETU "GER")	! gerund (тұйық етістік)
+◊(tag ET_ETB "NEG")	! negated verb (болымсыз етістік)
+◊(tag ETP_KSE "CVB")	!
+◊(tag ETP_ESM "PTCP")	!
+◊(tag ETP_ETU "GER")	!
+◊(tag ETP_ETB "NEG")	!
+◊(tag ETK_KSE "CVB")	!
+◊(tag ETK_ESM "PTCP")	!
+◊(tag ETK_ETU "GER")	!
+◊(tag ETK_ETB "NEG")	!
+◊(tag ETPK_KSE "CVB")	!
+◊(tag ETPK_ESM "PTCP")	!
+◊(tag ETPK_ETU "GER")	!
+◊(tag ETPK_ETB "NEG")	!
+◊(tag ETB_KSE "CVB")	!
+◊(tag ETB_ESM "PTCP")	!
+◊(tag ETB_ETU "GER")	!
 
 ! END NLA TAGSET
 
@@ -194,63 +203,63 @@
 ! Followed http://wiki.apertium.org/wiki/Turkic_languages
 
 ! Part of speech categories = First-level tags
-◊(tag n "R_ZE")          ! Noun                       ! Зат есім
-◊(tag np "R_ZEQ")        ! Proper noun                ! Жалқы есім
-◊(tag adj "R_SE")        ! Adjective                  ! Сын есім
-◊(tag num "R_SN")        ! Numeral                    ! Сан есім
-◊(tag prn "R_SIM")       ! Pronoun                    ! Есімдік
-◊(tag det "R_SIM")       ! Determiner                 ! Детерминатив
-◊(tag v "R_ET")          ! Verb                       ! Етістік
-◊(tag vaux "R_ETK")      ! Auxilary verb              ! Көмекші етістік
-◊(tag adv "R_US")        ! Adverb                     ! Үстеу
-◊(tag post "R_SH")       ! Postposition               ! Септеулік шылау
-◊(tag postadv "R_SH")   ! Postadverb                 ! "Постүстеу" (*1)
-◊(tag cnjcoo "R_ZHL")    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
-◊(tag cnjsub "R_ZHL")    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулықc
-◊(tag cnjadv "R_ZHL")    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
-◊(tag ij "R_OS")         ! Interjection               ! Одағай
-◊(tag abbr "abbr")       ! Abbreviation               ! Қысқарған сөз
-◊(tag cop "R_ET")        ! Copula                     ! Копула
-◊(tag ideo "R_ELK")      ! Ideophone                  ! Еліктеу сөз
+◊(tag n R_ZE)          ! Noun                       ! Зат есім
+◊(tag np R_ZEQ)        ! Proper noun                ! Жалқы есім
+◊(tag adj R_SE)       ! Adjective                  ! Сын есім
+◊(tag num R_SN)        ! Numeral                    ! Сан есім
+◊(tag prn R_SIM)       ! Pronoun                    ! Есімдік
+◊(tag det R_SIM)       ! Determiner                 ! Детерминатив
+◊(tag v R_ET)          ! Verb                       ! Етістік
+◊(tag vaux R_ETK)      ! Auxilary verb              ! Көмекші етістік
+◊(tag adv R_US)        ! Adverb                     ! Үстеу
+◊(tag post R_SH)       ! Postposition               ! Септеулік шылау
+◊(tag postadv R_SH)   ! Postadverb                 ! "Постүстеу" (*1)
+◊(tag cnjcoo R_ZHL)    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
+◊(tag cnjsub R_ZHL)    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулықc
+◊(tag cnjadv R_ZHL)    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
+◊(tag ij R_OS)         ! Interjection               ! Одағай
+◊(tag abbr R_ZE)       ! Abbreviation               ! Қысқарған сөз
+◊(tag cop R_ET)        ! Copula                     ! Копула
+◊(tag ideo R_ELK)      ! Ideophone                  ! Еліктеу сөз
 ◊(tag paren "paren")     ! Parentheses                ! Қыстырма сөз
-◊(tag part "%<R_SH%>")   ! Adposition / particle
-◊(tag sym "%<R_SYM%>")   ! Symbol
-◊(tag for "%<R_BOS%>")   ! Foreign word
-◊(tag unk "R_X")         ! For foreign tokens
+◊(tag part R_SH)   ! Adposition / particle
+◊(tag sym R_SYM)   ! Symbol
+◊(tag forgn R_BOS)   ! Foreign word
+◊(tag unk R_X)         ! For foreign tokens
 
 ! *1. Анықтаған сөздерінің артынан келетін үстеулер ("демеуліктер") !# ғана, -ақ
 
 !! Modal particles
-◊(tag qst "R_SH")          ! Modal question particle
+◊(tag qst R_SH)          ! Modal question particle
                            !# м{A}
-◊(tag emph "R_SH")         ! Emphasizing modal particle
+◊(tag emph R_SH)         ! Emphasizing modal particle
                            !# -шы/-ші
-◊(tag mod_ass "R_SH")      ! Assertive modal particle
+◊(tag mod_ass R_SH)      ! Assertive modal particle
                            !# ғой/қой
-◊(tag mod_emo "R_SH")      ! Emotative modal particles
+◊(tag mod_emo R_SH)      ! Emotative modal particles
                            !# -ай, -ау
-◊(tag mod "R_MOD")         ! Other modal words (шығар, сияқты etc)
+◊(tag mod R_MOD)         ! Other modal words (шығар, сияқты etc)
 
 ! Punctuation
-◊(tag percent "percent") ! Percent
+◊(tag percent "") ! Percent
 ◊(tag sent "sent")       ! Sentence marker
-◊(tag period "R_NKT")    ! aka dot
-◊(tag guio "R_DPH")      ! Hyphen
-◊(tag cm "R_UTR")        ! Comma
-◊(tag apos "R_APS")      ! Apostrophe
-◊(tag quot "R_TRN")      ! Quote marker (right hand side)
-◊(tag rquot "R_ZTRN")    ! Quote marker (right hand side)
-◊(tag lquot "R_ATRN")    ! Quote marker (left hand side)
-◊(tag rpar "R_ZZZ")      ! Parenthetical marker (right hand side)
-◊(tag lpar "R_AZZ")      ! Parenthetical marker (left hand side)
-◊(tag ltr "ltr")         ! Letter
-◊(tag cln "R_QNKT")      ! Colon
-◊(tag qstm "R_SUR")      ! Question mark
-◊(tag exclm "R_LEP")     ! Exclamation mark
-◊(tag semicln "R_UNKT")  ! Semicolon
-◊(tag slh "R_SLH")       ! Slash
-◊(tag aps "R_APS")       ! Apostrophe
-◊(tag bslh "R_BSLH")     ! Backslash
+◊(tag period R_NKT)    ! aka dot
+◊(tag guio R_DPH)      ! Hyphen
+◊(tag cm R_UTR)        ! Comma
+◊(tag apos R_APS)      ! Apostrophe
+◊(tag quot R_TRN)      ! Quote marker (right hand side)
+◊(tag rquot R_ZTRN)    ! Quote marker (right hand side)
+◊(tag lquot R_ATRN)    ! Quote marker (left hand side)
+◊(tag rpar R_ZZZ)      ! Parenthetical marker (right hand side)
+◊(tag lpar R_AZZ)      ! Parenthetical marker (left hand side)
+◊(tag ltr R_SYM)         ! Letter
+◊(tag cln R_QNKT)      ! Colon
+◊(tag qstm R_SUR)      ! Question mark
+◊(tag exclm R_LEP)     ! Exclamation mark
+◊(tag semicln R_UNKT)  ! Semicolon
+◊(tag slh R_SLH)       ! Slash
+◊(tag aps R_APS)       ! Apostrophe
+◊(tag bslh R_BSLH)     ! Backslash
 
 ! Pronoun types
 ◊(tag pers "")      ! Personal
@@ -285,38 +294,38 @@
 
 ! Number
 ◊(tag sg "sg")        ! Singular ! Жекеше
-◊(tag pl "N1")        ! Plural
+◊(tag pl N1)        ! Plural
 
 ! Possessives
-◊(tag px1sg "S1")     ! First person singular
-◊(tag px2sg "S2")     ! Second person singular
-◊(tag px3sp "S3")     ! Third person singular/plural
-◊(tag px1pl "S5")     ! First person plural
+◊(tag px1sg S1)     ! First person singular
+◊(tag px2sg S2)     ! Second person singular
+◊(tag px3sp S3)     ! Third person singular/plural
+◊(tag px1pl S5)     ! First person plural
 ◊(tag px2pl "px2pl")  ! Second person plural
 ◊(tag px3pl "px3pl")  ! Third person plural (for reflexive)
-◊(tag px2sg_frm "S4") ! Second singular formal
-◊(tag px "S9")        ! General possessive
+◊(tag px2sg_frm S4) ! Second singular formal
+◊(tag px S9)        ! General possessive
 
 ! Cases
 ◊(tag nom "")         ! Nominative
-◊(tag gen "C2")       ! Genitive
-◊(tag dat "C3")       ! Dative
-◊(tag prn_dat "C3SIM")! Dative -GAн
-◊(tag acc "C4")       ! Accusative
-◊(tag abl "C6")       ! Ablative
-◊(tag loc "C5")       ! Locative
-◊(tag loc_attr "LATT")! Locative attributive DAGI
-◊(tag ins "C7")       ! Instrumental
+◊(tag gen C2)       ! Genitive
+◊(tag dat C3)       ! Dative
+◊(tag prn_dat "C3SIM") ! Dative -GAн (after some of the pronouns)
+◊(tag acc C4)       ! Accusative
+◊(tag abl C6)       ! Ablative
+◊(tag loc C5)       ! Locative
+◊(tag loc_attr LATT)! Locative attributive DAGI
+◊(tag ins C7)       ! Instrumental
 
 !! some additional ~cases
-◊(tag sim "SML")       ! Similative
+◊(tag sim SML)       ! Similative
                        !# DAй
-◊(tag abe "ABE")       ! Abessive=Privative ! Лишительный
+◊(tag abe ABE)       ! Abessive=Privative ! Лишительный
                        !# SIZ (not used after posessives and cases)
-◊(tag equ "EQU")       ! ш{A} 
+◊(tag equ EQU)       ! ш{A} 
 
 ! Levels of comparison of adjectives
-◊(tag comp "CMP")      ! Comparative
+◊(tag comp CMP)      ! Comparative
 
 ! Numeral types
 ◊(tag ord "")       ! Ordinal
@@ -326,85 +335,85 @@
 ! Verbal features
 
 !! Mood
-◊(tag imp "M2")       ! Imperative
-◊(tag opt "M3")       ! Optative/jussive
+◊(tag imp M2)       ! Imperative
+◊(tag opt M2)       ! Optative/jussive
 ◊(tag evid "")    ! Evidential, a.k.a. "indirect" / non-eyewitness / hearsay
 
 !! Derivation
-◊(tag caus "V4")      ! Causative
-◊(tag pass "V2")      ! Passive
-◊(tag coop "V3")      ! Cooperative
-◊(tag refl "V1")      ! Reflexive
+◊(tag caus V4)      ! Causative
+◊(tag pass V2)      ! Passive
+◊(tag coop V3)      ! Cooperative
+◊(tag refl V1)      ! Reflexive
 
 !! Tense / finite forms
 ◊(tag pres "pres")    ! for "жатыр", "тұр", "отыр" and "жүр" ""
-◊(tag aor "T1")       ! -{E}
-◊(tag past "T3")      ! -{G}{A}н
-◊(tag ifi "T3")       ! -{D}{I}
-◊(tag fut "T2")       ! -{I}р
-◊(tag fut_plan "T2")  ! -{M}{A}{K}
-◊(tag pih "T3")      ! -{E}тін       ! ~past imperfect ~"used to"
+◊(tag aor T1)       ! -{E}
+◊(tag past T3)      ! -{G}{A}н
+◊(tag ifi T3)       ! -{D}{I}
+◊(tag fut T2)       ! -{I}р
+◊(tag fut_plan T2)  ! -{M}{A}{K}
+◊(tag pih T3)      ! -{E}тін       ! ~past imperfect ~"used to"
 
 !! Non-Finite verb forms
 
 !!! Participles
-◊(tag prc_perf "ET_KSE")  ! Perfect participle
+◊(tag prc_perf ET_KSE)  ! Perfect participle
                           ! -{I}п
                           !# "Бірақ мысығы үйде, _ұйықтап_ жатыр.";
-◊(tag prc_impf "ET_KSE")  ! Imperfect participle
+◊(tag prc_impf ET_KSE)  ! Imperfect participle
                           ! -{E}
                           !# "...олар далада _ойнай_ алмады...";
-◊(tag prc_vol "M3")       ! Volition participle
+◊(tag prc_vol M3)       ! Volition participle
                           ! -{G}{I}
                           !# барғым келмейді;
-◊(tag prc_cond "M4")      ! Conditional participle
+◊(tag prc_cond M4)      ! Conditional participle
                           ! -с{A}
                           !# ...жесең болады...;
-◊(tag prc_fplan "ET_ESM") ! Future plan participle
+◊(tag prc_fplan ET_ESM) ! Future plan participle
                           ! -{M}{A}{K},
                           ! -{M}{A}{K}ш{I} Dir/LR
                           !# "Шал қазға бармақшы болады.";
-◊(tag prc_plan "ET_KSE")  ! Plan participle
+◊(tag prc_plan ET_KSE)  ! Plan participle
                           ! -{G}{A}л{I}
                           !# мен сөйлескелі келдім;
 
 !!! Verbal adverbs ! Көсемшелер !Глагольные наречия
-◊(tag gna_perf "ET_KSE")  ! -{I}п
+◊(tag gna_perf ET_KSE)  ! -{I}п
                           !# "...ул вакытта инде кояш _баеп_, йолдызлар күренә башлаган
                           !# иде..." (Ф.Хөсни);
-◊(tag gna_impf "ET_KSE")  ! -{A}	      
-◊(tag gna_cond "M4")      ! -с{A}
+◊(tag gna_impf ET_KSE)  ! -{A}	      
+◊(tag gna_cond M4)      ! -с{A}
                           !# ...қайда екенін _білсе_, маған бұл туралы айтыр еді...;
-◊(tag gna_until "ET_KSE") ! -{G}{A}нш{A}
+◊(tag gna_until ET_KSE) ! -{G}{A}нш{A}
                           !# "Мен кеткенше ол жауап бермейді.";
-◊(tag gna_after "ET_KSE") ! -{G}{A}л{I}
+◊(tag gna_after ET_KSE) ! -{G}{A}л{I}
                           ! (NOTE: ambiguous with prc_plan)
                           !# "Сабақ _біткелі_ екі сағат өтті."; Ол кеткелі біз жұмыс
                           !# істемейдік;
 
 !!! Verbal adjectives ! Есімшелер ! Глагольные причастия
-◊(tag gpr_past "ET_ESM")  ! -{G}{A}н               ! past verbal adjective
+◊(tag gpr_past ET_ESM)  ! -{G}{A}н               ! past verbal adjective
                           !# келген адам; оқылмаған кітап;
-◊(tag gpr_impf "ET_ESM")  ! -{E}{T}{I}н            ! imperfect verbal adjective
+◊(tag gpr_impf ET_ESM)  ! -{E}{T}{I}н            ! imperfect verbal adjective
                           !# басқаратын = руководящий
-◊(tag gpr_pot "ET_ESM")   ! -{U}ш{I}               ! potential verbal adjective
+◊(tag gpr_pot ET_ESM)   ! -{U}ш{I}               ! potential verbal adjective
                           !# "...өзінің қадір-қасиетін арттыруға _тырысушы_ саясаткер...";
-◊(tag gpr_ppot "ET_ESM")  ! -{A}рл{I}{K}
+◊(tag gpr_ppot ET_ESM)  ! -{A}рл{I}{K}
                           !# сүйсінерлік ерлік;
-◊(tag gpr_fut "ET_ESM")   ! -{I}р                  ! future verbal adjective
+◊(tag gpr_fut ET_ESM)   ! -{I}р                  ! future verbal adjective
                           !# "Барар жерің Балкан тау, ол да біздің көрген тау";
 
 !!! Gerunds (verbal nouns)
-◊(tag ger "ET_ETU")        ! -{U}
-◊(tag ger_past "ET_ESM")   ! -{G}{A}н
-◊(tag ger_perf "ET_ESM")   ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
-◊(tag ger_ppot "ET_ESM")   ! -{A}рл{I}{K}      (~the ability to do the denoted action)
+◊(tag ger ET_ETU)        ! -{U}
+◊(tag ger_past ET_ESM)   ! -{G}{A}н
+◊(tag ger_perf ET_ESM)   ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
+◊(tag ger_ppot ET_ESM)   ! -{A}рл{I}{K}      (~the ability to do the denoted action)
                            !# "_Сүйсінерлігі_ сол, өз сеніміне берік те адал халқымыз дінін
                            !# сатпады, өзгенің тәтті де сылдыр сөзіне ермеді...";
-◊(tag ger_abs "ET_ESM")    ! -уш{I}л{I}{K}          FIXME CHECK
-◊(tag ger_fut "ET_ESM")    ! -{A}р
+◊(tag ger_abs ET_ESM)    ! -уш{I}л{I}{K}          FIXME CHECK
+◊(tag ger_fut ET_ESM)    ! -{A}р
                            !# "Мен айтарымды айттым";
-◊(tag ger_impf "ET_ESM")   ! -{E}{T}{I}н
+◊(tag ger_impf ET_ESM)   ! -{E}{T}{I}н
                            !# "Ол бүгін кешкілік болатынын айтты";
 ◊(tag abs "abs")           ! -LIK as e.g. seen in the -{E}{T}{I}нд{I}{K} form
 ◊(tag ger_obs "ger_obs")   ! -{М}{А}{К} ("obsolete": used only in archaic registers)
@@ -418,18 +427,18 @@
 ◊(tag p1 "p1")          ! First person
 ◊(tag p2 "p2")          ! Second person
 ◊(tag p3 "p3")          ! Third person
-◊(tag p1_sg "P1")          ! First person
-◊(tag p2_sg "P2")          ! Second person
-◊(tag p3_sg "P3")          ! Third person
-◊(tag p1_pl "P5")          ! First person
-◊(tag p2_pl "P6")          ! Second person
-◊(tag p3_pl "P7")          ! Third person
-◊(tag p2_frm_sg "P4")      ! First person
-◊(tag p2_frm_pl "P8")      ! Second person
+◊(tag p1_sg P1)          ! First person
+◊(tag p2_sg P2)          ! Second person
+◊(tag p3_sg P3)          ! Third person
+◊(tag p1_pl P5)          ! First person
+◊(tag p2_pl P6)          ! Second person
+◊(tag p3_pl P7)          ! Third person
+◊(tag p2_frm_sg P4)      ! First person
+◊(tag p2_frm_pl P8)      ! Second person
 ◊(tag frm "frm")           ! Formal
 
 ◊(tag reas "reas")       ! Reason
-◊(tag vneg "ET_ETB")       ! Negation
+◊(tag vneg ET_ETB)       ! Negation
 
 ◊(tag err_orth "") ! For orthographic errors
 
@@ -1017,10 +1026,9 @@ LEXICON V-PERS-REGULAR-NEGATIVE
 ◊|imp|◊|p2_frm_pl|:%>%{I%}ң%{I%}з%>д%{A%}р CLIT-EMPH ;
 
 ! Optative/jussive forms
-◊|opt|◊|p1|◊|sg|:%>%{A%}й%{I%}н CLITICS-NO-COP ;
-◊|opt|◊|p3|◊|sg|:%>с%{I%}н CLITICS-NO-COP ;
-◊|opt|◊|p1|◊|pl|:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
-◊|opt|◊|p3|◊|pl|:%>с%{I%}н CLITICS-NO-COP ;
+◊|opt|:%>%{A%}й%{I%}н CLITICS-NO-COP ;
+◊|opt|:%>с%{I%}н CLITICS-NO-COP ;
+◊|opt|:%>%{A%}й%{I%}%{K%} CLITICS-NO-COP ;
 
 LEXICON V-PERS-REGULAR-NEGATIVE-2
 
@@ -1086,6 +1094,9 @@ LEXICON V-DER
 ◊|caus|:%>%{I%}с V-COMMON ;
 ◊|pass|:%>%{I%}%{l%} V-COMMON ;
 ◊|refl|:%>%{I%}%{l%} V-COMMON ;
+◊|caus|:%>%{I%}т V-COMMON ;
+◊|caus|:%>%{G%}%{I%}з V-COMMON ;
+◊|caus|:%>%{D%}%{I%}р V-COMMON ;
 
 LEXICON V-TV-NOPASS
 
@@ -1110,7 +1121,7 @@ LEXICON V-IV
 ◊|v|: V-DER ;
 
 
-LEXICON ◊(string-upcase R_ETK)
+LEXICON R_ETK
 
 
 ◊|R_ETK|: V-PERS-IRREGULAR-NEGATIVE-1 ;
@@ -1129,7 +1140,7 @@ LEXICON ◊(string-upcase R_ETK)
 ◊|R_ETK|◊|ETK_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
-LEXICON ◊(string-upcase R_ETP)
+LEXICON R_ETP
 
 
 ◊|R_ETP|: V-PERS-S1 ;
@@ -1149,7 +1160,7 @@ LEXICON ◊(string-upcase R_ETP)
 ◊|R_ETP|◊|ETP_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
-LEXICON ◊(string-upcase R_ETPK)
+LEXICON R_ETPK
 
 
 ◊|R_ETPK|: V-PERS-S1 ;
@@ -1169,11 +1180,11 @@ LEXICON ◊(string-upcase R_ETPK)
 ◊|R_ETPK|◊|ETPK_ETB|◊|ETB_KSE|: V-KOSIMSHE-NEG-SURFACE ;
 
 
-LEXICON ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK))
+LEXICON R_ETP_R_ETPK
 
 
-◊(string-upcase R_ETP) ;
-◊(string-upcase R_ETPK) ;
+R_ETP ;
+R_ETPK ;
 
 
 
@@ -1764,7 +1775,7 @@ LEXICON MOD-ASS
 
 ◊|mod_ass|: # ;
 
-LEXICON ◊(string-upcase R_MOD)
+LEXICON R_MOD
 
 ◊|R_MOD|: FULL-NOMINAL-INFLECTION ;
 
@@ -1811,7 +1822,7 @@ LEXICON PAREN
 ғой:ғой MOD-ASS ; ! "" Dir/LR
 ғой:қой MOD-ASS ; ! "" Dir/LR
 
-шығар:шығар ◊(string-upcase R_MOD) ;
+шығар:шығар R_MOD ;
 
 
 !====================!
@@ -38187,34 +38198,34 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! Auxiliary verbs
 ! ===============
 
-жат:жатыр ◊(string-upcase R_ETP) ; ! 
-жатыр:жатыр ◊(string-upcase R_ETPK) ; ! 
-жүр:жүр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
-отыр:отыр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
-тұр:тұр ◊(string-append (string-upcase R_ETP) "_" (string-upcase R_ETPK)) ; ! 
+жат:жатыр R_ETP ; ! 
+жатыр:жатыр R_ETPK ; ! 
+жүр:жүр R_ETP_R_ETPK ; ! 
+отыр:отыр R_ETP_R_ETPK ; ! 
+тұр:тұр R_ETP_R_ETPK ; ! 
 
-ал:ал ◊(string-upcase R_ETK) ; ! 
-баста:баста ◊(string-upcase R_ETK) ; !
-бер:бер ◊(string-upcase R_ETK) ; !
-біт:біт ◊(string-upcase R_ETK) ; !
-бітір:бітір ◊(string-upcase R_ETK) ; !
-бол:бол ◊(string-upcase R_ETK) ; !
-!де:де ◊(string-upcase R_ETK) ; !
-ет:ет ◊(string-upcase R_ETK) ; ! ""
-жазда:жазда ◊(string-upcase R_ETK) ; !
-жат:жат ◊(string-upcase R_ETK) ; !
-жібер:жібер ◊(string-upcase R_ETK) ; ! 
-жүр:жүр ◊(string-upcase R_ETK) ; ! 
-кел:кел ◊(string-upcase R_ETK) ; !
-кет:кет ◊(string-upcase R_ETK) ; ! 
-көр:көр ◊(string-upcase R_ETK) ; !
-қал:қал ◊(string-upcase R_ETK) ; !
-қой:қой ◊(string-upcase R_ETK) ; !
-сал:сал ◊(string-upcase R_ETK) ; !
-таста:таста ◊(string-upcase R_ETK) ; ! 
+ал:ал R_ETK ; ! 
+баста:баста R_ETK ; !
+бер:бер R_ETK ; !
+біт:біт R_ETK ; !
+бітір:бітір R_ETK ; !
+бол:бол R_ETK ; !
+!де:де R_ETK ; !
+ет:ет R_ETK ; ! ""
+жазда:жазда R_ETK ; !
+жат:жат R_ETK ; !
+жібер:жібер R_ETK ; ! 
+жүр:жүр R_ETK ; ! 
+кел:кел R_ETK ; !
+кет:кет R_ETK ; ! 
+көр:көр R_ETK ; !
+қал:қал R_ETK ; !
+қой:қой R_ETK ; !
+сал:сал R_ETK ; !
+таста:таста R_ETK ; ! 
 сал◊|R_ETK|◊|ger|:салыш GER-INFL ; ! Dir/LR
-тұр:тұр ◊(string-upcase R_ETK) ; ! 
-шық:шық ◊(string-upcase R_ETK) ; !
+тұр:тұр R_ETK ; ! 
+шық:шық R_ETK ; !
 
 !!!! eng-kaz stuff
 !!!!
@@ -40069,7 +40080,7 @@ LEXICON Common ! <- future
 сахаралық:сахаралық N1 ; ! ""
 сезіндір:сезіндір V-TV ; ! ""
 сияқты:сияқты A1 ; ! ""
-сияқты:сияқты ◊(string-upcase R_MOD) ; ! ""
+сияқты:сияқты R_MOD ; ! ""
 сылдыра:сылдыра V-IV ; ! ""
 сытыл:сытыл V-IV ; ! ""
 сұрықсыз:сұрықсыз A1 ; ! ""
