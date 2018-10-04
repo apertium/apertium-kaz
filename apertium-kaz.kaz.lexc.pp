@@ -1,3 +1,4 @@
+#!/usr/bin/env racket
 #lang pollen
 
 ◊(require racket/list)
@@ -133,6 +134,7 @@
 ◊(tag S3SIM "POSS.3SP")	! possessive, third singular/plural, after pronouns
 ◊(tag C2  "GEN")	! genitive case (ілік септік)
 ◊(tag C3 "DAT")	! dative case (барыс септік)
+◊(tag C3SIM "DAT")	! dative case (барыс септік), after pronouns
 ◊(tag C4 "ACC")	! accusative case (табыс септік)
 ◊(tag C5 "LOC")	! locative case (жатыс септік)
 ◊(tag C6 "ABL")	! ablative case (шығыс септік)
@@ -310,7 +312,7 @@
 ◊(tag nom "")         ! Nominative
 ◊(tag gen C2)       ! Genitive
 ◊(tag dat C3)       ! Dative
-◊(tag prn_dat "C3SIM") ! Dative -GAн (after some of the pronouns)
+◊(tag prn_dat C3SIM) ! Dative -GAн (after some of the pronouns)
 ◊(tag acc C4)       ! Accusative
 ◊(tag abl C6)       ! Ablative
 ◊(tag loc C5)       ! Locative

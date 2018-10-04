@@ -75,6 +75,7 @@
 %<POSS.3SP%>	! possessive, third singular/plural, after pronouns
 %<GEN%>	! genitive case (ілік септік)
 %<DAT%>	! dative case (барыс септік)
+%<DAT%>	! dative case (барыс септік), after pronouns
 %<ACC%>	! accusative case (табыс септік)
 %<LOC%>	! locative case (жатыс септік)
 %<ABL%>	! ablative case (шығыс септік)
@@ -252,7 +253,7 @@
          ! Nominative
 %<GEN%>       ! Genitive
 %<DAT%>       ! Dative
-%<C3SIM%> ! Dative -GAн (after some of the pronouns)
+%<DAT%> ! Dative -GAн (after some of the pronouns)
 %<ACC%>       ! Accusative
 %<ABL%>       ! Ablative
 %<LOC%>       ! Locative
@@ -1151,7 +1152,7 @@ LEXICON PRON-P12SG-CASES
 
 :ен CLITICS-NO-COP ;
 %<GEN%>:енің CLITICS-NO-COP ;
-%<C3SIM%>:аған CLITICS-NO-COP ;
+%<DAT%>:аған CLITICS-NO-COP ;
 %<ACC%>:ені CLITICS-NO-COP ;
 %<ABL%>:енен CLITICS-NO-COP ;
 %<LOC%>:енде CLITICS-NO-COP ;
@@ -1167,7 +1168,7 @@ LEXICON PRON-P3SG-CASES
 :л CLITICS-NO-COP ;
 : CLITICS-NO-COP ; ! Dir/LR
 %<GEN%>:ның CLITICS-NO-COP ;
-%<C3SIM%>:ған CLITICS-NO-COP ;
+%<DAT%>:ған CLITICS-NO-COP ;
 %<ACC%>:ны CLITICS-NO-COP ;
 %<ABL%>:дан CLITICS-NO-COP ;
 %<LOC%>:нда CLITICS-NO-COP ;
@@ -1214,7 +1215,7 @@ LEXICON PRON-PERS
 LEXICON PRON-DEM-INFL
 
 %<GEN%>:ның CLITICS-NO-COP ;
-%<C3SIM%>:ған CLITICS-NO-COP ;
+%<DAT%>:ған CLITICS-NO-COP ;
 %<ACC%>:ны CLITICS-NO-COP ;
 %<ABL%>:дан CLITICS-INCL-COP ;
 %<ABL%>:нан CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "осы" seems to take this.
@@ -1234,7 +1235,7 @@ LEXICON PRON-DEM-BUL
 бұл%<PRO%>:бұ CLITICS-INCL-COP ; ! Dir/LR
 бұл%<PRO%>%<GEN%>:бұның CLITICS-NO-COP ;
 бұл%<PRO%>%<GEN%>:мұның CLITICS-NO-COP ; ! Dir/LR
-бұл%<PRO%>%<C3SIM%>:бұған CLITICS-NO-COP ;
+бұл%<PRO%>%<DAT%>:бұған CLITICS-NO-COP ;
 бұл%<PRO%>%<ACC%>:бұны CLITICS-NO-COP ;
 бұл%<PRO%>%<ACC%>:мұны CLITICS-NO-COP ; ! Dir/LR
 бұл%<PRO%>%<ABL%>:бұдан CLITICS-INCL-COP ;
@@ -1288,7 +1289,7 @@ LEXICON PRON-DEM-ANA
 
 : CLITICS-INCL-COP ;
 %<GEN%>:ның CLITICS-NO-COP ;
-%<C3SIM%>:ған CLITICS-NO-COP ;
+%<DAT%>:ған CLITICS-NO-COP ;
 %<ACC%>:ны CLITICS-NO-COP ;
 %<ABL%>:дан CLITICS-INCL-COP ;
 %<LOC%>:да CLITICS-INCL-COP ;
@@ -1337,7 +1338,7 @@ LEXICON PRON-ITG-QAYSI-CASES
 
 : CLITICS-NO-COP ;
 %<GEN%>:ның CLITICS-NO-COP ;
-%<C3SIM%>:ған CLITICS-NO-COP ;
+%<DAT%>:ған CLITICS-NO-COP ;
 %<ACC%>:ны CLITICS-NO-COP ;
 %<ABL%>:дан CLITICS-NO-COP ;
 %<LOC%>:да CLITICS-NO-COP ;
