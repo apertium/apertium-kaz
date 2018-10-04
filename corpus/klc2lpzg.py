@@ -72,7 +72,7 @@ KLC_2_LPZG = {
     "R_BOS": "FORGN",  ## foreign
     "R_BSLH": "PUNCT",  ## punctuation
     "R_DPH": "PUNCT",  ## punctuation
-    "R_ELK": "VB",  ## verb
+    "R_ELK": "IDEO",  ## imitiative
     "R_ET": "VB",  ## verb
     "R_ETB": "VBNEG",  ## analytic negation (jok/emes)
     "R_ETD": "VBE",  ## defunct -e verb
@@ -106,7 +106,7 @@ KLC_2_LPZG = {
     "S3": "POSS.3SP",  ## possessive 3rd singular/plural
     "S3SIM": "POSS.3SP",  ## possessive 3rd singular/plural
     "S4": "POSS.2SPF",  ## possessive 2nd singular/plural
-    "S5": "POSS.1SG",  ## possessive 1st plural
+    "S5": "POSS.1PL",  ## possessive 1st plural
     "S9": "POSS",  ## possessive general (-Niki)
     "SML": "SML",  ## similative
     "T1": "AOR",  ## aorist tense
