@@ -10,6 +10,26 @@ you can use this language package for:
 * Morphological generation of Kazakh
 * Part-of-speech tagging of Kazakh
 
+Docker
+===============================================================================
+
+To get a docker image with everything included (apertium-kaz@nla command-line tools,
+a web-server called apertium-apy running on port 2737 and a web-interface called
+apertium-html-tools, run the following commands (assuming that you have `docker'
+installed):
+
+# Clone the  apertium-kaz repo:
+
+git clone https://github.com/apertium/apertium-kaz.git
+
+# Switch to `nla' branch of it:
+
+git checkout nla
+
+# Build the docker image
+
+docker build -t kaz .
+
 Requirements
 ===============================================================================
 
