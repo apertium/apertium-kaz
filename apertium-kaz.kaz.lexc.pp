@@ -6,7 +6,7 @@
 
 ◊;;; Constants
 
-◊(define TAGSET "nla")
+◊(define TAGSET "leipzig")
 ◊(define BEGIN_TAG "%<")
 ◊(define END_TAG "%>")
 
