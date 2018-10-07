@@ -1,45 +1,65 @@
 Kazakh
 
-APERTIUM-KAZ
+APERTIUM-KAZ@NLA
 ===============================================================================
 
-This is an Apertium monolingual language package for Kazakh. What
-you can use this language package for:
+This is a version of the Apertium monolingual language package for Kazakh, with
+modifications by and for the National Laboratory Astana, Nazarbayev
+University.
+
+What you can use this language package for:
 
 * Morphological analysis of Kazakh
 * Morphological generation of Kazakh
 * Part-of-speech tagging of Kazakh
 
-Docker
-===============================================================================
+Differences from the ``vanilla'' version of apertium-kaz
+========================================================
 
-To get a docker image with everything included (apertium-kaz@nla command-line tools,
-a web-server called apertium-apy running on port 2737 and a web-interface called
-apertium-html-tools, run the following commands (assuming that you have `docker'
-installed):
+Apertium-kaz@nla differs from the ``vanilla'' version of apertium-kaz
+(the ``master'' branch of this repository) in several ways:
 
-# Clone the  apertium-kaz repo:
+- different tagsets (2 are supported out of the box, see below)
+- less number of disctinctions made so that annotating and tagging is easier
+  (the principle being ``one affix = one tag'')
+- multiword units (with spaces) are removed from the lexicon
+- in many cases, expecially in case of 
 
-git clone https://github.com/apertium/apertium-kaz.git
+This nla version of apertium-kaz might give insights for developing the vanilla
+version of it (in particular with regard to tag/analyses choice and on how
+flexible/inflexible it is to change the tagset and morphotactics of an existing
+transducer), therefore we keep it here for now. The two might get merged at some
+point so that both versions are generated from a single source.
 
-# Switch to `nla' branch of it:
 
-git checkout nla
-
-# Build the docker image
-
-docker build -t kaz .
+Installation
+============
 
 Requirements
-===============================================================================
+------------
 
 You will need the following software installed:
 
-* lttoolbox (>= 3.3.0)
-* apertium (>= 3.3.0)
-* vislcg3 (>= 0.9.9.10297)
+* lttoolbox
+* apertium
+* hfst
+* vislcg3
+* apertium-lex-tools
+* [Racket](https://racket-lang.org/) programming language (optional)
+
+DEB and RPM packages are provided for them. If you're using a GNU/Linux system,
+the easiest way to install the first four is to install the `apertium-all-dev'
+package as described on
+http://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging.  After
+that you'll be able to compile and use apertium-kaz@nla.
+
+If you're not running a GNU/Linux system, a VitualBox image is provided for you
+with all of the necessary packages installed on it. See [this](http://wiki.apertium.org/wiki/Install_Apertium_core_using_packaging) for details.
 
 If this does not make any sense, we recommend you look at: www.apertium.org
+
+Racket should be in the package repositories of most GNU/Linux distributions,
+if not, you can download it from [https://racket-lang.org].
 
 Compiling
 ===============================================================================
@@ -49,8 +69,7 @@ Given the requirements being installed, you should be able to just run:
 $ ./configure
 $ make
 
-You can use ./autogen.sh instead of ./configure if you're compiling
-from SVN.
+You can use ./autogen.sh instead of ./configure.
 
 If you're doing development, you don't have to install the data, you
 can use it directly from this directory.
@@ -70,30 +89,68 @@ Testing
 If you are in the source directory after running make, the following
 commands should work:
 
-    $ echo "Сәлем!" | apertium -d . kaz-morph
-    ^Сәлем/сәлем<ij>/сәлем<n><nom>/сәлем<n><attr>/
-    сәлем<n><nom>+е<cop><aor><p3><pl>/сәлем<n><nom>+е<cop><aor><p3><sg>$
-    ^!/!<sent>$^./.<sent>$
-
-    $ echo "Оқу инемен құдық қазғандай." | apertium -d . kaz-tagger
-    ^Оқу/оқу<adj>$ ^инемен/ине<n><ins>$ ^құдық/құдық<n><nom>$
-    ^қазғандай/қаз<v><tv><ger_past><sim>$^./.<sent>$^./.<sent>$ 
+    apertium-kaz$ echo "Инемен құдық қазғандай."  | apertium -d . kaz-morph
+    ^Инемен/ине<R_ZE><C7>$ ^құдық/құдық<R_ZE>$ ^қазғандай/қаз<R_ET><ET_ESM><SML>
+    $^./.<R_NKT>$
 
 
 Files and data
 ===============================================================================
 
-* apertium-kaz.kaz.lexc           - Monolingual dictionary
+* apertium-kaz.kaz.lexc.scrbl     - Monolingual dictionary, a [Scribble/text](https://docs.racket-lang.org/scribble-pp/text.html) source file
+* apertium-kaz.kaz.nla.lexc      - Monolingual dictionary with NLA tagset, generated out of apertium-kaz.kaz.lexc.scrbl with the `racket apertium-kaz.kaz.lexc.scrbl "nla"` command
+* apertium-kaz.kaz.leipzig.lexc  - Monolingual dictionary with an even simpler Leipzig(-style) tagset, generated out of apertium-kaz.kaz.lexc.scrbl with the `racket apertium-kaz.kaz.lexc.scrbl "leipzig"` command
 * apertium-kaz.kaz.twol           - Morphophonological rules
-* apertium-kaz.kaz.err.twol       - 
-* apertium-kaz.kaz.guesser.twol   - 
+* apertium-kaz.kaz.err.twol       - Additional morphophonological rules for dealing with erroneously spelled words
 * kaz.prob                        - Tagger model
 * apertium-kaz.kaz.rlx            - Constraint Grammar disambiguation rules
 * apertium-kaz.post-kaz.dix       - Post-generator
-* apertium-kaz.kaz.mtx            - 
-* apertium-kaz.kaz.tsx            -
-* apertium-kaz.kaz.udx            - 
 * modes.xml                       - Translation modes
+
+Tagset
+======
+
+We don't describe the complete tagset here and simply refer to what's between
+BEGIN NLA TAGSET and END NLA TAGSET comments in the
+`apertium-kaz.kaz.lexc.scrbl` file.
+
+The meaning of lines like
+
+    `@(tag R_ZE '(nla R_ZE leipzig NN))	! Noun, common`
+
+in that file is the following/
+
+If the command-line option to the `racket apertium-kaz.kaz.lexc.scrbl` command
+is `"nla"`, the tag that will end up in the `apertium-kaz.kaz.lexc` is `<R_ZE>`,
+and if the option is `"leipzig"`, that is, the command run is
+`racket apertium-kaz.kaz.lexc.scrbl "leipzig"`, the tag used in the resulting
+lexc file will be `<NN>`.
+
+All tags used in the `apertium-kaz.kaz.lexc.scrbl` file itself are variables,
+and it's enough to change them when they are declared in the informal NLA TAGSET
+section of that file to get plain .lexc files with a different tagset.
+
+Docker
+===============================================================================
+
+To get a docker image with everything included (apertium-kaz@nla command-line
+tools, a web-server called
+[apertium-apy](https://github.com/apertium/apertium-apy) running on port 2737
+and a web-interface to it called
+[apertium-html-tools]((https://github.com/apertium/apertium-html-tools)), run
+the following commands (assuming that you have `docker' installed):
+
+# Clone the  apertium-kaz repo:
+
+git clone https://github.com/apertium/apertium-kaz.git
+
+# Switch to `nla' branch of it:
+
+git checkout nla
+
+# Build the docker image
+
+docker build -t kaz .
 
 For more information
 ===============================================================================
