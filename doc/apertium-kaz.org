@@ -7,18 +7,16 @@ WARNING: this is an early draft.
 
 What follows is the documentation for =apertium-kaz= -- a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
-written, or, rather, assembled from various writings from [[https://wiki.apertium.org][Apertium's wiki]] and
-then extended with more details by selimcan on September 2018 for members of
-the `Deep Learning for Sequential Models in Natural Language Processing with
+written, or, rather, assembled from various writings on [[https://wiki.apertium.org][Apertium's wiki]] and then
+extended with more details by [[http://ifs.name][ifs]] on September-October 2018 for members of the
+`Deep Learning for Sequential Models in Natural Language Processing with
 Applications to Kazakh' (dlsmnlpak) research group at Nazarbayev University and
 elsewhere. That being said, I hope that it will be useful for anyone who uses
-apertium-kaz and maybe wants to extend it with more stems. One of the goals of
-the dlsmnlpak research project is to develop an annotated corpus of Kazakh, and
-extend apertium-kaz with more stems and probabilistic guessing/tagging
-capabilities. Most of the things said in this guide might be applicable to
+=apertium-kaz= and maybe wants or needs to extend it with more stems or other
+features. Most of the things said in this guide should be applicable to
 Apertium's transducers for other Turkic languages as well.
 
-----
+---
 
 *Apertium-kaz* is a morphological transducer and disambiguator for Kazakh,
 currently under development. It is intended to be compatible with transducers
@@ -36,15 +34,25 @@ the following language pairs:
 
 ** Usage
 
-** Annotating texts using =apertium-kaz= and extending it with more stems while doing so
- 
+One of the goals of the dlsmnlpak research project is to extend =apertium-kaz=
+with more stems and probabilistic guessing/tagging capabilities. The latter, by
+the nature of the problem, requires creating a human-annotated corpus of Kazakh
+of some sort. This task itself, however, did not make it into the final contract
+with the ministry, which forces us even more to be as efficient while creating
+it (or assembling it from other sources such as by converting/adjusting them).
+
+The general principle here is to annotate *not* from scratch, but by taking the
+the output of =apertium-kaz= as the basis. This is logical b
+
+** Annotating texts using =apertium-kaz= and extending it with more stems while doing so 
+
 Imagine the following scenario: a linguist is annotating a Kazakh text with
-morphological information, taking the output of =kaz-morph= or =kaz-tagger= as
-a starting point. Since the coverage of =apertium-kaz= at the time of this
-writing (September 2018) is about 95%, #+BEGIN_COMMENT TODO measure this
-automatically and put the result here #+END_COMMENT it is reasonable to assume
-that, in the text that she is annotating, the linguist will encounter stems
-unrecognized by the transducer.
+morphological information, taking the output of =kaz-morph= or =kaz-tagger= as a
+starting point. Since the coverage of =apertium-kaz= at the time of this writing
+(September 2018) is about 95%, #+BEGIN_COMMENT TODO measure this automatically
+and put the result here #+END_COMMENT it is reasonable to assume that, in the
+text that she is annotating, the linguist will encounter stems unrecognized by
+the transducer.
 
 Each stem in =apertium-kaz.kaz.lexc= -- the lexicon of the transducer -- can be
 followed by one ore more affixes of Kazakh, and thus cover many wordforms. Thus

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>apertium-kaz</title>
-<!-- 2018-09-13 Thu 04:28 -->
+<!-- 2018-10-23 Tue 18:00 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Илнар Сәлимҗанов" />
@@ -180,6 +180,57 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">apertium-kaz</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. <code>APERTIUM-KAZ</code>: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR KAZAKH</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Installation</a></li>
+<li><a href="#sec-1-2">1.2. Usage</a></li>
+<li><a href="#sec-1-3">1.3. Annotating texts using <code>apertium-kaz</code> and extending it with more stems while doing so</a></li>
+<li><a href="#sec-1-4">1.4. Stems from Russian that end with one of the voiced consonants (б, г), such as &lt;code&gt;геолог&lt;/code&gt; should be entered as spelled, but should be put in the right category for foreign words (e.g., if a noun, then &lt;code&gt;N5&lt;/code&gt;).</a></li>
+<li><a href="#sec-1-5">1.5. Words that are commonly written in both forms (e.g., орнында and орынында) need special treatment: add &lt;code&gt;! Dir/LR&lt;/code&gt; after the form that should not be generated (i.e., the form that is the non-normative version), and add &lt;code&gt;! Err/Orth&lt;/code&gt; after it too if it should be considered a spelling mistake.</a></li>
+<li><a href="#sec-1-6">1.6. IV = intransitive verbs; TV = transitive verbs</a></li>
+<li><a href="#sec-1-7">1.7. If the verb can take a direct object with -НЫ, then it's not IV; otherwise it is TV</a></li>
+<li><a href="#sec-1-8">1.8. For phrasal verbs (e.g,. "қабыл ал", "пайда бол", "мойынға ал"), do not categorise it according to its elements; instead treat it as a single verb (TV, IV, TV).</a></li>
+<li><a href="#sec-1-9">1.9. Infinitives ending in -ю should end in ‹й› instead, e.g ‹сүю› should be entered as &lt;code&gt;сүй&lt;/code&gt;</a></li>
+<li><a href="#sec-1-10">1.10. Some verbs have a "hidden" ‹ы› or ‹і› under the ‹у›, for example &lt;code&gt;ері&lt;/code&gt;, &lt;code&gt;аршы&lt;/code&gt;, &lt;code&gt;аңды&lt;/code&gt;, etc.  These verb stems should be added ''with'' the ‹ы› or ‹і›.</a></li>
+<li><a href="#sec-1-11">1.11. Of course, verbs with ‹у› in the stem should keep the ‹у›, like &lt;code&gt;жу&lt;/code&gt;, &lt;code&gt;қу&lt;/code&gt;, &lt;code&gt;жау&lt;/code&gt;, etc.</a></li>
+<li><a href="#sec-1-12">1.12. ''especially'' if the last vowel is ‹и› or ‹у›</a></li>
+<li><a href="#sec-1-13">1.13. ''especially'' if they end with a consonant that would normally be voiced before a vowel-initial suffix in Kazakh words (п, к)</a></li>
+<li><a href="#sec-1-14">1.14. N1</a></li>
+<li><a href="#sec-1-15">1.15. N-COMPOUND-PX</a></li>
+<li><a href="#sec-1-16">1.16. N5</a></li>
+<li><a href="#sec-1-17">1.17. N1-ABBR</a></li>
+<li><a href="#sec-1-18">1.18. N-INFL-INKI</a></li>
+<li><a href="#sec-1-19">1.19. (could be derived from anthroponyms automatically?)</a></li>
+<li><a href="#sec-1-20">1.20. NP-TOP: toponyms (in particular, river names should go here too)</a></li>
+<li><a href="#sec-1-21">1.21. NP-TOP-ASSR: former and future soviet socialistic republic names ending with СР: &lt;code&gt;Қырғыз% КСР:Қырғыз% КСР%{э%}%{й%} NP-TOP-ASSR ;&lt;/code&gt;</a></li>
+<li><a href="#sec-1-22">1.22. NP-ORG: organization names</a></li>
+<li><a href="#sec-1-23">1.23. NP-ORG-LAT: organization names written in Latin character. Example: Microsoft</a></li>
+<li><a href="#sec-1-24">1.24. NP-AL: proper names not belonging to one of the above NP-* classes. Example: Восток</a></li>
+<li><a href="#sec-1-25">1.25. Test 1: can the word in question modify verb? "Жақсы оқиды" OK? A: yes.</a></li>
+<li><a href="#sec-1-26">1.26. Test 2: has a comparative form? "Жақсырақ" OK? A: yes</a></li>
+<li><a href="#sec-1-27">1.27. ==&gt; жақсы A1</a></li>
+<li><a href="#sec-1-28">1.28. '''көрші''' елдер</a></li>
+<li><a href="#sec-1-29">1.29. '''əлем''' чемпионаты</a></li>
+<li><a href="#sec-1-30">1.30. Үстелде қалам '''да''', қарындаш '''та''', дәптер '''де''' жатыр.</a></li>
+<li><a href="#sec-1-31">1.31. Абай әуелі ауылдағы Ғабитхан молдадан сауатын ашады '''да''', 10 жасқа толған соң 3 жыл Семейдегі Ахмет Риза медресесінде оқиды.</a></li>
+<li><a href="#sec-1-32">1.32. Мен '''де''' барамын.</a></li>
+<li><a href="#sec-1-33">1.33. Аузы қисық болса '''да''' байдын баласы сөйлесін.</a></li>
+<li><a href="#sec-1-34">1.34. '''Мынау''' үй жаңа.</a></li>
+<li><a href="#sec-1-35">1.35. '''Мынау''' — терезе емес.</a></li>
+<li><a href="#sec-1-36">1.36. Кітап '''оқу''' адамдарды ақылдырақ етеді.</a></li>
+<li><a href="#sec-1-37">1.37. '''Оқу''' басталды.</a></li>
+<li><a href="#sec-1-38">1.38. Ол кәзір '''ұйықтап''' жатыр.</a></li>
+<li><a href="#sec-1-39">1.39. Мектепті '''бітіріп''', университетке түстім.</a></li>
+<li><a href="#sec-1-40">1.40. Орталық Азиядан арий тайпалары '''келіп''' қоныстанды.</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
 <div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> <code>APERTIUM-KAZ</code>: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR KAZAKH</h2>
@@ -191,20 +242,18 @@ WARNING: this is an early draft.
 <p>
 What follows is the documentation for <code>apertium-kaz</code> &#x2013; a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
-written, or, rather, assembled from various writings from <a href="https://wiki.apertium.org">Apertium's wiki</a> and
-then extended with more details by selimcan on September 2018 for members of
-the `Deep Learning for Sequential Models in Natural Language Processing with
+written, or, rather, assembled from various writings on <a href="https://wiki.apertium.org">Apertium's wiki</a> and then
+extended with more details by <a href="http://ifs.name">ifs</a> on September-October 2018 for members of the
+`Deep Learning for Sequential Models in Natural Language Processing with
 Applications to Kazakh' (dlsmnlpak) research group at Nazarbayev University and
 elsewhere. That being said, I hope that it will be useful for anyone who uses
-apertium-kaz and maybe wants to extend it with more stems. One of the goals of
-the dlsmnlpak research project is to develop an annotated corpus of Kazakh, and
-extend apertium-kaz with more stems and probabilistic guessing/tagging
-capabilities. Most of the things said in this guide might be applicable to
+<code>apertium-kaz</code> and maybe wants or needs to extend it with more stems or other
+features. Most of the things said in this guide should be applicable to
 Apertium's transducers for other Turkic languages as well.
 </p>
 
 <p>
--&#x2014;
+&#x2014;
 </p>
 
 <p>
@@ -236,6 +285,21 @@ the following language pairs:
 
 <div id="outline-container-sec-1-2" class="outline-3">
 <h3 id="sec-1-2"><span class="section-number-3">1.2</span> Usage</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+One of the goals of the dlsmnlpak research project is to extend <code>apertium-kaz</code>
+with more stems and probabilistic guessing/tagging capabilities. The latter, by
+the nature of the problem, requires creating a human-annotated corpus of Kazakh
+of some sort. This task itself, however, did not make it into the final contract
+with the ministry, which forces us even more to be as efficient while creating
+it (or assembling it from other sources such as by converting/adjusting them).
+</p>
+
+<p>
+The general principle here is to annotate <b>not</b> from scratch, but by taking the
+the output of <code>apertium-kaz</code> as the basis. This is logical b
+</p>
+</div>
 </div>
 
 <div id="outline-container-sec-1-3" class="outline-3">
@@ -243,12 +307,12 @@ the following language pairs:
 <div class="outline-text-3" id="text-1-3">
 <p>
 Imagine the following scenario: a linguist is annotating a Kazakh text with
-morphological information, taking the output of <code>kaz-morph</code> or <code>kaz-tagger</code> as
-a starting point. Since the coverage of <code>apertium-kaz</code> at the time of this
-writing (September 2018) is about 95%, #+BEGIN<sub>COMMENT</sub> TODO measure this
-automatically and put the result here #+END<sub>COMMENT</sub> it is reasonable to assume
-that, in the text that she is annotating, the linguist will encounter stems
-unrecognized by the transducer.
+morphological information, taking the output of <code>kaz-morph</code> or <code>kaz-tagger</code> as a
+starting point. Since the coverage of <code>apertium-kaz</code> at the time of this writing
+(September 2018) is about 95%, #+BEGIN<sub>COMMENT</sub> TODO measure this automatically
+and put the result here #+END<sub>COMMENT</sub> it is reasonable to assume that, in the
+text that she is annotating, the linguist will encounter stems unrecognized by
+the transducer.
 </p>
 
 <p>
@@ -954,7 +1018,7 @@ as separate predicates, which participle+auxiliary constructions don't do.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Илнар Сәлимҗанов</p>
-<p class="date">Created: 2018-09-13 Thu 04:28</p>
+<p class="date">Created: 2018-10-23 Tue 18:00</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
