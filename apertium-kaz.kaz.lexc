@@ -1866,7 +1866,7 @@ LEXICON PAREN
 екеуі:екеуі CC ; ! "both" !Use/MT
 яки:яки CC ; ! "or"
 әлде:әлде CC ; ! "or"
-
+арқылы:арқылы CC ; !"with" !Use/MT
 мен:%{M%}ен CC ; ! ""
 мен:%{M%}енен CC ; ! "" Dir/LR
 мен:бен CC ; ! "" Dir/LR
@@ -2076,6 +2076,7 @@ InterrogativePronouns ;
 басқалар:басқалар PRON-IND-PL ; ! "other" !to fix
 басқа:басқа PRON-IND ; ! "other" ! to fix
 бірдеме:бірдеме PRON-IND ; ! "something"
+бiрi:бiрi PRON-IND ; !  "someone" Use/MT
 бірдеңе:бірдеңе PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 қайда% болса% сонда:қайда% болса% сонда PRON-IND ; ! "anywhere" Use/MT
@@ -2150,6 +2151,7 @@ InterrogativePronouns ;
 қанша:қанша DET-QNT ; ! "how many"
 азырақ:азырақ DET-QNT ; ! "less"
 көбірек:көбірек DET-QNT ; ! "much"
+бірсыпыра:бірсыпыра DET-QNT ; ! "Use/MT"
 көп:көп DET-QNT ; ! "many"
 бір% топ:бір% топ DET-QNT ; ! "a bunch of"
 мыңдаған:мыңдаған DET-QNT ; ! "many"
@@ -2281,7 +2283,10 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 Аллаһ:Аллаһ N1 ; ! ""
 Аллаһ:аллаһ N1 ; ! ""
 Аһимса:Аһимса N1 ; !
+үйлену:үйлену N1 ;
+
 Баск:Баск N1 ; !
+көркемдеу:көркемдеу N1 ;
 Бихар:Бихар N1 ; !
 Будда:будда N3 ; ! ""
 Буддизм:буддизм N5 ; ! "Buddhism"
@@ -2309,6 +2314,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 абайтану:абайтану N1 ; ! ""
 абақты:абақты N1 ; ! "jail"
 аббат:аббат N1 ; !"Use/MT"
+мұғалiм:мұғалiм N1 ; !Use/MT
 аббатиса:аббатиса N1 ; !"Use/MT"
 аберрация:аберрация N1 ; ! "aberration"
 абляция:абляция N1 ; !
@@ -6113,6 +6119,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 көшпелілік:көшпелілік N1 ; ! ""
 көшпенді:көшпенді N1 ; !"Use/MT"
 көші%-қон:көші%-қон N1 ; ! "migration"
+үй% жұмыс:үй% жұмыс N1 ; ! Use/MT
 көшір:көшір N1 ; ! ""
 көшірмеші:көшірмеші N1 ; ! ""
 көшіруші:көшіруші N1 ; ! ""
@@ -19295,6 +19302,7 @@ PSM:PSM N1 ; !"Use/MT"
 Колумб:Колумб NP-ANT-M ; !"Use/MT"
 Дениз:Дениз NP-ANT-M ; !"Use/MT"
 Текеш:Текеш NP-ANT-M ; !"Use/MT"
+Алпамыс:Алпамыс NP-ANT-M  ; !"Use/MT"
 Ибн:Ибн NP-ANT-M ; ! ""
 Реза:Реза NP-ANT-M ; ! ""
 Сейед:Сейед NP-ANT-M ; ! ""
@@ -22951,6 +22959,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Рахой:Рахой NP-ANT-M ; !"Use/MT"
 Рашида:Рашида NP-ANT-F ; ! "Rashıyda" (Arabic)
 Рашид:Рашид NP-ANT-M ; ! ""
+Тоғжан:Тоғжан NP-ANT-M ; ! "Use/MT"
 Рашид:Рашид NP-COG-M ; !"Use/MT"
 Кушан:Кушан NP-COG-MF ; !"Use/MT"
 Жұмалиев:Жұмалиев NP-COG-MF ; !"Use/MT"
@@ -22976,7 +22985,11 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Режеп:Режеп NP-ANT-M ; ! ""
 Рената:Рената NP-ANT-F ; ! "Renata" (New word)
 Ренат:Ренат NP-ANT-M ; ! "Renat" (New word)
+Тоғжан:Тоғжан NP-ANT-M ; !"Use/MT"
 Рей:Рей NP-ANT-M ; !"Use/MT"
+Alma:Alma NP-ANT-F; !"Use/MT"
+Алмас:Алмас NP-ANT-F; !"Use/MT"
+Арман:Арман NP-ANT-M; !"Use/MT"
 Рейд:Рейд NP-ANT-M ; !"Use/MT"
 Рембрандт:Рембрандт NP-ANT-M ; !"Use/MT"
 Ремиджио:Ремиджио NP-ANT-M ; !"Use/MT"
@@ -23179,6 +23192,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Сюзанна:Сюзанна NP-ANT-F ; !"Use/MT"
 Саша:Саша NP-ANT-F ; ! ""
 Саша:Саша NP-ANT-M ; ! ""
+Саят:Саят NP-ANT-M ; ! "" !"Use/MT"
 Саян:Саян NP-ANT-M ; ! "Sayan" (Kazakh)
 Сая:Сая NP-ANT-M ; ! "Saya" (Persian)
 Саятқан:Саятқан NP-ANT-M ; ! "Sayatqan" (Arabic)
@@ -27149,6 +27163,7 @@ Witness:Witness NP-AL ; ! ""
 әккі:әккі A2 ; ! ""
 есен:есен A2 ; 
 түпкі:түпкі A1 ;
+бiр:бiр A1 ; !"Use/MT"
 ерке-шора:ерке-шора A2 ; ! ""
 тап-таза:тап-таза A4 ; ! ""
 аңғалақ:аңғалақ A2 ; ! ""
@@ -34003,8 +34018,10 @@ retroactive:retroactive A1 ; !"Use/MT"
 ұттыр:ұттыр V-IV ; ! ""
 ұтыл:ұтыл V-IV ; ! ""
 сипа:сипа V-TV ; ! ""
+бiл:бiл V-TV ; ! "Use/MT"
 бет% ал:бет% ал V-IV ; ! "Use/MT"
 көз% түс:көз% түс V-IV ; ! "Use/MT"
+тойлау:тойлау V-TV ; ! "Use/MT"
 міңгірле:міңгірле V-IV ; ! ""
 күбірле:күбірле V-IV ; ! ""
 құпта:құпта V-TV ; ! ""
@@ -34016,6 +34033,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 еңіре:еңіре V-IV ; ! ""
 бек:бек V-IV ; ! ""
 дәйекте:дәйекте V-TV ; !"Use/MT"
+iс:iс V-IV ; !"Use/MT"
 оқ:оқ V-TV ; ! ""
 таңғала:таңғала V-TV ; ! "stare"
 таян:таян V-TV ; ! "rely on"
@@ -39855,6 +39873,7 @@ Z:Z GUESS-QUEUE ;
 Альфред:Альфред NP-ANT-M ; ! ""
 Қаныш:Қаныш NP-ANT-M ; ! ""
 Зенд:Зенд NP-ANT-M ; !"Use/MT"
+Асель:Асель NP-ANT-F ; !"Use/MT"
 Қаниса:Қаниса NP-ANT-M ; !"Use/MT"
 
 руб:руб ABBR ; ! ""
