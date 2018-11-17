@@ -5,23 +5,23 @@
 
 WARNING: this is an early draft.
 
-What follows is the documentation for =apertium-kaz= -- a morphological
+What follows is the documentation for /apertium-kaz/ -- a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
-written, or, rather, assembled from various writings on [[https://wiki.apertium.org][Apertium's wiki]] and then
-extended with more details by [[http://ifs.name][ifs]] on September-October 2018 for members of the
-`Deep Learning for Sequential Models in Natural Language Processing with
-Applications to Kazakh' (dlsmnlpak) research group at Nazarbayev University and
-elsewhere. That being said, I hope that it will be useful for anyone who uses
-=apertium-kaz= and maybe wants or needs to extend it with more stems or other
-features. Most of the things said in this guide should be applicable to
+written, or, rather, assembled from various writings on [[https://wiki.apertium.org][Apertium's wiki]] and
+then extended with more details by [[http://ifs.name][ifs]] on September-October 2018 for members of
+the `Deep Learning for Sequential Models in Natural Language Processing with
+Applications to Kazakh' (/dlsmnlpak/) research group at Nazarbayev University
+and elsewhere. That being said, I hope that it will be useful for anyone who
+uses /apertium-kaz/ and maybe wants or needs to extend it with more stems or
+other features. Most of the things said in this guide should be applicable to
 Apertium's transducers for other Turkic languages as well.
 
 ---
 
-*Apertium-kaz* is a morphological transducer and disambiguator for Kazakh,
+/Apertium-kaz/ is a morphological transducer and disambiguator for Kazakh,
 currently under development. It is intended to be compatible with transducers
 for other Turkic languages so that they can be translated between. It's used in
-the following language pairs:
+the following translators:
 
 - Kazakh and Tatar
 - English and Kazakh
@@ -34,17 +34,69 @@ the following language pairs:
 
 ** Usage
 
-One of the goals of the dlsmnlpak research project is to extend =apertium-kaz=
-with more stems and probabilistic guessing/tagging capabilities. The latter, by
-the nature of the problem, requires creating a human-annotated corpus of Kazakh
-of some sort. This task itself, however, did not make it into the final contract
-with the ministry, which forces us even more to be as efficient while creating
-it (or assembling it from other sources such as by converting/adjusting them).
+---
 
-The general principle here is to annotate *not* from scratch, but by taking the
-the output of =apertium-kaz= as the basis. This is logical b
+#+BEGIN_COMMENT
+One of the goals of the /dlsmnlpak/ research project is to extend
+/apertium-kaz/ with more stems and probabilistic guessing/tagging
+capabilities. The latter, by the nature of the problem, requires creating a
+human-annotated corpus of Kazakh of some sort. This task itself did not make it
+into the final contract with the ministry of education, but still is
+assumed. This forces us even more to be as efficient as we can while creating
+it (or assembling it from other sources such as [5] by converting/adjusting
+them).
+#+END_COMMENT
 
-** Annotating texts using =apertium-kaz= and extending it with more stems while doing so 
+** Annotating texts using /apertium-kaz/ and extending it with more stems while doing so 
+
+The general principle here is to annotate texts *not* from scratch, but by
+taking the the output of /apertium-kaz/ as the basis. This is logical because
+/apertium-kaz/ already has a relatively high coverage on a range of corpora
+(90-95% at the time of this writing [7]). In general, in case of
+morphologically rich languages like Kazakh, developing a morphological analyser
+first and then using it for annotation seems to be a common approach.
+
+In addition, it is expedient to distinguish two layers at which annotation can
+be done. One layer of annotation is at the level which is visible to the end
+user of /apertium-kaz/. This would be marking surface forms such as /балам/
+with expected analysis tags =<n><px1sg><nom>=. Another layer is at the hidden,
+implementation level. That would correspond to annotating /балам/ as /N1/ (and
+lemmatising it as /бала/), and then using such data for predicting the lemma
+and the category of new, yet-unknown-to-apertium-kaz words with the aim of
+extending it (the point being that the number of internal categories is orders
+of magnitude less than the number of combinations of tags).
+
+With that in mind, the most efficient way of annotating, in our opinion, is the
+following. It consists of at least two stages. The goal of the first one is to
+get to the point where we have a 1 million-tokens-corpus on which
+/apertium-kaz/ has full coverage[fn:1]. The goal of the second stage is to
+select correct analyses in cases when there are several, so that fully
+disambiguated corpus is left in the result. Here we present instructions for
+the first stage.
+
+1. Pass the text that you want to annotate through the /kaz-tagger/ mode and
+   the /format.py/ script: =apertium-kaz$ cat <your_text> | apertium -d
+   . kaz-tagger | python3 corpus/format.py > corpus/N.tsv=
+2. Open and read the /N.tsv/ file from the beginning. It will be a six-column,
+   tab-separated values file, an example of which you can find in Appendix I,
+   with the following columns:
+   - surface form :: the word/token as it appears in the text
+   - lemma :: the dictionary form of the word. More on that below
+   - tags :: tags which /apertium-kaz/ has returned for the surface form
+   - category :: the so-called *continuation lexicon*, which the lemma must
+                 belong to in /apertium-kaz.kaz.lexc/
+   - lexical form :: this field will be left empty in most cases and can be
+                     ignored. It is reserved for lemma+affixes, as they would
+                     appear if phonological rules weren’t applied to them, and
+                     is mostly interesting for develops of these rules
+   - correct :: spelling (if the surface form in the text has been misspelled,
+                here we give the correct spelling of it)
+3. For each unrecognized surface form in the /N.tsv/ file (marked with a * in
+   the second column)
+
+[fn:1] By *coverage* we mean the share of words in a text for which
+apertium-kaz returns at least one analysis.
+
 
 Imagine the following scenario: a linguist is annotating a Kazakh text with
 morphological information, taking the output of =kaz-morph= or =kaz-tagger= as a
