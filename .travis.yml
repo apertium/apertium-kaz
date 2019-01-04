@@ -1,0 +1,18 @@
+dist: xenial
+before_install:
+    - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+    - sudo apt-get install hfst apertium lttoolbox apertium-dev lttoolbox-dev libhfst-dev cg3 python3-setuptools python3-lxml python3-libhfst apcalc
+    - ./autogen.sh
+    - make
+    - travis_wait make check
+notifications:
+    irc:
+        channels:
+            - "chat.freenode.net#apertium"
+        on_failure: change
+        on_success: never
+    email:
+        recipients:
+            - ilnar@selimcan.org
+        on_failure: always
+        on_success: never

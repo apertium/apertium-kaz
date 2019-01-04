@@ -205,3 +205,9 @@ test: all
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
 
+check: all
+	wget https://gist.githubusercontent.com/IlnarSelimcan/e997825f93c8b8384fb64c4a1b7a7a82/raw/test-cov-on-wiki.sh -O test-cov-on-wiki.sh
+	chmod +x test-cov-on-wiki.sh
+	LC_ALL=C.UTF-8 ./test-cov-on-wiki.sh kk 20181201 kaz-morph
+
+
