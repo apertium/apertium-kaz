@@ -2,7 +2,8 @@ dist: xenial
 before_install:
     - wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
     - sudo apt-get install hfst apertium lttoolbox apertium-dev lttoolbox-dev libhfst-dev cg3 python3-libhfst
-    - wget https://raw.githubusercontent.com/apertium/apertium-tat/master/tests/morphophonology/test.py -O tests/morphophonology/test.py
+    - pwd
+    - wget https://raw.githubusercontent.com/apertium/apertium-tat/master/tests/morphophonology/test.py
     - ./autogen.sh
     - make
     - make check
