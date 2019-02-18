@@ -605,7 +605,6 @@ LEXICON CASES-COMMON
 
 %<gen%>:%>%{N%}%{I%}ң CLITICS-NO-COP ;
 %<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
-
 %<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
 %<ins%>:%>%{M%}ен CLITICS-NO-COP ;
 %<ins%>:%>%{M%}енен CLITICS-NO-COP ; ! Dir/LR
@@ -873,8 +872,6 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENERAL-POSSESSIVE-ETC      ! Stuff which can appear after possessives too
 
 %<gen%>%<subst%>%<nom%>:%>%{N%}ікі%{n%} CLITICS-NO-COP ; ! 2015-01-18//JNW: added <nom>, since it needs a case for transfer, and no other cases are ever added, or even presumed by the transducer to be okay.  But worth CHECK ing..
- 
-
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-NO-COP ;
 
@@ -975,6 +972,7 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 ! - does it take possessive forms?  if not, change
 !   continuation lexicon to something other than GER-INFL
 
+%<ger2%>:%>%{I%}c GER-INFL ; ! NEED AN ADDITIONAL CHECK ! "Ол үйге барысымен телефонның тұтқасына жармасты"
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -999,8 +997,6 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>у%>ш%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}т%{I%}н GER-POSSESSIVES ;
 %<ger_impf%>%<abs%>:%>%{E%}т%{I%}н%>д%{I%}%{K%} GER-POSSESSIVES ;
-%<ger2%>:%>%{I%}c GER-INFL ; ! NEED AN ADDITIONAL CHECK ! "Ол үйге барысымен телефонның тұтқасына жармасты"
-
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
@@ -1267,7 +1263,7 @@ LEXICON PRON-DEM-ALGI
 LEXICON PRON-DEM-MINAU
 
 мынау%<prn%>%<dem%>%<nom%>:мынау CLITICS-INCL-COP ;
-!мынау%<prn%>%<dem%>%<px3sp%>%<nom%>:мынаусы CLITICS-INCL-COP ;
+мынау%<prn%>%<dem%>%<px3sp%>%<nom%>:мынаусы CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<gen%>:мынаусының CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<dat%>:мынаусына CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<acc%>:мынаусын CLITICS-INCL-COP ;
@@ -1275,11 +1271,6 @@ LEXICON PRON-DEM-MINAU
 мынау%<prn%>%<dem%>%<px3sp%>%<abl%>:мынаусынан  CLITICS-INCL-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусымен CLITICS-NO-COP ;
 мынау%<prn%>%<dem%>%<px3sp%>%<ins%>:мынаусыменен CLITICS-NO-COP ; ! Dir/LR 
-
-мынау%<prn%>%<dem%>%<px1sg%>:мынауым CLITICS-INCL-COP ;
-мынау%<prn%>%<dem%>%<px2sg%>:мынауың CLITICS-INCL-COP ;
-мынау%<prn%>%<dem%>%<px3sp%>:мынауы CLITICS-INCL-COP ;
-мынау%<prn%>%<dem%>%<px3sp%>:мынауcы CLITICS-INCL-COP ; ! Dir/LR
 
 LEXICON PRON-DEM-ANA
 
@@ -1909,7 +1900,7 @@ LEXICON PAREN
 екеуі:екеуі CC ; ! "both" !Use/MT
 яки:яки CC ; ! "or"
 әлде:әлде CC ; ! "or"
-арқылы:арқылы CC ; !"with" !Use/MT
+
 мен:%{M%}ен CC ; ! ""
 мен:%{M%}енен CC ; ! "" Dir/LR
 мен:бен CC ; ! "" Dir/LR
@@ -2119,9 +2110,7 @@ InterrogativePronouns ;
 басқалар:басқалар PRON-IND-PL ; ! "other" !to fix
 басқа:басқа PRON-IND ; ! "other" ! to fix
 бірдеме:бірдеме PRON-IND ; ! "something"
-бiрi:бiрi PRON-IND ; !  "someone" Use/MT
 бірдеңе:бірдеңе PRON-IND ; ! "something"
-әлдене:әлдене PRON-IND ; ! "something"
 бір% нәрсе:бір% нәрсе PRON-IND ; ! "something" Use/MT
 қайда% болса% сонда:қайда% болса% сонда PRON-IND ; ! "anywhere" Use/MT
 кей:кей PRON-IND ; ! "some" FIXME CHECK determiner?
@@ -2132,9 +2121,10 @@ InterrogativePronouns ;
 біреу:біреу PRON-IND ; ! !"someone" Use/MT
 
 әрқайсысы:әрқайсы PRON-QNT-POSS ; ! "each of"
-қай%-қайсысы:қай%-қайсысы PRON-QNT-POSS ; ! "any of; each of"
+қай%-қайсысы:қай%-қайсысы PRON-QNT-POSS ; ! "any of" !"each of"
 барлық:барлық PRON-QNT ; ! ""
-бәрі:бәр PRON-QNT-POSS ; ! "everyone"
+бәрі:бәр PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+түгелге:түгел PRON-QNT-POSS ; ! "almost"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 біреу:біреу PRON-QNT ; ! ""
 екеу:екеу PRON-QNT-POSS ; ! "both" !Use/MT
@@ -2142,7 +2132,6 @@ InterrogativePronouns ;
 көбі:көп PRON-QNT-POSS  ; ! "most" !Use/MT
 бірқатар:бірқатар PRON-QNT ; ! 
 кейбіреу:кейбіреу PRON-QNT ; !
-түгел:түгел PRON-QNT ; ! "all"
 
 
 
@@ -2196,7 +2185,6 @@ InterrogativePronouns ;
 қанша:қанша DET-QNT ; ! "how many"
 азырақ:азырақ DET-QNT ; ! "less"
 көбірек:көбірек DET-QNT ; ! "much"
-бірсыпыра:бірсыпыра DET-QNT ; ! "Use/MT"
 көп:көп DET-QNT ; ! "many"
 бір% топ:бір% топ DET-QNT ; ! "a bunch of"
 мыңдаған:мыңдаған DET-QNT ; ! "many"
@@ -2219,7 +2207,7 @@ InterrogativePronouns ;
 кей:кей DET-IND ; ! "some"
 кейбір:кейбір DET-IND ; ! "some"
 қайсыбір:қайсыбір DET-IND ; ! "some"
-қай%-қайсы:қай%-қайсы DET-IND ; ! "whoever"
+қай-қайсы:қай-қайсы DET-IND ; ! "whoever"
 әлденеше:әлденеше DET-IND ; ! ""
 бірер:бірер DET-IND ; ! ""
 сондай:сондай DET-IND ; ! "such" !Use/MT
@@ -2328,13 +2316,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 Аллаһ:Аллаһ N1 ; ! ""
 Аллаһ:аллаһ N1 ; ! ""
 Аһимса:Аһимса N1 ; !
-үйлену:үйлену N1 ;
-мыңжылдык:мыңжылдык N1 ;
-Хань:Хань N1 ; !
 Баск:Баск N1 ; !
-көркемдеу:көркемдеу N1 ;
-реквизит:реквизит N1 ;
-ибн:ибн N1 ;
 Бихар:Бихар N1 ; !
 Будда:будда N3 ; ! ""
 Буддизм:буддизм N5 ; ! "Buddhism"
@@ -2362,7 +2344,6 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 абайтану:абайтану N1 ; ! ""
 абақты:абақты N1 ; ! "jail"
 аббат:аббат N1 ; !"Use/MT"
-мұғалiм:мұғалiм N1 ; !Use/MT
 аббатиса:аббатиса N1 ; !"Use/MT"
 аберрация:аберрация N1 ; ! "aberration"
 абляция:абляция N1 ; !
@@ -3433,6 +3414,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 бит:бит N1 ; ! ""
 бифуркация:бифуркация N1 ; !
 биші:биші N1 ; ! ""
+биыл:биыл ADV ; ! "this year"
 биыл:биыл N1 ; ! "this year"
 биялайшы:биялайшы N1 ; ! ""
 биіктік:биіктік N1 ; ! ""
@@ -4314,7 +4296,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 дүние% жүзі:дүние% жүз N-COMPOUND-PX ; ! "world"
 дүние%-мүлік:дүние%-мүлік N1 ; ! ""
 дүние:дүние N1 ; ! "world,possesions"
-дүние:дүния N1 ; ! "" Dir/LR
+дүние:дүния N1 ; ! ""
 дүниежүз:дүниежүз  N-COMPOUND-PX ; ! "world"
 дүниетаным:дүниетаным N1 ; ! ""
 дүниеқор:дүниеқор N1 ; ! 
@@ -6168,7 +6150,6 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 көшпелілік:көшпелілік N1 ; ! ""
 көшпенді:көшпенді N1 ; !"Use/MT"
 көші%-қон:көші%-қон N1 ; ! "migration"
-үй% жұмыс:үй% жұмыс N1 ; ! Use/MT
 көшір:көшір N1 ; ! ""
 көшірмеші:көшірмеші N1 ; ! ""
 көшіруші:көшіруші N1 ; ! ""
@@ -8839,7 +8820,7 @@ iш% жүргізетін:iш% жүргізетін N1 ; !
 шабыт:шабыт N1 ; ! ""
 шай% қасық:шай% қасық N1 ; !
 шай:шай N1 ; ! ""
-шай:шәй%{Ъ%} N1 ; ! "" Dir/LR
+шай:шәй N1 ; ! ""
 шаймалау:шаймалау N1 ; !
 шайтан:шайтан N1 ; ! "devil"
 шайыр:шайыр N1 ; ! "chewing gum"
@@ -12945,7 +12926,6 @@ PSM:PSM N1 ; !"Use/MT"
 радиохабар:радиохабар N1 ; !"Use/MT"
 разылық:разылық N1 ; !"Use/MT"
 рақат:рақат N1 ; ! ""
-рақат:рахат N1 ; ! "" ! Dir/LR
 рамка:рамка N1 ; ! " frame "  ! Use/MT eng-kaz
 ранчошы:ранчошы N1 ; !"Use/MT"
 рапа:рапа N1 ; !"Use/MT"
@@ -13625,7 +13605,6 @@ PSM:PSM N1 ; !"Use/MT"
 түлек:түлек N1 ; !"Use/MT"
 тұл:тұл N1 ; !"Use/MT"
 тұмау:тұмау N1 ; !"Use/MT"
-тұмау:тымау N1 ; !Dir/LR
 тұмсық:тұмсық N1 ; !"Use/MT"
 тұмсықша:тұмсықша N1 ; !"Use/MT"
 тұмшалау:тұмшалау N1 ; !"Use/MT"
@@ -14275,14 +14254,14 @@ PSM:PSM N1 ; !"Use/MT"
 ықыластылық:ықыластылық N1 ; !
 әділеттілік:әділеттілік N1 ; !
 иігілік:иігілік N1 ; !
-педагог:педагог N5 ; !
+педагог:педагог N1 ; !
 қарапайымдық:қарапайымдық N1 ; !
 қамқоршы:қамқоршы N1 ; !
 ішкиім:ішкиім N1 ; !
 пішім:пішім N1 ; !
 құлағдар:құлағдар N1 ; !
 жәйт:жәйт N1 ; !
-құлық:құл%{y%}қ N1 ; !
+құлық:құлық N1 ; !
 кетіс:кетіс N1 ; !
 
 
@@ -14301,7 +14280,7 @@ PSM:PSM N1 ; !"Use/MT"
 сомма:сомма N1 ; ! ""
 гидроберіліс:гидроберіліс N1 ; ! ""
 катюша:катюша N1 ; ! ""
-киноафиша:киноафиша N5 ; ! ""
+киноафиша:киноафиша N1 ; ! ""
 дүрмек:дүрмек N1 ; ! ""
 айырма:айырма N1 ; ! ""
 қырсықтық:қырсықтық N1 ; ! ""
@@ -16325,7 +16304,6 @@ PSM:PSM N1 ; !"Use/MT"
 қалқыту:қалқыту N1 ; ! ""
 күлтілдеу:күлтілдеу N1 ; ! ""
 сүзілу:сүзілу N1 ; ! ""
-түрк:түрк N1 ;
 түркітану:түркітану N1 ; ! ""
 үндестіру:үндестіру N1 ; ! ""
 бірыңғайлау:бірыңғайлау N1 ; ! ""
@@ -17620,8 +17598,6 @@ PSM:PSM N1 ; !"Use/MT"
 Луанда:Луанда NP-TOP ; !""
 Гиза:Гиза NP-TOP ; !""
 Ильхандар:ильхандар NP-TOP ; !"" !Use/MT
-Хаддингтон:Хаддингтон NP-TOP ; !"" !Use/MT
-Түлкібас:Түлкібас NP-TOP ; !"" !Use/MT 
 Лхаса:Лхаса NP-TOP ; !""
 Сасани:Сасани NP-TOP ; !""
 Сұзы:Сұзы NP-TOP ; !"" !Use/MT
@@ -19357,8 +19333,6 @@ PSM:PSM N1 ; !"Use/MT"
 Колумб:Колумб NP-ANT-M ; !"Use/MT"
 Дениз:Дениз NP-ANT-M ; !"Use/MT"
 Текеш:Текеш NP-ANT-M ; !"Use/MT"
-Алпамыс:Алпамыс NP-ANT-M  ; !"Use/MT"
-Иоан:Иоан NP-ANT-M  ; !"Use/MT"
 Ибн:Ибн NP-ANT-M ; ! ""
 Реза:Реза NP-ANT-M ; ! ""
 Сейед:Сейед NP-ANT-M ; ! ""
@@ -23025,12 +22999,10 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Рахой:Рахой NP-ANT-M ; !"Use/MT"
 Рашида:Рашида NP-ANT-F ; ! "Rashıyda" (Arabic)
 Рашид:Рашид NP-ANT-M ; ! ""
-Тоғжан:Тоғжан NP-ANT-M ; ! "Use/MT"
 Рашид:Рашид NP-COG-M ; !"Use/MT"
 Кушан:Кушан NP-COG-MF ; !"Use/MT"
 Жұмалиев:Жұмалиев NP-COG-MF ; !"Use/MT"
 Мисагие:Мисагие NP-COG-MF ; !"Use/MT"
-Сирин:Сирин NP-COG-MF ; !"Use/MT"
 Мохтасем:Мохтасем NP-COG-MF ; !"Use/MT"
 Мохсени:Мохсени NP-COG-MF ; !"Use/MT"
 Ясеми:Ясеми NP-COG-MF ; !"Use/MT"
@@ -23052,11 +23024,7 @@ Aйтғали:Aйтғали NP-ANT-M ; ! "Aytğalıy" (Arabic)
 Режеп:Режеп NP-ANT-M ; ! ""
 Рената:Рената NP-ANT-F ; ! "Renata" (New word)
 Ренат:Ренат NP-ANT-M ; ! "Renat" (New word)
-Тоғжан:Тоғжан NP-ANT-M ; !"Use/MT"
 Рей:Рей NP-ANT-M ; !"Use/MT"
-Alma:Alma NP-ANT-F; !"Use/MT"
-Алмас:Алмас NP-ANT-F; !"Use/MT"
-Арман:Арман NP-ANT-M; !"Use/MT"
 Рейд:Рейд NP-ANT-M ; !"Use/MT"
 Рембрандт:Рембрандт NP-ANT-M ; !"Use/MT"
 Ремиджио:Ремиджио NP-ANT-M ; !"Use/MT"
@@ -23259,7 +23227,6 @@ Alma:Alma NP-ANT-F; !"Use/MT"
 Сюзанна:Сюзанна NP-ANT-F ; !"Use/MT"
 Саша:Саша NP-ANT-F ; ! ""
 Саша:Саша NP-ANT-M ; ! ""
-Саят:Саят NP-ANT-M ; ! "" !"Use/MT"
 Саян:Саян NP-ANT-M ; ! "Sayan" (Kazakh)
 Сая:Сая NP-ANT-M ; ! "Saya" (Persian)
 Саятқан:Саятқан NP-ANT-M ; ! "Sayatqan" (Arabic)
@@ -27106,7 +27073,6 @@ Witness:Witness NP-AL ; ! ""
 Сардиния:Сардиния NP-TOP ; !"Use/MT"
 әлеуметтану:әлеуметтану N1 ; !"Use/MT"
 Саламанка:Саламанка NP-TOP ; !"Use/MT"
-
 Визеу:Визеу NP-TOP ; !"Use/MT"
 гидра:гидра N1 ; !"Use/MT"
 Парфия:Парфия NP-TOP ; !"Use/MT"
@@ -27213,7 +27179,6 @@ Witness:Witness NP-AL ; ! ""
 конъюктивті:конъюктивті A2 ; !"USE/MT"
 конустық:конустық A4; ! ""
 туыстық:туыстық A4; ! ""
-
 шіркеулік:шіркеулік A4; ! ""
 мойындаушы:мойындаушы A4; ! ""
 конструктивистикалық:конструктивистикалық A4; ! ""
@@ -27232,23 +27197,19 @@ Witness:Witness NP-AL ; ! ""
 бес% жүз% жылғы:бес% жүз% жылғы A1 ; ! ""
 
 әккі:әккі A2 ; ! ""
-есен:есен A1 ; ! ""
+есен:есен A2 ; 
 түпкі:түпкі A1 ;
-қиясты:қиясты A1 ; !"Use/MT"
-бiр:бiр A1 ; !"Use/MT"
 ерке-шора:ерке-шора A2 ; ! ""
 тап-таза:тап-таза A4 ; ! ""
 аңғалақ:аңғалақ A2 ; ! ""
 жасық:жасық A1 ; ! ""
 жиынтық:жиынтық A1 ; ! ""
-ақшылдау:ақшылдау A1 ; !! ""
+ақшылдау:ақшылдау A1 ; ! ""
 ! теңіз:теңіз A3 ; ! "" ! appears to be n.attr
 өзен:өзен A3 ; ! ""
 бедеу:бедеу A2 ; ! ""
 байтақ:байтақ A2 ; ! ""
 бозша:бозша A1 ; ! ""
-Бұрындық:Бұрындық A1 ; !"USE/MT"
-клинакалық:клинакалық A1 ; !"USE/MT"
 азбан:азбан A2 ; ! ""
 қола:қола A2 ; ! ""  ! FIXME: CHECK: might be n.attr
 қызған:қызған A1 ; ! ""
@@ -28008,7 +27969,6 @@ Witness:Witness NP-AL ; ! ""
 қабаған:қабаған A1 ; !
 тумысынан:тумысынан A1 ;
 әзір% екендіктерін:әзір% екендіктерін A1 ; ! Use/MT
-жанартаулық:жанартаулық A1 ; ! Use/MT
 қабақты:қабақты A1 ; !
 дебютант:дебютант A1 ; ! Use/MT
 қабақтай:қабақтай A1 ; !
@@ -30849,7 +30809,7 @@ Witness:Witness NP-AL ; ! ""
 тығыз:тығыз A1 ; ! ""
 тын:тын A1 ; ! ""
 тыныш:тыныш A1 ; ! ""
-тыныш:тиыш A1 ; ! "another form of quiet" Dir/LR
+тыныш:тиыш A1 ; ! "another form of quiet"
 уақ:уақ A1 ; ! "small"
 уақытша:уақытша A6 ; ! "for the time being" ! Probably A6, not A1 -JNW
 үлкен:үлкен A1 ; ! "big"
@@ -33318,8 +33278,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 ! ============================================
 
 алғаш:алғаш ADV-WITH-KI ; ! "at first > first/initial"
-әлгіде:әлгіде ADV-WITH-KI ; ! "recently > recent"
-әлгіде:әлгінде ADV-WITH-KI ; ! "recently > recent" ! Dir/LR
 әзір:әзір ADV-WITH-KI ; ! "now > the one now"
 бағана:бағана ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
 биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
@@ -33338,7 +33296,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 кеш:кеш ADV-WITH-KI ; ! "evening/late"
 күндіз:күндіз ADV-WITH-KI ; ! "during the day"
 қазір:қазір ADV-WITH-KI ; ! "now > the one now"
-мана:мана ADV-WITH-KI ; ! "recently > the last"
 соң:соң ADV-WITH-KI ; ! ""
 таңертең:таңертең ADV-WITH-KI ; ! "morning"
 төмен:төмен ADV-WITH-KI ; ! "lower"
@@ -34096,13 +34053,10 @@ retroactive:retroactive A1 ; !"Use/MT"
 
 зиян% шек:зиян% шек V-IV ; ! "Use/MT"
 ұттыр:ұттыр V-IV ; ! ""
-тұрақтан:тұрақтан V-TV ; ! "Use/MT"
 ұтыл:ұтыл V-IV ; ! ""
 сипа:сипа V-TV ; ! ""
-бiл:бiл V-TV ; ! "Use/MT"
 бет% ал:бет% ал V-IV ; ! "Use/MT"
 көз% түс:көз% түс V-IV ; ! "Use/MT"
-тойлау:тойлау V-TV ; ! "Use/MT"
 міңгірле:міңгірле V-IV ; ! ""
 күбірле:күбірле V-IV ; ! ""
 құпта:құпта V-TV ; ! ""
@@ -34114,7 +34068,6 @@ retroactive:retroactive A1 ; !"Use/MT"
 еңіре:еңіре V-IV ; ! ""
 бек:бек V-IV ; ! ""
 дәйекте:дәйекте V-TV ; !"Use/MT"
-iс:iс V-IV ; !"Use/MT"
 оқ:оқ V-TV ; ! ""
 таңғала:таңғала V-TV ; ! "stare"
 таян:таян V-TV ; ! "rely on"
@@ -35626,7 +35579,7 @@ iс:iс V-IV ; !"Use/MT"
 кішіпейіл% бол:кішіпейіл% бол V-TV ; !
 жағдай% жаса:жағдай% жаса V-IV ; !
 дарылда:дарылда V-TV ; !
-жылын:жылын V-IV ; !
+жылын:жылын V-TV ; !
 асық:асық V-TV ; !
 жүрек% айн:жүрек% айн V-TV ; !
 қажет% бол:қажет% бол V-TV ; !
@@ -36103,6 +36056,7 @@ iс:iс V-IV ; !"Use/MT"
 өсек% соқ:өсек% соқ V-TV ; !
 өсиетте:өсиетте V-TV ; ! "admonish"
 өсір:өсір V-TV ; ! "" (kaz tat) ! Der/Caus
+өс:өс V-IV ; ! "grow"
 өніп%-өс:өніп%-өс V-IV ; ! ""
 түстен:түстен V-IV ; ! ""
 өс:өс V-IV ; ! "to grow"
@@ -37472,7 +37426,7 @@ iс:iс V-IV ; !"Use/MT"
 үңіле% қара:үңіле% қара V-TV ; ! 
 ұнта:ұнта V-TV ; ! "break to small pieces"
 үрейлен:үрейлен V-IV ; ! ""
-үркі:үр%{I%}к%{I%} V-IV ; ! "" ! "NEED AN ADDITIONAL CHECK"
+үркі:үркі V-IV ; ! ""
 ұрла:ұрла V-TV ; ! "steal"
 үрле:үрле V-TV ; ! "blow"
 үр:үр V-IV ; ! "bark(dog)"
@@ -39479,7 +39433,6 @@ iс:iс V-IV ; !"Use/MT"
 қайырлы% түн:қайырлы% түн INTERJ ; ! "good night"
 қош% келдің:қош% келдің INTERJ ; ! "Welcome"
 қош% келдіңіз:қош% келдіңіз INTERJ ; ! "Welcome"
-құп:құп INTERJ ; ! "yes, sir!"
 ой:ой INTERJ ; ! "hey"
 өй:өй INTERJ ; ! ""
 өтінем:өтінем INTERJ ; ! "please"
@@ -39510,25 +39463,6 @@ iс:iс V-IV ; !"Use/MT"
 арс:арс IDEO ; ! ""
 жарқ:жарқ IDEO ; ! ""
 пыс:пыс IDEO ; ! ""
-лып:лып IDEO ; ! ""
-елп:елп IDEO ; ! ""
-жалп:жалп IDEO ; ! ""
-буылтық:буылтық IDEO ; ! ""
-жылт:жылт IDEO ; ! ""
-тарс:тарс IDEO ; ! ""
-тырс:тырс IDEO ; ! ""
-күрс:күрс IDEO ; ! ""
-дік:дік IDEO ; ! ""
-жалт:жалт IDEO ; ! ""
-шіңк:шіңк IDEO ; ! ""
-морт:морт IDEO ; ! ""
-қарс:қарс IDEO ; ! ""
-ырс:ырс IDEO ; ! ""
-шаңқ:шаңқ IDEO ; ! ""
-қыңқ:қыңқ IDEO ; ! ""
-сарт:сарт IDEO ; ! ""
-
-
 
 !=====================!
  LEXICON Abbreviations
@@ -39984,9 +39918,6 @@ Z:Z GUESS-QUEUE ;
 Альфред:Альфред NP-ANT-M ; ! ""
 Қаныш:Қаныш NP-ANT-M ; ! ""
 Зенд:Зенд NP-ANT-M ; !"Use/MT"
-Крокт:Крокт NP-ANT-M ; !"Use/MT"
-Асель:Асель NP-ANT-F ; !"Use/MT"
-Бахтия:Бахтия NP-COG-MF ; !"Use/MT"
 Қаниса:Қаниса NP-ANT-M ; !"Use/MT"
 
 руб:руб ABBR ; ! ""
@@ -40007,7 +39938,6 @@ Z:Z GUESS-QUEUE ;
 Саюдис:Саюдис NP-TOP ; ! ""
 Даля:Даля NP-TOP ; ! ""
 орал%-моңғолдық:орал%-моңғолдық A1 ; !Use/MT"
-әл%-Басри:әл%-Басри NP-COG-MF ; !"Use/MT"  
 шығыс% литвалық:шығыс% литвалық A1 ; !Use/MT"
 Бруно:Бруно NP-ANT-M ; ! "Bruno" (Kazakh)
 Летавка:Летавка NP-TOP ; ! ""
@@ -40084,7 +40014,7 @@ Z:Z GUESS-QUEUE ;
 Грибаускайте:Грибаускайте NP-COG-M ; ! ""
 Аскольд:Аскольд NP-COG-MF ; ! ""
 Қанышқызы:Қанышқызы NP-COG-MF ; ! "" !Use/MT
-Әл%-Хасан:Әл%-Хасан NP-COG-MF ; ! "" !Use/MT
+
 Баторий:Баторий NP-COG-M ; ! ""
 Бернштейн-Коган:Бернштейн-Коган NP-COG-M ; ! ""
 Бертенсон:Бертенсон NP-COG-M ; ! ""
@@ -40325,8 +40255,7 @@ LEXICON Common ! <- future
 селти:селти  V-IV ; ! "stick out"
 ауыз% үй:ауыз% үй N1 ; ! "entrance hall"
 жөткер:жөткер V-IV ; ! "cough"
-жөткерін:жөткерін V-IV ; ! "cough"
-түсіңкіре:түсіңкіре V-IV ; ! "go down a bit"
+тұсіңкіре:түсіңкіре V-IV ; ! "go down a bit"
 өрекпіт:өрекпіт V-TV ; ! "get excited"
 өрекпі:өрекпі V-IV ; ! "get excited"
 қабақ% шыт:қабақ% шыт V-IV ; ! "get sad" ! "Need to check as noun "
@@ -40353,8 +40282,8 @@ LEXICON Common ! <- future
 өбекте:өбекте V-IV ; ! "curry favor"
 қызын:қызын V-IV ; ! "inflame"
 қамзол:қамзол N1 ; ! "camisol"
-қамзол:кәмзөл N1 ; ! "" Dir/LR
-қамзол:кәмзол N1 ; ! "" Dir/LR
+қамзол:кәмзәл N1 ; ! ""
+қамзол:кәмзол N1 ; ! ""
 сездір:сездір V-TV ; ! "feel"
 шалғай:шалғай N1 ; ! "on the outskirts"
 шалғай:шалғай A2 ; ! "remote"
@@ -40474,100 +40403,10 @@ LEXICON Common ! <- future
 дені% дұрыс:дені% дұрыс A2 ; ! "normal"
 бұрындары:бұрындары ADV ; ! "earlier"
 сый:сый V-IV ; ! "house/containt"
-сый:си V-IV ; ! "" Dir/LR
+сый:си V-IV ; ! ""
 оқып%-тоқы:оқып%-тоқы V-TV ; ! "learn"
 қайт:қайт%{ь%} V-TV ; ! "what to do" 
-қуқылдан:қуқылдан V-IV ; ! "turn pale"
-сырыл:сырыл N1 ; ! "wheeze"
-сылдыр:сылдыр N1 ; ! "gurgling"
-ақсұңқар:ақсұңқар N1 ; ! "merlin"
-кіржіңде:кіржіңде V-IV ; ! "grudge"
-кіржіңдеу:кіржіңдеу N1 ; ! "dissatisfaction"
-қуыстан:қуыстан V-IV ; ! "feel guilty"
-құйындат:құйындат V-TV ; ! "whirl"
-қошта:қошта V-TV ; ! "approve"
-етжеңді:етжеңді A2 ; ! "obese"
-алабұрт:алабұрт V-IV ; ! "worry/bother"
-алабұрту:алабұрту N1 ; ! "excitement"
-ентік:ентік V-IV ; ! "to be out of breath"
-етнігу:ентігу N1 ; ! "dyspnea"
-сендел:сендел V-IV ; ! "loaf"
-сенделу:сенделу N1 ; ! "idleness/idling"
-ығыс:ығыс V-IV ; ! "move away"
-ығысу:ығысу N1 ; ! "displacement"
-серп:серп V-TV ; ! "scatter/flap/recline"
-салқындық:салқындық N1 ; ! "cold"
-сұс:сұс N1 ; ! "appearance"
-рақаттан:рақаттан V-IV ; ! "luxuriate/enjoy"
-шүйір:шүйір V-TV ; ! "wrinkle"
-құндақ:құндақ N1 ; ! "diaper/box"
-шылдыр:шылдыр N1 ; ! "chime"
-нықта:нықта V-TV ; ! "сondense"
-нықтан:нықтан V-IV ; ! ""
-апыл%-ғұпыл:апыл%-ғұпыл ADV ; ! "in a hurry"
-сом:сом N1 ; ! "som/currency"
-ірк:ірк V-TV ; ! "stop/restrain"
-қылт% ет:қылт% ет V-IV ; ! "to whid"
-самарқау:самарқау A1 ; ! "sluggish" 
-жұдырықта:жұдырықта V-TV ; ! "punch"
-күрме:күрме V-TV ; ! "tie a knot/prevent" ! "тілі күрмеліп сөйлемеді"
-күрмеу:күрмеу N1 ; ! "fetter/chain" ! "тағдырдың күрмеуінде"
-кірбің:кірбің N1 ; ! "vexation"
-жазира:жазира N1 ; ! "flowering steppe"
-құлақ% түр:құлақ% түр V-IV ; ! "listen for"
-жанар:жанар N1 ; ! "eye"
-ымда:ымда V-TV ; ! "wink/hint"
-күйле:күйле V-TV ; ! "tune/prepare"
-тымау%-сымау N1 ; ! "flu" ! NEED AN ADDITIONAL CHECK
-құбылт:құбылт  V-TV ; ! "change/transform"
-қыстырулы:қыстырулы A2 ; ! "pinned"
-ісмерлік:ісмерлік N1 ; ! "mastery"
-әуре%-сарсаң:әуре%-сарсаң N1 ; ! "troubles"
-ұстат:ұстат V-TV ; ! "hold"
-жайнаңда:жайнаңда V-IV ; ! "shine/glisten"
-шошай:шошай V-IV ; ! "stick up"
-шошайт:шошайт V-TV ; ! "put upright"
-селбеу:селбеу N1 ; ! "help/assistance"
-құп:құп A2 ; ! "correct"
-кәнігі:кәнігі A2 ; ! "experienced/professional"
-дары:дары V-IV ; ! "touch/concern"
-айналшықта:айналшықта V-TV ; ! "to linger"
-аңқаусы:аңқаусы V-IV ; ! "to pretend a simpleton"
-байы:байы V-IV ; ! "to get rich" !"NEED AN ADDITIONAL CHECK"
-бақыттылық:бақыттылық N1 ; ! "happiness/luck"
-бастығырыл:бастығырыл V-IV ; ! "moan in a dream"
-дауала:дауала V-IV ; ! "dare"
-лекіте:лекіте ADV ; ! ""
-сүрте%-мүрте:сүрте%-мүрте ADV ; ! ""
-опын:опын V-IV ; ! "to feel sorry/to regret"
-сығыраңдай:сығыраңдай A2 ; ! "" ! "NEED AN ADDITIONAL CHECK"
-тай:тай V-IV ; ! "to slip"
-тұқыл:тұқыл N1 ; ! "stub"
-шұқы:шұқы V-TV ; ! "pick" 
-адыра% қал:адыра% қал V-IV ; ! "disappear"
-адыра% қалғыр:адыра% қалғыр A2 ; ! ""
-бүркі:бүркі V-TV ; ! "sprinkle" ! "NEED AN ADDITIONAL CHECK"
-жанқалта:жанқалта N1 ; ! "side pocket"
-жарықшақтан:жарықшақтан V-IV ; ! "to fission"
-жасы:жасы V-IV ; ! "to become limp" 
-жуы:жуы V-IV ; ! "to come/be close" ! "NEED AN ADDITIONAL CHECK"
-жымыр:жымыр V-TV ; ! "to pinch ears"
-танығысыз A1 ; ! "unrecognizable"
-шалқала:шалқала V-TV ; ! "to overturn"
-шырық:шыр%{y%}қ N1 ; ! "calmness"
-шырық:шырық V-IV ; ! "to get calm"
-шыт:шыт V-TV ; ! "to frown/қабақ шыту"
-қан%-сөл:қан%-сөл N1 ; ! ""
-түргіз:түргіз V-TV ; ! "to turn/wrap/roll up"
-тұрыс:тұрыс N1 ; ! "inactivity/stand"
-кербезсін:кербезсін V-IV ; ! " to show off"
-сынық:сынық A2 ; ! "broken"
-ұялы:ұялы A2 ; ! "cell"
-рет%-ретімен:рет%-ретімен ADV ; ! "in order"
-сырт% айнал:сырт% айнал V-IV ; ! "look/turn away"
-әрі%-бері:әрі%-бері ADV ; ! "back and forth"
-
-
+ 
 
 <( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
    ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы |
@@ -40582,23 +40421,19 @@ LEXICON Common ! <- future
 
 !!! cases that need an additional consideration
 пенсия%<n%>%<dat%>:пенсияға # ;
-
-!as the fillowing doesn't work шай:шәй%{Ъ%} N1 ; ! ""
-
 шәй%<n%>%<dat%>:шәйға # ;
-шәй%<n%>%<gen%>:шәйдың # ; !Dir/LR
-шәй%<n%>%<gen%>:шәйдің # ;  
+шәй%<n%>%<gen%>:шәйдың # ;
 шәй%<n%>%<acc%>:шәйды # ;
 шәй%<n%>%<loc%>:шәйда # ;
 шәй%<n%>%<abl%>:шәйдан # ;
 шәй%<n%>%<ins%>:шәймен # ;
-
 дені% дұрыстау%<adj%>%<comp%>:дені% дұрыс # ;
 
-!cиық:си%{y%}қ N1 ; ! "exterior"
-сиық%<n%>%<px3sp%>%<nom%>:сиқы # ;
-сиық%<n%>%<px2sg%>%<nom%>:сиқың # ;
-сиық%<n%>%<px1sg%>%<nom%>:сиқым # ;
+
+!!! as this does not work қайт:қайт%{ь%} V-TV ; ! "what to do"
+!сиық%<n%>%<px3sp%>%<nom%>:сиқы # ;
+!сиық%<n%>%<px2sg%>%<nom%>:сиқың # ;
+!сиық%<n%>%<px1sg%>%<nom%>:сиқым # ;
 
 !as the following does not work қайт:қайт%{ь%} V-TV ; ! "what to do"
 қайт%<v%>%<tv%>%<p1%>%<sg%>:қайтемін # ;
@@ -40607,13 +40442,4 @@ LEXICON Common ! <- future
 қайт%<v%>%<tv%>%<p1%>%<pl%>:қайтеміз # ;
 қайт%<v%>%<tv%>%<p2%>%<pl%>:қайтесіңдер # ;
 қайт%<v%>%<tv%>%<p3%>%<pl%>:қайтеді # ;
-
-!!! cases that need an additional consideration
-сый%<v%>%<iv%>%<gpr_ppot%>%<sim%>:сиярлықтай # ;
-сый%<v%>%<iv%>%<gpr_ppot%>:сиярлық # ;
-сый%<v%>%<iv%>%<pih%>%<p3%>%<sg%>:сиятын # ;
-сый%<v%>%<iv%>%<pih%>%<p3%>%<pl%>:сиятын # ;
-сый%<v%>%<iv%>%<gpr_impf%>:сиятын # ;
-сый%<v%>%<iv%>%<neg%>%<gna_impf%>:симай # ;
-
 
