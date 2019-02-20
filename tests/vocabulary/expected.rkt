@@ -1,7 +1,8 @@
 #lang rash
 
 (require rackunit
-         racket/string)
+         racket/string
+         racket/match)
 
 (require apertiumpp)
 ;; install racket (racket-lang.org)
@@ -22,23 +23,51 @@
 
 
 (define (test tc)
-        (define surface (car tc))
-        (define lexicals (car (cdr tc)))
-        (define lu
-                #{echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph})
-        (for ([lexical lexicals])
-             (if (string-suffix? lexical "!")
-                 (check-false
-                  (lu-contains? lu (substring
-                                    lexical
-                                    0 (- (string-length lexical) 1))))
-                 (check-equal? (lu-contains? lu lexical) lexical))))
+        (match tc
+               [(list (list surfaces ...)
+                      (list lexicals ...))
+                (for ([surface surfaces])
+                     (define lu
+                             #{echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph})
+                     (for ([lexical lexicals])
+                          (if (string-suffix? lexical "!")
+                              (check-false
+                               (lu-contains? lu (substring
+                                                 lexical
+                                                 0 (- (string-length lexical) 1))))
+                              (check-equal? (lu-contains? lu lexical) lexical))))]
+               [(list surface (list lexicals ...))
+                (begin
+                 (define lu #{echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph})
+                 (for ([lexical lexicals])
+                      (if (string-suffix? lexical "!")
+                          (check-false
+                           (lu-contains? lu (substring
+                                             lexical
+                                             0 (- (string-length lexical) 1))))
+                          (check-equal? (lu-contains? lu lexical) lexical))))]))
 
+;(define (test tc)
+;        (define surface (car tc))
+;        (define lexicals (car (cdr tc)))
+;        (define lu
+;                #{echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph})
+;        (for ([lexical lexicals])
+;             (if (string-suffix? lexical "!")
+;                 (check-false
+;                  (lu-contains? lu (substring
+;                                    lexical
+;                                    0 (- (string-length lexical) 1))))
+;                 (check-equal? (lu-contains? lu lexical) lexical))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Main part: tests themselves
 
+
+(test
+ '(("ма" "ба" "па" "ме" "бе" "пе")
+   ("ма<qst>")))
 
 (test
  '("қой"
@@ -48,8 +77,8 @@
     "қой<vaux><imp><p2><sg>"
     "қой<v><tv><imp><p2><sg>"
     "қой<v><iv><imp><p2><sg>!"  ;; ! at the end means that this analysis
-                                ;; should NOT be in the output of kaz-morph
-                                ;; for "қой" (as it is as of 20.02.2019)
+    ;; should NOT be in the output of kaz-morph
+    ;; for "қой" (as it is as of 20.02.2019)
     "қой<n><nom>+е<cop><aor><p3><sg>"
     "қой<n><nom>+е<cop><aor><p3><pl>")))
 
