@@ -2,7 +2,8 @@
 
 (require rackunit
          racket/string
-         racket/match)
+         racket/match
+         racket/set)
 
 (require apertiumpp)
 ;; install racket (racket-lang.org)
@@ -16,6 +17,7 @@
 
 
 (define A-KAZ '../../)
+(define WORDLIST (mutable-set))
 
 
 ;;;;;;;;;;;;
@@ -38,6 +40,9 @@
                               (check-equal? (lu-contains? lu lexical) lexical))))]
                [(list surface (list lexicals ...))
                 (begin
+                 (if (set-member? WORDLIST surface)
+                     (error "There is already a test case for this word!")
+                     (set-add! WORDLIST surface))
                  (define lu #{echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph})
                  (for ([lexical lexicals])
                       (if (string-suffix? lexical "!")
@@ -99,6 +104,17 @@
     "шық<v><iv><fut><p3><sg>"
     "шығар<v><tv><imp><p2><sg>")))
 
+(test
+ '("да"
+   ("да<cnjcoo>"
+    "да<postadv>"
+    "да<adv>!")))
+
+(test
+ '("де"
+   ("да<cnjcoo>"
+    "да<postadv>"
+    "де<v><tv><imp><p2><sg>")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; alternative/additional test case formats
