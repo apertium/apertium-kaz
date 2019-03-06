@@ -1,6 +1,9 @@
 LANG1=kaz
 BASENAME=apertium-$(LANG1)
 
+
+all: kaz.segmenter.hfst
+
 #../../.deps/$(LANG1).LR.lexc: ../../$(BASENAME).$(LANG1).lexc
 #	cat $< | grep -v -e 'Dir/RL' > $@
 #
@@ -36,13 +39,14 @@ BASENAME=apertium-$(LANG1)
 #../../$(LANG1).automorf.hfst: ../../.deps/$(LANG1).LR.hfst ../../.deps/$(LANG1).LR.err.hfst
 #	hfst-union -1 ../../.deps/$(LANG1).LR.hfst -2 ../../.deps/$(LANG1).LR.err.hfst | hfst-invert | hfst-fst2fst -w -o $@
 
+#$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).LR.err.hfst
 
 $(LANG1)-seg.twol.hfst: apertium-kaz.kaz-seg.twol
 	hfst-twolc $< -o $@
 
-$(LANG1).segmenter.hfst: ../../.deps/$(LANG1).LR.lexc.hfst $(LANG1)-seg.twol.hfst
+$(LANG1)-seg.hfst: ../../.deps/$(LANG1).LR.lexc.hfst $(LANG1)-seg.twol.hfst
 	hfst-compose-intersect -1 ../../.deps/$(LANG1).LR.lexc.hfst -2 $(LANG1)-seg.twol.hfst | hfst-minimise -o $@
 
-
-all: $(LANG1).segmenter.hfst
-
+$(LANG1).segmenter.hfst: ../../$(LANG1).automorf.hfst $(LANG1)-seg.hfst
+	hfst-union -1 ../../.deps/$(LANG1).LR.hfst -2 ../../.deps/$(LANG1).LR.err.hfst | hfst-invert | hfst-minimise -o $(LANG1).tmp.hfst
+	hfst-compose-intersect -1 $(LANG1).tmp.hfst -2 $(LANG1)-seg.hfst -o $@
