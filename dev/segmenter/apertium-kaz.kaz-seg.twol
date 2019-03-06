@@ -206,7 +206,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                                              %{o%}:0 _ ;
                         [ ы:0 [ :и | :у ] [ :Cns - :FrontCns]* ]/%>: _ ;
                              [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
- [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 | ь:0 ] ] _ ;
+ [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ %>: | :0 - [ Abstract:0 | %{☭%}:0 | ь:0 ] ] _ ;
 
 !ь:0 <=> _ %>: [ :Vow ]/[ :0 ] ;
 
@@ -229,7 +229,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                                            [ й: ]/[ %>: ] _ ;
                                             [ ы:0 [ :и | :у ] :Cns* ]/%>: _ ;
                                   [ :у %{☭%}:0/[ :Cns - :FrontCns ] ]/%>: _ ;
- [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+ [ [ :BackVow | :BackCns] [ :и | :у | :ю ]*/[ :Cns - :FrontCns ]* ]/[ %>: | :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
                                                [ :Vow - [ :и | :у ] ] %>: _ ;
                      [ %{ә%}:ә :Cns* :Cns ]/[ %  | :0 - [ Abstract:0 ] ]  _ ;
 
@@ -247,7 +247,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                                  :BackVow/[ :0 | %>: ] _ ;
                                  [ і:0 | ы:0 ]/[ %>: ] _ ;
                                         [ й: ]/[ %>: ] _ ;
-   [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
+   [ :BackVow [ :и | :у ]/:Cns* ]/[ %>: | :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
                      [ :BackCns :и (%{ъ%}:0) ]/[ %>: ] _ ;
 
 
@@ -329,8 +329,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                             [ .#. :Cns* [ :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                             [ :BackCns (:Vow) [ :и | :у | :ю ]* :Cns* ]/[ %>: | [ :0 - [ Abstract: | %{☭%}:0 ] ] ] _ ;
                                              [ %{а%}: AbstrVoicedCns:* ]/[ %>: | :%- ] _ ;
-                                            [ %{ә%}:ә Cns:* ]/[ :0 - [ Abstract:0 ] ]  _ ;
-              [ %{ъ%}: :Cns* ]/[ [ :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у | :ю ] _ ;
+                                            [ %{ә%}:ә Cns:* ]/[ %>: | :0 - [ Abstract:0 ] ]  _ ;
+              [ %{ъ%}: :Cns* ]/[ [ %>: | :0 - [ Abstract: | %{☭%}:0 ] ] | :и | :у | :ю ] _ ;
            FrontCns: BackVow: [ %>: | %{☭%}:0 ]* _ ;
             except
     :VoicelessCns/[ %>: | :0 ] _ ;
@@ -350,14 +350,14 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 !            except
 !    [ :BackVow [ :и | :у ]/:Cns* ]/[ :0 - [ Abstract:0 | %{☭%}:0 ] ] _ ;
         except
-            _ :Vow/[ :0 - [ ы: | %{а%}: ] ] ;
+            _ :Vow/[ %>: | :0 - [ ы: | %{а%}: ] ] ;
 
 
 "Back assimilation and voicing of K"
-%{K%}:ғ <=> [ :BackVow | ы:0 ]/[ %>: | [ :0 - ы: ] ] _ :Vow/[ :0 - [ ы: | %{а%}: ] ] ;
+%{K%}:ғ <=> [ :BackVow | ы:0 ]/[ %>: | [ :0 - ы: ] ] _ :Vow/[ %>: | :0 - [ ы: | %{а%}: ] ] ;
 
 "Voicing of K"
-%{K%}:г <=> [ :FrontVow ]/[ %>: | [ :0 - ы: ] ] _ :Vow/[ :0 - [ ы: | %{а%}: ] ]  ;
+%{K%}:г <=> [ :FrontVow ]/[ %>: | [ :0 - ы: ] ] _ :Vow/[ %>: | :0 - [ ы: | %{а%}: ] ]  ;
 
 
 !!!! Disappearing stuff !!!!
@@ -435,7 +435,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                          %{o%}:0 _ ;
 
 "Deletion of т when usually Russian word ending in ст precedes suffix starting in т"
-т:0 <=> :с/:0 _ [ %{L%}: | %{N%}: | %{D%}: ]/:0 ;
+т:0 <=> :с/[ %>: | :0 ] _ [ %{L%}: | %{N%}: | %{D%}: ]/[ %>: | :0 ] ;
 !
 ! журналист:журналист
 ! журналист>LAр:журналистер
@@ -444,7 +444,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 ! should also apply optionally to all suffixed forms (e.g. журналист>GA:журналиске is attested, but not as common as :журналистке)
 
 "Deletion of д when usually Russian word ending in зд precedes suffix starting in д"
-д:0 <=> :з/:0 _ [ %{L%}: | %{N%}: | %{D%}: | %{G%}: ]/:0 ;
+д:0 <=> :з/:0 _ [ %{L%}: | %{N%}: | %{D%}: | %{G%}: ]/[ %>: | :0 ] ;
 !
 ! съезд:съезд
 ! съезд>LAр:съездер
@@ -455,7 +455,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
 %-:0 <=> [ %0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] _  .#. ;
 
 "Deletion of ь when vowel-initial stem follows"
-ь:0 <=> _ %>: [ :Vow ]/[ :0 ] ;
+ь:0 <=> _ %>: [ :Vow ]/[ %>: | :0 ] ;
 
 "Deletion of с at end of сс stem with suffix"
 с:0 <=> :с _ :0* %>: ;
