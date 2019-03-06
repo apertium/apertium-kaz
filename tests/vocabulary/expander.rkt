@@ -1,43 +1,67 @@
 #lang racket
 
-; Passes Kazakh surface forms through kaz-morph mode, and then through the
-; rest of kaz-tat, kaz-rus and kaz-eng modes (starting with apertium-pretransfer).
+; REQUIRES: apertiumpp package. https://taruen.github.io/apertiumpp/apertiumpp/
+; gives info on how to install it.
 ;
-; Ambiguity at each stage is preserved, so that we can be sure to have covered
-; all of the cases.
+; Passes Kazakh surface forms through kaz-morph mode,
+; expands ambiguous lexical units into unambiguos ones,
+; passes the latter through kaz-tat, kaz-rus and kaz-eng bilingual transducers,
+; expands ambiguous bilingual lexical units into unambiguos ones,
+; and passes all of them through the rest of kaz-tat, kaz-rus and kaz-eng modes.
+;
+; Q: What does this give us?
+; A: We get to see all possible translations of Kazakh surface forms into
+;    several languages on a single page, with no non-deterministic behaviour
+;    involved (like when remaining ambiguity is resolved randomly).
+;    The goal of all of this is to use these output to spot mistakes of any kind
+;    in transducers or translators. Check it once, and use as regression tests
+;    for the future. That is, the output of these script gets corrected by
+;    a human, and then used as input for another script to be written to
+;    test the behavior of apertium-kaz, rus, end and of kaz-tat, kaz-rus, kaz-eng
+;
+; Was written as a tool for fixin issue #11 of Apertium-kaz.
 ;
 ; EXAMPLE:
 ;
-; selimcan@patroclus:~/1Working/1Apertium++/apertium-all/apertium-languages/apertium-kaz/tests/vocabulary$ cat /tmp/input
+; apertium-kaz/tests/vocabulary$ cat /tmp/input
 ; баласың
 ; бала
 ; ма
 ; ма не
 ;
-; selimcan@patroclus:~/1Working/1Apertium++/apertium-all/apertium-languages/apertium-kaz/tests/vocabulary$ cat /tmp/input  | racket expander.rkt;
+; apertium-kaz/tests/vocabulary$ cat /tmp/input | racket expander.rkt
 ; (test
 ;  '("баласың"
-;    (("^бала<n><nom>+е<cop><aor><p2><sg>$" ("баласың") ("ты   мальчик" "ты   ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))))
-;    (("^бала<v><iv><coop><imp><p2><frm><sg>$" ("@бала") ("приравнивай") ("\\@бала"))))
+;    ("^бала<n><nom>+е<cop><aor><p2><sg>$" ("баласың") ("ты   мальчик" "ты   ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))
+;    ("^бала<v><iv><coop><imp><p2><frm><sg>$" ("@бала") ("приравнивай") ("\\@бала"))
+; )
+; 
 ; (test
 ;  '("бала"
-;    (("^бала<n><nom>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))))
-;    (("^бала<n><attr>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))))
-;    (("^бала<v><iv><imp><p2><sg>$" ("@бала") ("приравнивай") ("\\@бала"))))
-;    (("^бала<n><nom>+е<cop><aor><p3><pl>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))))
-;    (("^бала<n><nom>+е<cop><aor><p3><sg>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))))
+;    ("^бала<n><nom>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))
+;    ("^бала<n><attr>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))
+;    ("^бала<v><iv><imp><p2><sg>$" ("@бала") ("приравнивай") ("\\@бала"))
+;    ("^бала<n><nom>+е<cop><aor><p3><pl>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))
+;    ("^бала<n><nom>+е<cop><aor><p3><sg>$" ("бала") ("мальчик" "ребёнок") ("baby" "boy" "son" "kid" "child" "nanny" "infant" "bastard"))
+; )
+
 ; (test
 ;  '("ма"
-;    (("^ма<qst>$" ("мы") ("") (""))))
+;    ("^ма<qst>$" ("мы") ("") (""))
+; )
+;
 ; (test
 ;  '("ма не"
-;    (("^ма не<qst>$" ("мыни") ("\\@ма не") ("\\@ма не"))))
+;    ("^ма не<qst>$" ("мыни") ("\\@ма не") ("\\@ма не"))
+;)
 ;
 ; If run in DrRacket, you can type in Kazak surface forms and get translations
-; into Tatar, Russian and English interactively.
+; into Tatar, Russian and English interactively, type a Kazakh surface form,
+; see all possible translations of it into Tatar, Kazakh and Russian.
 
 (require rackunit
-         rash)
+         rash
+         apertiumpp/streamparser)
 
 (define A-KAZ '../..)
 (define A-KAZ-TAT-BIL '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.autobil.bin)
@@ -69,75 +93,9 @@
 (define A-KAZ-ENG-T3X-BIN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.t3x.bin)
 (define A-KAZ-ENG-GEN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.autogen.bin)
 
-(define/contract (explode lu)
-  (string? . -> . (listof string?))
-  ;; turn a possibly ambiguous lexical unit into multiple unambiguous lexical units
-  ;; ASSUME: no escaped / symbol (\/) in the given lexical unit
-  (map (lambda (s) (string-append "^" s "$")) 
-       (regexp-split
-        #rx"/"
-        (regexp-replace #rx"\\$$" (regexp-replace #rx"^\\^" lu "") ""))))
 
-(check-equal? (explode "^ма<qst>$")
-              '("^ма<qst>$"))
-(check-equal? (explode "^ма/ма<qst>$")
-              '("^ма$" "^ма<qst>$"))
-(check-equal? (explode "^бала/бала<n<nom>/бала<n><attr>$")
-              '("^бала$" "^бала<n<nom>$" "^бала<n><attr>$"))
-(check-equal? (explode "^бала<n><nom>/мальчик<n><m><aa><nom>/ребёнок<n><m><aa><nom>$")
-              '("^бала<n><nom>$" "^мальчик<n><m><aa><nom>$" "^ребёнок<n><m><aa><nom>$"))
-
-
-(define (explode-bi-lus s)
-  ;  (string? . -> . (listof (listof string?)))
-  ;; turn a possibly ambiguous *bilingual* lexical unit into multiple
-  ;; unambiguous bilingual lexical units
-
-  (define (implode l)
-    (let ([left (regexp-replace #rx"\\$$" (first l) "")]
-          [rights (map (λ (s) (substring s 1)) (rest l))])
-      (map list (map (λ (s) (string-append left "/" s)) rights))))
-
-  (check-equal? (implode '("^бала<n><nom>$" "^child<n>$" "^kid<n>$" "^infant<n>$"))
-                '(("^бала<n><nom>/child<n>$") ("^бала<n><nom>/kid<n>$") ("^бала<n><nom>/infant<n>$")))
-
-  (define (^$ s)
-    (cond
-      [(and (regexp-match? #rx"^\\^" s) (regexp-match? #rx"\\$$" s)) s]
-      [(and (regexp-match? #rx"^\\^" s) (not (regexp-match? #rx"\\$$" s)))
-       (string-append s "$")]
-      [(and (not (regexp-match? #rx"^\\^" s)) (regexp-match? #rx"\\$$" s))
-       (string-append "^" s)]
-      [else (string-append "^" s "$")]))
-
-  (check-equal? (^$ "foo<n>") "^foo<n>$")
-  (check-equal? (^$ "^foo<n>") "^foo<n>$")
-  (check-equal? (^$ "foo<n>$") "^foo<n>$")
-  (check-equal? (^$ "^foo<n>$") "^foo<n>$")
-  
-  (define lus (map ^$ (regexp-split #rx"\\$ +\\^" s)))
-  (define almost (map implode (map explode lus)))
-  (match (length almost)
-    [1 (first almost)]
-    [2 (for*/list ([i (first almost)]
-                   [j (second almost)])
-         (append i j))]
-    [3 (for*/list ([i (first almost)]
-                   [j (second almost)]
-                   [k (third almost)])
-         (append i j k))]))
-                                                   
-(check-equal? (explode-bi-lus "^ма<qst>/мы<qst>$")
-              '(("^ма<qst>/мы<qst>$")))
-(check-equal? (explode-bi-lus "^бала<n><nom>/child<n>/kid<n>$")
-              '(("^бала<n><nom>/child<n>$") ("^бала<n><nom>/kid<n>$")))
-(check-equal? (explode-bi-lus "^бала<n><nom>/child<n>/kid<n>/infant<n>$")
-              '(("^бала<n><nom>/child<n>$") ("^бала<n><nom>/kid<n>$") ("^бала<n><nom>/infant<n>$")))
-(check-equal? (explode-bi-lus "^бала<n><nom>/child<n>/kid<n>$ ^е<cop><aor><p3><sg>/be<vbser><pres><p3>/$")
-              '(("^бала<n><nom>/child<n>$" "^е<cop><aor><p3><sg>/be<vbser><pres><p3>$")
-                ("^бала<n><nom>/child<n>$" "^е<cop><aor><p3><sg>/$")
-                ("^бала<n><nom>/kid<n>$" "^е<cop><aor><p3><sg>/be<vbser><pres><p3>$")
-                ("^бала<n><nom>/kid<n>$" "^е<cop><aor><p3><sg>/$")))
+;;;;;;;;;;;;
+;; Functions
 
 
 (let ([inf (current-input-port)])
@@ -147,6 +105,7 @@
       (explode
        (rash "echo (values surf) | apertium -n -d (values A-KAZ) kaz-morph")))
     (define readings (rest lu))
+
     (for ([reading readings])
 
       (define tat
@@ -201,6 +160,5 @@
             "echo (values reading) | apertium-pretransfer | "
             "lt-proc -b (values A-KAZ-ENG-BIL)"
             )))))
-
-      (printf "   ((~v ~s ~s ~s)))" reading tat rus eng) 
-      (newline))))
+      (printf "   (~v ~s ~s ~s)\n" reading tat rus eng))
+    (printf ")\n\n")))
