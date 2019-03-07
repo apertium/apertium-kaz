@@ -10,21 +10,27 @@
 ; expands ambiguous bilingual lexical units into unambiguos ones,
 ; and passes all of them through the rest of kaz-tat, kaz-rus and kaz-eng modes.
 ;
+; Here is an example on how the process of using it looks like:
+; https://asciinema.org/a/232164
+;
+; Although the simplest way of starting it is just to type
+; 'racket expander.rkt'. No need for Emacs or DrRacket.
+
 ; Q: What does this give us?
 ; A: We get to see all possible translations of Kazakh surface forms into
 ;    several languages on a single page, with no non-deterministic behaviour
 ;    involved (like when remaining ambiguity is resolved randomly).
 ;    The goal of all of this is to use this output to spot mistakes of any kind
 ;    in transducers or translators. Check the output once, and use it as
-;    regression tests for the future. That is, the output of these script gets
+;    regression tests for the future. That is, the output of this script gets
 ;    corrected by a human, and then used as input for another script to be
 ;    written which tests the behavior of apertium-kaz, rus, eng and of kaz-tat,
 ;    kaz-rus, kaz-eng.
 ;
-; Was written as a tool to assis selimcan on fixing issue #11 of Apertium-kaz.
+; Was written as a tool to assist selimcan on fixing issue #11 of Apertium-kaz.
 ; In particular, I mean to pass right-hand sides of kaz.lexc entries to this
 ; script to see how they are analysed and translated into all three kaz-X
-; translator released so far.
+; translators released so far.
 ;
 ; EXAMPLE:
 ;
