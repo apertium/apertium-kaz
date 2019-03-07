@@ -1,7 +1,8 @@
 #lang racket
 
-; REQUIRES: apertiumpp package. https://taruen.github.io/apertiumpp/apertiumpp/
-; gives info on how to install it.
+; REQUIRES: apertiumpp package.
+; https://taruen.github.io/apertiumpp/apertiumpp/ gives info on how to install
+; it.
 ;
 ; Passes Kazakh surface forms through kaz-morph mode,
 ; expands ambiguous lexical units into unambiguos ones,
@@ -13,13 +14,17 @@
 ; A: We get to see all possible translations of Kazakh surface forms into
 ;    several languages on a single page, with no non-deterministic behaviour
 ;    involved (like when remaining ambiguity is resolved randomly).
-;    The goal of all of this is to use these output to spot mistakes of any kind
-;    in transducers or translators. Check it once, and use as regression tests
-;    for the future. That is, the output of these script gets corrected by
-;    a human, and then used as input for another script to be written to
-;    test the behavior of apertium-kaz, rus, end and of kaz-tat, kaz-rus, kaz-eng
+;    The goal of all of this is to use this output to spot mistakes of any kind
+;    in transducers or translators. Check the output once, and use it as
+;    regression tests for the future. That is, the output of these script gets
+;    corrected by a human, and then used as input for another script to be
+;    written which tests the behavior of apertium-kaz, rus, eng and of kaz-tat,
+;    kaz-rus, kaz-eng.
 ;
-; Was written as a tool for fixin issue #11 of Apertium-kaz.
+; Was written as a tool to assis selimcan on fixing issue #11 of Apertium-kaz.
+; In particular, I mean to pass right-hand sides of kaz.lexc entries to this
+; script to see how they are analysed and translated into all three kaz-X
+; translator released so far.
 ;
 ; EXAMPLE:
 ;
@@ -55,43 +60,55 @@
 ;    ("^ма не<qst>$" ("мыни") ("\\@ма не") ("\\@ма не"))
 ;)
 ;
-; If run in DrRacket, you can type in Kazak surface forms and get translations
-; into Tatar, Russian and English interactively, type a Kazakh surface form,
-; see all possible translations of it into Tatar, Kazakh and Russian.
+; If run in DrRacket, or in Emacs with racket-mode installed, you can
+; type in Kazak surface forms and get translations into Tatar, Russian
+; and English interactively -- type a Kazakh surface form, see all
+; possible translations of it into Tatar, Kazakh and Russian.
+;
+; TODO: The pipeline commands in the main loop and the paths to files listed
+; below should really be read from the modes.xml files and NOT be hard-coded
+; here.
 
 (require rackunit
          rash
          apertiumpp/streamparser)
 
+(define (symbol-append s1 s2)
+  (string->symbol (string-append (symbol->string s1) (symbol->string s2))))
+
 (define A-KAZ '../..)
-(define A-KAZ-TAT-BIL '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.autobil.bin)
-(define A-KAZ-TAT-T1X '../../../../apertium-trunk/apertium-kaz-tat/apertium-kaz-tat.kaz-tat.t1x)
-(define A-KAZ-TAT-T1X-BIN '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.t1x.bin)
-(define A-KAZ-TAT-T2X '../../../../apertium-trunk/apertium-kaz-tat/apertium-kaz-tat.kaz-tat.t2x)
-(define A-KAZ-TAT-T2X-BIN '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.t2x.bin)
-(define A-KAZ-TAT-GEN '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.autogen.bin)
-(define A-KAZ-TAT-PGEN '../../../../apertium-trunk/apertium-kaz-tat/kaz-tat.autopgen.bin)
 
-(define A-KAZ-RUS-BIL '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.autobil.bin)
-(define A-KAZ-RUS-T1X '../../../../apertium-trunk/apertium-kaz-rus/apertium-kaz-rus.kaz-rus.t1x)
-(define A-KAZ-RUS-T1X-BIN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.t1x.bin)
-(define A-KAZ-RUS-T2X '../../../../apertium-trunk/apertium-kaz-rus/apertium-kaz-rus.kaz-rus.t2x)
-(define A-KAZ-RUS-T2X-BIN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.t2x.bin)
-(define A-KAZ-RUS-T3X '../../../../apertium-trunk/apertium-kaz-rus/apertium-kaz-rus.kaz-rus.t3x)
-(define A-KAZ-RUS-T3X-BIN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.t3x.bin)
-(define A-KAZ-RUS-T4X '../../../../apertium-trunk/apertium-kaz-rus/apertium-kaz-rus.kaz-rus.t4x)
-(define A-KAZ-RUS-T4X-BIN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.t4x.bin)
-(define A-KAZ-RUS-GEN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.autogen.bin)
-(define A-KAZ-RUS-PGEN '../../../../apertium-trunk/apertium-kaz-rus/kaz-rus.autopgen.bin)
+(define A-KAZ-TAT '../../../../apertium-trunk/apertium-kaz-tat/)
+(define A-KAZ-TAT-BIL (symbol-append A-KAZ-TAT 'kaz-tat.autobil.bin))
+(define A-KAZ-TAT-T1X (symbol-append A-KAZ-TAT 'apertium-kaz-tat.kaz-tat.t1x))
+(define A-KAZ-TAT-T1X-BIN (symbol-append A-KAZ-TAT 'kaz-tat.t1x.bin))
+(define A-KAZ-TAT-T2X (symbol-append A-KAZ-TAT 'apertium-kaz-tat.kaz-tat.t2x))
+(define A-KAZ-TAT-T2X-BIN (symbol-append A-KAZ-TAT 'kaz-tat.t2x.bin))
+(define A-KAZ-TAT-GEN (symbol-append A-KAZ-TAT 'kaz-tat.autogen.bin))
+(define A-KAZ-TAT-PGEN (symbol-append A-KAZ-TAT 'kaz-tat.autopgen.bin))
 
-(define A-KAZ-ENG-BIL '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.autobil.bin)
-(define A-KAZ-ENG-T1X '../../../../apertium-trunk/apertium-eng-kaz/apertium-eng-kaz.kaz-eng.t1x)
-(define A-KAZ-ENG-T1X-BIN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.t1x.bin)
-(define A-KAZ-ENG-T2X '../../../../apertium-trunk/apertium-eng-kaz/apertium-eng-kaz.kaz-eng.t2x)
-(define A-KAZ-ENG-T2X-BIN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.t2x.bin)
-(define A-KAZ-ENG-T3X '../../../../apertium-trunk/apertium-eng-kaz/apertium-eng-kaz.kaz-eng.t3x)
-(define A-KAZ-ENG-T3X-BIN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.t3x.bin)
-(define A-KAZ-ENG-GEN '../../../../apertium-trunk/apertium-eng-kaz/kaz-eng.autogen.bin)
+(define A-KAZ-RUS '../../../../apertium-trunk/apertium-kaz-rus/)
+(define A-KAZ-RUS-BIL (symbol-append A-KAZ-RUS 'kaz-rus.autobil.bin))
+(define A-KAZ-RUS-T1X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t1x))
+(define A-KAZ-RUS-T1X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t1x.bin))
+(define A-KAZ-RUS-T2X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t2x))
+(define A-KAZ-RUS-T2X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t2x.bin))
+(define A-KAZ-RUS-T3X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t3x))
+(define A-KAZ-RUS-T3X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t3x.bin))
+(define A-KAZ-RUS-T4X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t4x))
+(define A-KAZ-RUS-T4X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t4x.bin))
+(define A-KAZ-RUS-GEN (symbol-append A-KAZ-RUS 'kaz-rus.autogen.bin))
+(define A-KAZ-RUS-PGEN (symbol-append A-KAZ-RUS 'kaz-rus.autopgen.bin))
+
+(define A-ENG-KAZ '../../../../apertium-trunk/apertium-eng-kaz/)
+(define A-KAZ-ENG-BIL (symbol-append A-ENG-KAZ 'kaz-eng.autobil.bin))
+(define A-KAZ-ENG-T1X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t1x))
+(define A-KAZ-ENG-T1X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t1x.bin))
+(define A-KAZ-ENG-T2X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t2x))
+(define A-KAZ-ENG-T2X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t2x.bin))
+(define A-KAZ-ENG-T3X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t3x))
+(define A-KAZ-ENG-T3X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t3x.bin))
+(define A-KAZ-ENG-GEN (symbol-append A-ENG-KAZ 'kaz-eng.autogen.bin))
 
 
 ;;;;;;;;;;;;
