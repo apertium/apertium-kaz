@@ -77,21 +77,14 @@
 
 (require rackunit
          rash
-         apertiumpp/streamparser)
+         apertiumpp/streamparser
+         apertium-kaz-tat)
+
 
 (define (symbol-append s1 s2)
   (string->symbol (string-append (symbol->string s1) (symbol->string s2))))
 
 (define A-KAZ '../..)
-
-(define A-KAZ-TAT '../../../../apertium-trunk/apertium-kaz-tat/)
-(define A-KAZ-TAT-BIL (symbol-append A-KAZ-TAT 'kaz-tat.autobil.bin))
-(define A-KAZ-TAT-T1X (symbol-append A-KAZ-TAT 'apertium-kaz-tat.kaz-tat.t1x))
-(define A-KAZ-TAT-T1X-BIN (symbol-append A-KAZ-TAT 'kaz-tat.t1x.bin))
-(define A-KAZ-TAT-T2X (symbol-append A-KAZ-TAT 'apertium-kaz-tat.kaz-tat.t2x))
-(define A-KAZ-TAT-T2X-BIN (symbol-append A-KAZ-TAT 'kaz-tat.t2x.bin))
-(define A-KAZ-TAT-GEN (symbol-append A-KAZ-TAT 'kaz-tat.autogen.bin))
-(define A-KAZ-TAT-PGEN (symbol-append A-KAZ-TAT 'kaz-tat.autopgen.bin))
 
 (define A-KAZ-RUS '../../../../apertium-trunk/apertium-kaz-rus/)
 (define A-KAZ-RUS-BIL (symbol-append A-KAZ-RUS 'kaz-rus.autobil.bin))
@@ -123,7 +116,7 @@
 
 (let ([inf (current-input-port)])
   (for ([surf (in-lines inf)])
-    (printf "(test\n '(~v\n" surf)
+    (printf "(test\n ~v\n  '(\n" surf)
     (define lu
       (explode
        (rash "echo (values surf) | apertium -n -d (values A-KAZ) kaz-morph")))
@@ -133,20 +126,11 @@
 
       (define tat
         (map
-         (λ (tr)
-           (rash
-            "echo (values tr) | "
-            "apertium-transfer -b (values A-KAZ-TAT-T1X) (values A-KAZ-TAT-T1X-BIN) | "
-            "apertium-transfer -n (values A-KAZ-TAT-T2X) (values A-KAZ-TAT-T2X-BIN) | "
-            "lt-proc -g (values A-KAZ-TAT-GEN) | "
-            "lt-proc -p (values A-KAZ-TAT-PGEN)"))
+         kaz-tat-from-t1x-to-postgen
          (map
           string-join                                          
           (explode-bi-lus
-           (rash
-            "echo (values reading) | apertium-pretransfer | "
-            "lt-proc -b (values A-KAZ-TAT-BIL)"
-            )))))
+           (kaz-tat-from-pretransfer-to-biltrans reading)))))
 
       (define rus
         (map
@@ -183,5 +167,5 @@
             "echo (values reading) | apertium-pretransfer | "
             "lt-proc -b (values A-KAZ-ENG-BIL)"
             )))))
-      (printf "   (~v ~s ~s ~s)\n" reading tat rus eng))
-    (printf ")\n\n")))
+      (printf "    (~v ~s ~s ~s)\n" reading tat rus eng))
+    (printf "   )\n)\n")))
