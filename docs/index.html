@@ -1,16 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=0.8"/><title>APERTIUM-KAZ: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
-KAZAKH</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="racket.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-style.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-racket.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="manual-racket.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x"><span class="RktSym">APERTIUM-<wbr></wbr>KAZ</span><span class="RktMeta"></span>:<span class="mywbr"> &nbsp;</span> A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
-KAZAKH</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.A.P.E.R.T.I.U.M-.K.A.Z__.A_.M.O.R.P.H.O.L.O.G.I.C.A.L_.T.R.A.N.S.D.U.C.E.R_.A.N.D_.D.I.S.A.M.B.I.G.U.A.T.O.R_.F.O.R_.K.A.Z.A.K.H%29" class="tocsubseclink" data-pltdoc="x"><span class="RktSym">APERTIUM-<wbr></wbr>KAZ</span><span class="RktMeta"></span>:<span class="mywbr"> &nbsp;</span> A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
-KAZAKH</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><div class="versionbox"><span class="versionNoNav">7.1</span></div><h2><a name="(part._.A.P.E.R.T.I.U.M-.K.A.Z__.A_.M.O.R.P.H.O.L.O.G.I.C.A.L_.T.R.A.N.S.D.U.C.E.R_.A.N.D_.D.I.S.A.M.B.I.G.U.A.T.O.R_.F.O.R_.K.A.Z.A.K.H)"></a><span class="RktSym">APERTIUM-KAZ</span><span class="RktMeta"></span>: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
-KAZAKH</h2><blockquote class="refpara"><blockquote class="refcolumn"><blockquote class="refcontent"><p>WARNING: this is an early draft.</p></blockquote></blockquote></blockquote><p>What follows is the documentation for <span class="RktSym">apertium-kaz</span><span class="RktMeta"></span> &ndash; a morphological
+KAZAKH</title><link rel="stylesheet" type="text/css" href="scribble.css" title="default"/><link rel="stylesheet" type="text/css" href="racket.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-style.css" title="default"/><link rel="stylesheet" type="text/css" href="manual-racket.css" title="default"/><script type="text/javascript" src="scribble-common.js"></script><script type="text/javascript" src="manual-racket.js"></script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]--></head><body id="scribble-racket-lang-org"><div class="tocset"><div class="tocview"><div class="tocviewlist tocviewlisttopspace"><div class="tocviewtitle"><table cellspacing="0" cellpadding="0"><tr><td style="width: 1em;">&bull;</td><td></td><td><a href="" class="tocviewselflink" data-pltdoc="x"><span class="stt">APERTIUM-<wbr></wbr>KAZ</span>:<span class="mywbr"> &nbsp;</span> A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
+KAZAKH</a></td></tr></table></div></div></div><div class="tocsub"><table class="tocsublist" cellspacing="0"><tr><td><span class="tocsublinknumber"></span><a href="#%28part._.A.P.E.R.T.I.U.M-.K.A.Z__.A_.M.O.R.P.H.O.L.O.G.I.C.A.L_.T.R.A.N.S.D.U.C.E.R_.A.N.D_.D.I.S.A.M.B.I.G.U.A.T.O.R_.F.O.R_.K.A.Z.A.K.H%29" class="tocsubseclink" data-pltdoc="x"><span class="stt">APERTIUM-<wbr></wbr>KAZ</span>:<span class="mywbr"> &nbsp;</span> A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
+KAZAKH</a></td></tr></table></div></div><div class="maincolumn"><div class="main"><div class="versionbox"><span class="versionNoNav">7.2</span></div><h2><a name="(part._.A.P.E.R.T.I.U.M-.K.A.Z__.A_.M.O.R.P.H.O.L.O.G.I.C.A.L_.T.R.A.N.S.D.U.C.E.R_.A.N.D_.D.I.S.A.M.B.I.G.U.A.T.O.R_.F.O.R_.K.A.Z.A.K.H)"></a><span class="stt">APERTIUM-KAZ</span>: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
+KAZAKH</h2><blockquote class="refpara"><blockquote class="refcolumn"><blockquote class="refcontent"><p>WARNING: this is an early draft.</p></blockquote></blockquote></blockquote><p>What follows is the documentation for <span class="stt">apertium-kaz</span> &ndash; a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
-written, or, rather, assembled from various writings on <a href="https://wiki.apertium.org">Apertium&rsquo;s wiki</a> and then extended with more
-details by <a href="http://github.com/IlnarSelimcan">ifs</a> on September-October
-2018 for members of the &lsquo;Deep Learning for Sequential Models in Natural
-Language Processing with Applications to Kazakh&rsquo; (<span style="font-style: italic">dlsmnlpak</span>) research
-group at Nazarbayev University and elsewhere. That being said, I hope that it
-will be useful for anyone who uses <span class="RktSym">apertium-kaz</span><span class="RktMeta"></span> and maybe wants or needs to
-extend it with more stems or other features. Most of the things said in this
-guide should be applicable to Apertium&rsquo;s transducers for other Turkic languages
-as well.</p></div></div><div id="contextindicator">&nbsp;</div></body></html>
+written, or, rather, assembled from various writings on
+<a href="https://wiki.apertium.org">Apertium&rsquo;s wiki</a> and then extended with
+more details by <a href="http://github.com/IlnarSelimcan">selimcan</a> on
+September-October 2018 for members of the &lsquo;Deep Learning for Sequential Models
+in Natural Language Processing with Applications to Kazakh&rsquo;
+(<span style="font-style: italic">dlsmnlpak</span>) research group at Nazarbayev University and
+elsewhere. That being said, I hope that it will be useful for anyone who uses
+<span class="RktSym">apertium-kaz</span><span class="RktMeta"></span> and maybe wants or needs to extend it with more stems or
+other features. Most of the things said in this guide should be applicable to
+Apertium&rsquo;s transducers for other Turkic languages as well.</p><p><span class="stt">Apertium-kaz</span> is a morphological transducer and disambiguator for Kazakh,
+currently under development. It is intended to be compatible with transducers
+for other Turkic languages so that they can be translated between. It&rsquo;s used in
+the following translators (at various stages of development):</p><ul><li><p><a href="https://github.com/apertium/apertium-kaz-tat">Kazakh and Tatar</a></p></li><li><p><a href="https://github.com/apertium/apertium-eng-kaz">English and
+Kazakh</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-rus">Kazakh and
+Russian</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-kir">Kazakh and Kyrgyz</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-kaa">Kazakh and
+Karakalpak</a></p></li><li><p><a href="https://github.com/apertium/apertium-khk-kaz">Khalkha and
+Kazakh</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-kum">Kazakh and
+Kumyk</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-tur">Kazakh and
+Turkish</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-tyv">Kazakh and
+Tuvan</a></p></li><li><p><a href="https://github.com/apertium/apertium-nog-kaz">Nogai and Kazakh</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-sah">Kazakh and
+Sakha</a></p></li><li><p><a href="https://github.com/apertium/apertium-fin-kaz">Finnish and
+Kazakh</a></p></li><li><p><a href="https://github.com/apertium/apertium-kaz-uig">Kazakh and
+Uyghur</a></p></li></ul></div></div><div id="contextindicator">&nbsp;</div></body></html>
