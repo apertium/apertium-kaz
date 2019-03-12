@@ -78,36 +78,13 @@
 (require rackunit
          rash
          apertiumpp/streamparser
-         apertium-kaz-tat)
+         apertium-kaz
+         apertium-kaz-tat
+         apertium-kaz-rus
+         apertium-eng-kaz)
 
-
-(define (symbol-append s1 s2)
-  (string->symbol (string-append (symbol->string s1) (symbol->string s2))))
-
-(define A-KAZ '../..)
-
-(define A-KAZ-RUS '../../../../apertium-trunk/apertium-kaz-rus/)
-(define A-KAZ-RUS-BIL (symbol-append A-KAZ-RUS 'kaz-rus.autobil.bin))
-(define A-KAZ-RUS-T1X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t1x))
-(define A-KAZ-RUS-T1X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t1x.bin))
-(define A-KAZ-RUS-T2X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t2x))
-(define A-KAZ-RUS-T2X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t2x.bin))
-(define A-KAZ-RUS-T3X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t3x))
-(define A-KAZ-RUS-T3X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t3x.bin))
-(define A-KAZ-RUS-T4X (symbol-append A-KAZ-RUS 'apertium-kaz-rus.kaz-rus.t4x))
-(define A-KAZ-RUS-T4X-BIN (symbol-append A-KAZ-RUS 'kaz-rus.t4x.bin))
-(define A-KAZ-RUS-GEN (symbol-append A-KAZ-RUS 'kaz-rus.autogen.bin))
-(define A-KAZ-RUS-PGEN (symbol-append A-KAZ-RUS 'kaz-rus.autopgen.bin))
-
-(define A-ENG-KAZ '../../../../apertium-trunk/apertium-eng-kaz/)
-(define A-KAZ-ENG-BIL (symbol-append A-ENG-KAZ 'kaz-eng.autobil.bin))
-(define A-KAZ-ENG-T1X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t1x))
-(define A-KAZ-ENG-T1X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t1x.bin))
-(define A-KAZ-ENG-T2X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t2x))
-(define A-KAZ-ENG-T2X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t2x.bin))
-(define A-KAZ-ENG-T3X (symbol-append A-ENG-KAZ 'apertium-eng-kaz.kaz-eng.t3x))
-(define A-KAZ-ENG-T3X-BIN (symbol-append A-ENG-KAZ 'kaz-eng.t3x.bin))
-(define A-KAZ-ENG-GEN (symbol-append A-ENG-KAZ 'kaz-eng.autogen.bin))
+;(define CORPUS "/home/selimcan/src/mes2017/Antuan_De_Sent-Ekzyuperi__Kishkentay_Khanzada_pdf.firstHalf.txt")
+(define CORPUS "/home/selimcan/src/turkiccorpora/kaz.bible.kkitap.txt")
 
 
 ;;;;;;;;;;;;
@@ -119,9 +96,10 @@
     (printf "(test\n ~v\n  '(\n" surf)
     (define lu
       (explode
-       (rash "echo (values surf) | apertium -n -d (values A-KAZ) kaz-morph")))
+       (kaz-morph surf)))
+    
     (define readings (rest lu))
-
+    
     (for ([reading readings])
 
       (define tat
@@ -134,38 +112,34 @@
 
       (define rus
         (map
-         (λ (tr)
-           (rash
-            "echo (values tr) | "
-            "apertium-transfer -b (values A-KAZ-RUS-T1X) (values A-KAZ-RUS-T1X-BIN) | "
-            "apertium-interchunk (values A-KAZ-RUS-T2X) (values A-KAZ-RUS-T2X-BIN) | "
-            "apertium-interchunk (values A-KAZ-RUS-T3X) (values A-KAZ-RUS-T3X-BIN) | "
-            "apertium-postchunk (values A-KAZ-RUS-T4X) (values A-KAZ-RUS-T4X-BIN) | "            
-            "lt-proc -g (values A-KAZ-RUS-GEN) | "
-            "lt-proc -p (values A-KAZ-RUS-PGEN)"))
+         kaz-rus-from-t1x-to-postgen
          (map
           string-join                                          
           (explode-bi-lus
-           (rash
-            "echo (values reading) | apertium-pretransfer | "
-            "lt-proc -b (values A-KAZ-RUS-BIL)"
-            )))))
+           (kaz-rus-from-pretransfer-to-biltrans reading)))))
 
       (define eng
         (map
-         (λ (tr)
-           (rash
-            "echo (values tr) | "
-            "apertium-transfer -b (values A-KAZ-ENG-T1X) (values A-KAZ-ENG-T1X-BIN) | "
-            "apertium-interchunk (values A-KAZ-ENG-T2X) (values A-KAZ-ENG-T2X-BIN) | "
-            "apertium-postchunk (values A-KAZ-ENG-T3X) (values A-KAZ-ENG-T3X-BIN) | "
-            "lt-proc -g (values A-KAZ-ENG-GEN)"))
+         kaz-eng-from-t1x-to-postgen
          (map
           string-join                                          
           (explode-bi-lus
-           (rash
-            "echo (values reading) | apertium-pretransfer | "
-            "lt-proc -b (values A-KAZ-ENG-BIL)"
-            )))))
+           (kaz-eng-from-pretransfer-to-biltrans reading)))))
+      
       (printf "    (~v ~s ~s ~s)\n" reading tat rus eng))
-    (printf "   )\n)\n")))
+    (printf "#|\n")
+    (let ([wanted (regexp-quote (string-append " " surf " "))]
+          [corpus (open-input-file CORPUS)])
+      (define counter 0)
+      (for ([line (in-lines corpus)])
+        #:break (= counter 3)
+        (define match (regexp-match wanted line))
+        (when match
+          (begin
+            (set! counter (+ counter 1))
+            (display (regexp-replace (first match) line (string-upcase (first match)))))
+          (newline)
+          (write (kaz-tat line))
+          (newline)))
+      (close-input-port corpus))
+    (printf "|#\n))\n\n")))
