@@ -89,6 +89,8 @@
 (define RUSCORPUS "/home/selimcan/src/turkiccorpora/ru.krachkovsky.txt")
 (define ENGCORPUS "/home/selimcan/src/turkiccorpora/en.sahih.txt")
 
+(define NBR-EXAMPLES 1)
+
 
 ;;;;;;;;;;;;
 ;; Functions
@@ -141,7 +143,7 @@
             [tatline (in-lines tatcorpus)]
             [rusline (in-lines ruscorpus)]
             [engline (in-lines engcorpus)])
-        #:break (= counter 1)
+        #:break (= counter NBR-EXAMPLES)
         (define match (regexp-match wanted kazline))
         (when match
           (begin

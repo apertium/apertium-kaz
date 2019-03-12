@@ -81,6 +81,8 @@
 ; Testing is done thorough the modes only (kaz-morph, kaz-tat etc.). I think
 ; this is a good practice.
 
+(provide test)
+
 (require rackunit
          racket/string
          racket/match
@@ -89,6 +91,7 @@
          rash
          apertiumpp
          apertiumpp/streamparser
+         apertium-kaz
          apertium-kaz-tat)
 
 
@@ -96,13 +99,12 @@
 ;; Constants
 
 
-(define A-KAZ '../../)
-(define A-KAZ-TAT '../../../../apertium-trunk/apertium-kaz-tat)
 (define WORDLIST (mutable-set))
 
 
 ;;;;;;;;;;;;
 ;; Functions
+
 
 ;; String (listof (listof String (listof String) (listof String) (listof String))) -> String + side effects
 (define (test surface expectations)
@@ -112,7 +114,7 @@
         (error "There is already a test case for this word!")
         (begin
           (set-add! WORDLIST surface)
-          (let ([lu (rash "echo (values surface) | apertium -f none -d (values A-KAZ) kaz-morph")])
+          (let ([lu (kaz-morph surface)])
             (for ([e expectations])
               (match e
                 [(list lexical (list tat ...) (list rus ...) (list eng ...))
@@ -134,103 +136,15 @@
 (define (strip-^$ s)
   (substring s 1 (- (string-length s) 1)))
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Main part: tests themselves
 
-(test
- "ма"
- '(
-   ("^ма<qst>$" ("мы") ("") (""))
-   )
- )
 
 ;(test
-; '("ма"
-;   ("^ма<qst>$" ("мы") ("") (""))
-;))
-; (test
-;  '("ма"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("ба"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("па"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("ме"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("бе"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("пе"
-;    (("ма<qst>" "" ""))))
-; 
-; (test
-;  '("ма не"   ;; "ба не", "па не" etc?
-;        (("ма не<qst>" "" ""))))
-; 
-; (test
-;  '("ме не"
-;        (("ма не<qst>" "" ""))))
-; 
-; (test
-;  '("ше"
-;    (("ше<qst>" "Менің күйеуім ше?" "Минем киявем ничек?"))))
-; 
-; (test
-;  '("ғой"
-;    (("ғой<mod_ass>" "" ""))))
-; 
-; (test
-;  '("қой"
-;    (("ғой<mod_ass>" "" "")
-;     ("қой<n><nom>" "" "")
-;     ("қой<n><attr>" "" "")
-;     ("қой<vaux><imp><p2><sg>" "" "")
-;     ("қой<v><tv><imp><p2><sg>" "" "")
-;     ("қой<v><iv><imp><p2><sg>!" "" "")
-;     ("қой<n><nom>+е<cop><aor><p3><sg>" "" "")
-;     ("қой<n><nom>+е<cop><aor><p3><pl>" "" ""))))
-; 
-; (test
-;  '("гөр"
-;    (("гөр<mod_ass>" "" ""))))
-; 
-; (test
-;  '("шығар"
-;    (("шық<vaux><gpr_fut>" "" "")
-;     ("шық<v><iv><gpr_fut>" "" "")
-;     ("шығар<mod>" "" "")
-;     ("шық<vaux><gpr_fut><subst><nom>" "" "")
-;     ("шық<vaux><fut><p3><pl>" "" "")
-;     ("шық<vaux><fut><p3><sg>" "" "")
-;     ("шық<v><iv><gpr_fut><subst><nom>" "" "")
-;     ("шық<v><iv><fut><p3><pl>" "" "")
-;     ("шық<v><iv><fut><p3><sg>" "" "")
-;     ("шығар<v><tv><imp><p2><sg>" "" ""))))
-; 
-; (test
-;  '("да"
-;    (("да<cnjcoo>" "" "")
-;     ("да<postadv>" "" "")
-;     ("да<adv>!" "" ""))))
-; 
-; (test
-;  '("де"
-;    (("да<cnjcoo>" "" "")
-;     ("да<postadv>" "" "")
-;     ("де<v><tv><imp><p2><sg>" "" ""))))(test
-;
-; (test
-; "ма не"
+; "да"
 ; '(
-;   ("^ма не<qst>$" ("мыни") ("\\@ма не") ("\\@ма не"))
-;   )
-; )
+;   ("^да<cnjcoo>$" ("да") ("тоже") ("and" "either"))
+;   ("^да<postadv>$" ("да") ("") (""))
+;   ("^да<adv>$!" ("да") ("") (""))
+;))
