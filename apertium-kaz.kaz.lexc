@@ -1871,12 +1871,7 @@ LEXICON PAREN
 ғой:қой MOD-ASS ; ! "" Dir/LR
 гөр:гөр MOD-ASS ; ! ""
 
-шығар:шығар MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
-                  !   ... more like <vaux><pres> than like a full verb -JNW
-                  ! requires some transfer rules as e.g. in the following:
-                  !# (kaz) Олар мүмкiн көп кiтап оқыған шығар.
-                  !# (tat) Алар бәлки күп китап укыганнардыр.
-                  !# (kir) Алар мүмкүн көп китеп окугандыр.
+шығар:шығар MOD ;
 
 
 !====================!
@@ -39826,7 +39821,6 @@ MGM:MGM ABBR ; !"Use/MT"
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
 %-%<guio%>:%- # ;
-%х%<guio%>:%- # ;
 %—%<guio%>:%— # ;
 %–%<guio%>:%– # ;
 ,%<cm%>:%, # ;
