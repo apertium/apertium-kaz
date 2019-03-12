@@ -21,4 +21,4 @@
 (define (kaz-morph s)
   (parameterize ([current-directory (pkg-directory "apertium-kaz")])
     (rash
-     "echo (values s) | apertium -d . kaz-morph")))
+     "echo (values s) | apertium -n -d . kaz-morph")))
