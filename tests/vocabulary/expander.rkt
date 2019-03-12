@@ -84,7 +84,10 @@
          apertium-eng-kaz)
 
 ;(define CORPUS "/home/selimcan/src/mes2017/Antuan_De_Sent-Ekzyuperi__Kishkentay_Khanzada_pdf.firstHalf.txt")
-(define CORPUS "/home/selimcan/src/turkiccorpora/kaz.bible.kkitap.txt")
+(define KAZCORPUS "/home/selimcan/src/turkiccorpora/kaz.quran.altay.txt")
+(define TATCORPUS "/home/selimcan/src/turkiccorpora/tat.quran.nughmani.txt")
+(define RUSCORPUS "/home/selimcan/src/turkiccorpora/ru.krachkovsky.txt")
+(define ENGCORPUS "/home/selimcan/src/turkiccorpora/en.sahih.txt")
 
 
 ;;;;;;;;;;;;
@@ -129,17 +132,32 @@
       (printf "    (~v ~s ~s ~s)\n" reading tat rus eng))
     (printf "#|\n")
     (let ([wanted (regexp-quote (string-append " " surf " "))]
-          [corpus (open-input-file CORPUS)])
+          [kazcorpus (open-input-file KAZCORPUS)]
+          [tatcorpus (open-input-file TATCORPUS)]
+          [ruscorpus (open-input-file RUSCORPUS)]
+          [engcorpus (open-input-file ENGCORPUS)])
       (define counter 0)
-      (for ([line (in-lines corpus)])
-        #:break (= counter 3)
-        (define match (regexp-match wanted line))
+      (for ([kazline (in-lines kazcorpus)]
+            [tatline (in-lines tatcorpus)]
+            [rusline (in-lines ruscorpus)]
+            [engline (in-lines engcorpus)])
+        #:break (= counter 1)
+        (define match (regexp-match wanted kazline))
         (when match
           (begin
             (set! counter (+ counter 1))
-            (display (regexp-replace (first match) line (string-upcase (first match)))))
-          (newline)
-          (write (kaz-tat line))
+            (display (regexp-replace (first match) kazline (string-upcase (first match)))))
+          (newline)(newline)
+          (display (kaz-tat kazline))
+          (newline)(newline)
+          (display tatline)
+          (newline)(newline)
+          (display rusline)
+          (newline)(newline)
+          (display engline)
           (newline)))
-      (close-input-port corpus))
+      (close-input-port kazcorpus)
+      (close-input-port tatcorpus)
+      (close-input-port ruscorpus)
+      (close-input-port engcorpus))
     (printf "|#\n))\n\n")))
