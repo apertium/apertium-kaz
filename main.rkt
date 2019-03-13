@@ -22,3 +22,8 @@
   (parameterize ([current-directory (pkg-directory "apertium-kaz")])
     (rash
      "echo (values s) | apertium -n -d . kaz-morph")))
+
+(define (kaz-disam s)
+  (parameterize ([current-directory (pkg-directory "apertium-kaz")])
+    (rash
+     "echo (values s) | apertium -n -d . kaz-disam | cg-conv -A -l")))
