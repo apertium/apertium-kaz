@@ -131,7 +131,7 @@
                                     (map
                                      string-join
                                      (explode-bi-lus (kaz-tat-from-pretransfer-to-biltrans lexical))))])
-                              (check-equal? actual-tat-trans tat))))])))))))
+                              (check-equal? (sort actual-tat-trans string<?) (sort tat string<?)))))])))))))
 
 (define (strip-^$ s)
   (substring s 1 (- (string-length s) 1)))
