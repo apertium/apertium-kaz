@@ -6,7 +6,7 @@
 ; https://taruen.github.io/apertiumpp/apertiumpp/ gives info on how to install
 ; it.
 
-(provide kaz-morph)
+(provide kaz-morph kaz-disam)
 
 (require pkg/lib
          rackunit
