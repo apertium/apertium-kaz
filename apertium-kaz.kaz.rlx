@@ -334,6 +334,8 @@ REMOVE Err/Orth ;
 # POS marking
 # ===========
 
+"<қандай>" REMOVE N ;
+
 SELECT N IF
         (0 ("сурет"i))
         (-1 (adj advl) OR Det OR A)
