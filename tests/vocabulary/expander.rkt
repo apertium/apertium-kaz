@@ -83,11 +83,10 @@
          apertium-kaz-rus
          apertium-eng-kaz)
 
-;(define CORPUS "/home/selimcan/src/mes2017/Antuan_De_Sent-Ekzyuperi__Kishkentay_Khanzada_pdf.firstHalf.txt")
-(define KAZCORPUS "/home/selimcan/src/turkiccorpora/kaz.quran.altay.txt")
-(define TATCORPUS "/home/selimcan/src/turkiccorpora/tat.quran.nughmani.txt")
-(define RUSCORPUS "/home/selimcan/src/turkiccorpora/ru.krachkovsky.txt")
-(define ENGCORPUS "/home/selimcan/src/turkiccorpora/en.sahih.txt")
+(define KAZCORPUS "/home/selimcan/1Working/1Taruen/apertiumpp/data4apertium/corpora/lpp/kaz.txt")
+(define TATCORPUS "/home/selimcan/1Working/1Taruen/apertiumpp/data4apertium/corpora/lpp/tat.txt")
+(define RUSCORPUS "/home/selimcan/1Working/1Taruen/apertiumpp/data4apertium/corpora/lpp/rus.txt")
+(define ENGCORPUS "/home/selimcan/1Working/1Taruen/apertiumpp/data4apertium/corpora/lpp/rus.txt")
 
 (define NBR-EXAMPLES 1)
 
