@@ -58,11 +58,11 @@
 ;
 ; I decided to keep such imo erroneous readings in tests to make it explicit
 ; that they are considered a mistake, in the hopes that they won't get added
-; in the future. Mistakes made ones are more likely to re-occur.
+; in the future. Mistakes made once are more likely to re-occur.
 ;
 ; Just testing for the set equality of actual and expected lexical forms
-; doesn't seem to be a good idea, since some of the valid analysis might be in
-; fact missing, and such a strict set equality test would kind of imply that
+; doesn't seem to be a good idea, since some of the valid analyses might in
+; fact be missing, and such a strict set equality test would kind of imply that
 ; new analyses shouldn't be added. Anyway, this is pretty much bikeshedding,
 ; while the main work now is go over the list of stems currently found in
 ; apertium-kaz.kaz.lexc
