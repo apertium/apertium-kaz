@@ -1452,3 +1452,8 @@ SELECT Post IF
 SELECT Adv IF
 	(0 ("керісінше"))
 ;
+
+# The ablative reading of жаңадан doesn't really make sense?
+REMOVE Abl IF
+	(0 ("жаңадан"))
+;
