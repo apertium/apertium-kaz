@@ -1434,3 +1434,8 @@ SELECT Vaux IF (-1 Participle) ;
 
 SELECT Adv IF (0 Qayda) ;
 
+# қала тұрғындарының санын көбейтті.
+SELECT N IF
+	(0 ("қала"))
+	(1 ("тұрғын"))
+;
