@@ -1275,18 +1275,18 @@ REMOVE Adv IF
 #;
 
 
-## two verbs қай
-#SELECT V-IV IF
-#	(0 ("қай"))
-#	(-1* Dat BARRIER N-LIKE)
-#;
-### Сол жерге қайтып барасың ба?
-#
-#SELECT V-TV IF
-#	(0 ("қай")) 
-#	(-1* Acc BARRIER N-LIKE)
-#;
-### Соны қайтып қыласың?
+# two verbs қайт
+SELECT V-IV IF
+	(0 ("қайт"))
+	(-1* Dat BARRIER N-LIKE)
+;
+## Сол жерге қайтып барасың ба?
+
+SELECT V-TV IF
+	(0 ("қайт")) 
+	(-1* Acc BARRIER N-LIKE)
+;
+## Соны қайтып қыласың?
 
 SELECT V-IV IF
 		(0 ("істе"))
