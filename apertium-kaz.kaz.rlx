@@ -1439,3 +1439,16 @@ SELECT N IF
 	(0 ("қала"))
 	(1 ("тұрғын"))
 ;
+
+# бойынша is almost always a postposition, not n.px3sp.equ
+SELECT Post IF
+	(0 ("бойынша"))
+	(-1 NOMINAL)
+;
+
+# Толқын ұзындығы, керісінше, энергияға кері пропорционал болады.
+# Pretty much always goning to be the adverb reading
+# - especially good for translation
+SELECT Adv IF
+	(0 ("керісінше"))
+;

@@ -653,7 +653,7 @@ LEXICON GENERAL-POSSESSIVE-ETC
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} ATTR-SUBST ;
 %<sim%>:%>%{D%}%{A%}й CLITICS-INCL-COP ;
 %<sim%>:%>%{D%}%{A%}й POSSESSIVES ;
-%<sim%>:%>%{D%}%{A%}й CASES ;
+%<sim%>:%>%{D%}%{A%}й CASES ;   ! FIXME: should these be sim.subst?
 %<sim%>:%>%{D%}%{A%}й PLURAL ;
 %<equ%>:%>ш%{A%} CLITICS-INCL-COP ;
 
@@ -37416,7 +37416,7 @@ iс:iс V-IV ; !"Use/MT"
 үгіттен:үгіттен V-IV ; ! "be agitated"
 үгітте:үгітте V-TV ; ! "to agitate"
 үдемеле:үдемеле V-IV ; ! ""
-үдет:үдет V-IV ; ! "наращивать"
+үдет:үдет V-TV ; ! "наращивать" ! Der/Caus
 үде:үде V-IV ; ! ""
 уәделе:уәделе V-IV ; ! ""
 ұзарт:ұзарт V-TV ; ! "" ! Der/Caus
