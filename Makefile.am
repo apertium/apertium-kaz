@@ -207,3 +207,8 @@ test: all
 
 check: all
 	cd tests/morphophonology/; python3 test.py kaz
+
+docs: FORCE
+	cd docs; scribble index.scrbl
+
+FORCE:
