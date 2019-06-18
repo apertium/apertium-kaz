@@ -65,6 +65,8 @@ Uyghur}}
 
 @section{Extending @tt{apertium-kaz}}
 
+@subsection{Stems and categories}
+
 To extend apertium-kaz with new words, we need to know their lemmas and their
 categories. Below we list the possible categories of words (we ignore the
 so-called closed-class words here, as their likelihood to appear among
@@ -122,7 +124,6 @@ processed automatically by @tt{apertium-kaz.kaz.twol}, and such stems must be
 added with the voiceless consonant (п, к, қ) to @tt{apertium-kaz.kaz.lexc}, e.g
 @tt{тақ:тақ V-TV ;}}
 
-
 @item{Stems from Russian that end with one of the voiced consonants (б, г),
 such as геолог should be entered as spelled, but should be put in the right
 category for foreign words (e.g., if a noun, then N5).}
@@ -144,3 +145,34 @@ entered as сүй}
 
 @item{Do not add passive or cooperative forms of verb stems (e.g., ‹тартыл› is
 passive of ‹тарт›, and ‹тартыс› is cooperative).}]
+
+@subsection{Lexicons}
+
+At the end of @code{apertium-kaz.kaz.lexc}, there are five lexicons:
+
+@itemize[
+
+@item{Common}
+@item{Hardcoded}
+@item{Abbreviations}
+@item{Punctuation}
+@item{Proper}]
+
+In each lexicon, entries are sorted alphabetically with the
+@code{LC_ALL=kk_KZ.utf8 sort} command.
+
+These five lexicons are where you have to put new words, after you have figured
+out their stems and categories following the guidelines above.
+
+@code{Abbreviations} and @code{Punctuation} lexicons should be self-explanatory.
+
+Any stem linked to lexicon starting with NP should be placed into @code{LEXICON
+Proper}.
+
+Any (temporary) entry which involves tags, e.g.
+
+@verbatim{қыл%<v%>%<tv%>%<gna_perf%>:ғып # ; ! "same as қып"}
+
+belongs to the @code{Hardcoded} section.
+
+The rest of stems goes to @code{LEXICON Common}.
