@@ -27,7 +27,9 @@ kaz-ARA.autogen.hfstol: kaz-ARA.autogen.hfst
 
 # create a transducer that analyses Cyrillic and Arabic scipts from
 # - Kazakh analysis transducer + error model
-# - 
+#    лукума<n><attr>:лукума
+# - Kazakh arabic generator
+#    оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 kaz-MULTI.automorf.hfst: kaz-ARA.autogen.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
 	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.autogen.hfst | hfst-invert -o $@
 
