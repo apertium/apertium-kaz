@@ -31,7 +31,7 @@ kaz-ARA.autogen.hfstol: kaz-ARA.autogen.hfst
 # - Kazakh arabic generator
 #    оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 kaz-MULTI.automorf.hfst: kaz-ARA.autogen.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
-	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.autogen.hfst | hfst-invert -o $@
+	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.autogen.hfst | hfst-invert | hfst-fst2fst -w -o $@
 
 kaz-MULTI.automorf.hfstol: kaz-MULTI.automorf.hfst
 	hfst-fst2fst -w -o $< $@
