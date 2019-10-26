@@ -13,20 +13,26 @@ cyr-ara.ohfst: cyr-ara.hfst
 # create a transducer that generates Arabic script from 
 # - Cyrillic-to-Arabic transcription transducer
 # - Kazakh Cyrillic generation transducer
+# оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 kaz-ARA.autogen.hfst: cyr-ara.hfst ../../.deps/kaz.RL.hfst
-	hfst-compose-intersect -1 ../../.deps/kaz.RL.hfst -2 $< -o $@
+	hfst-compose -1 ../../.deps/kaz.RL.hfst -2 $< -o $@
 
+# بۋدديزمگەشى:Буддизм<n><dat>+шы<emph>
+kaz-ARA.automorf.hfst: kaz-ARA.autogen.hfst
+	hfst-invert $< -o $@
+
+# оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 kaz-ARA.autogen.hfstol: kaz-ARA.autogen.hfst
 	hfst-fst2fst -w -i $< -o $@
 
 # create a transducer that analyses Cyrillic and Arabic scipts from
 # - Kazakh analysis transducer + error model
-# - cyr-ara transcription transducer
+# - 
+kaz-MULTI.automorf.hfst: kaz-ARA.autogen.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
+	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.autogen.hfst | hfst-invert -o $@
+
 kaz-MULTI.automorf.hfstol: kaz-MULTI.automorf.hfst
 	hfst-fst2fst -w -o $< $@
-
-kaz-MULTI.automorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
-	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 $< | hfst-invert -o $@
 
 cyr-ara.lexc.hfst: cyr-ara.lexc
 	#hfst-lexc $< | hfst-fst2fst -O -o $@.ohfst

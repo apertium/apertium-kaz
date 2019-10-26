@@ -155,20 +155,20 @@ Rules
 !          Vy in ( ٸ ٷ ٶ ٵ )
 !      matched ;
 
-"ө+dayekshe"
-ө:ٶ <=> ء:0 _ \:frontLetter* %  ;
+!"ө+dayekshe"
+!ө:ٶ <=> ء:0 _ \:frontLetter* %  ;
 
-"ө+dayekshe"
-ү:ٷ <=> ء:0 _ \:frontLetter* %  ;
-
-"ө+dayekshe"
-ә:ٵ <=> ء:0 _ \:frontLetter* %  ;
-
-"ө+dayekshe"
-і:ٸ <=> ء:0 _ \:frontLetter* %  ;
-
-"don't double ي"
-и:0 <=> _ [ я: | ю: | е: | ё: ] ;
-
-"%{й%}:ي after vowels"
-%{й%}:0 <=> Vow: _ ;
+!"ө+dayekshe"
+!ү:ٷ <=> ء:0 _ \:frontLetter* %  ;
+!
+!"ө+dayekshe"
+!ә:ٵ <=> ء:0 _ \:frontLetter* %  ;
+!
+!"ө+dayekshe"
+!і:ٸ <=> ء:0 _ \:frontLetter* %  ;
+!
+!"don't double ي"
+!и:0 <=> _ [ я: | ю: | е: | ё: ] ;
+!
+!"%{й%}:ي after vowels"
+!%{й%}:0 <=> Vow: _ ;
