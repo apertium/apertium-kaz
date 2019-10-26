@@ -14,14 +14,19 @@ cyr-ara.ohfst: cyr-ara.hfst
 # - Cyrillic-to-Arabic transcription transducer
 # - Kazakh Cyrillic generation transducer
 kaz-ARA.autogen.hfst: cyr-ara.hfst ../../.deps/kaz.RL.hfst
-	hfst-compose-intersect -1 ../../.deps/kaz.RL.hfst -2 $< -o temp.hfst
-	hfst-fst2fst -w -i temp.hfst -o $@
+	hfst-compose-intersect -1 ../../.deps/kaz.RL.hfst -2 $< -o $@
+
+kaz-ARA.autogen.hfstol: kaz-ARA.autogen.hfst
+	hfst-fst2fst -w -i $< -o $@
 
 # create a transducer that analyses Cyrillic and Arabic scipts from
 # - Kazakh analysis transducer + error model
 # - cyr-ara transcription transducer
+kaz-MULTI.automorf.hfstol: kaz-MULTI.automorf.hfst
+	hfst-fst2fst -w -o $< $@
+
 kaz-MULTI.automorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
-	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 $< | hfst-invert | hfst-fst2fst -w -o $@
+	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 $< | hfst-invert -o $@
 
 cyr-ara.lexc.hfst: cyr-ara.lexc
 	#hfst-lexc $< | hfst-fst2fst -O -o $@.ohfst
