@@ -1,4 +1,4 @@
-all: kaz-ARA.automorf.hfst
+all: kaz-ARA.autogen.hfst kaz-MULTI.automorf.hfst
 
 cyr-ara: cyr-ara.ohfst
 
@@ -8,9 +8,12 @@ cyr-ara.hfst: cyr-ara.twol.hfst cyr-ara.lexc.hfst
 cyr-ara.ohfst: cyr-ara.hfst
 	hfst-fst2fst -w -i $< -o $@
 
-kaz-ARA.automorf.hfst: cyr-ara.hfst
+kaz-ARA.autogen.hfst: cyr-ara.hfst ../../.deps/kaz.RL.hfst
 	hfst-compose-intersect -1 ../../.deps/kaz.RL.hfst -2 $< -o temp.hfst
 	hfst-fst2fst -w -i temp.hfst -o $@
+
+kaz-MULTI.automorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
+	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 $< | hfst-invert | hfst-fst2fst -w -o $@
 
 cyr-ara.lexc.hfst: cyr-ara.lexc
 	#hfst-lexc $< | hfst-fst2fst -O -o $@.ohfst
