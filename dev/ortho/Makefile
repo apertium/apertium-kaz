@@ -26,7 +26,7 @@ kaz-ARA.REVautomorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst
 
 # بۋدديزمگەشى:Буддизм<n><dat>+шы<emph>
 kaz-ARA.automorf.hfst: kaz-ARA.REVautomorf.hfst
-	| hfst-invert -o $@
+	hfst-invert $< -o $@
 
 # оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 #kaz-ARA.autogen.hfstol: kaz-ARA.autogen.hfst
