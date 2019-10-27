@@ -21,6 +21,9 @@ kaz-ARA.autogen.hfst: cyr-ara.hfst ../../.deps/kaz.RL.hfst
 kaz-ARA.REVautomorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst
 	hfst-compose -1 ../../.deps/kaz.LR.hfst -2 $< -o kaz-ARA.REVautomorf.hfst
 
+kaz-ARA.spellrelax.hfst: kaz-ARA.spellrelax.twol
+	hfst-twolc $< -o $@
+
 # بۋدديزمگەشى:Буддизм<n><dat>+шы<emph>
 kaz-ARA.automorf.hfst: kaz-ARA.REVautomorf.hfst
 	| hfst-invert -o $@
@@ -34,8 +37,8 @@ kaz-ARA.automorf.hfst: kaz-ARA.REVautomorf.hfst
 #    лукума<n><attr>:лукума
 # - Kazakh arabic generator
 #    оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
-kaz-MULTI.automorf.hfst: kaz-ARA.REVautomorf.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst
-	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.REVautomorf.hfst | hfst-invert | hfst-fst2fst -w -o $@
+kaz-MULTI.automorf.hfst: kaz-ARA.REVautomorf.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst kaz-ARA.spellrelax.hfst
+	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.REVautomorf.hfst | hfst-compose-intersect -1 - -2 kaz-ARA.spellrelax.hfst | hfst-invert | hfst-fst2fst -w -o $@
 
 kaz-MULTI.automorf.hfstol: kaz-MULTI.automorf.hfst
 	hfst-fst2fst -w -o $< $@

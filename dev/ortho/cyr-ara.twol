@@ -95,8 +95,9 @@ Alphabet
 ! % :% ء
 ! % :◌
 ! ء:ٴ
- ء:0
- %,:%،
+! ء:0
+ ٴ:0
+! %,:%،
  ,:،
  %;:%؛
 
@@ -147,7 +148,7 @@ Rules
 "retain dayekshe"
 ! when front vowel but no front stuff follows"
 !%{ء%}:ٴ <=> _ \:frontLetter frontVowCyrNoE: \:frontLetter* %  ;
-%{ء%}:ء <=> _ \:frontLetter* frontVowCyrNoE: \:frontLetter* .#. ;
+%{ء%}:ٴ <=> _ \:frontLetter* frontVowCyrNoE: \:frontLetter* .#. ;
 
 !"make dayekshe-modified vowel letters"
 !Vx:Vy <=> ء:0 _ ;
