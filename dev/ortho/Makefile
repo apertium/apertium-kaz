@@ -10,6 +10,9 @@ cyr-ara.hfst: cyr-ara.twol.hfst cyr-ara.lexc.hfst
 cyr-ara.ohfst: cyr-ara.hfst
 	hfst-fst2fst -w -i $< -o $@
 
+kaz-ARA.spellrelax.hfst: kaz-ARA.spellrelax.twol
+	hfst-twolc $< -o $@
+
 # create a transducer that generates Arabic script from 
 # - Cyrillic-to-Arabic transcription transducer
 # - Kazakh Cyrillic generation transducer
@@ -20,9 +23,6 @@ kaz-ARA.autogen.hfst: cyr-ara.hfst ../../.deps/kaz.RL.hfst
 # Буддизм<n><dat>+шы<emph>:بۋدديزمگەشى
 kaz-ARA.REVautomorf.hfst: cyr-ara.hfst ../../.deps/kaz.LR.hfst
 	hfst-compose -1 ../../.deps/kaz.LR.hfst -2 $< -o kaz-ARA.REVautomorf.hfst
-
-kaz-ARA.spellrelax.hfst: kaz-ARA.spellrelax.twol
-	hfst-twolc $< -o $@
 
 # بۋدديزمگەشى:Буддизм<n><dat>+шы<emph>
 kaz-ARA.automorf.hfst: kaz-ARA.REVautomorf.hfst
@@ -35,7 +35,7 @@ kaz-ARA.automorf.hfst: kaz-ARA.REVautomorf.hfst
 # create a transducer that analyses Cyrillic and Arabic scipts from
 # - Kazakh analysis transducer + error model
 #    лукума<n><attr>:лукума
-# - Kazakh arabic generator
+# - Kazakh Arabic reversed analyser
 #    оазис<n><px2sg><frm><gen>:ءوازيسىڭىزدىڭ
 kaz-MULTI.automorf.hfst: kaz-ARA.REVautomorf.hfst ../../.deps/kaz.LR.hfst ../../.deps/kaz.LR.err.hfst kaz-ARA.spellrelax.hfst
 	hfst-union -1 ../../.deps/kaz.LR.hfst -2 ../../.deps/kaz.LR.err.hfst | hfst-union -1 - -2 kaz-ARA.REVautomorf.hfst | hfst-compose-intersect -1 - -2 kaz-ARA.spellrelax.hfst | hfst-invert | hfst-fst2fst -w -o $@
