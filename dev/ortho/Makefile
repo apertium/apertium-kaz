@@ -1,4 +1,4 @@
-all: kaz-ARA.autogen.hfst kaz-MULTI.automorf.hfst
+all: kaz-ARA.autogen.hfst kaz-MULTI.automorf.hfst kaz-MULTI.automorf.bin
 
 cyr-ara: cyr-ara.ohfst
 
@@ -50,6 +50,13 @@ cyr-ara.lexc.hfst: cyr-ara.lexc
 cyr-ara.twol.hfst: cyr-ara.twol
 	#hfst-twolc $< | hfst-fst2fst -O -o $@.ohfst
 	hfst-twolc $< -o $@
+
+%.att.gz: %.hfst
+	hfst-fst2txt $< | gzip -9 -c -n > $@
+
+%.bin: %.att.gz
+	zcat < $< > %.att
+	lt-comp lr %.att $@
 
 clean:
 	rm -rf *.ohfst *.hfst
