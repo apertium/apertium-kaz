@@ -257,6 +257,22 @@ SET NOT-ADV = WORDMARK - Adv ;
 
 SET S-BOUNDARY = CS | Interr | EOS ;
 
+# Universal Dependencies
+# ======================
+
+LIST @root = @root ;     # The root of the sentence, often a finite verb
+LIST @nsubj = @nsubj ;   # The nominal subject of the sentence
+LIST @amod = @amod ;       # 
+LIST @advmod = @advmod ; # An adverbial modifier
+LIST @case = @case ;     # The relation of an adposition to its head
+LIST @acl = @acl ;       # A clause which modifies a nominal
+LIST @nmod = @nmod ;     # Nominal modifier 
+LIST @dobj = @dobj ;     # The direct object of the sentence
+LIST @punct = @punct ;   # Any punctuation
+LIST @dep = @dep ;       # Any remaining dependency
+LIST @cop = @cop ;       # 
+LIST @nmod:poss = @nmod:poss ;
+
 # ======= #
   SECTION # 
 # ======= #
@@ -1461,3 +1477,30 @@ REMOVE Abl IF
 
 # ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
 SELECT Ord IF (-1 Prop) ; 
+
+
+SECTION
+
+MAP @amod TARGET (num ord) ;
+
+MAP @cop TARGET ("бол" v iv) ;
+
+MAP @punct TARGET (sent) ;
+
+MAP @root TARGET (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
+
+MAP @nmod:poss TARGET (nom) - (px3sp) IF (1* (px3sp)) ;
+
+MAP @nmod:poss TARGET (gen) ;
+
+MAP @nsubj TARGET (n nom) ;
+
+SECTION
+
+SETPARENT @root TO (@0 (*)) ;
+
+SETPARENT (*) (NEGATE p (*)) TO (0* @root) ;
+
+SETPARENT @nmod:poss TO (1* PersonalPossessives) ;
+
+SETPARENT @amod TO (2 (n px3sp));  # FIXME
