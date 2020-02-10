@@ -140,7 +140,6 @@ LIST Adv = adv ;
 LIST Rquot = rquot ;
 LIST Excl = "!" ;
 
-
 # POS sub-categories
 # ==================
 
@@ -154,6 +153,8 @@ LIST TV = tv ;
 LIST Pass = pass ;
 LIST Caus = caus ;
 LIST Coop = coop ;
+
+LIST Ord = ord ;
 
 # "Syntactic" tags
 # ================
@@ -584,12 +585,12 @@ REMOVE Det IF
 #;
 
 
-# Select attributive reading of the first noun of the II izafet construct
+# Select nominative reading of the first noun of the II izafet construct
 # (as Tatar grammars call it)
-# SELECT Nom IF
-#        (0C N OR Prop)
-#        (1 N OR Prop OR Subst)
-#        (1 (px3sp))
+ SELECT Nom IF
+        (0C N OR Prop)
+        (1 N OR Prop OR Subst)
+        (1 (px3sp))
 ;
 # Was: SELECT 'Attr'
 #
@@ -1457,3 +1458,6 @@ SELECT Adv IF
 REMOVE Abl IF
 	(0 ("жаңадан"))
 ;
+
+# ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
+SELECT Ord IF (-1 Prop) ; 

@@ -363,6 +363,7 @@ LEXICON NUM-DIGIT
 %<num%>%<subst%>:%- SUBST-NONOM ;
 %<num%>%<subst%>: SUBST-NONOM ; ! Dir/LR
 
+%<num%>%<ord%>: # ;
 %<num%>%<ord%>:%-%{I%}нш%{I%} # ;
 %<num%>%<ord%>%<subst%>%<nom%>:%-%{I%}нш%{I%} # ;
 %<num%>%<ord%>%<subst%>:%-%{I%}нш%{I%} SUBST-NONOM ;
