@@ -135,6 +135,7 @@ LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
 LIST FinalClitic = mod_ass mod_emo mod qst emph ;
+LIST Sent = sent ;
 LIST Cm = cm ;
 LIST Adv = adv ;
 LIST Rquot = rquot ;
@@ -185,7 +186,7 @@ LIST P3 = p3 ;
 
 LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
 
-LIST Imper = imp ;
+LIST Imp = imp ;
 
 # Specific lexemes 
 # ==========================
@@ -269,9 +270,16 @@ LIST @acl = @acl ;       # A clause which modifies a nominal
 LIST @nmod = @nmod ;     # Nominal modifier 
 LIST @dobj = @dobj ;     # The direct object of the sentence
 LIST @punct = @punct ;   # Any punctuation
-LIST @dep = @dep ;       # Any remaining dependency
 LIST @cop = @cop ;       # 
 LIST @nmod:poss = @nmod:poss ;
+LIST @obl = @obl ;
+LIST @obj = @obj ;
+LIST @advcl = @advcl ;
+LIST @aux = @aux ;
+LIST @parataxis = @parataxis ;
+LIST @det = @det ;
+
+LIST @dep = @dep ;       # Any remaining dependency
 
 # ======= #
   SECTION # 
@@ -1439,9 +1447,9 @@ SELECT (n px1sg) IF (-1 (prn pers p1 sg gen))
 SELECT A IF (-1 N) (0 ("<қауіпсіз>"i))
 ;  
 
-SELECT Imper IF (1* Excl) ; 
+SELECT Imp IF (1* Excl) ; 
 
-REMOVE Imper IF (NOT 1* Excl) (0C Imper OR Pres) ; 
+REMOVE Imp IF (NOT 1* Excl) (0C Imp OR Pres) ; 
 
 REMOVE Coop IF (0 IV - Coop) ;
 
@@ -1478,24 +1486,66 @@ REMOVE Abl IF
 # ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
 SELECT Ord IF (-1 Prop) ; 
 
+SELECT Imp IF (-1 BOS) ;
 
-SECTION
+"<не>"i SELECT (cnjcoo) IF (1* Cm LINK 1* ("<не>"i)) ; 
 
-MAP @amod TARGET (num ord) ;
+"<не>"i SELECT (cnjcoo) IF (-1* Cm LINK -1* ("<не>"i)) ; 
 
-MAP @cop TARGET ("бол" v iv) ;
+"<не>"i REMOVE (cnjcoo) ;
 
-MAP @punct TARGET (sent) ;
+REMOVE (prc_perf) ;
 
-MAP @root TARGET (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
+REMOVE (loc subst) IF (NOT -1 BOS) ;
 
-MAP @nmod:poss TARGET (nom) - (px3sp) IF (1* (px3sp)) ;
+SELECT (det) IF (1 (loc attr)) ;
 
-MAP @nmod:poss TARGET (gen) ;
+REMOVE Sub:1 Post IF (0/1 ("лы"i)) (NOT 1 NOMINAL) ;
 
-MAP @nsubj TARGET (n nom) ;
 
-SECTION
+#######
+SECTION  ## mapping rules
+#######
+
+
+MAP @amod (num ord) | (loc attr) ;
+
+MAP @cop ("бол" v iv) ;
+
+MAP @punct Sent OR Cm ;
+
+MAP @root (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
+
+MAP @root (imp) IF (-1 BOS) (1 Cm) ;
+
+MAP @root FiniteVerb IF (NOT * @root) ;
+
+MAP @nmod:poss (nom) - (px3sp) IF (1* (px3sp)) ;
+
+MAP @nmod:poss (gen) ;
+
+MAP @nsubj (n nom) ;
+
+MAP @nsubj (nom) IF (NOT * (nom)) ;
+
+MAP @obl Ins ;
+
+MAP @obj ("<не>") IF (1* (tv)) ;
+
+MAP @obj (acc) ;
+
+MAP @advcl (gna_perf) ;
+
+MAP @aux (vaux) ;
+
+MAP @parataxis (v) IF (@1 @root) ;
+
+MAP @det (det) ;
+
+#######
+SECTION  ## attachement
+#######
+
 
 SETPARENT @root TO (@0 (*)) ;
 
@@ -1503,4 +1553,18 @@ SETPARENT (*) (NEGATE p (*)) TO (0* @root) ;
 
 SETPARENT @nmod:poss TO (1* PersonalPossessives) ;
 
-SETPARENT @amod TO (2 (n px3sp));  # FIXME
+SETPARENT @amod + ("[0-9]+"r) TO (2 (n px3sp)) ;
+
+SETPARENT @amod + (loc attr) TO (1* (n)) ;
+
+SETPARENT @nsubj TO (1* ("соғыс")) ;
+
+SETPARENT @obl TO (1* ("соғыс")) ;
+
+SETPARENT @obj TO (1* (v)) ;
+
+SETPARENT @aux TO (-1 Participle) ;
+
+SETPARENT @advcl TO (1 (v)) ;
+
+SETPARENT @det TO (1* (n)) ;
