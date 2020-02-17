@@ -40,3 +40,23 @@
 (check-equal?
  (kaz-disam "Қазақстан осы өңірдегі бейбітшілікті қолдайды.")
  "^Қазақстан/Қазақстан<np><top><nom><#1->5><@nsubj>$^осы/осы<det><dem><#2->3><@det>$^өңірдегі/өңір<n><loc><attr><#3->4><@amod>$^бейбітшілікті/бейбітшілік<n><acc><#4->5><@obj>$^қолдайды/қолда<v><tv><aor><p3><sg><#5->0><@root>$^./.<sent><#6->5><@punct>$")
+
+(check-equal?
+ (kaz-morph "Дмитрий Медведевтің Астанаға сапары 22 мамырға жоспарланып отыр.")
+ "^Дмитрий/Дмитрий<np><ant><m><nom>/Дмитрий<np><ant><m><nom>+е<cop><aor><p3><pl>/Дмитрий<np><ant><m><nom>+е<cop><aor><p3><sg>$ ^Медведевтің/Медведев<np><cog><m><gen>$ ^Астанаға/астана<n><dat>/Астана<np><top><dat>$ ^сапары/сапар<n><px3sp><nom>/сапар<n><px3sp><nom>+е<cop><aor><p3><pl>/сапар<n><px3sp><nom>+е<cop><aor><p3><sg>$ ^22/22<num>/22<num><ord>/22<num><subst><nom>$ ^мамырға/мамыр<n><dat>$ ^жоспарланып/жоспарла<v><tv><pass><gna_perf>/жоспарла<v><tv><pass><prc_perf>/жоспарлан<v><iv><gna_perf>/жоспарлан<v><iv><prc_perf>$ ^отыр/отыр<vaux><imp><p2><sg>/отыр<vaux><pres><p3><pl>/отыр<vaux><pres><p3><sg>/отыр<v><iv><imp><p2><sg>$^./.<sent>$") ;; whether to lexicalise жоспарлан is an open question, IFS probably wouldn't have
+
+(check-equal?
+ (kaz-tagger-deterministic "Дмитрий Медведевтің Астанаға сапары 22 мамырға жоспарланып отыр.")
+ "^Дмитрий/Дмитрий<np><ant><m><nom>$ ^Медведевтің/Медведев<np><cog><m><gen>$ ^Астанаға/Астана<np><top><dat>$ ^сапары/сапар<n><px3sp><nom>$ ^22/22<num><ord>$ ^мамырға/мамыр<n><dat>$ ^жоспарланып/жоспарла<v><tv><pass><prc_perf>$ ^отыр/отыр<vaux><pres><p3><sg>$^./.<sent>$")
+
+(check-equal?
+ (kaz-disam "Дмитрий Медведевтің Астанаға сапары 22 мамырға жоспарланып отыр.")
+ "^Дмитрий/Дмитрий<np><ant><m><nom><#1->4><@nmod:poss>$^Медведевтің/Медведев<np><cog><m><gen><#2->4><@nmod:poss>$^Астанаға/Астана<np><top><dat><#3->8>$^сапары/сапар<n><px3sp><nom><#4->8><@nsubj>$^22/22<num><ord><#5->8><@amod>$^мамырға/мамыр<n><dat><#6->8>$^жоспарланып/жоспарла<v><tv><pass><prc_perf><#7->8>$^отыр/отыр<vaux><pres><p3><sg><#8->0><@root>$^./.<sent><#9->8><@punct>$") ;; TODO clarify with FMT and JNW or guidelines
+
+(check-equal?
+ (kaz-morph "Біздің елде сізге ерекше құрметпен қарайды.")
+ "^Біздің/біз<prn><pers><p1><pl><gen>$ ^елде/ел<n><loc>/ел<n><loc>+е<cop><aor><p3><pl>/ел<n><loc>+е<cop><aor><p3><sg>$ ^сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^ерекше/ерек<n><equ>/ерекше<adj>/ерекше<adj><advl>/ерекше<adj><subst><nom>/ерек<n><equ>+е<cop><aor><p3><pl>/ерек<n><equ>+е<cop><aor><p3><sg>/ерекше<adj>+е<cop><aor><p3><pl>/ерекше<adj>+е<cop><aor><p3><sg>/ерекше<adj><subst><nom>+е<cop><aor><p3><pl>/ерекше<adj><subst><nom>+е<cop><aor><p3><sg>$ ^құрметпен/құрмет<n><ins>$ ^қарайды/қара<v><tv><aor><p3><pl>/қара<v><tv><aor><p3><sg>/қарай<v><iv><ifi><p3><pl>/қарай<v><iv><ifi><p3><sg>$^./.<sent>$")  ;; ерек<n> is dubious, although there is 'ерекке бер' listed as an example for ерек in the EDOK.
+
+(check-equal?
+ (kaz-tagger-deterministic "Біздің елде сізге ерекше құрметпен қарайды.")
+ "^Біздің/біз<prn><pers><p1><pl><gen>$ ^елде/ел<n><loc>$ ^сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^ерекше/ерек<adj>$ ^құрметпен/құрмет<n><ins>$ ^қарайды/қара<v><tv><aor><p3><pl>$^./.<sent>$")
