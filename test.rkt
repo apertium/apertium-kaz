@@ -51,7 +51,7 @@
 
 (check-equal?
  (kaz-disam "Дмитрий Медведевтің Астанаға сапары 22 мамырға жоспарланып отыр.")
- "^Дмитрий/Дмитрий<np><ant><m><nom><#1->4><@nmod:poss>$^Медведевтің/Медведев<np><cog><m><gen><#2->4><@nmod:poss>$^Астанаға/Астана<np><top><dat><#3->8>$^сапары/сапар<n><px3sp><nom><#4->8><@nsubj>$^22/22<num><ord><#5->8><@amod>$^мамырға/мамыр<n><dat><#6->8>$^жоспарланып/жоспарла<v><tv><pass><prc_perf><#7->8>$^отыр/отыр<vaux><pres><p3><sg><#8->0><@root>$^./.<sent><#9->8><@punct>$") ;; TODO clarify with FMT and JNW or guidelines
+ "^Дмитрий/Дмитрий<np><ant><m><nom><#1->4><@nmod:poss>$^Медведевтің/Медведев<np><cog><m><gen><#2->4><@nmod:poss>$^Астанаға/Астана<np><top><dat><#3->8><@obl>$^сапары/сапар<n><px3sp><nom><#4->8><@nsubj>$^22/22<num><ord><#5->8><@amod>$^мамырға/мамыр<n><dat><#6->8><@obl>$^жоспарланып/жоспарла<v><tv><pass><prc_perf><#7->8>$^отыр/отыр<vaux><pres><p3><sg><#8->0><@root>$^./.<sent><#9->8><@punct>$") ;; TODO clarify with FMT and JNW or guidelines: 1. сапары nsubj 2. attachingастанаға to сапары (as nmod?)
 
 (check-equal?
  (kaz-morph "Біздің елде сізге ерекше құрметпен қарайды.")
@@ -59,4 +59,8 @@
 
 (check-equal?
  (kaz-tagger-deterministic "Біздің елде сізге ерекше құрметпен қарайды.")
- "^Біздің/біз<prn><pers><p1><pl><gen>$ ^елде/ел<n><loc>$ ^сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^ерекше/ерек<adj>$ ^құрметпен/құрмет<n><ins>$ ^қарайды/қара<v><tv><aor><p3><pl>$^./.<sent>$")
+ "^Біздің/біз<prn><pers><p1><pl><gen>$ ^елде/ел<n><loc>$ ^сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^ерекше/ерекше<adj>$ ^құрметпен/құрмет<n><ins>$ ^қарайды/қара<v><tv><aor><p3><pl>$^./.<sent>$")
+
+(check-equal?
+ (kaz-disam "Біздің елде сізге ерекше құрметпен қарайды.")
+ "^Біздің/біз<prn><pers><p1><pl><gen><#1->2><@nmod:poss>$^елде/ел<n><loc><#2->6><@obl>$^сізге/сіз<prn><pers><p2><sg><frm><dat><#3->6><@obl>$^ерекше/ерекше<adj><#4->5><@amod>$^құрметпен/құрмет<n><ins><#5->6><@obl>$^қарайды/қара<v><tv><aor><p3><pl><#6->0><@root>$^./.<sent><#7->6><@punct>$")

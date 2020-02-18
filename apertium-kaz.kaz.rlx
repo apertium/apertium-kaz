@@ -295,15 +295,12 @@ REMOVE Err/Orth ;
 
 SELECT (pass) IF (0 ("жоспарлан")) ;
 
+"<ерекше>"i REMOVE (equ) ;
+
 
 # ======= #
   SECTION # (COPULAS)
 # ======= #
-
-
-
-#
-
 
 
 #
@@ -869,18 +866,12 @@ REMOVE SUB:1 P3 IF
 # Deciding about the number of a verb or copula in the 3 person
 # Basic idea is to remove plural reading if subject is not in plural,
 # but there a lot of corner cases, which lead to lots of mispredictions.
-# So let's just delete plural reading for now.
 #
 # In Tatar, when the subject indicates the number, this LAR affix for the verbs
 # in 3 person is kind of optional too, so singular reading will work/is right for
 # the majority of cases.
-#
-# Selecting plural reading might be a more productive approach.
- REMOVE Pl IF
-        (0 V OR Vaux OR Cop)
-        (0 P3)
-;
-##
+
+#REMOVE Pl IF (0 V OR Vaux OR Cop) (0 P3) ;
 
 # Thought that the above rule should cover copulas, seems that sometimes it doesn't
   REMOVE SUB:1 Pl IF
@@ -1510,13 +1501,17 @@ REMOVE Sub:1 Post IF (0/1 ("лы"i)) (NOT 1 NOMINAL) ;
 
 SELECT (ord) IF (1 MONTH) ;
 
+REMOVE (advl) IF (1 (n)) ;
+
+"<қарайды>"i SELECT ("қара") IF (-1* (dat)) ;
+
 
 #######
 SECTION  ## mapping rules
 #######
 
 
-MAP @amod (num ord) | (loc attr) ;
+MAP @amod (num ord) | (loc attr) | (adj) - (advl);
 
 MAP @cop ("бол" v iv) ;
 
@@ -1536,7 +1531,7 @@ MAP @nsubj (n nom) ;
 
 MAP @nsubj (nom) IF (NOT * (nom)) ;
 
-MAP @obl Ins ;
+MAP @obl Dat | Loc | Ins;
 
 MAP @obj ("<не>") IF (1* (tv)) ;
 
@@ -1550,6 +1545,16 @@ MAP @parataxis (v) IF (@1 @root) ;
 
 MAP @det (det) ;
 
+
+#######
+SECTION  ## disambig rules which rely on mapping tags
+#######
+
+
+SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (NOT <*-1 (@nsubj)) ;
+SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (pl @nsubj)) ;
+SELECT Sg IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (@nsubj) - (pl));
+
 #######
 SECTION  ## attachement
 #######
@@ -1560,10 +1565,11 @@ SETPARENT @root TO (@0 (*)) ;
 SETPARENT (*) (NEGATE p (*)) TO (0* @root) ;
 
 SETPARENT @nmod:poss TO (1* PersonalPossessives) ;
+SETPARENT (@nmod:poss gen) TO (1* (n)) ;
 
 SETPARENT @amod + ("[0-9]+"r) TO (2 (n px3sp)) ;
-
 SETPARENT @amod + (loc attr) TO (1* (n)) ;
+SETPARENT (@amod adj) TO (1* (n)) ;
 
 SETPARENT @nsubj TO (1* ("соғыс")) ;
 
