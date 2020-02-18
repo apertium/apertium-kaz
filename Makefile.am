@@ -34,10 +34,10 @@ TARGETS_COMMON =			\
 	cat $< | grep -v -e 'Dir/LR' -e 'Err/Orth' > $@
 
 .deps/$(LANG1).LR.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v -e 'Dir/RL' > $@
+	cat $< | grep -v -e 'Dir/RL' | grep -v -e 'Use/MT' > $@
 
 .deps/$(LANG1).EL.lexc: $(BASENAME).$(LANG1).lexc .deps/.d
-	cat $< | grep -v -e 'Err/Orth' > $@
+	cat $< | grep -v -e 'Err/Orth' | grep -v -e 'Use/MT' > $@
 
 .deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
 	hfst-lexc --Werror $< -o $@ -v
