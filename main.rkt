@@ -25,8 +25,10 @@
 
 (define (kaz-tagger-deterministic s)
   (parameterize ([current-directory (pkg-directory "apertium-kaz")])
-    (rash
-     "echo (values s) | apertium -n -d . kaz-morph | cg-proc kaz.rlx.bin -s 3"))) ;; only the first 3 sections so that mapping rules are excluded
+    (regexp-replace* #rx"<@[a-z:]*>"
+     (rash
+      "echo (values s) | apertium -n -d . kaz-morph | cg-proc kaz.rlx.bin")
+     "")))
 
 (define (kaz-disam s)
   (parameterize ([current-directory (pkg-directory "apertium-kaz")])
