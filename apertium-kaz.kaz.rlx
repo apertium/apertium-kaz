@@ -140,6 +140,7 @@ LIST Cm = cm ;
 LIST Adv = adv ;
 LIST Rquot = rquot ;
 LIST Excl = "!" ;
+LIST Guio = guio ;
 
 # POS sub-categories
 # ==================
@@ -1505,6 +1506,10 @@ REMOVE (advl) IF (1 (n)) ;
 
 "<қарайды>"i SELECT ("қара") IF (-1* (dat)) ;
 
+"<бұл>"i SELECT (det) IF (1 (n)) ;
+        
+REMOVE Sub:1 ("лы" post) IF (0 (adj)) ;
+
 
 #######
 SECTION  ## mapping rules
@@ -1515,7 +1520,7 @@ MAP @amod (num ord) | (loc attr) | (adj) - (advl);
 
 MAP @cop ("бол" v iv) ;
 
-MAP @punct Sent OR Cm ;
+MAP @punct Sent OR Cm OR Guio ;
 
 MAP @root (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
 
