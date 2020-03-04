@@ -176,3 +176,9 @@ Any (temporary) entry which involves tags, e.g.
 belongs to the @code{Hardcoded} section.
 
 The rest of stems goes to @code{LEXICON Common}.
+
+@section{A Constraint Grammar-based Universal Dependencies parser for Kazakh}
+
+@verbatim{echo "your kazakh sentence" | apertium-destxt -n | apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt  | vislcg3 -g apertium-kaz.kaz.rlx  | python3 ../ud-scripts/vislcg3-to-conllu.py}
+
+where @tt{vislcg3-to-conllu.py} is @hyperlink["https://github.com/taruen/ud-scripts/blob/master/vislcg3-to-conllu.py"]{this} script.
