@@ -1510,6 +1510,11 @@ REMOVE (advl) IF (1 (n)) ;
         
 REMOVE Sub:1 ("лы" post) IF (0 (adj)) ;
 
+REMOVE (tv) IF (NOT -1* Acc) ;
+	
+SECTION
+
+"<бұлармен>"i REMOVE V ;
 
 #######
 SECTION  ## mapping rules
