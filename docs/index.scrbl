@@ -1,7 +1,7 @@
 #lang scribble/manual
 
-@title{@tt{APERTIUM-KAZ}: A MORPHOLOGICAL TRANSDUCER AND DISAMBIGUATOR FOR
- KAZAKH}
+@title[#:version "0.1.0"]{@tt{APERTIUM-KAZ}: A MORPHOLOGICAL TRANSDUCER AND
+ DISAMBIGUATOR FOR KAZAKH}
 
 @margin-note{WARNING: this is an early draft.}
 
@@ -63,7 +63,23 @@ Uyghur}}
 
 ]
 
+Its source code is available on
+@hyperlink["https://github.com/apertium/apertium-kaz/"]{Github}. The code is
+available under GNU General Public License version 3. Some of the annotated
+data such as the Universal Dependencies treebank is available under Creative
+Commons Attribution-Share Alike License.
+
 @section{Extending @tt{apertium-kaz}}
+
+First of all, note that there is an ongoing effort described
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{here} to extend
+@tt{apertium-kaz} with stems from the 15-volume Explanatory Dictionary of
+Kazakh and to proof-read the resulting lexicion (and maybe expand with
+additional markup). After proof-reading is done, it's likely that the resulting
+stem-list will replace the lexicon currently available in
+@tt{apertium-kaz/apertium-kaz.kaz.lexc} (since the former is a superset of the
+latter). If you want to help out with proof-reading the lexicon agaist the
+aforementioned paper dictionary, contact Ilnar Salimzianov.
 
 @subsection{Stems and categories}
 
@@ -71,7 +87,7 @@ To extend apertium-kaz with new words, we need to know their lemmas and their
 categories. Below we list the possible categories of words (we ignore the
 so-called closed-class words here, as their likelihood to appear among
 unrecognized words at this stage is negligible, and simplify some of the
-categories of open-class words purposefully).
+categories of open-class words intentionally).
 
 @tabular[#:style 'boxed
          #:column-properties '(left left)
@@ -81,7 +97,7 @@ categories of open-class words purposefully).
       (list "" "" "жылқы:жылқы N1 ; ! “horse”")
       (list "N5" "nouns which are loanwords from Russian (and therefore potentially with exceptions in phonology)" "артист:артист N5 ; ! \"\"")
       (list "" "" "баррель:баррель N5 ; ! \"\"")
-      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if apertium-kaz is used as a morphological generator." "")
+      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if @tt{apertium-kaz} is used as a morphological generator." "")
       (list "N1-ABBR" "Abbreviated nouns" "ДНҚ:ДНҚ%{а%} N1-ABBR ; ! \"DNA\"")
       (list "" "" "млн:млн%{а%}%{з%} N1-ABBR ; ! \"million\"")
       (list "" "" "млрд:млрд%{а%}%{с%} N1-ABBR ; ! \"billion\"")
@@ -111,8 +127,8 @@ categories of open-class words purposefully).
 Figuring the lemma of an unrecognized word should be straightforward. Except
 for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
 imperative forms such as @tt{бар}, @tt{кел}, @tt{ал} etc (i.e. not @tt{бару},
-@tt{келу}, @tt{алу} as in print dictionaries), the lemmas are what you would
-expect to see in print dictionaries of Kazakh.
+@tt{келу}, @tt{алу} as in some of the print dictionaries), the lemmas are what
+you would expect to see in print dictionaries of Kazakh.
 
 Still, there are some things to keep in mind (we use the word ``stem'' and
 ``lemma'' interchangeably below):
@@ -179,6 +195,14 @@ The rest of stems goes to @code{LEXICON Common}.
 
 @section{A Constraint Grammar-based Universal Dependencies parser for Kazakh}
 
-@verbatim{echo "your kazakh sentence" | apertium-destxt -n | apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt  | vislcg3 -g apertium-kaz.kaz.rlx  | python3 ../ud-scripts/vislcg3-to-conllu.py}
+@subsection{How can I convert @tt{apertium-kaz}'s output into the CoNLL-U
+format of the @hyperlink["https://universaldependencies.org/"]{Universal
+Dependencies} project?}
 
-where @tt{vislcg3-to-conllu.py} is @hyperlink["https://github.com/taruen/ud-scripts/blob/master/vislcg3-to-conllu.py"]{this} script.
+@verbatim{echo "your kazakh sentence" | apertium-destxt -n | \
+apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt  | \
+vislcg3 -g apertium-kaz.kaz.rlx  | python3 ../ud-scripts/vislcg3-to-conllu.py}
+
+where @tt{vislcg3-to-conllu.py} is
+@hyperlink["https://github.com/taruen/ud-scripts/blob/master/vislcg3-to-conllu.py"]{this}
+script.
