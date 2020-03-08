@@ -199,10 +199,31 @@ The rest of stems goes to @code{LEXICON Common}.
 format of the @hyperlink["https://universaldependencies.org/"]{Universal
 Dependencies} project?}
 
-@verbatim{echo "your kazakh sentence" | apertium-destxt -n | \
+@verbatim{
+
+echo "Біздің елде сізге ерекше құрметпен қарайды." | apertium-destxt -n | \
 apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt  | \
-vislcg3 -g apertium-kaz.kaz.rlx  | python3 ../ud-scripts/vislcg3-to-conllu.py}
+vislcg3 -g apertium-kaz.kaz.rlx | python3 ../ud-scripts/vislcg3-to-conllu.py ""
+}
 
 where @tt{vislcg3-to-conllu.py} is
 @hyperlink["https://github.com/taruen/ud-scripts/blob/master/vislcg3-to-conllu.py"]{this}
 script.
+
+And this is the output you should expect for the above command:
+
+@verbatim{
+# sent_id = :1:0
+# text = Біздің елде сізге ерекше құрметпен қарайды.
+1       Біздің    біз   _       prn     pers|p1|pl|gen  2       nmod:poss       _       _
+2       елде      ел    _       n       loc     6       obl     _       _
+3       сізге     сіз   _       prn     pers|p2|sg|frm|dat      6       obl     _       _
+4       ерекше    ерекше        _       adj     _       5       amod    _       _
+5       құрметпен құрмет        _       n       ins     6       obl     _       _
+6       қарайды   қара  _       v       tv|aor|p3|pl    0       root    _       _
+7       .         .     _       sent    _       6       punct   _       _
+}
+
+TODO: Note that there is still one more step required for the output of
+@tt{apertium-kaz} to be compatible with UD: 1. UD POS tags are missing
+2. features in UD have a different format.
