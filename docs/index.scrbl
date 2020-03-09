@@ -199,31 +199,32 @@ The rest of stems goes to @code{LEXICON Common}.
 format of the @hyperlink["https://universaldependencies.org/"]{Universal
 Dependencies} project?}
 
+While you are in the directory @tt{apertium-kaz}, run the following command:
+
 @verbatim{
 
 echo "Біздің елде сізге ерекше құрметпен қарайды." | apertium-destxt -n | \
-apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt  | \
-vislcg3 -g apertium-kaz.kaz.rlx | python3 ../ud-scripts/vislcg3-to-conllu.py ""
+apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt | \
+vislcg3 -g apertium-kaz.kaz.rlx | \
+python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null
+
 }
 
-where @tt{vislcg3-to-conllu.py} is
-@hyperlink["https://github.com/taruen/ud-scripts/blob/master/vislcg3-to-conllu.py"]{this}
-script.
+where @tt{vislcg3-to-conllu.py} and @tt{conllu-feats.py} are scripts you can
+find @hyperlink["https://github.com/taruen/ud-scripts"]{here}.
 
 And this is the output you should expect for the above command:
 
 @verbatim{
 # sent_id = :1:0
 # text = Біздің елде сізге ерекше құрметпен қарайды.
-1       Біздің    біз   _       prn     pers|p1|pl|gen  2       nmod:poss       _       _
-2       елде      ел    _       n       loc     6       obl     _       _
-3       сізге     сіз   _       prn     pers|p2|sg|frm|dat      6       obl     _       _
-4       ерекше    ерекше        _       adj     _       5       amod    _       _
-5       құрметпен құрмет        _       n       ins     6       obl     _       _
-6       қарайды   қара  _       v       tv|aor|p3|pl    0       root    _       _
-7       .         .     _       sent    _       6       punct   _       _
+1	Біздің	біз	NOUN	n	Case=Gen	2	nmod:poss	_	_
+2	елде	ел	NOUN	n	Case=Loc	6	obl	_	_
+3	сізге	сіз	PRON	prn	Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	6	obl	_	_
+4	ерекше	ерекше	ADJ	adj	_	6	amod	_	_
+5	құрметпен	құрметпен	ADV	adv	_	6	X	_	_
+6	қарайды	қара	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
+7	.	.	PUNCT	sent	_	6	punct	_	_
 }
 
-TODO: Note that there is still one more step required for the output of
-@tt{apertium-kaz} to be compatible with UD: 1. UD POS tags are missing
-2. features in UD have a different format.
