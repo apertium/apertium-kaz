@@ -219,12 +219,95 @@ And this is the output you should expect for the above command:
 @verbatim{
 # sent_id = :1:0
 # text = Біздің елде сізге ерекше құрметпен қарайды.
-1       Біздің  біз     NOUN    n       Case=Gen        2       nmod:poss       _       _
+1       Біздің  біз     PRON    prn     Case=Gen|Number=Plur|Person=1|PronType=Prs      2       nmod:poss       _       _
 2       елде    ел      NOUN    n       Case=Loc        6       obl     _       _
 3       сізге   сіз     PRON    prn     Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs  6       obl     _       _
-4       ерекше  ерекше  ADJ     adj     _       6       amod    _       _
-5       құрметпен       құрметпен       ADV     adv     _       6       X       _       _
+4       ерекше  ерекше  ADJ     adj     _       5       amod    _       _
+5       құрметпен       құрмет  NOUN    n       Case=Ins        6       obl     _       _
 6       қарайды қара    VERB    v       Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin    0       root    _       _
 7       .       .       PUNCT   sent    _       6       punct   _       _
 }
 
+Now that we have a way of converting @tt{apertium-kaz}'s output into CoNLL-U
+format, we can take sentences from the UD Kazakh treebank, i.e. the gold
+standard, pass them through @tt{apertium-kaz}, convert them and compare
+@tt{apertium-kaz}'s output against the gold standard. The mismatches we see
+will serve us as a guide for Constrait Grammar rules in
+@tt{apertium-kaz.kaz.rlx}.
+
+For evaluating the output of the CG-based dependency parser you can use
+@hyperlink["https://gist.github.com/IlnarSelimcan/aacde626a02efa243b819d56957576a8"]{this}
+script. It is a relaxed version of the original CoNLL 2018
+@hyperlink["https://universaldependencies.org/conll18/evaluation.html"]{evaluation
+script} -- relaxed in the sense that for the time being we commented out
+otherwise useful checks for cycles in dependency trees and tokenization
+mismatches (Constraint Grammar-based parser we're currently working on, being
+incomplete, makes such errors sometimes).
+
+No guarantees are given at this point as regards the scores obtained in such a
+way, the only thing we can tell is that if we take only the first handful
+sentences from the treebank and evaluate CG parser's output on them, we get
+100% LAS score, as we should, since we know that they were covered by CG rules
+and are perfectly parsed (with the caveat that temporarily we use
+@tt{Makefile.am} and @tt{apertium-kaz.kaz.lexc} taken from
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{apertium@bold{pp}-kaz}).
+
+Also see the @tt{test.rkt} file.
+
+Parsing the first 2 sentences (lines 0-24 in the @tt{puupankki.kaz.conllu}
+file) with CG parser and evaluating its output:
+
+@verbatim{
+apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
+<(head -n 24 texts/puupankki/puupankki.kaz.conllu) \
+<(head -n 24 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
+cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
+python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |     66.67 |    100.00 |     80.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |    100.00 |    100.00 |    100.00 |    100.00
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+UFeats     |     94.44 |     94.44 |     94.44 |     94.44
+AllTags    |     94.44 |     94.44 |     94.44 |     94.44
+Lemmas     |     94.44 |     94.44 |     94.44 |     94.44
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+CLAS       |    100.00 |    100.00 |    100.00 |    100.00
+MLAS       |     92.31 |     92.31 |     92.31 |     92.31
+BLEX       |     92.31 |     92.31 |     92.31 |     92.31
+}
+
+Parsing the first 5 sentences (lines 0-24 in the @tt{puupankki.kaz.conllu}
+file) with CG parser and evaluating its output:
+
+@verbatim{
+apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
+<(head -n 55 texts/puupankki/puupankki.kaz.conllu) \
+<(head -n 55 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
+cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
+python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |     83.33 |    100.00 |     90.91 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |    100.00 |    100.00 |    100.00 |    100.00
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+UFeats     |     97.50 |     97.50 |     97.50 |     97.50
+AllTags    |     97.50 |     97.50 |     97.50 |     97.50
+Lemmas     |     97.50 |     97.50 |     97.50 |     97.50
+UAS        |     77.50 |     77.50 |     77.50 |     77.50
+LAS        |     77.50 |     77.50 |     77.50 |     77.50
+CLAS       |     76.67 |     76.67 |     76.67 |     76.67
+MLAS       |     73.33 |     73.33 |     73.33 |     73.33
+BLEX       |     73.33 |     73.33 |     73.33 |     73.33
+}
