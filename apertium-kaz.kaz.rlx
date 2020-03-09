@@ -677,6 +677,8 @@ REMOVE PersonalPossessives IF
 ##
 # example: in 'балама үйретейін' the 'балама' shouldn't be treated as adj.advl (equivalent), it should be n.px1sq.dat (to my son)
 
+REMOVE Advl IF (1 NOMINAL) ;
+
 # select adj+cop reading at the end of a sentence
  SELECT Sub:1 Cop IF
         (0C A1-Nom)
@@ -1515,6 +1517,8 @@ REMOVE (tv) IF (NOT -1* Acc) ;
 SECTION
 
 "<бұлармен>"i REMOVE V ;
+
+"<біздің>"i SELECT Pron ;
 
 #######
 SECTION  ## mapping rules
