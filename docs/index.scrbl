@@ -219,12 +219,12 @@ And this is the output you should expect for the above command:
 @verbatim{
 # sent_id = :1:0
 # text = Біздің елде сізге ерекше құрметпен қарайды.
-1	Біздің	біз	NOUN	n	Case=Gen	2	nmod:poss	_	_
-2	елде	ел	NOUN	n	Case=Loc	6	obl	_	_
-3	сізге	сіз	PRON	prn	Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	6	obl	_	_
-4	ерекше	ерекше	ADJ	adj	_	6	amod	_	_
-5	құрметпен	құрметпен	ADV	adv	_	6	X	_	_
-6	қарайды	қара	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
-7	.	.	PUNCT	sent	_	6	punct	_	_
+1       Біздің  біз     NOUN    n       Case=Gen        2       nmod:poss       _       _
+2       елде    ел      NOUN    n       Case=Loc        6       obl     _       _
+3       сізге   сіз     PRON    prn     Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs  6       obl     _       _
+4       ерекше  ерекше  ADJ     adj     _       6       amod    _       _
+5       құрметпен       құрметпен       ADV     adv     _       6       X       _       _
+6       қарайды қара    VERB    v       Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin    0       root    _       _
+7       .       .       PUNCT   sent    _       6       punct   _       _
 }
 
