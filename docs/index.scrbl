@@ -283,7 +283,7 @@ MLAS       |     92.31 |     92.31 |     92.31 |     92.31
 BLEX       |     92.31 |     92.31 |     92.31 |     92.31
 }
 
-Parsing the first 5 sentences (lines 0-24 in the @tt{puupankki.kaz.conllu}
+Parsing the first 5 sentences (lines 0-55 in the @tt{puupankki.kaz.conllu}
 file) with CG parser and evaluating its output:
 
 @verbatim{
