@@ -281,7 +281,7 @@ LIST @advcl = @advcl ;
 LIST @aux = @aux ;
 LIST @parataxis = @parataxis ;
 LIST @det = @det ;
-
+LIST @csubj = @csubj ;
 LIST @dep = @dep ;       # Any remaining dependency
 
 
@@ -1514,16 +1514,22 @@ REMOVE Sub:1 ("лы" post) IF (0 (adj)) ;
 
 REMOVE (tv) IF (NOT -1* Acc) ;
 	
-SECTION
+SECTION ## selecting the most frequent analysis
 
 "<бұлармен>"i REMOVE V ;
 
 "<біздің>"i SELECT Pron ;
 
+"<үшін>"i SELECT Post ;
+
+
 #######
 SECTION  ## mapping rules
 #######
 
+
+MAP @advcl (gna_perf) - ("бол") ;
+MAP @advcl (adj) IF (1 ("бол") + VerbalAdverb) ;
 
 MAP @amod (num ord) | (loc attr) | (adj) - (advl);
 
@@ -1532,26 +1538,22 @@ MAP @cop ("бол" v iv) ;
 MAP @punct Sent OR Cm OR Guio ;
 
 MAP @root (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
-
 MAP @root (imp) IF (-1 BOS) (1 Cm) ;
-
 MAP @root FiniteVerb IF (NOT * @root) ;
 
 MAP @nmod:poss (nom) - (px3sp) IF (1* (px3sp)) ;
-
 MAP @nmod:poss (gen) ;
 
 MAP @nsubj (n nom) ;
-
 MAP @nsubj (nom) IF (NOT * (nom)) ;
 
+MAP @csubj (ger nom) ;
+
 MAP @obl Dat | Loc | Ins;
-
+MAP @obl Nom IF (1 Post) ;
+	
 MAP @obj ("<не>") IF (1* (tv)) ;
-
 MAP @obj (acc) ;
-
-MAP @advcl (gna_perf) ;
 
 MAP @aux (vaux) ;
 
@@ -1559,15 +1561,18 @@ MAP @parataxis (v) IF (@1 @root) ;
 
 MAP @det (det) ;
 
+MAP @case Post ;
+
 
 #######
 SECTION  ## disambig rules which rely on mapping tags
 #######
 
 
-SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (NOT <*-1 (@nsubj)) ;
+SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (NOT <*-1 (@nsubj) OR (@csubj)) ;
 SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (pl @nsubj)) ;
-SELECT Sg IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (@nsubj) - (pl));
+SELECT Sg IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (@nsubj) OR (@csubj) - (pl));
+
 
 #######
 SECTION  ## attachement
@@ -1593,6 +1598,10 @@ SETPARENT @obj TO (1* (v)) ;
 
 SETPARENT @aux TO (-1 Participle) ;
 
-SETPARENT @advcl TO (1 (v)) ;
+SETPARENT @advcl TO (1* @root OR @parataxis) ;
 
 SETPARENT @det TO (1* (n)) ;
+
+SETPARENT @case TO (-1 (*)) ;
+
+SETPARENT @cop TO (-1 (*)) ;
