@@ -228,6 +228,8 @@ And this is the output you should expect for the above command:
 7       .       .       PUNCT   sent    _       6       punct   _       _
 }
 
+@margin-note{TODO: One remaining issue are the missing 'SpaceAfter=No' marks. Note that there is a script in ud-scripts for handling that.}
+
 Now that we have a way of converting @tt{apertium-kaz}'s output into CoNLL-U
 format, we can take sentences from the UD Kazakh treebank, i.e. the gold
 standard, pass them through @tt{apertium-kaz}, convert them and compare
