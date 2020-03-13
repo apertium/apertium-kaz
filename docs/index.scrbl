@@ -81,33 +81,33 @@ additional markup). After proof-reading is done, it's likely that the resulting
 stem-list will replace the lexicon currently available in
 @tt{apertium-kaz/apertium-kaz.kaz.lexc} (since the former is a superset of the
 latter). If you want to help out with proof-reading the lexicon agaist the
-aforementioned paper dictionary, contact Ilnar Salimzianov.
+aforementioned paper dictionary, read
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{the documentation}
+and contact Ilnar Salimzianov.
 
 @subsection{Stems and categories}
 
-To extend apertium-kaz with new words, we need to know their lemmas and their
-categories. Below we list the possible categories of words (we ignore the
+To extend @tt{apertium-kaz} with new words, we need to know their lemmas and
+their categories. Below we list the possible categories of words (we ignore the
 so-called closed-class words here, as their likelihood to appear among
 unrecognized words at this stage is negligible, and simplify some of the
 categories of open-class words intentionally).
 
-@tabular[#:style 'boxed
-         #:column-properties '(left left)
+@tabular[#:style 'block
+         #:column-properties '(left)
+	 #:row-properties '(border)
 (list (list @bold{Category} @bold{Comment} @bold{Examples (from @tt{apertium-kaz.kaz.lexc} file)})
-      (list @bold{Nouns} "" "")
-      (list "N1" "common nouns" "алма:алма N1 ; ! “apple”")
-      (list "" "" "жылқы:жылқы N1 ; ! “horse”")
-      (list "N5" "nouns which are loanwords from Russian (and therefore potentially with exceptions in phonology)" "артист:артист N5 ; ! \"\"")
-      (list "" "" "баррель:баррель N5 ; ! \"\"")
-      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if @tt{apertium-kaz} is used as a morphological generator." "")
-      (list "N1-ABBR" "Abbreviated nouns" "ДНҚ:ДНҚ%{а%} N1-ABBR ; ! \"DNA\"")
+      (list @bold{Nouns} 'cont 'cont)
+      (list "N1" "common nouns" "алма:алма N1 ; ! “apple” \n жылқы:жылқы N1 ; ! “horse”")
+      (list "N5" "nouns which are loanwords from Russian (and therefore potentially with exceptions in phonology)" "артист:артист N5 ; ! \"\" \n баррель:баррель N5 ; ! \"\"")
+      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if apertium-kaz is used as a morphological generator." "")
+      (list "N1-ABBR" "Abbreviated nouns. %{а%} indicates that the word ends in a vowel and takes back vowel endings; %{э%} indicates that word ends in a vowel and takes front vowel endings; %{а%}%{с%} shows that the word ends in unvoiced consonant and takes back-vowel endings and so on." "ДНҚ:ДНҚ%{а%} N1-ABBR ; ! \"DNA\"")
       (list "" "" "млн:млн%{а%}%{з%} N1-ABBR ; ! \"million\"")
       (list "" "" "млрд:млрд%{а%}%{с%} N1-ABBR ; ! \"billion\"")
       (list "" "" "км:км%{э%}%{з%} N1-ABBR ; ! \"km\"")
-      (list @bold{Verbs} "" "")
+      (list @bold{Verbs} 'cont 'cont)
       (list "V-TV" "transitive verbs" "")
-      (list "V-IV" "intransitve verbs" "")
-      (list "" "If the verb can take a direct object with -НЫ, then it's not IV; otherwise it is TV" "")
+      (list "V-IV" "intransitve verbs. If the verb can take a direct object with -НЫ, then it's not IV; otherwise it is TV. FIXME?" "")
       (list @bold{Proper nouns} "" "")
       (list "NP-ANT-F" "feminine anthroponyms" @italic{Сәмиға})
       (list "NP-ANT-M" "masculine anthroponyms" @italic{Чыңғыз})
@@ -121,10 +121,10 @@ categories of open-class words intentionally).
       (list "NP-ORG" "organization names" @italic{Қазпошта})
       (list "NP-ORG-LAT" "organization names written in Latin characters" @italic{Microsoft})
       (list "NP-AL" "proper names not belonging to one of the above NP-* classes" @italic{Протон-М})
+      (list @bold{Adjectives and adverbs} 'cont 'cont)
       (list "A1" "adjectives which can modify both nouns (жақсы адам) and verbs (жақсы оқиды)" "")
       (list "A2" "all other adjectives" @italic{көктемгі})
-      (list "ADV" "adverbs" @italic{әбден})
-      (list "" "If you want to add an adverb, first think whether the word is really an adjective that can be used like an adverb. If this is the case, then add it as an A1 adjective." ""))]
+      (list "ADV" "adverbs. \n If you want to add an adverb, first think whether the word is really an adjective that can be used like an adverb. If this is the case, then add it as an A1 adjective." @italic{әбден}))]
 
 Figuring the lemma of an unrecognized word should be straightforward. Except
 for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
