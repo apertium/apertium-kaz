@@ -65,9 +65,11 @@ Uyghur}}
 
 Its source code is available on
 @hyperlink["https://github.com/apertium/apertium-kaz/"]{Github}. The code is
-available under GNU General Public License version 3. Some of the annotated
-data such as the Universal Dependencies treebank is available under Creative
-Commons Attribution-Share Alike License.
+published under @hyperlink["https://www.gnu.org/licenses/gpl-3.0.html"]{GNU
+General Public License} (version 3). Some of the annotated data such as the
+Universal Dependencies treebank is made available under
+@hyperlink["https://creativecommons.org/licenses/by-sa/4.0/"]{Creative Commons
+Attribution-Share Alike License} (version 4.0).
 
 @section{Extending @tt{apertium-kaz}}
 
