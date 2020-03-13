@@ -315,3 +315,32 @@ CLAS       |     76.67 |     76.67 |     76.67 |     76.67
 MLAS       |     73.33 |     73.33 |     73.33 |     73.33
 BLEX       |     73.33 |     73.33 |     73.33 |     73.33
 }
+
+To evaluate the CG parser on entire treebank we'd of course pass entire
+treebank through it:
+
+@verbatim{
+apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
+<(cat texts/puupankki/puupankki.kaz.conllu) \
+<(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
+cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
+python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |     97.62 |     95.89 |     96.75 |
+Sentences  |     92.97 |     95.90 |     94.41 |
+Words      |     94.73 |     95.35 |     95.04 |
+UPOS       |     82.36 |     82.90 |     82.63 |     86.94
+XPOS       |     82.74 |     83.28 |     83.01 |     87.34
+UFeats     |     77.38 |     77.89 |     77.63 |     81.68
+AllTags    |     74.36 |     74.85 |     74.61 |     78.50
+Lemmas     |     85.92 |     86.48 |     86.20 |     90.70
+UAS        |     32.50 |     32.72 |     32.61 |     34.31
+LAS        |     26.39 |     26.56 |     26.48 |     27.86
+CLAS       |     34.39 |     27.15 |     30.35 |     28.80
+MLAS       |     28.17 |     22.25 |     24.86 |     23.59
+BLEX       |     30.99 |     24.47 |     27.34 |     25.95
+}
