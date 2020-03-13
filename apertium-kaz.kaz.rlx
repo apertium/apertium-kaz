@@ -156,7 +156,7 @@ LIST Pass = pass ;
 LIST Caus = caus ;
 LIST Coop = coop ;
 
-LIST Ord = ord ;
+LIST ORD = ord ;
 
 # "Syntactic" tags
 # ================
@@ -192,14 +192,17 @@ LIST Imp = imp ;
 # Specific lexemes 
 # ==========================
 
-LIST Year = "жылғы" "жыл" ; 
+LIST Year = "жылғы"i "жыл"i ; 
 
 LIST Colon = ":" ;
 
-LIST Qayda = "қайда" ;
+LIST Qayda = "қайда"i ;
 
-LIST MONTH = "қаңтар" "ақпан" "наурыз" "сәуір" "мамыр" "маусым" "шілде" "тамыз" "қыркүйек" "қазан" "қараша" "желтоқсан" ;
-        
+LIST MONTH = "қаңтар"i "ақпан"i "наурыз"i "сәуір"i "мамыр"i "маусым"i "шілде"i "тамыз"i "қыркүйек"i "қазан"i "қараша"i "желтоқсан"i ;
+
+LIST QUANTITY = "есе"i "пайыз"i ;
+
+	
 # Noun sets 
 # ==============
 
@@ -484,16 +487,6 @@ REMOVE SUB:1 FinalClitic IF
         (0 A)
         (0 (n acc))
 ;
- "<атты>" SELECT A IF
-                 (1 N)
-;
- "<топырақты>" SELECT A IF
-                      (1 N)
-;
-## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
-## 91 . Өйткені, <...> Әл-Истахри келтірген мәліметтер аса [0]құнды саналады.
-## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
-
 
 # Proper noun or not?
  SELECT Prop IF
@@ -572,6 +565,17 @@ SELECT A IF (0 N + Dat)(1 N );
  ;
 
 
+ REMOVE IJ IF
+        (0 A)
+        (1 N)
+;
+
+# e.g., дұрыс! (<ij>) | дұрыс жерден (<adj>)
+
+
+SELECT Adv + Attr IF (1 NOMINAL) ;
+
+
 # Determiners
 # ===========
 
@@ -602,16 +606,6 @@ REMOVE Det IF
 ;
 ## 176. Орталықта Түркістанның төл тарихына арналған музейлік [0]экспозиция жасақталған.
 ## (!) 184 . Үшінші қабатта «Тәуелсіз [0]Қазақстандағы жаңа Түркістан» атты экспозициялар қойылған.
-
-
-# Select attributive reading of the first noun of the II izafet construct
-# (as Tatar grammars call it)
-# SELECT Attr IF
-#        (0C N OR Prop)
-#        (1 N OR Prop OR Subst)
-#        (1 (px3sp))
-#;
-
 
 # Select nominative reading of the first noun of the II izafet construct
 # (as Tatar grammars call it)
@@ -849,20 +843,17 @@ REMOVE SUB:1 P3 IF
         (NOT 0 Det)
 ;
 
-
- REMOVE IJ IF
-        (0 A)
-        (1 N)
-;
-
-# e.g., дұрыс! (<ij>) | дұрыс жерден (<adj>)
-
-
 ##  172 . Сот арқылы немесе өзгеде осындай құзыреті бар мемлекеттік органдардың
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе
 ## [0]жекелеген заттардың есебінен;
 
 
+# Numerals
+# ========
+
+
+ REMOVE ORD IF (1 QUANTITY) ;
+	
 ###################   TO BE DONE   ####################
 
 
@@ -1100,6 +1091,17 @@ REMOVE SUB:1 P3 IF
         (0 ("<ешкім>"i))
 ;
 ## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
+
+
+ "<атты>" SELECT A IF
+                 (1 N)
+;
+ "<топырақты>" SELECT A IF
+                      (1 N)
+;
+## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
+## 91 . Өйткені, <...> Әл-Истахри келтірген мәліметтер аса [0]құнды саналады.
+## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
 
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
@@ -1484,7 +1486,7 @@ REMOVE Abl IF
 ;
 
 # ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
-SELECT Ord IF (-1 Prop) ; 
+SELECT ORD IF (-1 Prop) ; 
 
 SELECT Imp IF (-1 BOS) ;
 
@@ -1513,14 +1515,21 @@ REMOVE (advl) IF (1 (n)) ;
 REMOVE Sub:1 ("лы" post) IF (0 (adj)) ;
 
 REMOVE (tv) IF (NOT -1* Acc) ;
-	
+
+"<есе>"i SELECT N IF (-1 Num) ;
+
+#######
 SECTION ## selecting the most frequent analysis
+#######
+
 
 "<бұлармен>"i REMOVE V ;
 
 "<біздің>"i SELECT Pron ;
 
 "<үшін>"i SELECT Post ;
+
+"<өсті>"i REMOVE ("өсті") ;
 
 
 #######
