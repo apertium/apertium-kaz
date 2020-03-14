@@ -344,3 +344,31 @@ CLAS       |     34.39 |     27.15 |     30.35 |     28.80
 MLAS       |     28.17 |     22.25 |     24.86 |     23.59
 BLEX       |     30.99 |     24.47 |     27.34 |     25.95
 }
+
+Adding the statistical
+@hyperlink["https://sourceforge.net/p/apertium/svn/HEAD/tree/branches/kaz-tagger/"]{kaz-tagger}
+into the pipeline improves results, so this will be the default pipeline:
+
+@verbatim{
+apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose <(cat texts/puupankki/puupankki.kaz.conllu) <(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-morph | \
+cg-conv -la | apertium-retxt | python3 ~/src/sourceforge-apertium/branches/kaz-tagger/kaz_tagger.py | vislcg3 -g apertium-kaz.kaz.rlx | \
+python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |     97.67 |     96.00 |     96.83 |
+Sentences  |     92.97 |     95.90 |     94.41 |
+Words      |     96.87 |     95.66 |     96.26 |
+UPOS       |     82.67 |     81.64 |     82.15 |     85.34
+XPOS       |     82.86 |     81.83 |     82.34 |     85.54
+UFeats     |     80.36 |     79.36 |     79.86 |     82.96
+AllTags    |     77.25 |     76.29 |     76.77 |     79.75
+Lemmas     |     92.09 |     90.94 |     91.51 |     95.07
+UAS        |     36.74 |     36.28 |     36.51 |     37.92
+LAS        |     28.53 |     28.17 |     28.35 |     29.45
+CLAS       |     33.77 |     29.93 |     31.73 |     31.60
+MLAS       |     29.84 |     26.45 |     28.04 |     27.92
+BLEX       |     32.76 |     29.03 |     30.79 |     30.66
+}
