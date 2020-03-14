@@ -1103,6 +1103,8 @@ REMOVE SUB:1 P3 IF
 ## 91 . Өйткені, <...> Әл-Истахри келтірген мәліметтер аса [0]құнды саналады.
 ## 184 . Үшінші қабатта «Тәуелсіз Қазақстандағы жаңа Түркістан» [0]атты экспозициялар қойылған.
 
+"<сәлем"i SELECT Interj IF (-1 BOS) (1 EOS) ;
+
 ###################   TEMPORARY HACKS TO GET THE STORY TRANSLATED   ####################
 ###################   SOME SHOULD BE REWRITTEN LATER                ####################
 
@@ -1540,7 +1542,7 @@ SECTION  ## mapping rules
 MAP @advcl (gna_perf) - ("бол") ;
 MAP @advcl (adj) IF (1 ("бол") + VerbalAdverb) ;
 
-MAP @amod (num ord) | (loc attr) | (adj) - (advl);
+MAP @amod (num ord) | (loc attr) | (adj) - (advl) | Adv + Attr ;
 
 MAP @cop ("бол" v iv) ;
 
