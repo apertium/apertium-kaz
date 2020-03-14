@@ -6,7 +6,7 @@
 ; https://taruen.github.io/apertiumpp/apertiumpp/ gives info on how to install
 ; it.
 
-(provide kaz-morph kaz-tagger kaz-tagger-deterministic kaz-disam)
+(provide kaz-morph kaz-tagger kaz-tagger-deterministic kaz-disam kaz-disam-vislcg3)
 
 (require pkg/lib
          rackunit
@@ -34,3 +34,8 @@
   (parameterize ([current-directory (pkg-directory "apertium-kaz")])
     (rash
      "echo (values s) | apertium -n -d . kaz-disam | cg-conv -lcA")))
+
+(define (kaz-disam-vislcg3 s)
+  (parameterize ([current-directory (pkg-directory "apertium-kaz")])
+    (rash
+     "echo (values s) | apertium -n -d . kaz-disam")))

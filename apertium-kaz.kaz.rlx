@@ -1600,6 +1600,8 @@ SETPARENT (@nmod:poss gen) TO (1* (n)) ;
 SETPARENT @amod + ("[0-9]+"r) TO (2 (n px3sp)) ;
 SETPARENT @amod + (loc attr) TO (1* (n)) ;
 SETPARENT (@amod adj) TO (1* (n)) ;
+SETPARENT (@amod adv attr) TO (1* (n)) ;
+
 
 SETPARENT @nsubj TO (1* ("соғыс")) ;
 
