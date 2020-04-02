@@ -285,6 +285,7 @@ LIST @aux = @aux ;
 LIST @parataxis = @parataxis ;
 LIST @det = @det ;
 LIST @csubj = @csubj ;
+LIST @nummod = @nummod ;
 LIST @dep = @dep ;       # Any remaining dependency
 
 
@@ -852,8 +853,12 @@ REMOVE SUB:1 P3 IF
 # ========
 
 
- REMOVE ORD IF (1 QUANTITY) ;
-	
+# ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
+SELECT ORD IF (-1 Prop) ; 
+
+REMOVE ORD IF (1 QUANTITY) ;
+
+
 ###################   TO BE DONE   ####################
 
 
@@ -877,8 +882,6 @@ REMOVE SUB:1 P3 IF
 # Wordform/lemma-specific rules   # Adding new stuff here is discouraged.
 # =============================   # Try to generalize, if possible, existing
                                   # rules.
-
-
 
 #
  "<өте>" SELECT Adv IF (1 A) ;
@@ -1487,9 +1490,6 @@ REMOVE Abl IF
 	(0 ("жаңадан"))
 ;
 
-# ^Еуровидение/Еуровидение<np><al><nom>$ *^2010/2010<num>/2010<num><ord>$* ^ән/ән<n><nom>$ ^конкурсы/конкурс<n><px3sp><nom>$
-SELECT ORD IF (-1 Prop) ; 
-
 SELECT Imp IF (-1 BOS) ;
 
 "<не>"i SELECT (cnjcoo) IF (1* Cm LINK 1* ("<не>"i)) ; 
@@ -1519,6 +1519,9 @@ REMOVE Sub:1 ("лы" post) IF (0 (adj)) ;
 REMOVE (tv) IF (NOT -1* Acc) ;
 
 "<есе>"i SELECT N IF (-1 Num) ;
+
+"<жылда>"i SELECT N IF (-1 Num) ;
+
 
 #######
 SECTION ## selecting the most frequent analysis
@@ -1555,7 +1558,7 @@ MAP @root FiniteVerb IF (NOT * @root) ;
 MAP @nmod:poss (nom) - (px3sp) IF (1* (px3sp)) ;
 MAP @nmod:poss (gen) ;
 
-MAP @nsubj (n nom) ;
+MAP @nsubj (n nom) IF (NOT -1* (@nsubj nom)) ;
 MAP @nsubj (nom) IF (NOT * (nom)) ;
 
 MAP @csubj (ger nom) ;
@@ -1565,7 +1568,8 @@ MAP @obl Nom IF (1 Post) ;
 	
 MAP @obj ("<не>") IF (1* (tv)) ;
 MAP @obj (acc) ;
-
+MAP @obj (nom) IF (-1* (nom)) ;
+	
 MAP @aux (vaux) ;
 
 MAP @parataxis (v) IF (@1 @root) ;
@@ -1573,6 +1577,8 @@ MAP @parataxis (v) IF (@1 @root) ;
 MAP @det (det) ;
 
 MAP @case Post ;
+
+MAP @nummod (num) - (ord) ;
 
 
 #######
@@ -1618,3 +1624,9 @@ SETPARENT @det TO (1* (n)) ;
 SETPARENT @case TO (-1 (*)) ;
 
 SETPARENT @cop TO (-1 (*)) ;
+
+SETPARENT @nummod TO (1* NOMINAL) ;
+
+SETCHILD (gna_perf) TO (-1 @obl) ;
+
+SETCHILD (ger) TO (-1* @obl) ;
