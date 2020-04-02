@@ -166,6 +166,9 @@ passive of ‹тарт›, and ‹тартыс› is cooperative).}]
 
 @subsection{Lexicons}
 
+@margin-note{This division of the lexicon will slightly
+@hyperlink["https://github.com/apertium/apertium-kaz/issues/15"]{change}.}
+
 At the end of @code{apertium-kaz.kaz.lexc}, there are five lexicons:
 
 @itemize[
@@ -371,4 +374,92 @@ LAS        |     28.53 |     28.17 |     28.35 |     29.45
 CLAS       |     33.77 |     29.93 |     31.73 |     31.60
 MLAS       |     29.84 |     26.45 |     28.04 |     27.92
 BLEX       |     32.76 |     29.03 |     30.79 |     30.66
+}
+
+@section{Annotated data}
+
+Note that the directory
+@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts"]{@tt{apertium-kaz/texts/}}
+contains morphologically disambiguated texts, some of which are syntactically
+annotated in the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies} framework.
+
+Annotation is done in the files ending in @tt{tagged.txt} or simply @tt{.txt}.
+
+In those text files, dependency labels are the tags starting with @"@" symbol,
+e.g.:
+
+@verbatim{"абонемент" n nom @"@"nmod:poss #1->2}
+
+@tt{#1->2} means that the token number 2 is the head of the token number 1.
+
+When annotating, working on text files directly is one option, but it makes
+more sense to use a special tool such as
+@hyperlink["http://wiki.apertium.org/wiki/UD_Annotatrix"]{UD Annotatrix}, where
+you get to see the parse trees you're building/correcting.
+
+@margin-note{`Puupankki' is Finnish for `treebank'.}
+
+The folder
+@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts/puupankki"]{@tt{apertium-kaz/texts/puupankki}}
+is the result of automatic conversion of the aforementioned text files into
+Universal Dependencies' CoNNL-U format.
+
+``Currently the treebank is partially compatible with UD v2.0 standard, with
+the choice of head direction in some constructions being one of the major
+discrepancies. The standard requires coordination and some compounds
+(e.g. names) to be left-headed, while the treebank developers believe that in
+Kazakh (and other Turkic languages) such constructions should be right-headed
+due to the placement of morphological locus, which is exclusive to the last
+(rightmost) element of such constructions. So far this issue has been resolved
+by an intermediate conversion step, where initially the annotation is performed
+in a right-headed fashion, and at the time of release a special script fl ips
+the heads of the constructions in question.'' (Tyers et al. 2017)
+
+Thus, in @tt{.txt} files coordination and compounds might be right-headed,
+whereas in the
+@hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{puupankki.kaz.conllu}}
+they are left-headed.
+
+The exact command for converting .txt files in CG3 format ton CoNLL-U format is
+as follows:
+
+TODO
+
+More information about the Kazakh UD treebank and about the UD Annotatrix you
+can find in the following papers.
+
+  article{tyers2017assessment,
+  title={An assessment of Universal Dependency annotation guidelines for Turkic languages},
+  author={Tyers, Francis and Washington, Jonathan and {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i} and Makazhanov, Aibek},
+  year={2017},
+  publisher={Tatarstan Academy of Sciences}
+}
+
+  inproceedings{tyers_tl2015,
+  author = {Tyers, Francis M. and Washington, Jonathan N.},
+  title = {Towards a Free/Open-source Universal-dependency Treebank for Kazakh},
+  booktitle = {3rd International Conference on Turkic Languages Processing,
+  (TurkLang 2015)},
+  pages = {276--289},
+  year = {2015},
+}
+
+  inproceedings{makazhan_tl2015,
+  author = {Makazhanov, Aibek and
+  Sultangazina, Aitolkyn and
+  Makhambetov, Olzhas and
+  Yessenbayev, Zhandos},
+  title = {Syntactic Annotation of Kazakh: Following the Universal Dependencies Guidelines. A report},
+  booktitle = {3rd International Conference on Turkic Languages Processing,
+  (TurkLang 2015)},
+  pages = {338--350},
+  year = {2015},
+}
+
+  inproceedings{tyers2017ud,
+  title={UD Annotatrix: An annotation tool for universal dependencies},
+  author={Tyers, Francis and Sheyanova, Mariya and Washington, Jonathan},
+  booktitle={Proceedings of the 16th International Workshop on Treebanks and Linguistic Theories},
+  pages={10--17},
+  year={2017}
 }
