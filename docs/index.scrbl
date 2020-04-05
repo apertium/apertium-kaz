@@ -412,7 +412,7 @@ Kazakh (and other Turkic languages) such constructions should be right-headed
 due to the placement of morphological locus, which is exclusive to the last
 (rightmost) element of such constructions. So far this issue has been resolved
 by an intermediate conversion step, where initially the annotation is performed
-in a right-headed fashion, and at the time of release a special script fl ips
+in a right-headed fashion, and at the time of release a special script flips
 the heads of the constructions in question.'' (Tyers et al. 2017)
 
 Thus, in @tt{.txt} files coordination and compounds might be right-headed,
