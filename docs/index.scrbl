@@ -200,9 +200,10 @@ The rest of stems goes to @code{LEXICON Common}.
 
 @section{A Constraint Grammar-based Universal Dependencies parser for Kazakh}
 
-@subsection{How can I convert @tt{apertium-kaz}'s output into the CoNLL-U
-format of the @hyperlink["https://universaldependencies.org/"]{Universal
-Dependencies} project?}
+@subsection{How can I convert @tt{apertium-kaz}'s output into the
+@hyperlink["https://universaldependencies.org/format.html"]{CoNLL-U} format of
+the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies}
+project?}
 
 While you are in the directory @tt{apertium-kaz}, run the following command:
 
@@ -212,28 +213,30 @@ echo "Біздің елде сізге ерекше құрметпен қара�
 apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt | \
 vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
+python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null
 
 }
 
-where @tt{vislcg3-to-conllu.py} and @tt{conllu-feats.py} are scripts you can
-find @hyperlink["https://github.com/taruen/ud-scripts"]{here}.
+where @tt{vislcg3-to-conllu.py}, @tt{conllu-feats.py} and
+@tt{conllu-nospaceafter.py} are scripts you can find
+@hyperlink["https://github.com/taruen/ud-scripts"]{here}.
 
 And this is the output you should expect for the above command:
 
 @verbatim{
+
 # sent_id = :1:0
 # text = Біздің елде сізге ерекше құрметпен қарайды.
-1       Біздің  біз     PRON    prn     Case=Gen|Number=Plur|Person=1|PronType=Prs      2       nmod:poss       _       _
-2       елде    ел      NOUN    n       Case=Loc        6       obl     _       _
-3       сізге   сіз     PRON    prn     Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs  6       obl     _       _
-4       ерекше  ерекше  ADJ     adj     _       5       amod    _       _
-5       құрметпен       құрмет  NOUN    n       Case=Ins        6       obl     _       _
-6       қарайды қара    VERB    v       Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin    0       root    _       _
-7       .       .       PUNCT   sent    _       6       punct   _       _
+1	Біздің	біз	PRON	prn	Case=Gen|Number=Plur|Person=1|PronType=Prs	2	nmod:poss	_	_
+2	елде	ел	NOUN	n	Case=Loc	6	obl	_	_
+3	сізге	сіз	PRON	prn	Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	6	obl	_	_
+4	ерекше	ерекше	ADJ	adj	_	5	amod	_	_
+5	құрметпен	құрмет	NOUN	n	Case=Ins	6	obl	_	_
+6	қарайды	қара	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	sent	_	6	punct	_	_
+          
 }
-
-@margin-note{TODO: One remaining issue are the missing 'SpaceAfter=No' marks. Note that there is a script in ud-scripts for handling that.}
 
 Now that we have a way of converting @tt{apertium-kaz}'s output into CoNLL-U
 format, we can take sentences from the UD Kazakh treebank, i.e. the gold
@@ -271,12 +274,13 @@ apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
 cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
+python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
-Sentences  |     66.67 |    100.00 |     80.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
 Words      |    100.00 |    100.00 |    100.00 |
 UPOS       |    100.00 |    100.00 |    100.00 |    100.00
 XPOS       |    100.00 |    100.00 |    100.00 |    100.00
@@ -288,24 +292,27 @@ LAS        |    100.00 |    100.00 |    100.00 |    100.00
 CLAS       |    100.00 |    100.00 |    100.00 |    100.00
 MLAS       |     92.31 |     92.31 |     92.31 |     92.31
 BLEX       |     92.31 |     92.31 |     92.31 |     92.31
+
 }
 
 Parsing the first 5 sentences (lines 0-55 in the @tt{puupankki.kaz.conllu}
 file) with CG parser and evaluating its output:
 
 @verbatim{
+
 apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
 <(head -n 55 texts/puupankki/puupankki.kaz.conllu) \
 <(head -n 55 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
 cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
+python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
-Sentences  |     83.33 |    100.00 |     90.91 |
+Sentences  |    100.00 |    100.00 |    100.00 |
 Words      |    100.00 |    100.00 |    100.00 |
 UPOS       |    100.00 |    100.00 |    100.00 |    100.00
 XPOS       |    100.00 |    100.00 |    100.00 |    100.00
@@ -317,6 +324,8 @@ LAS        |     77.50 |     77.50 |     77.50 |     77.50
 CLAS       |     76.67 |     76.67 |     76.67 |     76.67
 MLAS       |     73.33 |     73.33 |     73.33 |     73.33
 BLEX       |     73.33 |     73.33 |     73.33 |     73.33
+
+
 }
 
 To evaluate the CG parser on entire treebank we'd of course pass entire
@@ -329,51 +338,55 @@ apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
 cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
+python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
-Tokens     |     97.62 |     95.89 |     96.75 |
-Sentences  |     92.97 |     95.90 |     94.41 |
-Words      |     94.73 |     95.35 |     95.04 |
-UPOS       |     82.36 |     82.90 |     82.63 |     86.94
-XPOS       |     82.74 |     83.28 |     83.01 |     87.34
-UFeats     |     77.38 |     77.89 |     77.63 |     81.68
-AllTags    |     74.36 |     74.85 |     74.61 |     78.50
-Lemmas     |     85.92 |     86.48 |     86.20 |     90.70
-UAS        |     32.50 |     32.72 |     32.61 |     34.31
-LAS        |     26.39 |     26.56 |     26.48 |     27.86
-CLAS       |     34.39 |     27.15 |     30.35 |     28.80
-MLAS       |     28.17 |     22.25 |     24.86 |     23.59
-BLEX       |     30.99 |     24.47 |     27.34 |     25.95
+Tokens     |     97.67 |     96.00 |     96.83 |
+Sentences  |     93.06 |     95.90 |     94.45 |
+Words      |     94.78 |     95.45 |     95.11 |
+UPOS       |     82.39 |     82.97 |     82.68 |     86.93
+XPOS       |     82.76 |     83.34 |     83.05 |     87.31
+UFeats     |     78.69 |     79.25 |     78.97 |     83.03
+AllTags    |     75.65 |     76.19 |     75.92 |     79.82
+Lemmas     |     85.94 |     86.54 |     86.24 |     90.67
+UAS        |     34.95 |     35.20 |     35.08 |     36.88
+LAS        |     27.38 |     27.57 |     27.47 |     28.88
+CLAS       |     33.80 |     28.84 |     31.12 |     30.54
+MLAS       |     28.24 |     24.10 |     26.01 |     25.52
+BLEX       |     30.50 |     26.02 |     28.08 |     27.56
+
 }
 
 Adding the statistical
 @hyperlink["https://sourceforge.net/p/apertium/svn/HEAD/tree/branches/kaz-tagger/"]{kaz-tagger}
-into the pipeline improves results, so this will be the default pipeline:
+into the pipeline improves results, so this should be your default pipeline:
 
 @verbatim{
 apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose <(cat texts/puupankki/puupankki.kaz.conllu) <(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-morph | \
 cg-conv -la | apertium-retxt | python3 ~/src/sourceforge-apertium/branches/kaz-tagger/kaz_tagger.py | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null)
+python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
+python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
 Tokens     |     97.67 |     96.00 |     96.83 |
-Sentences  |     92.97 |     95.90 |     94.41 |
+Sentences  |     93.06 |     95.90 |     94.45 |
 Words      |     96.87 |     95.66 |     96.26 |
 UPOS       |     82.67 |     81.64 |     82.15 |     85.34
 XPOS       |     82.86 |     81.83 |     82.34 |     85.54
 UFeats     |     80.36 |     79.36 |     79.86 |     82.96
 AllTags    |     77.25 |     76.29 |     76.77 |     79.75
-Lemmas     |     92.09 |     90.94 |     91.51 |     95.07
-UAS        |     36.74 |     36.28 |     36.51 |     37.92
-LAS        |     28.53 |     28.17 |     28.35 |     29.45
-CLAS       |     33.77 |     29.93 |     31.73 |     31.60
-MLAS       |     29.84 |     26.45 |     28.04 |     27.92
-BLEX       |     32.76 |     29.03 |     30.79 |     30.66
+Lemmas     |     92.10 |     90.95 |     91.52 |     95.08
+UAS        |     37.10 |     36.64 |     36.87 |     38.30
+LAS        |     28.69 |     28.33 |     28.51 |     29.61
+CLAS       |     34.02 |     30.15 |     31.97 |     31.84
+MLAS       |     30.10 |     26.67 |     28.28 |     28.16
+BLEX       |     33.02 |     29.26 |     31.03 |     30.89
+
 }
 
 @section{Annotated data}
