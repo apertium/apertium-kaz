@@ -126,6 +126,12 @@ categories of open-class words intentionally).
       (list "A2" "all other adjectives" @italic{көктемгі})
       (list "ADV" "adverbs. \n If you want to add an adverb, first think whether the word is really an adjective that can be used like an adverb. If this is the case, then add it as an A1 adjective." @italic{әбден}))]
 
+@subsubsection{Open question}
+
+Abbreviated toponyms like @italic{АҚШ} should they be <abbr> or <np><top> or
+something else? In puupankki АҚШ is tagged as np top, but that might be only
+because it's NP-TOP in kaz.lexc.
+
 Figuring the lemma of an unrecognized word should be straightforward. Except
 for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
 imperative forms such as @tt{бар}, @tt{кел}, @tt{ал} etc (i.e. not @tt{бару},
