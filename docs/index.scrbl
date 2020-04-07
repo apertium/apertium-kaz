@@ -128,9 +128,19 @@ categories of open-class words intentionally).
 
 @subsubsection{Open question}
 
-Abbreviated toponyms like @italic{АҚШ} should they be <abbr> or <np><top> or
-something else? In puupankki АҚШ is tagged as np top, but that might be only
-because it's NP-TOP in kaz.lexc.
+@itemize[
+
+@item{Abbreviated toponyms like @italic{АҚШ} or @italic{БҰҰ} should they be <abbr> or
+<np><top> or something else? In puupankki АҚШ is tagged as np top, but that
+might be only because it's NP-TOP in kaz.lexc.}
+
+@item{диалогты gets the err_orth tag, that shouldn't happen imo}
+
+@item{әрі --- post or adv}
+
+@item{do stems of қору высыхать and қору строить differ in kazakh? In tatar they do.}
+
+]
 
 Figuring the lemma of an unrecognized word should be straightforward. Except
 for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
