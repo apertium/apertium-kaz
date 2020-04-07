@@ -134,11 +134,23 @@ categories of open-class words intentionally).
 <np><top> or something else? In puupankki АҚШ is tagged as np top, but that
 might be only because it's NP-TOP in kaz.lexc.}
 
+@item{Maybe a better solution would be to make abbr into a secondary tag? For
+one this will make it less confusing, АКШ will become np top abbr, БҰҰ will
+become np org abbr, and млрд will become num abbr. The latter is currently
+tagged as simply abbr, which is not very helpful for dep. parsing I guess}
+
 @item{диалогты gets the err_orth tag, that shouldn't happen imo}
 
 @item{әрі --- post or adv}
 
 @item{do stems of қору высыхать and қору строить differ in kazakh? In tatar they do.}
+
+@item{what to do with -liq-nat forms? in pp-kaz, I analyse them as both noun and adjective.}
+
+@item{freaking frequent қамтамасыз ет and other phrasal verbs like that? To
+split or not to split, that is the question.}
+
+
 
 ]
 
