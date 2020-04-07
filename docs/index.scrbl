@@ -430,6 +430,20 @@ BLEX       |     33.02 |     29.26 |     31.03 |     30.89
 
 }
 
+To parse (hand-)tagged texts with udpipe:
+
+@verbatim{
+
+cat <tagged.txt> | python3 ../ud-scripts/vislcg3-to-conllu-nodeps.py "<source>"
+2> /dev/null | python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2>
+/dev/null | udpipe --parse kaz.udpipe > /tmp/out
+
+}
+
+A minor question is whether features being in connlu format or not plays any
+role (assuming that they are in the same format when training udpipe and when
+using it, of course).
+
 @section{Annotated data}
 
 Note that the directory
