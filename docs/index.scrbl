@@ -137,7 +137,10 @@ might be only because it's NP-TOP in kaz.lexc.}
 @item{Maybe a better solution would be to make abbr into a secondary tag? For
 one this will make it less confusing, АКШ will become np top abbr, БҰҰ will
 become np org abbr, and млрд will become num abbr. The latter is currently
-tagged as simply abbr, which is not very helpful for dep. parsing I guess}
+tagged as simply abbr, which is not very helpful for dep. parsing I guess.}
+
+@item{On a related not, мың, миллион and миллиард are added both as noun and as
+a numeral. That's ok imo, just to confirm.}
 
 @item{диалогты gets the err_orth tag, that shouldn't happen imo}
 
@@ -150,7 +153,17 @@ tagged as simply abbr, which is not very helpful for dep. parsing I guess}
 @item{freaking frequent қамтамасыз ет and other phrasal verbs like that? To
 split or not to split, that is the question.}
 
+@item{is де transitive?}
 
+@item{айтуынша cnjadv vs v.tv.ger.px3sp.equ} 
+
+@item{suggestion to work strictly through pull requests}
+
+@item{әрі қарай}
+
+@item{өткен in атап өткен жөн.}
+
+@item{ал in сатып алу vaux?}
 
 ]
 
