@@ -1,7 +1,18 @@
 #lang scribble/manual
 
-@title[#:version "0.1.0"]{@tt{APERTIUM-KAZ}: A MORPHOLOGICAL TRANSDUCER AND
- DISAMBIGUATOR FOR KAZAKH}
+@require[scribble/core
+         scribble/html-properties
+         scriblib/footnote]
+
+@(define strikethrough
+  (make-style "strikethrough"
+    (list (make-css-addition "strikethrough.css"))))
+
+@(define (sout . words)
+   (elem #:style strikethrough words))
+
+@title[#:version "0.1.0"]{@tt{Apertium-kaz}: a Morphological Transducer and
+Disambiguator for Kazakh}
 
 @margin-note{WARNING: this is an early draft.}
 
@@ -9,14 +20,14 @@ What follows is the documentation for @tt{apertium-kaz} -- a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
 written, or, rather, assembled from various writings on
 @hyperlink["https://wiki.apertium.org"]{Apertium's wiki} and then extended with
-more details by @hyperlink["http://github.com/IlnarSelimcan"]{selimcan} on
+more details by @hyperlink["http://github.com/IlnarSelimcan"]{IFS} on
 September-October 2018 for members of the `Deep Learning for Sequential Models
 in Natural Language Processing with Applications to Kazakh'
 (@italic{dlsmnlpak}) research group at Nazarbayev University and
 elsewhere. That being said, I hope that it will be useful for anyone who uses
 @code{apertium-kaz} and maybe wants or needs to extend it with more stems or
 other features. Most of the things said in this guide should be applicable to
-Apertium's transducers for other Turkic languages as well.
+Apertium's transducers/disambiguators for other Turkic languages as well.
 
 @tt{Apertium-kaz} is a morphological transducer and disambiguator for Kazakh,
 currently under development. It is intended to be compatible with transducers
@@ -33,7 +44,8 @@ the following translators (at various stages of development):
 @item{@hyperlink["https://github.com/apertium/apertium-kaz-rus"]{Kazakh and
   Russian}}
 
-@item{@hyperlink["https://github.com/apertium/apertium-kaz-kir"]{Kazakh and Kyrgyz}}
+@item{@hyperlink["https://github.com/apertium/apertium-kaz-kir"]{Kazakh and
+Kyrgyz}}
 
 @item{@hyperlink["https://github.com/apertium/apertium-kaz-kaa"]{Kazakh and
   Karakalpak}}
@@ -50,7 +62,8 @@ Turkish}}
 @item{@hyperlink["https://github.com/apertium/apertium-kaz-tyv"]{Kazakh and
 Tuvan}}
 
-@item{@hyperlink["https://github.com/apertium/apertium-nog-kaz"]{Nogai and Kazakh}}
+@item{@hyperlink["https://github.com/apertium/apertium-nog-kaz"]{Nogai and
+Kazakh}}
 
 @item{@hyperlink["https://github.com/apertium/apertium-kaz-sah"]{Kazakh and
 Sakha}}
@@ -67,9 +80,18 @@ Its source code is available on
 @hyperlink["https://github.com/apertium/apertium-kaz/"]{Github}. The code is
 published under @hyperlink["https://www.gnu.org/licenses/gpl-3.0.html"]{GNU
 General Public License} (version 3). Some of the annotated data such as the
-Universal Dependencies treebank is made available under
+Universal Dependencies treebank is made available under the
 @hyperlink["https://creativecommons.org/licenses/by-sa/4.0/"]{Creative Commons
-Attribution-Share Alike License} (version 4.0).
+Attribution-Share Alike 4.0 International} license.
+
+@section{Installation}
+
+For detailed instructions on installing Apertium Core and language data for it,
+see the @hyperlink["https://wiki.apertium.org/wiki/Installation"]{Installation}
+page on Apertium's wiki.
+
+In short, to give an example, assuming that you are using a Debian-based
+GNU/Linux distribution, 
 
 @section{Extending @tt{apertium-kaz}}
 
@@ -151,7 +173,8 @@ a numeral. That's ok imo, just to confirm.}
 @item{what to do with -liq-nat forms? in pp-kaz, I analyse them as both noun and adjective.}
 
 @item{freaking frequent қамтамасыз ет and other phrasal verbs like that? To
-split or not to split, that is the question.}
+split or not to split, that is the question. Also, қол қой. Well, anything
+labeled as `dep', in general.}
 
 @item{is де transitive?}
 
@@ -488,6 +511,11 @@ whereas in the
 @hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{puupankki.kaz.conllu}}
 they are left-headed.
 
+TODO discuss The right vs left headedness of conjunctions again: @italic{1
+Қазақстанның 2 табыстары 3 мен 4 жетістіктерін ...} What should be the head of
+Қазақстанның -- табыстары or жетістіктерін? If the latter, then we get a
+non-projective tree. That is probably undesirable.
+
 The exact command for converting .txt files in CG3 format ton CoNLL-U format is
 as follows:
 
@@ -531,3 +559,62 @@ can find in the following papers.
   pages={10--17},
   year={2017}
 }
+
+Open questions about Kazakh UD:
+
+obl vs iobj
+
+sometimes бол<cop> is root, sometimes it isn't
+
+numeral compouns right headed (as currently) or left-headed?
+
+diff between acl vs acl:relcl?
+
+@itemlist[
+
+@item{One seems to be used for clauses where the subject is
+different from the main clause while the other for cases where the subject is
+shared, but not in a consistent way. There is also acl:poss.}
+
+@item{``This relation may be tagged with acl:relcl in the future, as it is the
+way in which Turkic languages do relative clauses.''
+(https://universaldependencies.org/kk/dep/acl.html)}
+
+@item{Side-note: ``қандай түрде болса да'' example on the above page looks
+wrong.}
+
+]
+
+хабаралсушылар nmod vs clause
+
+да <conj> vs postadv
+
+Таяу күндерде аталған қаражат өңірлік қорларға аударылып, әрі қарай ол адамдардың есепшоттарына түседі. <= advcl vs coordination
+
+Еуровидение 2010 ән конкурсы
+
+20 есе өсті
+
+@sout{NB that `бас' in Бас прокуратураның is `compound' dependent of
+`прокуратураның', whereas in nominal constructions with possessives it would be
+`nmod:poss', e.g. `бас -> (nmod:poss) ауыруы'}
+
+No, that's not always the case (i.e. the mechanical test for a possessive affix
+does not always work): жұсыс in жұмыс сапарының is also tagged as compound,
+although the head word in this case does have a possessive suffix.
+
+Тұрғын үй кешені 487 пәтерден тұрады. тұрады root no?
+
+In reported speech, we seem to label the speech verb as root to which the
+clause is attached as ccomp @bold{even if the speech verb clause is a the the
+end of the sentence}, which is at odds with the ud2 annotation guidelines.
+See akorda-random.tagged.txt:41:711 and guidelines on `parataxis' label.
+
+TODO make sure that деп is treated the way it is said to be treated in
+guidelines/papers.
+
+сондықтан at the beginning of a sentence -- cc or mark?
+
+Verbal nouns/gers (in my opinioun unnecessarily) lexicalised as nouns, should
+they be kept as they are. Labeling verbs as nsubj would be against the rules
+either.
