@@ -36,7 +36,8 @@ the following translators (at various stages of development):
 
 @itemize[
 
-@item{@hyperlink["https://github.com/apertium/apertium-kaz-tat"]{Kazakh and Tatar}}
+@item{@hyperlink["https://github.com/apertium/apertium-kaz-tat"]{Kazakh and
+Tatar}}
 
 @item{@hyperlink["https://github.com/apertium/apertium-eng-kaz"]{English and
   Kazakh}}
@@ -90,8 +91,16 @@ For detailed instructions on installing Apertium Core and language data for it,
 see the @hyperlink["https://wiki.apertium.org/wiki/Installation"]{Installation}
 page on Apertium's wiki.
 
-In short, to give an example, assuming that you are using a Debian-based
-GNU/Linux distribution, 
+To give you an example, assuming that you are using a Debian-based GNU/Linux
+distribution (note that you can use any other distro and still get pre-compiled
+binary packages), you should run the following:
+
+@verbatim{
+wget https://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+sudo apt-get -f install apertium-all-dev
+}
+
+@section{Modes}
 
 @section{Extending @tt{apertium-kaz}}
 
@@ -618,3 +627,37 @@ guidelines/papers.
 Verbal nouns/gers (in my opinioun unnecessarily) lexicalised as nouns, should
 they be kept as they are. Labeling verbs as nsubj would be against the rules
 either.
+
+akorda-random.tagged.txt:115:2056
+
+Орталық Азия once is compound, once amod
+
+akorda-random.tagged.txt:131:2334 why acl and not just amod?
+
+өтеп бара жатқан -- өтеп main, бара and жатқан aux of it?
+
+auxiliaries : advcl vs dep (атап өтілді in particular)
+
+akorda-random.tagged.txt:167:3000 dubious
+
+akorda-random.tagged.txt:205:3681 direction of flat:name seems odd
+
+check akorda-random.tagged.txt:214:3835
+
+head of да <advmod> might be inconsistent
+
+өтуде as noun in akorda-random.tagged.txt:216:3868 :(
+
+parataxis vs conj
+
+да postadv sometimes dependent of the main verb, sometimes of the preceding noun
+
+ranges like `2008-2009 жылдардагы'
+
+something's wrong with this one:  УЕФА 1996 жылдан бергі футзал тарихында медаль алған алғашқы дебютант ел.
+
+with sentences with a бар at the end (`there exists') should noun modifiers be labeled as nmod or obl?
+
+to paratax to the left or to the right, that is the question. e.g. in kdt.tagged.txt:19:298
+
+the last clause of kdt.tagged.txt:38:647 looks wrong somehow
