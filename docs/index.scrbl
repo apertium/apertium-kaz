@@ -661,3 +661,11 @@ with sentences with a бар at the end (`there exists') should noun modifiers b
 to paratax to the left or to the right, that is the question. e.g. in kdt.tagged.txt:19:298
 
 the last clause of kdt.tagged.txt:38:647 looks wrong somehow
+
+Саған ешкім тимейді. <- why obj? Just because it tranlates to an acc noun in
+English?
+
+Ендеше, discourse vs advmod
+
+Қорқақ аңдар, тілсіз жаулар! <- this one is inherently ambiguous, need a text
+of Akbilek to see it in context.
