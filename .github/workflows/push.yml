@@ -27,3 +27,9 @@ jobs:
           make docs
         shell: bash
 
+      - name: Deploy on Github Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: master
+          FOLDER: docs
