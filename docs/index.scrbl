@@ -669,3 +669,9 @@ English?
 
 Қорқақ аңдар, тілсіз жаулар! <- this one is inherently ambiguous, need a text
 of Akbilek to see it in context.
+
+parataxis right headed or left headed?
+
+parataxis vs conj
+
+should clf be used at all?
