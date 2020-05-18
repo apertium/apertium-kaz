@@ -100,178 +100,127 @@ wget https://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
 sudo apt-get -f install apertium-all-dev
 }
 
-@section{Modes}
+See the aforementioned page for details.
 
-@section{Extending @tt{apertium-kaz}}
+@section{Usage. Modes}
 
-First of all, note that there is an ongoing effort described
-@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{here} to extend
-@tt{apertium-kaz} with stems from the 15-volume Explanatory Dictionary of
-Kazakh and to proof-read the resulting lexicion (and maybe expand with
-additional markup). After proof-reading is done, it's likely that the resulting
-stem-list will replace the lexicon currently available in
-@tt{apertium-kaz/apertium-kaz.kaz.lexc} (since the former is a superset of the
-latter). If you want to help out with proof-reading the lexicon agaist the
-aforementioned paper dictionary, read
-@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{the documentation}
-and contact Ilnar Salimzianov.
+@section{Annotated data}
 
-@subsection{Stems and categories}
+Note that the directory
+@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts"]{@tt{apertium-kaz/texts/}}
+contains morphologically disambiguated texts, some of which are syntactically
+annotated in the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies} framework.
 
-To extend @tt{apertium-kaz} with new words, we need to know their lemmas and
-their categories. Below we list the possible categories of words (we ignore the
-so-called closed-class words here, as their likelihood to appear among
-unrecognized words at this stage is negligible, and simplify some of the
-categories of open-class words intentionally).
+Annotation is done in the files ending in @tt{tagged.txt} or simply @tt{.txt}.
 
-@tabular[#:style 'block
-         #:column-properties '(left)
-	 #:row-properties '(border)
-(list (list @bold{Category} @bold{Comment} @bold{Examples (from @tt{apertium-kaz.kaz.lexc} file)})
-      (list @bold{Nouns} 'cont 'cont)
-      (list "N1" "common nouns" "алма:алма N1 ; ! “apple” \n жылқы:жылқы N1 ; ! “horse”")
-      (list "N5" "nouns which are loanwords from Russian (and therefore potentially with exceptions in phonology)" "артист:артист N5 ; ! \"\" \n баррель:баррель N5 ; ! \"\"")
-      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if apertium-kaz is used as a morphological generator." "")
-      (list "N1-ABBR" "Abbreviated nouns. %{а%} indicates that the word ends in a vowel and takes back vowel endings; %{э%} indicates that word ends in a vowel and takes front vowel endings; %{а%}%{с%} shows that the word ends in unvoiced consonant and takes back-vowel endings and so on." "ДНҚ:ДНҚ%{а%} N1-ABBR ; ! \"DNA\"")
-      (list "" "" "млн:млн%{а%}%{з%} N1-ABBR ; ! \"million\"")
-      (list "" "" "млрд:млрд%{а%}%{с%} N1-ABBR ; ! \"billion\"")
-      (list "" "" "км:км%{э%}%{з%} N1-ABBR ; ! \"km\"")
-      (list @bold{Verbs} 'cont 'cont)
-      (list "V-TV" "transitive verbs" "")
-      (list "V-IV" "intransitve verbs. If the verb can take a direct object with -НЫ, then it's not IV; otherwise it is TV. FIXME?" "")
-      (list @bold{Proper nouns} "" "")
-      (list "NP-ANT-F" "feminine anthroponyms" @italic{Сәмиға})
-      (list "NP-ANT-M" "masculine anthroponyms" @italic{Чыңғыз})
-      (list "NP-COG-OB" "family names ending with -ов or -ев" @italic{Мусаев})
-      (list "NP-COG-IN" "family names ending with -ин" @italic{Нуруллин})
-      (list "NP-COG-M" "family names not ending with -ов, -ев or -in; masculine" @italic{Галицкий})
-      (list "NP-COG-F" "family names not ending with -ов, -ев or -in; feminine" @italic{Толстая})
-      (list "NP-COG-MF" "family names not ending with -ов, -ев or -in which can be both masculine and feminine" @italic{Гайдар})
-      (list "NP-PAT-VICH" "patronymes ending with -вич (and thus which can also take the -вна ending)" @italic{Васильевич:Василье NP-PAT-VICH ; ! \"\"})
-      (list "NP-TOP" "toponyms (river names should go here too)" @italic{Берлин})
-      (list "NP-ORG" "organization names" @italic{Қазпошта})
-      (list "NP-ORG-LAT" "organization names written in Latin characters" @italic{Microsoft})
-      (list "NP-AL" "proper names not belonging to one of the above NP-* classes" @italic{Протон-М})
-      (list @bold{Adjectives and adverbs} 'cont 'cont)
-      (list "A1" "adjectives which can modify both nouns (жақсы адам) and verbs (жақсы оқиды)" "")
-      (list "A2" "all other adjectives" @italic{көктемгі})
-      (list "ADV" "adverbs. \n If you want to add an adverb, first think whether the word is really an adjective that can be used like an adverb. If this is the case, then add it as an A1 adjective." @italic{әбден}))]
+In those text files, dependency labels are the tags starting with @"@" symbol,
+e.g.:
 
-@subsubsection{Open question}
+@verbatim{"абонемент" n nom @"@"nmod:poss #1->2}
 
-@itemize[
+@tt{#1->2} means that the token number 2 is the head of the token number 1.
 
-@item{Abbreviated toponyms like @italic{АҚШ} or @italic{БҰҰ} should they be <abbr> or
-<np><top> or something else? In puupankki АҚШ is tagged as np top, but that
-might be only because it's NP-TOP in kaz.lexc.}
+When annotating, working on text files directly is one option, but it makes
+more sense to use a special tool such as
+@hyperlink["http://wiki.apertium.org/wiki/UD_Annotatrix"]{UD Annotatrix}, where
+you get to see the parse trees you're building/correcting.
 
-@item{Maybe a better solution would be to make abbr into a secondary tag? For
-one this will make it less confusing, АКШ will become np top abbr, БҰҰ will
-become np org abbr, and млрд will become num abbr. The latter is currently
-tagged as simply abbr, which is not very helpful for dep. parsing I guess.}
+@margin-note{`Puupankki' is Finnish for `treebank'.}
 
-@item{On a related not, мың, миллион and миллиард are added both as noun and as
-a numeral. That's ok imo, just to confirm.}
+The file
+@hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{apertium-kaz/texts/puupankki/puupankki.kaz.conllu}}
+is the result of automatic conversion of the aforementioned text files (the
+ones which were syntactically annotated, that is) into Universal Dependencies'
+CoNNL-U format.
 
-@item{диалогты gets the err_orth tag, that shouldn't happen imo}
+@bold{If you are interested in training a dependency parser for Kazakh, this
+file is what you should be looking for}. See a note in Section 4.1 for an
+example of how you can train one.
 
-@item{әрі --- post or adv}
+@margin-note{See
+@hyperlink["https://github.com/apertium/apertium-kaz/pull/16"]{this}
+pull-request with an ongoing effort to make sure that the treebank is fully
+compatible with version 2 of the UD standard.}
 
-@item{do stems of қору высыхать and қору строить differ in kazakh? In tatar they do.}
+``Currently the treebank is partially compatible with UD v2.0 standard, with
+the choice of head direction in some constructions being one of the major
+discrepancies. The standard requires coordination and some compounds
+(e.g. names) to be left-headed, while the treebank developers believe that in
+Kazakh (and other Turkic languages) such constructions should be right-headed
+due to the placement of morphological locus, which is exclusive to the last
+(rightmost) element of such constructions. So far this issue has been resolved
+by an intermediate conversion step, where initially the annotation is performed
+in a right-headed fashion, and at the time of release a special script flips
+the heads of the constructions in question.'' (Tyers et al. 2017)
 
-@item{what to do with -liq-nat forms? in pp-kaz, I analyse them as both noun and adjective.}
+Thus, in @tt{.txt} files coordination and compounds might be right-headed,
+whereas in the
+@hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{puupankki.kaz.conllu}}
+they are left-headed.
 
-@item{freaking frequent қамтамасыз ет and other phrasal verbs like that? To
-split or not to split, that is the question. Also, қол қой. Well, anything
-labeled as `dep', in general.}
+More information about the Kazakh UD treebank and about the UD Annotatrix you
+can find in the following papers.
 
-@item{is де transitive?}
+  article{tyers2017assessment,
+  title={An assessment of Universal Dependency annotation guidelines for Turkic languages},
+  author={Tyers, Francis and Washington, Jonathan and {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i} and Makazhanov, Aibek},
+  year={2017},
+  publisher={Tatarstan Academy of Sciences}
+}
 
-@item{айтуынша cnjadv vs v.tv.ger.px3sp.equ} 
+  inproceedings{tyers_tl2015,
+  author = {Tyers, Francis M. and Washington, Jonathan N.},
+  title = {Towards a Free/Open-source Universal-dependency Treebank for Kazakh},
+  booktitle = {3rd International Conference on Turkic Languages Processing,
+  (TurkLang 2015)},
+  pages = {276--289},
+  year = {2015},
+}
 
-@item{suggestion to work strictly through pull requests}
+  inproceedings{makazhan_tl2015,
+  author = {Makazhanov, Aibek and
+  Sultangazina, Aitolkyn and
+  Makhambetov, Olzhas and
+  Yessenbayev, Zhandos},
+  title = {Syntactic Annotation of Kazakh: Following the Universal Dependencies Guidelines. A report},
+  booktitle = {3rd International Conference on Turkic Languages Processing,
+  (TurkLang 2015)},
+  pages = {338--350},
+  year = {2015},
+}
 
-@item{әрі қарай}
+  inproceedings{tyers2017ud,
+  title={UD Annotatrix: An annotation tool for universal dependencies},
+  author={Tyers, Francis and Sheyanova, Mariya and Washington, Jonathan},
+  booktitle={Proceedings of the 16th International Workshop on Treebanks and Linguistic Theories},
+  pages={10--17},
+  year={2017}
+}
 
-@item{өткен in атап өткен жөн.}
+@section{(In)frequently Asked Questions}
 
-@item{ал in сатып алу vaux?}
+@subsection{How can I train a Universal Dependencies parser using the data
+available in apertium-kaz/texts/puupankki/ ?}
 
-]
+The are several free/libre statistical dependency parsers available, exact
+instructions naturally will depend on which one you decide to use.
 
-Figuring the lemma of an unrecognized word should be straightforward. Except
-for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
-imperative forms such as @tt{бар}, @tt{кел}, @tt{ал} etc (i.e. not @tt{бару},
-@tt{келу}, @tt{алу} as in some of the print dictionaries), the lemmas are what
-you would expect to see in print dictionaries of Kazakh.
+If you use @hyperlink["https://ufal.mff.cuni.cz/udpipe"]{UDPipe}, training a
+Kazakh tokenizer-tagger-parser with a default model can be achieved with the
+following commands:
 
-Still, there are some things to keep in mind (we use the word ``stem'' and
-``lemma'' interchangeably below):
+@verbatim{cat texts/puupankki/puupankki.kaz.conllu | udpipe --train kaz.udpipe}
 
-@itemize[
+which you then can use like this:
 
-@item{Many stems exhibit a voicing alternation like п/б, к/г, қ/ғ. This is
-processed automatically by @tt{apertium-kaz.kaz.twol}, and such stems must be
-added with the voiceless consonant (п, к, қ) to @tt{apertium-kaz.kaz.lexc}, e.g
-@tt{тақ:тақ V-TV ;}}
+@verbatim{echo "бұл бір мысал" | udpipe --tokenize --tag --parse kaz.udpipe}
 
-@item{Stems from Russian that end with one of the voiced consonants (б, г),
-such as геолог should be entered as spelled, but should be put in the right
-category for foreign words (e.g., if a noun, then N5).}
+More information on training UDPipe models can be found in
+@hyperlink["https://wiki.apertium.org/wiki/UDPipe"]{this} article on Apertium's
+wiki.
 
-@item{Words that have an inserted ‹ы› or ‹і› in some forms should get %{y%} in
-that spot on the right side, e.g. орын:ор%{y%}н N1 ;}
-
-@item{There should be no infinitival final -у or -ю. It is best to take the
-part of the verb before -GAн or -DI in those forms.}
-
-@item{Infinitives ending in -ю should end in ‹й› instead, e.g ‹сүю› should be
-entered as сүй}
-
-@item{Some verbs have a "hidden" ‹ы› or ‹і› under the ‹у›, for example ері,
-аршы, аңды, etc. These verb stems should be added with the ‹ы› or ‹і›.}
-
-@item{Of course, verbs with ‹у› in the stem should keep the ‹у›, like жу, қу,
-жау, etc.}
-
-@item{Do not add passive or cooperative forms of verb stems (e.g., ‹тартыл› is
-passive of ‹тарт›, and ‹тартыс› is cooperative).}]
-
-@subsection{Lexicons}
-
-@margin-note{This division of the lexicon will slightly
-@hyperlink["https://github.com/apertium/apertium-kaz/issues/15"]{change}.}
-
-At the end of @code{apertium-kaz.kaz.lexc}, there are five lexicons:
-
-@itemize[
-
-@item{Common}
-@item{Hardcoded}
-@item{Abbreviations}
-@item{Punctuation}
-@item{Proper}]
-
-In each lexicon, entries are sorted alphabetically with the
-@code{LC_ALL=kk_KZ.utf8 sort} command.
-
-These five lexicons are where you have to put new words, after you have figured
-out their stems and categories following the guidelines above.
-
-@code{Abbreviations} and @code{Punctuation} lexicons should be self-explanatory.
-
-Any stem linked to lexicon starting with NP should be placed into @code{LEXICON
-Proper}.
-
-Any (temporary) entry which involves tags, e.g.
-
-@verbatim{қыл%<v%>%<tv%>%<gna_perf%>:ғып # ; ! "same as қып"}
-
-belongs to the @code{Hardcoded} section.
-
-The rest of stems goes to @code{LEXICON Common}.
-
-@section{A Constraint Grammar-based Universal Dependencies parser for Kazakh}
+@section{A Constraint Grammar-based Universal Dependencies parser for Kazakh
+(experimental)}
 
 @subsection{How can I convert @tt{apertium-kaz}'s output into the
 @hyperlink["https://universaldependencies.org/format.html"]{CoNLL-U} format of
@@ -476,100 +425,176 @@ A minor question is whether features being in connlu format or not plays any
 role (assuming that they are in the same format when training udpipe and when
 using it, of course).
 
-@section{Annotated data}
+@section{Extending @tt{apertium-kaz}}
 
-Note that the directory
-@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts"]{@tt{apertium-kaz/texts/}}
-contains morphologically disambiguated texts, some of which are syntactically
-annotated in the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies} framework.
+First of all, note that there is an ongoing effort described
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{here} to extend
+@tt{apertium-kaz} with stems from the 15-volume Explanatory Dictionary of
+Kazakh and to proof-read the resulting lexicion (and maybe expand with
+additional markup). After proof-reading is done, it's likely that the resulting
+stem-list will replace the lexicon currently available in
+@tt{apertium-kaz/apertium-kaz.kaz.lexc} (since the former is a superset of the
+latter). If you want to help out with proof-reading the lexicon agaist the
+aforementioned paper dictionary, read
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{the documentation}
+and contact Ilnar Salimzianov.
 
-Annotation is done in the files ending in @tt{tagged.txt} or simply @tt{.txt}.
+@subsection{Stems and categories}
 
-In those text files, dependency labels are the tags starting with @"@" symbol,
-e.g.:
+To extend @tt{apertium-kaz} with new words, we need to know their lemmas and
+their categories. Below we list the possible categories of words (we ignore the
+so-called closed-class words here, as their likelihood to appear among
+unrecognized words at this stage is negligible, and simplify some of the
+categories of open-class words intentionally).
 
-@verbatim{"абонемент" n nom @"@"nmod:poss #1->2}
+@tabular[#:style 'block
+         #:column-properties '(left)
+	 #:row-properties '(border)
+(list (list @bold{Category} @bold{Comment} @bold{Examples (from @tt{apertium-kaz.kaz.lexc} file)})
+      (list @bold{Nouns} 'cont 'cont)
+      (list "N1" "common nouns" "алма:алма N1 ; ! “apple” \n жылқы:жылқы N1 ; ! “horse”")
+      (list "N5" "nouns which are loanwords from Russian (and therefore potentially with exceptions in phonology)" "артист:артист N5 ; ! \"\" \n баррель:баррель N5 ; ! \"\"")
+      (list "N6" "Linking nouns like акт, субъект, эффект to N6 forces apertium-kaz to analyse both акт and акті as noun, nominative; both актты and актіні as noun, accusative etc. The latter forms are the default — that is, акті and актіні are  generated for акт<n><nom> and акт<n><acc>, respectively, if apertium-kaz is used as a morphological generator." "")
+      (list "N1-ABBR" "Abbreviated nouns. %{а%} indicates that the word ends in a vowel and takes back vowel endings; %{э%} indicates that word ends in a vowel and takes front vowel endings; %{а%}%{с%} shows that the word ends in unvoiced consonant and takes back-vowel endings and so on." "ДНҚ:ДНҚ%{а%} N1-ABBR ; ! \"DNA\"")
+      (list "" "" "млн:млн%{а%}%{з%} N1-ABBR ; ! \"million\"")
+      (list "" "" "млрд:млрд%{а%}%{с%} N1-ABBR ; ! \"billion\"")
+      (list "" "" "км:км%{э%}%{з%} N1-ABBR ; ! \"km\"")
+      (list @bold{Verbs} 'cont 'cont)
+      (list "V-TV" "transitive verbs" "")
+      (list "V-IV" "intransitve verbs. If the verb can take a direct object with -НЫ, then it's not IV; otherwise it is TV. FIXME?" "")
+      (list @bold{Proper nouns} "" "")
+      (list "NP-ANT-F" "feminine anthroponyms" @italic{Сәмиға})
+      (list "NP-ANT-M" "masculine anthroponyms" @italic{Чыңғыз})
+      (list "NP-COG-OB" "family names ending with -ов or -ев" @italic{Мусаев})
+      (list "NP-COG-IN" "family names ending with -ин" @italic{Нуруллин})
+      (list "NP-COG-M" "family names not ending with -ов, -ев or -in; masculine" @italic{Галицкий})
+      (list "NP-COG-F" "family names not ending with -ов, -ев or -in; feminine" @italic{Толстая})
+      (list "NP-COG-MF" "family names not ending with -ов, -ев or -in which can be both masculine and feminine" @italic{Гайдар})
+      (list "NP-PAT-VICH" "patronymes ending with -вич (and thus which can also take the -вна ending)" @italic{Васильевич:Василье NP-PAT-VICH ; ! \"\"})
+      (list "NP-TOP" "toponyms (river names should go here too)" @italic{Берлин})
+      (list "NP-ORG" "organization names" @italic{Қазпошта})
+      (list "NP-ORG-LAT" "organization names written in Latin characters" @italic{Microsoft})
+      (list "NP-AL" "proper names not belonging to one of the above NP-* classes" @italic{Протон-М})
+      (list @bold{Adjectives and adverbs} 'cont 'cont)
+      (list "A1" "adjectives which can modify both nouns (жақсы адам) and verbs (жақсы оқиды)" "")
+      (list "A2" "all other adjectives" @italic{көктемгі})
+      (list "ADV" "adverbs. \n If you want to add an adverb, first think whether the word is really an adjective that can be used like an adverb. If this is the case, then add it as an A1 adjective." @italic{әбден}))]
 
-@tt{#1->2} means that the token number 2 is the head of the token number 1.
+Figuring the lemma of an unrecognized word should be straightforward. Except
+for verbs, where the lemmas in @tt{apertium-kaz} are 2nd person singular
+imperative forms such as @tt{бар}, @tt{кел}, @tt{ал} etc (i.e. not @tt{бару},
+@tt{келу}, @tt{алу} as in some of the print dictionaries), the lemmas are what
+you would expect to see in print dictionaries of Kazakh.
 
-When annotating, working on text files directly is one option, but it makes
-more sense to use a special tool such as
-@hyperlink["http://wiki.apertium.org/wiki/UD_Annotatrix"]{UD Annotatrix}, where
-you get to see the parse trees you're building/correcting.
+Still, there are some things to keep in mind (we use the word ``stem'' and
+``lemma'' interchangeably below):
 
-@margin-note{`Puupankki' is Finnish for `treebank'.}
+@itemize[
 
-The folder
-@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts/puupankki"]{@tt{apertium-kaz/texts/puupankki}}
-is the result of automatic conversion of the aforementioned text files into
-Universal Dependencies' CoNNL-U format.
+@item{Many stems exhibit a voicing alternation like п/б, к/г, қ/ғ. This is
+processed automatically by @tt{apertium-kaz.kaz.twol}, and such stems must be
+added with the voiceless consonant (п, к, қ) to @tt{apertium-kaz.kaz.lexc}, e.g
+@tt{тақ:тақ V-TV ;}}
 
-``Currently the treebank is partially compatible with UD v2.0 standard, with
-the choice of head direction in some constructions being one of the major
-discrepancies. The standard requires coordination and some compounds
-(e.g. names) to be left-headed, while the treebank developers believe that in
-Kazakh (and other Turkic languages) such constructions should be right-headed
-due to the placement of morphological locus, which is exclusive to the last
-(rightmost) element of such constructions. So far this issue has been resolved
-by an intermediate conversion step, where initially the annotation is performed
-in a right-headed fashion, and at the time of release a special script flips
-the heads of the constructions in question.'' (Tyers et al. 2017)
+@item{Stems from Russian that end with one of the voiced consonants (б, г),
+such as геолог should be entered as spelled, but should be put in the right
+category for foreign words (e.g., if a noun, then N5).}
 
-Thus, in @tt{.txt} files coordination and compounds might be right-headed,
-whereas in the
-@hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{puupankki.kaz.conllu}}
-they are left-headed.
+@item{Words that have an inserted ‹ы› or ‹і› in some forms should get %{y%} in
+that spot on the right side, e.g. орын:ор%{y%}н N1 ;}
 
-TODO discuss The right vs left headedness of conjunctions again: @italic{1
-Қазақстанның 2 табыстары 3 мен 4 жетістіктерін ...} What should be the head of
-Қазақстанның -- табыстары or жетістіктерін? If the latter, then we get a
-non-projective tree. That is probably undesirable.
+@item{There should be no infinitival final -у or -ю. It is best to take the
+part of the verb before -GAн or -DI in those forms.}
 
-The exact command for converting .txt files in CG3 format ton CoNLL-U format is
-as follows:
+@item{Infinitives ending in -ю should end in ‹й› instead, e.g ‹сүю› should be
+entered as сүй}
 
-TODO
+@item{Some verbs have a "hidden" ‹ы› or ‹і› under the ‹у›, for example ері,
+аршы, аңды, etc. These verb stems should be added with the ‹ы› or ‹і›.}
 
-More information about the Kazakh UD treebank and about the UD Annotatrix you
-can find in the following papers.
+@item{Of course, verbs with ‹у› in the stem should keep the ‹у›, like жу, қу,
+жау, etc.}
 
-  article{tyers2017assessment,
-  title={An assessment of Universal Dependency annotation guidelines for Turkic languages},
-  author={Tyers, Francis and Washington, Jonathan and {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i} and Makazhanov, Aibek},
-  year={2017},
-  publisher={Tatarstan Academy of Sciences}
-}
+@item{Do not add passive or cooperative forms of verb stems (e.g., ‹тартыл› is
+passive of ‹тарт›, and ‹тартыс› is cooperative).}]
 
-  inproceedings{tyers_tl2015,
-  author = {Tyers, Francis M. and Washington, Jonathan N.},
-  title = {Towards a Free/Open-source Universal-dependency Treebank for Kazakh},
-  booktitle = {3rd International Conference on Turkic Languages Processing,
-  (TurkLang 2015)},
-  pages = {276--289},
-  year = {2015},
-}
+@subsection{Lexicons}
 
-  inproceedings{makazhan_tl2015,
-  author = {Makazhanov, Aibek and
-  Sultangazina, Aitolkyn and
-  Makhambetov, Olzhas and
-  Yessenbayev, Zhandos},
-  title = {Syntactic Annotation of Kazakh: Following the Universal Dependencies Guidelines. A report},
-  booktitle = {3rd International Conference on Turkic Languages Processing,
-  (TurkLang 2015)},
-  pages = {338--350},
-  year = {2015},
-}
+@margin-note{This division of the lexicon will slightly
+@hyperlink["https://github.com/apertium/apertium-kaz/issues/15"]{change}.}
 
-  inproceedings{tyers2017ud,
-  title={UD Annotatrix: An annotation tool for universal dependencies},
-  author={Tyers, Francis and Sheyanova, Mariya and Washington, Jonathan},
-  booktitle={Proceedings of the 16th International Workshop on Treebanks and Linguistic Theories},
-  pages={10--17},
-  year={2017}
-}
+At the end of @code{apertium-kaz.kaz.lexc}, there are five lexicons:
 
-Open questions about Kazakh UD:
+@itemize[
+
+@item{Common}
+@item{Hardcoded}
+@item{Abbreviations}
+@item{Punctuation}
+@item{Proper}]
+
+In each lexicon, entries are sorted alphabetically with the
+@code{LC_ALL=kk_KZ.utf8 sort} command.
+
+These five lexicons are where you have to put new words, after you have figured
+out their stems and categories following the guidelines above.
+
+@code{Abbreviations} and @code{Punctuation} lexicons should be self-explanatory.
+
+Any stem linked to lexicon starting with NP should be placed into @code{LEXICON
+Proper}.
+
+Any (temporary) entry which involves tags, e.g.
+
+@verbatim{қыл%<v%>%<tv%>%<gna_perf%>:ғып # ; ! "same as қып"}
+
+belongs to the @code{Hardcoded} section.
+
+The rest of stems goes to @code{LEXICON Common}.
+
+@section{Open questions}
+
+@itemize[
+
+@item{Abbreviated toponyms like @italic{АҚШ} or @italic{БҰҰ} should they be <abbr> or
+<np><top> or something else? In puupankki АҚШ is tagged as np top, but that
+might be only because it's NP-TOP in kaz.lexc.}
+
+@item{Maybe a better solution would be to make abbr into a secondary tag? For
+one this will make it less confusing, АКШ will become np top abbr, БҰҰ will
+become np org abbr, and млрд will become num abbr. The latter is currently
+tagged as simply abbr, which is not very helpful for dep. parsing I guess.}
+
+@item{On a related not, мың, миллион and миллиард are added both as noun and as
+a numeral. That's ok imo, just to confirm.}
+
+@item{диалогты gets the err_orth tag, that shouldn't happen imo}
+
+@item{әрі --- post or adv}
+
+@item{do stems of қору высыхать and қору строить differ in kazakh? In tatar they do.}
+
+@item{what to do with -liq-nat forms? in pp-kaz, I analyse them as both noun and adjective.}
+
+@item{freaking frequent қамтамасыз ет and other phrasal verbs like that? To
+split or not to split, that is the question. Also, қол қой. Well, anything
+labeled as `dep', in general.}
+
+@item{is де transitive?}
+
+@item{айтуынша cnjadv vs v.tv.ger.px3sp.equ} 
+
+@item{suggestion to work strictly through pull requests}
+
+@item{әрі қарай}
+
+@item{өткен in атап өткен жөн.}
+
+@item{ал in сатып алу vaux?}
+
+]
+
+@subsection{Open questions about Kazakh UD}
 
 obl vs iobj
 
@@ -675,3 +700,17 @@ parataxis right headed or left headed?
 parataxis vs conj
 
 should clf be used at all?
+
+the end of kdt.tagged.txt:35:570 is messy
+
+TODO discuss The right vs left headedness of conjunctions again: @italic{1
+Қазақстанның 2 табыстары 3 мен 4 жетістіктерін ...} What should be the head of
+Қазақстанның -- табыстары or жетістіктерін? If the latter, then we get a
+non-projective tree. That is probably undesirable.
+
+The exact command for converting .txt files in CG3 format ton CoNLL-U format is
+as follows: TODO
+
+TODO add a note on validation.py
+
+
