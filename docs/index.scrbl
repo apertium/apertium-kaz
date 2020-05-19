@@ -713,4 +713,7 @@ as follows: TODO
 
 TODO add a note on validation.py
 
+5	қандай	қандай	PRON	prn	PronType=Int	8	csubj	_	_
+2	қандай	қандай	ADJ	adj	PronType=Int	0	root	_	_
 
+определиться надо?
