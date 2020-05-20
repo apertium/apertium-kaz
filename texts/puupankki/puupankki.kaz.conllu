@@ -6328,10 +6328,10 @@
 # sent_id = kdt.tagged.txt:187:2971
 # text = Онымен таласқандай мұның не айбыны, не күші бар?
 1	Онымен	ол	PRON	prn	Case=Ins|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
-2	таласқандай	тала	VERB	v	Tense=Past|VerbForm=Part|Voice=Coop	8	acl:relcl	_	_
-3	мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	8	nmod:poss	_	_
+2	таласқандай	тала	VERB	v	Tense=Past|VerbForm=Part|Voice=Coop	9	advcl	_	_
+3	мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	5	nmod:poss	_	_
 4	не	не	DET	det	Case=Nom|PronType=Int	5	det	_	_
-5	айбыны	айбын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	SpaceAfter=No
+5	айбыны	айбын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	_	_	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	8	punct	_	_
 7	не	не	DET	det	Case=Nom|PronType=Int	8	det	_	_
 8	күші	күш	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	_
@@ -6366,13 +6366,13 @@
 # text = Бекболаттың сұраулары көбейіп, әңгіменің аяғы созылып жатқанын сезіп, ел қазағы "бір айналып соғармын, — шаруам бар еді" деп, тұрып кетті.
 1	Бекболаттың	Бекболат	PROPN	np	Case=Gen|Gender=Masc	2	nmod:poss	_	_
 2	сұраулары	сұрау	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
-3	көбейіп	көбей	VERB	v	Aspect=Perf|VerbForm=Conv	25	advcl	_	SpaceAfter=No
-4	,	,	PUNCT	cm	_	9	punct	_	_
+3	көбейіп	көбей	VERB	v	Aspect=Perf|VerbForm=Conv	7	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	cm	_	3	punct	_	_
 5	әңгіменің	әңгіме	NOUN	n	Case=Gen	6	nmod:poss	_	_
 6	аяғы	аяқ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 7	созылып	соз	VERB	v	Aspect=Perf|VerbForm=Conv|Voice=Pass	9	ccomp	_	_
 8	жатқанын	жат	AUX	vaux	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	7	aux	_	_
-9	сезіп	сез	VERB	v	Aspect=Perf|VerbForm=Conv	3	conj	_	SpaceAfter=No
+9	сезіп	сез	VERB	v	Aspect=Perf|VerbForm=Conv	25	advcl	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	25	punct	_	_
 11	ел	ел	NOUN	n	Case=Nom	12	nmod:poss	_	_
 12	қазағы	қазақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	23	nsubj	_	_
@@ -6397,7 +6397,7 @@
 1	Ақтардың	ақ	ADJ	adj	Case=Gen|Number=Plur	2	nmod:poss	_	_
 2	өзін	өз	PRON	prn	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	5	obj	_	_
 3	кеше	кеше	ADV	adv	_	4	advmod	_	_
-4	кешке	кеш	NOUN	n	Case=Dat	5	nmod	_	_
+4	кешке	кеш	NOUN	n	Case=Dat	5	obl	_	_
 5	әкелді	әкел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -6479,7 +6479,7 @@
 # sent_id = kdt.tagged.txt:201:3200
 # text = Өзі шала қазақ.
 1	Өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	3	nsubj	_	_
-2	шала	шала	ADV	adv	_	3	advmod	_	_
+2	шала	шала	ADJ	adj	_	3	amod	_	_
 3	қазақ	қазақ	ADJ	adj	_	0	root	_	SpaceAfter=No
 4	.	.	PUNCT	sent	_	3	punct	_	_
 
@@ -6715,7 +6715,7 @@
 2	.	.	PUNCT	sent	_	1	punct	_	_
 3	Мұнан	бұл	PRON	prn	Case=Abl|PronType=Dem	7	obl	_	_
 4	кейін	кейін	ADP	post	_	3	case	_	_
-5	елге	ел	NOUN	n	Case=Dat	7	nmod	_	_
+5	елге	ел	NOUN	n	Case=Dat	7	obl	_	_
 6	сайлаушы	сайлаушы	NOUN	n	Case=Nom	7	nsubj	_	_
 7	шықты	шық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
@@ -6724,7 +6724,7 @@
 # text = — Біз қайдан білейік.
 1	—	—	PUNCT	guio	_	4	punct	_	_
 2	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
-3	қайдан	қайдан	ADV	adv	PronType=Int	4	nmod	_	_
+3	қайдан	қайдан	ADV	adv	PronType=Int	4	advmod	_	_
 4	білейік	біл	VERB	v	Mood=Opt|Number=Plur|Person=1|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	.	.	PUNCT	sent	_	4	punct	_	_
 
@@ -6740,11 +6740,11 @@
 # sent_id = kdt.tagged.txt:226:3597
 # text = Бекболат Жылтырға жолыққаннан бері бұл әңгімелерге әбден қанған.
 1	Бекболат	Бекболат	PROPN	np	Case=Nom|Gender=Masc	8	nsubj	_	_
-2	Жылтырға	Жылтыр	PROPN	np	Case=Dat|Gender=Fem	3	obj	_	_
+2	Жылтырға	Жылтыр	PROPN	np	Case=Dat|Gender=Fem	3	iobj	_	_
 3	жолыққаннан	жолық	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	8	advcl	_	_
 4	бері	бері	ADP	post	_	3	case	_	_
 5	бұл	бұл	DET	det	PronType=Dem	6	det	_	_
-6	әңгімелерге	әңгіме	NOUN	n	Case=Dat|Number=Plur	8	nmod	_	_
+6	әңгімелерге	әңгіме	NOUN	n	Case=Dat|Number=Plur	8	obl	_	_
 7	әбден	әбден	ADV	adv	_	8	advmod	_	_
 8	қанған	қан	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	8	punct	_	_
@@ -6792,7 +6792,7 @@
 # text = Ол талай қызды алып қашқан, талайды тастаған, қатын алу, тастау оған тымақ ауыстырып кигенмен бір есеп.
 # text[en] = For him, having chased several girls, gotten rid of several, getting married and leaving them is the same as changing hats.
 # text[tr] = O birçok kızı müthiş kaçmış, birçoku bırakmış, kadın alma, bırakma ona şapka değişip giymek ile aynı.
-1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
 2	талай	талай	ADJ	adj	_	3	amod	_	_
 3	қызды	қыз	NOUN	n	Case=Acc	4	obj	_	_
 4	алып	ал	VERB	v	Aspect=Perf|VerbForm=Conv	5	advcl	_	_
