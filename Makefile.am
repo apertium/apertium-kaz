@@ -139,8 +139,8 @@ $(LANG1SCRIPT1).autogen.bin: $(LANG1SCRIPT1).autogen.att.gz .deps/.d
 .deps/$(LANG1SCRIPT2).automorf.hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst .deps/$(LANG1).LR.hfst .deps/$(LANG1SCRIPT2).spellrelax.hfst
 	hfst-compose -1 `echo $(word 2,$^)` -2 $< | hfst-compose-intersect -1 - -2 `echo $(word 3,$^)` | hfst-invert -o $@
 
-.deps/$(LANG1SCRIPT2).spellrelax.hfst: $(BASENAME).spellrelax_$(SCRIPT2).twol
-	hfst-twolc $< -o $@
+.deps/$(LANG1SCRIPT2).spellrelax.hfst: $(BASENAME).$(LANG1)_$(SCRIPT2).spellrelax
+	hfst-regexp2fst -S -o $@ < $<
 
 # Arabic script generator
 
