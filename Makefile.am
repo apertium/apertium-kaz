@@ -5,15 +5,23 @@
 RELEASE=0.1
 VERSION=0.1.0
 LANG1=kaz
+SCRIPT1=Cyrl
+SCRIPT2=Arab
+LANG1SCRIPT1=kaz@$(SCRIPT1)
+LANG1SCRIPT2=kaz@$(SCRIPT2)
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON =			\
 	$(LANG1).automorf.hfst		\
 	$(LANG1).automorf.bin		\
-	$(LANG1).automorf.att.gz	\
+	#$(LANG1).automorf.att.gz	\
 	$(LANG1).autogen.hfst		\
-	$(LANG1).autogen.bin		\
-	$(LANG1).autogen.att.gz		\
+	$(LANG1SCRIPT1).autogen.hfst \
+	$(LANG1SCRIPT2).autogen.hfst \
+	$(LANG1).autogen.bin			\
+	$(LANG1SCRIPT1).autogen.bin \
+	$(LANG1SCRIPT2).autogen.bin \
+	#$(LANG1).autogen.att.gz		\
 	$(LANG1).autopgen.bin		\
 	$(LANG1).rlx.bin
 
@@ -71,9 +79,17 @@ TARGETS_COMMON =			\
 .deps/$(LANG1).LR.hfst: .deps/$(LANG1).LR.lexc.hfst .deps/$(LANG1).EL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).EL.lexc.hfst -2 .deps/$(LANG1).twol.hfst | hfst-minimise -o $@
 
-# The final analyser is a combination of the normative analyser and the error analyser.
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).LR.err.hfst
-	hfst-union -1 .deps/$(LANG1).LR.hfst -2 .deps/$(LANG1).LR.err.hfst | hfst-invert | hfst-fst2fst -w -o $@
+# The full Cyrillic analyser is a combination of the normative analyser and the error analyser.
+.deps/$(LANG1SCRIPT1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).LR.err.hfst
+	hfst-union -1 .deps/$(LANG1).LR.hfst -2 .deps/$(LANG1).LR.err.hfst | hfst-invert -o $@ # | hfst-fst2fst -w -o $@
+
+# The final analyser is a combinaton of the Cyrillic normative analyser and the Arabic script analyser
+#$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).LR.err.hfst $(LANG1SCRIPT2).REVautomorf.hfst $(LANG1SCRIPT2).spellrelax.hfst
+#	hfst-union -1 $< -2 `echo $(word 2,$^)` | hfst-union -1 - -2 `echo $(word 3,$^)` | hfst-compose-intersect -1 - -2 `echo $(word 4,$^)` | hfst-invert | hfst-fst2fst -w -o $@
+$(LANG1).automorf.hfst: .deps/$(LANG1SCRIPT1).automorf.hfst .deps/$(LANG1SCRIPT2).automorf.hfst
+	hfst-invert $< -o .deps/$(LANG1SCRIPT1).REVautomorf.hfst
+	hfst-invert `echo $(word 2,$^)` -o .deps/$(LANG1SCRIPT2).REVautomorf.hfst
+	hfst-union -1 .deps/$(LANG1SCRIPT1).REVautomorf.hfst -2 .deps/$(LANG1SCRIPT2).REVautomorf.hfst | hfst-invert | hfst-minimise | hfst-fst2fst -w -o $@
 
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -w $< -o $@
@@ -94,6 +110,58 @@ $(LANG1).automorf.bin: $(LANG1).automorf.att.gz .deps/.d
 
 $(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
 	lt-comp lr $< $@
+
+
+$(LANG1SCRIPT1).autogen.hfst: .deps/$(LANG1).RL.hfst
+	hfst-fst2fst -w $< -o $@
+
+$(LANG1SCRIPT1).autogen.att.gz: $(LANG1SCRIPT1).autogen.hfst
+	hfst-fst2txt $< | gzip -9 -c -n > $@
+
+$(LANG1SCRIPT1).autogen.bin: $(LANG1SCRIPT1).autogen.att.gz .deps/.d
+	zcat < $< > .deps/$(LANG1SCRIPT1).autogen.att
+	lt-comp lr .deps/$(LANG1SCRIPT1).autogen.att $@
+
+
+# Arabic script transliterator
+
+# compile the first stage of the Cyrillic-Arabic transliteration transducer
+.deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).lexc.hfst: ./$(BASENAME).$(SCRIPT1)-$(SCRIPT2).lexc
+	hfst-lexc $< -o $@
+
+# compile the second stage of the Cyrillic-Arabic transliteration transducer
+.deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).twol.hfst: ./$(BASENAME).$(SCRIPT1)-$(SCRIPT2).twol
+	hfst-twolc $< -o $@
+
+
+# Arabic script analyser
+
+# Arabic script analyser is made by composing the Cyrl-Arab transliterator with the base Cyrillic transducer and adding spellrelax
+#    Буддизм<n><dat>+шы<emph>:بۋدديزمگەشى
+.deps/$(LANG1SCRIPT2).automorf.hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst .deps/$(LANG1).LR.hfst .deps/$(LANG1SCRIPT2).spellrelax.hfst
+	hfst-compose -1 `echo $(word 2,$^)` -2 $< | hfst-compose-intersect -1 - -2 `echo $(word 3,$^)` | hfst-invert -o $@
+
+.deps/$(LANG1SCRIPT2).spellrelax.hfst: $(BASENAME).spellrelax-$(SCRIPT2).twol
+	hfst-twolc $< -o $@
+
+# Arabic script generator
+
+# compile the transliteration transducer
+.deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).twol.hfst .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).lexc.hfst
+	hfst-compose-intersect -1 `echo $(word 2,$^)` -2 $< -o $@
+
+# compose with base Cyrillic transducer
+$(LANG1SCRIPT2).autogen.hfst: .deps/$(LANG1SCRIPT1)-$(LANG1SCRIPT2).hfst .deps/$(LANG1).RL.hfst
+	hfst-compose -1 `echo $(word 2,$^)` -2 $< | hfst-fst2fst -w -o $@
+
+$(LANG1SCRIPT2).autogen.att.gz: $(LANG1SCRIPT2).autogen.hfst
+	hfst-fst2txt $< | gzip -9 -c -n > $@
+
+$(LANG1SCRIPT2).autogen.bin: $(LANG1SCRIPT2).autogen.att.gz .deps/.d
+	zcat < $< > .deps/$(LANG1SCRIPT2).autogen.att
+	lt-comp lr .deps/$(LANG1SCRIPT2).autogen.att $@
+
+
 
 ###############################################################################
 ## Debugging transducers (for testvoc)

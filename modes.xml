@@ -27,11 +27,27 @@
     </pipeline>
   </mode>
 
-
+  <!-- for now Cyrillic is the default -->
   <mode name="kaz-gener" install="yes">
     <pipeline>
       <program name="lt-proc -g">
-        <file name="kaz.autogen.bin"/>
+        <file name="kaz@Cyrl.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz_Cyrl-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="kaz@Cyrl.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="kaz_Arab-gener" install="yes">
+    <pipeline>
+      <program name="lt-proc -g">
+        <file name="kaz@Arab.autogen.bin"/>
       </program>
     </pipeline>
   </mode>
