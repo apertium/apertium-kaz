@@ -717,3 +717,11 @@ TODO add a note on validation.py
 2	қандай	қандай	ADJ	adj	PronType=Int	0	root	_	_
 
 определиться надо?
+
+kdt.tagged.txt:200:3187 жауып отыра алмайды -- отыра could've been aux I guess?..
+
+make sure that қайда and қайдан are labeled consistently
+
+көн-көріс in kdt.tagged.txt:249:4052 is probably not conj
+
+kdt.tagged.txt:282:4618 
