@@ -227,6 +227,8 @@ wiki.
 the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies}
 project?}
 
+@margin-note{TODO: this should be a apertium-kaz mode...}
+
 While you are in the directory @tt{apertium-kaz}, run the following command:
 
 @verbatim{
@@ -724,4 +726,19 @@ make sure that қайда and қайдан are labeled consistently
 
 көн-көріс in kdt.tagged.txt:249:4052 is probably not conj
 
-kdt.tagged.txt:282:4618 
+kdt.tagged.txt:282:4618
+
+wikitravel.tagged.txt:31:318 here dep. claus of бола ма is labeled as csubj, although
+in other sents iirc such clauses were ccomp ?
+
+Сізде бірдеме тазалау бар ма? it is unlikely that тазалау is adj.comp here I think (IFS)
+
+punctuation in Жиырма_Бесінші_Сөз.tagged.txt:3:70 (attached to orphan vs subsequent conj ?)
+
+онан соң obl vs advmod ?
+
+is түгіл really and conj in kazakh? or adv?
+
+`Себебі' at the beginning of a sentences -- sconj vs nsubj
+
+Жиырма_Бесінші_Сөз.tagged.txt:25:614 looks wrong, re-consider

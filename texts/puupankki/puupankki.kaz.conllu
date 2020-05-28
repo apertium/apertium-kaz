@@ -8939,7 +8939,7 @@
 7	ана	ана	DET	det	PronType=Dem	10	det	_	_
 8	оқымаған	оқы	VERB	v	Polarity=Neg|Tense=Past|VerbForm=Part	10	acl	_	_
 9	қазақ	қазақ	NOUN	n	Case=Nom	10	nmod:poss	_	_
-10	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	_	_	_	_
+10	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
 11	үздік	үздік	ADJ	adj	_	0	root	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	13	punct	_	_
 13	озық	озық	ADJ	adj	_	11	conj	_	SpaceAfter=No
@@ -9168,8 +9168,8 @@
 9	,	,	PUNCT	cm	_	12	punct	_	_
 10	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	12	obl	_	_
 11	рақат	рақат	NOUN	n	Case=Nom	12	obj	_	_
-12-13	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
-12	көрсетер	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	root	_	_
+12-13	көрсетер ме	_	_	_	_	_	_	_	SpaceAfter=No
+12	көрсетер	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 13	ме	ма	PART	qst	_	12	discourse	_	_
 14	,	,	PUNCT	cm	_	17	punct	_	_
 15	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	17	nsubj	_	_
@@ -9181,7 +9181,7 @@
 20	яки	яки	CCONJ	cnjcoo	_	23	cc	_	_
 21	жұртқа	жұрт	NOUN	n	Case=Dat	23	obl	_	_
 22	рақат	рақат	NOUN	n	Case=Nom	23	obj	_	_
-23-24	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
+23-24	көрсетер ме	_	_	_	_	_	_	_	SpaceAfter=No
 23	көрсетер	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
 24	ме	ма	PART	qst	_	23	discourse	_	_
 25	?	?	PUNCT	sent	_	23	punct	_	_
