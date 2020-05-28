@@ -7636,6 +7636,7 @@
 
 # sent_id = kdt.tagged.txt:288:4778
 # text = Сайлаушылардың тұрғылықты жері бойынша тізімін тиісті жергілікті атқарушы орган халықты есепке алуды жүзеге асыратын органдар ұсынған мәліметтердің негізінде жасайды.
+# labels = checked_IFS
 1	Сайлаушылардың	сайлаушы	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
 2	тұрғылықты	тұрғылықты	ADJ	adj	_	3	amod	_	_
 3	жері	жер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod	_	_
@@ -7659,6 +7660,7 @@
 
 # sent_id = Радиан.tagged.txt:1:0
 # text = Радианның басқа да бірліктермен байланысы.
+# labels = checked_IFS
 1	Радианның	радиан	NOUN	n	Case=Gen	4	nmod:poss	_	_
 2-3	басқа да	_	_	_	_	_	_	_	_
 2	басқа	басқа	ADJ	adj	_	4	amod	_	_
@@ -7669,6 +7671,7 @@
 
 # sent_id = Радиан.tagged.txt:2:11
 # text = Радианның басқа да бұрышты өлшеу бірліктерімен арақатынасы мына формуламен сипатталады:
+# labels = checked_IFS
 1	Радианның	радиан	NOUN	n	Case=Gen	7	nmod:poss	_	_
 2-3	басқа да	_	_	_	_	_	_	_	_
 2	басқа	басқа	ADJ	adj	_	6	amod	_	_
@@ -7684,6 +7687,7 @@
 
 # sent_id = udhr.tagged.txt:1:0
 # text = Барлық адамдар тумысынан азат және қадір-қасиеті мен құқықтары тең болып дүниеге келеді.
+# labels = checked_IFS
 1	Барлық	барлық	DET	det	PronType=Qnt	2	det	_	_
 2	адамдар	адам	NOUN	n	Case=Nom|Number=Plur	12	nsubj	_	_
 3	тумысынан	тумыс	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
@@ -7700,6 +7704,7 @@
 
 # sent_id = udhr.tagged.txt:2:26
 # text = Адамдарға ақыл-парасат, ар-ождан берілген, сондықтан олар бір-бірімен туыстық, бауырмалдық қарым-қатынас жасаулары тиіс.
+# labels = checked_IFS
 1	Адамдарға	адам	NOUN	n	Case=Dat|Number=Plur	5	obl	_	_
 2	ақыл-парасат	ақыл-парасат	NOUN	n	Case=Nom	5	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	4	punct	_	_
@@ -7719,6 +7724,7 @@
 
 # sent_id = udhr.tagged.txt:3:59
 # text = Әр адам, нәсіліне, түр-түсіне, жынысына, тіліне, дініне, саяси немесе басқа да наным-сенімдеріне, ұлттық, немесе әлеуметтік тегіне, мүліктік, тектік-топтық, немесе басқа да жағдаяттарға қарамастан осы Декларацияда жарияланған барлық құқықтар мен бостандықтарға алаланбай, бірдей тең ие болуы тиіс.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	47	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -7773,6 +7779,7 @@
 
 # sent_id = udhr.tagged.txt:4:156
 # text = Сонымен қатар, ешкім де өзі тұратын елінің, не болмаса территорияның саяси, құқықтық, немесе халықаралық мәртебесінің негізі бойынша, және де ол территория тәуелсіз, әлде біреудің қарамағында, әлде өзін-өзі басқарушы емес, немесе оның егемендігі әртүрлі нысанда шектеулі болған күннің өзінде де, алаланбауы тиіс.
+# labels = checked_IFS
 1	Сонымен	сонымен	X	x	_	2	dep	_	_
 2	қатар	қатар	ADV	adv	_	50	advmod	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -7830,6 +7837,7 @@
 
 # sent_id = udhr.tagged.txt:5:256
 # text = Әр адам өмір сүруге, бостандықта болуға және оның жеке басына қол сұғылмауына құқылы.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	14	nsubj	_	_
 3	өмір	өмір	X	x	_	4	dep	_	_
@@ -7848,6 +7856,7 @@
 
 # sent_id = udhr.tagged.txt:6:287
 # text = Ешкім де құлдықта немесе кіріптарлықта ұсталуы тиіс емес.
+# labels = checked_IFS
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	6	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -7861,6 +7870,7 @@
 
 # sent_id = udhr.tagged.txt:7:305
 # text = Құлдық пен құл саудасына, қандай түрде болса да, тыйым салынады.
+# labels = checked_IFS
 1	Құлдық	құлдық	NOUN	n	Case=Nom	12	obl	_	_
 2	пен	мен	CCONJ	cnjcoo	_	4	cc	_	_
 3	құл	құл	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -7878,6 +7888,7 @@
 
 # sent_id = udhr.tagged.txt:8:331
 # text = Ешкім де азапталуға немесе қадір-қасиетін қорлайтындай адамшылыққа жатпайтын қатыгездік жолмен жәбірленуге, немесе жазалануға тиіс емес.
+# labels = checked_IFS
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	15	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -7899,6 +7910,7 @@
 
 # sent_id = udhr.tagged.txt:9:365
 # text = Әр адам қай жерде жүрсе де, құқықтық субъектісі ретінде танылуына құқылы.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	12	nsubj	_	_
 3	қай	қай	DET	det	PronType=Int	4	det	_	_
@@ -7916,6 +7928,7 @@
 
 # sent_id = udhr.tagged.txt:10:391
 # text = Заң алдында жұрттың бәрі тең және де заң арқылы алаланбай, бірдей тең қорғалуға құқылы.
+# labels = checked_IFS
 1	Заң	заң	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	алдында	алд	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	жұрттың	жұрт	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -7936,6 +7949,7 @@
 
 # sent_id = udhr.tagged.txt:11:423
 # text = Барлық адам осы Декларацияның ережелерін бұзатын кемсітуден және кемсітуге арандатушылықтың барлық түрінен тең қорғалуға құқылы.
+# labels = checked_IFS
 1	Барлық	барлық	DET	det	PronType=Qnt	2	det	_	_
 2	адам	адам	NOUN	n	Case=Nom	15	nsubj	_	_
 3	осы	осы	DET	det	PronType=Dem	4	det	_	_
@@ -7955,6 +7969,7 @@
 
 # sent_id = udhr.tagged.txt:12:456
 # text = Ешкім де негізсіз тұтқындалуға, қамауда ұсталуға немесе қуғынға ұшыратылуға тиіс емес.
+# labels = checked_IFS
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	11	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -7974,6 +7989,7 @@
 
 # sent_id = udhr.tagged.txt:13:483
 # text = Ешкім де жасаған әрекеті немесе әрекетсіздігі негізінде, егер ол әрекеті ұлттық заңдар мен халықаралық құқық бойынша қылмыс болып саналмаса, жауапқа тартылмайды.
+# labels = checked_IFS
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	23	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -8002,6 +8018,7 @@
 
 # sent_id = udhr.tagged.txt:14:531
 # text = Әр адамның азаматтыққа құқығы бар.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адамның	адам	NOUN	n	Case=Gen	4	nmod:poss	_	_
 3	азаматтыққа	азаматтық	NOUN	n	Case=Dat	4	nmod	_	_
@@ -8011,6 +8028,7 @@
 
 # sent_id = udhr.tagged.txt:15:544
 # text = Ешкімді де азаматтығынан немесе азаматтығын өзгерту құқығынан еріксіз айыруға болмайды.
+# labels = checked_IFS
 1-2	Ешкімді де	_	_	_	_	_	_	_	_
 1	Ешкімді	ешкім	PRON	prn	Case=Acc|PronType=Neg	9	obj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -8026,6 +8044,7 @@
 
 # sent_id = udhr.tagged.txt:16:566
 # text = Неке, тек екі жақтың өзара еркін және толық келісімі бойынша ғана қиылады.
+# labels = checked_IFS
 1	Неке	неке	NOUN	n	Case=Nom	13	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	тек	тек	ADV	adv	_	13	advmod	_	_
@@ -8044,6 +8063,7 @@
 
 # sent_id = udhr.tagged.txt:17:594
 # text = Отбасы қоғамның табиғи және негізгі ұясы болып табылады, және қоғам мен мемлекет тарапынан қорғалуға құқылы.
+# labels = checked_IFS
 1	Отбасы	отбасы	NOUN	n	Case=Nom	8	nsubj	_	_
 2	қоғамның	қоғам	NOUN	n	Case=Gen	6	nmod:poss	_	_
 3	табиғи	табиғи	ADJ	adj	_	6	amod	_	_
@@ -8064,6 +8084,7 @@
 
 # sent_id = udhr.tagged.txt:18:629
 # text = Ешкім де өз мүлкінен еріксіз айрылмауға тиіс.
+# labels = checked_IFS
 1-2	Ешкім де	_	_	_	_	_	_	_	_
 1	Ешкім	ешкім	PRON	prn	Case=Nom|PronType=Neg	7	nsubj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -8076,6 +8097,7 @@
 
 # sent_id = udhr.tagged.txt:19:645
 # text = Әр адамның бейбіт жиналыстар және ассоциацияларды құру бостандығына құқығы бар.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адамның	адам	NOUN	n	Case=Gen	9	nmod:poss	_	_
 3	бейбіт	бейбіт	ADJ	adj	_	4	amod	_	_
@@ -8090,6 +8112,7 @@
 
 # sent_id = udhr.tagged.txt:20:668
 # text = Ешкімді де белгілі бір ассоциацияға зорлықпен кіргізуге болмайды.
+# labels = checked_IFS
 1-2	Ешкімді де	_	_	_	_	_	_	_	_
 1	Ешкімді	ешкім	PRON	prn	Case=Acc|PronType=Neg	7	obj	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -8103,6 +8126,7 @@
 
 # sent_id = udhr.tagged.txt:21:686
 # text = Ана және нәресте болу жағдайы айрықша қамқорлық пен көмек алуға құқық береді.
+# labels = checked_IFS
 1	Ана	ана	NOUN	n	Case=Nom	5	acl	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
 3	нәресте	нәресте	NOUN	n	Case=Nom	1	conj	_	_
@@ -8119,6 +8143,7 @@
 
 # sent_id = udhr.tagged.txt:22:713
 # text = Балалардың бәрі, некелі немесе некесіз туған, бірдей әлеуметтік қорғауды пайдаланады.
+# labels = checked_IFS
 1	Балалардың	бала	NOUN	n	Case=Gen|Number=Plur	2	nmod:poss	_	_
 2	бәрі	бәрі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	12	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -8135,6 +8160,7 @@
 
 # sent_id = udhr.tagged.txt:23:740
 # text = Әр адамның білім алуға құқығы бар.
+# labels = checked_IFS
 1	Әр	әр	DET	det	PronType=Qnt	2	det	_	_
 2	адамның	адам	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	білім	білім	NOUN	n	Case=Nom	4	obj	_	_
@@ -8145,6 +8171,7 @@
 
 # sent_id = udhr.tagged.txt:24:755
 # text = Бастауыш білім баршаға міндетті болуы тиіс.
+# labels = checked_IFS
 1	Бастауыш	бастауыш	ADJ	adj	_	2	amod	_	_
 2	білім	білім	NOUN	n	Case=Nom	4	nsubj	_	_
 3	баршаға	барша	PRON	prn	Case=Dat|PronType=Tot	4	obl	_	_
@@ -8155,6 +8182,7 @@
 
 # sent_id = udhr.tagged.txt:25:770
 # text = Ата-аналардың өздерінің жас балаларына білім беру түрін таңдауда құқығы басымды.
+# labels = checked_IFS
 1	Ата-аналардың	ата-ана	NOUN	n	Case=Gen|Number=Plur	9	nmod:poss	_	_
 2	өздерінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur|Person[psor]=3|PronType=Ref	4	nmod:poss	_	_
 3	жас	жас	ADJ	adj	_	4	amod	_	_
@@ -8169,6 +8197,7 @@
 
 # sent_id = udhr.tagged.txt:26:793
 # text = Осы бостандықтар мен құқықтарды жүзеге асырылуы Біріккен Ұлттар мақсаттары мен қағидаларына қайшы келмеуі тиіс.
+# labels = checked_IFS
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	бостандықтар	бостандық	NOUN	n	Case=Nom|Number=Plur	6	obj	_	_
 3	мен	мен	CCONJ	cnjcoo	_	4	cc	_	_
@@ -8187,12 +8216,14 @@
 
 # sent_id = wikitravel.tagged.txt:1:0
 # text = Қалыңыз қалай?
+# labels = checked_IFS
 1	Қалыңыз	қал	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form	2	nsubj	_	_
 2	қалай	қалай	ADV	adv	PronType=Int	0	root	_	SpaceAfter=No
 3	?	?	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:2:6
 # text = Рақмет, жақсы.
+# labels = checked_IFS
 1	Рақмет	рақмет	INTJ	ij	_	3	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	жақсы	жақсы	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -8200,6 +8231,7 @@
 
 # sent_id = wikitravel.tagged.txt:3:15
 # text = Сіздің атыңыз кім?
+# labels = checked_IFS
 1	Сіздің	сіз	PRON	prn	Case=Gen|Number=Sing|Person=2|Polite=Form|PronType=Prs	2	nmod:poss	_	_
 2	атыңыз	ат	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form	3	nsubj	_	_
 3	кім	кім	PRON	prn	Case=Nom|PronType=Int	0	root	_	SpaceAfter=No
@@ -8207,6 +8239,7 @@
 
 # sent_id = wikitravel.tagged.txt:4:24
 # text = Сізбен танысқаныма қуаныштымын.
+# labels = checked_IFS
 1	Сізбен	сіз	PRON	prn	Case=Ins|Number=Sing|Person=2|Polite=Form|PronType=Prs	2	obl	_	_
 2	танысқаныма	таны	VERB	v	Case=Dat|Number[psor]=Sing|Person[psor]=1|Tense=Past|VerbForm=Ger|Voice=Coop	3	advcl	_	_
 3-4	қуаныштымын	_	_	_	_	_	_	_	SpaceAfter=No
@@ -8216,6 +8249,7 @@
 
 # sent_id = wikitravel.tagged.txt:5:34
 # text = Мен Қазақ тілінде жақсы сөйлей алмаймын.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
 2	Қазақ	қазақ	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
@@ -8226,6 +8260,7 @@
 
 # sent_id = wikitravel.tagged.txt:6:49
 # text = Сіз орысша сөйлейсіз бе?
+# labels = checked_IFS
 1	Сіз	сіз	PRON	prn	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	nsubj	_	_
 2	орысша	орысша	ADV	adv	_	3	advmod	_	_
 3-4	сөйлейсіз бе	_	_	_	_	_	_	_	SpaceAfter=No
@@ -8235,6 +8270,7 @@
 
 # sent_id = wikitravel.tagged.txt:7:59
 # text = Осында орыс тілінде сөйлейтін адам бар ма?
+# labels = checked_IFS
 1	Осында	осы	PRON	prn	Case=Loc|PronType=Dem	6	advmod	_	_
 2	орыс	орыс	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
@@ -8247,12 +8283,14 @@
 
 # sent_id = wikitravel.tagged.txt:8:75
 # text = Мен түсінбеймін.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	түсінбеймін	түсін	VERB	v	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:9:82
 # text = Дәретхана қайда екен?
+# labels = checked_IFS
 1	Дәретхана	дәретхана	NOUN	n	Case=Nom	2	nsubj	_	_
 2	қайда	қайда	ADV	adv	PronType=Int	0	root	_	_
 3	екен	е	AUX	cop	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	2	cop	_	SpaceAfter=No
@@ -8260,6 +8298,7 @@
 
 # sent_id = wikitravel.tagged.txt:10:91
 # text = Мен полицияны шақырамын.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 2	полицияны	полиция	NOUN	n	Case=Acc	3	obj	_	_
 3	шақырамын	шақыр	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -8267,12 +8306,14 @@
 
 # sent_id = wikitravel.tagged.txt:11:100
 # text = Ұрыны ұстаңдар.
+# labels = checked_IFS
 1	Ұрыны	ұры	NOUN	n	Case=Acc	2	obj	_	_
 2	ұстаңдар	ұста	VERB	v	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No
 3	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:12:107
 # text = Маған көмек керек.
+# labels = checked_IFS
 1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
 2	көмек	көмек	NOUN	n	Case=Nom	3	nsubj	_	_
 3	керек	керек	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -8280,6 +8321,7 @@
 
 # sent_id = wikitravel.tagged.txt:13:116
 # text = Мен адасып кеттім.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	адасып	адас	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 3	кеттім	кет	AUX	vaux	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin	2	aux	_	SpaceAfter=No
@@ -8287,6 +8329,7 @@
 
 # sent_id = wikitravel.tagged.txt:14:125
 # text = Мен сөмкемді жоғалтып алдым.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 2	сөмкемді	сөмке	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	3	obj	_	_
 3	жоғалтып	жоғалт	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
@@ -8295,6 +8338,7 @@
 
 # sent_id = wikitravel.tagged.txt:15:136
 # text = Мен әмиянімді жоғалтып алдым.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 2	әмиянімді	әмиян	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	3	obj	_	_
 3	жоғалтып	жоғалт	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
@@ -8303,6 +8347,7 @@
 
 # sent_id = wikitravel.tagged.txt:16:147
 # text = Мен ауырып тұрмын.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2	ауырып	ауыр	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 3	тұрмын	тұр	AUX	vaux	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	SpaceAfter=No
@@ -8310,6 +8355,7 @@
 
 # sent_id = wikitravel.tagged.txt:17:156
 # text = Мен жаралымын.
+# labels = checked_IFS
 1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
 2-3	жаралымын	_	_	_	_	_	_	_	SpaceAfter=No
 2	жаралы	жаралы	ADJ	adj	_	0	root	_	_
@@ -8318,6 +8364,7 @@
 
 # sent_id = wikitravel.tagged.txt:18:164
 # text = Маған дәрігер керек.
+# labels = checked_IFS
 1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
 2	дәрігер	дәрігер	NOUN	n	Case=Nom	3	nsubj	_	_
 3	керек	керек	ADJ	adj	_	0	root	_	SpaceAfter=No
@@ -8325,6 +8372,7 @@
 
 # sent_id = wikitravel.tagged.txt:19:173
 # text = Сізден қоңырау шалуға бола ма?
+# labels = checked_IFS
 1	Сізден	сіз	PRON	prn	Case=Abl|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	obl	_	_
 2	қоңырау	қоңырау	X	x	_	3	dep	_	_
 3	шалуға	шал	VERB	v	Case=Dat|VerbForm=Ger	4	ccomp	_	_
@@ -8335,14 +8383,16 @@
 
 # sent_id = wikitravel.tagged.txt:20:185
 # text = Астанаға билет қанша тұрады?
+# labels = checked_IFS
 1	Астанаға	Астана	PROPN	np	Case=Dat	2	nmod	_	_
-2	билет	билет	NOUN	n	Case=Nom	4	obj	_	_
-3	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	4	nsubj	_	_
+2	билет	билет	NOUN	n	Case=Nom	4	nsubj	_	_
+3	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	4	obj	_	_
 4	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	?	?	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:21:196
 # text = Астанаға бір билет беріңіз.
+# labels = checked_IFS
 1	Астанаға	Астана	PROPN	np	Case=Dat	3	nmod	_	_
 2	бір	бір	NUM	num	NumType=Card	3	nummod	_	_
 3	билет	билет	NOUN	n	Case=Nom	4	obj	_	_
@@ -8351,6 +8401,7 @@
 
 # sent_id = wikitravel.tagged.txt:22:207
 # text = Мына пойыз қайда барады?
+# labels = checked_IFS
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	пойыз	пойыз	NOUN	n	Case=Nom	4	nsubj	_	_
 3	қайда	қайда	ADV	adv	PronType=Int	4	advmod	_	_
@@ -8359,6 +8410,7 @@
 
 # sent_id = wikitravel.tagged.txt:23:218
 # text = Астанаға баратын пойыз қайда?
+# labels = checked_IFS
 1	Астанаға	Астана	PROPN	np	Case=Dat	2	obl	_	_
 2	баратын	бар	VERB	v	Aspect=Imp|VerbForm=Part	3	acl:relcl	_	_
 3	пойыз	пойыз	NOUN	n	Case=Nom	4	nsubj	_	_
@@ -8367,6 +8419,7 @@
 
 # sent_id = wikitravel.tagged.txt:24:229
 # text = Мына автобус Астанаға тоқтай ма?
+# labels = checked_IFS
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	автобус	автобус	NOUN	n	Case=Nom	4	nsubj	_	_
 3	Астанаға	Астана	PROPN	np	Case=Dat	4	obl	_	_
@@ -8377,14 +8430,16 @@
 
 # sent_id = wikitravel.tagged.txt:25:241
 # text = Пойыз Астанаға қашан шығады?
+# labels = checked_IFS
 1	Пойыз	пойыз	NOUN	n	Case=Nom	4	nsubj	_	_
-2	Астанаға	Астана	PROPN	np	Case=Dat	1	nmod	_	_
+2	Астанаға	Астана	PROPN	np	Case=Dat	4	obl	_	_
 3	қашан	қашан	ADV	adv	PronType=Int	4	advmod	_	_
 4	шығады	шық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	?	?	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:26:252
 # text = Мына пойыз Астанаға қашан жетеді?
+# labels = checked_IFS
 1	Мына	мына	DET	det	PronType=Dem	2	det	_	_
 2	пойыз	пойыз	NOUN	n	Case=Nom	5	nsubj	_	_
 3	Астанаға	Астана	PROPN	np	Case=Dat	5	obl	_	_
@@ -8394,6 +8449,7 @@
 
 # sent_id = wikitravel.tagged.txt:27:265
 # text = Сіз кітапхананы картадан көрсете аласыз ба?
+# labels = checked_IFS
 1	Сіз	сіз	PRON	prn	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	nsubj	_	_
 2	кітапхананы	кітапхана	NOUN	n	Case=Acc	4	obj	_	_
 3	картадан	карта	NOUN	n	Case=Abl	4	obl	_	_
@@ -8405,6 +8461,7 @@
 
 # sent_id = wikitravel.tagged.txt:28:279
 # text = Сізде бос бөлмелер бар ма?
+# labels = checked_IFS
 1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	obl:own	_	_
 2	бос	бос	ADJ	adj	_	3	amod	_	_
 3	бөлмелер	бөлме	NOUN	n	Case=Nom|Number=Plur	4	nsubj	_	_
@@ -8415,15 +8472,17 @@
 
 # sent_id = wikitravel.tagged.txt:29:291
 # text = Екі адамға бөлме қанша тұрады?
+# labels = checked_IFS
 1	Екі	екі	NUM	num	NumType=Card	2	nummod	_	_
 2	адамға	адам	NOUN	n	Case=Dat	5	obl	_	_
-3	бөлме	бөлме	NOUN	n	Case=Nom	5	obj	_	_
-4	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	5	nsubj	_	_
+3	бөлме	бөлме	NOUN	n	Case=Nom	5	nsubj	_	_
+4	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	5	obj	_	_
 5	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 6	?	?	PUNCT	sent	_	5	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:30:304
 # text = Осы бөлмеде төсек жайма бар ма?
+# labels = checked_IFS
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	бөлмеде	бөлме	NOUN	n	Case=Loc	5	obl	_	_
 3	төсек	төсек	NOUN	n	Case=Nom	4	compound	_	_
@@ -8435,6 +8494,7 @@
 
 # sent_id = wikitravel.tagged.txt:31:318
 # text = Маған алдымен бөлмені қарап шығуға бола ма?
+# labels = checked_IFS
 1	Маған	мен	PRON	prn	Case=Dat|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
 2	алдымен	алдымен	ADV	adv	_	4	advmod	_	_
 3	бөлмені	бөлме	NOUN	n	Case=Acc	4	obj	_	_
@@ -8447,6 +8507,7 @@
 
 # sent_id = wikitravel.tagged.txt:32:334
 # text = Сізде бірдеме тазалау бар ма?
+# labels = checked_IFS
 1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	obl:own	_	_
 2	бірдеме	бірдеме	PRON	prn	Case=Nom|PronType=Ind	4	nsubj	_	_
 3	тазалау	таза	ADJ	adj	Degree=Cmp	2	amod	_	_
@@ -8457,6 +8518,7 @@
 
 # sent_id = wikitravel.tagged.txt:33:346
 # text = Сіз басқа қонақ үйді ұсына аласыз ба?
+# labels = checked_IFS
 1	Сіз	сіз	PRON	prn	Case=Nom|Number=Sing|Person=2|Polite=Form|PronType=Prs	5	nsubj	_	_
 2	басқа	басқа	DET	det	PronType=Ind	3	det	_	_
 3	қонақ	қонақ	NOUN	n	Case=Nom	4	compound	_	_
@@ -8469,6 +8531,7 @@
 
 # sent_id = wikitravel.tagged.txt:34:362
 # text = Сізде сейф бар ма?
+# labels = checked_IFS
 1	Сізде	сіз	PRON	prn	Case=Loc|Number=Sing|Person=2|Polite=Form|PronType=Prs	3	obl:own	_	_
 2	сейф	сейф	NOUN	n	Case=Nom	3	nsubj	_	_
 3-4	бар ма	_	_	_	_	_	_	_	SpaceAfter=No
@@ -8478,6 +8541,7 @@
 
 # sent_id = wikitravel.tagged.txt:35:372
 # text = Таңғы ас енгізілген бе?
+# labels = checked_IFS
 1	Таңғы	таңғы	X	x	_	2	dep	_	_
 2	ас	ас	NOUN	n	Case=Nom	3	nsubj	_	_
 3-4	енгізілген бе	_	_	_	_	_	_	_	SpaceAfter=No
@@ -8487,6 +8551,7 @@
 
 # sent_id = wikitravel.tagged.txt:36:382
 # text = Өтінемін, менің бөлмемді жинаңыз.
+# labels = checked_IFS
 1	Өтінемін	өтін	VERB	v	Mood=Ind|Number=Sing|Person=1|Tense=Aor|VerbForm=Fin	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	менің	мен	PRON	prn	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
@@ -8496,13 +8561,15 @@
 
 # sent_id = wikitravel.tagged.txt:37:395
 # text = Мынау қанша тұрады?
-1	Мынау	мынау	PRON	prn	Case=Nom|PronType=Dem	3	obj	_	_
-2	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	3	nsubj	_	_
+# labels = checked_IFS
+1	Мынау	мынау	PRON	prn	Case=Nom|PronType=Dem	3	nsubj	_	_
+2	қанша	қанша	PRON	prn	Case=Nom|PronType=Int	3	obj	_	_
 3	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 4	?	?	PUNCT	sent	_	3	punct	_	_
 
 # sent_id = wikitravel.tagged.txt:38:404
 # text = Тіпті қымбат қой!
+# labels = checked_IFS
 1	Тіпті	тіпті	ADV	adv	_	2	advmod	_	_
 2-3	қымбат қой	_	_	_	_	_	_	_	SpaceAfter=No
 2	қымбат	қымбат	ADJ	adj	_	0	root	_	_
@@ -8511,6 +8578,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:1:0
 # text = Балаларды оқытқан да жақсы, бірақ құлшылық қыларлық қана, түркі танырлық қана таза оқытса болады.
+# labels = checked_IFS
 1	Балаларды	бала	NOUN	n	Case=Acc|Number=Plur	2	obj	_	_
 2-3	оқытқан да	_	_	_	_	_	_	_	_
 2	оқытқан	оқыт	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	4	csubj	_	_
@@ -8520,12 +8588,12 @@
 6	бірақ	бірақ	CCONJ	cnjcoo	_	15	cc	_	_
 7	құлшылық	құлшылық	NOUN	n	Case=Nom	8	compound	_	_
 8-9	қыларлық қана	_	_	_	_	_	_	_	SpaceAfter=No
-8	қыларлық	қыларлық	NOUN	n	Case=Nom	15	obj	_	_
+8	қыларлық	қыларлық	VERB	v	Case=Nom|Mood=Pot|Tense=Past|VerbForm=Part	15	advcl	_	_
 9	қана	ғана	ADV	postadv	_	8	advmod	_	_
 10	,	,	PUNCT	cm	_	12	punct	_	_
 11	түркі	түркі	ADJ	adj	_	12	amod	_	_
 12-13	танырлық қана	_	_	_	_	_	_	_	_
-12	танырлық	танырлық	NOUN	n	Case=Nom	8	conj	_	_
+12	танырлық	танырлық	VERB	v	Case=Nom|Mood=Pot|Tense=Past|VerbForm=Part	8	conj	_	_
 13	қана	ғана	ADV	postadv	_	12	advmod	_	_
 14	таза	таза	ADJ	adj	_	15	advmod	_	_
 15	оқытса	оқыт	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Cov	4	conj	_	_
@@ -8534,19 +8602,20 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:2:31
 # text = Аның үшін бұл жер Дар-әл-Харб, мұнда әуел мал табу керек, онан соң ғараб, парсы керек.
+# labels = checked_IFS
 1	Аның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
 2	үшін	үшін	ADP	post	_	1	case	_	_
 3	бұл	бұл	DET	det	PronType=Dem	4	det	_	_
 4	жер	жер	NOUN	n	Case=Nom	5	nsubj	_	_
 5	Дар-әл-Харб	Дар-әл-Харб	PROPN	np	Case=Nom	0	root	_	SpaceAfter=No
-6	,	,	PUNCT	cm	_	18	punct	_	_
-7	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	18	obl	_	_
+6	,	,	PUNCT	cm	_	11	punct	_	_
+7	мұнда	бұл	PRON	prn	Case=Loc|PronType=Dem	11	advmod	_	_
 8	әуел	әуел	ADJ	adj	_	11	advmod	_	_
 9	мал	мал	NOUN	n	Case=Nom	10	obj	_	_
 10	табу	тап	VERB	v	Case=Nom|VerbForm=Ger	11	csubj	_	_
 11	керек	керек	ADJ	adj	_	5	conj	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	18	punct	_	_
-13	онан	ол	PRON	prn	Case=Abl|PronType=Dem	18	advmod	_	_
+13	онан	ол	PRON	prn	Case=Abl|PronType=Dem	18	obl	_	_
 14	соң	соң	ADP	post	_	13	case	_	_
 15	ғараб	ғараб	NOUN	n	Case=Nom	18	nsubj	_	SpaceAfter=No
 16	,	,	PUNCT	cm	_	17	punct	_	_
@@ -8556,6 +8625,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:3:70
 # text = Қарны аш кісінің көңіліне ақыл, бойында ар, ғылымға құмарлық қайдан тұрсын?
+# labels = checked_IFS
 1	Қарны	қарын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	nsubj	_	_
 2	аш	аш	ADJ	adj	_	3	acl	_	_
 3	кісінің	кісі	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -8565,7 +8635,7 @@
 7	бойында	бой	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	orphan	_	_
 8	ар	ар	NOUN	n	Case=Nom	5	conj	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	8	punct	_	_
-10	ғылымға	ғылым	NOUN	n	Case=Dat	13	obl	_	_
+10	ғылымға	ғылым	NOUN	n	Case=Dat	11	nmod	_	_
 11	құмарлық	құмарлық	NOUN	n	Case=Nom	13	nsubj	_	_
 12	қайдан	қайдан	ADV	adv	PronType=Int	13	advmod	_	_
 13	тұрсын	тұр	VERB	v	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	5	conj	_	SpaceAfter=No
@@ -8573,6 +8643,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:4:99
 # text = Мал тапса, қарын тояды.
+# labels = checked_IFS
 1	Мал	мал	NOUN	n	Case=Nom	2	obj	_	_
 2	тапса	тап	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	5	advcl	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -8582,7 +8653,8 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:5:112
 # text = Онан соң білім түгіл өнер керек екен.
-1	Онан	ол	PRON	prn	Case=Abl|PronType=Dem	6	advmod	_	_
+# labels = checked_IFS
+1	Онан	ол	PRON	prn	Case=Abl|PronType=Dem	6	obl	_	_
 2	соң	соң	ADP	post	_	1	case	_	_
 3	білім	білім	NOUN	n	Case=Nom	6	nsubj	_	_
 4	түгіл	түгіл	CCONJ	cnjcoo	_	5	cc	_	_
@@ -8593,6 +8665,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:6:129
 # text = Соны үйренейін, не балама үйретейін деп ойына жақсы түседі.
+# labels = checked_IFS
 1	Соны	сол	PRON	prn	Case=Acc|PronType=Dem	2	obj	_	_
 2	үйренейін	үйрен	VERB	v	Mood=Opt|Number=Sing|Person=1|VerbForm=Fin	7	ccomp	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	6	punct	_	_
@@ -8607,18 +8680,19 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:7:152
 # text = Орысша оқу керек, хикмет те, мал да, өнер де, ғылым да — бәрі орыста тұр.
+# labels = checked_IFS
 1	Орысша	орысша	NOUN	n	Case=Nom	2	obj	_	_
 2	оқу	оқы	VERB	v	Case=Nom|VerbForm=Ger	3	csubj	_	_
 3	керек	керек	ADJ	adj	_	19	parataxis	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	19	punct	_	_
 5-6	хикмет те	_	_	_	_	_	_	_	SpaceAfter=No
 5	хикмет	хикмет	NOUN	n	Case=Nom	19	nsubj	_	_
-6	те	да	CCONJ	cnjcoo	_	14	cc	_	_
-7	,	,	PUNCT	cm	_	14	punct	_	_
+6	те	да	CCONJ	cnjcoo	_	8	cc	_	_
+7	,	,	PUNCT	cm	_	8	punct	_	_
 8-9	мал да	_	_	_	_	_	_	_	SpaceAfter=No
 8	мал	мал	NOUN	n	Case=Nom	5	conj	_	_
-9	да	да	CCONJ	cnjcoo	_	14	cc	_	_
-10	,	,	PUNCT	cm	_	14	punct	_	_
+9	да	да	CCONJ	cnjcoo	_	11	cc	_	_
+10	,	,	PUNCT	cm	_	11	punct	_	_
 11-12	өнер де	_	_	_	_	_	_	_	SpaceAfter=No
 11	өнер	өнер	NOUN	n	Case=Nom	5	conj	_	_
 12	де	да	CCONJ	cnjcoo	_	14	cc	_	_
@@ -8634,15 +8708,16 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:8:189
 # text = Зарарынан қашық болуға, пайдасына ортақ болуға тілін, оқуын, ғылымын білмек керек.
+# labels = checked_IFS
 1	Зарарынан	зарар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	2	obl	_	_
 2	қашық	қашық	ADJ	adj	_	13	advcl	_	_
 3	болуға	бол	AUX	v	Case=Dat|VerbForm=Ger	2	cop	_	SpaceAfter=No
-4	,	,	PUNCT	cm	_	7	punct	_	_
+4	,	,	PUNCT	cm	_	6	punct	_	_
 5	пайдасына	пайда	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	ортақ	ортақ	ADJ	adj	_	2	conj	_	_
 7	болуға	бол	AUX	v	Case=Dat|VerbForm=Ger	6	cop	_	_
 8	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	13	obj	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	12	punct	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	оқуын	оқу	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	conj	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	12	punct	_	_
 12	ғылымын	ғылым	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	conj	_	_
@@ -8652,19 +8727,21 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:9:220
 # text = Аның үшін олар дүниенің тілін білді, мұндай болды.
-1	Аның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+# labels = checked_IFS
+1	Аның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
 2	үшін	үшін	ADP	post	_	1	case	_	_
 3	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
 4	дүниенің	дүние	NOUN	n	Case=Gen	5	nmod:poss	_	_
 5	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
 6	білді	біл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	9	punct	_	_
-8	мұндай	бұл	PRON	prn	Case=Nom|PronType=Dem	9	nsubj	_	_
+8	мұндай	бұл	PRON	prn	Case=Nom|PronType=Dem	9	advmod	_	_
 9	болды	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	conj	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:10:241
 # text = Сен оның тілін білсең, көкірек-көзің ашылады.
+# labels = checked_IFS
 1	Сен	сен	PRON	prn	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
 2	оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
 3	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
@@ -8678,10 +8755,11 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:11:262
 # text = Әрбіреудің тілін өнерін білген кісі соныменен бірдейлік дағуасына кіреді, аса арсыздана жалынбайды.
+# labels = checked_IFS
 1	Әрбіреудің	әрбіреу	PRON	prn	Case=Gen|PronType=Ind	2	nmod:poss	_	_
-2	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	acl	_	_
-3	өнерін	өнер	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
-4	білген	біл	VERB	v	Tense=Past|VerbForm=Part	2	conj	_	_
+2	тілін	тіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
+3	өнерін	өнер	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	2	conj	_	_
+4	білген	біл	VERB	v	Tense=Past|VerbForm=Part	5	acl	_	_
 5	кісі	кісі	NOUN	n	Case=Nom	9	nsubj	_	_
 6	соныменен	сол	PRON	prn	Case=Ins|PronType=Dem	9	obl	_	_
 7	бірдейлік	бірдейлік	NOUN	n	Case=Nom	8	nmod:poss	_	_
@@ -8695,8 +8773,9 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:12:291
 # text = Дінге де жақсы — білгендік.
+# labels = checked_IFS
 1-2	Дінге де	_	_	_	_	_	_	_	_
-1	Дінге	дін	NOUN	n	Case=Dat	3	nmod	_	_
+1	Дінге	дін	NOUN	n	Case=Dat	3	obl	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
 3	жақсы	жақсы	ADJ	adj	_	0	root	_	_
 4	—	—	PUNCT	guio	_	3	punct	_	_
@@ -8705,15 +8784,16 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:13:303
 # text = Жорғалықпенен көңілін алсам екен деген надан әке-шешесін, ағайын-жұртын, дінін адамшылығын жаурыннан бір қаққанға сатады.
+# labels = checked_IFS
 1	Жорғалықпенен	жорғалық	NOUN	n	Case=Ins	3	obl	_	_
 2	көңілін	көңіл	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	3	obj	_	_
-3	алсам екен	ал	VERB	v	Mood=Vol|Number=Sing|Person=1|VerbForm=Fin	5	ccomp	_	_
-4	деген	де	VERB	v	Tense=Past|VerbForm=Part	11	acl	_	_
-5	надан	надан	ADJ	adj	_	11	amod	_	_
+3	алсам екен	ал	VERB	v	Mood=Vol|Number=Sing|Person=1|VerbForm=Fin	4	ccomp	_	_
+4	деген	де	VERB	v	Tense=Past|VerbForm=Part	5	acl	_	_
+5	надан	надан	ADJ	adj	_	15	nsubj	_	_
 6	әке-шешесін	әке-шеше	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	15	obj	_	SpaceAfter=No
-7	,	,	PUNCT	cm	_	11	punct	_	_
+7	,	,	PUNCT	cm	_	8	punct	_	_
 8	ағайын-жұртын	ағайын-жұрт	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	11	punct	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	дінін	дін	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
 11	адамшылығын	адамшылық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	conj	_	_
 12	жаурыннан	жаурын	NOUN	n	Case=Abl	14	obl	_	_
@@ -8724,6 +8804,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:14:336
 # text = Тек майырдың күлгені керек деп, көзі ашылса да қам жемейді.
+# labels = checked_IFS
 1	Тек	тек	ADV	adv	_	4	advmod	_	_
 2	майырдың	майыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	күлгені	күл	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	4	csubj	_	_
@@ -8740,7 +8821,8 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:15:360
 # text = Орыстың ғылымы, өнері — дүниенің кілті, оны білгенге дүние арзанырақ түседі.
-1	Орыстың	орыс	NOUN	n	Case=Gen	4	nmod:poss	_	_
+# labels = checked_IFS
+1	Орыстың	орыс	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	ғылымы	ғылым	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	4	punct	_	_
 4	өнері	өнер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	conj	_	_
@@ -8757,6 +8839,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:16:389
 # text = Ләкин осы күнде орыс ғылымын баласына үйреткен жандар соның қаруымен тағы қазақты аңдысам екен дейді.
+# labels = checked_IFS
 1	Ләкин	ләкин	CCONJ	cnjcoo	_	14	cc	_	_
 2	осы	осы	DET	det	PronType=Dem	3	det	_	_
 3	күнде	күн	NOUN	n	Case=Loc	7	obl	_	_
@@ -8775,6 +8858,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:17:420
 # text = Жоқ, олай ниет керек емес.
+# labels = checked_IFS
 1	Жоқ	жоқ	INTJ	ij	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	олай	ол	PRON	prn	PronType=Dem	5	advmod	_	_
@@ -8785,6 +8869,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:18:435
 # text = Қазаққа күзетші болайын деп, біз де ел болып, жұрт білгенді біліп, жұрт қатарына қосылудың қамын жейік деп ниеттеніп үйрену керек.
+# labels = checked_IFS
 1	Қазаққа	қазақ	NOUN	n	Case=Dat	2	nmod	_	_
 2	күзетші	күзетші	NOUN	n	Case=Nom	4	ccomp	_	_
 3	болайын	бол	AUX	v	Mood=Opt|Number=Sing|Person=1|VerbForm=Fin	2	cop	_	_
@@ -8796,7 +8881,7 @@
 8	ел	ел	NOUN	n	Case=Nom	19	advcl	_	_
 9	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	8	cop	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	8	punct	_	_
-11	жұрт	жұрт	NOUN	n	Case=Nom	12	obj	_	_
+11	жұрт	жұрт	NOUN	n	Case=Nom	12	nsubj	_	_
 12	білгенді	біл	VERB	v	Case=Acc|Tense=Past|VerbForm=Ger	13	ccomp	_	_
 13	біліп	біл	VERB	v	Aspect=Perf|VerbForm=Conv	19	advcl	_	SpaceAfter=No
 14	,	,	PUNCT	cm	_	13	punct	_	_
@@ -8813,6 +8898,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:19:483
 # text = Қазірде орыстан оқыған балалардан артық жақсы кісі шыға алмай да тұр.
+# labels = checked_IFS
 1	Қазірде	қазірде	ADV	adv	_	8	advmod	_	_
 2	орыстан	орыс	NOUN	n	Case=Abl	3	obl	_	_
 3	оқыған	оқы	VERB	v	Tense=Past|VerbForm=Part	4	acl	_	_
@@ -8829,6 +8915,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:20:507
 # text = Себебі: ата-анасы, ағайын-туғаны бір жағынан бұзып жатыр.
+# labels = checked_IFS
 1	Себебі	себебі	SCONJ	cnjadv	_	8	advmod	_	SpaceAfter=No
 2	:	:	PUNCT	sent	_	8	punct	_	_
 3	ата-анасы	ата-ана	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	SpaceAfter=No
@@ -8842,16 +8929,17 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:21:528
 # text = Сөйтсе де осы оқыған балалар — ана оқымаған қазақ балаларынан үздік, озық.
+# labels = checked_IFS
 1	Сөйтсе	сөйтсе	X	x	_	2	dep	_	_
 2	де	де	SCONJ	cnjadv	_	13	advmod	_	_
 3	осы	осы	DET	det	PronType=Dem	5	det	_	_
 4	оқыған	оқы	VERB	v	Tense=Past|VerbForm=Part	5	acl	_	_
-5	балалар	бала	NOUN	n	Case=Nom|Number=Plur	13	nsubj	_	_
+5	балалар	бала	NOUN	n	Case=Nom|Number=Plur	11	nsubj	_	_
 6	—	—	PUNCT	guio	_	5	punct	_	_
 7	ана	ана	DET	det	PronType=Dem	10	det	_	_
 8	оқымаған	оқы	VERB	v	Polarity=Neg|Tense=Past|VerbForm=Part	10	acl	_	_
 9	қазақ	қазақ	NOUN	n	Case=Nom	10	nmod:poss	_	_
-10	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	13	advcl	_	_
+10	балаларынан	бала	NOUN	n	Case=Abl|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	_	_	_	_
 11	үздік	үздік	ADJ	adj	_	0	root	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	13	punct	_	_
 13	озық	озық	ADJ	adj	_	11	conj	_	SpaceAfter=No
@@ -8859,6 +8947,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:22:557
 # text = Не қылса да сөзді ұқтырса болады оларға.
+# labels = checked_IFS
 1	Не	не	PRON	prn	Case=Nom|PronType=Int	2	nsubj	_	_
 2-3	қылса да	_	_	_	_	_	_	_	_
 2	қылса	қыл	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	6	advcl	_	_
@@ -8866,11 +8955,12 @@
 4	сөзді	сөз	NOUN	n	Case=Acc	5	obj	_	_
 5	ұқтырса	ұқтыр	VERB	v	Mood=Cnd|Number=Sing|Person=3|VerbForm=Conv	6	advcl	_	_
 6	болады	бол	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	_
-7	оларға	олар	PRON	prn	Case=Dat|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	SpaceAfter=No
+7	оларға	олар	PRON	prn	Case=Dat|Number=Plur|Person=3|PronType=Prs	6	obl	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:23:573
 # text = Жақсы атаның балалары да көп оқыған жоқ, қайта кедейдің баласын орысқа қорлап берді.
+# labels = checked_IFS
 1	Жақсы	жақсы	ADJ	adj	_	2	amod	_	_
 2	атаның	ата	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3-4	балалары да	_	_	_	_	_	_	_	_
@@ -8889,6 +8979,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:24:601
 # text = Олар осыдан артық қайда барсын?
+# labels = checked_IFS
 1	Олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
 2	осыдан	осы	PRON	prn	Case=Abl|PronType=Dem	5	obl	_	_
 3	артық	артық	ADP	post	_	2	case	_	_
@@ -8898,6 +8989,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:25:614
 # text = Және де кейбір қазақтар ағайынымен араздасқанда: “Сенің осы зорлығыңа көнгенше, баламды солдатқа беріп, басыма шаш, аузыма мұрт қойып кетпесем бе!” деуші еді.
+# labels = checked_IFS
 1-2	Және де	_	_	_	_	_	_	_	_
 1	Және	және	CCONJ	cnjcoo	_	28	cc	_	_
 2	де	да	ADV	postadv	_	1	advmod	_	_
@@ -8910,7 +9002,7 @@
 9	Сенің	сен	PRON	prn	Case=Gen|Number=Sing|Person=2|PronType=Prs	11	nmod:poss	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
 11	зорлығыңа	зорлық	NOUN	n	Case=Dat|Number[psor]=Sing|Person[psor]=2	12	obl	_	_
-12	көнгенше	көн	VERB	v	VerbForm=Conv	23	advcl	_	SpaceAfter=No
+12	көнгенше	көн	VERB	v	VerbForm=Conv	28	ccomp	_	SpaceAfter=No
 13	,	,	PUNCT	cm	_	12	punct	_	_
 14	баламды	бала	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	16	obj	_	_
 15	солдатқа	солдат	NOUN	n	Case=Dat	16	obl	_	_
@@ -8933,6 +9025,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:26:673
 # text = Осындай жаман сөзді, Құдайдан қорықпай, пендеден ұялмай айтқан қазақтардың баласы оқығанменен не бола қойсын?
+# labels = checked_IFS
 1	Осындай	осындай	DET	det	PronType=Ind	3	det	_	_
 2	жаман	жаман	ADJ	adj	_	3	amod	_	_
 3	сөзді	сөз	NOUN	n	Case=Acc	10	obj	_	SpaceAfter=No
@@ -8949,10 +9042,11 @@
 14	не	не	PRON	prn	Case=Nom|PronType=Int	0	root	_	_
 15	бола	бол	AUX	v	Aspect=Imp|VerbForm=Cov	14	cop	_	_
 16	қойсын	қой	AUX	vaux	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	14	aux	_	SpaceAfter=No
-17	?	?	PUNCT	sent	_	15	punct	_	_
+17	?	?	PUNCT	sent	_	14	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:27:708
 # text = Сонда да өзге қазақ балаларынан артық үйренгені немене, қай кеп үйреніпті?
+# labels = checked_IFS
 1	Сонда	сонда	X	x	_	2	dep	_	_
 2	да	да	SCONJ	cnjadv	_	12	cc	_	_
 3	өзге	өзге	ADJ	adj	_	5	amod	_	_
@@ -8969,6 +9063,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:28:735
 # text = Кірді, шықты, ілді, қайтты, түбегейлеп қуған бала да жоқ.
+# labels = checked_IFS
 1	Кірді	кір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	parataxis	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	шықты	шық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	13	parataxis	_	SpaceAfter=No
@@ -8987,6 +9082,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:29:763
 # text = Әкесі ел ақшасыменен оқығанға әрең оқытады, өз малын не қылып шығарсын?
+# labels = checked_IFS
 1	Әкесі	әке	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 2	ел	ел	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	ақшасыменен	ақша	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
@@ -9003,6 +9099,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:30:790
 # text = Турасын ойлағанда, балаңа қатын әперме, енші берме, барыңды салсаң да, орыстың ғылымын үйрет!
+# labels = checked_IFS
 1	Турасын	тура	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	2	obj	_	_
 2	ойлағанда	ойла	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	17	advcl	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -9025,6 +9122,7 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:31:826
 # text = Мына мен айтқан жол — мал аяр жол емес.
+# labels = checked_IFS
 1	Мына	мына	DET	det	PronType=Dem	4	det	_	_
 2	мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
 3	айтқан	айт	VERB	v	Tense=Past|VerbForm=Part	4	acl	_	_
@@ -9038,12 +9136,13 @@
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:32:847
 # text = Құдайдан қорық, пендеден ұял, балаң бала болсын десең — оқыт, мал аяма!
+# labels = checked_IFS
 1	Құдайдан	Құдай	NOUN	n	Case=Abl	2	obl	_	_
 2	қорық	қорық	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No
-3	,	,	PUNCT	cm	_	15	punct	_	_
+3	,	,	PUNCT	cm	_	5	punct	_	_
 4	пендеден	пенде	NOUN	n	Case=Abl	5	obl	_	_
 5	ұял	ұял	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	2	conj	_	SpaceAfter=No
-6	,	,	PUNCT	cm	_	15	punct	_	_
+6	,	,	PUNCT	cm	_	12	punct	_	_
 7	балаң	бала	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2	8	nsubj	_	_
 8	бала	бала	NOUN	n	Case=Nom	10	ccomp	_	_
 9	болсын	бол	AUX	v	Mood=Opt|Number=Sing|Person=3|VerbForm=Fin	8	cop	_	_
@@ -9056,7 +9155,8 @@
 16	!	!	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:33:880
-# text = Әйтпесе, бір ит қазақ болып қалған соң, саған рақат көрсетер, өзі рақат көрер ме, яки жұртқа рақат көрсетер?
+# text = Әйтпесе, бір ит қазақ болып қалған соң, саған рақат көрсетер ме, өзі рақат көрер ме, яки жұртқа рақат көрсетер ме?
+# labels = checked_IFS
 1	Әйтпесе	әйтпесе	SCONJ	cnjadv	_	23	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	бір	бір	NUM	num	NumType=Card	4	nummod	_	_
@@ -9065,13 +9165,13 @@
 6	болып	бол	AUX	v	Aspect=Perf|VerbForm=Cov	5	cop	_	_
 7	қалған	қал	AUX	vaux	Case=Nom|Tense=Past|VerbForm=Ger	5	aux	_	_
 8	соң	соң	ADP	post	_	5	case	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	23	punct	_	_
+9	,	,	PUNCT	cm	_	12	punct	_	_
 10	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	12	obl	_	_
 11	рақат	рақат	NOUN	n	Case=Nom	12	obj	_	_
 12-13	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
-12	көрсет	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
-13	ер	ма	PART	qst	_	12	discourse	_	_
-14	,	,	PUNCT	cm	_	23	punct	_	_
+12	көрсетер	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	13	root	_	_
+13	ме	ма	PART	qst	_	12	discourse	_	_
+14	,	,	PUNCT	cm	_	17	punct	_	_
 15	өзі	өз	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	17	nsubj	_	_
 16	рақат	рақат	NOUN	n	Case=Nom	17	obj	_	_
 17-18	көрер ме	_	_	_	_	_	_	_	SpaceAfter=No
@@ -9082,22 +9182,23 @@
 21	жұртқа	жұрт	NOUN	n	Case=Dat	23	obl	_	_
 22	рақат	рақат	NOUN	n	Case=Nom	23	obj	_	_
 23-24	көрсетер	_	_	_	_	_	_	_	SpaceAfter=No
-23	көрсет	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
-24	ер	ма	PART	qst	_	23	discourse	_	_
+23	көрсетер	көрсет	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	conj	_	_
+24	ме	ма	PART	qst	_	23	discourse	_	_
 25	?	?	PUNCT	sent	_	23	punct	_	_
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:1:0
 # text = Футболдан әлем чемпионаты 2014 — ФИФА-ның 20-шы футболдан әлем чемпионаты, финалдық кезеңі 2014 жылдың 12 маусым мен 13 шілде күндері аралығында Бразилияда өтті.
+# labels = checked_IFS
 1	Футболдан	футбол	NOUN	n	Case=Abl	3	nmod	_	_
 2	әлем	әлем	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	24	parataxis	_	_
+3	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 4	2014	2014	NUM	num	NumType=Card	3	compound	_	_
 5	—	—	PUNCT	guio	_	4	punct	_	_
 6	ФИФА-ның	ФИФА	PROPN	np	Case=Gen	10	nmod:poss	_	_
 7	20-шы	20	NUM	num	NumType=Ord	10	amod	_	_
 8	футболдан	футбол	NOUN	n	Case=Abl	10	nmod	_	_
 9	әлем	әлем	NOUN	n	Case=Nom	10	nmod:poss	_	_
-10	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	appos	_	SpaceAfter=No
+10	чемпионаты	чемпионат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	24	parataxis	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	10	punct	_	_
 12	финалдық	финалдық	ADJ	adj	_	13	amod	_	_
 13	кезеңі	кезең	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	24	nsubj	_	_
@@ -9116,6 +9217,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:2:50
 # text = Ашылу матчы Сан-Паулуда, ал финалы Рио-де-Жанейродағы Маракана стадионында орын алды.
+# labels = checked_IFS
 1	Ашылу	аш	VERB	v	Case=Nom|VerbForm=Ger|Voice=Pass	2	acl	_	_
 2	матчы	матч	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	orphan	_	_
 3	Сан-Паулуда	Сан-Паулу	PROPN	np	Case=Loc	0	root	_	SpaceAfter=No
@@ -9131,6 +9233,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:3:75
 # text = Әлем чемпионаттары үшін құрлықтарды ротациялау қағидасына байланысты, 2014 жылдың чемпионаты Оңтүстік Америкада өту керек болды және Бразилия сол чемпионатты өткізуге ниет білдірген жалғыз ғана ел еді.
+# labels = checked_IFS
 1	Әлем	әлем	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	чемпионаттары	чемпионат	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	үшін	үшін	ADP	post	_	2	case	_	_
@@ -9163,6 +9266,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:4:131
 # text = Қалған оңтүстік америкалық елдер 2003 жылы Бразилия үміткерлігін қолдаған.
+# labels = checked_IFS
 1	Қалған	қал	VERB	v	Tense=Past|VerbForm=Part	4	acl	_	_
 2	оңтүстік	оңтүстік	X	x	_	3	dep	_	_
 3	америкалық	америкалық	ADJ	adj	_	4	amod	_	_
@@ -9176,6 +9280,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:5:152
 # text = Кейінірек ФИФА ротация принципі өзгеретінін жариялады.
+# labels = checked_IFS
 1	Кейінірек	кейін	ADV	adv	Degree=Cmp	6	advmod	_	_
 2	ФИФА	ФИФА	PROPN	np	Case=Nom	6	nsubj	_	_
 3	ротация	ротация	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -9186,6 +9291,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:6:167
 # text = Енді 2018 жылдың чемпионатын өткізу құқығына қатысатын кандидаттар додасына, соңғы екі чемпионатты (КАФ және КОНМЕБОЛ) өткізген елдерден басқа, барлық конфедерациялардан елдер сынға түседі.
+# labels = checked_IFS
 1	Енді	енді	ADV	adv	_	27	advmod	_	_
 2	2018	2018	NUM	num	NumType=Ord	3	amod	_	_
 3	жылдың	жыл	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -9199,7 +9305,7 @@
 11	соңғы	соң	ADV	adv	Case=Nom	13	amod	_	_
 12	екі	екі	NUM	num	NumType=Card	13	nummod	_	_
 13	чемпионатты	чемпионат	NOUN	n	Case=Acc	19	obj	_	_
-14	(	(	PUNCT	lpar	_	17	punct	_	SpaceAfter=No
+14	(	(	PUNCT	lpar	_	15	punct	_	SpaceAfter=No
 15	КАФ	КАФ	PROPN	np	Case=Nom	13	appos	_	_
 16	және	және	CCONJ	cnjcoo	_	17	cc	_	_
 17	КОНМЕБОЛ	КОНМЕБОЛ	PROPN	np	Case=Nom	15	conj	_	SpaceAfter=No
