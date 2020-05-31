@@ -9333,11 +9333,11 @@
 8	бесінші	бес	NUM	num	NumType=Ord	9	amod	_	_
 9	ел	ел	NOUN	n	Case=Nom	0	root	_	_
 10	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	_
-11	(	(	PUNCT	lpar	_	18	punct	_	SpaceAfter=No
+11	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
 12	Мексика	Мексика	PROPN	np	Case=Nom	9	obl	_	SpaceAfter=No
-13	,	,	PUNCT	cm	_	18	punct	_	_
+13	,	,	PUNCT	cm	_	14	punct	_	_
 14	Италия	Италия	PROPN	np	Case=Nom	12	conj	_	SpaceAfter=No
-15	,	,	PUNCT	cm	_	18	punct	_	_
+15	,	,	PUNCT	cm	_	16	punct	_	_
 16	Франция	Франция	PROPN	np	Case=Nom	12	conj	_	_
 17	және	және	CCONJ	cnjcoo	_	18	cc	_	_
 18	Германиядан	Германия	PROPN	np	Case=Abl	12	conj	_	_
@@ -9397,13 +9397,13 @@
 1	Барлық	барлық	DET	det	PronType=Qnt	3	det	_	_
 2	сегіз	сегіз	NUM	num	NumType=Card	3	nummod	_	_
 3	топтың	топ	NOUN	n	Case=Gen	4	nmod:poss	_	_
-4	жеңімпаздары	жеңімпаз	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	13	amod	_	_
-5	мен	мен	CCONJ	cnjcoo	_	10	cc	_	_
+4	жеңімпаздары	жеңімпаз	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
+5	мен	мен	CCONJ	cnjcoo	_	9	cc	_	_
 6	екінші	екі	NUM	num	NumType=Ord	7	amod	_	_
 7	орын	орын	NOUN	n	Case=Nom	8	obj	_	_
 8	алған	ал	VERB	v	Tense=Past|VerbForm=Part	9	acl	_	_
-9	командалар	команда	NOUN	n	Case=Nom|Number=Plur	12	nmod	_	_
-10	1	1	NUM	num	NumType=Ord	4	conj	_	_
+9	командалар	команда	NOUN	n	Case=Nom|Number=Plur	4	conj	_	_
+10	1	1	NUM	num	NumType=Ord	13	amod	_	_
 11	/	/	SYM	sym	_	12	case	_	_
 12	8	8	NUM	num	NumType=Card	10	compound	_	_
 13	финалға	финал	NOUN	n	Case=Dat	14	obl	_	_
@@ -9448,7 +9448,7 @@
 # text = Жер көлемі 1,648 млн. км².
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
-3	1,648	1,648	NUM	num	NumType=Card	4	nummod	_	_
+3	1,648	1,648	NUM	num	NumType=Card	4	compound	_	_
 4	млн.	млн.	NOUN	abbr	_	5	nummod	_	_
 5	км²	км²	NOUN	abbr	_	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
@@ -9456,7 +9456,7 @@
 # sent_id = Иран.tagged.txt:3:51
 # text = Халқы 65,2 млн. адам (1999).
 1	Халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
-2	65,2	65,2	NUM	num	NumType=Card	3	nummod	_	_
+2	65,2	65,2	NUM	num	NumType=Card	3	compound	_	_
 3	млн.	млн.	NOUN	abbr	_	4	nummod	_	_
 4	адам	адам	NOUN	n	Case=Nom	0	root	_	_
 5	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
@@ -9468,31 +9468,31 @@
 # text = Халқының ұлттық құрамы: парсылар (51%), әзірбайжандар (27%), күрдтер (5%), арабтар, түрікмендер, белуджилер, армяндар, еврейлер, т.б.
 1	Халқының	халық	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 2	ұлттық	ұлттық	ADJ	adj	_	3	amod	_	_
-3	құрамы	құрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	30	nsubj	_	SpaceAfter=No
+3	құрамы	құрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No
 4	:	:	PUNCT	sent	_	3	punct	_	_
 5	парсылар	парсы	NOUN	n	Case=Nom|Number=Plur	0	root	_	_
 6	(	(	PUNCT	lpar	_	7	punct	_	SpaceAfter=No
 7	51%	51	NUM	num	Case=Nom|NumType=Card,Ord	5	appos	_	SpaceAfter=No
 8	)	)	PUNCT	rpar	_	7	punct	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	30	punct	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	әзірбайжандар	әзірбайжан	NOUN	n	Case=Nom|Number=Plur	5	conj	_	_
 11	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
 12	27%	27	NUM	num	Case=Nom|NumType=Card,Ord	10	appos	_	SpaceAfter=No
 13	)	)	PUNCT	rpar	_	12	punct	_	SpaceAfter=No
-14	,	,	PUNCT	cm	_	30	punct	_	_
+14	,	,	PUNCT	cm	_	15	punct	_	_
 15	күрдтер	күрд	NOUN	n	Case=Nom|Number=Plur	5	conj	_	_
 16	(	(	PUNCT	lpar	_	17	punct	_	SpaceAfter=No
 17	5%	5	NUM	num	Case=Nom|NumType=Card,Ord	15	appos	_	SpaceAfter=No
 18	)	)	PUNCT	rpar	_	17	punct	_	SpaceAfter=No
-19	,	,	PUNCT	cm	_	30	punct	_	_
+19	,	,	PUNCT	cm	_	20	punct	_	_
 20	арабтар	араб	NOUN	n	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
-21	,	,	PUNCT	cm	_	30	punct	_	_
+21	,	,	PUNCT	cm	_	22	punct	_	_
 22	түрікмендер	түрікмен	NOUN	n	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
-23	,	,	PUNCT	cm	_	30	punct	_	_
+23	,	,	PUNCT	cm	_	24	punct	_	_
 24	белуджилер	белуджи	NOUN	n	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
-25	,	,	PUNCT	cm	_	30	punct	_	_
+25	,	,	PUNCT	cm	_	26	punct	_	_
 26	армяндар	армян	NOUN	n	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
-27	,	,	PUNCT	cm	_	30	punct	_	_
+27	,	,	PUNCT	cm	_	28	punct	_	_
 28	еврейлер	еврей	NOUN	n	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
 29	,	,	PUNCT	cm	_	30	punct	_	_
 30-31	т.б.	_	_	_	_	_	_	_	_
@@ -9530,13 +9530,13 @@
 5	1,5	1,5	NUM	num	NumType=Card	6	nummod	_	_
 6	млн.	млн.	NUM	num	NumType=Card,Ord	3	appos	_	SpaceAfter=No
 7	)	)	PUNCT	rpar	_	6	punct	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	21	punct	_	_
+8	,	,	PUNCT	cm	_	9	punct	_	_
 9	Исфаһан	Исфаһан	PROPN	np	Case=Nom	3	conj	_	_
 10	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
 11	1	1	NUM	num	NumType=Card	12	nummod	_	_
 12	млн.	млн.	NUM	num	NumType=Card,Ord	9	appos	_	SpaceAfter=No
 13	)	)	PUNCT	rpar	_	12	punct	_	SpaceAfter=No
-14	,	,	PUNCT	cm	_	21	punct	_	_
+14	,	,	PUNCT	cm	_	15	punct	_	_
 15	Тебриз	Тебриз	PROPN	np	Case=Nom	3	conj	_	_
 16	(	(	PUNCT	lpar	_	18	punct	_	SpaceAfter=No
 17	852	852	NUM	num	NumType=Card	18	nummod	_	_
@@ -9599,9 +9599,9 @@
 # sent_id = Иран.tagged.txt:12:289
 # text = Президент (1997 жылдан бастап Сейд Мохаммед Хатами) 4 жылға сайланады және Министр Кабинетін басқарады.
 1	Президент	президент	NOUN	n	Case=Nom	16	nsubj	_	_
-2	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
+2	(	(	PUNCT	lpar	_	1	punct	_	SpaceAfter=No
 3	1997	1997	NUM	num	NumType=Ord	4	amod	_	_
-4	жылдан	жыл	NOUN	n	Case=Abl	8	nmod	_	_
+4	жылдан	жыл	NOUN	n	Case=Abl	8	obl	_	_
 5	бастап	баста	ADP	post	_	4	case	_	_
 6	Сейд	Сейд	PROPN	np	Case=Nom|Gender=Masc	1	appos	_	_
 7	Мохаммед	Мохаммед	PROPN	np	Case=Nom|Gender=Masc	6	flat:name	_	_
@@ -9668,7 +9668,7 @@
 # text = Ұлттық мейрамы 11 ақпан — Революция күні (1979).
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	мейрамы	мейрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
-3	11	11	NUM	num	NumType=Card	4	nummod	_	_
+3	11	11	NUM	num	NumType=Card	4	amod	_	_
 4	ақпан	ақпан	NOUN	n	Case=Nom	0	root	_	_
 5	—	—	PUNCT	guio	_	4	punct	_	_
 6	Революция	революция	NOUN	n	Case=Nom	7	nmod:poss	_	_
@@ -9712,10 +9712,10 @@
 5	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
 6	Эльбурс	Эльбурс	PROPN	np	Case=Nom	4	appos	_	SpaceAfter=No
 7	)	)	PUNCT	rpar	_	6	punct	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	18	punct	_	_
+8	,	,	PUNCT	cm	_	10	punct	_	_
 9	Оңтүстік	оңтүстік	ADJ	adj	_	10	amod	_	_
 10	Иран	Иран	PROPN	np	Case=Nom	4	conj	_	_
-11	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
+11	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
 12	Загрос	Загрос	PROPN	np	Case=Nom	10	appos	_	SpaceAfter=No
 13	,	,	PUNCT	cm	_	14	punct	_	_
 14	Мекран	Мекран	PROPN	np	Case=Nom	12	conj	_	SpaceAfter=No
@@ -9723,26 +9723,26 @@
 16	,	,	PUNCT	cm	_	18	punct	_	_
 17	Шығыс	шығыс	ADJ	adj	_	18	amod	_	_
 18	Иран	Иран	PROPN	np	Case=Nom	4	conj	_	_
-19	(	(	PUNCT	lpar	_	26	punct	_	SpaceAfter=No
+19	(	(	PUNCT	lpar	_	20	punct	_	SpaceAfter=No
 20	Серхед	Серхед	PROPN	np	Case=Nom	18	appos	_	SpaceAfter=No
-21	,	,	PUNCT	cm	_	26	punct	_	_
+21	,	,	PUNCT	cm	_	22	punct	_	_
 22	Пеленган	Пеленган	PROPN	np	Case=Nom	20	conj	_	SpaceAfter=No
-23	,	,	PUNCT	cm	_	26	punct	_	_
+23	,	,	PUNCT	cm	_	24	punct	_	_
 24	Боран	Боран	PROPN	np	Case=Nom	20	conj	_	SpaceAfter=No
 25	,	,	PUNCT	cm	_	26	punct	_	_
 26	Келат	Келат	PROPN	np	Case=Nom	20	conj	_	SpaceAfter=No
 27	)	)	PUNCT	rpar	_	26	punct	_	_
-28	таулары	тау	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+28	таулары	тау	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	38	nsubj	_	SpaceAfter=No
 29	,	,	PUNCT	cm	_	28	punct	_	_
 30	ортасында	орта	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	38	obl	_	_
 31	Кухруд	Кухруд	PROPN	np	Case=Nom	32	nmod:poss	_	_
 32	жотасы	жота	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	38	nsubj	_	SpaceAfter=No
-33	,	,	PUNCT	cm	_	36	punct	_	_
+33	,	,	PUNCT	cm	_	34	punct	_	_
 34	Деште-Кевир	Деште-Кевир	PROPN	np	Case=Nom	37	nmod:poss	_	SpaceAfter=No
 35	,	,	PUNCT	cm	_	36	punct	_	_
 36	Деште-Лух	Деште-Лух	PROPN	np	Case=Nom	34	conj	_	_
 37	шөлдері	шөл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	32	conj	_	_
-38	орналасқан	орналас	VERB	v	Tense=Past|VerbForm=Part	28	conj	_	SpaceAfter=No
+38	орналасқан	орналас	VERB	v	Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 39	.	.	PUNCT	sent	_	38	punct	_	_
 
 # sent_id = Иран.tagged.txt:19:546
@@ -9770,7 +9770,7 @@
 # text = Жері, негізінен, таулы.
 1	Жері	жер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
-3	негізінен	негізінен	ADV	adv	_	1	parataxis	_	SpaceAfter=No
+3	негізінен	негізінен	ADV	adv	_	5	advmod	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
 5	таулы	таулы	ADJ	adj	_	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
@@ -9848,20 +9848,20 @@
 # text = Иран жерінде сүтқоректілердің 100-ге тарта, құстардың 400-ге жуық, бауырымен жорғалаушылардың 80-ге жуық түрі бар.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
-3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	0	root	_	_
+3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	15	nmod:poss	_	_
 4	100-ге	100	NUM	num	Case=Dat|NumType=Card,Ord	3	orphan	_	_
 5	тарта	тарта	ADP	post	_	4	case	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	3	punct	_	_
 7	құстардың	құс	NOUN	n	Case=Gen|Number=Plur	3	conj	_	_
 8	400-ге	400	NUM	num	Case=Dat|NumType=Card,Ord	7	orphan	_	_
 9	жуық	жуық	ADP	post	_	8	case	_	SpaceAfter=No
-10	,	,	PUNCT	cm	_	7	punct	_	_
-11	бауырымен	бауырымен	X	x	_	12	dep	_	_
-12	жорғалаушылардың	жорғалаушы	NOUN	n	Case=Gen|Number=Plur	15	nmod:poss	_	_
+10	,	,	PUNCT	cm	_	12	punct	_	_
+11	бауырымен	бауыр	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
+12	жорғалаушылардың	жорғалаушы	NOUN	n	Case=Gen|Number=Plur	3	conj	_	_
 13	80-ге	80	NUM	num	Case=Dat|NumType=Card	15	nummod	_	_
 14	жуық	жуық	ADP	post	_	13	case	_	_
 15	түрі	түр	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nsubj	_	_
-16	бар	бар	ADJ	adj	_	3	conj	_	SpaceAfter=No
+16	бар	бар	ADJ	adj	_	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	_
 
 # sent_id = Иран.tagged.txt:28:739
@@ -9876,7 +9876,7 @@
 # text = Иран жеріне адам баласы тым ерте заманнан бері қоныстанған.
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жеріне	жер	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
-3	адам	адам	X	x	_	4	dep	_	_
+3	адам	адам	NOUN	n	Case=Nom	4	compound	_	_
 4	баласы	баласы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 5	тым	тым	ADV	adv	_	6	advmod	_	_
 6	ерте	ерте	ADJ	adj	_	7	amod	_	_
@@ -9983,9 +9983,9 @@
 3	мемлекеті	мемлекет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 4	Оңтүстік	оңтүстік	ADJ	adj	_	5	amod	_	_
 5	Арабияны	Арабия	PROPN	np	Case=Acc	12	obj	_	SpaceAfter=No
-6	,	,	PUNCT	cm	_	11	punct	_	_
+6	,	,	PUNCT	cm	_	7	punct	_	_
 7	Сирияны	Сирия	PROPN	np	Case=Acc	5	conj	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	11	punct	_	_
+8	,	,	PUNCT	cm	_	9	punct	_	_
 9	Палестинаны	Палестина	PROPN	np	Case=Acc	5	conj	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
 11	Мысырды	Мысыр	PROPN	np	Case=Acc	5	conj	_	_
@@ -9996,7 +9996,7 @@
 # sent_id = Иран.tagged.txt:37:952
 # text = Византияға қауіп төндірді, Түрік қағанатымен соғыс жүргізді.
 1	Византияға	Византия	PROPN	np	Case=Dat	3	obl	_	_
-2	қауіп	қауіп	NOUN	n	Case=Nom	3	nsubj	_	_
+2	қауіп	қауіп	NOUN	n	Case=Nom	3	obj	_	_
 3	төндірді	төндір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	parataxis	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
 5	Түрік	түрік	NOUN	n	Case=Nom	6	nmod:poss	_	_
@@ -10054,10 +10054,10 @@
 7	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 8	билеген	биле	VERB	v	Tense=Past|VerbForm=Part	10	acl	_	_
 9	Бағдад	Бағдад	PROPN	np	Case=Nom	10	nmod:poss	_	_
-10	халифаты	халифат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nsubj	_	_
+10	халифаты	халифат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	11	nmod:poss	_	_
 11	құрамында	құрам	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	19	advcl	_	_
 12	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	11	cop	_	SpaceAfter=No
-13	,	,	PUNCT	cm	_	12	punct	_	_
+13	,	,	PUNCT	cm	_	11	punct	_	_
 14	мәдени	мәдени	ADJ	adj	_	17	amod	_	_
 15	және	және	CCONJ	cnjcoo	_	16	cc	_	_
 16	экономикалық	экономикалық	ADJ	adj	_	14	conj	_	_
@@ -10125,7 +10125,7 @@
 21	Ғазнауи	Ғазнауи	PROPN	np	Case=Nom	22	nmod:poss	_	_
 22	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	23	nsubj	_	_
 23	билеген	биле	VERB	v	Tense=Past|VerbForm=Part	24	acl	_	_
-24	мемлекеттің	мемлекет	NOUN	n	Case=Gen	26	nmod:poss	_	_
+24	мемлекеттің	мемлекет	NOUN	n	Case=Gen	25	nmod:poss	_	_
 25	құрамына	құрам	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	26	obl	_	_
 26	кірді	кір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 27	.	.	PUNCT	sent	_	26	punct	_	_
@@ -10148,8 +10148,8 @@
 
 # sent_id = Иран.tagged.txt:45:1212
 # text = Көп ұзамай олар Ғазнауи әулеті әскерін талқандап, бүкіл Иранды және көрші елдерді басып алып салжұқтар мемлекетін құрды.
-1	Көп	көп	X	x	_	2	dep	_	_
-2	ұзамай	ұзамай	ADV	adv	_	18	advmod	_	_
+1	Көп	көп	ADV	adj	_	2	advmod	_	_
+2	ұзамай	ұз	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	18	advcl	_	_
 3	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
 4	Ғазнауи	Ғазнауи	PROPN	np	Case=Nom	5	nmod:poss	_	_
 5	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
@@ -10182,7 +10182,7 @@
 9	,	,	PUNCT	cm	_	23	punct	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
 11	ғасырдың	ғасыр	NOUN	n	Case=Gen	12	nmod:poss	_	_
-12	аяғына	аяқ	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	23	nmod	_	_
+12	аяғына	аяқ	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	23	obl	_	_
 13	таман	таман	ADP	post	_	12	case	_	_
 14	бүкіл	бүкіл	DET	det	PronType=Qnt	15	det	_	_
 15	Иранды	Иран	PROPN	np	Case=Acc	23	obj	_	_
