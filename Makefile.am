@@ -273,7 +273,6 @@ test: all
 check: all
 	cd tests/morphophonology/; python3 test.py kaz
 
-docs: FORCE
-	cd docs; scribble index.scrbl
-
-FORCE:
+.PHONY: docs
+docs:
+	cd docs/apertium-kaz-doc; raco pkg install; raco setup -p apertium-kaz-doc; cp -r doc/index/*.html ../; cp -r doc/*.css ../; cp -r doc/*.js ../; cp -r *.css ../
