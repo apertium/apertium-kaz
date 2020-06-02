@@ -742,13 +742,3 @@ is түгіл really and conj in kazakh? or adv?
 `Себебі' at the beginning of a sentences -- sconj vs nsubj
 
 Жиырма_Бесінші_Сөз.tagged.txt:25:614 looks wrong, re-consider
-
-nmod:poss vs compound (Иран Ислам республикасы, Иран.tagged.txt:9:238, Иран.tagged.txt:17:440)
-
-Abbr:Yes feature while converting apertium <abbr>s into UD
-
-help needed with Иран.tagged.txt:18:467 and Иран.tagged.txt:19:546 (orphan)
-
--- punct preceding predicate sometimes right-headed, sometmes left-headed. What's the principle?
-
-bah, punctuatin in  Иран.tagged.txt:20:583
