@@ -602,7 +602,15 @@ obl vs iobj
 
 sometimes бол<cop> is root, sometimes it isn't
 
-numeral compouns right headed (as currently) or left-headed?
+@verbatim{
+- numeral compounds right headed (as currently) or left-headed?
+  - I mean phrases like ``2 миллион доллар''
+  - all occurences of such are tagged conssistently, which is good
+  - that is, for our example: (доллар >nummod миллион; миллион >сompound 2)
+  - query: [pos = "NUM"] > [pos = "NUM"]
+  - where: https://weblicht.sfs.uni-tuebingen.de/Tundra/UD_Kazakh-KTB_v2.4/
+  - probably best to keep as it is
+}
 
 diff between acl vs acl:relcl?
 
@@ -621,7 +629,7 @@ wrong.}
 
 ]
 
-хабаралсушылар nmod vs clause
+хабараласушылар nmod vs clause
 
 да <conj> vs postadv
 
@@ -752,3 +760,7 @@ help needed with Иран.tagged.txt:18:467 and Иран.tagged.txt:19:546 (orph
 -- punct preceding predicate sometimes right-headed, sometmes left-headed. What's the principle?
 
 bah, punctuatin in  Иран.tagged.txt:20:583
+
+Иран.tagged.txt:51:1426 -- too "advcl"s vs conj
+
+year ranges like 1919-1921
