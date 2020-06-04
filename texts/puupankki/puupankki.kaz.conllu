@@ -10216,7 +10216,7 @@
 1	Олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
 2	елде	ел	NOUN	n	Case=Loc	8	obl	_	_
 3	Хулагу	Хулагу	PROPN	np	Case=Nom	4	nmod:poss	_	_
-4	әулетіне	әулет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	5	obj	_	_
+4	әулетіне	әулет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	5	iobj	_	_
 5	қарайтын	қара	VERB	v	Aspect=Imp|VerbForm=Part	6	acl	_	_
 6	ильхандар	ильхан	PROPN	np	Case=Nom|Number=Plur	7	nmod:poss	_	_
 7	мемлекетін	мемлекет	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
@@ -10239,13 +10239,13 @@
 11	кетті	кет	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	_
 12	де	да	CCONJ	cnjcoo	_	22	cc	_	_
 13	,	,	PUNCT	cm	_	22	punct	_	_
-14	1380	1380	NUM	num	NumType=Card,Ord	22	obl	_	_
-15	—	—	PUNCT	guio	_	17	punct	_	_
-16	93	93	NUM	num	NumType=Ord	17	amod	_	_
-17	ж.	ж.	NOUN	abbr	_	14	conj	_	_
+14	1380	1380	NUM	num	NumType=Card,Ord	17	amod	_	_
+15	—	—	PUNCT	guio	_	16	punct	_	_
+16	93	93	NUM	num	NumType=Ord	14	conj	_	_
+17	ж.	ж.	NOUN	abbr	_	_	_	_	_
 18	Иранды	Иран	PROPN	np	Case=Acc	22	obj	_	_
-19	Әмір	Әмір	X	x	_	20	dep	_	_
-20	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	21	nmod:poss	_	_
+19	Әмір	Әмір	X	x	_	21	nmod:poss	_	_
+20	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	19	flat:name	_	_
 21	әскерлері	әскер	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	22	nsubj	_	_
 22	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	10	conj	_	_
 23	алды	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	22	aux	_	SpaceAfter=No
@@ -10253,8 +10253,8 @@
 
 # sent_id = Иран.tagged.txt:50:1391
 # text = Әмір Темір өлгеннен кейін Шығыс Иран Темір әулетінің билігінде қалып, Батыс Иранда Қарақойлы мемлекеті құрылды.
-1	Әмір	Әмір	X	x	_	2	dep	_	_
-2	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
+1	Әмір	Әмір	X	x	_	3	nsubj	_	_
+2	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	1	flat:name	_	_
 3	өлгеннен	өл	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	16	advcl	_	_
 4	кейін	кейін	ADP	post	_	3	case	_	_
 5	Шығыс	шығыс	ADJ	adj	_	6	amod	_	_
@@ -10266,7 +10266,7 @@
 11	,	,	PUNCT	cm	_	10	punct	_	_
 12	Батыс	батыс	ADJ	adj	_	13	amod	_	_
 13	Иранда	Иран	PROPN	np	Case=Loc	16	obl	_	_
-14	Қарақойлы	Қарақойлы	PROPN	np	Case=Nom	15	nmod:poss	_	_
+14	Қарақойлы	Қарақойлы	NOUN	n	Case=Nom	15	nmod:poss	_	_
 15	мемлекеті	мемлекет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nsubj	_	_
 16	құрылды	құр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	_
@@ -10278,7 +10278,7 @@
 3	Кіші	кіші	ADJ	adj	_	4	amod	_	_
 4	Азиядан	Азия	PROPN	np	Case=Abl	5	obl	_	_
 5	шыққан	шық	VERB	v	Tense=Past|VerbForm=Part	7	acl	_	_
-6	түркі	түркі	ADJ	adj	Case=Nom	7	nmod:poss	_	_
+6	түркі	түркі	NOUN	n	Case=Nom	7	nmod:poss	_	_
 7	тайпалары	тайпа	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	26	nsubj	_	_
 8	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
 9	қызылбастар	қызылбас	NOUN	n	Case=Nom|Number=Plur	7	appos	_	SpaceAfter=No
@@ -10303,9 +10303,9 @@
 
 # sent_id = Иран.tagged.txt:52:1481
 # text = 17 — 18 ғасырларда Иранның экономикасы құлдырап, халықтың жағдайы нашарлап кетті.
-1	17	17	NUM	num	NumType=Card	3	compound	_	_
+1	17	17	NUM	num	NumType=Card	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
-3	18	18	NUM	num	NumType=Ord	4	amod	_	_
+3	18	18	NUM	num	NumType=Ord	1	conj	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	7	obl	_	_
 5	Иранның	Иран	PROPN	np	Case=Gen	6	nmod:poss	_	_
 6	экономикасы	экономика	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
@@ -10320,16 +10320,16 @@
 # sent_id = Иран.tagged.txt:53:1508
 # text = Ұсақ халықтар (ауғандар, түрікмендер, Әзірбайжандар, күрдтер, армян, грузиндер) орталықтың езгісіне қарсы жиі-жиі көтеріліс жасап тұрды.
 1	Ұсақ	ұсақ	ADJ	adj	_	2	amod	_	_
-2	халықтар	халық	NOUN	n	Case=Nom|Number=Plur	20	nsubj	_	_
-3	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
+2	халықтар	халық	NOUN	n	Case=Nom|Number=Plur	21	nsubj	_	_
+3	(	(	PUNCT	lpar	_	4	punct	_	SpaceAfter=No
 4	ауғандар	ауған	NOUN	n	Case=Nom|Number=Plur	2	appos	_	SpaceAfter=No
-5	,	,	PUNCT	cm	_	14	punct	_	_
+5	,	,	PUNCT	cm	_	6	punct	_	_
 6	түрікмендер	түрікмен	NOUN	n	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
-7	,	,	PUNCT	cm	_	14	punct	_	_
+7	,	,	PUNCT	cm	_	8	punct	_	_
 8	Әзірбайжандар	Әзірбайжан	PROPN	np	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	14	punct	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	күрдтер	күрд	NOUN	n	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
-11	,	,	PUNCT	cm	_	14	punct	_	_
+11	,	,	PUNCT	cm	_	12	punct	_	_
 12	армян	армян	NOUN	n	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
 13	,	,	PUNCT	cm	_	14	punct	_	_
 14	грузиндер	грузин	NOUN	n	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
@@ -10353,11 +10353,11 @@
 6	-	-	PUNCT	guio	_	5	punct	_	SpaceAfter=No
 7	жартысында	жарты	ADJ	adj	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	23	obl	_	_
 8	елдегі	ел	NOUN	n	Case=Loc	9	amod	_	_
-9	үстемдік	үстемдік	NOUN	n	Case=Nom	23	obl	_	_
+9	үстемдік	үстемдік	NOUN	n	Case=Nom	20	nmod	_	_
 10	үшін	үшін	ADP	post	_	9	case	_	_
 11	екі	екі	NUM	num	NumType=Card	12	nummod	_	_
 12	әулеттің	әулет	NOUN	n	Case=Gen	18	nmod:poss	_	_
-13	(	(	PUNCT	lpar	_	16	punct	_	SpaceAfter=No
+13	(	(	PUNCT	lpar	_	14	punct	_	SpaceAfter=No
 14	Зенд	Зенд	PROPN	np	Case=Nom	12	appos	_	_
 15	және	және	CCONJ	cnjcoo	_	16	cc	_	_
 16	Каджар	Каджар	PROPN	np	Case=Nom	14	conj	_	SpaceAfter=No
@@ -10390,7 +10390,7 @@
 5	істеріне	іс	NOUN	n	Case=Dat|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	13	obl	_	_
 6	еуропалық	еуропалық	ADJ	adj	_	7	amod	_	_
 7	мемлекеттер	мемлекет	NOUN	n	Case=Nom|Number=Plur	13	nsubj	_	_
-8	(	(	PUNCT	lpar	_	11	punct	_	SpaceAfter=No
+8	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
 9	Англия	Англия	PROPN	np	Case=Nom	7	appos	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
 11	Франция	Франция	PROPN	np	Case=Nom	9	conj	_	SpaceAfter=No
@@ -10425,8 +10425,8 @@
 4	таман	таман	ADP	post	_	3	case	_	_
 5	Иран	Иран	PROPN	np	Case=Nom	10	nsubj	_	_
 6	еуропалық	еуропалық	ADJ	adj	_	7	amod	_	_
-7	мемлекеттердің	мемлекет	NOUN	n	Case=Gen|Number=Plur	9	nsubj	_	_
-8	жартылай	жартылай	ADV	adv	_	7	advmod	_	_
+7	мемлекеттердің	мемлекет	NOUN	n	Case=Gen|Number=Plur	9	nmod:poss	_	_
+8	жартылай	жартылай	ADJ	adj	_	9	amod	_	_
 9	отарына	отар	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
 10	айнала	айнал	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 11	бастады	баста	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	10	aux	_	SpaceAfter=No
@@ -10458,12 +10458,12 @@
 # text = Елдің солтүстігіне Ресей, оңтүстігіне Ұлыбритания қожалық ете бастады.
 1	Елдің	ел	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	солтүстігіне	солтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	orphan	_	_
-3	Ресей	Ресей	PROPN	np	Case=Nom	0	root	_	SpaceAfter=No
+3	Ресей	Ресей	PROPN	np	Case=Nom	8	conj	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
 5	оңтүстігіне	оңтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
 6	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	8	nsubj	_	_
 7	қожалық	қожалық	NOUN	n	Case=Nom	8	obj	_	_
-8	ете	ет	VERB	v	Aspect=Imp|VerbForm=Cov	3	conj	_	_
+8	ете	ет	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 9	бастады	баста	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	aux	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	8	punct	_	_
 
@@ -10476,7 +10476,7 @@
 5	елде	ел	NOUN	n	Case=Loc	10	obl	_	_
 6	шетелдіктерге	шетелдік	NOUN	n	Case=Dat|Number=Plur	10	obl	_	_
 7	қарсы	қарсы	ADP	post	_	6	case	_	_
-8	ұлт-азаттық	ұлт-азаттық	ADJ	adj	_	9	amod	_	_
+8	ұлт-азаттық	ұлт-азаттық	NOUN	adj	_	9	nmod:poss	_	_
 9	қозғалысы	қозғалыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 10	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	11	advcl	_	_
 11	өтті	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -10486,7 +10486,7 @@
 # text = Оның барысында конституция жарияланып, меджлис шақырылды, ақсүйектік дәрежелер жойылды.
 1	Оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
 2	барысында	барыс	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
-3	конституция	конституция	NOUN	n	Case=Nom	4	obj	_	_
+3	конституция	конституция	NOUN	n	Case=Nom	4	nsubj	_	_
 4	жарияланып	жарияла	VERB	v	Aspect=Perf|VerbForm=Conv|Voice=Pass	11	advcl	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	4	punct	_	_
 6	меджлис	меджлис	NOUN	n	Case=Nom	7	nsubj	_	_
@@ -10510,8 +10510,8 @@
 9	,	,	PUNCT	cm	_	8	punct	_	_
 10	1919	1919	NUM	num	NumType=Ord	11	amod	_	_
 11	ж.	ж.	NOUN	abbr	_	18	obl	_	_
-12	оны	ол	PRON	prn	Case=Acc|PronType=Dem	18	obl	_	_
-13	кіріптарлық	кіріптарлық	NOUN	n	Case=Nom	18	nsubj	_	_
+12	оны	ол	PRON	prn	Case=Acc|PronType=Dem	18	obj	_	_
+13	кіріптарлық	кіріптарлық	NOUN	n	Case=Nom	14	nmod	_	_
 14	шарттарға	шарт	NOUN	n	Case=Dat|Number=Plur	16	obl	_	_
 15	қол	қол	X	x	_	16	dep	_	_
 16	қоюға	қой	VERB	v	Case=Dat|VerbForm=Ger	18	ccomp	_	_
@@ -10545,7 +10545,7 @@
 11	ұйымдастырып	ұйымдастыр	VERB	v	Aspect=Perf|VerbForm=Conv	15	advcl	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	11	punct	_	_
 13	жаңа	жаңа	ADJ	adj	_	14	amod	_	_
-14	үкімет	үкімет	NOUN	n	Case=Nom	15	nsubj	_	_
+14	үкімет	үкімет	NOUN	n	Case=Nom	15	obj	_	_
 15	құрды	кұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
@@ -10569,7 +10569,7 @@
 # sent_id = Иран.tagged.txt:67:1936
 # text = Армияға сүйенген Реза хан Орталықтың билігін күшейту үшін сепаратистік пиғылдағы Иран ақсүйектерімен үздіксіз күрес жүргізді.
 1	Армияға	армия	NOUN	n	Case=Dat	2	obl	_	_
-2	сүйенген	сүйен	VERB	v	Tense=Past|VerbForm=Part	4	acl	_	_
+2	сүйенген	сүйен	VERB	v	Tense=Past|VerbForm=Part	3	acl	_	_
 3	Реза	Реза	PROPN	np	Case=Nom|Gender=Masc	15	nsubj	_	_
 4	хан	хан	NOUN	n	Case=Nom	3	flat:name	_	_
 5	Орталықтың	орталық	NOUN	n	Case=Gen	6	nmod:poss	_	_
@@ -10601,8 +10601,8 @@
 2	мәдени	мәдени	ADJ	adj	_	5	amod	_	_
 3	және	және	CCONJ	cnjcoo	_	4	cc	_	_
 4	тұрмыстық	тұрмыстық	ADJ	adj	_	2	conj	_	_
-5	өмірінде	өмір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
-6	көптеген	көпте	VERB	v	Tense=Past|VerbForm=Part	7	acl	_	_
+5	өмірінде	өмір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+6	көптеген	көпте	DET	det	_	7	det	_	_
 7	өзгерістер	өзгеріс	NOUN	n	Case=Nom|Number=Plur	8	nsubj	_	_
 8	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	9	advcl	_	_
 9	өтті	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -10652,35 +10652,35 @@
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	16	16	NUM	num	NumType=Ord	4	amod	_	_
 4	қыркүйекте	қыркүйек	NOUN	n	Case=Loc	11	obl	_	_
-5	Реза	Реза	PROPN	np	Case=Nom|Gender=Masc	10	nsubj	_	_
+5	Реза	Реза	PROPN	np	Case=Nom|Gender=Masc	11	nsubj	_	_
 6	шаһ	шаһ	NOUN	n	Case=Nom	5	flat:name	_	_
-7	тақтан	тақ	NOUN	n	Case=Abl	10	nmod	_	_
-8	өз	өз	DET	det	PronType=Ref	10	det	_	_
-9	еркімен	еркімен	ADJ	adj	_	10	amod	_	_
+7	тақтан	тақ	NOUN	n	Case=Abl	11	obl	_	_
+8	өз	өз	DET	det	PronType=Ref	9	det	_	_
+9	еркімен	еркімен	ADJ	adj	_	11	obl	_	_
 10	бас	бас	NOUN	n	Case=Nom	11	obj	_	_
 11	тартып	тарт	VERB	v	Aspect=Perf|VerbForm=Conv	18	advcl	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	11	punct	_	_
 13	орнына	орын	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	18	obl	_	_
 14	баласы	бала	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	18	nsubj	_	_
-15	Мұхаммед	Мұхаммед	PROPN	np	Case=Nom|Gender=Masc	0	root	_	_
+15	Мұхаммед	Мұхаммед	PROPN	np	Case=Nom|Gender=Masc	14	appos	_	_
 16	Реза	Реза	PROPN	np	Case=Nom|Gender=Masc	15	flat:name	_	_
 17	Пехлеви	Пехлеви	PROPN	np	Case=Nom	15	flat:name	_	_
-18	шаһ	шаһ	NOUN	n	Case=Nom	17	flat:name	_	_
+18	шаһ	шаһ	NOUN	n	Case=Nom	0	root	_	_
 19	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	18	cop	_	SpaceAfter=No
 20	.	.	PUNCT	sent	_	18	punct	_	_
 
 # sent_id = Иран.tagged.txt:74:2107
 # text = 1942 ж. 29 қаңтарда Иран КСРО және Ұлыбритания мемлекеттерімен одақтастық туралы шартқа қол қойды.
 1	1942	1942	NUM	num	NumType=Ord	2	amod	_	_
-2	ж.	ж.	NOUN	abbr	_	14	obl	_	_
+2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	29	29	NUM	num	NumType=Ord	4	amod	_	_
 4	қаңтарда	қаңтар	NOUN	n	Case=Loc	14	obl	_	_
-5	Иран	Иран	PROPN	np	Case=Nom	9	nmod:poss	_	_
-6	КСРО	КСРО	PROPN	np	Case=Nom	5	conj	_	_
+5	Иран	Иран	PROPN	np	Case=Nom	14	nsubj	_	_
+6	КСРО	КСРО	PROPN	np	Case=Nom	9	nmod:poss	_	_
 7	және	және	CCONJ	cnjcoo	_	8	cc	_	_
-8	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	5	conj	_	_
+8	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	6	conj	_	_
 9	мемлекеттерімен	мемлекет	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	14	obl	_	_
-10	одақтастық	одақтастық	NOUN	n	Case=Nom	14	obl	_	_
+10	одақтастық	одақтастық	NOUN	n	Case=Nom	12	nmod	_	_
 11	туралы	туралы	ADP	post	_	10	case	_	_
 12	шартқа	шарт	NOUN	n	Case=Dat	14	obl	_	_
 13	қол	қол	X	x	_	14	dep	_	_
@@ -10714,7 +10714,7 @@
 6	1	1	NUM	num	NumType=Ord	7	amod	_	_
 7	желтоқсанда	желтоқсан	NOUN	n	Case=Loc	20	obl	_	_
 8	КСРО	КСРО	PROPN	np	Case=Nom	13	nmod:poss	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	12	punct	_	_
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	АҚШ	АҚШ	PROPN	np	Case=Nom	8	conj	_	SpaceAfter=No
 11	,	,	PUNCT	cm	_	12	punct	_	_
 12	Ұлыбритания	Ұлыбритания	PROPN	np	Case=Nom	8	conj	_	_
@@ -10723,7 +10723,7 @@
 15	территориялық	территориялық	ADJ	adj	_	16	amod	_	_
 16	тұтастығын	тұтастық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	17	obj	_	_
 17	сақтауға	сақта	VERB	v	Case=Dat|VerbForm=Ger	18	ccomp	_	_
-18	әзір	әзір	ADJ	adj	_	20	obj	_	_
+18	әзір	әзір	ADJ	adj	_	20	ccomp	_	_
 19	екендіктерін	е	AUX	cop	Case=Acc|Number[psor]=Plur|Person[psor]=3|VerbForm=Ger	18	cop	_	_
 20	мәлімдеді	мәлімде	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 21	.	.	PUNCT	sent	_	20	punct	_	_
@@ -10810,7 +10810,7 @@
 15	ж.	ж.	NOUN	abbr	_	24	obl	_	_
 16	халықтың	халық	NOUN	n	Case=Gen	22	nsubj	_	_
 17	шаһ	шаһ	NOUN	n	Case=Nom	18	nmod:poss	_	_
-18	үкіметіне	үкімет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	24	obl	_	_
+18	үкіметіне	үкімет	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	22	obl	_	_
 19	қарсы	қарсы	ADP	post	_	18	case	_	_
 20	жаппай	жаппай	ADJ	adj	_	22	advmod	_	_
 21	бас	бас	X	x	_	22	dep	_	_
@@ -10857,10 +10857,10 @@
 3	шиит	шиит	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	дінбасыларының	дінбасы	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	көсемі	көсем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
-6	аятолла	аятолла	NOUN	n	Case=Nom	8	compound	_	_
-7	Р.	Р.	NOUN	abbr	_	0	root	_	_
+6	аятолла	аятолла	NOUN	n	Case=Nom	5	appos	_	_
+7	Р.	Р.	NOUN	abbr	_	6	flat:name	_	_
 8	Хомейни	Хомейни	PROPN	np	Case=Nom	7	flat:name	_	_
-9	келді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	appos	_	SpaceAfter=No
+9	келді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	_	_	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Иран.tagged.txt:85:2440
@@ -10874,21 +10874,21 @@
 7	үкіметі	үкімет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 8	жойылды	жой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	29	parataxis	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	8	punct	_	_
-10	Батыстың	батыс	NOUN	n	Case=Gen	13	nmod:poss	_	_
-11	иелігіндегі	иелік	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	15	amod	_	_
-12	барлық	барлық	DET	det	PronType=Qnt	15	det	_	_
+10	Батыстың	батыс	NOUN	n	Case=Gen	11	nmod:poss	_	_
+11	иелігіндегі	иелік	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	amod	_	_
+12	барлық	барлық	DET	det	PronType=Qnt	13	det	_	_
 13	компаниялар	компания	NOUN	n	Case=Nom|Number=Plur	14	nmod:poss	_	_
-14	мүлкі	мүлік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	19	nsubj	_	_
+14	мүлкі	мүлік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
 15	мемлекет	мемлекет	NOUN	n	Case=Nom	16	nmod:poss	_	_
-16	меншігіне	меншік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	19	obl	_	_
+16	меншігіне	меншік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
 17	алынды	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	29	parataxis	_	SpaceAfter=No
 18	,	,	PUNCT	cm	_	17	punct	_	_
 19	ел	ел	NOUN	n	Case=Nom	22	nsubj	_	_
 20	СЕАТО	СЕАТО	PROPN	np	Case=Nom	21	nmod:poss	_	_
-21	блогынан	блог	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	24	obl	_	_
+21	блогынан	блог	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	22	obl	_	_
 22	шығып	шық	VERB	v	Aspect=Perf|VerbForm=Conv	29	advcl	_	SpaceAfter=No
 23	,	,	PUNCT	cm	_	22	punct	_	_
-24	Блоктарға	блокта	VERB	v	Case=Dat|Tense=Fut|VerbForm=Part	25	advcl	_	_
+24	Блоктарға	блок	NOUN	n	Case=Dat|Number=Plur	25	obl	_	_
 25	қосылмау	қос	VERB	v	Case=Nom|Polarity=Neg|VerbForm=Ger|Voice=Pass	26	acl	_	_
 26	қозғалысына	қозғалыс	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	27	obl	_	_
 27	мүше	мүше	NOUN	n	Case=Nom	29	advcl	_	_
@@ -10927,12 +10927,12 @@
 1	Ел	ел	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	экономикасының	экономика	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
-4	мұнай	мұнай	NOUN	n	Case=Nom	10	acl	_	_
-5	және	және	CCONJ	cnjcoo	_	9	cc	_	_
-6	мұнай	мұнай	NOUN	n	Case=Nom	9	obj	_	_
+4	мұнай	мұнай	NOUN	n	Case=Nom	9	obj	_	_
+5	және	және	CCONJ	cnjcoo	_	6	cc	_	_
+6	мұнай	мұнай	NOUN	n	Case=Nom	4	conj	_	_
 7	мен	мен	CCONJ	cnjcoo	_	8	cc	_	_
 8	газ	газ	NOUN	n	Case=Nom	6	conj	_	_
-9	өңдеу	өңде	VERB	v	Case=Nom|VerbForm=Ger	4	conj	_	_
+9	өңдеу	өңде	VERB	v	Case=Nom|VerbForm=Ger	10	acl	_	_
 10	өнеркәсіптері	өнеркәсіп	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -10940,7 +10940,7 @@
 # text = Мемлекеттік кірістің 1 / 3 және экспорттың 90%-ына жуығы осы салалардан алынады.
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
 2	кірістің	кіріс	NOUN	n	Case=Gen	3	orphan	_	_
-3	1	1	NUM	num	NumType=Card,Ord	0	root	_	_
+3	1	1	NUM	num	NumType=Card,Ord	12	conj	_	_
 4	/	/	SYM	sym	_	5	case	_	_
 5	3	3	NUM	num	NumType=Card,Ord	3	nmod	_	_
 6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
@@ -10949,7 +10949,7 @@
 9	жуығы	жуық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
 11	салалардан	сала	NOUN	n	Case=Abl|Number=Plur	12	obl	_	_
-12	алынады	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	3	conj	_	SpaceAfter=No
+12	алынады	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = Иран.tagged.txt:89:2598
@@ -10978,7 +10978,7 @@
 
 # sent_id = Иран.tagged.txt:90:2638
 # text = Өнеркәсіпке қажетті құрал-саймандар 90%-ға дейін шеттен әкелінеді.
-1	Өнеркәсіпке	өнеркәсіп	NOUN	n	Case=Dat	7	obl	_	_
+1	Өнеркәсіпке	өнеркәсіп	NOUN	n	Case=Dat	2	nmod	_	_
 2	қажетті	қажетті	ADJ	adj	_	3	amod	_	_
 3	құрал-саймандар	құрал-саймандар	NOUN	n	Case=Nom	7	nsubj	_	_
 4	90%-ға	90	NUM	num	Case=Dat|NumType=Card,Ord	7	obl	_	_
@@ -10989,7 +10989,7 @@
 
 # sent_id = Иран.tagged.txt:91:2655
 # text = Ауыл шаруашылығы нашар дамыған.
-1	Ауыл	ауыл	X	x	_	2	dep	_	_
+1	Ауыл	ауыл	NOUN	n	_	2	nmod:poss	_	_
 2	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 3	нашар	нашар	ADJ	adj	_	4	advmod	_	_
 4	дамыған	дамы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -11008,26 +11008,26 @@
 # text = Ұлттық байлықтың 36%-ы өнеркәсіптен, 22%-ы ауыл шаруашылығынан, қалғаны қызмет көрсету секторынан тұрады.
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	байлықтың	байлық	NOUN	n	Case=Gen	3	nmod:poss	_	_
-3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	4	nsubj	_	_
-4	өнеркәсіптен	өнеркәсіп	NOUN	n	Case=Abl	0	root	_	SpaceAfter=No
+3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	14	nsubj	_	_
+4	өнеркәсіптен	өнеркәсіп	NOUN	n	Case=Abl	3	orphan	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	4	punct	_	_
 6	22%-ы	22	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	8	nsubj	_	_
-7	ауыл	ауыл	X	x	_	8	dep	_	_
+7	ауыл	ауыл	NOUN	x	_	8	nmod:poss	_	_
 8	шаруашылығынан	шаруашылық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	8	punct	_	_
-10	қалғаны	қал	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	12	csubj	_	_
+10	қалғаны	қал	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	3	conj	_	_
 11	қызмет	қызмет	X	x	_	12	dep	_	_
-12	көрсету	көрсет	VERB	v	Case=Nom|VerbForm=Ger	14	csubj	_	_
+12	көрсету	көрсет	VERB	v	Case=Nom|VerbForm=Ger	13	acl	_	_
 13	секторынан	сектор	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	14	obl	_	_
-14	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	4	conj	_	SpaceAfter=No
+14	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
 # sent_id = Иран.tagged.txt:94:2710
 # text = Мұнай экспортынан жыл сайын 16,3 млрд. АҚШ доллары түседі.
 1	Мұнай	мұнай	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	экспортынан	экспорт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
-3	жыл	жыл	X	x	_	4	dep	_	_
-4	сайын	сайын	ADV	adv	_	9	advmod	_	_
+3	жыл	жыл	NOUN	n	_	9	obl	_	_
+4	сайын	сайын	ADP	adv	_	3	case	_	_
 5	16,3	16,3	NUM	num	NumType=Card	6	compound	_	_
 6	млрд.	млрд.	NOUN	abbr	_	7	nummod	_	_
 7	АҚШ	АҚШ	PROPN	np	Case=Nom	8	nmod:poss	_	_
@@ -11045,7 +11045,7 @@
 6	доллар	доллар	NOUN	n	Case=Nom	7	nmod:poss	_	_
 7	көлемінде	көлем	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	15	punct	_	_
-9	жан	жан	X	x	_	10	dep	_	_
+9	жан	жан	NOUN	n	_	10	nmod:poss	_	_
 10	басына	басы	NOUN	n	Case=Dat	11	obl	_	_
 11	шаққанда	шақ	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	15	advcl	_	_
 12	—	—	PUNCT	guio	_	11	punct	_	_
