@@ -9323,6 +9323,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:7:224
 # text = Бразилия өз жерінде чемпионатты екі рет өткізген бесінші ел болды (Мексика, Италия, Франция және Германиядан кейін).
+# labels = checked_IFS
 1	Бразилия	Бразилия	PROPN	np	Case=Nom	9	nsubj	_	_
 2	өз	өз	DET	det	PronType=Ref	3	det	_	_
 3	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
@@ -9347,6 +9348,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:8:267
 # text = Осыған дейін Бразилияда футболдан әлем чемпионаты 1950 жылы өткен болатын.
+# labels = checked_IFS
 1	Осыған	осы	PRON	prn	Case=Dat|PronType=Dem	9	obl	_	_
 2	дейін	дейін	ADP	post	_	1	case	_	_
 3	Бразилияда	Бразилия	PROPN	np	Case=Loc	9	obl	_	_
@@ -9361,6 +9363,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:9:290
 # text = ӘЧ-2014 іріктеу айналымы 2011 жылдың маусым айында басталып, 2013 жылдың қараша айында аяқталды.
+# labels = checked_IFS
 1	ӘЧ	ӘЧ	PROPN	np	Case=Nom	5	nmod:poss	_	SpaceAfter=No
 2	-	-	PUNCT	guio	_	1	punct	_	SpaceAfter=No
 3	2014	2014	NUM	num	NumType=Card	1	compound	_	_
@@ -9381,6 +9384,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:10:325
 # text = Бразилия қабылдаушы ел ретінде автоматты түрде чемпионат қатысушысы болды.
+# labels = checked_IFS
 1	Бразилия	Бразилия	PROPN	np	Case=Nom	8	nsubj	_	_
 2	қабылдаушы	қабылда	VERB	v	Mood=Pot|VerbForm=Part	3	acl	_	_
 3	ел	ел	NOUN	n	Case=Nom	8	obl	_	_
@@ -9394,6 +9398,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:11:346
 # text = Барлық сегіз топтың жеңімпаздары мен екінші орын алған командалар 1 / 8 финалға шығады.
+# labels = checked_IFS
 1	Барлық	барлық	DET	det	PronType=Qnt	3	det	_	_
 2	сегіз	сегіз	NUM	num	NumType=Card	3	nummod	_	_
 3	топтың	топ	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -9412,6 +9417,7 @@
 
 # sent_id = Футболдан_әлем_чемпионаты_2014.tagged.txt:12:377
 # text = Командалардың турнирлік кестедегі орны келесі көрсеткіштер бойынша анықталады:
+# labels = checked_IFS
 1	Командалардың	команда	NOUN	n	Case=Gen|Number=Plur	4	nmod:poss	_	_
 2	турнирлік	турнирлік	ADJ	adj	_	3	amod	_	_
 3	кестедегі	кесте	NOUN	n	Case=Loc	4	amod	_	_
@@ -9424,6 +9430,7 @@
 
 # sent_id = Иран.tagged.txt:1:0
 # text = Иран (1935 жылға дейін Парсы елі), Иран Ислам Республикасы — Азияның оңтүстік-батыс бөлігінде орналасқан мемлекет.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	18	nsubj	_	_
 2	(	(	PUNCT	lpar	_	7	punct	_	SpaceAfter=No
 3	1935	1935	NUM	num	NumType=Ord	4	amod	_	_
@@ -9446,6 +9453,7 @@
 
 # sent_id = Иран.tagged.txt:2:38
 # text = Жер көлемі 1,648 млн. км².
+# labels = checked_IFS
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 3	1,648	1,648	NUM	num	NumType=Card	4	compound	_	_
@@ -9455,6 +9463,7 @@
 
 # sent_id = Иран.tagged.txt:3:51
 # text = Халқы 65,2 млн. адам (1999).
+# labels = checked_IFS
 1	Халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	65,2	65,2	NUM	num	NumType=Card	3	compound	_	_
 3	млн.	млн.	NOUN	abbr	_	4	nummod	_	_
@@ -9466,6 +9475,7 @@
 
 # sent_id = Иран.tagged.txt:4:68
 # text = Халқының ұлттық құрамы: парсылар (51%), әзірбайжандар (27%), күрдтер (5%), арабтар, түрікмендер, белуджилер, армяндар, еврейлер, т.б.
+# labels = checked_IFS
 1	Халқының	халық	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 2	ұлттық	ұлттық	ADJ	adj	_	3	amod	_	_
 3	құрамы	құрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No
@@ -9501,6 +9511,7 @@
 
 # sent_id = Иран.tagged.txt:5:130
 # text = Қала халқы 58,3%.
+# labels = checked_IFS
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
 3	58,3%	58,3	NUM	num	Case=Nom|NumType=Card	0	root	_	SpaceAfter=No
@@ -9508,6 +9519,7 @@
 
 # sent_id = Иран.tagged.txt:6:139
 # text = Астанасы — Тегеран қаласы (айналасын қосқанда 12 миллионнан астам).
+# labels = checked_IFS
 1	Астанасы	астана	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
 3	Тегеран	Тегеран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -9523,6 +9535,7 @@
 
 # sent_id = Иран.tagged.txt:7:164
 # text = Одан басқа Мешхед (1,5 млн.), Исфаһан (1 млн.), Тебриз (852 мың), Шираз (800 мың) сияқты ірі қалалар бар.
+# labels = checked_IFS
 1	Одан	ол	PRON	prn	Case=Abl|PronType=Dem	29	obl	_	_
 2	басқа	басқа	ADP	post	_	1	case	_	_
 3	Мешхед	Мешхед	PROPN	np	Case=Nom	28	nmod	_	_
@@ -9556,6 +9569,7 @@
 
 # sent_id = Иран.tagged.txt:8:225
 # text = Ресми тілі — парсы тілі.
+# labels = checked_IFS
 1	Ресми	ресми	ADJ	adj	_	2	amod	_	_
 2	тілі	тіл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 3	—	—	PUNCT	guio	_	2	punct	_	_
@@ -9565,6 +9579,7 @@
 
 # sent_id = Иран.tagged.txt:9:238
 # text = Мемлекеттік діні — ислам дінінің шиит тармағы.
+# labels = checked_IFS
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
 2	діні	дін	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 3	—	—	PUNCT	guio	_	2	punct	_	_
@@ -9576,6 +9591,7 @@
 
 # sent_id = Иран.tagged.txt:10:255
 # text = Иран — діни мемлекет.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	4	nsubj	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
 3	діни	діни	ADJ	adj	_	4	amod	_	_
@@ -9584,6 +9600,7 @@
 
 # sent_id = Иран.tagged.txt:11:266
 # text = Елдегі саяси және діни билік аятолла Сейд Әли Хаменеидің қолында.
+# labels = checked_IFS
 1	Елдегі	ел	NOUN	n	Case=Loc	5	amod	_	_
 2	саяси	саяси	ADJ	adj	_	5	amod	_	_
 3	және	және	CCONJ	cnjcoo	_	4	cc	_	_
@@ -9598,6 +9615,7 @@
 
 # sent_id = Иран.tagged.txt:12:289
 # text = Президент (1997 жылдан бастап Сейд Мохаммед Хатами) 4 жылға сайланады және Министр Кабинетін басқарады.
+# labels = checked_IFS
 1	Президент	президент	NOUN	n	Case=Nom	16	nsubj	_	_
 2	(	(	PUNCT	lpar	_	1	punct	_	SpaceAfter=No
 3	1997	1997	NUM	num	NumType=Ord	4	amod	_	_
@@ -9618,6 +9636,7 @@
 
 # sent_id = Иран.tagged.txt:13:324
 # text = Жоғарғы заң шығарушы орган — бір палаталы парламент — Ислам кеңесі жиналысы (меджлис) 4 жыл сайын сайланып отыратын 290 депутаттан тұрады.
+# labels = checked_IFS
 1	Жоғарғы	жоғары	ADV	adv	Case=Nom	4	amod	_	_
 2	заң	заң	NOUN	n	Case=Nom	3	obj	_	_
 3	шығарушы	шығар	VERB	v	Mood=Pot|VerbForm=Part	4	acl	_	_
@@ -9647,6 +9666,7 @@
 
 # sent_id = Иран.tagged.txt:14:374
 # text = 1981 жылғы конституциясы бойынша, елде саяси және діни емес ұйымдарға тыйым салынған.
+# labels = checked_IFS
 1	1981	1981	NUM	num	NumType=Ord	2	amod	_	_
 2-3	жылғы	_	_	_	_	_	_	_	_
 2	жыл	жыл	NOUN	n	Case=Nom	4	nmod	_	_
@@ -9666,6 +9686,7 @@
 
 # sent_id = Иран.tagged.txt:15:404
 # text = Ұлттық мейрамы 11 ақпан — Революция күні (1979).
+# labels = checked_IFS
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	мейрамы	мейрам	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 3	11	11	NUM	num	NumType=Card	4	amod	_	_
@@ -9680,6 +9701,7 @@
 
 # sent_id = Иран.tagged.txt:16:427
 # text = Ұлттық ақша бірлігі — риал.
+# labels = checked_IFS
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	ақша	ақша	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	бірлігі	бірлік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
@@ -9689,6 +9711,7 @@
 
 # sent_id = Иран.tagged.txt:17:440
 # text = Иран Армян таулы қыратының оңтүстік-шығысы мен Иран таулы қыратының батыс бөлігінде орналасқан.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	12	nsubj	_	_
 2	Армян	армян	NOUN	n	Case=Nom	4	compound	_	_
 3	таулы	таулы	ADJ	adj	_	4	amod	_	_
@@ -9705,6 +9728,7 @@
 
 # sent_id = Иран.tagged.txt:18:467
 # text = Шет жақтарында Солтүстік Иран (Эльбурс), Оңтүстік Иран (Загрос, Мекран), Шығыс Иран (Серхед, Пеленган, Боран, Келат) таулары, ортасында Кухруд жотасы, Деште-Кевир, Деште-Лух шөлдері орналасқан.
+# labels = checked_IFS
 1	Шет	шет	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	жақтарында	жақ	NOUN	n	Case=Loc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	28	orphan	_	_
 3	Солтүстік	солтүстік	ADJ	adj	_	4	amod	_	_
@@ -9747,6 +9771,7 @@
 
 # sent_id = Иран.tagged.txt:19:546
 # text = Солтүстік-батысын Оңтүстік Каспий және Кура-Аракс ойпаттары, солтүстік-шығысын Горган жазығы, оңтүстігін — Гермезир шөлі алып жатыр.
+# labels = checked_IFS
 1	Солтүстік-батысын	солтүстік-батыс	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	orphan	_	_
 2	Оңтүстік	оңтүстік	ADJ	adj	_	3	amod	_	_
 3	Каспий	Каспий	PROPN	np	Case=Nom	6	nmod:poss	_	_
@@ -9768,6 +9793,7 @@
 
 # sent_id = Иран.tagged.txt:20:583
 # text = Жері, негізінен, таулы.
+# labels = checked_IFS
 1	Жері	жер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	негізінен	негізінен	ADV	adv	_	5	advmod	_	SpaceAfter=No
@@ -9777,6 +9803,7 @@
 
 # sent_id = Иран.tagged.txt:21:596
 # text = Парсы және Оман шығанақтары жағалауларының климаты тропиктік.
+# labels = checked_IFS
 1	Парсы	парсы	NOUN	n	Case=Nom	4	nmod:poss	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
 3	Оман	Оман	PROPN	np	Case=Nom	1	conj	_	_
@@ -9788,6 +9815,7 @@
 
 # sent_id = Иран.tagged.txt:22:613
 # text = Қаңтардағы орташа температура 2°С-тан 19,4°С-қа дейін, шілде айында 29,4 — 32,5°С.
+# labels = checked_IFS
 1	Қаңтардағы	қаңтар	NOUN	n	Case=Loc	3	amod	_	_
 2	орташа	орташа	ADJ	adj	_	3	amod	_	_
 3	температура	температура	NOUN	n	Case=Nom	5	nsubj	_	_
@@ -9804,6 +9832,7 @@
 
 # sent_id = Иран.tagged.txt:23:640
 # text = Жауын-шашынның жылдық мөлш. 500 мм.
+# labels = checked_IFS
 1	Жауын-шашынның	жауын-шашын	NOUN	n	Case=Gen	3	nmod:poss	_	_
 2	жылдық	жылдық	ADJ	adj	_	3	amod	_	_
 3	мөлш.	мөлшер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
@@ -9813,6 +9842,7 @@
 
 # sent_id = Иран.tagged.txt:24:653
 # text = Эльбурс тауы беткейінде 2000 мм, Систан ойысында 50 — 60 мм.
+# labels = checked_IFS
 1	Эльбурс	Эльбурс	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	тауы	тау	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	беткейінде	беткей	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
@@ -9829,6 +9859,7 @@
 
 # sent_id = Иран.tagged.txt:25:680
 # text = Жер беті суы аз.
+# labels = checked_IFS
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	беті	бет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	суы	су	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
@@ -9837,6 +9868,7 @@
 
 # sent_id = Иран.tagged.txt:26:691
 # text = Таулы аудандарда көптеген көлдер кездеседі.
+# labels = checked_IFS
 1	Таулы	таулы	ADJ	adj	_	2	amod	_	_
 2	аудандарда	аудан	NOUN	n	Case=Loc|Number=Plur	5	obl	_	_
 3	көптеген	көптеген	DET	det	PronType=Qnt	4	det	_	_
@@ -9846,6 +9878,7 @@
 
 # sent_id = Иран.tagged.txt:27:704
 # text = Иран жерінде сүтқоректілердің 100-ге тарта, құстардың 400-ге жуық, бауырымен жорғалаушылардың 80-ге жуық түрі бар.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	16	obl	_	_
 3	сүтқоректілердің	сүтқоректі	NOUN	n	Case=Gen|Number=Plur	15	nmod:poss	_	_
@@ -9866,6 +9899,7 @@
 
 # sent_id = Иран.tagged.txt:28:739
 # text = Шектес теңіздері балыққа бай.
+# labels = checked_IFS
 1	Шектес	шектес	ADJ	adj	_	2	amod	_	_
 2	теңіздері	теңіз	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 3	балыққа	балық	NOUN	n	Case=Dat	4	obl	_	_
@@ -9874,6 +9908,7 @@
 
 # sent_id = Иран.tagged.txt:29:750
 # text = Иран жеріне адам баласы тым ерте заманнан бері қоныстанған.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жеріне	жер	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 3	адам	адам	NOUN	n	Case=Nom	4	compound	_	_
@@ -9887,6 +9922,7 @@
 
 # sent_id = Иран.tagged.txt:30:771
 # text = Б.з.б. 3-мыңжылдықта қазіргі Иранның оңтүстік-батысында алғашқы мемлекеттер құрыла бастады.
+# labels = checked_IFS
 1	Б.з.б.	б.з.б.	NOUN	abbr	_	4	compound	_	_
 2	3	3	NUM	num	NumType=Ord	4	amod	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	4	punct	_	SpaceAfter=No
@@ -9902,6 +9938,7 @@
 
 # sent_id = Иран.tagged.txt:31:796
 # text = Б.з.б. 2-мыңжылдықта бұл аймаққа Орталық Азиядан арий тайпалары келіп қоныстанды.
+# labels = checked_IFS
 1	Б.з.б.	б.з.б.	NOUN	abbr	_	4	compound	_	_
 2	2	2	NUM	num	NumType=Ord	4	amod	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	4	punct	_	SpaceAfter=No
@@ -9918,6 +9955,7 @@
 
 # sent_id = Иран.tagged.txt:32:823
 # text = Б.з.б. 550 ж. өкімет билігі парсылық Ахемен әулетіне көшті.
+# labels = checked_IFS
 1	Б.з.б.	б.з.б.	NOUN	abbr	_	3	compound	_	_
 2	550	550	NUM	num	NumType=Ord	3	amod	_	_
 3	ж.	ж.	NOUN	abbr	_	9	obl	_	_
@@ -9931,6 +9969,7 @@
 
 # sent_id = Иран.tagged.txt:33:844
 # text = Ахемен әулеті мемлекетін б.з.б. 330 ж. Александр Македонский талқандады.
+# labels = checked_IFS
 1	Ахемен	Ахемен	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	мемлекетін	мемлекет	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
@@ -9944,6 +9983,7 @@
 
 # sent_id = Иран.tagged.txt:34:865
 # text = Иран эллиндік мемлекеттердің билігіне көшіп, б.з.б. 2 ғасырдың орта тұсынан бастап Парфия патшалығына бағынды.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	15	nsubj	_	_
 2	эллиндік	эллиндік	ADJ	adj	_	3	amod	_	_
 3	мемлекеттердің	мемлекет	NOUN	n	Case=Gen|Number=Plur	4	nmod:poss	_	_
@@ -9963,6 +10003,7 @@
 
 # sent_id = Иран.tagged.txt:35:898
 # text = 224 ж. Парфия мемлекеті құлап, орнына Сасани әулеті мемлекеті құрылды.
+# labels = checked_IFS
 1	224	224	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	5	obl	_	_
 3	Парфия	Парфия	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -9978,6 +10019,7 @@
 
 # sent_id = Иран.tagged.txt:36:923
 # text = Сасани әулеті мемлекеті Оңтүстік Арабияны, Сирияны, Палестинаны, Мысырды жаулап алды.
+# labels = checked_IFS
 1	Сасани	Сасани	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	мемлекеті	мемлекет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
@@ -9995,6 +10037,7 @@
 
 # sent_id = Иран.tagged.txt:37:952
 # text = Византияға қауіп төндірді, Түрік қағанатымен соғыс жүргізді.
+# labels = checked_IFS
 1	Византияға	Византия	PROPN	np	Case=Dat	3	obl	_	_
 2	қауіп	қауіп	NOUN	n	Case=Nom	3	obj	_	_
 3	төндірді	төндір	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	parataxis	_	SpaceAfter=No
@@ -10007,6 +10050,7 @@
 
 # sent_id = Иран.tagged.txt:38:971
 # text = Бірақ Сасани әулеті мемлекеті арабтардың шабуылынан құлап, 7 ғасырдың 2-жартысында Иран Араб халифаты құрамына қосылды.
+# labels = checked_IFS
 1	Бірақ	бірақ	CCONJ	cnjcoo	_	18	cc	_	_
 2	Сасани	Сасани	PROPN	np	Case=Nom	3	nmod:poss	_	_
 3	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
@@ -10029,6 +10073,7 @@
 
 # sent_id = Иран.tagged.txt:39:1010
 # text = 8 ғасырда Араб халифатының билеушісі Әбу әл-Аббас әс-Саффах халифат астанасын Бағдадқа көшірді.
+# labels = checked_IFS
 1	8	8	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	12	obl	_	_
 3	Араб	араб	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -10045,6 +10090,7 @@
 
 # sent_id = Иран.tagged.txt:40:1037
 # text = Иран аумағы ұзақ жылдар бойы Аббас әулеті билеген Бағдад халифаты құрамында болып, мәдени және экономикалық дамуды басынан кешірді.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	аумағы	аумақ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	19	nsubj	_	_
 3	ұзақ	ұзақ	ADJ	adj	_	4	amod	_	_
@@ -10068,6 +10114,7 @@
 
 # sent_id = Иран.tagged.txt:41:1078
 # text = 9 — 10 ғасырларда елде Араб халифатына шартты түрде ғана тәуелді болған әмірліктер құрылды.
+# labels = checked_IFS
 1	9	9	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	10	10	NUM	num	NumType=Ord	1	conj	_	_
@@ -10087,6 +10134,7 @@
 
 # sent_id = Иран.tagged.txt:42:1108
 # text = Елде экономикалық және мәдени өрлеу байқалып, қалалар өсе бастады.
+# labels = checked_IFS
 1	Елде	ел	NOUN	n	Case=Loc	6	obl	_	_
 2	экономикалық	экономикалық	ADJ	adj	_	5	amod	_	_
 3	және	және	CCONJ	cnjcoo	_	4	cc	_	_
@@ -10101,6 +10149,7 @@
 
 # sent_id = Иран.tagged.txt:43:1131
 # text = Сондай әмірліктердің бірі Самани әулеті биліктен кеткеннен кейін Шығыс Иран Ауғанстанмен және Орта Азияның бір бөлігімен бірге түркі текті Ғазнауи әулеті билеген мемлекеттің құрамына кірді.
+# labels = checked_IFS
 1	Сондай	сондай	DET	det	PronType=Ind	2	det	_	_
 2	әмірліктердің	әмірлік	NOUN	n	Case=Gen|Number=Plur	3	nmod:poss	_	_
 3	бірі	бір	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	7	nsubj	_	_
@@ -10132,6 +10181,7 @@
 
 # sent_id = Иран.tagged.txt:44:1185
 # text = 11 ғасырда Иранға түрік-оғыздар (салжұқ) басып кіре бастады.
+# labels = checked_IFS
 1	11	11	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	11	obl	_	_
 3	Иранға	Иран	PROPN	np	Case=Dat	11	obl	_	_
@@ -10148,6 +10198,7 @@
 
 # sent_id = Иран.tagged.txt:45:1212
 # text = Көп ұзамай олар Ғазнауи әулеті әскерін талқандап, бүкіл Иранды және көрші елдерді басып алып салжұқтар мемлекетін құрды.
+# labels = checked_IFS
 1	Көп	көп	ADV	adj	_	2	advmod	_	_
 2	ұзамай	ұз	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	18	advcl	_	_
 3	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
@@ -10170,6 +10221,7 @@
 
 # sent_id = Иран.tagged.txt:46:1251
 # text = 12 ғасырда салжұқтар бірнеше сұлтандыққа бөлініп кетті де, осы ғасырдың аяғына таман бүкіл Иранды түркі қыпшақ тайпасынан шыққан Хорезм шаһы Текеш басып алды.
+# labels = checked_IFS
 1	12	12	NUM	num	NumType=Card	2	nummod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	6	obl	_	_
 3	салжұқтар	салжұқ	NOUN	n	Case=Nom|Number=Plur	6	nsubj	_	_
@@ -10199,6 +10251,7 @@
 
 # sent_id = Иран.tagged.txt:47:1301
 # text = 1220 — 56 ж. Иранды Шыңғыс хан әулеті жаулап алды.
+# labels = checked_IFS
 1	1220	1220	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	56	56	NUM	num	NumType=Ord	1	conj	_	_
@@ -10213,6 +10266,7 @@
 
 # sent_id = Иран.tagged.txt:48:1324
 # text = Олар елде Хулагу әулетіне қарайтын ильхандар мемлекетін құрды.
+# labels = checked_IFS
 1	Олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
 2	елде	ел	NOUN	n	Case=Loc	8	obl	_	_
 3	Хулагу	Хулагу	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -10225,6 +10279,7 @@
 
 # sent_id = Иран.tagged.txt:49:1343
 # text = 14 ғасырдың 30-жылдары ильхандар мемлекеті бірнеше иелікке бөлініп кетті де, 1380 — 93 ж. Иранды Әмір Темір әскерлері басып алды.
+# labels = checked_IFS
 1	14	14	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	30	30	NUM	num	NumType=Ord	5	amod	_	SpaceAfter=No
@@ -10253,6 +10308,7 @@
 
 # sent_id = Иран.tagged.txt:50:1391
 # text = Әмір Темір өлгеннен кейін Шығыс Иран Темір әулетінің билігінде қалып, Батыс Иранда Қарақойлы мемлекеті құрылды.
+# labels = checked_IFS
 1	Әмір	Әмір	X	x	_	3	nsubj	_	_
 2	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	1	flat:name	_	_
 3	өлгеннен	өл	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	16	advcl	_	_
@@ -10273,6 +10329,7 @@
 
 # sent_id = Иран.tagged.txt:51:1426
 # text = 16 ғасырда Кіші Азиядан шыққан түркі тайпалары (қызылбастар) Иранға басып кіріп, 1501 — 1610 ж. елді толығымен бағындырып, Сефеви әулеті мемлекетін құрды.
+# labels = checked_IFS
 1	16	16	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	26	obl	_	_
 3	Кіші	кіші	ADJ	adj	_	4	amod	_	_
@@ -10303,6 +10360,7 @@
 
 # sent_id = Иран.tagged.txt:52:1481
 # text = 17 — 18 ғасырларда Иранның экономикасы құлдырап, халықтың жағдайы нашарлап кетті.
+# labels = checked_IFS
 1	17	17	NUM	num	NumType=Card	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	18	18	NUM	num	NumType=Ord	1	conj	_	_
@@ -10319,6 +10377,7 @@
 
 # sent_id = Иран.tagged.txt:53:1508
 # text = Ұсақ халықтар (ауғандар, түрікмендер, Әзірбайжандар, күрдтер, армян, грузиндер) орталықтың езгісіне қарсы жиі-жиі көтеріліс жасап тұрды.
+# labels = checked_IFS
 1	Ұсақ	ұсақ	ADJ	adj	_	2	amod	_	_
 2	халықтар	халық	NOUN	n	Case=Nom|Number=Plur	21	nsubj	_	_
 3	(	(	PUNCT	lpar	_	4	punct	_	SpaceAfter=No
@@ -10345,6 +10404,7 @@
 
 # sent_id = Иран.tagged.txt:54:1555
 # text = Әсіресе, 18 ғасырдың 2-жартысында елдегі үстемдік үшін екі әулеттің (Зенд және Каджар) арасындағы үздіксіз соғыс халықты әбден қалжыратты.
+# labels = checked_IFS
 1	Әсіресе	әсіресе	ADV	adv	_	23	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	18	18	NUM	num	NumType=Ord	4	amod	_	_
@@ -10372,6 +10432,7 @@
 
 # sent_id = Иран.tagged.txt:55:1604
 # text = 18 ғасырдың аяғында билікке Каджар әулеті келді.
+# labels = checked_IFS
 1	18	18	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	аяғында	аяқ	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
@@ -10383,6 +10444,7 @@
 
 # sent_id = Иран.tagged.txt:56:1621
 # text = Осы кезден елдің ішкі істеріне еуропалық мемлекеттер (Англия, Франция) араласа бастады.
+# labels = checked_IFS
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	кезден	кез	NOUN	n	Case=Abl	13	obl	_	_
 3	елдің	ел	NOUN	n	Case=Gen	5	nmod:poss	_	_
@@ -10401,6 +10463,7 @@
 
 # sent_id = Иран.tagged.txt:57:1652
 # text = 19 ғасырдың басында болған орыс-иран соғысынан кейін елде шетелдіктердің билігі күшейіп кетті.
+# labels = checked_IFS
 1	19	19	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	басында	бас	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
@@ -10419,6 +10482,7 @@
 
 # sent_id = Иран.tagged.txt:58:1683
 # text = 19 ғасырдың аяғына таман Иран еуропалық мемлекеттердің жартылай отарына айнала бастады.
+# labels = checked_IFS
 1	19	19	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	аяғына	аяқ	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
@@ -10434,6 +10498,7 @@
 
 # sent_id = Иран.tagged.txt:59:1708
 # text = 1901 ж. ағылшындар Иран мұнайын шығаруға рұқсат алып, 1909 ж. бірлескен ағылшын-парсы мұнай компаниясы құрылды.
+# labels = checked_IFS
 1	1901	1901	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	8	obl	_	_
 3	ағылшындар	ағылшын	NOUN	n	Case=Nom|Number=Plur	8	nsubj	_	_
@@ -10456,6 +10521,7 @@
 
 # sent_id = Иран.tagged.txt:60:1747
 # text = Елдің солтүстігіне Ресей, оңтүстігіне Ұлыбритания қожалық ете бастады.
+# labels = checked_IFS
 1	Елдің	ел	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	солтүстігіне	солтүстік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	3	orphan	_	_
 3	Ресей	Ресей	PROPN	np	Case=Nom	8	conj	_	SpaceAfter=No
@@ -10469,6 +10535,7 @@
 
 # sent_id = Иран.tagged.txt:61:1768
 # text = 1905 — 11 ж. елде шетелдіктерге қарсы ұлт-азаттық қозғалысы болып өтті.
+# labels = checked_IFS
 1	1905	1905	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	11	11	NUM	num	NumType=Ord	4	amod	_	_
@@ -10484,6 +10551,7 @@
 
 # sent_id = Иран.tagged.txt:62:1793
 # text = Оның барысында конституция жарияланып, меджлис шақырылды, ақсүйектік дәрежелер жойылды.
+# labels = checked_IFS
 1	Оның	ол	PRON	prn	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
 2	барысында	барыс	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	конституция	конституция	NOUN	n	Case=Nom	4	nsubj	_	_
@@ -10499,6 +10567,7 @@
 
 # sent_id = Иран.tagged.txt:63:1818
 # text = Бірақ 1918 ж. ағылшындар бүкіл Иранды басып алып, 1919 ж. оны кіріптарлық шарттарға қол қоюға мәжбүр етті.
+# labels = checked_IFS
 1	Бірақ	бірақ	CCONJ	cnjcoo	_	18	cc	_	_
 2	1918	1918	NUM	num	NumType=Ord	3	amod	_	_
 3	ж.	ж.	NOUN	abbr	_	6	obl	_	_
@@ -10521,6 +10590,7 @@
 
 # sent_id = Иран.tagged.txt:64:1857
 # text = Елде ағылшын үстемдігіне қарсы жаңа толқулар басталды.
+# labels = checked_IFS
 1	Елде	ел	NOUN	n	Case=Loc	7	obl	_	_
 2	ағылшын	ағылшын	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	үстемдігіне	үстемдік	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
@@ -10532,6 +10602,7 @@
 
 # sent_id = Иран.tagged.txt:65:1874
 # text = 1921 ж. 21 ақпанда әскерилер Реза ханның басшылығымен мемлекеттік төңкеріс ұйымдастырып, жаңа үкімет құрды.
+# labels = checked_IFS
 1	1921	1921	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	21	21	NUM	num	NumType=Ord	4	amod	_	_
@@ -10551,6 +10622,7 @@
 
 # sent_id = Иран.tagged.txt:66:1907
 # text = Жаңа үкімет халықтың қысымымен 1919 ж. ағылшын-парсы шартын жойылды деп жариялады.
+# labels = checked_IFS
 1	Жаңа	жаңа	ADJ	adj	_	2	amod	_	_
 2	үкімет	үкімет	NOUN	n	Case=Nom	13	nsubj	_	_
 3	халықтың	халық	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -10568,6 +10640,7 @@
 
 # sent_id = Иран.tagged.txt:67:1936
 # text = Армияға сүйенген Реза хан Орталықтың билігін күшейту үшін сепаратистік пиғылдағы Иран ақсүйектерімен үздіксіз күрес жүргізді.
+# labels = checked_IFS
 1	Армияға	армия	NOUN	n	Case=Dat	2	obl	_	_
 2	сүйенген	сүйен	VERB	v	Tense=Past|VerbForm=Part	3	acl	_	_
 3	Реза	Реза	PROPN	np	Case=Nom|Gender=Masc	15	nsubj	_	_
@@ -10587,6 +10660,7 @@
 
 # sent_id = Иран.tagged.txt:68:1969
 # text = Елде нарықтық қатынастар тез дами бастады.
+# labels = checked_IFS
 1	Елде	ел	NOUN	n	Case=Loc	5	obl	_	_
 2	нарықтық	нарықтық	ADJ	adj	_	3	amod	_	_
 3	қатынастар	қатынас	NOUN	n	Case=Nom|Number=Plur	5	nsubj	_	_
@@ -10597,6 +10671,7 @@
 
 # sent_id = Иран.tagged.txt:69:1984
 # text = Халықтың мәдени және тұрмыстық өмірінде көптеген өзгерістер болып өтті.
+# labels = checked_IFS
 1	Халықтың	халық	NOUN	n	Case=Gen	5	nmod:poss	_	_
 2	мәдени	мәдени	ADJ	adj	_	5	amod	_	_
 3	және	және	CCONJ	cnjcoo	_	4	cc	_	_
@@ -10610,6 +10685,7 @@
 
 # sent_id = Иран.tagged.txt:70:2005
 # text = Алайда, 1929 — 33 ж. болған дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады.
+# labels = checked_IFS
 1	Алайда	алайда	SCONJ	cnjadv	_	14	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	1929	1929	NUM	num	NumType=Card	5	compound	_	_
@@ -10628,6 +10704,7 @@
 
 # sent_id = Иран.tagged.txt:71:2036
 # text = Халықтың тұрмысы нашарлап, елде толқулар басталды.
+# labels = checked_IFS
 1	Халықтың	халық	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	тұрмысы	тұрмыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
 3	нашарлап	нашарла	VERB	v	Aspect=Perf|VerbForm=Conv	7	advcl	_	SpaceAfter=No
@@ -10639,6 +10716,7 @@
 
 # sent_id = Иран.tagged.txt:72:2053
 # text = Ол толқулар күшпен басылып отырды.
+# labels = checked_IFS
 1	Ол	ол	DET	det	PronType=Dem	2	det	_	_
 2	толқулар	толқу	NOUN	n	Case=Nom|Number=Plur	4	nsubj	_	_
 3	күшпен	күш	NOUN	n	Case=Ins	4	obl	_	_
@@ -10648,6 +10726,7 @@
 
 # sent_id = Иран.tagged.txt:73:2066
 # text = 1941 ж. 16 қыркүйекте Реза шаһ тақтан өз еркімен бас тартып, орнына баласы Мұхаммед Реза Пехлеви шаһ болды.
+# labels = checked_IFS
 1	1941	1941	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	16	16	NUM	num	NumType=Ord	4	amod	_	_
@@ -10671,6 +10750,7 @@
 
 # sent_id = Иран.tagged.txt:74:2107
 # text = 1942 ж. 29 қаңтарда Иран КСРО және Ұлыбритания мемлекеттерімен одақтастық туралы шартқа қол қойды.
+# labels = checked_IFS
 1	1942	1942	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	29	29	NUM	num	NumType=Ord	4	amod	_	_
@@ -10689,6 +10769,7 @@
 
 # sent_id = Иран.tagged.txt:75:2138
 # text = 1943 ж. 9 қыркүйекте Иран Германияға соғыс жариялады, бірақ соғыс қимылдарына араласқан жоқ.
+# labels = checked_IFS
 1	1943	1943	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	9	9	NUM	num	NumType=Ord	4	amod	_	_
@@ -10706,6 +10787,7 @@
 
 # sent_id = Иран.tagged.txt:76:2167
 # text = Тегеран конференциясы кезінде 1943 ж. 1 желтоқсанда КСРО, АҚШ, Ұлыбритания үкіметтері Иранға территориялық тұтастығын сақтауға әзір екендіктерін мәлімдеді.
+# labels = checked_IFS
 1	Тегеран	Тегеран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	конференциясы	конференция	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	20	obl	_	_
@@ -10730,6 +10812,7 @@
 
 # sent_id = Иран.tagged.txt:77:2210
 # text = Соғыстан кейін Иран үкіметі Батыс елдерімен тығыз байланыс орнатты.
+# labels = checked_IFS
 1	Соғыстан	соғыс	NOUN	n	Case=Abl	9	obl	_	_
 2	кейін	кейін	ADP	post	_	1	case	_	_
 3	Иран	Иран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -10743,6 +10826,7 @@
 
 # sent_id = Иран.tagged.txt:78:2231
 # text = 1953 ж. ел тәуелсіздігін күшейтуге тырысқан М. Мосаддық үкіметі құлатылды.
+# labels = checked_IFS
 1	1953	1953	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	10	obl	_	_
 3	ел	ел	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -10757,6 +10841,7 @@
 
 # sent_id = Иран.tagged.txt:79:2254
 # text = Иран шаһы М. Р. Пехлевидің көмегімен АҚШ елдің ішкі өміріне белсене араласа бастады.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	шаһы	шаһ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
 3	М.	М.	NOUN	abbr	_	2	appos	_	_
@@ -10774,6 +10859,7 @@
 
 # sent_id = Иран.tagged.txt:80:2283
 # text = Ел 1955 ж. АҚШ-пен әскери келісімдер жасасты, 1960 жылдан бастап Батыс үлгісінде дами бастады.
+# labels = checked_IFS
 1	Ел	ел	NOUN	n	Case=Nom	7	nsubj	_	_
 2	1955	1955	NUM	num	NumType=Ord	3	amod	_	_
 3	ж.	ж.	NOUN	abbr	_	7	obl	_	_
@@ -10793,6 +10879,7 @@
 
 # sent_id = Иран.tagged.txt:81:2316
 # text = Елде шет ел капиталының үстемдік алуы, ұлттық құндылықтардың аяққа басылуы 1978 — 79 ж. халықтың шаһ үкіметіне қарсы жаппай бас көтеруіне алып келді.
+# labels = checked_IFS
 1	Елде	ел	NOUN	n	Case=Loc	24	obl	_	_
 2	шет	шет	NOUN	n	Case=Nom	3	compound	_	_
 3	ел	ел	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -10821,6 +10908,7 @@
 
 # sent_id = Иран.tagged.txt:82:2367
 # text = Оны елдегі шиит дінбасылары басқарды.
+# labels = checked_IFS
 1	Оны	ол	PRON	prn	Case=Acc|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
 2	елдегі	ел	NOUN	n	Case=Loc	4	amod	_	_
 3	шиит	шиит	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -10830,6 +10918,7 @@
 
 # sent_id = Иран.tagged.txt:83:2380
 # text = 1979 ж. 11 ақпанда болған революция нәтижесінде шаһ үкіметі құлап, 1 сәуірден бастап Иран Ислам Республикасы жарияланды.
+# labels = checked_IFS
 1	1979	1979	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	4	nmod	_	_
 3	11	11	NUM	num	NumType=Ord	4	amod	_	_
@@ -10852,6 +10941,7 @@
 
 # sent_id = Иран.tagged.txt:84:2419
 # text = Үкімет басына шиит дінбасыларының көсемі аятолла Р. Хомейни келді.
+# labels = checked_IFS
 1	Үкімет	үкімет	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	басына	бас	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 3	шиит	шиит	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -10865,6 +10955,7 @@
 
 # sent_id = Иран.tagged.txt:85:2440
 # text = Саяси партияларға тыйым салынды, шаһ үкіметі жойылды, Батыстың иелігіндегі барлық компаниялар мүлкі мемлекет меншігіне алынды, ел СЕАТО блогынан шығып, Блоктарға қосылмау қозғалысына мүше болып енді.
+# labels = checked_IFS
 1	Саяси	саяси	ADJ	adj	_	2	amod	_	_
 2	партияларға	партия	NOUN	n	Case=Dat|Number=Plur	4	obj	_	_
 3	тыйым	тыйым	X	x	_	4	dep	_	_
@@ -10898,6 +10989,7 @@
 
 # sent_id = Иран.tagged.txt:86:2501
 # text = 1980 – 1990 ж. болған Иран — Ирак соғысы ел экономикасына өте ауыр (700 млрд. АҚШ долларынан астам) зардаптар әкелді.
+# labels = checked_IFS
 1	1980	1980	NUM	num	NumType=Card	3	compound	_	_
 2	–	–	PUNCT	guio	_	3	punct	_	_
 3	1990	1990	NUM	num	NumType=Ord	4	amod	_	_
@@ -10924,6 +11016,7 @@
 
 # sent_id = Иран.tagged.txt:87:2548
 # text = Ел экономикасының негізі мұнай және мұнай мен газ өңдеу өнеркәсіптері.
+# labels = checked_IFS
 1	Ел	ел	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	экономикасының	экономика	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
@@ -10938,6 +11031,7 @@
 
 # sent_id = Иран.tagged.txt:88:2571
 # text = Мемлекеттік кірістің 1 / 3 және экспорттың 90%-ына жуығы осы салалардан алынады.
+# labels = checked_IFS
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
 2	кірістің	кіріс	NOUN	n	Case=Gen	3	orphan	_	_
 3	1	1	NUM	num	NumType=Card,Ord	12	conj	_	_
@@ -10954,6 +11048,7 @@
 
 # sent_id = Иран.tagged.txt:89:2598
 # text = Экономиканың басқа салалары да дамыған, бірақ сыртқы экономикалық байланыстардың нашарлығынан және қаржы жетіспеушілігінен толық қуатымен жұмыс істей алмауда.
+# labels = checked_IFS
 1	Экономиканың	экономика	NOUN	n	Case=Gen	3	nmod:poss	_	_
 2	басқа	басқа	ADJ	adj	_	3	amod	_	_
 3-4	салалары да	_	_	_	_	_	_	_	_
@@ -10978,6 +11073,7 @@
 
 # sent_id = Иран.tagged.txt:90:2638
 # text = Өнеркәсіпке қажетті құрал-саймандар 90%-ға дейін шеттен әкелінеді.
+# labels = checked_IFS
 1	Өнеркәсіпке	өнеркәсіп	NOUN	n	Case=Dat	2	nmod	_	_
 2	қажетті	қажетті	ADJ	adj	_	3	amod	_	_
 3	құрал-саймандар	құрал-саймандар	NOUN	n	Case=Nom	7	nsubj	_	_
@@ -10989,6 +11085,7 @@
 
 # sent_id = Иран.tagged.txt:91:2655
 # text = Ауыл шаруашылығы нашар дамыған.
+# labels = checked_IFS
 1	Ауыл	ауыл	NOUN	n	_	2	nmod:poss	_	_
 2	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 3	нашар	нашар	ADJ	adj	_	4	advmod	_	_
@@ -10997,6 +11094,7 @@
 
 # sent_id = Иран.tagged.txt:92:2666
 # text = Соңғы жылдары туризм дами бастады.
+# labels = checked_IFS
 1	Соңғы	соң	ADV	adv	Case=Nom	2	amod	_	_
 2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	туризм	туризм	NOUN	n	Case=Nom	4	nsubj	_	_
@@ -11006,6 +11104,7 @@
 
 # sent_id = Иран.tagged.txt:93:2679
 # text = Ұлттық байлықтың 36%-ы өнеркәсіптен, 22%-ы ауыл шаруашылығынан, қалғаны қызмет көрсету секторынан тұрады.
+# labels = checked_IFS
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	байлықтың	байлық	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	14	nsubj	_	_
@@ -11024,6 +11123,7 @@
 
 # sent_id = Иран.tagged.txt:94:2710
 # text = Мұнай экспортынан жыл сайын 16,3 млрд. АҚШ доллары түседі.
+# labels = checked_IFS
 1	Мұнай	мұнай	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	экспортынан	экспорт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 3	жыл	жыл	NOUN	n	_	9	obl	_	_
@@ -11037,6 +11137,7 @@
 
 # sent_id = Иран.tagged.txt:95:2731
 # text = Ұлттық табыс 75 млрд. АҚШ доллар көлемінде, жан басына шаққанда — 1250 долл. шамасында.
+# labels = checked_IFS
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	табыс	табыс	NOUN	n	Case=Nom	15	nsubj	_	_
 3	75	75	NUM	num	NumType=Card	4	compound	_	_
@@ -11056,6 +11157,7 @@
 
 # sent_id = Иран.tagged.txt:96:2764
 # text = Елдегі басты проблеманың бірі — жұмыссыздық (3,5 млн. адам).
+# labels = checked_IFS
 1	Елдегі	ел	NOUN	n	Case=Loc	3	amod	_	_
 2	басты	басты	ADJ	adj	_	3	amod	_	_
 3	проблеманың	проблема	NOUN	n	Case=Gen	4	nmod:poss	_	_
@@ -11071,6 +11173,7 @@
 
 # sent_id = Иран.tagged.txt:97:2789
 # text = Мұнайдан басқа экспортқа кейбір өнеркәсіп тауарлары, ауыл шаруашылығы өнімдері, кілем, халық тұтыну тауарлары шығарылады.
+# labels = checked_IFS
 1	Мұнайдан	мұнай	NOUN	n	Case=Abl	17	obl	_	_
 2	басқа	басқа	ADP	post	_	1	case	_	_
 3	экспортқа	экспорт	NOUN	n	Case=Dat	17	obl	_	_
@@ -11092,6 +11195,7 @@
 
 # sent_id = Иран.tagged.txt:98:2826
 # text = Шеттен — азық-түлік өнімдері (30%), машина, құрал-жабдықтар, кейбір өнеркәсіп шикізаттары әкелінеді.
+# labels = checked_IFS
 1	Шеттен	шет	NOUN	n	Case=Abl	16	obl	_	_
 2	—	—	PUNCT	guio	_	1	punct	_	_
 3	азық-түлік	азық-түлік	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -11112,6 +11216,7 @@
 
 # sent_id = Иран.tagged.txt:99:2861
 # text = Негізгі сауда серіктестері: Германия, Жапония, Ұлыбритания, Италия, араб елдері, Түркия, Қазақстанмен дипломатиялық және экономикалық байланыс 1992 ж. орнады.
+# labels = checked_IFS
 1	Негізгі	негізгі	ADJ	adj	_	2	amod	_	_
 2	сауда	сауда	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	серіктестері	серіктес	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	SpaceAfter=No
@@ -11141,6 +11246,7 @@
 
 # sent_id = Иран.tagged.txt:100:2914
 # text = Қазақстан Президенті Нұрсұлтан Назарбаев екі рет (1992; 1996) Иранда болып қайтты.
+# labels = checked_IFS
 1	Қазақстан	Қазақстан	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	Президенті	президент	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	14	nsubj	_	_
 3	Нұрсұлтан	Нұрсұлтан	PROPN	np	Case=Nom|Gender=Masc	2	appos	_	_
@@ -11159,6 +11265,7 @@
 
 # sent_id = Иран.tagged.txt:101:2945
 # text = Сол кезегінде Иран басшылары да (1993 ж. А. Хашеми Рафсанджани, 1998 ж. М. Хатами) Қазақстанда болды.
+# labels = checked_IFS
 1	Сол	сол	DET	det	PronType=Dem	2	det	_	_
 2	кезегінде	кезек	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	18	obl	_	_
 3	Иран	Иран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -11183,6 +11290,7 @@
 
 # sent_id = Иран.tagged.txt:102:2985
 # text = 2002 ж. Алматы — Тегеран бағытында темір жол байланысы орнатылды.
+# labels = checked_IFS
 1	2002	2002	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	10	obl	_	_
 3	Алматы	Алматы	PROPN	np	Case=Nom	5	compound	_	_
@@ -11197,6 +11305,7 @@
 
 # sent_id = Иран.tagged.txt:103:3008
 # text = Иран әдебиетінің классикалық дәуірін (7 — 16 ғасырлар) парсы не парсы-тәжік әдебиеті деп атанды.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әдебиетінің	әдебиет	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 3	классикалық	классикалық	ADJ	adj	_	4	amod	_	_
@@ -11219,6 +11328,7 @@
 
 # sent_id = Иран.tagged.txt:104:3047
 # text = Иран әдебиетінің гүлденген кезі — 13 — 14 ғасырлар.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әдебиетінің	әдебиет	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 3	гүлденген	гүлден	VERB	v	Tense=Past|VerbForm=Part	4	acl:relcl	_	_
@@ -11232,6 +11342,7 @@
 
 # sent_id = Иран.tagged.txt:105:3068
 # text = Иран революциясы (1905 — 11) және азаматтық қозғалыс (1918 — 21) кезінде А. Фарахани, М. Кермани, М. Т. Бехар, т.б. ақындар демократиялық идеяның жыршысы болды.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	революциясы	революция	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	16	nmod:poss	_	_
 3	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
@@ -11268,6 +11379,7 @@
 
 # sent_id = Иран.tagged.txt:106:3135
 # text = Хұзыстан, Курдстан жартастарындағы рельефтер, Сұзыдан табылған, асыл металдан жасалған көркем заттар Иран өнерінің өз заманында жоғары дәрежеде болғанын дәлелдейді.
+# labels = checked_IFS
 1	Хұзыстан	Хұзыстан	PROPN	np	Case=Nom	4	nmod:poss	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	3	punct	_	_
 3	Курдстан	Курдстан	PROPN	np	Case=Nom	1	conj	_	_
@@ -11294,6 +11406,7 @@
 
 # sent_id = Иран.tagged.txt:107:3182
 # text = Иран жерінде сақтар тарихына қатысты мәдени ескерткіштер де мол сақталған.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	жерінде	жер	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	сақтар	сақ	NOUN	n	Case=Nom|Number=Plur	4	nmod:poss	_	_
@@ -11309,6 +11422,7 @@
 
 # sent_id = Иран.tagged.txt:108:3204
 # text = Сасани әулеті дәуірінде (3 — 7 ғасырлар) қалаларды қорған ішіне жүйелі жоба бойынша салу қанат жайды (мыс., Нишапур қаласы шахмат жүйесімен салынған).
+# labels = checked_IFS
 1	Сасани	Сасани	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	әулеті	әулет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	дәуірінде	дәуір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	18	obl	_	_
@@ -11340,6 +11454,7 @@
 
 # sent_id = Иран.tagged.txt:109:3261
 # text = Мүсін жасау, жартастарға рельеф қашау елеулі орын алды.
+# labels = checked_IFS
 1	Мүсін	мүсін	NOUN	n	Case=Nom	2	obj	_	_
 2	жасау	жаса	VERB	v	Case=Nom|VerbForm=Ger	9	csubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -11353,6 +11468,7 @@
 
 # sent_id = Иран.tagged.txt:110:3282
 # text = Алтын, күміс, қола және әйнектен әр түрлі бұйымдар жасау, жүн және жібек мата тоқу өркен жайды.
+# labels = checked_IFS
 1	Алтын	алтын	ADJ	adj	_	11	obl	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	3	punct	_	_
 3	күміс	күміс	NOUN	n	Case=Nom	1	conj	_	SpaceAfter=No
@@ -11376,6 +11492,7 @@
 
 # sent_id = Иран.tagged.txt:111:3323
 # text = 14 ғасырдан кейін қолжазба көркемдеу, қабырғаға сурет салу дамыды.
+# labels = checked_IFS
 1	14	14	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдан	ғасыр	NOUN	n	Case=Abl	10	obl	_	_
 3	кейін	кейін	ADP	post	_	2	case	_	_
@@ -11390,6 +11507,7 @@
 
 # sent_id = Иран.tagged.txt:112:3346
 # text = 15 ғасырда Иран миниатюрасының өркендеуіне Герат мектебі үлкен әсер етті.
+# labels = checked_IFS
 1	15	15	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	5	obl	_	_
 3	Иран	Иран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -11404,6 +11522,7 @@
 
 # sent_id = Иран.tagged.txt:113:3369
 # text = 16 — 17 ғасырларда пайда болған Тебриз, Шираз, Исфаһан (Риза Аббаси, т.б.) мектептері миниатюра өнерін жоғары дәрежеге көтерді.
+# labels = checked_IFS
 1	16	16	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	17	17	NUM	num	NumType=Ord	1	conj	_	_
@@ -11431,6 +11550,7 @@
 
 # sent_id = Иран.tagged.txt:114:3418
 # text = 18 — 19 ғасырларда еуропалық өнердің ықпалымен сулы және майлы бояумен орындалған алғашқы туындылар өмірге келді.
+# labels = checked_IFS
 1	18	18	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	19	19	NUM	num	NumType=Ord	1	conj	_	_
@@ -11455,6 +11575,7 @@
 
 # sent_id = Иран.tagged.txt:115:3455
 # text = 20 ғасырда жаңа типті архитектуралық құрылыстар салына бастады.
+# labels = checked_IFS
 1	20	20	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	7	obl	_	_
 3	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
@@ -11467,6 +11588,7 @@
 
 # sent_id = Иран.tagged.txt:116:3474
 # text = Иранның жаңа архитектуралық мұралары қазіргі стиль мен ұлттық үлгідегі сәулет өнерін ұштастырған.
+# labels = checked_IFS
 1	Иранның	Иран	PROPN	np	Case=Gen	4	nmod:poss	_	_
 2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
 3	архитектуралық	архитектуралық	ADJ	adj	_	4	amod	_	_
@@ -11483,6 +11605,7 @@
 
 # sent_id = Иран.tagged.txt:117:3501
 # text = 20 ғасырдың басынан мүсін, графика, кескіндеме жанры дамып келеді.
+# labels = checked_IFS
 1	20	20	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	басынан	бас	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	10	obl	_	_
@@ -11498,6 +11621,7 @@
 
 # sent_id = Иран.tagged.txt:118:3526
 # text = Сән және қосалқы өнердің дәстүрлі түрлері сақталған.
+# labels = checked_IFS
 1	Сән	сән	NOUN	n	Case=Nom	4	compound	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
 3	қосалқы	қосалқы	NOUN	n	Case=Nom	1	conj	_	_
@@ -11509,6 +11633,7 @@
 
 # sent_id = Иран.tagged.txt:119:3543
 # text = Кәсіби және халық музыкасының ғасырлық дәстүрі бар.
+# labels = checked_IFS
 1	Кәсіби	кәсіби	ADJ	adj	_	4	compound	_	_
 2	және	және	CCONJ	cnjcoo	_	3	cc	_	_
 3	халық	халық	NOUN	n	Case=Nom	1	conj	_	_
@@ -11520,6 +11645,7 @@
 
 # sent_id = Иран.tagged.txt:120:3560
 # text = Иран музыкасы, негізінен, монодиялық (бір дауысты) түрде кездеседі.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	музыкасы	музыка	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	2	punct	_	_
@@ -11536,6 +11662,7 @@
 
 # sent_id = Иран.tagged.txt:121:3587
 # text = Арабтар жаулап алғаннан кейін Иран музыкасына мұсылмандық араб мәдениетінің ықпалы тиді.
+# labels = checked_IFS
 1	Арабтар	араб	NOUN	n	Case=Nom|Number=Plur	2	nsubj	_	_
 2	жаулап	жаула	VERB	v	Aspect=Perf|VerbForm=Cov	11	advcl	_	_
 3	алғаннан	ал	AUX	vaux	Case=Abl|Tense=Past|VerbForm=Ger	2	aux	_	_
@@ -11551,6 +11678,7 @@
 
 # sent_id = Иран.tagged.txt:122:3612
 # text = 9 ғасырдан бастап сарай өнері дамып, халық арасында мутребтердің (әнші-бишілер) даңқы жойылды.
+# labels = checked_IFS
 1	9	9	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдан	ғасыр	NOUN	n	Case=Abl	3	obl	_	_
 3	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
@@ -11570,6 +11698,7 @@
 
 # sent_id = Иран.tagged.txt:123:3645
 # text = 19 ғасырдың 2-жартысынан Иран музыкасына еуропалық музыка мәдениеті әсер етті.
+# labels = checked_IFS
 1	19	19	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	2	2	NUM	num	NumType=Ord	5	amod	_	SpaceAfter=No
@@ -11586,6 +11715,7 @@
 
 # sent_id = Иран.tagged.txt:124:3672
 # text = Театр өнерінің негізі халықтық салт-дәстүрлерде жатыр.
+# labels = checked_IFS
 1	Театр	театр	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	өнерінің	өнер	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	негізі	негіз	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
@@ -11598,6 +11728,7 @@
 
 # sent_id = Иран.tagged.txt:125:3691
 # text = Ежелгі базигер театры жайлы деректер сақталған.
+# labels = checked_IFS
 1	Ежелгі	ежелгі	ADJ	adj	_	3	amod	_	_
 2	базигер	базигер	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	театры	театр	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
@@ -11608,6 +11739,7 @@
 
 # sent_id = Иран.tagged.txt:126:3706
 # text = Пантомима, көлеңке және қуыршақ театрлары болған.
+# labels = checked_IFS
 1	Пантомима	пантомима	NOUN	n	Case=Nom	6	nmod:poss	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	3	punct	_	_
 3	көлеңке	көлеңке	NOUN	n	Case=Nom	1	conj	_	_
@@ -11619,6 +11751,7 @@
 
 # sent_id = Иран.tagged.txt:127:3723
 # text = 10 ғасырда пайда болған мистерия діни ғұрып шахсей-вахсейдің құрамына енді.
+# labels = checked_IFS
 1	10	10	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырда	ғасыр	NOUN	n	Case=Loc	4	obl	_	_
 3	пайда	пайда	X	x	_	4	dep	_	_
@@ -11633,6 +11766,7 @@
 
 # sent_id = Иран.tagged.txt:128:3746
 # text = 17 — 18 ғасырларда ол трагедиялық мистерия түрлерінің бірі — тазийенің негізін қалады.
+# labels = checked_IFS
 1	17	17	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	18	18	NUM	num	NumType=Ord	1	conj	_	_
@@ -11650,6 +11784,7 @@
 
 # sent_id = Иран.tagged.txt:129:3775
 # text = 20 ғасырдың 30-жылдарына дейін кезбе актерлер — масқарапаздар өнер көрсетіп келді.
+# labels = checked_IFS
 1	20	20	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	30	30	NUM	num	NumType=Ord	5	amod	_	SpaceAfter=No
@@ -11667,6 +11802,7 @@
 
 # sent_id = Иран.tagged.txt:130:3804
 # text = 1911 — 12 ж. еуропалық театрлар тәжірибелерін пайдалана отырып Ұлттық театр, 1917 ж. Иранның комедия театры ашылды.
+# labels = checked_IFS
 1	1911	1911	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	12	12	NUM	num	NumType=Ord	4	amod	_	_
@@ -11689,6 +11825,7 @@
 
 # sent_id = Иран.tagged.txt:131:3843
 # text = Бұл театрларды құруда актер Сейед Әли Нәсірдің еңбегі зор.
+# labels = checked_IFS
 1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
 2	театрларды	театр	NOUN	n	Case=Acc|Number=Plur	3	obj	_	_
 3	құруда	құр	VERB	v	Case=Loc|VerbForm=Ger	9	advcl	_	_
@@ -11702,6 +11839,7 @@
 
 # sent_id = Иран.tagged.txt:132:3864
 # text = 1929 жылдан бастап әйел актерлер көріне бастады.
+# labels = checked_IFS
 1	1929	1929	NUM	num	NumType=Ord	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	obl	_	_
 3	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
@@ -11713,6 +11851,7 @@
 
 # sent_id = Иран.tagged.txt:133:3881
 # text = 1930 — 40 ж. театр репертуарларынан өңделген Батыс Еуропа драмалары мен мелодрамалар орын алды.
+# labels = checked_IFS
 1	1930	1930	NUM	num	NumType=Card	3	compound	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	40	40	NUM	num	NumType=Ord	4	amod	_	_
@@ -11731,6 +11870,7 @@
 
 # sent_id = Иран.tagged.txt:134:3912
 # text = 1940 жылдан Иран театры дағдарысқа ұшырады, 1960 жылдардың басында қайта өрлеу жолына түсті.
+# labels = checked_IFS
 1	1940	1940	NUM	num	NumType=Ord	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	6	obl	_	_
 3	Иран	Иран	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -11749,6 +11889,7 @@
 
 # sent_id = Иран.tagged.txt:135:3943
 # text = 1963 ж. Тегеранда кәсіби актерлер дайындайтын драм. студия ашылды.
+# labels = checked_IFS
 1	1963	1963	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	9	obl	_	_
 3	Тегеранда	Тегеран	PROPN	np	Case=Loc	9	obl	_	_
@@ -11762,6 +11903,7 @@
 
 # sent_id = Иран.tagged.txt:136:3964
 # text = 1968 жылдан бастап Ширазда театр фестивалы өткізіліп тұрды.
+# labels = checked_IFS
 1	1968	1968	NUM	num	NumType=Ord	2	amod	_	_
 2	жылдан	жыл	NOUN	n	Case=Abl	3	obl	_	_
 3	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	7	advcl	_	_
@@ -11774,6 +11916,7 @@
 
 # sent_id = Иран.tagged.txt:137:3983
 # text = 20 ғасырдың 40-жылдарына дейін, көбінесе, шетелдік фильмдер көрсетіліп келді.
+# labels = checked_IFS
 1	20	20	NUM	num	NumType=Ord	2	amod	_	_
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	40	40	NUM	num	NumType=Card	5	amod	_	SpaceAfter=No
@@ -11791,6 +11934,7 @@
 
 # sent_id = Иран.tagged.txt:138:4012
 # text = 1946 ж. Тегеранда “Митра-фильм” киностудиясы құрылды.
+# labels = checked_IFS
 1	1946	1946	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	10	obl	_	_
 3	Тегеранда	Тегеран	PROPN	np	Case=Loc	10	obl	_	_
@@ -11805,6 +11949,7 @@
 
 # sent_id = Иран.tagged.txt:139:4035
 # text = 1960 — 1970 ж. музыкалық комедияларға, шағын драмаларға, мифтік және тарихи сюжеттерге құрылған фильмдер қойылды.
+# labels = checked_IFS
 1	1960	1960	NUM	num	NumType=Card,Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	1970	1970	NUM	num	NumType=Ord	1	compound	_	_
@@ -11826,6 +11971,7 @@
 
 # sent_id = Иран.tagged.txt:140:4072
 # text = Тегеранда 1955 жылдан халықаралық, 1970 жылдан ұлттық кинофестивальдер өткізіліп тұрады.
+# labels = checked_IFS
 1	Тегеранда	Тегеран	PROPN	np	Case=Loc	10	obl	_	_
 2	1955	1955	NUM	num	NumType=Ord	3	amod	_	_
 3	жылдан	жыл	NOUN	n	Case=Abl	10	obl	_	_
@@ -11841,6 +11987,7 @@
 
 # sent_id = Иран.tagged.txt:141:4097
 # text = Иран кинематографиясының дамуына реж. И. Кушан, М. Мисагие, Мохтасем, М. Мохсени, С. Ясеми, Ш. Рафия елеулі үлес қосты.
+# labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	кинематографиясының	кинематография	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	дамуына	дамы	VERB	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	23	advcl	_	_
@@ -11868,6 +12015,7 @@
 
 # sent_id = wikipedia.tagged.txt:1:0
 # text = Абонемент бөлімі кітаптар мен журналдарды үйге тегін береді.
+# labels = checked_IFS
 1	Абонемент	абонемент	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	бөлімі	бөлім	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 3	кітаптар	кітап	NOUN	n	Case=Nom|Number=Plur	8	obj	_	_
@@ -11880,6 +12028,7 @@
 
 # sent_id = wikipedia.tagged.txt:2:18
 # text = Азамат соғысында рота командирі болған.
+# labels = checked_IFS
 1	Азамат	Азамат	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	соғысында	соғыс	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	рота	рота	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -11889,6 +12038,7 @@
 
 # sent_id = wikipedia.tagged.txt:3:31
 # text = Алап ауқымында қысым мен температураның қалыптан тыс мөлшерлері ұшырасқан жоқ.
+# labels = checked_IFS
 1	Алап	алап	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	ауқымында	ауқым	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 3	қысым	қысым	NOUN	n	Case=Nom	8	nmod:poss	_	_
@@ -11902,6 +12052,7 @@
 
 # sent_id = wikipedia.tagged.txt:4:52
 # text = Алматы қаласына елбасының келуі көптеген мәселелерге жаңаша қарауға септігін тигізді.
+# labels = checked_IFS
 1	Алматы	Алматы	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	қаласына	қала	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	елбасының	елбас	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
@@ -11916,6 +12067,7 @@
 
 # sent_id = wikipedia.tagged.txt:5:75
 # text = Ауылда клуб директоры болып қызмет атқарды.
+# labels = checked_IFS
 1	Ауылда	ауыл	NOUN	n	Case=Loc	6	obl	_	_
 2	клуб	клуб	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	директоры	директор	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	advcl	_	_
@@ -11926,6 +12078,7 @@
 
 # sent_id = wikipedia.tagged.txt:6:90
 # text = Біз өз жұмысымыздың әдістері мен стильдерін жетілдіріп, инновацияларды енгізіп отырамыз.
+# labels = checked_IFS
 1	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	10	nsubj	_	_
 2	өз	өз	DET	det	PronType=Ref	3	det	_	_
 3	жұмысымыздың	жұмыс	NOUN	n	Case=Gen|Number[psor]=Plur|Person[psor]=1	4	nmod:poss	_	_
@@ -11941,6 +12094,7 @@
 
 # sent_id = wikipedia.tagged.txt:7:115
 # text = Ендеше, осындай жағдаяттарда жол табуға болады.
+# labels = checked_IFS
 1	Ендеше	ендеше	ADV	adv	_	7	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	осындай	осындай	DET	det	PronType=Dem	4	det	_	_
@@ -11952,6 +12106,7 @@
 
 # sent_id = wikipedia.tagged.txt:8:132
 # text = Ендеше тілегімді берді, - деді.
+# labels = checked_IFS
 1	Ендеше	ендеше	ADV	adv	_	6	advmod	_	_
 2	тілегімді	тілек	NOUN	n	Case=Acc|Number[psor]=Sing|Person[psor]=1	3	obj	_	_
 3	берді	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	ccomp	_	SpaceAfter=No
@@ -11962,6 +12117,7 @@
 
 # sent_id = wikipedia.tagged.txt:9:147
 # text = Еуропаның өзге елдерінде де пайда болды.
+# labels = checked_IFS
 1	Еуропаның	Еуропа	PROPN	np	Case=Gen	3	nmod:poss	_	_
 2	өзге	өзге	ADJ	adj	_	3	amod	_	_
 3-4	елдерінде де	_	_	_	_	_	_	_	_
@@ -11973,6 +12129,7 @@
 
 # sent_id = wikipedia.tagged.txt:10:161
 # text = Еуропаның тұщы су қоймаларында таралған.
+# labels = checked_IFS
 1	Еуропаның	Еуропа	PROPN	np	Case=Gen	4	nmod:poss	_	_
 2	тұщы	тұщы	ADJ	adj	_	3	amod	_	_
 3	су	су	NOUN	n	Case=Nom	4	nmod:poss	_	_
@@ -11982,6 +12139,7 @@
 
 # sent_id = wikipedia.tagged.txt:11:174
 # text = Жалғыз болсаң – топқа басың кіре алмас.
+# labels = checked_IFS
 1	Жалғыз	жалғыз	ADJ	adj	_	6	advcl	_	_
 2	болсаң	бол	AUX	v	Mood=Cnd|Number=Sing|Person=2|VerbForm=Conv	1	cop	_	_
 3	–	–	PUNCT	guio	_	1	punct	_	_
@@ -11993,6 +12151,7 @@
 
 # sent_id = wikipedia.tagged.txt:12:191
 # text = Жас тобы ұзақ болып келеді.
+# labels = checked_IFS
 1	Жас	жас	ADJ	adj	_	2	amod	_	_
 2	тобы	топ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
 3	ұзақ	ұзақ	ADJ	adj	_	0	root	_	_
@@ -12002,6 +12161,7 @@
 
 # sent_id = wikipedia.tagged.txt:13:204
 # text = Жауапты хатшы өзінің қызметін жүзеге асырған кезде Қазақстан Республикасының Президентіне, Премьер-Министрге, Министрге есеп береді.
+# labels = checked_IFS
 1	Жауапты	жауапты	ADJ	adj	_	2	amod	_	_
 2	хатшы	хатшы	NOUN	n	Case=Nom	16	nsubj	_	_
 3	өзінің	өз	PRON	prn	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Ref	4	nmod:poss	_	_
@@ -12022,6 +12182,7 @@
 
 # sent_id = wikipedia.tagged.txt:14:239
 # text = Жауыңнан бұрын қимылда-жеріңе жамандық келмейді.
+# labels = checked_IFS
 1	Жауыңнан	жау	NOUN	n	Case=Abl|Number[psor]=Sing|Person[psor]=2	3	obl	_	_
 2	бұрын	бұрын	ADP	post	_	1	case	_	_
 3	қимылда	қимылда	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	7	parataxis	_	SpaceAfter=No
@@ -12033,6 +12194,7 @@
 
 # sent_id = wikipedia.tagged.txt:15:256
 # text = Жер бедері маңында Юра тау жүйесінің болуымен анықталады.
+# labels = checked_IFS
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	бедері	бедер	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 3	маңында	маң	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
@@ -12045,6 +12207,7 @@
 
 # sent_id = wikipedia.tagged.txt:16:275
 # text = Жер бетінде мұндай ормандар қалмайды.
+# labels = checked_IFS
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	бетінде	бет	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	мұндай	мұндай	DET	det	PronType=Dem	4	det	_	_
@@ -12054,6 +12217,7 @@
 
 # sent_id = wikipedia.tagged.txt:17:288
 # text = Жүрек тұсына массаж былай жасалады.
+# labels = checked_IFS
 1	Жүрек	жүрек	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	тұсына	тұс	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 3	массаж	массаж	NOUN	n	Case=Nom	5	nsubj	_	_
@@ -12063,6 +12227,7 @@
 
 # sent_id = wikipedia.tagged.txt:18:301
 # text = Жылдам жетіп ұстауға атқа мінді.
+# labels = checked_IFS
 1	Жылдам	жылдам	ADJ	adj	_	2	advmod	_	_
 2	жетіп	жет	VERB	v	Aspect=Perf|VerbForm=Conv	3	advcl	_	_
 3	ұстауға	ұста	VERB	v	Case=Dat|VerbForm=Ger	5	advcl	_	_
@@ -12072,6 +12237,7 @@
 
 # sent_id = wikipedia.tagged.txt:19:314
 # text = Инфляция қарқыны статистикалық көрсеткіш — тұтыну бағаларының индексі көмегімен анықталады.
+# labels = checked_IFS
 1	Инфляция	инфляция	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	қарқыны	қарқын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 3	статистикалық	статистикалық	ADJ	adj	_	4	amod	_	_
@@ -12086,6 +12252,7 @@
 
 # sent_id = wikipedia.tagged.txt:20:337
 # text = Ислам діні-адамға ауырлық жүктемейді.
+# labels = checked_IFS
 1	Ислам	Ислам	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	діні	дін	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	2	punct	_	SpaceAfter=No
@@ -12096,6 +12263,7 @@
 
 # sent_id = wikipedia.tagged.txt:21:352
 # text = Кафедра «Менеджмент» мамандық бойынша бакалавр дайындайды.
+# labels = checked_IFS
 1	Кафедра	кафедра	NOUN	n	Case=Nom	8	nsubj	_	_
 2	«	«	PUNCT	lquot	_	3	punct	_	SpaceAfter=No
 3	Менеджмент	менеджмент	NOUN	n	Case=Nom	8	obl	_	SpaceAfter=No
@@ -12108,6 +12276,7 @@
 
 # sent_id = wikipedia.tagged.txt:22:371
 # text = Кезінде Кеңес әскерімен де күрескен.
+# labels = checked_IFS
 1	Кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 2	Кеңес	кеңес	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3-4	әскерімен де	_	_	_	_	_	_	_	_
@@ -12118,6 +12287,7 @@
 
 # sent_id = wikipedia.tagged.txt:23:383
 # text = Кей түрінен дәрі алуға болады.
+# labels = checked_IFS
 1	Кей	кей	DET	det	PronType=Ind	2	det	_	_
 2	түрінен	түр	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 3	дәрі	дәрі	NOUN	n	Case=Nom	4	obj	_	_
@@ -12127,6 +12297,7 @@
 
 # sent_id = wikipedia.tagged.txt:24:396
 # text = Композитордың аты Санкт-Петербург консерваториясының кіші залына берілді.
+# labels = checked_IFS
 1	Композитордың	композитор	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	аты	ат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 3	Санкт-Петербург	Санкт-Петербург	PROPN	np	Case=Nom	4	nmod:poss	_	_
@@ -12138,6 +12309,7 @@
 
 # sent_id = wikipedia.tagged.txt:25:413
 # text = КСРО Ғылым Академиясының әлем әдебиеті институтында әдебиет теориясы бойынша филология ғылымының кандидаты дәрежесіне диссертация қорғады.
+# labels = checked_IFS
 1	КСРО	КСРО	PROPN	np	Case=Nom	3	nmod:poss	_	_
 2	Ғылым	ғылым	NOUN	n	Case=Nom	3	compound	_	_
 3	Академиясының	академия	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
@@ -12157,6 +12329,7 @@
 
 # sent_id = wikipedia.tagged.txt:26:446
 # text = КСРО Мемлекеттік сыйлығына (1952) ие болды.
+# labels = checked_IFS
 1	КСРО	КСРО	PROPN	np	Case=Nom	3	nmod:poss	_	_
 2	Мемлекеттік	мемлекеттік	ADJ	adj	_	3	amod	_	_
 3	сыйлығына	сыйлық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
@@ -12169,6 +12342,7 @@
 
 # sent_id = wikipedia.tagged.txt:27:465
 # text = Мамандарды дайындау факультетте тек күндізгі бөлімде ғана жүргізіледі.
+# labels = checked_IFS
 1	Мамандарды	маман	NOUN	n	Case=Acc|Number=Plur	2	obj	_	_
 2	дайындау	дайында	VERB	v	Case=Nom|VerbForm=Ger	8	csubj	_	_
 3	факультетте	факультет	NOUN	n	Case=Loc	8	obl	_	_
@@ -12182,6 +12356,7 @@
 
 # sent_id = wikipedia.tagged.txt:28:483
 # text = Маусым – шілде айларында гүлдеп, тамызда жеміс береді.
+# labels = checked_IFS
 1	Маусым	маусым	NOUN	n	Case=Nom	4	nmod:poss	_	_
 2	–	–	PUNCT	guio	_	3	punct	_	_
 3	шілде	шілде	NOUN	n	Case=Nom	1	conj	_	_
@@ -12195,6 +12370,7 @@
 
 # sent_id = wikipedia.tagged.txt:29:504
 # text = Мәскеуде дүниеге келген.
+# labels = checked_IFS
 1	Мәскеуде	Мәскеу	PROPN	np	Case=Loc	3	obl	_	_
 2	дүниеге	дүние	NOUN	n	Case=Dat	3	obl	_	_
 3	келген	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -12202,6 +12378,7 @@
 
 # sent_id = wikipedia.tagged.txt:30:513
 # text = Ұлы Отан соғысында ерлікпен қаза тапқан.
+# labels = checked_IFS
 1	Ұлы	ұлы	ADJ	adj	_	3	amod	_	_
 2	Отан	отан	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	соғысында	соғыс	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
@@ -12212,6 +12389,7 @@
 
 # sent_id = wikipedia.tagged.txt:31:528
 # text = Мұражайда үш экспозициялық зал жұмыс істейді.
+# labels = checked_IFS
 1	Мұражайда	мұражай	NOUN	n	Case=Loc	6	obl	_	_
 2	үш	үш	NUM	num	NumType=Card	4	nummod	_	_
 3	экспозициялық	экспозициялық	ADJ	adj	_	4	amod	_	_
@@ -12222,6 +12400,7 @@
 
 # sent_id = wikipedia.tagged.txt:32:543
 # text = Намыс қылып балаға мойын бұрды.
+# labels = checked_IFS
 1	Намыс	намыс	NOUN	n	Case=Nom	2	obj	_	_
 2	қылып	қыл	VERB	v	Aspect=Perf|VerbForm=Conv	5	advcl	_	_
 3	балаға	бала	NOUN	n	Case=Dat	5	obl	_	_
@@ -12231,6 +12410,7 @@
 
 # sent_id = wikipedia.tagged.txt:33:556
 # text = Нарықтық экономика жағдайында мемлекеттің рөлі өзгереді.
+# labels = checked_IFS
 1	Нарықтық	нарықтық	ADJ	adj	_	2	amod	_	_
 2	экономика	экономика	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	жағдайында	жағдай	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
