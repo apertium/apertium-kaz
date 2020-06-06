@@ -763,4 +763,14 @@ bah, punctuatin in  Иран.tagged.txt:20:583
 
 Иран.tagged.txt:51:1426 -- too "advcl"s vs conj
 
-year ranges like 1919-1921
+year ranges like 1919-1921 (sometimes labeled as compound, sometimes
+as conj; sometime left-headed, sometimes right-headed :/). Определиться надо!
+
+hyphen dash between head and appoos -- where to attach it ?
+
+sents with orphans in them seem to have been handled wrong. I've corrected
+(imho) the first few, but then, not being entirely sure on that, stopped doing
+what I did.
+
+I don't quite understand why dative nominals should be labeled as obj of
+қарау...
