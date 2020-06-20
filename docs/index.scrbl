@@ -774,3 +774,17 @@ what I did.
 
 I don't quite understand why dative nominals should be labeled as obj of
 қарау...
+
+wikipedia.tagged.txt:46:739 болды as cop ?
+
+сонымен қатар
+
+wikipedia.tagged.txt:71:1163 suspicious: атанды as cop porque ?
+
+merge 954 and 955 into one sentences
+
+I'd meant да <postadv> to have only ``уступительное'' значение (i.e. not
+``too''), but in the treebank the latter meaning is also tagged as ADV
+
+Шымкент.tagged.txt:8:216 has to be corrected to use the freaking `orphan' label, but
+how exactly?

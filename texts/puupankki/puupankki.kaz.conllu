@@ -12423,8 +12423,8 @@
 # text = Некенің тоқтатылуы жаңадан некеге тұру құқығын туғызады.
 1	Некенің	неке	NOUN	n	Case=Gen	2	nsubj	_	_
 2	тоқтатылуы	тоқтат	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	7	csubj	_	_
-3	жаңадан	жаңа	ADJ	adj	Case=Abl	7	obl	_	_
-4	некеге	неке	NOUN	n	Case=Dat	5	obj	_	_
+3	жаңадан	жаңа	ADV	adv	_	7	advmod	_	_
+4	некеге	неке	NOUN	n	Case=Dat	5	obl	_	_
 5	тұру	тұр	VERB	v	Case=Nom|VerbForm=Ger	6	acl	_	_
 6	құқығын	құқық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	obj	_	_
 7	туғызады	туғыз	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -12451,9 +12451,9 @@
 
 # sent_id = wikipedia.tagged.txt:37:616
 # text = Несиенің шамасымен, сипатымен және мерзімімен айқындалады.
-1	Несиенің	несие	NOUN	n	Case=Gen	6	nmod:poss	_	_
+1	Несиенің	несие	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	шамасымен	шама	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	SpaceAfter=No
-3	,	,	PUNCT	cm	_	6	punct	_	_
+3	,	,	PUNCT	cm	_	4	punct	_	_
 4	сипатымен	сипат	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	2	conj	_	_
 5	және	және	CCONJ	cnjcoo	_	6	cc	_	_
 6	мерзімімен	мерзім	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	2	conj	_	_
@@ -12470,7 +12470,7 @@
 
 # sent_id = wikipedia.tagged.txt:39:644
 # text = Он екі елі ішек төрт бөлікке бөлінген.
-1	Он	он	X	x	_	2	dep	_	_
+1	Он	он	NUM	num	_	2	compound	_	_
 2	екі	екі	NUM	num	NumType=Card	3	compound	_	_
 3	елі	ел	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	compound	_	_
 4	ішек	ішек	NOUN	n	Case=Nom	7	nsubj	_	_
@@ -12536,8 +12536,8 @@
 # sent_id = wikipedia.tagged.txt:46:739
 # text = Осы жылдары ауыл шаруашылығында маңызды өзгерістер болды.
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
-2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
-3	ауыл	ауыл	X	x	_	4	dep	_	_
+2	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
+3	ауыл	ауыл	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	шаруашылығында	шаруашылық	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
 5	маңызды	маңызды	ADJ	adj	_	6	amod	_	_
 6	өзгерістер	өзгеріс	NOUN	n	Case=Nom|Number=Plur	7	nsubj	_	_
@@ -12601,9 +12601,9 @@
 # text = Соғыстан кейін Федор Федорович Қарағандыда тұрды.
 1	Соғыстан	соғыс	NOUN	n	Case=Abl	6	obl	_	_
 2	кейін	кейін	ADP	post	_	1	case	_	_
-3	Федор	Федор	PROPN	np	Case=Nom|Gender=Masc	6	obl	_	_
-4	Федорович	Федорович	PROPN	np	Case=Nom|Gender=Masc	6	nsubj	_	_
-5	Қарағандыда	Қарағанды	PROPN	np	Case=Loc	3	flat:name	_	_
+3	Федор	Федор	PROPN	np	Case=Nom|Gender=Masc	6	nsubj	_	_
+4	Федорович	Федорович	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
+5	Қарағандыда	Қарағанды	PROPN	np	Case=Loc	6	obl	_	_
 6	тұрды	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
@@ -12643,11 +12643,11 @@
 4	астрономия	астрономия	NOUN	n	Case=Nom	5	nmod:poss	_	_
 5	ғылымының	ғылым	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 6	тууына	ту	VERB	v	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	9	advcl	_	_
-7	ең	ең	X	x	_	8	dep	_	_
-8	басты	басты	ADV	adv	_	9	advmod	_	_
+7	ең	ең	ADV	adv	_	8	advmod	_	_
+8	басты	басты	ADJ	adj	_	9	amod	_	_
 9	түрткі	түрткі	NOUN	n	Case=Nom	0	root	_	_
 10	болды	бол	AUX	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	9	cop	_	SpaceAfter=No
-11	.	.	PUNCT	sent	_	10	punct	_	_
+11	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = wikipedia.tagged.txt:56:918
 # text = Сөйтіп сүйек бұзылып, аяқ формасы өзгереді.
@@ -12662,10 +12662,10 @@
 
 # sent_id = wikipedia.tagged.txt:57:935
 # text = Сонымен қатар монғол шапқыншылығы Қазақстанның және көрші аймақтардың этностық құрамына едәуір өзгерістер енгізді, этностық шекараларды өзгертті.
-1	Сонымен	сонымен	X	x	_	2	dep	_	_
-2	қатар	қатар	ADV	adv	_	17	advmod	_	_
+1	Сонымен	сонымен	PRON	prn	Case=Ins|PronType=Dem	13	obl	_	_
+2	қатар	қатар	ADP	post	_	1	case	_	_
 3	монғол	моңғол	NOUN	n	Case=Nom	4	nmod:poss	_	_
-4	шапқыншылығы	шапқыншылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
+4	шапқыншылығы	шапқыншылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
 5	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	10	nmod:poss	_	_
 6	және	және	CCONJ	cnjcoo	_	8	cc	_	_
 7	көрші	көрші	NOUN	n	Case=Nom	8	compound	_	_
@@ -12776,7 +12776,7 @@
 # sent_id = wikipedia.tagged.txt:67:1105
 # text = Украина статистикасы мәліметтері бойынша алынды.
 1	Украина	Украина	PROPN	np	Case=Nom	2	nmod:poss	_	_
-2	статистикасы	статистика	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
+2	статистикасы	статистика	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	мәліметтері	мәлімет	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
 4	бойынша	бойынша	ADP	post	_	3	case	_	_
 5	алынды	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
@@ -12824,7 +12824,7 @@
 # sent_id = wikipedia.tagged.txt:72:1176
 # text = Чуваш, қазақ және орыс тілдерін біледі.
 1	Чуваш	чуваш	NOUN	n	Case=Nom	6	nmod:poss	_	SpaceAfter=No
-2	,	,	PUNCT	cm	_	5	punct	_	_
+2	,	,	PUNCT	cm	_	3	punct	_	_
 3	қазақ	қазақ	NOUN	n	Case=Nom	1	conj	_	_
 4	және	және	CCONJ	cnjcoo	_	5	cc	_	_
 5	орыс	орыс	NOUN	n	Case=Nom	1	conj	_	_
@@ -12859,7 +12859,7 @@
 2	біреу	біреу	PRON	prn	Case=Nom|PronType=Ind	4	nsubj	_	_
 3	той	той	NOUN	n	Case=Nom	4	obj	_	_
 4	жасапты	жаса	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-5	,	,	PUNCT	cm	_	13	punct	_	_
+5	,	,	PUNCT	cm	_	9	punct	_	_
 6	тойға	той	NOUN	n	Case=Dat	9	obl	_	_
 7	көп	көп	DET	det	PronType=Qnt	8	det	_	_
 8	кісі	кісі	NOUN	n	Case=Nom	9	nsubj	_	_
@@ -12889,7 +12889,7 @@
 
 # sent_id = Өлген_қазан.tagged.txt:4:49
 # text = «Төрге шық, тамақ іш», - демепті.
-1	«	«	PUNCT	lquot	_	6	punct	_	SpaceAfter=No
+1	«	«	PUNCT	lquot	_	3	punct	_	SpaceAfter=No
 2	Төрге	төр	NOUN	n	Case=Dat	3	obl	_	_
 3	шық	шық	VERB	v	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	10	ccomp	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	6	punct	_	_
@@ -12925,14 +12925,14 @@
 1	Бұл	бұл	DET	det	PronType=Dem	2	det	_	_
 2	жолы	жол	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
 3	үй	үй	NOUN	n	Case=Nom	4	nmod:poss	_	_
-4	иесі	ие	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	nsubj	_	_
+4	иесі	ие	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 5	Қожанасырды	Қожанасыр	PROPN	np	Case=Acc|Gender=Masc	6	obj	_	_
 6	құрметтейді	құрметте	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-7	,	,	PUNCT	cm	_	25	punct	_	_
+7	,	,	PUNCT	cm	_	10	punct	_	_
 8	төрден	төр	NOUN	n	Case=Abl	10	obl	_	_
 9	орын	орын	NOUN	n	Case=Nom	10	obj	_	_
 10	береді	бер	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	6	conj	_	SpaceAfter=No
-11	,	,	PUNCT	cm	_	25	punct	_	_
+11	,	,	PUNCT	cm	_	13	punct	_	_
 12	ет	ет	NOUN	n	Case=Nom	13	nsubj	_	_
 13	келгенде	кел	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	25	advcl	_	SpaceAfter=No
 14	:	:	PUNCT	sent	_	13	punct	_	_
@@ -12951,7 +12951,7 @@
 
 # sent_id = Өлген_қазан.tagged.txt:7:155
 # text = Қожа етті жемей, табаққа шапанының жеңін малып: - Же, шапаным, же! - деп, отыра береді.
-1	Қожа	Қожа	PROPN	np	Case=Nom|Gender=Masc	3	nsubj	_	_
+1	Қожа	Қожа	PROPN	np	Case=Nom|Gender=Masc	20	nsubj	_	_
 2	етті	ет	NOUN	n	Case=Acc	3	obj	_	_
 3	жемей	же	VERB	v	Aspect=Perf|Polarity=Neg|VerbForm=Conv	20	advcl	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
@@ -12981,14 +12981,14 @@
 3	:	:	PUNCT	sent	_	2	punct	_	_
 4	-	-	PUNCT	guio	_	2	punct	_	_
 5	Сіздің	сіз	PRON	prn	Case=Gen|Number=Sing|Person=2|Polite=Form|PronType=Prs	8	nsubj	_	_
-6	бұ	бұл	PRON	prn	Case=Nom|PronType=Dem	7	nsubj	_	_
-7	не	не	PRON	prn	Case=Nom|PronType=Int	12	parataxis	_	_
-8	қылғаныңыз	қыл	VERB	v	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form|Tense=Past|VerbForm=Ger	6	appos	_	SpaceAfter=No
-9	?	?	PUNCT	sent	_	7	punct	_	_
+6	бұ	бұл	PRON	prn	Case=Nom|PronType=Dem	8	obj	_	_
+7	не	не	PRON	prn	Case=Nom|PronType=Int	6	appos	_	_
+8	қылғаныңыз	қыл	VERB	v	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form|Tense=Past|VerbForm=Ger	17	ccomp	_	SpaceAfter=No
+9	?	?	PUNCT	sent	_	8	punct	_	_
 10	Шапан	шапан	NOUN	n	Case=Nom	12	nsubj	_	_
 11	ет	ет	NOUN	n	Case=Nom	12	obj	_	_
 12-13	жейтін бе	_	_	_	_	_	_	_	_
-12	жейтін	же	VERB	v	Aspect=Imp|VerbForm=Part	17	ccomp	_	_
+12	жейтін	же	VERB	v	Aspect=Imp|VerbForm=Part	8	parataxis	_	_
 13	бе	ма	PART	qst	_	12	discourse	_	_
 14	еді	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	cop	_	SpaceAfter=No
 15	?	?	PUNCT	sent	_	12	punct	_	_
@@ -13040,7 +13040,7 @@
 
 # sent_id = story.tagged.txt:3:17
 # text = Ауа райы бүгін әбден жақсы, жылы.
-1	Ауа	ауа	X	x	_	2	dep	_	_
+1	Ауа	ауа	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	райы	райы	NOUN	n	Case=Nom	5	nsubj	_	_
 3	бүгін	бүгін	ADV	adv	_	5	advmod	_	_
 4	әбден	әбден	ADV	adv	_	5	advmod	_	_
@@ -13060,8 +13060,8 @@
 
 # sent_id = story.tagged.txt:5:47
 # text = Осы себептен олар далада ойнай алмады.
-1	Осы	осы	X	x	_	2	dep	_	_
-2	себептен	себептен	SCONJ	cnjadv	_	5	cc	_	_
+1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
+2	себептен	себептен	NOUN	n	Case=Abl	5	obl	_	_
 3	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
 4	далада	дала	NOUN	n	Case=Loc	5	obl	_	_
 5	ойнай	ойна	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
@@ -13075,7 +13075,7 @@
 3	Айгүл	Айгүл	PROPN	np	Case=Nom|Gender=Fem	1	conj	_	_
 4	ойнағанды	ойна	VERB	v	Case=Acc|Tense=Past|VerbForm=Ger	6	ccomp	_	_
 5	жақсы	жақсы	X	x	_	6	dep	_	_
-6	көреді	көр	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	15	parataxis	_	SpaceAfter=No
+6	көреді	көр	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	15	punct	_	_
 8	олар	олар	PRON	prn	Case=Nom|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
 9	әрдайым	әрдайым	ADV	adv	_	15	advmod	_	_
@@ -13084,7 +13084,7 @@
 12	алдындағы	алд	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	13	amod	_	_
 13	бақшада	бақша	NOUN	n	Case=Loc	15	obl	_	_
 14	бірге	бірге	ADV	adv	_	15	advmod	_	_
-15	ойнайды	ойна	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+15	ойнайды	ойна	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
 16	.	.	PUNCT	sent	_	15	punct	_	_
 
 # sent_id = story.tagged.txt:7:95
@@ -13164,11 +13164,11 @@
 
 # sent_id = story.tagged.txt:14:204
 # text = Бірақ мысығы үйде, ұйықтап жатыр.
-1	Бірақ	бірақ	CCONJ	cnjcoo	_	5	cc	_	_
-2	мысығы	мысық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
-3	үйде	үй	NOUN	n	Case=Loc	5	obl	_	SpaceAfter=No
+1	Бірақ	бірақ	CCONJ	cnjcoo	_	3	cc	_	_
+2	мысығы	мысық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
+3	үйде	үй	NOUN	n	Case=Loc	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	5	punct	_	_
-5	ұйықтап	ұйықта	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
+5	ұйықтап	ұйықта	VERB	v	Aspect=Perf|VerbForm=Cov	3	conj	_	_
 6	жатыр	жат	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -13193,7 +13193,7 @@
 # sent_id = story.tagged.txt:16:250
 # text = Азамат ескі үлкен бір ағашқа қарай қатты жүгіріп бара жатыр, ол сол ағаштың артына Айгүлден жасырынып жатыр.
 1	Азамат	Азамат	PROPN	np	Case=Nom|Gender=Masc	9	nsubj	_	_
-2	ескі	ескі	ADJ	adj	_	9	amod	_	_
+2	ескі	ескі	ADJ	adj	_	5	amod	_	_
 3	үлкен	үлкен	ADJ	adj	_	5	amod	_	_
 4	бір	бір	DET	det	PronType=Ind	5	det	_	_
 5	ағашқа	ағаш	NOUN	n	Case=Dat	8	obl	_	_
@@ -13214,9 +13214,9 @@
 
 # sent_id = story.tagged.txt:17:289
 # text = Не үшін екенін білесіз бе?
-1	Не	не	PRON	prn	Case=Nom|PronType=Int	4	obl	_	_
+1	Не	не	PRON	prn	Case=Nom|PronType=Int	4	obj	_	_
 2	үшін	үшін	ADP	post	_	1	case	_	_
-3	екенін	е	AUX	cop	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	1	obj	_	_
+3	екенін	е	AUX	cop	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	1	cop	_	_
 4-5	білесіз бе	_	_	_	_	_	_	_	SpaceAfter=No
 4	білесіз	біл	VERB	v	Mood=Ind|Number=Sing|Person=2|Polite=Form|Tense=Aor|VerbForm=Fin	0	root	_	_
 5	бе	ма	PART	qst	_	4	discourse	_	_
@@ -13340,7 +13340,7 @@
 3	Айгүл	Айгүл	PROPN	np	Case=Nom|Gender=Fem	7	nsubj	_	_
 4	өз	өз	DET	det	PronType=Ref	5	det	_	_
 5	сұрағына	сұрақ	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
-6	жауап	жауап	X	x	_	7	dep	_	_
+6	жауап	жауап	NOUN	n	Case=Nom	7	obj	_	_
 7	ала	ал	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 8	алмайды	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	7	aux	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	7	punct	_	_
@@ -13353,7 +13353,7 @@
 4	одан	ол	PRON	prn	Case=Abl|PronType=Dem	8	obl	_	_
 5	еш	еш	X	x	_	6	dep	_	_
 6	қашан	қашан	ADV	adv	_	8	advmod	_	_
-7	жауап	жауап	X	x	_	8	dep	_	_
+7	жауап	жауап	NOUN	n	Case=Nom	8	obj	_	_
 8	ала	ал	VERB	v	Aspect=Imp|VerbForm=Cov	0	root	_	_
 9	алмайды	ал	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	8	aux	_	SpaceAfter=No
 10	!	!	PUNCT	sent	_	8	punct	_	_
@@ -13429,18 +13429,18 @@
 
 # sent_id = story.tagged.txt:35:614
 # text = Айгүл бақшаның ішінде ақырын басып жүр.
-1	Айгүл	Айгүл	PROPN	np	Case=Nom|Gender=Fem	5	nsubj	_	_
+1	Айгүл	Айгүл	PROPN	np	Case=Nom|Gender=Fem	6	nsubj	_	_
 2	бақшаның	бақша	NOUN	n	Case=Gen	3	nmod:poss	_	_
-3	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
+3	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 4	ақырын	ақырын	ADJ	adj	_	5	advmod	_	_
-5	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
-6	жүр	жүр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	SpaceAfter=No
-7	.	.	PUNCT	sent	_	5	punct	_	_
+5	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	6	advcl	_	_
+6	жүр	жүр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = story.tagged.txt:36:629
 # text = Әлі де Азаматты табуға әрекет етіп жүр.
-1	Әлі	әлі	X	x	_	3	dep	_	_
-2	де	де	X	x	_	3	dep	_	_
+1	Әлі	әлі	ADV	adv	_	6	advmod	_	_
+2	де	де	ADV	postadv	_	1	advmod	_	_
 3	Азаматты	Азамат	PROPN	np	Case=Acc|Gender=Masc	4	obj	_	_
 4	табуға	тап	VERB	v	Case=Dat|VerbForm=Ger	6	xcomp	_	_
 5	әрекет	әрекет	X	x	_	6	dep	_	_
@@ -13465,7 +13465,7 @@
 
 # sent_id = story.tagged.txt:38:671
 # text = Ол барлық жерді қарап жүр, бірақ Азаматты таба алмай жатыр.
-1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
 2	барлық	барлық	DET	det	PronType=Qnt	3	det	_	_
 3	жерді	жер	NOUN	n	Case=Acc	4	obj	_	_
 4	қарап	қара	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
@@ -13480,7 +13480,7 @@
 
 # sent_id = story.tagged.txt:39:696
 # text = Одан кейін ол бір дыбысты естиді, ол дыбыс ескі үлкен ағаштың артынан шығып жатыр.
-1	Одан	ол	PRON	prn	Case=Abl|PronType=Dem	14	obl	_	_
+1	Одан	ол	PRON	prn	Case=Abl|PronType=Dem	6	obl	_	_
 2	кейін	кейін	ADP	post	_	1	case	_	_
 3	ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
 4	бір	бір	DET	det	PronType=Ind	5	det	_	_
@@ -13524,7 +13524,7 @@
 
 # sent_id = story.tagged.txt:43:761
 # text = Ол аң да, құс та емес.
-1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
 2-3	аң да	_	_	_	_	_	_	_	SpaceAfter=No
 2	аң	аң	NOUN	n	Case=Nom	0	root	_	_
 3	да	да	CCONJ	cnjcoo	_	5	cc	_	_
@@ -13612,15 +13612,15 @@
 
 # sent_id = Шымкент.tagged.txt:1:0
 # text = Шымкент — Қазақстандағы қала, Оңтүстік Қазақстан облысының орталығы.
-1	Шымкент	Шымкент	PROPN	np	Case=Nom	9	nsubj	_	_
-2	—	—	PUNCT	guio	_	9	punct	_	_
+1	Шымкент	Шымкент	PROPN	np	Case=Nom	4	nsubj	_	_
+2	—	—	PUNCT	guio	_	4	punct	_	_
 3	Қазақстандағы	Қазақстан	PROPN	np	Case=Loc	4	amod	_	_
 4	қала	қала	NOUN	n	Case=Nom	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	4	punct	_	_
 6	Оңтүстік	оңтүстік	ADJ	adj	_	7	amod	_	_
 7	Қазақстан	Қазақстан	PROPN	np	Case=Nom	8	nmod:poss	_	_
 8	облысының	облыс	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	9	nmod:poss	_	_
-9	орталығы	орталық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	parataxis	_	SpaceAfter=No
+9	орталығы	орталық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = Шымкент.tagged.txt:2:20
@@ -13641,11 +13641,11 @@
 2	басқа	басқа	ADJ	adj	_	3	amod	_	_
 3	қалаларымен	қала	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	салыстырғанда	салыстыр	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	8	advcl	_	_
-5	тұрғыны	тұрғын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
-6	жөнінен	жөн	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+5	тұрғыны	тұрғын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
+6	жөнінен	жөн	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	5	case	_	_
 7	3-ші	3	NUM	num	NumType=Ord	8	amod	_	_
 8	орында	орын	NOUN	n	Case=Loc	0	root	_	_
-9	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
+9	(	(	PUNCT	lpar	_	10	punct	_	SpaceAfter=No
 10	Алматы	Алматы	PROPN	np	Case=Nom	8	appos	_	_
 11	мен	мен	CCONJ	cnjcoo	_	12	cc	_	_
 12	Астанадан	Астана	PROPN	np	Case=Abl	10	conj	_	_
@@ -13662,7 +13662,7 @@
 5	Қазақстанның	Қазақстан	PROPN	np	Case=Gen	12	nmod:poss	_	_
 6	негізгі	негізгі	ADJ	adj	_	12	amod	_	_
 7	өнеркәсіп	өнеркәсіп	NOUN	n	Case=Nom	12	amod	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	11	punct	_	_
+8	,	,	PUNCT	cm	_	9	punct	_	_
 9	сауда	сауда	NOUN	n	Case=Nom	7	conj	_	_
 10	және	және	CCONJ	cnjcoo	_	11	cc	_	_
 11	мәдени	мәдени	ADJ	adj	_	7	conj	_	_
@@ -13674,7 +13674,7 @@
 
 # sent_id = Шымкент.tagged.txt:5:103
 # text = Бірқатар археолог-ғалымдардың пікірлері бойынша, бұл жерде үлкен қорым болған, егер бұл расталса, онда қаланың пайда болған мерзімі қайта қаралуы мүмкін.
-1	Бірқатар	бірқатар	DET	det	PronType=Qnt	5	det	_	_
+1	Бірқатар	бірқатар	DET	det	PronType=Qnt	2	det	_	_
 2	археолог	археолог	NOUN	n	Case=Nom	4	compound	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	4	punct	_	SpaceAfter=No
 4	ғалымдардың	ғалым	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
@@ -13741,19 +13741,19 @@
 
 # sent_id = Шымкент.tagged.txt:8:216
 # text = Тау етегінде өзен бойындағы алқаптарда егіншілік пен жүзімдік, ал көгалды таулы жайылымдарда-мал шаруашылығы дамыған.
-1	Тау	тау	X	x	_	2	dep	_	_
+1	Тау	тау	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	етегінде	етек	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
-3	өзен	өзен	NOUN	n	Case=Nom	8	nsubj	_	_
+3	өзен	өзен	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	бойындағы	бой	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	5	amod	_	_
-5	алқаптарда	алқап	NOUN	n	Case=Loc|Number=Plur	8	obl	_	_
-6	егіншілік	егіншілік	NOUN	n	Case=Nom	17	parataxis	_	_
+5	алқаптарда	алқап	NOUN	n	Case=Loc|Number=Plur	17	obl	_	_
+6	егіншілік	егіншілік	NOUN	n	Case=Nom	17	nsubj	_	_
 7	пен	мен	CCONJ	cnjcoo	_	8	cc	_	_
 8	жүзімдік	жүзімдік	NOUN	n	Case=Nom	6	conj	_	SpaceAfter=No
 9	,	,	PUNCT	cm	_	17	punct	_	_
 10	ал	ал	CCONJ	cnjcoo	_	17	cc	_	_
-11	көгалды	көгалды	ADJ	adj	_	16	amod	_	_
-12	таулы	таулы	ADJ	adj	_	16	amod	_	_
-13	жайылымдарда	жайылым	NOUN	n	Case=Loc|Number=Plur	16	compound	_	SpaceAfter=No
+11	көгалды	көгалды	ADJ	adj	_	13	amod	_	_
+12	таулы	таулы	ADJ	adj	_	13	amod	_	_
+13	жайылымдарда	жайылым	NOUN	n	Case=Loc|Number=Plur	17	obl	_	SpaceAfter=No
 14	-	-	PUNCT	guio	_	16	punct	_	SpaceAfter=No
 15	мал	мал	X	x	_	16	dep	_	_
 16	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
@@ -13768,8 +13768,8 @@
 4	Ресей	Ресей	PROPN	np	Case=Nom	5	nmod:poss	_	_
 5	империясына	империя	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	қосылуының	қос	VERB	v	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	8	acl	_	_
-7	50	50	NUM	num	NumType=Ord	8	amod	_	_
-8	жылдығына	жылдық	ADJ	adj	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	15	obl	_	_
+7	50	50	NUM	num	NumType=Ord	8	nummod	_	_
+8	жылдығына	жылдық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	15	obl	_	_
 9	орай	орай	ADP	post	_	8	case	_	_
 10	қалаға	қала	NOUN	n	Case=Dat	15	obl	_	_
 11	орыс	орыс	NOUN	n	Case=Nom	12	nmod:poss	_	_
@@ -13781,8 +13781,8 @@
 17	бірақ	бірақ	CCONJ	cnjcoo	_	25	cc	_	_
 18	1921	1921	NUM	num	NumType=Ord	19	amod	_	_
 19	жылы	жыл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
-20	қала	қала	NOUN	n	Case=Nom	21	compound	_	_
-21	Шымкент	Шымкент	PROPN	np	Case=Nom	25	nsubj	_	_
+20	қала	қала	NOUN	n	Case=Nom	25	nsubj	_	_
+21	Шымкент	Шымкент	PROPN	np	Case=Nom	22	nmod:poss	_	_
 22	атауына	атау	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	25	obl	_	_
 23	қайта	қайта	ADV	adv	_	25	advmod	_	_
 24	ие	ие	X	x	_	25	dep	_	_
