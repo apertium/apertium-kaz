@@ -788,3 +788,12 @@ I'd meant да <postadv> to have only ``уступительное'' значе�
 
 Шымкент.tagged.txt:8:216 has to be corrected to use the freaking `orphan' label, but
 how exactly?
+
+түйелері болыпты and other sents with болыпты in the same text --
+болыпты root or preceding NP ? why ?
+
+auxixilliary nouns like ішінде -- nouns (obl) or adp (case) ?
+
+кемпірі екеуінің is a very peculiar, very peculiar construction. This is an
+allusion (an allusion, not illusion) that the way it is annotated currently
+might be wrong.

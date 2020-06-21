@@ -13816,7 +13816,7 @@
 
 # sent_id = Шымкент.tagged.txt:12:346
 # text = Қалада жаңа өндіріс орындары салынып, оқу орындары мен ғылыми, мәдениет ошақтары ашылды.
-1	Қалада	қала	NOUN	n	Case=Loc	14	obl	_	_
+1	Қалада	қала	NOUN	n	Case=Loc	5	obl	_	_
 2	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
 3	өндіріс	өндіріс	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	орындары	орын	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
@@ -13835,19 +13835,19 @@
 # sent_id = Шымкент.tagged.txt:13:377
 # text = Қала келбеті жаңа тұрғын үйлер, гүлзар, көшелері, саябақтарымен ажарлана түсті.
 1	Қала	қала	NOUN	n	Case=Nom	2	nmod:poss	_	_
-2	келбеті	келбет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
+2	келбеті	келбет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
 3	жаңа	жаңа	ADJ	adj	_	5	amod	_	_
-4	тұрғын	тұрғын	NOUN	n	Case=Nom	5	compound	_	_
+4	тұрғын	тұрғын	ADJ	adj	_	5	amod	_	_
 5	үйлер	үй	NOUN	n	Case=Nom|Number=Plur	12	obl	_	SpaceAfter=No
-6	,	,	PUNCT	cm	_	11	punct	_	_
+6	,	,	PUNCT	cm	_	7	punct	_	_
 7	гүлзар	гүлзар	NOUN	n	Case=Nom	5	conj	_	SpaceAfter=No
-8	,	,	PUNCT	cm	_	11	punct	_	_
+8	,	,	PUNCT	cm	_	9	punct	_	_
 9	көшелері	көше	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
 11	саябақтарымен	саябақ	NOUN	n	Case=Ins|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	conj	_	_
-12	ажарлана	ажарла	VERB	v	Aspect=Imp|VerbForm=Conv|Voice=Pass	13	advcl	_	_
-13	түсті	түс	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-14	.	.	PUNCT	sent	_	13	punct	_	_
+12	ажарлана	ажарла	VERB	v	Aspect=Imp|VerbForm=Conv|Voice=Pass	0	root	_	_
+13	түсті	түс	AUX	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	SpaceAfter=No
+14	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = Шымкент.tagged.txt:14:406
 # text = 30-шы жылдары Шымкентте қорғасын зауыты салынды.
@@ -13877,12 +13877,12 @@
 # text = Қалада май комбинаты, шұлық және айна фабрикалары іске қосылды.
 1	Қалада	қала	NOUN	n	Case=Loc	10	obl	_	_
 2	май	май	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	комбинаты	комбинат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nmod:poss	_	SpaceAfter=No
-4	,	,	PUNCT	cm	_	7	punct	_	_
-5	шұлық	шұлық	NOUN	n	Case=Nom	3	conj	_	_
+3	комбинаты	комбинат	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	cm	_	8	punct	_	_
+5	шұлық	шұлық	NOUN	n	Case=Nom	8	nmod:poss	_	_
 6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
-7	айна	айна	NOUN	n	Case=Nom	3	conj	_	_
-8	фабрикалары	фабрика	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
+7	айна	айна	NOUN	n	Case=Nom	5	conj	_	_
+8	фабрикалары	фабрика	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	_
 9	іске	іске	X	x	_	10	dep	_	_
 10	қосылды	қос	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
@@ -13925,10 +13925,10 @@
 # text = Төрт түлік малы сай болыпты.
 1	Төрт	төрт	NUM	num	NumType=Card	2	nummod	_	_
 2	түлік	түлік	NOUN	n	Case=Nom	3	nmod:poss	_	_
-3	малы	мал	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
-4	сай	сай	X	x	_	5	dep	_	_
-5	болыпты	бол	VERB	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
-6	.	.	PUNCT	sent	_	5	punct	_	_
+3	малы	мал	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
+4	сай	сай	ADJ	adj	_	0	root	_	_
+5	болыпты	бол	AUX	v	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	4	cop	_	SpaceAfter=No
+6	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = Ер_Төстік.tagged.txt:4:38
 # text = Қора толған қойлары болыпты.
@@ -13973,7 +13973,7 @@
 8	малын	мал	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	12	obj	_	_
 9	алысқа	алыс	ADJ	adj	Case=Dat	12	obl	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
-11	отарға	отар	NOUN	n	Case=Dat	9	conj	_	_
+11	отарға	отар	NOUN	n	Case=Dat	9	appos	_	_
 12	айдап	айда	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
 13	кетіпті	кет	AUX	vaux	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	12	aux	_	SpaceAfter=No
 14	.	.	PUNCT	sent	_	12	punct	_	_
@@ -13992,7 +13992,7 @@
 
 # sent_id = Ер_Төстік.tagged.txt:10:125
 # text = Бір қыстық азығын алып, кемпірі мен Ерназар үйінде қалыпты.
-1	Бір	бір	NUM	num	NumType=Card	3	nummod	_	_
+1	Бір	бір	NUM	num	NumType=Card	2	nummod	_	_
 2	қыстық	қыстық	ADJ	adj	_	3	amod	_	_
 3	азығын	азық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	4	obj	_	_
 4	алып	ал	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	SpaceAfter=No
@@ -14008,16 +14008,16 @@
 # text = Ерназардың сегіз ұлы сол кеткеннен хабарсыз кетеді, айлар өтеді, келмейді.
 1	Ерназардың	Ерназар	PROPN	np	Case=Gen|Gender=Masc	3	nmod:poss	_	_
 2	сегіз	сегіз	NUM	num	NumType=Card	3	nummod	_	_
-3	ұлы	ұл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nsubj	_	_
+3	ұлы	ұл	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 4	сол	сол	DET	det	PronType=Dem	5	det	_	_
-5	кеткеннен	кет	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	13	advcl	_	_
+5	кеткеннен	кет	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	8	advcl	_	_
 6-7	хабарсыз	_	_	_	_	_	_	_	_
 6	хабар	хабар	NOUN	n	_	8	obl	_	_
 7	сыз	сыз	ADP	post	_	6	case	_	_
 8	кетеді	кет	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	13	punct	_	_
+9	,	,	PUNCT	cm	_	11	punct	_	_
 10	айлар	ай	NOUN	n	Case=Nom|Number=Plur	11	nsubj	_	_
-11	өтеді	өт	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	13	parataxis	_	SpaceAfter=No
+11	өтеді	өт	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	8	parataxis	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	11	punct	_	_
 13	келмейді	кел	VERB	v	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	8	conj	_	SpaceAfter=No
 14	.	.	PUNCT	sent	_	13	punct	_	_
@@ -14026,9 +14026,9 @@
 # text = Ерназардың азығы таусылады, ашығады, жейтін тамақ таппайды.
 1	Ерназардың	Ерназар	PROPN	np	Case=Gen|Gender=Masc	2	nmod:poss	_	_
 2	азығы	азық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	nsubj	_	_
-3	таусылады	тауыс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	9	parataxis	_	SpaceAfter=No
+3	таусылады	тауыс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
-5	ашығады	ашық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	ашығады	ашық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	3	parataxis	_	SpaceAfter=No
 6	,	,	PUNCT	cm	_	9	punct	_	_
 7	жейтін	же	VERB	v	Aspect=Imp|VerbForm=Part	8	acl	_	_
 8	тамақ	тамақ	NOUN	n	Case=Nom	9	obj	_	_
@@ -14195,23 +14195,21 @@
 # text = Лейнг Рональд Дэвис (1927-1989 жылдары) - шотландтық писхиатр және ортодоксалдық психиатрияны сынаушы.
 # text[en] Lang Ronald Davis (1927-1989) was a Scottish psychiatrist and a critic of orthodox psychiatry.
 # labels = checked_JNW
-1	Лейнг	Лейнг	np	_	cog|mf|nom	2	flat:name	_	_
-2	Рональд	Рональд	np	_	ant|m|nom	16	nsubj	_	_
-3	Дэвис	Дэвис	np	_	ant|m|nom	2	flat:name	_	_
-4	(	(	lpar	_	_	8	punct	_	_
-5	1927	1927	num	_	_	7	nmod	_	_
-6	-	-	guio	_	_	7	punct	_	_
-7	1989	1989	num	_	_	8	amod	_	_
-8	жылдары	жыл	n	_	pl|px3sp|nom	2	appos	_	_
-9	)	)	rpar	_	_	8	punct	_	_
-10	-	-	guio	_	_	16	punct	_	_
-11	шотландтық	шотландтық	adj	_	_	12	amod	_	_
-12	психиатр	психиатр	n	_	nom	16	conj	_	_
-13	және	және	cnjcoo	_	_	16	cc	_	_
-14	ортодоксалдық	ортодоксалдық	_	_	_	15	amod	_	_
-15	психиатрияны	психиатрия	n	_	acc	16	obj	_	_
-16-17	сынаушы	_	_	_	_	_	_	_	_
-16	сынаушы	сына	v	_	tv|gpr_pot|subst|nom	0	root	_	_
-17	_	е	cop	_	aor|p3|sg	16	cop	_	_
-18	.	.	sent	_	_	16	punct	_	_
+1	Лейнг	Лейнг	PROPN	np	Case=Nom|Gender=Masc	12	nsubj	_	_
+2	Рональд	Рональд	PROPN	np	Case=Nom|Gender=Masc	1	flatt:name	_	_
+3	Дэвис	Дэвис	PROPN	np	Case=Nom|Gender=Masc	2	flatt:name	_	_
+4	(	(	PUNCT	lpar	_	8	punct	_	_
+5	1927	1927	NUM	num	NumType=Ord	7	compound	_	_
+6	-	-	PUNCT	guio	_	7	punct	_	_
+7	1989	1989	NUM	num	NumType=Ord	8	amod	_	_
+8	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	1	appos	_	_
+9	)	)	PUNCT	rpar	_	8	punct	_	_
+10	-	-	PUNCT	guio	_	12	punct	_	_
+11	шотландтық	шотландтық	ADJ	adj	_	12	amod	_	_
+12	психиатр	психиатр	NOUN	n	Case=Nom	0	root	_	_
+13	және	және	CCONJ	cnjcoo	_	16	cc	_	_
+14	ортодоксалдық	ортодоксалдық	ADJ	adj	_	15	amod	_	_
+15	психиатрияны	психиатрия	NOUN	n	Case=Acc	16	obj	_	_
+16	сынаушы	сына	VERB	v	Mood=Pot|VerbForm=Part	12	conj	_	_
+17	.	.	PUNCT	sent	_	16	punct	_	_
 
