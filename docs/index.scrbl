@@ -799,4 +799,6 @@ allusion (an allusion, not illusion) that the way it is annotated currently
 might be wrong.
 
 Guidelines v2 uses `flat' for dates and compound numerals, whereas in kazakh
-treebank we use `compound'.
+treebank we use `compound'. Years in constructions like `1995 жылғы x' are
+labeled as amod, which might be in contradiction with the guidelines,
+dependenging on what is meant by dates.
