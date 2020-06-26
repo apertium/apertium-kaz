@@ -1806,7 +1806,7 @@
 6	жалпы	жалпы	ADJ	adj	_	7	amod	_	_
 7	өнім	өнім	NOUN	n	Case=Nom	10	nsubj	_	_
 8	11	11	NUM	num	NumType=Card	9	nummod	_	_
-9	есе	есе	NOUN	n	Case=Nom	10	iobj	_	_
+9	есе	есе	NOUN	n	Case=Nom	10	obj	_	_
 10	өсті	өст	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -1822,7 +1822,7 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:144:2553
-# text = 	Осы сектор субъектілерінің банкроттығының айқын тетіктерін енгізген жөн.
+# text = Осы сектор субъектілерінің банкроттығының айқын тетіктерін енгізген жөн.
 # labels = checked_IFS
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	сектор	сектор	NOUN	n	Case=Nom	3	nmod:poss	_	_
@@ -1989,7 +1989,7 @@
 2	қарым-қатынастарды	қарым-қатынас	NOUN	n	Case=Acc|Number=Plur	3	obj	_	_
 3	дамыту	дамыт	VERB	v	Case=Nom|VerbForm=Ger	4	acl	_	_
 4	саласында	сала	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
-5	көптеген	көпте	DET	det	PronType=Qnt	6	det	_	_
+5	көптеген	көптеген	DET	det	PronType=Qnt	6	det	_	_
 6	жұмыстар	жұмыс	NOUN	n	Case=Nom|Number=Plur	7	nsubj	_	_
 7	атқарылды	атқар	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
@@ -2753,12 +2753,12 @@
 4	Анатольевич	Анатольевич	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	SpaceAfter=No
 5	,	,	PUNCT	cm	_	12	punct	_	_
 6	жоғары	жоғары	ADJ	adj	_	7	amod	_	_
-7	деңгейдегі	деңгей	NOUN	n	Case=Loc	8	amod	_	_
+7	деңгейдегі	деңгей	NOUN	n	Case=Loc	9	amod	_	_
 8	біздің	біз	PRON	prn	Case=Gen|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_
 9	кездесуіміз	кездес	VERB	v	Case=Nom|Number[psor]=Plur|Person[psor]=1|VerbForm=Ger	12	csubj	_	_
 10	өте	өте	ADV	adv	_	11	advmod	_	_
-11	табысты	табысты	ADJ	adj	_	12	amod	_	_
-12	өтуде	өту	NOUN	n	Case=Loc	0	root	_	SpaceAfter=No
+11	табысты	табысты	ADV	adj	_	12	advmod	_	_
+12	өтуде	өт	VERB	v	Case=Loc|VerbForm=Ger	0	root	_	SpaceAfter=No
 13	.	.	PUNCT	sent	_	12	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:217:3895
