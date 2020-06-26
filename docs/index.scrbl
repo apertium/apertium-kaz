@@ -797,3 +797,6 @@ auxixilliary nouns like ішінде -- nouns (obl) or adp (case) ?
 кемпірі екеуінің is a very peculiar, very peculiar construction. This is an
 allusion (an allusion, not illusion) that the way it is annotated currently
 might be wrong.
+
+Guidelines v2 uses `flat' for dates and compound numerals, whereas in kazakh
+treebank we use `compound'.
