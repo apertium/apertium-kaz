@@ -1548,10 +1548,10 @@
 # text = Жыл сайын, ай сайын жаңа ғимараттар іске қосылып жатыр.
 # labels = checked_IFS
 1	Жыл	жыл	NOUN	n	Case=Nom	9	obl	_	_
-2	сайын	сайын	ADV	adv	_	1	case	_	SpaceAfter=No
+2	сайын	сайын	ADP	post	_	1	case	_	SpaceAfter=No
 3	,	,	PUNCT	cm	_	4	punct	_	_
 4	ай	ай	NOUN	n	Case=Nom	1	conj	_	_
-5	сайын	сайын	ADV	adv	_	4	case	_	_
+5	сайын	сайын	ADP	post	_	4	case	_	_
 6	жаңа	жаңа	ADJ	adj	_	7	amod	_	_
 7	ғимараттар	ғимарат	NOUN	n	Case=Nom|Number=Plur	9	nsubj	_	_
 8	іске	іске	X	x	_	9	dep	_	_
@@ -1647,7 +1647,7 @@
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	орайда	орай	NOUN	n	Case=Loc	8	obl	_	_
 3	Сіздің	сіз	PRON	prn	Case=Gen|Number=Sing|Person=2|Polite=Form|PronType=Prs	4	nmod:poss	_	_
-4	сапарыңыз	сапар	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form	8	nsubj	_	_
+4	сапарыңыз	сапар	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=2|Polite=Form	6	nsubj	_	_
 5	аса	аса	ADV	adv	_	6	advmod	_	_
 6	мәнді	мәнді	ADJ	adj	_	0	root	_	_
 7	әрі	әрі	CCONJ	cnjcoo	_	8	cc	_	_
@@ -1672,7 +1672,7 @@
 1	-	-	PUNCT	guio	_	9	punct	_	_
 2	Жаңа	жаңа	ADJ	adj	_	3	amod	_	_
 3	тұжырымдама	тұжырымдама	NOUN	n	Case=Nom	8	nsubj	_	_
-4	толыққанды	толыққанды	ADJ	adj	_	7	acl:relcl	_	_
+4	толыққанды	толыққанды	ADJ	adj	_	7	amod	_	_
 5	және	және	CCONJ	cnjcoo	_	6	cc	_	_
 6	дер	де	ADJ	adj	_	4	conj	_	_
 7	кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
