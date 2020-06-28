@@ -5184,14 +5184,14 @@
 # sent_id = kdt.tagged.txt:80:1365
 # text = Мұның бәрі оған құдайдың бұйырған жұмысы тәрізді.
 # labels = checked_IFS
-1	Мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	2:nmod:poss	_
-2	бәрі	бәрі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	6	nsubj	6:nsubj	_
-3	оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	5	obl	5:obl	_
-4	құдайдың	құдай	NOUN	n	Case=Gen	5	nsubj	5:nsubj	_
-5	бұйырған	бұйыр	VERB	v	Tense=Past|VerbForm=Part	6	acl:relcl	6:acl:relcl	_
-6	жұмысы	жұмыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	csubj	7:csubj	_
-7	тәрізді	тәрізді	ADP	post	_	0	root	0:root	SpaceAfter=No
-8	.	.	PUNCT	sent	_	7	punct	7:punct	_
+1	Мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	_	_
+2	бәрі	бәрі	PRON	prn	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	6	nsubj	_	_
+3	оған	ол	PRON	prn	Case=Dat|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
+4	құдайдың	құдай	NOUN	n	Case=Gen	5	nsubj	_	_
+5	бұйырған	бұйыр	VERB	v	Tense=Past|VerbForm=Part	6	acl:relcl	_	_
+6	жұмысы	жұмыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	csubj	_	_
+7	тәрізді	тәрізді	ADP	post	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:81:1382
 # text = Бұл — құдайдың бұйрығы.
