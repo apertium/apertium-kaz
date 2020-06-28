@@ -4406,7 +4406,7 @@
 # sent_id = kdt.tagged.txt:17:250
 # text = Анығында қазақ мемлекетке не пайда келтіріп отыр?
 # labels = checked_IFS
-1	Анығында	анық	ADJ	adj	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	advmod	_	_
+1	Анығында	анығында	ADV	adv	_	6	advmod	_	_
 2	қазақ	қазақ	NOUN	n	Case=Nom	6	nsubj	_	_
 3	мемлекетке	мемлекет	NOUN	n	Case=Dat	6	obl	_	_
 4	не	не	DET	det	Case=Nom|PronType=Int	5	det	_	_
@@ -5047,14 +5047,14 @@
 # sent_id = kdt.tagged.txt:71:1154
 # text = Мұның арты үлкен дүрбелеңге шаппасын кім біледі?
 # labels = checked_IFS
-1	Мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	2:nmod:poss	_
-2	арты	арт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	5:nsubj	_
-3	үлкен	үлкен	ADJ	adj	_	4	acl	4:acl	_
-4	дүрбелеңге	дүрбелең	NOUN	n	Case=Dat	5	obl	5:obl	_
-5	шаппасын	шап	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Tense=Fut|VerbForm=Ger	7	ccomp	7:ccomp	_
-6	кім	кім	PRON	prn	Case=Nom|PronType=Int	7	nsubj	7:nsubj	_
-7	біледі	біл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	0:root	SpaceAfter=No
-8	?	?	PUNCT	sent	_	7	punct	7:punct	_
+1	Мұның	бұл	PRON	prn	Case=Gen|PronType=Dem	2	nmod:poss	_	_
+2	арты	арт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
+3	үлкен	үлкен	ADJ	adj	_	4	amod	_	_
+4	дүрбелеңге	дүрбелең	NOUN	n	Case=Dat	5	obl	_	_
+5	шаппасын	шап	VERB	v	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|Tense=Fut|VerbForm=Ger	7	ccomp	_	_
+6	кім	кім	PRON	prn	Case=Nom|PronType=Int	7	nsubj	_	_
+7	біледі	біл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:72:1171
 # text = Ағасы болмаса, бұ қызда не жазық бар еді?..
