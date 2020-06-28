@@ -3403,7 +3403,7 @@
 1	Парламентте	парламент	NOUN	n	Case=Loc	6	obl	_	_
 2	мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
 3	сөз	сөз	NOUN	n	Case=Nom	4	obj	_	_
-4	сөйлегеннен	сөйле	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	6	obl	_	_
+4	сөйлегеннен	сөйле	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	6	advcl	_	_
 5	кейін	кейін	ADP	post	_	4	case	_	_
 6	абдырау	абдырау	NOUN	n	Case=Nom	0	root	_	_
 7	мен	мен	CCONJ	cnjcoo	_	8	cc	_	_
@@ -3625,11 +3625,11 @@
 # text = Сондықтан да жаңа елордада біз жаңа мәдениет ошақтарын құруға тырыстық.
 # labels = checked_IFS
 1-2	Сондықтан да	_	_	_	_	_	_	_	_
-1	Сондықтан	сондықтан	ADV	cnjadv	_	10	advmod	_	_
+1	Сондықтан	сондықтан	SCONJ	cnjadv	_	10	cc	_	_
 2	да	да	ADV	postadv	_	1	advmod	_	_
 3	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
 4	елордада	елорда	NOUN	n	Case=Loc	10	obl	_	_
-5	біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	10	nsubj	_	_
+5	біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	10	obl	_	_
 6	жаңа	жаңа	ADJ	adj	_	7	amod	_	_
 7	мәдениет	мәдениет	NOUN	n	Case=Nom	8	nmod:poss	_	_
 8	ошақтарын	ошақ	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	9	obj	_	_
@@ -3819,7 +3819,7 @@
 1	Юрий	Юрий	PROPN	np	Case=Nom|Gender=Masc	6	nsubj	_	_
 2	Лужков	Лужков	PROPN	np	Case=Nom|Gender=Masc	1	flat:name	_	_
 3	жаңа	жаңа	ADJ	adj	_	4	amod	_	_
-4	туындының	туынды	ADJ	adj	Case=Gen	5	nmod:poss	_	_
+4	туындының	туынды	NOUN	n	Case=Gen	5	nmod:poss	_	_
 5	қолжазбасымен	қолжазба	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 6	танысып	тан	VERB	v	Aspect=Perf|VerbForm=Cov|Voice=Coop	0	root	_	_
 7	шығыпты	шық	AUX	vaux	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	aux	_	SpaceAfter=No
@@ -4314,10 +4314,10 @@
 # text = Көршінің қатыны мен қожаның өсегі білінген соң, әкеміз шығарып жіберіп, содан кейін көзіміз ашылды.
 # labels = checked_IFS
 1	Көршінің	көрші	NOUN	n	Case=Gen	2	nmod:poss	_	_
-2	қатыны	қатын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
-3	мен	мен	CCONJ	cnjcoo	_	5	cc	_	_
-4	қожаның	қожа	NOUN	n	Case=Gen	5	nmod:poss	_	_
-5	өсегі	өсек	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	2	conj	_	_
+2	қатыны	қатын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
+3	мен	мен	CCONJ	cnjcoo	_	4	cc	_	_
+4	қожаның	қожа	NOUN	n	Case=Gen	2	conj	_	_
+5	өсегі	өсек	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 6	білінген	біл	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger|Voice=Pass	10	advcl	_	_
 7	соң	соң	ADP	post	_	6	case	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	6	punct	_	_
