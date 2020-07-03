@@ -5704,24 +5704,24 @@
 # sent_id = kdt.tagged.txt:128:2069
 # text = Арғы қабақта жол жатыр.
 # labels = checked_IFS
-1	Арғы	ары	ADV	adv	Case=Nom	2	amod	2:amod	_
-2	қабақта	қабақ	NOUN	n	Case=Loc	3	obl	3:obl	_
-3	жол	жол	NOUN	n	Case=Nom	4	nsubj	4:nsubj	_
-4	жатыр	жат	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	0:root	SpaceAfter=No
-5	.	.	PUNCT	sent	_	4	punct	4:punct	_
+1	Арғы	ары	ADV	adv	Case=Nom	2	amod	_	_
+2	қабақта	қабақ	NOUN	n	Case=Loc	3	obl	_	_
+3	жол	жол	NOUN	n	Case=Nom	4	nsubj	_	_
+4	жатыр	жат	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = kdt.tagged.txt:129:2080
 # text = Ағыны тас домалатқан тасты сайдың тар өзені екен.
 # labels = checked_IFS
-1	Ағыны	ағын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	7:nsubj	_
-2	тас	тас	NOUN	n	Case=Nom	3	obj	3:obj	_
-3	домалатқан	домалат	VERB	v	Tense=Past|VerbForm=Part	5	acl:relcl	5:acl:relcl	_
-4	тасты	тасты	ADJ	adj	_	5	amod	5:amod	_
-5	сайдың	сай	NOUN	n	Case=Gen	7	nmod:poss	7:nmod:poss	_
-6	тар	тар	ADJ	adj	_	7	amod	7:amod	_
-7	өзені	өзен	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	0:root	_
-8	екен	е	AUX	cop	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	7	cop	7:cop	SpaceAfter=No
-9	.	.	PUNCT	sent	_	7	punct	7:punct	_
+1	Ағыны	ағын	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
+2	тас	тас	NOUN	n	Case=Nom	3	obj	_	_
+3	домалатқан	домалат	VERB	v	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+4	тасты	тасты	ADJ	adj	_	5	amod	_	_
+5	сайдың	сай	NOUN	n	Case=Gen	7	nmod:poss	_	_
+6	тар	тар	ADJ	adj	_	7	amod	_	_
+7	өзені	өзен	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
+8	екен	е	AUX	cop	Evident=Fh|Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	7	cop	_	SpaceAfter=No
+9	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:130:2099
 # text = "Оны біз білмейміз-ау!" деген ойлар келді.
@@ -5811,20 +5811,20 @@
 # sent_id = kdt.tagged.txt:138:2210
 # text = Өткел жоқ.
 # labels = checked_IFS
-1	Өткел	өткел	NOUN	n	Case=Nom	2	nsubj	2:nsubj	_
-2	жоқ	жоқ	ADJ	adj	_	0	root	0:root	SpaceAfter=No
-3	.	.	PUNCT	sent	_	2	punct	2:punct	_
+1	Өткел	өткел	NOUN	n	Case=Nom	2	nsubj	_	_
+2	жоқ	жоқ	ADJ	adj	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = kdt.tagged.txt:139:2217
 # text = Жарты шақырымдай жерде бір дөңес көрінеді.
 # labels = checked_IFS
-1	Жарты	жарты	NOUN	n	Case=Nom	2	nummod	2:nummod	_
-2	шақырымдай	шақырым	NOUN	n	_	3	amod	3:amod	_
-3	жерде	жер	NOUN	n	Case=Loc	6	obl	6:obl	_
-4	бір	бір	DET	det	PronType=Ind	5	det	5:det	_
-5	дөңес	дөңес	NOUN	n	Case=Nom	6	nsubj	6:nsubj	_
-6	көрінеді	көр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	0:root	SpaceAfter=No
-7	.	.	PUNCT	sent	_	6	punct	6:punct	_
+1	Жарты	жарты	NOUN	n	Case=Nom	2	nummod	_	_
+2	шақырымдай	шақырым	NOUN	n	_	3	amod	_	_
+3	жерде	жер	NOUN	n	Case=Loc	6	obl	_	_
+4	бір	бір	DET	det	PronType=Ind	5	det	_	_
+5	дөңес	дөңес	NOUN	n	Case=Nom	6	nsubj	_	_
+6	көрінеді	көр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = kdt.tagged.txt:140:2232
 # text = Соған шығып ел көздемек.
@@ -5839,15 +5839,15 @@
 # text = Елсіз дала емсіз жарадай көрінеді.
 # labels = checked_IFS
 1-2	Елсіз	_	_	_	_	_	_	_	_
-1	ел	ел	NOUN	n	_	3	nmod	3:nmod	_
-2	сіз	сыз	ADP	post	_	1	case	1:case	_
-3	дала	дала	NOUN	n	Case=Nom	7	nsubj	7:nsubj	_
+1	ел	ел	NOUN	n	_	3	nmod	_	_
+2	сіз	сыз	ADP	post	_	1	case	_	_
+3	дала	дала	NOUN	n	Case=Nom	7	nsubj	_	_
 4-5	емсіз	_	_	_	_	_	_	_	_
-4	ем	ем	NOUN	n	_	6	nmod	6:nmod	_
-5	сіз	сыз	ADP	post	_	4	case	4:case	_
-6	жарадай	жара	NOUN	n	_	7	obl	7:obl	_
-7	көрінеді	көр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	0:root	SpaceAfter=No
-8	.	.	PUNCT	sent	_	7	punct	7:punct	_
+4	ем	ем	NOUN	n	_	6	nmod	_	_
+5	сіз	сыз	ADP	post	_	4	case	_	_
+6	жарадай	жара	NOUN	n	_	7	obl	_	_
+7	көрінеді	көр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:142:2258
 # text = Ай, қу дала!
@@ -5861,17 +5861,17 @@
 # sent_id = kdt.tagged.txt:143:2269
 # text = Бір мезгілде әлгі торғай жансыз тастай ағып түсті топ етіп.
 # labels = checked_IFS
-1	Бір	бір	DET	det	PronType=Ind	2	det	2:det	_
-2	мезгілде	мезгіл	NOUN	n	Case=Loc	8	obl	8:obl	_
-3	әлгі	әлгі	DET	det	PronType=Dem	4	det	4:det	_
-4	торғай	торғай	NOUN	n	Case=Nom	8	nsubj	8:nsubj	_
-5	жансыз	жансыз	ADJ	adj	_	6	amod	6:amod	_
-6	тастай	тас	NOUN	n	_	7	obl	7:obl	_
-7	ағып	ақ	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	8:advcl	_
-8	түсті	түс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	_
-9	топ	топ	X	x	Case=Nom	10	dep	10:dep	_
-10	етіп	ет	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	8:advcl	SpaceAfter=No
-11	.	.	PUNCT	sent	_	8	punct	8:punct	_
+1	Бір	бір	DET	det	PronType=Ind	2	det	_	_
+2	мезгілде	мезгіл	NOUN	n	Case=Loc	8	obl	_	_
+3	әлгі	әлгі	DET	det	PronType=Dem	4	det	_	_
+4	торғай	торғай	NOUN	n	Case=Nom	8	nsubj	_	_
+5	жансыз	жансыз	ADJ	adj	_	6	amod	_	_
+6	тастай	тас	NOUN	n	_	7	obl	_	_
+7	ағып	ақ	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	_	_
+8	түсті	түс	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+9	топ	топ	X	x	Case=Nom	10	dep	_	_
+10	етіп	ет	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	sent	_	8	punct	_	_
 
 # sent_id = kdt.tagged.txt:144:2292
 # text = Ол торғайдың түскен жері қалың шөп.
