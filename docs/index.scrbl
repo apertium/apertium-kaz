@@ -728,6 +728,9 @@ TODO add a note on validation.py
 
 определиться надо?
 
+also, noun-дай is obl if dependent of a predicate (correct), but amod if dependent of a subject
+(nmod would be more appropriate, probably)
+
 kdt.tagged.txt:200:3187 жауып отыра алмайды -- отыра could've been aux I guess?..
 
 make sure that қайда and қайдан are labeled consistently
