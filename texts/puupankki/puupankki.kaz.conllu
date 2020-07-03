@@ -5504,12 +5504,12 @@
 # sent_id = kdt.tagged.txt:110:1795
 # text = Кімді әлдилеп, сыбырлап тұрсыңдар?
 # labels = checked_IFS
-1	Кімді	кім	PRON	prn	Case=Acc|PronType=Int	2	obj	2:obj	_
-2	әлдилеп	әлдиле	VERB	v	Aspect=Perf|VerbForm=Conv	4	advcl	4:advcl	SpaceAfter=No
-3	,	,	PUNCT	cm	_	4	punct	4:punct	_
-4	сыбырлап	сыбырла	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	0:root	_
-5	тұрсыңдар	тұр	AUX	vaux	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	aux	4:aux	SpaceAfter=No
-6	?	?	PUNCT	sent	_	4	punct	4:punct	_
+1	Кімді	кім	PRON	prn	Case=Acc|PronType=Int	2	obj	_	_
+2	әлдилеп	әлдиле	VERB	v	Aspect=Perf|VerbForm=Conv	4	advcl	_	SpaceAfter=No
+3	,	,	PUNCT	cm	_	4	punct	_	_
+4	сыбырлап	сыбырла	VERB	v	Aspect=Perf|VerbForm=Cov	0	root	_	_
+5	тұрсыңдар	тұр	AUX	vaux	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	4	aux	_	SpaceAfter=No
+6	?	?	PUNCT	sent	_	4	punct	_	_
 
 # sent_id = kdt.tagged.txt:111:1808
 # text = Түн түнереді.
@@ -5588,12 +5588,12 @@
 # sent_id = kdt.tagged.txt:119:1900
 # text = Қорқақ аңдар, тілсіз жаулар!
 # labels = checked_IFS
-1	Қорқақ	қорқақ	ADJ	adj	_	2	amod	2:amod	_
-2	аңдар	аң	NOUN	n	Case=Nom|Number=Plur	0	root	0:root	SpaceAfter=No
-3	,	,	PUNCT	cm	_	2	punct	2:punct	_
-4	тілсіз	тілсіз	ADJ	adj	_	5	amod	5:amod	_
-5	жаулар	жау	NOUN	n	Case=Nom|Number=Plur	2	parataxis	2:parataxis	SpaceAfter=No
-6	!	!	PUNCT	sent	_	2	punct	2:punct	_
+1	Қорқақ	қорқақ	ADJ	adj	_	2	amod	_	_
+2	аңдар	аң	NOUN	n	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	cm	_	2	punct	_	_
+4	тілсіз	тілсіз	ADJ	adj	_	5	amod	_	_
+5	жаулар	жау	NOUN	n	Case=Nom|Number=Plur	2	parataxis	_	SpaceAfter=No
+6	!	!	PUNCT	sent	_	2	punct	_	_
 
 # sent_id = kdt.tagged.txt:120:1913
 # text = Қаш, маңыма жолама!
@@ -5692,14 +5692,14 @@
 # sent_id = kdt.tagged.txt:127:2052
 # text = Бір қырдан асқанда көлденең созылған сай килікті...
 # labels = checked_IFS
-1	Бір	бір	DET	det	PronType=Ind	2	det	2:det	_
-2	қырдан	қыр	NOUN	n	Case=Abl	3	obl	3:obl	_
-3	асқанда	ас	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	7	advcl	7:advcl	_
-4	көлденең	көлденең	ADV	adv	_	5	advmod	5:advmod	_
-5	созылған	соз	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	6	acl:relcl	6:acl:relcl	_
-6	сай	сай	NOUN	n	Case=Nom	7	obj	7:obj	_
-7	килікті	килік	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	0:root	SpaceAfter=No
-8	...	...	PUNCT	sent	_	7	punct	7:punct	_
+1	Бір	бір	DET	det	PronType=Ind	2	det	_	_
+2	қырдан	қыр	NOUN	n	Case=Abl	3	obl	_	_
+3	асқанда	ас	VERB	v	Case=Loc|Tense=Past|VerbForm=Ger	7	advcl	_	_
+4	көлденең	көлденең	ADV	adv	_	5	advmod	_	_
+5	созылған	соз	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	6	acl:relcl	_	_
+6	сай	сай	NOUN	n	Case=Nom	7	obj	_	_
+7	килікті	килік	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	...	...	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:128:2069
 # text = Арғы қабақта жол жатыр.
