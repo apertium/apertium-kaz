@@ -5473,14 +5473,14 @@
 # sent_id = kdt.tagged.txt:108:1747
 # text = Мен саған тағы керек болмасымды қайдан білесің?
 # labels = checked_IFS
-1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	4:nsubj	_
-2	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	4	obl	4:obl	_
-3	тағы	тағы	ADV	adv	_	4	advmod	4:advmod	_
-4	керек	керек	ADJ	adj	_	7	ccomp	7:ccomp	_
-5	болмасымды	бол	AUX	v	Case=Acc|Number[psor]=Sing|Person[psor]=1|Polarity=Neg|Tense=Fut|VerbForm=Ger	4	cop	4:cop	_
-6	қайдан	қайдан	ADV	adv	PronType=Int	7	advmod	7:advmod	_
-7	білесің	біл	VERB	v	Mood=Ind|Number=Sing|Person=2|Tense=Aor|VerbForm=Fin	0	root	0:root	SpaceAfter=No
-8	?	?	PUNCT	sent	_	7	punct	7:punct	_
+1	Мен	мен	PRON	prn	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	саған	сен	PRON	prn	Case=Dat|Number=Sing|Person=2|PronType=Prs	4	obl	_	_
+3	тағы	тағы	ADV	adv	_	4	advmod	_	_
+4	керек	керек	ADJ	adj	_	7	ccomp	_	_
+5	болмасымды	бол	AUX	v	Case=Acc|Number[psor]=Sing|Person[psor]=1|Polarity=Neg|Tense=Fut|VerbForm=Ger	4	cop	_	_
+6	қайдан	қайдан	ADV	adv	PronType=Int	7	advmod	_	_
+7	білесің	біл	VERB	v	Mood=Ind|Number=Sing|Person=2|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	sent	_	7	punct	_	_
 
 # sent_id = kdt.tagged.txt:109:1764
 # text = Сен бұл жолдан аман-есен қайтарсың, еліңе аман барарсың... — деді.
