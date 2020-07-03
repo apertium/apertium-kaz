@@ -6731,7 +6731,7 @@
 10	қанша	қанша	DET	det	PronType=Qnt	11	det	_	_
 11	ақша	ақша	NOUN	n	Case=Nom	2	conj	_	_
 12	—	—	PUNCT	guio	_	13	punct	_	_
-13	баршаларын	барша	ADJ	adj	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	11	appos	_	_
+13	баршаларын	барша	PRON	prn	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3|PronType=Qnt	11	appos	_	_
 14	олжа	олжа	NOUN	n	Case=Nom	15	compound	_	_
 15	қылған	қыл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 16	.	.	PUNCT	sent	_	15	punct	_	_
@@ -7143,7 +7143,7 @@
 8	,	,	PUNCT	cm	_	9	punct	_	_
 9	темекі	темекі	NOUN	n	Case=Nom	3	conj	_	_
 10	—	—	PUNCT	guio	_	11	punct	_	_
-11	қысқасы	қысқа	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	mark	_	SpaceAfter=No
+11	қысқасы	қысқа	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	13	nmod	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	13	punct	_	_
 13	күн-көріс	күн-көріс	NOUN	n	Case=Nom	3	conj	_	_
 14	жайынан	жай	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	_
@@ -7317,7 +7317,7 @@
 6	көбейіп	көбей	VERB	v	Aspect=Perf|VerbForm=Conv	10	advcl	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	10	punct	_	_
 8	мәжіліс	мәжіліс	NOUN	n	Case=Nom	10	nsubj	_	_
-9	қызуға	қызу	ADJ	adj	Case=Dat|VerbForm=Ger	10	obl	_	_
+9	қызуға	қызу	ADJ	adj	Case=Dat	10	obl	_	_
 10	айналды	айнал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -7341,7 +7341,7 @@
 # sent_id = kdt.tagged.txt:266:4346
 # text = Ауылдан кісі қатынасатын кезі болса керек еді.
 # labels = checked_IFS
-1	Ауылдан	ауыл	NOUN	n	Case=Abl	2	obl	_	_
+1	Ауылдан	ауыл	NOUN	n	Case=Abl	2	nmod	_	_
 2	кісі	кісі	NOUN	n	Case=Nom	3	nsubj	_	_
 3	қатынасатын	қатынас	VERB	v	Aspect=Imp|VerbForm=Part	4	acl:relcl	_	_
 4	кезі	кез	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
@@ -7471,7 +7471,7 @@
 # sent_id = kdt.tagged.txt:276:4530
 # text = Одан өзгесін артық керек қылмады.
 # labels = checked_IFS
-1	Одан	ол	PRON	prn	Case=Abl|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+1	Одан	ол	PRON	prn	Case=Abl|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_
 2	өзгесін	өзге	ADJ	adj	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	obj	_	_
 3	артық	артық	ADJ	adj	_	4	advmod	_	_
 4	керек	керек	ADJ	adj	_	5	xcomp	_	_
@@ -7551,7 +7551,7 @@
 # sent_id = kdt.tagged.txt:283:4641
 # text = Төлегеннен гөрі бұл өтімді, тартымды, білімді, беделді, алғыр еді.
 # labels = checked_IFS
-1	Төлегеннен	Төлеген	PROPN	np	Case=Abl|Gender=Masc	3	obl	_	_
+1	Төлегеннен	Төлеген	PROPN	np	Case=Abl|Gender=Masc	4	obl	_	_
 2	гөрі	гөрі	ADP	post	_	1	case	_	_
 3	бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	4	nsubj	_	_
 4	өтімді	өтімді	ADJ	adj	_	0	root	_	SpaceAfter=No
