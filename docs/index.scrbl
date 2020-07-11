@@ -758,7 +758,8 @@ nmod:poss vs compound (Иран Ислам республикасы, Иран.ta
 
 Abbr:Yes feature while converting apertium <abbr>s into UD
 
-help needed with Иран.tagged.txt:18:467 and Иран.tagged.txt:19:546 (orphan)
+help needed with Иран.tagged.txt:18:467, Иран.tagged.txt:19:546,
+Иран.tagged.txt:27:704, Иран.tagged.txt:60:1747 (all should probably involve the orphan label)
 
 -- punct preceding predicate sometimes right-headed, sometmes left-headed. What's the principle?
 
