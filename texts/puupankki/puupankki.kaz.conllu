@@ -9617,7 +9617,7 @@
 # text = Президент (1997 жылдан бастап Сейд Мохаммед Хатами) 4 жылға сайланады және Министр Кабинетін басқарады.
 # labels = checked_IFS
 1	Президент	президент	NOUN	n	Case=Nom	16	nsubj	_	_
-2	(	(	PUNCT	lpar	_	1	punct	_	SpaceAfter=No
+2	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
 3	1997	1997	NUM	num	NumType=Ord	4	amod	_	_
 4	жылдан	жыл	NOUN	n	Case=Abl	8	obl	_	_
 5	бастап	баста	ADP	post	_	4	case	_	_
@@ -10299,7 +10299,7 @@
 16	93	93	NUM	num	NumType=Ord	14	conj	_	_
 17	ж.	ж.	NOUN	abbr	_	22	obl	_	_
 18	Иранды	Иран	PROPN	np	Case=Acc	22	obj	_	_
-19	Әмір	Әмір	X	x	_	21	nmod:poss	_	_
+19	Әмір	Әмір	NOUN	n	Case=Nom	21	nmod:poss	_	_
 20	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	19	flat:name	_	_
 21	әскерлері	әскер	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	22	nsubj	_	_
 22	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	10	conj	_	_
@@ -10309,7 +10309,7 @@
 # sent_id = Иран.tagged.txt:50:1391
 # text = Әмір Темір өлгеннен кейін Шығыс Иран Темір әулетінің билігінде қалып, Батыс Иранда Қарақойлы мемлекеті құрылды.
 # labels = checked_IFS
-1	Әмір	Әмір	X	x	_	3	nsubj	_	_
+1	Әмір	Әмір	NOUN	n	Case=Nom	3	nsubj	_	_
 2	Темір	Темір	PROPN	np	Case=Nom|Gender=Masc	1	flat:name	_	_
 3	өлгеннен	өл	VERB	v	Case=Abl|Tense=Past|VerbForm=Ger	16	advcl	_	_
 4	кейін	кейін	ADP	post	_	3	case	_	_
@@ -10361,7 +10361,7 @@
 # sent_id = Иран.tagged.txt:52:1481
 # text = 17 — 18 ғасырларда Иранның экономикасы құлдырап, халықтың жағдайы нашарлап кетті.
 # labels = checked_IFS
-1	17	17	NUM	num	NumType=Card	4	amod	_	_
+1	17	17	NUM	num	NumType=Ord	4	amod	_	_
 2	—	—	PUNCT	guio	_	3	punct	_	_
 3	18	18	NUM	num	NumType=Ord	1	conj	_	_
 4	ғасырларда	ғасыр	NOUN	n	Case=Loc|Number=Plur	7	obl	_	_
@@ -10543,7 +10543,7 @@
 5	елде	ел	NOUN	n	Case=Loc	10	obl	_	_
 6	шетелдіктерге	шетелдік	NOUN	n	Case=Dat|Number=Plur	10	obl	_	_
 7	қарсы	қарсы	ADP	post	_	6	case	_	_
-8	ұлт-азаттық	ұлт-азаттық	NOUN	adj	_	9	nmod:poss	_	_
+8	ұлт-азаттық	ұлт-азаттық	NOUN	n	Case=Nom	9	nmod:poss	_	_
 9	қозғалысы	қозғалыс	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 10	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	11	advcl	_	_
 11	өтті	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -10677,7 +10677,7 @@
 3	және	және	CCONJ	cnjcoo	_	4	cc	_	_
 4	тұрмыстық	тұрмыстық	ADJ	adj	_	2	conj	_	_
 5	өмірінде	өмір	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	8	obl	_	_
-6	көптеген	көпте	DET	det	_	7	det	_	_
+6	көптеген	көптеген	DET	det	_	7	det	_	_
 7	өзгерістер	өзгеріс	NOUN	n	Case=Nom|Number=Plur	8	nsubj	_	_
 8	болып	бол	VERB	v	Aspect=Perf|VerbForm=Conv	9	advcl	_	_
 9	өтті	өт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
