@@ -10735,7 +10735,7 @@
 6	шаһ	шаһ	NOUN	n	Case=Nom	5	flat:name	_	_
 7	тақтан	тақ	NOUN	n	Case=Abl	11	obl	_	_
 8	өз	өз	DET	det	PronType=Ref	9	det	_	_
-9	еркімен	еркімен	ADJ	adj	_	11	obl	_	_
+9	еркімен	ерік	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	11	obl	_	_
 10	бас	бас	NOUN	n	Case=Nom	11	obj	_	_
 11	тартып	тарт	VERB	v	Aspect=Perf|VerbForm=Conv	18	advcl	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	11	punct	_	_
@@ -11033,14 +11033,14 @@
 # text = Мемлекеттік кірістің 1 / 3 және экспорттың 90%-ына жуығы осы салалардан алынады.
 # labels = checked_IFS
 1	Мемлекеттік	мемлекеттік	ADJ	adj	_	2	amod	_	_
-2	кірістің	кіріс	NOUN	n	Case=Gen	3	orphan	_	_
-3	1	1	NUM	num	NumType=Card,Ord	12	conj	_	_
+2	кірістің	кіріс	NOUN	n	Case=Gen	3	nmod:poss	_	_
+3	1	1	NUM	num	NumType=Card,Ord	12	nsubj	_	_
 4	/	/	SYM	sym	_	5	case	_	_
 5	3	3	NUM	num	NumType=Card,Ord	3	nmod	_	_
-6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
+6	және	және	CCONJ	cnjcoo	_	9	cc	_	_
 7	экспорттың	экспорт	NOUN	n	Case=Gen	8	nmod:poss	_	_
 8	90%-ына	90	NUM	num	Case=Dat|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	9	nmod	_	_
-9	жуығы	жуық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
+9	жуығы	жуық	ADJ	adj	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	3	conj	_	_
 10	осы	осы	DET	det	PronType=Dem	11	det	_	_
 11	салалардан	сала	NOUN	n	Case=Abl|Number=Plur	12	obl	_	_
 12	алынады	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
@@ -11109,17 +11109,17 @@
 2	байлықтың	байлық	NOUN	n	Case=Gen	3	nmod:poss	_	_
 3	36%-ы	36	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	14	nsubj	_	_
 4	өнеркәсіптен	өнеркәсіп	NOUN	n	Case=Abl	3	orphan	_	SpaceAfter=No
-5	,	,	PUNCT	cm	_	4	punct	_	_
-6	22%-ы	22	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	8	nsubj	_	_
+5	,	,	PUNCT	cm	_	6	punct	_	_
+6	22%-ы	22	NUM	num	Case=Nom|Number[psor]=Plur,Sing|NumType=Card,Ord|Person[psor]=3	3	conj	_	_
 7	ауыл	ауыл	NOUN	x	_	8	nmod:poss	_	_
-8	шаруашылығынан	шаруашылық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	SpaceAfter=No
-9	,	,	PUNCT	cm	_	8	punct	_	_
+8	шаруашылығынан	шаруашылық	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	6	orphan	_	SpaceAfter=No
+9	,	,	PUNCT	cm	_	10	punct	_	_
 10	қалғаны	қал	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	3	conj	_	_
 11	қызмет	қызмет	X	x	_	12	dep	_	_
 12	көрсету	көрсет	VERB	v	Case=Nom|VerbForm=Ger	13	acl	_	_
 13	секторынан	сектор	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	14	obl	_	_
 14	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-15	.	.	PUNCT	sent	_	14	punct	_	_
+15	.	.	PUNCT	sent	_	_	_	_	_
 
 # sent_id = Иран.tagged.txt:94:2710
 # text = Мұнай экспортынан жыл сайын 16,3 млрд. АҚШ доллары түседі.
@@ -11127,7 +11127,7 @@
 1	Мұнай	мұнай	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	экспортынан	экспорт	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
 3	жыл	жыл	NOUN	n	_	9	obl	_	_
-4	сайын	сайын	ADP	adv	_	3	case	_	_
+4	сайын	сайын	ADP	post	_	3	case	_	_
 5	16,3	16,3	NUM	num	NumType=Card	6	compound	_	_
 6	млрд.	млрд.	NOUN	abbr	_	7	nummod	_	_
 7	АҚШ	АҚШ	PROPN	np	Case=Nom	8	nmod:poss	_	_
@@ -11167,7 +11167,7 @@
 7	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
 8	3,5	3,5	NUM	num	NumType=Card	9	compound	_	_
 9	млн.	млн.	NOUN	abbr	_	10	nummod	_	_
-10	адам	адам	NOUN	n	Case=Nom	6	appos	_	SpaceAfter=No
+10	адам	адам	NOUN	n	Case=Nom	6	parataxis	_	SpaceAfter=No
 11	)	)	PUNCT	rpar	_	10	punct	_	SpaceAfter=No
 12	.	.	PUNCT	sent	_	6	punct	_	_
 
@@ -11252,7 +11252,7 @@
 3	Нұрсұлтан	Нұрсұлтан	PROPN	np	Case=Nom|Gender=Masc	2	appos	_	_
 4	Назарбаев	Назарбаев	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 5	екі	екі	NUM	num	NumType=Card	6	nummod	_	_
-6	рет	рет	NOUN	n	Case=Nom	14	obl	_	_
+6	рет	рет	NOUN	n	Case=Nom	12	obl	_	_
 7	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
 8	1992	1992	NUM	num	NumType=Card,Ord	6	appos	_	SpaceAfter=No
 9	;	;	PUNCT	sent	_	10	punct	_	_
@@ -11476,7 +11476,7 @@
 5	қола	қола	NOUN	n	Case=Nom	1	conj	_	_
 6	және	және	CCONJ	cnjcoo	_	7	cc	_	_
 7	әйнектен	әйнек	NOUN	n	Case=Abl	1	conj	_	_
-8	әр	әр	DET	x	_	9	det	_	_
+8	әр	әр	DET	det	PronType=Qnt	9	det	_	_
 9	түрлі	түрлі	ADJ	adj	_	10	amod	_	_
 10	бұйымдар	бұйым	NOUN	n	Case=Nom|Number=Plur	11	obj	_	_
 11	жасау	жаса	VERB	v	Case=Nom|VerbForm=Ger	19	csubj	_	SpaceAfter=No
@@ -11509,7 +11509,7 @@
 # text = 15 ғасырда Иран миниатюрасының өркендеуіне Герат мектебі үлкен әсер етті.
 # labels = checked_IFS
 1	15	15	NUM	num	NumType=Ord	2	amod	_	_
-2	ғасырда	ғасыр	NOUN	n	Case=Loc	5	obl	_	_
+2	ғасырда	ғасыр	NOUN	n	Case=Loc	10	obl	_	_
 3	Иран	Иран	PROPN	np	Case=Nom	4	nmod:poss	_	_
 4	миниатюрасының	миниатюра	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 5	өркендеуіне	өркенде	VERB	v	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	10	advcl	_	_
@@ -11703,9 +11703,9 @@
 2	ғасырдың	ғасыр	NOUN	n	Case=Gen	5	nmod:poss	_	_
 3	2	2	NUM	num	NumType=Ord	5	amod	_	SpaceAfter=No
 4	-	-	PUNCT	guio	_	5	punct	_	SpaceAfter=No
-5	жартысынан	жарты	ADJ	adj	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
+5	жартысынан	жарты	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
 6	Иран	Иран	PROPN	np	Case=Nom	7	nmod:poss	_	_
-7	музыкасына	музыка	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
+7	музыкасына	музыка	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	12	iobj	_	_
 8	еуропалық	еуропалық	ADJ	adj	_	10	amod	_	_
 9	музыка	музыка	NOUN	n	Case=Nom	10	nmod:poss	_	_
 10	мәдениеті	мәдениет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	12	nsubj	_	_
