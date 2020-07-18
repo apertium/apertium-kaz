@@ -12266,10 +12266,10 @@
 # labels = checked_IFS
 1	Кафедра	кафедра	NOUN	n	Case=Nom	8	nsubj	_	_
 2	«	«	PUNCT	lquot	_	3	punct	_	SpaceAfter=No
-3	Менеджмент	менеджмент	NOUN	n	Case=Nom	8	obl	_	SpaceAfter=No
+3	Менеджмент	менеджмент	NOUN	n	Case=Nom	5	nmod	_	SpaceAfter=No
 4	»	»	PUNCT	rquot	_	3	punct	_	_
-5	мамандық	мамандық	NOUN	n	Case=Nom	3	appos	_	_
-6	бойынша	бойынша	ADP	post	_	3	case	_	_
+5	мамандық	мамандық	NOUN	n	Case=Nom	8	obl	_	_
+6	бойынша	бойынша	ADP	post	_	5	case	_	_
 7	бакалавр	бакалавр	NOUN	n	Case=Nom	8	obj	_	_
 8	дайындайды	дайында	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 9	.	.	PUNCT	sent	_	8	punct	_	_
@@ -12423,7 +12423,7 @@
 # text = Некенің тоқтатылуы жаңадан некеге тұру құқығын туғызады.
 1	Некенің	неке	NOUN	n	Case=Gen	2	nsubj	_	_
 2	тоқтатылуы	тоқтат	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger|Voice=Pass	7	csubj	_	_
-3	жаңадан	жаңа	ADV	adv	_	7	advmod	_	_
+3	жаңадан	жаңадан	ADV	adv	_	7	advmod	_	_
 4	некеге	неке	NOUN	n	Case=Dat	5	obl	_	_
 5	тұру	тұр	VERB	v	Case=Nom|VerbForm=Ger	6	acl	_	_
 6	құқығын	құқық	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	7	obj	_	_
@@ -12472,7 +12472,7 @@
 # text = Он екі елі ішек төрт бөлікке бөлінген.
 1	Он	он	NUM	num	_	2	compound	_	_
 2	екі	екі	NUM	num	NumType=Card	3	compound	_	_
-3	елі	ел	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	compound	_	_
+3	елі	елі	NOUN	n	Case=Nom	4	compound	_	_
 4	ішек	ішек	NOUN	n	Case=Nom	7	nsubj	_	_
 5	төрт	төрт	NUM	num	NumType=Card	6	nummod	_	_
 6	бөлікке	бөлік	NOUN	n	Case=Dat	7	obl	_	_
