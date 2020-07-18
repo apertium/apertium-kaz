@@ -770,7 +770,9 @@ bah, punctuatin in  Иран.tagged.txt:20:583
 year ranges like 1919-1921 (sometimes labeled as compound, sometimes
 as conj; sometime left-headed, sometimes right-headed :/). Определиться надо!
 
-hyphen dash between head and appoos -- where to attach it ?
+hyphen dash between head and appoos -- where to attach it ? Moreover, the use
+of appos seems to contradict v2 guidelines -- in particular, honorifics titles
+are said to be labeled flat, but in kk they are appos ?
 
 sents with orphans in them seem to have been handled wrong. I've corrected
 (imho) the first few, but then, not being entirely sure on that, stopped doing
