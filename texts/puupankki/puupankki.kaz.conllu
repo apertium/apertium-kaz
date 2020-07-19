@@ -13282,7 +13282,7 @@
 # sent_id = story.tagged.txt:17:289
 # text = Не үшін екенін білесіз бе?
 # labels = checked_IFS
-1	Не	не	PRON	prn	Case=Nom|PronType=Int	4	obj	_	_
+1	Не	не	PRON	prn	Case=Nom|PronType=Int	4	ccomp	_	_
 2	үшін	үшін	ADP	post	_	1	case	_	_
 3	екенін	е	AUX	cop	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3|Tense=Past|VerbForm=Ger	1	cop	_	_
 4-5	білесіз бе	_	_	_	_	_	_	_	SpaceAfter=No
@@ -13520,7 +13520,7 @@
 3	ішінде	іш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
 4	ақырын	ақырын	ADJ	adj	_	5	advmod	_	_
 5	басып	бас	VERB	v	Aspect=Perf|VerbForm=Cov	6	advcl	_	_
-6	жүр	жүр	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	жүр	жүр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = story.tagged.txt:36:629
@@ -13779,7 +13779,7 @@
 # sent_id = Шымкент.tagged.txt:5:103
 # text = Бірқатар археолог-ғалымдардың пікірлері бойынша, бұл жерде үлкен қорым болған, егер бұл расталса, онда қаланың пайда болған мерзімі қайта қаралуы мүмкін.
 # labels = checked_IFS
-1	Бірқатар	бірқатар	DET	det	PronType=Qnt	2	det	_	_
+1	Бірқатар	бірқатар	DET	det	PronType=Qnt	4	det	_	_
 2	археолог	археолог	NOUN	n	Case=Nom	4	compound	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	4	punct	_	SpaceAfter=No
 4	ғалымдардың	ғалым	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
@@ -13863,7 +13863,7 @@
 12	таулы	таулы	ADJ	adj	_	13	amod	_	_
 13	жайылымдарда	жайылым	NOUN	n	Case=Loc|Number=Plur	17	obl	_	SpaceAfter=No
 14	-	-	PUNCT	guio	_	16	punct	_	SpaceAfter=No
-15	мал	мал	X	x	_	16	dep	_	_
+15	мал	мал	NOUN	n	Case=Nom	16	nmod:poss	_	_
 16	шаруашылығы	шаруашылық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
 17	дамыған	дамы	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 18	.	.	PUNCT	sent	_	17	punct	_	_
@@ -14337,11 +14337,11 @@
 # text = Лейнг Рональд Дэвис (1927-1989 жылдары) - шотландтық писхиатр және ортодоксалдық психиатрияны сынаушы.
 # text[en] Lang Ronald Davis (1927-1989) was a Scottish psychiatrist and a critic of orthodox psychiatry.
 # labels = checked_IFS
-1	Лейнг	Лейнг	PROPN	np	Case=Nom|Gender=Masc	12	nsubj	_	_
+1	Лейнг	Лейнг	PROPN	np	Case=Nom|Gender=Masc,Fem	12	nsubj	_	_
 2	Рональд	Рональд	PROPN	np	Case=Nom|Gender=Masc	1	flatt:name	_	_
 3	Дэвис	Дэвис	PROPN	np	Case=Nom|Gender=Masc	2	flatt:name	_	_
 4	(	(	PUNCT	lpar	_	8	punct	_	_
-5	1927	1927	NUM	num	NumType=Ord	7	compound	_	_
+5	1927	1927	NUM	num	NumType=Ord	7	nmod	_	_
 6	-	-	PUNCT	guio	_	7	punct	_	_
 7	1989	1989	NUM	num	NumType=Ord	8	amod	_	_
 8	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	1	appos	_	_
@@ -14354,4 +14354,6 @@
 15	психиатрияны	психиатрия	NOUN	n	Case=Acc	16	obj	_	_
 16	сынаушы	сына	VERB	v	Mood=Pot|VerbForm=Part	12	conj	_	_
 17	.	.	PUNCT	sent	_	16	punct	_	_
+
+
 
