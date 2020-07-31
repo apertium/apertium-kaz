@@ -14205,7 +14205,7 @@
 9	шаңырақтың	шаңырақ	NOUN	n	Case=Gen	10	nmod:poss	_	_
 10	күлдіреуішінде	күлдіреуіш	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	17	obl	_	_
 11	керулі	керулі	ADJ	adj	_	15	acl	_	_
-12	тұрған	тұр	AUX	v	Tense=Past|VerbForm=Part	11	cop	_	_
+12	тұрған	тұр	AUX	v	Tense=Past|VerbForm=Part	11	aux	_	_
 13	кер	кер	ADJ	adj	_	14	amod	_	_
 14	биенің	бие	NOUN	n	Case=Gen	15	nmod:poss	_	_
 15	төстігі	төстік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	17	nsubj	_	_
@@ -14334,17 +14334,17 @@
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
 # sent_id = Лейнг_Рональд_Дэвис.txt:1
-# text = Лейнг Рональд Дэвис (1927-1989 жылдары) - шотландтық писхиатр және ортодоксалдық психиатрияны сынаушы.
+# text = Лейнг Рональд Дэвис (1927-1989 жылдары) - шотландтық психиатр және ортодоксалдық психиатрияны сынаушы.
 # text[en] Lang Ronald Davis (1927-1989) was a Scottish psychiatrist and a critic of orthodox psychiatry.
 # labels = checked_IFS
-1	Лейнг	Лейнг	PROPN	np	Case=Nom|Gender=Masc,Fem	12	nsubj	_	_
-2	Рональд	Рональд	PROPN	np	Case=Nom|Gender=Masc	1	flatt:name	_	_
-3	Дэвис	Дэвис	PROPN	np	Case=Nom|Gender=Masc	2	flatt:name	_	_
-4	(	(	PUNCT	lpar	_	8	punct	_	_
-5	1927	1927	NUM	num	NumType=Ord	7	nmod	_	_
-6	-	-	PUNCT	guio	_	7	punct	_	_
+1	Лейнг	Лейнг	PROPN	np	Case=Nom|Gender=Fem,Masc	12	nsubj	_	_
+2	Рональд	Рональд	PROPN	np	Case=Nom|Gender=Masc	1	flat:name	_	_
+3	Дэвис	Дэвис	PROPN	np	Case=Nom|Gender=Masc	2	flat:name	_	_
+4	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
+5	1927	1927	NUM	num	NumType=Ord	7	nmod	_	SpaceAfter=No
+6	-	-	PUNCT	guio	_	7	punct	_	SpaceAfter=No
 7	1989	1989	NUM	num	NumType=Ord	8	amod	_	_
-8	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	1	appos	_	_
+8	жылдары	жыл	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	1	appos	_	SpaceAfter=No
 9	)	)	PUNCT	rpar	_	8	punct	_	_
 10	-	-	PUNCT	guio	_	12	punct	_	_
 11	шотландтық	шотландтық	ADJ	adj	_	12	amod	_	_
@@ -14352,8 +14352,6 @@
 13	және	және	CCONJ	cnjcoo	_	16	cc	_	_
 14	ортодоксалдық	ортодоксалдық	ADJ	adj	_	15	amod	_	_
 15	психиатрияны	психиатрия	NOUN	n	Case=Acc	16	obj	_	_
-16	сынаушы	сына	VERB	v	Mood=Pot|VerbForm=Part	12	conj	_	_
+16	сынаушы	сына	VERB	v	Mood=Pot|VerbForm=Part	12	conj	_	SpaceAfter=No
 17	.	.	PUNCT	sent	_	16	punct	_	_
-
-
 
