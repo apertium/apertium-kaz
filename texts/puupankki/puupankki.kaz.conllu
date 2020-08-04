@@ -2159,7 +2159,7 @@
 # labels = checked_IFS
 1	–	–	PUNCT	guio	_	10	punct	_	_
 2	Сіздер	сіздер	PRON	prn	Case=Nom|Number=Plur|Person=2|Polite=Form|PronType=Prs	10	nsubj	_	_
-3	“	“	PUNCT	lquot	_	5	punct	_	SpaceAfter=No
+3	“	“	PUNCT	lquot	_	4	punct	_	SpaceAfter=No
 4	Нұр	Нұр	PROPN	np	Case=Nom	7	compound	_	_
 5	Отан	Отан	PROPN	np	Case=Nom	4	flat:name	_	SpaceAfter=No
 6	”	”	PUNCT	rquot	_	5	punct	_	_
@@ -4644,10 +4644,10 @@
 13	шыққан	шық	VERB	v	Case=Nom|Tense=Past|VerbForm=Ger	21	advcl	_	_
 14	соң	соң	ADP	post	_	13	case	_	SpaceAfter=No
 15	,	,	PUNCT	cm	_	13	punct	_	_
-16	жатсам	жат	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	17	orphan	_	_
+16	жатсам	жат	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	21	advcl	_	_
 17	ұйқым	ұйқы	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	21	nsubj	_	SpaceAfter=No
 18	,	,	PUNCT	cm	_	20	punct	_	_
-19	тұрсам	тұр	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	21	advcl	_	_
+19	тұрсам	тұр	VERB	v	Mood=Cnd|Number=Sing|Person=1|VerbForm=Conv	20	orphan	_	_
 20	күлкім	күлкі	NOUN	n	Case=Nom|Number[psor]=Sing|Person[psor]=1	17	conj	_	_
 21	келмейді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 22	.	.	PUNCT	sent	_	21	punct	_	_
@@ -11119,7 +11119,7 @@
 12	көрсету	көрсет	VERB	v	Case=Nom|VerbForm=Ger	13	acl	_	_
 13	секторынан	сектор	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	14	obl	_	_
 14	тұрады	тұр	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-15	.	.	PUNCT	sent	_	_	_	_	_
+15	.	.	PUNCT	sent	_	14	punct	_	_
 
 # sent_id = Иран.tagged.txt:94:2710
 # text = Мұнай экспортынан жыл сайын 16,3 млрд. АҚШ доллары түседі.
