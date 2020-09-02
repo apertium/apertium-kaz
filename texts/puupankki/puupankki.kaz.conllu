@@ -9617,14 +9617,14 @@
 # text = Президент (1997 жылдан бастап Сейд Мохаммед Хатами) 4 жылға сайланады және Министр Кабинетін басқарады.
 # labels = checked_IFS
 1	Президент	президент	NOUN	n	Case=Nom	16	nsubj	_	_
-2	(	(	PUNCT	lpar	_	8	punct	_	SpaceAfter=No
+2	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
 3	1997	1997	NUM	num	NumType=Ord	4	amod	_	_
-4	жылдан	жыл	NOUN	n	Case=Abl	8	obl	_	_
+4	жылдан	жыл	NOUN	n	Case=Abl	6	obl	_	_
 5	бастап	баста	ADP	post	_	4	case	_	_
 6	Сейд	Сейд	PROPN	np	Case=Nom|Gender=Masc	1	appos	_	_
 7	Мохаммед	Мохаммед	PROPN	np	Case=Nom|Gender=Masc	6	flat:name	_	_
 8	Хатами	Хатами	PROPN	np	Case=Nom	7	flat:name	_	SpaceAfter=No
-9	)	)	PUNCT	rpar	_	8	punct	_	_
+9	)	)	PUNCT	rpar	_	6	punct	_	_
 10	4	4	NUM	num	NumType=Card	11	nummod	_	_
 11	жылға	жыл	NOUN	n	Case=Dat	12	obl	_	_
 12	сайланады	сайла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin|Voice=Pass	0	root	_	_
@@ -10686,7 +10686,7 @@
 # sent_id = Иран.tagged.txt:70:2005
 # text = Алайда, 1929 — 33 ж. болған дүниежүзілік экономикалық дағдарыс Иран экономикасын тұралатып тастады.
 # labels = checked_IFS
-1	Алайда	алайда	SCONJ	cnjadv	_	14	advmod	_	SpaceAfter=No
+1	Алайда	алайда	ADV	cnjadv	_	14	advmod	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	1929	1929	NUM	num	NumType=Card	5	compound	_	_
 4	—	—	PUNCT	guio	_	5	punct	_	_
@@ -11442,7 +11442,7 @@
 17	қанат	қанат	NOUN	n	Case=Nom	18	obj	_	_
 18	жайды	жай	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 19	(	(	PUNCT	lpar	_	26	punct	_	SpaceAfter=No
-20	мыс.	мыс.	NOUN	abbr	_	26	advmod	_	SpaceAfter=No
+20	мыс.	мыс.	NOUN	abbr	_	26	obl	_	SpaceAfter=No
 21	,	,	PUNCT	cm	_	20	punct	_	_
 22	Нишапур	Нишапур	PROPN	np	Case=Nom	23	nmod:poss	_	_
 23	қаласы	қала	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	26	nsubj	_	_
@@ -13547,7 +13547,7 @@
 7	,	,	PUNCT	cm	_	11	punct	_	_
 8	бірақ	бірақ	CCONJ	cnjcoo	_	11	cc	_	_
 9	Азамат	Азамат	PROPN	np	Case=Nom|Gender=Masc	11	nsubj	_	_
-10	онда	ол	PRON	prn	Case=Loc|PronType=Dem	11	advmod	_	_
+10	онда	ол	ADV	prn	Case=Loc|PronType=Dem	11	advmod	_	_
 11	жоқ	жоқ	ADJ	adj	_	5	conj	_	SpaceAfter=No
 12	.	.	PUNCT	sent	_	11	punct	_	_
 
