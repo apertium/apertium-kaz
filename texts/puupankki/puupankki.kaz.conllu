@@ -8271,7 +8271,7 @@
 # sent_id = wikitravel.tagged.txt:7:59
 # text = Осында орыс тілінде сөйлейтін адам бар ма?
 # labels = checked_IFS
-1	Осында	осы	PRON	prn	Case=Loc|PronType=Dem	6	advmod	_	_
+1	Осында	осы	ADV	prn	Case=Loc|PronType=Dem	6	advmod	_	_
 2	орыс	орыс	NOUN	n	Case=Nom	3	nmod:poss	_	_
 3	тілінде	тіл	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	4	obl	_	_
 4	сөйлейтін	сөйле	VERB	v	Aspect=Imp|VerbForm=Part	5	acl	_	_
@@ -8861,7 +8861,7 @@
 # labels = checked_IFS
 1	Жоқ	жоқ	INTJ	ij	_	5	discourse	_	SpaceAfter=No
 2	,	,	PUNCT	cm	_	1	punct	_	_
-3	олай	ол	PRON	prn	PronType=Dem	5	advmod	_	_
+3	олай	ол	ADV	prn	PronType=Dem	5	advmod	_	_
 4	ниет	ниет	NOUN	n	Case=Nom	5	nsubj	_	_
 5	керек	керек	ADJ	adj	_	0	root	_	_
 6	емес	е	AUX	cop	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Aor|VerbForm=Fin	5	cop	_	SpaceAfter=No
@@ -8930,8 +8930,8 @@
 # sent_id = Жиырма_Бесінші_Сөз.tagged.txt:21:528
 # text = Сөйтсе де осы оқыған балалар — ана оқымаған қазақ балаларынан үздік, озық.
 # labels = checked_IFS
-1	Сөйтсе	сөйтсе	X	x	_	2	dep	_	_
-2	де	де	SCONJ	cnjadv	_	13	advmod	_	_
+1	Сөйтсе	сөйтсе	ADV	cnjadv	_	13	advmod	_	_
+2	де	де	ADV	postadv	_	1	advmod	_	_
 3	осы	осы	DET	det	PronType=Dem	5	det	_	_
 4	оқыған	оқы	VERB	v	Tense=Past|VerbForm=Part	5	acl	_	_
 5	балалар	бала	NOUN	n	Case=Nom|Number=Plur	11	nsubj	_	_
