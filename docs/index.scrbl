@@ -138,7 +138,7 @@ file is what you should be looking for}. See a note in Section 4.1 for an
 example of how you can train one.
 
 @margin-note{See
-@hyperlink["https://github.com/apertium/apertium-kaz/pull/16"]{this}
+@hyperlink["https://github.com/apertium/apertium-kaz/pull/17"]{this}
 pull-request with an ongoing effort to make sure that the treebank is fully
 compatible with version 2 of the UD standard.}
 
