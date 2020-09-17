@@ -78,7 +78,10 @@ Uyghur}}
 ]
 
 Its source code is available on
-@hyperlink["https://github.com/apertium/apertium-kaz/"]{Github}. The code is
+@hyperlink[(if (equal? (getenv "DOCSFOR") "TARUEN")
+               "https://github.com/taruen/apertium-kaz/"
+               "https://github.com/apertium/apertium-kaz/")]{Github}.
+The code is
 published under @hyperlink["https://www.gnu.org/licenses/gpl-3.0.html"]{GNU
 General Public License} (version 3). Some of the annotated data such as the
 Universal Dependencies treebank is made available under the
@@ -87,9 +90,10 @@ Attribution-Share Alike 4.0 International} license.
 
 @section{Installation}
 
-For detailed instructions on installing Apertium Core and language data for it,
-see the @hyperlink["https://wiki.apertium.org/wiki/Installation"]{Installation}
-page on Apertium's wiki.
+For detailed instructions on installing Apertium Core (language-independent
+engine) and language data for it, see the
+@hyperlink["https://wiki.apertium.org/wiki/Installation"]{Installation} page on
+Apertium's wiki.
 
 To give you an example, assuming that you are using a Debian-based GNU/Linux
 distribution (note that you can use any other distro and still get pre-compiled
@@ -106,10 +110,12 @@ See the aforementioned page for details.
 
 @section{Annotated data}
 
-Note that the directory
-@hyperlink["https://github.com/apertium/apertium-kaz/tree/master/texts"]{@tt{apertium-kaz/texts/}}
+Note that the directory @hyperlink[(if (equal? (getenv "DOCSFOR") "TARUEN")
+"https://github.com/taruen/apertium-kaz/tree/master/texts"
+"https://github.com/apertium/apertium-kaz/tree/master/texts")]{@tt{apertium-kaz/texts/}}
 contains morphologically disambiguated texts, some of which are syntactically
-annotated in the @hyperlink["https://universaldependencies.org/"]{Universal Dependencies} framework.
+annotated in the @hyperlink["https://universaldependencies.org/"]{Universal
+Dependencies} framework.
 
 Annotation is done in the files ending in @tt{tagged.txt} or simply @tt{.txt}.
 
@@ -127,20 +133,30 @@ you get to see the parse trees you're building/correcting.
 
 @margin-note{`Puupankki' is Finnish for `treebank'.}
 
-The file
-@hyperlink["https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"]{@tt{apertium-kaz/texts/puupankki/puupankki.kaz.conllu}}
-is the result of automatic conversion of the aforementioned text files (the
-ones which were syntactically annotated, that is) into Universal Dependencies'
-CoNNL-U format.
+@(define puupankki-kaz-conllu
+@hyperlink[(if (equal? (getenv "DOCSFOR") "TARUEN")
+"https://github.com/taruen/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu"
+"https://github.com/apertium/apertium-kaz/blob/master/texts/puupankki/puupankki.kaz.conllu")]{@tt{apertium-kaz/texts/puupankki/puupankki.kaz.conllu}})
 
-@bold{If you are interested in training a dependency parser for Kazakh, this
-file is what you should be looking for}. See a note in Section 4.1 for an
-example of how you can train one.
+The file @puupankki-kaz-conllu initially was the result of automatic conversion
+of the aforementioned @tt{*.tagged.txt} files (the ones which were
+syntactically annotated, that is) into Universal Dependencies' CoNNL-U format.
 
-@margin-note{See
-@hyperlink["https://github.com/apertium/apertium-kaz/pull/17"]{this}
-pull-request with an ongoing effort to make sure that the treebank is fully
-compatible with version 2 of the UD standard.}
+However, since then
+@hyperlink["https://github.com/apertium/apertium-kaz/pull/17"]{we have worked}
+on the @tt{puupankki.kaz.conllu} file directly, so that the @tt{*.tagged.txt}
+files and the @tt{.conllu} file have gone somewhat out of sync.
+
+@bold{If you are interested in training a dependency parser for Kazakh,
+@puupankki-kaz-conllu is what you should be looking for}. See a note in Section
+4.1 for an example of how you can train a dependency parser on it.
+
+@margin-note{It should be noted that
+@hyperlink["https://github.com/apertium/apertium-kaz/pull/17"]{this
+pull-request} is an ongoing effort to make sure that the treebank is fully
+compatible with version 2 of the UD standard. The @tt{master} branch of
+@url["https://github.com/taruen/apertium-kaz"] already contains the changes
+``pullrequested''.}
 
 ``Currently the treebank is partially compatible with UD v2.0 standard, with
 the choice of head direction in some constructions being one of the major
@@ -593,6 +609,10 @@ labeled as `dep', in general.}
 @item{өткен in атап өткен жөн.}
 
 @item{ал in сатып алу vaux?}
+
+@item{қатысты post or just adj?}
+
+@item{does мен бен пен post make sense?}
 
 ]
 
