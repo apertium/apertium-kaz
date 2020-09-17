@@ -229,7 +229,17 @@ following commands:
 
 which you then can use like this:
 
-@verbatim{echo "бұл бір мысал" | udpipe --tokenize --tag --parse kaz.udpipe}
+@verbatim{
+echo "бұл бір мысал" | udpipe --tokenize --tag --parse kaz.udpipe
+Loading UDPipe model: done.
+# newdoc
+# newpar
+# sent_id = 1
+# text = бұл бір місал
+1       бұл     бұл     DET     det     PronType=Dem    3       det     _       _
+2       бір     бір     NUM     num     NumType=Card    3       nummod  _       _
+3       місал   місал   NOUN    n       Case=Nom        0       root    _       SpacesAfter=\n
+}
 
 More information on training UDPipe models can be found in
 @hyperlink["https://wiki.apertium.org/wiki/UDPipe"]{this} article on Apertium's
@@ -248,34 +258,30 @@ project?}
 While you are in the directory @tt{apertium-kaz}, run the following command:
 
 @verbatim{
-
 echo "Біздің елде сізге ерекше құрметпен қарайды." | apertium-destxt -n | \
 apertium -f none -d . kaz-tagger | cg-conv -la | apertium-retxt | \
 vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
 python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
 python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null
-
 }
 
-where @tt{vislcg3-to-conllu.py}, @tt{conllu-feats.py} and
+@bold{where @tt{vislcg3-to-conllu.py}, @tt{conllu-feats.py} and
 @tt{conllu-nospaceafter.py} are scripts you can find
-@hyperlink["https://github.com/taruen/ud-scripts"]{here}.
+@hyperlink["https://github.com/taruen/ud-scripts"]{here}.}
 
 And this is the output you should expect for the above command:
 
 @verbatim{
-
 # sent_id = :1:0
 # text = Біздің елде сізге ерекше құрметпен қарайды.
-1	Біздің	біз	PRON	prn	Case=Gen|Number=Plur|Person=1|PronType=Prs	2	nmod:poss	_	_
-2	елде	ел	NOUN	n	Case=Loc	6	obl	_	_
-3	сізге	сіз	PRON	prn	Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs	6	obl	_	_
-4	ерекше	ерекше	ADJ	adj	_	5	amod	_	_
-5	құрметпен	құрмет	NOUN	n	Case=Ins	6	obl	_	_
-6	қарайды	қара	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
-7	.	.	PUNCT	sent	_	6	punct	_	_
-          
+1       Біздің  біз     PRON    prn     Case=Gen|Number=Plur|Person=1|PronType=Prs      2       nmod:poss       _       _
+2       елде    ел      NOUN    n       Case=Loc        6       obl     _       _
+3       сізге   сіз     PRON    prn     Case=Dat|Number=Sing|Person=2|Polite=Form|PronType=Prs  6       obl     _       _
+4       ерекше  ерекше  ADJ     adj     _       5       amod    _       _
+5       құрметпен       құрмет  NOUN    n       Case=Ins        6       obl     _       _
+6       қарайды қара    VERB    v       Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin    0       root    _       SpaceAfter=No
+7       .       .       PUNCT   sent    _       6       punct   _       _
 }
 
 Now that we have a way of converting @tt{apertium-kaz}'s output into CoNLL-U
@@ -286,8 +292,9 @@ will serve us as a guide for Constrait Grammar rules in
 @tt{apertium-kaz.kaz.rlx}.
 
 For evaluating the output of the CG-based dependency parser you can use
-@hyperlink["https://gist.github.com/IlnarSelimcan/aacde626a02efa243b819d56957576a8"]{this}
-script. It is a relaxed version of the original CoNLL 2018
+@hyperlink["https://gist.github.com/IlnarSelimcan/aacde626a02efa243b819d56957576a8"]{this
+script}, which we will call @tt{conll18_ud_eval_lax.py}. It is a ``relaxed''
+version of the original CoNLL 2018
 @hyperlink["https://universaldependencies.org/conll18/evaluation.html"]{evaluation
 script} -- relaxed in the sense that for the time being we commented out
 otherwise useful checks for cycles in dependency trees and tokenization
@@ -295,14 +302,12 @@ mismatches (Constraint Grammar-based parser we're currently working on, being
 incomplete, makes such errors sometimes).
 
 No guarantees are given at this point as regards the scores obtained in such a
-way, the only thing we can tell is that if we take only the first handful
+way. The only thing we can tell is that if we take only the first handful
 sentences from the treebank and evaluate CG parser's output on them, we get
 100% LAS score, as we should, since we know that they were covered by CG rules
 and are perfectly parsed (with the caveat that temporarily we use
 @tt{Makefile.am} and @tt{apertium-kaz.kaz.lexc} taken from
 @hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{apertium@bold{pp}-kaz}).
-
-Also see the @tt{test.rkt} file.
 
 Parsing the first 2 sentences (lines 0-24 in the @tt{puupankki.kaz.conllu}
 file) with CG parser and evaluating its output:
