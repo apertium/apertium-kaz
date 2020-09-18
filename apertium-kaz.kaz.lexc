@@ -1769,9 +1769,9 @@ LEXICON NUM-ROMAN
 
 %<num%>%<ord%>: # ;
 
-LEXICON LTR
-
-%<ltr%>: # ;
+!LEXICON LTR
+!
+!%<ltr%>: # ;
 
 !LEXICON DIGITLEX
 !
@@ -1944,9 +1944,9 @@ Z:Z GUESS-QUEUE ;
 !! See apertium-kaz's documentation at https://apertium.github.io/apertium-kaz/
 !! for more information.
 
-<( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
-   ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы |
-   ъ | э | ю | я )> LTR ;
+!<( а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н |
+!   ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы |
+!   ъ | э | ю | я )> LTR ;
 
 
 LEXICON Common
@@ -1964,7 +1964,36 @@ IC:IC%{э%}%{с%} N1 ; ! "индекс-каталог"
 iс:iс V-IV ; !"Use/MT"
 iш% жүргізетін:iш% жүргізетін N1 ; !
 ! maybe should be treated with a transfer rule
-<(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
+
+!<(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
+
+C NUM-ROMAN ; ! ""
+D NUM-ROMAN ; ! ""
+DC NUM-ROMAN ; ! ""
+I NUM-ROMAN ; ! ""
+II NUM-ROMAN ; ! ""
+III NUM-ROMAN ; ! ""
+IV NUM-ROMAN ; ! ""
+V NUM-ROMAN ; ! ""
+VI NUM-ROMAN ; ! ""
+VII NUM-ROMAN ; ! ""
+VIII NUM-ROMAN ; ! ""
+IX NUM-ROMAN ; ! ""
+L NUM-ROMAN ; ! ""
+M NUM-ROMAN ; ! ""
+X NUM-ROMAN ; ! ""
+XI NUM-ROMAN ; ! ""
+XII NUM-ROMAN ; ! ""
+XIII NUM-ROMAN ; ! ""
+XIV NUM-ROMAN ; ! ""
+XV NUM-ROMAN ; ! ""
+XVI NUM-ROMAN ; ! ""
+XVII NUM-ROMAN ; ! ""
+XVIII NUM-ROMAN ; ! ""
+XIX NUM-ROMAN ; ! ""
+XX NUM-ROMAN ; ! ""
+XXI NUM-ROMAN ; ! ""
+
 MRI:MRI N1 ; !"Use/MT"
              ! no, it's attr of ақыры adv; see above
 ! not a verb?  should be dealt with via transfer
