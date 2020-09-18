@@ -13,8 +13,8 @@
 
   <mode name="kaz-morph" install="yes">
     <pipeline>
-      <program name="hfst-proc -w">
-        <file name="kaz.automorf.hfst"/>
+      <program name="lt-proc -w">
+        <file name="kaz.automorf.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -54,8 +54,8 @@
 
   <mode name="kaz-tagger" install="yes">
     <pipeline>
-      <program name="hfst-proc -w">
-        <file name="kaz.automorf.hfst"/>
+      <program name="lt-proc -w">
+        <file name="kaz.automorf.bin"/>
       </program>
       <program name="cg-proc -1">
         <file name="kaz.rlx.bin"/>
@@ -77,8 +77,8 @@
 
   <mode name="kaz-disam" install="yes">
     <pipeline>
-      <program name="hfst-proc -w">
-        <file name="kaz.automorf.hfst"/>
+      <program name="lt-proc -w">
+        <file name="kaz.automorf.bin"/>
       </program>
       <program name="cg-conv -a -l" />
       <program name="vislcg3 -g">
