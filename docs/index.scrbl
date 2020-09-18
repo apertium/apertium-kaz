@@ -1,5 +1,14 @@
 #lang scribble/manual
 
+@; DOCS ARE COMPILED LIKE THIS:
+@; DOCSFOR=TARUEN make docs
+@;                      or
+@; DOCSFOR=APERTIUM make docs
+@;
+@; TOOD this has to be done by Github actions automatically, depending on
+@; whether it is a fork or upstream.
+@; Alternative: provide base url on the command line.
+
 @require[scribble/core
          scribble/html-properties
          scriblib/footnote]
@@ -309,13 +318,13 @@ and are perfectly parsed (with the caveat that temporarily we use
 @tt{Makefile.am} and @tt{apertium-kaz.kaz.lexc} taken from
 @hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{apertium@bold{pp}-kaz}).
 
-Parsing the first 2 sentences (lines 0-24 in the @tt{puupankki.kaz.conllu}
+Parsing the first 2 sentences (lines 0-26 in the @tt{puupankki.kaz.conllu}
 file) with CG parser and evaluating its output:
 
 @verbatim{
-apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
-<(head -n 24 texts/puupankki/puupankki.kaz.conllu) \
-<(head -n 24 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+python3 ~/conll18_ud_eval_lax.py --verbose \
+<(head -n 26 texts/puupankki/puupankki.kaz.conllu) \
+<(head -n 26 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
 cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
@@ -337,47 +346,13 @@ LAS        |    100.00 |    100.00 |    100.00 |    100.00
 CLAS       |    100.00 |    100.00 |    100.00 |    100.00
 MLAS       |     92.31 |     92.31 |     92.31 |     92.31
 BLEX       |     92.31 |     92.31 |     92.31 |     92.31
-
-}
-
-Parsing the first 5 sentences (lines 0-55 in the @tt{puupankki.kaz.conllu}
-file) with CG parser and evaluating its output:
-
-@verbatim{
-
-apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
-<(head -n 55 texts/puupankki/puupankki.kaz.conllu) \
-<(head -n 55 texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
-sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
-cg-conv -la | apertium-retxt | vislcg3 -g apertium-kaz.kaz.rlx | \
-python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
-python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2> /dev/null | \
-python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
-
-Metric     | Precision |    Recall |  F1 Score | AligndAcc
------------+-----------+-----------+-----------+-----------
-Tokens     |    100.00 |    100.00 |    100.00 |
-Sentences  |    100.00 |    100.00 |    100.00 |
-Words      |    100.00 |    100.00 |    100.00 |
-UPOS       |    100.00 |    100.00 |    100.00 |    100.00
-XPOS       |    100.00 |    100.00 |    100.00 |    100.00
-UFeats     |     97.50 |     97.50 |     97.50 |     97.50
-AllTags    |     97.50 |     97.50 |     97.50 |     97.50
-Lemmas     |     97.50 |     97.50 |     97.50 |     97.50
-UAS        |     77.50 |     77.50 |     77.50 |     77.50
-LAS        |     77.50 |     77.50 |     77.50 |     77.50
-CLAS       |     76.67 |     76.67 |     76.67 |     76.67
-MLAS       |     73.33 |     73.33 |     73.33 |     73.33
-BLEX       |     73.33 |     73.33 |     73.33 |     73.33
-
-
 }
 
 To evaluate the CG parser on entire treebank we'd of course pass entire
 treebank through it:
 
 @verbatim{
-apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose \
+python3 ~/conll18_ud_eval_lax.py --verbose \
 <(cat texts/puupankki/puupankki.kaz.conllu) \
 <(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-tagger | \
@@ -388,20 +363,19 @@ python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
-Tokens     |     97.67 |     96.00 |     96.83 |
-Sentences  |     93.06 |     95.90 |     94.45 |
-Words      |     94.78 |     95.45 |     95.11 |
-UPOS       |     82.39 |     82.97 |     82.68 |     86.93
-XPOS       |     82.76 |     83.34 |     83.05 |     87.31
-UFeats     |     78.69 |     79.25 |     78.97 |     83.03
-AllTags    |     75.65 |     76.19 |     75.92 |     79.82
-Lemmas     |     85.94 |     86.54 |     86.24 |     90.67
-UAS        |     34.95 |     35.20 |     35.08 |     36.88
-LAS        |     27.38 |     27.57 |     27.47 |     28.88
-CLAS       |     33.80 |     28.84 |     31.12 |     30.54
-MLAS       |     28.24 |     24.10 |     26.01 |     25.52
-BLEX       |     30.50 |     26.02 |     28.08 |     27.56
-
+Tokens     |     97.08 |     95.32 |     96.19 |
+Sentences  |     93.22 |     95.80 |     94.49 |
+Words      |     94.19 |     94.90 |     94.54 |
+UPOS       |     86.43 |     87.08 |     86.75 |     91.76
+XPOS       |     86.87 |     87.53 |     87.20 |     92.23
+UFeats     |     81.37 |     81.98 |     81.67 |     86.39
+AllTags    |     79.16 |     79.76 |     79.46 |     84.04
+Lemmas     |     87.79 |     88.46 |     88.12 |     93.21
+UAS        |     34.98 |     35.25 |     35.11 |     37.14
+LAS        |     28.38 |     28.59 |     28.48 |     30.13
+CLAS       |     35.30 |     29.88 |     32.36 |     31.81
+MLAS       |     30.49 |     25.81 |     27.96 |     27.48
+BLEX       |     32.65 |     27.64 |     29.94 |     29.43
 }
 
 Adding the statistical
@@ -409,7 +383,7 @@ Adding the statistical
 into the pipeline improves results, so this should be your default pipeline:
 
 @verbatim{
-apertium-kaz$ python3 ~/conll18_ud_eval_lax.py --verbose <(cat texts/puupankki/puupankki.kaz.conllu) <(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
+python3 ~/conll18_ud_eval_lax.py --verbose <(cat texts/puupankki/puupankki.kaz.conllu) <(cat texts/puupankki/puupankki.kaz.conllu | grep "# text = " | \
 sed 's/# text = //g' | apertium-destxt -n | apertium -f none -d . kaz-morph | \
 cg-conv -la | apertium-retxt | python3 ~/src/sourceforge-apertium/branches/kaz-tagger/kaz_tagger.py | vislcg3 -g apertium-kaz.kaz.rlx | \
 python3 ../ud-scripts/vislcg3-to-conllu.py "" 2> /dev/null | \
@@ -418,20 +392,19 @@ python3 ../ud-scripts/conllu-nospaceafter.py 2> /dev/null )
 
 Metric     | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
-Tokens     |     97.67 |     96.00 |     96.83 |
-Sentences  |     93.06 |     95.90 |     94.45 |
-Words      |     96.87 |     95.66 |     96.26 |
-UPOS       |     82.67 |     81.64 |     82.15 |     85.34
-XPOS       |     82.86 |     81.83 |     82.34 |     85.54
-UFeats     |     80.36 |     79.36 |     79.86 |     82.96
-AllTags    |     77.25 |     76.29 |     76.77 |     79.75
-Lemmas     |     92.10 |     90.95 |     91.52 |     95.08
-UAS        |     37.10 |     36.64 |     36.87 |     38.30
-LAS        |     28.69 |     28.33 |     28.51 |     29.61
-CLAS       |     34.02 |     30.15 |     31.97 |     31.84
-MLAS       |     30.10 |     26.67 |     28.28 |     28.16
-BLEX       |     33.02 |     29.26 |     31.03 |     30.89
-
+Tokens     |     97.08 |     95.32 |     96.19 |
+Sentences  |     93.22 |     95.80 |     94.49 |
+Words      |     96.28 |     95.11 |     95.69 |
+UPOS       |     86.96 |     85.90 |     86.43 |     90.32
+XPOS       |     87.25 |     86.18 |     86.71 |     90.61
+UFeats     |     83.83 |     82.81 |     83.32 |     87.07
+AllTags    |     81.27 |     80.28 |     80.77 |     84.40
+Lemmas     |     91.87 |     90.75 |     91.31 |     95.42
+UAS        |     37.36 |     36.90 |     37.13 |     38.80
+LAS        |     29.93 |     29.57 |     29.75 |     31.09
+CLAS       |     36.85 |     31.61 |     34.03 |     33.55
+MLAS       |     33.46 |     28.71 |     30.90 |     30.47
+BLEX       |     35.82 |     30.73 |     33.08 |     32.62
 }
 
 To parse (hand-)tagged texts with udpipe:
