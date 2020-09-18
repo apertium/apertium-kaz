@@ -250,9 +250,25 @@ Loading UDPipe model: done.
 3       місал   місал   NOUN    n       Case=Nom        0       root    _       SpacesAfter=\n
 }
 
+If you are interesed in only parsing with @tt{udpipe} (i.e. input text is
+already tokenised and tagged), you can do the following:
+
+@verbatim{
+
+cat <tagged.txt> | python3 ../ud-scripts/vislcg3-to-conllu-nodeps.py "<source>"
+2> /dev/null | python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2>
+/dev/null | udpipe --parse kaz.udpipe > /tmp/out
+
+}
+
+
 More information on training UDPipe models can be found in
 @hyperlink["https://wiki.apertium.org/wiki/UDPipe"]{this} article on Apertium's
 wiki.
+
+A minor question is whether features being in connlu format or not plays any
+role (assuming that they are in the same format when training udpipe and when
+using it, of course).
 
 @section{A Constraint Grammar-based Universal Dependencies parser for Kazakh
 (experimental)}
@@ -314,9 +330,7 @@ No guarantees are given at this point as regards the scores obtained in such a
 way. The only thing we can tell is that if we take only the first handful
 sentences from the treebank and evaluate CG parser's output on them, we get
 100% LAS score, as we should, since we know that they were covered by CG rules
-and are perfectly parsed (with the caveat that temporarily we use
-@tt{Makefile.am} and @tt{apertium-kaz.kaz.lexc} taken from
-@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{apertium@bold{pp}-kaz}).
+and are perfectly parsed.
 
 Parsing the first 2 sentences (lines 0-26 in the @tt{puupankki.kaz.conllu}
 file) with CG parser and evaluating its output:
@@ -407,19 +421,33 @@ MLAS       |     33.46 |     28.71 |     30.90 |     30.47
 BLEX       |     35.82 |     30.73 |     33.08 |     32.62
 }
 
-To parse (hand-)tagged texts with udpipe:
+@margin-note{A note for maintainers: switching to @tt{hfst-proc -w
+kaz.automorf.hfst} from @tt{lt-proc -w kaz.automorf.bin} in the @tt{kaz-tagger}
+mode drops the numbers dramatically, and I'm not yet sure why that is.}
+
+If we overwrite @tt{apertium-kaz.kaz.lexc} and @tt{Makefile.am} of
+@tt{apertium-kaz} with the eponymous, work-in-progress files from
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{apertium@bold{pp}-kaz}
+and then recompile @tt{apertium-kaz} by running @tt{make}, for the above
+command we get the following results:
 
 @verbatim{
-
-cat <tagged.txt> | python3 ../ud-scripts/vislcg3-to-conllu-nodeps.py "<source>"
-2> /dev/null | python3 ../ud-scripts/conllu-feats.py apertium-kaz.kaz.udx 2>
-/dev/null | udpipe --parse kaz.udpipe > /tmp/out
-
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |     97.67 |     96.00 |     96.83 |
+Sentences  |     93.06 |     95.90 |     94.45 |
+Words      |     96.89 |     95.73 |     96.31 |
+UPOS       |     83.19 |     82.19 |     82.69 |     85.86
+XPOS       |     83.40 |     82.40 |     82.90 |     86.08
+UFeats     |     80.67 |     79.71 |     80.19 |     83.26
+AllTags    |     77.64 |     76.71 |     77.17 |     80.13
+Lemmas     |     92.15 |     91.05 |     91.60 |     95.11
+UAS        |     37.47 |     37.02 |     37.24 |     38.67
+LAS        |     29.63 |     29.28 |     29.46 |     30.59
+CLAS       |     35.51 |     31.41 |     33.34 |     33.12
+MLAS       |     31.56 |     27.91 |     29.62 |     29.43
+BLEX       |     34.42 |     30.45 |     32.31 |     32.11
 }
-
-A minor question is whether features being in connlu format or not plays any
-role (assuming that they are in the same format when training udpipe and when
-using it, of course).
 
 @section{Extending @tt{apertium-kaz}}
 
