@@ -210,7 +210,7 @@
 # text = Астанада барлық қажетті жабдықтармен жабдықталған ірі медициналық орталықтар бар.
 # labels = checked_IFS
 1	Астанада	Астана	PROPN	np	Case=Loc	9	obl	_	_
-2	барлық	барлық	ADJ	adj	_	4	amod	_	_
+2	барлық	барлық	DET	det	PronType=Qnt	4	det	_	_
 3	қажетті	қажетті	ADJ	adj	_	4	amod	_	_
 4	жабдықтармен	жабдық	NOUN	n	Case=Ins|Number=Plur	5	obl	_	_
 5	жабдықталған	жабдықта	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	8	acl:relcl	_	_
@@ -974,7 +974,7 @@
 # text = Бұл барлық әкімдер мен ауыл шаруашылығы тауар өндірушілерінің міндеті.
 # labels = checked_IFS
 1	Бұл	бұл	PRON	prn	Case=Nom|PronType=Dem	9	nsubj	_	_
-2	барлық	барлық	ADJ	adj	_	3	amod	_	_
+2	барлық	барлық	DET	det	PronType=Qnt	3	det	_	_
 3	әкімдер	әкім	NOUN	n	Case=Nom|Number=Plur	9	nmod:poss	_	_
 4	мен	мен	CCONJ	cnjcoo	_	8	cc	_	_
 5	ауыл	ауыл	NOUN	n	Case=Nom	6	nmod:poss	_	_
@@ -1493,7 +1493,7 @@
 2	Саммитке	саммит	NOUN	n	Case=Dat	3	nmod	_	_
 3	әзірлік	әзірлік	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	жөніндегі	жөн	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	6	amod	_	_
-5	барлық	барлық	ADJ	adj	_	6	amod	_	_
+5	барлық	барлық	DET	det	PronType=Qnt	6	det	_	_
 6	мәселені	мәселе	NOUN	n	Case=Acc	7	obj	_	_
 7	шешеміз	шеш	VERB	v	Mood=Ind|Number=Plur|Person=1|Tense=Aor|VerbForm=Fin	8	ccomp	_	_
 8	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	9	advcl	_	_
@@ -1562,7 +1562,7 @@
 # sent_id = akorda-random.tagged.txt:122:2186
 # text = Барлық құқық қорғау жүйесі жұмысының сапасын арттыру қажет.
 # labels = checked_IFS
-1	Барлық	барлық	ADJ	adj	_	4	amod	_	_
+1	Барлық	барлық	DET	det	PronType=Qnt	4	det	_	_
 2	құқық	құқық	NOUN	n	Case=Nom	3	obj	_	_
 3	қорғау	қорға	VERB	v	Case=Nom|VerbForm=Ger	4	acl	_	_
 4	жүйесі	жүйе	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
@@ -1774,7 +1774,7 @@
 # sent_id = akorda-random.tagged.txt:140:2481
 # text = Барлық министрлер Президент идеясымен келісті.
 # labels = checked_IFS
-1	Барлық	барлық	ADJ	adj	_	2	amod	_	_
+1	Барлық	барлық	DET	det	PronType=Qnt	2	det	_	_
 2	министрлер	министр	NOUN	n	Case=Nom|Number=Plur	5	nsubj	_	_
 3	Президент	президент	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	идеясымен	идея	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	5	obl	_	_
@@ -2379,7 +2379,7 @@
 # text = - Барлық аталған мәселелер бойынша Президент нақты тапсырмалар берді.
 # labels = checked_IFS
 1	-	-	PUNCT	guio	_	9	punct	_	_
-2	Барлық	барлық	ADJ	adj	_	4	amod	_	_
+2	Барлық	барлық	DET	det	PronType=Qnt	4	det	_	_
 3	аталған	ата	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
 4	мәселелер	мәселе	NOUN	n	Case=Nom|Number=Plur	9	obl	_	_
 5	бойынша	бойынша	ADP	post	_	4	case	_	_
@@ -3070,7 +3070,7 @@
 # labels = checked_IFS
 1	Президент	президент	NOUN	n	Case=Nom	6	nsubj	_	_
 2	бізді	біз	PRON	prn	Case=Acc|Number=Plur|Person=1|PronType=Prs	6	obj	_	_
-3	барлық	барлық	ADJ	adj	_	4	amod	_	_
+3	барлық	барлық	DET	det	PronType=Qnt	4	det	_	_
 4	бағыт	бағыт	NOUN	n	Case=Nom	6	obl	_	_
 5	бойынша	бойынша	ADP	post	_	4	case	_	_
 6	қолдады	қолда	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
