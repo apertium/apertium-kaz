@@ -236,7 +236,7 @@
 # labels = checked_IFS
 1	Қазір	қазір	ADV	adv	_	11	advmod	_	_
 2	1	1	NUM	num	NumType=Card	3	compound	_	_
-3	млрд.	млрд.	NOUN	abbr	_	5	nummod	_	_
+3	млрд.	млрд.	NUM	num	NumType=Card	5	nummod	_	_
 4	АҚШ	АҚШ	PROPN	np	Case=Nom	5	nmod:poss	_	_
 5	долларына	доллар	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod	_	_
 6	дейінгі	дейін	ADP	post	Case=Nom	5	case	_	_
@@ -340,7 +340,7 @@
 # text = Конкурсқа қатысуға 296 кәсіпорын ниет білдірген.
 # labels = checked_IFS
 1	Конкурсқа	конкурс	NOUN	n	Case=Dat	2	obl	_	_
-2	қатысуға	қат	VERB	v	Case=Dat|VerbForm=Ger|Voice=Coop	6	advcl	_	_
+2	қатысуға	қатыс	VERB	v	Case=Dat|VerbForm=Ger	6	advcl	_	_
 3	296	296	NUM	num	NumType=Card	4	nummod	_	_
 4	кәсіпорын	кәсіпорын	NOUN	n	Case=Nom	6	nsubj	_	_
 5	ниет	ниет	NOUN	n	Case=Nom	6	obj	_	_
@@ -404,7 +404,7 @@
 5	Назарбаев	Назарбаев	PROPN	np	Case=Nom|Gender=Masc	4	flat:name	_	_
 6	бірқатар	бірқатар	DET	det	PronType=Qnt	7	det	_	_
 7	Заңдарға	заң	NOUN	n	Case=Dat|Number=Plur	9	obl	_	_
-8	қол	қол	X	x	_	9	dep	_	_
+8	қол	қол	NOUN	n	Case=Nom	9	obj	_	_
 9	қойды	қой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
@@ -552,7 +552,7 @@
 6	сапары	сапар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 7	Теміртау	Теміртау	PROPN	np	Case=Nom	8	nmod:poss	_	_
 8	қаласында	қала	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	9	obl	_	_
-9	жалғасты	жалға	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Coop	0	root	_	SpaceAfter=No
+9	жалғасты	жалғаc	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:43:758
@@ -578,7 +578,7 @@
 6	,	,	PUNCT	cm	_	10	punct	_	_
 7	ал	ал	CCONJ	cnjcoo	_	10	cc	_	_
 8	Астанада	Астана	PROPN	np	Case=Loc	10	obl	_	_
-9	жұмыс	жұмыс	X	x	_	10	dep	_	_
+9	жұмыс	жұмыс	NOUN	n	Case=Nom	10	obj	_	_
 10	істейсіздер	істе	VERB	v	Mood=Ind|Number=Plur|Person=2|Polite=Form|Tense=Aor|VerbForm=Fin	4	conj	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
@@ -602,7 +602,7 @@
 1	Жұмыстың	жұмыс	NOUN	n	Case=Gen	2	nmod:poss	_	_
 2	ерекшелігі	ерекшелік	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	SpaceAfter=No
 3	-	-	PUNCT	guio	_	7	punct	_	SpaceAfter=No
-4	алынған	алын	VERB	v	Tense=Past|VerbForm=Part	5	acl:relcl	_	_
+4	алынған	ал	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
 5	нәтижелердің	нәтиже	NOUN	n	Case=Gen|Number=Plur	7	nmod:poss	_	_
 6	инновациялық	инновациялық	ADJ	adj	_	7	amod	_	_
 7	бағыты	бағыт	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
@@ -653,7 +653,7 @@
 2	жинақтарының	жинақ	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 4	2,2	2,2	NUM	num	NumType=Card	5	compound	_	_
-5	трлн.	трлн.	NOUN	abbr	_	6	nummod	_	_
+5	трлн.	трлн.	NUM	num	NumType=Card	6	nummod	_	_
 6	теңгеге	теңге	NOUN	n	Case=Dat	7	obl	_	_
 7	артты	арт	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
@@ -773,7 +773,7 @@
 # labels = checked_IFS
 1	Осы	осы	DET	det	PronType=Dem	2	det	_	_
 2	Жарлық	жарлық	NOUN	n	Case=Nom	8	nsubj	_	_
-3	қол	қол	X	x	_	4	dep	_	_
+3	қол	қол	NOUN	n	Case=Nom	4	nsubj	_	_
 4	қойылған	қой	VERB	v	Tense=Past|VerbForm=Part|Voice=Pass	5	acl:relcl	_	_
 5	күннен	күн	NOUN	n	Case=Abl	6	obl	_	_
 6	бастап	баста	VERB	v	Aspect=Perf|VerbForm=Conv	8	advcl	_	_
@@ -951,7 +951,7 @@
 7	,	,	PUNCT	cm	_	10	punct	_	_
 8	жаңа	жаңа	ADJ	adj	_	9	amod	_	_
 9	құрал-жабдық	құрал-жабдық	NOUN	n	Case=Nom|Number=Plur	10	nsubj	_	_
-10	алынған	алын	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+10	алынған	ал	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 11	.	.	PUNCT	sent	_	10	punct	_	_
 
 # sent_id = akorda-random.tagged.txt:75:1326
@@ -1032,7 +1032,7 @@
 2	басшысы	басшы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
 3	екі	екі	NUM	num	NumType=Card	4	nummod	_	_
 4	заңға	заң	NOUN	n	Case=Dat	6	obl	_	_
-5	қол	қол	X	x	_	6	dep	_	_
+5	қол	қол	NOUN	n	Case=Nom	6	obj	_	_
 6	қойды	қой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
@@ -2933,7 +2933,7 @@
 # labels = checked_IFS
 1	Жаңа	жаңа	ADJ	adj	_	2	amod	_	_
 2	кәсіпорындардың	кәсіпорын	NOUN	n	Case=Gen|Number=Plur	4	nsubj	_	_
-3	жұмыс	жұмыс	X	x	_	4	dep	_	_
+3	жұмыс	жұмыс	NOUN	n	Case=Nom	4	obj	_	_
 4	істеуі	істе	VERB	v	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	8	advcl	_	_
 5	үшін	үшін	ADP	post	_	4	case	_	_
 6	жаңа	жаңа	ADJ	adj	_	7	amod	_	_
@@ -9457,7 +9457,7 @@
 1	Жер	жер	NOUN	n	Case=Nom	2	nmod:poss	_	_
 2	көлемі	көлем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	5	nsubj	_	_
 3	1,648	1,648	NUM	num	NumType=Card	4	compound	_	_
-4	млн.	млн.	NOUN	abbr	_	5	nummod	_	_
+4	млн.	млн.	NUM	num	NumType=Card	5	nummod	_	_
 5	км²	км²	NOUN	abbr	_	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	sent	_	5	punct	_	_
 
@@ -9466,7 +9466,7 @@
 # labels = checked_IFS
 1	Халқы	халық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	4	nsubj	_	_
 2	65,2	65,2	NUM	num	NumType=Card	3	compound	_	_
-3	млн.	млн.	NOUN	abbr	_	4	nummod	_	_
+3	млн.	млн.	NUM	num	Numtype=Card	4	nummod	_	_
 4	адам	адам	NOUN	n	Case=Nom	0	root	_	_
 5	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
 6	1999	1999	NUM	num	NumType=Card,Ord	4	appos	_	SpaceAfter=No
@@ -9541,25 +9541,25 @@
 3	Мешхед	Мешхед	PROPN	np	Case=Nom	28	nmod	_	_
 4	(	(	PUNCT	lpar	_	6	punct	_	SpaceAfter=No
 5	1,5	1,5	NUM	num	NumType=Card	6	nummod	_	_
-6	млн.	млн.	NUM	num	NumType=Card,Ord	3	appos	_	SpaceAfter=No
+6	млн.	млн.	NUM	num	NumType=Card	3	appos	_	SpaceAfter=No
 7	)	)	PUNCT	rpar	_	6	punct	_	SpaceAfter=No
 8	,	,	PUNCT	cm	_	9	punct	_	_
 9	Исфаһан	Исфаһан	PROPN	np	Case=Nom	3	conj	_	_
 10	(	(	PUNCT	lpar	_	12	punct	_	SpaceAfter=No
 11	1	1	NUM	num	NumType=Card	12	nummod	_	_
-12	млн.	млн.	NUM	num	NumType=Card,Ord	9	appos	_	SpaceAfter=No
+12	млн.	млн.	NUM	num	NumType=Card	9	appos	_	SpaceAfter=No
 13	)	)	PUNCT	rpar	_	12	punct	_	SpaceAfter=No
 14	,	,	PUNCT	cm	_	15	punct	_	_
 15	Тебриз	Тебриз	PROPN	np	Case=Nom	3	conj	_	_
 16	(	(	PUNCT	lpar	_	18	punct	_	SpaceAfter=No
 17	852	852	NUM	num	NumType=Card	18	nummod	_	_
-18	мың	мың	NUM	num	NumType=Card,Ord	15	appos	_	SpaceAfter=No
+18	мың	мың	NUM	num	NumType=Card	15	appos	_	SpaceAfter=No
 19	)	)	PUNCT	rpar	_	18	punct	_	SpaceAfter=No
 20	,	,	PUNCT	cm	_	21	punct	_	_
 21	Шираз	Шираз	PROPN	np	Case=Nom	3	conj	_	_
 22	(	(	PUNCT	lpar	_	24	punct	_	SpaceAfter=No
 23	800	800	NUM	num	NumType=Card	24	nummod	_	_
-24	мың	мың	NUM	num	NumType=Card,Ord	21	appos	_	SpaceAfter=No
+24	мың	мың	NUM	num	NumType=Card	21	appos	_	SpaceAfter=No
 25	)	)	PUNCT	rpar	_	24	punct	_	_
 26	сияқты	сияқты	ADP	post	_	21	case	_	_
 27	ірі	ірі	ADJ	adj	_	28	amod	_	_
@@ -10763,7 +10763,7 @@
 10	одақтастық	одақтастық	NOUN	n	Case=Nom	12	nmod	_	_
 11	туралы	туралы	ADP	post	_	10	case	_	_
 12	шартқа	шарт	NOUN	n	Case=Dat	14	obl	_	_
-13	қол	қол	X	x	_	14	dep	_	_
+13	қол	қол	NOUN	n	Case=Nom	14	obj	_	_
 14	қойды	қой	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 15	.	.	PUNCT	sent	_	14	punct	_	_
 
@@ -11005,7 +11005,7 @@
 13	ауыр	ауыр	ADJ	adj	_	21	amod	_	_
 14	(	(	PUNCT	lpar	_	18	punct	_	SpaceAfter=No
 15	700	700	NUM	num	NumType=Card	16	compound	_	_
-16	млрд.	млрд.	NOUN	abbr	_	17	nummod	_	_
+16	млрд.	млрд.	NUM	num	NumType=Card	17	nummod	_	_
 17	АҚШ	АҚШ	PROPN	np	Case=Nom	18	nmod:poss	_	_
 18	долларынан	доллар	NOUN	n	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3	13	appos	_	_
 19	астам	астам	ADP	post	_	18	case	_	SpaceAfter=No
@@ -11066,7 +11066,7 @@
 14	жетіспеушілігінен	жет	VERB	v	Case=Abl|Number[psor]=Plur,Sing|Person[psor]=3|Polarity=Neg|VerbForm=Ger|Voice=Coop	11	conj	_	_
 15	толық	толық	ADJ	adj	_	16	amod	_	_
 16	қуатымен	қуат	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	18	obl	_	_
-17	жұмыс	жұмыс	X	x	_	18	dep	_	_
+17	жұмыс	жұмыс	NOUN	n	Case=Nom	18	obj	_	_
 18	істей	істе	VERB	v	Aspect=Imp|VerbForm=Conv	5	conj	_	_
 19	алмауда	ал	AUX	vaux	Case=Loc|Polarity=Neg|VerbForm=Ger	18	aux	_	SpaceAfter=No
 20	.	.	PUNCT	sent	_	18	punct	_	_
@@ -11129,7 +11129,7 @@
 3	жыл	жыл	NOUN	n	_	9	obl	_	_
 4	сайын	сайын	ADP	post	_	3	case	_	_
 5	16,3	16,3	NUM	num	NumType=Card	6	compound	_	_
-6	млрд.	млрд.	NOUN	abbr	_	7	nummod	_	_
+6	млрд.	млрд.	NUM	num	NumType=Card	7	nummod	_	_
 7	АҚШ	АҚШ	PROPN	np	Case=Nom	8	nmod:poss	_	_
 8	доллары	доллар	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 9	түседі	түс	VERB	v	Mood=Ind|Number=Plur|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -11141,7 +11141,7 @@
 1	Ұлттық	ұлттық	ADJ	adj	_	2	amod	_	_
 2	табыс	табыс	NOUN	n	Case=Nom	15	nsubj	_	_
 3	75	75	NUM	num	NumType=Card	4	compound	_	_
-4	млрд.	млрд.	NOUN	abbr	_	6	nummod	_	_
+4	млрд.	млрд.	NUM	num	NumType=Card	6	nummod	_	_
 5	АҚШ	АҚШ	PROPN	np	Case=Nom	6	compound	_	_
 6	доллар	доллар	NOUN	n	Case=Nom	7	nmod:poss	_	_
 7	көлемінде	көлем	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	0	root	_	SpaceAfter=No
@@ -11166,7 +11166,7 @@
 6	жұмыссыздық	жұмыссыздық	NOUN	n	Case=Nom	0	root	_	_
 7	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
 8	3,5	3,5	NUM	num	NumType=Card	9	compound	_	_
-9	млн.	млн.	NOUN	abbr	_	10	nummod	_	_
+9	млн.	млн.	NUM	num	NumType=Card	10	nummod	_	_
 10	адам	адам	NOUN	n	Case=Nom	6	parataxis	_	SpaceAfter=No
 11	)	)	PUNCT	rpar	_	10	punct	_	SpaceAfter=No
 12	.	.	PUNCT	sent	_	6	punct	_	_
@@ -12394,7 +12394,7 @@
 2	үш	үш	NUM	num	NumType=Card	4	nummod	_	_
 3	экспозициялық	экспозициялық	ADJ	adj	_	4	amod	_	_
 4	зал	зал	NOUN	n	Case=Nom	6	nsubj	_	_
-5	жұмыс	жұмыс	X	x	_	6	dep	_	_
+5	жұмыс	жұмыс	NOUN	n	Case=Nom	6	obj	_	_
 6	істейді	істе	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	0	root	_	SpaceAfter=No
 7	.	.	PUNCT	sent	_	6	punct	_	_
 
@@ -12834,7 +12834,7 @@
 3	бөлімінің	бөлім	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 4	бастығы	бастық	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	advcl	_	_
 5	болып	бол	AUX	v	Aspect=Perf|VerbForm=Conv	4	cop	_	_
-6	жұмыс	жұмыс	X	x	_	7	dep	_	_
+6	жұмыс	жұмыс	NOUN	n	Case=Nom	7	obj	_	_
 7	істеді	істе	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
 
