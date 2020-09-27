@@ -701,9 +701,9 @@
 # labels = checked_IFS
 1	–	–	PUNCT	guio	_	6	punct	_	_
 2	Біз	біз	PRON	prn	Case=Nom|Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_
-3	жаттығулар	жаттығу	NOUN	n	Case=Nom|Number=Plur	4	nmod:poss	_	_
+3	жаттығулар	жаттық	VERB	v	Case=Nom|Number=Plur|VerbForm=Ger	4	nmod:poss	_	_
 4	барысын	барыс	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	6	obj	_	_
-5	мұқият	мұқият	ADJ	adj	_	6	advmod	_	_
+5	мұқият	мұқият	ADV	adj	_	6	advmod	_	_
 6	бақылап	бақыла	VERB	v	Aspect=Perf|VerbForm=Conv	0	root	_	_
 7	отырдық	отыр	AUX	vaux	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin	6	aux	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	6	punct	_	_
@@ -3772,7 +3772,7 @@
 # text = Сондай-ақ жаттығу залы мен қысқы бақ бар.
 # labels = checked_IFS
 1	Сондай-ақ	сондай-ақ	CCONJ	cnjcoo	_	7	cc	_	_
-2	жаттығу	жаттығу	NOUN	n	Case=Nom	3	nmod:poss	_	_
+2	жаттығу	жаттық	VERB	v	Case=Nom|VerbForm=Ger	3	nmod:poss	_	_
 3	залы	зал	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	7	nsubj	_	_
 4	мен	мен	CCONJ	cnjcoo	_	6	cc	_	_
 5	қысқы	қысқы	ADJ	adj	_	6	amod	_	_
