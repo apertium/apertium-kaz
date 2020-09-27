@@ -23,8 +23,6 @@
 @title[#:version "0.1.0"]{@tt{Apertium-kaz}: a Morphological Transducer and
 Disambiguator for Kazakh}
 
-@margin-note{WARNING: this is an early draft.}
-
 What follows is the documentation for @tt{apertium-kaz} -- a morphological
 transducer and disambiguator for Kazakh. First draft of this documentation was
 written, or, rather, assembled from various writings on
@@ -115,7 +113,80 @@ sudo apt-get -f install apertium-all-dev
 
 See the aforementioned page for details.
 
+Once @tt{Apertium Core} is installed, you should clone @tt{apertium-kaz} running
+
+@verbatim{git clone @(if (equal? (getenv "DOCSFOR") "TARUEN")
+"https://github.com/taruen/apertium-kaz.git"
+"https://github.com/apertium/apertium-kaz.git")}
+
+and then compile it running
+
+@verbatim{
+cd apertium-kaz
+./autogen.sh
+make}
+
+Some of the experiments described in this documentation require you to catch an
+extended lexicon for @tt{apertium-kaz} and an accompanying makefile from
+@hyperlink["https://taruen.com/apertiumpp/apertiumpp-kaz/"]{@tt{apertium@bold{pp}-kaz}}. Concretely,
+you need to fetch @tt{apertium-kaz.kaz.lexc} and @tt{Makefile.am} files from
+@tt{apertium@bold{pp}-kaz}, overwrite @tt{apertium-kaz}'s
+@tt{apertium-kaz.kaz.lexc} and @tt{Makefile.am} with them, and then recompile
+it by running
+
+@verbatim{
+./autogen.sh
+make}
+
+
 @section{Usage. Modes}
+
+Assuming that you are in the directory @tt{apertium-kaz}, this is how it's
+used:
+
+@verbatim{
+echo "Сәлем! Бұл бір мысал." | apertium -n -d . <mode>
+}
+
+or
+
+@verbatim{
+cat your-text-file.txt | apertium -n -d . <mode>
+}
+
+where @tt{mode} is one of the following: @tt{kaz-morph}, @tt{kaz-tagger} or
+@tt{kaz-disam}.
+
+Mode is nothing else than a shorthand name for a relatively long chain of
+commands (a ``pipeline''), which is defined in the @tt{modes.xml} file (or in
+the @tt{modes} directory, which appears once you compile @tt{apertium-kaz}). In
+other words, you can see which commmands with which options are run when you
+pass a particular mode to the @tt{-d} opiton of @tt{apertium}. If you need
+that, you can create your own pipelines, using the already defined modes as an
+example.
+
+If you're interesed in part-of-speech tagged text, then the @tt{kaz-tagger}
+mode is probably what you need.
+
+By default, @tt{apertium} adds a sentence terminator aka period to the end of
+each line. The @tt{-n} option prevents that.
+
+@tt{apertium} itself and the underlying commands that it makes use of (like
+@tt{lt-proc}, @tt{lt-comp}, @tt{apertium-destxt} etc.) come with manual pages,
+which you can read with the usual @tt{man} (or @tt{info}) command on the
+terminal:
+
+@verbatim{man apertium}
+
+If you don't like providing the @tt{-d} option all the time, you can install
+the compiled @tt{apertium-kaz} by running @tt{sudo make install}. Then you
+should be able to simply run
+
+@verbatim{
+echo "Сәлем! Бұл бір мысал." | apertium -n <mode>
+}
+
+in any directory.
 
 @section{Annotated data}
 
