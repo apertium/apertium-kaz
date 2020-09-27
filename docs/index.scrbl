@@ -23,9 +23,11 @@
 @title[#:version "0.1.0"]{@tt{Apertium-kaz}: a Morphological Transducer and
 Disambiguator for Kazakh}
 
-What follows is the documentation for @tt{apertium-kaz} -- a morphological
-transducer and disambiguator for Kazakh. First draft of this documentation was
-written, or, rather, assembled from various writings on
+What follows is the documentation for @(when (equal? (getenv "DOCSFOR") "TARUEN")
+@hyperlink["https://github.com/taruen/apertium-kaz"]{Taruen's fork of})
+@hyperlink["https://github.com/apertium/apertium-kaz"]{@tt{apertium-kaz}} -- a
+morphological transducer and disambiguator for Kazakh. First draft of this
+documentation was written, or, rather, assembled from various writings on
 @hyperlink["https://wiki.apertium.org"]{Apertium's wiki} and then extended with
 more details by @hyperlink["http://github.com/IlnarSelimcan"]{IFS} on
 September-October 2018 for members of the `Deep Learning for Sequential Models
