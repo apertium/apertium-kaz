@@ -162,7 +162,7 @@ where @tt{mode} is one of the following: @tt{kaz-morph}, @tt{kaz-tagger} or
 Mode is nothing else than a shorthand name for a relatively long chain of
 commands (a ``pipeline''), which is defined in the @tt{modes.xml} file (or in
 the @tt{modes} directory, which appears once you compile @tt{apertium-kaz}). In
-other words, you can see which commmands with which options are run when you
+other words, you can see which commands with which options are run when you
 pass a particular mode to the @tt{-d} opiton of @tt{apertium}. If you need
 that, you can create your own pipelines, using the already defined modes as an
 example.
