@@ -662,7 +662,7 @@
 # text = Ол солай бола береді деп ойлаймын.
 # labels = checked_IFS
 1	Ол	ол	PRON	prn	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
-2	солай	солай	ADV	adv	_	5	ccomp	_	_
+2	солай	сол	ADV	prn	PronType=Dem	5	ccomp	_	_
 3	бола	бол	AUX	v	Aspect=Imp|VerbForm=Conv	2	cop	_	_
 4	береді	бер	AUX	vaux	Mood=Ind|Number=Sing|Person=3|Tense=Aor|VerbForm=Fin	2	aux	_	_
 5	деп	де	VERB	v	Aspect=Perf|VerbForm=Conv	6	advcl	_	_
@@ -5570,7 +5570,7 @@
 2	қалай	қалай	ADV	adv	PronType=Int	3	advmod	_	_
 3	шықты	шық	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	8	advcl	_	SpaceAfter=No
 4	,	,	PUNCT	cm	_	3	punct	_	_
-5	солай	сол	PRON	prn	PronType=Dem	8	mark	_	_
+5	солай	сол	ADV	prn	PronType=Dem	8	mark	_	_
 6	қасқырлардың	қасқыр	NOUN	n	Case=Gen|Number=Plur	7	nmod:poss	_	_
 7	қарасы	қара	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	8	nsubj	_	_
 8	өше	өш	VERB	v	Aspect=Imp|VerbForm=Conv	0	root	_	_
