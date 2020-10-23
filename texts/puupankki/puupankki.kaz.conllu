@@ -958,7 +958,7 @@
 # text = «Үмітсіз» кредиттердің үлесі – 7,2 пайызға дейін арта түскен.
 # labels = checked_IFS
 1	«	«	PUNCT	lquot	_	2	punct	_	SpaceAfter=No
-2	Үмітсіз	үмітсыз	ADJ	adj	_	4	amod	_	SpaceAfter=No
+2	Үмітсіз	үмітсіз	ADJ	adj	_	4	amod	_	SpaceAfter=No
 3	»	»	PUNCT	rquot	_	2	punct	_	_
 4	кредиттердің	кредит	NOUN	n	Case=Gen|Number=Plur	5	nmod:poss	_	_
 5	үлесі	үлес	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
@@ -1166,7 +1166,7 @@
 # sent_id = akorda-random.tagged.txt:93:1615
 # text = Содан кейін Мемлекет басшысы «Шапағат» коммуналдық базарында болды.
 # labels = checked_IFS
-1	Содан	содан	PRON	prn	Case=Abl|PronType=Dem	6	obl	_	_
+1	Содан	сол	PRON	prn	Case=Abl|PronType=Dem	6	obl	_	_
 2	кейін	кейін	ADP	post	_	1	case	_	_
 3	Мемлекет	мемлекет	NOUN	n	Case=Nom	4	nmod:poss	_	_
 4	басшысы	басшы	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nsubj	_	_
@@ -1325,7 +1325,7 @@
 4	табыстары	табыс	NOUN	n	Case=Nom|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	8	obj	_	_
 5	мен	мен	CCONJ	cnjcoo	_	6	cc	_	_
 6	жетістіктерін	жетістік	NOUN	n	Case=Acc|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	4	conj	_	_
-7	жіті	жіті	ADJ	adj	_	8	advmod	_	_
+7	жіті	жіті	ADV	adj	_	8	advmod	_	_
 8	бақылап	бақыла	VERB	v	Aspect=Perf|VerbForm=Conv	0	root	_	_
 9	отырмыз	отыр	AUX	vaux	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	8	aux	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	8	punct	_	_
