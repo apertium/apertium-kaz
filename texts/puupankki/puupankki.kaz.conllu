@@ -1046,7 +1046,7 @@
 5	,	,	PUNCT	cm	_	3	punct	_	_
 6	-	-	PUNCT	guio	_	7	punct	_	_
 7	деді	де	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
-8	Г.	Г.	NOUN	abbr	_	7	nsubj	_	_
+8	Г.	Г.	PROPN	np	Case=Nom	7	nsubj	_	_
 9	Марченко	Марченко	PROPN	np	Case=Nom	8	flat:name	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	7	punct	_	_
 
@@ -1714,7 +1714,7 @@
 # text = Қазақстандағы ЮНЕСКО тұрақты даму жобасымен айналысады.
 # labels = checked_IFS
 1	Қазақстандағы	Қазақстан	PROPN	np	Case=Loc	2	amod	_	_
-2	ЮНЕСКО	ЮНЕСКО	NOUN	abbr	_	6	nsubj	_	_
+2	ЮНЕСКО	ЮНЕСКО	PROPN	np	Case=Nom	6	nsubj	_	_
 3	тұрақты	тұрақ	ADJ	adj	_	4	amod	_	_
 4	даму	даму	NOUN	n	Case=Nom	5	nmod:poss	_	_
 5	жобасымен	жоба	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	6	obl	_	_
@@ -4034,7 +4034,7 @@
 # labels = checked_IFS
 1	1939	1939	NUM	num	NumType=Ord	2	amod	_	_
 2	ж.	ж.	NOUN	abbr	_	8	obl	_	_
-3	Қ.	Қ.	NOUN	abbr	_	8	nsubj	_	_
+3	Қ.	Қ.	PROPN	np	Case=Nom	8	nsubj	_	_
 4	Жұмалиев	Жұмалиев	PROPN	np	Case=Nom|Gender=Masc	3	flat:name	_	_
 5	Махамбет	Махамбет	PROPN	np	Case=Nom|Gender=Masc	4	flat:name	_	_
 6	өлеңдерінің	өлең	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	7	nmod:poss	_	_
@@ -4118,7 +4118,7 @@
 # sent_id = wikipedia-news.tagged.txt:6:110
 # text = УЕФА 1996 жылдан бергі футзал тарихында медаль алған алғашқы дебютант ел.
 # labels = checked_IFS
-1	УЕФА	УЕФА	NOUN	abbr	_	11	nsubj	_	_
+1	УЕФА	УЕФА	PROPN	np	Case=Nom	11	nsubj	_	_
 2	1996	1996	NUM	num	NumType=Ord	3	amod	_	_
 3	жылдан	жыл	NOUN	n	Case=Abl	11	obl	_	_
 4	бергі	бері	ADV	adv	Case=Nom	6	amod	_	_
@@ -10833,7 +10833,7 @@
 4	тәуелсіздігін	тәуелсіздік	NOUN	n	Case=Acc|Number[psor]=Plur,Sing|Person[psor]=3	5	obj	_	_
 5	күшейтуге	күшейт	VERB	v	Case=Dat|VerbForm=Ger	6	advcl	_	_
 6	тырысқан	тырыс	VERB	v	Tense=Past|VerbForm=Part	9	acl	_	_
-7	М.	М.	NOUN	abbr	_	9	nmod:poss	_	_
+7	М.	М.	PROPN	np	Case=Nom	9	nmod:poss	_	_
 8	Мосаддық	Мосаддық	PROPN	np	Case=Nom	7	flat:name	_	_
 9	үкіметі	үкімет	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	10	nsubj	_	_
 10	құлатылды	құлатыл	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -10844,8 +10844,8 @@
 # labels = checked_IFS
 1	Иран	Иран	PROPN	np	Case=Nom	2	nmod:poss	_	_
 2	шаһы	шаһ	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	6	nmod:poss	_	_
-3	М.	М.	NOUN	abbr	_	2	appos	_	_
-4	Р.	Р.	NOUN	abbr	_	3	flat:name	_	_
+3	М.	М.	PROPN	np	Case=Nom	2	appos	_	_
+4	Р.	Р.	PROPN	np	Case=Nom	3	flat:name	_	_
 5	Пехлевидің	Пехлеви	PROPN	np	Case=Gen	3	flat:name	_	_
 6	көмегімен	көмек	NOUN	n	Case=Ins|Number[psor]=Plur,Sing|Person[psor]=3	12	obl	_	_
 7	АҚШ	АҚШ	PROPN	np	Case=Nom	12	nsubj	_	_
@@ -10948,7 +10948,7 @@
 4	дінбасыларының	дінбасы	NOUN	n	Case=Gen|Number=Plur|Number[psor]=Plur,Sing|Person[psor]=3	5	nmod:poss	_	_
 5	көсемі	көсем	NOUN	n	Case=Nom|Number[psor]=Plur,Sing|Person[psor]=3	9	nsubj	_	_
 6	аятолла	аятолла	NOUN	n	Case=Nom	5	appos	_	_
-7	Р.	Р.	NOUN	abbr	_	6	flat:name	_	_
+7	Р.	Р.	PROPN	np	Case=Nom	6	flat:name	_	_
 8	Хомейни	Хомейни	PROPN	np	Case=Nom	7	flat:name	_	_
 9	келді	кел	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
 10	.	.	PUNCT	sent	_	9	punct	_	_
@@ -11275,13 +11275,13 @@
 6	(	(	PUNCT	lpar	_	9	punct	_	SpaceAfter=No
 7	1993	1993	NUM	num	NumType=Ord	8	amod	_	_
 8	ж.	ж.	NOUN	abbr	_	9	orphan	_	_
-9	А.	А.	NOUN	abbr	_	4	appos	_	_
+9	А.	А.	PROPN	np	Case=Nom	4	appos	_	_
 10	Хашеми	Хашеми	PROPN	np	Case=Nom	9	flat:name	_	_
 11	Рафсанджани	Рафсанджани	PROPN	np	Case=Nom	9	flat:name	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	15	punct	_	_
 13	1998	1998	NUM	num	NumType=Ord	14	amod	_	_
 14	ж.	ж.	NOUN	abbr	_	15	orphan	_	_
-15	М.	М.	NOUN	abbr	_	9	conj	_	_
+15	М.	М.	PROPN	Case=Nom	_	9	conj	_	_
 16	Хатами	Хатами	PROPN	np	Case=Nom	15	flat:name	_	SpaceAfter=No
 17	)	)	PUNCT	rpar	_	15	punct	_	_
 18	Қазақстанда	Қазақстан	PROPN	np	Case=Loc	0	root	_	_
@@ -11359,14 +11359,14 @@
 14	21	21	NUM	num	NumType=Ord	10	appos	_	SpaceAfter=No
 15	)	)	PUNCT	rpar	_	14	punct	_	_
 16	кезінде	кез	NOUN	n	Case=Loc|Number[psor]=Plur,Sing|Person[psor]=3	31	obl	_	_
-17	А.	А.	NOUN	abbr	_	31	nsubj	_	_
+17	А.	А.	PROPN	np	Case=Nom	31	nsubj	_	_
 18	Фарахани	Фарахани	PROPN	np	Case=Nom	17	flat:name	_	SpaceAfter=No
 19	,	,	PUNCT	cm	_	20	punct	_	_
-20	М.	М.	NOUN	abbr	_	17	conj	_	_
+20	М.	М.	PROPN	np	_	17	conj	_	_
 21	Кермани	Кермани	PROPN	np	Case=Nom	20	flat:name	_	SpaceAfter=No
 22	,	,	PUNCT	cm	_	23	punct	_	_
-23	М.	М.	NOUN	abbr	_	17	conj	_	_
-24	Т.	Т.	NOUN	abbr	_	23	flat:name	_	_
+23	М.	М.	PROPN	np	Case=Nom	17	conj	_	_
+24	Т.	Т.	PROPN	np	Case=Nom	23	flat:name	_	_
 25	Бехар	Бехар	PROPN	np	Case=Nom	23	flat:name	_	SpaceAfter=No
 26	,	,	PUNCT	cm	_	28	punct	_	_
 27	т.б.	т.б.	ADJ	abbr	_	28	amod	_	_
@@ -11992,21 +11992,21 @@
 2	кинематографиясының	кинематография	NOUN	n	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	3	nmod:poss	_	_
 3	дамуына	дамы	VERB	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3|VerbForm=Ger	23	advcl	_	_
 4	реж.	реж.	NOUN	abbr	_	23	nsubj	_	_
-5	И.	И.	NOUN	abbr	_	4	appos	_	_
+5	И.	И.	PROPN	np	Case=Nom	4	appos	_	_
 6	Кушан	Кушан	PROPN	np	Case=Nom	5	flat:name	_	SpaceAfter=No
 7	,	,	PUNCT	cm	_	8	punct	_	_
-8	М.	М.	NOUN	abbr	_	6	conj	_	_
+8	М.	М.	PROPN	np	Case=Nom	6	conj	_	_
 9	Мисагие	Мисагие	PROPN	np	Case=Nom	8	flat:name	_	SpaceAfter=No
 10	,	,	PUNCT	cm	_	11	punct	_	_
 11	Мохтасем	Мохтасем	PROPN	np	Case=Nom	6	conj	_	SpaceAfter=No
 12	,	,	PUNCT	cm	_	13	punct	_	_
-13	М.	М.	NOUN	abbr	_	6	conj	_	_
+13	М.	М.	PROPN	np	Case=Nom	6	conj	_	_
 14	Мохсени	Мохсени	PROPN	np	Case=Nom	13	flat:name	_	SpaceAfter=No
 15	,	,	PUNCT	cm	_	16	punct	_	_
-16	С.	С.	NOUN	abbr	_	6	conj	_	_
+16	С.	С.	PROPN	np	Case=Nom	6	conj	_	_
 17	Ясеми	Ясеми	PROPN	np	Case=Nom	16	flat:name	_	SpaceAfter=No
 18	,	,	PUNCT	cm	_	19	punct	_	_
-19	Ш.	Ш.	NOUN	abbr	_	6	conj	_	_
+19	Ш.	Ш.	PROPN	np	Case=Nom	6	conj	_	_
 20	Рафия	Рафия	PROPN	np	Case=Nom	19	flat:name	_	_
 21	елеулі	елеулі	ADJ	adj	_	22	amod	_	_
 22	үлес	үлес	NOUN	n	Case=Nom	23	obj	_	_
@@ -12651,7 +12651,7 @@
 2	,	,	PUNCT	cm	_	1	punct	_	_
 3	Алашордасының	Алашорда	PROPN	np	Case=Gen|Number[psor]=Plur,Sing|Person[psor]=3	4	nmod:poss	_	_
 4	бастығына	бастық	NOUN	n	Case=Dat|Number[psor]=Plur,Sing|Person[psor]=3	7	obl	_	_
-5	Ғ.	Ғ.	NOUN	abbr	_	7	nsubj	_	_
+5	Ғ.	Ғ.	PROPN	np	Case=Nom	7	nsubj	_	_
 6	Бөкейхан	Бөкейхан	PROPN	np	Case=Nom|Gender=Masc	5	flat:name	_	_
 7	сайланды	сайла	VERB	v	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
 8	.	.	PUNCT	sent	_	7	punct	_	_
