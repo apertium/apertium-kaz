@@ -125,22 +125,34 @@ LIST NP = np ;
 LIST Np = np ;
 LIST IJ = ij ;
 LIST Prop = np ;
+LIST PropAnt = (np ant) ;
+LIST PropCog = (np cog) ;
 LIST V = v ;
 LIST Vaux = vaux ;
 LIST Cop = cop ;
 LIST Det = det ;
 LIST CC = cnjcoo ;
 LIST CS = cnjsub ;
+LIST Cnjadv = cnjadv ;
 LIST Interj = ij ;
 LIST Pres = pres ;
 LIST Num = num ;
 LIST Post = post ;
 LIST Postadv = postadv ;
 LIST FinalClitic = mod_ass mod_emo mod qst emph ;
+LIST Qst = qst ;
+LIST Mod_ass = mod_ass ;
+LIST Mod_emo = mod_emo ;
+LIST Emph = emph ;
 LIST Sent = sent ;
 LIST Cm = cm ;
 LIST Adv = adv ;
+LIST Lpar = lpar ;
+LIST Rpar = rpar ;
+LIST Parenth = lpar rpar ;
+LIST Lquot = lquot ;
 LIST Rquot = rquot ;
+LIST Quot = lquot rquot ;
 LIST Excl = "!" ;
 LIST Guio = guio ;
 LIST Opening = lquot lpar ;
@@ -174,6 +186,9 @@ LIST VAUX = vaux ;
 LIST Pers = pers ;
 LIST Interr = itg ;
 LIST Dem = dem ; 
+LIST Ref = Ref ; 
+LIST Qnt = qnt ; 
+LIST Ind = ind ;
 
 LIST IV = iv ; 
 LIST TV = tv ;
@@ -217,7 +232,8 @@ LIST Acc = acc ;
 LIST Abl = abl ;
 LIST Loc = loc ;
 LIST Ins = ins ;
-LIST EQU = equ ;
+LIST Equ = equ ;
+LIST CasesWoNum = gen dat acc abl loc ins equ ;
 
 LIST P1 = p1 ;
 LIST P2 = p2 ;
@@ -235,14 +251,17 @@ SET CenturyGen = Century + Gen ;
 LIST Year = "жылғы"i "жыл"i ; 
 SET YearGen = Year + Gen ; 
 LIST Colon = ":" ;
+LIST Degen = "<деген>"i ;
 LIST Qayda = "қайда"i ;
 LIST MONTH = "қаңтар"i "ақпан"i "наурыз"i "сәуір"i "мамыр"i "маусым"i "шілде"i "тамыз"i "қыркүйек"i "қазан"i "қараша"i "желтоқсан"i ;
 LIST QUANTITY = "есе"i "пайыз"i ;
+LIST NumberWords = "мың"i "млн"i "млн."i "миллин"i "млрд"i "млрд."i "миллиард"i "трлн"i "трлн."i "триллион"i ;
 	
 # Noun sets 
 # ==============
 
-SET NGDAALI = Nom | Dat | Dat | Acc | Abl | Loc | Ins ;
+SET NGDAALI = Nom | Gen | Dat | Acc | Abl | Loc | Ins ;
+SET NEmph = (n emph) ;
 
 # Adjective sets
 # ==============
@@ -256,12 +275,24 @@ SET A1-Nom = A/Advl | A/Subst ;
 
 LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt pih ;
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
+LIST Ger = ger ;
 LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
 SET V-NotGerund = V - Gerund ;
+LIST Ger_past = ger_past ;
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
+LIST Prc_impf = prc_impf ;
+LIST Gna_impf = gna_impf ;
+LIST Gpr_impf = gpr_impf ;
+LIST Gpr_past = gpr_past ;
+LIST Gpr_pot = gpr_pot ;
+LIST Prc_perf = prc_perf ;
+LIST Gna_perf = gna_perf ;
 LIST Prc-vol = prc_vol ;
+LIST Impfs = prc_impf gna_impf gpr_impf ;
 LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
 LIST VerbalAdjective = gpr_past gpr_fut gpr_pot gpr_impf ;
+LIST Gpr_past = gpr_past ;
+LIST Cond = gna_cond prc_cond ;
 LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
 LIST V-IV = (v iv) ;
 LIST V-TV = (v tv) ;
@@ -303,6 +334,7 @@ LIST AdjSubst = (adj subst) ;
 LIST NNom = (n nom) ;
 LIST NDat = (n dat) ;
 LIST NAcc = (n acc) ;
+LIST NGen = (n gen) ;
 LIST NNomPl = (n nom pl) ;
 LIST NPronPersNom = (n nom) (prn pers nom);
 LIST NPronPersNomPl = (n nom pl) (prn pers nom pl);
@@ -315,7 +347,10 @@ LIST VAcc = (v acc) ;
 LIST NNpAttr = (n attr) (np attr) ;
 LIST NPx3sp = (n px3sp) ;
 LIST Px3sp = px3sp ;
+LIST CcMn = ("мен" cnjcoo) ;
+LIST CcJn = ("және" cnjcoo) ;
 LIST CcDa = ("да" cnjcoo) ;
+LIST PostadvDa = ("да" postadv) ;
 
 # Universal Dependencies
 # ======================
@@ -326,6 +361,7 @@ LIST @amod = @amod ;       #
 LIST @advmod = @advmod ; # An adverbial modifier
 LIST @case = @case ;     # The relation of an adposition to its head
 LIST @acl = @acl ;       # A clause which modifies a nominal
+LIST @acl:relcl = @acl:relcl ;
 LIST @nmod = @nmod ;     # Nominal modifier 
 LIST @dobj = @dobj ;     # The direct object of the sentence
 LIST @punct = @punct ;   # Any punctuation
@@ -338,8 +374,14 @@ LIST @aux = @aux ;
 LIST @parataxis = @parataxis ;
 LIST @det = @det ;
 LIST @csubj = @csubj ;
+LIST @appos = @appos ;
 LIST @nummod = @nummod ;
+LIST @compound = @compound ;
+LIST @cc = @cc ;
+LIST @conj = @conj ;
+LIST @discourse = @discourse ;
 LIST @dep = @dep ;       # Any remaining dependency
+LIST @flat:name = @flat:name ;
 
 # FIXME Dublicating UPPERCASE 
 LIST @ROOT = @root ;     # The root of the sentence, often a finite verb
@@ -348,6 +390,7 @@ LIST @AMOD = @amod ;       #
 LIST @ADVMOD = @advmod ; # An adverbial modifier
 LIST @CASE = @case ;     # The relation of an adposition to its head
 LIST @ACL = @acl ;       # A clause which modifies a nominal
+LIST @ACL:RELCL = @acl:relcl ;
 LIST @NMOD = @nmod ;     # Nominal modifier 
 LIST @DOBJ = @dobj ;     # The direct object of the sentence
 LIST @PUNCT = @punct ;   # Any punctuation
@@ -360,8 +403,13 @@ LIST @AUX = @aux ;
 LIST @PARATAXIS = @parataxis ;
 LIST @DET = @det ;
 LIST @CSUBJ = @csubj ;
+LIST @APPOS = @appos ;
 LIST @NUMMOD = @nummod ;
+LIST @COMPOUND = @compound ;
 LIST @CC = @cc ;
+LIST @CONJ = @conj ;
+LIST @DISCOURSE = @discourse ;
 LIST @DEP = @dep ;       # Any remaining dependency
 LIST @GOESWITH = @goeswith ;
+LIST @FLAT:NAME = @flat:name ;
 
