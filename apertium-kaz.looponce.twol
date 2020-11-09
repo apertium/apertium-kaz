@@ -4,16 +4,6 @@ Alphabet
  %<n%>
  %<nom%> %<acc%> %<dat%> %<abl%> %<loc%> %<ins%> %<gen%> %<sim%> %<equ%>
  %<px1sg%> %<px1pl%> %<px2sg%> %<px2pl%> %<px3sp%>
-
- %<subst%>
- %<pl%>
- %<attr%>
- %<cop%>
- %<aor%>
- %<p1%>
- %<pl%>
- %+
- %<emph%>
  
  ;
 
@@ -25,8 +15,18 @@ Possession = %<px1sg%> %<px1pl%> %<px2sg%> %<px2pl%> %<px3sp%> ;
 
 Rules
 
+"Testing"
+а:а <=> _ :* ;
+
 "Only allow two occurences of case morphology per form"
-Cases:0 /<= Cases: :* Cases: :* _ ;
+CaseX:CaseY /<= Cases: :* Cases: :* _ ;
+            where CaseX in Cases
+                  CaseY in Cases
+            matched ;
 
 "Only allow two occurences of possessive morphology per form"
-Possession:0 /<= Possession: :* Possession: :* _ ;
+PossX:PossY /<= Possession: :* Possession: :* _ ;
+            where CaseX in Possession
+                  CaseY in Possession
+            matched ;
+
