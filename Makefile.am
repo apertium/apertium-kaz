@@ -19,7 +19,8 @@ TARGETS_COMMON =			\
 	$(LANG1SCRIPT1).autogen.bin \
 	$(LANG1SCRIPT2).autogen.bin \
 	$(LANG1).autopgen.bin		\
-	$(LANG1).rlx.bin
+	$(LANG1).rlx.bin				\
+	.deps/$(LANG1).LR.clear.hfst
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -74,6 +75,18 @@ TARGETS_COMMON =			\
 # This is the normative transducer, using the standard lexc and the full twol file
 .deps/$(LANG1).LR.hfst: .deps/$(LANG1).LR.lexc.hfst .deps/$(LANG1).EL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).EL.lexc.hfst -2 .deps/$(LANG1).twol.hfst | hfst-minimise -o $@
+
+# This twol file removes forms with:
+# - more than two possessive tags
+# - more than two case tags
+.deps/kaz.looponce.hfst: apertium-kaz.looponce.twol
+	hfst-twolc $< -o $@
+
+# This creates the transducer with the forms mentioned for looponce.twol removed
+.deps/$(LANG1).LR.clear.hfst: .deps/$(LANG1).LR.hfst .deps/kaz.looponce.hfst
+	hfst-invert $< -o .deps/$(LANG1).LR.inverted.hfst
+	hfst-compose-intersect -1 .deps/$(LANG1).LR.inverted.hfst -2 .deps/kaz.looponce.hfst -o .deps/$(LANG1).LR.clear-inverted.hfst
+	hfst-invert .deps/$(LANG1).LR.clear-inverted.hfst -o $@
 
 # The full Cyrillic analyser is a combination of the normative analyser and the error analyser.
 .deps/$(LANG1SCRIPT1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/$(LANG1).LR.err.hfst

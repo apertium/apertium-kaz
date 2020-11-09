@@ -3,6 +3,7 @@
 # directory.
 
 LANGUAGE=kaz
+TRANSDUCER=../../.deps/$(LANGUAGE).LR.hfst
 
 
 all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
@@ -39,7 +40,7 @@ all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 .deps/%.prefixes: .deps/%.prefix.upper .deps/any-symbol.hfst
 	hfst-concatenate -1 $< -2 .deps/any-symbol.hfst -o $@
 
-.deps/$(LANGUAGE).automorf.hfst: ../../.deps/$(LANGUAGE).LR.hfst
+.deps/$(LANGUAGE).automorf.hfst: $(TRANSDUCER)
 	hfst-invert $< -o $@
 	#zcat $< | hfst-txt2fst > $@
 
