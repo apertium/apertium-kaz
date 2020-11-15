@@ -3,7 +3,7 @@
 # directory.
 
 LANGUAGE=kaz
-TRANSDUCER=../../.deps/$(LANGUAGE).LR.hfst
+TRANSDUCER=../../.deps/$(LANGUAGE).LR.clear.hfst
 
 
 all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
@@ -48,3 +48,6 @@ all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 
 %.txt.gz: .deps/%.hfst
 	hfst-fst2strings -c 1 $< | gzip -c > $@
+
+%.txt.zstd: .deps/%.hfst
+	hfst-fst2strings -c 1 $< | zstd -o $@
