@@ -246,9 +246,11 @@ apertium_kaz_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 EXTRA_TARGETS=
 
-if HAVE_HFSTOSPELL
+# Making .zhfst doesn't depend on hfst-ospell
+# 
+#if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
-endif # HAVE_HFSTOSPELL
+#endif # HAVE_HFSTOSPELL
 
 apertium_kaz_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS) $(LANG1).prob
 
