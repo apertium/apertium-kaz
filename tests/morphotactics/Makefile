@@ -3,10 +3,11 @@
 # directory.
 
 LANGUAGE=kaz
+TRANSDUCER=../../.deps/$(LANGUAGE).LR.clear.hfst
+
 
 all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 	A1.txt.gz \
-	V-TV-IR.txt.gz \
 	ADV.txt.gz ADV-ITG.txt.gz \
 	NUM.txt.gz NUM-ROMAN.txt.gz NUM-ITG.txt.gz \
 	NUM.txt.gz POST.txt.gz CNJ.txt.gz \
@@ -38,11 +39,15 @@ all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 .deps/%.prefixes: .deps/%.prefix.upper .deps/any-symbol.hfst
 	hfst-concatenate -1 $< -2 .deps/any-symbol.hfst -o $@
 
-.deps/$(LANGUAGE).automorf.hfst: ../../$(LANGUAGE).automorf.att.gz
-	zcat $< | hfst-txt2fst > $@
+.deps/$(LANGUAGE).automorf.hfst: $(TRANSDUCER)
+	hfst-invert $< -o $@
+	#zcat $< | hfst-txt2fst > $@
 
 .deps/%.hfst: .deps/%.prefixes .deps/$(LANGUAGE).automorf.hfst 
 	hfst-compose-intersect -1 .deps/$(LANGUAGE).automorf.hfst -2 $< -o $@
 
 %.txt.gz: .deps/%.hfst
 	hfst-fst2strings -c 1 $< | gzip -c > $@
+
+%.txt.zstd: .deps/%.hfst
+	hfst-fst2strings -c 1 $< | zstd -o $@

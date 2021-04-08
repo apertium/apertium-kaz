@@ -1,0 +1,32 @@
+Alphabet
+ А Ә Б В Г Ғ Д Е Ё Ж З И І Й К Қ Л М Н Ң О Ө П Р С Т У Ұ Ү Ф Х Һ Ц Ч Ш Щ Ь Ы Ъ Э Ю Я
+ а ә б в г ғ д е ё ж з и і й к қ л м н ң о ө п р с т у ұ ү ф х һ ц ч ш щ ь ы ъ э ю я
+ %<n%>
+ %<nom%> %<acc%> %<dat%> %<abl%> %<loc%> %<ins%> %<gen%> %<sim%> %<equ%>
+ %<px1sg%> %<px1pl%> %<px2sg%> %<px2pl%> %<px3sp%>
+ 
+ ;
+
+Sets
+
+Cases = %<nom%> %<acc%> %<dat%> %<abl%> %<loc%> %<ins%> %<gen%> %<sim%> %<equ%> ;
+Possession = %<px1sg%> %<px1pl%> %<px2sg%> %<px2pl%> %<px3sp%> ;
+
+
+Rules
+
+"Testing"
+а:а <=> _ :* ;
+
+"Only allow two occurences of case morphology per form"
+CaseX:CaseY /<= Cases: :* Cases: :* _ ;
+            where CaseX in Cases
+                  CaseY in Cases
+            matched ;
+
+"Only allow two occurences of possessive morphology per form"
+PossX:PossY /<= Possession: :* Possession: :* _ ;
+            where CaseX in Possession
+                  CaseY in Possession
+            matched ;
+

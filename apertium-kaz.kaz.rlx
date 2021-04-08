@@ -367,6 +367,11 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 # POS marking
 # ===========
 
+REMOVE A IF
+        (0 ("қол"i))
+        (1 ("жу"i))
+       ;
+
 "<қандай>" REMOVE N ;
 
 SELECT N IF
@@ -693,6 +698,14 @@ REMOVE SUB:1 P3 IF
 ;
 ## "Біз [0]қуаныштымыз."
 
+
+REMOVE A IF
+       (0 Subst)
+       (0 Pron)
+       (0 NGDAALI)
+;
+## "[0]түгелімен."
+		
 
 
 # Postpositions

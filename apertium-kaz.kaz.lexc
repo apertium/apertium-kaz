@@ -1890,7 +1890,7 @@ LASTDIGIT-REST ; ! Use/Circ
 
 !LEXICON Guesser
 !
-!<(а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н | ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы | ъ | э | ю | я)+> N1 ; 
+!<[а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н | ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы | ъ | э | ю | я]+> N1 ; 
 
 LEXICON NP-UNK 
 
@@ -1898,7 +1898,7 @@ LEXICON NP-UNK
 
 LEXICON GUESS-QUEUE
 
-<(a | b | c | d | e | f | g | h | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z)+> NP-UNK ;
+<[a | b | c | d | e | f | g | h | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z]+> NP-UNK ;
 
 LEXICON Guesser
 
@@ -1966,7 +1966,7 @@ iс:iс V-IV ; !"Use/MT"
 iш% жүргізетін:iш% жүргізетін N1 ; !
 ! maybe should be treated with a transfer rule
 
-!<(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
+!<[M | D | C | L | X | V | I]+> NUM-ROMAN ; ! ""
 
 C NUM-ROMAN ; ! ""
 D NUM-ROMAN ; ! ""
@@ -26239,7 +26239,7 @@ retroactive:retroactive A1 ; !"Use/MT"
 түгелде:түгелде V-TV ; ! "to check"
 түгелдеу:түгелдеу N1 ; ! ""
 түгел:түгел A1 ; ! "all"
-түгел:түгел PRON-QNT ; ! "all"
+түгел:түгел PRON-QNT ; ! "all" in e.g. түгелімен = entirely
 түгендеп% шық:түгендеп% шық V-TV ; ! "Use/MT"
 түгенде:түгенде V-TV ; !
 түгендеу:түгендеу N1 ; ! ""
