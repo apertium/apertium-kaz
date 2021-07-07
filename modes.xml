@@ -65,8 +65,8 @@
 
   <mode name="kaz-debug">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="kaz.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="kaz.automorf.hfst"/>
       </program>
       <program name="cg-conv -a -l" />
       <program name="vislcg3 --trace -g">

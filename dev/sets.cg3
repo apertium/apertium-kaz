@@ -1,0 +1,415 @@
+# ============================================================================ #
+#            A COMMENTARY ON FORMATTING OF MAJORITY OF RULES
+#              (read: a wannabe FORMATTING GUIDELINES)
+# ============================================================================ #
+
+# Lines do not exceed 79 characters.
+#
+# Rule layout
+# ===========
+#
+# There are two alternative layouts for writing a rule. An example for the
+# first one (of course the body of the rule won't be commented out):
+#
+#        # INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
+#        #        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
+#        #        бет<n><px3sp><loc><subst><nom>/$
+#        # OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$
+#                   ^бетіндегі/бет<n><px3sp><loc><attr>...$
+#         REMOVE V IF
+#                (0 PRE-N)
+#                (1C N)
+#        ;
+#        # any additional comments here (if necessary)
+#
+# An abstract example of the second layout:
+#
+#        # An explanation of what the rule does (if it's not obvious from
+#        # code!), a name or any other comment that clarifies its purpose
+#         SELECT ABC IF
+#                (0 DEF)
+#                (1 GHI)
+#        ;
+#        ## A sentence with the [0]form the rule was written for.
+#        ## (!) A corner-case-sentence: the rule mispredicted on it initially
+#        ## but was modified accordingly (additional constraints etc.); or the
+#        ## rule still mispredicts on it, but this kind of sentences aren't
+#        ## that frequent. (Alternatively, place the corner-case sentence on
+#        ## the same line as the additional constraint).
+#
+# The first layout is more appropriate when you come up with a rule inductively
+# (i.e. you see a sentence badly translated because of errors in disambiguation
+# and want to fix it), the second one when you arrived at it deductively. E.g:
+#
+#        # Participle appears immediately before a verb (verbal adverb doesn't)
+#         REMOVE Participle IF
+#                (NOT 1C V OR Vaux)
+#        ;
+#        ## Есік [0]ашып, ол үйге кірді.
+#
+# In context of apertium-kaz, the difference between a participle and a verbal
+# adverb is that participle immediately precedes a verb and verbal adverb
+# doesn't. We know this even without looking at tests, but it is a good idea
+# to back up the rule with a test case.
+#
+# Sometimes you can't fully disambiguate a form with only one rule. In that
+# case, several rules dealing with the same thing can be grouped together:
+#
+#         # What the rule does?
+#          SELECT ABC IF
+#                 (0 DEF)
+#                 (1 KLM)
+#         ;
+#          REMOVE XYZ IF
+#                 (0 DEF)
+#                 (1 NOP)
+#                 (2 QRS)
+#          ;
+#          ## Example sentences for both of the rules.
+#          ## Another example sentence.
+#
+# Where a rule is placed?
+# =======================
+
+#                                   Any context involved?
+#                                   /                   \
+#                                 YES                   NO
+#                                 /                       \
+#                 Disambiguates a particular wordform?   "Heuristics" section
+#                   /                         \          at the end of the file
+#                 YES                         NO
+#                 /                             \
+#     "Wordform/lemma specific rules"        Readings of
+#            section                        different POS?
+#                                           /           \
+#                                        YES            NO
+#                                        /                \
+#                                "POS marking"             \
+#                              at the beginning             \
+#                                                   Corresponding section
+#                                                   ("Verbs", "Adjectives" etc.)
+
+# ============================ #
+# END OF FORMATTING GUIDELINES #
+# ============================ #
+
+# ========== #
+# Delimiters #
+# ========== #
+
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" "<:>" ;
+
+SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
+
+# ============= #
+# Tags and sets #
+# ============= #
+
+SETS
+
+LIST BOS = (>>>) sent ;
+LIST EOS = (<<<) sent ;
+
+# First-level/Parts-of-speech tags
+# ================================
+
+LIST A = adj ;
+LIST Adj = adj ;
+LIST Adv = adv ;
+LIST Pron = prn ;
+LIST Pron-Pers = (prn pers) ;
+LIST Pron-Dem = (prn dem) ;
+LIST N = n ;
+LIST NP = np ;
+LIST Np = np ;
+LIST IJ = ij ;
+LIST Prop = np ;
+LIST PropAnt = (np ant) ;
+LIST PropCog = (np cog) ;
+LIST V = v ;
+LIST Vaux = vaux ;
+LIST Cop = cop ;
+LIST Det = det ;
+LIST CC = cnjcoo ;
+LIST CS = cnjsub ;
+LIST Cnjadv = cnjadv ;
+LIST Interj = ij ;
+LIST Pres = pres ;
+LIST Num = num ;
+LIST Post = post ;
+LIST Postadv = postadv ;
+LIST FinalClitic = mod_ass mod_emo mod qst emph ;
+LIST Qst = qst ;
+LIST Mod_ass = mod_ass ;
+LIST Mod_emo = mod_emo ;
+LIST Emph = emph ;
+LIST Sent = sent ;
+LIST Cm = cm ;
+LIST Adv = adv ;
+LIST Lpar = lpar ;
+LIST Rpar = rpar ;
+LIST Parenth = lpar rpar ;
+LIST Lquot = lquot ;
+LIST Rquot = rquot ;
+LIST Quot = lquot rquot ;
+LIST Excl = "!" ;
+LIST Guio = guio ;
+LIST Opening = lquot lpar ;
+LIST Abbr = abbr ;
+
+# FIXME Dublicating UPPERCASE 
+LIST N = n ;
+LIST CNJCOO = cnjcoo ;
+LIST POST = post ;
+LIST ADJ = adj ;
+LIST ADV = adv ;
+LIST SUBST = subst ;
+LIST NOM = nom ;
+LIST POST = post ;
+LIST ADVL = advl ;
+LIST V = v ;
+LIST TV = tv ;
+LIST IV = iv ;
+LIST COOP = coop ;
+LIST DET = det ;
+LIST QNT = qnt ;
+LIST EMPH = emph ;
+LIST ORD = ord ;
+LIST NUM = num ;
+LIST COP = cop ;
+LIST VAUX = vaux ;
+
+# POS sub-categories
+# ==================
+
+LIST Pers = pers ;
+LIST Interr = itg ;
+LIST Dem = dem ; 
+LIST Ref = Ref ; 
+LIST Qnt = qnt ; 
+LIST Ind = ind ;
+
+LIST IV = iv ; 
+LIST TV = tv ;
+
+LIST Ger = ger ;
+
+LIST Past = past ;
+LIST AOR = aor ;
+
+LIST Pass = pass ;
+LIST PASS = pass ;
+LIST Caus = caus ;
+LIST Coop = coop ;
+
+LIST Ord = ord ;
+
+LIST Top = top ;
+LIST Cog = cog ;
+LIST Ant = ant ;
+LIST Al = al ;
+LIST Org = org ;
+
+# "Syntactic" tags
+# ================
+
+LIST Advl = advl ;
+LIST Attr = attr ;
+LIST Subst = subst ;
+LIST N-LIKE = subst n np prn ; # Actually, see NOMINAL
+
+# Morphosyntactic properties   # if you find yourself embracing the same tag in
+# ==========================   # brackets over and over again, you may want to
+                               # add it here
+LIST Sg = sg ;
+LIST Pl = pl ;
+
+LIST Nom = nom ;
+LIST Gen = gen ;
+LIST Dat = dat ;
+LIST Acc = acc ;
+LIST Abl = abl ;
+LIST Loc = loc ;
+LIST Ins = ins ;
+LIST Equ = equ ;
+LIST CasesWoNum = gen dat acc abl loc ins equ ;
+
+LIST P1 = p1 ;
+LIST P2 = p2 ;
+LIST P3 = p3 ;
+
+LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
+
+LIST Imp = imp ;
+
+# Specific lexemes 
+# ==========================
+
+LIST Century = "ғасыр"i ;
+SET CenturyGen = Century + Gen ;
+LIST Year = "жылғы"i "жыл"i ; 
+SET YearGen = Year + Gen ; 
+LIST Colon = ":" ;
+LIST Degen = "<деген>"i ;
+LIST Qayda = "қайда"i ;
+LIST MONTH = "қаңтар"i "ақпан"i "наурыз"i "сәуір"i "мамыр"i "маусым"i "шілде"i "тамыз"i "қыркүйек"i "қазан"i "қараша"i "желтоқсан"i ;
+LIST QUANTITY = "есе"i "пайыз"i ;
+LIST NumberWords = "мың"i "млн"i "млн."i "миллин"i "млрд"i "млрд."i "миллиард"i "трлн"i "трлн."i "триллион"i ;
+	
+# Noun sets 
+# ==============
+
+SET NGDAALI = Nom | Gen | Dat | Acc | Abl | Loc | Ins ;
+SET NEmph = (n emph) ;
+
+# Adjective sets
+# ==============
+
+LIST A/Advl = (adj advl) ;
+LIST A/Subst = (adj subst nom) ;
+SET A1-Nom = A/Advl | A/Subst ;
+
+# Verb sets
+# =========
+
+LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt pih ;
+LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
+LIST Ger = ger ;
+LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
+SET V-NotGerund = V - Gerund ;
+LIST Ger_past = ger_past ;
+LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
+LIST Prc_impf = prc_impf ;
+LIST Gna_impf = gna_impf ;
+LIST Gpr_impf = gpr_impf ;
+LIST Gpr_past = gpr_past ;
+LIST Gpr_pot = gpr_pot ;
+LIST Prc_perf = prc_perf ;
+LIST Gna_perf = gna_perf ;
+LIST Prc-vol = prc_vol ;
+LIST Impfs = prc_impf gna_impf gpr_impf ;
+LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
+LIST VerbalAdjective = gpr_past gpr_fut gpr_pot gpr_impf ;
+LIST Gpr_past = gpr_past ;
+LIST Cond = gna_cond prc_cond ;
+LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
+LIST V-IV = (v iv) ;
+LIST V-TV = (v tv) ;
+
+LIST Err/Orth = err_orth ;
+
+# All possible word categories
+# ============================
+
+SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj | Num | ("\?") ;
+SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC | (attr) ;
+SET MARK =  Cm | ("\\") | ("\;") | ("\(") ;
+SET WORDMARK = WORD | MARK ;
+SET N-MOD = A | Det | Num | (n gen) | (prn gen) ;
+SET ADJ-MOD = Postadv | Adv ;
+SET NPMARK = N-MOD | ADJ-MOD ;
+SET NOMINAL = N | Prop | Pron | Subst | Gerund ;
+
+# Categories which cannot be part of a noun phrase
+# ================================================
+
+SET NPNH = WORDMARK - PRE-N ;
+SET NPNHA = WORDMARK - PRE-N - Adv ;
+SET NOT-ADV = WORDMARK - Adv ;
+
+# Sentence and clause barriers
+# ========
+
+SET S-BOUNDARY = CS | Interr | EOS ;
+LIST CLB = "," ":" ";" "(" ")" ;
+
+# Some tags
+# =========
+
+LIST VVauxSg = (v sg) (vaux sg) ;
+LIST VVauxPl = (v pl) (vaux pl) ;
+LIST CopSg = (cop sg) ;
+LIST AdjSubst = (adj subst) ;
+LIST NNom = (n nom) ;
+LIST NDat = (n dat) ;
+LIST NAcc = (n acc) ;
+LIST NGen = (n gen) ;
+LIST NNomPl = (n nom pl) ;
+LIST NPronPersNom = (n nom) (prn pers nom);
+LIST NPronPersNomPl = (n nom pl) (prn pers nom pl);
+LIST NpNom = (np nom) ;
+LIST VAor = (v aor) ;
+LIST VTv = (v tv) ;
+LIST VTvIfi = (v tv ifi) ;
+LIST VP1Pl = (v p1 pl) ;
+LIST VAcc = (v acc) ;
+LIST NNpAttr = (n attr) (np attr) ;
+LIST NPx3sp = (n px3sp) ;
+LIST Px3sp = px3sp ;
+LIST CcMn = ("мен" cnjcoo) ;
+LIST CcJn = ("және" cnjcoo) ;
+LIST CcDa = ("да" cnjcoo) ;
+LIST PostadvDa = ("да" postadv) ;
+
+# Universal Dependencies
+# ======================
+
+LIST @root = @root ;     # The root of the sentence, often a finite verb
+LIST @nsubj = @nsubj ;   # The nominal subject of the sentence
+LIST @amod = @amod ;       # 
+LIST @advmod = @advmod ; # An adverbial modifier
+LIST @case = @case ;     # The relation of an adposition to its head
+LIST @acl = @acl ;       # A clause which modifies a nominal
+LIST @acl:relcl = @acl:relcl ;
+LIST @nmod = @nmod ;     # Nominal modifier 
+LIST @dobj = @dobj ;     # The direct object of the sentence
+LIST @punct = @punct ;   # Any punctuation
+LIST @cop = @cop ;       # 
+LIST @nmod:poss = @nmod:poss ;
+LIST @obl = @obl ;
+LIST @obj = @obj ;
+LIST @advcl = @advcl ;
+LIST @aux = @aux ;
+LIST @parataxis = @parataxis ;
+LIST @det = @det ;
+LIST @csubj = @csubj ;
+LIST @appos = @appos ;
+LIST @nummod = @nummod ;
+LIST @compound = @compound ;
+LIST @cc = @cc ;
+LIST @conj = @conj ;
+LIST @discourse = @discourse ;
+LIST @dep = @dep ;       # Any remaining dependency
+LIST @flat:name = @flat:name ;
+
+# FIXME Dublicating UPPERCASE 
+LIST @ROOT = @root ;     # The root of the sentence, often a finite verb
+LIST @NSUBJ = @nsubj ;   # The nominal subject of the sentence
+LIST @AMOD = @amod ;       # 
+LIST @ADVMOD = @advmod ; # An adverbial modifier
+LIST @CASE = @case ;     # The relation of an adposition to its head
+LIST @ACL = @acl ;       # A clause which modifies a nominal
+LIST @ACL:RELCL = @acl:relcl ;
+LIST @NMOD = @nmod ;     # Nominal modifier 
+LIST @DOBJ = @dobj ;     # The direct object of the sentence
+LIST @PUNCT = @punct ;   # Any punctuation
+LIST @COP = @cop ;       # 
+LIST @NMOD:POSS = @nmod:poss ;
+LIST @OBL = @obl ;
+LIST @OBJ = @obj ;
+LIST @ADVCL = @advcl ;
+LIST @AUX = @aux ;
+LIST @PARATAXIS = @parataxis ;
+LIST @DET = @det ;
+LIST @CSUBJ = @csubj ;
+LIST @APPOS = @appos ;
+LIST @NUMMOD = @nummod ;
+LIST @COMPOUND = @compound ;
+LIST @CC = @cc ;
+LIST @CONJ = @conj ;
+LIST @DISCOURSE = @discourse ;
+LIST @DEP = @dep ;       # Any remaining dependency
+LIST @GOESWITH = @goeswith ;
+LIST @FLAT:NAME = @flat:name ;
+

@@ -1,0 +1,591 @@
+INCLUDE STATIC sets.cg3 ;
+
+LIST ADJ+ADVL = (adj advl) ;
+
+LIST <АСА> = "<аса>"i ;
+LIST <ІШІНДЕ> = "<ішінде>"i ;
+LIST <БЕЛСЕНЕ> = "<белсене>"i ;
+LIST <БҮГІНДЕ> = "<бүгінде>"i ;
+LIST <ДЕГЕН> = "<деген>"i ;
+LIST <ДЕНСАУЛЫҚ_САҚТАУ> = "<(денсаулық) (сақтау)>"ri ;
+LIST <ЕКІНШІ> = "<екінші>"i ;
+LIST <ЕРЕКШЕ> = "<ерекше>"i ;
+LIST <ЖАЛП> = "<жалп>"i ;
+LIST <ЖҰМЫС_ІСТЕ.*> = "<(жұмыс) ((істе).*)>"ri ; 
+LIST <ЛЫ> = "<лы>"i ;
+LIST <СОДАН_КЕЙІН> = "<(содан) (кейін)>"ri ;
+LIST <СОНДАЙ-АҚ> = "<сондай-ақ>"i ;
+LIST <СОНЫМЕН_ҚАТАР> = "<(сонымен) (қатар)>"ri ;
+LIST <СОҢЫНДА> = "<соңында>"i ;
+LIST <СЫЗ> = "<сыз>"i ;
+LIST <ТАБЫСТЫ> = "<табысты>"i ;
+LIST <ТЫЙЫМ_САЛ.*> = "<(тыйым) ((сал).*)>"ri ; 
+LIST <ҚАЙТА_ҚАРА.*> = "<(қайта) ((қара).*)>"ri ; 
+LIST <ҚАЛАС> = "<қалас>"i ;
+LIST <ҚОЛ_ҚОЙ.*> = "<(қол) ((қой).*)>"ri ; 
+LIST _РЕСМИ = " ресми"i ;
+LIST ІРІ = "ірі"i ;
+LIST ІС = "іс"i ;
+LIST АБАЙ = "абай"i ;
+LIST АЙГҮЛ = "айгүл"i ;
+LIST АЗ = "аз"i ;
+LIST АЛМАС = "алмас"i ;
+LIST АУ = "ау"i ;
+LIST АУЫ = "ауы"i ;
+LIST АШУ = "ашу"i ;
+LIST АҒАРТУШЫ = "ағартушы"i ;
+LIST БІЛ = "біл"i ;
+LIST БОЛЫПТЫ = "болыпты"i ;
+LIST БОЯУ = "бояу"i ;
+LIST ДЕЙ = "дей"i ;
+LIST ДҰРЫС = "дұрыс"i ;
+LIST Е = "е"i ;
+LIST ЕДІ = "еді"i ;
+LIST ЕКІ = "екі"i ;
+LIST ЕКЕН = "екен"i ;
+LIST ЕЛБАС = "елбас"i ;
+LIST ЕМЕС = "емес"i ;
+LIST ЕН = "ен"i ;
+LIST ЕШКІМ = "ешкім"i ;
+LIST ЖА = "жа"i ;
+LIST ЖАЗУШЫ = "жазушы"i ;
+LIST ЖАЛП = "жалп"i ;
+LIST ЖАЛПЫ = "жалпы"i ;
+LIST ЖАСАЛ = "жасал"i ;
+LIST ЖАСТАР = "жастар"i ;
+LIST ЖАТ = "жат"i ;
+LIST ЖАТТЫҒУ = "жаттығу"i ;
+LIST ЖАТЫР = "жатыр"i ;
+LIST ЖАҒУШЫ = "жағушы"i ;
+LIST ЖАҢА = "жаңа"i ;
+LIST ЖЕДЕЛ = "жедел"i ;
+LIST ЖЕКЕ = "жеке"i ;
+LIST ЖЕРГІЛІКТІ = "жергілікті"i ;
+LIST ЖОЙЫЛ = "жойыл"i ;
+LIST ЖОЛ = "жол"i ;
+LIST ЖОЛАУШЫ = "жолаушы"i ;
+LIST ЖОСПАРЛАН = "жоспарлан"i ;
+LIST ЖОҒАРЫ = "жоғары"i ;
+LIST ЖОҚ = "жоқ"i ;
+LIST ЖУЫҚ = "жуық"i ;
+LIST ЖЫЛУ = "жылу"i ;
+LIST ЖЫЛЫ = "жылы"i ;
+LIST ЖӘНЕ = "және"i ;
+LIST ЖӨН = "жөн"i ;
+LIST ЖӨНІНДЕ = "жөнінде"i ;
+LIST ЖӨНІНДЕГІ = "жөніндегі"i ;
+LIST ЗА = "за"i ;
+LIST ЗОР = "зор"i ;
+LIST ИРАН = "иран"i ;
+LIST КІМ = "кім"i ;
+LIST КЕЗІН = "кезін"i ;
+LIST КЕЗІНДЕ = "кезінде"i ;
+LIST КЕЗДЕ = "кезде"i ;
+LIST КЕЙ = "кей"i ;
+LIST КЕЙІН = "кейін"i ;
+LIST КЕЛ = "кел"i ;
+LIST КЕЛГЕН = "келген"i ;
+LIST КЕРЕК = "керек"i ;
+LIST КҮШТІ = "күшті"i ;
+LIST КӨЛІК = "көлік"i ;
+LIST КӨПТЕГЕН = "көптеген"i ;
+LIST КӨП = "көп"i ;
+LIST МАЛ = "мал"i ;
+LIST МЕ = "ме"i ;
+LIST МЕДИЦИНАЛЫҚ = "медициналық"i ;
+LIST МЕМЛЕКЕТТІК = "мемлекеттік"i ;
+LIST МИЛЛИОН = "МИЛЛИОН"i ;
+LIST МЛН = "млн"i ;
+LIST МЫНА = "мына"i ;
+LIST МЫҢ = "мың"i ;
+LIST МҮМКІН = "мүмкін"i ;
+LIST МӘСЕЛЕН = "мәселен"i ;
+LIST НАҚ = "нақ"i ;
+LIST НЕГІЗГІ = "негізгі"i ;
+LIST НЕМЕСЕ = "немесе"i ;
+LIST О = "о"i ;
+LIST ОДАҚ = "одақ"i ;
+LIST ОЛ = "ол"i ;
+LIST ОЛАЙ = "олай"i ;
+LIST ОН = "он"i ;
+LIST ОРА = "ора"i ;
+LIST ОРТА = "орта"i ;
+LIST ОСЫ = "осы"i ;
+LIST ОСЫНДАЙ = "осындай"i ;
+LIST ОТЫР = "отыр"i ;
+LIST ОҚУ = "оқу"i ;
+LIST ОҚУШЫ = "оқушы"i ;
+LIST ПЕН = "пен"i ;
+LIST РЕСМИ = "ресми"i ;
+LIST РЕТІНДЕ = "ретінде"i ;
+LIST САЙ = "сай"i ;
+LIST САЙЛАУ = "сайлау"i ;
+LIST САЙЛАУШЫ = "сайлаушы"i ;
+LIST САСАНИ = "сасани"i ;
+LIST СЕКІЛ = "секіл"i ;
+LIST СЕКІЛДІ = "секілді"i ;
+LIST СЕМІЗ = "семіз"i ;
+LIST СЕН = "сен"i ;
+LIST СИЯҚТЫ = "сияқты"i ;
+LIST СО = "со"i ;
+LIST СОЛ = "сол"i ;
+LIST СОНДЫҚТАН = "сондықтан"i ;
+LIST СОҒЫС = "соғыс"i ;
+LIST СОҚ = "соқ"i ;
+LIST СОҢ = "соң"i ;
+LIST СУ = "су"i ;
+LIST СӘЙКЕС = "сәйкес"i ;
+LIST ТА = "та"i ;
+LIST ТАБЫЛ = "табыл"i ;
+LIST ТАМАША = "тамаша"i ;
+LIST ТАРИХИ = "тарихи"i ;
+LIST ТАҒЫ = "тағы"i ;
+LIST ТАҢ = "таң"i ;
+LIST ТАҢДА = "таңда"i ;
+LIST ТЕГІН = "тегін"i ;
+LIST ТЕК = "тек"i ;
+LIST ТЕРЕҢ = "терең"i ;
+LIST ТЕҢ = "тең"i ;
+LIST ТИ = "ти"i ;
+LIST ТИІМДІ = "тиімді"i ;
+LIST ТИІС = "тиіс"i ;
+LIST ТИІСТІ = "тиісті"i ;
+LIST ТОЛЫҚ = "толық"i ;
+LIST ТӨТЕНШЕ = "төтенше"i ;
+LIST ТҰР = "тұр"i ;
+LIST ТҰРАҚТЫ = "тұрақты"i ;
+LIST ХАБАРЛА = "хабарла"i ;
+LIST ХАЛЫҚ = "халық"i ;
+LIST ХАЛЫҚАРАЛЫҚ = "халықаралық"i ;
+LIST ШІЛ = "шіл"i ;
+LIST ШЕТЕЛДІК = "шетелдік"i ;
+LIST ШЫҒЫС = "шығыс"i ;
+LIST ШЫҚ = "шық"i ;
+LIST ҚАЖЕТ = "қажет"i ;
+LIST ҚАЗІРГІ = "қазіргі"i ;
+LIST ҚАЗАҚ = "қазақ"i ;
+LIST ҚАЙТА = "қайта"i ;
+LIST ҚАЛ = "қал"i ;
+LIST ҚАЛА = "қала"i ;
+LIST ҚАЛҒАН = "қалған"i ;
+LIST ҚАН = "қан"i ;
+LIST ҚАНДАЙ = "ҚАНДАЙ"i ;
+LIST ҚАР = "қар"i ;
+LIST ҚАРАЙ = "қарай"i ;
+LIST ҚАРЖЫ = "қаржы"i ;
+LIST ҚАРС = "қарс"i ;
+LIST ҚАРСЫ = "қарсы"i ;
+LIST ҚАРСЫЛЫҚТЫ = "қарсылықты"i ;
+LIST ҚАРУ = "қару"i ;
+LIST ҚАТ = "қат"i ;
+LIST ҚАТА = "қата"i ;
+LIST ҚАТТЫ = "қатты"i ;
+LIST ҚАТЫСТЫ = "қатысты"i ;
+LIST ҚАШ = "қаш"i ;
+LIST ҚАШҚАН = "қашқан"i ;
+LIST ҚАҢТАР = "қаңтар"i ;
+LIST ҚОРҒАЛ = "қорғал"i ;
+LIST ҚОСЫМША = "қосымша"i ;
+LIST ҚҰР = "кұр"i ; # к sic
+LIST ҚҰРЫ = "құры"i ;
+LIST ҚҰРЫЛ = "құрыл"i ;
+LIST ҚҰТТЫҚТА = "құттықта"i ;
+LIST ҚҰШАҚТАС = "құшақтас"i ;
+LIST ҮЛКЕН = "үлкен"i ;
+LIST ҮШІН = "үшін"i ;
+LIST ҮШЕУ = "үшеу"i ;
+LIST ҰЛТТЫҚ = "ұлттық"i ;
+LIST ӘРІ = "әрі"i ;
+LIST ӨЗ = "өз"i ;
+LIST ӨЗІ = "өзі"i ;
+LIST ӨЗАРА = "өзара"i ;
+LIST ӨЗЕКТІ = "өзекті"i ;
+LIST ӨЙТКЕНІ = "өйткені"i ;
+LIST ӨН = "өн"i ;
+LIST ӨНДІРУШІ = "өндіруші"i ;
+LIST ӨТЕ = "өте"i ;
+LIST ӨТКЕН = "өткен"i ;
+LIST УАҚЫТША = "уақытша"i ;
+LIST ТІРКЕЛ = "тіркел"i ;
+LIST ТІРКЕЛГЕН = "тіркелген"i ;
+LIST САЛЫН = "салын"i ;
+LIST САЛЫНҒАН = "салынған"i ;
+LIST ОРНАЛАС = "орналас"i ;
+LIST ОРНАЛАСҚАН = "орналасқан"i ;
+LIST ОРАЛ = "орал"i ;
+LIST МҰНДАЙ = "мұндай"i ;
+LIST КЕТ = "кет"i ;
+LIST ЖИІ = "жиі"i ;
+LIST ЖАЙЛЫ = "жайлы"i ;
+LIST <БІЛГЕ> = "<білге>"i ;
+LIST САЙЫН = "сайын"i ;
+LIST ӨТКІЗ = "өткіз"i ;
+LIST ТЫҒЫЗ = "тығыз"i ;
+LIST ҚАТЫСУШЫ = "қатысушы"i ;
+LIST ОРТАША = "орташа"i ;
+LIST ТОПТАСҚАН = "топтасқан"i ;
+LIST СОЛАЙ = "солай"i ;
+LIST МҰҚИЯТ = "мұқият"i ;
+LIST ЕШҚАНДАЙ = "ешқандай"i ;
+LIST ЖІТІ = "жіті"i ;
+LIST НЕМЕНЕ = "немене"i ;
+
+LIST ROMAN = "<([IVXCLM]+)>"ri ;
+
+LIST ОВ-COG-UNK = "\\*(.*ов)"r ;
+LIST ОВА-COG-UNK = "\\*(.*ов)а>"r ;
+
+LIST LATIN = "<([a-z]+)>"ri ;
+
+SET ADJ+ADVL-NOT-ADV = ЖЫЛЫ | ЖАҢА | ҚАТЫСТЫ | ЖОҒАРЫ | КӨП | ҚАРСЫ | ЖЕКЕ |
+        СӘЙКЕС | ТҰРАҚТЫ | ТЕРЕҢ | ӨЗАРА | ҚАТТЫ | РЕСМИ | ЖЕДЕЛ |
+	ТОЛЫҚ | ТАМАША | ЖУЫҚ | ТИІМДІ | ТЕГІН | ДҰРЫС | ТӨТЕНШЕ | ӨЗЕКТІ |
+	УАҚЫТША | ЖИІ | ЖАЙЛЫ | ТЫҒЫЗ | МҰҚИЯТ | ЖІТІ ;
+
+SET NOT-TRANSITIVE = ЖАТ | КЕЛ | ҚАШ | ҚАЛ | ТҰР | ШЫҚ | ҚҰРЫ | ӨН | ЕН |
+	САЛЫН | ОРНАЛАС | ОРАЛ | КЕТ ;
+
+SET NOT-INTRANSITIVE = ҚҰТТЫҚТА | ТАҢДА | ҚАЛА | ҚАҢТАР | МАЛ | ОРА | ӨТЕ |
+	ҚҰР | ӨТКІЗ ;
+
+LIST INITIAL = "([:upper:]\\.?)"r ;
+
+LIST CAPITALISED = "([:upper:]+)"r ;
+
+
+SECTION
+
+
+## these are considered lexicon.rkt/apertium-kaz.kaz.lexc errors, and thus
+## should be fixed there, but since it's faster to fix them here, we do it
+## here
+
+REMOVE <ДЕГЕН> + POST ;
+REMOVE <ІШІНДЕ> + POST ;
+REMOVE МЕМЛЕКЕТТІК + ADVL ;
+REMOVE ЖӘНЕ + N ;
+REMOVE ҮШІН + V ;
+REMOVE ОСЫ + N ;
+REMOVE ДЕЙ + N ;
+REMOVE ОТЫР + TV ;
+REMOVE ЖА + N ;
+REMOVE ЖАҢА + N ;
+REMOVE ОН + N ;
+REMOVE АБАЙ + N ;
+REMOVE ӨЗ + V ;
+REMOVE МЫҢ + N ;
+REMOVE ХАБАРЛА + IV ;
+REMOVE ОЛ + N ;
+REMOVE О + V ;
+REMOVE КЕРЕК + V ;
+REMOVE КЕРЕК + N ;
+REMOVE МЕДИЦИНАЛЫҚ + ADV ;
+REMOVE ХАЛЫҚАРАЛЫҚ + ADV ;
+REMOVE ҚАЖЕТ + V ;
+REMOVE ЖОҒАРЫ + N ;
+REMOVE Е + V ;
+REMOVE Е + N ;
+REMOVE ЕМЕС + V ;
+REMOVE <СОНДАЙ-АҚ> + ADJ ;
+APPEND ("сондай-ақ" adv) TARGET <СОНДАЙ-АҚ> ;
+REMOVE ӨТКЕН + ADJ ;
+REMOVE ӨТКЕН + N ;
+REMOVE ҚҰРЫЛ + COOP ;
+REMOVE КӨП + DET + QNT ;
+REMOVE ЕКІ + ADJ ;
+REMOVE ЕДІ + V ;
+REMOVE ҚАРСЫ + V ;
+REMOVE ҚАРС + ADJ ;
+REMOVE ЖӨНІНДЕГІ + ADJ ;
+REMOVE ПЕН + N ;
+REMOVE ҰЛТТЫҚ + ADV ;
+REMOVE ЖОЛ + ADJ ;
+REMOVE ТЕҢ + N ;
+REMOVE ҚАТ + V + IV + COOP ;
+REMOVE КЕЛГЕН + N ;
+REMOVE РЕТІНДЕ + ADJ ;
+REMOVE СУ + ADJ ;
+REMOVE БІЛ + N ;
+REMOVE КІМ + N ;
+REMOVE ЖЕКЕ + N ;
+REPLACE CNJCOO TARGET НЕМЕСЕ ;
+REMOVE SUB:1 COP IF (0 НЕМЕСЕ) ;
+REMOVE РЕТІНДЕ + POST ;
+REMOVE ҚАЗАҚ + ADJ ;
+SUBSTITUTE TV IV TARGET СӘЙКЕС ;
+REMOVE ЖОҚ + N ;
+REMOVE ҚАР + ADJ ;
+REMOVE ЖАТЫР + ADJ ;
+REMOVE ЖАТЫР + V ;
+REMOVE ЖАТЫР + VAUX ;
+REMOVE ҚАРАЙ + N ;
+REMOVE ҚАРАЙ + ADV ;
+REMOVE КЕЗІН + ADJ ;
+REMOVE КЕЗІНДЕ + ADV ;
+REMOVE ҮЛКЕН + N ;
+REMOVE НЕГІЗГІ + ADV ;
+SUBSTITUTE TV IV TARGET СОЛ ;
+REMOVE ӨТЕ + N ;
+REMOVE ЖЕРГІЛІКТІ + ADV ;
+REMOVE ЖЕРГІЛІКТІ + N ;
+REPLACE NUM TARGET МЛН ;
+REMOVE ҚАЗІРГІ + ADJ ;
+REMOVE ЕКЕН + V ;
+SELECT PASS IF (0 ЖОСПАРЛАН) ;
+REMOVE <ЕРЕКШЕ> + Equ ;
+REMOVE ХАЛЫҚ + NP ;
+REMOVE СЕН + N ;
+REMOVE АЙГҮЛ + N ;
+REMOVE БОЛЫПТЫ + IJ ; ## а может нет а может да...
+REMOVE ТАБЫЛ + V ;
+REMOVE МЫНА + N ;
+REMOVE СОҒЫС + TV ;
+REMOVE СОҚ + IV ;
+REMOVE ИРАН + N ;
+REMOVE ЕШКІМ + ADJ ;
+SUBSTITUTE Top (cog mf) TARGET САСАНИ ;
+REMOVE МЕ + V ;
+REMOVE ЖОЙЫЛ - PASS ;
+REMOVE ШІЛ + ADJ ;
+REMOVE САЙЛАУ + ADJ ;
+REMOVE ҚОРҒАЛ - PASS ;
+REMOVE ҚАШҚАН + ADJ ;
+REMOVE ҚАН + ADJ ;
+REMOVE ТА + N ;
+REMOVE НАҚ + N ;
+REMOVE МҮМКІН + ADV ;
+REMOVE ІС + ADJ ;
+REMOVE СО ;
+REMOVE СОҢ + ADV ;
+REMOVE КЕЙІН + V ;
+REMOVE ЗА + N ;
+REMOVE _РЕСМИ ;
+REMOVE РЕСМИ + N ;
+SUBSTITUTE IV TV TARGET ҚАРЖЫ ;
+REMOVE ОҚУ + ADJ ;
+REMOVE ТИІС + N ;
+REMOVE ОДАҚ + NP ;
+APPEND ("бүгінде" adv) TARGET <БҮГІНДЕ> ;
+REMOVE КҮШТІ + <ТАБЫСТЫ> ;
+REMOVE ӨЗАРА + N ;
+REMOVE ҚҰШАҚТАС ;
+REMOVE СЕМІЗ + N ;
+REMOVE ҚАР + V ;
+APPEND ("қалас" adj advl) TARGET <ҚАЛАС> ;
+APPEND ("таң" adj advl) TARGET ТАҢ ;
+REMOVE КЕЙ + N ;
+SELECT <ЕКІНШІ> + NUM ;
+REMOVE ӘРІ + N ;
+REMOVE ТАҒЫ + Postadv ;
+REMOVE ТАҒЫ + N ;
+REMOVE СОНДЫҚТАН + N ;
+REMOVE СИЯҚТЫ + N ;
+REMOVE СИЯҚТЫ + ADJ ;
+APPEND ("жалп" ideo) TARGET <ЖАЛП> ;
+REMOVE ЖАЛП + N ;
+REMOVE ЖАЛПЫ + N ;
+SUBSTITUTE TV IV TARGET ІРІ ;
+REMOVE ОЛАЙ ;
+REMOVE СОЛАЙ ;
+REMOVE ТОЛЫҚ + N ;
+REMOVE ТЕК + CNJCOO ;
+REMOVE ОСЫНДАЙ + ADJ ;
+REMOVE ОСЫНДАЙ + DET + Ind ;
+REMOVE ОРТА + ADJ ;
+REMOVE ОРТА + ADV ;
+SUBSTITUTE IV TV TARGET КЕЗДЕ ;
+REMOVE ӨЙТКЕНІ + N ;
+REMOVE МӘСЕЛЕН + N ;
+REMOVE ҚАНДАЙ + N ;
+APPEND ("қандай" det dem) TARGET ("қандай"i) ;
+REMOVE ЖӨНІНДЕ + N ;
+REMOVE ҮШЕУ + ADJ ;
+APPEND ("белсене" adv) TARGET <БЕЛСЕНЕ> ;
+APPEND ("қарсылықты" adj) TARGET ҚАРСЫЛЫҚТЫ ; ## TODO append variants with <cop> subreadings as well Otoh not since this will be fixed in the lexicon anyway
+REMOVE ҚАРСЫЛЫҚТЫ + N ;
+SUBSTITUTE IV TV TARGET АЛМАС ;
+REMOVE ШЫҒЫС + TV ;
+REMOVE ТИІСТІ + N ;
+REMOVE ҚОСЫМША + ADV ;
+REMOVE ЖАСТАР + ADJ ;
+REMOVE СЕКІЛ + N ;
+REMOVE СЕКІЛДІ + ADV ;
+REMOVE СЕКІЛДІ + N ;
+REMOVE ӨЗІ + N ;
+REMOVE ҚАЛҒАН + ADJ ;
+REMOVE КӨЛІК + ADJ ;
+REMOVE ЕЛБАС + N ;
+REMOVE ШЕТЕЛДІК + ADV ;
+REMOVE ТИ + N ;
+REMOVE КӨПТЕГЕН + ADV ;
+REMOVE ЗОР + N ;
+REMOVE ЖАСАЛ ;
+APPEND ("сай" adj advl) TARGET САЙ ;
+REMOVE ӨЗІ ;
+REMOVE АЗ + N ;
+REMOVE <СОҢЫНДА> + Loc - Px3sp ;
+REMOVE ҚҰРЫЛ ;
+APPEND ("жөн" adj advl) TARGET ЖӨН ;
+REMOVE ДҰРЫС + N ;
+REMOVE МИЛЛИОН + N ;
+REMOVE ҚАТА + V ;
+REMOVE ҚАЙТА + N;
+SUBSTITUTE АУЫ АУ TARGET АУЫ ;
+REMOVE УАҚЫТША + N ;
+REMOVE ТІРКЕЛ ;
+REMOVE ТІРКЕЛГЕН ;
+REMOVE САЛЫНҒАН ;
+REMOVE ОРНАЛАСҚАН ;
+REMOVE ОРАЛ + N ;
+REMOVE МҰНДАЙ - DET ;
+REMOVE КЕЛ + ADJ ;
+REMOVE ЖАЙЛЫ + N ;
+SUBSTITUTE ("біл"i n dat) ("Білге" np ant m nom) TARGET <БІЛГЕ> ;
+REMOVE САЙЫН + N ;
+REMOVE ОРТАША + N ;
+REMOVE ТОПТАСҚАН ;
+REMOVE ЕШҚАНДАЙ + Ind ;
+APPEND ("аса" adv) TARGET <АСА> ;
+REMOVE НЕМЕНЕ + V ;
+REMOVE НЕМЕНЕ + ADV ;
+
+REMOVE NOT-TRANSITIVE + TV ;
+
+REMOVE NOT-INTRANSITIVE + IV ;
+
+SUBSTITUTE ADV ADJ+ADVL TARGET ADJ+ADVL-NOT-ADV ;
+
+## бірінші "бір" num subst px3sp nom + ["е" cop aor p3 sg] + "шы" emph
+## doesn't make sense. "шы" emph should probably come only after imperative.
+REMOVE SUB:1 EMPH IF (NOT 0 Imp) ;
+REMOVE SUB:2 EMPH IF (NOT 0 Imp) ;
+
+
+SECTION # rules for things which are fine either way
+
+
+REMOVE N IF (0 Ger OR Gpr_pot) (NOT 0 БОЯУ OR ЖЫЛУ OR ЖАТТЫҒУ OR ҚАРУ OR
+	ОҚУШЫ OR ЖОЛАУШЫ OR АҒАРТУШЫ OR ӨНДІРУШІ OR ЖАЗУШЫ OR ЖАҒУШЫ OR АШУ OR САЙЛАУШЫ
+	OR ҚАТЫСУШЫ); # dubious
+
+## қазіргі, биылғы etc are handled as adv.attr in apertium-kaz (their UD POS tag
+## gets converted into ADJ by apertium-kaz.kaz.udx, but their XPOS tag stays adv
+REMOVE ADJ IF (0 ADV + Attr) ;
+
+## if 15 volume explanatory dictionary of kazakh lexicalised noun+ЛЫ/ЛЕ
+## ~adjective, lexicalise it too
+REMOVE SUB:1 ("лы"i post) IF (0 ADJ) ;
+
+## if 15 volume explanatory dictionary of kazakh lexicalised noun+СЫЗ/СЕЗ
+## ~adjective, lexicalise it too
+REMOVE SUB:1 ("сыз"i post) IF (0 ADJ) ;
+
+## lexicalise noun + ша<equ> as adj or adv
+REMOVE Equ IF (0 Adj or Adv) ;
+
+SUBSTITUTE (abbr) (np ant mf nom) TARGET INITIAL ;
+SUBSTITUTE (abbr) (np al nom) TARGET CAPITALISED ;
+
+
+SECTION # splitting rules
+
+
+## split unnecessary multiwords (i.e. the ones which are in the lexc only
+## because of the translators)
+
+## n.nom + verb
+SPLITCOHORT ("<$1>"v "$1"v n nom "<$2>"v "$3"v *)
+TARGET <ТЫЙЫМ_САЛ.*> OR <ЖҰМЫС_ІСТЕ.*> OR <ҚОЛ_ҚОЙ.*> ;
+
+## adv + verb
+SPLITCOHORT ("<$1>"v "$1"v adv "<$2>"v "$3"v *)
+TARGET <ҚАЙТА_ҚАРА.*> ;
+
+SPLITCOHORT ("<$1>"v "сол" prn dem ins "<$2>"v "қатар" post ) TARGET <СОНЫМЕН_ҚАТАР> ;
+
+SPLITCOHORT ("<$1>"v "сол" prn dem abl "<$2>"v "кейін" post ) TARGET <СОДАН_КЕЙІН> ;
+
+SPLITCOHORT ("<$1>"v "денсаулық" n nom "<$2>"v "сақта" v tv ger nom ) TARGET <ДЕНСАУЛЫҚ_САҚТАУ> ;
+
+
+SECTION # merging rules
+
+
+## merge consecutive <?> <!> <.> into a single token <?!.>
+MERGECOHORTS ("<?!.>" "?!." sent) ("<?>") WITH (1 ("<!>")) (2 ("<.>")) ;
+
+## merge <birgemiz2020> <.> <kz> --->>> <birgemiz2020.kz> sym
+## TODO generalize this. The following doesn't work because <.> is a delimiter and you can't merge across windows
+## MERGECOHORTS ("<$1.$2>"v "$1.$2"v sym) ("<([a-z0-9]+)>"ri) WITH (1 ("<.>")) (2 ("<([a-z]+)>"ri)) ;
+MERGECOHORTS ("<birgemiz2020.kz>" "birgemiz2020.kz" sym) ("<birgemiz2020>") WITH (1 ("<.>")) (2 ("<kz>")) ;
+
+MERGECOHORTS ("<Қасым-Жомарт>" "Қасым-Жомарт" np ant m nom) ("<Қасым>") WITH (1 ("<->")) (2 ("<Жомарт>")) ;
+
+## single capital letter followed by period
+## same thing, TODO fix in the lexicon
+MERGECOHORTS ("<$1.>"v "$1."v np ant mf nom) ("<([:upper:])>"r) WITH (1 ("<.>")) ;
+
+## replace <млрд> <.> with <млрд.>
+MERGECOHORTS ("<млрд.>" "млрд." num) ("<млрд>"i) WITH (1 ("<.>")) ;
+MERGECOHORTS ("<млн.>" "млн." num) ("<млн>"i) WITH (1 ("<.>")) ;
+MERGECOHORTS ("<трлн.>" "трлн." num) ("<трлн>"i) WITH (1 ("<.>")) ;
+REPLACE ("млн" num) TARGET ("<млн>"i) ;
+REPLACE ("млрд" num) TARGET ("<млрд>"i) ;
+REPLACE ("трлн" num) TARGET ("<трлн>"i) ;
+
+## e.g. <әл> <-> <Фараби> --->>> <әл-Фараби>
+MERGECOHORTS ("<әл-$1>"v "әл-$2"v np al gen) ("<әл>"i) WITH (1 ("<->")) (2 ("<(([:upper:]+.*)(ның|нің|дың|дің|тың|тің))>"ri) + ("\\*(.*)"ri)) ;
+
+MERGECOHORTS ("<әл-$1>"v "әл-$2"v np al abl) ("<әл>"i) WITH (1 ("<->")) (2 ("<(([:upper:]+.*)(дан|ден|тан|тен|нан|нен))>"ri) + ("\\*(.*)"ri)) ;
+
+MERGECOHORTS ("<әл-$1>"v "әл-$2"v np al nom) ("<әл>"i) WITH (1 ("<->")) (2 ("<([:upper:]+.*)>"ri) + ("\\*(.*)"ri)) ;
+
+## todo, but not top priority (i.e. not relevant for UD)
+## - add sub:cop to personal pronouns
+
+
+SECTION ## guessing rules
+
+
+## replace <XXI> "*XXI" with <XXI> "XXI" num ord
+# works, but the fact that I'm not using REPLACE or SUBSTITUTE bothers me,
+# just as referring to num and ord directly (instead of via LIST or SET) does.
+SPLITCOHORT ("<$1>"v "$1"v num ord) TARGET ROMAN ;
+
+## capitalised unkknown ending in ов -> np cog m nom
+SPLITCOHORT ("<$1>"v "$1"v np cog m nom) TARGET ОВ-COG-UNK ;
+
+## capitalised unkknow ending in ова -> np cog f nom
+SPLITCOHORT ("<$1а>"v "$1"v np cog f nom) TARGET ОВА-COG-UNK ;
+
+## e.g. <BigBrotherInc> <-> <та>    ->   <BigBrotherInc> np al loc
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al gen) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(ның|нің|дың|дің|тың|тің)>"ri)) ;
+
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al dat) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(ға|гә|қа|кә)>"ri)) ;
+
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al acc) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(ны|ні|ды|ді|ты|ті)>"ri)) ;
+
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al abl) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(дан|дән|тан|тән)>"ri)) ;
+
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al loc) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(да|дә|та|тә)>"ri)) ;
+
+MERGECOHORTS ("<$1$2$3>"v "$1"v np al ins) LATIN WITH
+    (1 ("<(-)>"r))
+    (2 ("<(мен|бен|пен)>"ri)) ;
+
+## other capitalised word -> np al nom
+SPLITCOHORT ("<$1>"v "$1"v np al nom) TARGET ("\\*([:upper:]+.*)"ri) ;
+
+## affixes which shouldn't appear on their own, but sometimes might
+APPEND ("лы" post) TARGET <ЛЫ> ;
+APPEND ("сыз" post) TARGET <СЫЗ> ;

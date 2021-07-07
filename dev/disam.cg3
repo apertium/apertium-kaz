@@ -1,292 +1,7 @@
+# SELECT, REMOVE
+#(-1 BOS OR Guio OR Opening OR Sent)
 
-
-# ============================================================================ #
-#            A COMMENTARY ON FORMATTING OF MAJORITY OF RULES
-#              (read: a wannabe FORMATTING GUIDELINES)
-# ============================================================================ #
-
-# Lines do not exceed 79 characters.
-#
-# Rule layout
-# ===========
-#
-# There are two alternative layouts for writing a rule. An example for the
-# first one (of course the body of the rule won't be commented out):
-#
-#        # INPUT: ^терістік/тер<v><tv><coop><ifi><p1><pl>/терістік<n><attr>/
-#        #        терістік<n><nom>$ ^бетіндегі/бет<n><px3sp><loc><attr>/
-#        #        бет<n><px3sp><loc><subst><nom>/$
-#        # OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$
-#                   ^бетіндегі/бет<n><px3sp><loc><attr>...$
-#         REMOVE V IF
-#                (0 PRE-N)
-#                (1C N)
-#        ;
-#        # any additional comments here (if necessary)
-#
-# An abstract example of the second layout:
-#
-#        # An explanation of what the rule does (if it's not obvious from
-#        # code!), a name or any other comment that clarifies its purpose
-#         SELECT ABC IF
-#                (0 DEF)
-#                (1 GHI)
-#        ;
-#        ## A sentence with the [0]form the rule was written for.
-#        ## (!) A corner-case-sentence: the rule mispredicted on it initially
-#        ## but was modified accordingly (additional constraints etc.); or the
-#        ## rule still mispredicts on it, but this kind of sentences aren't
-#        ## that frequent. (Alternatively, place the corner-case sentence on
-#        ## the same line as the additional constraint).
-#
-# The first layout is more appropriate when you come up with a rule inductively
-# (i.e. you see a sentence badly translated because of errors in disambiguation
-# and want to fix it), the second one when you arrived at it deductively. E.g:
-#
-#        # Participle appears immediately before a verb (verbal adverb doesn't)
-#         REMOVE Participle IF
-#                (NOT 1C V OR Vaux)
-#        ;
-#        ## Есік [0]ашып, ол үйге кірді.
-#
-# In context of apertium-kaz, the difference between a participle and a verbal
-# adverb is that participle immediately precedes a verb and verbal adverb
-# doesn't. We know this even without looking at tests, but it is a good idea
-# to back up the rule with a test case.
-#
-# Sometimes you can't fully disambiguate a form with only one rule. In that
-# case, several rules dealing with the same thing can be grouped together:
-#
-#         # What the rule does?
-#          SELECT ABC IF
-#                 (0 DEF)
-#                 (1 KLM)
-#         ;
-#          REMOVE XYZ IF
-#                 (0 DEF)
-#                 (1 NOP)
-#                 (2 QRS)
-#          ;
-#          ## Example sentences for both of the rules.
-#          ## Another example sentence.
-#
-# Where a rule is placed?
-# =======================
-
-#                                   Any context involved?
-#                                   /                   \
-#                                 YES                   NO
-#                                 /                       \
-#                 Disambiguates a particular wordform?   "Heuristics" section
-#                   /                         \          at the end of the file
-#                 YES                         NO
-#                 /                             \
-#     "Wordform/lemma specific rules"        Readings of
-#            section                        different POS?
-#                                           /           \
-#                                        YES            NO
-#                                        /                \
-#                                "POS marking"             \
-#                              at the beginning             \
-#                                                   Corresponding section
-#                                                   ("Verbs", "Adjectives" etc.)
-
-# ============================ #
-# END OF FORMATTING GUIDELINES #
-# ============================ #
-
-# ========== #
-# Delimiters #
-# ========== #
-
-DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
-SOFT-DELIMITERS = "<,>" ;
-
-SUBREADINGS = LTR ; # Alternate, left-to-right (main reading on the left)
-
-# ============= #
-# Tags and sets #
-# ============= #
-
-SETS
-
-LIST BOS = (>>>) ;
-LIST EOS = (<<<) ;
-
-# First-level/Parts-of-speech tags
-# ================================
-
-LIST A = adj ;
-LIST Adv = adv ;
-LIST Pron = prn ;
-LIST Pron-Pers = (prn pers) ;
-LIST N = n ;
-LIST IJ = ij ;
-LIST Prop = np ;
-LIST V = v ;
-LIST Vaux = vaux ;
-LIST Cop = cop ;
-LIST Det = det ;
-LIST CC = cnjcoo ;
-LIST CS = cnjsub ;
-LIST Interj = ij ;
-LIST Pres = pres ;
-LIST Num = num ;
-LIST Post = post ;
-LIST Postadv = postadv ;
-LIST FinalClitic = mod_ass mod_emo mod qst emph ;
-LIST Sent = sent ;
-LIST Cm = cm ;
-LIST Adv = adv ;
-LIST Rquot = rquot ;
-LIST Excl = "!" ;
-LIST Guio = guio ;
-
-# POS sub-categories
-# ==================
-
-LIST Pers = pers ;
-LIST Interr = itg ;
-LIST Dem = dem ; 
-
-LIST IV = iv ; 
-LIST TV = tv ;
-
-LIST Pass = pass ;
-LIST Caus = caus ;
-LIST Coop = coop ;
-
-LIST ORD = ord ;
-
-# "Syntactic" tags
-# ================
-
-LIST Advl = advl ;
-LIST Attr = attr ;
-LIST Subst = subst ;
-LIST N-LIKE = subst n np prn ; # Actually, see NOMINAL
-
-# Morphosyntactic properties   # if you find yourself embracing the same tag in
-# ==========================   # brackets over and over again, you may want to
-                               # add it here
-
-LIST Sg = sg ;
-LIST Pl = pl ;
-
-LIST Nom = nom ;
-LIST Gen = gen ;
-LIST Dat = dat ;
-LIST Acc = acc ;
-LIST Abl = abl ;
-LIST Loc = loc ;
-LIST Ins = ins ;
-
-LIST P1 = p1 ;
-LIST P2 = p2 ;
-LIST P3 = p3 ;
-
-LIST PersonalPossessives = px1sg px2sg px3sp px1pl px2pl ;
-
-LIST Imp = imp ;
-
-# Specific lexemes 
-# ==========================
-
-LIST Year = "жылғы"i "жыл"i ; 
-
-LIST Colon = ":" ;
-
-LIST Qayda = "қайда"i ;
-
-LIST MONTH = "қаңтар"i "ақпан"i "наурыз"i "сәуір"i "мамыр"i "маусым"i "шілде"i "тамыз"i "қыркүйек"i "қазан"i "қараша"i "желтоқсан"i ;
-
-LIST QUANTITY = "есе"i "пайыз"i ;
-
-	
-# Noun sets 
-# ==============
-
-SET NGDAALI = Nom | Dat | Dat | Acc | Abl | Loc | Ins ;
-
-# Adjective sets
-# ==============
-
-LIST A/Advl = (adj advl) ;
-LIST A/Subst = (adj subst nom) ;
-SET A1-Nom = A/Advl | A/Subst ;
-
-# Verb sets
-# =========
-
-LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt pih ;
-LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
-LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
-SET V-NotGerund = V - Gerund ;
-LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
-LIST Prc-vol = prc_vol ;
-LIST VerbalAdverb = gna_perf gna_cond gna_until gna_after ;
-LIST VerbalAdjective = gpr_past gpr_fut gpr_pot gpr_impf ;
-LIST FourAuxiliaries = "тұр" "жүр" "отыр" "жат" ;
-LIST V-IV = (v iv) ;
-LIST V-TV = (v tv) ;
-
-LIST Err/Orth = err_orth ;
-
-# All possible word categories
-# ============================
-
-SET WORD = N | V | A | Post | Postadv | Pron | Det | Adv | CC | CS | Interj |
-           Num | ("\?") ;
-
-SET PRE-N =  A | Det | Postadv | Num | (n gen) | (prn gen) | CC | (attr) ;
-
-SET MARK =  Cm | ("\\") | ("\;") | ("\(") ;
-
-SET WORDMARK = WORD | MARK ;
-
-SET N-MOD = A | Det | Num | (n gen) | (prn gen) ;
-
-SET ADJ-MOD = Postadv | Adv ;
-
-SET NPMARK = N-MOD | ADJ-MOD ;
-
-SET NOMINAL = N | Prop | Pron | Subst | Gerund ;
-
-# Categories which cannot be part of a noun phrase
-# ================================================
-
-SET NPNH = WORDMARK - PRE-N ;
-SET NPNHA = WORDMARK - PRE-N - Adv ;
-SET NOT-ADV = WORDMARK - Adv ;
-
-# Barriers
-# ========
-
-SET S-BOUNDARY = CS | Interr | EOS ;
-
-# Universal Dependencies
-# ======================
-
-LIST @root = @root ;     # The root of the sentence, often a finite verb
-LIST @nsubj = @nsubj ;   # The nominal subject of the sentence
-LIST @amod = @amod ;       # 
-LIST @advmod = @advmod ; # An adverbial modifier
-LIST @case = @case ;     # The relation of an adposition to its head
-LIST @acl = @acl ;       # A clause which modifies a nominal
-LIST @nmod = @nmod ;     # Nominal modifier 
-LIST @dobj = @dobj ;     # The direct object of the sentence
-LIST @punct = @punct ;   # Any punctuation
-LIST @cop = @cop ;       # 
-LIST @nmod:poss = @nmod:poss ;
-LIST @obl = @obl ;
-LIST @obj = @obj ;
-LIST @advcl = @advcl ;
-LIST @aux = @aux ;
-LIST @parataxis = @parataxis ;
-LIST @det = @det ;
-LIST @csubj = @csubj ;
-LIST @nummod = @nummod ;
-LIST @dep = @dep ;       # Any remaining dependency
+INCLUDE STATIC sets.cg3 ;
 
 
 # ======= #
@@ -298,9 +13,594 @@ REMOVE SUB:1 Err/Orth ;
 
 REMOVE Err/Orth ; 
 
-SELECT (pass) IF (0 ("жоспарлан")) ;
 
-"<ерекше>"i REMOVE (equ) ;
+#######
+SECTION ## Mansur 1
+#######
+
+
+
+
+# Numbers
+
+# ...
+SELECT Ord IF (0 ("<[1-2][0-9][0-9][0-9]>"r))
+              (1 Year)
+;
+
+SELECT Ord IF (0 ("<[1-2][0-9][0-9][0-9]>"r))
+              (1 Guio)
+              (2 Year)
+;
+
+SELECT Ord IF (0 ("<[1-2][0-9][0-9][0-9]>"r))
+              (1 Guio)
+              (2 Ord)
+;
+
+SELECT Ord IF (0 ("<[1-2][0-9]>"r))
+              (1 Century)
+;
+
+SELECT Ord IF (0 ("<[1-2][0-9]>"r))
+              (1 Guio)
+              (2 Century)
+;
+
+SELECT Ord IF (0 ("<[1-2][0-9]>"r))
+              (1 Guio)
+              (2 Ord)
+;
+
+SELECT Ord IF (-1 CenturyGen)
+              (0 ("<[0-9][0-9]?>"r))
+              (1 Year)
+;
+
+SELECT Ord IF (-1 CenturyGen)
+              (0 ("<[0-9][0-9]?>"r))
+              (1 Guio)
+              (2 Year)
+;
+
+SELECT Ord IF (-1 CenturyGen)
+              (0 ("<[0-9]>"r))
+              (1 ("жарты"))
+;
+
+SELECT Ord IF (-1 CenturyGen)
+              (0 ("<[0-9]>"r))
+              (1 Guio)
+              (2 ("жарты"))
+;
+
+SELECT Ord IF (-1 YearGen)
+              (0 ("<[0-9]>"r))
+              (1 ("жарты"))
+;
+
+SELECT Ord IF (-1 YearGen)
+              (0 ("<[0-9]>"r))
+              (1 Guio)
+              (2 ("жарты"))
+;
+
+SELECT Ord IF (0 ("<[1-3]?[0-9]>"r))
+              (1 MONTH)
+;
+
+SELECT Ord IF (0 ("<[1-3]?[0-9]>"r))
+              (1 Guio)
+              (2 MONTH)
+;
+
+SELECT Ord IF (0 ("<[1-9]>"r))
+              (1 Guio)
+              (2 ("кезең"))
+;
+
+
+#
+# Particular wordforms
+#
+
+# ...
+"<Құрметті>"i SELECT Adj IF (1 Prop | N + Nom) ;
+"<Қуып>" REMOVE Prop ;
+
+# ...
+#SELECT Prop IF (-1 BOS)
+#               (0 ("<[:upper:][:lower:]+>"r))
+#;
+SELECT Prop IF (NOT -1 BOS)
+               (NOT -1 Guio OR Lquot)
+               (0 ("<[:upper:][:lower:]+>"r))
+;
+SELECT Prop IF (NOT -2 BOS)
+               (-1 Guio)
+               (0 ("<[:upper:][:lower:]+>"r))
+;
+# ...
+#"<[:upper:]\.>"r SELECT Abbr ;
+#SELECT Abbr IF (0 ("<[:upper:][.]>"r)) ;
+
+# ...
+"<біз>"i SELECT Pron ;
+
+"<аса>"i SELECT Adv IF (-1 N) ;
+
+# ...
+"<атты>" SELECT Adj IF (1 Px3sp) ;
+
+# ...
+"<бойы>" SELECT Post IF (-1 NNom) ;
+
+# ...
+"<бар>" REMOVE V IF (NOT 1 ("<!>")) ;
+"<бар>" REMOVE N IF (-1 N) ;
+
+# ...
+"<арқылы>" SELECT Post IF (1 Adj) ;
+
+# ...
+"<қарсы>" SELECT Post IF (-1 Dat) ;
+"<басқа>" REMOVE Post IF (-1 Dat) ;
+
+# ...
+"<болып>" SELECT V IF (1 Vaux) ;
+
+# ...
+"<салалар>" SELECT N IF (-1 Adj) ;
+
+# ...
+"<қажет>" SELECT Adj IF (1 Sent) ;
+
+# ...
+"<енді>"i SELECT Adv IF (-1 BOS) ;
+"<бүгін>"i SELECT Adv ;
+"<бүгін>"i SELECT Adv IF (-1 BOS) ;
+"<бүгінде>"i SELECT Adv ;
+"<қазір>"i SELECT Adv IF (-1 BOS) ;
+"<тек>"i SELECT Adv IF (-1 BOS) ;
+
+# ...
+"<тұрғын>"i SELECT Adj IF (1 N) ;
+
+# ...
+"<қысқа>"i SELECT Adj IF (1 N) ;
+
+# ...
+"<жаңаша>"i SELECT Adv IF (1 V) ;
+
+# ...
+"<мен>"i SELECT Pron IF (1 ("<үшін>")) ;
+"<біз>"i SELECT Pron IF (1 ("<үшін>")) ;
+
+# ...
+"<қала>"i SELECT N IF (-1 Adj)
+                      (1 Vaux)
+;
+
+# ...
+
+"<барлық>"i SELECT Det ;
+"<қуып>"i REMOVE Prop ;
+
+# ...
+"<дейінгі>"i SELECT Post IF (-1 Dat) ;
+
+"<бұл>"i REMOVE N ;
+"<бұл>"i REMOVE Det IF (NOT 1* V | Vaux) ;
+
+"<ішетін>"i SELECT Adj IF (1 ("су")) ;
+"<ішетін>"i SELECT V IF (-1 ("су"))
+                        (1 N)
+;
+
+
+"<іші>"i SELECT N ;
+
+"<белсене>"i SELECT Adv ;
+
+"<қолдау>"i SELECT V IF (1 ("тап")) ;
+
+"<қарағым>"i REMOVE V ;
+
+"<басым>"i SELECT Adj IF (1 ("бағыт")) ;
+
+"<ақырын>"i SELECT Adj IF (1 ("бас") OR ("тыңда")) ;
+
+"<сол>"i REMOVE Adj IF (NOT 1 ("як") OR ("тарап")) ;
+
+
+"<соң>"i SELECT Post IF (-1 Ger_past) ;
+
+"<сайын>"i SELECT Post ;
+
+"<нақ>"i SELECT Adv IF (1 Pron) ;
+
+"<алған>"i REMOVE N ;
+
+"<ләкин>"i SELECT CC ;
+
+"<бар>"i SELECT Adj IF (-1 NOMINAL + Nom) ;
+
+"<Жастар>" REMOVE Prop IF (-1 BOS) ;
+"<Жастар>" REMOVE Prop IF (-1 Guio)
+                          (-2 BOS)
+;
+
+
+# атап өтті 
+###REMOVE V IF (-1 V)
+###               (0 ("өт"))
+###;
+
+REMOVE N IF (0 NumberWords) ;
+
+
+
+#
+# Different rules
+#
+
+
+
+# мен ике тиңдәш сүз арасында булса гына cconj Була ала
+
+
+
+
+#экономикалық
+#сепаратистік
+#әлемдік
+
+#SELECT Adj IF (0 (".*лық"r)) ;
+#SELECT Adj IF (0 (".*тік"r)) ;
+#SELECT Adj IF (0 (".*дік"r)) ;
+
+
+
+
+#"<тағы>"i SELECT Adv IF (0/1 ("да")) ;
+SELECT Adv IF (0 ("тағы"))
+              (0/1 ("да"))
+;
+
+SELECT Ger_past IF (1 ("соң") + Post) ;
+SELECT Ger_past IF (1 ("сайын") + Post) ;
+#SELECT Ger_past IF (1 Post) ;
+
+
+REMOVE V IF (-1 V)
+            (1 ("<керек>") + Adj)
+;
+
+REMOVE SUB:1 Cop IF (0 N)
+                    (0/2 Emph)
+;
+REMOVE SUB:1 Emph IF (0 N) ;
+REMOVE N IF (0/1 Cop)
+            (0/2 Emph)
+;
+SELECT V IF (0/1 Emph) ;
+
+
+#REMOVE Adj IF (0 Nom | Gen)
+#              (NOT -1 Nom | Gen)
+#              (1 Px3sp)
+#;
+
+
+REMOVE Acc IF (NEGATE 1* V | Vaux) ;
+
+
+REMOVE CC IF (-1 Acc) ;
+#REMOVE Acc IF (1 CC) ;
+
+
+# Байдың малын
+REMOVE V IF (-1 Gen) ;
+
+REMOVE Vaux IF (-1 Acc | Abl | Loc) ;
+
+
+
+
+SELECT Imp IF (1 Cm | Sent | Rpar | Rquot | Guio)
+              (1* Excl | ("де"))
+;
+
+REMOVE Det IF (1 Pron) ;
+
+
+
+
+#REMOVE V IF (-1 Num) ;
+#REMOVE Vaux IF (-1 Num) ;
+
+REMOVE N + Acc IF (1 V-NotGerund + Pass) ;
+#REMOVE N + Acc IF (1 Vaux + Pass) ;
+
+#REMOVE N + Acc IF (1 V-IV - Gerund) ;
+
+
+
+#REMOVE Vaux IF (-1 Dat) ;
+#REMOVE Acc IF (-1 Acc) (1 V);
+#SELECT (prn loc) IF (1 ("<жоқ>")) ;
+
+REMOVE Acc IF (1 ("бол"i)) ;
+SELECT Vaux IF (0 ("біл"i))
+               (-1 V)
+;
+
+#SELECT Vaux IF (-1 N)
+#               (1 Cm | Sent | EOS)
+#;
+REMOVE Vaux IF (0 Ger) ;
+REMOVE Adv IF (1 Px3sp) ;
+REMOVE Prop IF (0 ("<[:lower:].+>"r)) ;
+
+REMOVE N IF (0 ("<[:upper:].+>"r) + Adj) 
+            (1 Prop)
+;
+
+SELECT ("асыр"i) IF (-1 ("<жүзеге>"i)) ;
+
+
+SELECT Post IF (-1 N + Dat) ;
+
+REMOVE SUB:1 ("е") IF (1 N) ;
+#REMOVE SUB:1 ("сыз") IF (1 V) ;
+#SELECT SUB:1 ("сыз") + Post IF (1 V) ;
+
+# ...
+REMOVE N + Acc IF (1 Vaux + ("бол")) ;
+#SELECT Vaux IF (0 ("бол")) (-1 N) ;
+
+
+SELECT Adv IF (0 ("бүгін"i)) ;
+
+# ...
+SELECT N IF (0 ("жыл"))
+            (-1 ("<өткен>"))
+;
+
+REMOVE N IF (0 ("қай")) ;
+
+# ...
+SELECT V + ("қой") IF (-1 ("<жолға>")) ;
+
+#SELECT Pron IF (0 ("кім")) ;
+#REMOVE N IF (0 ("."r) - ("у")) ;
+
+# ...
+SELECT Vaux IF (0 ("біл"))
+            (-1 V)
+;
+
+# ...
+REMOVE Post IF (-1 CLB OR BOS) ;
+
+# ...
+REMOVE Post IF (-1 Post) ;
+REMOVE CC IF (-1 Post) ;
+
+# ...
+SELECT Adj IF (0 ("басқа"))
+              (-1 Gen)
+;
+
+# ...
+SELECT Post IF (0 ("басқа"))
+               (-1 Abl)
+;
+
+# ...
+REMOVE Post IF (0 ("басқа"))
+               (NOT -1 Abl)
+;
+
+# ...
+REMOVE NDat IF (0 ("бас"))
+               (-1 Dat)
+;
+
+# ...
+REMOVE Adj IF (0 NAcc)
+              (-1 BOS)
+              (1 V)
+;
+
+# ...
+REMOVE V IF (0 NAcc)
+            (-1 BOS)
+            (1 V)
+;
+
+# ...
+REMOVE V IF (0 N)
+            (-2 BOS)
+            (-1 Adj)
+;
+
+# _Қалыптасу_ кезеңі табысты аяқталды.
+REMOVE Coop IF (0 V OR Vaux) ;
+
+# Инвестициялық саладағы ынтымақтастық _табысты дамуда_
+SELECT Pron IF (0 ("барлық"))
+               (-1 Gen)
+;
+
+# Біз жаттығулар барысын мұқият бақылап отырдық
+#REMOVE (ger) IF (0 N)
+#            (1 (px3sp))
+#;
+
+# да postadv/cnjcoo арасында хәл иткәндә,
+# алдында gna_cond булмаса cnjcoo ны сайларга була
+#"<да>"i SELECT CC IF (NOT -1 (gna_cond)) ;
+#SELECT SUB:1 CcDa IF (NOT -1 (gna_cond)) ;
+REMOVE SUB:1 CcDa IF (0 V-NotGerund | Det | Pron | Adj | CC) ;
+#SELECT PostadvDa IF (-1 V - Gerund | Det) ; # FIXME all da must be sub???
+REMOVE SUB:1 CcDa IF (NEGATE 0*/1 CcDa) ;
+SELECT SUB:1 CcDa IF (0*/1 CcDa) ;
+
+# Инвестициялық саладағы ынтымақтастық _табысты дамуда_
+REMOVE V IF (0 ("<.*ты>"r))
+            (0 Adj)
+            (1 V)
+;
+
+# ...Қалыптасу кезеңі табысты аяқталды
+#REMOVE V IF (0 Adj)
+#            (1 V)
+#;
+
+# ...
+#REMOVE Adv IF (0 Adj)
+#              (NOT 0 ("<бүгінгі>"))
+#              (1 N)
+#;
+
+# ...
+#REMOVE Adj IF (1 Adj) ;
+
+# ...
+#REMOVE V IF (0 ("<.*аһ>"r))
+#            (1 ("жабдықта"))
+#            (1 V)
+#;
+
+
+# ...
+REMOVE V IF (0 ("<жабдықтармен>"))
+            (1 ("жабдықта"))
+            (1 V)
+;
+
+# ...
+REMOVE Adj IF (0 N)
+              (1 Adv OR V)
+;
+
+# ...
+REMOVE N IF (0 ("біз"))
+            (1* VP1Pl)
+;
+
+# ...
+REMOVE V IF (-1 ("<.+іп>"r))
+            (-1 V)
+            (NOT 0 ("<.+п>"r))
+            (0 Vaux)
+;
+
+# ...
+REMOVE Vaux IF (-1 ("<.+іп>"r))
+               (NOT -1 V)
+               (0 Vaux)
+               (1 Sent)
+;
+
+
+# ...
+REMOVE Past IF (NOT 1 Sent)
+               (NOT 1 ("<бар>"))
+               (NOT 1 ("<жоқ>"))
+;
+
+# ...
+SELECT Past IF (1 ("<бар>") OR ("<жоқ>")) ;
+
+# ...
+REMOVE V IF (-1 V)
+            (NOT -1 N)
+            (NOT -1 VAcc)
+            (NOT 0 N)
+            (1 Sent)
+;
+
+# ...
+SELECT VVauxPl IF (-1* NNomPl)
+                  (1 Sent OR ("<бар>") OR ("<жоқ>"))
+;
+
+# ...
+SELECT VVauxPl IF (-1* NPronPersNomPl)
+                  (1 Sent OR ("<бар>") OR ("<жоқ>"))
+;
+
+# ...
+SELECT VVauxSg IF (NOT -1* NNomPl)
+#                  (NOT -1* Post)
+#                  (NOT -1* ("мен"))
+                  (1 Sent OR ("<бар>") OR ("<жоқ>"))
+;
+
+# ...
+SELECT VVauxSg IF (-1* NPronPersNom)
+                  (NOT -1* NPronPersNomPl)
+#                  (NOT -1* Post)
+#                  (NOT -1* ("мен"))
+                  (1 Sent OR ("<бар>") OR ("<жоқ>"))
+;
+
+# ...
+SELECT CopSg IF (NOT -1* NNomPl)
+                (1 Sent)
+;
+
+# ...
+SELECT Adj IF (0 NPx3sp)
+              (1 Sent)
+;
+
+# ...
+REMOVE Subst IF (-1 BOS)
+                (1 Sent OR EOS)
+;
+
+# Remove (adj subst) in the final position
+REMOVE AdjSubst IF (1 Sent) ;
+
+# Remove (pron dem) in the first position, if there is a reading (pron pers)
+REMOVE Pron-Dem IF (-1 BOS)
+                   (0 Pron-Pers)
+;
+
+# ...
+SELECT Post IF (-1 Abl) ;
+
+# Izafet: 
+SELECT NNpAttr IF (1 NPx3sp) (NOT 0 ("құқықтық"i)) ; # possible other -дық/тық/дік/тік words
+
+
+
+
+# BAD RULES
+# Removed by Ilnar
+#### ...
+###"<мен>" SELECT Post IF (-1 NNom) ;
+###
+#### Remove (v aor) in the final position, if there is a reading (v tv ifi)
+###REMOVE VAor IF (0 VTvIfi)
+###                  (1 Sent)
+###;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ======= #
@@ -309,7 +609,7 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 
 
 #
- "<кейін>" SELECT Post IF
+"<кейін>" SELECT Post IF
                 (-1 Abl)
 ;
 ## 23. Айгүл санап біткеннен кейін айналасына қарады.
@@ -319,15 +619,15 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 # INPUT: ^оның/ол<prn><dem><gen>/он<num><subst><px2sg><nom>/
 #        ол<prn><pers><p3><sg><gen>$ ^үйі/үй<n><px3sp><nom>$
 # OUTPUT: [0]^ол<prn><pers><p3><sg><gen>$ ^үй<n><px3sp><nom>$
- SELECT Pron-Pers IF
+SELECT Pron-Pers IF
         (0 ("<оның>"i))
         (1 (n px3sp nom))
 ;
 
- REMOVE SUB:1 Cop IF
+REMOVE SUB:1 Cop IF
         (NOT 1 EOS OR MARK OR ("де"))
 ;
- REMOVE SUB:1 Cop IF
+REMOVE SUB:1 Cop IF
         (-1 BOS OR MARK) ## Headings or enumerations
         (NOT 1 EOS)
 ;
@@ -335,16 +635,16 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 
 ## Example: handle 'орында' in
 ## Қазақстанның басқа қалаларымен салыстырғанда тұрғыны жөнінен 3-ші орында ( Алматы мен Астанадан кейін ) .
- SELECT SUB:1 Cop IF
+SELECT SUB:1 Cop IF
         (1 (lpar))
         (2* (rpar) BARRIER EOS)
         (NOT -1 Colon) 
- ;
+;
 
 
 
 #
- SELECT SUB:1 Cop IF
+SELECT SUB:1 Cop IF
         (1 MARK)
         (2*/1 Cop BARRIER EOS)
         (NOT 0 Interj) ## Дұрыс, оның мысығы бар.
@@ -353,10 +653,10 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 ;
 ## Жоқ, Айгүлдің күшігі [0]жоқ, оның мысығы [0]бар.
 
- SELECT SUB:1 Cop IF
+SELECT SUB:1 Cop IF
         (1 EOS)
         (NOT 0 V OR Vaux)
- ;
+;
 
 # ======= #
   SECTION
@@ -367,17 +667,12 @@ SELECT (pass) IF (0 ("жоспарлан")) ;
 # POS marking
 # ===========
 
-REMOVE A IF
-        (0 ("қол"i))
-        (1 ("жу"i))
-       ;
-
 "<қандай>" REMOVE N ;
 
 SELECT N IF
         (0 ("сурет"i))
         (-1 (adj advl) OR Det OR A)
-       ;
+;
 
 
 #INPUT: ^Сіздің/сіз<prn><pers><p2><sg><frm><gen>$ ^атыңыз/ат<v><tv><imp><p2><frm><sg>/ат<n><px2sg><frm><nom>/ат<n><px2sg><frm><nom>+е<cop><aor><p3><pl>/ат<n><px2sg><frm><nom>+е<cop><aor><p3><sg>$ ^кім/кім<det><itg>/кім<prn><itg><nom>/кім<prn><itg><nom>+е<cop><aor><p3><pl>/кім<prn><itg><nom>+е<cop><aor><p3><sg>$^?/?<sent>$^./.<sent>$
@@ -385,7 +680,7 @@ SELECT N IF
 SELECT N IF
         (0 ("ат"i))
         (-1 (prn pers))
-       ;
+;
 
 # This rule is too general, breaks a few things.Corrected
 
@@ -406,7 +701,7 @@ SELECT N IF
 # INPUT: for examle: "ата келді" translated as "grandfather come" 
 SELECT N IF
 	(0 ("ата"))
-       ( (NOT -1 N) OR (NOT -1 BOS))
+        ( (NOT -1 N) OR (NOT -1 BOS))
 	( (NOT -1 (Nacc)) OR (NOT -1 BOS))
 ;
 
@@ -448,7 +743,7 @@ REMOVE SUB:1 FinalClitic IF
 ## Балықшы бұл ақшаға үй тұрғызды.
 
 
- SELECT FiniteVerb IF
+SELECT FiniteVerb IF
       (1 EOS OR ("де"i))               # FIXME s/.*/SentenceBoundary/
        (NOT 0 ("шығар"i) OR ("бар"i))   # FIXME a better way?
        (NOT 0/1 Cop)
@@ -459,7 +754,7 @@ REMOVE SUB:1 FinalClitic IF
 
 
 #
- SELECT Interj OR (cnjadv) IF
+SELECT Interj OR (cnjadv) IF
         (-1 BOS)
         (1 Cm)
 ;
@@ -470,7 +765,7 @@ REMOVE SUB:1 FinalClitic IF
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
 # OUTPUT: [0]^Мен/Мен<cnjcoo>/Мен<prn><pers><p1><sg><nom>$
 #         ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
- REMOVE Post IF
+REMOVE Post IF
         (NOT -1 NOMINAL)
         (NOT -1 ("\*.+"r))
 ;
@@ -478,24 +773,24 @@ REMOVE SUB:1 FinalClitic IF
 
 # An adjective ending with -LI is ambiguous with: 1) a noun or adjective in
 # accusative, and 2) with  a verb in <ifi> form.
- REMOVE Acc IF
+REMOVE Acc IF
         (0 (n acc) OR (adj subst nom))
         (0 A)
         (NOT 1 V)
 ;
- REMOVE V IF
+REMOVE V IF
         (0 A)
         (0 (ifi))
         (NOT 1 EOS OR Cm)
 ;
- SELECT A IF
+SELECT A IF
         (-1 ("аса"i) OR ("өте"i))
         (0 A)
         (0 (n acc))
 ;
 
 # Proper noun or not?
- SELECT Prop IF
+SELECT Prop IF
         (0 ("[:upper:]+[:lower:]*"r))
         (NOT -1 BOS)
         (NOT 0 ("Кеңес"))
@@ -503,25 +798,28 @@ REMOVE SUB:1 FinalClitic IF
         (NOT 0 ("сен"))
 ;
 ## 108. Өйткені бүгінгі [0]Арал деген атау сол XVII ғасырдан бергі жерге берілген.
- SELECT Prop IF
+SELECT Prop IF
         (0 Prop)
         (0 ("<[:upper:][:upper:]+>"r))
 ;
 ## [0]АЗАМАТ ҚАЙДА?
- SELECT Prop IF
+SELECT Prop IF
         (1 ("мен") + Post)
         (2 Prop)
 ;
    
 ## [0]Азамат пен Айгүл бақшада.
 ### : for "Алма мен Аян"-cnjcoo
-SELECT CC IF (-1 N)(0 CC)(1 N);
+#SELECT CC IF (-1 N)
+#             (0 CC)
+#             (1 N)
+#;
 
 ### : for "қысқа ай"-adj
 SELECT A IF (0 N + Dat)(1 N );
 
 #
- SELECT Pron IF
+SELECT Pron IF
         (0C Det OR Pron)
         (1C Adv)
 ;
@@ -533,7 +831,7 @@ SELECT A IF (0 N + Dat)(1 N );
 #        бет<n><px3sp><loc><subst><nom>/$
 # OUTPUT: [0]^терістік/терістік<n><attr>/терістік<n><nom>$
 #         ^бетіндегі/бет<n><px3sp><loc><attr>...$
- REMOVE V IF
+REMOVE V IF
         (0 PRE-N)
         (1C N)
         (NOT 0 Gerund)
@@ -545,7 +843,7 @@ SELECT A IF (0 N + Dat)(1 N );
 
 # INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
 # OUTPUT: ^бақша<n><nom>$ [0]^арқылы<post>$
- REMOVE Adv IF
+REMOVE Adv IF
         (0 Post)
         (-1 N)
         (NOT 0 ("бірге"i)) # мысығымен бірге<post> үйде<n>
@@ -565,13 +863,13 @@ SELECT A IF (0 N + Dat)(1 N );
 #;
 
 
- SELECT (cnjcoo) OR (cnjadv) IF
+SELECT (cnjcoo) OR (cnjadv) IF
         (-1 BOS)
         (0 ("әлде"))
- ;
+;
 
 
- REMOVE IJ IF
+REMOVE IJ IF
         (0 A)
         (1 N)
 ;
@@ -605,7 +903,7 @@ REMOVE Det IF
 
 
 #
- REMOVE Attr IF
+REMOVE Attr IF
        (0 N OR Prop)
        (NOT 0 Loc)
        (NOT 1 N OR Prop)
@@ -615,7 +913,7 @@ REMOVE Det IF
 
 # Select nominative reading of the first noun of the II izafet construct
 # (as Tatar grammars call it)
- SELECT Nom IF
+SELECT Nom IF
         (0C N OR Prop)
         (1 N OR Prop OR Subst)
         (1 (px3sp))
@@ -639,7 +937,7 @@ REMOVE Det IF
 ## professions, such as "оқушы"; -U gerunds , in theory other gerunds too
 
 
- SELECT Det IF
+SELECT Det IF
         (0 Det)
         (0 (gpr_ppot))
 ;
@@ -657,7 +955,7 @@ REMOVE PersonalPossessives IF
 ## 1929 ж. сырттай өлім жазасына кесілді.
 
 
- "<қысым>" REMOVE PersonalPossessives ;
+"<қысым>" REMOVE PersonalPossessives ;
 
 
 # Adjectives
@@ -667,7 +965,7 @@ REMOVE PersonalPossessives IF
 
 # select adverbial reading of adjectives if any verbal form except gerund follows
 # FIXME CHECK it might be a gerund as well
- SELECT Advl OR Adv IF
+SELECT Advl OR Adv IF
          (1C V-NotGerund)
          #(NOT 1C Participle)
          (NOT 1 ("бол"))
@@ -680,11 +978,11 @@ REMOVE PersonalPossessives IF
 REMOVE Advl IF (1 NOMINAL) ;
 
 # select adj+cop reading at the end of a sentence
- SELECT Sub:1 Cop IF
+SELECT Sub:1 Cop IF
         (0C A1-Nom)
         (1 EOS OR MARK)
 ;
- REMOVE Subst IF # we want adj+cop reading here, not adj.subst+cop
+REMOVE Subst IF # we want adj+cop reading here, not adj.subst+cop
         (0C A1-Nom)
         (1 EOS OR MARK)
 ;
@@ -698,14 +996,6 @@ REMOVE SUB:1 P3 IF
 ;
 ## "Біз [0]қуаныштымыз."
 
-
-REMOVE A IF
-       (0 Subst)
-       (0 Pron)
-       (0 NGDAALI)
-;
-## "[0]түгелімен."
-		
 
 
 # Postpositions
@@ -722,35 +1012,35 @@ REMOVE A IF
 ## өзін ресейлік Pussy Riot панк тобымен және New York Times басылымымен [0]қатар қойды.
 
 #
- "<қарай>" SELECT Post IF
+"<қарай>" SELECT Post IF
         (-1 Dat)
 ;
 ##
 
 
 #
- "<қарағанда>" SELECT Post IF
+"<қарағанда>" SELECT Post IF
         (-1 Dat)
 ;
 ##
 
 
 #
- "<қарамастан>" SELECT Post IF
+"<қарамастан>" SELECT Post IF
         (-1 Dat)
 ;
 ##
 
 
 #
- "<дейін>" SELECT Post IF
+"<дейін>" SELECT Post IF
         (-1 Dat)
 ;
 ##
 
 
 #
- "<бері>" SELECT Post IF
+"<бері>" SELECT Post IF
         (-1 Abl)
 ;
 ##
@@ -764,7 +1054,7 @@ REMOVE A IF
 
 
 #
- "<қоса>" SELECT Post IF
+"<қоса>" SELECT Post IF
         (-1 Dat)
 ;
 ##
@@ -780,21 +1070,21 @@ REMOVE A IF
 
 
 #
- REMOVE Participle IF
+REMOVE Participle IF
         (NOT 1C V OR Vaux)
 ;
 ##
 
 
 # <prc_cond> vs. <gna_cond>
- REMOVE (prc_cond) IF
+REMOVE (prc_cond) IF
         (NOT 1 ("бол") + V)
 ;
 ## 34 . Ол Азаматтың қайда екенін [0]білсе де айтқысы келген жоқ.
 
 
 #
- SELECT Participle IF
+SELECT Participle IF
         (0C Participle OR VerbalAdverb)
         (NOT 0C (prc_cond) OR (gna_cond))
         (1 Vaux)
@@ -804,10 +1094,10 @@ REMOVE A IF
 
 
 #
- REMOVE Vaux IF
+REMOVE Vaux IF
         (NOT -1 Participle)
 ;
- SELECT Vaux IF
+SELECT Vaux IF
         (-1C Participle) 
         (NOT 1 Vaux) 
 ;
@@ -829,7 +1119,7 @@ REMOVE A IF
 # <Vaux p3> is more common, so let's set it as default
 # Rules for selecting imperative reading of these three (if any) must be placed
 # before this rule
- SELECT (vaux p3) IF
+SELECT (vaux p3) IF
         (-1 (prc_perf) OR (prc_plan) OR (prc_impf))
         (0 ("<жүр>") OR ("<тұр>") OR ("<отыр>"))
 ;
@@ -840,7 +1130,7 @@ REMOVE A IF
 
 # 2p sg imperative form is a bare stem, so it is often ambigious with other
 # parts of speech
- REMOVE (imp) IF
+REMOVE (imp) IF
         (NOT 1 EOS OR MARK OR ("де") OR Rquot OR (guio))
 ;
 ##  96 . Ал оң жақ жағалауы батпақты, онда [0]қалың орман өскен.
@@ -851,7 +1141,7 @@ REMOVE A IF
 
 
 #
- SELECT (gpr_past) IF
+SELECT (gpr_past) IF
         (0 (ger_past) + Nom)
         (1C N)
         (NOT 0 Det)
@@ -861,6 +1151,9 @@ REMOVE A IF
 ## шешімі арқылы тәркіленген мұражайлық маңызы бар жинақтардың немесе
 ## [0]жекелеген заттардың есебінен;
 
+
+## do not lexicalise passive forms
+SELECT Pass ;
 
 # Numerals
 # ========
@@ -886,7 +1179,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 #REMOVE Pl IF (0 V OR Vaux OR Cop) (0 P3) ;
 
 # Thought that the above rule should cover copulas, seems that sometimes it doesn't
-  REMOVE SUB:1 Pl IF
+REMOVE SUB:1 Pl IF
         (0/1 Cop)
        (0/1 P3)
 ;
@@ -897,46 +1190,46 @@ REMOVE ORD IF (1 QUANTITY) ;
                                   # rules.
 
 #
- "<өте>" SELECT Adv IF (1 A) ;
+"<өте>" SELECT Adv IF (1 A) ;
 ## Бірақ кеше _өте_ суық еді!
 
 
 # ugly and RISKY
- "<сол>" SELECT Det IF
+"<сол>" SELECT Det IF
         (NOT 1 ("қол"i) OR ("жақ"i))
 ;
 ## (!) Күйеуім - сол жақтың қазағы.
 
 
 #
- "<аса>" SELECT Adv IF
+"<аса>" SELECT Adv IF
          (1 A)
 ;
 ## "Әл-Истахри келтірген мәліметтер аса құнды саналады."
 
 
 #
- "<ал>" REMOVE CC IF
-        (NOT -1 BOS OR Cm )
+"<ал>" REMOVE CC IF
+        (NOT -1 BOS OR Cm OR Opening)
 ;
 ## Бөлмеде шкаф бар, содан бiр кiтап ал.
 
 #
- "<жылы>" SELECT N IF
+"<жылы>" SELECT N IF
         (-1 Num)
 ;
 
 ##
- "<теңге>" SELECT N IF
+"<теңге>" SELECT N IF
         (0 A)
 ;
 #
- "<жылы>" SELECT N IF
+"<жылы>" SELECT N IF
         (-1 A)
 ;
 
 #
- "<қарасты>" SELECT A IF
+"<қарасты>" SELECT A IF
         (-1 (dat))
 ;
 ## 177. Орталыққа _қарасты_ Түркістан қаласында Н.Оңдасынов атындағы
@@ -944,7 +1237,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<қайта>" SELECT Adv IF
+"<қайта>" SELECT Adv IF
         (1C V)
 ;
 ## 41 . Ол дыбыс қайта естіледі!
@@ -952,7 +1245,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<енді>" SELECT Adv IF
+"<енді>" SELECT Adv IF
         (1* Acc BARRIER EOS)
         (1* V BARRIER EOS)
 ;
@@ -960,14 +1253,14 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<көптеген>" SELECT Det IF
+"<көптеген>" SELECT Det IF
         (1 N + Pl)
 ;
 ##
 
 
 # ambigious with v.pass
- "<құрал>" SELECT N IF
+"<құрал>" SELECT N IF
         (-1 A OR (n attr))
 ;
 ##
@@ -976,7 +1269,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 # UGLY
 # "сый" is certainly not <v.iv.imp> in the following example,
 # I don't think that сый<imp> is ever used
- "<сый>" SELECT N
+"<сый>" SELECT N
 ;
 ## 171. Жеке және заңды тұлғалардан _сый_ немесе мұра ретінде қабылданған заттар
 ## есебінен.
@@ -984,14 +1277,14 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 # imperative of "ісу" ("to swell") - just like "<сый>" above sounds odd,
 # but let's try to deal with it in a less ugly way
- "<іс>" SELECT N IF
+"<іс>" SELECT N IF
         (-1 A)
 ;
 ## 178. ...тәрбиелік мәні бар іс-шараларды бірге ұйымдастыру...
 
 
 # FIXME: could be achieved with a more general rule I think
- "<көрме>" SELECT N IF
+"<көрме>" SELECT N IF
         (1 ("зал"i))
 ;
 ## 181. Ғимарат 3 қабаттан, 5 көрме залынан, конференция залынан,
@@ -999,7 +1292,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT N IF
+SELECT N IF
         (0 ("же"i) + (gpr_fut))
         (0 ("жер"i) + N)
 ;
@@ -1015,16 +1308,25 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT CC IF
+SELECT CC IF
         (0 ("сондай-ақ"i))
         (-1 BOS OR Cm)
+;
+SELECT CC IF
+        (0 ("сондай-ақ"i))
+        (-1 Guio)
+        (-2 BOS)
+;
+SELECT Adv IF
+        (0 ("сондай-ақ"i))
+        (NOT -1 BOS OR Cm)
 ;
 ## 87 . Сондай-ақ, Арал теңізінің көлемі жайлы, Арал теңізі жайлы ұғымдар сонау
 ## ерте дүние әдебиеттерінде де кездеседі.
 
 
 #
- SELECT N IF
+SELECT N IF
         (0 ("құрама"i))
         (-1 PRE-N)
 ;
@@ -1032,7 +1334,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT N IF
+SELECT N IF
         (0 ("қор"))
         (-1 N)
 ;
@@ -1041,7 +1343,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT A IF
+SELECT A IF
         (0 ("құрама"))
         (-1 (np top))
 ;
@@ -1051,7 +1353,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<жинағы>" SELECT N IF
+"<жинағы>" SELECT N IF
             (-1 N + Pl)
 ;
 ## 165. ...тарихи жәдігерлер жинағы арқылы көрсету.
@@ -1059,9 +1361,9 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<Ертең>" SELECT Adv
+"<Ертең>" SELECT Adv
 ;
- "<ертең>" SELECT Adv IF
+"<ертең>" SELECT Adv IF
            (1 V)
 ;
 ## Ертең келесің бе?
@@ -1070,7 +1372,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT N IF
+SELECT N IF
         (0 ("сыра"i))
         (1 ("іш") + V)
 ;
@@ -1078,7 +1380,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 # да<postadv/conj>
- SELECT SUB:1 Postadv IF
+SELECT SUB:1 Postadv IF
         (0 (gna_cond))
         (NOT 0 (cnjadv))
 ;
@@ -1088,7 +1390,7 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- SELECT Adv IF
+SELECT Adv IF
         (0 ("бірге"))
         (NOT -1 Ins)
         (1 V)
@@ -1098,21 +1400,21 @@ REMOVE ORD IF (1 QUANTITY) ;
 
 
 #
- "<жасар>" SELECT A IF
+"<жасар>" SELECT A IF
                   (-1 Num)
 ;
 ## 7 . Азамат алты жасар кішкентай бала.
 
- SELECT Pron IF
+SELECT Pron IF
         (0 ("<ешкім>"i))
 ;
 ## 70. Оның рекордын әзірше ешкім бұза алған жоқ.
 
 
- "<атты>" SELECT A IF
+"<атты>" SELECT A IF
                  (1 N)
 ;
- "<топырақты>" SELECT A IF
+"<топырақты>" SELECT A IF
                       (1 N)
 ;
 ## 53 . Еуро-2012 туралы [0]қызықты статистикаға көз салыңыз.
@@ -1140,7 +1442,7 @@ REMOVE (pass) IF (0 ("қырыл"));
     ## жасушалардың қырылуы
 
 
- "<жаппай>" SELECT A IF
+"<жаппай>" SELECT A IF
                  (1 N)
 ;
 ## Қытай мамандары ауыл тұрғындарының қалаға жаппай ағылуын тоқтататын жаңа
@@ -1174,40 +1476,38 @@ REMOVE (pass) IF (0 ("қырыл"));
 
 
 # басым recognized as noun бас, select ADJ form
- "<басым>" SELECT A IF
+"<басым>" SELECT A IF
         (1 (px3sp))
 ;
 ## Олардың басым бөлігі – 2011 жылы жұмыс іздеп,
 
 
 # тұрғыны recognized as noun тұрғы should select тұрғын before қаза
- "<тұрғыны>" SELECT ("тұрғын") IF
+"<тұрғыны>" SELECT ("тұрғын") IF
         (1 ("қаза"))
 ;
 ## 2011 жылы 16 желтоқсанда 16 тұрғыны қаза тапқан
 
 
 # V-Iп FourAuxiliaries-GAн жоқ-COP
- SELECT (gpr_past) IF
+SELECT (gpr_past) IF
         (-1 (prc_perf))
         (0 FourAuxiliaries)
         (1 ("жоқ"))
 ;
- "<жоқ>" SELECT SUB:1 Cop IF
+"<жоқ>" SELECT SUB:1 Cop IF
         (-2 (prc_perf))
         (-1 FourAuxiliaries)
 ;
- "<жоқ>" REMOVE Subst IF
+"<жоқ>" REMOVE Subst IF
         (-2 (prc_perf))
         (-1 FourAuxiliaries)
 ;
 ## 19 . Ол еш нәрсені көріп тұрған жоқ, ол санап жатыр.
 
 #
- "<керек>" SELECT A
-;
+"<керек>" SELECT A ;
 ## 45 . Бұл Азамат болу керек!
-
 
 # Сен бардың ба?
 REMOVE (gen) IF
@@ -1219,7 +1519,7 @@ REMOVE (gen) IF
 #        ^қазақпын/қазақ<n><nom>+е<cop><p1><sg>$
 # OUTPUT: [0]^Мен<prn><pers><p1><sg><nom>$
 #         ^қазақ<n><nom>+е<cop><p1><sg>$
- SELECT Pron-Pers IF
+SELECT Pron-Pers IF
         (0 ("<Мен>"))
         (-1 BOS)
 ;
@@ -1236,7 +1536,7 @@ SELECT Pron-Pers IF
 
 # INPUT: ^онымен/он<num><subst><px3sp><ins>/ол<prn><pers><p3><sg><ins>$
 # OUTPUT: [0]^ол<prn><pers><p3><sg><ins>$
- SELECT Pron-Pers IF
+SELECT Pron-Pers IF
         (0 ("<онымен>"i))
         (NOT -1 (Pron-Pers))
 ;
@@ -1276,7 +1576,7 @@ SELECT Pron-Pers IF
 
 
 
- SELECT N IF
+SELECT N IF
         (0 ("<үстінде>"i)OR ("<астында>" i)OR ("<артында>" i))
         (-1 N)
 ;
@@ -1296,7 +1596,7 @@ SELECT SUB:1 Pl IF
 #;
 
 
-SELECT  Cop IF
+SELECT Cop IF
         (-1 ("<керек>"i))
         (0 Cop)
        
@@ -1334,8 +1634,8 @@ SELECT V-TV IF
 ## Соны қайтып қыласың?
 
 SELECT V-IV IF
-		(0 ("істе"))
-		(NOT -1 NOMINAL)
+	(0 ("істе"))
+	(NOT -1 NOMINAL)
 ;
 
 
@@ -1347,7 +1647,6 @@ SELECT Prc-vol IF (1 ("кел")) ;
 
 
         
-;
 
 
 # INPUT:  ^Орал/орал<n><nom>/орал<n><attr>/Орал<np><top><nom>/Орал<np><top><attr>/ора<v><tv><pass><imp><p2><sg>/Орал<np><ant><f><nom>/Орал<np><ant><m><nom>/орал<n><nom>+е<cop><aor><p3><pl>/орал<n><nom>+е<cop><aor><p3><sg>/Орал<np><top><nom>+е<cop><aor><p3><pl>/Орал<np><top><nom>+е<cop><aor><p3><sg>/Орал<np><ant><f><nom>+е<cop><aor><p3><pl>/Орал<np><ant><f><nom>+е<cop><aor><p3><sg>/Орал<np><ant><m><nom>+е<cop><aor><p3><pl>/Орал<np><ant><m><nom>+е<cop><aor><p3><sg>$ 
@@ -1471,6 +1770,7 @@ SELECT Imp IF (1* Excl) ;
 
 REMOVE Imp IF (NOT 1* Excl) (0C Imp OR Pres) ; 
 
+## lexicalise coop forms
 REMOVE Coop IF (0 IV - Coop) ;
 
 REMOVE N IF (-1 Dat) (0 Dat) (0C N OR V) ;
@@ -1543,103 +1843,86 @@ SECTION ## selecting the most frequent analysis
 
 "<бұлармен>"i REMOVE V ;
 
-"<біздің>"i SELECT Pron ;
+SELECT Pron (0 ("біз"i)) ;
 
 "<үшін>"i SELECT Post ;
 
 "<өсті>"i REMOVE ("өсті") ;
 
+"<біледі>"i SELECT ("біл") ;
 
-#######
-SECTION  ## mapping rules
-#######
+"<енді>"i SELECT Adv ;
 
+"<қазір>"i SELECT Adv ;
 
-MAP @advcl (gna_perf) - ("бол") ;
-MAP @advcl (adj) IF (1 ("бол") + VerbalAdverb) ;
+"<мұндай>"i SELECT Det ;
 
-MAP @amod (num ord) | (loc attr) | (adj) - (advl) | Adv + Attr ;
+"<барлық>"i SELECT Det ;
 
-MAP @cop ("бол" v iv) ;
+"<[12][0-9][0-9][0-9]>"ri SELECT Ord ;
 
-MAP @punct Sent OR Cm OR Guio ;
+"<әр>"i SELECT Det ;
 
-MAP @root (n px3sp nom) IF (1 FiniteVerb) (2 (sent)) ;
-MAP @root (imp) IF (-1 BOS) (1 Cm) ;
-MAP @root FiniteVerb IF (NOT * @root) ;
-
-MAP @nmod:poss (nom) - (px3sp) IF (1* (px3sp)) ;
-MAP @nmod:poss (gen) ;
-
-MAP @nsubj (n nom) IF (NOT -1* (@nsubj nom)) ;
-MAP @nsubj (nom) IF (NOT * (nom)) ;
-
-MAP @csubj (ger nom) ;
-
-MAP @obl Dat | Loc | Ins;
-MAP @obl Nom IF (1 Post) ;
-	
-MAP @obj ("<не>") IF (1* (tv)) ;
-MAP @obj (acc) ;
-MAP @obj (nom) IF (-1* (nom)) ;
-	
-MAP @aux (vaux) ;
-
-MAP @parataxis (v) IF (@1 @root) ;
-
-MAP @det (det) ;
-
-MAP @case Post ;
-
-MAP @nummod (num) - (ord) ;
+"<құқықтық>"i SELECT Adj IF (1 ("база"i)) ;
 
 
-#######
+####### ??????????????????????????????????????????????
+####### THEY ACTUALLY DON'T WORK BECAUSE ORDER OF RULES: 1.disam, 2.parse
 SECTION  ## disambig rules which rely on mapping tags
 #######
 
 
-SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (NOT <*-1 (@nsubj) OR (@csubj)) ;
-SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (pl @nsubj)) ;
-SELECT Sg IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (@nsubj) OR (@csubj) - (pl));
+#SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (NOT <*-1 (@nsubj) OR (@csubj)) ;
+#SELECT Pl IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (pl @nsubj)) ;
+#SELECT Sg IF (0 V OR Vaux OR Cop) (0 P3) (<*-1 (@nsubj) OR (@csubj) - (pl));
 
 
 #######
-SECTION  ## attachement
+SECTION ## this section is meant for rules which try to disambiguate particular
+####### ## wordforms. In other words, they contain particular wordforms in their
+        ## bodies. This separatio doesn't seem to make much sense anymore.
+        ## Better way of making CG portable to other languages is not to refer
+        ## to lemmas or wordform directly but rather only through variables,
+        ## the way it's done in morph.cg3 (for the most part), but doing so by
+        ## hand is rather tedious to be honest.
+
+"<мен>"i SELECT Pron IF (-1 BOS OR Guio OR Opening OR Sent OR Cm OR Loc) ;
+"<мен>"i SELECT CC ;
+
+"<бойынша>"i SELECT Post ;
+
+REMOVE Post IF (0 ("мен"i)) ;
+
+"<үшін>"i SELECT Post ;
+
+REMOVE ("бұл"i) + N ;
+
+"<туралы>"i SELECT Post ;
+
+"<оның>"i REMOVE Num ;
+
+"<оның>"i REMOVE N ;
+
+SELECT CC IF (0 ("ал"i)) (-1 BOS OR Cm OR Opening) ;
+
+## бер <adv> тотылырсың әле vs бер кеше or бер ике өч
+"<бір>"i REMOVE ADV IF (NOT 1 V) ;
+
+"<табысты>"i SELECT Adj - Advl IF (1 ("дамы"i)) ;
+
+"<аса>"i SELECT Adv ;
+
+
+#######
+SECTION ## Mansur 2
 #######
 
-
-SETPARENT @root TO (@0 (*)) ;
-
-SETPARENT (*) (NEGATE p (*)) TO (0* @root) ;
-
-SETPARENT @nmod:poss TO (1* PersonalPossessives) ;
-SETPARENT (@nmod:poss gen) TO (1* (n)) ;
-
-SETPARENT @amod + ("[0-9]+"r) TO (2 (n px3sp)) ;
-SETPARENT @amod + (loc attr) TO (1* (n)) ;
-SETPARENT (@amod adj) TO (1* (n)) ;
-SETPARENT (@amod adv attr) TO (1* (n)) ;
+# ...
+SELECT VTv IF (-1 Acc) ;
 
 
-SETPARENT @nsubj TO (1* ("соғыс")) ;
 
-SETPARENT @obl TO (1* ("соғыс")) ;
 
-SETPARENT @obj TO (1* (v)) ;
 
-SETPARENT @aux TO (-1 Participle) ;
 
-SETPARENT @advcl TO (1* @root OR @parataxis) ;
 
-SETPARENT @det TO (1* (n)) ;
-
-SETPARENT @case TO (-1 (*)) ;
-
-SETPARENT @cop TO (-1 (*)) ;
-
-SETPARENT @nummod TO (1* NOMINAL) ;
-
-SETCHILD (gna_perf) TO (-1 @obl) ;
-
-SETCHILD (ger) TO (-1* @obl) ;

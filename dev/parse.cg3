@@ -1,0 +1,416 @@
+# SETPARENT, ADD (label)
+
+INCLUDE STATIC sets.cg3 ;
+
+#######
+SECTION  ## mapping rules
+#######
+
+# Sentence consisiting of a single word!
+MAP @root (*) IF (-1 BOS)
+                 (1 EOS)
+;
+MAP @root (*) IF (-2 BOS)
+                 (-1 Guio)
+                 (1 EOS)
+;
+MAP @root (*) IF (-2 BOS)
+                 (-1 Guio)
+                 (1 Sent)
+                 (2 EOS)
+;
+MAP @root (*) IF (-1 BOS)
+                 (1 Sent)
+                 (2 EOS)
+;
+
+MAP @punct Quot ;
+MAP @punct Parenth ;
+
+MAP @discourse IJ ;
+MAP SUB:1 @discourse Qst + ("ма") ;
+MAP SUB:2 @discourse Qst + ("ма") ;
+MAP @discourse Qst + ("ше") ;
+MAP SUB:1 @discourse Mod_ass + ("ғой") ;
+MAP SUB:2 @discourse Mod_ass + ("ғой") ;
+MAP SUB:1 @discourse Mod_ass ; # Too general?
+MAP SUB:1 @discourse Mod_emo ; # Too general?
+
+MAP @discourse FinalClitic ; # Too general?
+
+MAP @compound Abbr + ("б.з.б.") ;
+
+MAP @appos Num - Ord + NumberWords ;
+
+MAP @nsubj Prop + Nom IF (-1 BOS)
+                         (NOT 1 Px3sp)
+                         (NOT 1 Prop + CasesWoNum)
+;
+MAP @nsubj Prop + Nom IF (NOT 1 Px3sp)
+                         (NOT 1 Degen)
+                         (NOT 1 PropCog - Nom)
+                         (NOT -1* @nsubj)
+;
+MAP @flat:name PropCog IF (-1 PropAnt) ;
+MAP @flat:name Prop IF (NOT 0 Ins)
+                       (-1 Prop)
+                       (NOT -1 @flat:name)
+;
+MAP @nsubj Pron + Pers + P1 + Sg + Nom IF (NOT 1 Post) ; # мен
+MAP @nsubj Pron + Pers + P2 + Sg + Nom IF (NOT 1 Post) ; # сен
+MAP @nsubj Pron + Pers + P3 + Sg + Nom IF (NOT 1 Post) ; # ол
+MAP @nsubj Pron + Pers + P1 + Pl + Nom IF (NOT 1 Post) ; # біз
+MAP @nsubj Pron + Pers + P2 + Pl + Nom IF (NOT 1 Post) ; # сіз сіздер
+MAP @nsubj Pron + Pers + P3 + Pl + Nom IF (NOT 1 Post) ; # олар
+
+# өз
+#MAP @nsubj Pron + Ref + Nom IF (-1 BOS);
+#MAP @nsubj Pron + Ref + Nom ;
+MAP @nsubj Pron + Nom + ("<өзі>" "өз") IF (-1 BOS) ;
+MAP @nsubj Pron + Nom + ("<өзі>" "өз") ;
+
+MAP @root ("<керек>" adj) | ("бар" adj) | ("жоқ" adj) IF (1 EOS)
+                                                         (NOT -1* V - Gerund - VerbalAdjective)
+;
+MAP @root ("<керек>" adj) | ("<бар>" adj) | ("<жоқ>" adj) IF (1 EOS) ;
+MAP @root ("<керек>" adj) | ("<бар>" adj) | ("<жоқ>" adj) IF (1 Sent)
+                                                             (2 EOS)
+;
+MAP @root ("<керек>" adj) | ("<бар>" adj) | ("<жоқ>" adj) IF (1 Cop | Vaux)
+                                                             (2 EOS)
+;
+MAP @root ("<керек>" adj) | ("<бар>" adj) | ("<жоқ>" adj) IF (1 Cop | Vaux)
+                                                             (2 Sent)
+                                                             (3 EOS)
+;
+
+MAP @root (adj) IF (1 EOS) ;
+MAP @root (adj) IF (1 Sent)
+                   (2 EOS)
+;
+MAP @root (adj) IF (1 Cop | Vaux)
+                   (2 EOS)
+;
+MAP @root (adj) IF (1 Cop | Vaux)
+                   (2 Sent)
+                   (3 EOS)
+;
+
+MAP @root NOMINAL IF (1 EOS)
+                     (NEGATE 0* @root)
+;
+MAP @root NOMINAL IF (1 Sent)
+                     (2 EOS)
+                     (NEGATE 0* @root)
+;
+MAP @root NOMINAL IF (1 Cop | Vaux)
+                     (2 EOS)
+                     (NEGATE 0* @root)
+;
+MAP @root NOMINAL IF (1 Cop | Vaux)
+                     (2 Sent)
+                     (3 EOS)
+                     (NEGATE 0* @root)
+;
+
+# кім
+MAP @root Pron + Interr + Nom IF (1 Sent | EOS)
+                                 (NEGATE 0* @root)
+;
+MAP @nsubj Pron + Interr + Nom IF (NOT 1 Post)
+                                  (NEGATE 0* @root)
+;
+
+MAP @nsubj Pron + Qnt + Nom ;
+MAP @nsubj Pron + Nom + Dem ;
+
+MAP @aux Vaux + Gpr_past ;
+
+# FIXME acl vs acl:relcl
+MAP @acl:relcl Gpr_impf ;
+
+MAP @conj N IF (-1 CcMn)
+               (NOT 1 Px3sp)
+;
+MAP @conj N IF (-3 Px3sp)
+               (-2 CcMn)
+               (-1 Gen | Adj)
+               (0 Px3sp)
+;
+MAP @conj Vaux + Gpr_past + Pass ;
+# TODO FIXME
+#MAP @conj N + Nom IF (-1 Cm | CC) (-2 N + Nom | Attr) ;
+#MAP @conj N + Gen IF (-1 Cm | CC) (-2 N + Gen | Attr) ;
+#MAP @conj N + Dat IF (-1 Cm | CC) (-2 N + Dat | Attr) ;
+#MAP @conj N + Acc IF (-1 Cm | CC) (-2 N + Acc | Attr) ;
+#MAP @conj N + Abl IF (-1 Cm | CC) (-2 N + Abl | Attr) ;
+#MAP @conj N + Loc IF (-1 Cm | CC) (-2 N + Loc | Attr) ;
+#MAP @conj N + Ins IF (-1 Cm | CC) (-2 N + Ins | Attr) ;
+MAP @conj Adj IF (-1 Cm | CC)
+                 (-2 Adj)
+;
+#MAP @conj (*) IF (-1 Cm | CC) (-2 @conj)
+
+#MAP @root N + Nom + Px3sp IF (1 Sent | EOS) ;
+#MAP @nsubj N + Nom + Px3sp IF (NOT 1 Sent | EOS) ;
+
+MAP @root Adj IF (1 Cm | Sent | EOS) ; ########### ??????????(NEGATE 0* @root)
+
+
+#adv     PronType=Int    advmod  _  
+#adv     PronType=Int    root    SpaceAfter=No
+MAP @root Adv + Interr IF (1 Cop | Cm | Sent | EOS) ;
+MAP @root Adj + Interr IF (1 Cop | Cm | Sent | EOS) ;
+MAP @root Pron + Interr IF (1 Cop | Cm | Sent | EOS) ;
+#MAP @advmod Adv + Interr ;
+#MAP @advmod Adj + Interr ;
+#MAP @advmod Pron + Interr ;
+
+
+#MAP @advcl ("<деп>") ;
+MAP @advcl Participle IF (1 (aux ger nom)) 
+                         (2 ("<үшін>"))
+;
+MAP @csubj Participle IF (1 (aux ger nom)) ;
+MAP @csubj Impfs IF (1 ("біл"i) + Vaux) ;
+
+
+MAP @cop ("бол" v iv) ;
+MAP @cop Cop IF (1 Cm | Sent | EOS) ;
+MAP SUB:1 @cop Cop IF (1 Cm | Sent | EOS) ;
+MAP SUB:1 @advmod ("да" postadv) ;
+MAP SUB:2 @advmod ("да" postadv) ;
+MAP @advmod Cnjadv ;
+MAP SUB:1 @cc ("да" cnjcoo) ;
+
+
+MAP @acl:relcl (gpr_past) IF (NOT 1 EOS) ;
+
+MAP @advcl (gna_perf) - ("бол") ;
+MAP @advcl (adj) IF (1 ("бол") + VerbalAdverb) ;
+MAP @advcl V | Vaux IF (1 ("<үшін>")) ;
+
+MAP @punct Sent OR Cm OR Guio OR (lquot) ;
+
+MAP @aux (vaux) ;
+
+MAP @root V + Prc_impf IF (1 Vaux)
+                          (NEGATE 0* @root)
+;
+MAP @root V + Prc_perf IF (1 Vaux) ;
+MAP @advcl V + Gna_impf ;
+MAP @advcl V + Gna_perf ;
+MAP @advcl V + Cond ;
+MAP @root FiniteVerb IF (NOT * @root) ;
+MAP @conj FiniteVerb IF (-1 Cm | CcJn) (-2 @root) ;
+MAP @root (imp) IF (-1 BOS) (1 Cm) ;
+MAP @root V - VerbalAdjective IF (1 EOS) ;
+MAP @root V IF (1 Sent)
+               (2 EOS)
+;
+MAP @root V IF (1 Vaux)
+               (2 EOS)
+;
+MAP @root V IF (1 Vaux)
+               (2 Sent)
+               (3 EOS)
+;
+MAP @root N IF (1 Vaux)
+               (2 EOS)
+;
+MAP @root N IF (1 Vaux)
+               (2 Sent)
+               (3 EOS)
+;
+MAP @root (n px3sp nom) IF (1 FiniteVerb)
+                           (2 (sent))
+                           (3 EOS)
+;
+#MAP @root N + Nom IF (1 ("бол" v iv) | ("е" v iv))
+MAP @root N + Nom IF (1 @cop)
+                     (2 EOS)
+                     (NOT -1 Degen)
+;
+MAP @root N + Nom IF (1 @cop)
+                     (2 Vaux)
+                     (3 EOS)
+;
+MAP @root N + Nom | Num + Nom IF (1 EOS)
+                                 (NOT -1* V - Gerund - VerbalAdjective)
+                                 (NOT -1* Vaux)
+;
+
+MAP @advcl N + Nom IF (1 @cop)
+                      (NOT 2 EOS)
+;
+
+MAP @amod (num ord) | (loc attr) | (adj) - (advl) | Adv + Attr ;
+
+MAP @nsubj N + Nom IF (-1 BOS)
+                      (1 Adv)
+;
+MAP @nsubj Pron + Nom IF (-1 BOS)
+                         (NOT 1 Post)
+;
+
+MAP @obl N | Prop IF (1 ("<үшін>")) ;
+
+
+MAP @compound N + Attr IF (-1 Gen)
+                         (1 Px3sp)
+;
+
+
+MAP @nmod:poss NOMINAL + Nom - Px3sp IF (1 Px3sp - Ins) ;
+#MAP @nmod:poss NOMINAL + Nom - Px3sp IF (1 Px3sp) (2 CcMn) ;
+#MAP @nmod:poss NOMINAL + Nom - Px3sp IF (1 CcMn) ;
+MAP @nmod:poss NOMINAL + Gen ;
+MAP @nmod:poss NOMINAL + Attr IF (1 Px3sp) ; ## FIXME should not have been n attr in the first place
+
+MAP @nsubj (n nom) IF (NOT -1* (@nsubj nom))
+                      (NOT 1 Px3sp + Nom)
+;
+#MAP @csubj Gerund | Participle + Nom IF (NOT * (nom))
+#                                        (NOT 1 Px3sp + Nom)
+#;
+#MAP @csubj Gerund + Nom IF (NOT 1 Px3sp + Nom) ;
+MAP @csubj Gerund + Nom IF (NOT 1 Px3sp) ;
+MAP @csubj Participle + Nom IF (NOT 1 Px3sp) ;
+#MAP @csubj (ger nom) ;
+
+MAP @advcl Gerund + Loc IF (NOT 1 Px3sp) ;
+MAP @advcl Gerund + Abl IF (NOT 1 Px3sp) ;
+MAP @advcl Gerund + Dat IF (NOT 1 Px3sp) ;
+MAP @advcl Gerund + Ins IF (NOT 1 Px3sp) ;
+
+#MAP @nmod Dat | Ins | Abl IF (1 N);
+#MAP @nmod Dat | Loc | Ins | Abl IF (2 Adj)
+#                                   (2 N)
+#;
+#MAP @nmod Dat | Abl IF (-1 Gen)
+#                       (1 Px3sp)
+#;
+#MAP @nmod Dat | Abl IF (-2 Gen)
+#                       (1 Px3sp)
+#
+#MAP @nmod Dat | Abl IF (-2 Gen)
+#                       (1 Adj)
+#                       (1 Px3sp)
+#;
+#MAP @nmod Dat | Abl IF (-1 Gen)
+#                       (1 Adj)
+#                       (1 Px3sp)
+#;
+#MAP @nmod Ins IF (1 Px3sp)
+#;
+
+MAP @obl Dat | Loc | Ins | Abl ;
+MAP @obl Nom IF (1 Post) ;
+MAP @obl ("ж.") IF (-1 Num) ;
+
+MAP @obj ("<не>") IF (1* (tv)) ;
+MAP @obj (acc) ;
+MAP @obj (nom) IF (-1* (nom)) ;
+MAP @obj NOMINAL IF (1 Degen) ;
+
+MAP @parataxis (v) IF (@1 @root) ;
+
+MAP @det (det) ;
+
+MAP @case Post ;
+
+###MAP @nummod Num IF (1 NumberWords) ; # FIXME
+MAP @compound Num IF (1 Num) ;
+MAP @nummod (num) - (ord) ;
+
+MAP @CC CC ;
+
+MAP @advmod Adv ;
+MAP SUB:1 @advmod Postadv ;
+
+
+#######
+SECTION  ## attachement
+#######
+
+SETPARENT @root TO (@0 (*)) ;
+
+SETPARENT (*) (NEGATE p (*)) TO (0* @root) ;
+
+SETPARENT @nummod TO (1* NOMINAL) ;
+SETPARENT @compound TO (1 (*)) ;
+
+SETPARENT CcJn TO (1* NOMINAL - @compound) ;
+SETPARENT CcMn TO (1* NOMINAL - @compound) ;
+
+SETPARENT @acl:relcl TO (1 (*)) ;
+SETPARENT @acl:relcl TO (1* @nsubj) ;
+SETPARENT @acl:relcl TO (1 @nmod:poss) ;
+
+#SETPARENT @nmod:poss TO (1* @root) ;
+#SETPARENT @nmod:poss TO (1* PersonalPossessives) ;
+SETPARENT @nmod:poss TO (1* @root | PersonalPossessives) ;
+SETPARENT @nmod:poss + Pron + Gen (NEGATE 1* V + @root | Vaux + @root) TO (1* N + @root | Prop + @root | Ger + @root) ; # FIXME NOMINAL + @root
+SETPARENT @nmod:poss + Pron + Gen TO (1 NOMINAL - Attr) ;
+####SETPARENT @nmod:poss + Px3sp TO (1 Px3sp) ; # TODO FIXME
+#SETPARENT (@nmod:poss gen) TO (1* (n)) ;
+
+SETPARENT @advmod TO (1 @advcl) ;
+#SETPARENT @advmod TO (1 @root | @amod | Gerund) ;
+#SETPARENT @advmod + (postadv) TO (-1 (*)) ; # post.sed
+
+SETPARENT @flat:name TO (-1 (*)) ;
+
+SETPARENT @amod TO (1 @obl) ;
+SETPARENT @amod + ("[0-9]+"r) TO (2 NOMINAL + Px3sp ) ;
+SETPARENT @amod + (loc attr) TO (1* N | Prop) ; # FIXME NOMINAL
+SETPARENT @amod + Adj TO (1* NOMINAL) ;
+SETPARENT @amod + Num + Ord TO (1* NOMINAL) ;
+#SETPARENT @amod TO (1* NOMINAL) ; # TODO FIXME
+SETPARENT (@amod adv attr) TO (1* NOMINAL) ;
+
+SETPARENT @nsubj TO (1* ("соғыс")) ;
+SETPARENT @nsubj TO (1* @root) ;
+SETPARENT @nsubj TO (1 @csubj) ;
+
+
+SETPARENT @obl TO (1* @root) ;
+SETPARENT @obl TO (1* Gerund) ;
+SETPARENT @obl TO (1* @acl:relcl - VerbalAdjective) ;
+SETPARENT @obl TO (1* @advcl) ;
+SETPARENT @obl TO (1* ("соғыс")) ;
+
+SETPARENT @obj TO (1* V | Vaux) ;
+SETPARENT @obj TO (1 @root) ;
+
+SETPARENT @aux TO (-1 Participle) ;
+
+SETPARENT @advcl TO (1* @root OR @parataxis) ;
+
+#SETPARENT @det TO (1* NOMINAL - @nmod:poss) ; # TODO FIXME
+SETPARENT @det TO (1* NOMINAL) ;
+#SETPARENT @det (1 N + Nom) (2 N + Px3sp) TO (2 N | Prop) ;
+#SETPARENT @det (1 @nmod:poss) TO (2 N | Prop) ;
+
+SETPARENT @case TO (-1 (*)) ;
+
+SETPARENT @cop TO (-1 (*)) ;
+#SETPARENT SUB:1 @cop TO (0 (*)) ; # post.sed
+
+# attach @goeswith to the closest token on the left without that label
+SETPARENT @GOESWITH TO (-1* (*) - @GOESWITH) ;
+
+SETCHILD (gna_perf) TO (-1 @obl) ;
+#SETCHILD Ger - Det TO (-1* @obl) ;
+
+#SETPARENT @punct + Cm TO (1* @root) ;
+SETPARENT @punct + Cm TO (-1 (*)) ;
+SETPARENT @punct + Lquot TO (1* Rquot LINK -1 (*)) ;
+SETPARENT @punct + Rquot TO (-1 (*)) ;
+SETPARENT @punct + Lpar TO (1* Rpar LINK -1 (*)) ;
+SETPARENT @punct + Rpar TO (-1 (*)) ;
+SETPARENT @punct + Guio (-1 Num) TO (1 (*))  ;
+SETPARENT @punct + Guio (-1 ("жас")) (1 Num) TO (1 (*))  ;
+#SETPARENT @punct + Guio (-1 BOS ) TO (1* @root)  ;
+
+
