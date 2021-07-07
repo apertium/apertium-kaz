@@ -6,6 +6,7 @@ _	_	ant	_	_	_	_	_
 _	_	aor	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Aor	_
 _	_	attr	_	_	_	Case=Nom	_
 _	_	cog	_	_	_	_	_
+_	prn	dem|advl	_	_	ADV	PronType=Dem	_
 _	prn	dem|qnt	_	_	PRON	PronType=Dem	_
 _	num	_	amod	_	NUM	NumType=Ord	_
 _	num	coll|subst	_	_	NUM	NumType=Coll	_
@@ -67,9 +68,9 @@ _	_	percent	_	_	_	_	_
 _	_	pers	_	_	_	PronType=Prs	_
 _	_	pih	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Past	_
 _	_	pl	_	_	_	Number=Plur	_
-_	_	prc_cond	_	_	_	VerbForm=Cov|Mood=Cnd	_
-_	_	prc_impf	_	_	_	VerbForm=Cov|Aspect=Imp	_
-_	_	prc_perf	_	_	_	VerbForm=Cov|Aspect=Perf	_
+_	_	prc_cond	_	_	_	VerbForm=Conv|Mood=Cnd	_
+_	_	prc_impf	_	_	_	VerbForm=Conv|Aspect=Imp	_
+_	_	prc_perf	_	_	_	VerbForm=Conv|Aspect=Perf	_
 _	_	prc_vol	_	_	_	VerbForm=Cov|Mood=Vol	_
 _	_	pres	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Pres	_
 _	_	px1pl	_	_	_	Number[psor]=Plur|Person[psor]=1	_
@@ -91,8 +92,11 @@ _	_	vol	_	_	_	VerbForm=Fin|Mood=Vol	_
 _	v	iv	cop	_	AUX	_	_
 _	abbr	_	_	_	NOUN	_	_
 _	adj	_	_	_	ADJ	_	_
+_	adv	attr	_	_	ADJ	Case=Nom	_
+_	adv	subst	_	_	ADJ	_	_
 _	adv	_	_	_	ADV	_	_
 _	cm	_	_	_	PUNCT	_	_
+сондықтан	cnjadv	_	_	сондықтан	ADV	_	advmod
 _	cnjadv	_	_	_	SCONJ	_	_
 _	cnjcoo	_	_	_	CCONJ	_	_
 _	cnjsub	_	_	_	SCONJ	_	_
