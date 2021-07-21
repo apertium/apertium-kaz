@@ -334,6 +334,11 @@ REMOVE Err/Orth ;
 # POS marking
 # ===========
 
+REMOVE A IF
+        (0 ("қол"i))
+        (1 ("жу"i))
+       ;
+
 "<қандай>" REMOVE N ;
 
 SELECT N IF

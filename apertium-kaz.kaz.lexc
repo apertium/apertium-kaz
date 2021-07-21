@@ -1245,7 +1245,7 @@ LEXICON PRON-DEM-MINA
 !мына%<prn%>%<dem%>%<loc%>:мынадағы ATTR-SUBST ;
 мына%<prn%>%<dem%>%<sim%>:мынадай CASES ;
 мына%<prn%>%<dem%>%<advl%>:мыналай CLITICS-INCL-COP ;
-мына%<prn%>%<dem%>%<px3sp%>:мына%<prn%>%<dem%>%{S%}%{I%}%{n%} CASES ;
+мына%<prn%>%<dem%>%<px3sp%>:мына%>%{S%}%{I%}%{n%} CASES ;
 
 мына%<prn%>%<dem%>%<pl%>:мыналар CASES-ETC ;
 мына%<prn%>%<dem%>%<pl%>%<px3sp%>:мыналары%{n%} CASES ;
@@ -1889,7 +1889,7 @@ LASTDIGIT-REST ; ! Use/Circ
 
 !LEXICON Guesser
 !
-!<(а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н | ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы | ъ | э | ю | я)+> N1 ; 
+!<[а | ә | б | в | г | ғ | д | е | ё | ж | з | и | і | й | к | қ | л | м | н | ң | о | ө | п | р | с | т | у | ұ | ү | ф | х | һ | ц | ч | ш | щ | ь | ы | ъ | э | ю | я]+> N1 ; 
 
 LEXICON NP-UNK 
 
@@ -1897,7 +1897,7 @@ LEXICON NP-UNK
 
 LEXICON GUESS-QUEUE
 
-<(a | b | c | d | e | f | g | h | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z)+> NP-UNK ;
+<[a | b | c | d | e | f | g | h | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z]+> NP-UNK ;
 
 LEXICON Guesser
 
@@ -1965,7 +1965,7 @@ iс:iс V-IV ; !"Use/MT"
 iш% жүргізетін:iш% жүргізетін N1 ; !
 ! maybe should be treated with a transfer rule
 
-!<(M | D | C | L | X | V | I)+> NUM-ROMAN ; ! ""
+!<[M | D | C | L | X | V | I]+> NUM-ROMAN ; ! ""
 
 C NUM-ROMAN ; ! ""
 D NUM-ROMAN ; ! ""
