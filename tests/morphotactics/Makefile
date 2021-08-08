@@ -5,11 +5,10 @@
 LANGUAGE=kaz
 TRANSDUCER=../../.deps/$(LANGUAGE).LR.clear.hfst
 
-
+# excluded: NUM-ROMAN.txt.gz NUM-ITG.txt.gz
 all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 	A1.txt.gz \
 	ADV.txt.gz ADV-ITG.txt.gz \
-	NUM.txt.gz NUM-ROMAN.txt.gz NUM-ITG.txt.gz \
 	NUM.txt.gz POST.txt.gz CNJ.txt.gz \
 	PRN.txt.gz \
 	DET.txt.gz
@@ -40,7 +39,8 @@ all: N1.txt.gz N1-RUS.txt.gz N-COMPOUND-PX.txt.gz \
 	hfst-concatenate -1 $< -2 .deps/any-symbol.hfst -o $@
 
 .deps/$(LANGUAGE).automorf.hfst: $(TRANSDUCER)
-	hfst-invert $< -o $@
+	if test -z "$$TRIMDIX"; then hfst-invert $< -o $@; else hfst-invert $< | hfst-compose-intersect -1 - -2 "$$TRIMDIX" -o $@ ; fi;
+	#hfst-invert $< -o $@
 	#zcat $< | hfst-txt2fst > $@
 
 .deps/%.hfst: .deps/%.prefixes .deps/$(LANGUAGE).automorf.hfst 
