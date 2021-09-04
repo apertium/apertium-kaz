@@ -396,7 +396,7 @@ SELECT Participle IF (1 Vaux)
 #"адамдардың жүзі" translated a "face of people"
 # ^жүз/жүз<num>/жүз<n><nom>/жүз<n><attr>/жүз<num><subst><nom>/жүз<v><iv><imp><p2><sg>/жүз<n><nom>+е<cop><aor><p3><pl>/жүз<n><nom>+е<cop><aor><p3><sg>/жүз<num><subst><nom>+е<cop><aor><p3><pl>/жүз<num><subst><nom>+е<cop><aor><p3><sg>$^
 SELECT Num IF
-	((0 Num) OR (-1 ))
+	((0 Num) OR (-1 Num))
 	(1 N)
 	(NOT 0 ("бірге"))
 	(NOT -1 A)
