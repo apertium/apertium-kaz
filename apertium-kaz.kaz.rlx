@@ -212,7 +212,8 @@ SET A1-Nom = A/Advl | A/Subst ;
 
 LIST FiniteVerb = pres aor past ifi ifi_evid fut fut_plan imp opt pih ;
 LIST V-P3 = (v p3) (vaux p3) (cop p3) ;
-LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ;
+LIST Gerund = ger ger_ppot ger_past ger_perf ger_impf ger_abs ger_obs ;
+LIST Ger-obs = ger_obs ;
 SET V-NotGerund = V - Gerund ;
 LIST Participle = prc_perf prc_impf prc_cond prc_vol prc_plan ;
 LIST Prc-vol = prc_vol ;
@@ -519,6 +520,10 @@ SELECT A IF (0 N + Dat)(1 N );
 #
 # failed for a gerund 'өлшеу' in 'Радианның басқа да бұрышты өлшеу бірліктерімен арақатынасын мына формуламен сипатталады' => excluded gerunds and verbal adjectives in the rule
 
+# e.g., аумақта
+ REMOVE Ger-obs IF
+        (0 N)
+ ;
 
 # INPUT: ^бақша/бақша<n><nom>$ ^арқылы/арқылы<post>/арқылы<adv>$
 # OUTPUT: ^бақша<n><nom>$ [0]^арқылы<post>$
